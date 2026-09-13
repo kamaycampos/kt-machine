@@ -848,9 +848,23 @@
    "file": "AR_RITUAL/04_TWO-HORSES-PULL-TRIPLE_54s.mp4",
    "caption": "One horse pulls a cart. Two horses don't pull twice as much \u2014 they pull three times. Three horses pull five or six times.\n\nKevin Trudeau's point is that people work the same way, and it's why the room you're in matters more than how hard you try in it.\n\nFour broke people with the same goal aren't four broke people. They pull for each other, and the whole thing goes up geometrically.\n\nAll boats rise on the same tide.",
    "bytes": 10322230,
-   "done": false,
-   "status": {},
-   "scheduled_at": "2026-09-13T18:30"
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
+   "scheduled_at": "2026-09-13T18:30",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1069425239008160/",
+    "instagram": "https://www.instagram.com/reel/DdPqShlkcEh/",
+    "youtube": "https://youtube.com/shorts/w2HvJxm-MAY"
+   },
+   "caption_at_post": "One horse pulls a cart. Two horses don't pull twice as much \u2014 they pull three times. Three horses pull five or six times.\n\nKevin Trudeau's point is that people work the same way, and it's why the room you're in matters more than how hard you try in it.\n\nFour broke people with the same goal aren't four broke people. They pull for each other, and the whole thing goes up geometrically.\n\nAll boats rise on the same tide.",
+   "posted_at": "2026-09-13T18:45"
   },
   {
    "file": "AR_RITUAL/05_THE-PAST-IS-PAIN-THE-FUTURE-IS-FEAR_41s.mp4",
