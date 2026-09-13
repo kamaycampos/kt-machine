@@ -71,12 +71,18 @@ jobs:
           AR_TT_REFRESH_TOKEN: ${{ secrets.AR_TT_REFRESH_TOKEN }}
         run: python run_once.py
 
+      - name: Rebuild the calendar and the captions board
+        if: ${{ !inputs.dry_run }}
+        env:
+          KT_TZ: America/New_York
+        run: python build_pages.py
+
       - name: Remember what was posted
         if: ${{ !inputs.dry_run }}
         run: |
           git config user.name  "kt-machine"
           git config user.email "noreply@github.com"
-          git add state/manifest.json
+          git add state/manifest.json docs
           # Nothing due is the normal case; an empty commit would be noise.
           git diff --staged --quiet || git commit -m "state: $(date -u +%FT%TZ)"
           git push

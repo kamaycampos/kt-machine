@@ -1,0 +1,122 @@
+#!/usr/bin/env python3
+"""The calendar feed and the captions board, as files instead of a server.
+
+The last two things keeping a paid service alive. Neither needs a server: a
+calendar feed is a text file a calendar app fetches on a timer, and the board
+is a page Kamay opens to copy a caption into TikTok. Both are written here on
+every scheduling run and committed, then served by GitHub Pages for nothing.
+
+The calendar is the one that matters. Kamay subscribed to it in Google Calendar
+on the wealth broadcast account, so its URL has to keep working - the new one
+replaces the old subscription once Railway is gone.
+"""
+import html
+import json
+import os
+from datetime import datetime, timedelta
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+STATE = os.path.join(HERE, "state", "manifest.json")
+DOCS = os.path.join(HERE, "docs")
+TZ = os.environ.get("KT_TZ", "America/New_York")
+
+
+def clips():
+    try:
+        return json.load(open(STATE)).get("clips", [])
+    except (OSError, ValueError):
+        return []
+
+
+def _utc(txt, plus=0):
+    try:
+        t = datetime.strptime(txt[:16], "%Y-%m-%dT%H:%M") + timedelta(minutes=plus)
+    except (ValueError, TypeError):
+        return None
+    try:
+        from zoneinfo import ZoneInfo
+        t = t.replace(tzinfo=ZoneInfo(TZ)).astimezone(ZoneInfo("UTC"))
+    except Exception:
+        pass
+    return t.strftime("%Y%m%dT%H%M%SZ")
+
+
+def esc(t):
+    return (t.replace("\\", "\\\\").replace(";", r"\;")
+             .replace(",", r"\,").replace("\n", r"\n"))
+
+
+def calendar_ics(cs):
+    out = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//kt-machine//EN",
+           "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+           "X-WR-CALNAME:Posts - Kamay + Awakened Rise",
+           "X-WR-TIMEZONE:" + TZ,
+           "REFRESH-INTERVAL;VALUE=DURATION:PT30M", "X-PUBLISHED-TTL:PT30M"]
+    now = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+    for c in cs:
+        when = c.get("posted_at") or c.get("scheduled_at")
+        start = _utc(when)
+        if not start:
+            continue
+        f = c["file"]
+        who = "AWAKENED RISE" if f.startswith("AR_") else "KAMAY"
+        live = bool(c.get("posted_at"))
+        cap = (c.get("caption") or "").strip().splitlines()
+        title = cap[0] if cap else f.split("/")[-1]
+        body = [f"{'POSTED' if live else 'scheduled'} - {f}"]
+        for k, v in sorted((c.get("links") or {}).items()):
+            body.append(f"{k}: {v}")
+        out += ["BEGIN:VEVENT",
+                "UID:" + f.replace("/", "-").replace(" ", "_") + "@kt-machine",
+                "DTSTAMP:" + now, "DTSTART:" + start,
+                "DTEND:" + (_utc(when, 15) or start),
+                "SUMMARY:" + esc(f"{'' if live else '[ ] '}{who} - {title}"),
+                "DESCRIPTION:" + esc("\n".join(body)),
+                "STATUS:" + ("CONFIRMED" if live else "TENTATIVE"),
+                "END:VEVENT"]
+    out.append("END:VCALENDAR")
+    return "\r\n".join(out) + "\r\n"
+
+
+def board(cs):
+    """Newest first, with the caption ready to copy. That is all it is for."""
+    rows = sorted((c for c in cs if c.get("posted_at") or c.get("scheduled_at")),
+                  key=lambda c: (c.get("posted_at") or c.get("scheduled_at")),
+                  reverse=True)[:60]
+    parts = ["<meta charset=utf-8><meta name=viewport "
+             "content='width=device-width,initial-scale=1'><title>Captions</title>",
+             "<style>body{font:15px/1.5 -apple-system,system-ui,sans-serif;"
+             "margin:0;padding:16px;background:#0d0f13;color:#e8e8ea}"
+             "h1{font-size:18px;margin:0 0 14px}"
+             ".c{border:1px solid #262a33;border-radius:12px;padding:14px;"
+             "margin:0 0 14px;background:#141821}"
+             ".w{font-size:11px;letter-spacing:.08em;color:#8b93a5}"
+             ".f{font-size:12px;color:#8b93a5;margin:2px 0 10px;word-break:break-all}"
+             "pre{white-space:pre-wrap;margin:0;font:14px/1.55 inherit}"
+             "button{margin-top:10px;padding:9px 16px;border-radius:8px;border:0;"
+             "background:#f5c542;color:#111;font-weight:700}</style>",
+             "<h1>Captions</h1>"]
+    for c in rows:
+        f = c["file"]
+        who = "AWAKENED RISE" if f.startswith("AR_") else "KAMAY"
+        when = c.get("posted_at") or c.get("scheduled_at")
+        tag = "posted" if c.get("posted_at") else "scheduled"
+        cap = html.escape(c.get("caption") or "")
+        parts.append(
+            f"<div class=c><div class=w>{who} &middot; {tag} {when}</div>"
+            f"<div class=f>{html.escape(f)}</div><pre id='t{abs(hash(f))}'>{cap}</pre>"
+            f"<button onclick=\"navigator.clipboard.writeText("
+            f"document.getElementById('t{abs(hash(f))}').innerText)\">Copy</button></div>")
+    return "\n".join(parts)
+
+
+def main():
+    os.makedirs(DOCS, exist_ok=True)
+    cs = clips()
+    open(os.path.join(DOCS, "calendar.ics"), "w").write(calendar_ics(cs))
+    open(os.path.join(DOCS, "index.html"), "w").write(board(cs))
+    print(f"pages built from {len(cs)} clips")
+
+
+if __name__ == "__main__":
+    main()
