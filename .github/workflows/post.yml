@@ -7,6 +7,11 @@ on:
   schedule:
     - cron: "*/20 * * * *"
   workflow_dispatch:            # so a run can be forced by hand
+    inputs:
+      dry_run:
+        description: "Check everything without publishing"
+        type: boolean
+        default: true
 
 # Never two runs at once. Two overlapping passes would each see a clip as due
 # and publish it twice - the exact duplicate-post failure this project has
@@ -35,6 +40,7 @@ jobs:
         env:
           GH_REPO: ${{ github.repository }}
           KT_DATA: state
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
           KT_MEDIA_REMOTE: "1"
           KT_TZ: America/New_York
           KT_SLOTS: ${{ secrets.KT_SLOTS }}
@@ -66,6 +72,7 @@ jobs:
         run: python run_once.py
 
       - name: Remember what was posted
+        if: ${{ !inputs.dry_run }}
         run: |
           git config user.name  "kt-machine"
           git config user.email "noreply@github.com"

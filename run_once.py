@@ -63,6 +63,13 @@ def main():
                 + rel.replace("/", "--"))
     engine.media_url = media_url
 
+    # DRY RUN. Railway is still live during the changeover, and two schedulers
+    # both seeing a clip as due would publish it twice - the duplicate-post
+    # failure this project has already paid for. So the new machine proves it
+    # can read the state, resolve credentials and reach the media BEFORE it is
+    # ever allowed to publish anything.
+    dry = os.environ.get("DRY_RUN") == "1"
+
     man = engine.load()
     if not man.get("clips"):
         log("no clips in state - nothing to do")
@@ -73,6 +80,31 @@ def main():
         log(f"scheduled {changed} clip(s)")
 
     idxs, moved = engine.due_clips(man)
+    if dry:
+        import urllib.request
+        log(f"DRY RUN - would publish {len(idxs)} clip(s)")
+        missing = 0
+        for c in man["clips"]:
+            if c.get("posted_at") or c.get("done") or not c.get("scheduled_at"):
+                continue
+            u = media_url(c["file"])
+            try:
+                r = urllib.request.urlopen(urllib.request.Request(u, method="HEAD"),
+                                           timeout=30)
+                ok = r.status == 200
+            except Exception:
+                ok = False
+            if not ok:
+                missing += 1
+                log(f"  MEDIA MISSING: {c['file']}")
+        log(f"credentials visible: " + ", ".join(
+            k for k in ("IG_ACCESS_TOKEN", "FB_ACCESS_TOKEN", "YT_REFRESH_TOKEN",
+                        "TT_REFRESH_TOKEN", "AR_IG_ACCESS_TOKEN")
+            if os.environ.get(k)))
+        log(f"scheduled clips whose media is unreachable: {missing}")
+        for i in idxs:
+            log(f"  would post now: {man['clips'][i]['file']}")
+        return 1 if missing else 0
     if moved:
         log(f"pushed {moved} clip(s) past the spacing gap")
     if not idxs:
