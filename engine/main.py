@@ -72,7 +72,16 @@ LOCK = threading.Lock()
 os.makedirs(MEDIA, exist_ok=True)
 
 TZ = os.environ.get("KT_TZ", "America/New_York")
-STALE_AFTER = 3 * 3600   # a slot missed by more than this lapses
+STALE_AFTER = 8 * 3600   # a slot missed by more than this lapses
+# EIGHT HOURS, NOT THREE. 13 Sept 2026, first day on GitHub Actions: the cron
+# says every 20 minutes and GitHub actually ran it twice in four hours - 109
+# minutes apart. Scheduled workflows are best-effort and get queued or dropped
+# under load, and a public repository is not first in that queue.
+#
+# With a three-hour window a run that arrives late finds the slot already
+# lapsed and the post never happens. The slots already carry 40 minutes of
+# jitter, so a post landing an hour or two late is invisible; a post that never
+# lands is not.
 MIN_GAP = 45 * 60        # seconds between two posts by the SAME person
 
 # THE DAILY PLAN. Kamay does not choose what goes out or when - that is the

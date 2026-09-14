@@ -83,6 +83,9 @@ def board(cs):
     rows = sorted((c for c in cs if c.get("posted_at") or c.get("scheduled_at")),
                   key=lambda c: (c.get("posted_at") or c.get("scheduled_at")),
                   reverse=True)[:60]
+    # SPLIT BY ACCOUNT. 13 Sept 2026: Yaren could not find her captions - the
+    # old per-account link pointed at Railway, which is gone. One page with a
+    # filter beats two pages that can rot separately.
     parts = ["<meta charset=utf-8><meta name=viewport "
              "content='width=device-width,initial-scale=1'><title>Captions</title>",
              "<style>body{font:15px/1.5 -apple-system,system-ui,sans-serif;"
@@ -94,16 +97,27 @@ def board(cs):
              ".f{font-size:12px;color:#8b93a5;margin:2px 0 10px;word-break:break-all}"
              "pre{white-space:pre-wrap;margin:0;font:14px/1.55 inherit}"
              "button{margin-top:10px;padding:9px 16px;border-radius:8px;border:0;"
-             "background:#f5c542;color:#111;font-weight:700}</style>",
-             "<h1>Captions</h1>"]
+             "background:#f5c542;color:#111;font-weight:700}"
+             "button.pick{background:#242a36;color:#e8e8ea;margin:2px 6px 12px 0;"
+             "font-weight:600}button.pick.on{background:#f5c542;color:#111}</style>",
+             "<h1>Captions</h1>",
+             "<div><button class='pick on' onclick=\"pick('all',this)\">All</button>"
+             "<button class='pick' onclick=\"pick('KAMAY',this)\">Kamay</button>"
+             "<button class='pick' onclick=\"pick('AR',this)\">Awakened Rise</button></div>",
+             "<script>function pick(w,b){"
+             "document.querySelectorAll('button.pick').forEach(x=>x.classList.remove('on'));"
+             "b.classList.add('on');"
+             "document.querySelectorAll('.c').forEach(e=>{"
+             "e.hidden = w!=='all' && e.dataset.who!==w;});}</script>"]
     for c in rows:
         f = c["file"]
         who = "AWAKENED RISE" if f.startswith("AR_") else "KAMAY"
         when = c.get("posted_at") or c.get("scheduled_at")
         tag = "posted" if c.get("posted_at") else "scheduled"
         cap = html.escape(c.get("caption") or "")
+        key = "AR" if f.startswith("AR_") else "KAMAY"
         parts.append(
-            f"<div class=c><div class=w>{who} &middot; {tag} {when}</div>"
+            f"<div class=c data-who='{key}'><div class=w>{who} &middot; {tag} {when}</div>"
             f"<div class=f>{html.escape(f)}</div><pre id='t{abs(hash(f))}'>{cap}</pre>"
             f"<button onclick=\"navigator.clipboard.writeText("
             f"document.getElementById('t{abs(hash(f))}').innerText)\">Copy</button></div>")
