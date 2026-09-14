@@ -107,7 +107,7 @@
    "bytes": 3995506,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-14T12:30",
+   "scheduled_at": "2026-09-14T13:28",
    "cta_keyword": "RISE",
    "cta_variant": 0,
    "cta_kind": "offer"
@@ -614,9 +614,23 @@
    "file": "AR_MONEY/04_THE-CHEAP-OPTION-POISONS_47s.mp4",
    "caption": "The reason that toaster is cheaper abroad is that the factory doesn't have to follow the rules yours does.\n\nWhich makes the environmental argument awkward. Kevin Trudeau's point: buying the cheaper version doesn't avoid the pollution, it moves it somewhere with no limits on it.\n\nHe says Indonesia and China put more into the oceans than every other country combined \u2014 and the cheap price is exactly why.\n\nWhat do you think of that?\n\n#consumerawareness #hiddentruth #economics #moneytruth #awakening #systemexposed",
    "bytes": 5580298,
-   "done": false,
-   "status": {},
-   "scheduled_at": "2026-09-14T09:00"
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
+   "scheduled_at": "2026-09-14T09:00",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1400147961586805/",
+    "instagram": "https://www.instagram.com/reel/DdRmR0QjXC4/",
+    "youtube": "https://youtube.com/shorts/uqT8t7qTD5Y"
+   },
+   "caption_at_post": "The reason that toaster is cheaper abroad is that the factory doesn't have to follow the rules yours does.\n\nWhich makes the environmental argument awkward. Kevin Trudeau's point: buying the cheaper version doesn't avoid the pollution, it moves it somewhere with no limits on it.\n\nHe says Indonesia and China put more into the oceans than every other country combined \u2014 and the cheap price is exactly why.\n\nWhat do you think of that?\n\n#consumerawareness #hiddentruth #economics #moneytruth #awakening #systemexposed",
+   "posted_at": "2026-09-14T12:48"
   },
   {
    "file": "AR_MONEY/04_THEY-RIG-THE-CURRENCY_59s.mp4",
@@ -1359,7 +1373,7 @@
    "bytes": 26804572,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-14T11:58",
+   "scheduled_at": "2026-09-14T13:28",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
    "cta_kind": "question"
@@ -2178,12 +2192,26 @@
    "file": "KT_POS/01_01_NOT-ONE-BILLIONAIRE-SAID-IT_127s.mp4",
    "caption": "Why not one billionaire said positive thinking was the reason.\n\nKevin Trudeau has asked people who made hundreds of millions, and billions, what the single most important thing was. Not one of them answered positive thinking. They call it an ingredient. Never the thing.\n\nHis explanation is uncomfortable. Think positive every hour of every day and you are wearing rose-coloured glasses \u2014 dodging, reframing, refusing to take a thing for what it is.\n\nSo the order is: acknowledge it instead of denying it. Accept it instead of resisting it. Then define exactly where you want to go, and only then switch the positive attitude on.\n\nWhat did you take from this one?\n\n#kevintrudeau #mindset #positivethinking #successhabits #hardtruths",
    "bytes": 18687959,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-14T07:50",
    "cta_keyword": "KT",
    "cta_variant": 4,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1636044151368736/",
+    "instagram": "https://www.instagram.com/reel/DdRl8kXlUGm/",
+    "youtube": "https://youtube.com/shorts/8qxPxS63WcY"
+   },
+   "caption_at_post": "Why not one billionaire said positive thinking was the reason.\n\nKevin Trudeau has asked people who made hundreds of millions, and billions, what the single most important thing was. Not one of them answered positive thinking. They call it an ingredient. Never the thing.\n\nHis explanation is uncomfortable. Think positive every hour of every day and you are wearing rose-coloured glasses \u2014 dodging, reframing, refusing to take a thing for what it is.\n\nSo the order is: acknowledge it instead of denying it. Accept it instead of resisting it. Then define exactly where you want to go, and only then switch the positive attitude on.\n\nWhat did you take from this one?\n\n#kevintrudeau #mindset #positivethinking #successhabits #hardtruths",
+   "posted_at": "2026-09-14T12:46"
   },
   {
    "file": "KT_POS/02_02_GRATEFUL-FOR-THE-CRAPPY-CAR_85s.mp4",
