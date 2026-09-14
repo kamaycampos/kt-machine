@@ -724,7 +724,16 @@ def instagram_story(path, public_url, clip=None):
     if "__yt59" not in public_url:
         alt = public_url.replace(".mp4", "__yt59.mp4")
         try:
-            if requests.head(alt, timeout=20).status_code == 200:
+            # FOLLOW THE REDIRECT. 13 Sept 2026, the first bug the move to
+            # GitHub introduced: a release download URL answers 302 and points
+            # at objects.githubusercontent.com. requests.head() does NOT follow
+            # redirects by default, so this saw 302, decided the 59-second cut
+            # did not exist, and sent Instagram the full 86-second clip - which
+            # it refused, and the story never posted. The file was there the
+            # whole time. On Railway the URL was direct, so the bug could not
+            # exist until the day the hosting changed.
+            if requests.head(alt, timeout=20,
+                             allow_redirects=True).status_code == 200:
                 story_url = alt
         except Exception:
             pass
