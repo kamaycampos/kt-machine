@@ -79,49 +79,91 @@ def calendar_ics(cs):
 
 
 def board(cs):
-    """Newest first, with the caption ready to copy. That is all it is for."""
-    rows = sorted((c for c in cs if c.get("posted_at") or c.get("scheduled_at")),
-                  key=lambda c: (c.get("posted_at") or c.get("scheduled_at")),
-                  reverse=True)[:60]
-    # SPLIT BY ACCOUNT. 13 Sept 2026: Yaren could not find her captions - the
-    # old per-account link pointed at Railway, which is gone. One page with a
-    # filter beats two pages that can rot separately.
-    parts = ["<meta charset=utf-8><meta name=viewport "
-             "content='width=device-width,initial-scale=1'><title>Captions</title>",
-             "<style>body{font:15px/1.5 -apple-system,system-ui,sans-serif;"
-             "margin:0;padding:16px;background:#0d0f13;color:#e8e8ea}"
-             "h1{font-size:18px;margin:0 0 14px}"
-             ".c{border:1px solid #262a33;border-radius:12px;padding:14px;"
-             "margin:0 0 14px;background:#141821}"
-             ".w{font-size:11px;letter-spacing:.08em;color:#8b93a5}"
-             ".f{font-size:12px;color:#8b93a5;margin:2px 0 10px;word-break:break-all}"
-             "pre{white-space:pre-wrap;margin:0;font:14px/1.55 inherit}"
-             "button{margin-top:10px;padding:9px 16px;border-radius:8px;border:0;"
-             "background:#f5c542;color:#111;font-weight:700}"
-             "button.pick{background:#242a36;color:#e8e8ea;margin:2px 6px 12px 0;"
-             "font-weight:600}button.pick.on{background:#f5c542;color:#111}</style>",
-             "<h1>Captions</h1>",
-             "<div><button class='pick on' onclick=\"pick('all',this)\">All</button>"
-             "<button class='pick' onclick=\"pick('KAMAY',this)\">Kamay</button>"
-             "<button class='pick' onclick=\"pick('AR',this)\">Awakened Rise</button></div>",
-             "<script>function pick(w,b){"
-             "document.querySelectorAll('button.pick').forEach(x=>x.classList.remove('on'));"
-             "b.classList.add('on');"
-             "document.querySelectorAll('.c').forEach(e=>{"
-             "e.hidden = w!=='all' && e.dataset.who!==w;});}</script>"]
-    for c in rows:
+    """Ready to post at the top, everything else behind a button.
+
+    13 Sept 2026, Kamay: "the one we want to post its not at the fron, its far
+    and hard to find." He is right - the board listed everything newest-first,
+    so the clip actually sitting in the TikTok inbox waiting to be posted was
+    buried among fifty already-published ones.
+
+    READY means: it has gone out on the other platforms and is waiting in the
+    TikTok inbox for a human to tap post. That is the only reason this page
+    exists, so that is what opens first.
+
+    Pressing Copy marks the card done and hides it, so the list empties as he
+    works through it instead of him re-reading the same captions.
+    """
+    def ready(c):
+        s = (c.get("status") or {})
+        return bool(c.get("posted_at")) and "inbox" in str(s.get("tiktok", "")) \
+            and not c.get("tiktok_done")
+
+    todo = [c for c in cs if ready(c)]
+    rest = [c for c in cs if not ready(c) and (c.get("posted_at") or c.get("scheduled_at"))]
+    todo.sort(key=lambda c: c.get("posted_at") or "", reverse=True)
+    rest.sort(key=lambda c: (c.get("posted_at") or c.get("scheduled_at") or ""),
+              reverse=True)
+
+    css = ("body{font:15px/1.5 -apple-system,system-ui,sans-serif;margin:0;"
+           "padding:16px;background:#0d0f13;color:#e8e8ea}"
+           "h1{font-size:18px;margin:0 0 4px}"
+           "h2{font-size:13px;letter-spacing:.09em;color:#8b93a5;margin:22px 0 10px}"
+           ".c{border:1px solid #262a33;border-radius:12px;padding:14px;"
+           "margin:0 0 14px;background:#141821}"
+           ".c.ready{border-color:#f5c542}"
+           ".w{font-size:11px;letter-spacing:.08em;color:#8b93a5}"
+           ".fn{font-size:12px;color:#8b93a5;margin:2px 0 10px;word-break:break-all}"
+           "pre{white-space:pre-wrap;margin:0;font:14px/1.55 inherit}"
+           "button{margin-top:10px;padding:9px 16px;border-radius:8px;border:0;"
+           "background:#f5c542;color:#111;font-weight:700}"
+           "button.pick{background:#242a36;color:#e8e8ea;margin:2px 6px 12px 0;"
+           "font-weight:600}button.pick.on{background:#f5c542;color:#111}"
+           "#more{display:none}")
+
+    def card(c, is_ready):
         f = c["file"]
         who = "AWAKENED RISE" if f.startswith("AR_") else "KAMAY"
-        when = c.get("posted_at") or c.get("scheduled_at")
-        tag = "posted" if c.get("posted_at") else "scheduled"
-        cap = html.escape(c.get("caption") or "")
         key = "AR" if f.startswith("AR_") else "KAMAY"
-        parts.append(
-            f"<div class=c data-who='{key}'><div class=w>{who} &middot; {tag} {when}</div>"
-            f"<div class=f>{html.escape(f)}</div><pre id='t{abs(hash(f))}'>{cap}</pre>"
-            f"<button onclick=\"navigator.clipboard.writeText("
-            f"document.getElementById('t{abs(hash(f))}').innerText)\">Copy</button></div>")
-    return "\n".join(parts)
+        when = c.get("posted_at") or c.get("scheduled_at")
+        tag = "READY TO POST" if is_ready else (
+            "posted" if c.get("posted_at") else "scheduled")
+        cid = "t" + str(abs(hash(f)))
+        return (f"<div class='c{' ready' if is_ready else ''}' data-who='{key}'>"
+                f"<div class=w>{who} &middot; {tag} {when}</div>"
+                f"<div class=fn>{html.escape(f)}</div>"
+                f"<pre id='{cid}'>{html.escape(c.get('caption') or '')}</pre>"
+                f"<button onclick=\"cp('{cid}',this)\">Copy</button></div>")
+
+    p = ["<meta charset=utf-8><meta name=viewport "
+         "content='width=device-width,initial-scale=1'><title>Captions</title>",
+         f"<style>{css}</style>", "<h1>Captions</h1>",
+         "<div><button class='pick on' onclick=\"pick('all',this)\">All</button>"
+         "<button class='pick' onclick=\"pick('KAMAY',this)\">Kamay</button>"
+         "<button class='pick' onclick=\"pick('AR',this)\">Awakened Rise</button></div>",
+         f"<h2>READY TO POST ON TIKTOK &middot; {len(todo)}</h2>"]
+    p += [card(c, True) for c in todo] or ["<div class=c>Nothing waiting.</div>"]
+    p += [f"<button class='pick' onclick=\"document.getElementById('more')"
+          f".style.display='block';this.remove()\">See all {len(rest)}</button>",
+          "<div id=more>"]
+    p += [card(c, False) for c in rest[:80]]
+    p += ["</div>",
+          "<script>"
+          "function pick(w,b){document.querySelectorAll('button.pick')"
+          ".forEach(x=>x.classList.remove('on'));b.classList.add('on');"
+          "document.querySelectorAll('.c').forEach(e=>{"
+          "e.hidden=w!=='all'&&e.dataset.who!==w;});}"
+          # Copy then hide. The list should empty as he works through it.
+          "function cp(id,b){navigator.clipboard.writeText("
+          "document.getElementById(id).innerText);"
+          "const c=b.closest('.c');c.style.transition='opacity .25s';"
+          "c.style.opacity=0;setTimeout(()=>c.remove(),260);"
+          "try{const d=JSON.parse(localStorage.done||'[]');d.push(id);"
+          "localStorage.done=JSON.stringify(d);}catch(e){}}"
+          "try{JSON.parse(localStorage.done||'[]').forEach(id=>{"
+          "const el=document.getElementById(id);if(el)el.closest('.c').remove();});}"
+          "catch(e){}"
+          "</script>"]
+    return "\n".join(p)
 
 
 def main():
