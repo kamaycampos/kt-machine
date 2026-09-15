@@ -2086,10 +2086,8 @@
    "bytes": 24941177,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-08T13:30",
    "cta_keyword": "WISH",
-   "cta_kind": "question",
-   "posting": true
+   "cta_kind": "question"
   },
   {
    "file": "KT_MIND/01_THE-ALGORITHM-DECIDED_118s.mp4",
@@ -2585,11 +2583,9 @@
    "bytes": 18185499,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-11T19:21",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "question",
-   "posting": true
+   "cta_kind": "question"
   },
   {
    "file": "KT_RICH/06_06_WHAT-SEPARATES-A-CHAMPION_103s.mp4",

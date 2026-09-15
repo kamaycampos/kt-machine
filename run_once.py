@@ -75,6 +75,38 @@ def main():
         log("no clips in state - nothing to do")
         return 0
 
+    # RELEASE A LOCK NOBODY IS HOLDING.
+    #
+    # 14 Sept 2026, Kamay: "today felt like it was less posting". It was: three
+    # posts instead of five, and his queue was empty behind them. Two clips -
+    # KT_MED/13 and KT_RICH/05 - were carrying posting=True with an empty status
+    # and no posted_at, one of them since 8 September.
+    #
+    # The flag is set just before publishing and cleared by record(). A run that
+    # dies in between - a timed-out upload, a cancelled job, a runner killed
+    # mid-step - leaves it set, and due_clips() then skips that clip FOREVER.
+    # Nothing reports it. The clip is simply never posted again and the day
+    # quietly gets shorter, which is exactly what he noticed.
+    #
+    # A lock is only meaningful while the run holding it is alive. This one is
+    # stamped, and anything older than an hour is assumed dead - the job itself
+    # times out at 25 minutes, so an hour cannot be a live run.
+    freed = 0
+    for c in man["clips"]:
+        if not c.get("posting") or c.get("posted_at"):
+            continue
+        t = c.get("posting_at")
+        if t and (time.time() - t) < 3600:
+            continue                      # a live run really is holding it
+        c.pop("posting", None)
+        c.pop("posting_at", None)
+        c.pop("stale", None)
+        c.pop("scheduled_at", None)       # that slot is long past; re-plan it
+        freed += 1
+        log(f"released a dead posting lock: {c['file']}")
+    if freed:
+        engine.save(man)
+
     changed = engine.plan(man)
     if changed:
         log(f"scheduled {changed} clip(s)")
@@ -114,6 +146,7 @@ def main():
 
     for i in idxs:
         man["clips"][i]["posting"] = True
+        man["clips"][i]["posting_at"] = int(time.time())
     engine.save(man)
 
     for i in idxs:

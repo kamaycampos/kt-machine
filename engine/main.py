@@ -523,6 +523,7 @@ def record(man, i, result, links):
     if any(v == "posted" for v in result.values()):
         c.setdefault("caption_at_post", c.get("caption", ""))
     c["posting"] = False
+    c.pop("posting_at", None)          # the lock is released with the flag
     c.pop("retry_only", None)          # one retry, not a standing instruction
     c["posted_at"] = now_local().strftime("%Y-%m-%dT%H:%M")
     auto = [p for p in poster.ENABLED if p != "tiktok"]
