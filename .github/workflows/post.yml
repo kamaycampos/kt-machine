@@ -12,6 +12,10 @@ on:
         description: "Check everything without publishing"
         type: boolean
         default: true
+      trial:
+        description: "Hook test: post every variant of this SLUG as Trial Reels"
+        type: string
+        default: ""
 
 # Never two runs at once. Two overlapping passes would each see a clip as due
 # and publish it twice - the exact duplicate-post failure this project has
@@ -36,7 +40,28 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      # THE HOOK TEST. Seven variants of one clip, only the hook text
+      # different, all posted the same day as Instagram Trial Reels - shown to
+      # non-followers, so the account is not spammed and the measurement is
+      # clean. It used to be an HTTP route on Railway and lost its trigger in
+      # the migration; this is the trigger.
+      - name: Hook test (Trial Reels)
+        if: ${{ inputs.trial != '' }}
+        env:
+          GH_REPO: ${{ github.repository }}
+          KT_DATA: state
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+          KT_MEDIA_REMOTE: "1"
+          KT_TZ: America/New_York
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          AR_IG_USER_ID: ${{ secrets.AR_IG_USER_ID }}
+          AR_IG_ACCESS_TOKEN: ${{ secrets.AR_IG_ACCESS_TOKEN }}
+          KT_PLATFORMS: ${{ secrets.KT_PLATFORMS }}
+        run: python trial.py "${{ inputs.trial }}"
+
       - name: Publish what is due
+        if: ${{ inputs.trial == '' }}
         env:
           GH_REPO: ${{ github.repository }}
           KT_DATA: state
@@ -72,13 +97,13 @@ jobs:
         run: python run_once.py
 
       - name: Rebuild the calendar and the captions board
-        if: ${{ !inputs.dry_run }}
+        if: ${{ !inputs.dry_run && inputs.trial == '' }}
         env:
           KT_TZ: America/New_York
         run: python build_pages.py
 
       - name: Remember what was posted
-        if: ${{ !inputs.dry_run }}
+        if: ${{ !inputs.dry_run && inputs.trial == '' }}
         run: |
           git config user.name  "kt-machine"
           git config user.email "noreply@github.com"
