@@ -2087,7 +2087,9 @@
    "done": false,
    "status": {},
    "cta_keyword": "WISH",
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-09-15T08:27",
+   "cta_variant": 0
   },
   {
    "file": "KT_MIND/01_THE-ALGORITHM-DECIDED_118s.mp4",
@@ -2585,7 +2587,8 @@
    "status": {},
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-09-15T12:13"
   },
   {
    "file": "KT_RICH/06_06_WHAT-SEPARATES-A-CHAMPION_103s.mp4",
