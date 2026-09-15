@@ -678,12 +678,26 @@
    "file": "AR_MONEY/04_THEY-RIG-THE-CURRENCY_59s.mp4",
    "caption": "The third reason your money buys less, and the one nobody explains.\n\nCountries hold their own currency down on purpose. A strong dollar meets a weak one, and the price you see was never the real price \u2014 it was engineered.\n\nKevin Trudeau calls it what it is: cheating. Take it away and the sums stop working, the factories come home, and the wealth comes with them.\n\n#kevintrudeau #money #wealth #economy #currency #truth",
    "bytes": 8713788,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-09-15T17:00",
    "cta_keyword": "RISE",
    "cta_variant": 3,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2161510848110193/",
+    "instagram": "https://www.instagram.com/reel/DdUzR8fFYQ8/",
+    "youtube": "https://youtube.com/shorts/KJJ_eQu9TKA"
+   },
+   "caption_at_post": "The third reason your money buys less, and the one nobody explains.\n\nCountries hold their own currency down on purpose. A strong dollar meets a weak one, and the price you see was never the real price \u2014 it was engineered.\n\nKevin Trudeau calls it what it is: cheating. Take it away and the sums stop working, the factories come home, and the wealth comes with them.\n\n#kevintrudeau #money #wealth #economy #currency #truth",
+   "posted_at": "2026-09-15T18:41"
   },
   {
    "file": "AR_MONEY/06_FREE-TRADE-IS-NOT_49s.mp4",
@@ -975,7 +989,7 @@
    "bytes": 6177889,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-15T18:30"
+   "scheduled_at": "2026-09-15T19:22"
   },
   {
    "file": "AR_RITUAL/07_RIGHT-NOW-IM-BROKE_38s.mp4",
