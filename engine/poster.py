@@ -625,11 +625,25 @@ def instagram(path, caption, public_url, clip=None, trial=False):
     #
     # kt_render picks the sharpest frame in the hook window and writes the
     # offset beside the clip. thumb_offset is milliseconds into the video.
+    #
+    # AND IT MUST LAND WHILE THE HOOK IS STILL FULLY ON. 14 Sept 2026, Kamay:
+    # "make sure the hook its from the moment the clip starts for the
+    # thumbnails". It is - the hook is drawn from frame zero - but it begins
+    # fading at 2.7s and ends at 3.0s, and two clips carried covers at 2600ms
+    # and 2800ms written by an older render whose probe range ran past the
+    # fade. Their grid image shows the hook half faded out.
+    #
+    # The probe range was narrowed to 0.6-2.4s later, so nothing NEW can do
+    # this - but the offset is read from a file written at render time, and
+    # those files outlive the fix. Clamped here, where it is used, so a stale
+    # one cannot reach Instagram.
+    HOOK_FULL_MS = 2400
     try:
         ms_file = os.path.splitext(path)[0] + "__cover_ms.txt"
         if os.path.exists(ms_file):
             with open(ms_file) as fh:
-                body["thumb_offset"] = str(int(fh.read().strip()))
+                body["thumb_offset"] = str(min(int(fh.read().strip()),
+                                               HOOK_FULL_MS))
     except Exception:
         pass                       # a cover is a nice-to-have, never a failure
     if trial:
