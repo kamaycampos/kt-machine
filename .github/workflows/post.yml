@@ -20,6 +20,14 @@ on:
         description: "Sample the numbers now, without waiting for the 6h window"
         type: boolean
         default: false
+      diag:
+        description: "Print what Instagram will actually report for one reel"
+        type: boolean
+        default: false
+      api_version:
+        description: "Graph API version for the diagnostic"
+        type: string
+        default: "v21.0"
 
 # Never two runs at once. Two overlapping passes would each see a clip as due
 # and publish it twice - the exact duplicate-post failure this project has
@@ -63,6 +71,16 @@ jobs:
           AR_IG_ACCESS_TOKEN: ${{ secrets.AR_IG_ACCESS_TOKEN }}
           KT_PLATFORMS: ${{ secrets.KT_PLATFORMS }}
         run: python trial.py "${{ inputs.trial }}"
+
+      # A one-off question to the API, printed raw. Guessing metric names is
+      # how two "successful" measurement passes came back empty.
+      - name: Ask Instagram what it measures
+        if: ${{ inputs.diag }}
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ inputs.api_version }}
+        run: python diag_insights.py
 
       - name: Publish what is due
         if: ${{ inputs.trial == '' }}
