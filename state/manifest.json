@@ -631,12 +631,26 @@
    "file": "AR_MONEY/03_A-BOWL-OF-RICE_48s.mp4",
    "caption": "Why that toaster is cheaper, in plain terms.\n\nFourteen and fifteen year olds. Twelve hour days, six days a week. A bowl of rice for lunch. No health insurance, no union, no inspector coming.\n\nYou wouldn't accept a second of that where you live. Kevin Trudeau's uncomfortable point is that you don't have to \u2014 you just buy what comes out of it.\n\nThat, he says, makes you part of it.\n\n#kevintrudeau #money #wealth #truth #economy #awakening",
    "bytes": 6268280,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-09-15T09:00",
    "cta_keyword": "YES",
    "cta_variant": 2,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1052562911085832/",
+    "instagram": "https://www.instagram.com/reel/DdUOZajDJxo/",
+    "youtube": "https://youtube.com/shorts/WLt9jJzA54c"
+   },
+   "caption_at_post": "Why that toaster is cheaper, in plain terms.\n\nFourteen and fifteen year olds. Twelve hour days, six days a week. A bowl of rice for lunch. No health insurance, no union, no inspector coming.\n\nYou wouldn't accept a second of that where you live. Kevin Trudeau's uncomfortable point is that you don't have to \u2014 you just buy what comes out of it.\n\nThat, he says, makes you part of it.\n\n#kevintrudeau #money #wealth #truth #economy #awakening",
+   "posted_at": "2026-09-15T13:17"
   },
   {
    "file": "AR_MONEY/04_THE-CHEAP-OPTION-POISONS_47s.mp4",
@@ -969,7 +983,7 @@
    "bytes": 8493649,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-15T12:30"
+   "scheduled_at": "2026-09-15T13:59"
   },
   {
    "file": "AR_SOUND/01_EVERY-SOUND-IS-TRAINING-YOU_35s.mp4",
@@ -2084,12 +2098,25 @@
    "file": "KT_MED/13_THE-UNIVERSAL-FIELD_138s.mp4",
    "caption": "What Edison said he was actually tapping into.\n\nThis is where Kevin Trudeau says the practice stops being about calm.\n\nOnce you are in alpha and theta, you are on the frequency where you can manifest what you actually want \u2014 and, in his framing, where you can reach the ether.\n\nThomas Edison and Albert Einstein both described using this technique deliberately. Not to relax. To tap into what one of them called the universal field of all intelligence.\n\nThey were not sitting in the dark with a candle to feel better. They were going somewhere to get something.\n\nComment WISH and I\u2019ll send you Kevin\u2019s free audios.\n\n#kevintrudeau #edison #einstein #meditation #manifestation #theta",
    "bytes": 24941177,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "cta_keyword": "WISH",
    "cta_kind": "question",
    "scheduled_at": "2026-09-15T08:27",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1115751114470269/",
+    "instagram": "https://www.instagram.com/reel/DdCOwkKjGHC/",
+    "youtube": "https://youtube.com/shorts/U5ZOFAG3Si0"
+   },
+   "caption_at_post": "What Edison said he was actually tapping into.\n\nThis is where Kevin Trudeau says the practice stops being about calm.\n\nOnce you are in alpha and theta, you are on the frequency where you can manifest what you actually want \u2014 and, in his framing, where you can reach the ether.\n\nThomas Edison and Albert Einstein both described using this technique deliberately. Not to relax. To tap into what one of them called the universal field of all intelligence.\n\nThey were not sitting in the dark with a candle to feel better. They were going somewhere to get something.\n\nComment WISH and I\u2019ll send you Kevin\u2019s free audios.\n\n#kevintrudeau #edison #einstein #meditation #manifestation #theta",
+   "posted_at": "2026-09-15T13:15"
   },
   {
    "file": "KT_MIND/01_THE-ALGORITHM-DECIDED_118s.mp4",
@@ -2588,7 +2615,7 @@
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question",
-   "scheduled_at": "2026-09-15T12:13"
+   "scheduled_at": "2026-09-15T13:59"
   },
   {
    "file": "KT_RICH/06_06_WHAT-SEPARATES-A-CHAMPION_103s.mp4",
