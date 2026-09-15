@@ -16,6 +16,10 @@ on:
         description: "Hook test: post every variant of this SLUG as Trial Reels"
         type: string
         default: ""
+      measure_now:
+        description: "Sample the numbers now, without waiting for the 6h window"
+        type: boolean
+        default: false
 
 # Never two runs at once. Two overlapping passes would each see a clip as due
 # and publish it twice - the exact duplicate-post failure this project has
@@ -119,7 +123,7 @@ jobs:
           AR_YT_CLIENT_ID: ${{ secrets.AR_YT_CLIENT_ID }}
           AR_YT_CLIENT_SECRET: ${{ secrets.AR_YT_CLIENT_SECRET }}
           AR_YT_REFRESH_TOKEN: ${{ secrets.AR_YT_REFRESH_TOKEN }}
-        run: python measure.py
+        run: python measure.py ${{ inputs.measure_now && '--force' || '' }}
 
       - name: Rebuild the calendar and the captions board
         if: ${{ !inputs.dry_run && inputs.trial == '' }}
