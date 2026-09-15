@@ -24,6 +24,7 @@ failure this project has already paid for.
     python3 add_clips.py --dry              # what it would add
     python3 add_clips.py KT_LIES KT_DEBT    # add those folders
     python3 add_clips.py --all
+    python3 add_clips.py --captions         # refresh captions, upload nothing
 """
 import json
 import os
@@ -77,9 +78,58 @@ def candidates(folders):
     return man, found
 
 
+def refresh_captions(dry=False):
+    """Push edited captions to the machine without touching a single video.
+
+    Replaces kt_caption_push.py, which sent them to Railway. Same reason it
+    existed: a caption is text, and re-uploading a hundred megabytes of video to
+    change a sentence is absurd. A published clip keeps the caption it went out
+    with - caption_at_post is frozen at posting time and never edited, because
+    the audit identifies a post by its text and a rewritten caption once made it
+    re-queue everything.
+    """
+    man = json.load(open(STATE))
+    caps = captions()
+    changed = []
+    for c in man["clips"]:
+        # A PUBLISHED CLIP KEEPS THE CAPTION IT WENT OUT WITH. Two reasons, and
+        # the second one nearly bit on the first run of this.
+        #
+        # 1. The audit identifies a post by its TEXT. Rewriting captions once
+        #    made it decide every post was missing and re-queue the lot.
+        # 2. kt_series.json still carries the "Comment RISE..." line baked into
+        #    the body, while the live captions have it stripped - poster adds
+        #    the right CTA per platform at posting time. Copying the series
+        #    version over a live one injects a SECOND ask into the caption. The
+        #    dry run flagged 13 clips in exactly this state, all published.
+        if c.get("posted_at") or c.get("links") or c.get("caption_at_post"):
+            continue
+        brand = c["file"].split("/")[0]
+        m = re.match(r"^\d+_(?:\d+_)?(.+?)_\d+s\.mp4$", c["file"].split("/")[-1])
+        if not m:
+            continue
+        new = caps.get((brand, m.group(1)))
+        if new and new != c.get("caption"):
+            changed.append(c["file"])
+            if not dry:
+                c["caption"] = new
+    if not changed:
+        print("every caption already matches kt_series.json")
+        return 0
+    print(f"{len(changed)} caption(s) {'would change' if dry else 'updated'}:")
+    for f in changed:
+        print("   ", f)
+    if not dry:
+        json.dump(man, open(STATE, "w"), indent=1)
+        print("commit and push state/manifest.json")
+    return 0
+
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     dry = "--dry" in sys.argv
+    if "--captions" in sys.argv:
+        return refresh_captions(dry)
     folders = args or ([d for d in os.listdir(POST)
                         if os.path.isdir(os.path.join(POST, d))
                         and not d.startswith("_")] if "--all" in sys.argv else [])
