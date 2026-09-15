@@ -44,7 +44,22 @@ from poster import _cfg, cred_prefix, brand_of, _j, T
 
 
 def instagram_stats(clips):
-    """like_count and comments_count per post, keyed by clip file."""
+    """Views, likes and comments per post, keyed by clip file.
+
+    VIEWS WERE NEVER COLLECTED, and that is a bigger hole than it looks. 15 Sept
+    2026: Kamay said a clip of his is past 170,000 views on Instagram and the
+    system could not see it, because this only ever asked for like_count and
+    comments_count. Every "engagement" number this project has reasoned from -
+    including the 157.7-against-19.1 finding for question CTAs - was likes plus
+    comments with no idea how many people actually watched.
+
+    Likes without views cannot tell a clip that reached 400 people and converted
+    hard from one that reached 200,000 and did not. Those are opposite lessons
+    and they look identical on a like count.
+
+    `media_product_type` comes back too, so a reel is never compared against a
+    carousel.
+    """
     out, cache = {}, {}
     for c in clips:
         link = (c.get("links") or {}).get("instagram") or ""
@@ -61,7 +76,10 @@ def instagram_stats(clips):
                 continue
             got = {}
             url = f"https://graph.facebook.com/v21.0/{ig}/media"
-            params = {"fields": "shortcode,like_count,comments_count,timestamp",
+            # `views` is the metric Instagram itself now shows on a reel and
+            # it is available on the media edge, so it costs no extra request.
+            params = {"fields": "shortcode,like_count,comments_count,timestamp,"
+                                "media_product_type,views",
                       "limit": 100, "access_token": tok}
             for _ in range(4):
                 d = _j(requests.get(url, params=params, timeout=T))
@@ -69,8 +87,10 @@ def instagram_stats(clips):
                     break
                 for m2 in d.get("data", []):
                     got[m2.get("shortcode")] = {
+                        "views": m2.get("views"),
                         "likes": m2.get("like_count"),
                         "comments": m2.get("comments_count"),
+                        "kind": m2.get("media_product_type"),
                     }
                 url = (d.get("paging") or {}).get("next")
                 params = None
