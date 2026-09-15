@@ -680,7 +680,7 @@
    "bytes": 8713788,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-15T15:30",
+   "scheduled_at": "2026-09-15T17:00",
    "cta_keyword": "RISE",
    "cta_variant": 3,
    "cta_kind": "question"
@@ -981,9 +981,23 @@
    "file": "AR_RITUAL/07_RIGHT-NOW-IM-BROKE_38s.mp4",
    "caption": "Two words separate the people who stay broke from the people who don't.\n\nNot \"I'm broke.\" \u2014 \"Right now I'm broke.\"\n\nKevin Trudeau says that's exactly how they spoke inside the brotherhood. You don't pretend you have money. You state what's true today, and you hold quietly that it isn't permanent.\n\nThe sentence you use about your own money is a sentence about your future.\n\n#moneymindset #wordsmatter #abundance #awakening #manifestation #mindsetshift",
    "bytes": 8493649,
-   "done": false,
-   "status": {},
-   "scheduled_at": "2026-09-15T13:59"
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
+   "scheduled_at": "2026-09-15T13:59",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/988863700887958/",
+    "instagram": "https://www.instagram.com/reel/DdUjDawCmHz/",
+    "youtube": "https://youtube.com/shorts/1liZFtmBOIQ"
+   },
+   "caption_at_post": "Two words separate the people who stay broke from the people who don't.\n\nNot \"I'm broke.\" \u2014 \"Right now I'm broke.\"\n\nKevin Trudeau says that's exactly how they spoke inside the brotherhood. You don't pretend you have money. You state what's true today, and you hold quietly that it isn't permanent.\n\nThe sentence you use about your own money is a sentence about your future.\n\n#moneymindset #wordsmatter #abundance #awakening #manifestation #mindsetshift",
+   "posted_at": "2026-09-15T16:18"
   },
   {
    "file": "AR_SOUND/01_EVERY-SOUND-IS-TRAINING-YOU_35s.mp4",
@@ -2610,12 +2624,26 @@
    "file": "KT_RICH/05_05_HOW-EVERY-RICH-PERSON-LEARNED-IT_103s.mp4",
    "caption": "How every rich person learned it from watching someone.\n\nAsk them and they all say the same two words: I had a mentor.\n\nWhich means they spent time near somebody further along, and started copying without being taught. Kevin Trudeau gives the example he lived: a pool champion picked up another player's exact twitches and hand movements, and years later someone watching him play could name who he had learned from.\n\nYou absorb the person, not the lesson.\n\nWhat did you take from this one?\n\n#kevintrudeau #mentorship #success #modeling #selfimprovement",
    "bytes": 18185499,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question",
-   "scheduled_at": "2026-09-15T13:59"
+   "scheduled_at": "2026-09-15T13:59",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1969351677073405/",
+    "instagram": "https://www.instagram.com/reel/DdUjX7wjM4n/",
+    "youtube": "https://youtube.com/shorts/so3SxE4kVbs"
+   },
+   "caption_at_post": "How every rich person learned it from watching someone.\n\nAsk them and they all say the same two words: I had a mentor.\n\nWhich means they spent time near somebody further along, and started copying without being taught. Kevin Trudeau gives the example he lived: a pool champion picked up another player's exact twitches and hand movements, and years later someone watching him play could name who he had learned from.\n\nYou absorb the person, not the lesson.\n\nWhat did you take from this one?\n\n#kevintrudeau #mentorship #success #modeling #selfimprovement",
+   "posted_at": "2026-09-15T16:21"
   },
   {
    "file": "KT_RICH/06_06_WHAT-SEPARATES-A-CHAMPION_103s.mp4",
