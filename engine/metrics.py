@@ -78,8 +78,8 @@ def instagram_stats(clips):
             url = f"https://graph.facebook.com/v21.0/{ig}/media"
             # `views` is the metric Instagram itself now shows on a reel and
             # it is available on the media edge, so it costs no extra request.
-            params = {"fields": "shortcode,like_count,comments_count,timestamp,"
-                                "media_product_type,views",
+            params = {"fields": "id,shortcode,like_count,comments_count,"
+                                "timestamp,media_product_type",
                       "limit": 100, "access_token": tok}
             for _ in range(4):
                 d = _j(requests.get(url, params=params, timeout=T))
@@ -87,7 +87,7 @@ def instagram_stats(clips):
                     break
                 for m2 in d.get("data", []):
                     got[m2.get("shortcode")] = {
-                        "views": m2.get("views"),
+                        "id": m2.get("id"),
                         "likes": m2.get("like_count"),
                         "comments": m2.get("comments_count"),
                         "kind": m2.get("media_product_type"),
@@ -96,10 +96,44 @@ def instagram_stats(clips):
                 params = None
                 if not url:
                     break
+            _add_plays(got, tok)
             cache[prefix] = got
         if code in cache.get(prefix, {}):
             out[c["file"]] = cache[prefix][code]
     return out
+
+
+def _add_plays(got, tok):
+    """How many people actually watched. A separate edge, and it has to be.
+
+    15 Sept 2026. The obvious thing - asking for a `views` field alongside
+    like_count - returns null on v21.0 for every reel: the field exists, the
+    request succeeds, and the number is simply not there. Verified on 102 real
+    posts before writing this, which is the only reason it is not still silently
+    returning nothing.
+
+    Plays live on the media's INSIGHTS edge. Batched through the `ids=` form,
+    fifty at a time, so this costs two or three requests rather than one per
+    post.
+    """
+    reels = [v for v in got.values()
+             if v.get("id") and v.get("kind") == "REELS"]
+    for i in range(0, len(reels), 50):
+        chunk = reels[i:i + 50]
+        d = _j(requests.get("https://graph.facebook.com/v21.0/", timeout=T,
+                            params={"ids": ",".join(v["id"] for v in chunk),
+                                    "fields": "insights.metric(plays,reach)",
+                                    "access_token": tok}))
+        if d.get("error"):
+            return
+        by_id = {v["id"]: v for v in chunk}
+        for mid, blob in d.items():
+            tgt = by_id.get(mid)
+            if not tgt:
+                continue
+            for row in ((blob.get("insights") or {}).get("data") or []):
+                vals = row.get("values") or [{}]
+                tgt[row.get("name")] = vals[0].get("value")
 
 
 def youtube_stats(clips):
