@@ -36,6 +36,7 @@ snapshot destroys it.
 import json
 import os
 import re
+import sys
 import time
 
 import requests
@@ -125,6 +126,18 @@ def _add_plays(got, tok):
                                     "fields": "insights.metric(plays,reach)",
                                     "access_token": tok}))
         if d.get("error"):
+            # SAY IT, DO NOT SWALLOW IT. 15 Sept 2026: this returned quietly
+            # twice and both times the measurement pass reported success with
+            # no view data at all. Asked the API directly and the answer was
+            # the same for every metric name: "(#10) Application does not have
+            # permission for this action" - the token has no
+            # instagram_manage_insights scope, so NO metric will ever work
+            # until it is re-granted. A missing permission and a wrong metric
+            # name look identical from here unless the error is printed.
+            msg = (d["error"] or {}).get("message", "")
+            sys.stderr.write(f"  instagram insights unavailable: {msg[:140]}\n")
+            for v in reels:
+                v["insights_error"] = msg[:140]
             return
         by_id = {v["id"]: v for v in chunk}
         for mid, blob in d.items():
