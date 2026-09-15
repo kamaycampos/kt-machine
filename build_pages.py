@@ -78,6 +78,14 @@ def calendar_ics(cs):
     return "\r\n".join(out) + "\r\n"
 
 
+def thumbs():
+    """Cover images, made on the Mac by make_thumbs.py. Absent is fine."""
+    try:
+        return json.load(open(os.path.join(DOCS, "thumbs.json")))
+    except (OSError, ValueError):
+        return {}
+
+
 def board(cs):
     """Ready to post at the top, everything else behind a button.
 
@@ -93,9 +101,29 @@ def board(cs):
     Pressing Copy marks the card done and hides it, so the list empties as he
     works through it instead of him re-reading the same captions.
     """
+    # WHAT "WAITING FOR YOU" ACTUALLY MEANS.
+    #
+    # 14 Sept 2026, Kamay: "the only 1 description available not a single time
+    # was the clip i was intended to post... i got only the first tiktok message
+    # to post, just one, and i went to the dashboard and it wasnt that one so i
+    # had to look it up in ALL."
+    #
+    # This read `"inbox" in status`, and TikTok reports two different things for
+    # the same outcome. When the upload finishes inside our 40-second poll the
+    # status is "in your TikTok inbox"; when it does not, we stop polling and
+    # write "uploaded but TikTok still processing". The clip lands in his inbox
+    # either way - TikTok just took longer than we waited.
+    #
+    # All THREE of his own clips today were in the second group, so the one the
+    # app notified him about was the one guaranteed to be missing from this
+    # page. Waiting on our own poll timeout to decide what he can see was never
+    # the right test: what matters is that TikTok accepted it and he has not
+    # ticked it off.
+    OK = ("inbox", "uploaded", "processing")
+
     def ready(c):
-        s = (c.get("status") or {})
-        return bool(c.get("posted_at")) and "inbox" in str(s.get("tiktok", "")) \
+        s = str((c.get("status") or {}).get("tiktok", "")).lower()
+        return bool(c.get("posted_at")) and any(k in s for k in OK) \
             and not c.get("tiktok_done")
 
     todo = [c for c in cs if ready(c)]
@@ -112,13 +140,23 @@ def board(cs):
            "margin:0 0 14px;background:#141821}"
            ".c.ready{border-color:#f5c542}"
            ".w{font-size:11px;letter-spacing:.08em;color:#8b93a5}"
-           ".fn{font-size:12px;color:#8b93a5;margin:2px 0 10px;word-break:break-all}"
+           ".fn{font-size:12px;color:#8b93a5;margin:2px 0 0;word-break:break-all}"
+           ".hd{display:flex;gap:11px;align-items:flex-start;margin:0 0 10px}"
+           ".th{width:54px;min-width:54px;aspect-ratio:9/16;object-fit:cover;"
+           "border-radius:7px;background:#1d2230;display:block}"
+           ".meta{min-width:0}"
            "pre{white-space:pre-wrap;margin:0;font:14px/1.55 inherit}"
            "button{margin-top:10px;padding:9px 16px;border-radius:8px;border:0;"
            "background:#f5c542;color:#111;font-weight:700}"
            "button.pick{background:#242a36;color:#e8e8ea;margin:2px 6px 12px 0;"
            "font-weight:600}button.pick.on{background:#f5c542;color:#111}"
            "#more{display:none}")
+
+    tb = thumbs()
+    # A picture on every one of a hundred cards is a 300KB page on a phone for
+    # no gain - the ones behind "See all" are already published. Pictures go on
+    # the cards he acts on, plus the newest handful for orientation.
+    recent = {c["file"] for c in rest[:24]}
 
     def card(c, is_ready):
         f = c["file"]
@@ -128,9 +166,14 @@ def board(cs):
         tag = "READY TO POST" if is_ready else (
             "posted" if c.get("posted_at") else "scheduled")
         cid = "t" + str(abs(hash(f)))
+        # The picture is the point: he is holding a phone with a clip in the
+        # TikTok inbox and needs to know THIS caption belongs to THAT video.
+        img = tb.get(f) if is_ready or f in recent else None
+        pic = f"<img class=th src='{img}' alt=''>" if img else "<div class=th></div>"
         return (f"<div class='c{' ready' if is_ready else ''}' data-who='{key}'>"
+                f"<div class=hd>{pic}<div class=meta>"
                 f"<div class=w>{who} &middot; {tag} {when}</div>"
-                f"<div class=fn>{html.escape(f)}</div>"
+                f"<div class=fn>{html.escape(f)}</div></div></div>"
                 f"<pre id='{cid}'>{html.escape(c.get('caption') or '')}</pre>"
                 f"<button onclick=\"cp('{cid}',this)\">Copy</button></div>")
 
