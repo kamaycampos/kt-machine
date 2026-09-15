@@ -121,9 +121,19 @@ def _add_plays(got, tok):
              if v.get("id") and v.get("kind") == "REELS"]
     for i in range(0, len(reels), 50):
         chunk = reels[i:i + 50]
+        # THE METRIC NAMES, TAKEN FROM THE API ITSELF. Asking for a made-up
+        # metric makes Graph list every valid one, which is the only way to
+        # find out - "plays" and a "views" FIELD both look plausible and
+        # neither works. views is the number Instagram shows on the reel;
+        # reach is unique accounts. The two retention metrics are the reason
+        # this is worth doing at all: 36 videos sat at the same ceiling and the
+        # bottleneck was never reach, it was whether people stayed.
         d = _j(requests.get("https://graph.facebook.com/v21.0/", timeout=T,
                             params={"ids": ",".join(v["id"] for v in chunk),
-                                    "fields": "insights.metric(plays,reach)",
+                                    "fields": "insights.metric(views,reach,"
+                                              "total_interactions,shares,saved,"
+                                              "ig_reels_avg_watch_time,"
+                                              "reels_skip_rate)",
                                     "access_token": tok}))
         if d.get("error"):
             # SAY IT, DO NOT SWALLOW IT. 15 Sept 2026: this returned quietly
