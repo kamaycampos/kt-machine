@@ -717,9 +717,23 @@
    "file": "AR_MONEY/06_FREE-TRADE-IS-NOT_49s.mp4",
    "caption": "Kevin Trudeau's definition of free trade is not the one you've been given.\n\nHis version: goods can only come in if the factory that made them met the same standards yours must meet. Same wages, same hours, same protections, same environmental rules.\n\nAnything else isn't free trade \u2014 it's one side competing with both hands tied.\n\n#freetrade #economics #systemexposed #moneytruth #awakening #financialliteracy",
    "bytes": 6322562,
-   "done": false,
-   "status": {},
-   "scheduled_at": "2026-09-16T12:30"
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
+   "scheduled_at": "2026-09-16T12:30",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/4528297817414095/",
+    "instagram": "https://www.instagram.com/reel/DdW9T9pjnnn/",
+    "youtube": "https://youtube.com/shorts/dOb5UfiqtRs"
+   },
+   "caption_at_post": "Kevin Trudeau's definition of free trade is not the one you've been given.\n\nHis version: goods can only come in if the factory that made them met the same standards yours must meet. Same wages, same hours, same protections, same environmental rules.\n\nAnything else isn't free trade \u2014 it's one side competing with both hands tied.\n\n#freetrade #economics #systemexposed #moneytruth #awakening #financialliteracy",
+   "posted_at": "2026-09-16T14:46"
   },
   {
    "file": "AR_MONEY/07_THEY-ARE-PAID-TO-KEEP-IT_48s.mp4",
@@ -3185,13 +3199,27 @@
    "file": "KT_DEBT/09_THE-FIVE-ACCOUNTS_90s.mp4",
    "caption": "Five pieces of credit. He names all five and how to use them.\n\nTwo installment loans: a mortgage and a car payment. Kevin Trudeau says he carries both on purpose, for the rating. They show stability, and stability is points.\n\nThree revolving lines: a Visa, a MasterCard, and a store card. He uses Neiman Marcus.\n\nThen the part almost nobody gets right. Use those cards \u2014 up to about 80% of the limit at least once. That dents the score for that month, but it proves you can carry real credit.\n\nThen pay it off. And going forward keep paying it off BEFORE the reporting date, not before the due date. Those are different days, and only one of them is the one being measured.\n\nStay current on the fixed loans, always.\n\nWhich of the five are you missing?\n\n#kevintrudeau #creditscore #creditrepair #financialliteracy #moneytips #creditcards",
    "bytes": 15149629,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "cta_keyword": "FREE",
    "cta_variant": 3,
    "cta_kind": "offer",
    "sync_checked": "16 Sept 2026: kt_sync_check PASS against the waveform",
-   "scheduled_at": "2026-09-16T14:16"
+   "scheduled_at": "2026-09-16T14:16",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1016422608144169/",
+    "instagram": "https://www.instagram.com/reel/DdW9m1TCdB8/",
+    "youtube": "https://youtube.com/shorts/rdp5FVYMhec"
+   },
+   "caption_at_post": "Five pieces of credit. He names all five and how to use them.\n\nTwo installment loans: a mortgage and a car payment. Kevin Trudeau says he carries both on purpose, for the rating. They show stability, and stability is points.\n\nThree revolving lines: a Visa, a MasterCard, and a store card. He uses Neiman Marcus.\n\nThen the part almost nobody gets right. Use those cards \u2014 up to about 80% of the limit at least once. That dents the score for that month, but it proves you can carry real credit.\n\nThen pay it off. And going forward keep paying it off BEFORE the reporting date, not before the due date. Those are different days, and only one of them is the one being measured.\n\nStay current on the fixed loans, always.\n\nWhich of the five are you missing?\n\n#kevintrudeau #creditscore #creditrepair #financialliteracy #moneytips #creditcards",
+   "posted_at": "2026-09-16T14:48"
   },
   {
    "file": "KT_LIES/01_LIVE-WITHIN-YOUR-MEANS-IS-THE-LIE_99s.mp4",
@@ -3250,7 +3278,8 @@
    "cta_keyword": "MONEY",
    "cta_variant": 2,
    "cta_kind": "question",
-   "sync_checked": "16 Sept 2026: kt_sync_check PASS against the waveform"
+   "sync_checked": "16 Sept 2026: kt_sync_check PASS against the waveform",
+   "scheduled_at": "2026-09-17T12:53"
   },
   {
    "file": "KT_LIES/03_THE-DRYER-FUND_57s.mp4",
@@ -3258,7 +3287,11 @@
    "bytes": 13435816,
    "done": false,
    "status": {},
-   "sync_checked": "16 Sept 2026: kt_sync_check PASS against the waveform"
+   "sync_checked": "16 Sept 2026: kt_sync_check PASS against the waveform",
+   "scheduled_at": "2026-09-17T07:45",
+   "cta_keyword": "WISH",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
