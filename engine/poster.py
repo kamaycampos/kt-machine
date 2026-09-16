@@ -393,13 +393,24 @@ def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
         cta = ASK_LINES[0] if platform in ("instagram", "tiktok") else ASK_LINES[1]
         # A VALUE CLIP NEVER LEAVES THE OFFER OUT. 16 Sept 2026, Kamay: "what if
         # the value ones get to millions of views for that same reason and nobody
-        # comments a key word?" He is right - a clip that ends only on a question
+        # comments a key word?" A clip that ends only on a question
         # gives a viral audience no road to the offer. The question stays first
         # (it is what earns saves and shares); one short keyword line follows.
-        # The 180K clip carried a keyword ask AND the most saves ever recorded,
-        # so the two do not cancel each other out.
-        if kw and platform in ("instagram", "tiktok", "facebook"):
-            cta = f"{cta}\n\nComment {kw} to get access.
+        # Same rules as the offer asks below: Instagram and Facebook TAKE TURNS
+        # on the same clip (Kamay, 11 Sept), and Yaren asks on Instagram only,
+        # in her own words (Yaren, 9 Sept).
+        v = variant if isinstance(variant, int) else 0
+        if not kw:
+            pass
+        elif cred_prefix(brand) == "AR":
+            if platform == "instagram":
+                extra = ar_ask("\n".join(body), kw, url, platform, variant)
+                if extra:
+                    cta = f"{cta}\n\n{extra}"
+        elif platform == "tiktok" or (
+                platform in ("instagram", "facebook")
+                and (platform == "instagram") == (v % 2 == 0)):
+            cta = f"{cta}\n\nComment {kw} to get access."
     elif cred_prefix(brand) == "AR":
         cta = ar_ask("\n".join(body), kw, url, platform, variant)
     elif platform in ("instagram", "facebook"):
