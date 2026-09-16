@@ -105,58 +105,43 @@ def instagram_stats(clips):
 
 
 def _add_plays(got, tok):
-    """How many people actually watched. A separate edge, and it has to be.
+    """Views, reach and retention. One request per reel - batching is gone.
 
-    15 Sept 2026. The obvious thing - asking for a `views` field alongside
-    like_count - returns null on v21.0 for every reel: the field exists, the
-    request succeeds, and the number is simply not there. Verified on 102 real
-    posts before writing this, which is the only reason it is not still silently
-    returning nothing.
+    15 Sept 2026, in this order, each one only found because the error was
+    printed instead of swallowed:
 
-    Plays live on the media's INSIGHTS edge. Batched through the `ids=` form,
-    fifty at a time, so this costs two or three requests rather than one per
-    post.
+      1. a `views` FIELD on the media edge -> null for every post
+      2. insights at all -> "(#10) Application does not have permission"
+         (the token had no instagram_manage_insights; now granted)
+      3. `plays` as a metric -> not in the valid list; the real name is `views`
+      4. batching through `ids=` -> "deprecated in v26.0+"
+
+    So: one call per reel. About a hundred requests every six hours, which is
+    nothing, and it is the only shape the API still supports.
+
+    ig_reels_avg_watch_time and reels_skip_rate are the point. Thirty-six
+    videos sat at the same view ceiling and the bottleneck was never reach - it
+    was whether anyone stayed. This is the first direct measure of that.
     """
+    METRICS = ("views,reach,total_interactions,shares,saved,"
+               "ig_reels_avg_watch_time,reels_skip_rate")
     reels = [v for v in got.values()
              if v.get("id") and v.get("kind") == "REELS"]
-    for i in range(0, len(reels), 50):
-        chunk = reels[i:i + 50]
-        # THE METRIC NAMES, TAKEN FROM THE API ITSELF. Asking for a made-up
-        # metric makes Graph list every valid one, which is the only way to
-        # find out - "plays" and a "views" FIELD both look plausible and
-        # neither works. views is the number Instagram shows on the reel;
-        # reach is unique accounts. The two retention metrics are the reason
-        # this is worth doing at all: 36 videos sat at the same ceiling and the
-        # bottleneck was never reach, it was whether people stayed.
-        d = _j(requests.get("https://graph.facebook.com/v21.0/", timeout=T,
-                            params={"ids": ",".join(v["id"] for v in chunk),
-                                    "fields": "insights.metric(views,reach,"
-                                              "total_interactions,shares,saved,"
-                                              "ig_reels_avg_watch_time,"
-                                              "reels_skip_rate)",
-                                    "access_token": tok}))
+    said = [False]
+    for v in reels:
+        d = _j(requests.get(
+            f"https://graph.facebook.com/v21.0/{v['id']}/insights", timeout=T,
+            params={"metric": METRICS, "access_token": tok}))
         if d.get("error"):
-            # SAY IT, DO NOT SWALLOW IT. 15 Sept 2026: this returned quietly
-            # twice and both times the measurement pass reported success with
-            # no view data at all. Asked the API directly and the answer was
-            # the same for every metric name: "(#10) Application does not have
-            # permission for this action" - the token has no
-            # instagram_manage_insights scope, so NO metric will ever work
-            # until it is re-granted. A missing permission and a wrong metric
-            # name look identical from here unless the error is printed.
             msg = (d["error"] or {}).get("message", "")
-            sys.stderr.write(f"  instagram insights unavailable: {msg[:140]}\n")
-            for v in reels:
-                v["insights_error"] = msg[:140]
-            return
-        by_id = {v["id"]: v for v in chunk}
-        for mid, blob in d.items():
-            tgt = by_id.get(mid)
-            if not tgt:
-                continue
-            for row in ((blob.get("insights") or {}).get("data") or []):
-                vals = row.get("values") or [{}]
-                tgt[row.get("name")] = vals[0].get("value")
+            if not said[0]:
+                sys.stderr.write(f"  instagram insights: {msg[:150]}\n")
+                said[0] = True
+            v["insights_error"] = msg[:150]
+            continue
+        for row in d.get("data") or []:
+            vals = row.get("values") or [{}]
+            v[row.get("name")] = vals[0].get("value")
 
 
 def youtube_stats(clips):
