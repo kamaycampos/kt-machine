@@ -482,9 +482,23 @@
    "file": "AR_MIND/03_INDUCTED-AT-SIX_24s.mp4",
    "caption": "Kevin Trudeau says he was inducted into the Brotherhood at six years old.\n\nYears of training later, they told him it was his lucky day. A group session with the elders, to reveal what he calls the secret of the universe \u2014 and the secret of building the exact life you want.\n\nHe asked if he should bring a pad and paper. They said no.\n\n#secretsociety #brotherhood #hiddenknowledge #awakening #kevintrudeau #initiation",
    "bytes": 3601916,
-   "done": false,
-   "status": {},
-   "scheduled_at": "2026-09-17T09:00"
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
+   "scheduled_at": "2026-09-17T09:00",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1453935386798316/",
+    "instagram": "https://www.instagram.com/reel/DdZBW_6jH1T/",
+    "youtube": "https://youtube.com/shorts/ZM2wkKj8RE0"
+   },
+   "caption_at_post": "Kevin Trudeau says he was inducted into the Brotherhood at six years old.\n\nYears of training later, they told him it was his lucky day. A group session with the elders, to reveal what he calls the secret of the universe \u2014 and the secret of building the exact life you want.\n\nHe asked if he should bring a pad and paper. They said no.\n\n#secretsociety #brotherhood #hiddenknowledge #awakening #kevintrudeau #initiation",
+   "posted_at": "2026-09-17T09:59"
   },
   {
    "file": "AR_MIND/04_A-THOUGHT-CHANGES-WATER_50s.mp4",
@@ -3341,13 +3355,27 @@
    "file": "KT_LIES/03_THE-DRYER-FUND_57s.mp4",
    "caption": "If you can't pay for it in cash, you can't afford it. That was the whole rule.\n\nKevin Trudeau grew up the only kid on the street without a dryer. So he asked his parents how everyone else had one.\n\nThey bought it on credit. They pay it off over time, and they pay interest on top.\n\nHis parents would not do it. They would save first, even if it took a year, and then buy it outright and owe nothing.\n\nBecause once you add the interest, you do not pay for the dryer once. You pay for it twice.\n\nAlmost everything you own on a payment plan, you are buying twice.\n\n#kevintrudeau #debtfree #payincash #moneyrules #financialfreedom #stopdebt",
    "bytes": 13435816,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "sync_checked": "16 Sept 2026: kt_sync_check PASS against the waveform",
    "scheduled_at": "2026-09-17T07:45",
    "cta_keyword": "WISH",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2310322206396498/",
+    "instagram": "https://www.instagram.com/reel/DdZBCSJkaW4/",
+    "youtube": "https://youtube.com/shorts/wNlARudgLPU"
+   },
+   "caption_at_post": "If you can't pay for it in cash, you can't afford it. That was the whole rule.\n\nKevin Trudeau grew up the only kid on the street without a dryer. So he asked his parents how everyone else had one.\n\nThey bought it on credit. They pay it off over time, and they pay interest on top.\n\nHis parents would not do it. They would save first, even if it took a year, and then buy it outright and owe nothing.\n\nBecause once you add the interest, you do not pay for the dryer once. You pay for it twice.\n\nAlmost everything you own on a payment plan, you are buying twice.\n\n#kevintrudeau #debtfree #payincash #moneyrules #financialfreedom #stopdebt",
+   "posted_at": "2026-09-17T09:57"
   }
  ]
 }
