@@ -3434,12 +3434,26 @@
    "file": "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4",
    "caption": "Two people get the same extra money.\n\nOne buys a sofa, a TV, a new car. The other buys something that goes up in value.\n\nSame money. Opposite direction.\n\n#kevintrudeau #money #wealth #millionairemindset #financialfreedom",
    "bytes": 7592917,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-09-18T08:25",
    "cta_keyword": "WISH",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1110484301433359/",
+    "instagram": "https://www.instagram.com/reel/DdbrNZAiLSN/",
+    "youtube": "https://youtube.com/shorts/5sKgvMbGG34"
+   },
+   "caption_at_post": "Two people get the same extra money.\n\nOne buys a sofa, a TV, a new car. The other buys something that goes up in value.\n\nSame money. Opposite direction.\n\n#kevintrudeau #money #wealth #millionairemindset #financialfreedom",
+   "posted_at": "2026-09-18T10:45"
   },
   {
    "file": "KT_MIND/03_THE-BILLION-DOLLAR-QUESTION_94s.mp4",
