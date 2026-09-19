@@ -4,8 +4,15 @@
  "test": true,
  "note": "19 Sept 2026 - first cloud factory test. Never queued (test mode).",
  "clips": [
-  {"slug": "HALF-AN-HOUR-TEST", "in": 5.24, "out": 150.12,
-   "hook": ["How to save $500", "in 30 minutes"],
-   "caption": "Factory test clip - never posted.\n\n#test"}
+  {
+   "slug": "HALF-AN-HOUR-TEST",
+   "in": 5.24,
+   "out": 150.12,
+   "hook": [
+    "How to save",
+    "$500 fast"
+   ],
+   "caption": "Factory test clip - never posted.\n\n#test"
+  }
  ]
 }
