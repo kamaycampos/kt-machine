@@ -1,0 +1,58 @@
+# THE CLOUD CLIP FACTORY - 19 Sept 2026.
+# Clips get made with Kamay's Mac shut. The Mac's only job is to stock encrypted
+# HD episodes (kt_source_sync.py, because YouTube blocks cloud downloads); this
+# transcribes them, and turns committed clip plans into verified, queued clips.
+name: factory
+on:
+  workflow_dispatch:
+  push:
+    paths: ["factory/plans/**"]
+  schedule:
+    - cron: "17 7 * * *"          # daily: transcribe whatever the Mac stocked
+permissions:
+  contents: write
+concurrency:
+  group: factory
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/cache@v4
+        with:
+          path: ~/wcache
+          key: whisper-2ca53bb-small-en-v1
+      - name: Set up the Mac's layout here
+        run: bash factory/setup.sh
+      - name: Transcribe newly stocked episodes
+        env:
+          FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+          GH_TOKEN: ${{ github.token }}
+        run: python factory/transcribe.py --max 2
+      - name: Build clips from plans
+        env:
+          FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "kt-factory"
+          git config user.email "kt-factory@users.noreply.github.com"
+          python factory/run_plans.py
+      - name: Save plan state
+        if: always()
+        run: |
+          git add factory/plans/_done.json factory/kt_series.json factory/reports 2>/dev/null || true
+          git diff --staged --quiet || git commit -q -m "factory: plans built $(date -u +%FT%TZ)"
+          git pull -q --rebase && git push -q || true
+      - name: Test clips for inspection
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: factory-test-clips
+          path: /tmp/factory_out
+          if-no-files-found: ignore
+          retention-days: 7
