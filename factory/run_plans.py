@@ -15,6 +15,7 @@ the clips come back as a workflow artifact for inspection.
 import json, os, re, shutil, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.expanduser("~/Kamay"))
 from transcribe import fetch_source, sh  # noqa: E402
 
 K = os.path.expanduser("~/Kamay")
@@ -28,6 +29,46 @@ OUT = "/tmp/factory_out"
 def height(path):
     m = re.search(r"Video:.*?(\d{3,4})x(\d{3,4})", sh("ffmpeg", "-i", path).stderr)
     return int(m[2]) if m else 0
+
+
+def fix_edges(key):
+    """Put each cut on a real sentence boundary, measured at WORD level here.
+
+    19 Sept 2026: plans are written from a transcript whose cue times are rounded
+    to whole seconds, and 6 of the first 8 cloud clips failed the ending check by
+    a fraction of a second. So the cut is settled here, where the words are: the
+    start moves to the true start of its sentence; a failing end moves to the
+    nearest sentence end that passes kt_payoff.verdict - LATER first (Kamay's
+    rule: always run on to the payoff), then earlier. Every move is printed.
+    """
+    import kt_payoff
+    path = os.path.join(PLANS, f"{key}.json")
+    p = json.load(open(path))
+    src = os.path.join(K, "Kamay Content", "1_RAW", "KT_SOURCE", p["source"])
+    keep = []
+    for c in p["clips"]:
+        a, b = float(c["in"]), float(c["out"])
+        near = [s for s in kt_payoff.sentences(src, max(0, a - 20), a + 20) if abs(s[0] - a) <= 3.0]
+        if near:
+            s0 = min(near, key=lambda s: abs(s[0] - a))
+            a = round(max(0.0, s0[0] - 0.10), 2)
+        if kt_payoff.verdict(src, a, b):
+            ends = sorted({round(s[1], 2) for s in kt_payoff.sentences(src, max(0, b - 25), b + 25)})
+            later = [e for e in ends if b < e <= b + 20]
+            earlier = [e for e in reversed(ends) if b - 15 <= e <= b]
+            fixed = next((e + 0.15 for e in later + earlier
+                          if not kt_payoff.verdict(src, a, e + 0.15)), None)
+            if fixed is None:
+                print(f"  {c['slug']}: no passing ending within -15/+20s of {b} - dropped")
+                continue
+            print(f"  {c['slug']}: ending {b} -> {fixed:.2f}")
+            b = round(fixed, 2)
+        if (a, b) != (float(c["in"]), float(c["out"])):
+            print(f"  {c['slug']}: cut {c['in']}-{c['out']} -> {a}-{b}")
+        c["in"], c["out"] = a, b
+        keep.append(c)
+    p["clips"] = keep
+    json.dump(p, open(path, "w"), indent=1, ensure_ascii=False)
 
 
 def batch(keys, test):
@@ -59,6 +100,7 @@ def main():
         if h < 1080:
             print(f"  {k}: REFUSED - source is {h}p, the gate is 1080p")
             continue
+        fix_edges(k)
         ready[bool(p.get("test"))].append(k)
     built = []
     if ready[True]:
