@@ -3508,13 +3508,27 @@
    "file": "KT_MIND/08_THE-24-HOUR-RULE_61s.mp4",
    "caption": "Your brain reacts differently when you act on an idea within 24 hours.\n\nKevin Trudeau's friend Ron Ball teaches the neuroscience: act within a day and different chemicals are released, different neural pathways form, different parts of the brain light up.\n\nWait 48 or 72 hours and it's night and day.\n\nSuccessful people have a do-it-now habit. Everyone else has a tomorrow habit.\n\nWhat have you been putting off?\n\n#kevintrudeau #doitnow #procrastination #productivity #success #mindset",
    "bytes": 10704019,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-09-19T07:23",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question",
-   "hd_redo": "18 Sept 2026: re-rendered from 1080p source, sync PASS"
+   "hd_redo": "18 Sept 2026: re-rendered from 1080p source, sync PASS",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1432473135480972/",
+    "instagram": "https://www.instagram.com/reel/DdeFnqhjz5S/",
+    "youtube": "https://youtube.com/shorts/QRJukuwiKrg"
+   },
+   "caption_at_post": "Your brain reacts differently when you act on an idea within 24 hours.\n\nKevin Trudeau's friend Ron Ball teaches the neuroscience: act within a day and different chemicals are released, different neural pathways form, different parts of the brain light up.\n\nWait 48 or 72 hours and it's night and day.\n\nSuccessful people have a do-it-now habit. Everyone else has a tomorrow habit.\n\nWhat have you been putting off?\n\n#kevintrudeau #doitnow #procrastination #productivity #success #mindset",
+   "posted_at": "2026-09-19T09:13"
   },
   {
    "file": "KT_RICH/01_WHAT-A-MILLION-REALLY-MEANS_109s.mp4",
