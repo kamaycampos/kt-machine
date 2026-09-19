@@ -1,5 +1,6 @@
-# Can a GitHub server fetch Kevin's videos from YouTube in 1080p? (19 Sept 2026)
-# The cloud clip factory depends entirely on this answer. Manual trigger only.
+# Can a GitHub server fetch Kevin's episodes? 19 Sept 2026.
+# YouTube: blocked ("not a bot" check). Rumble (his channel "The Kevin Trudeau
+# Show Limitless") is behind Cloudflare, passable by posing as Chrome.
 name: factory-test
 on: workflow_dispatch
 jobs:
@@ -7,11 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - name: Try a 30-second 1080p download
+      - name: Rumble, posing as Chrome
         run: |
-          pip install -q -U yt-dlp
+          pip install -q -U "yt-dlp[default,curl-cffi]"
           sudo apt-get -qq update >/dev/null && sudo apt-get -qq install -y ffmpeg >/dev/null
-          yt-dlp --version
-          yt-dlp --no-warnings -F "https://www.youtube.com/watch?v=bCIrExQ0gPQ" 2>&1 | grep -E "1080|ERROR|Sign in|bot" | head -8 || true
-          yt-dlp --no-warnings -f "bv*[height=1080][protocol*=m3u8]+ba/bv*[height=1080]+ba" --download-sections "*300-330" -o test.mp4 "https://www.youtube.com/watch?v=bCIrExQ0gPQ" 2>&1 | tail -3
-          ls -la test.mp4 && ffprobe -v error -show_entries stream=width,height -of csv=p=0 test.mp4 && echo "FACTORY-FETCH: WORKS" || echo "FACTORY-FETCH: BLOCKED"
+          U="https://rumble.com/v7dqhzo-the-7-words-millionaires-used-to-get-rich.html"
+          yt-dlp --no-warnings --impersonate chrome -F "$U" 2>&1 | grep -E "1080|1440|2160|ERROR" | head -5 || true
+          yt-dlp --no-warnings --impersonate chrome -f "bv*[height<=1440]+ba/b[height<=1440]" --download-sections "*300-330" -o test.mp4 "$U" 2>&1 | tail -2
+          ls -la test.mp4 && ffprobe -v error -show_entries stream=width,height -of csv=p=0 test.mp4 && echo "RUMBLE-FETCH: WORKS" || echo "RUMBLE-FETCH: BLOCKED"
+          U2="https://rumble.com/c/KevinTrudeauShow/videos?page=2"
+          yt-dlp --no-warnings --impersonate chrome --flat-playlist --print "%(url)s" "$U2" 2>&1 | head -3
