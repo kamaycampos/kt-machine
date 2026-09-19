@@ -63,8 +63,13 @@ def main():
                 break
             time.sleep(15 * (attempt + 1))
         h = height(mp4) if os.path.exists(mp4) else 0
+        if h == 0:
+            # Cloudflare turned every attempt away. Not the episode's fault: try
+            # again on the next run instead of writing it off.
+            print(f"    NOT FETCHED this run, will retry ({r.stderr.strip()[-120:]})")
+            continue
         if h < 1080:
-            print(f"    REFUSED: {h}p ({r.stderr.strip()[-150:]})")
+            print(f"    REFUSED: {h}p - under the 1080p gate")
             idx[vid] = {"title": e["title"], "rumble": url, "status": "rejected", "height": h}
             continue
         enc = f"/tmp/{vid}.mp4.enc"
