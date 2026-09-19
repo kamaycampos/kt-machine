@@ -46,7 +46,10 @@ def parse(html, page):
         out[url] = {"title": json.loads(f'"{title}"'), "dur": int(g(r'"duration":(\d+)') or 0),
                     "date": (g(r'"upload_date":"([^"]+)"') or "")[:10],
                     "height": int(g(r'"video_height":(\d+)') or 0),
-                    "short": g(r'"is_short":(true|false)') == "true", "page": page}
+                    "short": g(r'"is_short":(true|false)') == "true", "page": page,
+                    # The direct stream: fetching it skips the episode's web page,
+                    # which is the request Cloudflare refuses most often.
+                    "hls": g(r'^,"videos":\[\{"url":"([^"]+)"')}
     return out
 
 

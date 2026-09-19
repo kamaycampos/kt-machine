@@ -55,10 +55,12 @@ def main():
         vid = re.search(r"/(v[a-z0-9]+)-", url)[1]
         mp4 = os.path.join(SRC, f"{vid}.mp4")
         print(f"  {vid}  {e['dur']/60:.0f} min  {e['height']}p  {e['title'][:70]}")
-        for attempt in range(4):
+        for attempt in range(6):
+            # Alternate: the direct stream (skips the page Cloudflare guards) and the page.
+            target = e.get("hls") if (attempt % 2 == 0 and e.get("hls")) else url
             r = sh("yt-dlp", "--no-warnings", "-q", "--impersonate", "chrome", "-N", "8",
                    "-f", "bv*[height<=1440]+ba/b[height<=1440]", "--merge-output-format", "mp4",
-                   "-o", mp4, url)
+                   "-o", mp4, target)
             if os.path.exists(mp4):
                 break
             time.sleep(15 * (attempt + 1))
