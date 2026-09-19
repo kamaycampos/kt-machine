@@ -38,6 +38,7 @@ concurrency:
 
 permissions:
   contents: write               # to commit the state file back
+  issues: write                 # queue_alarm.py emails Kamay via an issue
 
 jobs:
   post:
@@ -148,6 +149,14 @@ jobs:
         env:
           KT_TZ: America/New_York
         run: python build_pages.py
+
+      - name: Queue alarm
+        if: ${{ !inputs.dry_run && inputs.trial == '' }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          KT_DATA: state
+        run: python queue_alarm.py
 
       - name: Remember what was posted
         if: ${{ !inputs.dry_run && inputs.trial == '' }}

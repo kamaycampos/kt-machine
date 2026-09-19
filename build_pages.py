@@ -74,8 +74,43 @@ def calendar_ics(cs):
                 "DESCRIPTION:" + esc("\n".join(body)),
                 "STATUS:" + ("CONFIRMED" if live else "TENTATIVE"),
                 "END:VEVENT"]
+    out += queue_alarm_events(cs, now)
     out.append("END:VCALENDAR")
     return "\r\n".join(out) + "\r\n"
+
+
+def queue_alarm_events(cs, now):
+    """THE QUEUE MUST NEVER RUN DRY UNNOTICED AGAIN.
+
+    17 Sept 2026: Kamay's account had ZERO clips left to post and nobody knew
+    until he asked why only one clip went out. His phone already shows this
+    calendar, so the warning lives here: an all-day event on the day the clips
+    run out, and - once that is 3 days away or less - a second one TODAY that
+    says how many days are left. Stable UIDs, so they move instead of piling up.
+    Kamay's account only; Awakened Rise's queue is Yaren's.
+    """
+    from zoneinfo import ZoneInfo
+    left = [c for c in cs if not c.get("done") and not c.get("posted_at")
+            and not c["file"].startswith("AR_")]
+    today = datetime.now(ZoneInfo(TZ)).date()
+    last = max((c["scheduled_at"][:10] for c in left if c.get("scheduled_at")),
+               default=None)
+    runs_out = (datetime.strptime(last, "%Y-%m-%d").date() + timedelta(days=1)
+                if last else today)
+    days = (runs_out - today).days
+    ev = []
+
+    def allday(uid, day, text):
+        return ["BEGIN:VEVENT", f"UID:{uid}@kt-machine", "DTSTAMP:" + now,
+                "DTSTART;VALUE=DATE:" + day.strftime("%Y%m%d"),
+                "DTEND;VALUE=DATE:" + (day + timedelta(days=1)).strftime("%Y%m%d"),
+                "SUMMARY:" + esc(text), "TRANSP:TRANSPARENT", "END:VEVENT"]
+    ev += allday("queue-runout-kamay", runs_out,
+                 f"!! KAMAY - NO CLIPS LEFT TO POST ({len(left)} queued before this)")
+    if days <= 3:
+        ev += allday("queue-warning-kamay", today,
+                     f"!! KAMAY - clips run out in {days} day(s), on {runs_out:%a %d %b} - make more")
+    return ev
 
 
 def thumbs():
