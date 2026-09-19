@@ -29,6 +29,13 @@ jobs:
           key: whisper-2ca53bb-small-en-v1
       - name: Set up the Mac's layout here
         run: bash factory/setup.sh
+      - name: Stock HD episodes from Rumble
+        env:
+          FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          pip install -q -U "yt-dlp[default,curl-cffi]" curl_cffi
+          python factory/rumble_stock.py --max 2 --stock 6
       - name: Transcribe newly stocked episodes
         env:
           FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
