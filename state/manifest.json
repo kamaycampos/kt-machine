@@ -3650,13 +3650,27 @@
    "file": "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4",
    "caption": "You hear your voice on a recording and think: that is not me.\n\nIt is. That is exactly what everyone else hears.\n\nWhen you speak, two-thirds of the sound travels through bone straight into your head. Your whole brain vibrates. When you only listen, just your eardrum does. When you only think, nothing vibrates.\n\nThat is why Kevin Trudeau says the spoken word is the most powerful. Champions talk to themselves out loud for a reason.\n\n#kevintrudeau #spokenword #mindset #selftalk #brain #success",
    "bytes": 16824755,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-20T15:57",
    "cta_keyword": "MONEY",
    "cta_variant": 8,
    "cta_kind": "question",
-   "hd_redo": "18 Sept 2026: re-rendered from 1080p source, sync PASS"
+   "hd_redo": "18 Sept 2026: re-rendered from 1080p source, sync PASS",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2248669919198147/",
+    "instagram": "https://www.instagram.com/reel/DdhnihTGqG2/",
+    "youtube": "https://youtube.com/shorts/IWBK5OQhMng"
+   },
+   "caption_at_post": "You hear your voice on a recording and think: that is not me.\n\nIt is. That is exactly what everyone else hears.\n\nWhen you speak, two-thirds of the sound travels through bone straight into your head. Your whole brain vibrates. When you only listen, just your eardrum does. When you only think, nothing vibrates.\n\nThat is why Kevin Trudeau says the spoken word is the most powerful. Champions talk to themselves out loud for a reason.\n\n#kevintrudeau #spokenword #mindset #selftalk #brain #success",
+   "posted_at": "2026-09-20T18:07"
   },
   {
    "file": "KT_SECRET/01_THE-SAME-RECORDS_150s.mp4",
