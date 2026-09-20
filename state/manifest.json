@@ -3672,13 +3672,27 @@
    "file": "KT_SECRET/02_TEN-THOUSAND-WAYS_113s.mp4",
    "caption": "Fall seven times, stand up eight.\n\nThomas Edison made about 10,000 attempts at the light bulb. Filament after filament burned out.\n\nThey asked him how it felt to fail 10,000 times. He said he didn't fail. He successfully found 10,000 ways it didn't work, and every failure put him closer.\n\nNever confuse a single defeat with a final defeat.\n\n#kevintrudeau #persistence #thomasedison #nevergiveup #success #mindset",
    "bytes": 19275543,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-20T08:22",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question",
-   "hd_redo": "18 Sept 2026: re-rendered from 1080p source, sync PASS"
+   "hd_redo": "18 Sept 2026: re-rendered from 1080p source, sync PASS",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/4526119867673381/",
+    "instagram": "https://www.instagram.com/reel/Ddg1pD1DwKt/",
+    "youtube": "https://youtube.com/shorts/hI4lhlT_cSI"
+   },
+   "caption_at_post": "Fall seven times, stand up eight.\n\nThomas Edison made about 10,000 attempts at the light bulb. Filament after filament burned out.\n\nThey asked him how it felt to fail 10,000 times. He said he didn't fail. He successfully found 10,000 ways it didn't work, and every failure put him closer.\n\nNever confuse a single defeat with a final defeat.\n\n#kevintrudeau #persistence #thomasedison #nevergiveup #success #mindset",
+   "posted_at": "2026-09-20T10:51"
   },
   {
    "file": "KT_SECRET/04_NINE-TO-FIVE-BILLIONAIRE_120s.mp4",
