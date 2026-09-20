@@ -3472,13 +3472,27 @@
    "file": "KT_MIND/04_SAME-WORK-DIFFERENT-DREAM_126s.mp4",
    "caption": "Two friends from the same school, starting in New York real estate in the 1970s. Same money, same skills, same connections.\n\nOne found a $1 million property and planned to turn it into $1.5 million.\n\nThe other found a $100 million hotel and planned to turn it into $300 million.\n\nBoth deals took about the same time and effort. Both worked. One made half a million. The other made 200 million.\n\nThe only difference was the size of the dream.\n\n#kevintrudeau #thinkbig #realestate #dreambig #wealth #success",
    "bytes": 20992680,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-20T12:23",
    "cta_keyword": "WISH",
    "cta_variant": 12,
    "cta_kind": "offer",
-   "hd_redo": "18 Sept 2026: re-rendered from 1080p source, sync PASS"
+   "hd_redo": "18 Sept 2026: re-rendered from 1080p source, sync PASS",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1052024520768755/",
+    "instagram": "https://www.instagram.com/reel/DdhKE2MAT4f/",
+    "youtube": "https://youtube.com/shorts/MHWLLMVJfbU"
+   },
+   "caption_at_post": "Two friends from the same school, starting in New York real estate in the 1970s. Same money, same skills, same connections.\n\nOne found a $1 million property and planned to turn it into $1.5 million.\n\nThe other found a $100 million hotel and planned to turn it into $300 million.\n\nBoth deals took about the same time and effort. Both worked. One made half a million. The other made 200 million.\n\nThe only difference was the size of the dream.\n\n#kevintrudeau #thinkbig #realestate #dreambig #wealth #success",
+   "posted_at": "2026-09-20T13:51"
   },
   {
    "file": "KT_MIND/05_THE-TRASH-TEST_84s.mp4",
