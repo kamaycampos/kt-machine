@@ -3425,7 +3425,7 @@
    "bytes": 24210573,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-21T12:06",
+   "scheduled_at": "2026-09-21T13:26",
    "cta_keyword": "MONEY",
    "cta_variant": 14,
    "cta_kind": "question",
@@ -3524,13 +3524,27 @@
    "file": "KT_MIND/07_TWO-SALESMEN-QUIT_145s.mp4",
    "caption": "His staff walked in and nobody would look him in the eye.\n\nKevin Trudeau asked what the problem was. Is the warehouse on fire? Are the bank accounts frozen? Is the FBI on the way?\n\nTwo salesmen had quit to start a competing company, and they were taking clients with them.\n\nHis answer: \"That's not a problem. Let's celebrate.\" He wanted them to succeed. There is plenty of room for everybody.\n\nThey succeeded. His company kept succeeding too. They stayed friends.\n\n#kevintrudeau #leadership #abundancemindset #business #entrepreneur #success",
    "bytes": 22563872,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-21T08:23",
    "cta_keyword": "FREE",
    "cta_variant": 15,
    "cta_kind": "offer",
-   "hd_redo": "18 Sept 2026: re-rendered from 1080p source, sync PASS"
+   "hd_redo": "18 Sept 2026: re-rendered from 1080p source, sync PASS",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1760280938512127/",
+    "instagram": "https://www.instagram.com/reel/DdjnT1HFBcu/",
+    "youtube": "https://youtube.com/shorts/gtXjwsYJAqs"
+   },
+   "caption_at_post": "His staff walked in and nobody would look him in the eye.\n\nKevin Trudeau asked what the problem was. Is the warehouse on fire? Are the bank accounts frozen? Is the FBI on the way?\n\nTwo salesmen had quit to start a competing company, and they were taking clients with them.\n\nHis answer: \"That's not a problem. Let's celebrate.\" He wanted them to succeed. There is plenty of room for everybody.\n\nThey succeeded. His company kept succeeding too. They stayed friends.\n\n#kevintrudeau #leadership #abundancemindset #business #entrepreneur #success",
+   "posted_at": "2026-09-21T12:44"
   },
   {
    "file": "KT_MIND/08_THE-24-HOUR-RULE_61s.mp4",
