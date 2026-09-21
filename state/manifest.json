@@ -3423,13 +3423,27 @@
    "file": "KT_RICH/01_THEY-STOLE-HIS-RABBIT_158s.mp4",
    "caption": "They took the character he knew would make him rich and famous.\n\nWalt Disney had business partners in New York. Through the fine print of the contract, the company owned everything he created. He was pushed out, and they kept his cartoon: Oswald the Rabbit.\n\nHe moved to California broke and depressed. For a year.\n\nThen one morning it hit him. Oswald didn't create Walt Disney. Walt Disney created Oswald. And if he could create one character, he could create another.\n\nIn about 30 minutes, he drew Mickey Mouse.\n\nNobody can take away your ability to create.\n\n#kevintrudeau #waltdisney #millionairemindset #nevergiveup #successstory #wealth",
    "bytes": 24210573,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-21T13:26",
    "cta_keyword": "MONEY",
    "cta_variant": 14,
    "cta_kind": "question",
-   "hd_redo": "18 Sept 2026: re-rendered from 1080p source, sync PASS"
+   "hd_redo": "18 Sept 2026: re-rendered from 1080p source, sync PASS",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1405073964312340/",
+    "instagram": "https://www.instagram.com/reel/DdkCwXqgv_Q/",
+    "youtube": "https://youtube.com/shorts/ubGw0D2P6yI"
+   },
+   "caption_at_post": "They took the character he knew would make him rich and famous.\n\nWalt Disney had business partners in New York. Through the fine print of the contract, the company owned everything he created. He was pushed out, and they kept his cartoon: Oswald the Rabbit.\n\nHe moved to California broke and depressed. For a year.\n\nThen one morning it hit him. Oswald didn't create Walt Disney. Walt Disney created Oswald. And if he could create one character, he could create another.\n\nIn about 30 minutes, he drew Mickey Mouse.\n\nNobody can take away your ability to create.\n\n#kevintrudeau #waltdisney #millionairemindset #nevergiveup #successstory #wealth",
+   "posted_at": "2026-09-21T16:44"
   },
   {
    "file": "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4",
@@ -3590,7 +3604,7 @@
    "bytes": 11471596,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-21T16:00",
+   "scheduled_at": "2026-09-21T17:26",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer",
