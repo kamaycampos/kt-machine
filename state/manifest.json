@@ -3738,13 +3738,27 @@
    "file": "KT_SECRET/05_NOT-THE-HAMBURGER-BUSINESS_124s.mp4",
    "caption": "Ray Kroc had McDonald's franchises and was about to lose his house.\n\nHe was keeping about 1% of each store's sales. He couldn't pay his bills, and the bank was going to foreclose.\n\nA stranger who overheard him at the bank sat down and looked at his deal.\n\n\"You're not in the hamburger business. You're in the real estate business.\"\n\nBuy the land. Make every franchise build on it and pay you rent.\n\n#kevintrudeau #raykroc #mcdonalds #realestate #wealth #business",
    "bytes": 22922952,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-20T20:29",
    "cta_keyword": "BRAIN",
    "cta_variant": 13,
    "cta_kind": "question",
-   "hd_redo": "18 Sept 2026: re-rendered from 1080p source, sync PASS"
+   "hd_redo": "18 Sept 2026: re-rendered from 1080p source, sync PASS",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2343949566423960/",
+    "instagram": "https://www.instagram.com/reel/DdiXfPAlQE5/",
+    "youtube": "https://youtube.com/shorts/6a93cuxya5E"
+   },
+   "caption_at_post": "Ray Kroc had McDonald's franchises and was about to lose his house.\n\nHe was keeping about 1% of each store's sales. He couldn't pay his bills, and the bank was going to foreclose.\n\nA stranger who overheard him at the bank sat down and looked at his deal.\n\n\"You're not in the hamburger business. You're in the real estate business.\"\n\nBuy the land. Make every franchise build on it and pay you rent.\n\n#kevintrudeau #raykroc #mcdonalds #realestate #wealth #business",
+   "posted_at": "2026-09-21T01:06"
   }
  ]
 }
