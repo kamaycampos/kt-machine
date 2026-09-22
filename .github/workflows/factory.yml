@@ -17,6 +17,7 @@ concurrency:
   cancel-in-progress: false
 env:
   FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+  TRANSCRIPT_KEY: ${{ secrets.TRANSCRIPT_KEY }}
   GH_TOKEN: ${{ github.token }}
 jobs:
   stock:
@@ -74,6 +75,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Record every finished transcript (single writer)
         run: python factory/transcripts_index.py mark
+      - name: Transcripts readable by the planning agent
+        run: python factory/rekey_transcripts.py
 
   plan:
     runs-on: ubuntu-latest

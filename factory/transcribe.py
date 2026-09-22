@@ -66,7 +66,12 @@ def main():
         text = open(srt).read()
         mins = max(1.0, idx[vid].get("duration", 1800) / 60)
         stops = len(re.findall(r"[.!?]", text)) / mins
-        crypt(srt, srt + ".enc", decrypt=False)
+        # Transcripts use their OWN key (TRANSCRIPT_KEY): the weekly planning agent
+        # must read them, but must never hold the key to the full videos.
+        r2 = sh("openssl", "enc", "-aes-256-cbc", "-pbkdf2", "-salt", "-pass", "env:TRANSCRIPT_KEY",
+                "-in", srt, "-out", srt + ".enc")
+        if r2.returncode:
+            raise SystemExit(f"transcript encrypt failed: {r2.stderr[-200:]}")
         u = sh("gh", "release", "upload", TAG, srt + ".enc", "--clobber", "-R", REPO)
         if u.returncode:
             print(f"  {vid}: upload failed {u.stderr[-200:]}")
