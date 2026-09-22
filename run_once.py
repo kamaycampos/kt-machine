@@ -52,6 +52,15 @@ def log(msg):
 LOG_ASSET = "posted_log.txt"
 
 
+def tiktok_failed(status):
+    """True when TikTok did not take the clip. Only two answers mean it did:
+    it reached the inbox, or TikTok is still processing an upload it accepted."""
+    s = (status or "").lower()
+    if not s:
+        return False
+    return not ("inbox" in s or "processing" in s)
+
+
 def _repo():
     return os.environ.get("GH_REPO", "kamaycampos/kt-machine")
 
@@ -139,6 +148,37 @@ def main():
             log(f"already published, not posting again: {c['file']} ({at})")
     if recovered:
         engine.save(man)
+
+    # TIKTOK FAILS ON ITS OWN AND USED TO STAY FAILED.
+    #
+    # 22 Sept 2026, Kamay: "send me a new one so i can post in tiktok". The
+    # 23:16 clip reached Instagram, Facebook and YouTube and TikTok answered
+    # "chunk 1/1 failed 500" - their server, not ours. Nothing retried, so his
+    # inbox stayed empty and the clip was marked posted and never looked at
+    # again. A platform that fails alone is now retried alone, on the next run,
+    # without republishing anywhere else.
+    if not dry:
+        for c in man["clips"]:
+            if not c.get("tiktok_retry") or c.get("done"):
+                continue
+            path = os.path.join(engine.MEDIA, c["file"])
+            if not os.path.exists(path):
+                os.makedirs(os.path.dirname(path), exist_ok=True)
+                import urllib.request
+                try:
+                    urllib.request.urlretrieve(media_url(c["file"]), path)
+                except Exception as e:
+                    log(f"tiktok retry - could not fetch {c['file']}: {e}")
+                    continue
+            res, _l = poster.publish(c, path, media_url(c["file"]), only=["tiktok"])
+            tt = (res or {}).get("tiktok", "")
+            log(f"tiktok retry {c['file']}: {tt}")
+            st = dict(c.get("status") or {}); st["tiktok"] = tt; c["status"] = st
+            c["tiktok_retry"] = tiktok_failed(tt)
+            if not c["tiktok_retry"]:
+                c.pop("tiktok_retry", None)
+            engine.save(man)
+            break                      # one retry per run; never a burst
 
     # RELEASE A LOCK NOBODY IS HOLDING.
     #
@@ -235,6 +275,9 @@ def main():
             posted_log_add(clip["file"], time.strftime("%Y-%m-%dT%H:%M"))
         m2 = engine.load()
         engine.record(m2, i, result, links)
+        if tiktok_failed((result or {}).get("tiktok", "")):
+            m2["clips"][i]["tiktok_retry"] = True
+            log(f"  tiktok will be retried next run: {(result or {}).get('tiktok')}")
         engine.save(m2)
         log(f"{clip['file']}: {result}")
     return 0
