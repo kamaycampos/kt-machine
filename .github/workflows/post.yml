@@ -117,6 +117,7 @@ jobs:
           AR_TT_CLIENT_KEY: ${{ secrets.AR_TT_CLIENT_KEY }}
           AR_TT_CLIENT_SECRET: ${{ secrets.AR_TT_CLIENT_SECRET }}
           AR_TT_REFRESH_TOKEN: ${{ secrets.AR_TT_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}          # to append the posted log in the release
         run: python run_once.py
 
       # HOW IT IS DOING. Sampled every six hours from the same cron; the
@@ -166,4 +167,8 @@ jobs:
           git add state/manifest.json state/metrics.json docs
           # Nothing due is the normal case; an empty commit would be noise.
           git diff --staged --quiet || git commit -m "state: $(date -u +%FT%TZ)"
-          git push
+          # 22 Sept 2026: a plain push lost a race and a clip was published
+          # twice. Rebase and retry; the posted log in the release is the
+          # safety net if even this fails.
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && ok=1 && break; sleep $((i*5)); done
+          [ -n "$ok" ] || { echo "::error::state push failed - see posted_log.txt"; exit 1; }

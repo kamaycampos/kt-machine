@@ -36,6 +36,57 @@ def log(msg):
     print(f"[{time.strftime('%H:%M:%S')}] {msg}", flush=True)
 
 
+# THE POSTED LOG - 22 Sept 2026, and it is the reason a clip went out twice.
+#
+# Kamay: "the last clip for tiktok it got posted twice in ig". It did:
+# NINE-TO-FIVE-BILLIONAIRE published at 17:28 and again at 20:28. The first run
+# posted it perfectly and then FAILED TO SAVE that fact - its `git push` was
+# rejected because another commit had landed while it was uploading, and
+# nothing retried. The clip came back looking unposted, so the next run posted
+# it again on every account.
+#
+# Git cannot be the only record of something that already happened in the
+# world. This log is appended in the release the moment a clip is published -
+# one API call, no merge, no rebase - and read at the start of every run, so a
+# lost commit can no longer cause a second post.
+LOG_ASSET = "posted_log.txt"
+
+
+def _repo():
+    return os.environ.get("GH_REPO", "kamaycampos/kt-machine")
+
+
+def posted_log():
+    import urllib.request
+    url = f"https://github.com/{_repo()}/releases/download/state/{LOG_ASSET}"
+    try:
+        body = urllib.request.urlopen(url, timeout=30).read().decode()
+    except Exception as e:
+        log(f"posted log unreadable ({e}) - treating as empty")
+        return {}
+    out = {}
+    for line in body.splitlines():
+        if "|" in line:
+            f, at = line.split("|", 1)
+            out[f.strip()] = at.strip()
+    return out
+
+
+def posted_log_add(rel, when):
+    import subprocess
+    known = posted_log()
+    if rel in known:
+        return
+    known[rel] = when
+    body = "\n".join(f"{f}|{t}" for f, t in sorted(known.items())) + "\n"
+    path = os.path.join("/tmp", LOG_ASSET)
+    open(path, "w").write(body)
+    r = subprocess.run(["gh", "release", "upload", "state", path, "--clobber", "-R", _repo()],
+                       capture_output=True, text=True)
+    if r.returncode:
+        log(f"  COULD NOT WRITE THE POSTED LOG: {r.stderr.strip()[-160:]}")
+
+
 def main():
     # BEFORE the import, not after. engine/main.py reads KT_DATA at module level
     # and creates the directory as it loads, so setting the attribute afterwards
@@ -74,6 +125,20 @@ def main():
     if not man.get("clips"):
         log("no clips in state - nothing to do")
         return 0
+
+    # WHAT THE WORLD SAYS IS ALREADY POSTED WINS OVER WHAT THE FILE SAYS.
+    already = posted_log()
+    recovered = 0
+    for c in man["clips"]:
+        at = already.get(c["file"])
+        if at and not c.get("posted_at") and not c.get("done"):
+            c["posted_at"] = at
+            c["status"] = dict(c.get("status") or {}, recovered="published; the state commit was lost")
+            c.pop("posting", None); c.pop("posting_at", None)
+            recovered += 1
+            log(f"already published, not posting again: {c['file']} ({at})")
+    if recovered:
+        engine.save(man)
 
     # RELEASE A LOCK NOBODY IS HOLDING.
     #
@@ -166,6 +231,8 @@ def main():
                 continue
         result, links = poster.publish(
             clip, path, media_url(clip["file"]), only=clip.get("retry_only"))
+        if any(v == "posted" for v in (result or {}).values()):
+            posted_log_add(clip["file"], time.strftime("%Y-%m-%dT%H:%M"))
         m2 = engine.load()
         engine.record(m2, i, result, links)
         engine.save(m2)
