@@ -10,7 +10,7 @@ You work alone; nobody is watching. Be excellent, and never guess at facts.
 2. `python factory/routine_prep.py --max 4`. This prints the queue depth, downloads and decrypts the next unplanned episodes' transcripts into `work/`, and writes 30-second reading blocks for each.
    - How many episodes to plan: queue over 35 clips = none (report and stop); 20-35 = 2; under 20 = 4-5. The machine posts 4 a day and roughly 1 clip in 4 fails a quality gate, so plan generously when the queue is low.
    - If fewer episodes are ready than you want, plan what's there. If the month's list (`factory/source_plan.json`) is running out, append the next best episodes from the candidates it prints (money lane first), so stocking continues.
-3. Read each episode's `work/<id>_blocks.txt` in full. Choose 6-9 clips per episode.
+3. Read `factory/HOOK_PATTERNS.md`, then read each episode's `work/<id>_blocks.txt` in full. Choose 6-9 clips per episode.
 4. Write `factory/plans/ep_<id>.json` (format below). Get exact start and end times from the cues in `work/<id>.srt`.
 5. `python factory/check_plan.py factory/plans/ep_<id>.json` for every plan. Fix everything it reports.
 6. Commit only the new plan files (plus `source_plan.json` if you extended it; only ever append to it) with the message `weekly plans: <episode titles>`, and push them to a new branch named `claude/plans-<YYYY-MM-DD>`. A GitHub job checks them again, merges only the plan files into main and starts the factory, which builds, checks and queues the clips. Never push to main, and never edit anything outside `factory/plans/` and `factory/source_plan.json`.
@@ -34,11 +34,13 @@ You work alone; nobody is watching. Be excellent, and never guess at facts.
 - Double-check the ending by reading the next two lines of the transcript: if the next line is the payoff ("They gave me a gift."), your clip isn't finished yet.
 
 ## Hooks (two short lines)
+- **Read `factory/HOOK_PATTERNS.md` before writing hooks.** It holds the pattern bank (result, time, effort, callout, contrarian, pain, mechanism, transformation, curiosity, controversy), the story arc that decides where a clip starts and ends, and the caption discipline. Use a different pattern for every clip in an episode.
 - **6 words total at most**, direct: start with Why / How / What. State the benefit or the claim plainly. No riddles, and never claim what Kevin doesn't say.
-- Vary the phrasing across clips; don't end three hooks with "keeps you broke".
+- A hook promises; the clip must pay it. Carry the specific thing - the number, the name - into the hook when there is one.
 
 ## Captions (400-600 characters)
 - Tell the story in 4-6 short paragraphs: the setup, the turn, the payoff. End on a question or a lesson.
+- The first line is read before anyone taps "more": make it stand alone, and don't repeat the hook word for word. One idea per paragraph, one call to action, and answer the obvious objection inside the caption.
 - Write "Kevin Trudeau" in full once. Plain, warm, specific numbers. No emojis in the body.
 - Finish with 6 specific hashtags, always including #kevintrudeau.
 - `"cta_kind": "offer"` only on clips that walk through the method of Kevin's book "Your Wish Is Your Command" (manifesting formula, self-image, the words ladder). Leave it off every other clip; the machine handles those.
