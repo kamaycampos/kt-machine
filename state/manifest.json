@@ -3644,7 +3644,7 @@
    "bytes": 28888332,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-22T15:48",
+   "scheduled_at": "2026-09-22T17:12",
    "cta_keyword": "KT",
    "cta_variant": 16,
    "cta_kind": "question",
@@ -3796,13 +3796,26 @@
    "file": "KT_SECRET/04_NINE-TO-FIVE-BILLIONAIRE_120s.mp4",
    "caption": "\"I want pizza, burgers and ice cream every day. And I want to be a world champion bodybuilder.\"\n\nNo, you're not.\n\n\"I want to be a multi-billionaire. But I only work nine to five, and weekends are for football and family.\"\n\nKevin Trudeau's dad lived exactly that way. A welder. Bowling one night, cards another, fishing on weekends. A great life.\n\nBut he was never going to be a billionaire. Neither choice is wrong. Just be honest about which one you're making.\n\n#kevintrudeau #ninetofive #billionairemindset #ambition #success #wealth",
    "bytes": 22505297,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-22T12:18",
    "cta_keyword": "KT",
    "cta_variant": 10,
    "cta_kind": "question",
-   "hd_redo": "19 Sept 2026: HD render; sync proven by A/B (same captions PASS on original audio; HD-audio FAIL is check noise)"
+   "hd_redo": "19 Sept 2026: HD render; sync proven by A/B (same captions PASS on original audio; HD-audio FAIL is check noise)",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1416976457045955/",
+    "instagram": "https://www.instagram.com/reel/DdmRKRHDokX/",
+    "youtube": "https://youtube.com/shorts/ZQfl4V_lbQ4"
+   },
+   "caption_at_post": "\"I want pizza, burgers and ice cream every day. And I want to be a world champion bodybuilder.\"\n\nNo, you're not.\n\n\"I want to be a multi-billionaire. But I only work nine to five, and weekends are for football and family.\"\n\nKevin Trudeau's dad lived exactly that way. A welder. Bowling one night, cards another, fishing on weekends. A great life.\n\nBut he was never going to be a billionaire. Neither choice is wrong. Just be honest about which one you're making.\n\n#kevintrudeau #ninetofive #billionairemindset #ambition #success #wealth",
+   "posted_at": "2026-09-22T16:28"
   },
   {
    "file": "KT_SECRET/05_NOT-THE-HAMBURGER-BUSINESS_124s.mp4",
@@ -3836,28 +3849,43 @@
    "bytes": 9386129,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-09-23T11:58",
+   "cta_keyword": "WISH",
+   "cta_variant": 0
   },
   {
    "file": "KT_YWIYC/01_WHY-HONEST-WORK-KEEPS-YOU-BROKE_71s.mp4",
    "caption": "Most of us were raised on it: an honest day's work for an honest day's pay. Anything more is stealing.\n\nSo $200 for a day of hard work is honest. But $10,000 from two hours building something online? That feels wrong.\n\nKevin Trudeau calls that broke mentality. Wealth mentality says: I deserve to be paid well because I'm adding real value to people's lives.\n\nYou won't keep money you believe you don't deserve.\n\n#kevintrudeau #wealthmindset #deserve #moneymindset #entrepreneur #success",
    "bytes": 13743403,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-24T11:49",
+   "cta_keyword": "KT",
+   "cta_variant": 4,
+   "cta_kind": "question"
   },
   {
    "file": "KT_YWIYC/01_WHY-MOST-MONEY-GURUS-ARENT-RICH_59s.mp4",
    "caption": "A hundred years ago, a millionaire was rich. In today's dollars that is $100 million cash in the bank.\n\nSo Kevin Trudeau asks a simple question: how many people teaching you how to get rich have $100 million in the bank?\n\nHis answer: almost none. They found something that worked for them once and now sell it as a system for everyone.\n\nBefore you take money advice, check who it is coming from.\n\n#kevintrudeau #wealth #moneyadvice #financialfreedom #richmindset #success",
    "bytes": 10358615,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-23T20:20",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_YWIYC/02_HOW-WINNERS-HANDLE-DISASTER_112s.mp4",
    "caption": "J. Paul Getty, once the richest man in the world, wrote that successful people have success habits and failures have failure habits.\n\nKevin Trudeau says hand most people a list of 100 failure habits and they check 50 or 60. Hand it to someone worth $100 million and they check none.\n\nThe one that matters most: when a lawsuit hits or the plant burns down, do you get depressed? Winners don't. They get mad, take massive action and attack.\n\n#kevintrudeau #habits #jpaulgetty #winnersmindset #resilience #success",
    "bytes": 18898183,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T12:15",
+   "cta_keyword": "MONEY",
+   "cta_variant": 8,
+   "cta_kind": "question"
   },
   {
    "file": "KT_YWIYC/02_WHY-I-WALKED-OUT-OF-HARVARD_151s.mp4",
@@ -3865,7 +3893,10 @@
    "bytes": 30997809,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-09-25T20:34",
+   "cta_keyword": "KT",
+   "cta_variant": 10
   },
   {
    "file": "KT_WEALTH/01_HOW-TO-DEPROGRAM-YOUR-MIND_129s.mp4",
@@ -3896,14 +3927,22 @@
    "caption": "\"I will\" is someday. \"I am in the process of becoming a millionaire\" is today.\n\nKevin Trudeau says that one sentence only holds up if you're actually doing something: the books, the courses, the training, the work.\n\nSo it does two things at once. It tells the truth about today, and it pushes you to act so it stays true.\n\nWhat would make that sentence true for you this week?\n\n#kevintrudeau #action #manifesting #habits #success #wealthmindset",
    "bytes": 58857079,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-24T20:21",
+   "cta_keyword": "WISH",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_YWIYC/01_WHY-SOMEDAY-BEATS-TODAY_159s.mp4",
    "caption": "\"I will be a millionaire.\" Not today. Someday.\n\nKevin Trudeau says that's exactly why this rung is easy to accept: there's no deadline to argue with.\n\nIt still stirs up what you were told. A teacher who said you'd never amount to anything. A parent who said you'd be broke your whole life. Let those surface, because that is how they lose their power.\n\nSay it daily and the picture you hold of yourself quietly changes.\n\n#kevintrudeau #mindset #selfimage #manifesting #selftalk #success",
    "bytes": 108890608,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-26T11:58",
+   "cta_keyword": "WISH",
+   "cta_variant": 12,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_YWIYC/02_WHY-AFFIRMATIONS-FAIL_194s.mp4",
@@ -3911,84 +3950,131 @@
    "bytes": 135130812,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-09-27T15:38",
+   "cta_keyword": "YES",
+   "cta_variant": 17
   },
   {
    "file": "KT_YWIYC/02_WHY-I-WANT-DOESNT-WORK_172s.mp4",
    "caption": "You don't start with \"I want to be a millionaire.\"\n\nKevin Trudeau says start one rung lower: \"I wish.\" Anyone can make a wish, so nothing inside you argues with it. Say it out loud for a day or two and the needle starts moving.\n\nOnly then do you move up to \"I want\" - and that one does fight back, because of everything you were taught about money.\n\nSay the wish first. Earn the want.\n\n#kevintrudeau #manifesting #affirmations #moneymindset #selftalk #success",
    "bytes": 114373906,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-27T08:02",
+   "cta_keyword": "FREE",
+   "cta_variant": 15,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_FREEDOM/01_HOW-A-SNOWSTORM-MADE-ME-MONEY_84s.mp4",
    "caption": "A blizzard in the 1970s. An old woman struggling to dig out her house. Young Kevin Trudeau grabbed a shovel just to help her.\n\nShe insisted on paying him. So he borrowed her shovel and knocked on every door on the street.\n\nHe made more money that weekend than his dad, a welder, made all week.\n\nFind a need and fill it.\n\n#kevintrudeau #entrepreneur #hustle #findaneed #money #business",
    "bytes": 50521430,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T15:49",
+   "cta_keyword": "FREE",
+   "cta_variant": 9,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_FREEDOM/01_HOW-TO-GET-AROUND-RICH-PEOPLE_78s.mp4",
    "caption": "Kevin Trudeau grew up in a blue-collar town. A couple of towns over was the rich area and its country club.\n\nSo he became a caddy - because the only people there were rich.\n\nHe noticed they talked differently, thought differently, walked differently. And they were normal human beings, just like his dad.\n\nIf they can do it, you can do it too.\n\n#kevintrudeau #mindset #success #wealth #mentors #richpeople",
    "bytes": 46786265,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T08:28",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 7,
+   "cta_kind": "question"
   },
   {
    "file": "KT_FREEDOM/01_WHY-HAVING-IT-WONT-FIX-YOU_67s.mp4",
    "caption": "The Ferraris. The private jets. Mansions around the world, custom alligator shoes, a private jeweler.\n\nKevin Trudeau says he lives that dream now - and feels exactly the same as when he was only dreaming it.\n\nThat's the trick. Feel now the way you'll feel when you have it. If you wait to feel good until you get it, you'll be as empty with it as you were without it.\n\n#kevintrudeau #manifesting #mindset #success #wealth #happiness",
    "bytes": 41820764,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-24T07:34",
+   "cta_keyword": "FREE",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_FREEDOM/02_HOW-I-MADE-A-MILLION-BEFORE-18_138s.mp4",
    "caption": "A newspaper ad in the 1970s: Seven Steps to Freedom - how to escape the American rat race.\n\nKevin Trudeau bought the book. It was about direct mail. He tried it, and he made over a million dollars before he was 18.\n\nThe mailman brought sacks of envelopes. His school friends helped open them. Cash, $20 at a time, stacked on the table.\n\nToday you can start the same thing online with about $50.\n\n#kevintrudeau #entrepreneur #directresponse #marketing #millionaire #money",
    "bytes": 83310813,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-26T20:38",
+   "cta_keyword": "MONEY",
+   "cta_variant": 14,
+   "cta_kind": "question"
   },
   {
    "file": "KT_FREEDOM/02_WHAT-BILLIONAIRES-DO-DIFFERENTLY_151s.mp4",
    "caption": "Six weeks a year the Golden Door spa is men only. The men there are worth billions.\n\nKevin Trudeau compares them with the crowd who say just think about it and the universe will deliver. Average income: $80,000 versus $10 million.\n\nThe difference: the billionaires have gratitude, but they don't live there. They visit the pain, get clear on what they want, get obsessed - and go to work.\n\n#kevintrudeau #billionaire #mindset #success #manifesting #wealth",
    "bytes": 90900570,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-27T19:56",
+   "cta_keyword": "WISH",
+   "cta_variant": 18,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_FREEDOM/02_WHAT-FINANCIAL-FREEDOM-REALLY-COSTS_70s.mp4",
    "caption": "A millionaire in the 1920s had a million dollars in bonds paying 10% - $100,000 a year for doing nothing.\n\nIn today's money, Kevin Trudeau says, that's $100 million. At 8%, that's $8 million a year without lifting a finger.\n\nThat was his goal from the start: money working for him instead of him working for money.\n\n#kevintrudeau #financialfreedom #passiveincome #wealth #money #investing",
    "bytes": 41543628,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-24T15:59",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "KT_FREEDOM/02_WHY-GETTING-RICH-IS-EASIER-NOW_43s.mp4",
    "caption": "When Kevin Trudeau started, one print ad cost $30,000 and six weeks of waiting - and if it failed, the money was gone.\n\nToday it's all digital. You can start with about $50.\n\nHe says it has never been easier to make money than it is right now. What's your excuse?\n\n#kevintrudeau #onlinebusiness #entrepreneur #marketing #money #opportunity",
    "bytes": 26421635,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-23T15:57",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "KT_WEALTH/01_DEPROGRAM-YOUR-MIND-DAILY_123s.mp4",
    "caption": "You are being programmed every single day. Screens on the plane you can't turn off. Screens in every airport. Nonstop advertising.\n\nKevin Trudeau says wealthy people fight back on purpose. Leaders are readers - even five minutes a day of a positive book. And audios of people who overcame adversity.\n\nSuccessful people aren't people without problems. They're people who keep getting back up.\n\n#kevintrudeau #reading #mindset #programming #success #habits",
    "bytes": 92086043,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-26T15:57",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 13,
+   "cta_kind": "question"
   },
   {
    "file": "KT_WEALTH/01_POSITIVE-THINKING-NOT-ENOUGH_158s.mp4",
    "caption": "Sit at home grateful and appreciative and do nothing, and you won't make any money. Work hard with a lousy attitude, and you won't either.\n\nKevin Trudeau's ski trip: his friends leapt out of bed at 4am to hit the slopes. He stayed in bed. On a fishing trip it was the reverse.\n\nWhen you love the goal, you can't stop taking action - and the action stops feeling like work.\n\nThe journey is the reward.\n\n#kevintrudeau #positivethinking #action #motivation #success #mindset",
    "bytes": 128476161,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-27T12:36",
+   "cta_keyword": "KT",
+   "cta_variant": 16,
+   "cta_kind": "question"
   },
   {
    "file": "KT_WEALTH/02_ROCKEFELLER-EVERY-DISASTER_103s.mp4",
    "caption": "The universe doesn't do things to us. It does things for us.\n\nJohn D. Rockefeller said that after giving, the thing that built his wealth most was finding the seed of a greater benefit in every adversity.\n\nWatch the stories of the people who built America: the factory burns down, there's no money left - and that's when the idea comes that makes them rich.\n\nKevin Trudeau calls himself a gold digger. Every disaster has gold in it.\n\n#kevintrudeau #rockefeller #adversity #wealth #resilience #success",
    "bytes": 74222265,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-26T07:20",
+   "cta_keyword": "YES",
+   "cta_variant": 11,
+   "cta_kind": "question"
   }
  ]
 }
