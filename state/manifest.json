@@ -3590,13 +3590,27 @@
    "file": "KT_RICH/01_WHAT-A-MILLION-REALLY-MEANS_109s.mp4",
    "caption": "Your company did a million in sales. You are not a millionaire.\n\nKevin Trudeau made his first million in the 1970s, and he says most people don't even know what the word means.\n\nA million in sales with two million in expenses means you lost a million. A million in the bank while you still owe on the house, the car and the cards isn't it either.\n\nHis definition: sell everything, pay off every debt, and see what is left. If it's a million, you're a millionaire.\n\nMost people have never done that math on themselves.\n\n#kevintrudeau #millionaire #networth #debtfree #financialfreedom #moneyrules",
    "bytes": 16683954,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-22T07:37",
    "cta_keyword": "YES",
    "cta_variant": 11,
    "cta_kind": "question",
-   "hd_redo": "19 Sept 2026: HD render; sync proven by A/B (same captions PASS on original audio; HD-audio FAIL is check noise)"
+   "hd_redo": "19 Sept 2026: HD render; sync proven by A/B (same captions PASS on original audio; HD-audio FAIL is check noise)",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/28082598041443181/",
+    "instagram": "https://www.instagram.com/reel/DdlyL3MgGaL/",
+    "youtube": "https://youtube.com/shorts/WP8Ag-rirnc"
+   },
+   "caption_at_post": "Your company did a million in sales. You are not a millionaire.\n\nKevin Trudeau made his first million in the 1970s, and he says most people don't even know what the word means.\n\nA million in sales with two million in expenses means you lost a million. A million in the bank while you still owe on the house, the car and the cards isn't it either.\n\nHis definition: sell everything, pay off every debt, and see what is left. If it's a million, you're a millionaire.\n\nMost people have never done that math on themselves.\n\n#kevintrudeau #millionaire #networth #debtfree #financialfreedom #moneyrules",
+   "posted_at": "2026-09-22T08:57"
   },
   {
    "file": "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4",
