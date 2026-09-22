@@ -41,6 +41,9 @@ for path in sys.argv[1:]:
         if not 300 <= len(cap) <= 750: errs.append(f"{s}: caption {len(cap)} chars (want 400-600)")
         if "#kevintrudeau" not in cap: errs.append(f"{s}: caption needs #kevintrudeau")
         if c.get("cta_kind") not in (None, "offer"): errs.append(f"{s}: cta_kind must be 'offer' or absent")
+        for k in ("start_words", "end_words"):
+            n = len(str(c.get(k) or "").split())
+            if not 2 <= n <= 8: errs.append(f"{s}: {k} must be the clip's exact first/last 3-5 words")
     print(f"{name}: {'OK' if not errs else 'PROBLEMS'} ({len(slugs)} clips)")
     for e in errs: print("   -", e)
     bad += bool(errs)

@@ -1,0 +1,44 @@
+{
+ "source": "v78i2g6.mp4",
+ "brand": "KT_WEALTH",
+ "test": false,
+ "note": "22 Sept 2026 - RECUT of three ep_v78i2g6 clips whose endings were wrong (Rockefeller cut before its punchline; Deprogram ran 8s into the interviewer's question; Positive Thinking skipped its first sentence). Edges now named in words.",
+ "clips": [
+  {
+   "slug": "DEPROGRAM-YOUR-MIND-DAILY",
+   "in": 923.0,
+   "out": 1049.4,
+   "start_words": "You are being programmed every",
+   "end_words": "just keep getting back up",
+   "hook": [
+    "How to deprogram",
+    "your mind daily"
+   ],
+   "caption": "You are being programmed every single day. Screens on the plane you can't turn off. Screens in every airport. Nonstop advertising.\n\nKevin Trudeau says wealthy people fight back on purpose. Leaders are readers - even five minutes a day of a positive book. And audios of people who overcame adversity.\n\nSuccessful people aren't people without problems. They're people who keep getting back up.\n\n#kevintrudeau #reading #mindset #programming #success #habits"
+  },
+  {
+   "slug": "ROCKEFELLER-EVERY-DISASTER",
+   "in": 1717.0,
+   "out": 1821.5,
+   "start_words": "The universe doesn't do things",
+   "end_words": "job to find the treasure",
+   "hook": [
+    "What Rockefeller did",
+    "after every disaster"
+   ],
+   "caption": "The universe doesn't do things to us. It does things for us.\n\nJohn D. Rockefeller said that after giving, the thing that built his wealth most was finding the seed of a greater benefit in every adversity.\n\nWatch the stories of the people who built America: the factory burns down, there's no money left - and that's when the idea comes that makes them rich.\n\nKevin Trudeau calls himself a gold digger. Every disaster has gold in it.\n\n#kevintrudeau #rockefeller #adversity #wealth #resilience #success"
+  },
+  {
+   "slug": "POSITIVE-THINKING-NOT-ENOUGH",
+   "in": 1115.4,
+   "out": 1275.2,
+   "start_words": "There's two sides of this",
+   "end_words": "the journey is the reward",
+   "hook": [
+    "Why positive thinking",
+    "isn't enough"
+   ],
+   "caption": "Sit at home grateful and appreciative and do nothing, and you won't make any money. Work hard with a lousy attitude, and you won't either.\n\nKevin Trudeau's ski trip: his friends leapt out of bed at 4am to hit the slopes. He stayed in bed. On a fishing trip it was the reverse.\n\nWhen you love the goal, you can't stop taking action - and the action stops feeling like work.\n\nThe journey is the reward.\n\n#kevintrudeau #positivethinking #action #motivation #success #mindset"
+  }
+ ]
+}

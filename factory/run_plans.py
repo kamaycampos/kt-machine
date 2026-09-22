@@ -31,6 +31,31 @@ def height(path):
     return int(m[2]) if m else 0
 
 
+def _find_words(src, phrase, near, last):
+    """Time of the planner's named words at word level: the END of the last word
+    (last=True) or the START of the first. Tries the whole phrase, then its last
+    (or first) 3 and 2 words - the two whisper passes spell some words
+    differently. Only a match within 9s of the planned time counts; nearest wins."""
+    if not phrase:
+        return None
+    import kt_words
+    norm = lambda w: re.sub(r"[^a-z0-9']", "", w.lower())
+    toks = [norm(w) for w in phrase.split() if norm(w)]
+    G = 60.0
+    t0 = max(0.0, (int(near // G) - 1) * G)
+    t1 = (int(near // G) + 2) * G
+    ws = [(t0 + rs, t0 + re_, norm(w)) for rs, re_, w in
+          kt_words.words_for(src, t0, t1, f"PAYOFF/{os.path.basename(src)}") if norm(w or "")]
+    for n in sorted({len(toks), min(3, len(toks)), min(2, len(toks))}, reverse=True):
+        want = toks[-n:] if last else toks[:n]
+        hits = [(ws[i + n - 1][1] if last else ws[i][0]) for i in range(len(ws) - n + 1)
+                if [w for _, _, w in ws[i:i + n]] == want]
+        hits = [h for h in hits if abs(h - near) <= 9.0]
+        if hits:
+            return min(hits, key=lambda h: abs(h - near))
+    return None
+
+
 def fix_edges(key):
     """Put each cut on a real sentence boundary, measured at WORD level here.
 
@@ -48,6 +73,29 @@ def fix_edges(key):
     keep = []
     for c in p["clips"]:
         a, b = float(c["in"]), float(c["out"])
+        # 22 Sept 2026: the planner now NAMES the clip's first and last words
+        # (start_words / end_words). Meaning is its job; landing on those exact
+        # words is ours. "Run on to the next full stop" had carried a clean
+        # ending 8s into the interviewer's next question, because the word pass
+        # missed the full stop the planner could plainly read.
+        sa = _find_words(src, c.get("start_words"), a, last=False)
+        sb = _find_words(src, c.get("end_words"), b, last=True)
+        if sa is not None or sb is not None:
+            a = round(max(0.0, sa - 0.10), 2) if sa is not None else a
+            b = round(sb + 0.15, 2) if sb is not None else b
+            bar = kt_payoff.verdict(src, a, b)
+            if bar.startswith("runs into"):
+                print(f"  {c['slug']}: {bar} - dropped"); continue
+            print(f"  {c['slug']}: named words {c['in']}-{c['out']} -> {a}-{b}"
+                  f"{'' if sa is not None else ' (start words not found)'}{'' if sb is not None else ' (end words not found)'}")
+            if sb is not None:
+                if sa is None:
+                    near = [s for s in kt_payoff.sentences(src, max(0, a - 20), a + 20) if abs(s[0] - a) <= 3.0]
+                    if near:
+                        a = round(max(0.0, min(near, key=lambda s: abs(s[0] - a))[0] - 0.10), 2)
+                c["in"], c["out"] = a, b
+                keep.append(c)
+                continue
         near = [s for s in kt_payoff.sentences(src, max(0, a - 20), a + 20) if abs(s[0] - a) <= 3.0]
         if near:
             s0 = min(near, key=lambda s: abs(s[0] - a))

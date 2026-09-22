@@ -93,6 +93,12 @@ def main():
                 log(f"  drop {p['brand']}/{c.get('slug')}: hook - {'; '.join(errs)}")
                 continue
             v = kt_payoff.verdict(src, float(c["in"]), float(c["out"]))
+            # 22 Sept 2026: a planner that NAMED its last words has already chosen
+            # the ending by meaning (factory/PLANNING.md); only an advert or
+            # testimonial in the way still drops it.
+            if v and c.get("end_words") and not v.startswith("runs into"):
+                log(f"  note {p['brand']}/{c.get('slug')}: ending kept on the planner's words '{c['end_words']}' ({v})")
+                v = ""
             if v:
                 log(f"  drop {p['brand']}/{c.get('slug')}: ending - {v}")
                 continue
@@ -146,14 +152,16 @@ def main():
                 continue
             v = subprocess.run([sys.executable, os.path.join(HOME, "kt_verify_render.py"), mp4],
                                capture_output=True, text=True, cwd=HOME).stdout
-            why = opens_wrong(os.path.join(SRC_DIR, p["source"]), float(slugs[m.group(1)]["in"]), v)
+            why = opens_wrong(os.path.join(SRC_DIR, p["source"]), float(slugs[m.group(1)]["in"]), v,
+                              slugs[m.group(1)].get("start_words"))
+            why = why or closes_wrong(v, slugs[m.group(1)].get("end_words"))
             if why:
                 log(f"  FAIL {f}: {why}")
                 for side in glob.glob(os.path.splitext(mp4)[0] + "*"):
                     shutil.move(side, os.path.join(FAILED, os.path.basename(side)))
                 continue
             log(f"  PASS {f}  {s.stdout.strip().split('] ',1)[-1][:90]}")
-            log("       " + " | ".join(l.strip() for l in v.splitlines() if "FIRST" in l or "LAST" in l)[:200])
+            log("       " + " | ".join(l.strip() for l in v.splitlines() if "FIRST" in l or "LAST" in l)[:420])
             passed_brands.add(p["brand"])
             kinds[f"{p['brand']}/{f}"] = slugs[m.group(1)].get("cta_kind")
         done.append(key)
@@ -191,7 +199,24 @@ def main():
 
 
 
-def opens_wrong(src, t_in, verify_out):
+def closes_wrong(verify_out, named):
+    """22 Sept 2026. The planner names the clip's last words; the finished file
+    must end on them. Listens to the LAST seconds of the render (whisper) and
+    looks for the final two named words among its last six. '' means fine, or
+    no words were named."""
+    if not named:
+        return ""
+    m = re.search(r"LAST\s+\d+s\s*:\s*(.+?)(?:\||$)", verify_out)
+    if not m:
+        return ""
+    clean = lambda t: [w.replace("'", "") for w in re.sub(r"[^a-z0-9' ]", " ", t.lower()).split()]
+    got, want = clean(m.group(1))[-6:], clean(named)[-2:]
+    if any(got[i:i + len(want)] == want for i in range(len(got) - len(want) + 1)):
+        return ""
+    return f"ends off the planned words: plan ends '{named}', clip ends '{' '.join(got)}'"
+
+
+def opens_wrong(src, t_in, verify_out, named=None):
     """The clip must OPEN on the first words of the sentence the plan chose.
 
     22 Sept 2026, Kamay, on a published clip: it "started little before where
@@ -209,10 +234,15 @@ def opens_wrong(src, t_in, verify_out):
         return ""
     clean = lambda t: [w.replace("'", "") for w in re.sub(r"[^a-z0-9' ]", " ", t.lower()).split()]
     got = clean(m.group(1))
-    sents = kt_payoff.sentences(src, max(0.0, t_in - 12), t_in + 12)
-    if not sents or not got:
+    if named:                                  # the planner named its first words
+        exp = clean(named)
+    else:
+        sents = kt_payoff.sentences(src, max(0.0, t_in - 12), t_in + 12)
+        if not sents or not got:
+            return ""
+        exp = clean(min(sents, key=lambda s: abs(s[0] - t_in))[2])
+    if not got:
         return ""
-    exp = clean(min(sents, key=lambda s: abs(s[0] - t_in))[2])
     if got[:1] == exp[:1] or difflib.SequenceMatcher(a=got[:4], b=exp[:4]).ratio() >= 0.6:
         return ""
     return f"opens mid-sentence: plan starts '{' '.join(exp[:5])}', clip starts '{' '.join(got[:5])}'"

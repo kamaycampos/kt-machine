@@ -29,7 +29,9 @@ You work alone; nobody is watching. Be excellent, and never guess at facts.
 - **Start** on the first word of a sentence that stands alone. Never start on "And / But / So / Now / Because / That's why", or on a line that points back ("this", "that" referring to something earlier). Interviewer questions are fine openers if they set up the answer.
 - **End** on the payoff: the punchline, the lesson, the turn. The last line must not need the next one. Never end on a setup, mid-list, or running into a testimonial or advert (reader testimonials about "Your Wish Is Your Command" often follow a segment, so end before them).
 - Length: 45-180 seconds. Value wins over length, but cut the wind-up.
-- Cue times are approximate. The factory snaps cuts to word-level sentence edges and drops anything still broken, so aim at the sentence boundary.
+- **Name the edges in words.** Every clip carries `start_words` (its first 3-5 words, copied exactly from the transcript) and `end_words` (the last 3-5 words of the payoff, copied exactly). The factory finds those words at word level and cuts exactly there, then listens to the finished file to confirm it starts and ends on them. This is how a clip ends on the punchline and not a breath later in someone else's question.
+- `in` / `out` are your best estimate of when those words are spoken (the words are searched within 9 seconds of them). A cue line holds several sentences: `in` is the start of the cue where your first words appear, and `out` is the END time of the cue holding your last words (the time after `-->`). Never use a cue's start time for words spoken inside it.
+- Double-check the ending by reading the next two lines of the transcript: if the next line is the payoff ("They gave me a gift."), your clip isn't finished yet.
 
 ## Hooks (two short lines)
 - **6 words total at most**, direct: start with Why / How / What. State the benefit or the claim plainly. No riddles, and never claim what Kevin doesn't say.
@@ -46,6 +48,7 @@ You work alone; nobody is watching. Be excellent, and never guess at facts.
 {"source": "<id>.mp4", "brand": "KT_<ONEWORD>", "test": false,
  "note": "<date> - '<episode title>' (Rumble <id>). Weekly agent.",
  "clips": [{"slug": "UPPER-DASHED-NAME", "in": 211.6, "out": 291.0,
+            "start_words": "It was the worst snowstorm", "end_words": "and that's how I got rich",
             "hook": ["How a snowstorm", "made me money"],
             "caption": "...\n\n#kevintrudeau #...", "cta_kind": "offer"}]}
 ```
