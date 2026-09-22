@@ -29,8 +29,8 @@ srt = os.path.join(R.K, "transcripts", f"{vid}.srt")
 if not os.path.exists(srt):
     R.sh("gh", "release", "download", "sources", "-R", os.environ.get("GITHUB_REPOSITORY", "kamaycampos/kt-machine"),
          "-p", f"{vid}.srt.enc", "-D", "/tmp", "--clobber")
-    for key in ("TRANSCRIPT_KEY", "FACTORY_KEY"):          # new key first, old transcripts fall back
-        if R.sh("openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-pass", f"env:{key}",
+    for kname in ("TRANSCRIPT_KEY", "FACTORY_KEY"):          # new key first, old transcripts fall back
+        if R.sh("openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-pass", f"env:{kname}",
                 "-in", f"/tmp/{vid}.srt.enc", "-out", srt).returncode == 0:
             break
     print("transcript:", os.path.exists(srt), srt)
