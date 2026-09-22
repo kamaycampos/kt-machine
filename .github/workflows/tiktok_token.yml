@@ -1,0 +1,42 @@
+# Swap a TikTok authorization code for a STATS token (22 Sept 2026). Runs here
+# because this machine holds the Sandbox app's secret; the token is stored
+# encrypted in the 'sources' release and never printed. Manual trigger only.
+name: tiktok-token
+on:
+  workflow_dispatch:
+    inputs:
+      code: {required: true}
+      verifier: {required: true}
+permissions:
+  contents: write
+jobs:
+  swap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exchange and store encrypted
+        env:
+          CODE: ${{ inputs.code }}
+          VER: ${{ inputs.verifier }}
+          CK: ${{ secrets.TT_CLIENT_KEY }}
+          CS: ${{ secrets.TT_CLIENT_SECRET }}
+          FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "::add-mask::$CODE"; echo "::add-mask::$VER"
+          python3 - <<'PY'
+          import os, json, urllib.parse, urllib.request
+          d = urllib.parse.urlencode({"client_key": os.environ["CK"], "client_secret": os.environ["CS"],
+              "code": os.environ["CODE"], "grant_type": "authorization_code",
+              "redirect_uri": "https://kamaycampos.github.io/kt-machine/", "code_verifier": os.environ["VER"]}).encode()
+          req = urllib.request.Request("https://open.tiktokapis.com/v2/oauth/token/", data=d,
+                                       headers={"Content-Type": "application/x-www-form-urlencoded"})
+          r = json.loads(urllib.request.urlopen(req, timeout=30).read())
+          print("key is the sandbox key:", os.environ["CK"].startswith("sb"))
+          if not r.get("refresh_token"):
+              raise SystemExit(f"NO TOKEN: {r.get('error')} - {r.get('error_description')}")
+          json.dump({"refresh_token": r["refresh_token"], "open_id": r.get("open_id"), "scope": r.get("scope")}, open("/tmp/tt.json", "w"))
+          print("GRANTED:", r.get("scope"))
+          PY
+          openssl enc -aes-256-cbc -pbkdf2 -salt -pass env:FACTORY_KEY -in /tmp/tt.json -out /tmp/tt_stats_token.enc
+          gh release upload sources /tmp/tt_stats_token.enc --clobber -R "$GITHUB_REPOSITORY"
+          rm -f /tmp/tt.json && echo STORED
