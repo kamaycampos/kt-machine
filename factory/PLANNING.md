@@ -10,11 +10,11 @@ You work alone; nobody is watching. Be excellent, and never guess at facts.
 2. `python factory/routine_prep.py --max 4`. This prints the queue depth, downloads and decrypts the next unplanned episodes' transcripts into `work/`, and writes 30-second reading blocks for each.
    - How many episodes to plan: queue over 35 clips = none (report and stop); 20-35 = 2; under 20 = 4-5. The machine posts 4 a day and roughly 1 clip in 4 fails a quality gate, so plan generously when the queue is low.
    - If fewer episodes are ready than you want, plan what's there. If the month's list (`factory/source_plan.json`) is running out, append the next best episodes from the candidates it prints (money lane first), so stocking continues.
-3. Read `factory/HOOK_PATTERNS.md`, then read each episode's `work/<id>_blocks.txt` in full. Choose 6-9 clips per episode.
+3. Read `factory/MASTERY.md` (what is proven to work, with its confidence) and `factory/HOOK_PATTERNS.md`, then read each episode's `work/<id>_blocks.txt` in full. Choose 6-9 clips per episode.
 4. Write `factory/plans/ep_<id>.json` (format below). Get exact start and end times from the cues in `work/<id>.srt`.
 5. `python factory/check_plan.py factory/plans/ep_<id>.json` for every plan. Fix everything it reports.
 6. Commit only the new plan files (plus `source_plan.json` if you extended it; only ever append to it) with the message `weekly plans: <episode titles>`, and push them to a new branch named `claude/plans-<YYYY-MM-DD>`. A GitHub job checks them again, merges only the plan files into main and starts the factory, which builds, checks and queues the clips. Never push to main, and never edit anything outside `factory/plans/` and `factory/source_plan.json`.
-7. End with a short report: the episodes planned, the clip titles, and anything you skipped and why.
+7. End with a short report: the episodes planned, the clip titles, and anything you skipped and why. If something you saw contradicts `factory/MASTERY.md`, say so in the report - do not edit that file.
 
 ## What makes a clip worth posting (Kamay's taste, learned from real numbers)
 - **Value is the foundation.** Every clip must teach, reveal or move. Controversy, intrigue and a sharp hook multiply value; they never replace it.

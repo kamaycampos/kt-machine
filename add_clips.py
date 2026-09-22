@@ -52,10 +52,29 @@ def captions():
     return out
 
 
+def hooks():
+    """(brand, slug) -> the hook text BURNED INTO the video.
+
+    22 Sept 2026. No platform stores this. Instagram can tell us how a post did
+    and hand back its caption, but the two lines a viewer actually reads in the
+    first three seconds exist only inside the pixels - so every measurement we
+    have ever taken has been of captions, while the thing we test hardest was
+    invisible. It is written onto the clip's record here, at the moment the clip
+    is created, and never edited afterwards.
+    """
+    out = {}
+    for spec in json.load(open(SERIES)).values():
+        for c in spec.get("clips", []):
+            if c.get("hook"):
+                out[(spec["brand"], c["slug"])] = " ".join(c["hook"])
+    return out
+
+
 def candidates(folders):
     man = json.load(open(STATE))
     known = {c["file"] for c in man["clips"]}
     caps = captions()
+    hks = hooks()
     found = []
     for brand in sorted(folders):
         bdir = os.path.join(POST, brand)
@@ -74,7 +93,7 @@ def candidates(folders):
                 print(f"  SKIP {rel}: no caption in kt_series.json for "
                       f"{brand}/{slug}")
                 continue
-            found.append((rel, os.path.join(bdir, f), cap))
+            found.append((rel, os.path.join(bdir, f), cap, hks.get((brand, slug), "")))
     return man, found
 
 
@@ -141,12 +160,12 @@ def main():
         print("nothing new to add")
         return 0
     print(f"{len(found)} clip(s) to add:")
-    for rel, path, _ in found:
+    for rel, path, _c, _h in found:
         print(f"   {rel}  ({os.path.getsize(path) / 1e6:.0f} MB)")
     if dry:
         return 0
 
-    for rel, path, cap in found:
+    for rel, path, cap, hook in found:
         asset = rel.replace("/", "--")
         tmp = os.path.join("/tmp", asset)
         subprocess.run(["cp", path, tmp], check=True)
@@ -166,7 +185,7 @@ def main():
         if chk.stdout.strip() != "200":
             print(f"   UPLOADED BUT NOT FETCHABLE {rel}: HTTP {chk.stdout}")
             continue
-        man["clips"].append({"file": rel, "caption": cap,
+        man["clips"].append({"file": rel, "caption": cap, "hook": hook,
                              "bytes": os.path.getsize(path),
                              "done": False, "status": {}})
         print(f"   added {rel}")

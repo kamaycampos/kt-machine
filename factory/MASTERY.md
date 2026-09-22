@@ -1,0 +1,31 @@
+# What actually works - the living record
+
+Measured on Kamay's own account. **Never rewritten from scratch**: each pass confirms a pattern
+(adds evidence), weakens one (lowers confidence, explaining why), or adds a new one, and leaves a
+dated line at the end. Every pattern carries its confidence and the `n` behind it. Nothing reaches
+HIGH on fewer than ~5 cases a side.
+
+A **hook** is the text burned into the video; a **caption** is the text posted beside it. They are
+measured from different places and a caption finding never transfers to a hook. Hooks live in
+`state/manifest.json` (field `hook`, written when the clip is made, never edited).
+
+## Patterns
+
+| # | Pattern | Confidence | n |
+|---|---|---|---|
+| 1 | A **method** beats a **warning** on the same material. "How rich people actually buy houses" (180,796 views) beat "Why a mortgage is a scam" from the same source video. | MEDIUM | 2 clips, one source |
+| 2 | What separated the 180K clip was **shares and saves (30-40x)**, not watch time. Write for "someone needs to see this", not for retention alone. | MEDIUM | same pair |
+| 3 | **Homes, and the daily habits of wealthy people**, out-reach everything else on both Instagram and TikTok. | HIGH | 203K IG + 26K TikTok vs a median near 1K |
+| 4 | Speaking **to the viewer** in the caption beats naming Kevin; a **question** CTA beats a sell CTA (76 sell-CTA posts never beat 31 with a question). | HIGH | 107 posts |
+| 5 | **Full-bleed 9:16** beat letterboxed by 20-100x. The format rebuild took median YouTube views from 2 to ~984. | HIGH | 36 videos |
+| 6 | YouTube is the reach channel (~10x Instagram per post at a fraction of the followers), and it sits at a **~1,000 view ceiling**: the bottleneck is retention, not reach. Length is NOT the cause - that was tested and I was wrong. | HIGH | 36 videos |
+| 7 | **Six-word hooks** outperform long ones; the single best clip's hook was six words. Longer hooks cannot be read before they fade. | MEDIUM | 1 outlier + readability |
+| 8 | Clips that open mid-sentence or end before the payoff get rejected by Kamay on sight, and the ones that slipped out underperformed. Edges are now named in words and machine-checked. | HIGH | 37 of 75 clips once opened mid-sentence |
+
+## Open questions (not yet answered by data)
+- Does a **cinematic caption style** (colour drawn from the clip, one hero word, words placed around Kevin) beat the current house style? To be tested as Trial Reels, full-screen vs card.
+- Does the comment-keyword CTA convert better than the question CTA? Needs **comments per 1,000 views**, not view rate - they measure different things.
+- Do Trial Reels hook variants (7 a day, same clip) move view rate? Never run.
+
+## Changelog
+- **22 Sept 2026** - created. Hook text is now stored with every clip (175 past clips recovered), so the next pass can rank hooks for the first time. Worn-out-word check added to the plan checker: any hook word appearing in over a third of the last 40 posts is refused.
