@@ -3642,13 +3642,27 @@
    "file": "KT_RICH/04_THE-CUP-HOLDER-IDEA_180s.mp4",
    "caption": "A man Kevin Trudeau met in prison came up with an invention.\n\nA little device that sits in any car's cup holder and holds your phone. He drew it all out and stayed up nights working on it.\n\nA couple of years later, someone else brought the same idea to market. It sold tens, maybe hundreds of millions of dollars.\n\nHe didn't make a penny.\n\nKevin asked if he was upset. His answer: \"If I could create the cup holder, I can create another invention.\"\n\nThat is the millionaire mindset. Money is a renewable resource, and so are ideas.\n\n#kevintrudeau #millionairemindset #inventor #ideas #entrepreneur #wealth",
    "bytes": 28888332,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "chunk 1/1 failed 500: null"
+   },
    "scheduled_at": "2026-09-22T17:12",
    "cta_keyword": "KT",
    "cta_variant": 16,
    "cta_kind": "question",
-   "hd_redo": "19 Sept 2026: HD render; sync proven by A/B (same captions PASS on original audio; HD-audio FAIL is check noise)"
+   "hd_redo": "19 Sept 2026: HD render; sync proven by A/B (same captions PASS on original audio; HD-audio FAIL is check noise)",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2157023865188231/",
+    "instagram": "https://www.instagram.com/reel/Ddm5CK8jU52/",
+    "youtube": "https://youtube.com/shorts/Ykympw_5CKA"
+   },
+   "caption_at_post": "A man Kevin Trudeau met in prison came up with an invention.\n\nA little device that sits in any car's cup holder and holds your phone. He drew it all out and stayed up nights working on it.\n\nA couple of years later, someone else brought the same idea to market. It sold tens, maybe hundreds of millions of dollars.\n\nHe didn't make a penny.\n\nKevin asked if he was upset. His answer: \"If I could create the cup holder, I can create another invention.\"\n\nThat is the millionaire mindset. Money is a renewable resource, and so are ideas.\n\n#kevintrudeau #millionairemindset #inventor #ideas #entrepreneur #wealth",
+   "posted_at": "2026-09-22T19:16"
   },
   {
    "file": "KT_RICH/05_WHAT-IS-KEEPING-YOU-POOR_58s.mp4",
