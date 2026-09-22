@@ -3518,5 +3518,119 @@
     "cta_kind": "offer"
    }
   ]
+ },
+ "ep_v78i2g6_recut": {
+  "source": "v78i2g6.mp4",
+  "brand": "KT_WEALTH",
+  "note": "22 Sept 2026 - RECUT of three ep_v78i2g6 clips whose endings were wrong (Rockefeller cut before its punchline; Deprogram ran 8s into the interviewer's question; Positive Thinking skipped its first sentence). Edges now named in words.",
+  "clips": [
+   {
+    "slug": "DEPROGRAM-YOUR-MIND-DAILY",
+    "in": 922.94,
+    "out": 1045.47,
+    "hook": [
+     "How to deprogram",
+     "your mind daily"
+    ],
+    "caption": "You are being programmed every single day. Screens on the plane you can't turn off. Screens in every airport. Nonstop advertising.\n\nKevin Trudeau says wealthy people fight back on purpose. Leaders are readers - even five minutes a day of a positive book. And audios of people who overcame adversity.\n\nSuccessful people aren't people without problems. They're people who keep getting back up.\n\n#kevintrudeau #reading #mindset #programming #success #habits"
+   },
+   {
+    "slug": "ROCKEFELLER-EVERY-DISASTER",
+    "in": 1716.69,
+    "out": 1819.79,
+    "hook": [
+     "What Rockefeller did",
+     "after every disaster"
+    ],
+    "caption": "The universe doesn't do things to us. It does things for us.\n\nJohn D. Rockefeller said that after giving, the thing that built his wealth most was finding the seed of a greater benefit in every adversity.\n\nWatch the stories of the people who built America: the factory burns down, there's no money left - and that's when the idea comes that makes them rich.\n\nKevin Trudeau calls himself a gold digger. Every disaster has gold in it.\n\n#kevintrudeau #rockefeller #adversity #wealth #resilience #success"
+   },
+   {
+    "slug": "POSITIVE-THINKING-NOT-ENOUGH",
+    "in": 1115.54,
+    "out": 1273.21,
+    "hook": [
+     "Why positive thinking",
+     "isn't enough"
+    ],
+    "caption": "Sit at home grateful and appreciative and do nothing, and you won't make any money. Work hard with a lousy attitude, and you won't either.\n\nKevin Trudeau's ski trip: his friends leapt out of bed at 4am to hit the slopes. He stayed in bed. On a fishing trip it was the reverse.\n\nWhen you love the goal, you can't stop taking action - and the action stops feeling like work.\n\nThe journey is the reward.\n\n#kevintrudeau #positivethinking #action #motivation #success #mindset"
+   }
+  ]
+ },
+ "ep_v78um7w": {
+  "source": "v78um7w.mp4",
+  "brand": "KT_FREEDOM",
+  "note": "22 Sept 2026 - 'The Law of Attraction is Wrong' (Rumble v78um7w), podcast. Month plan; money-story heavy. 22 Sept: edges named in words.",
+  "clips": [
+   {
+    "slug": "HOW-I-MADE-A-MILLION-BEFORE-18",
+    "in": 1241.56,
+    "out": 1379.99,
+    "hook": [
+     "How I made $1M",
+     "before 18"
+    ],
+    "caption": "A newspaper ad in the 1970s: Seven Steps to Freedom - how to escape the American rat race.\n\nKevin Trudeau bought the book. It was about direct mail. He tried it, and he made over a million dollars before he was 18.\n\nThe mailman brought sacks of envelopes. His school friends helped open them. Cash, $20 at a time, stacked on the table.\n\nToday you can start the same thing online with about $50.\n\n#kevintrudeau #entrepreneur #directresponse #marketing #millionaire #money"
+   },
+   {
+    "slug": "HOW-A-SNOWSTORM-MADE-ME-MONEY",
+    "in": 209.83,
+    "out": 293.85,
+    "hook": [
+     "How a snowstorm",
+     "made me money"
+    ],
+    "caption": "A blizzard in the 1970s. An old woman struggling to dig out her house. Young Kevin Trudeau grabbed a shovel just to help her.\n\nShe insisted on paying him. So he borrowed her shovel and knocked on every door on the street.\n\nHe made more money that weekend than his dad, a welder, made all week.\n\nFind a need and fill it.\n\n#kevintrudeau #entrepreneur #hustle #findaneed #money #business"
+   },
+   {
+    "slug": "WHAT-BILLIONAIRES-DO-DIFFERENTLY",
+    "in": 892.54,
+    "out": 1043.91,
+    "hook": [
+     "What billionaires do",
+     "that hippies don't"
+    ],
+    "caption": "Six weeks a year the Golden Door spa is men only. The men there are worth billions.\n\nKevin Trudeau compares them with the crowd who say just think about it and the universe will deliver. Average income: $80,000 versus $10 million.\n\nThe difference: the billionaires have gratitude, but they don't live there. They visit the pain, get clear on what they want, get obsessed - and go to work.\n\n#kevintrudeau #billionaire #mindset #success #manifesting #wealth"
+   },
+   {
+    "slug": "HOW-TO-GET-AROUND-RICH-PEOPLE",
+    "in": 373.9,
+    "out": 452.39,
+    "hook": [
+     "How to get around",
+     "rich people"
+    ],
+    "caption": "Kevin Trudeau grew up in a blue-collar town. A couple of towns over was the rich area and its country club.\n\nSo he became a caddy - because the only people there were rich.\n\nHe noticed they talked differently, thought differently, walked differently. And they were normal human beings, just like his dad.\n\nIf they can do it, you can do it too.\n\n#kevintrudeau #mindset #success #wealth #mentors #richpeople"
+   },
+   {
+    "slug": "WHAT-FINANCIAL-FREEDOM-REALLY-COSTS",
+    "in": 1082.9,
+    "out": 1153.38,
+    "hook": [
+     "What financial freedom",
+     "really costs"
+    ],
+    "caption": "A millionaire in the 1920s had a million dollars in bonds paying 10% - $100,000 a year for doing nothing.\n\nIn today's money, Kevin Trudeau says, that's $100 million. At 8%, that's $8 million a year without lifting a finger.\n\nThat was his goal from the start: money working for him instead of him working for money.\n\n#kevintrudeau #financialfreedom #passiveincome #wealth #money #investing"
+   },
+   {
+    "slug": "WHY-HAVING-IT-WONT-FIX-YOU",
+    "in": 1155.58,
+    "out": 1222.84,
+    "hook": [
+     "Why having it",
+     "won't fix you"
+    ],
+    "caption": "The Ferraris. The private jets. Mansions around the world, custom alligator shoes, a private jeweler.\n\nKevin Trudeau says he lives that dream now - and feels exactly the same as when he was only dreaming it.\n\nThat's the trick. Feel now the way you'll feel when you have it. If you wait to feel good until you get it, you'll be as empty with it as you were without it.\n\n#kevintrudeau #manifesting #mindset #success #wealth #happiness"
+   },
+   {
+    "slug": "WHY-GETTING-RICH-IS-EASIER-NOW",
+    "in": 1426.62,
+    "out": 1469.87,
+    "hook": [
+     "Why getting rich",
+     "is easier now"
+    ],
+    "caption": "When Kevin Trudeau started, one print ad cost $30,000 and six weeks of waiting - and if it failed, the money was gone.\n\nToday it's all digital. You can start with about $50.\n\nHe says it has never been easier to make money than it is right now. What's your excuse?\n\n#kevintrudeau #onlinebusiness #entrepreneur #marketing #money #opportunity"
+   }
+  ]
  }
 }
