@@ -20,6 +20,9 @@ results = [json.load(open(f)) for f in glob.glob(os.path.join(root, "*", "result
 by_plan = {}
 for r in results:
     by_plan.setdefault(r["plan"], []).append(r)
+sys.path.insert(0, K)
+import kt_lock  # noqa: E402  (mark published clips before anything re-renders)
+print("locked now published:", kt_lock.sync())
 series = json.load(open(SERIES))
 done = json.load(open(os.path.join(HERE, "plans", "_done.json")))
 brands, kinds, report = set(), {}, []
@@ -32,7 +35,11 @@ for plan, rs in sorted(by_plan.items()):
         rep = os.path.join(root, f"shard-{plan}-{r['shard']}", "report.md")
         if os.path.exists(rep):
             report.append(open(rep).read()[-3000:])
-    done.append(plan)
+    # ONLY a plan that actually produced a clip (or a test) counts as built.
+    # 19 Sept: an infrastructure failure marked all 8 clips done and they were
+    # silently lost. A plan that yields nothing stays pending and is retried.
+    if passed or p.get("test"):
+        done.append(plan)
     if p.get("test") or not passed:
         continue
     spec = series.setdefault(plan, {"source": p["source"], "brand": p["brand"],

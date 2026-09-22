@@ -21,7 +21,19 @@ key = f"{plan}__s{shard}"
 sub = dict(p, clips=p["clips"][shard * SIZE:(shard + 1) * SIZE])
 json.dump(sub, open(os.path.join(R.PLANS, f"{key}.json"), "w"), indent=1, ensure_ascii=False)
 
-mp4 = R.fetch_source(p["source"][:-4])
+vid = p["source"][:-4]
+mp4 = R.fetch_source(vid)
+# The renderer reads the episode's transcript from disk, and the lock has to be
+# up to date or it refuses to render at all (19 Sept: both stopped every clip).
+srt = os.path.join(R.K, "transcripts", f"{vid}.srt")
+if not os.path.exists(srt):
+    R.sh("gh", "release", "download", "sources", "-R", os.environ.get("GITHUB_REPOSITORY", "kamaycampos/kt-machine"),
+         "-p", f"{vid}.srt.enc", "-D", "/tmp", "--clobber")
+    R.sh("openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-pass", "env:FACTORY_KEY",
+         "-in", f"/tmp/{vid}.srt.enc", "-out", srt)
+    print("transcript:", os.path.exists(srt), srt)
+import kt_lock
+print("locked now published:", kt_lock.sync())
 h = R.height(mp4)
 out = "/tmp/shard_out"
 os.makedirs(out, exist_ok=True)
