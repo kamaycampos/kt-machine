@@ -51,6 +51,13 @@ def main():
     pick = [(u, e) for u, e in sorted(cat.items(), key=lambda x: x[1]["date"], reverse=True)
             if not e["short"] and e["dur"] >= 1200 and e["height"] >= 1080
             and u not in have and norm(e["title"])[:40] not in used]
+    # THE MONTH'S LIST COMES FIRST (factory/source_plan.json, chosen with Kamay).
+    sp = os.path.join(HERE, "source_plan.json")
+    if os.path.exists(sp):
+        order = [e["id"] for e in json.load(open(sp))["episodes"]]
+        rank = lambda ue: order.index(re.search(r"/(v[a-z0-9]+)-", ue[0])[1]) \
+            if re.search(r"/(v[a-z0-9]+)-", ue[0])[1] in order else len(order)
+        pick.sort(key=rank)
     for url, e in pick[:need]:
         vid = re.search(r"/(v[a-z0-9]+)-", url)[1]
         mp4 = os.path.join(SRC, f"{vid}.mp4")
@@ -59,7 +66,7 @@ def main():
             # Alternate: the direct stream (skips the page Cloudflare guards) and the page.
             target = e.get("hls") if (attempt % 2 == 0 and e.get("hls")) else url
             r = sh("yt-dlp", "--no-warnings", "-q", "--impersonate", "chrome", "-N", "8",
-                   "-f", "bv*[height<=1440]+ba/b[height<=1440]", "--merge-output-format", "mp4",
+                   "-f", "bv*[height<=2160]+ba/b[height<=2160]", "--merge-output-format", "mp4",
                    "-o", mp4, target)
             if os.path.exists(mp4):
                 break

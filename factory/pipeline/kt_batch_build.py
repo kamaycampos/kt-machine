@@ -146,6 +146,12 @@ def main():
                 continue
             v = subprocess.run([sys.executable, os.path.join(HOME, "kt_verify_render.py"), mp4],
                                capture_output=True, text=True, cwd=HOME).stdout
+            why = opens_wrong(os.path.join(SRC_DIR, p["source"]), float(slugs[m.group(1)]["in"]), v)
+            if why:
+                log(f"  FAIL {f}: {why}")
+                for side in glob.glob(os.path.splitext(mp4)[0] + "*"):
+                    shutil.move(side, os.path.join(FAILED, os.path.basename(side)))
+                continue
             log(f"  PASS {f}  {s.stdout.strip().split('] ',1)[-1][:90]}")
             log("       " + " | ".join(l.strip() for l in v.splitlines() if "FIRST" in l or "LAST" in l)[:200])
             passed_brands.add(p["brand"])
@@ -182,6 +188,34 @@ def main():
         subprocess.run(["git", "push", "-q"], cwd=MACHINE)
         log("pushed")
     return finish()
+
+
+
+def opens_wrong(src, t_in, verify_out):
+    """The clip must OPEN on the first words of the sentence the plan chose.
+
+    22 Sept 2026, Kamay, on a published clip: it "started little before where
+    it should have". It opened on "To make money when you know how" - the
+    sentence is "It's easy to make money when you know how". The renderer snaps
+    the start to a pause, found one INSIDE the sentence, and nothing listened
+    to the result. Now the first seconds of the finished file are compared with
+    the planned sentence; allowing for whisper's small differences, a clip that
+    does not start on that sentence fails. Returns the reason, or ''.
+    """
+    import difflib
+    import kt_payoff
+    m = re.search(r"FIRST 5s\s*:\s*(.+?)(?:\||$)", verify_out)
+    if not m:
+        return ""
+    clean = lambda t: [w.replace("'", "") for w in re.sub(r"[^a-z0-9' ]", " ", t.lower()).split()]
+    got = clean(m.group(1))
+    sents = kt_payoff.sentences(src, max(0.0, t_in - 12), t_in + 12)
+    if not sents or not got:
+        return ""
+    exp = clean(min(sents, key=lambda s: abs(s[0] - t_in))[2])
+    if got[:1] == exp[:1] or difflib.SequenceMatcher(a=got[:4], b=exp[:4]).ratio() >= 0.6:
+        return ""
+    return f"opens mid-sentence: plan starts '{' '.join(exp[:5])}', clip starts '{' '.join(got[:5])}'"
 
 
 def finish():

@@ -29,12 +29,51 @@ jobs:
       - uses: actions/cache@v4
         with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v1 }
       - run: bash factory/setup.sh
-      - name: Stock HD episodes from Rumble
+      - name: Stock the month's HD episodes from Rumble (factory/source_plan.json first)
         run: |
           pip install -q -U "yt-dlp[default,curl-cffi]" curl_cffi
-          python factory/rumble_stock.py --max 2 --stock 6
-      - name: Transcribe newly stocked episodes
-        run: python factory/transcribe.py --max 2
+          python factory/rumble_stock.py --max 16 --stock 20
+
+  tlist:
+    needs: stock
+    if: always()
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.l.outputs.matrix }}
+      count: ${{ steps.l.outputs.count }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: l
+        run: python factory/transcripts_index.py list
+
+  transcribe:
+    needs: tlist
+    if: always() && needs.tlist.outputs.count != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 16
+      matrix:
+        vid: ${{ fromJSON(needs.tlist.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/cache@v4
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v1 }
+      - run: bash factory/setup.sh
+      - name: Transcribe one episode (one server each, all at once)
+        run: python factory/transcribe.py --only "${{ matrix.vid }}"
+
+  tmark:
+    needs: transcribe
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record every finished transcript (single writer)
+        run: python factory/transcripts_index.py mark
 
   plan:
     runs-on: ubuntu-latest

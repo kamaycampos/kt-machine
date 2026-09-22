@@ -1089,8 +1089,8 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
            "-t", f"{t_out - t_in:.2f}", "-i", src,
            "-loop", "1", "-framerate", "30", "-t", f"{HOOK_SECS:.2f}",
            "-i", card,
-           *vf, "-c:v", "libx264", "-preset", "veryfast", "-crf", "26",
-           "-maxrate", "2200k", "-bufsize", "4400k",
+           *vf, "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+           "-maxrate", "9000k", "-bufsize", "18000k",
            "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k",
            "-movflags", "+faststart", dest]
     if not apply:
@@ -1154,8 +1154,8 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
             ycmd = [FFMPEG, "-y", "-loglevel", "error", "-ss", f"{ys:.2f}",
                     "-t", f"{ye - ys:.2f}", "-i", src, *yvf,
                     "-af", f"afade=t=out:st={ye - ys - yfs:.2f}:d={yfs:.2f}",
-                    "-c:v", "libx264", "-preset", "veryfast", "-crf", "26",
-           "-maxrate", "2200k", "-bufsize", "4400k",
+                    "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+           "-maxrate", "9000k", "-bufsize", "18000k",
                     "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k",
                     "-movflags", "+faststart", yt_path(dest)]
             ry = subprocess.run(ycmd, capture_output=True, text=True)

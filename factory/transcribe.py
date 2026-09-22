@@ -46,6 +46,9 @@ def main():
     sh("gh", "release", "download", TAG, "-R", REPO, "-p", "sources_index.json", "-D", "/tmp", "--clobber")
     idx = json.load(open("/tmp/sources_index.json"))
     todo = [v for v, e in idx.items() if e.get("status") == "stocked" and not e.get("transcript")]
+    only = sys.argv[sys.argv.index("--only") + 1] if "--only" in sys.argv else None
+    if only:
+        todo = [only]   # parallel mode: one episode per server; the index is written once, later
     print(f"{len(todo)} episode(s) waiting for a transcript; doing {min(MAX, len(todo))}")
     for vid in todo[:MAX]:
         mp4 = fetch_source(vid)
@@ -67,6 +70,9 @@ def main():
         u = sh("gh", "release", "upload", TAG, srt + ".enc", "--clobber", "-R", REPO)
         if u.returncode:
             print(f"  {vid}: upload failed {u.stderr[-200:]}")
+            continue
+        if only:
+            print(f"  {vid}: transcribed, {stops:.1f} full stops/min")
             continue
         # Re-read the index right before writing: the Mac may have added episodes.
         sh("gh", "release", "download", TAG, "-R", REPO, "-p", "sources_index.json", "-D", "/tmp", "--clobber")
