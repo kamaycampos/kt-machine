@@ -3730,13 +3730,27 @@
    "file": "KT_SECRET/03_SIXTY-AND-BROKE_44s.mp4",
    "caption": "In his sixties. Flat broke. Sleeping in his car.\n\nColonel Harlan Sanders drove from restaurant to restaurant trying to sell his chicken recipe for a small royalty.\n\nThat's where Kentucky Fried Chicken started.\n\nIt doesn't matter where you're at, and it doesn't matter where you've been. The only thing that matters is where you're going.\n\nWhat's your dream?\n\n#kevintrudeau #colonelsanders #kfc #nevertoolate #successstory #dreambig",
    "bytes": 6732757,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-09-21T20:39",
    "cta_keyword": "FREE",
    "cta_variant": 3,
    "cta_kind": "offer",
-   "hd_redo": "19 Sept 2026: HD render; sync proven by A/B (same captions PASS on original audio; HD-audio FAIL is check noise)"
+   "hd_redo": "19 Sept 2026: HD render; sync proven by A/B (same captions PASS on original audio; HD-audio FAIL is check noise)",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1427986405383991/",
+    "instagram": "https://www.instagram.com/reel/DdkpbnGDN6t/",
+    "youtube": "https://youtube.com/shorts/YNTUePEmGcI"
+   },
+   "caption_at_post": "In his sixties. Flat broke. Sleeping in his car.\n\nColonel Harlan Sanders drove from restaurant to restaurant trying to sell his chicken recipe for a small royalty.\n\nThat's where Kentucky Fried Chicken started.\n\nIt doesn't matter where you're at, and it doesn't matter where you've been. The only thing that matters is where you're going.\n\nWhat's your dream?\n\n#kevintrudeau #colonelsanders #kfc #nevertoolate #successstory #dreambig",
+   "posted_at": "2026-09-21T22:21"
   },
   {
    "file": "KT_SECRET/02_TEN-THOUSAND-WAYS_113s.mp4",
