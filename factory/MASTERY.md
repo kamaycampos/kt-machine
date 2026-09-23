@@ -22,6 +22,12 @@ measured from different places and a caption finding never transfers to a hook. 
 | 7 | **Six-word hooks** outperform long ones; the single best clip's hook was six words. Longer hooks cannot be read before they fade. | MEDIUM | 1 outlier + readability |
 | 8 | Clips that open mid-sentence or end before the payoff get rejected by Kamay on sight, and the ones that slipped out underperformed. Edges are now named in words and machine-checked. | HIGH | 37 of 75 clips once opened mid-sentence |
 
+| 9 | **The hook moves TikTok, not YouTube.** Across every grouping below, YouTube's median sits at ~940 views whatever the hook says - that is the ceiling (retention), not the hook. TikTok's median swings by 10-60x on the same clips. So test hooks on TikTok and Instagram; do not judge a hook by YouTube. | MEDIUM | 62 clips with hook + numbers |
+| 10 | Hooks that say **rich / wealthy** when it is true: TikTok median **1,029** vs **16** for the rest. | LOW-MEDIUM | 6 vs 56 |
+| 11 | Openers, TikTok median: **What... 293** > **Why... 61** > **How... 13**. "How" is not banned - it is the plainest promise and it wins on Instagram - but on TikTok prefer What/Why. | LOW | 6 / 20 / 22 |
+| 12 | A number in the hook helps TikTok (106 vs 22) and the best single hook we have is `The 30% rule every wealthy person follows` (12,081 TikTok views, 20x the next). | LOW | 8 vs 54 |
+| 13 | Instagram engagement does NOT follow TikTok/YouTube reach: "Why a mortgage is a scam" is bottom on both (22 YT, 0 TT) and top on Instagram (211 likes, 57 comments). Rank each platform separately - never pool them. | MEDIUM | 62 clips |
+
 ## Open questions (not yet answered by data)
 - Does a **cinematic caption style** (colour drawn from the clip, one hero word, words placed around Kevin) beat the current house style? To be tested as Trial Reels, full-screen vs card.
 - Does the comment-keyword CTA convert better than the question CTA? Needs **comments per 1,000 views**, not view rate - they measure different things.
@@ -29,3 +35,4 @@ measured from different places and a caption finding never transfers to a hook. 
 
 ## Changelog
 - **22 Sept 2026** - created. Hook text is now stored with every clip (175 past clips recovered), so the next pass can rank hooks for the first time. Worn-out-word check added to the plan checker: any hook word appearing in over a third of the last 40 posts is refused.
+- **23 Sept 2026** - first hook ranking ever possible (62 clips). Findings 9-13 added. Best hook to date: "The 30% rule every wealthy person follows". Worst-performing shape: a bare belief claim with no subject ("Why your beliefs are not yours", 7 YT views).

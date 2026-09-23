@@ -4,6 +4,12 @@ Adapted for Kamay from the master content prompt he was taught (Daniel's worksho
 plus what this account's own numbers have proven. Our hook is **two short lines, six words total**,
 burned on the clip for the first 3 seconds, so every pattern below is compressed to that size.
 
+## What the numbers said on 23 Sept 2026 (n=62, see MASTERY.md)
+- On TikTok, `What...` openers beat `Why...` beat `How...` by a wide margin. On Instagram "How" still works. YouTube ignores the hook entirely - it is capped by retention.
+- Saying **rich / wealthy** (when Kevin really is talking about them) is the single strongest word we have measured.
+- A **number** in the hook helps: the best hook to date is "The 30% rule every wealthy person follows".
+- A hook with no concrete subject ("Why your beliefs are not yours") is the weakest shape there is.
+
 ## The rule under all of them
 A hook promises; the clip must pay. Never write a hook Kevin does not deliver inside the clip.
 Pick the pattern that matches the clip's psychological trigger. **Never use the same pattern
