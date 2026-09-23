@@ -136,4 +136,4 @@ jobs:
         run: |
           git add -A state docs factory
           git diff --staged --quiet || git commit -q -m "factory: clips built and queued $(date -u +%FT%TZ)"
-          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
+          for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && break; sleep 5; done

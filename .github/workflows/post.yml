@@ -170,5 +170,5 @@ jobs:
           # 22 Sept 2026: a plain push lost a race and a clip was published
           # twice. Rebase and retry; the posted log in the release is the
           # safety net if even this fails.
-          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && ok=1 && break; sleep $((i*5)); done
+          for i in 1 2 3 4 5; do git pull -q --rebase --autostash && git push -q && ok=1 && break; sleep $((i*5)); done
           [ -n "$ok" ] || { echo "::error::state push failed - see posted_log.txt"; exit 1; }

@@ -48,6 +48,6 @@ jobs:
           [ -z "$OK" ] && { echo "nothing to merge"; exit 0; }
           git add $OK
           git commit -q -m "weekly plans from $BR:$OK"
-          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
+          for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && break; sleep 5; done
           gh workflow run factory.yml --ref main
           git push -q origin --delete "$BR" || true
