@@ -43,8 +43,8 @@ man = (load("state/manifest.json") or {}).get("clips", [])
 ours = [c for c in man if not c["file"].startswith("AR_")]
 queue = [c for c in ours if not c.get("done") and not c.get("posted_at")]
 last = max((c["scheduled_at"][:10] for c in queue if c.get("scheduled_at")), default=None)
-days = len(queue) / 4
-print(f"QUEUE       {len(queue)} clips, about {days:.1f} days at 4/day"
+days = len(queue) / 6
+print(f"QUEUE       {len(queue)} clips, about {days:.1f} days at 6/day"
       + (f", last scheduled {last}" if last else ""))
 if days < 3:
     bad.append(f"queue is down to {days:.1f} days - the planner needs to run")

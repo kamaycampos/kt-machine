@@ -7,6 +7,12 @@ name: factory
 on:
   workflow_dispatch:
   push:
+    # MAIN ONLY. 23 Sept 2026: the planners push their plans to a claude/* branch,
+    # which matched this path filter and started a factory run ON THAT BRANCH.
+    # It built the clips, uploaded them, and then could not save the manifest -
+    # the branch was deleted by the merge job while it worked. Two batches of
+    # finished clips were lost that way before anyone noticed.
+    branches: [main]
     paths: ["factory/plans/**"]
   schedule:
     - cron: "17 7 * * *"

@@ -23,7 +23,7 @@ get = lambda n: urllib.request.urlopen(BASE + n, timeout=60).read()
 man = json.load(open(os.path.join(ROOT, "state", "manifest.json")))["clips"]
 queue = [c for c in man if not c.get("done") and not c.get("posted_at")
          and c["file"].startswith("AR_") == AR]
-print(f"QUEUE: {len(queue)} clips waiting (~{len(queue) / 4:.1f} days at 4/day)")
+print(f"QUEUE: {len(queue)} clips waiting (~{len(queue) / 6:.1f} days at 6/day)")
 
 idx = json.loads(get("sources_index.json"))
 ALL = os.listdir(os.path.join(HERE, "plans"))
