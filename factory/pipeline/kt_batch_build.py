@@ -211,8 +211,16 @@ def closes_wrong(verify_out, named):
         return ""
     clean = lambda t: [w.replace("'", "") for w in re.sub(r"[^a-z0-9' ]", " ", t.lower()).split()]
     got, want = clean(m.group(1))[-6:], clean(named)[-2:]
-    if any(got[i:i + len(want)] == want for i in range(len(got) - len(want) + 1)):
-        return ""
+    # The LAST word is heard at the very edge of the file, so whisper often
+    # returns it clipped ("career perspe" for "career perspective"). 23 Sept
+    # 2026: that threw away a perfectly cut clip. Match the final word by
+    # prefix, in either direction.
+    def same(a, b):
+        return a == b or a.startswith(b) or b.startswith(a)
+    for i in range(len(got) - len(want) + 1):
+        pair = got[i:i + len(want)]
+        if len(pair) == len(want) and pair[0] == want[0] and same(pair[-1], want[-1]):
+            return ""
     return f"ends off the planned words: plan ends '{named}', clip ends '{' '.join(got)}'"
 
 
