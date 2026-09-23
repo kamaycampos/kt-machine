@@ -159,7 +159,16 @@ def main():
     # without republishing anywhere else.
     if not dry:
         for c in man["clips"]:
-            if not c.get("tiktok_retry") or c.get("done"):
+            # `done` means the clip finished its posting life, which is true of
+            # EVERY clip that could need this - the first version of this guard
+            # skipped exactly the set it was written for. What must never be
+            # retried is a clip that was retired before it ever published.
+            if not c.get("tiktok_retry") or not c.get("posted_at"):
+                continue
+            if c.get("tiktok_tries", 0) >= 3:
+                c.pop("tiktok_retry", None)
+                log(f"tiktok gave up after 3 tries: {c['file']}")
+                engine.save(man)
                 continue
             path = os.path.join(engine.MEDIA, c["file"])
             if not os.path.exists(path):
@@ -174,6 +183,7 @@ def main():
             tt = (res or {}).get("tiktok", "")
             log(f"tiktok retry {c['file']}: {tt}")
             st = dict(c.get("status") or {}); st["tiktok"] = tt; c["status"] = st
+            c["tiktok_tries"] = c.get("tiktok_tries", 0) + 1
             c["tiktok_retry"] = tiktok_failed(tt)
             if not c["tiktok_retry"]:
                 c.pop("tiktok_retry", None)
