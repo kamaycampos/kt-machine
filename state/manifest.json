@@ -4382,7 +4382,11 @@
    "hook": "An ancestor drowned She never knew",
    "bytes": 125050892,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-27T16:17",
+   "cta_keyword": "RISE",
+   "cta_variant": 18,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_BLOODLINE/01_HIS-FACE-TURNED-RED-FOR-YEARS_71s.mp4",
@@ -4390,7 +4394,11 @@
    "hook": "His face turned red for years",
    "bytes": 47040875,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-23T08:09",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_BLOODLINE/01_YOUR-ANCESTORS-LEFT-YOU-SOMETHING_125s.mp4",
@@ -4398,7 +4406,11 @@
    "hook": "Your ancestors left you something heavy",
    "bytes": 80511315,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T19:30",
+   "cta_keyword": "YES",
+   "cta_variant": 11,
+   "cta_kind": "question"
   },
   {
    "file": "AR_BLOODLINE/02_FLOWERS-CAN-HEAL-YOUR-DNA_146s.mp4",
@@ -4406,7 +4418,11 @@
    "hook": "Flowers can heal your DNA too",
    "bytes": 107784402,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-26T19:34",
+   "cta_keyword": "RISE",
+   "cta_variant": 15,
+   "cta_kind": "question"
   },
   {
    "file": "AR_BLOODLINE/02_THEIR-SINS-ARE-STILL-IN-YOU_118s.mp4",
@@ -4414,7 +4430,11 @@
    "hook": "Their sins are still in you",
    "bytes": 77074687,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-24T19:40",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 7,
+   "cta_kind": "question"
   },
   {
    "file": "AR_BLOODLINE/02_YOUR-BLOODLINE-BELIEVES-MONEY-IS-EVIL_100s.mp4",
@@ -4422,7 +4442,11 @@
    "hook": "Your bloodline believes money is evil",
    "bytes": 67624431,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-23T19:52",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_BROTHERHOOD/01_THE-NAZIS-COULDNT-CONTROL-THIS-PART_98s.mp4",
@@ -4430,7 +4454,11 @@
    "hook": "The Nazis couldn't control this part",
    "bytes": 56578811,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-26T11:39",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 13,
+   "cta_kind": "question"
   },
   {
    "file": "AR_BROTHERHOOD/01_THEY-GAVE-HIM-BOOKS-NOT-SECRETS_179s.mp4",
@@ -4438,7 +4466,11 @@
    "hook": "They gave him books, not secrets",
    "bytes": 107234706,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-27T12:17",
+   "cta_keyword": "YES",
+   "cta_variant": 17,
+   "cta_kind": "question"
   },
   {
    "file": "AR_BROTHERHOOD/01_YOUR-TRAGEDY-IS-JUST-A-COSTUME_74s.mp4",
@@ -4446,7 +4478,11 @@
    "hook": "Your tragedy is just a costume",
    "bytes": 46825897,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-24T12:39",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "AR_BROTHERHOOD/02_RESISTING-IT-ONLY-MAKES-IT-WORSE_82s.mp4",
@@ -4454,7 +4490,11 @@
    "hook": "Resisting it only makes it worse",
    "bytes": 57036282,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T11:52",
+   "cta_keyword": "RISE",
+   "cta_variant": 9,
+   "cta_kind": "question"
   },
   {
    "file": "AR_BROTHERHOOD/02_YOUR-MISSION-IS-NOT-YOUR-DHARMA_62s.mp4",
@@ -4462,7 +4502,11 @@
    "hook": "Your mission is not your dharma",
    "bytes": 39104996,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-23T11:40",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_DISCLOSURE/01_MOVIES-WERE-NEVER-JUST-FOR-ENTERTAINMENT_151s.mp4",
@@ -4470,7 +4514,11 @@
    "hook": "Movies were never just for entertainment",
    "bytes": 81869939,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-27T08:31",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 16,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_DISCLOSURE/01_THEY-DONT-WANT-YOU-THIS-POWERFUL_181s.mp4",
@@ -4478,7 +4526,11 @@
    "hook": "They don't want you this powerful",
    "bytes": 103408561,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-28T07:56",
+   "cta_keyword": "YES",
+   "cta_variant": 20,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_DISCLOSURE/02_ANCIENT-WARS-STILL-CONTROL-EARTH-TODAY_99s.mp4",
@@ -4486,7 +4538,11 @@
    "hook": "Ancient wars still control Earth today",
    "bytes": 56248447,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T07:38",
+   "cta_keyword": "YES",
+   "cta_variant": 8,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_DISCLOSURE/02_CLOSE-ENCOUNTERS-WAS-NEVER-JUST-FICTION_116s.mp4",
@@ -4494,7 +4550,11 @@
    "hook": "Close Encounters was never just fiction",
    "bytes": 60442296,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-26T07:57",
+   "cta_keyword": "RISE",
+   "cta_variant": 12,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_DISCLOSURE/02_HES-ACTUALLY-BEEN-TO-TWELVE-BILDERBERGS_67s.mp4",
@@ -4502,7 +4562,11 @@
    "hook": "He's actually been to twelve Bilderbergs",
    "bytes": 35235370,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-24T07:26",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_PRAYER/01_HEAVEN-ISNT-A-PLACE_153s.mp4",
@@ -4510,7 +4574,11 @@
    "hook": "Heaven isn't a place it's you",
    "bytes": 120283776,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T15:40",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 10,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_PRAYER/01_YOU-WERE-NEVER-THE-POINT_95s.mp4",
@@ -4518,7 +4586,11 @@
    "hook": "You were never the point here",
    "bytes": 71793145,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-24T16:35",
+   "cta_keyword": "RISE",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_PRAYER/02_JOY-BEFORE-THE-MIRACLE_69s.mp4",
@@ -4526,7 +4598,11 @@
    "hook": "Joy came before the miracle happened",
    "bytes": 57081518,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-23T16:19",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_PRAYER/02_TEN-STRANGERS-IN-THE-BASEMENT_153s.mp4",
@@ -4534,7 +4610,11 @@
    "hook": "Ten strangers waited in the basement",
    "bytes": 117085150,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-26T16:16",
+   "cta_keyword": "YES",
+   "cta_variant": 14,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_PRAYER/02_TWO-INCHES-BELOW-YOUR-NAVEL_190s.mp4",
@@ -4542,7 +4622,11 @@
    "hook": "Your soul lives two inches below",
    "bytes": 135633963,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-27T20:25",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 19,
+   "cta_kind": "question"
   }
  ]
 }
