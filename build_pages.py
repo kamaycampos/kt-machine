@@ -175,7 +175,7 @@ def board(cs):
            "margin:0 0 14px;background:#141821}"
            ".c.ready{border-color:#f5c542}"
            ".w{font-size:11px;letter-spacing:.08em;color:#8b93a5}"
-           ".fn{font-size:12px;color:#8b93a5;margin:2px 0 0;word-break:break-all}"
+           ".hk{font-size:13px;color:#f5c542;font-weight:600;margin:3px 0 0}.fn{font-size:12px;color:#8b93a5;margin:2px 0 0;word-break:break-all}"
            ".hd{display:flex;gap:11px;align-items:flex-start;margin:0 0 10px}"
            ".th{width:54px;min-width:54px;aspect-ratio:9/16;object-fit:cover;"
            "border-radius:7px;background:#1d2230;display:block}"
@@ -208,7 +208,11 @@ def board(cs):
         return (f"<div class='c{' ready' if is_ready else ''}' data-who='{key}'>"
                 f"<div class=hd>{pic}<div class=meta>"
                 f"<div class=w>{who} &middot; {tag} {when}</div>"
-                f"<div class=fn>{html.escape(f)}</div></div></div>"
+                # The hook is what the clip SAYS on screen; the caption is what
+                # sits beside it. He posts TikTok by hand from this page and had
+                # no way to see the two lines the viewer actually reads first.
+                + (f"<div class=hk>&ldquo;{html.escape(c['hook'])}&rdquo;</div>" if c.get("hook") else "")
+                + f"<div class=fn>{html.escape(f)}</div></div></div>"
                 f"<pre id='{cid}'>{html.escape(c.get('caption') or '')}</pre>"
                 f"<button onclick=\"cp('{cid}',this)\">Copy</button></div>")
 
