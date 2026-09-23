@@ -4286,7 +4286,11 @@
    "hook": "Why your friends keep you broke",
    "bytes": 96850205,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-29T11:43",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "KT_SHARK/01_WINNERS-TALK-ABOUT-EVENTS_79s.mp4",
@@ -4294,7 +4298,11 @@
    "hook": "Why winners never talk about people",
    "bytes": 50036512,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-28T12:14",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "KT_SHARK/02_FOUR-QUESTIONS-BEFORE-HE-INVESTS_106s.mp4",
@@ -4302,7 +4310,11 @@
    "hook": "How investors decide in four questions",
    "bytes": 74163429,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-28T19:55",
+   "cta_keyword": "FREE",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_TAXHACK/01_FIVE-THOUSAND-TO-FIVE-BILLION_50s.mp4",
@@ -4310,7 +4322,11 @@
    "hook": "$5,000 became $5 billion",
    "bytes": 26605378,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-28T08:32",
+   "cta_keyword": "WISH",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_TAXHACK/01_LAND-RICH-CASH-POOR_104s.mp4",
@@ -4318,7 +4334,11 @@
    "hook": "Why land rich means cash poor",
    "bytes": 45943856,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-29T16:06",
+   "cta_keyword": "WISH",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_TAXHACK/01_SAVE-A-THOUSAND-MAKE-A-THOUSAND_80s.mp4",
@@ -4326,7 +4346,11 @@
    "hook": "Save $1,000 Make $1,000",
    "bytes": 38392678,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-29T07:36",
+   "cta_keyword": "KT",
+   "cta_variant": 4,
+   "cta_kind": "question"
   },
   {
    "file": "KT_TAXHACK/02_NO-LLC-NEEDED-FOR-WRITE-OFFS_55s.mp4",
@@ -4334,7 +4358,11 @@
    "hook": "Why you don't need an LLC",
    "bytes": 31626668,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-28T16:40",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_TAXHACK/02_TRIPLE-YOUR-HOURLY-RATE_126s.mp4",
@@ -4342,7 +4370,11 @@
    "hook": "How to triple your hourly rate",
    "bytes": 67164480,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-29T20:00",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 7,
+   "cta_kind": "question"
   }
  ]
 }
