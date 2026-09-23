@@ -1,16 +1,26 @@
 {
- "at": "2026-09-22T21:39",
+ "at": "2026-09-23T05:08",
  "profile": {
-  "likes_count": 5010,
-  "video_count": 114,
-  "follower_count": 363,
-  "following_count": 0
+  "following_count": 0,
+  "likes_count": 5149,
+  "video_count": 115,
+  "follower_count": 372
  },
  "videos": {
+  "KT_SECRET/01_THE-SAME-RECORDS_150s.mp4": {
+   "id": "7688541338953862413",
+   "view_count": 108,
+   "like_count": 2,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7688541338953862413?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 149,
+   "posted": "2026-09-23T01:47"
+  },
   "KT_SECRET/04_NINE-TO-FIVE-BILLIONAIRE_120s.mp4": {
    "id": "7688427490800405774",
-   "view_count": 13,
-   "like_count": 1,
+   "view_count": 23,
+   "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7688427490800405774?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -19,8 +29,8 @@
   },
   "KT_RICH/01_WHAT-A-MILLION-REALLY-MEANS_109s.mp4": {
    "id": "7688387138974387469",
-   "view_count": 330,
-   "like_count": 17,
+   "view_count": 378,
+   "like_count": 21,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7688387138974387469?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -29,17 +39,17 @@
   },
   "KT_SECRET/03_SIXTY-AND-BROKE_44s.mp4": {
    "id": "7688344513672170765",
-   "view_count": 316,
-   "like_count": 22,
+   "view_count": 422,
+   "like_count": 29,
    "comment_count": 0,
-   "share_count": 2,
+   "share_count": 3,
    "share_url": "https://www.tiktok.com/@kt_student/video/7688344513672170765?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 44,
    "posted": "2026-09-22T13:03"
   },
   "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
    "id": "7688148098480098573",
-   "view_count": 412,
+   "view_count": 434,
    "like_count": 39,
    "comment_count": 2,
    "share_count": 6,
@@ -49,7 +59,7 @@
   },
   "unmatched/7688112024877993230": {
    "id": "7688112024877993230",
-   "view_count": 12,
+   "view_count": 17,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -59,7 +69,7 @@
   },
   "KT_MIND/07_TWO-SALESMEN-QUIT_145s.mp4": {
    "id": "7688069633349274894",
-   "view_count": 20,
+   "view_count": 21,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -69,7 +79,7 @@
   },
   "KT_SECRET/05_NOT-THE-HAMBURGER-BUSINESS_124s.mp4": {
    "id": "7688020668356545806",
-   "view_count": 32,
+   "view_count": 35,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -79,17 +89,17 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3326,
-   "like_count": 136,
+   "view_count": 3424,
+   "like_count": 140,
    "comment_count": 7,
-   "share_count": 13,
+   "share_count": 15,
    "share_url": "https://www.tiktok.com/@kt_student/video/7687831766358428941?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 104,
    "posted": "2026-09-21T03:54"
   },
   "KT_SECRET/02_TEN-THOUSAND-WAYS_113s.mp4": {
    "id": "7687673803677224206",
-   "view_count": 499,
+   "view_count": 513,
    "like_count": 54,
    "comment_count": 2,
    "share_count": 2,
@@ -99,17 +109,17 @@
   },
   "KT_RICH/06_PEP-TALKS-WHEN-ALONE_71s.mp4": {
    "id": "7687607782639537422",
-   "view_count": 1065,
-   "like_count": 83,
+   "view_count": 1116,
+   "like_count": 87,
    "comment_count": 4,
-   "share_count": 25,
+   "share_count": 26,
    "share_url": "https://www.tiktok.com/@kt_student/video/7687607782639537422?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 71,
    "posted": "2026-09-20T13:25"
   },
   "KT_MIND/05_THE-TRASH-TEST_84s.mp4": {
    "id": "7687564395848731917",
-   "view_count": 994,
+   "view_count": 1009,
    "like_count": 68,
    "comment_count": 2,
    "share_count": 8,
@@ -129,10 +139,10 @@
   },
   "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4": {
    "id": "7686887912297843981",
-   "view_count": 1763,
-   "like_count": 67,
+   "view_count": 1915,
+   "like_count": 69,
    "comment_count": 5,
-   "share_count": 9,
+   "share_count": 10,
    "share_url": "https://www.tiktok.com/@kt_student/video/7686887912297843981?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 54,
    "posted": "2026-09-18T14:51"
@@ -219,18 +229,18 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 12081,
-   "like_count": 726,
-   "comment_count": 53,
-   "share_count": 181,
+   "view_count": 12781,
+   "like_count": 771,
+   "comment_count": 55,
+   "share_count": 185,
    "share_url": "https://www.tiktok.com/@kt_student/video/7685930943705566477?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 69,
    "posted": "2026-09-16T00:57"
   },
   "KT_RICH/05_05_HOW-EVERY-RICH-PERSON-LEARNED-IT_103s.mp4": {
    "id": "7685885571121696014",
-   "view_count": 477,
-   "like_count": 56,
+   "view_count": 479,
+   "like_count": 57,
    "comment_count": 0,
    "share_count": 2,
    "share_url": "https://www.tiktok.com/@kt_student/video/7685885571121696014?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -249,7 +259,7 @@
   },
   "unmatched/7685818408352435470": {
    "id": "7685818408352435470",
-   "view_count": 769,
+   "view_count": 772,
    "like_count": 97,
    "comment_count": 2,
    "share_count": 5,
@@ -259,7 +269,7 @@
   },
   "KT_POS/05_05_TWO-GROUPS-WHO-THINK-THEYRE-POSITIVE_166s.mp4": {
    "id": "7685558760319880462",
-   "view_count": 673,
+   "view_count": 674,
    "like_count": 77,
    "comment_count": 2,
    "share_count": 10,
@@ -269,10 +279,10 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 29234,
-   "like_count": 629,
-   "comment_count": 25,
-   "share_count": 141,
+   "view_count": 32967,
+   "like_count": 665,
+   "comment_count": 26,
+   "share_count": 146,
    "share_url": "https://www.tiktok.com/@kt_student/video/7685518951098453262?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 141,
    "posted": "2026-09-14T22:19"
@@ -299,8 +309,8 @@
   },
   "KT_HOME/05_05_THE-SINGLE-MOST-POWERFUL-OBJECT_86s.mp4": {
    "id": "7685101409963871501",
-   "view_count": 1251,
-   "like_count": 96,
+   "view_count": 1272,
+   "like_count": 97,
    "comment_count": 4,
    "share_count": 8,
    "share_url": "https://www.tiktok.com/@kt_student/video/7685101409963871501?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -309,7 +319,7 @@
   },
   "KT_POS/03_03_THE-INGREDIENT-NOBODY-TEACHES_102s.mp4": {
    "id": "7685133057686326542",
-   "view_count": 1733,
+   "view_count": 1738,
    "like_count": 224,
    "comment_count": 22,
    "share_count": 41,
@@ -319,20 +329,20 @@
   },
   "KT_HOME/02_02_WHY-RICH-HOMES-ARE-FULL-OF-OLD-THINGS_85s.mp4": {
    "id": "7685065417743797518",
-   "view_count": 2446,
-   "like_count": 194,
+   "view_count": 2525,
+   "like_count": 199,
    "comment_count": 5,
-   "share_count": 30,
+   "share_count": 31,
    "share_url": "https://www.tiktok.com/@kt_student/video/7685065417743797518?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 84,
    "posted": "2026-09-13T16:59"
   },
   "KT_HOME/06_06_THREE-THINGS-TO-DO-TO-YOUR-HOME_69s.mp4": {
    "id": "7684994156057447693",
-   "view_count": 1926,
-   "like_count": 163,
+   "view_count": 1944,
+   "like_count": 164,
    "comment_count": 4,
-   "share_count": 32,
+   "share_count": 33,
    "share_url": "https://www.tiktok.com/@kt_student/video/7684994156057447693?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 69,
    "posted": "2026-09-13T12:23"
