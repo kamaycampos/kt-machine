@@ -7,12 +7,14 @@ import json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "pipeline"))
 def _core(h, b):
-    """The rules that need nothing but the text itself."""
+    """The fallback. It enforces ONLY the hard rule - six words - and nothing
+    else. 23 Sept 2026: a stricter fallback ("must open Why/How/What") threw out
+    two whole episodes of good plans, including "He lost $65 million. Then this."
+    A stand-in for a check must never be harsher than the check itself."""
     errs = []
-    n = sum(len(l.split()) for l in h)
+    n = sum(len(l.split()) for l in h if l.strip())
+    if not h or n == 0: errs.append("no hook")
     if n > 6: errs.append(f"{n} words - max 6")
-    if not re.match(r"(why|how|what|the)\b", (h[0] if h else "").lower()):
-        errs.append("not a direct Why/How/What/The promise")
     return errs
 
 
