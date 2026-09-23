@@ -68,6 +68,31 @@ twice in one episode** - six clips should pull six different levers.
 - `Your mortgage was designed this way`
 - `The advice that keeps you working`
 
+
+## The Format Book (100 viral reels, read 23 Sept 2026)
+Kamay was given a book of 100 real reels with their hooks, captions and scripts (Advice, Easy-to-use,
+Opinion, Relatable, Storytelling). Their niches are lifestyle, not money, and most need someone on
+camera - but these shapes transfer to a clip of Kevin talking. The full book is on the Mac at
+`~/Kamay/work/format_book.json`; it is other people's work and never goes in this repo.
+
+**Shapes worth stealing**
+- **The quoted objection, answered.** Hook is what they say; the clip is the answer.
+  `"I don't have money to invest"` -> Kevin's answer. (Relatable #8, #9, #21, #23)
+- **The numbered promise.** `3 things that keep you broke in your 20s`, `13 things every traveller regrets`.
+  Only use it when the clip really does list them, and put the number in the hook.
+- **"If I had to start over"** - the expert replaying the beginning. (Advice #21)
+- **"N signs you're ..."** - recognition before advice. (Relatable #22, #25)
+- **"Steal my ..."** - permission framing, makes a method feel like contraband. (Advice #12)
+- **The age/authority stamp**: `Advice I'd give as a sleep doctor for a decade`. For us that is Kevin's
+  own record: `What 40 years of selling taught him`. Never invent a credential.
+- **"(read caption)"** - the hook sends them to the caption, where the real list lives. Works on
+  Instagram only, and only when the caption pays it off. (Advice #3, Opinion #14)
+- **The counted life**: timestamps or prices as the whole overlay (`6:54PM ... 7:44PM`, `Rent 16,000`).
+  We cannot film this, but the same trick works over Kevin's numbers.
+
+**What we cannot use** (needs a face on camera or a filmed bit): POV day-in-the-life, the dirty-lens
+pattern interrupt, reaction cutaways, the 10/10 rating bit. Do not write hooks that promise them.
+
 ## The story, inside the clip
 The same arc decides WHERE a clip starts and ends:
 **hook -> minimum context -> tension -> the turn -> the payoff.**
