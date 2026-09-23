@@ -230,16 +230,13 @@ def board(cs):
                 # no way to see the two lines the viewer actually reads first.
                 + (f"<div class=hk>&ldquo;{html.escape(c['hook'])}&rdquo;</div>" if c.get("hook") else "")
                 + f"<div class=fn>{html.escape(f)}</div></div></div>"
-                # 23 Sept 2026, Kamay: "you cant find easy the descriptions to
-                # copy they are so random down". He is standing in the TikTok
-                # app with one clip in front of him; he does not want to read
-                # twelve descriptions to find its one. So the text is folded
-                # away and the button is the card.
-                + (f"<details><summary>description</summary>"
-                   f"<pre id='{cid}'>{html.escape(c.get('caption') or '')}</pre></details>"
-                   if is_ready else
-                   f"<pre id='{cid}'>{html.escape(c.get('caption') or '')}</pre>")
-                + f"<button onclick=\"cp('{cid}',this)\">Copy description</button></div>")
+                # THE TEXT STAYS ON THE CARD. 23 Sept 2026 I folded it behind a
+                # <details> to shorten the page; the clipboard then copied
+                # NOTHING, because a hidden element has no innerText - and the
+                # card vanished anyway, so he lost the description and got an
+                # empty paste. Never hide what a copy button copies.
+                + f"<pre id='{cid}'>{html.escape(c.get('caption') or '')}</pre>"
+                + f"<button onclick=\"cp('{cid}',this)\">Copy</button></div>")
 
     p = ["<meta charset=utf-8><meta name=viewport "
          "content='width=device-width,initial-scale=1'><title>Captions</title>",
@@ -247,6 +244,8 @@ def board(cs):
          "<div><button class='pick on' onclick=\"pick('all',this)\">All</button>"
          "<button class='pick' onclick=\"pick('KAMAY',this)\">Kamay</button>"
          "<button class='pick' onclick=\"pick('AR',this)\">Awakened Rise</button></div>",
+         "<div><a href='descriptions.html' style='color:#f5c542'>"
+         "All descriptions &rarr;</a></div>",
          f"<h2>READY TO POST ON TIKTOK &middot; {len(todo)}</h2>"]
     mine = [c for c in todo if not c["file"].startswith("AR_")]
     hers = [c for c in todo if c["file"].startswith("AR_")]
@@ -266,12 +265,26 @@ def board(cs):
           "document.querySelectorAll('.c').forEach(e=>{"
           "e.hidden=w!=='all'&&e.dataset.who!==w;});}"
           # Copy then hide. The list should empty as he works through it.
-          "function cp(id,b){navigator.clipboard.writeText("
-          "document.getElementById(id).innerText);"
-          "const c=b.closest('.c');c.style.transition='opacity .25s';"
-          "c.style.opacity=0;setTimeout(()=>c.remove(),260);"
+          "function hide(id,b){const c=b.closest('.c');"
+          "c.style.transition='opacity .25s';c.style.opacity=0;"
+          "setTimeout(()=>c.remove(),260);"
           "try{const d=JSON.parse(localStorage.done||'[]');d.push(id);"
           "localStorage.done=JSON.stringify(d);}catch(e){}}"
+          # textContent, not innerText: it works whatever the element's state.
+          # And the card only disappears once the text is really on the
+          # clipboard - a copy that failed must leave the description on screen.
+          "function cp(id,b){const t=document.getElementById(id).textContent;"
+          "const ok=()=>{b.textContent='Copied';hide(id,b);};"
+          "const no=()=>{b.textContent='Select the text above and copy it';"
+          "const r=document.createRange();r.selectNodeContents("
+          "document.getElementById(id));const s=getSelection();"
+          "s.removeAllRanges();s.addRange(r);};"
+          "if(navigator.clipboard&&window.isSecureContext){"
+          "navigator.clipboard.writeText(t).then(ok).catch(no);}"
+          "else{const a=document.createElement('textarea');a.value=t;"
+          "a.style.position='fixed';a.style.opacity=0;document.body.appendChild(a);"
+          "a.select();let d=false;try{d=document.execCommand('copy');}catch(e){}"
+          "a.remove();d?ok():no();}}"
           "try{JSON.parse(localStorage.done||'[]').forEach(id=>{"
           "const el=document.getElementById(id);if(el)el.closest('.c').remove();});}"
           "catch(e){}"
@@ -279,11 +292,54 @@ def board(cs):
     return "\n".join(p)
 
 
+def archive(cs):
+    """EVERY description ever written, in one place, searchable.
+
+    23 Sept 2026, Kamay: "create another place where actually is not mixed up
+    with the unused descriptions so if something one day i can go to find them
+    there". The board is a to-do list and empties as he works; this is the
+    record - posted, queued, retired, all of it, newest first, with a search box
+    because by now there are hundreds.
+    """
+    rows = sorted(cs, key=lambda c: (c.get("posted_at") or c.get("scheduled_at") or ""), reverse=True)
+    out = ["<meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'>"
+           "<title>All descriptions</title>",
+           "<style>body{font:15px/1.5 -apple-system,system-ui,sans-serif;margin:0;padding:16px;"
+           "background:#0d0f13;color:#e8e8ea}h1{font-size:18px;margin:0 0 10px}"
+           "input{width:100%;padding:11px;border-radius:9px;border:1px solid #262a33;"
+           "background:#141821;color:#e8e8ea;font-size:15px;margin:0 0 14px}"
+           ".c{border:1px solid #262a33;border-radius:12px;padding:13px;margin:0 0 12px;background:#141821}"
+           ".w{font-size:11px;letter-spacing:.08em;color:#8b93a5}"
+           ".hk{font-size:13px;color:#f5c542;font-weight:600;margin:3px 0}"
+           "pre{white-space:pre-wrap;margin:6px 0 0;font:14px/1.55 inherit}"
+           "button{margin-top:9px;padding:8px 15px;border-radius:8px;border:0;"
+           "background:#f5c542;color:#111;font-weight:700}a{color:#f5c542}</style>",
+           "<h1>All descriptions</h1><div><a href='./'>&larr; back to what is ready</a></div>",
+           "<input id=q placeholder='search a word from the clip, the hook or the text' "
+           "oninput=\"const v=this.value.toLowerCase();document.querySelectorAll('.c')"
+           ".forEach(e=>{e.hidden=v&&!e.textContent.toLowerCase().includes(v)})\">"]
+    for c in rows:
+        f = c["file"]
+        cid = "a" + str(abs(hash(f)))
+        when = c.get("posted_at") or c.get("scheduled_at") or ""
+        who = "AWAKENED RISE" if f.startswith("AR_") else "KAMAY"
+        state = "posted" if c.get("posted_at") else ("retired" if c.get("done") else "waiting")
+        out.append(f"<div class=c><div class=w>{who} &middot; {state} {when}</div>"
+                   + (f"<div class=hk>&ldquo;{html.escape(c['hook'])}&rdquo;</div>" if c.get("hook") else "")
+                   + f"<div class=w>{html.escape(f)}</div>"
+                   f"<pre id='{cid}'>{html.escape(c.get('caption') or '')}</pre>"
+                   f"<button onclick=\"navigator.clipboard.writeText("
+                   f"document.getElementById('{cid}').textContent);this.textContent='Copied'\">"
+                   f"Copy</button></div>")
+    return "\n".join(out)
+
+
 def main():
     os.makedirs(DOCS, exist_ok=True)
     cs = clips()
     open(os.path.join(DOCS, "calendar.ics"), "w").write(calendar_ics(cs))
     open(os.path.join(DOCS, "index.html"), "w").write(board(cs))
+    open(os.path.join(DOCS, "descriptions.html"), "w").write(archive(cs))
     print(f"pages built from {len(cs)} clips")
 
 
