@@ -27,6 +27,7 @@ measured from different places and a caption finding never transfers to a hook. 
 | 11 | Openers, TikTok median: **What... 293** > **Why... 61** > **How... 13**. "How" is not banned - it is the plainest promise and it wins on Instagram - but on TikTok prefer What/Why. | LOW | 6 / 20 / 22 |
 | 12 | A number in the hook helps TikTok (106 vs 22) and the best single hook we have is `The 30% rule every wealthy person follows` (12,081 TikTok views, 20x the next). | LOW | 8 vs 54 |
 | 13 | Instagram engagement does NOT follow TikTok/YouTube reach: "Why a mortgage is a scam" is bottom on both (22 YT, 0 TT) and top on Instagram (211 likes, 57 comments). Rank each platform separately - never pool them. | MEDIUM | 62 clips |
+| 14 | **TikTok throttles personal-finance instruction; Instagram does not.** Six clips sit at 7-26 TikTok views against a median of 335 and winners at 13K-34K, while the same clips are normal on Instagram: the debt settlement trick, cutting a bill in half, "what is keeping you poor", plus three weak-hook clips. The shape that wins on TikTok is a story or a wealth habit (`What every billionaire's home has` 34,214; `Wealthy people live below` 13,085). Keep the how-to-save-money clips - they do fine on Instagram and YouTube - but do not expect TikTok reach from them. | MEDIUM | 6 throttled vs 48 measured |
 
 ## Open questions (not yet answered by data)
 - Does a **cinematic caption style** (colour drawn from the clip, one hero word, words placed around Kevin) beat the current house style? To be tested as Trial Reels, full-screen vs card.
@@ -36,3 +37,4 @@ measured from different places and a caption finding never transfers to a hook. 
 ## Changelog
 - **22 Sept 2026** - created. Hook text is now stored with every clip (175 past clips recovered), so the next pass can rank hooks for the first time. Worn-out-word check added to the plan checker: any hook word appearing in over a third of the last 40 posts is refused.
 - **23 Sept 2026** - first hook ranking ever possible (62 clips). Findings 9-13 added. Best hook to date: "The 30% rule every wealthy person follows". Worst-performing shape: a bare belief claim with no subject ("Why your beliefs are not yours", 7 YT views).
+- **23 Sept 2026** - TikTok suppression measured for the first time (finding 14). Board cleaning and 6 posts a day shipped the same day.

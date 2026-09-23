@@ -156,10 +156,26 @@ def board(cs):
     # ticked it off.
     OK = ("inbox", "uploaded", "processing")
 
+    # AND IT HAS TO CLEAR ITSELF. 23 Sept 2026, Kamay: the board had SIXTY-FOUR
+    # cards still saying READY TO POST, most of them posted days ago - nothing
+    # ever ticked them off, so the two he actually had to do were buried. Two
+    # things now remove a card without him touching anything: the clip showing
+    # up live on his TikTok (state/tiktok.json, matched by length and time), and
+    # age - after a week it is not a to-do any more, it is history.
+    import datetime as _dt
+    try:
+        _live = {k for k in json.load(open(os.path.join(os.path.dirname(STATE), "tiktok.json")))["videos"]
+                 if not k.startswith("unmatched")}
+    except Exception:
+        _live = set()
+    _cut = (_dt.datetime.utcnow() - _dt.timedelta(days=7, hours=4)).strftime("%Y-%m-%dT%H:%M")
+
     def ready(c):
         s = str((c.get("status") or {}).get("tiktok", "")).lower()
         return bool(c.get("posted_at")) and any(k in s for k in OK) \
-            and not c.get("tiktok_done")
+            and not c.get("tiktok_done") \
+            and c["file"] not in _live \
+            and (c.get("posted_at") or "") > _cut
 
     todo = [c for c in cs if ready(c)]
     rest = [c for c in cs if not ready(c) and (c.get("posted_at") or c.get("scheduled_at"))]

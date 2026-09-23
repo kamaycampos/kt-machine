@@ -23,6 +23,7 @@ You work alone; nobody is watching. Be excellent, and never guess at facts.
   - Methods beat warnings. "How rich people actually buy houses" beat "Why a mortgage is a scam" by 30-40x on shares and saves.
 - **Stories beat lectures.** A story with a turn and a payoff, like the stranger at the bank telling Ray Kroc he was in the real estate business, is the best clip there is.
 - **Skip:** politics, immigration, health and diet advice, aliens, religion arguments, anything about specific living private people, and sales pitches for paid programs or processes.
+- **TikTok throttles instruction about personal money mechanics** (bills, debt settlement, credit hacks, tax write-offs): 7-26 views against a median of 335, while the same clips are fine on Instagram. Plan them when they are genuinely good - they earn their place on Instagram and YouTube - but keep them to a couple per batch and let the stories and wealth habits carry TikTok.
 - **Don't repeat a topic** that's already planned or posted. Check the slugs in `factory/kt_series.json` and `factory/plans/`.
 
 ## The edges (the #1 thing viewers notice)
