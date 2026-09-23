@@ -15,6 +15,7 @@ between filling her queue and crossing that line, leave the queue empty and say 
 2. `python factory/routine_prep.py --brand ar --max 4` - prints HER queue, downloads and decrypts the
    next unplanned episodes from her list, and writes 30-second reading blocks.
    - Queue over 50 clips: plan nothing, report, stop. 30-50: plan 2. Under 30: plan 4.
+2b. If the prep printed **TAKEN DOWN BY TIKTOK**, plan a replacement for each from the same episode - same lesson, different moment, different hook - and say so in your report.
 3. Read `factory/HOOK_PATTERNS.md` for the story and caption craft - then **invert the hook rule**
    (see below). Read each episode's `work/<id>_blocks.txt` in full. Choose 6-9 clips.
 4. Write `factory/plans/ar_<id>.json` (same shape as his, brand `AR_<ONEWORD>`).

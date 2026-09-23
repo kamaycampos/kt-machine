@@ -25,6 +25,16 @@ queue = [c for c in man if not c.get("done") and not c.get("posted_at")
          and c["file"].startswith("AR_") == AR]
 print(f"QUEUE: {len(queue)} clips waiting (~{len(queue) / 6:.1f} days at 6/day)")
 
+try:                                   # what TikTok took down, so it gets replaced
+    _h = json.load(open(os.path.join(ROOT, "state", "tiktok_history.json")))
+    _gone = [g for g in _h.get("gone", []) if g["file"].startswith("AR_") == AR]
+    if _gone:
+        print(f"TAKEN DOWN BY TIKTOK ({len(_gone)}) - plan a replacement on the same episode, different angle:")
+        for g in _gone[-8:]:
+            print(f"  {g['file']}  (posted {g.get('posted')}, gone by {g.get('noticed')})")
+except Exception:
+    pass
+
 idx = json.loads(get("sources_index.json"))
 ALL = os.listdir(os.path.join(HERE, "plans"))
 plans_txt = " ".join(open(os.path.join(HERE, "plans", f)).read() for f in ALL if f.endswith(".json"))

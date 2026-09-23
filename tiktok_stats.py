@@ -80,6 +80,38 @@ def main():
         matched[key]["posted"] = vt.strftime("%Y-%m-%dT%H:%M")
     out = {"at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M"), "profile": prof, "videos": matched}
     json.dump(out, open(os.path.join(STATE, "tiktok.json"), "w"), indent=1)
+
+    # THE BAN RECORD. 23 Sept 2026, Kamay: "the clips in tiktok i posted 3 of
+    # them or something like that got banned... keep record on which ones are
+    # getting flagged and just take in mind that for the next ones so you can
+    # fine tune on what could be the cause, never guess."
+    #
+    # A single snapshot cannot tell a banned clip from one he never posted, so
+    # this keeps a running history: when each clip was first seen live on his
+    # account, when it was last seen, and how many views it had then. A clip
+    # that was live and is now gone was TAKEN DOWN - that is a fact, not a
+    # guess, and it is written down the hour it happens. Suppression (live but
+    # starved of views) is recorded separately; the two are different problems.
+    hpath = os.path.join(STATE, "tiktok_history.json")
+    try:
+        hist = json.load(open(hpath))
+    except Exception:
+        hist = {"seen": {}, "gone": []}
+    now = out["at"]
+    for k, v in matched.items():
+        if k.startswith("unmatched"):
+            continue
+        e = hist["seen"].setdefault(k, {"first": now, "posted": v.get("posted"), "id": v.get("id")})
+        e["last"], e["views"] = now, v.get("view_count")
+    already = {g["file"] for g in hist["gone"]}
+    for k, e in hist["seen"].items():
+        if k not in matched and k not in already and e.get("last", "") < now:
+            hist["gone"].append({"file": k, "posted": e.get("posted"), "last_seen": e["last"],
+                                 "views_when_last_seen": e.get("views"), "noticed": now})
+            print(f"  TAKEN DOWN from TikTok: {k} (last seen {e['last']}, {e.get('views')} views)")
+    json.dump(hist, open(hpath, "w"), indent=1)
+    if hist["gone"]:
+        print(f"  TikTok take-downs on record: {len(hist['gone'])}")
     tv = sum((x.get("view_count") or 0) for x in matched.values())
     print(f"TikTok: {len(vids)} videos, {tv:,} views total, {sum(1 for k in matched if not k.startswith('unmatched'))} matched to clips; "
           f"followers {prof.get('follower_count')}, likes {prof.get('likes_count')}")

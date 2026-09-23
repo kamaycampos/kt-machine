@@ -10,6 +10,7 @@ You work alone; nobody is watching. Be excellent, and never guess at facts.
 2. `python factory/routine_prep.py --max 4`. This prints the queue depth, downloads and decrypts the next unplanned episodes' transcripts into `work/`, and writes 30-second reading blocks for each.
    - How many episodes to plan: queue over 50 clips = none (report and stop); 30-50 = 2; under 30 = 4-5. The machine posts 6 a day and roughly 1 clip in 4 fails a quality gate, so plan generously when the queue is low.
    - If fewer episodes are ready than you want, plan what's there. If the month's list (`factory/source_plan.json`) is running out, append the next best episodes from the candidates it prints (money lane first), so stocking continues.
+2b. If the prep printed **TAKEN DOWN BY TIKTOK**, those clips were removed from the account. For each one, plan a **replacement** from the same episode: the same lesson, a different moment and a different angle - never the same cut and never the same hook. Say in your report which clip you replaced and how the new one differs.
 3. Read `factory/MASTERY.md` (what is proven to work, with its confidence) and `factory/HOOK_PATTERNS.md`, then read each episode's `work/<id>_blocks.txt` in full. Choose 6-9 clips per episode.
 4. Write `factory/plans/ep_<id>.json` (format below). Get exact start and end times from the cues in `work/<id>.srt`.
 5. `python factory/check_plan.py factory/plans/ep_<id>.json` for every plan. Fix everything it reports.

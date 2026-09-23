@@ -100,6 +100,10 @@ print(f"\nMEASURED    {len(rows)} samples, newest {fresh or 'never'}; "
       f"TikTok {tt.get('at', 'never')} ({(tt.get('profile') or {}).get('follower_count', '?')} followers)")
 if fresh and (now - dt.datetime.fromisoformat(fresh[:16])).days >= 1:
     bad.append("measurement has not run in over a day")
+gone = (load("state/tiktok_history.json") or {}).get("gone", [])
+if gone:
+    print(f"            TIKTOK TOOK DOWN {len(gone)}: " + ", ".join(g["file"].split("/")[-1][:28] for g in gone[-4:]))
+    bad.append(f"{len(gone)} clip(s) taken down by TikTok - the planner owes replacements")
 hooked = sum(1 for c in ours if c.get("hook"))
 print(f"            {hooked} of {len(ours)} clips carry their on-screen hook")
 

@@ -201,6 +201,7 @@ def board(cs):
            "background:#f5c542;color:#111;font-weight:700}"
            "button.pick{background:#242a36;color:#e8e8ea;margin:2px 6px 12px 0;"
            "font-weight:600}button.pick.on{background:#f5c542;color:#111}"
+           "details{margin:2px 0 0}summary{color:#8b93a5;font-size:12px;cursor:pointer}"
            "#more{display:none}")
 
     tb = thumbs()
@@ -229,8 +230,16 @@ def board(cs):
                 # no way to see the two lines the viewer actually reads first.
                 + (f"<div class=hk>&ldquo;{html.escape(c['hook'])}&rdquo;</div>" if c.get("hook") else "")
                 + f"<div class=fn>{html.escape(f)}</div></div></div>"
-                f"<pre id='{cid}'>{html.escape(c.get('caption') or '')}</pre>"
-                f"<button onclick=\"cp('{cid}',this)\">Copy</button></div>")
+                # 23 Sept 2026, Kamay: "you cant find easy the descriptions to
+                # copy they are so random down". He is standing in the TikTok
+                # app with one clip in front of him; he does not want to read
+                # twelve descriptions to find its one. So the text is folded
+                # away and the button is the card.
+                + (f"<details><summary>description</summary>"
+                   f"<pre id='{cid}'>{html.escape(c.get('caption') or '')}</pre></details>"
+                   if is_ready else
+                   f"<pre id='{cid}'>{html.escape(c.get('caption') or '')}</pre>")
+                + f"<button onclick=\"cp('{cid}',this)\">Copy description</button></div>")
 
     p = ["<meta charset=utf-8><meta name=viewport "
          "content='width=device-width,initial-scale=1'><title>Captions</title>",
@@ -239,7 +248,13 @@ def board(cs):
          "<button class='pick' onclick=\"pick('KAMAY',this)\">Kamay</button>"
          "<button class='pick' onclick=\"pick('AR',this)\">Awakened Rise</button></div>",
          f"<h2>READY TO POST ON TIKTOK &middot; {len(todo)}</h2>"]
-    p += [card(c, True) for c in todo] or ["<div class=c>Nothing waiting.</div>"]
+    mine = [c for c in todo if not c["file"].startswith("AR_")]
+    hers = [c for c in todo if c["file"].startswith("AR_")]
+    if not todo:
+        p += ["<div class=c>Nothing waiting.</div>"]
+    for title, group in (("KAMAY", mine), ("AWAKENED RISE", hers)):
+        if group:
+            p += [f"<h2>{title} &middot; {len(group)}</h2>"] + [card(c, True) for c in group]
     p += [f"<button class='pick' onclick=\"document.getElementById('more')"
           f".style.display='block';this.remove()\">See all {len(rest)}</button>",
           "<div id=more>"]
