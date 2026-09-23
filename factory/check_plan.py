@@ -6,17 +6,37 @@ import json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "pipeline"))
+def _core(h, b):
+    """The rules that need nothing but the text itself."""
+    errs = []
+    n = sum(len(l.split()) for l in h)
+    if n > 6: errs.append(f"{n} words - max 6")
+    if not re.match(r"(why|how|what|the)\b", (h[0] if h else "").lower()):
+        errs.append("not a direct Why/How/What/The promise")
+    return errs
+
+
+# THE REAL LINT IF IT LOADS, THE CORE RULES IF IT DOES NOT - NEVER A CRASH.
+# 23 Sept 2026: two good plans were REJECTED by the merge job because kt_hooks
+# pulls in the renderer, the renderer wants a font file, and that runner has no
+# ~/Kamay. A missing font must never be able to throw away an episode's work.
 try:
     import kt_hooks
-    lint = lambda h, b: kt_hooks.problems(h, b)
-except Exception as e:                                   # fall back to the core rules
-    print(f"(hook lint module unavailable: {e}; using the core rules)")
-    def lint(h, b):
-        errs = []
-        n = sum(len(l.split()) for l in h)
-        if n > 6: errs.append(f"{n} words - max 6")
-        if not re.match(r"(why|how|what)\b", (h[0] if h else "").lower()): errs.append("not a direct Why/How/What promise")
-        return errs
+    _real = kt_hooks.problems
+    _real(["How rich people", "actually buy houses"], "KT_TEST")     # prove it runs
+except Exception as e:
+    print(f"(hook lint unavailable: {type(e).__name__}: {str(e)[:80]}; using the core rules)")
+    _real = None
+
+
+def lint(h, b):
+    if _real is None:
+        return _core(h, b)
+    try:
+        return _real(h, b)
+    except Exception as e:
+        print(f"(hook lint failed on {h}: {type(e).__name__}; using the core rules)")
+        return _core(h, b)
 
 # WORD OVEREXPOSURE. A hook word that appears in more than a third of recent
 # posts has stopped differentiating anything - it sits in the winners and the

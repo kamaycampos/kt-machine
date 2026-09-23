@@ -25,6 +25,7 @@ jobs:
         env: { GH_TOKEN: "${{ github.token }}", BR: "${{ github.ref_name }}" }
         run: |
           pip install -q pillow numpy opencv-python-headless
+          mkdir -p ~/Kamay/bin && cp -r factory/assets/* ~/Kamay/bin/ 2>/dev/null || true
           git config user.name "kt-planner"
           git config user.email "kt-planner@users.noreply.github.com"
           git fetch -q origin "$BR"
