@@ -51,10 +51,17 @@ def main():
     pick = [(u, e) for u, e in sorted(cat.items(), key=lambda x: x[1]["date"], reverse=True)
             if not e["short"] and e["dur"] >= 1200 and e["height"] >= 1080
             and u not in have and norm(e["title"])[:40] not in used]
-    # THE MONTH'S LIST COMES FIRST (factory/source_plan.json, chosen with Kamay).
-    sp = os.path.join(HERE, "source_plan.json")
-    if os.path.exists(sp):
-        order = [e["id"] for e in json.load(open(sp))["episodes"]]
+    # THE MONTH'S LISTS COME FIRST - both of them, alternating, so neither
+    # account waits behind the other: Kamay's money lane (source_plan.json) and
+    # Yaren's hidden/esoteric lane (ar_source_plan.json). A source is still cut
+    # for only one of them; that is kt_fence.py's job, not this one's.
+    lists = []
+    for f in ("source_plan.json", "ar_source_plan.json"):
+        fp = os.path.join(HERE, f)
+        if os.path.exists(fp):
+            lists.append([e["id"] for e in json.load(open(fp))["episodes"]])
+    if lists:
+        order = [v for pair in __import__("itertools").zip_longest(*lists) for v in pair if v]
         rank = lambda ue: order.index(re.search(r"/(v[a-z0-9]+)-", ue[0])[1]) \
             if re.search(r"/(v[a-z0-9]+)-", ue[0])[1] in order else len(order)
         pick.sort(key=rank)

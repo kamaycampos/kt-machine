@@ -83,7 +83,14 @@ for f in os.listdir(os.path.join(HERE, "plans")):
 for path in sys.argv[1:]:
     p = json.load(open(path)); name = os.path.basename(path); errs = []
     b = p.get("brand", "")
-    if not re.fullmatch(r"KT_[A-Z0-9]+", b): errs.append(f"brand '{b}' must be KT_<ONEWORD>")
+    # THE FENCE, AT THE DOOR. An ar_*.json plan may only carry AR_ folders and an
+    # ep_*.json plan only KT_ ones, and no source video may serve both accounts.
+    fam = "AR" if name.startswith("ar_") else "KT"
+    if not re.fullmatch(fam + r"_[A-Z0-9]+", b):
+        errs.append(f"brand '{b}' must be {fam}_<ONEWORD> in {name}")
+    for f, o in others.items():
+        if o.get("source") == p.get("source") and f.startswith("ar_") != name.startswith("ar_"):
+            errs.append(f"FENCE: {p.get('source')} is already cut for the other account in {f}")
     if any(o.get("brand") == b for f, o in others.items() if f != name): errs.append(f"brand {b} already used by another plan")
     if not re.fullmatch(r"v[a-z0-9]+\.mp4", p.get("source", "")): errs.append("source must be <rumble id>.mp4")
     slugs = [c.get("slug") for c in p.get("clips", [])]

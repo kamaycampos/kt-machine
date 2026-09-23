@@ -11,16 +11,24 @@ import json, os, re, subprocess, sys, urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 BASE = "https://github.com/kamaycampos/kt-machine/releases/download/sources/"
 MAX = int(sys.argv[sys.argv.index("--max") + 1]) if "--max" in sys.argv else 4
+# WHOSE MACHINE IS THIS RUN FOR. Two accounts, two lists, two sets of plans, and
+# a source is never allowed to serve both (factory/pipeline/kt_fence.py).
+AR = "--brand" in sys.argv and sys.argv[sys.argv.index("--brand") + 1].lower() == "ar"
+PLAN_FILE = "ar_source_plan.json" if AR else "source_plan.json"
+MINE, THEIRS = ("ar_", "ep_") if AR else ("ep_", "ar_")
+print(("AWAKENED RISE (Yaren)" if AR else "KAMAY") + " - reading " + PLAN_FILE)
 WORK = os.path.join(ROOT, "work"); os.makedirs(WORK, exist_ok=True)
 get = lambda n: urllib.request.urlopen(BASE + n, timeout=60).read()
 
 man = json.load(open(os.path.join(ROOT, "state", "manifest.json")))["clips"]
-queue = [c for c in man if not c.get("done") and not c.get("posted_at") and not c["file"].startswith("AR_")]
+queue = [c for c in man if not c.get("done") and not c.get("posted_at")
+         and c["file"].startswith("AR_") == AR]
 print(f"QUEUE: {len(queue)} clips waiting (~{len(queue) / 4:.1f} days at 4/day)")
 
 idx = json.loads(get("sources_index.json"))
-plans_txt = " ".join(open(os.path.join(HERE, "plans", f)).read() for f in os.listdir(os.path.join(HERE, "plans")) if f.endswith(".json"))
-order = [e["id"] for e in json.load(open(os.path.join(HERE, "source_plan.json")))["episodes"]]
+ALL = os.listdir(os.path.join(HERE, "plans"))
+plans_txt = " ".join(open(os.path.join(HERE, "plans", f)).read() for f in ALL if f.endswith(".json"))
+order = [e["id"] for e in json.load(open(os.path.join(HERE, PLAN_FILE)))["episodes"]]
 ready = [v for v in order if v in idx and idx[v].get("transcript") and f'"{v}.mp4"' not in plans_txt]   # the month list only
 print(f"READY TO PLAN: {len(ready)} episode(s); preparing {min(MAX, len(ready))}")
 for v in ready[:MAX]:
