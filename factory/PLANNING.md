@@ -37,6 +37,12 @@ You work alone; nobody is watching. Be excellent, and never guess at facts.
 
 ## Hooks (two short lines)
 - **Read `factory/HOOK_PATTERNS.md` before writing hooks.** It holds the pattern bank (result, time, effort, callout, contrarian, pain, mechanism, transformation, curiosity, controversy), the story arc that decides where a clip starts and ends, and the caption discipline. Use a different pattern for every clip in an episode.
+- **The hook must carry the clip's STRONGEST fact, not an incidental one.** 24 Sept 2026: a clip that
+  contains "he changed one word", "over a million dollars before he turned 18", "$180 million in 18
+  months" and "a $250,000 first royalty cheque" went out hooked `What a stranger told him` - the one
+  detail in it with no number, no stakes and no subject. List the concrete facts in the clip, then
+  hook the biggest one that the clip actually pays: the mechanism or the number. "Him" is not a
+  subject; a stranger is not a promise.
 - **6 words total at most**, direct: start with Why / How / What. State the benefit or the claim plainly. No riddles, and never claim what Kevin doesn't say.
 - A hook promises; the clip must pay it. Carry the specific thing - the number, the name - into the hook when there is one.
 

@@ -41,6 +41,13 @@ His account opens with a direct promise (Why / How / What). **Hers does not, and
   `They knew this 2,000 years ago` · `Your words are building a cage` · `Nobody is coming to save you`
 - Never open with Why / How / What. Never a question as the first line.
 - Six words total, two short lines, and the clip must pay what the line implies.
+- **Same for her: the hook must carry the clip's STRONGEST fact, not an incidental one.** 24 Sept 2026: a clip that
+  contains "he changed one word", "over a million dollars before he turned 18", "$180 million in 18
+  months" and "a $250,000 first royalty cheque" went out hooked `What a stranger told him` - the one
+  detail in it with no number, no stakes and no subject. List the concrete facts in the clip, then
+  hook the biggest one that the clip actually pays: the mechanism or the number. "Him" is not a
+  subject; a stranger is not a promise.
+
 - `check_plan.py` runs her rule automatically - it reads the folder name, so `AR_` gets her lint.
 
 ## Her captions

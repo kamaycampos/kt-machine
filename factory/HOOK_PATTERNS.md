@@ -11,6 +11,9 @@ burned on the clip for the first 3 seconds, so every pattern below is compressed
 - A hook with no concrete subject ("Why your beliefs are not yours") is the weakest shape there is.
 
 ## The rule under all of them
+**Hook the biggest concrete fact the clip actually pays.** Write the facts out first - the
+number, the name, the mechanism - and hook the strongest. An incidental detail (a stranger, a
+place, a day of the week) is never the promise.
 A hook promises; the clip must pay. Never write a hook Kevin does not deliver inside the clip.
 Pick the pattern that matches the clip's psychological trigger. **Never use the same pattern
 twice in one episode** - six clips should pull six different levers.
