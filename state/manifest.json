@@ -4230,13 +4230,27 @@
    "file": "KT_FREEDOM/01_WHY-HAVING-IT-WONT-FIX-YOU_67s.mp4",
    "caption": "The Ferraris. The private jets. Mansions around the world, custom alligator shoes, a private jeweler.\n\nKevin Trudeau says he lives that dream now - and feels exactly the same as when he was only dreaming it.\n\nThat's the trick. Feel now the way you'll feel when you have it. If you wait to feel good until you get it, you'll be as empty with it as you were without it.\n\n#kevintrudeau #manifesting #mindset #success #wealth #happiness",
    "bytes": 41820764,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-09-24T07:34",
    "cta_keyword": "FREE",
    "cta_variant": 3,
    "cta_kind": "offer",
-   "hook": "Why having it won't fix you"
+   "hook": "Why having it won't fix you",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1374965301035641/",
+    "instagram": "https://www.instagram.com/reel/Ddq4lznGGMI/",
+    "youtube": "https://youtube.com/shorts/HNdlcH8EJio"
+   },
+   "caption_at_post": "The Ferraris. The private jets. Mansions around the world, custom alligator shoes, a private jeweler.\n\nKevin Trudeau says he lives that dream now - and feels exactly the same as when he was only dreaming it.\n\nThat's the trick. Feel now the way you'll feel when you have it. If you wait to feel good until you get it, you'll be as empty with it as you were without it.\n\n#kevintrudeau #manifesting #mindset #success #wealth #happiness",
+   "posted_at": "2026-09-24T08:29"
   },
   {
    "file": "KT_FREEDOM/02_HOW-I-MADE-A-MILLION-BEFORE-18_138s.mp4",
@@ -4659,12 +4673,26 @@
    "caption": "Someone told him a \"fact\" about the Bilderberg Group with total confidence. He asked where they got it. \"This guy told me.\" Where did that guy get it? \"Somewhere else.\"\n\nNobody in the chain had ever actually been in the room. Kevin has, over a dozen times, and told the guy flatly: what you just said isn't true.\n\nThat's the whole problem with most of what circulates as \"everybody knows this.\" One person hears something once, repeats it as fact, and it spreads with zero source behind it.\n\nComment RISE and I'll send you what's actually true.\n\n#truth #awakening #criticalthinking #mindset #consciousness #kevintrudeau",
    "hook": "He's actually been to twelve Bilderbergs",
    "bytes": 35235370,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-09-24T07:26",
    "cta_keyword": "LUCKY",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1621904889513921/",
+    "instagram": "https://www.instagram.com/reel/Ddq4Tw_iryL/",
+    "youtube": "https://youtube.com/shorts/ZbAnOVr-G3c"
+   },
+   "caption_at_post": "Someone told him a \"fact\" about the Bilderberg Group with total confidence. He asked where they got it. \"This guy told me.\" Where did that guy get it? \"Somewhere else.\"\n\nNobody in the chain had ever actually been in the room. Kevin has, over a dozen times, and told the guy flatly: what you just said isn't true.\n\nThat's the whole problem with most of what circulates as \"everybody knows this.\" One person hears something once, repeats it as fact, and it spreads with zero source behind it.\n\nComment RISE and I'll send you what's actually true.\n\n#truth #awakening #criticalthinking #mindset #consciousness #kevintrudeau",
+   "posted_at": "2026-09-24T08:27"
   },
   {
    "file": "AR_PRAYER/01_HEAVEN-ISNT-A-PLACE_153s.mp4",
@@ -4746,7 +4774,11 @@
    "hook": "How long before business gets easy",
    "bytes": 49363775,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T10:00",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "KT_BASEMENT/01_ONE-HOUSE-SOLD-IN-A-WEEK_141s.mp4",
@@ -4754,7 +4786,11 @@
    "hook": "One house sold in a week",
    "bytes": 99384958,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T17:23",
+   "cta_keyword": "MONEY",
+   "cta_variant": 8,
+   "cta_kind": "question"
   },
   {
    "file": "KT_BASEMENT/02_HE-WORKED-90-HOUR-WEEKS-FIRST_76s.mp4",
@@ -4762,7 +4798,11 @@
    "hook": "He worked 90 hour weeks first",
    "bytes": 39216683,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-24T14:52",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_HUSTLE/01_THE-ADS-WERE-THE-PROBLEM_186s.mp4",
@@ -4770,7 +4810,11 @@
    "hook": "The real reason ads fail",
    "bytes": 149932601,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T14:31",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 7,
+   "cta_kind": "question"
   },
   {
    "file": "KT_HUSTLE/01_WHAT-BILL-GATES-REALLY-SAID_144s.mp4",
@@ -4778,7 +4822,11 @@
    "hook": "What Bill Gates really said",
    "bytes": 111933382,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T07:03",
+   "cta_keyword": "KT",
+   "cta_variant": 4,
+   "cta_kind": "question"
   },
   {
    "file": "KT_HUSTLE/02_WHY-THE-PRODUCT-NEVER-MATTERS_85s.mp4",
@@ -4786,7 +4834,11 @@
    "hook": "Why the product never matters",
    "bytes": 68144946,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-24T12:16",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "KT_MATH/01_THE-68-SECOND-FORMULA_103s.mp4",
@@ -4795,7 +4847,10 @@
    "bytes": 72812632,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-09-24T17:23",
+   "cta_keyword": "FREE",
+   "cta_variant": 3
   },
   {
    "file": "KT_MATH/01_WHAT-A-STRANGER-TOLD-HIM_90s.mp4",
@@ -4803,7 +4858,11 @@
    "hook": "What a stranger told him",
    "bytes": 55615884,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-24T09:47",
+   "cta_keyword": "WISH",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_MATH/02_HOW-TO-BREAK-A-HABIT-INSTANTLY_147s.mp4",
@@ -4811,7 +4870,11 @@
    "hook": "How to break a habit instantly",
    "bytes": 103179359,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-26T07:18",
+   "cta_keyword": "FREE",
+   "cta_variant": 9,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_MATH/02_THE-800-POUNDS-YOU-CANT-SEE_139s.mp4",
@@ -4819,7 +4882,11 @@
    "hook": "The 800 pounds you can't see",
    "bytes": 99677896,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T12:02",
+   "cta_keyword": "WISH",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   }
  ]
 }
