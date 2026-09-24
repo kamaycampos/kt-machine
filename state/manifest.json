@@ -4071,7 +4071,7 @@
    "bytes": 13743403,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-24T11:49",
+   "scheduled_at": "2026-09-24T14:15",
    "cta_keyword": "KT",
    "cta_variant": 4,
    "cta_kind": "question",
@@ -4575,12 +4575,26 @@
    "caption": "Imagine you're in a play. In this play, you get stabbed, robbed, cheated on, and lose a leg. Tragedy after tragedy after tragedy.\n\nWould you be devastated \u2014 or would you think, \"I'm playing this role perfectly,\" knowing that when the curtain drops, you take the costume off and go have dinner?\n\nThat's not a coping mechanism. That's how the masters actually saw their own lives, as the play of consciousness, not something happening to them. The body will always feel pain. The Buddha was clear about that.\n\nBut suffering is a choice on top of it.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#awakening #consciousness #spirituality #mindset #innerpeace #kevintrudeau",
    "hook": "Your tragedy is just a costume",
    "bytes": 46825897,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-24T12:39",
    "cta_keyword": "YES",
    "cta_variant": 5,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1641689550882307/",
+    "instagram": "https://www.instagram.com/reel/DdrbnznkoD9/",
+    "youtube": "https://youtube.com/shorts/WNPS3mpVIAk"
+   },
+   "caption_at_post": "Imagine you're in a play. In this play, you get stabbed, robbed, cheated on, and lose a leg. Tragedy after tragedy after tragedy.\n\nWould you be devastated \u2014 or would you think, \"I'm playing this role perfectly,\" knowing that when the curtain drops, you take the costume off and go have dinner?\n\nThat's not a coping mechanism. That's how the masters actually saw their own lives, as the play of consciousness, not something happening to them. The body will always feel pain. The Buddha was clear about that.\n\nBut suffering is a choice on top of it.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#awakening #consciousness #spirituality #mindset #innerpeace #kevintrudeau",
+   "posted_at": "2026-09-24T13:36"
   },
   {
    "file": "AR_BROTHERHOOD/02_RESISTING-IT-ONLY-MAKES-IT-WORSE_82s.mp4",
@@ -4835,7 +4849,7 @@
    "bytes": 68144946,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-24T12:16",
+   "scheduled_at": "2026-09-24T14:15",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -4857,12 +4871,26 @@
    "caption": "A newspaper ad running at zero orders. Kevin Trudeau says he worked through a mental block on it and felt something clear, like a ceiling lifting.\n\nHe reran the exact same ad, changed one word, and hundreds of dollars a day started landing in his mailbox. He made over a million dollars before he turned 18.\n\nRight after that, a stranger stopped him at a deli and told him he should be on TV. That tip led to an infomercial that did $180 million in 18 months - his first royalty check alone was $250,000.\n\nWhat's the one change you've been putting off?\n\n#kevintrudeau #entrepreneur #mindset #successstory #wealthmindset #millionairemindset",
    "hook": "What a stranger told him",
    "bytes": 55615884,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-24T09:47",
    "cta_keyword": "WISH",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1405497511781554/",
+    "instagram": "https://www.instagram.com/reel/DdrbUU6E2oP/",
+    "youtube": "https://youtube.com/shorts/ub_dpofxvGI"
+   },
+   "caption_at_post": "A newspaper ad running at zero orders. Kevin Trudeau says he worked through a mental block on it and felt something clear, like a ceiling lifting.\n\nHe reran the exact same ad, changed one word, and hundreds of dollars a day started landing in his mailbox. He made over a million dollars before he turned 18.\n\nRight after that, a stranger stopped him at a deli and told him he should be on TV. That tip led to an infomercial that did $180 million in 18 months - his first royalty check alone was $250,000.\n\nWhat's the one change you've been putting off?\n\n#kevintrudeau #entrepreneur #mindset #successstory #wealthmindset #millionairemindset",
+   "posted_at": "2026-09-24T13:33"
   },
   {
    "file": "KT_MATH/02_HOW-TO-BREAK-A-HABIT-INSTANTLY_147s.mp4",
@@ -4894,7 +4922,11 @@
    "hook": "That Bible verse was badly mistranslated",
    "bytes": 20074337,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-26T07:03",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 7,
+   "cta_kind": "question"
   },
   {
    "file": "AR_INSTINCT/02_BUILD-IT-THEN-DESTROY-IT_76s.mp4",
@@ -4902,7 +4934,11 @@
    "hook": "You build things just to destroy",
    "bytes": 34995186,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-27T14:21",
+   "cta_keyword": "RISE",
+   "cta_variant": 15,
+   "cta_kind": "question"
   },
   {
    "file": "AR_INSTINCT/02_PAIN-DRIVES-YOU-MORE_50s.mp4",
@@ -4910,7 +4946,11 @@
    "hook": "Pain drives you more than pleasure",
    "bytes": 22408624,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-26T17:25",
+   "cta_keyword": "YES",
+   "cta_variant": 11,
+   "cta_kind": "question"
   },
   {
    "file": "AR_PRISON/01_DNA-COUNTER-INTENTIONS_61s.mp4",
@@ -4918,7 +4958,11 @@
    "hook": "Their trauma became your own self-sabotage",
    "bytes": 39815895,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T10:28",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_PRISON/01_HE-WROTE-HIMSELF-A-FAKE-CHECK_105s.mp4",
@@ -4926,7 +4970,11 @@
    "hook": "He wrote himself a fake check",
    "bytes": 70999900,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-27T16:58",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 16,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_PRISON/01_PRISON-WAS-THE-ANSWER_66s.mp4",
@@ -4934,7 +4982,11 @@
    "hook": "He manifested his own prison sentence",
    "bytes": 43477358,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-26T09:57",
+   "cta_keyword": "YES",
+   "cta_variant": 8,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_PRISON/02_THE-HEART-ATTACK-HE-NEEDED_81s.mp4",
@@ -4942,7 +4994,11 @@
    "hook": "A heart attack was the answer",
    "bytes": 54523938,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-27T07:10",
+   "cta_keyword": "RISE",
+   "cta_variant": 12,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_TONGUE/01_TERRIFIC-MEANS-DISASTER_99s.mp4",
@@ -4950,7 +5006,11 @@
    "hook": "Terrific secretly means something truly disastrous",
    "bytes": 74972602,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T12:08",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_TONGUE/01_TWO-WORDS-MISTRANSLATED_142s.mp4",
@@ -4958,7 +5018,11 @@
    "hook": "Two words in the Bible, mistranslated",
    "bytes": 100675851,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-26T14:52",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 10,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_TONGUE/01_YOUR-VOICE-REPROGRAMS-YOU_135s.mp4",
@@ -4966,7 +5030,11 @@
    "hook": "Speaking out loud reprograms your body",
    "bytes": 97689774,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T18:06",
+   "cta_keyword": "RISE",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_TONGUE/02_CAT-COMMAND_70s.mp4",
@@ -4974,7 +5042,11 @@
    "hook": "They control your mind with words",
    "bytes": 47071920,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-24T16:56",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_TONGUE/02_HE-COULDNT-TALK_163s.mp4",
@@ -4982,7 +5054,11 @@
    "hook": "He couldn't talk one phrase changed",
    "bytes": 120630546,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-27T12:18",
+   "cta_keyword": "YES",
+   "cta_variant": 14,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_VEIL/01_A-ROLEX-PROVES-NOTHING_62s.mp4",
@@ -4990,7 +5066,11 @@
    "hook": "A Rolex proves nothing about you",
    "bytes": 52360829,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T15:33",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "AR_VEIL/01_NOT-A-PUPPET-ANYMORE_46s.mp4",
@@ -4998,7 +5078,11 @@
    "hook": "You are not a puppet anymore",
    "bytes": 49244677,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-24T15:06",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_VEIL/01_SHOW-ME-WHERE-GOD-IS-NOT_123s.mp4",
@@ -5006,7 +5090,11 @@
    "hook": "Show me where God is not",
    "bytes": 115949167,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-28T07:34",
+   "cta_keyword": "YES",
+   "cta_variant": 17,
+   "cta_kind": "question"
   },
   {
    "file": "AR_VEIL/01_THE-GUARD-ALREADY-KNEW_64s.mp4",
@@ -5014,7 +5102,11 @@
    "hook": "The guard already knew the answer",
    "bytes": 54278846,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-26T12:16",
+   "cta_keyword": "RISE",
+   "cta_variant": 9,
+   "cta_kind": "question"
   },
   {
    "file": "AR_VEIL/02_GOD-WAS-NEVER-OVER-THERE_89s.mp4",
@@ -5022,7 +5114,11 @@
    "hook": "God was never over there somewhere",
    "bytes": 83021759,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-27T10:08",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 13,
+   "cta_kind": "question"
   },
   {
    "file": "AR_VEIL/02_TOTAL-CONFIDENCE-NO-PROOF_48s.mp4",
@@ -5030,7 +5126,11 @@
    "hook": "Total confidence needs zero external proof",
    "bytes": 38681774,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-25T07:06",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   }
  ]
 }
