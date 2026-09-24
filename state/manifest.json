@@ -4296,7 +4296,7 @@
    "bytes": 41543628,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-24T17:28",
+   "scheduled_at": "2026-09-24T20:24",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question",
@@ -4741,7 +4741,7 @@
    "bytes": 71793145,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-24T17:28",
+   "scheduled_at": "2026-09-24T20:24",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -4827,7 +4827,7 @@
    "bytes": 39216683,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-24T17:28",
+   "scheduled_at": "2026-09-24T20:24",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
    "cta_kind": "question"
@@ -4863,7 +4863,7 @@
    "bytes": 68144946,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-24T17:28",
+   "scheduled_at": "2026-09-24T20:24",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -4873,12 +4873,26 @@
    "caption": "Before you can manifest anything, Kevin Trudeau says you have to answer one question honestly: what will you no longer tolerate?\n\nNot a vague complaint - the exact thing. The debt, the relationship, the mood swings you can't control anymore.\n\nOnce you know what you don't want, you get precise about what you do want. See it, feel it as if you already have it, and hold that feeling for about 68 seconds. Then let go of needing it to happen.\n\nDo that a few times a day and that's the entire formula in its basic form.\n\nWhat's the one thing you're no longer willing to tolerate?\n\n#kevintrudeau #manifestation #yourwishisyourcommand #mindset #lawofattraction #goalsetting",
    "hook": "The 68 seconds that manifest anything",
    "bytes": 72812632,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-09-24T17:23",
    "cta_keyword": "FREE",
-   "cta_variant": 3
+   "cta_variant": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/4688044248188522/",
+    "instagram": "https://www.instagram.com/reel/DdsF9nsCXiN/",
+    "youtube": "https://youtube.com/shorts/VlaCZ4R9vno"
+   },
+   "caption_at_post": "Before you can manifest anything, Kevin Trudeau says you have to answer one question honestly: what will you no longer tolerate?\n\nNot a vague complaint - the exact thing. The debt, the relationship, the mood swings you can't control anymore.\n\nOnce you know what you don't want, you get precise about what you do want. See it, feel it as if you already have it, and hold that feeling for about 68 seconds. Then let go of needing it to happen.\n\nDo that a few times a day and that's the entire formula in its basic form.\n\nWhat's the one thing you're no longer willing to tolerate?\n\n#kevintrudeau #manifestation #yourwishisyourcommand #mindset #lawofattraction #goalsetting",
+   "posted_at": "2026-09-24T19:46"
   },
   {
    "file": "KT_MATH/01_WHAT-A-STRANGER-TOLD-HIM_90s.mp4",
@@ -5055,12 +5069,26 @@
    "caption": "Try this: don't think of a cat.\n\nToo late. You already did. That's not a trick \u2014 it's proof that a single word can walk straight into your mind and put a picture there without asking permission. In the Brotherhood, this was the first lesson: whoever controls the word controls the image, and whoever controls the image controls the emotion underneath it.\n\nThat's not a party trick. That's the same mechanism behind every headline, every sales pitch, every argument you've ever lost without knowing why.\n\nComment RISE and I'll send you the rest of the training.\n\n#awakening #mindcontrol #consciousness #psychology #ancientwisdom #kevintrudeau",
    "hook": "They control your mind with words",
    "bytes": 47071920,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-24T16:56",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1410320331170293/",
+    "instagram": "https://www.instagram.com/reel/DdsFjY9gbiC/",
+    "youtube": "https://youtube.com/shorts/iceQyHFN8Ic"
+   },
+   "caption_at_post": "Try this: don't think of a cat.\n\nToo late. You already did. That's not a trick \u2014 it's proof that a single word can walk straight into your mind and put a picture there without asking permission. In the Brotherhood, this was the first lesson: whoever controls the word controls the image, and whoever controls the image controls the emotion underneath it.\n\nThat's not a party trick. That's the same mechanism behind every headline, every sales pitch, every argument you've ever lost without knowing why.\n\nComment RISE and I'll send you the rest of the training.\n\n#awakening #mindcontrol #consciousness #psychology #ancientwisdom #kevintrudeau",
+   "posted_at": "2026-09-24T19:42"
   },
   {
    "file": "AR_TONGUE/02_HE-COULDNT-TALK_163s.mp4",
