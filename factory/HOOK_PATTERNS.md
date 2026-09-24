@@ -11,6 +11,11 @@ burned on the clip for the first 3 seconds, so every pattern below is compressed
 - A hook with no concrete subject ("Why your beliefs are not yours") is the weakest shape there is.
 
 ## The rule under all of them
+- **A hook must name something the viewer can PICTURE - a number, an age, an amount.** 24 Sept 2026,
+  Kamay killed two of my three suggestions: `One word made him millions` and `He changed one word in
+  a newspaper ad` - "its BS, it dosnt tell anything". Only `A million dollars before he turned 18`
+  survived. A mechanism tease ("one word", "this trick", "a stranger") is not a promise; it is a
+  riddle wearing a promise's clothes. If the hook has no concrete thing in it, it is not finished.
 **Hook the biggest concrete fact the clip actually pays.** Write the facts out first - the
 number, the name, the mechanism - and hook the strongest. An incidental detail (a stranger, a
 place, a day of the week) is never the promise.

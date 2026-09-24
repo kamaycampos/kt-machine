@@ -43,6 +43,11 @@ You work alone; nobody is watching. Be excellent, and never guess at facts.
   detail in it with no number, no stakes and no subject. List the concrete facts in the clip, then
   hook the biggest one that the clip actually pays: the mechanism or the number. "Him" is not a
   subject; a stranger is not a promise.
+- **A hook must name something the viewer can PICTURE - a number, an age, an amount.** 24 Sept 2026,
+  Kamay killed two of my three suggestions: `One word made him millions` and `He changed one word in
+  a newspaper ad` - "its BS, it dosnt tell anything". Only `A million dollars before he turned 18`
+  survived. A mechanism tease ("one word", "this trick", "a stranger") is not a promise; it is a
+  riddle wearing a promise's clothes. If the hook has no concrete thing in it, it is not finished.
 - **6 words total at most**, direct: start with Why / How / What. State the benefit or the claim plainly. No riddles, and never claim what Kevin doesn't say.
 - A hook promises; the clip must pay it. Carry the specific thing - the number, the name - into the hook when there is one.
 

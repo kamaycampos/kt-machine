@@ -36,7 +36,13 @@ def load(p):
         return None
 
 
-print(f"== KT MACHINE, {now:%d %b %H:%M} UTC ==\n")
+# RULE #1, printed first, every single run. Kamay, 24 Sept 2026: the number is
+# the SCORE of the work, not a wish beside it. A machine that runs beautifully
+# and earns nothing is a failure, and this line is where that gets said.
+AIM = 1777000
+EARNED = 0                                    # update the day a dollar lands
+print(f"== KT MACHINE, {now:%d %b %H:%M} UTC ==")
+print(f"** RULE #1  MONEY EARNED ${EARNED:,} of ${AIM:,}  ({EARNED / AIM * 100:.3f}%) **\n")
 
 # 1. THE QUEUE
 man = (load("state/manifest.json") or {}).get("clips", [])
@@ -106,6 +112,19 @@ if gone:
     bad.append(f"{len(gone)} clip(s) taken down by TikTok - the planner owes replacements")
 hooked = sum(1 for c in ours if c.get("hook"))
 print(f"            {hooked} of {len(ours)} clips carry their on-screen hook")
+
+# THE LIST, ALWAYS KNOWN. "always keep the list perfect, always know the score
+# and chart our progress, this is a must."
+try:
+    bl = open(os.path.expanduser("~/Kamay/BACKLOG.md")).read()
+    opn = bl.count("\n- [ ]")
+    dn = bl.count("\n- [x]")
+    money = [l.strip("- [] ").strip() for l in bl.splitlines() if l.startswith("- [ ]") and "**" in l][:3]
+    print(f"\nBACKLOG     {opn} open, {dn} shipped   (~/Kamay/BACKLOG.md)")
+    for m in money:
+        print("            next: " + m.split("**")[1][:70])
+except Exception as e:
+    print(f"\nBACKLOG     unreadable: {e}")
 
 print("\n" + ("ALL GOOD - nothing needs a human." if not bad else "NEEDS ATTENTION:"))
 for b in bad:
