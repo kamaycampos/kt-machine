@@ -1,12 +1,22 @@
 {
- "at": "2026-09-25T05:22",
+ "at": "2026-09-25T12:10",
  "profile": {
   "follower_count": 414,
   "following_count": 8,
-  "likes_count": 5746,
-  "video_count": 123
+  "likes_count": 5747,
+  "video_count": 124
  },
  "videos": {
+  "KT_FREEDOM/02_WHAT-FINANCIAL-FREEDOM-REALLY-COSTS_70s.mp4": {
+   "id": "7689440511798611214",
+   "view_count": 0,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7689440511798611214?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 70,
+   "posted": "2026-09-25T11:57"
+  },
   "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
    "id": "7688148098480098573",
    "view_count": 464,
@@ -29,7 +39,7 @@
   },
   "KT_YWIYC/01_HOW-TO-START-ACTUALLY-DOING-IT_87s.mp4": {
    "id": "7689168512304123150",
-   "view_count": 219,
+   "view_count": 221,
    "like_count": 11,
    "comment_count": 0,
    "share_count": 0,
@@ -69,7 +79,7 @@
   },
   "KT_RICH/04_THE-CUP-HOLDER-IDEA_180s.mp4": {
    "id": "7688688158082469134",
-   "view_count": 659,
+   "view_count": 660,
    "like_count": 58,
    "comment_count": 0,
    "share_count": 7,
@@ -109,7 +119,7 @@
   },
   "KT_SECRET/03_SIXTY-AND-BROKE_44s.mp4": {
    "id": "7688344513672170765",
-   "view_count": 467,
+   "view_count": 468,
    "like_count": 33,
    "comment_count": 0,
    "share_count": 3,
@@ -149,7 +159,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3635,
+   "view_count": 3636,
    "like_count": 152,
    "comment_count": 7,
    "share_count": 16,
@@ -169,7 +179,7 @@
   },
   "KT_RICH/06_PEP-TALKS-WHEN-ALONE_71s.mp4": {
    "id": "7687607782639537422",
-   "view_count": 1177,
+   "view_count": 1178,
    "like_count": 92,
    "comment_count": 4,
    "share_count": 27,
@@ -199,7 +209,7 @@
   },
   "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4": {
    "id": "7686887912297843981",
-   "view_count": 2309,
+   "view_count": 2310,
    "like_count": 76,
    "comment_count": 5,
    "share_count": 11,
@@ -289,7 +299,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14042,
+   "view_count": 14046,
    "like_count": 863,
    "comment_count": 59,
    "share_count": 196,
@@ -339,7 +349,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 37902,
+   "view_count": 37908,
    "like_count": 781,
    "comment_count": 27,
    "share_count": 171,
@@ -389,8 +399,8 @@
   },
   "KT_HOME/02_02_WHY-RICH-HOMES-ARE-FULL-OF-OLD-THINGS_85s.mp4": {
    "id": "7685065417743797518",
-   "view_count": 3443,
-   "like_count": 267,
+   "view_count": 3446,
+   "like_count": 268,
    "comment_count": 6,
    "share_count": 43,
    "share_url": "https://www.tiktok.com/@kt_student/video/7685065417743797518?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -699,7 +709,7 @@
   },
   "KT_PROB/01_THE-FOREST-FIRE_156s.mp4": {
    "id": "7681447590923177229",
-   "view_count": 239,
+   "view_count": 240,
    "like_count": 11,
    "comment_count": 0,
    "share_count": 1,
