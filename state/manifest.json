@@ -4123,7 +4123,7 @@
    "bytes": 18898183,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T12:15",
+   "scheduled_at": "2026-09-25T14:15",
    "cta_keyword": "MONEY",
    "cta_variant": 8,
    "cta_kind": "question",
@@ -4246,13 +4246,27 @@
    "file": "KT_FREEDOM/01_HOW-TO-GET-AROUND-RICH-PEOPLE_78s.mp4",
    "caption": "Kevin Trudeau grew up in a blue-collar town. A couple of towns over was the rich area and its country club.\n\nSo he became a caddy - because the only people there were rich.\n\nHe noticed they talked differently, thought differently, walked differently. And they were normal human beings, just like his dad.\n\nIf they can do it, you can do it too.\n\n#kevintrudeau #mindset #success #wealth #mentors #richpeople",
    "bytes": 46786265,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-09-25T08:28",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
    "cta_kind": "question",
-   "hook": "How to get around rich people"
+   "hook": "How to get around rich people",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1622950679424207/",
+    "instagram": "https://www.instagram.com/reel/DduAHdflHR2/",
+    "youtube": "https://youtube.com/shorts/L-i3-AnYmF0"
+   },
+   "caption_at_post": "Kevin Trudeau grew up in a blue-collar town. A couple of towns over was the rich area and its country club.\n\nSo he became a caddy - because the only people there were rich.\n\nHe noticed they talked differently, thought differently, walked differently. And they were normal human beings, just like his dad.\n\nIf they can do it, you can do it too.\n\n#kevintrudeau #mindset #success #wealth #mentors #richpeople",
+   "posted_at": "2026-09-25T13:33"
   },
   {
    "file": "KT_FREEDOM/01_WHY-HAVING-IT-WONT-FIX-YOU_67s.mp4",
@@ -4660,7 +4674,7 @@
    "bytes": 57036282,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T11:52",
+   "scheduled_at": "2026-09-25T14:15",
    "cta_keyword": "RISE",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -4720,12 +4734,26 @@
    "caption": "The extraterrestrial races in contact with Earth were never united, and they weren't especially peaceful with each other either.\n\nThe Mahabharata and the Ramayana, ancient Indian texts thousands of years old, describe Vimanas, flying craft belonging to different gods from different planets, fighting wars in the sky. Lasers. Nuclear weapons. Missiles. Described in detail by people who had no words yet for any of it.\n\nEventually a few races came out on top and settled into what's described as a kind of peace treaty, a Galactic Federation. That treaty, allegedly, is still what's shaping how this planet is run.\n\nComment RISE and I'll send you the rest of this.\n\n#disclosure #ancientaliens #ufo #ancientwisdom #awakening #kevintrudeau",
    "hook": "Ancient wars still control Earth today",
    "bytes": 56248447,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-25T09:09",
    "cta_keyword": "YES",
    "cta_variant": 8,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1391580022606986/",
+    "instagram": "https://www.instagram.com/reel/DduAY3iiaHi/",
+    "youtube": "https://youtube.com/shorts/FQ2fXyxtiz0"
+   },
+   "caption_at_post": "The extraterrestrial races in contact with Earth were never united, and they weren't especially peaceful with each other either.\n\nThe Mahabharata and the Ramayana, ancient Indian texts thousands of years old, describe Vimanas, flying craft belonging to different gods from different planets, fighting wars in the sky. Lasers. Nuclear weapons. Missiles. Described in detail by people who had no words yet for any of it.\n\nEventually a few races came out on top and settled into what's described as a kind of peace treaty, a Galactic Federation. That treaty, allegedly, is still what's shaping how this planet is run.\n\nComment RISE and I'll send you the rest of this.\n\n#disclosure #ancientaliens #ufo #ancientwisdom #awakening #kevintrudeau",
+   "posted_at": "2026-09-25T13:35"
   },
   {
    "file": "AR_DISCLOSURE/02_CLOSE-ENCOUNTERS-WAS-NEVER-JUST-FICTION_116s.mp4",
@@ -4860,7 +4888,7 @@
    "bytes": 49363775,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T10:00",
+   "scheduled_at": "2026-09-25T14:15",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -4922,7 +4950,7 @@
    "bytes": 111933382,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T09:09",
+   "scheduled_at": "2026-09-25T14:15",
    "cta_keyword": "KT",
    "cta_variant": 4,
    "cta_kind": "question"
@@ -4934,7 +4962,7 @@
    "bytes": 68144946,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T09:09",
+   "scheduled_at": "2026-09-25T14:15",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -5010,7 +5038,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T12:02",
+   "scheduled_at": "2026-09-25T14:15",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5058,7 +5086,7 @@
    "bytes": 39815895,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T10:28",
+   "scheduled_at": "2026-09-25T14:15",
    "cta_keyword": "RISE",
    "cta_variant": 3,
    "cta_kind": "question"
@@ -5106,7 +5134,7 @@
    "bytes": 74972602,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T12:08",
+   "scheduled_at": "2026-09-25T14:15",
    "cta_keyword": "LUCKY",
    "cta_variant": 4,
    "cta_kind": "offer"
