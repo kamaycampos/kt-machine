@@ -4250,7 +4250,7 @@
    "bytes": 50521430,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T17:28",
+   "scheduled_at": "2026-09-25T20:26",
    "cta_keyword": "FREE",
    "cta_variant": 9,
    "cta_kind": "offer",
@@ -4561,7 +4561,7 @@
    "bytes": 80511315,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T19:30",
+   "scheduled_at": "2026-09-25T20:26",
    "cta_keyword": "YES",
    "cta_variant": 11,
    "cta_kind": "question"
@@ -4826,12 +4826,26 @@
    "caption": "Jesus told his apostles exactly how to pray, and almost nobody was taught the real translation.\n\n\"Our Father\" \u2014 not \"my,\" because you're not praying just for yourself. And \"who art in heaven\" is mistranslated. Heaven isn't a location above you. The original language says \"who dwells within us as us.\"\n\nThat single line rewires the whole prayer. You're not petitioning something far away. You're connecting to a source that lives in you and in everyone else, at the same time.\n\nComment RISE and I'll send you the full breakdown.\n\n#awakening #spirituality #ancientwisdom #consciousness #prayer #kevintrudeau",
    "hook": "Heaven isn't a place it's you",
    "bytes": 120283776,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-25T17:28",
    "cta_keyword": "LUCKY",
    "cta_variant": 10,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2158415285089640/",
+    "instagram": "https://www.instagram.com/reel/Dduq4P9CIat/",
+    "youtube": "https://youtube.com/shorts/2_ydGmViMNU"
+   },
+   "caption_at_post": "Jesus told his apostles exactly how to pray, and almost nobody was taught the real translation.\n\n\"Our Father\" \u2014 not \"my,\" because you're not praying just for yourself. And \"who art in heaven\" is mistranslated. Heaven isn't a location above you. The original language says \"who dwells within us as us.\"\n\nThat single line rewires the whole prayer. You're not petitioning something far away. You're connecting to a source that lives in you and in everyone else, at the same time.\n\nComment RISE and I'll send you the full breakdown.\n\n#awakening #spirituality #ancientwisdom #consciousness #prayer #kevintrudeau",
+   "posted_at": "2026-09-25T19:47"
   },
   {
    "file": "AR_PRAYER/01_YOU-WERE-NEVER-THE-POINT_95s.mp4",
@@ -4916,7 +4930,7 @@
    "bytes": 49363775,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T17:28",
+   "scheduled_at": "2026-09-25T20:26",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -4926,12 +4940,26 @@
    "caption": "Same house. Same buyers driving by. One realtor couldn't sell it in six months. Another sold it in a week.\n\nKevin Trudeau says the difference wasn't the market - it was Josh Altman, a Beverly Hills realtor whose company does over a billion and a half a year. He took new pictures, staged the empty rooms, rewrote the listing, and changed the walkthrough completely.\n\nMost realtors narrate: \"this is the living room, notice the carpet.\" Altman asks questions instead - where are you from, what do you do, what's bringing you here - and builds a connection before he ever mentions square footage.\n\nPeople don't buy a room. They buy a feeling about themselves in it.\n\n#kevintrudeau #realestate #realtor #homeselling #marketing #wealthmindset",
    "hook": "One house sold in a week",
    "bytes": 99384958,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-25T17:23",
    "cta_keyword": "MONEY",
    "cta_variant": 8,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2590041121457808/",
+    "instagram": "https://www.instagram.com/reel/DduqhQLCVJA/",
+    "youtube": "https://youtube.com/shorts/5DBgZ8WFcQE"
+   },
+   "caption_at_post": "Same house. Same buyers driving by. One realtor couldn't sell it in six months. Another sold it in a week.\n\nKevin Trudeau says the difference wasn't the market - it was Josh Altman, a Beverly Hills realtor whose company does over a billion and a half a year. He took new pictures, staged the empty rooms, rewrote the listing, and changed the walkthrough completely.\n\nMost realtors narrate: \"this is the living room, notice the carpet.\" Altman asks questions instead - where are you from, what do you do, what's bringing you here - and builds a connection before he ever mentions square footage.\n\nPeople don't buy a room. They buy a feeling about themselves in it.\n\n#kevintrudeau #realestate #realtor #homeselling #marketing #wealthmindset",
+   "posted_at": "2026-09-25T19:44"
   },
   {
    "file": "KT_BASEMENT/02_HE-WORKED-90-HOUR-WEEKS-FIRST_76s.mp4",
@@ -4966,7 +4994,7 @@
    "bytes": 149932601,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T17:28",
+   "scheduled_at": "2026-09-25T20:26",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
    "cta_kind": "question"
@@ -4978,7 +5006,7 @@
    "bytes": 111933382,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T17:28",
+   "scheduled_at": "2026-09-25T20:26",
    "cta_keyword": "KT",
    "cta_variant": 4,
    "cta_kind": "question"
@@ -4990,7 +5018,7 @@
    "bytes": 68144946,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T17:28",
+   "scheduled_at": "2026-09-25T20:26",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -5066,7 +5094,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T17:28",
+   "scheduled_at": "2026-09-25T20:26",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5114,7 +5142,7 @@
    "bytes": 39815895,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T17:28",
+   "scheduled_at": "2026-09-25T20:26",
    "cta_keyword": "RISE",
    "cta_variant": 3,
    "cta_kind": "question"
@@ -5162,7 +5190,7 @@
    "bytes": 74972602,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T17:28",
+   "scheduled_at": "2026-09-25T20:26",
    "cta_keyword": "LUCKY",
    "cta_variant": 4,
    "cta_kind": "offer"
@@ -5186,7 +5214,7 @@
    "bytes": 97689774,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T18:06",
+   "scheduled_at": "2026-09-25T20:26",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5236,7 +5264,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T17:28",
+   "scheduled_at": "2026-09-25T20:26",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
