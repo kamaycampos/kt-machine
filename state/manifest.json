@@ -4722,7 +4722,7 @@
    "bytes": 56248447,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T07:38",
+   "scheduled_at": "2026-09-25T09:09",
    "cta_keyword": "YES",
    "cta_variant": 8,
    "cta_kind": "offer"
@@ -4882,12 +4882,26 @@
    "caption": "Todd Graves wanted to open a chicken restaurant. Nobody would fund it, so he found the money the hard way.\n\nKevin Trudeau tells it straight: Graves worked 90-hour weeks at an oil refinery, saved every dollar, then went to Alaska to fish for salmon when the refinery work slowed down. He slept on the floor to keep saving.\n\nThat restaurant became Raising Cane's. Todd Graves is now worth over $9 billion.\n\nThe lesson isn't the chicken. It's that he was willing to do the ugly, unglamorous work everyone else refuses - and that's what actually funded the dream.\n\nWhat's the unglamorous work you've been avoiding?\n\n#kevintrudeau #entrepreneur #successstory #hustle #businessmindset #wealthmindset",
    "hook": "He worked 90 hour weeks first",
    "bytes": 39216683,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-25T03:35",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/28440745245590125/",
+    "instagram": "https://www.instagram.com/reel/DdtdHb5lECg/",
+    "youtube": "https://youtube.com/shorts/OmRMvvCdgqI"
+   },
+   "caption_at_post": "Todd Graves wanted to open a chicken restaurant. Nobody would fund it, so he found the money the hard way.\n\nKevin Trudeau tells it straight: Graves worked 90-hour weeks at an oil refinery, saved every dollar, then went to Alaska to fish for salmon when the refinery work slowed down. He slept on the floor to keep saving.\n\nThat restaurant became Raising Cane's. Todd Graves is now worth over $9 billion.\n\nThe lesson isn't the chicken. It's that he was willing to do the ugly, unglamorous work everyone else refuses - and that's what actually funded the dream.\n\nWhat's the unglamorous work you've been avoiding?\n\n#kevintrudeau #entrepreneur #successstory #hustle #businessmindset #wealthmindset",
+   "posted_at": "2026-09-25T08:27"
   },
   {
    "file": "KT_HUSTLE/01_THE-ADS-WERE-THE-PROBLEM_186s.mp4",
@@ -4908,7 +4922,7 @@
    "bytes": 111933382,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T07:03",
+   "scheduled_at": "2026-09-25T09:09",
    "cta_keyword": "KT",
    "cta_variant": 4,
    "cta_kind": "question"
@@ -4920,7 +4934,7 @@
    "bytes": 68144946,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T03:35",
+   "scheduled_at": "2026-09-25T09:09",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -5238,12 +5252,26 @@
    "caption": "There's a version of you that never needs anyone's permission to feel okay.\n\nImagine total knowingness \u2014 the kind that never needs to be affirmed, validated, agreed with, or understood by anyone else. Never needing to argue your point. Never needing credit for what you did. Never needing anyone's approval to feel like you're enough. That isn't arrogance. It's a state where nothing outside you can shake what's already settled inside you.\n\nMost people spend their whole life negotiating for a feeling they could just have.\n\nComment RISE and I'll send you the full passage.\n\n#awakening #consciousness #selfworth #spirituality #mindset #kevintrudeau",
    "hook": "Total confidence needs zero external proof",
    "bytes": 38681774,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-25T07:06",
    "cta_keyword": "YES",
    "cta_variant": 2,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/4455029311385757/",
+    "instagram": "https://www.instagram.com/reel/DdtdbjHCnoY/",
+    "youtube": "https://youtube.com/shorts/Xl2srtP1zVM"
+   },
+   "caption_at_post": "There's a version of you that never needs anyone's permission to feel okay.\n\nImagine total knowingness \u2014 the kind that never needs to be affirmed, validated, agreed with, or understood by anyone else. Never needing to argue your point. Never needing credit for what you did. Never needing anyone's approval to feel like you're enough. That isn't arrogance. It's a state where nothing outside you can shake what's already settled inside you.\n\nMost people spend their whole life negotiating for a feeling they could just have.\n\nComment RISE and I'll send you the full passage.\n\n#awakening #consciousness #selfworth #spirituality #mindset #kevintrudeau",
+   "posted_at": "2026-09-25T08:30"
   }
  ]
 }
