@@ -4172,13 +4172,27 @@
    "file": "KT_YWIYC/01_HOW-TO-START-ACTUALLY-DOING-IT_87s.mp4",
    "caption": "\"I will\" is someday. \"I am in the process of becoming a millionaire\" is today.\n\nKevin Trudeau says that one sentence only holds up if you're actually doing something: the books, the courses, the training, the work.\n\nSo it does two things at once. It tells the truth about today, and it pushes you to act so it stays true.\n\nWhat would make that sentence true for you this week?\n\n#kevintrudeau #action #manifesting #habits #success #wealthmindset",
    "bytes": 58857079,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-24T20:21",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer",
-   "hook": "How to start actually doing it"
+   "hook": "How to start actually doing it",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1101794062324841/",
+    "instagram": "https://www.instagram.com/reel/DdsVIctnbia/",
+    "youtube": "https://youtube.com/shorts/KAqUwRRoboU"
+   },
+   "caption_at_post": "\"I will\" is someday. \"I am in the process of becoming a millionaire\" is today.\n\nKevin Trudeau says that one sentence only holds up if you're actually doing something: the books, the courses, the training, the work.\n\nSo it does two things at once. It tells the truth about today, and it pushes you to act so it stays true.\n\nWhat would make that sentence true for you this week?\n\n#kevintrudeau #action #manifesting #habits #success #wealthmindset",
+   "posted_at": "2026-09-24T21:58"
   },
   {
    "file": "KT_YWIYC/01_WHY-SOMEDAY-BEATS-TODAY_159s.mp4",
@@ -4296,7 +4310,7 @@
    "bytes": 41543628,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-24T20:24",
+   "scheduled_at": "2026-09-24T22:38",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question",
@@ -4527,12 +4541,27 @@
    "caption": "If your lineage carried violence, it's not just history. It's frequency, and it's in your DNA right now.\n\nScripture said it thousands of years ago: the sins of the father are passed down seven generations. Science is only now catching up to what that actually means. You don't inherit the guilt. You inherit the vibration, and it can quietly sabotage the exact areas of life your ancestors struggled with.\n\nClear it, and the pattern stops with you.\n\nComment RISE and I'll send you the full teaching.\n\n#ancestraltrauma #dnahealing #generationalhealing #awakening #spirituality #kevintrudeau",
    "hook": "Their sins are still in you",
    "bytes": 77074687,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "chunk 2/2 failed 500: null"
+   },
    "scheduled_at": "2026-09-24T19:40",
    "cta_keyword": "LUCKY",
    "cta_variant": 7,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1657614102820132/",
+    "instagram": "https://www.instagram.com/reel/DdsU2NagTj3/",
+    "youtube": "https://youtube.com/shorts/uz_YgNZqOyc"
+   },
+   "caption_at_post": "If your lineage carried violence, it's not just history. It's frequency, and it's in your DNA right now.\n\nScripture said it thousands of years ago: the sins of the father are passed down seven generations. Science is only now catching up to what that actually means. You don't inherit the guilt. You inherit the vibration, and it can quietly sabotage the exact areas of life your ancestors struggled with.\n\nClear it, and the pattern stops with you.\n\nComment RISE and I'll send you the full teaching.\n\n#ancestraltrauma #dnahealing #generationalhealing #awakening #spirituality #kevintrudeau",
+   "posted_at": "2026-09-24T21:55",
+   "tiktok_retry": true
   },
   {
    "file": "AR_BLOODLINE/02_YOUR-BLOODLINE-BELIEVES-MONEY-IS-EVIL_100s.mp4",
@@ -4741,7 +4770,7 @@
    "bytes": 71793145,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-24T20:24",
+   "scheduled_at": "2026-09-24T22:38",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -4827,7 +4856,7 @@
    "bytes": 39216683,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-24T20:24",
+   "scheduled_at": "2026-09-24T22:38",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
    "cta_kind": "question"
@@ -4863,7 +4892,7 @@
    "bytes": 68144946,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-24T20:24",
+   "scheduled_at": "2026-09-24T22:38",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question"
