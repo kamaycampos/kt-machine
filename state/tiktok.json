@@ -1,15 +1,25 @@
 {
- "at": "2026-09-25T17:31",
+ "at": "2026-09-25T21:49",
  "profile": {
   "follower_count": 414,
   "following_count": 8,
-  "likes_count": 5751,
-  "video_count": 125
+  "likes_count": 5757,
+  "video_count": 126
  },
  "videos": {
+  "KT_BASEMENT/02_HE-WORKED-90-HOUR-WEEKS-FIRST_76s.mp4": {
+   "id": "7689272753676995853",
+   "view_count": 128,
+   "like_count": 10,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7689272753676995853?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 75,
+   "posted": "2026-09-25T01:05"
+  },
   "KT_YWIYC/01_HOW-TO-START-ACTUALLY-DOING-IT_87s.mp4": {
    "id": "7689168512304123150",
-   "view_count": 222,
+   "view_count": 223,
    "like_count": 11,
    "comment_count": 0,
    "share_count": 0,
@@ -19,7 +29,7 @@
   },
   "KT_FREEDOM/02_WHAT-FINANCIAL-FREEDOM-REALLY-COSTS_70s.mp4": {
    "id": "7689440511798611214",
-   "view_count": 4,
+   "view_count": 6,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -27,20 +37,10 @@
    "duration": 70,
    "posted": "2026-09-25T11:57"
   },
-  "KT_BASEMENT/02_HE-WORKED-90-HOUR-WEEKS-FIRST_76s.mp4": {
-   "id": "7689272753676995853",
-   "view_count": 126,
-   "like_count": 9,
-   "comment_count": 0,
-   "share_count": 0,
-   "share_url": "https://www.tiktok.com/@kt_student/video/7689272753676995853?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
-   "duration": 75,
-   "posted": "2026-09-25T01:05"
-  },
   "KT_YWIYC/01_WHY-HONEST-WORK-KEEPS-YOU-BROKE_71s.mp4": {
    "id": "7689209177406786829",
-   "view_count": 189,
-   "like_count": 10,
+   "view_count": 191,
+   "like_count": 11,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7689209177406786829?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -89,7 +89,7 @@
   },
   "KT_SECRET/01_THE-SAME-RECORDS_150s.mp4": {
    "id": "7688541338953862413",
-   "view_count": 394,
+   "view_count": 396,
    "like_count": 39,
    "comment_count": 2,
    "share_count": 1,
@@ -99,7 +99,7 @@
   },
   "KT_SECRET/04_NINE-TO-FIVE-BILLIONAIRE_120s.mp4": {
    "id": "7688427490800405774",
-   "view_count": 30,
+   "view_count": 31,
    "like_count": 3,
    "comment_count": 0,
    "share_count": 0,
@@ -109,7 +109,7 @@
   },
   "KT_RICH/01_WHAT-A-MILLION-REALLY-MEANS_109s.mp4": {
    "id": "7688387138974387469",
-   "view_count": 406,
+   "view_count": 407,
    "like_count": 21,
    "comment_count": 0,
    "share_count": 1,
@@ -159,7 +159,7 @@
   },
   "KT_SECRET/05_NOT-THE-HAMBURGER-BUSINESS_124s.mp4": {
    "id": "7688020668356545806",
-   "view_count": 58,
+   "view_count": 60,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -169,7 +169,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3637,
+   "view_count": 3638,
    "like_count": 152,
    "comment_count": 7,
    "share_count": 16,
@@ -179,7 +179,7 @@
   },
   "KT_SECRET/02_TEN-THOUSAND-WAYS_113s.mp4": {
    "id": "7687673803677224206",
-   "view_count": 524,
+   "view_count": 525,
    "like_count": 54,
    "comment_count": 2,
    "share_count": 2,
@@ -189,7 +189,7 @@
   },
   "KT_RICH/06_PEP-TALKS-WHEN-ALONE_71s.mp4": {
    "id": "7687607782639537422",
-   "view_count": 1179,
+   "view_count": 1180,
    "like_count": 92,
    "comment_count": 4,
    "share_count": 27,
@@ -309,7 +309,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14049,
+   "view_count": 14055,
    "like_count": 865,
    "comment_count": 59,
    "share_count": 196,
@@ -339,7 +339,7 @@
   },
   "unmatched/7685818408352435470": {
    "id": "7685818408352435470",
-   "view_count": 799,
+   "view_count": 800,
    "like_count": 98,
    "comment_count": 2,
    "share_count": 5,
@@ -359,8 +359,8 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 37914,
-   "like_count": 781,
+   "view_count": 37919,
+   "like_count": 782,
    "comment_count": 27,
    "share_count": 171,
    "share_url": "https://www.tiktok.com/@kt_student/video/7685518951098453262?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -409,7 +409,7 @@
   },
   "KT_HOME/02_02_WHY-RICH-HOMES-ARE-FULL-OF-OLD-THINGS_85s.mp4": {
    "id": "7685065417743797518",
-   "view_count": 3447,
+   "view_count": 3450,
    "like_count": 268,
    "comment_count": 6,
    "share_count": 43,
@@ -669,7 +669,7 @@
   },
   "unmatched/7682064766667427086": {
    "id": "7682064766667427086",
-   "view_count": 330,
+   "view_count": 331,
    "like_count": 13,
    "comment_count": 2,
    "share_count": 3,
@@ -1089,7 +1089,7 @@
   },
   "unmatched/7674447198158900494": {
    "id": "7674447198158900494",
-   "view_count": 1476,
+   "view_count": 1477,
    "like_count": 106,
    "comment_count": 0,
    "share_count": 6,
