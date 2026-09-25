@@ -4308,13 +4308,27 @@
    "file": "KT_FREEDOM/02_WHAT-FINANCIAL-FREEDOM-REALLY-COSTS_70s.mp4",
    "caption": "A millionaire in the 1920s had a million dollars in bonds paying 10% - $100,000 a year for doing nothing.\n\nIn today's money, Kevin Trudeau says, that's $100 million. At 8%, that's $8 million a year without lifting a finger.\n\nThat was his goal from the start: money working for him instead of him working for money.\n\n#kevintrudeau #financialfreedom #passiveincome #wealth #money #investing",
    "bytes": 41543628,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-24T22:38",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question",
-   "hook": "What financial freedom really costs"
+   "hook": "What financial freedom really costs",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1865609214420663/",
+    "instagram": "https://www.instagram.com/reel/Dds2yNdD-Kp/",
+    "youtube": "https://youtube.com/shorts/Xba5QfvlcF0"
+   },
+   "caption_at_post": "A millionaire in the 1920s had a million dollars in bonds paying 10% - $100,000 a year for doing nothing.\n\nIn today's money, Kevin Trudeau says, that's $100 million. At 8%, that's $8 million a year without lifting a finger.\n\nThat was his goal from the start: money working for him instead of him working for money.\n\n#kevintrudeau #financialfreedom #passiveincome #wealth #money #investing",
+   "posted_at": "2026-09-25T02:52"
   },
   {
    "file": "KT_FREEDOM/02_WHY-GETTING-RICH-IS-EASIER-NOW_43s.mp4",
@@ -4547,7 +4561,7 @@
     "instagram": "posted",
     "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
     "youtube": "posted",
-    "tiktok": "chunk 2/2 failed 500: null"
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
    },
    "scheduled_at": "2026-09-24T19:40",
    "cta_keyword": "LUCKY",
@@ -4561,7 +4575,7 @@
    },
    "caption_at_post": "If your lineage carried violence, it's not just history. It's frequency, and it's in your DNA right now.\n\nScripture said it thousands of years ago: the sins of the father are passed down seven generations. Science is only now catching up to what that actually means. You don't inherit the guilt. You inherit the vibration, and it can quietly sabotage the exact areas of life your ancestors struggled with.\n\nClear it, and the pattern stops with you.\n\nComment RISE and I'll send you the full teaching.\n\n#ancestraltrauma #dnahealing #generationalhealing #awakening #spirituality #kevintrudeau",
    "posted_at": "2026-09-24T21:55",
-   "tiktok_retry": true
+   "tiktok_tries": 1
   },
   {
    "file": "AR_BLOODLINE/02_YOUR-BLOODLINE-BELIEVES-MONEY-IS-EVIL_100s.mp4",
@@ -4768,12 +4782,26 @@
    "caption": "Before you go to sleep tonight, try the two-part prayer almost no one still teaches.\n\nFirst, bless everyone else, not yourself. \"Bless Mommy, bless Daddy, bless my teacher.\" Even the people who hurt you, because blessing them is how you release it. Then, separately, give thanks for what's already here: your health, your bed, your people.\n\nNotice what's missing from both parts. You never once asked for anything. That's the part that actually connects.\n\nComment RISE and I'll send you the full ritual.\n\n#prayer #spirituality #gratitude #awakening #innerpeace #kevintrudeau",
    "hook": "You were never the point here",
    "bytes": 71793145,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-24T22:38",
    "cta_keyword": "RISE",
    "cta_variant": 6,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1631764268662153/",
+    "instagram": "https://www.instagram.com/reel/Dds3FEVD9rb/",
+    "youtube": "https://youtube.com/shorts/lD3WuhCGV7k"
+   },
+   "caption_at_post": "Before you go to sleep tonight, try the two-part prayer almost no one still teaches.\n\nFirst, bless everyone else, not yourself. \"Bless Mommy, bless Daddy, bless my teacher.\" Even the people who hurt you, because blessing them is how you release it. Then, separately, give thanks for what's already here: your health, your bed, your people.\n\nNotice what's missing from both parts. You never once asked for anything. That's the part that actually connects.\n\nComment RISE and I'll send you the full ritual.\n\n#prayer #spirituality #gratitude #awakening #innerpeace #kevintrudeau",
+   "posted_at": "2026-09-25T02:55"
   },
   {
    "file": "AR_PRAYER/02_JOY-BEFORE-THE-MIRACLE_69s.mp4",
@@ -4856,7 +4884,7 @@
    "bytes": 39216683,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-24T22:38",
+   "scheduled_at": "2026-09-25T03:35",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
    "cta_kind": "question"
@@ -4892,7 +4920,7 @@
    "bytes": 68144946,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-24T22:38",
+   "scheduled_at": "2026-09-25T03:35",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question"
