@@ -1,45 +1,15 @@
 {
- "at": "2026-09-25T12:10",
+ "at": "2026-09-25T17:31",
  "profile": {
   "follower_count": 414,
   "following_count": 8,
-  "likes_count": 5747,
-  "video_count": 124
+  "likes_count": 5751,
+  "video_count": 125
  },
  "videos": {
-  "KT_FREEDOM/02_WHAT-FINANCIAL-FREEDOM-REALLY-COSTS_70s.mp4": {
-   "id": "7689440511798611214",
-   "view_count": 0,
-   "like_count": 0,
-   "comment_count": 0,
-   "share_count": 0,
-   "share_url": "https://www.tiktok.com/@kt_student/video/7689440511798611214?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
-   "duration": 70,
-   "posted": "2026-09-25T11:57"
-  },
-  "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
-   "id": "7688148098480098573",
-   "view_count": 464,
-   "like_count": 39,
-   "comment_count": 2,
-   "share_count": 6,
-   "share_url": "https://www.tiktok.com/@kt_student/video/7688148098480098573?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
-   "duration": 72,
-   "posted": "2026-09-22T00:21"
-  },
-  "KT_YWIYC/01_WHY-HONEST-WORK-KEEPS-YOU-BROKE_71s.mp4": {
-   "id": "7689209177406786829",
-   "view_count": 188,
-   "like_count": 10,
-   "comment_count": 0,
-   "share_count": 0,
-   "share_url": "https://www.tiktok.com/@kt_student/video/7689209177406786829?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
-   "duration": 70,
-   "posted": "2026-09-24T20:58"
-  },
   "KT_YWIYC/01_HOW-TO-START-ACTUALLY-DOING-IT_87s.mp4": {
    "id": "7689168512304123150",
-   "view_count": 221,
+   "view_count": 222,
    "like_count": 11,
    "comment_count": 0,
    "share_count": 0,
@@ -47,10 +17,40 @@
    "duration": 89,
    "posted": "2026-09-24T18:21"
   },
+  "KT_FREEDOM/02_WHAT-FINANCIAL-FREEDOM-REALLY-COSTS_70s.mp4": {
+   "id": "7689440511798611214",
+   "view_count": 4,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7689440511798611214?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 70,
+   "posted": "2026-09-25T11:57"
+  },
+  "KT_BASEMENT/02_HE-WORKED-90-HOUR-WEEKS-FIRST_76s.mp4": {
+   "id": "7689272753676995853",
+   "view_count": 126,
+   "like_count": 9,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7689272753676995853?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 75,
+   "posted": "2026-09-25T01:05"
+  },
+  "KT_YWIYC/01_WHY-HONEST-WORK-KEEPS-YOU-BROKE_71s.mp4": {
+   "id": "7689209177406786829",
+   "view_count": 189,
+   "like_count": 10,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7689209177406786829?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 70,
+   "posted": "2026-09-24T20:58"
+  },
   "KT_FREEDOM/01_WHY-HAVING-IT-WONT-FIX-YOU_67s.mp4": {
    "id": "7689098540093541645",
-   "view_count": 325,
-   "like_count": 28,
+   "view_count": 326,
+   "like_count": 29,
    "comment_count": 0,
    "share_count": 2,
    "share_url": "https://www.tiktok.com/@kt_student/video/7689098540093541645?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -79,8 +79,8 @@
   },
   "KT_RICH/04_THE-CUP-HOLDER-IDEA_180s.mp4": {
    "id": "7688688158082469134",
-   "view_count": 660,
-   "like_count": 58,
+   "view_count": 661,
+   "like_count": 59,
    "comment_count": 0,
    "share_count": 7,
    "share_url": "https://www.tiktok.com/@kt_student/video/7688688158082469134?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -127,6 +127,16 @@
    "duration": 44,
    "posted": "2026-09-22T13:03"
   },
+  "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
+   "id": "7688148098480098573",
+   "view_count": 465,
+   "like_count": 39,
+   "comment_count": 2,
+   "share_count": 6,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7688148098480098573?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 72,
+   "posted": "2026-09-22T00:21"
+  },
   "unmatched/7688112024877993230": {
    "id": "7688112024877993230",
    "view_count": 22,
@@ -149,7 +159,7 @@
   },
   "KT_SECRET/05_NOT-THE-HAMBURGER-BUSINESS_124s.mp4": {
    "id": "7688020668356545806",
-   "view_count": 55,
+   "view_count": 58,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -159,7 +169,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3636,
+   "view_count": 3637,
    "like_count": 152,
    "comment_count": 7,
    "share_count": 16,
@@ -179,7 +189,7 @@
   },
   "KT_RICH/06_PEP-TALKS-WHEN-ALONE_71s.mp4": {
    "id": "7687607782639537422",
-   "view_count": 1178,
+   "view_count": 1179,
    "like_count": 92,
    "comment_count": 4,
    "share_count": 27,
@@ -299,8 +309,8 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14046,
-   "like_count": 863,
+   "view_count": 14049,
+   "like_count": 865,
    "comment_count": 59,
    "share_count": 196,
    "share_url": "https://www.tiktok.com/@kt_student/video/7685930943705566477?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -349,7 +359,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 37908,
+   "view_count": 37914,
    "like_count": 781,
    "comment_count": 27,
    "share_count": 171,
@@ -399,7 +409,7 @@
   },
   "KT_HOME/02_02_WHY-RICH-HOMES-ARE-FULL-OF-OLD-THINGS_85s.mp4": {
    "id": "7685065417743797518",
-   "view_count": 3446,
+   "view_count": 3447,
    "like_count": 268,
    "comment_count": 6,
    "share_count": 43,
@@ -549,7 +559,7 @@
   },
   "KT_DEBT/04_HOW-THEY-GOT-YOU_175s.mp4": {
    "id": "7683520059968359693",
-   "view_count": 284,
+   "view_count": 285,
    "like_count": 35,
    "comment_count": 3,
    "share_count": 4,
@@ -749,7 +759,7 @@
   },
   "KT_MED/02_THE-SLAVE-WAVE_135s.mp4": {
    "id": "7680651944918011150",
-   "view_count": 484,
+   "view_count": 485,
    "like_count": 33,
    "comment_count": 4,
    "share_count": 2,
@@ -929,7 +939,7 @@
   },
   "unmatched/7678886210856652045": {
    "id": "7678886210856652045",
-   "view_count": 314,
+   "view_count": 315,
    "like_count": 20,
    "comment_count": 4,
    "share_count": 0,
@@ -949,7 +959,7 @@
   },
   "unmatched/7678813116536343822": {
    "id": "7678813116536343822",
-   "view_count": 821,
+   "view_count": 822,
    "like_count": 86,
    "comment_count": 17,
    "share_count": 11,
@@ -979,7 +989,7 @@
   },
   "unmatched/7678526092348525838": {
    "id": "7678526092348525838",
-   "view_count": 291,
+   "view_count": 292,
    "like_count": 20,
    "comment_count": 0,
    "share_count": 0,
@@ -1059,7 +1069,7 @@
   },
   "unmatched/7674804931349597454": {
    "id": "7674804931349597454",
-   "view_count": 1144,
+   "view_count": 1145,
    "like_count": 113,
    "comment_count": 4,
    "share_count": 8,
