@@ -4150,7 +4150,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-09-25T20:34",
+   "scheduled_at": "2026-09-25T23:12",
    "cta_keyword": "KT",
    "cta_variant": 10,
    "hook": "Why I walked out of Harvard"
@@ -4248,13 +4248,27 @@
    "file": "KT_FREEDOM/01_HOW-A-SNOWSTORM-MADE-ME-MONEY_84s.mp4",
    "caption": "A blizzard in the 1970s. An old woman struggling to dig out her house. Young Kevin Trudeau grabbed a shovel just to help her.\n\nShe insisted on paying him. So he borrowed her shovel and knocked on every door on the street.\n\nHe made more money that weekend than his dad, a welder, made all week.\n\nFind a need and fill it.\n\n#kevintrudeau #entrepreneur #hustle #findaneed #money #business",
    "bytes": 50521430,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-25T20:26",
    "cta_keyword": "FREE",
    "cta_variant": 9,
    "cta_kind": "offer",
-   "hook": "How a snowstorm made me money"
+   "hook": "How a snowstorm made me money",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2191695221383391/",
+    "instagram": "https://www.instagram.com/reel/Ddu9kSlEss6/",
+    "youtube": "https://youtube.com/shorts/UWaKvddigwA"
+   },
+   "caption_at_post": "A blizzard in the 1970s. An old woman struggling to dig out her house. Young Kevin Trudeau grabbed a shovel just to help her.\n\nShe insisted on paying him. So he borrowed her shovel and knocked on every door on the street.\n\nHe made more money that weekend than his dad, a welder, made all week.\n\nFind a need and fill it.\n\n#kevintrudeau #entrepreneur #hustle #findaneed #money #business",
+   "posted_at": "2026-09-25T22:30"
   },
   {
    "file": "KT_FREEDOM/01_HOW-TO-GET-AROUND-RICH-PEOPLE_78s.mp4",
@@ -4559,12 +4573,26 @@
    "caption": "Somewhere back in your bloodline, someone carried a trauma. It's still in your DNA.\n\nEvery book on manifesting skips this part. You can say the affirmations, visualize the goal, do everything the system tells you \u2014 and still feel an invisible force pushing back. That's not you failing at the technique. That's a counter intention, sitting in your DNA and your memory, from this lifetime and before.\n\nYou were never broken. You were just carrying something that was never yours to carry.\n\nComment RISE and I'll send you how to find yours.\n\n#dnahealing #ancestraltrauma #subconscious #awakening #spirituality #kevintrudeau",
    "hook": "Your ancestors left you something heavy",
    "bytes": 80511315,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-25T20:26",
    "cta_keyword": "YES",
    "cta_variant": 11,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1548292747100842/",
+    "instagram": "https://www.instagram.com/reel/Ddu95QMDN2G/",
+    "youtube": "https://youtube.com/shorts/E1i6uk-1qg4"
+   },
+   "caption_at_post": "Somewhere back in your bloodline, someone carried a trauma. It's still in your DNA.\n\nEvery book on manifesting skips this part. You can say the affirmations, visualize the goal, do everything the system tells you \u2014 and still feel an invisible force pushing back. That's not you failing at the technique. That's a counter intention, sitting in your DNA and your memory, from this lifetime and before.\n\nYou were never broken. You were just carrying something that was never yours to carry.\n\nComment RISE and I'll send you how to find yours.\n\n#dnahealing #ancestraltrauma #subconscious #awakening #spirituality #kevintrudeau",
+   "posted_at": "2026-09-25T22:33"
   },
   {
    "file": "AR_BLOODLINE/02_FLOWERS-CAN-HEAL-YOUR-DNA_146s.mp4",
@@ -4930,7 +4958,7 @@
    "bytes": 49363775,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T20:26",
+   "scheduled_at": "2026-09-25T23:12",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -4994,7 +5022,7 @@
    "bytes": 149932601,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T20:26",
+   "scheduled_at": "2026-09-25T23:12",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
    "cta_kind": "question"
@@ -5006,7 +5034,7 @@
    "bytes": 111933382,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T20:26",
+   "scheduled_at": "2026-09-25T23:12",
    "cta_keyword": "KT",
    "cta_variant": 4,
    "cta_kind": "question"
@@ -5018,7 +5046,7 @@
    "bytes": 68144946,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T20:26",
+   "scheduled_at": "2026-09-25T23:12",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -5094,7 +5122,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T20:26",
+   "scheduled_at": "2026-09-25T23:12",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5142,7 +5170,7 @@
    "bytes": 39815895,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T20:26",
+   "scheduled_at": "2026-09-25T23:12",
    "cta_keyword": "RISE",
    "cta_variant": 3,
    "cta_kind": "question"
@@ -5190,7 +5218,7 @@
    "bytes": 74972602,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T20:26",
+   "scheduled_at": "2026-09-25T23:12",
    "cta_keyword": "LUCKY",
    "cta_variant": 4,
    "cta_kind": "offer"
@@ -5214,7 +5242,7 @@
    "bytes": 97689774,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T20:26",
+   "scheduled_at": "2026-09-25T23:12",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5264,7 +5292,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-25T20:26",
+   "scheduled_at": "2026-09-25T23:12",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
