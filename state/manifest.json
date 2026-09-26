@@ -4226,13 +4226,27 @@
    "file": "KT_YWIYC/01_WHY-SOMEDAY-BEATS-TODAY_159s.mp4",
    "caption": "\"I will be a millionaire.\" Not today. Someday.\n\nKevin Trudeau says that's exactly why this rung is easy to accept: there's no deadline to argue with.\n\nIt still stirs up what you were told. A teacher who said you'd never amount to anything. A parent who said you'd be broke your whole life. Let those surface, because that is how they lose their power.\n\nSay it daily and the picture you hold of yourself quietly changes.\n\n#kevintrudeau #mindset #selfimage #manifesting #selftalk #success",
    "bytes": 108890608,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-26T13:34",
    "cta_keyword": "WISH",
    "cta_variant": 12,
    "cta_kind": "offer",
-   "hook": "Why someday beats today"
+   "hook": "Why someday beats today",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1742859050146302/",
+    "instagram": "https://www.instagram.com/reel/DdwytDKgV3C/",
+    "youtube": "https://youtube.com/shorts/vJeWKYqgxb4"
+   },
+   "caption_at_post": "\"I will be a millionaire.\" Not today. Someday.\n\nKevin Trudeau says that's exactly why this rung is easy to accept: there's no deadline to argue with.\n\nIt still stirs up what you were told. A teacher who said you'd never amount to anything. A parent who said you'd be broke your whole life. Let those surface, because that is how they lose their power.\n\nSay it daily and the picture you hold of yourself quietly changes.\n\n#kevintrudeau #mindset #selfimage #manifesting #selftalk #success",
+   "posted_at": "2026-09-26T15:34"
   },
   {
    "file": "KT_YWIYC/02_WHY-AFFIRMATIONS-FAIL_194s.mp4",
@@ -4692,12 +4706,27 @@
    "caption": "There's no such thing as good news or bad news. There's just news, and you decide which one it becomes.\n\nViktor Frankl was in a Nazi concentration camp, facing death daily, and he said the guards controlled everything except one thing: his thoughts. That single sentence is the whole teaching.\n\nIn the Brotherhood, they trained a shortcut for it: two words, \"cancel, cancel,\" said the moment a fear-based thought shows up. It interrupts the habit before it finishes the sentence, then you replace it with the one you actually want.\n\nComment RISE and I'll send you the full technique.\n\n#mindset #spirituality #awakening #consciousness #resilience #kevintrudeau",
    "hook": "The Nazis couldn't control this part",
    "bytes": 56578811,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260926193557ECE0F6637FF3546605FC'}}"
+   },
    "scheduled_at": "2026-09-26T13:34",
    "cta_keyword": "LUCKY",
    "cta_variant": 13,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1578307436662832/",
+    "instagram": "https://www.instagram.com/reel/DdwzC1pFc4j/",
+    "youtube": "https://youtube.com/shorts/6hGdKwYL4pU"
+   },
+   "caption_at_post": "There's no such thing as good news or bad news. There's just news, and you decide which one it becomes.\n\nViktor Frankl was in a Nazi concentration camp, facing death daily, and he said the guards controlled everything except one thing: his thoughts. That single sentence is the whole teaching.\n\nIn the Brotherhood, they trained a shortcut for it: two words, \"cancel, cancel,\" said the moment a fear-based thought shows up. It interrupts the habit before it finishes the sentence, then you replace it with the one you actually want.\n\nComment RISE and I'll send you the full technique.\n\n#mindset #spirituality #awakening #consciousness #resilience #kevintrudeau",
+   "posted_at": "2026-09-26T15:35",
+   "tiktok_retry": true
   },
   {
    "file": "AR_BROTHERHOOD/01_THEY-GAVE-HIM-BOOKS-NOT-SECRETS_179s.mp4",
@@ -4850,7 +4879,7 @@
     "instagram": "posted",
     "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260926165539B659C0B70E64B85D9C90'}}"
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
    },
    "scheduled_at": "2026-09-26T09:26",
    "cta_keyword": "RISE",
@@ -4864,7 +4893,7 @@
    },
    "caption_at_post": "Close Encounters of the Third Kind was supposed to be a documentary.\n\nA filmmaker was shown real US Army footage of the craft landing and the meeting with the aliens themselves, and prepared to release it as fact. The military ran a study on what would happen if the public actually saw it. The result came back so bad they pulled the footage entirely.\n\nInstead, a young Steven Spielberg was brought to the White House, handed inside information, and told to make it fiction. Same story. Softer landing. The drip campaign, one more layer deep.\n\nComment RISE and I'll send you what actually happened.\n\n#disclosure #ufo #hollywood #truth #awakening #kevintrudeau",
    "posted_at": "2026-09-26T12:55",
-   "tiktok_retry": true
+   "tiktok_tries": 1
   },
   {
    "file": "AR_DISCLOSURE/02_HES-ACTUALLY-BEEN-TO-TWELVE-BILDERBERGS_67s.mp4",
@@ -5079,7 +5108,7 @@
    "bytes": 149932601,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T13:34",
+   "scheduled_at": "2026-09-26T16:15",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
    "cta_kind": "question"
@@ -5091,7 +5120,7 @@
    "bytes": 111933382,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T13:34",
+   "scheduled_at": "2026-09-26T16:15",
    "cta_keyword": "KT",
    "cta_variant": 4,
    "cta_kind": "question"
@@ -5103,7 +5132,7 @@
    "bytes": 68144946,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T13:34",
+   "scheduled_at": "2026-09-26T16:15",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -5167,7 +5196,7 @@
    "bytes": 103179359,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T13:34",
+   "scheduled_at": "2026-09-26T16:15",
    "cta_keyword": "FREE",
    "cta_variant": 9,
    "cta_kind": "offer"
@@ -5179,7 +5208,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T13:34",
+   "scheduled_at": "2026-09-26T16:15",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5191,7 +5220,7 @@
    "bytes": 20074337,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T13:34",
+   "scheduled_at": "2026-09-26T16:15",
    "cta_keyword": "LUCKY",
    "cta_variant": 7,
    "cta_kind": "question"
@@ -5266,7 +5295,7 @@
    "bytes": 43477358,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T13:34",
+   "scheduled_at": "2026-09-26T16:15",
    "cta_keyword": "YES",
    "cta_variant": 8,
    "cta_kind": "offer"
@@ -5318,7 +5347,7 @@
    "bytes": 100675851,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T14:52",
+   "scheduled_at": "2026-09-26T16:15",
    "cta_keyword": "LUCKY",
    "cta_variant": 10,
    "cta_kind": "offer"
@@ -5330,7 +5359,7 @@
    "bytes": 97689774,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T13:34",
+   "scheduled_at": "2026-09-26T16:15",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5380,7 +5409,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T13:34",
+   "scheduled_at": "2026-09-26T16:15",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5430,7 +5459,7 @@
    "bytes": 54278846,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T13:34",
+   "scheduled_at": "2026-09-26T16:15",
    "cta_keyword": "RISE",
    "cta_variant": 9,
    "cta_kind": "question"
