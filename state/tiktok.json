@@ -1,15 +1,35 @@
 {
- "at": "2026-09-26T16:44",
+ "at": "2026-09-26T21:32",
  "profile": {
-  "video_count": 130,
   "follower_count": 414,
   "following_count": 8,
-  "likes_count": 5801
+  "likes_count": 5800,
+  "video_count": 132
  },
  "videos": {
+  "KT_BASEMENT/01_HOW-LONG-BEFORE-BUSINESS-GETS-EASY_77s.mp4": {
+   "id": "7689615616877137182",
+   "view_count": 1,
+   "like_count": 1,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7689615616877137182?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 78,
+   "posted": "2026-09-25T23:16"
+  },
+  "KT_YWIYC/02_WHY-I-WALKED-OUT-OF-HARVARD_151s.mp4": {
+   "id": "7689898664533183758",
+   "view_count": 17,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7689898664533183758?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 151,
+   "posted": "2026-09-26T17:34"
+  },
   "KT_FREEDOM/01_HOW-A-SNOWSTORM-MADE-ME-MONEY_84s.mp4": {
    "id": "7689851916838292749",
-   "view_count": 2,
+   "view_count": 4,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -19,7 +39,7 @@
   },
   "KT_BASEMENT/01_ONE-HOUSE-SOLD-IN-A-WEEK_141s.mp4": {
    "id": "7689818530988051725",
-   "view_count": 0,
+   "view_count": 4,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -29,7 +49,7 @@
   },
   "KT_YWIYC/02_HOW-WINNERS-HANDLE-DISASTER_112s.mp4": {
    "id": "7689670671466564877",
-   "view_count": 1,
+   "view_count": 2,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -37,19 +57,9 @@
    "duration": 111,
    "posted": "2026-09-26T02:49"
   },
-  "KT_BASEMENT/01_HOW-LONG-BEFORE-BUSINESS-GETS-EASY_77s.mp4": {
-   "id": "7689615616877137182",
-   "view_count": 0,
-   "like_count": 1,
-   "comment_count": 0,
-   "share_count": 0,
-   "share_url": "https://www.tiktok.com/@kt_student/video/7689615616877137182?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
-   "duration": 78,
-   "posted": "2026-09-25T23:16"
-  },
   "KT_BASEMENT/02_HE-WORKED-90-HOUR-WEEKS-FIRST_76s.mp4": {
    "id": "7689272753676995853",
-   "view_count": 128,
+   "view_count": 131,
    "like_count": 11,
    "comment_count": 0,
    "share_count": 0,
@@ -69,7 +79,7 @@
   },
   "KT_FREEDOM/02_WHAT-FINANCIAL-FREEDOM-REALLY-COSTS_70s.mp4": {
    "id": "7689440511798611214",
-   "view_count": 6,
+   "view_count": 7,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -79,8 +89,8 @@
   },
   "KT_YWIYC/01_WHY-HONEST-WORK-KEEPS-YOU-BROKE_71s.mp4": {
    "id": "7689209177406786829",
-   "view_count": 194,
-   "like_count": 12,
+   "view_count": 195,
+   "like_count": 11,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7689209177406786829?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -89,7 +99,7 @@
   },
   "KT_FREEDOM/01_WHY-HAVING-IT-WONT-FIX-YOU_67s.mp4": {
    "id": "7689098540093541645",
-   "view_count": 326,
+   "view_count": 327,
    "like_count": 30,
    "comment_count": 0,
    "share_count": 2,
@@ -129,7 +139,7 @@
   },
   "KT_SECRET/01_THE-SAME-RECORDS_150s.mp4": {
    "id": "7688541338953862413",
-   "view_count": 401,
+   "view_count": 404,
    "like_count": 40,
    "comment_count": 2,
    "share_count": 1,
@@ -149,7 +159,7 @@
   },
   "KT_RICH/01_WHAT-A-MILLION-REALLY-MEANS_109s.mp4": {
    "id": "7688387138974387469",
-   "view_count": 408,
+   "view_count": 409,
    "like_count": 22,
    "comment_count": 0,
    "share_count": 1,
@@ -159,7 +169,7 @@
   },
   "KT_SECRET/03_SIXTY-AND-BROKE_44s.mp4": {
    "id": "7688344513672170765",
-   "view_count": 468,
+   "view_count": 470,
    "like_count": 34,
    "comment_count": 0,
    "share_count": 3,
@@ -169,7 +179,7 @@
   },
   "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
    "id": "7688148098480098573",
-   "view_count": 468,
+   "view_count": 469,
    "like_count": 39,
    "comment_count": 2,
    "share_count": 6,
@@ -199,7 +209,7 @@
   },
   "KT_SECRET/05_NOT-THE-HAMBURGER-BUSINESS_124s.mp4": {
    "id": "7688020668356545806",
-   "view_count": 66,
+   "view_count": 68,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -209,7 +219,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3638,
+   "view_count": 3641,
    "like_count": 153,
    "comment_count": 7,
    "share_count": 16,
@@ -229,7 +239,7 @@
   },
   "KT_RICH/06_PEP-TALKS-WHEN-ALONE_71s.mp4": {
    "id": "7687607782639537422",
-   "view_count": 1182,
+   "view_count": 1186,
    "like_count": 93,
    "comment_count": 4,
    "share_count": 27,
@@ -239,17 +249,17 @@
   },
   "KT_MIND/05_THE-TRASH-TEST_84s.mp4": {
    "id": "7687564395848731917",
-   "view_count": 1020,
+   "view_count": 1022,
    "like_count": 69,
    "comment_count": 2,
-   "share_count": 8,
+   "share_count": 9,
    "share_url": "https://www.tiktok.com/@kt_student/video/7687564395848731917?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 83,
    "posted": "2026-09-20T10:37"
   },
   "KT_RICH/05_WHAT-IS-KEEPING-YOU-POOR_58s.mp4": {
    "id": "7687048596029541645",
-   "view_count": 26,
+   "view_count": 27,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -399,7 +409,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 37942,
+   "view_count": 37948,
    "like_count": 785,
    "comment_count": 27,
    "share_count": 171,
@@ -449,7 +459,7 @@
   },
   "KT_HOME/02_02_WHY-RICH-HOMES-ARE-FULL-OF-OLD-THINGS_85s.mp4": {
    "id": "7685065417743797518",
-   "view_count": 3455,
+   "view_count": 3456,
    "like_count": 268,
    "comment_count": 6,
    "share_count": 43,
@@ -459,7 +469,7 @@
   },
   "KT_HOME/06_06_THREE-THINGS-TO-DO-TO-YOUR-HOME_69s.mp4": {
    "id": "7684994156057447693",
-   "view_count": 2061,
+   "view_count": 2062,
    "like_count": 176,
    "comment_count": 4,
    "share_count": 35,
@@ -599,7 +609,7 @@
   },
   "KT_DEBT/04_HOW-THEY-GOT-YOU_175s.mp4": {
    "id": "7683520059968359693",
-   "view_count": 285,
+   "view_count": 286,
    "like_count": 35,
    "comment_count": 3,
    "share_count": 4,
@@ -1109,7 +1119,7 @@
   },
   "unmatched/7674804931349597454": {
    "id": "7674804931349597454",
-   "view_count": 1145,
+   "view_count": 1146,
    "like_count": 113,
    "comment_count": 4,
    "share_count": 8,
@@ -1129,7 +1139,7 @@
   },
   "unmatched/7674447198158900494": {
    "id": "7674447198158900494",
-   "view_count": 1477,
+   "view_count": 1478,
    "like_count": 106,
    "comment_count": 0,
    "share_count": 6,
