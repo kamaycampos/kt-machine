@@ -4354,13 +4354,27 @@
    "file": "KT_FREEDOM/02_HOW-I-MADE-A-MILLION-BEFORE-18_138s.mp4",
    "caption": "A newspaper ad in the 1970s: Seven Steps to Freedom - how to escape the American rat race.\n\nKevin Trudeau bought the book. It was about direct mail. He tried it, and he made over a million dollars before he was 18.\n\nThe mailman brought sacks of envelopes. His school friends helped open them. Cash, $20 at a time, stacked on the table.\n\nToday you can start the same thing online with about $50.\n\n#kevintrudeau #entrepreneur #directresponse #marketing #millionaire #money",
    "bytes": 83310813,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "MONEY",
    "cta_variant": 14,
    "cta_kind": "question",
-   "hook": "How I made $1M before 18"
+   "hook": "How I made $1M before 18",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2128283797801149/",
+    "instagram": "https://www.instagram.com/reel/Ddx4vffkcHg/",
+    "youtube": "https://youtube.com/shorts/25ufkuGPCeo"
+   },
+   "caption_at_post": "A newspaper ad in the 1970s: Seven Steps to Freedom - how to escape the American rat race.\n\nKevin Trudeau bought the book. It was about direct mail. He tried it, and he made over a million dollars before he was 18.\n\nThe mailman brought sacks of envelopes. His school friends helped open them. Cash, $20 at a time, stacked on the table.\n\nToday you can start the same thing online with about $50.\n\n#kevintrudeau #entrepreneur #directresponse #marketing #millionaire #money",
+   "posted_at": "2026-09-27T01:46"
   },
   {
    "file": "KT_FREEDOM/02_WHAT-BILLIONAIRES-DO-DIFFERENTLY_151s.mp4",
@@ -4655,12 +4669,27 @@
    "caption": "A counter intention is just a frequency. Which means it can be outmatched by a higher one.\n\nNot a bar. Not a rock concert \u2014 those are low frequency, whatever the volume. Baroque music, the presence of someone spiritually elevated, real beauty in art or nature or even flowers you actually stop and look at \u2014 those carry a frequency that clears what's blocking you.\n\nYou don't need to clear 100% of it either. Even getting rid of half is enough to change how your life moves.\n\nComment RISE and I'll send you the rest.\n\n#frequency #dnahealing #awakening #consciousness #spirituality #kevintrudeau",
    "hook": "Flowers can heal your DNA too",
    "bytes": 107784402,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260927054801B7D068559FD1F394DFF6'}}"
+   },
    "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "RISE",
    "cta_variant": 15,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2159370974928939/",
+    "instagram": "https://www.instagram.com/reel/Ddx5EjBEfiA/",
+    "youtube": "https://youtube.com/shorts/KIPsyvV4Mz4"
+   },
+   "caption_at_post": "A counter intention is just a frequency. Which means it can be outmatched by a higher one.\n\nNot a bar. Not a rock concert \u2014 those are low frequency, whatever the volume. Baroque music, the presence of someone spiritually elevated, real beauty in art or nature or even flowers you actually stop and look at \u2014 those carry a frequency that clears what's blocking you.\n\nYou don't need to clear 100% of it either. Even getting rid of half is enough to change how your life moves.\n\nComment RISE and I'll send you the rest.\n\n#frequency #dnahealing #awakening #consciousness #spirituality #kevintrudeau",
+   "posted_at": "2026-09-27T01:48",
+   "tiktok_retry": true
   },
   {
    "file": "AR_BLOODLINE/02_THEIR-SINS-ARE-STILL-IN-YOU_118s.mp4",
@@ -5024,7 +5053,7 @@
     "instagram": "posted",
     "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260927004237EA472DC742672482ED70'}}"
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
    },
    "scheduled_at": "2026-09-26T18:56",
    "cta_keyword": "YES",
@@ -5038,7 +5067,7 @@
    },
    "caption_at_post": "He thought he was meeting his uncle for a regular walk. Instead he was led into a basement full of strangers.\n\nTen people, in a room he didn't know existed, in a house in Marblehead Neck. Then the books came out \u2014 the Quran, the Mahabharata, the Zohar, the Bible in its original language. Not for religion. For a formula.\n\nThat's how Kevin Trudeau says he was taught the actual, systematic way to pray that gets answered, inside a secret society called the Brotherhood.\n\nComment RISE and I'll send you the rest of the story.\n\n#brotherhood #secretsociety #awakening #spirituality #esoteric #kevintrudeau",
    "posted_at": "2026-09-26T20:42",
-   "tiktok_retry": true
+   "tiktok_tries": 1
   },
   {
    "file": "AR_PRAYER/02_TWO-INCHES-BELOW-YOUR-NAVEL_190s.mp4",
@@ -5163,7 +5192,7 @@
    "bytes": 111933382,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T21:23",
+   "scheduled_at": "2026-09-27T02:27",
    "cta_keyword": "KT",
    "cta_variant": 4,
    "cta_kind": "question"
@@ -5175,7 +5204,7 @@
    "bytes": 68144946,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T21:23",
+   "scheduled_at": "2026-09-27T02:27",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -5239,7 +5268,7 @@
    "bytes": 103179359,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T21:23",
+   "scheduled_at": "2026-09-27T02:27",
    "cta_keyword": "FREE",
    "cta_variant": 9,
    "cta_kind": "offer"
@@ -5251,7 +5280,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T21:23",
+   "scheduled_at": "2026-09-27T02:27",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5302,7 +5331,7 @@
    "bytes": 22408624,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T21:23",
+   "scheduled_at": "2026-09-27T02:27",
    "cta_keyword": "YES",
    "cta_variant": 11,
    "cta_kind": "question"
@@ -5353,7 +5382,7 @@
    "bytes": 43477358,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T21:23",
+   "scheduled_at": "2026-09-27T02:27",
    "cta_keyword": "YES",
    "cta_variant": 8,
    "cta_kind": "offer"
@@ -5405,7 +5434,7 @@
    "bytes": 100675851,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T21:23",
+   "scheduled_at": "2026-09-27T02:27",
    "cta_keyword": "LUCKY",
    "cta_variant": 10,
    "cta_kind": "offer"
@@ -5417,7 +5446,7 @@
    "bytes": 97689774,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T21:23",
+   "scheduled_at": "2026-09-27T02:27",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5467,7 +5496,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T21:23",
+   "scheduled_at": "2026-09-27T02:27",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5517,7 +5546,7 @@
    "bytes": 54278846,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T21:23",
+   "scheduled_at": "2026-09-27T02:27",
    "cta_keyword": "RISE",
    "cta_variant": 9,
    "cta_kind": "question"
