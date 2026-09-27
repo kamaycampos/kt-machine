@@ -4356,7 +4356,7 @@
    "bytes": 83310813,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T20:38",
+   "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "MONEY",
    "cta_variant": 14,
    "cta_kind": "question",
@@ -4657,7 +4657,7 @@
    "bytes": 107784402,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T19:34",
+   "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "RISE",
    "cta_variant": 15,
    "cta_kind": "question"
@@ -5018,12 +5018,27 @@
    "caption": "He thought he was meeting his uncle for a regular walk. Instead he was led into a basement full of strangers.\n\nTen people, in a room he didn't know existed, in a house in Marblehead Neck. Then the books came out \u2014 the Quran, the Mahabharata, the Zohar, the Bible in its original language. Not for religion. For a formula.\n\nThat's how Kevin Trudeau says he was taught the actual, systematic way to pray that gets answered, inside a secret society called the Brotherhood.\n\nComment RISE and I'll send you the rest of the story.\n\n#brotherhood #secretsociety #awakening #spirituality #esoteric #kevintrudeau",
    "hook": "Ten strangers waited in the basement",
    "bytes": 117085150,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260927004237EA472DC742672482ED70'}}"
+   },
    "scheduled_at": "2026-09-26T18:56",
    "cta_keyword": "YES",
    "cta_variant": 14,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1615492863623714/",
+    "instagram": "https://www.instagram.com/reel/DdxWBcOlMZh/",
+    "youtube": "https://youtube.com/shorts/6d0gWHWzeE4"
+   },
+   "caption_at_post": "He thought he was meeting his uncle for a regular walk. Instead he was led into a basement full of strangers.\n\nTen people, in a room he didn't know existed, in a house in Marblehead Neck. Then the books came out \u2014 the Quran, the Mahabharata, the Zohar, the Bible in its original language. Not for religion. For a formula.\n\nThat's how Kevin Trudeau says he was taught the actual, systematic way to pray that gets answered, inside a secret society called the Brotherhood.\n\nComment RISE and I'll send you the rest of the story.\n\n#brotherhood #secretsociety #awakening #spirituality #esoteric #kevintrudeau",
+   "posted_at": "2026-09-26T20:42",
+   "tiktok_retry": true
   },
   {
    "file": "AR_PRAYER/02_TWO-INCHES-BELOW-YOUR-NAVEL_190s.mp4",
@@ -5120,12 +5135,26 @@
    "caption": "Three products. Three rejections. One rival agency spent hundreds of thousands of dollars and failed all three.\n\nKevin Trudeau says everyone in the infomercial business had already written off these products: the world's fastest reader, a human calculator, a relationship course. A competitor tried first, burned through the marketing budget, and canceled all three contracts.\n\nNobody else would touch the products after that. Trudeau took all three, shot the ads in one morning, and every one became a hit - tens of millions of dollars each.\n\nSame product. Same market. Only the message changed.\n\nWhat are you blaming the product for that's actually a message problem?\n\n#kevintrudeau #marketing #advertising #copywriting #entrepreneur #businessstory",
    "hook": "The real reason ads fail",
    "bytes": 149932601,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-26T18:56",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1047259351674760/",
+    "instagram": "https://www.instagram.com/reel/DdxWYDcCjWK/",
+    "youtube": "https://youtube.com/shorts/bplY8vyjWIU"
+   },
+   "caption_at_post": "Three products. Three rejections. One rival agency spent hundreds of thousands of dollars and failed all three.\n\nKevin Trudeau says everyone in the infomercial business had already written off these products: the world's fastest reader, a human calculator, a relationship course. A competitor tried first, burned through the marketing budget, and canceled all three contracts.\n\nNobody else would touch the products after that. Trudeau took all three, shot the ads in one morning, and every one became a hit - tens of millions of dollars each.\n\nSame product. Same market. Only the message changed.\n\nWhat are you blaming the product for that's actually a message problem?\n\n#kevintrudeau #marketing #advertising #copywriting #entrepreneur #businessstory",
+   "posted_at": "2026-09-26T20:46"
   },
   {
    "file": "KT_HUSTLE/01_WHAT-BILL-GATES-REALLY-SAID_144s.mp4",
@@ -5134,7 +5163,7 @@
    "bytes": 111933382,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T18:56",
+   "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "KT",
    "cta_variant": 4,
    "cta_kind": "question"
@@ -5146,7 +5175,7 @@
    "bytes": 68144946,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T18:56",
+   "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -5210,7 +5239,7 @@
    "bytes": 103179359,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T18:56",
+   "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "FREE",
    "cta_variant": 9,
    "cta_kind": "offer"
@@ -5222,7 +5251,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T18:56",
+   "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5238,7 +5267,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260926221624616AAF55FD8CBC7028E7'}}"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "scheduled_at": "2026-09-26T16:15",
    "cta_keyword": "LUCKY",
@@ -5252,7 +5281,7 @@
    },
    "caption_at_post": "That verse about the camel and the needle isn't a warning against wealth. It's a mistranslation.\n\nThe \"eye of the needle\" wasn't a sewing needle \u2014 it was a narrow door into the city. For the camel to fit through, it had to kneel, unpack its cargo, and humble itself first. Then all that material stuff came back in with it. It was never spirituality versus money. It was always attachment versus freedom.\n\nYou were taught a warning. What was actually being taught was a method.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#awakening #spirituality #consciousness #ancientwisdom #innerpeace #kevintrudeau",
    "posted_at": "2026-09-26T18:16",
-   "tiktok_retry": true
+   "tiktok_tries": 1
   },
   {
    "file": "AR_INSTINCT/02_BUILD-IT-THEN-DESTROY-IT_76s.mp4",
@@ -5273,7 +5302,7 @@
    "bytes": 22408624,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T18:56",
+   "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "YES",
    "cta_variant": 11,
    "cta_kind": "question"
@@ -5324,7 +5353,7 @@
    "bytes": 43477358,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T18:56",
+   "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "YES",
    "cta_variant": 8,
    "cta_kind": "offer"
@@ -5376,7 +5405,7 @@
    "bytes": 100675851,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T18:56",
+   "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "LUCKY",
    "cta_variant": 10,
    "cta_kind": "offer"
@@ -5388,7 +5417,7 @@
    "bytes": 97689774,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T18:56",
+   "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5438,7 +5467,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T18:56",
+   "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5488,7 +5517,7 @@
    "bytes": 54278846,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-26T18:56",
+   "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "RISE",
    "cta_variant": 9,
    "cta_kind": "question"
