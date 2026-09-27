@@ -1,12 +1,32 @@
 {
- "at": "2026-09-26T21:32",
+ "at": "2026-09-27T05:42",
  "profile": {
-  "follower_count": 414,
+  "follower_count": 417,
   "following_count": 8,
   "likes_count": 5800,
-  "video_count": 132
+  "video_count": 134
  },
  "videos": {
+  "KT_YWIYC/01_WHY-SOMEDAY-BEATS-TODAY_159s.mp4": {
+   "id": "7690020170907028749",
+   "view_count": 2,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7690020170907028749?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 158,
+   "posted": "2026-09-27T01:26"
+  },
+  "KT_WEALTH/02_ROCKEFELLER-EVERY-DISASTER_103s.mp4": {
+   "id": "7689976707771567374",
+   "view_count": 2,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7689976707771567374?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 103,
+   "posted": "2026-09-26T22:37"
+  },
   "KT_BASEMENT/01_HOW-LONG-BEFORE-BUSINESS-GETS-EASY_77s.mp4": {
    "id": "7689615616877137182",
    "view_count": 1,
@@ -19,7 +39,7 @@
   },
   "KT_YWIYC/02_WHY-I-WALKED-OUT-OF-HARVARD_151s.mp4": {
    "id": "7689898664533183758",
-   "view_count": 17,
+   "view_count": 19,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -59,7 +79,7 @@
   },
   "KT_BASEMENT/02_HE-WORKED-90-HOUR-WEEKS-FIRST_76s.mp4": {
    "id": "7689272753676995853",
-   "view_count": 131,
+   "view_count": 132,
    "like_count": 11,
    "comment_count": 0,
    "share_count": 0,
@@ -109,7 +129,7 @@
   },
   "KT_YWIYC/01_WHY-MOST-MONEY-GURUS-ARENT-RICH_59s.mp4": {
    "id": "7688839555197226254",
-   "view_count": 252,
+   "view_count": 255,
    "like_count": 14,
    "comment_count": 0,
    "share_count": 4,
@@ -119,7 +139,7 @@
   },
   "KT_FREEDOM/02_WHY-GETTING-RICH-IS-EASIER-NOW_43s.mp4": {
    "id": "7688886212551118094",
-   "view_count": 306,
+   "view_count": 307,
    "like_count": 20,
    "comment_count": 1,
    "share_count": 2,
@@ -139,7 +159,7 @@
   },
   "KT_SECRET/01_THE-SAME-RECORDS_150s.mp4": {
    "id": "7688541338953862413",
-   "view_count": 404,
+   "view_count": 406,
    "like_count": 40,
    "comment_count": 2,
    "share_count": 1,
@@ -159,7 +179,7 @@
   },
   "KT_RICH/01_WHAT-A-MILLION-REALLY-MEANS_109s.mp4": {
    "id": "7688387138974387469",
-   "view_count": 409,
+   "view_count": 410,
    "like_count": 22,
    "comment_count": 0,
    "share_count": 1,
@@ -319,7 +339,7 @@
   },
   "KT_DEBT/02_THE-ECONOMY-WAS-SLUGGISH_119s.mp4": {
    "id": "7686471838095969550",
-   "view_count": 233,
+   "view_count": 234,
    "like_count": 9,
    "comment_count": 2,
    "share_count": 0,
@@ -359,7 +379,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14062,
+   "view_count": 14068,
    "like_count": 866,
    "comment_count": 59,
    "share_count": 196,
@@ -389,7 +409,7 @@
   },
   "unmatched/7685818408352435470": {
    "id": "7685818408352435470",
-   "view_count": 800,
+   "view_count": 801,
    "like_count": 99,
    "comment_count": 2,
    "share_count": 5,
@@ -409,7 +429,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 37948,
+   "view_count": 37959,
    "like_count": 785,
    "comment_count": 27,
    "share_count": 171,
@@ -459,7 +479,7 @@
   },
   "KT_HOME/02_02_WHY-RICH-HOMES-ARE-FULL-OF-OLD-THINGS_85s.mp4": {
    "id": "7685065417743797518",
-   "view_count": 3456,
+   "view_count": 3457,
    "like_count": 268,
    "comment_count": 6,
    "share_count": 43,
@@ -519,7 +539,7 @@
   },
   "KT_RICH/03_03_WHAT-A-ROOM-OF-BROKE-PEOPLE-DOES_50s.mp4": {
    "id": "7684360053482081549",
-   "view_count": 442,
+   "view_count": 443,
    "like_count": 48,
    "comment_count": 2,
    "share_count": 6,
@@ -669,7 +689,7 @@
   },
   "KT_MED/07_IT-REDUCES-CORTISOL_132s.mp4": {
    "id": "7682414527195008270",
-   "view_count": 336,
+   "view_count": 337,
    "like_count": 22,
    "comment_count": 4,
    "share_count": 1,
