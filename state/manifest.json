@@ -4266,7 +4266,7 @@
    "bytes": 114373906,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T08:02",
+   "scheduled_at": "2026-09-27T12:18",
    "cta_keyword": "FREE",
    "cta_variant": 15,
    "cta_kind": "offer",
@@ -4675,7 +4675,7 @@
     "instagram": "posted",
     "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026092710594696C2FA8A0B5787AF8C4E'}}"
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
    },
    "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "RISE",
@@ -4689,8 +4689,7 @@
    },
    "caption_at_post": "A counter intention is just a frequency. Which means it can be outmatched by a higher one.\n\nNot a bar. Not a rock concert \u2014 those are low frequency, whatever the volume. Baroque music, the presence of someone spiritually elevated, real beauty in art or nature or even flowers you actually stop and look at \u2014 those carry a frequency that clears what's blocking you.\n\nYou don't need to clear 100% of it either. Even getting rid of half is enough to change how your life moves.\n\nComment RISE and I'll send you the rest.\n\n#frequency #dnahealing #awakening #consciousness #spirituality #kevintrudeau",
    "posted_at": "2026-09-27T01:48",
-   "tiktok_retry": true,
-   "tiktok_tries": 1
+   "tiktok_tries": 2
   },
   {
    "file": "AR_BLOODLINE/02_THEIR-SINS-ARE-STILL-IN-YOU_118s.mp4",
@@ -4869,7 +4868,7 @@
    "bytes": 81869939,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T08:31",
+   "scheduled_at": "2026-09-27T12:18",
    "cta_keyword": "LUCKY",
    "cta_variant": 16,
    "cta_kind": "offer"
@@ -5217,12 +5216,26 @@
    "caption": "Most people chasing a business idea start in the wrong place: with a product they already love.\n\nKevin Trudeau says that's backwards. The first question is never \"what do I want to sell\" - it's \"what does a market already want?\"\n\nCampbell didn't invent a craving for soup. People already wanted it; they just didn't want to spend an hour making it from scratch. Campbell found the need, condensed the recipe, and let people add the water themselves.\n\nSame old rule: if you want to get rich, don't invent a category. Build a better mousetrap for a market that already exists.\n\nWhat market are you overlooking because you're attached to your own idea?\n\n#kevintrudeau #entrepreneur #marketing #smallbusiness #startuptips #wealthmindset",
    "hook": "Why the product never matters",
    "bytes": 68144946,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-27T07:44",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1658753195684441/",
+    "instagram": "https://www.instagram.com/reel/Ddy8l1KgflP/",
+    "youtube": "https://youtube.com/shorts/49Sa7Qi_UCQ"
+   },
+   "caption_at_post": "Most people chasing a business idea start in the wrong place: with a product they already love.\n\nKevin Trudeau says that's backwards. The first question is never \"what do I want to sell\" - it's \"what does a market already want?\"\n\nCampbell didn't invent a craving for soup. People already wanted it; they just didn't want to spend an hour making it from scratch. Campbell found the need, condensed the recipe, and let people add the water themselves.\n\nSame old rule: if you want to get rich, don't invent a category. Build a better mousetrap for a market that already exists.\n\nWhat market are you overlooking because you're attached to your own idea?\n\n#kevintrudeau #entrepreneur #marketing #smallbusiness #startuptips #wealthmindset",
+   "posted_at": "2026-09-27T11:38"
   },
   {
    "file": "KT_MATH/01_THE-68-SECOND-FORMULA_103s.mp4",
@@ -5283,7 +5296,7 @@
    "bytes": 103179359,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T07:44",
+   "scheduled_at": "2026-09-27T12:18",
    "cta_keyword": "FREE",
    "cta_variant": 9,
    "cta_kind": "offer"
@@ -5295,7 +5308,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T07:44",
+   "scheduled_at": "2026-09-27T12:18",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5412,7 +5425,7 @@
    "bytes": 43477358,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T07:44",
+   "scheduled_at": "2026-09-27T12:18",
    "cta_keyword": "YES",
    "cta_variant": 8,
    "cta_kind": "offer"
@@ -5422,12 +5435,27 @@
    "caption": "A man asked the universe to help him quit smoking. He got a heart attack instead.\n\nHe didn't want the hospital, the ventilator, the fear. But his doctor told him five young daughters would lose their father if he lit another cigarette \u2014 and he never smoked again. He said it himself: the universe understood exactly what he was asking for. It just didn't use the method he expected.\n\nThis is the piece almost nobody teaches about manifesting: you ask for the outcome, the universe chooses the how. Arguing with the how is how people miss what they asked for.\n\nComment RISE and I'll send you the full breakdown.\n\n#awakening #manifestation #lawofattraction #spirituality #consciousness #kevintrudeau",
    "hook": "A heart attack was the answer",
    "bytes": 54523938,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202609271535514E3432565AC461A92B1A'}}"
+   },
    "scheduled_at": "2026-09-27T07:10",
    "cta_keyword": "RISE",
    "cta_variant": 12,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2180237379235090/",
+    "instagram": "https://www.instagram.com/reel/Ddy8Socghbh/",
+    "youtube": "https://youtube.com/shorts/4wx6Zd98ybc"
+   },
+   "caption_at_post": "A man asked the universe to help him quit smoking. He got a heart attack instead.\n\nHe didn't want the hospital, the ventilator, the fear. But his doctor told him five young daughters would lose their father if he lit another cigarette \u2014 and he never smoked again. He said it himself: the universe understood exactly what he was asking for. It just didn't use the method he expected.\n\nThis is the piece almost nobody teaches about manifesting: you ask for the outcome, the universe chooses the how. Arguing with the how is how people miss what they asked for.\n\nComment RISE and I'll send you the full breakdown.\n\n#awakening #manifestation #lawofattraction #spirituality #consciousness #kevintrudeau",
+   "posted_at": "2026-09-27T11:35",
+   "tiktok_retry": true
   },
   {
    "file": "AR_TONGUE/01_TERRIFIC-MEANS-DISASTER_99s.mp4",
@@ -5464,7 +5492,7 @@
    "bytes": 100675851,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T07:44",
+   "scheduled_at": "2026-09-27T12:18",
    "cta_keyword": "LUCKY",
    "cta_variant": 10,
    "cta_kind": "offer"
@@ -5476,7 +5504,7 @@
    "bytes": 97689774,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T07:44",
+   "scheduled_at": "2026-09-27T12:18",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5526,7 +5554,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T07:44",
+   "scheduled_at": "2026-09-27T12:18",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5576,7 +5604,7 @@
    "bytes": 54278846,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T07:44",
+   "scheduled_at": "2026-09-27T12:18",
    "cta_keyword": "RISE",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -5588,7 +5616,7 @@
    "bytes": 83021759,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T10:08",
+   "scheduled_at": "2026-09-27T12:18",
    "cta_keyword": "LUCKY",
    "cta_variant": 13,
    "cta_kind": "question"
