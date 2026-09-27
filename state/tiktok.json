@@ -1,12 +1,32 @@
 {
- "at": "2026-09-27T17:16",
+ "at": "2026-09-27T21:35",
  "profile": {
-  "follower_count": 416,
-  "following_count": 8,
   "likes_count": 5800,
-  "video_count": 136
+  "video_count": 138,
+  "follower_count": 416,
+  "following_count": 8
  },
  "videos": {
+  "KT_HUSTLE/01_WHAT-BILL-GATES-REALLY-SAID_144s.mp4": {
+   "id": "7690316450594032910",
+   "view_count": 0,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7690316450594032910?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 144,
+   "posted": "2026-09-27T20:35"
+  },
+  "KT_FREEDOM/02_HOW-I-MADE-A-MILLION-BEFORE-18_138s.mp4": {
+   "id": "7690276043977985293",
+   "view_count": 1,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7690276043977985293?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 138,
+   "posted": "2026-09-27T17:59"
+  },
   "KT_HUSTLE/01_THE-ADS-WERE-THE-PROBLEM_186s.mp4": {
    "id": "7690244007015746829",
    "view_count": 0,
@@ -59,7 +79,7 @@
   },
   "KT_YWIYC/02_WHY-I-WALKED-OUT-OF-HARVARD_151s.mp4": {
    "id": "7689898664533183758",
-   "view_count": 19,
+   "view_count": 20,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -89,7 +109,7 @@
   },
   "KT_YWIYC/02_HOW-WINNERS-HANDLE-DISASTER_112s.mp4": {
    "id": "7689670671466564877",
-   "view_count": 2,
+   "view_count": 4,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -179,7 +199,7 @@
   },
   "KT_SECRET/01_THE-SAME-RECORDS_150s.mp4": {
    "id": "7688541338953862413",
-   "view_count": 407,
+   "view_count": 408,
    "like_count": 40,
    "comment_count": 2,
    "share_count": 1,
@@ -309,7 +329,7 @@
   },
   "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4": {
    "id": "7686887912297843981",
-   "view_count": 2310,
+   "view_count": 2311,
    "like_count": 77,
    "comment_count": 5,
    "share_count": 11,
@@ -399,7 +419,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14068,
+   "view_count": 14069,
    "like_count": 866,
    "comment_count": 59,
    "share_count": 196,
@@ -449,7 +469,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 37963,
+   "view_count": 37966,
    "like_count": 785,
    "comment_count": 27,
    "share_count": 171,
@@ -709,7 +729,7 @@
   },
   "KT_MED/07_IT-REDUCES-CORTISOL_132s.mp4": {
    "id": "7682414527195008270",
-   "view_count": 337,
+   "view_count": 338,
    "like_count": 22,
    "comment_count": 4,
    "share_count": 1,
