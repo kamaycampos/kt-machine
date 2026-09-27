@@ -4675,7 +4675,7 @@
     "instagram": "posted",
     "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260927054801B7D068559FD1F394DFF6'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026092710594696C2FA8A0B5787AF8C4E'}}"
    },
    "scheduled_at": "2026-09-26T21:23",
    "cta_keyword": "RISE",
@@ -4689,7 +4689,8 @@
    },
    "caption_at_post": "A counter intention is just a frequency. Which means it can be outmatched by a higher one.\n\nNot a bar. Not a rock concert \u2014 those are low frequency, whatever the volume. Baroque music, the presence of someone spiritually elevated, real beauty in art or nature or even flowers you actually stop and look at \u2014 those carry a frequency that clears what's blocking you.\n\nYou don't need to clear 100% of it either. Even getting rid of half is enough to change how your life moves.\n\nComment RISE and I'll send you the rest.\n\n#frequency #dnahealing #awakening #consciousness #spirituality #kevintrudeau",
    "posted_at": "2026-09-27T01:48",
-   "tiktok_retry": true
+   "tiktok_retry": true,
+   "tiktok_tries": 1
   },
   {
    "file": "AR_BLOODLINE/02_THEIR-SINS-ARE-STILL-IN-YOU_118s.mp4",
@@ -5190,12 +5191,26 @@
    "caption": "Larry King once asked Bill Gates, one of the richest men alive, what his secret was. Gates said luck - being in the right place at the right time.\n\nKevin Trudeau points out Gates didn't stop there. Plenty of people were in that same room in those same years. What set Gates apart was vision: he saw what a computer could become when most people around him saw a toy.\n\nA friend once tested Trudeau's own vision with a pack of matches: imagine this is an acorn, what do you see? Trudeau said a tree. The friend said, I see a forest.\n\nLuck puts you in the room. Vision decides what you build there.\n\n#kevintrudeau #billgates #mindset #vision #entrepreneur #successmindset",
    "hook": "What Bill Gates really said",
    "bytes": 111933382,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-27T02:27",
    "cta_keyword": "KT",
    "cta_variant": 4,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/989636957482201/",
+    "instagram": "https://www.instagram.com/reel/Ddyc_2VCM4o/",
+    "youtube": "https://youtube.com/shorts/4tJvrrxVlgk"
+   },
+   "caption_at_post": "Larry King once asked Bill Gates, one of the richest men alive, what his secret was. Gates said luck - being in the right place at the right time.\n\nKevin Trudeau points out Gates didn't stop there. Plenty of people were in that same room in those same years. What set Gates apart was vision: he saw what a computer could become when most people around him saw a toy.\n\nA friend once tested Trudeau's own vision with a pack of matches: imagine this is an acorn, what do you see? Trudeau said a tree. The friend said, I see a forest.\n\nLuck puts you in the room. Vision decides what you build there.\n\n#kevintrudeau #billgates #mindset #vision #entrepreneur #successmindset",
+   "posted_at": "2026-09-27T07:03"
   },
   {
    "file": "KT_HUSTLE/02_WHY-THE-PRODUCT-NEVER-MATTERS_85s.mp4",
@@ -5204,7 +5219,7 @@
    "bytes": 68144946,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T02:27",
+   "scheduled_at": "2026-09-27T07:44",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -5268,7 +5283,7 @@
    "bytes": 103179359,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T02:27",
+   "scheduled_at": "2026-09-27T07:44",
    "cta_keyword": "FREE",
    "cta_variant": 9,
    "cta_kind": "offer"
@@ -5280,7 +5295,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T02:27",
+   "scheduled_at": "2026-09-27T07:44",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5329,12 +5344,27 @@
    "caption": "There are two things that move you, and the stronger one isn't the one you'd expect.\n\nYou'd think people are motivated by pleasure \u2014 chasing the feeling of winning, of having, of being happy. That's real, but it's the weaker driver. The stronger one is avoiding pain. Athletes say it plainly: we love to win, but we hate losing more. That's the actual engine behind most of what you do, whether you've ever admitted it or not.\n\nComment RISE and I'll send you the rest of this.\n\n#awakening #consciousness #subconscious #mindset #selfawareness #kevintrudeau",
    "hook": "Pain drives you more than pleasure",
    "bytes": 22408624,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202609271105137EBF0C215FB386AD64DB'}}"
+   },
    "scheduled_at": "2026-09-27T02:27",
    "cta_keyword": "YES",
    "cta_variant": 11,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1561845501928974/",
+    "instagram": "https://www.instagram.com/reel/DdydW0BiJqr/",
+    "youtube": "https://youtube.com/shorts/_kGFQ1BxhMQ"
+   },
+   "caption_at_post": "There are two things that move you, and the stronger one isn't the one you'd expect.\n\nYou'd think people are motivated by pleasure \u2014 chasing the feeling of winning, of having, of being happy. That's real, but it's the weaker driver. The stronger one is avoiding pain. Athletes say it plainly: we love to win, but we hate losing more. That's the actual engine behind most of what you do, whether you've ever admitted it or not.\n\nComment RISE and I'll send you the rest of this.\n\n#awakening #consciousness #subconscious #mindset #selfawareness #kevintrudeau",
+   "posted_at": "2026-09-27T07:05",
+   "tiktok_retry": true
   },
   {
    "file": "AR_PRISON/01_DNA-COUNTER-INTENTIONS_61s.mp4",
@@ -5382,7 +5412,7 @@
    "bytes": 43477358,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T02:27",
+   "scheduled_at": "2026-09-27T07:44",
    "cta_keyword": "YES",
    "cta_variant": 8,
    "cta_kind": "offer"
@@ -5434,7 +5464,7 @@
    "bytes": 100675851,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T02:27",
+   "scheduled_at": "2026-09-27T07:44",
    "cta_keyword": "LUCKY",
    "cta_variant": 10,
    "cta_kind": "offer"
@@ -5446,7 +5476,7 @@
    "bytes": 97689774,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T02:27",
+   "scheduled_at": "2026-09-27T07:44",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5496,7 +5526,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T02:27",
+   "scheduled_at": "2026-09-27T07:44",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5546,7 +5576,7 @@
    "bytes": 54278846,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T02:27",
+   "scheduled_at": "2026-09-27T07:44",
    "cta_keyword": "RISE",
    "cta_variant": 9,
    "cta_kind": "question"
