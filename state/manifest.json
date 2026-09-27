@@ -4264,13 +4264,27 @@
    "file": "KT_YWIYC/02_WHY-I-WANT-DOESNT-WORK_172s.mp4",
    "caption": "You don't start with \"I want to be a millionaire.\"\n\nKevin Trudeau says start one rung lower: \"I wish.\" Anyone can make a wish, so nothing inside you argues with it. Say it out loud for a day or two and the needle starts moving.\n\nOnly then do you move up to \"I want\" - and that one does fight back, because of everything you were taught about money.\n\nSay the wish first. Earn the want.\n\n#kevintrudeau #manifesting #affirmations #moneymindset #selftalk #success",
    "bytes": 114373906,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-27T12:18",
    "cta_keyword": "FREE",
    "cta_variant": 15,
    "cta_kind": "offer",
-   "hook": "Why saying I want doesn't work"
+   "hook": "Why saying I want doesn't work",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1094736809814400/",
+    "instagram": "https://www.instagram.com/reel/DdzV2nIDizx/",
+    "youtube": "https://youtube.com/shorts/_IHaovCmxRI"
+   },
+   "caption_at_post": "You don't start with \"I want to be a millionaire.\"\n\nKevin Trudeau says start one rung lower: \"I wish.\" Anyone can make a wish, so nothing inside you argues with it. Say it out loud for a day or two and the needle starts moving.\n\nOnly then do you move up to \"I want\" - and that one does fight back, because of everything you were taught about money.\n\nSay the wish first. Earn the want.\n\n#kevintrudeau #manifesting #affirmations #moneymindset #selftalk #success",
+   "posted_at": "2026-09-27T15:20"
   },
   {
    "file": "KT_FREEDOM/01_HOW-A-SNOWSTORM-MADE-ME-MONEY_84s.mp4",
@@ -4472,7 +4486,7 @@
    "bytes": 128476161,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T12:36",
+   "scheduled_at": "2026-09-27T15:59",
    "cta_keyword": "KT",
    "cta_variant": 16,
    "cta_kind": "question",
@@ -4776,12 +4790,27 @@
    "caption": "He walked into his initiation expecting deep, dark secrets. Instead they handed him a stack of ancient texts and told him to find the pattern.\n\nThe Mahabharata, the Vedas, the Zohar, the Quran, both Testaments \u2014 traditions that never spoke to each other, written thousands of years and thousands of miles apart, all pointing at the same underlying mechanism for how the mind shapes reality.\n\nThe next phase was stranger still: lining that pattern up against quantum physics. Real science, catching up to what the texts already said.\n\nComment RISE and I'll send you where the pattern starts.\n\n#ancientwisdom #quantumphysics #spirituality #consciousness #awakening #kevintrudeau",
    "hook": "They gave him books, not secrets",
    "bytes": 107234706,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202609271916468AB78619ABA013E1328C'}}"
+   },
    "scheduled_at": "2026-09-27T12:17",
    "cta_keyword": "YES",
    "cta_variant": 17,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1714199030332965/",
+    "instagram": "https://www.instagram.com/reel/DdzViakiXbe/",
+    "youtube": "https://youtube.com/shorts/5Hi5OHsJ-zg"
+   },
+   "caption_at_post": "He walked into his initiation expecting deep, dark secrets. Instead they handed him a stack of ancient texts and told him to find the pattern.\n\nThe Mahabharata, the Vedas, the Zohar, the Quran, both Testaments \u2014 traditions that never spoke to each other, written thousands of years and thousands of miles apart, all pointing at the same underlying mechanism for how the mind shapes reality.\n\nThe next phase was stranger still: lining that pattern up against quantum physics. Real science, catching up to what the texts already said.\n\nComment RISE and I'll send you where the pattern starts.\n\n#ancientwisdom #quantumphysics #spirituality #consciousness #awakening #kevintrudeau",
+   "posted_at": "2026-09-27T15:16",
+   "tiktok_retry": true
   },
   {
    "file": "AR_BROTHERHOOD/01_YOUR-TRAGEDY-IS-JUST-A-COSTUME_74s.mp4",
@@ -4868,7 +4897,7 @@
    "bytes": 81869939,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T12:18",
+   "scheduled_at": "2026-09-27T15:59",
    "cta_keyword": "LUCKY",
    "cta_variant": 16,
    "cta_kind": "offer"
@@ -5296,7 +5325,7 @@
    "bytes": 103179359,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T12:18",
+   "scheduled_at": "2026-09-27T15:59",
    "cta_keyword": "FREE",
    "cta_variant": 9,
    "cta_kind": "offer"
@@ -5308,7 +5337,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T12:18",
+   "scheduled_at": "2026-09-27T15:59",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5347,7 +5376,7 @@
    "bytes": 34995186,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T14:21",
+   "scheduled_at": "2026-09-27T15:59",
    "cta_keyword": "RISE",
    "cta_variant": 15,
    "cta_kind": "question"
@@ -5363,7 +5392,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202609271105137EBF0C215FB386AD64DB'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026092719140453F0EE3587D962B60BF5'}}"
    },
    "scheduled_at": "2026-09-27T02:27",
    "cta_keyword": "YES",
@@ -5377,7 +5406,8 @@
    },
    "caption_at_post": "There are two things that move you, and the stronger one isn't the one you'd expect.\n\nYou'd think people are motivated by pleasure \u2014 chasing the feeling of winning, of having, of being happy. That's real, but it's the weaker driver. The stronger one is avoiding pain. Athletes say it plainly: we love to win, but we hate losing more. That's the actual engine behind most of what you do, whether you've ever admitted it or not.\n\nComment RISE and I'll send you the rest of this.\n\n#awakening #consciousness #subconscious #mindset #selfawareness #kevintrudeau",
    "posted_at": "2026-09-27T07:05",
-   "tiktok_retry": true
+   "tiktok_retry": true,
+   "tiktok_tries": 1
   },
   {
    "file": "AR_PRISON/01_DNA-COUNTER-INTENTIONS_61s.mp4",
@@ -5425,7 +5455,7 @@
    "bytes": 43477358,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T12:18",
+   "scheduled_at": "2026-09-27T15:59",
    "cta_keyword": "YES",
    "cta_variant": 8,
    "cta_kind": "offer"
@@ -5492,7 +5522,7 @@
    "bytes": 100675851,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T12:18",
+   "scheduled_at": "2026-09-27T15:59",
    "cta_keyword": "LUCKY",
    "cta_variant": 10,
    "cta_kind": "offer"
@@ -5504,7 +5534,7 @@
    "bytes": 97689774,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T12:18",
+   "scheduled_at": "2026-09-27T15:59",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5542,7 +5572,7 @@
    "bytes": 120630546,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T12:18",
+   "scheduled_at": "2026-09-27T15:59",
    "cta_keyword": "YES",
    "cta_variant": 14,
    "cta_kind": "offer"
@@ -5554,7 +5584,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T12:18",
+   "scheduled_at": "2026-09-27T15:59",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5604,7 +5634,7 @@
    "bytes": 54278846,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T12:18",
+   "scheduled_at": "2026-09-27T15:59",
    "cta_keyword": "RISE",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -5616,7 +5646,7 @@
    "bytes": 83021759,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T12:18",
+   "scheduled_at": "2026-09-27T15:59",
    "cta_keyword": "LUCKY",
    "cta_variant": 13,
    "cta_kind": "question"
