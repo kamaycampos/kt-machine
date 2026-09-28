@@ -737,6 +737,77 @@ def yt_path(dest):
     return stem + "__yt59" + ext
 
 
+# ---------------------------------------------------------------- the story cut
+# 28 Sept 2026, Kamay: "i want you to make our IG to post EVERY SINGLE CLIP WE
+# POST to also posted in the story... so if people see it and like it they click
+# on it and it takes them to the original clip".
+#
+# The machine has posted a story for every clip UNDER 60s since August and
+# refused every clip over it: 56 stories posted, 91 rejected. It was reusing the
+# YouTube cut, which only exists when yt_window() can find a stretch that stands
+# ALONE as a teaching - and it cannot, most of the time. A story does not need
+# that. A story is a trailer: the opening, which is where the hook and the
+# tension already are, stopped at a pause, with a line telling them where the
+# rest is. So it is cut from the FINISHED clip (captions and hook already burned)
+# rather than re-rendered, which makes it fast and impossible to desynchronise.
+STORY_MAX = 57.0
+STORY_TAIL = "FULL CLIP ON MY PAGE"
+
+
+def story_path(dest):
+    stem, ext = os.path.splitext(dest)
+    return stem + "__story" + ext
+
+
+def duration_of(path):
+    r = subprocess.run([FFMPEG, "-i", path], capture_output=True, text=True)
+    m = re.search(r"Duration: (\d+):(\d+):(\d+\.\d+)", r.stderr)
+    return int(m[1]) * 3600 + int(m[2]) * 60 + float(m[3]) if m else 0.0
+
+
+def make_story(dest):
+    """A <=57s teaser of a finished clip, ending on a pause, with a pointer card.
+
+    Returns the path, or None when the clip is already short enough to be its own
+    story (Instagram takes anything under 60s as-is)."""
+    dur = duration_of(dest)
+    if dur <= 59.0 or not os.path.exists(dest):
+        return None
+    end = None
+    try:
+        import kt_snap
+        pauses = [a for a, _b in kt_snap.silences(dest) if 25.0 <= a <= STORY_MAX]
+        if pauses:
+            end = max(pauses) + 0.25
+    except Exception:
+        pass
+    if end is None:
+        end = STORY_MAX                      # a pause is nicer, never required
+    f = font_arg(FONT)
+    card_from = max(0.5, end - 3.0)
+    size = fit_size([STORY_TAIL], 58)
+    draw = (f"drawtext=fontfile={f}:text='{esc(STORY_TAIL)}':fontsize={size}"
+            f":fontcolor=white{SHADOW}:box=1:boxcolor=black@0.55:boxborderw=26"
+            f":x=(w-tw)/2:y=h*0.72:enable='between(t,{card_from:.2f},{end:.2f})'")
+    out = story_path(dest)
+    r = subprocess.run([FFMPEG, "-y", "-loglevel", "error", "-t", f"{end:.2f}",
+                        "-i", dest, "-vf", draw,
+                        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+                        "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k",
+                        "-movflags", "+faststart", out], capture_output=True, text=True)
+    if r.returncode or not os.path.exists(out):
+        sys.stderr.write("story cut failed: " + r.stderr[-300:] + "\n")
+        return None
+    # VERIFY THE ARTIFACT, NOT THE CALL: a story over 60s is refused by Instagram,
+    # which is the whole failure this exists to end.
+    got = duration_of(out)
+    if got > 59.5:
+        os.remove(out)
+        raise SystemExit(f"story cut is {got:.1f}s, must be under 60: {out}")
+    print(f"      + story cut {got:.0f}s")
+    return out
+
+
 
 _ONES = {"zero": 0, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6,
          "seven": 7, "eight": 8, "nine": 9, "ten": 10, "eleven": 11, "twelve": 12,
@@ -1176,6 +1247,14 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
             else:
                 print(f"      + youtube cut {ye - ys:.0f}s (+{ys - t_in:.0f}s in)")
                 thumb(yt_path(dest))
+
+    # AND A STORY FOR EVERY CLIP, not only the ones a YouTube window fitted.
+    try:
+        make_story(dest)
+    except SystemExit:
+        raise
+    except Exception as e:
+        sys.stderr.write(f"story cut skipped: {e}\n")
     return len(ps)
 
 
