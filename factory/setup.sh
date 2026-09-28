@@ -31,8 +31,9 @@ d = "shared"
 man = json.load(open(os.path.join(d, "MANIFEST.json")))["files"]
 bad = [f for f, h in man.items()
        if hashlib.sha1(open(os.path.join(d, f), "rb").read()).hexdigest() != h]
-raise SystemExit(f"shared engine drifted, MANIFEST does not match: {bad}") if bad else print(
-    f"shared engine ok, {len(man)} modules")
+if bad:
+    raise SystemExit(f"shared engine drifted, MANIFEST does not match: {bad}")
+print(f"shared engine ok, {len(man)} modules")
 EOF
 cp factory/kt_series.json "$K/kt_series.json"
 ln -sfn "$GITHUB_WORKSPACE" "$K/kt-machine"
