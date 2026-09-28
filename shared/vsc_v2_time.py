@@ -529,3 +529,43 @@ if __name__ == "__main__":
         print(f"ALL 29 before: {len(allerr)} anchors, median |error| {abs(se[len(se)//2]):.2f}s, "
               f"worst {max(allerr, key=abs):+.2f}s, {len(late)} captions late by more than 0.25s")
     print("V2TIMEDONE")
+
+def anchor_words(src, a, b, words, quiet=False):
+    """Pin one clip's words to the SOUND. [(start, end, text)] in, same shape out.
+
+    The one call any renderer needs. Everything else in this module is the machinery
+    behind it: find where speech resumes, read 1.4s from each of those moments, match
+    the word HEARD there to the script, and stretch the times between the anchors.
+
+    Why a renderer should use it: whisper reading a whole clip compresses filled pauses.
+    On one clip the speaker hesitated - "to, uh, uh, my ultimate prison" - and the word
+    "prison" was timed at 6.06s when he says it at 8.13s. Every other check passed that
+    clip. Anchoring by nearest-in-time cannot fix it either, because a word two seconds
+    adrift gets pinned to the wrong silence and the error is locked in. Only asking
+    WHICH WORD IS HEARD at each pause recovers it.
+
+    Costs one short transcription per pause, so roughly 20-60 seconds for a 60-second
+    clip. Returns the words untouched if too few anchors are found to be trustworthy.
+    """
+    import tempfile
+    if not words:
+        return words
+    wav = os.path.join(tempfile.gettempdir(), "anchor_%d.wav" % abs(hash((src, a, b))))
+    subprocess.run([FF, "-y", "-loglevel", "error", "-ss", f"{a:.3f}", "-to", f"{b:.3f}",
+                    "-i", src, "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", wav], check=True)
+    try:
+        ons = onsets(envelope(src, a, b))
+        pts = anchor_by_identity(wav, [tuple(w) for w in words], ons)
+        if len(pts) < 2:
+            if not quiet:
+                print(f"      caption timing: only {len(pts)} anchor(s), left as transcribed")
+            return words
+        out = warp_by_index([tuple(w) for w in words], pts)
+        if not quiet:
+            moved = max(abs(o[0] - n[0]) for o, n in zip(words, out))
+            print(f"      caption timing: {len(pts)} anchors of {len(ons)} sounds, "
+                  f"worst correction {moved:.2f}s")
+        return out
+    finally:
+        if os.path.exists(wav):
+            os.remove(wav)

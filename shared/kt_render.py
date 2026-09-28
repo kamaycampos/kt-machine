@@ -1031,6 +1031,18 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     if fix and words:
         low = {k.lower(): v for k, v in fix.items()}
         words = [(a, b, low.get(w.lower().strip(), w)) for a, b, w in words]
+    # PIN THE WORDS TO THE SOUND BEFORE BREAKING THEM INTO CAPTIONS.
+    # 28 Sept 2026. whisper reading a whole clip compresses filled pauses: on one clip
+    # "prison" was timed at 6.06s when the speaker says it at 8.13s, and every existing
+    # check passed that clip. vsc_v2_time.anchor_words reads 1.4s from each point speech
+    # resumes and matches the word HEARD there, which is the only thing that recovers it.
+    # Set CAPTION_ANCHOR=0 to fall back to the raw transcription times.
+    if words and os.environ.get("CAPTION_ANCHOR", "1") != "0":
+        try:
+            import vsc_v2_time
+            words = vsc_v2_time.anchor_words(src, t_in, t_out, words)
+        except Exception as e:                       # never let timing polish lose a clip
+            sys.stderr.write(f"      caption anchoring skipped: {type(e).__name__}: {e}\n")
     ps = phrases_from_words(words) if words else burn.phrases(cues, t_in, t_out)
     # KEEP A RECORD OF WHAT WAS BURNED. 16 Sept 2026: captions drifted up to
     # 9.5s ahead of the speech on seven clips, and nothing could see it - the
@@ -1164,18 +1176,6 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
             else:
                 print(f"      + youtube cut {ye - ys:.0f}s (+{ys - t_in:.0f}s in)")
                 thumb(yt_path(dest))
-    # WRITE DOWN WHAT WAS BURNED. 27 Sept 2026: the read-it-back check
-    # (vsc_v2_onscreen) samples a finished clip and asks whether the word being
-    # spoken is on screen - it caught a caption sitting 2.2 seconds early that every
-    # other check passed. It needs to know what was burned, and a clip that does not
-    # record that cannot be checked by anything, ever. So every renderer in every
-    # project writes this sidecar now. It costs a kilobyte and it is additive: nothing
-    # reads it unless a check asks.
-    try:
-        json.dump([[round(a, 3), round(b, 3), t] for a, b, t in ps],
-                  open(dest[:-4] + "__caps.json", "w"))
-    except Exception as e:
-        sys.stderr.write(f"caption record not written for {os.path.basename(dest)}: {e}\n")
     return len(ps)
 
 
