@@ -1,225 +1,315 @@
-## ar_v6tnhm7: 3 of 7 clip(s) passed every gate
+## ar_v6r8c9a: 6 of 7 clip(s) passed every gate
 
 
-## 2026-09-24 13:48
-  note AR_INSTINCT/PAIN-DRIVES-YOU-MORE: ending kept on the planner's words 'losing more' (cuts mid-sentence)
-ar_v6tnhm7__s1 (AR_INSTINCT): 2 of 2 passed pre-render gates
+## 2026-09-28 18:04
+  drop AR_TELEPHONE/MISTRANSLATED-PRAYER: hook - 809px wide at 44px - over the 780px safe zone, will be cut off on a phone
+  note AR_TELEPHONE/FORGIVE-FIRST: ending kept on the planner's words 'your prayer is not going to be heard' (ends inside a quote)
+ar_v6r8c9a__s1 (AR_TELEPHONE): 1 of 2 passed pre-render gates
 
-RENDER ar_v6tnhm7__s1
-  FAIL 01_NOT-ABOUT-THE-FERRARI_55s.mp4: [FAIL] 01_NOT-ABOUT-THE-FERRARI_55s.mp4                       11 captions vs the sound  median +0.19s  worst-10% 1.10s  | words captioned 100%
-  PASS 02_PAIN-DRIVES-YOU-MORE_50s.mp4  02_PAIN-DRIVES-YOU-MORE_50s.mp4                        11 captions vs the sound  median +0
-       FIRST 5s : But there are two motivators in life, and we think we're motivated for pleasure. | LAST  8s : We love to win, but we hate losing more.
-TEST MODE - passing clips NOT uploaded or queued: AR_INSTINCT
-
-
-
-## 2026-09-24 13:39
-ar_v6tnhm7__s3 (AR_INSTINCT): 1 of 1 passed pre-render gates
-
-RENDER ar_v6tnhm7__s3
-  FAIL 01_RICH-PEOPLE-NEVER-HEARD-OF-IT_90s.mp4: [????] 01_RICH-PEOPLE-NEVER-HEARD-OF-IT_90s.mp4               only 4 pause-anchored captions - too few to judge
+RENDER ar_v6r8c9a__s1
+  PASS 01_FORGIVE-FIRST_92s.mp4  01_FORGIVE-FIRST_92s.mp4                               16 captions vs the sound  median +0
+       === 01_FORGIVE-FIRST_92s.mp4  (92s) | FIRST 5s : God, forgive us for everything we've done wrong. | LAST  8s : So forgive you in the same manner. But if you don't forgive any other people, then God's not going to forgive you either, and your prayer is not going to be hea
+TEST MODE - passing clips NOT uploaded or queued: AR_TELEPHONE
 
 
 
-## 2026-09-24 13:52
-  note AR_INSTINCT/THE-SALMON-KNEW-ITS-DNA: ending kept on the planner's words 'traits in our DNA' (ends inside a quote)
-  note AR_INSTINCT/RAISED-JAPANESE-STILL-ITALIAN: ending kept on the planner's words 'in our DNA' (cuts mid-sentence)
-ar_v6tnhm7__s2 (AR_INSTINCT): 2 of 2 passed pre-render gates
+## 2026-09-28 18:02
+  note AR_TELEPHONE/THE-LINE-IS-DEAD: ending kept on the planner's words 'what you need before you ask' (cuts mid-sentence)
+  note AR_TELEPHONE/THE-EMPTY-VESSEL: ending kept on the planner's words 'want or what you're praying for' (ends on 'for', next line completes it)
+ar_v6r8c9a__s0 (AR_TELEPHONE): 2 of 2 passed pre-render gates
 
-RENDER ar_v6tnhm7__s2
-  FAIL 01_THE-SALMON-KNEW-ITS-DNA_101s.mp4: [FAIL] 01_THE-SALMON-KNEW-ITS-DNA_101s.mp4                    13 captions vs the sound  median +0.18s  worst-10% 1.21s  | words captioned 100%
-  FAIL 02_RAISED-JAPANESE-STILL-ITALIAN_59s.mp4: [FAIL] 02_RAISED-JAPANESE-STILL-ITALIAN_59s.mp4               16 captions vs the sound  median +0.48s  worst-10% 0.79s  | words captioned 100%  UNCAPTIONED SPEECH [(38.2, 40.0)]
-
-
-
-## 2026-09-24 13:48
-  note AR_INSTINCT/BUILD-IT-THEN-DESTROY-IT: ending kept on the planner's words 'act of creating' (cuts mid-sentence)
-ar_v6tnhm7__s0 (AR_INSTINCT): 2 of 2 passed pre-render gates
-
-RENDER ar_v6tnhm7__s0
-  PASS 01_CAMEL-THROUGH-THE-DOOR_46s.mp4  01_CAMEL-THROUGH-THE-DOOR_46s.mp4                      8 captions vs the sound  median +0.
-       FIRST 5s : Generally, we put those into two different categories. | LAST  8s : So, it is a really little misunderstanding of what it says.
-  PASS 02_BUILD-IT-THEN-DESTROY-IT_76s.mp4  02_BUILD-IT-THEN-DESTROY-IT_76s.mp4                    6 captions vs the sound  median +0.
-       FIRST 5s : The most powerful chakra in the body is the sexual chakra. | LAST  8s : Exactly. Now I want to destroy this so I can build something else. So it's this beautiful act of creating that.
-TEST MODE - passing clips NOT uploaded or queued: AR_INSTINCT
-
-
-## ar_v6wv03u: 6 of 7 clip(s) passed every gate
-
-
-## 2026-09-24 13:36
-ar_v6wv03u__s3 (AR_VEIL): 1 of 1 passed pre-render gates
-
-RENDER ar_v6wv03u__s3
-  PASS 01_NOT-A-PUPPET-ANYMORE_46s.mp4  01_NOT-A-PUPPET-ANYMORE_46s.mp4                        16 captions vs the sound  median +0
-       FIRST 5s : Because wouldn't it be great if you didn't have any buttons? Yeah. So no matter what they do, you just look at it. | LAST  8s : And you start being at cause over your environment. And that gives you power to manifest or create whatever you desire.
-TEST MODE - passing clips NOT uploaded or queued: AR_VEIL
+RENDER ar_v6r8c9a__s0
+  PASS 01_THE-LINE-IS-DEAD_57s.mp4  01_THE-LINE-IS-DEAD_57s.mp4                            17 captions vs the sound  median +0
+       FIRST 5s : When you pray, do not keep on babbling like pagans. | LAST  8s : It says, "Don't be like them, for your father knows what you need before you ask."
+  PASS 02_THE-EMPTY-VESSEL_57s.mp4  02_THE-EMPTY-VESSEL_57s.mp4                            8 captions vs the sound  median +0.
+       FIRST 5s : Pull from God or pull from anything. You have to be an open vessel. | LAST  8s : Manipulate or move matter to manifest or create in your life what you want or what you're praying for.
+TEST MODE - passing clips NOT uploaded or queued: AR_TELEPHONE
 
 
 
-## 2026-09-24 13:47
-  note AR_VEIL/SHOW-ME-WHERE-GOD-IS-NOT: ending kept on the planner's words 'God is not' (cuts mid-sentence)
-ar_v6wv03u__s0 (AR_VEIL): 2 of 2 passed pre-render gates
+## 2026-09-28 18:08
+  note AR_TELEPHONE/FIG-TREE-24-HOURS: ending kept on the planner's words 'it will be done for you' (cuts mid-sentence)
+  note AR_TELEPHONE/TENS-OF-MILLIONS: ending kept on the planner's words 'number one and only reason for my success' (cuts mid-sentence)
+ar_v6r8c9a__s2 (AR_TELEPHONE): 2 of 2 passed pre-render gates
 
-RENDER ar_v6wv03u__s0
-  PASS 01_SHOW-ME-WHERE-GOD-IS-NOT_123s.mp4  01_SHOW-ME-WHERE-GOD-IS-NOT_123s.mp4                   31 captions vs the sound  median +0
-       FIRST 5s : Well, I was away for many years, and in this place of still | LAST  8s : That's what we all are. Someone asked me and said, "Show me where God is." And the answer was, "Show me where God is not."
-  PASS 02_TOTAL-CONFIDENCE-NO-PROOF_48s.mp4  02_TOTAL-CONFIDENCE-NO-PROOF_48s.mp4                   9 captions vs the sound  median +0.
-       FIRST 5s : And I'll give you an example. In the book, right at the beginning, I have what's called the state of consciousness. | LAST  8s : Uncontrollable emotions, feelings, or thoughts. No one can push your buttons because you no longer have any buttons to push.
-TEST MODE - passing clips NOT uploaded or queued: AR_VEIL
-
-
-
-## 2026-09-24 13:48
-  note AR_VEIL/GOD-WAS-NEVER-OVER-THERE: ending kept on the planner's words 'own experience' (next line completes it)
-ar_v6wv03u__s1 (AR_VEIL): 2 of 2 passed pre-render gates
-
-RENDER ar_v6wv03u__s1
-  PASS 01_A-ROLEX-PROVES-NOTHING_62s.mp4  01_A-ROLEX-PROVES-NOTHING_62s.mp4                      18 captions vs the sound  median +0
-       FIRST 5s : So it's like this guy's wearing a suit and tie. He's got a Rolex watch on. I mean, he's got money. He's got material. | LAST  8s : Love people and use things instead of loving things and using people.
-  PASS 02_GOD-WAS-NEVER-OVER-THERE_89s.mp4  02_GOD-WAS-NEVER-OVER-THERE_89s.mp4                    22 captions vs the sound  median +0
-       FIRST 5s : But there is a concept, which is a truth, which is God | LAST  8s : It is universal truth. You don't have to believe anything I say. Don't believe anything I say. Believe your own experience.
-TEST MODE - passing clips NOT uploaded or queued: AR_VEIL
+RENDER ar_v6r8c9a__s2
+  PASS 01_FIG-TREE-24-HOURS_171s.mp4  01_FIG-TREE-24-HOURS_171s.mp4                          45 captions vs the sound  median +0
+       FIRST 5s : They were all hungry. They didn't have any food. They were hungry. | LAST  8s : You pray for and ask. If you believe that you will receive it, it will be done for you.
+  PASS 02_TENS-OF-MILLIONS_91s.mp4  02_TENS-OF-MILLIONS_91s.mp4                            15 captions vs the sound  median +0
+       FIRST 5s : Your faith healed you. Your belief in God healed you. | LAST  8s : Those things, which would be not as they were, made me tens of millions of dollars. It is the number one and only reason for my success.
+TEST MODE - passing clips NOT uploaded or queued: AR_TELEPHONE
 
 
 
-## 2026-09-24 13:51
-  note AR_VEIL/THE-GUARD-ALREADY-KNEW: ending kept on the planner's words 'same people here' (cuts mid-sentence)
-ar_v6wv03u__s2 (AR_VEIL): 2 of 2 passed pre-render gates
+## 2026-09-28 17:54
+ar_v6r8c9a__s3 (AR_TELEPHONE): 1 of 1 passed pre-render gates
 
-RENDER ar_v6wv03u__s2
-  PASS 01_THE-GUARD-ALREADY-KNEW_64s.mp4  01_THE-GUARD-ALREADY-KNEW_64s.mp4                      15 captions vs the sound  median +0
-       FIRST 5s : I will tell you a quick story. There is an ancient story that goes | LAST  8s : They were hard-working. They were family-oriented. They were just terrific. And the guard said, "Good. You'll find those same people here."
-  FAIL 02_AHA-MOMENT-SHATTERS-IT_59s.mp4: ends off the planned words: plan ends 'understanding of something', clip ends 'it is important isnt it'
-TEST MODE - passing clips NOT uploaded or queued: AR_VEIL
+RENDER ar_v6r8c9a__s3
+  PASS 01_THE-HUNDREDFOLD-RETURN_47s.mp4  01_THE-HUNDREDFOLD-RETURN_47s.mp4                      14 captions vs the sound  median +0
+       FIRST 5s : Love your enemies. Love everybody. Have compassion. Forgive. | LAST  8s : Give and it shall be given back to you a hundred to a thousand times. Don't be afraid to give.
+TEST MODE - passing clips NOT uploaded or queued: AR_TELEPHONE
 
 
-## ar_v70c41q: 4 of 6 clip(s) passed every gate
+## ep_v6mpcxl: 5 of 7 clip(s) passed every gate
 
 
-## 2026-09-24 13:55
-  note AR_PRISON/DNA-COUNTER-INTENTIONS: ending kept on the planner's words 'self-sabotage your success' (next line completes it)
-ar_v70c41q__s1 (AR_PRISON): 2 of 2 passed pre-render gates
+## 2026-09-28 18:16
+  note KT_LUCK/BILL-GATES-NUMBER-ONE-REASON-LUCK: ending kept on the planner's words 'I saw the vision' (cuts mid-sentence)
+  note KT_LUCK/WHAT-HE-SAW-IN-ONE-ACORN: ending kept on the planner's words 'lead to a forest' (cuts mid-sentence)
+ep_v6mpcxl__s2 (KT_LUCK): 2 of 2 passed pre-render gates
 
-RENDER ar_v70c41q__s1
-  PASS 01_DNA-COUNTER-INTENTIONS_61s.mp4  01_DNA-COUNTER-INTENTIONS_61s.mp4                      5 captions vs the sound  median +0.
-       FIRST 5s : There's really three reasons why a person fails at achieving their goals or manifesting. | LAST  8s : We have that vibrating as a counter intention, preventing you or stopping you or making you do things to self-sabotage your success.
-  FAIL 02_RICH-PEOPLE-BROADCAST-DIFFERENT_127s.mp4: ends off the planned words: plan ends 'and then manifest it', clip ends 'and this is not foo foo'
-TEST MODE - passing clips NOT uploaded or queued: AR_PRISON
-
-
-
-## 2026-09-24 13:53
-  note AR_PRISON/HE-WROTE-HIMSELF-A-FAKE-CHECK: ending kept on the planner's words 'would picture himself' (cuts mid-sentence)
-  note AR_PRISON/SHE-CALLED-HERSELF-A-ROCK-STAR: ending kept on the planner's words 'and then have' (cuts mid-sentence)
-ar_v70c41q__s2 (AR_PRISON): 2 of 2 passed pre-render gates
-
-RENDER ar_v70c41q__s2
-  PASS 01_HE-WROTE-HIMSELF-A-FAKE-CHECK_105s.mp4  01_HE-WROTE-HIMSELF-A-FAKE-CHECK_105s.mp4              16 captions vs the sound  median +0
-       FIRST 5s : This is not fufu. There was an ad that I saw published in 1970. | LAST  8s : It is important that when he didn't have a job, when he was living in a studio apartment that he couldn't pay the rent on, but he would picture himself.
-  FAIL 02_SHE-CALLED-HERSELF-A-ROCK-STAR_65s.mp4: [FAIL] 02_SHE-CALLED-HERSELF-A-ROCK-STAR_65s.mp4              5 captions vs the sound  median +0.31s  worst-10% 0.67s  | words captioned 96%
-TEST MODE - passing clips NOT uploaded or queued: AR_PRISON
+RENDER ep_v6mpcxl__s2
+  PASS 01_BILL-GATES-NUMBER-ONE-REASON-LUCK_110s.mp4  01_BILL-GATES-NUMBER-ONE-REASON-LUCK_110s.mp4          19 captions vs the sound  median +0
+       FIRST 5s : Bill Gates was asked by Larry King. At the time, I think Bill was the richest man in the world. | LAST  8s : Computer industry and particularly home computing, not just business. I saw the vision.
+  PASS 02_WHAT-HE-SAW-IN-ONE-ACORN_113s.mp4  02_WHAT-HE-SAW-IN-ONE-ACORN_113s.mp4                   7 captions vs the sound  median +0.
+       FIRST 5s : I met the guy who was the past president of Tandy Corporation. | LAST  8s : What is the potential in one acorn? Because one acorn could lead to a tree, which can lead to a forest.
+TEST MODE - passing clips NOT uploaded or queued: KT_LUCK
 
 
 
-## 2026-09-24 13:50
-  note AR_PRISON/PRISON-WAS-THE-ANSWER: ending kept on the planner's words 'purpose was' (ends on 'was')
-ar_v70c41q__s0 (AR_PRISON): 2 of 2 passed pre-render gates
+## 2026-09-28 18:14
+  note KT_LUCK/WHY-DNA-REACTED-ACROSS-THE-PLANET: ending kept on the planner's words 'Your mind changes reality' (cuts mid-sentence)
+ep_v6mpcxl__s0 (KT_LUCK): 2 of 2 passed pre-render gates
 
-RENDER ar_v70c41q__s0
-  PASS 01_PRISON-WAS-THE-ANSWER_66s.mp4  01_PRISON-WAS-THE-ANSWER_66s.mp4                       11 captions vs the sound  median +0
-       FIRST 5s : How did somebody like you who obviously really understands | LAST  8s : Because I had a chance to liquidate and absolutely clear the decks and come out with a clean slate to do exactly what my mission and purpose was.
-  PASS 02_THE-HEART-ATTACK-HE-NEEDED_81s.mp4  02_THE-HEART-ATTACK-HE-NEEDED_81s.mp4                  14 captions vs the sound  median +0
-       FIRST 5s : I had a friend of mine who came to me and he said, "I want to quit smoking. I want to use the law of attraction to man | LAST  8s : But it was what I needed to actually achieve and attain what I truly desired, which was living smoke-free.
-TEST MODE - passing clips NOT uploaded or queued: AR_PRISON
-
-
-## ar_v74afc8: 5 of 7 clip(s) passed every gate
-
-
-## 2026-09-24 14:13
-  note AR_TONGUE/TERRIFIC-MEANS-DISASTER: ending kept on the planner's words 'you even knowing' (cuts mid-sentence)
-  note AR_TONGUE/HIDDEN-COMMAND-IN-DNA: ending kept on the planner's words 'wouldn't hear that' (ends on 'that', next line completes it)
-ar_v74afc8__s1 (AR_TONGUE): 2 of 2 passed pre-render gates
-
-RENDER ar_v74afc8__s1
-  PASS 01_TERRIFIC-MEANS-DISASTER_99s.mp4  01_TERRIFIC-MEANS-DISASTER_99s.mp4                     10 captions vs the sound  median +0
-       FIRST 5s : Most people say words they don't know the meaning of. They don't know the origin. | LAST  8s : Terrific. You just said it's going disastrous. You're just programming yourself without you even knowing.
-  FAIL 02_HIDDEN-COMMAND-IN-DNA_85s.mp4: [FAIL] 02_HIDDEN-COMMAND-IN-DNA_85s.mp4                       12 captions vs the sound  median +0.19s  worst-10% 0.34s  | words captioned 102%  UNCAPTIONED SPEECH [(39.2, 41.0)]
-TEST MODE - passing clips NOT uploaded or queued: AR_TONGUE
+RENDER ep_v6mpcxl__s0
+  FAIL 01_50-PERCENT-BECAME-52-PERCENT_166s.mp4: [FAIL] 01_50-PERCENT-BECAME-52-PERCENT_166s.mp4               28 captions vs the sound  median +0.35s  worst-10% 1.14s  | words captioned 100%
+  PASS 02_WHY-DNA-REACTED-ACROSS-THE-PLANET_130s.mp4  02_WHY-DNA-REACTED-ACROSS-THE-PLANET_130s.mp4          29 captions vs the sound  median +0
+       FIRST 5s : It is important for me. DNA was taken out of an individual. | LAST  8s : With no time delay on the other side of the planet, the Petri dish also in the lead line room also expanded. Your mind changes reality.
+TEST MODE - passing clips NOT uploaded or queued: KT_LUCK
 
 
 
-## 2026-09-24 14:04
-ar_v74afc8__s0 (AR_TONGUE): 2 of 2 passed pre-render gates
+## 2026-09-28 17:58
+  note KT_LUCK/50X-MORE-MONEY-BY-A-NOSE: ending kept on the planner's words 'that's what luck is' (cuts mid-sentence)
+ep_v6mpcxl__s3 (KT_LUCK): 1 of 1 passed pre-render gates
 
-RENDER ar_v74afc8__s0
-  FAIL 01_MOUTH-IS-A-SPELL_152s.mp4: ends off the planned words: plan ends 'they are creative', clip ends 'you not be able to sleep'
-  PASS 02_CAT-COMMAND_70s.mp4  02_CAT-COMMAND_70s.mp4                                 15 captions vs the sound  median +0
-       FIRST 5s : Don't think of a cat. What's the first thing you think about? | LAST  8s : Or a picture? One of two things, and that's the amount of training we got in this was a lot. It was unbelievable.
-TEST MODE - passing clips NOT uploaded or queued: AR_TONGUE
+RENDER ep_v6mpcxl__s3
+  FAIL 01_50X-MORE-MONEY-BY-A-NOSE_74s.mp4: [FAIL] 01_50X-MORE-MONEY-BY-A-NOSE_74s.mp4                    26 captions vs the sound  median +0.10s  worst-10% 0.49s  | words captioned 101%  UNCAPTIONED SPEECH [(18.1, 20.4)]
 
 
 
-## 2026-09-24 14:05
-ar_v74afc8__s3 (AR_TONGUE): 1 of 1 passed pre-render gates
+## 2026-09-28 18:13
+ep_v6mpcxl__s1 (KT_LUCK): 2 of 2 passed pre-render gates
 
-RENDER ar_v74afc8__s3
-  PASS 01_TWO-WORDS-MISTRANSLATED_142s.mp4  01_TWO-WORDS-MISTRANSLATED_142s.mp4                    36 captions vs the sound  median +0
-       FIRST 5s : So you can say, "I am wealthy. I am happy." | LAST  8s : Maybe I can take from here, then I can go I am wealthy. Makes sense? It's called going at gradients. And this is the secret.
-TEST MODE - passing clips NOT uploaded or queued: AR_TONGUE
+RENDER ep_v6mpcxl__s1
+  PASS 01_1-IN-100-ODDS-HE-ALREADY-KNEW_148s.mp4  01_1-IN-100-ODDS-HE-ALREADY-KNEW_148s.mp4              21 captions vs the sound  median +0
+       FIRST 5s : And in this particular meeting, there was a raffle, and maybe there was 50 | LAST  8s : And that was the moment that I knew that you can be lucky. You can change your luck.
+  PASS 02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4  02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4            23 captions vs the sound  median +0
+       FIRST 5s : And I went down to the high-limit slot machines, and I'm with the guys, and I'm getting... | LAST  8s : 100% luck. No skill. That's what lucky means.
+TEST MODE - passing clips NOT uploaded or queued: KT_LUCK
+
+
+## ep_v6sr8uf: 5 of 6 clip(s) passed every gate
+
+
+## 2026-09-28 18:01
+  note KT_CLOCK/TYPING-9-PATHWAYS-CURSIVE-HUNDREDS: ending kept on the planner's words 'into a phone or a computer' (cuts mid-sentence)
+ep_v6sr8uf__s0 (KT_CLOCK): 2 of 2 passed pre-render gates
+
+RENDER ep_v6sr8uf__s0
+  PASS 01_A-250000-CHECK-FOR-ONE-LIST_173s.mp4  01_A-250000-CHECK-FOR-ONE-LIST_173s.mp4                40 captions vs the sound  median +0
+       FIRST 5s : Write down the six most important things you need to do tomorrow and list them | LAST  8s : In today's money, that is well over $5 million in today's money.
+  PASS 02_TYPING-9-PATHWAYS-CURSIVE-HUNDREDS_42s.mp4  02_TYPING-9-PATHWAYS-CURSIVE-HUNDREDS_42s.mp4          7 captions vs the sound  median +0.
+       FIRST 5s : Research has shown over and over again that when you type something into your phone, | LAST  8s : And your subconscious starts working on it infinitely more than you would if you just typed it into a phone or a computer.
+TEST MODE - passing clips NOT uploaded or queued: KT_CLOCK
 
 
 
-## 2026-09-24 14:17
-ar_v74afc8__s2 (AR_TONGUE): 2 of 2 passed pre-render gates
+## 2026-09-28 18:12
+  note KT_CLOCK/ONE-QUESTION-SORTS-YOUR-TO-DO-LIST: ending kept on the planner's words 'and so efficient. I'm awesome' (cuts mid-sentence)
+  note KT_CLOCK/THE-TO-DO-LIST-MISTAKE-EVERYONE-MAKES: ending kept on the planner's words 'activity sheet is critical' (ends inside a quote)
+ep_v6sr8uf__s1 (KT_CLOCK): 2 of 2 passed pre-render gates
 
-RENDER ar_v74afc8__s2
-  PASS 01_YOUR-VOICE-REPROGRAMS-YOU_135s.mp4  01_YOUR-VOICE-REPROGRAMS-YOU_135s.mp4                  33 captions vs the sound  median +0
-       FIRST 5s : I will give you an example. Remember, we used to have tape recorders, like cassettes. | LAST  8s : The word you speak to others, but mostly the word you speak to yourself. You have a tool right here.
-  PASS 02_HE-COULDNT-TALK_163s.mp4  02_HE-COULDNT-TALK_163s.mp4                            28 captions vs the sound  median +0
-       FIRST 5s : When I was in the brotherhood, I stuttered. I had a | LAST  8s : I was given the key to changing anything and everything in my life to the exact way I wanted it.
-TEST MODE - passing clips NOT uploaded or queued: AR_TONGUE
+RENDER ep_v6sr8uf__s1
+  PASS 01_THE-TO-DO-LIST-MISTAKE-EVERYONE-MAKES_90s.mp4  01_THE-TO-DO-LIST-MISTAKE-EVERYONE-MAKES_90s.mp4       18 captions vs the sound  median +0
+       FIRST 5s : It is a common area that people do. They write down everything on one to-do list for tomorrow. | LAST  8s : Because I can't get it done, but I can do it in three or four days. So a daily activity sheet is critical.
+  PASS 02_ONE-QUESTION-SORTS-YOUR-TO-DO-LIST_128s.mp4  02_ONE-QUESTION-SORTS-YOUR-TO-DO-LIST_128s.mp4         14 captions vs the sound  median +0
+       FIRST 5s : Is this something that absolutely, positively, has | LAST  8s : Like you're on top of the world. Like, I am so powerful and so efficient. I'm awesome.
+TEST MODE - passing clips NOT uploaded or queued: KT_CLOCK
+
+
+
+## 2026-09-28 18:17
+ep_v6sr8uf__s2 (KT_CLOCK): 2 of 2 passed pre-render gates
+
+RENDER ep_v6sr8uf__s2
+  FAIL 01_TIME-MANAGEMENT-IS-A-LIE_62s.mp4: [????] 01_TIME-MANAGEMENT-IS-A-LIE_62s.mp4                    only 3 pause-anchored captions - too few to judge
+  PASS 02_26-TABS-ONE-PERSON-EACH_112s.mp4  02_26-TABS-ONE-PERSON-EACH_112s.mp4                    34 captions vs the sound  median +0
+       FIRST 5s : The communication planner system is this. In the back, | LAST  8s : Discuss price of the Your Wish is Your Command program. Then I close it.
+TEST MODE - passing clips NOT uploaded or queued: KT_CLOCK
+
+
+## ep_v6w8h8e: 4 of 6 clip(s) passed every gate
+
+
+## 2026-09-28 18:24
+  note KT_UNSTUCK/WHAT-TURNED-HER-ON-THE-MOST: ending kept on the planner's words 'masculinity in a beautiful way' (cuts mid-sentence)
+ep_v6w8h8e__s2 (KT_UNSTUCK): 2 of 2 passed pre-render gates
+
+RENDER ep_v6w8h8e__s2
+  PASS 01_WHAT-TURNED-HER-ON-THE-MOST_68s.mp4  01_WHAT-TURNED-HER-ON-THE-MOST_68s.mp4                 7 captions vs the sound  median +0.
+       FIRST 5s : So I meet this gal, Blonde Blue-White. She was a cheerleader for an NFL football team. | LAST  8s : We are a man without being abusive or without being controlling. You're showing your masculinity in a beautiful way.
+  PASS 02_THE-MAN-WHO-BEAT-MUHAMMAD-ALI_60s.mp4  02_THE-MAN-WHO-BEAT-MUHAMMAD-ALI_60s.mp4               10 captions vs the sound  median +0
+       FIRST 5s : Ken Norton was the heavyweight champion of the world. He actually beat Muhammad Ali. So I was with Kenny Norton, and anytime you | LAST  8s : And don't let anyone achieve. Go for your dreams and don't let anyone steal your dreams.
+TEST MODE - passing clips NOT uploaded or queued: KT_UNSTUCK
+
+
+
+## 2026-09-28 18:21
+ep_v6w8h8e__s1 (KT_UNSTUCK): 2 of 2 passed pre-render gates
+
+RENDER ep_v6w8h8e__s1
+  PASS 01_WHAT-ARNOLD-SAW-BEFORE-MR-OLYMPIA_60s.mp4  01_WHAT-ARNOLD-SAW-BEFORE-MR-OLYMPIA_60s.mp4           6 captions vs the sound  median +0.
+       FIRST 5s : When he was in Austria, he said he took pictures of bodybuilders with bodies | LAST  8s : The money that he had when he was a kid was almost identical to the real picture of him winning that. You do create your reality.
+  FAIL 02_THE-DOG-ON-THE-NAIL_83s.mp4: [FAIL] 02_THE-DOG-ON-THE-NAIL_83s.mp4                         10 captions vs the sound  median +0.14s  worst-10% 0.60s  | words captioned 101%  UNCAPTIONED SPEECH [(55.9, 57.5)]
+TEST MODE - passing clips NOT uploaded or queued: KT_UNSTUCK
+
+
+
+## 2026-09-28 18:17
+  note KT_UNSTUCK/ONE-RULE-THE-RICHEST-MAN-ALIVE: ending kept on the planner's words 'like that's the point' (next line completes it)
+ep_v6w8h8e__s0 (KT_UNSTUCK): 2 of 2 passed pre-render gates
+
+RENDER ep_v6w8h8e__s0
+  PASS 01_100-PERCENT-BLINDFOLDED-WIN_73s.mp4  01_100-PERCENT-BLINDFOLDED-WIN_73s.mp4                 5 captions vs the sound  median +0.
+       FIRST 5s : And Zig and I were chatting, and he gave the story of this | LAST  8s : But the key to success is define your dream and get a burning desire for its achievement.
+  FAIL 02_ONE-RULE-THE-RICHEST-MAN-ALIVE_47s.mp4: [????] 02_ONE-RULE-THE-RICHEST-MAN-ALIVE_47s.mp4              only 1 pause-anchored captions - too few to judge
+TEST MODE - passing clips NOT uploaded or queued: KT_UNSTUCK
+
+
+## ep_v6y4es4: 6 of 8 clip(s) passed every gate
+
+
+## 2026-09-28 18:35
+  note KT_UNCENSORED/THE-FIRST-QUESTION-BEFORE-ANY-DECISION: ending kept on the planner's words 'in alignment with who I am' (cuts mid-sentence)
+  note KT_UNCENSORED/10X-UPSIDE-LOSE-THE-HOUSE: ending kept on the planner's words 'the right deal for you' (cuts mid-sentence)
+ep_v6y4es4__s3 (KT_UNCENSORED): 2 of 2 passed pre-render gates
+
+RENDER ep_v6y4es4__s3
+  PASS 01_THE-FIRST-QUESTION-BEFORE-ANY-DECISION_41s.mp4  01_THE-FIRST-QUESTION-BEFORE-ANY-DECISION_41s.mp4      13 captions vs the sound  median +0
+       === 01_THE-FIRST-QUESTION-BEFORE-ANY-DECISION_41s.mp4  (41s) | FIRST 5s : When you go through a decision, first and foremost, number one, ask your | LAST  8s : You are going to make a fortune, and he did. It just wasn't in my -- it wasn't in alignment with who I am.
+  PASS 02_10X-UPSIDE-LOSE-THE-HOUSE_102s.mp4  02_10X-UPSIDE-LOSE-THE-HOUSE_102s.mp4                  17 captions vs the sound  median +0
+       FIRST 5s : No. The worst case scenario is you put up $100,000. Not only do you lose it, but you get sued because | LAST  8s : Can I handle that emotionally or financially? No, I have a wife and two kids. Then stop! This is not the right deal for you.
+TEST MODE - passing clips NOT uploaded or queued: KT_UNCENSORED
+
+
+
+## 2026-09-28 18:20
+  note KT_UNCENSORED/18-BILLION-FIRST-THEN-THE-BOOKS: ending kept on the planner's words 'make a billion dollars first' (cuts mid-sentence)
+  note KT_UNCENSORED/150-MILLION-IN-SALES-STILL-STUCK: ending kept on the planner's words 'stock price goes up anyway' (next line completes it)
+ep_v6y4es4__s0 (KT_UNCENSORED): 2 of 2 passed pre-render gates
+
+RENDER ep_v6y4es4__s0
+  FAIL 01_18-BILLION-FIRST-THEN-THE-BOOKS_44s.mp4: [????] 01_18-BILLION-FIRST-THEN-THE-BOOKS_44s.mp4             only 4 pause-anchored captions - too few to judge
+  PASS 02_150-MILLION-IN-SALES-STILL-STUCK_69s.mp4  02_150-MILLION-IN-SALES-STILL-STUCK_69s.mp4            5 captions vs the sound  median +0.
+       FIRST 5s : One guy knows he has got a company that last two years did 150 million in sales. | LAST  8s : It's a public trade company, but if it is publicly traded, when profits go up, your earnings per share go up, and therefore your stock price goes up anyway.
+TEST MODE - passing clips NOT uploaded or queued: KT_UNCENSORED
+
+
+
+## 2026-09-28 18:23
+  note KT_UNCENSORED/AIM-FOR-80000-NOT-100000: ending kept on the planner's words 'we're ahead of schedule' (cuts mid-sentence)
+  note KT_UNCENSORED/WHAT-REPLACED-OSWALD-THE-RABBIT: ending kept on the planner's words 'he created Mickey Mouse' (ends inside a quote)
+ep_v6y4es4__s1 (KT_UNCENSORED): 2 of 2 passed pre-render gates
+
+RENDER ep_v6y4es4__s1
+  PASS 01_AIM-FOR-80000-NOT-100000_43s.mp4  01_AIM-FOR-80000-NOT-100000_43s.mp4                    10 captions vs the sound  median +0
+       FIRST 5s : Too, people set their targets wrong. You have to set your goals and targets so that | LAST  8s : And then you hit it in the first week. Well, now you get a victory. Wow! We're ahead of schedule.
+  PASS 02_WHAT-REPLACED-OSWALD-THE-RABBIT_63s.mp4  02_WHAT-REPLACED-OSWALD-THE-RABBIT_63s.mp4             15 captions vs the sound  median +0
+       FIRST 5s : He created the cartoon character, he had four business partners, and his dream | LAST  8s : We didn't steal my ability to create. And if I created Oswald the Rabbit, I can create something else, and he created Mickey Mouse.
+TEST MODE - passing clips NOT uploaded or queued: KT_UNCENSORED
+
+
+
+## 2026-09-28 18:39
+  note KT_UNCENSORED/THE-GUARD-GAVE-THE-SAME-ANSWER: ending kept on the planner's words 'create the life you want' (cuts mid-sentence)
+ep_v6y4es4__s2 (KT_UNCENSORED): 2 of 2 passed pre-render gates
+
+RENDER ep_v6y4es4__s2
+  PASS 01_THE-GUARD-GAVE-THE-SAME-ANSWER_85s.mp4  01_THE-GUARD-GAVE-THE-SAME-ANSWER_85s.mp4              20 captions vs the sound  median +0
+       FIRST 5s : Yeah, and it's a very good question. My life that I create... | LAST  8s : Well, good news. You're going to find those exact same type of people here. Right. And that's really what it comes down to. You create the life you want.
+  FAIL 02_BITCOIN-WAS-20-HE-SAID-NO_45s.mp4: ends off the planned words: plan ends 'I either win or learn', clip ends 'decisions because i either win o'
+TEST MODE - passing clips NOT uploaded or queued: KT_UNCENSORED
+
+
+## ep_v6zos3k: 4 of 5 clip(s) passed every gate
+
+
+## 2026-09-28 18:28
+  note KT_LEDGER/THREE-IDEAS-THEY-CALLED-INSANE: ending kept on the planner's words 'at the beginning of things' (next line completes it)
+ep_v6zos3k__s2 (KT_LEDGER): 1 of 1 passed pre-render gates
+
+RENDER ep_v6zos3k__s2
+  PASS 01_THREE-IDEAS-THEY-CALLED-INSANE_60s.mp4  01_THREE-IDEAS-THEY-CALLED-INSANE_60s.mp4              8 captions vs the sound  median +0.
+       FIRST 5s : Look, do you light your home with whale oil? | LAST  8s : All over America, telegraph and telephone was insane, but that's what you do. You get in at the beginning of things.
+TEST MODE - passing clips NOT uploaded or queued: KT_LEDGER
+
+
+
+## 2026-09-28 18:40
+  note KT_LEDGER/THE-CALL-BEFORE-AMAZON-AND-APPLE: ending kept on the planner's words 'like to get that call' (cuts mid-sentence)
+ep_v6zos3k__s1 (KT_LEDGER): 2 of 2 passed pre-render gates
+
+RENDER ep_v6zos3k__s1
+  PASS 01_THE-CALL-BEFORE-AMAZON-AND-APPLE_86s.mp4  01_THE-CALL-BEFORE-AMAZON-AND-APPLE_86s.mp4            21 captions vs the sound  median +0
+       FIRST 5s : How about this call? Kevin, there's a guy named Jeff Bezos. He's a winner. | LAST  8s : Apple, what a stupid name. I know, but you won't be saying it's stupid when you start cashing the checks. Yeah. How would you like to get that call?
+  FAIL 02_COPY-THE-TRADES-1000-A-MONTH_87s.mp4: ends off the planned words: plan ends 'who was producing the results', clip ends 'him to do the same thing'
+TEST MODE - passing clips NOT uploaded or queued: KT_LEDGER
+
+
+
+## 2026-09-28 18:36
+ep_v6zos3k__s0 (KT_LEDGER): 2 of 2 passed pre-render gates
+
+RENDER ep_v6zos3k__s0
+  PASS 01_TWO-PIZZAS-AND-A-BILLION-DOLLARS_66s.mp4  01_TWO-PIZZAS-AND-A-BILLION-DOLLARS_66s.mp4            17 captions vs the sound  median +0
+       FIRST 5s : In 2010, the first purchase using Bitcoin | LAST  8s : Right. 1.3 billion. Well, guess who bought some Bitcoin in 2010? You're looking at them.
+  PASS 02_LOST-27-MILLION-STILL-WON_160s.mp4  02_LOST-27-MILLION-STILL-WON_160s.mp4                  35 captions vs the sound  median +0
+       FIRST 5s : When I was in Australia in 1999, when I was with President Gorbachev, | LAST  8s : So I made it by gambling and I make it on the stock, I make double. That's why I make money every time I come to Las Vegas.
+TEST MODE - passing clips NOT uploaded or queued: KT_LEDGER
 
 
 ## UPLOAD
-18 clip(s) to add:
-   AR_INSTINCT/01_CAMEL-THROUGH-THE-DOOR_46s.mp4  (20 MB)
-   AR_INSTINCT/02_BUILD-IT-THEN-DESTROY-IT_76s.mp4  (35 MB)
-   AR_INSTINCT/02_PAIN-DRIVES-YOU-MORE_50s.mp4  (22 MB)
-   AR_PRISON/01_DNA-COUNTER-INTENTIONS_61s.mp4  (40 MB)
-   AR_PRISON/01_HE-WROTE-HIMSELF-A-FAKE-CHECK_105s.mp4  (71 MB)
-   AR_PRISON/01_PRISON-WAS-THE-ANSWER_66s.mp4  (43 MB)
-   AR_PRISON/02_THE-HEART-ATTACK-HE-NEEDED_81s.mp4  (55 MB)
-   AR_TONGUE/01_TERRIFIC-MEANS-DISASTER_99s.mp4  (75 MB)
-   AR_TONGUE/01_TWO-WORDS-MISTRANSLATED_142s.mp4  (101 MB)
-   AR_TONGUE/01_YOUR-VOICE-REPROGRAMS-YOU_135s.mp4  (98 MB)
-   AR_TONGUE/02_CAT-COMMAND_70s.mp4  (47 MB)
-   AR_TONGUE/02_HE-COULDNT-TALK_163s.mp4  (121 MB)
-   AR_VEIL/01_A-ROLEX-PROVES-NOTHING_62s.mp4  (52 MB)
-   AR_VEIL/01_NOT-A-PUPPET-ANYMORE_46s.mp4  (49 MB)
-   AR_VEIL/01_SHOW-ME-WHERE-GOD-IS-NOT_123s.mp4  (116 MB)
-   AR_VEIL/01_THE-GUARD-ALREADY-KNEW_64s.mp4  (54 MB)
-   AR_VEIL/02_GOD-WAS-NEVER-OVER-THERE_89s.mp4  (83 MB)
-   AR_VEIL/02_TOTAL-CONFIDENCE-NO-PROOF_48s.mp4  (39 MB)
-   added AR_INSTINCT/01_CAMEL-THROUGH-THE-DOOR_46s.mp4
-   added AR_INSTINCT/02_BUILD-IT-THEN-DESTROY-IT_76s.mp4
-   added AR_INSTINCT/02_PAIN-DRIVES-YOU-MORE_50s.mp4
-   added AR_PRISON/01_DNA-COUNTER-INTENTIONS_61s.mp4
-   added AR_PRISON/01_HE-WROTE-HIMSELF-A-FAKE-CHECK_105s.mp4
-   added AR_PRISON/01_PRISON-WAS-THE-ANSWER_66s.mp4
-   added AR_PRISON/02_THE-HEART-ATTACK-HE-NEEDED_81s.mp4
-   added AR_TONGUE/01_TERRIFIC-MEANS-DISASTER_99s.mp4
-   added AR_TONGUE/01_TWO-WORDS-MISTRANSLATED_142s.mp4
-   added AR_TONGUE/01_YOUR-VOICE-REPROGRAMS-YOU_135s.mp4
-   added AR_TONGUE/02_CAT-COMMAND_70s.mp4
-   added AR_TONGUE/02_HE-COULDNT-TALK_163s.mp4
-   added AR_VEIL/01_A-ROLEX-PROVES-NOTHING_62s.mp4
-   added AR_VEIL/01_NOT-A-PUPPET-ANYMORE_46s.mp4
-   added AR_VEIL/01_SHOW-ME-WHERE-GOD-IS-NOT_123s.mp4
-   added AR_VEIL/01_THE-GUARD-ALREADY-KNEW_64s.mp4
-   added AR_VEIL/02_GOD-WAS-NEVER-OVER-THERE_89s.mp4
-   added AR_VEIL/02_TOTAL-CONFIDENCE-NO-PROOF_48s.mp4
+4  (19 MB)
+   KT_UNCENSORED/01_THE-FIRST-QUESTION-BEFORE-ANY-DECISION_41s.mp4  (20 MB)
+   KT_UNCENSORED/01_THE-GUARD-GAVE-THE-SAME-ANSWER_85s.mp4  (41 MB)
+   KT_UNCENSORED/02_10X-UPSIDE-LOSE-THE-HOUSE_102s.mp4  (50 MB)
+   KT_UNCENSORED/02_150-MILLION-IN-SALES-STILL-STUCK_69s.mp4  (32 MB)
+   KT_UNCENSORED/02_WHAT-REPLACED-OSWALD-THE-RABBIT_63s.mp4  (31 MB)
+   KT_UNSTUCK/01_100-PERCENT-BLINDFOLDED-WIN_73s.mp4  (29 MB)
+   KT_UNSTUCK/01_WHAT-ARNOLD-SAW-BEFORE-MR-OLYMPIA_60s.mp4  (24 MB)
+   KT_UNSTUCK/01_WHAT-TURNED-HER-ON-THE-MOST_68s.mp4  (28 MB)
+   KT_UNSTUCK/02_THE-MAN-WHO-BEAT-MUHAMMAD-ALI_60s.mp4  (22 MB)
+   added AR_TELEPHONE/01_FIG-TREE-24-HOURS_171s.mp4
+   added AR_TELEPHONE/01_FORGIVE-FIRST_92s.mp4
+   added AR_TELEPHONE/01_THE-HUNDREDFOLD-RETURN_47s.mp4
+   added AR_TELEPHONE/01_THE-LINE-IS-DEAD_57s.mp4
+   added AR_TELEPHONE/02_TENS-OF-MILLIONS_91s.mp4
+   added AR_TELEPHONE/02_THE-EMPTY-VESSEL_57s.mp4
+   added KT_CLOCK/01_A-250000-CHECK-FOR-ONE-LIST_173s.mp4
+   added KT_CLOCK/01_THE-TO-DO-LIST-MISTAKE-EVERYONE-MAKES_90s.mp4
+   added KT_CLOCK/02_26-TABS-ONE-PERSON-EACH_112s.mp4
+   added KT_CLOCK/02_ONE-QUESTION-SORTS-YOUR-TO-DO-LIST_128s.mp4
+   added KT_CLOCK/02_TYPING-9-PATHWAYS-CURSIVE-HUNDREDS_42s.mp4
+   added KT_LEDGER/01_THE-CALL-BEFORE-AMAZON-AND-APPLE_86s.mp4
+   added KT_LEDGER/01_THREE-IDEAS-THEY-CALLED-INSANE_60s.mp4
+   added KT_LEDGER/01_TWO-PIZZAS-AND-A-BILLION-DOLLARS_66s.mp4
+   added KT_LEDGER/02_LOST-27-MILLION-STILL-WON_160s.mp4
+   added KT_LUCK/01_1-IN-100-ODDS-HE-ALREADY-KNEW_148s.mp4
+   added KT_LUCK/01_BILL-GATES-NUMBER-ONE-REASON-LUCK_110s.mp4
+   added KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4
+   added KT_LUCK/02_WHAT-HE-SAW-IN-ONE-ACORN_113s.mp4
+   added KT_LUCK/02_WHY-DNA-REACTED-ACROSS-THE-PLANET_130s.mp4
+   added KT_UNCENSORED/01_AIM-FOR-80000-NOT-100000_43s.mp4
+   added KT_UNCENSORED/01_THE-FIRST-QUESTION-BEFORE-ANY-DECISION_41s.mp4
+   added KT_UNCENSORED/01_THE-GUARD-GAVE-THE-SAME-ANSWER_85s.mp4
+   added KT_UNCENSORED/02_10X-UPSIDE-LOSE-THE-HOUSE_102s.mp4
+   added KT_UNCENSORED/02_150-MILLION-IN-SALES-STILL-STUCK_69s.mp4
+   added KT_UNCENSORED/02_WHAT-REPLACED-OSWALD-THE-RABBIT_63s.mp4
+   added KT_UNSTUCK/01_100-PERCENT-BLINDFOLDED-WIN_73s.mp4
+   added KT_UNSTUCK/01_WHAT-ARNOLD-SAW-BEFORE-MR-OLYMPIA_60s.mp4
+   added KT_UNSTUCK/01_WHAT-TURNED-HER-ON-THE-MOST_68s.mp4
+   added KT_UNSTUCK/02_THE-MAN-WHO-BEAT-MUHAMMAD-ALI_60s.mp4
 
-manifest now holds 250 clips
+manifest now holds 280 clips
 commit and push state/manifest.json to let the machine see them
