@@ -4410,7 +4410,7 @@
    "bytes": 90900570,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T19:56",
+   "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "WISH",
    "cta_variant": 18,
    "cta_kind": "offer",
@@ -4498,13 +4498,27 @@
    "file": "KT_WEALTH/01_POSITIVE-THINKING-NOT-ENOUGH_158s.mp4",
    "caption": "Sit at home grateful and appreciative and do nothing, and you won't make any money. Work hard with a lousy attitude, and you won't either.\n\nKevin Trudeau's ski trip: his friends leapt out of bed at 4am to hit the slopes. He stayed in bed. On a fishing trip it was the reverse.\n\nWhen you love the goal, you can't stop taking action - and the action stops feeling like work.\n\nThe journey is the reward.\n\n#kevintrudeau #positivethinking #action #motivation #success #mindset",
    "bytes": 128476161,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-27T18:58",
    "cta_keyword": "KT",
    "cta_variant": 16,
    "cta_kind": "question",
-   "hook": "Why positive thinking isn't enough"
+   "hook": "Why positive thinking isn't enough",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2139779417416722/",
+    "instagram": "https://www.instagram.com/reel/Ddz72-_GljQ/",
+    "youtube": "https://youtube.com/shorts/p_URTsmaFtQ"
+   },
+   "caption_at_post": "Sit at home grateful and appreciative and do nothing, and you won't make any money. Work hard with a lousy attitude, and you won't either.\n\nKevin Trudeau's ski trip: his friends leapt out of bed at 4am to hit the slopes. He stayed in bed. On a fishing trip it was the reverse.\n\nWhen you love the goal, you can't stop taking action - and the action stops feeling like work.\n\nThe journey is the reward.\n\n#kevintrudeau #positivethinking #action #motivation #success #mindset",
+   "posted_at": "2026-09-27T20:52"
   },
   {
    "file": "KT_WEALTH/02_ROCKEFELLER-EVERY-DISASTER_103s.mp4",
@@ -4633,12 +4647,27 @@
    "caption": "His mother couldn't take a bath. Couldn't walk near a pool. Would drive out of her way just to avoid seeing water.\n\nNobody knew why, not even her. So he went back through the family line and found it: an ancestor who drowned. The fear was never hers. It was inherited, sitting in her DNA since the day she was born.\n\nHe matched the frequency, cleared it, said nothing \u2014 and days later she walked into water she'd avoided her whole life without a second thought.\n\nComment RISE and I'll send you how this works.\n\n#dnahealing #ancestraltrauma #generationalhealing #awakening #consciousness #kevintrudeau",
    "hook": "An ancestor drowned She never knew",
    "bytes": 125050892,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260928005555E17989C78D0B12E3050B'}}"
+   },
    "scheduled_at": "2026-09-27T18:58",
    "cta_keyword": "RISE",
    "cta_variant": 18,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1099049745825800/",
+    "instagram": "https://www.instagram.com/reel/Ddz8ZthHCqQ/",
+    "youtube": "https://youtube.com/shorts/wDPzAQFunYI"
+   },
+   "caption_at_post": "His mother couldn't take a bath. Couldn't walk near a pool. Would drive out of her way just to avoid seeing water.\n\nNobody knew why, not even her. So he went back through the family line and found it: an ancestor who drowned. The fear was never hers. It was inherited, sitting in her DNA since the day she was born.\n\nHe matched the frequency, cleared it, said nothing \u2014 and days later she walked into water she'd avoided her whole life without a second thought.\n\nComment RISE and I'll send you how this works.\n\n#dnahealing #ancestraltrauma #generationalhealing #awakening #consciousness #kevintrudeau",
+   "posted_at": "2026-09-27T20:55",
+   "tiktok_retry": true
   },
   {
    "file": "AR_BLOODLINE/01_HIS-FACE-TURNED-RED-FOR-YEARS_71s.mp4",
@@ -5133,7 +5162,7 @@
    "bytes": 135633963,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T20:25",
+   "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "LUCKY",
    "cta_variant": 19,
    "cta_kind": "question"
@@ -5353,7 +5382,7 @@
    "bytes": 103179359,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T18:58",
+   "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "FREE",
    "cta_variant": 9,
    "cta_kind": "offer"
@@ -5365,7 +5394,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T18:58",
+   "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5404,7 +5433,7 @@
    "bytes": 34995186,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T18:58",
+   "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "RISE",
    "cta_variant": 15,
    "cta_kind": "question"
@@ -5420,7 +5449,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026092719140453F0EE3587D962B60BF5'}}"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "scheduled_at": "2026-09-27T02:27",
    "cta_keyword": "YES",
@@ -5434,8 +5463,7 @@
    },
    "caption_at_post": "There are two things that move you, and the stronger one isn't the one you'd expect.\n\nYou'd think people are motivated by pleasure \u2014 chasing the feeling of winning, of having, of being happy. That's real, but it's the weaker driver. The stronger one is avoiding pain. Athletes say it plainly: we love to win, but we hate losing more. That's the actual engine behind most of what you do, whether you've ever admitted it or not.\n\nComment RISE and I'll send you the rest of this.\n\n#awakening #consciousness #subconscious #mindset #selfawareness #kevintrudeau",
    "posted_at": "2026-09-27T07:05",
-   "tiktok_retry": true,
-   "tiktok_tries": 1
+   "tiktok_tries": 2
   },
   {
    "file": "AR_PRISON/01_DNA-COUNTER-INTENTIONS_61s.mp4",
@@ -5471,7 +5499,7 @@
    "bytes": 70999900,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T18:58",
+   "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "LUCKY",
    "cta_variant": 16,
    "cta_kind": "offer"
@@ -5483,7 +5511,7 @@
    "bytes": 43477358,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T18:58",
+   "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "YES",
    "cta_variant": 8,
    "cta_kind": "offer"
@@ -5550,7 +5578,7 @@
    "bytes": 100675851,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T18:58",
+   "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "LUCKY",
    "cta_variant": 10,
    "cta_kind": "offer"
@@ -5562,7 +5590,7 @@
    "bytes": 97689774,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T18:58",
+   "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5600,7 +5628,7 @@
    "bytes": 120630546,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T18:58",
+   "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "YES",
    "cta_variant": 14,
    "cta_kind": "offer"
@@ -5612,7 +5640,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T18:58",
+   "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5662,7 +5690,7 @@
    "bytes": 54278846,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T18:58",
+   "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "RISE",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -5674,7 +5702,7 @@
    "bytes": 83021759,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T18:58",
+   "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "LUCKY",
    "cta_variant": 13,
    "cta_kind": "question"
