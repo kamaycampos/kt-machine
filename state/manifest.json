@@ -4408,13 +4408,27 @@
    "file": "KT_FREEDOM/02_WHAT-BILLIONAIRES-DO-DIFFERENTLY_151s.mp4",
    "caption": "Six weeks a year the Golden Door spa is men only. The men there are worth billions.\n\nKevin Trudeau compares them with the crowd who say just think about it and the universe will deliver. Average income: $80,000 versus $10 million.\n\nThe difference: the billionaires have gratitude, but they don't live there. They visit the pain, get clear on what they want, get obsessed - and go to work.\n\n#kevintrudeau #billionaire #mindset #success #manifesting #wealth",
    "bytes": 90900570,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "WISH",
    "cta_variant": 18,
    "cta_kind": "offer",
-   "hook": "What billionaires do that hippies don't"
+   "hook": "What billionaires do that hippies don't",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1474540138057661/",
+    "instagram": "https://www.instagram.com/reel/Dd0gJe5DW_A/",
+    "youtube": "https://youtube.com/shorts/pQ8ZVSvGAOw"
+   },
+   "caption_at_post": "Six weeks a year the Golden Door spa is men only. The men there are worth billions.\n\nKevin Trudeau compares them with the crowd who say just think about it and the universe will deliver. Average income: $80,000 versus $10 million.\n\nThe difference: the billionaires have gratitude, but they don't live there. They visit the pain, get clear on what they want, get obsessed - and go to work.\n\n#kevintrudeau #billionaire #mindset #success #manifesting #wealth",
+   "posted_at": "2026-09-28T02:09"
   },
   {
    "file": "KT_FREEDOM/02_WHAT-FINANCIAL-FREEDOM-REALLY-COSTS_70s.mp4",
@@ -4653,7 +4667,7 @@
     "instagram": "posted",
     "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260928005555E17989C78D0B12E3050B'}}"
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
    },
    "scheduled_at": "2026-09-27T18:58",
    "cta_keyword": "RISE",
@@ -4667,7 +4681,7 @@
    },
    "caption_at_post": "His mother couldn't take a bath. Couldn't walk near a pool. Would drive out of her way just to avoid seeing water.\n\nNobody knew why, not even her. So he went back through the family line and found it: an ancestor who drowned. The fear was never hers. It was inherited, sitting in her DNA since the day she was born.\n\nHe matched the frequency, cleared it, said nothing \u2014 and days later she walked into water she'd avoided her whole life without a second thought.\n\nComment RISE and I'll send you how this works.\n\n#dnahealing #ancestraltrauma #generationalhealing #awakening #consciousness #kevintrudeau",
    "posted_at": "2026-09-27T20:55",
-   "tiktok_retry": true
+   "tiktok_tries": 1
   },
   {
    "file": "AR_BLOODLINE/01_HIS-FACE-TURNED-RED-FOR-YEARS_71s.mp4",
@@ -5160,12 +5174,27 @@
    "caption": "Prayer has a physical mechanism, and almost nobody is taught it.\n\nBreathe through the nose, from the diaphragm, not the chest. Then put your attention two inches below your belly button \u2014 what Chinese tradition calls the Dan Tien. That's not a metaphor. That's where the life force is said to be stored, and where you, the spiritual being, actually reside, not in your head.\n\nDo this correctly and you stop thinking your way to God. You drop into a frequency instead, and the mind goes quiet enough to feel it.\n\nComment RISE and I'll send you the full technique.\n\n#awakening #meditation #breathwork #spirituality #consciousness #kevintrudeau",
    "hook": "Your soul lives two inches below",
    "bytes": 135633963,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260928061128F18F60E1F96901E25313'}}"
+   },
    "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "LUCKY",
    "cta_variant": 19,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2043435439684050/",
+    "instagram": "https://www.instagram.com/reel/Dd0ghdDD-W8/",
+    "youtube": "https://youtube.com/shorts/KrPM8s9sjj8"
+   },
+   "caption_at_post": "Prayer has a physical mechanism, and almost nobody is taught it.\n\nBreathe through the nose, from the diaphragm, not the chest. Then put your attention two inches below your belly button \u2014 what Chinese tradition calls the Dan Tien. That's not a metaphor. That's where the life force is said to be stored, and where you, the spiritual being, actually reside, not in your head.\n\nDo this correctly and you stop thinking your way to God. You drop into a frequency instead, and the mind goes quiet enough to feel it.\n\nComment RISE and I'll send you the full technique.\n\n#awakening #meditation #breathwork #spirituality #consciousness #kevintrudeau",
+   "posted_at": "2026-09-28T02:11",
+   "tiktok_retry": true
   },
   {
    "file": "KT_BASEMENT/01_HOW-LONG-BEFORE-BUSINESS-GETS-EASY_77s.mp4",
@@ -5382,7 +5411,7 @@
    "bytes": 103179359,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T21:33",
+   "scheduled_at": "2026-09-28T02:51",
    "cta_keyword": "FREE",
    "cta_variant": 9,
    "cta_kind": "offer"
@@ -5394,7 +5423,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T21:33",
+   "scheduled_at": "2026-09-28T02:51",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5433,7 +5462,7 @@
    "bytes": 34995186,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T21:33",
+   "scheduled_at": "2026-09-28T02:51",
    "cta_keyword": "RISE",
    "cta_variant": 15,
    "cta_kind": "question"
@@ -5499,7 +5528,7 @@
    "bytes": 70999900,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T21:33",
+   "scheduled_at": "2026-09-28T02:51",
    "cta_keyword": "LUCKY",
    "cta_variant": 16,
    "cta_kind": "offer"
@@ -5511,7 +5540,7 @@
    "bytes": 43477358,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T21:33",
+   "scheduled_at": "2026-09-28T02:51",
    "cta_keyword": "YES",
    "cta_variant": 8,
    "cta_kind": "offer"
@@ -5578,7 +5607,7 @@
    "bytes": 100675851,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T21:33",
+   "scheduled_at": "2026-09-28T02:51",
    "cta_keyword": "LUCKY",
    "cta_variant": 10,
    "cta_kind": "offer"
@@ -5590,7 +5619,7 @@
    "bytes": 97689774,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T21:33",
+   "scheduled_at": "2026-09-28T02:51",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5628,7 +5657,7 @@
    "bytes": 120630546,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T21:33",
+   "scheduled_at": "2026-09-28T02:51",
    "cta_keyword": "YES",
    "cta_variant": 14,
    "cta_kind": "offer"
@@ -5640,7 +5669,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T21:33",
+   "scheduled_at": "2026-09-28T02:51",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5690,7 +5719,7 @@
    "bytes": 54278846,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T21:33",
+   "scheduled_at": "2026-09-28T02:51",
    "cta_keyword": "RISE",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -5702,7 +5731,7 @@
    "bytes": 83021759,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-27T21:33",
+   "scheduled_at": "2026-09-28T02:51",
    "cta_keyword": "LUCKY",
    "cta_variant": 13,
    "cta_kind": "question"
