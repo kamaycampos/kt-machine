@@ -26,6 +26,7 @@ failure this project has already paid for.
     python3 add_clips.py --all
     python3 add_clips.py --captions         # refresh captions, upload nothing
 """
+import glob
 import json
 import os
 import re
@@ -185,6 +186,20 @@ def main():
         if chk.stdout.strip() != "200":
             print(f"   UPLOADED BUT NOT FETCHABLE {rel}: HTTP {chk.stdout}")
             continue
+        # THE SIDECARS TRAVEL WITH THE CLIP. 28 Sept 2026: the renderer has been
+        # cutting a 59s version for months and NOTHING EVER UPLOADED IT - which
+        # is why 91 stories were refused for length while the file that would
+        # have fitted sat on a disk. Anything named <clip>__*.mp4 goes up too.
+        for side in sorted(glob.glob(os.path.splitext(path)[0] + "__*.mp4")):
+            sname = os.path.basename(side).replace("/", "--")
+            sasset = rel.rsplit("/", 1)[0] + "--" + sname
+            stmp = os.path.join("/tmp", sasset)
+            subprocess.run(["cp", side, stmp], check=True)
+            sr = subprocess.run([GH, "release", "upload", TAG, stmp, "--clobber",
+                                 "-R", REPO], capture_output=True, text=True)
+            os.remove(stmp)
+            print(f"      {'+' if not sr.returncode else 'FAILED'} {sname}")
+
         man["clips"].append({"file": rel, "caption": cap, "hook": hook,
                              "bytes": os.path.getsize(path),
                              "done": False, "status": {}})

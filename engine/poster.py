@@ -317,7 +317,15 @@ ASK_LINES = [
 ]
 
 
-DEFAULT_OFFER = "https://freeyourwish.kevintrudeau.com/?ref=a43c8j"
+# 28 Sept 2026, KAMAY CHANGED THE DESTINATION AND THE MACHINE HAD TO FOLLOW.
+# Until today every YouTube description and Facebook post pointed at one product
+# page - the free Your Wish audios. His bio now points at links.fans/wealthfrequency,
+# which carries ALL of it: the free audios and ebook, the $40 hardcover, The Success
+# System That Never Fails, The Herpes Cure ebook, the supplements. One link, every
+# offer, and it is the page he controls, so what sells can change without touching
+# this machine. 146 clips have gone out carrying no link at all; this is the first
+# one that earns.
+DEFAULT_OFFER = "https://links.fans/wealthfrequency"
 
 
 def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
@@ -755,8 +763,15 @@ def instagram_story(path, public_url, clip=None):
     # blocks our material in Shorts over 60s). That file is exactly what a story
     # needs. Use it when it exists; a clip already under the cap posts as-is.
     story_url = public_url
-    if "__yt59" not in public_url:
-        alt = public_url.replace(".mp4", "__yt59.mp4")
+    # THE STORY CUT FIRST, the YouTube cut only as a fallback. 28 Sept 2026: the
+    # YouTube window exists for a different job (a stretch that teaches on its
+    # own) and could not be found for most clips, so 91 stories were refused.
+    # __story is cut from the finished clip for exactly this purpose and always
+    # exists for a clip over the cap.
+    for suffix in ("__story", "__yt59"):
+        if suffix in public_url:
+            break
+        alt = public_url.replace(".mp4", suffix + ".mp4")
         try:
             # FOLLOW THE REDIRECT. 13 Sept 2026, the first bug the move to
             # GitHub introduced: a release download URL answers 302 and points
@@ -769,6 +784,7 @@ def instagram_story(path, public_url, clip=None):
             if requests.head(alt, timeout=20,
                              allow_redirects=True).status_code == 200:
                 story_url = alt
+                break
         except Exception:
             pass
     r = _j(requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T,

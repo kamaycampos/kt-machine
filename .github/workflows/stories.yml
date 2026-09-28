@@ -1,0 +1,33 @@
+# A STORY FOR EVERY CLIP - 28 Sept 2026.
+# Instagram refused 91 stories for length because the only short file we had was
+# the YouTube cut, which mostly does not exist. This cuts a <=57s story from each
+# queued clip and uploads it beside the clip, so the poster finds one every time.
+# Runs nightly and on demand; new clips get theirs at render time instead.
+name: stories
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "How many clips to work through"
+        default: "40"
+  schedule:
+    - cron: "43 5 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: stories
+  cancel-in-progress: false
+jobs:
+  cut:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: bash factory/setup.sh
+      - name: Cut and upload the story versions
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+        run: python factory/story_backfill.py --limit ${{ github.event.inputs.limit || '40' }}
