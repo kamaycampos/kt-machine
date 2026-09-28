@@ -28,13 +28,23 @@ import kt_render as R                                             # noqa: E402
 url_for = lambda rel: f"https://github.com/{REPO}/releases/download/{TAG}/" + rel.replace("/", "--")
 
 
-def have(rel):
-    """Is the story cut already in the release?"""
-    try:
-        req = urllib.request.Request(url_for(rel).replace(".mp4", "__story.mp4"), method="HEAD")
-        return urllib.request.urlopen(req, timeout=30).status == 200
-    except Exception:
-        return False
+def have(rel, tries=1):
+    """Is the story cut already in the release?
+
+    28 Sept 2026: a release asset is not servable the instant the upload returns.
+    Checking immediately reported four good files as "uploaded but not fetchable"
+    - all four answered 200 a minute later. So the check after an upload waits."""
+    import time
+    for i in range(tries):
+        try:
+            req = urllib.request.Request(url_for(rel).replace(".mp4", "__story.mp4"), method="HEAD")
+            if urllib.request.urlopen(req, timeout=30).status == 200:
+                return True
+        except Exception:
+            pass
+        if i + 1 < tries:
+            time.sleep(8)
+    return False
 
 
 def main():
@@ -79,7 +89,7 @@ def main():
             print(f"  {rel}: upload failed {r.stderr[-120:]}")
             continue
         # VERIFY THE ARTIFACT: the upload returning 0 is not the story existing.
-        if not have(rel):
+        if not have(rel, tries=4):
             print(f"  {rel}: uploaded but not fetchable")
             continue
         made += 1
