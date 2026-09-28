@@ -18,7 +18,22 @@ cp factory/assets/mont_black.ttf factory/assets/yunet.onnx "$K/bin/"
 # Liberation Sans is metrically identical to Arial and free to ship; Apple's
 # Arial file is not ours to publish in a public repository.
 ln -sf /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf "$K/bin/arial_bold.ttf"
+# THE SHARED ENGINE FIRST, then this project's own files. One canonical copy of the
+# parts no brand owns (word timings, caption breaks, caption timing anchored to the
+# sound, face framing, the read-back check) lives in shared/ and every factory pulls
+# it, so an improvement made for one project is live in all of them on the next run.
+# Kamay, 27 Sept 2026: "make it automatic, at all times, and vice versa."
+cp shared/*.py "$K/"
 cp factory/pipeline/*.py "$K/"
+python3 - <<'EOF'
+import hashlib, json, os
+d = "shared"
+man = json.load(open(os.path.join(d, "MANIFEST.json")))["files"]
+bad = [f for f, h in man.items()
+       if hashlib.sha1(open(os.path.join(d, f), "rb").read()).hexdigest() != h]
+raise SystemExit(f"shared engine drifted, MANIFEST does not match: {bad}") if bad else print(
+    f"shared engine ok, {len(man)} modules")
+EOF
 cp factory/kt_series.json "$K/kt_series.json"
 ln -sfn "$GITHUB_WORKSPACE" "$K/kt-machine"
 
