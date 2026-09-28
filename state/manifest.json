@@ -4579,7 +4579,7 @@
    "bytes": 50036512,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T12:14",
+   "scheduled_at": "2026-09-28T17:08",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -4601,12 +4601,26 @@
    "caption": "Peter Thiel put five thousand dollars into a Roth IRA in 1999. It's worth five billion dollars today, and he'll never pay a dollar of tax on it.\n\nTax attorney Mark Kohler tells Kevin Trudeau this isn't reserved for billionaires \u2014 it's called the mega backdoor Roth, and there's no income limit that locks regular business owners out of it. His own clients run Roth accounts worth over a hundred million dollars, funded the same way.\n\nMost people are told they make too much money to use one. That advice is decades out of date.\n\nIs your accountant still working off 1980s rules?\n\n#kevintrudeau #rothira #wealthmindset #taxstrategy #entrepreneur #financialfreedom",
    "hook": "$5,000 became $5 billion",
    "bytes": 26605378,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-09-28T10:43",
    "cta_keyword": "WISH",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1772416297639670/",
+    "instagram": "https://www.instagram.com/reel/Dd2CRncCkkU/",
+    "youtube": "https://youtube.com/shorts/XQj0jdpZPaA"
+   },
+   "caption_at_post": "Peter Thiel put five thousand dollars into a Roth IRA in 1999. It's worth five billion dollars today, and he'll never pay a dollar of tax on it.\n\nTax attorney Mark Kohler tells Kevin Trudeau this isn't reserved for billionaires \u2014 it's called the mega backdoor Roth, and there's no income limit that locks regular business owners out of it. His own clients run Roth accounts worth over a hundred million dollars, funded the same way.\n\nMost people are told they make too much money to use one. That advice is decades out of date.\n\nIs your accountant still working off 1980s rules?\n\n#kevintrudeau #rothira #wealthmindset #taxstrategy #entrepreneur #financialfreedom",
+   "posted_at": "2026-09-28T16:26"
   },
   {
    "file": "KT_TAXHACK/01_LAND-RICH-CASH-POOR_104s.mp4",
@@ -4978,12 +4992,27 @@
    "caption": "A magician never shows the same trick twice, because once you know how it's done, it stops working on you.\n\nKnowledge does the same thing to fear. Walk into a dark basement, see a shape coiled in the corner, and your body reacts like it's a snake. Turn the light on, and it's a rope \u2014 the fear is gone the second you actually see it.\n\nThe people who benefit from you staying afraid have no interest in turning the light on. They know that the moment you realize how much power you actually have, theirs starts to disappear.\n\nComment RISE and I'll send you the rest of this.\n\n#awakening #consciousness #mindset #spirituality #truth #kevintrudeau",
    "hook": "They don't want you this powerful",
    "bytes": 103408561,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260928202908CF986C563BFFCD1AC2F6'}}"
+   },
    "scheduled_at": "2026-09-28T10:43",
    "cta_keyword": "YES",
    "cta_variant": 20,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/929681239822704/",
+    "instagram": "https://www.instagram.com/reel/Dd2Ckqyj6Hu/",
+    "youtube": "https://youtube.com/shorts/ep6MAqYk88s"
+   },
+   "caption_at_post": "A magician never shows the same trick twice, because once you know how it's done, it stops working on you.\n\nKnowledge does the same thing to fear. Walk into a dark basement, see a shape coiled in the corner, and your body reacts like it's a snake. Turn the light on, and it's a rope \u2014 the fear is gone the second you actually see it.\n\nThe people who benefit from you staying afraid have no interest in turning the light on. They know that the moment you realize how much power you actually have, theirs starts to disappear.\n\nComment RISE and I'll send you the rest of this.\n\n#awakening #consciousness #mindset #spirituality #truth #kevintrudeau",
+   "posted_at": "2026-09-28T16:29",
+   "tiktok_retry": true
   },
   {
    "file": "AR_DISCLOSURE/02_ANCIENT-WARS-STILL-CONTROL-EARTH-TODAY_99s.mp4",
@@ -5180,7 +5209,7 @@
     "instagram": "posted",
     "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260928135814277FF08FF7091BEABB58'}}"
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
    },
    "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "LUCKY",
@@ -5194,8 +5223,7 @@
    },
    "caption_at_post": "Prayer has a physical mechanism, and almost nobody is taught it.\n\nBreathe through the nose, from the diaphragm, not the chest. Then put your attention two inches below your belly button \u2014 what Chinese tradition calls the Dan Tien. That's not a metaphor. That's where the life force is said to be stored, and where you, the spiritual being, actually reside, not in your head.\n\nDo this correctly and you stop thinking your way to God. You drop into a frequency instead, and the mind goes quiet enough to feel it.\n\nComment RISE and I'll send you the full technique.\n\n#awakening #meditation #breathwork #spirituality #consciousness #kevintrudeau",
    "posted_at": "2026-09-28T02:11",
-   "tiktok_retry": true,
-   "tiktok_tries": 1
+   "tiktok_tries": 2
   },
   {
    "file": "KT_BASEMENT/01_HOW-LONG-BEFORE-BUSINESS-GETS-EASY_77s.mp4",
@@ -5438,7 +5466,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T10:43",
+   "scheduled_at": "2026-09-28T17:08",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5558,7 +5586,7 @@
    "bytes": 70999900,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T10:43",
+   "scheduled_at": "2026-09-28T17:08",
    "cta_keyword": "LUCKY",
    "cta_variant": 16,
    "cta_kind": "offer"
@@ -5570,7 +5598,7 @@
    "bytes": 43477358,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T10:43",
+   "scheduled_at": "2026-09-28T17:08",
    "cta_keyword": "YES",
    "cta_variant": 8,
    "cta_kind": "offer"
@@ -5637,7 +5665,7 @@
    "bytes": 100675851,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T10:43",
+   "scheduled_at": "2026-09-28T17:08",
    "cta_keyword": "LUCKY",
    "cta_variant": 10,
    "cta_kind": "offer"
@@ -5649,7 +5677,7 @@
    "bytes": 97689774,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T10:43",
+   "scheduled_at": "2026-09-28T17:08",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5687,7 +5715,7 @@
    "bytes": 120630546,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T10:43",
+   "scheduled_at": "2026-09-28T17:08",
    "cta_keyword": "YES",
    "cta_variant": 14,
    "cta_kind": "offer"
@@ -5699,7 +5727,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T10:43",
+   "scheduled_at": "2026-09-28T17:08",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5737,7 +5765,7 @@
    "bytes": 115949167,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T10:43",
+   "scheduled_at": "2026-09-28T17:08",
    "cta_keyword": "YES",
    "cta_variant": 17,
    "cta_kind": "question"
@@ -5749,7 +5777,7 @@
    "bytes": 54278846,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T10:43",
+   "scheduled_at": "2026-09-28T17:08",
    "cta_keyword": "RISE",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -5761,7 +5789,7 @@
    "bytes": 83021759,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T10:43",
+   "scheduled_at": "2026-09-28T17:08",
    "cta_keyword": "LUCKY",
    "cta_variant": 13,
    "cta_kind": "question"
@@ -5798,7 +5826,11 @@
    "hook": "Fig tree. Dead in 24 hours.",
    "bytes": 75613319,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-29T14:20",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "AR_TELEPHONE/01_FORGIVE-FIRST_92s.mp4",
@@ -5806,7 +5838,11 @@
    "hook": "Forgive first. Or He won't listen.",
    "bytes": 59563253,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-29T12:57",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_TELEPHONE/01_THE-HUNDREDFOLD-RETURN_47s.mp4",
@@ -5814,7 +5850,11 @@
    "hook": "Give it away. Get hundredfold back.",
    "bytes": 32565370,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-28T17:00",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_TELEPHONE/01_THE-LINE-IS-DEAD_57s.mp4",
@@ -5822,7 +5862,11 @@
    "hook": "God isn't picking up the phone",
    "bytes": 32326646,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-28T19:58",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_TELEPHONE/02_TENS-OF-MILLIONS_91s.mp4",
@@ -5830,7 +5874,11 @@
    "hook": "Tens of millions. From one belief.",
    "bytes": 52169979,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-29T10:30",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_TELEPHONE/02_THE-EMPTY-VESSEL_57s.mp4",
@@ -5838,7 +5886,11 @@
    "hook": "Empty beaker. Below the full one.",
    "bytes": 39842183,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-29T07:24",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_CLOCK/01_A-250000-CHECK-FOR-ONE-LIST_173s.mp4",
@@ -5846,7 +5898,11 @@
    "hook": "A $250,000 check for one list",
    "bytes": 97355137,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-02T12:40",
+   "cta_keyword": "MONEY",
+   "cta_variant": 26,
+   "cta_kind": "question"
   },
   {
    "file": "KT_CLOCK/01_THE-TO-DO-LIST-MISTAKE-EVERYONE-MAKES_90s.mp4",
@@ -5854,7 +5910,11 @@
    "hook": "The to-do list mistake everyone makes",
    "bytes": 53291650,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-29T18:09",
+   "cta_keyword": "YES",
+   "cta_variant": 11,
+   "cta_kind": "question"
   },
   {
    "file": "KT_CLOCK/02_26-TABS-ONE-PERSON-EACH_112s.mp4",
@@ -5862,7 +5922,11 @@
    "hook": "26 tabs one person each",
    "bytes": 65799032,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-30T17:41",
+   "cta_keyword": "KT",
+   "cta_variant": 16,
+   "cta_kind": "question"
   },
   {
    "file": "KT_CLOCK/02_ONE-QUESTION-SORTS-YOUR-TO-DO-LIST_128s.mp4",
@@ -5870,7 +5934,11 @@
    "hook": "One question sorts your to-do list",
    "bytes": 74931211,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-01T14:33",
+   "cta_keyword": "FREE",
+   "cta_variant": 21,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_CLOCK/02_TYPING-9-PATHWAYS-CURSIVE-HUNDREDS_42s.mp4",
@@ -5878,7 +5946,11 @@
    "hook": "Typing: 9 pathways Cursive: hundreds",
    "bytes": 24819480,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-29T10:05",
+   "cta_keyword": "MONEY",
+   "cta_variant": 8,
+   "cta_kind": "question"
   },
   {
    "file": "KT_LEDGER/01_THE-CALL-BEFORE-AMAZON-AND-APPLE_86s.mp4",
@@ -5886,7 +5958,11 @@
    "hook": "The call before Amazon and Apple",
    "bytes": 46499014,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-01T20:03",
+   "cta_keyword": "YES",
+   "cta_variant": 23,
+   "cta_kind": "question"
   },
   {
    "file": "KT_LEDGER/01_THREE-IDEAS-THEY-CALLED-INSANE_60s.mp4",
@@ -5894,7 +5970,11 @@
    "hook": "Three ideas called insane made fortunes",
    "bytes": 34267852,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-30T09:59",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 13,
+   "cta_kind": "question"
   },
   {
    "file": "KT_LEDGER/01_TWO-PIZZAS-AND-A-BILLION-DOLLARS_66s.mp4",
@@ -5902,7 +5982,11 @@
    "hook": "How two pizzas became $1.3 billion",
    "bytes": 31435276,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-01T07:12",
+   "cta_keyword": "WISH",
+   "cta_variant": 18,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_LEDGER/02_LOST-27-MILLION-STILL-WON_160s.mp4",
@@ -5910,7 +5994,11 @@
    "hook": "Lost $27 million Still made money",
    "bytes": 83015453,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-02T15:26",
+   "cta_keyword": "FREE",
+   "cta_variant": 27,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_LUCK/01_1-IN-100-ODDS-HE-ALREADY-KNEW_148s.mp4",
@@ -5918,7 +6006,11 @@
    "hook": "1-in-100 odds he already knew",
    "bytes": 101385776,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-01T17:49",
+   "cta_keyword": "KT",
+   "cta_variant": 22,
+   "cta_kind": "question"
   },
   {
    "file": "KT_LUCK/01_BILL-GATES-NUMBER-ONE-REASON-LUCK_110s.mp4",
@@ -5926,7 +6018,11 @@
    "hook": "Bill Gates' #1 reason: luck",
    "bytes": 79714644,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-29T08:06",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 7,
+   "cta_kind": "question"
   },
   {
    "file": "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4",
@@ -5934,7 +6030,11 @@
    "hook": "Forgot $150,000 in a slot machine",
    "bytes": 130222195,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-02T17:06",
+   "cta_keyword": "KT",
+   "cta_variant": 28,
+   "cta_kind": "question"
   },
   {
    "file": "KT_LUCK/02_WHAT-HE-SAW-IN-ONE-ACORN_113s.mp4",
@@ -5942,7 +6042,11 @@
    "hook": "What he saw in one acorn",
    "bytes": 97374473,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-30T07:10",
+   "cta_keyword": "WISH",
+   "cta_variant": 12,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_LUCK/02_WHY-DNA-REACTED-ACROSS-THE-PLANET_130s.mp4",
@@ -5950,7 +6054,11 @@
    "hook": "Why DNA reacted across the planet",
    "bytes": 102470318,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-30T19:43",
+   "cta_keyword": "YES",
+   "cta_variant": 17,
+   "cta_kind": "question"
   },
   {
    "file": "KT_UNCENSORED/01_AIM-FOR-80000-NOT-100000_43s.mp4",
@@ -5958,7 +6066,11 @@
    "hook": "Aim for 80,000 not 100,000",
    "bytes": 18923464,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-29T13:00",
+   "cta_keyword": "FREE",
+   "cta_variant": 9,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_UNCENSORED/01_THE-FIRST-QUESTION-BEFORE-ANY-DECISION_41s.mp4",
@@ -5966,7 +6078,11 @@
    "hook": "The first question before any decision",
    "bytes": 19909883,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-28T17:15",
+   "cta_keyword": "WISH",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_UNCENSORED/01_THE-GUARD-GAVE-THE-SAME-ANSWER_85s.mp4",
@@ -5974,7 +6090,11 @@
    "hook": "The guard gave the same answer",
    "bytes": 40571666,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-02T07:34",
+   "cta_keyword": "WISH",
+   "cta_variant": 24,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_UNCENSORED/02_10X-UPSIDE-LOSE-THE-HOUSE_102s.mp4",
@@ -5982,7 +6102,11 @@
    "hook": "10x upside Lose the house?",
    "bytes": 50259259,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-02T20:04",
+   "cta_keyword": "YES",
+   "cta_variant": 29,
+   "cta_kind": "question"
   },
   {
    "file": "KT_UNCENSORED/02_150-MILLION-IN-SALES-STILL-STUCK_69s.mp4",
@@ -5990,7 +6114,11 @@
    "hook": "$150 million in sales still stuck",
    "bytes": 31673543,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-01T10:09",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 19,
+   "cta_kind": "question"
   },
   {
    "file": "KT_UNCENSORED/02_WHAT-REPLACED-OSWALD-THE-RABBIT_63s.mp4",
@@ -5998,7 +6126,11 @@
    "hook": "What replaced Oswald the rabbit",
    "bytes": 31484951,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-30T12:36",
+   "cta_keyword": "MONEY",
+   "cta_variant": 14,
+   "cta_kind": "question"
   },
   {
    "file": "KT_UNSTUCK/01_100-PERCENT-BLINDFOLDED-WIN_73s.mp4",
@@ -6006,7 +6138,11 @@
    "hook": "100% blindfolded win against an Olympian",
    "bytes": 29051341,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-02T10:24",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 25,
+   "cta_kind": "question"
   },
   {
    "file": "KT_UNSTUCK/01_WHAT-ARNOLD-SAW-BEFORE-MR-OLYMPIA_60s.mp4",
@@ -6014,7 +6150,11 @@
    "hook": "What Arnold saw before Mr. Olympia",
    "bytes": 24192457,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-29T14:52",
+   "cta_keyword": "KT",
+   "cta_variant": 10,
+   "cta_kind": "question"
   },
   {
    "file": "KT_UNSTUCK/01_WHAT-TURNED-HER-ON-THE-MOST_68s.mp4",
@@ -6022,7 +6162,11 @@
    "hook": "What turned her on the most",
    "bytes": 27753876,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-01T11:52",
+   "cta_keyword": "MONEY",
+   "cta_variant": 20,
+   "cta_kind": "question"
   },
   {
    "file": "KT_UNSTUCK/02_THE-MAN-WHO-BEAT-MUHAMMAD-ALI_60s.mp4",
@@ -6030,7 +6174,11 @@
    "hook": "The man who beat Muhammad Ali",
    "bytes": 21569033,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-09-30T14:26",
+   "cta_keyword": "FREE",
+   "cta_variant": 15,
+   "cta_kind": "offer"
   }
  ]
 }
