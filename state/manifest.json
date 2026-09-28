@@ -4603,7 +4603,7 @@
    "bytes": 26605378,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T08:32",
+   "scheduled_at": "2026-09-28T10:43",
    "cta_keyword": "WISH",
    "cta_variant": 0,
    "cta_kind": "offer"
@@ -4980,7 +4980,7 @@
    "bytes": 103408561,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T07:56",
+   "scheduled_at": "2026-09-28T10:43",
    "cta_keyword": "YES",
    "cta_variant": 20,
    "cta_kind": "offer"
@@ -5180,7 +5180,7 @@
     "instagram": "posted",
     "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260928061128F18F60E1F96901E25313'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260928135814277FF08FF7091BEABB58'}}"
    },
    "scheduled_at": "2026-09-27T21:33",
    "cta_keyword": "LUCKY",
@@ -5194,7 +5194,8 @@
    },
    "caption_at_post": "Prayer has a physical mechanism, and almost nobody is taught it.\n\nBreathe through the nose, from the diaphragm, not the chest. Then put your attention two inches below your belly button \u2014 what Chinese tradition calls the Dan Tien. That's not a metaphor. That's where the life force is said to be stored, and where you, the spiritual being, actually reside, not in your head.\n\nDo this correctly and you stop thinking your way to God. You drop into a frequency instead, and the mind goes quiet enough to feel it.\n\nComment RISE and I'll send you the full technique.\n\n#awakening #meditation #breathwork #spirituality #consciousness #kevintrudeau",
    "posted_at": "2026-09-28T02:11",
-   "tiktok_retry": true
+   "tiktok_retry": true,
+   "tiktok_tries": 1
   },
   {
    "file": "KT_BASEMENT/01_HOW-LONG-BEFORE-BUSINESS-GETS-EASY_77s.mp4",
@@ -5409,12 +5410,26 @@
    "caption": "A client says eight words out loud without realizing what he just did.\n\nKevin Trudeau stops him mid-sentence: do you remember what you just said? He repeats it back - the man had just predicted, out loud, that he was going to fail.\n\nNo fear behind it, no old wound. Just a habit, worn into a groove like a scratch on an old record, repeating the same line every time he got close to a goal.\n\nThe fix isn't therapy. It's catching the moment it happens, saying cancel, cancel, and replacing it with a line that actually helps you.\n\n#kevintrudeau #mindset #selftalk #habits #successhabits #personalgrowth",
    "hook": "How to break a habit instantly",
    "bytes": 103179359,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-28T02:51",
    "cta_keyword": "FREE",
    "cta_variant": 9,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1808169006865424/",
+    "instagram": "https://www.instagram.com/reel/Dd1WNBvANw6/",
+    "youtube": "https://youtube.com/shorts/yyowN_30iN0"
+   },
+   "caption_at_post": "A client says eight words out loud without realizing what he just did.\n\nKevin Trudeau stops him mid-sentence: do you remember what you just said? He repeats it back - the man had just predicted, out loud, that he was going to fail.\n\nNo fear behind it, no old wound. Just a habit, worn into a groove like a scratch on an old record, repeating the same line every time he got close to a goal.\n\nThe fix isn't therapy. It's catching the moment it happens, saying cancel, cancel, and replacing it with a line that actually helps you.\n\n#kevintrudeau #mindset #selftalk #habits #successhabits #personalgrowth",
+   "posted_at": "2026-09-28T10:01"
   },
   {
    "file": "KT_MATH/02_THE-800-POUNDS-YOU-CANT-SEE_139s.mp4",
@@ -5423,7 +5438,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T02:51",
+   "scheduled_at": "2026-09-28T10:43",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5460,12 +5475,27 @@
    "caption": "Watch a kid on the beach. He never says \"I want to have a sandcastle.\" He says \"I want to build one.\" And the second it's finished, he kicks it down.\n\nThat's not destructive. That's the most honest thing you'll see all day. We think happiness lives in having things \u2014 the house, the relationship, the title. It doesn't. It lives in the act of creating them. The moment something is finished, some part of you already wants to build the next thing.\n\nYou were never chasing the having. You were chasing the making.\n\nComment RISE and I'll send you the rest of this.\n\n#awakening #consciousness #spirituality #mindset #manifestation #kevintrudeau",
    "hook": "You build things just to destroy",
    "bytes": 34995186,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026092814030806EF2FF980A78625DCF6'}}"
+   },
    "scheduled_at": "2026-09-28T02:51",
    "cta_keyword": "RISE",
    "cta_variant": 15,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1509847530882768/",
+    "instagram": "https://www.instagram.com/reel/Dd1WikijYlT/",
+    "youtube": "https://youtube.com/shorts/yJfqTtHUOa0"
+   },
+   "caption_at_post": "Watch a kid on the beach. He never says \"I want to have a sandcastle.\" He says \"I want to build one.\" And the second it's finished, he kicks it down.\n\nThat's not destructive. That's the most honest thing you'll see all day. We think happiness lives in having things \u2014 the house, the relationship, the title. It doesn't. It lives in the act of creating them. The moment something is finished, some part of you already wants to build the next thing.\n\nYou were never chasing the having. You were chasing the making.\n\nComment RISE and I'll send you the rest of this.\n\n#awakening #consciousness #spirituality #mindset #manifestation #kevintrudeau",
+   "posted_at": "2026-09-28T10:03",
+   "tiktok_retry": true
   },
   {
    "file": "AR_INSTINCT/02_PAIN-DRIVES-YOU-MORE_50s.mp4",
@@ -5528,7 +5558,7 @@
    "bytes": 70999900,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T02:51",
+   "scheduled_at": "2026-09-28T10:43",
    "cta_keyword": "LUCKY",
    "cta_variant": 16,
    "cta_kind": "offer"
@@ -5540,7 +5570,7 @@
    "bytes": 43477358,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T02:51",
+   "scheduled_at": "2026-09-28T10:43",
    "cta_keyword": "YES",
    "cta_variant": 8,
    "cta_kind": "offer"
@@ -5607,7 +5637,7 @@
    "bytes": 100675851,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T02:51",
+   "scheduled_at": "2026-09-28T10:43",
    "cta_keyword": "LUCKY",
    "cta_variant": 10,
    "cta_kind": "offer"
@@ -5619,7 +5649,7 @@
    "bytes": 97689774,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T02:51",
+   "scheduled_at": "2026-09-28T10:43",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5657,7 +5687,7 @@
    "bytes": 120630546,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T02:51",
+   "scheduled_at": "2026-09-28T10:43",
    "cta_keyword": "YES",
    "cta_variant": 14,
    "cta_kind": "offer"
@@ -5669,7 +5699,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T02:51",
+   "scheduled_at": "2026-09-28T10:43",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5707,7 +5737,7 @@
    "bytes": 115949167,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T07:34",
+   "scheduled_at": "2026-09-28T10:43",
    "cta_keyword": "YES",
    "cta_variant": 17,
    "cta_kind": "question"
@@ -5719,7 +5749,7 @@
    "bytes": 54278846,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T02:51",
+   "scheduled_at": "2026-09-28T10:43",
    "cta_keyword": "RISE",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -5731,7 +5761,7 @@
    "bytes": 83021759,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T02:51",
+   "scheduled_at": "2026-09-28T10:43",
    "cta_keyword": "LUCKY",
    "cta_variant": 13,
    "cta_kind": "question"
