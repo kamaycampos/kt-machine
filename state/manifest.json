@@ -4603,12 +4603,26 @@
    "caption": "A self-made investor turns down 99 out of every 100 pitches he hears.\n\nBefore he writes a check, he asks four questions: Is this person ride-or-die? Does anyone actually buy this product? Will it sell without you standing there explaining it? And can your team back up every claim you just made?\n\nKevin Trudeau's guest tells founders who claim a retail deal isn't signed yet: that's not a purchase order, that's a hope.\n\nMost people pitch a dream. He's checking for proof.\n\nWhich of these four would your own idea actually pass right now?\n\n#kevintrudeau #investing #entrepreneur #startuptips #businessadvice #wealthmindset",
    "hook": "How investors decide in four questions",
    "bytes": 74163429,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-29T02:52",
    "cta_keyword": "FREE",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1639459444574055/",
+    "instagram": "https://www.instagram.com/reel/Dd3z0xuDDxc/",
+    "youtube": "https://youtube.com/shorts/wOcIv33fPYw"
+   },
+   "caption_at_post": "A self-made investor turns down 99 out of every 100 pitches he hears.\n\nBefore he writes a check, he asks four questions: Is this person ride-or-die? Does anyone actually buy this product? Will it sell without you standing there explaining it? And can your team back up every claim you just made?\n\nKevin Trudeau's guest tells founders who claim a retail deal isn't signed yet: that's not a purchase order, that's a hope.\n\nMost people pitch a dream. He's checking for proof.\n\nWhich of these four would your own idea actually pass right now?\n\n#kevintrudeau #investing #entrepreneur #startuptips #businessadvice #wealthmindset",
+   "posted_at": "2026-09-29T08:59"
   },
   {
    "file": "KT_TAXHACK/01_FIVE-THOUSAND-TO-FIVE-BILLION_50s.mp4",
@@ -4655,7 +4669,7 @@
    "bytes": 38392678,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T07:36",
+   "scheduled_at": "2026-09-29T09:40",
    "cta_keyword": "KT",
    "cta_variant": 4,
    "cta_kind": "question"
@@ -5494,7 +5508,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T02:52",
+   "scheduled_at": "2026-09-29T09:40",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5638,12 +5652,27 @@
    "caption": "He didn't manifest freedom. He manifested prison, and it worked exactly as asked.\n\nHe wasn't praying to go to prison. He was praying to be freed from businesses eating his time so he could finally write what he came here to write. The universe answered with eight years, no distractions, and a clean slate. From the outside it looked like the worst thing that ever happened to him. From the inside, it was the only way the request could be granted.\n\nThe lesson underneath it: you don't get punished. You get answered, just never in the shape you expected.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#awakening #manifestation #lawofattraction #spirituality #mindset #kevintrudeau",
    "hook": "He manifested his own prison sentence",
    "bytes": 43477358,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260929130133873D245CC69EA92D79CD'}}"
+   },
    "scheduled_at": "2026-09-29T02:52",
    "cta_keyword": "YES",
    "cta_variant": 8,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/38980955871552523/",
+    "instagram": "https://www.instagram.com/reel/Dd30R3ZACSE/",
+    "youtube": "https://youtube.com/shorts/lk_QMBjdfIo"
+   },
+   "caption_at_post": "He didn't manifest freedom. He manifested prison, and it worked exactly as asked.\n\nHe wasn't praying to go to prison. He was praying to be freed from businesses eating his time so he could finally write what he came here to write. The universe answered with eight years, no distractions, and a clean slate. From the outside it looked like the worst thing that ever happened to him. From the inside, it was the only way the request could be granted.\n\nThe lesson underneath it: you don't get punished. You get answered, just never in the shape you expected.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#awakening #manifestation #lawofattraction #spirituality #mindset #kevintrudeau",
+   "posted_at": "2026-09-29T09:01",
+   "tiktok_retry": true
   },
   {
    "file": "AR_PRISON/02_THE-HEART-ATTACK-HE-NEEDED_81s.mp4",
@@ -5656,7 +5685,7 @@
     "instagram": "posted",
     "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202609271535514E3432565AC461A92B1A'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260929125536C4D5DADE0BB8143039AE'}}"
    },
    "scheduled_at": "2026-09-27T07:10",
    "cta_keyword": "RISE",
@@ -5670,7 +5699,8 @@
    },
    "caption_at_post": "A man asked the universe to help him quit smoking. He got a heart attack instead.\n\nHe didn't want the hospital, the ventilator, the fear. But his doctor told him five young daughters would lose their father if he lit another cigarette \u2014 and he never smoked again. He said it himself: the universe understood exactly what he was asking for. It just didn't use the method he expected.\n\nThis is the piece almost nobody teaches about manifesting: you ask for the outcome, the universe chooses the how. Arguing with the how is how people miss what they asked for.\n\nComment RISE and I'll send you the full breakdown.\n\n#awakening #manifestation #lawofattraction #spirituality #consciousness #kevintrudeau",
    "posted_at": "2026-09-27T11:35",
-   "tiktok_retry": true
+   "tiktok_retry": true,
+   "tiktok_tries": 1
   },
   {
    "file": "AR_TONGUE/01_TERRIFIC-MEANS-DISASTER_99s.mp4",
@@ -5707,7 +5737,7 @@
    "bytes": 100675851,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T02:52",
+   "scheduled_at": "2026-09-29T09:40",
    "cta_keyword": "LUCKY",
    "cta_variant": 10,
    "cta_kind": "offer"
@@ -5719,7 +5749,7 @@
    "bytes": 97689774,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T02:52",
+   "scheduled_at": "2026-09-29T09:40",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5757,7 +5787,7 @@
    "bytes": 120630546,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T02:52",
+   "scheduled_at": "2026-09-29T09:40",
    "cta_keyword": "YES",
    "cta_variant": 14,
    "cta_kind": "offer"
@@ -5769,7 +5799,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T02:52",
+   "scheduled_at": "2026-09-29T09:40",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5807,7 +5837,7 @@
    "bytes": 115949167,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T02:52",
+   "scheduled_at": "2026-09-29T09:40",
    "cta_keyword": "YES",
    "cta_variant": 17,
    "cta_kind": "question"
@@ -5819,7 +5849,7 @@
    "bytes": 54278846,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T02:52",
+   "scheduled_at": "2026-09-29T09:40",
    "cta_keyword": "RISE",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -5831,7 +5861,7 @@
    "bytes": 83021759,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T02:52",
+   "scheduled_at": "2026-09-29T09:40",
    "cta_keyword": "LUCKY",
    "cta_variant": 13,
    "cta_kind": "question"
@@ -5919,7 +5949,7 @@
    "bytes": 32326646,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T02:52",
+   "scheduled_at": "2026-09-29T09:40",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -5943,7 +5973,7 @@
    "bytes": 39842183,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T07:24",
+   "scheduled_at": "2026-09-29T09:40",
    "cta_keyword": "YES",
    "cta_variant": 2,
    "cta_kind": "offer"
@@ -6075,7 +6105,7 @@
    "bytes": 79714644,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T08:06",
+   "scheduled_at": "2026-09-29T09:40",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
    "cta_kind": "question"
@@ -6135,7 +6165,7 @@
    "bytes": 19909883,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T02:52",
+   "scheduled_at": "2026-09-29T09:40",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
