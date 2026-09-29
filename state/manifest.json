@@ -4567,7 +4567,7 @@
    "bytes": 96850205,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "BRAIN",
    "cta_variant": 5,
    "cta_kind": "offer"
@@ -4657,7 +4657,7 @@
    "bytes": 45943856,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T16:06",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5522,7 +5522,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "question"
@@ -5672,7 +5672,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202609291823038937925B5D63C15C6D75'}}"
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
    },
    "scheduled_at": "2026-09-29T02:52",
    "cta_keyword": "YES",
@@ -5686,8 +5686,7 @@
    },
    "caption_at_post": "He didn't manifest freedom. He manifested prison, and it worked exactly as asked.\n\nHe wasn't praying to go to prison. He was praying to be freed from businesses eating his time so he could finally write what he came here to write. The universe answered with eight years, no distractions, and a clean slate. From the outside it looked like the worst thing that ever happened to him. From the inside, it was the only way the request could be granted.\n\nThe lesson underneath it: you don't get punished. You get answered, just never in the shape you expected.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#awakening #manifestation #lawofattraction #spirituality #mindset #kevintrudeau",
    "posted_at": "2026-09-29T09:01",
-   "tiktok_retry": true,
-   "tiktok_tries": 1
+   "tiktok_tries": 2
   },
   {
    "file": "AR_PRISON/02_THE-HEART-ATTACK-HE-NEEDED_81s.mp4",
@@ -5777,12 +5776,26 @@
    "caption": "The voice you hear in a recording isn't the one you think you have.\n\nWhen you speak, ninety percent of the sound reaches your brain through your bones, not your ears \u2014 which is why a recording of your own voice sounds wrong to you and completely normal to everyone else. But here's the part that matters: that bone-deep vibration touches every cell in your body, not just your brain.\n\nThat's why silent thoughts barely move you, and spoken words move everything. Saying it out loud isn't dramatic. It's the mechanism.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#awakening #consciousness #selftalk #mindset #spirituality #kevintrudeau",
    "hook": "Speaking out loud reprograms your body",
    "bytes": 97689774,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202609292239325023CC74920EAD2DCA67'}}"
+   },
    "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "RISE",
    "cta_variant": 6,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1625833525939276/",
+    "instagram": "https://www.instagram.com/reel/Dd42XCfDq7j/",
+    "youtube": "https://youtube.com/shorts/pv4sPzfWi5k"
+   },
+   "caption_at_post": "The voice you hear in a recording isn't the one you think you have.\n\nWhen you speak, ninety percent of the sound reaches your brain through your bones, not your ears \u2014 which is why a recording of your own voice sounds wrong to you and completely normal to everyone else. But here's the part that matters: that bone-deep vibration touches every cell in your body, not just your brain.\n\nThat's why silent thoughts barely move you, and spoken words move everything. Saying it out loud isn't dramatic. It's the mechanism.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#awakening #consciousness #selftalk #mindset #spirituality #kevintrudeau",
+   "posted_at": "2026-09-29T18:39"
   },
   {
    "file": "AR_TONGUE/02_CAT-COMMAND_70s.mp4",
@@ -5817,7 +5830,7 @@
    "bytes": 120630546,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "YES",
    "cta_variant": 14,
    "cta_kind": "offer"
@@ -5829,7 +5842,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5867,7 +5880,7 @@
    "bytes": 115949167,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "YES",
    "cta_variant": 17,
    "cta_kind": "question"
@@ -5879,7 +5892,7 @@
    "bytes": 54278846,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "RISE",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -5891,7 +5904,7 @@
    "bytes": 83021759,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "LUCKY",
    "cta_variant": 13,
    "cta_kind": "question"
@@ -5929,7 +5942,7 @@
    "bytes": 75613319,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5941,7 +5954,7 @@
    "bytes": 59563253,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "LUCKY",
    "cta_variant": 4,
    "cta_kind": "offer"
@@ -5979,7 +5992,7 @@
    "bytes": 32326646,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -5991,7 +6004,7 @@
    "bytes": 52169979,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "RISE",
    "cta_variant": 3,
    "cta_kind": "question"
@@ -6003,7 +6016,7 @@
    "bytes": 39842183,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "YES",
    "cta_variant": 2,
    "cta_kind": "offer"
@@ -6027,7 +6040,7 @@
    "bytes": 53291650,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T18:09",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "MONEY",
    "cta_variant": 11,
    "cta_kind": "question"
@@ -6063,7 +6076,7 @@
    "bytes": 24819480,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "MONEY",
    "cta_variant": 8,
    "cta_kind": "offer"
@@ -6135,7 +6148,7 @@
    "bytes": 79714644,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
    "cta_kind": "offer"
@@ -6183,7 +6196,7 @@
    "bytes": 18923464,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "BRAIN",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -6195,7 +6208,7 @@
    "bytes": 19909883,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T15:08",
+   "scheduled_at": "2026-09-29T19:19",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -6265,12 +6278,26 @@
    "caption": "When he was in Austria, skinny as a rail, Arnold Schwarzenegger taped pictures of bodybuilders to the wall next to his bed - the exact physique he wanted to build. His mother was more comfortable with the other boys' pinups of girls.\n\nBut the pictures weren't the real technique. Every night before sleep, he closed his eyes and saw himself on stage, winning Mr. Olympia - the trophy in his hands, the crowd applauding, flexing under the lights. He held that image, vividly, night after night.\n\nYears later, when it actually happened, he said the real moment was almost identical to the one he'd been picturing since he was a kid.\n\n#kevintrudeau #mindset #visualization #successhabits #motivation #wealthmindset",
    "hook": "What Arnold saw before Mr. Olympia",
    "bytes": 24192457,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-09-29T14:52",
    "cta_keyword": "KT",
    "cta_variant": 10,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/28832860009672044/",
+    "instagram": "https://www.instagram.com/reel/Dd42AdNjwBZ/",
+    "youtube": "https://youtube.com/shorts/SUfPHwwyH3I"
+   },
+   "caption_at_post": "When he was in Austria, skinny as a rail, Arnold Schwarzenegger taped pictures of bodybuilders to the wall next to his bed - the exact physique he wanted to build. His mother was more comfortable with the other boys' pinups of girls.\n\nBut the pictures weren't the real technique. Every night before sleep, he closed his eyes and saw himself on stage, winning Mr. Olympia - the trophy in his hands, the crowd applauding, flexing under the lights. He held that image, vividly, night after night.\n\nYears later, when it actually happened, he said the real moment was almost identical to the one he'd been picturing since he was a kid.\n\n#kevintrudeau #mindset #visualization #successhabits #motivation #wealthmindset",
+   "posted_at": "2026-09-29T18:37"
   },
   {
    "file": "KT_UNSTUCK/01_WHAT-TURNED-HER-ON-THE-MOST_68s.mp4",
