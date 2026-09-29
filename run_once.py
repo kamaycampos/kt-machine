@@ -58,6 +58,13 @@ def tiktok_failed(status):
     s = (status or "").lower()
     if not s:
         return False
+    # SPAM RISK IS NOT A TRANSIENT FAILURE. 29 Sept 2026: four of Yaren's clips
+    # came back "spam_risk_too_many_pending_share" - TikTok refuses new uploads
+    # while too many drafts sit unposted in the inbox. Retrying cannot clear
+    # that; only posting or discarding the drafts can. Retrying would just add
+    # more pending shares to the pile that caused it.
+    if "spam_risk" in s:
+        return False
     return not ("inbox" in s or "processing" in s)
 
 
