@@ -49,8 +49,32 @@ for plan, rs in sorted(by_plan.items()):
                       for c in passed if c["slug"] not in have]
     bdir = os.path.join(K, "POST_TODAY", p["brand"])
     os.makedirs(bdir, exist_ok=True)
+    # THE LAST GATE BEFORE A LIVE ACCOUNT. Kamay, 29 Sept: "make sure every single clip
+    # is absolutely PERFECT... so their system doesn't post BS in our accounts."
+    # Everything upstream checks its own work; this checks the FINISHED file one more
+    # time, right at the boundary, and a clip it cannot vouch for is never copied into
+    # the posting folder - so the poster cannot reach it even by accident.
+    import kt_qc
+    blocked = set()
+    for r in rs:
+        d = os.path.join(root, f"shard-{plan}-{r['shard']}")
+        for f in r["files"]:
+            if not (f.endswith(".mp4") and "__" not in f):
+                continue
+            v, why = kt_qc.check(os.path.join(d, f))
+            if v == "fail":
+                blocked.add(f)
+                report.append(f"- **NOT QUEUED** `{f}` - {'; '.join(why[:3])}")
+                print(f"  BLOCKED {f}: {'; '.join(why[:2])}", flush=True)
+    if blocked:
+        keep = {c["slug"] for c in passed
+                if not any(f"_{c['slug']}_" in b for b in blocked)}
+        passed = [c for c in passed if c["slug"] in keep]
+        spec["clips"] = [c for c in spec["clips"] if c["slug"] in keep or c["slug"] in have]
     for r in rs:
         for f in r["files"]:
+            if any(f.startswith(b[:-4]) for b in blocked):
+                continue                       # the clip and its sidecar both stay behind
             shutil.copy(os.path.join(root, f"shard-{plan}-{r['shard']}", f), bdir)
             if f.endswith(".mp4") and "__" not in f and "cta_kind" in str(passed):
                 slug = next((c for c in passed if f"_{c['slug']}_" in f), {})
