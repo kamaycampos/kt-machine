@@ -1,15 +1,25 @@
 {
- "at": "2026-09-28T23:29",
+ "at": "2026-09-29T06:10",
  "profile": {
+  "follower_count": 414,
   "following_count": 8,
   "likes_count": 5804,
-  "video_count": 144,
-  "follower_count": 415
+  "video_count": 145
  },
  "videos": {
+  "unmatched/7690766787335474446": {
+   "id": "7690766787335474446",
+   "view_count": 1,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7690766787335474446?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 37,
+   "posted": "2026-09-29T01:43"
+  },
   "KT_MATH/02_HOW-TO-BREAK-A-HABIT-INSTANTLY_147s.mp4": {
    "id": "7690729994804268301",
-   "view_count": 0,
+   "view_count": 1,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -119,7 +129,7 @@
   },
   "KT_WEALTH/02_ROCKEFELLER-EVERY-DISASTER_103s.mp4": {
    "id": "7689976707771567374",
-   "view_count": 9,
+   "view_count": 10,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -339,7 +349,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3642,
+   "view_count": 3645,
    "like_count": 153,
    "comment_count": 7,
    "share_count": 16,
@@ -479,7 +489,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14075,
+   "view_count": 14076,
    "like_count": 866,
    "comment_count": 59,
    "share_count": 196,
@@ -529,7 +539,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 37979,
+   "view_count": 37983,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
@@ -1099,7 +1109,7 @@
   },
   "unmatched/7679028922297666830": {
    "id": "7679028922297666830",
-   "view_count": 608,
+   "view_count": 609,
    "like_count": 28,
    "comment_count": 0,
    "share_count": 1,
