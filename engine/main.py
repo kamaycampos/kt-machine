@@ -460,7 +460,19 @@ def plan(man):
                 # it on every other video instead of every video" - so AR_* is
                 # one in two. Her money-specific clips override this per clip by
                 # carrying cta_kind = "offer" already.
+                # MEASURED 28 SEPT AND IT REVERSED THE ASSUMPTION. The rule
+                # above was set from a competitor's shape, never from our own
+                # numbers. With 112 of Kamay's reels carrying full Instagram
+                # insights, comments per 1,000 views are: offer 3.47, question
+                # 1.60. The keyword ask earns MORE than twice the comments of a
+                # question - and a comment is the only thing that triggers the
+                # DM, which is the only thing that carries the link. One in
+                # three was throwing away the mechanism that pays.
+                # Two in three now; the third stays a question so the account
+                # does not read as a shop.
                 every = 2 if poster.cred_prefix(brand_of(nxt)) == "AR" else 3
+                if poster.cred_prefix(brand_of(nxt)) != "AR":
+                    nxt.setdefault("cta_kind", "question" if placed % 3 == 2 else "offer")
                 if not nxt.get("cta_kind"):
                     nxt["cta_kind"] = "offer" if placed % every == 0 else "question"
                 taken.add(key)
