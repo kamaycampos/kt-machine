@@ -34,7 +34,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
       - uses: actions/cache@v4
-        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v1 }
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v2-portable }
       - run: bash factory/setup.sh
       - name: Stock the month's HD episodes from Rumble (factory/source_plan.json first)
         run: |
@@ -68,7 +68,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
       - uses: actions/cache@v4
-        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v1 }
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v2-portable }
       - run: bash factory/setup.sh
       - name: Transcribe one episode (one server each, all at once)
         run: python factory/transcribe.py --only "${{ matrix.vid }}"
@@ -109,7 +109,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
       - uses: actions/cache@v4
-        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v1 }
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v2-portable }
       - run: bash factory/setup.sh
       - name: Render and check this shard
         run: python factory/build_shard.py "${{ matrix.plan }}" "${{ matrix.shard }}"
@@ -129,7 +129,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
       - uses: actions/cache@v4
-        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v1 }
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v2-portable }
       - run: bash factory/setup.sh
       - uses: actions/download-artifact@v4
         with: { pattern: "shard-*", path: /tmp/shards }

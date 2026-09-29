@@ -156,7 +156,13 @@ def words_for(src, t_in, t_out, key):
     r = subprocess.run([WHISPER, "-m", MODEL, "-f", wav, "-ml", "1", "-sow",
                         "-osrt", "-of", base], capture_output=True, text=True)
     if not os.path.exists(base + ".srt"):
-        sys.stderr.write(f"  whisper failed for {key}: {r.stderr[-200:]}\n")
+        # LOUD, because the caller degrades instead of stopping: with no words the
+        # renderer falls back to the old caption path and the clip still ships, just
+        # with cruder timing and no anchoring. Exit -4 here means SIGILL - a cached
+        # binary built for a different CPU (see factory/setup.sh, GGML_NATIVE).
+        sys.stderr.write(
+            f"  !! WHISPER PRODUCED NOTHING for {key} (exit {r.returncode}). Captions "
+            f"for this clip will fall back to the coarse path.\n  {r.stderr[-300:]}\n")
         return []
     got = parse_word_srt(base + ".srt")
     _save_cache(key, [list(x) for x in got])
