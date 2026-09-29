@@ -39,8 +39,12 @@ def load(p):
 # RULE #1, printed first, every single run. Kamay, 24 Sept 2026: the number is
 # the SCORE of the work, not a wish beside it. A machine that runs beautifully
 # and earns nothing is a failure, and this line is where that gets said.
-AIM = 1777000
-EARNED = 0                                    # update the day a dollar lands
+# The score is read from OUTSIDE this public repo, because it will hold customer
+# data. Yaren buys under Kamay's name and he gets 30% of her spending back - that
+# is never counted as earnings (his rule, 28 Sept 2026). New customers only.
+_earn = load("../private/earnings.json") or {}
+AIM = _earn.get("aim", 1777000)
+EARNED = _earn.get("earned", 0)
 print(f"== KT MACHINE, {now:%d %b %H:%M} UTC ==")
 print(f"** RULE #1  MONEY EARNED ${EARNED:,} of ${AIM:,}  ({EARNED / AIM * 100:.3f}%) **\n")
 
