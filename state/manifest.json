@@ -4579,7 +4579,7 @@
    "bytes": 50036512,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T17:08",
+   "scheduled_at": "2026-09-28T21:16",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -4591,7 +4591,7 @@
    "bytes": 74163429,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T19:55",
+   "scheduled_at": "2026-09-28T21:16",
    "cta_keyword": "FREE",
    "cta_variant": 3,
    "cta_kind": "offer"
@@ -4651,12 +4651,26 @@
    "caption": "Most people think they need an LLC before they can write anything off. Tax attorney Mark Kohler says that's flat wrong.\n\nHe tells Kevin Trudeau you don't need any entity to deduct your auto, your marketing costs or your team \u2014 you can do all of it as a sole proprietor, using nothing but your own name. Even a simple drive to a client meeting makes the gas and the meal deductible.\n\nForming an LLC or corporation is about how you structure a business you already have. It has nothing to do with whether you're allowed to save on taxes.\n\nHave you been putting off a side hustle because you thought you needed paperwork first?\n\n#kevintrudeau #smallbusiness #taxstrategy #sidehustle #entrepreneur #llc",
    "hook": "Why you don't need an LLC",
    "bytes": 31626668,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-28T16:40",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1400971648857502/",
+    "instagram": "https://www.instagram.com/reel/Dd2emi6Gss5/",
+    "youtube": "https://youtube.com/shorts/-R_Smb3LPVA"
+   },
+   "caption_at_post": "Most people think they need an LLC before they can write anything off. Tax attorney Mark Kohler says that's flat wrong.\n\nHe tells Kevin Trudeau you don't need any entity to deduct your auto, your marketing costs or your team \u2014 you can do all of it as a sole proprietor, using nothing but your own name. Even a simple drive to a client meeting makes the gas and the meal deductible.\n\nForming an LLC or corporation is about how you structure a business you already have. It has nothing to do with whether you're allowed to save on taxes.\n\nHave you been putting off a side hustle because you thought you needed paperwork first?\n\n#kevintrudeau #smallbusiness #taxstrategy #sidehustle #entrepreneur #llc",
+   "posted_at": "2026-09-28T20:34"
   },
   {
    "file": "KT_TAXHACK/02_TRIPLE-YOUR-HOURLY-RATE_126s.mp4",
@@ -4998,7 +5012,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260928202908CF986C563BFFCD1AC2F6'}}"
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
    },
    "scheduled_at": "2026-09-28T10:43",
    "cta_keyword": "YES",
@@ -5012,7 +5026,7 @@
    },
    "caption_at_post": "A magician never shows the same trick twice, because once you know how it's done, it stops working on you.\n\nKnowledge does the same thing to fear. Walk into a dark basement, see a shape coiled in the corner, and your body reacts like it's a snake. Turn the light on, and it's a rope \u2014 the fear is gone the second you actually see it.\n\nThe people who benefit from you staying afraid have no interest in turning the light on. They know that the moment you realize how much power you actually have, theirs starts to disappear.\n\nComment RISE and I'll send you the rest of this.\n\n#awakening #consciousness #mindset #spirituality #truth #kevintrudeau",
    "posted_at": "2026-09-28T16:29",
-   "tiktok_retry": true
+   "tiktok_tries": 1
   },
   {
    "file": "AR_DISCLOSURE/02_ANCIENT-WARS-STILL-CONTROL-EARTH-TODAY_99s.mp4",
@@ -5466,7 +5480,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T17:08",
+   "scheduled_at": "2026-09-28T21:16",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5586,7 +5600,7 @@
    "bytes": 70999900,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T17:08",
+   "scheduled_at": "2026-09-28T21:16",
    "cta_keyword": "LUCKY",
    "cta_variant": 16,
    "cta_kind": "offer"
@@ -5598,7 +5612,7 @@
    "bytes": 43477358,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T17:08",
+   "scheduled_at": "2026-09-28T21:16",
    "cta_keyword": "YES",
    "cta_variant": 8,
    "cta_kind": "offer"
@@ -5665,7 +5679,7 @@
    "bytes": 100675851,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T17:08",
+   "scheduled_at": "2026-09-28T21:16",
    "cta_keyword": "LUCKY",
    "cta_variant": 10,
    "cta_kind": "offer"
@@ -5677,7 +5691,7 @@
    "bytes": 97689774,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T17:08",
+   "scheduled_at": "2026-09-28T21:16",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5715,7 +5729,7 @@
    "bytes": 120630546,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T17:08",
+   "scheduled_at": "2026-09-28T21:16",
    "cta_keyword": "YES",
    "cta_variant": 14,
    "cta_kind": "offer"
@@ -5727,7 +5741,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T17:08",
+   "scheduled_at": "2026-09-28T21:16",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5765,7 +5779,7 @@
    "bytes": 115949167,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T17:08",
+   "scheduled_at": "2026-09-28T21:16",
    "cta_keyword": "YES",
    "cta_variant": 17,
    "cta_kind": "question"
@@ -5777,7 +5791,7 @@
    "bytes": 54278846,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T17:08",
+   "scheduled_at": "2026-09-28T21:16",
    "cta_keyword": "RISE",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -5789,7 +5803,7 @@
    "bytes": 83021759,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T17:08",
+   "scheduled_at": "2026-09-28T21:16",
    "cta_keyword": "LUCKY",
    "cta_variant": 13,
    "cta_kind": "question"
@@ -5849,12 +5863,26 @@
    "caption": "Love your enemies. Nobody preaches that one anymore.\n\nNot \"an eye for an eye.\" Not \"eventually they'll get what's coming.\" The actual instruction is give \u2014 money, time, compassion, especially to the person who wronged you \u2014 and the return isn't equal. It's a hundred to a thousand times what you gave, in this lifetime.\n\nHoarding isn't caution. It's a quiet way of saying you don't trust there's more coming.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#spirituality #awakening #abundance #giving #manifestation #kevintrudeau",
    "hook": "Give it away. Get hundredfold back.",
    "bytes": 32565370,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-28T17:00",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1984217755493251/",
+    "instagram": "https://www.instagram.com/reel/Dd2e873DpLT/",
+    "youtube": "https://youtube.com/shorts/Q0n4chb2k3g"
+   },
+   "caption_at_post": "Love your enemies. Nobody preaches that one anymore.\n\nNot \"an eye for an eye.\" Not \"eventually they'll get what's coming.\" The actual instruction is give \u2014 money, time, compassion, especially to the person who wronged you \u2014 and the return isn't equal. It's a hundred to a thousand times what you gave, in this lifetime.\n\nHoarding isn't caution. It's a quiet way of saying you don't trust there's more coming.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#spirituality #awakening #abundance #giving #manifestation #kevintrudeau",
+   "posted_at": "2026-09-28T20:37"
   },
   {
    "file": "AR_TELEPHONE/01_THE-LINE-IS-DEAD_57s.mp4",
@@ -5863,7 +5891,7 @@
    "bytes": 32326646,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T19:58",
+   "scheduled_at": "2026-09-28T21:16",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -6079,7 +6107,7 @@
    "bytes": 19909883,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-28T17:15",
+   "scheduled_at": "2026-09-28T21:16",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
