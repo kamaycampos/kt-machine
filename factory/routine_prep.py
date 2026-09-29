@@ -67,6 +67,6 @@ if len(order) - len([v for v in order if f'"{v}.mp4"' in plans_txt]) < 6:
              and norm(e["title"]) not in used and re.search(r"/(v[a-z0-9]+)-", u)[1] not in order]
     extra = [v for v, e in idx.items() if v not in order and not e.get("test") and f'"{v}.mp4"' not in plans_txt]
     print("ALREADY STOCKED, not in the month list:", ", ".join(f"{v} '{idx[v]['title'][:60]}'" for v in extra) or "none")
-    print("CANDIDATES to append to source_plan.json (newest first; prefer money/houses):")
+    print("CANDIDATES to append to source_plan.json - PICK HOUSE/PROPERTY EPISODES FIRST:")
     for d, u, e in sorted(cands, reverse=True)[:15]:
         print(f"  {re.search(r'/(v[a-z0-9]+)-', u)[1]} {d} {e['dur'] // 60}m {e['height']}p {e['title'][:80]}")

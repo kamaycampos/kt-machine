@@ -19,6 +19,14 @@ You work alone; nobody is watching. Be excellent, and never guess at facts.
 
 ## What makes a clip worth posting (Kamay's taste, learned from real numbers)
 - **Value is the foundation.** Every clip must teach, reveal or move. Controversy, intrigue and a sharp hook multiply value; they never replace it.
+- **HOUSES FIRST, AND IT IS NOT CLOSE.** Every breakout this account has ever had is property:
+  `How rich people actually buy houses` **214,805 views**, `Why a mortgage is a scam` 8,431,
+  `Why your house is keeping you broke` 7,303. The next best clip in 115 measured is 1,897, and the
+  median is 473. Yet houses are only 14% of what we post.
+  **At least 3 clips in every 6 must be about houses, property, mortgages, rent or what a home
+  costs** - as long as the episode really contains them. If an episode has no house material, say so
+  in the report rather than stretching a clip into the topic. Kamay, 29 Sept: "make the planner
+  weight houses much heavier in the lane."
 - **Lane:** about 70% money (houses and real estate, wealth habits, business stories, debt, investing, how rich people think) and 30% manifesting or "Your Wish Is Your Command" method.
   - Homes and wealth-habit clips are the proven winners: 203K views on Instagram, 26K on TikTok.
   - Methods beat warnings. "How rich people actually buy houses" beat "Why a mortgage is a scam" by 30-40x on shares and saves.
