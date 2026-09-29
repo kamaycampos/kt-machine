@@ -4567,7 +4567,7 @@
    "bytes": 96850205,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T11:43",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -4667,12 +4667,26 @@
    "caption": "Remember the old phrase, \"a penny saved is a penny earned\"? Tax attorney Mark Kohler tells Kevin Trudeau most business owners never actually feel it until they own something.\n\nWorking for other law firms, he never thought twice about the cost of paperclips or the copy machine \u2014 that was someone else's problem. The day he was about to buy new equipment for his own firm, it hit him: save a thousand dollars here, and he'd effectively made a thousand dollars this month.\n\nCutting a tax bill by a dollar is identical to earning that dollar, without doing any extra work to get it.\n\nWhere in your own business are you still spending like it's not your money?\n\n#kevintrudeau #taxstrategy #smallbusiness #entrepreneur #wealthmindset #businessowner",
    "hook": "Save $1,000 Make $1,000",
    "bytes": 38392678,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-29T09:40",
    "cta_keyword": "KT",
    "cta_variant": 4,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1879650236774432/",
+    "instagram": "https://www.instagram.com/reel/Dd4ZTSSj34q/",
+    "youtube": "https://youtube.com/shorts/V_kx5lu2Aik"
+   },
+   "caption_at_post": "Remember the old phrase, \"a penny saved is a penny earned\"? Tax attorney Mark Kohler tells Kevin Trudeau most business owners never actually feel it until they own something.\n\nWorking for other law firms, he never thought twice about the cost of paperclips or the copy machine \u2014 that was someone else's problem. The day he was about to buy new equipment for his own firm, it hit him: save a thousand dollars here, and he'd effectively made a thousand dollars this month.\n\nCutting a tax bill by a dollar is identical to earning that dollar, without doing any extra work to get it.\n\nWhere in your own business are you still spending like it's not your money?\n\n#kevintrudeau #taxstrategy #smallbusiness #entrepreneur #wealthmindset #businessowner",
+   "posted_at": "2026-09-29T14:26"
   },
   {
    "file": "KT_TAXHACK/02_NO-LLC-NEEDED-FOR-WRITE-OFFS_55s.mp4",
@@ -5508,7 +5522,7 @@
    "bytes": 99677896,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T09:40",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5658,7 +5672,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260929130133873D245CC69EA92D79CD'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202609291823038937925B5D63C15C6D75'}}"
    },
    "scheduled_at": "2026-09-29T02:52",
    "cta_keyword": "YES",
@@ -5672,7 +5686,8 @@
    },
    "caption_at_post": "He didn't manifest freedom. He manifested prison, and it worked exactly as asked.\n\nHe wasn't praying to go to prison. He was praying to be freed from businesses eating his time so he could finally write what he came here to write. The universe answered with eight years, no distractions, and a clean slate. From the outside it looked like the worst thing that ever happened to him. From the inside, it was the only way the request could be granted.\n\nThe lesson underneath it: you don't get punished. You get answered, just never in the shape you expected.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#awakening #manifestation #lawofattraction #spirituality #mindset #kevintrudeau",
    "posted_at": "2026-09-29T09:01",
-   "tiktok_retry": true
+   "tiktok_retry": true,
+   "tiktok_tries": 1
   },
   {
    "file": "AR_PRISON/02_THE-HEART-ATTACK-HE-NEEDED_81s.mp4",
@@ -5735,12 +5750,27 @@
    "caption": "\"I am who I am\" isn't what the Bible actually says.\n\nIn the original Hebrew, when Moses asked God's name at the burning bush, the answer was future tense \u2014 \"I will be who I will be.\" Not a statement of what already is. A statement of what's being spoken into existence.\n\nThat's the same structure behind writing \"I am wealthy\" before you feel wealthy. You're not lying. You're speaking in advance. And if the gap is too far to say honestly, there's a bridge: \"I am becoming\" first.\n\nComment RISE and I'll send you the full technique.\n\n#awakening #spirituality #ancientwisdom #manifestation #consciousness #kevintrudeau",
    "hook": "Two words in the Bible, mistranslated",
    "bytes": 100675851,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20260929182944EF78750BDBD9BE38446B'}}"
+   },
    "scheduled_at": "2026-09-29T09:40",
    "cta_keyword": "LUCKY",
    "cta_variant": 10,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1457771452859257/",
+    "instagram": "https://www.instagram.com/reel/Dd4ZvHfD5CE/",
+    "youtube": "https://youtube.com/shorts/U2Gscyi4oeo"
+   },
+   "caption_at_post": "\"I am who I am\" isn't what the Bible actually says.\n\nIn the original Hebrew, when Moses asked God's name at the burning bush, the answer was future tense \u2014 \"I will be who I will be.\" Not a statement of what already is. A statement of what's being spoken into existence.\n\nThat's the same structure behind writing \"I am wealthy\" before you feel wealthy. You're not lying. You're speaking in advance. And if the gap is too far to say honestly, there's a bridge: \"I am becoming\" first.\n\nComment RISE and I'll send you the full technique.\n\n#awakening #spirituality #ancientwisdom #manifestation #consciousness #kevintrudeau",
+   "posted_at": "2026-09-29T14:29",
+   "tiktok_retry": true
   },
   {
    "file": "AR_TONGUE/01_YOUR-VOICE-REPROGRAMS-YOU_135s.mp4",
@@ -5749,7 +5779,7 @@
    "bytes": 97689774,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T09:40",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "RISE",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -5787,7 +5817,7 @@
    "bytes": 120630546,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T09:40",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "YES",
    "cta_variant": 14,
    "cta_kind": "offer"
@@ -5799,7 +5829,7 @@
    "bytes": 52360829,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T09:40",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5837,7 +5867,7 @@
    "bytes": 115949167,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T09:40",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "YES",
    "cta_variant": 17,
    "cta_kind": "question"
@@ -5849,7 +5879,7 @@
    "bytes": 54278846,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T09:40",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "RISE",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -5861,7 +5891,7 @@
    "bytes": 83021759,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T09:40",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "LUCKY",
    "cta_variant": 13,
    "cta_kind": "question"
@@ -5899,7 +5929,7 @@
    "bytes": 75613319,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T14:20",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -5911,7 +5941,7 @@
    "bytes": 59563253,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T12:57",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "LUCKY",
    "cta_variant": 4,
    "cta_kind": "offer"
@@ -5949,7 +5979,7 @@
    "bytes": 32326646,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T09:40",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -5961,7 +5991,7 @@
    "bytes": 52169979,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T10:30",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "RISE",
    "cta_variant": 3,
    "cta_kind": "question"
@@ -5973,7 +6003,7 @@
    "bytes": 39842183,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T09:40",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "YES",
    "cta_variant": 2,
    "cta_kind": "offer"
@@ -6033,7 +6063,7 @@
    "bytes": 24819480,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T10:05",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "MONEY",
    "cta_variant": 8,
    "cta_kind": "question"
@@ -6105,7 +6135,7 @@
    "bytes": 79714644,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T09:40",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
    "cta_kind": "question"
@@ -6153,7 +6183,7 @@
    "bytes": 18923464,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T13:00",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "FREE",
    "cta_variant": 9,
    "cta_kind": "offer"
@@ -6165,7 +6195,7 @@
    "bytes": 19909883,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-29T09:40",
+   "scheduled_at": "2026-09-29T15:08",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
