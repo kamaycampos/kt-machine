@@ -8,7 +8,22 @@ behind Cloudflare, so this poses as Chrome (curl_cffi) and retries.
 
     python factory/rumble_catalog.py
 """
-import json, os, re, time
+import json, os, re, sys, time
+
+# THE CHANNEL ADDRESS IS DEAD AS OF 30 SEPT 2026. rumble.com/c/KevinTrudeauShow
+# answers 404 (Rumble serves its generic page, which is why a crawl "succeeds"
+# and finds nothing). /c/KevinTrudeau answers 200 but lists no videos. So no new
+# episode has entered the system since the change, and the catalogue is frozen at
+# 632. FIND THE REAL ADDRESS FIRST - open the channel on his Mac and read the URL
+# from the address bar - then this file and factory/rumble_stock.py both work again.
+
+# OUR OWN queue.py WAS SHADOWING PYTHON'S. 30 Sept 2026: this crawler died with
+# "IndexError" inside factory/queue.py - because Python puts a script's own
+# folder first on the import path, so `import queue` (which curl_cffi needs)
+# found OUR file instead of the standard library's. Drop this folder from the
+# path before anything else imports.
+sys.path[:] = [q for q in sys.path
+               if os.path.abspath(q or ".") != os.path.dirname(os.path.abspath(__file__))]
 
 CHANNEL = "https://rumble.com/c/KevinTrudeauShow/videos?page={}"
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "rumble_catalog.json")
