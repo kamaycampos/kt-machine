@@ -6,7 +6,7 @@ detection, and the check that reads a finished clip back. A fix here reaches KT,
 Yaren and VSC without anyone copying a file.
 
 **Every factory pulls this folder at setup.** kt-machine copies it in directly;
-vsc-machine (private) fetches it over https from this public repo. So an improvement
+vsc-factory (public) fetches it over https from this repo. So an improvement
 lands once and is live everywhere on the next run - no Mac, no human step.
 
 ## What does NOT belong here
