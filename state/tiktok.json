@@ -1,12 +1,32 @@
 {
- "at": "2026-09-30T12:59",
+ "at": "2026-09-30T22:35",
  "profile": {
-  "likes_count": 5804,
-  "video_count": 149,
   "follower_count": 415,
-  "following_count": 8
+  "following_count": 8,
+  "likes_count": 5804,
+  "video_count": 151
  },
  "videos": {
+  "KT_SHARK/01_WHY-YOUR-FRIENDS-KEEP-YOU-BROKE_148s.mp4": {
+   "id": "7691404629271137550",
+   "view_count": 0,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7691404629271137550?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 147,
+   "posted": "2026-09-30T18:58"
+  },
+  "KT_LEDGER/01_THREE-IDEAS-THEY-CALLED-INSANE_60s.mp4": {
+   "id": "7691319700512345358",
+   "view_count": 0,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7691319700512345358?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 60,
+   "posted": "2026-09-30T13:28"
+  },
   "KT_TAXHACK/01_SAVE-A-THOUSAND-MAKE-A-THOUSAND_80s.mp4": {
    "id": "7690982519507832077",
    "view_count": 4,
@@ -29,7 +49,7 @@
   },
   "KT_TAXHACK/02_NO-LLC-NEEDED-FOR-WRITE-OFFS_55s.mp4": {
    "id": "7690948145840180494",
-   "view_count": 2,
+   "view_count": 3,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -39,7 +59,7 @@
   },
   "unmatched/7690766787335474446": {
    "id": "7690766787335474446",
-   "view_count": 4,
+   "view_count": 5,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -159,7 +179,7 @@
   },
   "KT_WEALTH/02_ROCKEFELLER-EVERY-DISASTER_103s.mp4": {
    "id": "7689976707771567374",
-   "view_count": 13,
+   "view_count": 17,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -169,7 +189,7 @@
   },
   "KT_BASEMENT/01_HOW-LONG-BEFORE-BUSINESS-GETS-EASY_77s.mp4": {
    "id": "7689615616877137182",
-   "view_count": 1,
+   "view_count": 2,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -329,7 +349,7 @@
   },
   "KT_SECRET/03_SIXTY-AND-BROKE_44s.mp4": {
    "id": "7688344513672170765",
-   "view_count": 475,
+   "view_count": 476,
    "like_count": 34,
    "comment_count": 0,
    "share_count": 3,
@@ -339,7 +359,7 @@
   },
   "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
    "id": "7688148098480098573",
-   "view_count": 471,
+   "view_count": 472,
    "like_count": 39,
    "comment_count": 2,
    "share_count": 6,
@@ -379,7 +399,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3651,
+   "view_count": 3653,
    "like_count": 153,
    "comment_count": 7,
    "share_count": 16,
@@ -399,7 +419,7 @@
   },
   "KT_RICH/06_PEP-TALKS-WHEN-ALONE_71s.mp4": {
    "id": "7687607782639537422",
-   "view_count": 1193,
+   "view_count": 1194,
    "like_count": 93,
    "comment_count": 4,
    "share_count": 27,
@@ -409,7 +429,7 @@
   },
   "KT_MIND/05_THE-TRASH-TEST_84s.mp4": {
    "id": "7687564395848731917",
-   "view_count": 1024,
+   "view_count": 1025,
    "like_count": 69,
    "comment_count": 2,
    "share_count": 9,
@@ -519,7 +539,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14079,
+   "view_count": 14082,
    "like_count": 866,
    "comment_count": 59,
    "share_count": 196,
@@ -569,7 +589,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 37994,
+   "view_count": 38004,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
@@ -599,7 +619,7 @@
   },
   "KT_HOME/05_05_THE-SINGLE-MOST-POWERFUL-OBJECT_86s.mp4": {
    "id": "7685101409963871501",
-   "view_count": 1349,
+   "view_count": 1350,
    "like_count": 102,
    "comment_count": 4,
    "share_count": 9,
@@ -709,7 +729,7 @@
   },
   "KT_DEBT/06_THREE-CARDS-AT-ZERO_150s.mp4": {
    "id": "7683909645118803213",
-   "view_count": 474,
+   "view_count": 475,
    "like_count": 30,
    "comment_count": 1,
    "share_count": 0,
@@ -869,7 +889,7 @@
   },
   "unmatched/7682099099264371982": {
    "id": "7682099099264371982",
-   "view_count": 372,
+   "view_count": 373,
    "like_count": 15,
    "comment_count": 3,
    "share_count": 1,
@@ -879,7 +899,7 @@
   },
   "unmatched/7682064766667427086": {
    "id": "7682064766667427086",
-   "view_count": 331,
+   "view_count": 333,
    "like_count": 13,
    "comment_count": 2,
    "share_count": 3,
@@ -889,7 +909,7 @@
   },
   "unmatched/7681756121522097421": {
    "id": "7681756121522097421",
-   "view_count": 338,
+   "view_count": 339,
    "like_count": 24,
    "comment_count": 0,
    "share_count": 0,
@@ -919,7 +939,7 @@
   },
   "unmatched/7681483286731951374": {
    "id": "7681483286731951374",
-   "view_count": 281,
+   "view_count": 282,
    "like_count": 23,
    "comment_count": 2,
    "share_count": 0,
@@ -929,7 +949,7 @@
   },
   "KT_PROB/01_THE-FOREST-FIRE_156s.mp4": {
    "id": "7681447590923177229",
-   "view_count": 240,
+   "view_count": 241,
    "like_count": 11,
    "comment_count": 0,
    "share_count": 1,
@@ -1069,7 +1089,7 @@
   },
   "unmatched/7679507079249333518": {
    "id": "7679507079249333518",
-   "view_count": 263,
+   "view_count": 265,
    "like_count": 18,
    "comment_count": 0,
    "share_count": 2,
@@ -1139,7 +1159,7 @@
   },
   "unmatched/7679028922297666830": {
    "id": "7679028922297666830",
-   "view_count": 610,
+   "view_count": 612,
    "like_count": 28,
    "comment_count": 0,
    "share_count": 1,
