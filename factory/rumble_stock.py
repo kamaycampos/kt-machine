@@ -48,8 +48,22 @@ def main():
     used = {norm(os.path.splitext(s.get("source", ""))[0])[:40] for s in series.values()}
     cat = json.load(open(os.path.join(HERE, "rumble_catalog.json")))
     have = {e.get("rumble") for e in idx.values()}
+    # AN EPISODE HE NAMED IS NEVER FILTERED OUT BY LENGTH. 30 Sept 2026: Kamay
+    # put that day's upload at the top of the list - "You Keep Missing The
+    # Biggest Opportunities", 4K, SIX MINUTES - and the stocker silently ignored
+    # it, because the 20-minute floor exists to keep stray clips out of an
+    # AUTOMATIC pick. A deliberate choice is not a stray clip. Listed episodes
+    # need only be long enough to hold a clip; everything else still has to
+    # clear the floor.
+    listed = set()
+    for f in ("source_plan.json", "ar_source_plan.json"):
+        fp = os.path.join(HERE, f)
+        if os.path.exists(fp):
+            listed |= {x["id"] for x in json.load(open(fp))["episodes"]}
+    vid_of = lambda u: (re.search(r"/(v[a-z0-9]+)-", u) or [None, ""])[1]
+    floor = lambda u, e: 180 if vid_of(u) in listed else 1200
     pick = [(u, e) for u, e in sorted(cat.items(), key=lambda x: x[1]["date"], reverse=True)
-            if not e["short"] and e["dur"] >= 1200 and e["height"] >= 1080
+            if not e["short"] and e["dur"] >= floor(u, e) and e["height"] >= 1080
             and u not in have and norm(e["title"])[:40] not in used]
     # THE MONTH'S LISTS COME FIRST - both of them, alternating, so neither
     # account waits behind the other: Kamay's money lane (source_plan.json) and
