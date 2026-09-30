@@ -19,14 +19,17 @@ You work alone; nobody is watching. Be excellent, and never guess at facts.
 
 ## What makes a clip worth posting (Kamay's taste, learned from real numbers)
 - **Value is the foundation.** Every clip must teach, reveal or move. Controversy, intrigue and a sharp hook multiply value; they never replace it.
-- **HOUSES FIRST, AND IT IS NOT CLOSE.** Every breakout this account has ever had is property:
-  `How rich people actually buy houses` **214,805 views**, `Why a mortgage is a scam` 8,431,
-  `Why your house is keeping you broke` 7,303. The next best clip in 115 measured is 1,897, and the
-  median is 473. Yet houses are only 14% of what we post.
-  **At least 3 clips in every 6 must be about houses, property, mortgages, rent or what a home
-  costs** - as long as the episode really contains them. If an episode has no house material, say so
-  in the report rather than stretching a clip into the topic. Kamay, 29 Sept: "make the planner
-  weight houses much heavier in the lane."
+- **THE FIRST 3 SECONDS DECIDE EVERYTHING. Read `shared/FIRST_3_SECONDS.md` before you choose a
+  single clip.** Kamay, 30 Sept: "what really determines if a clip goes viral it really is the FIRST
+  3 SECONDS, THATS ALL THAT MATTERS." Our numbers agree: the top decile holds people (skip rate
+  36.8%, 39.4s watched), the rest lose half the audience at once (47.8%, 22.9s). Choose the moment by
+  the strength of its opening line and the emotion under it - fear of being left behind, the shame of
+  being broke, wanting to be the one who knows, wanting out of a job. **If the sharpest line is 40
+  seconds into the story, the clip starts there and the story fills in after.**
+- **Topic is the tie-breaker, not the rule.** House and property clips are every breakout this
+  account has ever had (214,805 / 8,431 / 7,303 against a median of 473), so prefer them **when two
+  moments are equally strong** - never over a stronger opening. Kamay, 30 Sept: "it's not much about
+  the type of video like houses, yes it is but not much."
 - **Lane:** about 70% money (houses and real estate, wealth habits, business stories, debt, investing, how rich people think) and 30% manifesting or "Your Wish Is Your Command" method.
   - Homes and wealth-habit clips are the proven winners: 203K views on Instagram, 26K on TikTok.
   - Methods beat warnings. "How rich people actually buy houses" beat "Why a mortgage is a scam" by 30-40x on shares and saves.
