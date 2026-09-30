@@ -2,7 +2,7 @@
 
 19 Sept 2026. YouTube blocks cloud downloads; Kamay found that Kevin uploads
 every episode to Rumble too ("The Kevin Trudeau Show Limitless",
-rumble.com/c/KevinTrudeauShow). Each channel page carries the episode data as
+rumble.com/c/TheKevinTrudeauOfficial). Each channel page carries the episode data as
 embedded JSON: url, title, duration, upload date, height, is_short. Rumble sits
 behind Cloudflare, so this poses as Chrome (curl_cffi) and retries.
 
@@ -10,7 +10,7 @@ behind Cloudflare, so this poses as Chrome (curl_cffi) and retries.
 """
 import json, os, re, sys, time
 
-# THE CHANNEL ADDRESS IS DEAD AS OF 30 SEPT 2026. rumble.com/c/KevinTrudeauShow
+# THE CHANNEL ADDRESS IS DEAD AS OF 30 SEPT 2026. rumble.com/c/TheKevinTrudeauOfficial
 # answers 404 (Rumble serves its generic page, which is why a crawl "succeeds"
 # and finds nothing). /c/KevinTrudeau answers 200 but lists no videos. So no new
 # episode has entered the system since the change, and the catalogue is frozen at
@@ -25,7 +25,7 @@ import json, os, re, sys, time
 sys.path[:] = [q for q in sys.path
                if os.path.abspath(q or ".") != os.path.dirname(os.path.abspath(__file__))]
 
-CHANNEL = "https://rumble.com/c/KevinTrudeauShow/videos?page={}"
+CHANNEL = "https://rumble.com/c/TheKevinTrudeauOfficial/videos?page={}"
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "rumble_catalog.json")
 
 
