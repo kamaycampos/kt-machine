@@ -40,6 +40,12 @@ OPENERS = {"and", "but", "so", "because", "it", "the", "a", "an", "if", "when", 
            "you", "i", "we", "they", "he", "she", "this", "that", "there", "now", "look"}
 
 
+# function words that recur in correct English one word apart: "that firing that",
+# "the gold the", "to it to". Damage repeats content words, not these.
+REPEATABLE = {"that", "the", "a", "to", "of", "it", "is", "in", "on", "at", "as",
+              "was", "had", "very", "no", "you", "they", "he", "she", "we", "i"}
+
+
 def sh(*a):
     return subprocess.run(list(a), capture_output=True, text=True)
 
@@ -71,14 +77,27 @@ def text_faults(caps):
         # Kevin repeats himself ON PURPOSE - "tons and tons and tons", "attacking,
         # attacking" - so the two tells that separate damage from emphasis: real
         # emphasis is joined by a connector, or punctuated with a comma.
+        # 30 Sept 2026: this failed two clips that were RIGHT. "it was because of that
+        # firing that he started NeXT" is ordinary English, and "They attack. They get
+        # pissed off" is a new sentence. Damage repeats CONTENT words and runs straight
+        # through; a function word recurring, or a full stop in between, is neither.
         if (norm[i] and norm[i] == norm[i + 2] and norm[i + 1] not in CONNECTORS
                 and norm[i] not in CONNECTORS          # "tons AND tons AND tons"
-                and not flat[i].endswith((",", "-", "...")) and len(norm[i]) > 1):
+                and norm[i] not in REPEATABLE
+                # the stop can be on EITHER word before the repeat: "a huge
+                # distinction. Huge." and "of her life. Her life was" are both a new
+                # sentence starting on the same word, which is how Kevin lands a point.
+                and not flat[i].endswith((",", ".", "!", "?", "-", "..."))
+                and not flat[i + 1].endswith((",", ".", "!", "?", "-", "..."))
+                and len(norm[i]) > 1):
             out.append(f'word repeated after one: "{" ".join(flat[i:i+3])}"')
     for i in range(len(norm) - 3):
         # "said He it said", "It was It when was", "do It things does"
         if (norm[i] and norm[i] == norm[i + 3]
-                and norm[i] not in ("the", "a", "to", "of", "and", "it", "that", "is")
+                # "It was when she was at the bottom" and "What they do is they look
+                # at it" are correct English with a function word recurring. Damage
+                # scrambles CONTENT words - "said He it said", "was It when was".
+                and norm[i] not in REPEATABLE
                 # "every single one, every single one had more" - he repeats a whole
                 # phrase for emphasis, and emphasis is PUNCTUATED. Transcription damage
                 # never is: "said He it said", "was It when was", "do It things does"
@@ -88,8 +107,11 @@ def text_faults(caps):
             out.append(f'phrase scrambled around "{" ".join(flat[i:i+4])}"')
     for i in range(len(norm) - 1):
         # "So you We have to" - two subject pronouns in a row
+        # ...but not across a sentence end. "taken away from you. I go, Yeah" is two
+        # sentences, not two subjects, and it held back a clip that was correct.
         if norm[i] in ("you", "we", "i", "he", "she", "they") and \
-           norm[i + 1] in ("we", "you", "i", "he", "she", "they") and norm[i] != norm[i + 1]:
+           norm[i + 1] in ("we", "you", "i", "he", "she", "they") and norm[i] != norm[i + 1] \
+           and not flat[i].endswith((".", "!", "?", ",", "-", "...")):
             out.append(f'two subjects together: "{flat[i]} {flat[i+1]}"')
     for i in range(len(flat) - 1):
         # "the number. one difference" - a full stop that is not a sentence end
