@@ -1,10 +1,10 @@
 {
- "at": "2026-09-30T05:57",
+ "at": "2026-09-30T12:59",
  "profile": {
+  "likes_count": 5804,
   "video_count": 149,
   "follower_count": 415,
-  "following_count": 8,
-  "likes_count": 5803
+  "following_count": 8
  },
  "videos": {
   "KT_TAXHACK/01_SAVE-A-THOUSAND-MAKE-A-THOUSAND_80s.mp4": {
@@ -17,7 +17,7 @@
    "duration": 78,
    "posted": "2026-09-29T15:40"
   },
-  "KT_SHARK/02_FOUR-QUESTIONS-BEFORE-HE-INVESTS_106s.mp4": {
+  "KT_TAXHACK/01_LAND-RICH-CASH-POOR_104s.mp4": {
    "id": "7691035155560926478",
    "view_count": 2,
    "like_count": 0,
@@ -39,7 +39,7 @@
   },
   "unmatched/7690766787335474446": {
    "id": "7690766787335474446",
-   "view_count": 3,
+   "view_count": 4,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -329,7 +329,7 @@
   },
   "KT_SECRET/03_SIXTY-AND-BROKE_44s.mp4": {
    "id": "7688344513672170765",
-   "view_count": 474,
+   "view_count": 475,
    "like_count": 34,
    "comment_count": 0,
    "share_count": 3,
@@ -379,7 +379,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3650,
+   "view_count": 3651,
    "like_count": 153,
    "comment_count": 7,
    "share_count": 16,
@@ -399,7 +399,7 @@
   },
   "KT_RICH/06_PEP-TALKS-WHEN-ALONE_71s.mp4": {
    "id": "7687607782639537422",
-   "view_count": 1192,
+   "view_count": 1193,
    "like_count": 93,
    "comment_count": 4,
    "share_count": 27,
@@ -449,8 +449,8 @@
   },
   "KT_POS/06_06_THE-THREE-STEPS-IN-ORDER_40s.mp4": {
    "id": "7684682721817382158",
-   "view_count": 597,
-   "like_count": 63,
+   "view_count": 598,
+   "like_count": 64,
    "comment_count": 2,
    "share_count": 4,
    "share_url": "https://www.tiktok.com/@kt_student/video/7684682721817382158?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -519,7 +519,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14078,
+   "view_count": 14079,
    "like_count": 866,
    "comment_count": 59,
    "share_count": 196,
@@ -569,7 +569,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 37993,
+   "view_count": 37994,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
@@ -949,7 +949,7 @@
   },
   "unmatched/7681061130948578573": {
    "id": "7681061130948578573",
-   "view_count": 337,
+   "view_count": 338,
    "like_count": 23,
    "comment_count": 4,
    "share_count": 2,
@@ -1229,7 +1229,7 @@
   },
   "unmatched/7678168548383968543": {
    "id": "7678168548383968543",
-   "view_count": 405,
+   "view_count": 406,
    "like_count": 35,
    "comment_count": 2,
    "share_count": 8,
