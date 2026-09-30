@@ -1,22 +1,12 @@
 {
- "at": "2026-09-29T22:35",
+ "at": "2026-09-30T05:57",
  "profile": {
-  "likes_count": 5804,
-  "video_count": 148,
+  "video_count": 149,
   "follower_count": 415,
-  "following_count": 8
+  "following_count": 8,
+  "likes_count": 5803
  },
  "videos": {
-  "KT_SHARK/02_FOUR-QUESTIONS-BEFORE-HE-INVESTS_106s.mp4": {
-   "id": "7691035155560926478",
-   "view_count": 1,
-   "like_count": 0,
-   "comment_count": 0,
-   "share_count": 0,
-   "share_url": "https://www.tiktok.com/@kt_student/video/7691035155560926478?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
-   "duration": 105,
-   "posted": "2026-09-29T19:04"
-  },
   "KT_TAXHACK/01_SAVE-A-THOUSAND-MAKE-A-THOUSAND_80s.mp4": {
    "id": "7690982519507832077",
    "view_count": 4,
@@ -27,9 +17,19 @@
    "duration": 78,
    "posted": "2026-09-29T15:40"
   },
+  "KT_SHARK/02_FOUR-QUESTIONS-BEFORE-HE-INVESTS_106s.mp4": {
+   "id": "7691035155560926478",
+   "view_count": 2,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7691035155560926478?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 105,
+   "posted": "2026-09-29T19:04"
+  },
   "KT_TAXHACK/02_NO-LLC-NEEDED-FOR-WRITE-OFFS_55s.mp4": {
    "id": "7690948145840180494",
-   "view_count": 1,
+   "view_count": 2,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -159,7 +159,7 @@
   },
   "KT_WEALTH/02_ROCKEFELLER-EVERY-DISASTER_103s.mp4": {
    "id": "7689976707771567374",
-   "view_count": 11,
+   "view_count": 13,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -299,7 +299,7 @@
   },
   "KT_SECRET/01_THE-SAME-RECORDS_150s.mp4": {
    "id": "7688541338953862413",
-   "view_count": 410,
+   "view_count": 412,
    "like_count": 40,
    "comment_count": 2,
    "share_count": 1,
@@ -309,7 +309,7 @@
   },
   "KT_SECRET/04_NINE-TO-FIVE-BILLIONAIRE_120s.mp4": {
    "id": "7688427490800405774",
-   "view_count": 33,
+   "view_count": 34,
    "like_count": 4,
    "comment_count": 0,
    "share_count": 0,
@@ -329,7 +329,7 @@
   },
   "KT_SECRET/03_SIXTY-AND-BROKE_44s.mp4": {
    "id": "7688344513672170765",
-   "view_count": 473,
+   "view_count": 474,
    "like_count": 34,
    "comment_count": 0,
    "share_count": 3,
@@ -379,7 +379,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3648,
+   "view_count": 3650,
    "like_count": 153,
    "comment_count": 7,
    "share_count": 16,
@@ -569,7 +569,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 37991,
+   "view_count": 37993,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
@@ -579,7 +579,7 @@
   },
   "KT_POS/04_04_THE-BOW-AND-ARROW_77s.mp4": {
    "id": "7684776913436511501",
-   "view_count": 286,
+   "view_count": 287,
    "like_count": 26,
    "comment_count": 2,
    "share_count": 0,
@@ -629,7 +629,7 @@
   },
   "KT_HOME/06_06_THREE-THINGS-TO-DO-TO-YOUR-HOME_69s.mp4": {
    "id": "7684994156057447693",
-   "view_count": 2064,
+   "view_count": 2065,
    "like_count": 176,
    "comment_count": 4,
    "share_count": 35,
@@ -719,7 +719,7 @@
   },
   "unmatched/7683715768181132558": {
    "id": "7683715768181132558",
-   "view_count": 642,
+   "view_count": 643,
    "like_count": 43,
    "comment_count": 4,
    "share_count": 4,
@@ -1019,7 +1019,7 @@
   },
   "unmatched/7680003686323506445": {
    "id": "7680003686323506445",
-   "view_count": 129,
+   "view_count": 130,
    "like_count": 7,
    "comment_count": 0,
    "share_count": 1,
@@ -1049,7 +1049,7 @@
   },
   "unmatched/7679849707119611149": {
    "id": "7679849707119611149",
-   "view_count": 119,
+   "view_count": 120,
    "like_count": 7,
    "comment_count": 0,
    "share_count": 0,
@@ -1089,7 +1089,7 @@
   },
   "unmatched/7679249420302470414": {
    "id": "7679249420302470414",
-   "view_count": 269,
+   "view_count": 270,
    "like_count": 21,
    "comment_count": 1,
    "share_count": 4,
@@ -1139,7 +1139,7 @@
   },
   "unmatched/7679028922297666830": {
    "id": "7679028922297666830",
-   "view_count": 609,
+   "view_count": 610,
    "like_count": 28,
    "comment_count": 0,
    "share_count": 1,
@@ -1289,7 +1289,7 @@
   },
   "unmatched/7674655164552285453": {
    "id": "7674655164552285453",
-   "view_count": 115,
+   "view_count": 116,
    "like_count": 3,
    "comment_count": 0,
    "share_count": 0,
