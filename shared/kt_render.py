@@ -67,7 +67,13 @@ HOOK_Y1, HOOK_Y2 = 1000, 1116
 CAP_Y = 1050             # captions sit here for the whole clip
 HOOK_BOTTOM = 930        # the hook's LAST line ends here, clear of CAP_Y
 CAP_SIZE = 72
-CAP_MAX = 20             # a CEILING, not a target. His own body captions run
+CAP_MAX = 30             # 30 Sept 2026: was 20, which is about three of Kevin's
+                         # words, so the scorer had to break every three words and it
+                         # broke inside phrases - "but they didn't | fold", "revamp our
+                         # business | model". Width was beating grammar every time. The
+                         # text is sized in pixels against the safe zone, so a longer
+                         # caption sets smaller rather than overflowing.
+                         # a CEILING, not a target. His own body captions run
                          # 8-15 chars ("THE ALPS", "WITH THIS BROWN") but they
                          # break on MEANING. At 15 the scorer could not fit
                          # "burns that all off" and had to break mid-phrase, so
@@ -889,6 +895,27 @@ def numbers_to_digits(ws):
     return out
 
 
+# Words a caption must never END on, because the thing that completes them is the next
+# word: auxiliaries and negations without their verb, prepositions without their
+# object, and the light verbs that only mean something with what follows.
+DANGLING = {
+    "is", "are", "was", "were", "be", "been", "being", "am",
+    "do", "does", "did", "don't", "doesn't", "didn't",
+    "have", "has", "had", "haven't", "hasn't", "hadn't",
+    "will", "won't", "would", "wouldn't", "can", "can't", "could", "couldn't",
+    "should", "shouldn't", "must", "may", "might", "shall",
+    "get", "got", "getting", "go", "goes", "going", "went", "come", "comes", "came",
+    "make", "makes", "made", "take", "takes", "took", "look", "looks", "looked",
+    "of", "to", "in", "on", "at", "for", "with", "from", "by", "into", "onto",
+    "through", "about", "over", "under", "between", "than", "as", "like",
+    "and", "or", "but", "so", "if", "when", "while", "because", "who", "which",
+    "very", "more", "most", "all", "every", "each", "no", "not", "never", "just",
+    # contractions of the same auxiliaries - "It's | the possibility thinker's creed"
+    "it's", "that's", "there's", "he's", "she's", "we're", "they're", "you're", "i'm",
+    "i've", "we've", "they've", "you've", "i'll", "we'll", "they'll", "you'll", "he'll",
+}
+
+
 def phrases_from_words(words):
     """Caption bursts timed to when each word is actually SPOKEN.
 
@@ -942,7 +969,14 @@ def phrases_from_words(words):
     # So the span a burst covers is now part of its cost. Past LEAD_MAX the
     # penalty is quadratic, which splits long bursts without shattering short
     # ones.
-    LEAD_MAX = 0.90
+    # 30 Sept 2026, Kamay on LOST-80-PERCENT: "the captions kind of skipped."
+    # They did not skip - nothing was early, nothing overlapped. 0.90s allows about
+    # two and a half of Kevin's words, so the scorer had to break SOMEWHERE every two
+    # words and it broke inside phrases: "but they didn't / fold.", "revamp our
+    # business / model and come / out stronger". A caption that splits a phrase reads
+    # as a stutter no matter how perfectly it is timed. The span still costs, but it
+    # no longer outweighs keeping a thought whole.
+    LEAD_MAX = 1.45
 
     def cost(i, j):
         """Cost of making words[i:j] one burst."""
@@ -985,12 +1019,31 @@ def phrases_from_words(words):
                 c -= 34                            # he paused here - break here
             elif gap >= 0.15:
                 c -= 14
+            # HIS PHRASING IS THE PAUSE STRUCTURE. Breaking where he did not pause and
+            # did not punctuate is breaking inside a phrase - "revamp our business |
+            # model", "the people | in charge". If there is no gap and no comma, this
+            # is the middle of something he said in one breath.
+            elif gap < 0.22 and not prev.rstrip().endswith((".", ",", "!", "?", ":", ";")):
+                c += 450
             if prev.rstrip().endswith((".", "!", "?")):
                 c -= 45                            # a sentence ended
             elif prev.rstrip().endswith(","):
                 c -= 20
             if j - i > 1 and burn._weak(prev):
-                c += 34                            # do not end on "and", "of"
+                c += 500                           # do not end on "and", "of"
+            # A CAPTION IS A PHRASE OR IT IS NOTHING. These are the words that cannot
+            # be the last thing on screen, because what completes them is in the next
+            # caption: an auxiliary without its verb ("but they didn't" | "fold"), a
+            # preposition without its object ("that went through" | "that COVID"), a
+            # verb without what it acts on ("revamp our business" | "model").
+            # 900 ON PURPOSE. The width ceiling is 20 characters and overflow costs
+            # (w-20)^2 * 12, so a structural penalty of a few hundred never won and
+            # phrases were broken to fit: "but they didn't | fold", "revamp our
+            # business | model". At 900 a caption may run to about 28 characters to
+            # keep a thought whole, and past that width wins again on its own - so the
+            # frame is still protected without the ceiling dictating the grammar.
+            if prev.lower().strip(".,!?\"'") in DANGLING:
+                c += 900
             if nxt.lower().strip(".,!?").rstrip("s") in MAGNITUDE_WORDS:
                 c += 200                           # never split $25 | BILLION
             # NAMES STAY TOGETHER. 16 Sept 2026: "I WAS IN NEW" / "YORK CITY".
@@ -1004,8 +1057,8 @@ def phrases_from_words(words):
                 c += 140
             # NEVER END ON AN ARTICLE. "WE DID THE" / "SHOW $450 MILLION" - a
             # caption ending on "the" is a sentence with its noun cut off.
-            if prev.lower().strip(".,!?\"'") in ("the", "a", "an", "my", "your", "his", "her", "our", "their", "this", "that's"):
-                c += 150
+            if prev.lower().strip(".,!?\"'") in ("the", "a", "an", "my", "your", "his", "her", "our", "their", "this", "that's", "that", "these", "those", "its"):
+                c += 900
             # PAIRS THAT ARE ONE THOUGHT. "COMING" / "IN", "DON'T" / "KNOW".
             # Fluent speech leaves no gap to detect them by, so they are named.
             pair = (prev.lower().strip(".,!?\"'"), nxt.lower().strip(".,!?\"'"))
@@ -1079,6 +1132,8 @@ TOGETHER = {
     ("find", "out"), ("figure", "out"), ("give", "up"), ("sign", "up"), ("set", "up"),
     ("going", "to"), ("gonna", "happen"), ("have", "to"), ("had", "to"), ("want", "to"),
     ("used", "to"), ("able", "to"), ("new", "york"), ("each", "other"), ("a", "lot"),
+    ("pissed", "off"), ("fed", "up"), ("stand", "up"), ("turn", "around"),
+    ("look", "back"), ("write", "a"), ("grew", "up"), ("bury", "their"),
 }
 
 
