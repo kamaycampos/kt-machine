@@ -6065,11 +6065,23 @@
    "hook": "Fig tree. Dead in 24 hours.",
    "bytes": 75613319,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "instagram": "could not fetch the video: Error: Media upload has failed with error code 2207077",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-30T19:27",
    "cta_keyword": "YES",
    "cta_variant": 5,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1055321894171632/",
+    "youtube": "https://youtube.com/shorts/nF7pC1IxiLU"
+   },
+   "caption_at_post": "A fig tree had no fruit. Jesus spoke to it once, and by the next morning it was dead down to the roots.\n\nThat's the story most people skip past in the prayer teaching, but it's the whole point. Right after it comes the actual instruction: speak to what stands in your way without doubting in your heart, and it moves.\n\nNot hope. Not wishing. A spoken word, believed completely.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#awakening #spirituality #faith #manifestation #ancientwisdom #kevintrudeau",
+   "posted_at": "2026-09-30T21:42"
   },
   {
    "file": "AR_TELEPHONE/01_FORGIVE-FIRST_92s.mp4",
@@ -6078,7 +6090,7 @@
    "bytes": 59563253,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-30T19:27",
+   "scheduled_at": "2026-09-30T22:25",
    "cta_keyword": "LUCKY",
    "cta_variant": 4,
    "cta_kind": "offer"
@@ -6116,7 +6128,7 @@
    "bytes": 32326646,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-30T19:27",
+   "scheduled_at": "2026-09-30T22:25",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -6128,7 +6140,7 @@
    "bytes": 52169979,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-30T19:27",
+   "scheduled_at": "2026-09-30T22:25",
    "cta_keyword": "RISE",
    "cta_variant": 3,
    "cta_kind": "question"
@@ -6140,7 +6152,7 @@
    "bytes": 39842183,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-30T19:27",
+   "scheduled_at": "2026-09-30T22:25",
    "cta_keyword": "YES",
    "cta_variant": 2,
    "cta_kind": "offer"
@@ -6162,12 +6174,26 @@
    "caption": "Here's a common error Kevin Trudeau sees people make: writing everything they have to do onto one single to-do list for tomorrow.\n\nYou can't get it all done, so most of it just sits there making you feel like you failed.\n\nHis fix: before you write anything down, ask if it actually has to happen today. If it doesn't, flip ahead in your calendar to a day when it can, and write it there instead. Nothing goes on tomorrow's list unless tomorrow is genuinely when it belongs.\n\nA daily list only works if it's actually daily - a handful of things, not everything.\n\nHow many things on your list today don't actually belong there?\n\n#kevintrudeau #productivity #successhabits #businesstips #timemanagement #mindset",
    "hook": "The to-do list mistake everyone makes",
    "bytes": 53291650,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-09-30T19:27",
    "cta_keyword": "MONEY",
    "cta_variant": 11,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1142017068151284/",
+    "instagram": "https://www.instagram.com/reel/Dd7wZ0DkpdG/",
+    "youtube": "https://youtube.com/shorts/odyoBleaHgo"
+   },
+   "caption_at_post": "Here's a common error Kevin Trudeau sees people make: writing everything they have to do onto one single to-do list for tomorrow.\n\nYou can't get it all done, so most of it just sits there making you feel like you failed.\n\nHis fix: before you write anything down, ask if it actually has to happen today. If it doesn't, flip ahead in your calendar to a day when it can, and write it there instead. Nothing goes on tomorrow's list unless tomorrow is genuinely when it belongs.\n\nA daily list only works if it's actually daily - a handful of things, not everything.\n\nHow many things on your list today don't actually belong there?\n\n#kevintrudeau #productivity #successhabits #businesstips #timemanagement #mindset",
+   "posted_at": "2026-09-30T21:46"
   },
   {
    "file": "KT_CLOCK/02_26-TABS-ONE-PERSON-EACH_112s.mp4",
@@ -6176,7 +6202,7 @@
    "bytes": 65799032,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-30T19:27",
+   "scheduled_at": "2026-09-30T22:25",
    "cta_keyword": "KT",
    "cta_variant": 16,
    "cta_kind": "question"
@@ -6200,7 +6226,7 @@
    "bytes": 24819480,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-30T19:27",
+   "scheduled_at": "2026-09-30T22:25",
    "cta_keyword": "MONEY",
    "cta_variant": 8,
    "cta_kind": "offer"
@@ -6286,7 +6312,7 @@
    "bytes": 79714644,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-30T19:27",
+   "scheduled_at": "2026-09-30T22:25",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
    "cta_kind": "offer"
@@ -6310,7 +6336,7 @@
    "bytes": 97374473,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-30T19:27",
+   "scheduled_at": "2026-09-30T22:25",
    "cta_keyword": "WISH",
    "cta_variant": 12,
    "cta_kind": "offer"
@@ -6322,7 +6348,7 @@
    "bytes": 102470318,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-30T19:43",
+   "scheduled_at": "2026-09-30T22:25",
    "cta_keyword": "WISH",
    "cta_variant": 17,
    "cta_kind": "offer"
@@ -6334,7 +6360,7 @@
    "bytes": 18923464,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-30T19:27",
+   "scheduled_at": "2026-09-30T22:25",
    "cta_keyword": "BRAIN",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -6346,7 +6372,7 @@
    "bytes": 19909883,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-30T19:27",
+   "scheduled_at": "2026-09-30T22:25",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -6394,7 +6420,7 @@
    "bytes": 31484951,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-30T19:27",
+   "scheduled_at": "2026-09-30T22:25",
    "cta_keyword": "MONEY",
    "cta_variant": 14,
    "cta_kind": "offer"
@@ -6456,7 +6482,7 @@
    "bytes": 21569033,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-09-30T19:27",
+   "scheduled_at": "2026-09-30T22:25",
    "cta_keyword": "BRAIN",
    "cta_variant": 15,
    "cta_kind": "offer"
