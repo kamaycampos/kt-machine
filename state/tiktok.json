@@ -1,16 +1,16 @@
 {
- "at": "2026-10-01T06:30",
+ "at": "2026-10-01T13:52",
  "profile": {
-  "following_count": 8,
-  "likes_count": 5805,
+  "likes_count": 5807,
   "video_count": 151,
-  "follower_count": 415
+  "follower_count": 415,
+  "following_count": 8
  },
  "videos": {
   "KT_SHARK/01_WHY-YOUR-FRIENDS-KEEP-YOU-BROKE_148s.mp4": {
    "id": "7691404629271137550",
-   "view_count": 0,
-   "like_count": 0,
+   "view_count": 2,
+   "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7691404629271137550?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -19,8 +19,8 @@
   },
   "KT_LEDGER/01_THREE-IDEAS-THEY-CALLED-INSANE_60s.mp4": {
    "id": "7691319700512345358",
-   "view_count": 0,
-   "like_count": 0,
+   "view_count": 2,
+   "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7691319700512345358?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -179,7 +179,7 @@
   },
   "KT_WEALTH/02_ROCKEFELLER-EVERY-DISASTER_103s.mp4": {
    "id": "7689976707771567374",
-   "view_count": 20,
+   "view_count": 23,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -319,7 +319,7 @@
   },
   "KT_SECRET/01_THE-SAME-RECORDS_150s.mp4": {
    "id": "7688541338953862413",
-   "view_count": 412,
+   "view_count": 413,
    "like_count": 40,
    "comment_count": 2,
    "share_count": 1,
@@ -399,7 +399,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3653,
+   "view_count": 3654,
    "like_count": 153,
    "comment_count": 7,
    "share_count": 16,
@@ -569,7 +569,7 @@
   },
   "unmatched/7685818408352435470": {
    "id": "7685818408352435470",
-   "view_count": 802,
+   "view_count": 804,
    "like_count": 99,
    "comment_count": 2,
    "share_count": 5,
@@ -619,7 +619,7 @@
   },
   "KT_HOME/05_05_THE-SINGLE-MOST-POWERFUL-OBJECT_86s.mp4": {
    "id": "7685101409963871501",
-   "view_count": 1350,
+   "view_count": 1352,
    "like_count": 102,
    "comment_count": 4,
    "share_count": 9,
@@ -639,7 +639,7 @@
   },
   "KT_HOME/02_02_WHY-RICH-HOMES-ARE-FULL-OF-OLD-THINGS_85s.mp4": {
    "id": "7685065417743797518",
-   "view_count": 3461,
+   "view_count": 3463,
    "like_count": 268,
    "comment_count": 6,
    "share_count": 43,
@@ -649,7 +649,7 @@
   },
   "KT_HOME/06_06_THREE-THINGS-TO-DO-TO-YOUR-HOME_69s.mp4": {
    "id": "7684994156057447693",
-   "view_count": 2065,
+   "view_count": 2066,
    "like_count": 176,
    "comment_count": 4,
    "share_count": 35,
