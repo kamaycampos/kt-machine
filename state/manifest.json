@@ -6218,12 +6218,26 @@
    "caption": "A consultant sat in a CEO's office for a month and didn't say a word.\n\nCharles Schwab ran U.S. Steel, the largest company in the world, and he was overwhelmed. After watching him, Ivy Lee gave him one instruction: every night, write the six most important things you have to do tomorrow, in order. Work only on the first one until it's done. Then move to the second.\n\nSchwab was skeptical, so Ivy Lee said to try it 60 days, then pay whatever he thought it was worth.\n\nThirty days later, Ivy Lee opened a check for $250,000 - over $5 million in today's money.\n\nWhat would one focused list be worth to your business?\n\n#kevintrudeau #productivity #businesstips #successhabits #timemanagement #entrepreneur",
    "hook": "A $250,000 check for one list",
    "bytes": 97355137,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "MONEY",
    "cta_variant": 26,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/28424602730543722/",
+    "instagram": "https://www.instagram.com/reel/DeAaQsRDkvi/",
+    "youtube": "https://youtube.com/shorts/mEsdh3B1CFw"
+   },
+   "caption_at_post": "A consultant sat in a CEO's office for a month and didn't say a word.\n\nCharles Schwab ran U.S. Steel, the largest company in the world, and he was overwhelmed. After watching him, Ivy Lee gave him one instruction: every night, write the six most important things you have to do tomorrow, in order. Work only on the first one until it's done. Then move to the second.\n\nSchwab was skeptical, so Ivy Lee said to try it 60 days, then pay whatever he thought it was worth.\n\nThirty days later, Ivy Lee opened a check for $250,000 - over $5 million in today's money.\n\nWhat would one focused list be worth to your business?\n\n#kevintrudeau #productivity #businesstips #successhabits #timemanagement #entrepreneur",
+   "posted_at": "2026-10-02T17:08"
   },
   {
    "file": "KT_CLOCK/01_THE-TO-DO-LIST-MISTAKE-EVERYONE-MAKES_90s.mp4",
@@ -6414,7 +6428,7 @@
    "bytes": 83015453,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T15:26",
+   "scheduled_at": "2026-10-02T17:50",
    "cta_keyword": "BRAIN",
    "cta_variant": 27,
    "cta_kind": "offer"
@@ -6452,7 +6466,7 @@
    "bytes": 79714644,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T13:26",
+   "scheduled_at": "2026-10-02T17:50",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
    "cta_kind": "offer"
@@ -6476,7 +6490,7 @@
    "bytes": 97374473,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T13:26",
+   "scheduled_at": "2026-10-02T17:50",
    "cta_keyword": "WISH",
    "cta_variant": 12,
    "cta_kind": "offer"
@@ -6488,7 +6502,7 @@
    "bytes": 102470318,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T13:26",
+   "scheduled_at": "2026-10-02T17:50",
    "cta_keyword": "WISH",
    "cta_variant": 17,
    "cta_kind": "offer"
@@ -6679,7 +6693,11 @@
    "hook": "Love changed the shape of water",
    "bytes": 45135898,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-02T20:18",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_KARMA/02_TREAT-HIM-BETTER-THAN-HE-DESERVES_111s.mp4",
@@ -6687,7 +6705,11 @@
    "hook": "Treat him better than he deserves",
    "bytes": 70120577,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-03T10:29",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_RELEASE/01_HALF-AN-INCH-FROM-THE-GROUND_46s.mp4",
@@ -6695,7 +6717,11 @@
    "hook": "Half an inch from solid ground",
    "bytes": 30665006,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-02T18:10",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_RELEASE/01_LETTING-GO-ISNT-FORGIVING_64s.mp4",
@@ -6703,7 +6729,11 @@
    "hook": "Letting go isn't forgiving them",
    "bytes": 44116782,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-03T06:53",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_RELEASE/02_BLESS-THE-PEOPLE-WHO-HURT-YOU_89s.mp4",
@@ -6711,7 +6741,11 @@
    "hook": "Bless the people who hurt you",
    "bytes": 59107124,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-03T12:05",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_RELEASE/02_NO-MUFFINS-STILL-A-GOOD-MORNING_96s.mp4",
@@ -6719,7 +6753,11 @@
    "hook": "No muffins. Still a good morning.",
    "bytes": 68542795,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-03T15:39",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "KT_DUTY/01_HEADLIGHTS-ON-A-DARK-ROAD_91s.mp4",
@@ -6727,7 +6765,11 @@
    "hook": "One step is all you need",
    "bytes": 60085691,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-03T12:51",
+   "cta_keyword": "WISH",
+   "cta_variant": 7,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_DUTY/01_PURPOSE-IS-THE-WRONG-WORD_91s.mp4",
@@ -6735,7 +6777,11 @@
    "hook": "The purpose myth Duty is real",
    "bytes": 60377814,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-03T18:10",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 9,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_MEMORY/01_CHICAGO-UNION-SAID-NO_86s.mp4",
@@ -6743,7 +6789,11 @@
    "hook": "Why isn't this taught in schools",
    "bytes": 83987082,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-03T19:43",
+   "cta_keyword": "KT",
+   "cta_variant": 10,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_SILENT/01_I-HOPE-HE-FAILS_66s.mp4",
@@ -6751,7 +6801,11 @@
    "hook": "Why friends want you to fail",
    "bytes": 54111522,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-02T20:04",
+   "cta_keyword": "KT",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_SILENT/02_THE-TWO-FINGER-TEST_69s.mp4",
@@ -6759,7 +6813,11 @@
    "hook": "A two-finger test weakens your arm",
    "bytes": 57013608,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-03T15:05",
+   "cta_keyword": "MONEY",
+   "cta_variant": 8,
+   "cta_kind": "question"
   },
   {
    "file": "KT_SILENT/02_TWO-PEOPLE-SAME-GOAL_97s.mp4",
@@ -6767,7 +6825,11 @@
    "hook": "Two people, same goal win more",
    "bytes": 84209399,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-04T07:02",
+   "cta_keyword": "WISH",
+   "cta_variant": 11,
+   "cta_kind": "question"
   }
  ]
 }
