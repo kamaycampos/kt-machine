@@ -6424,12 +6424,26 @@
    "caption": "In this particular meeting there was a raffle. Maybe a hundred kids, one ticket each, three prizes.\n\nA young Kevin Trudeau decided he was going to win - and instead of just hoping, he put himself into a specific mental state and held the image of winning, with total certainty, before a single name was called.\n\nFirst prize: not him. Second prize: not him. He stood up and started walking toward the stage before the third name was even drawn.\n\nThey called it: Kevin Trudeau. \"I said right here. I knew that was my name. I saw it so clear.\"\n\nThat was the moment he says he knew you can change your luck.\n\n#kevintrudeau #manifestation #lawofattraction #mindset #scienceofluck #personalgrowth",
    "hook": "1-in-100 odds he already knew",
    "bytes": 101385776,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-02T02:24",
    "cta_keyword": "KT",
    "cta_variant": 22,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1115107167697918/",
+    "instagram": "https://www.instagram.com/reel/Dd_XVeJFXGT/",
+    "youtube": "https://youtube.com/shorts/dLva4lzcGgc"
+   },
+   "caption_at_post": "In this particular meeting there was a raffle. Maybe a hundred kids, one ticket each, three prizes.\n\nA young Kevin Trudeau decided he was going to win - and instead of just hoping, he put himself into a specific mental state and held the image of winning, with total certainty, before a single name was called.\n\nFirst prize: not him. Second prize: not him. He stood up and started walking toward the stage before the third name was even drawn.\n\nThey called it: Kevin Trudeau. \"I said right here. I knew that was my name. I saw it so clear.\"\n\nThat was the moment he says he knew you can change your luck.\n\n#kevintrudeau #manifestation #lawofattraction #mindset #scienceofluck #personalgrowth",
+   "posted_at": "2026-10-02T07:24"
   },
   {
    "file": "KT_LUCK/01_BILL-GATES-NUMBER-ONE-REASON-LUCK_110s.mp4",
@@ -6438,7 +6452,7 @@
    "bytes": 79714644,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T02:24",
+   "scheduled_at": "2026-10-02T08:05",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
    "cta_kind": "offer"
@@ -6462,7 +6476,7 @@
    "bytes": 97374473,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T02:24",
+   "scheduled_at": "2026-10-02T08:05",
    "cta_keyword": "WISH",
    "cta_variant": 12,
    "cta_kind": "offer"
@@ -6474,7 +6488,7 @@
    "bytes": 102470318,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T02:24",
+   "scheduled_at": "2026-10-02T08:05",
    "cta_keyword": "WISH",
    "cta_variant": 17,
    "cta_kind": "offer"
@@ -6486,7 +6500,7 @@
    "bytes": 18923464,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T02:24",
+   "scheduled_at": "2026-10-02T08:05",
    "cta_keyword": "BRAIN",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -6498,7 +6512,7 @@
    "bytes": 19909883,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T02:24",
+   "scheduled_at": "2026-10-02T08:05",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -6534,7 +6548,7 @@
    "bytes": 31673543,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T02:24",
+   "scheduled_at": "2026-10-02T08:05",
    "cta_keyword": "BRAIN",
    "cta_variant": 19,
    "cta_kind": "question"
@@ -6546,7 +6560,7 @@
    "bytes": 31484951,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T02:24",
+   "scheduled_at": "2026-10-02T08:05",
    "cta_keyword": "MONEY",
    "cta_variant": 14,
    "cta_kind": "offer"
@@ -6596,7 +6610,7 @@
    "bytes": 27753876,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T02:24",
+   "scheduled_at": "2026-10-02T08:05",
    "cta_keyword": "MONEY",
    "cta_variant": 20,
    "cta_kind": "offer"
@@ -6608,7 +6622,7 @@
    "bytes": 21569033,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T02:24",
+   "scheduled_at": "2026-10-02T08:05",
    "cta_keyword": "BRAIN",
    "cta_variant": 15,
    "cta_kind": "offer"
