@@ -115,7 +115,8 @@ def studio_by_default(path):
     s = s.replace("          KT_SLOTS: ${{ secrets.KT_SLOTS }}\n",
                   "          KT_SLOTS: ${{ secrets.KT_SLOTS }}\n"
                   "          OFFER_URL: ${{ secrets.OFFER_URL }}\n"
-                  "          DISCLOSURE: ${{ vars.DISCLOSURE || '#ad - I earn a commission if you buy through my link.' }}\n")
+                  "          DISCLOSURE: ${{ vars.DISCLOSURE || '#ad - I earn a commission if you buy through my link.' }}\n"
+                  "          KIT_STUDIO: ${{ vars.AUTOPOST != 'on' && '1' || '0' }}\n")
     # The member's control panel is written right after the captions board.
     s = s.replace("run: python build_pages.py", "run: python build_pages.py && python panel/build_panel.py")
     # Awakened Rise's credentials are Yaren's account - a member has one account.

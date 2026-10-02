@@ -234,6 +234,13 @@ def main():
         log(f"scheduled {changed} clip(s)")
 
     idxs, moved = engine.due_clips(man)
+    # STUDIO MODE KEEPS ITS SCHEDULE (Affiliate Factory, 2 Oct 2026). A member
+    # with autopilot off posts by hand from the board, so the slots ARE the plan;
+    # the first member run planned them and threw them away. Only a member copy
+    # sets KIT_STUDIO - a manual dry run here still saves nothing.
+    if dry and changed and os.environ.get("KIT_STUDIO") == "1":
+        engine.save(man)
+        log("studio mode: schedule saved for posting by hand")
     if dry:
         import urllib.request
         log(f"DRY RUN - would publish {len(idxs)} clip(s)")
