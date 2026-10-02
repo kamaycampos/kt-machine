@@ -710,6 +710,12 @@ def thumb(video):
     # taken there catches it half gone - which is the washed-out text Kamay saw
     # on the grid.
     PROBES = [0.6 + 0.2 * i for i in range(10)]           # 0.6s .. 2.4s
+    # 2 Oct 2026: A COVER SHOWS A FACE. The first member clip opened on B-roll
+    # (the back of a head in headphones) and the stillest frame won, so the
+    # cover - and the board - showed no one. The hook now stays up HOOK_SECS,
+    # so the window reaches to 4.0s, and a frame with a face is preferred above
+    # all else. No face anywhere in the window = the old choice, and a note.
+    LATE = [2.6 + 0.2 * i for i in range(8) if 2.6 + 0.2 * i <= min(4.0, HOOK_SECS - 0.4)]
     LOOK = "crop=iw*0.7:ih*0.34:iw*0.15:ih*0.02"
 
     def _gray(t, tag):
@@ -726,21 +732,59 @@ def thumb(video):
             os.remove(q)
         return im
 
-    scored = []
-    for t in PROBES:
-        a = _gray(t, "a")
-        b = _gray(t + 0.07, "b")
-        if a is None or b is None:
-            continue
+    face_model = os.path.join(HOME, "bin/yunet.onnx")
+    det = None
+    try:
+        import cv2
+        if os.path.exists(face_model) and hasattr(cv2, "FaceDetectorYN_create"):
+            det = cv2.FaceDetectorYN_create(face_model, "", (320, 320), 0.6, 0.3, 5000)
+    except Exception:
+        det = None
+
+    def _face(t):
+        """Width of the biggest face at t, as a fraction of the frame (0 = none)."""
+        if det is None:
+            return 0.0
+        q = dest + ".f.jpg"
+        subprocess.run([FFMPEG, "-y", "-loglevel", "error", "-ss", f"{t:.2f}",
+                        "-i", video, "-frames:v", "1", "-vf", "scale=360:-2",
+                        "-q:v", "3", q], capture_output=True)
         try:
             import cv2
-            import numpy as np
-            motion = float(np.mean(np.abs(a.astype(np.int16) - b.astype(np.int16))))
-            sharp = float(cv2.Laplacian(a, cv2.CV_64F).var())
-            lit = float(a.mean())
+            img = cv2.imread(q)
+            h, w = img.shape[:2]
+            det.setInputSize((w, h))
+            _, faces = det.detect(img)
+            return 0.0 if faces is None or len(faces) == 0 else float(max(f[2] for f in faces) / w)
         except Exception:
-            continue
-        scored.append({"t": t, "motion": motion, "sharp": sharp, "lit": lit})
+            return 0.0
+        finally:
+            if os.path.exists(q):
+                os.remove(q)
+
+    scored = []
+
+    def _probe(times):
+        for t in times:
+            a = _gray(t, "a")
+            b = _gray(t + 0.07, "b")
+            if a is None or b is None:
+                continue
+            try:
+                import cv2
+                import numpy as np
+                motion = float(np.mean(np.abs(a.astype(np.int16) - b.astype(np.int16))))
+                sharp = float(cv2.Laplacian(a, cv2.CV_64F).var())
+                lit = float(a.mean())
+            except Exception:
+                continue
+            scored.append({"t": t, "motion": motion, "sharp": sharp, "lit": lit, "face": _face(t)})
+
+    _probe(PROBES)
+    # Look later in the hook window only when the usual window shows no face,
+    # so a clip whose face is there early keeps exactly the cover it had.
+    if det is not None and not any(x["face"] >= 0.12 for x in scored):
+        _probe(LATE)
 
     best_t = None
     if scored:
@@ -751,8 +795,12 @@ def thumb(video):
             # is unusable however still it is
             x["score"] = (0.65 * (1.0 - x["motion"] / mm)
                           + 0.35 * (x["sharp"] / ms)
-                          - (0.5 if x["lit"] < 35 else 0.0))
+                          - (0.5 if x["lit"] < 35 else 0.0)
+                          + (1.5 if x["face"] >= 0.12 else 0.0))   # a face wins
         best_t = max(scored, key=lambda x: x["score"])["t"]
+        if det is not None and not any(x["face"] >= 0.12 for x in scored):
+            print(f"  NOTE {os.path.basename(video)}: no face in the first "
+                  f"{(LATE or PROBES)[-1]:.1f}s - the opening is B-roll; consider a later start")
 
     if best_t is None:
         best_t = 1.5
