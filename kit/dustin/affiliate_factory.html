@@ -1,0 +1,268 @@
+<title>The Affiliate Factory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: a single reading column styled like the clips it describes. Montserrat Black capitals with one gold payoff line,
+   a 9:16 frame as the hero, and the factory's real stages and gates as the spine. */
+:root{
+  --bg:#f3f2ee; --surface:#ffffff; --ink:#16161a; --muted:#5b5a62; --line:#dcdad3;
+  --accent:#a8740a; --accent-ink:#ffffff; --frame:#1b1a1f; --frame-fg:#ffffff; --hot:#ffd400;
+  --display:"Montserrat","Arial Black",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121216; --surface:#1b1b21; --ink:#f1f0ec; --muted:#a3a2ab; --line:#2e2e36;
+  --accent:#ffd400; --accent-ink:#121216; --frame:#000000; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121216; --surface:#1b1b21; --ink:#f1f0ec; --muted:#a3a2ab; --line:#2e2e36;
+  --accent:#ffd400; --accent-ink:#121216; --frame:#000000; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 var(--body);padding-inline:20px;padding-block:0 64px;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+.wrap{max-width:880px;margin:0 auto;display:grid;gap:56px}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;text-wrap:balance;margin:0;letter-spacing:-.01em;line-height:1.02}
+h2{font-size:clamp(26px,4.4vw,36px);font-weight:900}
+h3{font-size:15px;font-weight:800;letter-spacing:.02em;line-height:1.25}
+p{margin:0;max-width:65ch}
+.gold{color:var(--accent)}
+.eyebrow{font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+section{display:grid;gap:20px}
+.lede{font-size:19px;color:var(--ink)}
+.muted{color:var(--muted)}
+
+/* hero */
+header.hero{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:40px;align-items:center;padding-top:48px}
+.hero h1{font-size:clamp(46px,8.6vw,84px);font-weight:900}
+.hero .copy{display:grid;gap:22px;min-width:0}
+.phone{aspect-ratio:9/16;max-width:100%;background:var(--frame);border-radius:22px;position:relative;overflow:hidden;
+  box-shadow:0 30px 60px -30px rgba(0,0,0,.55)}
+.phone::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(120% 70% at 50% 35%,#5a4a3a 0%,#2a2420 45%,#0c0b0d 100%)}
+.phone .head{position:absolute;left:50%;top:22%;width:46%;aspect-ratio:3/4;transform:translateX(-50%);
+  border-radius:48% 48% 40% 40%;background:radial-gradient(70% 60% at 50% 40%,#b48a6c,#6b4c3a 70%,transparent 72%);opacity:.9}
+.phone .body{position:absolute;left:50%;bottom:-6%;width:92%;height:46%;transform:translateX(-50%);
+  border-radius:50% 50% 0 0;background:linear-gradient(#24252c,#141419)}
+.phone .hook{position:absolute;left:8%;right:8%;top:57%;font:900 21px/1.04 var(--display);text-transform:uppercase;
+  color:var(--frame-fg);text-shadow:0 3px 10px rgba(0,0,0,.85);text-align:center}
+.phone .hook span{display:block;color:var(--hot)}
+.phone .tag{position:absolute;left:10px;top:10px;font:500 10px/1 var(--mono);color:#ddd;background:rgba(0,0,0,.45);padding:5px 7px;border-radius:4px}
+.phone .bar{position:absolute;left:10px;right:10px;bottom:12px;height:3px;background:rgba(255,255,255,.25);border-radius:2px}
+.phone .bar i{display:block;height:100%;width:14%;background:var(--hot);border-radius:2px}
+.byline{display:flex;flex-wrap:wrap;gap:6px 18px}
+
+/* proof */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.stat{background:var(--surface);padding:20px 18px;display:grid;gap:6px;align-content:start}
+.stat b{font:900 clamp(26px,3.6vw,34px)/1 var(--display);font-variant-numeric:tabular-nums}
+.stat small{font-size:14px;line-height:1.4;color:var(--muted)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;counter-reset:s}
+.step{display:grid;gap:8px;align-content:start;border-top:3px solid var(--ink);padding-top:14px;min-width:0}
+.step::before{counter-increment:s;content:counter(s);font:900 30px/1 var(--display);color:var(--accent)}
+.step p{font-size:16px}
+kbd{font:500 .85em var(--mono);background:var(--surface);border:1px solid var(--line);padding:1px 6px;border-radius:4px}
+
+/* pipeline */
+.pipe{display:grid;gap:0;border-left:2px solid var(--line);margin-left:6px}
+.stage{display:grid;grid-template-columns:150px minmax(0,1fr);gap:18px;padding:12px 0 12px 22px;position:relative}
+.stage::before{content:"";position:absolute;left:-7px;top:19px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.stage h3{padding-top:3px}
+.stage p{font-size:16px}
+.gate{font:500 12px/1.5 var(--mono);color:var(--muted);display:block;margin-top:4px}
+
+/* tables */
+.tbl{overflow-x:auto;border:1px solid var(--line);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15.5px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:800 12px/1.3 var(--display);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600;white-space:nowrap}
+
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.two>div{display:grid;gap:8px;align-content:start;min-width:0}
+ul{margin:0;padding-left:1.1em;display:grid;gap:6px}
+li{max-width:62ch}
+
+.ask{background:var(--ink);color:var(--bg);padding:28px;display:grid;gap:18px}
+.ask h2{color:var(--bg)}
+.ask ol{margin:0;padding-left:1.3em;display:grid;gap:12px}
+.ask li b{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:14px;letter-spacing:.02em}
+.ask .gold{color:var(--hot)}
+
+footer{border-top:1px solid var(--line);padding-top:18px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+@media (max-width:720px){
+  header.hero{grid-template-columns:1fr;padding-top:28px}
+  .phone{width:200px;justify-self:center}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps,.two{grid-template-columns:1fr}
+  .stage{grid-template-columns:1fr;gap:4px}
+}
+@media print{
+  html,body{background:var(--bg)}
+  body{padding-inline:14mm;padding-block:12mm}
+  .wrap{gap:40px}
+  header.hero{padding-top:0}
+  h2,h3{break-after:avoid}
+  .stat,.stage,.step,tr,.ask,.phone{break-inside:avoid}
+}
+@page{size:Letter;margin:0}
+</style>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="copy">
+    <div class="eyebrow">Proposal for the KT Affiliate Program · 2 October 2026</div>
+    <h1>The Affiliate <span class="gold">Factory</span></h1>
+    <p class="lede">A clip studio every Kevin Trudeau affiliate can run with Claude. It finds Kevin's strongest moments, cuts them into full-screen clips with a six-word hook and captions timed to every word, writes the caption with the member's link, and posts on schedule to Instagram, Facebook, YouTube and TikTok.</p>
+    <div class="byline eyebrow"><span>Built and run by Kamay Herranen</span><span>Proven on a live account</span></div>
+  </div>
+  <div class="phone" aria-label="A finished clip at second one: a six-word hook over the speaker, second line in yellow">
+    <div class="head"></div><div class="body"></div>
+    <div class="tag">0:01 / 1:12</div>
+    <div class="hook">How rich people<span>actually buy houses</span></div>
+    <div class="bar"><i></i></div>
+  </div>
+</header>
+
+<section>
+  <div class="eyebrow">Proof: one account, real numbers</div>
+  <div class="stats">
+    <div class="stat"><b>214,805</b><small>views on one reel, "How rich people actually buy houses"</small></div>
+    <div class="stat"><b>6 a day</b><small>clips posted across 4 platforms, with no one at a computer</small></div>
+    <div class="stat"><b>$0</b><small>a month in servers. The factory runs on free GitHub Actions</small></div>
+    <div class="stat"><b>36.8%</b><small>skip rate on the top 10% of 112 measured reels, vs 47.8% for the rest</small></div>
+  </div>
+  <p class="muted">The same engine also makes the clips the VSC team delivers for the Affiliate Portal (GIN Project 15). Every number above comes from the account's own Instagram, TikTok and YouTube data. Each clip has its own record of what was posted and how it performed.</p>
+</section>
+
+<section>
+  <h2>A member is live in <span class="gold">three steps</span></h2>
+  <p>A member needs Claude Pro ($20 a month), a free GitHub account and their affiliate link. Nothing else to buy, install or host.</p>
+  <div class="steps">
+    <div class="step"><h3>Copy the factory</h3><p>One button, <kbd>Use this template</kbd>, makes their own copy of the whole machine.</p></div>
+    <div class="step"><h3>Open it in Claude</h3><p>At claude.ai/code they pick their copy. Claude already knows the whole system from the kit's instructions.</p></div>
+    <div class="step"><h3>Type <kbd>start</kbd></h3><p>Claude asks six questions about their voice and audience, sets everything up and gives each click, one at a time.</p></div>
+  </div>
+  <p>From then on, the factory runs on five words: <kbd>plan</kbd> picks the week's clips in their voice, <kbd>clips</kbd> shows what was made, <kbd>report</kbd> says what is winning, <kbd>post</kbd> switches on autopilot, and anything else they ask for (a theme week, a series, a new angle) Claude turns into clips.</p>
+</section>
+
+<section>
+  <h2>What the factory does <span class="gold">by itself</span></h2>
+  <p>Claude makes one judgment: which moments to clip. Everything else is automatic, and every clip passes a set of checks that exist because a real clip once failed them.</p>
+  <div class="pipe">
+    <div class="stage"><h3>Stock</h3><p>Pulls Kevin's episodes in HD and keeps them encrypted.<span class="gate">gate: 1080p minimum source</span></p></div>
+    <div class="stage"><h3>Transcribe</h3><p>Word-level transcript of every episode, 16 at a time in parallel.</p></div>
+    <div class="stage"><h3>Choose</h3><p>The member's Claude reads every episode and picks 6-9 moments, led by the strongest opening line and the emotion under it.<span class="gate">gates: six-word hook with a concrete number or name · no worn-out words · no repeated topics</span></p></div>
+    <div class="stage"><h3>Cut</h3><p>Cuts on the exact first and last words, so a clip never opens mid-sentence or ends before the payoff.<span class="gate">gates: named edges found in the audio · no advert or testimonial endings</span></p></div>
+    <div class="stage"><h3>Render</h3><p>Full-screen 9:16 that follows Kevin's face, heavy capitals with one gold payoff line, captions of 1-3 words locked to the sound.<span class="gate">gates: captions checked against the waveform · first and last second must be speech · 1080×1920</span></p></div>
+    <div class="stage"><h3>Schedule &amp; post</h3><p>Spreads clips across the member's own time slots and writes a caption for each platform's link rules.<span class="gate">rules: 45 min apart · one source at most twice a day · never the same clip twice</span></p></div>
+    <div class="stage"><h3>Learn</h3><p>Reads back views, skip rate, shares and saves, and keeps a living record of what works so every next week's choices get sharper.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Every member's factory is <span class="gold">their own</span></h2>
+  <div class="two">
+    <div>
+      <h3>Their brand file</h3>
+      <p>Claude writes it with them on day one and reads it before every task. It holds:</p>
+      <ul>
+        <li>their name and handles, and who they talk to</li>
+        <li>their lane, for example 50% wealth habits, 20% real estate, 30% <i>Your Wish Is Your Command</i></li>
+        <li>their voice: teacher, challenger, storyteller or their own</li>
+        <li>their comment keyword and their link</li>
+        <li>their platforms and posting times</li>
+      </ul>
+    </div>
+    <div>
+      <h3>A proven starting point</h3>
+      <p>Every member starts with what was learned on the pilot account:</p>
+      <ul>
+        <li>method clips out-reach warnings, 30-40× on shares and saves</li>
+        <li>a "What…" opener beats "How…" on TikTok</li>
+        <li>full-screen beats letterbox by 20-100×</li>
+        <li>BRAIN draws 7× the comments FREE does</li>
+      </ul>
+      <p>Their own numbers then refine it for their account.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Posting: <span class="gold">studio</span> on day one, <span class="gold">autopilot</span> when ready</h2>
+  <p>On day one the factory is in studio mode: it makes and schedules every clip, and the member posts from their board, where each caption is ready to copy. The command <kbd>post</kbd> then connects each platform with Claude guiding every click.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Platform</th><th>Setup with Claude</th><th>On autopilot</th></tr></thead>
+    <tbody>
+      <tr><td>Instagram + Facebook</td><td>~20 min, one Meta setup for both, no app review</td><td>Reels and Stories post fully automatically</td></tr>
+      <tr><td>YouTube</td><td>~15 min, plus Google's free one-time API review</td><td>Shorts post automatically with chosen covers</td></tr>
+      <tr><td>TikTok</td><td>~15 min</td><td>Each clip lands in TikTok drafts with its caption; one tap to post, room to add a trending sound</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Compliance is <span class="gold">built in</span></h2>
+  <p>The kit's rules are enforced on every plan, because one strike costs a member more than any clip earns:</p>
+  <ul>
+    <li>only footage the affiliate program authorises</li>
+    <li>an affiliate disclosure on every post</li>
+    <li>no health or cure claims</li>
+    <li>no income promises</li>
+    <li>no words Kevin did not say</li>
+    <li>members post as themselves, never as Kevin or GIN</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Pilot first, <span class="gold">then thousands</span></h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Stage</th><th>Who</th><th>Passes when</th></tr></thead>
+    <tbody>
+      <tr><td>Week 1</td><td>5 members your team chooses</td><td>Each is live in under 30 minutes of their own time. First clips arrive within 24 hours. Zero compliance flags.</td></tr>
+      <tr><td>Weeks 2-3</td><td>50 members</td><td>Members run it without help beyond their own Claude. Every question goes back into the kit.</td></tr>
+      <tr><td>Rollout</td><td>The affiliate base</td><td>Launch with a short walkthrough video and a members' leaderboard of what is working.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="ask">
+  <h2>Four decisions from <span class="gold">your team</span></h2>
+  <ol>
+    <li><b>Authorised footage.</b> Which sources may affiliates clip: Kevin's public episodes, the Affiliate Portal library, or both? We also need a way for GIN's copyright team to recognise a member's clips, so it does not take them down.</li>
+    <li><b>Disclosure wording.</b> The exact affiliate disclosure the program wants on every post.</li>
+    <li><b>Links.</b> How each member's tracked link is built, so the kit can check that it is set up correctly.</li>
+    <li><b>Five pilot members.</b> Names, and a start date.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Next <span class="gold">on the build</span></h2>
+  <div class="two">
+    <div>
+      <h3>Style Studio</h3>
+      <p>The first three seconds decide a clip. These are next for that opening:</p>
+      <ul>
+        <li>hook colours drawn from each clip's own frame</li>
+        <li>a slow push-in</li>
+        <li>a sound hit under the hook</li>
+      </ul>
+      <p>After that, each member gets their own fonts, colours and motion.</p>
+    </div>
+    <div>
+      <h3>The network</h3>
+      <ul>
+        <li>Members can opt in to share their numbers, so what one account learns improves every member's playbook.</li>
+        <li>Spanish and other languages are on the way.</li>
+        <li>An affiliate dashboard is planned for your team.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="eyebrow"><span>The Affiliate Factory · v1 · 2 October 2026</span><span>Kamay Herranen</span></footer>
+</div>
