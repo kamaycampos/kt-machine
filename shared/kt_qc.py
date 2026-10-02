@@ -43,7 +43,12 @@ OPENERS = {"and", "but", "so", "because", "it", "the", "a", "an", "if", "when", 
 # function words that recur in correct English one word apart: "that firing that",
 # "the gold the", "to it to". Damage repeats content words, not these.
 REPEATABLE = {"that", "the", "a", "to", "of", "it", "is", "in", "on", "at", "as",
-              "was", "had", "very", "no", "you", "they", "he", "she", "we", "i"}
+              "was", "had", "very", "no", "you", "they", "he", "she", "we", "i",
+              # 2 Oct 2026: auxiliaries wrap a question around its subject - "What do
+              # you do?", "what did you do", "are you, are you" - and failed
+              # THE-450-MILLION-BREAKUP, which was right.
+              "do", "did", "does", "are", "were", "have", "has", "can", "will",
+              "would"}
 
 
 def sh(*a):
