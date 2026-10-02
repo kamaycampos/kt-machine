@@ -186,6 +186,9 @@ def build():
         "kit": load("KIT.json", {}),
         "summary": summary(rows),
         "dms": dm_stats(rows),
+        # Earnings stay encrypted here; the Money room decrypts them in the
+        # member's own browser with a passphrase that never touches the repo.
+        "money_enc": read("state/money.enc").strip(),
         "clips": sorted(rows, key=lambda r: r["scheduled"] or r["posted"] or "", reverse=True),
         "sources": sources(),
         "style": {k: v for k, v in load("my_brand/style.json", {}).items() if not k.startswith("_")},

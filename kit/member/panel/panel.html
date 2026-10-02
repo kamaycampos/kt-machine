@@ -168,6 +168,18 @@ const rooms = {
         <input type="search" id="q" placeholder="Search hooks and captions" aria-label="Search clips"></div>
       <div class="grid" id="cl"></div></section>`;
   },
+  Money() {
+    const s = D.summary, m = D.dms || {};
+    if (!D.money_enc) return `<section style="display:grid;gap:14px"><h2>Your <span class="gold">money</span></h2>
+      <div class="empty"><h3>Nothing recorded yet</h3><p>Your Claude reads your affiliate portal in your own browser (clicks, sales and commission for each brand) and records it here, <b>encrypted</b>. Your repository is public, so only you, with your passphrase, can open it.</p>
+      <div class="row">${say('money: read my affiliate portal and record my numbers', 'Record my numbers')}</div></div></section>`;
+    return `<section style="display:grid;gap:14px"><h2>Your <span class="gold">money</span></h2>
+      <p class="small">Encrypted in your public repository. Your passphrase unlocks it here, in this browser only. It is never sent anywhere.</p>
+      <form class="row" id="mf"><input type="password" id="mp" placeholder="Money passphrase" aria-label="Money passphrase" autocomplete="current-password"><button class="btn primary" type="submit">Unlock</button></form>
+      <div id="mo"></div>
+      <div class="row">${say('money: read my affiliate portal and record my numbers', 'Record my latest numbers')}
+        ${say('Which hooks and keywords are bringing the most clicks and sales? Plan more of those.', 'Plan from my money')}</div></section>`;
+  },
   Messages() {
     const m = D.dms || {total:0, week:0, keywords:[], errors:[]};
     return `<section style="display:grid;gap:14px">
@@ -255,6 +267,7 @@ function show(name) {
   if (name === 'Clips') clipsWire();
   if (name === 'Style') styleWire();
   if (name === 'Updates') updatesWire();
+  if (name === 'Money') moneyWire();
   history.replaceState(null, '', '#' + name);
 }
 function clipsWire() {
@@ -285,6 +298,36 @@ function styleWire() {
   ['s_accent','s_text','s_shadow','s_upper','s_secs'].forEach(id => g(id).addEventListener('input', paint));
   g('s_copy').addEventListener('click', () => copy(JSON.stringify(Object.assign({}, D.style, cur()), null, 1), 'Style copied. Paste it into your style file'));
   paint();
+}
+async function openMoney(pass) {
+  const b = Uint8Array.from(atob(D.money_enc), c => c.charCodeAt(0));
+  const salt = b.slice(8, 16), ct = b.slice(16);
+  const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pass), 'PBKDF2', false, ['deriveBits']);
+  const bits = new Uint8Array(await crypto.subtle.deriveBits({name:'PBKDF2', salt, iterations:100000, hash:'SHA-256'}, base, 384));
+  const key = await crypto.subtle.importKey('raw', bits.slice(0, 32), 'AES-CBC', false, ['decrypt']);
+  return JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({name:'AES-CBC', iv:bits.slice(32, 48)}, key, ct)));
+}
+function moneyWire() {
+  const f = document.getElementById('mf'); if (!f) return;
+  f.addEventListener('submit', async e => {
+    e.preventDefault();
+    const out = document.getElementById('mo');
+    try {
+      const d = await openMoney(document.getElementById('mp').value);
+      const rows = d.entries || [], sum = k => rows.reduce((a, r) => a + (Number(r[k]) || 0), 0);
+      const brands = {}; rows.forEach(r => { const b = brands[r.brand] ||= {clicks:0, sales:0, commission:0};
+        b.clicks += Number(r.clicks)||0; b.sales += Number(r.sales)||0; b.commission += Number(r.commission)||0; });
+      const dm = D.dms || {}, v = D.summary.views;
+      out.innerHTML = `<section class="tiles">
+        <div class="tile"><span class="label">Views</span><b>${fmt(v)}</b><small>all platforms</small></div>
+        <div class="tile"><span class="label">Links by DM</span><b>${fmt(dm.total)}</b><small>comment → DM</small></div>
+        <div class="tile"><span class="label">Clicks</span><b>${fmt(sum('clicks'))}</b><small>from your portal</small></div>
+        <div class="tile"><span class="label">Sales</span><b>${fmt(sum('sales'))}</b><small>${sum('clicks') ? (100*sum('sales')/sum('clicks')).toFixed(1) + '% of clicks' : ''}</small></div>
+        <div class="tile"><span class="label">Commission</span><b>$${sum('commission').toLocaleString(undefined,{minimumFractionDigits:2, maximumFractionDigits:2})}</b><small>30% of every sale</small></div></section>
+        <div class="list">${Object.entries(brands).sort((a,b) => b[1].commission - a[1].commission).map(([b, x]) => `<div class="item"><div><b>${esc(b)}</b><div class="nums">${fmt(x.clicks)} clicks · ${fmt(x.sales)} sales</div></div><span class="chip good">$${x.commission.toFixed(2)}</span></div>`).join('')}</div>
+        <p class="nums">Last recorded ${esc((rows[rows.length-1]||{}).date || '')}</p>`;
+    } catch { out.innerHTML = '<p class="small" style="color:var(--bad)">That passphrase did not open it. Try again.</p>'; }
+  });
 }
 async function updatesWire() {
   const k = D.kit || {}, up = document.getElementById('up');

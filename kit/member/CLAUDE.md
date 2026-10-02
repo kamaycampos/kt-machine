@@ -38,6 +38,22 @@ Their website at `https://YOUR-GITHUB-NAME.github.io/YOUR-REPO/` is the member's
 
 Every "Tell Claude" button copies a sentence to paste to you. Treat it like any other request. Point them to the panel whenever they ask "where can I see...".
 
+### Connect everything (part of `start`, with their consent)
+Ask once: "May I connect your numbers, so I can see everything? That covers your platform stats, your affiliate portal, and optionally Gmail and Calendar." Then:
+- **Platform stats.** Instagram, Facebook and YouTube are measured on every posting run, and TikTok every 6 hours, as soon as their tokens are in secrets. Nothing extra is needed.
+- **Affiliate portal** (affiliate.kevintrudeau.com, no API). Have them pick a **money passphrase** they will remember. Never write it in a file, a commit or the panel. Then run `money` (below).
+- **Gmail and Calendar, only if they want them.** Point them to claude.ai → Settings → Connectors. Use those connectors to see affiliate emails, sale notifications and training dates. Never copy personal email content into the repo.
+- **Credentials never go in the repo.** Tokens go in GitHub secrets. The portal is read live in their browser. Earnings are encrypted.
+
+### `money`: their affiliate numbers
+With browser access: open the affiliate portal in their Chrome. They log in; you never type their password. Read the dashboard: clicks, sales and commission per brand for the latest date. For each brand, run
+`MONEY_PASS='<their passphrase>' python3 money/money.py add '{"date":"YYYY-MM-DD","brand":"GIN","clicks":0,"sales":0,"commission":0.00}'`
+Commit and push `state/money.enc`. It is encrypted, so only the passphrase opens it.
+
+The panel's **Money** room unlocks it in their browser and shows views → DMs → clicks → sales → commission. Without browser access, ask them to read the five numbers off the portal and record them the same way.
+
+Routines run in the cloud without a browser, so `money` happens whenever they talk to you on their computer. Suggest doing it at the weekly look.
+
 ### `plan`: once a week, or any time the queue runs low
 Follow `factory/PLANNING.md` exactly. It is the playbook proven on the pilot account. Read `shared/FIRST_3_SECONDS.md`, `factory/MASTERY.md` and `factory/HOOK_PATTERNS.md` first.
 **`my_brand/BRAND.md` overrides PLANNING.md on taste:** lane split, voice, hook style and caption voice. It never overrides the edges, the gates, the compliance rules, or the plan format.
@@ -55,7 +71,7 @@ Walk them through `SETUP_POSTING.md` (for Instagram + Facebook follow `SETUP_MET
 Then run `python3 dm/dm_reply.py --dry` with their secrets to show which comments would get the link. When at least one platform is set up, have them add the repository **variable** `AUTOPOST` = `on`. Until then the machine is in **Studio mode**: it makes and schedules clips and they post by hand from the board.
 
 ### `report`: what is working
-Read `state/metrics.json`, `state/tiktok.json` and `factory/MASTERY.md`. Rank each platform separately. The headline number is **skip rate** on Instagram, where lower is better and the target is under 40%. Say three things: what won, what lost, and what to change next week. If their numbers confirm or contradict a MASTERY pattern, add a dated line to the changelog at the end of `factory/MASTERY.md`. Never rewrite a pattern.
+Read `state/metrics.json`, `state/tiktok.json`, `state/dms.json` and `factory/MASTERY.md`. Read their money too when they give you the passphrase (`money.py show`). Rank each platform separately. The headline number is **skip rate** on Instagram, where lower is better and the target is under 40%. Say three things: what won, what lost, and what to change next week. If their numbers confirm or contradict a MASTERY pattern, add a dated line to the changelog at the end of `factory/MASTERY.md`. Never rewrite a pattern.
 
 ### `style`: their look, by talking
 Their clips' look lives in `my_brand/style.json`. It covers:
