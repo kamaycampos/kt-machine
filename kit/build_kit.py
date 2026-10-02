@@ -63,6 +63,8 @@ EMPTY = {
 
 # Text a member's copy must not carry. --check fails the build on any of these.
 PRIVATE = ["kamaycampos", "AR_IG_", "theawakenedrise", "links.fans/wealthfrequency"]
+# The one place a member's copy may name us: where its updates come from.
+UPSTREAM = "kamaycampos/affiliate-factory"
 # ...except where they are inert history in code comments of engine files.
 PRIVATE_OK_IN = (".py",)
 
@@ -87,6 +89,8 @@ def studio_by_default(path):
     s = re.sub(r"KT_TZ: *\"?America/New_York\"?", "KT_TZ: ${{ vars.KT_TZ || 'America/New_York' }}", s)
     s = s.replace("DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}",
                   "DRY_RUN: ${{ (inputs.dry_run || vars.AUTOPOST != 'on') && '1' || '0' }}")
+    # The member's control panel is written right after the captions board.
+    s = s.replace("run: python build_pages.py", "run: python build_pages.py && python panel/build_panel.py")
     # Awakened Rise's credentials are Yaren's account - a member has one account.
     s = re.sub(r"(?m)^[ \t]+AR_[A-Z_]+: \$\{\{ secrets\.AR_[A-Z_]+ \}\}\n", "", s)
     open(path, "w").write(s)
@@ -159,6 +163,7 @@ def check(out):
                 s = open(p, encoding="utf-8").read()
             except UnicodeDecodeError:
                 continue
+            s = s.replace(UPSTREAM, "")
             for w in PRIVATE:
                 if w in s and not (name.endswith(PRIVATE_OK_IN) and w == "AR_IG_"):
                     bad.append(f"{os.path.relpath(p, out)}: {w}")

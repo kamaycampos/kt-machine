@@ -36,6 +36,9 @@ if bad:
 print(f"shared engine ok, {len(man)} modules")
 EOF
 cp factory/kt_series.json "$K/kt_series.json"
+# A MEMBER'S OWN STYLE (Affiliate Factory, 2 Oct 2026). Only a member's copy has
+# my_brand/style.json; without it the renderer keeps every house default.
+if [ -f my_brand/style.json ]; then cp my_brand/style.json "$K/style.json"; fi
 ln -sfn "$GITHUB_WORKSPACE" "$K/kt-machine"
 
 # whisper.cpp pinned to the exact commit the Mac runs, so word timings match.

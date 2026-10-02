@@ -1,0 +1,14 @@
+{
+ "_help": "Your clips' look. Delete any line to keep the house default. Type `style` in Claude to change it by talking.",
+ "accent_color": "#FFE500",
+ "text_color": "white",
+ "shadow": "heavy",
+ "uppercase": true,
+ "hook_seconds": 4.5,
+ "hook_size": 92,
+ "caption_size": 72,
+ "caption_y": 1050,
+ "hook_bottom": 930,
+ "accent_captions": true,
+ "font_file": ""
+}

@@ -35,7 +35,13 @@ That's it. After that, these words run your factory:
 | `clips` | What got made, with captions ready to copy |
 | `report` | What's winning, what's not, and what to change next week |
 | `post` | Switch on autopilot, one platform at a time |
+| `style` | Change your look: colours, font, capitals, shadow, timing |
+| `teach` | Show it a reel you love, and your next clips learn from it |
+| `update` | Get the newest kit version, and keep everything that's yours |
 | anything else | Ask for a theme week, a series, a new style. It's your studio. |
+
+## Your control panel
+Your factory has its own website at `https://YOUR-GITHUB-NAME.github.io/YOUR-REPO/`. It shows every clip, where it came from, how it's doing, what's next, your look and your voice. Everything on it is one tap from being changed, and it updates itself every 20 minutes.
 
 ## Two ways to run it
 - **Studio mode** (day one): the machine makes and schedules your clips, and you post them from your board with one tap.

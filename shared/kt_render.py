@@ -79,6 +79,57 @@ CAP_MAX = 30             # 30 Sept 2026: was 20, which is about three of Kevin's
                          # "burns that all off" and had to break mid-phrase, so
                          # the ceiling is 20 and nothing rewards filling it.
 SHADOW = ":shadowx=0:shadowy=7:shadowcolor=black@0.80:borderw=3:bordercolor=black@0.45"
+WHITE = "white"           # the base colour of hooks and captions
+UPPER = True              # his format is ALL CAPS
+
+
+# --- A MEMBER'S OWN STYLE, 2 Oct 2026 -----------------------------------------
+# Kamay: every member must have "full access and control over it on changing
+# styles, details, ways, cinema edits, colors, hooks, captions". So every
+# number above can be overridden by one file, style.json, that the member's
+# Claude writes from my_brand/style.json. No file - KT, Awakened Rise and VSC -
+# means every default above, byte for byte: nothing changes for them.
+SHADOWS = {
+    "heavy": SHADOW,
+    "soft": ":shadowx=0:shadowy=4:shadowcolor=black@0.55:borderw=0",
+    "outline": ":shadowx=0:shadowy=0:borderw=6:bordercolor=black@0.90",
+    "none": "",
+}
+
+
+def _style():
+    p = os.environ.get("KT_STYLE") or os.path.join(HOME, "style.json")
+    if not os.path.exists(p):
+        return {}
+    try:
+        return json.load(open(p))
+    except Exception as e:                # a broken file is loud, never silent
+        sys.exit(f"style.json is not valid JSON ({e}) - fix my_brand/style.json")
+
+
+STYLE = _style()
+if STYLE:
+    YELLOW = STYLE.get("accent_color", YELLOW)
+    WHITE = STYLE.get("text_color", WHITE)
+    HOOK_SECS = float(STYLE.get("hook_seconds", HOOK_SECS))
+    CAP_SIZE = int(STYLE.get("caption_size", CAP_SIZE))
+    CAP_Y = int(STYLE.get("caption_y", CAP_Y))
+    HOOK_BOTTOM = int(STYLE.get("hook_bottom", HOOK_BOTTOM))
+    UPPER = bool(STYLE.get("uppercase", UPPER))
+    SHADOW = SHADOWS.get(STYLE.get("shadow", "heavy"), SHADOW)
+    if STYLE.get("font_file"):
+        _ff = STYLE["font_file"]
+        if not os.path.isabs(_ff):
+            _ff = os.path.join(os.environ.get("GITHUB_WORKSPACE", os.getcwd()), _ff)
+        if not os.path.exists(_ff):
+            sys.exit(f"style.json font_file not found: {STYLE['font_file']}")
+        FONT = _ff
+HOOK_START = float(STYLE.get("hook_size", 92))
+ACCENT_CAPTIONS = bool(STYLE.get("accent_captions", True))
+
+
+def up(t):
+    return t.upper() if UPPER else t
 
 
 def esc(t):
@@ -234,7 +285,7 @@ def hook_scrim(lines, path, width=None, soft=False, max_h=None):
     """
     from PIL import Image, ImageDraw, ImageFont
     os.makedirs(CARDS, exist_ok=True)
-    lines = [l.upper() for l in lines if l.strip()][:2]
+    lines = [up(l) for l in lines if l.strip()][:2]
     size = 70
     if max_h:
         while size > 44 and (len(lines) * (size + 20) + 120) > max_h:
@@ -295,7 +346,7 @@ def hook_card(lines, path, width=None, soft=False, max_h=None):
     """
     from PIL import Image, ImageDraw, ImageFont
     os.makedirs(CARDS, exist_ok=True)
-    lines = [l.upper() for l in lines if l.strip()][:2]
+    lines = [up(l) for l in lines if l.strip()][:2]
     size = 70
     if max_h:
         # Shrink to fit the gap between his chin and the captions. Measured on
@@ -449,7 +500,7 @@ def hook_chain(hook, persist=False):
     lines = [l for l in hook if l.strip()][:3]
     if not lines:
         return []
-    size = fit_size([l.upper() for l in lines], 92)
+    size = fit_size([up(l) for l in lines], int(HOOK_START))
     # On the YouTube cut the hook never leaves, and it sits HIGH instead. YouTube
     # picks its own cover frame from anywhere in the video, so a hook that clears
     # after 3 seconds is a hook YouTube will almost never show - which is exactly
@@ -483,9 +534,9 @@ def hook_chain(hook, persist=False):
         # Three-line hooks were shipping with no yellow at all - the accent is
         # copied from Kevin's own reels ("BEER IS MORE" white / "HYDRATING THAN
         # WATER" yellow) and half the hooks were silently missing it.
-        colour = YELLOW if i == len(lines) - 1 and len(lines) > 1 else "white"
+        colour = YELLOW if i == len(lines) - 1 and len(lines) > 1 else WHITE
         out.append(
-            f"drawtext=fontfile={f}:text='{esc(line.upper())}':fontsize={size}"
+            f"drawtext=fontfile={f}:text='{esc(up(line))}':fontsize={size}"
             f":fontcolor={colour}{SHADOW}:x=(w-tw)/2:y={ys[i]}"
             + ("" if persist else f":enable='lt(t,{HOOK_SECS})'"))
     return out
@@ -533,14 +584,14 @@ def caption_chain(ps):
     out = []
     last_yellow = [False]
     for a, b, text in ps:
-        want = accent(text)
+        want = accent(text) and ACCENT_CAPTIONS
         if want and last_yellow[0]:      # never two in a row - it stops reading
             want = False                 # as emphasis and starts reading as a
         last_yellow[0] = want            # colour scheme
-        colour = YELLOW if want else "white"
-        size = fit_size([text.upper()], CAP_SIZE)
+        colour = YELLOW if want else WHITE
+        size = fit_size([up(text)], CAP_SIZE)
         out.append(
-            f"drawtext=fontfile={f}:text='{esc(text.upper())}':fontsize={size}"
+            f"drawtext=fontfile={f}:text='{esc(up(text))}':fontsize={size}"
             f":fontcolor={colour}{SHADOW}:x=(w-tw)/2:y={CAP_Y}"
             f":enable='between(t,{a:.2f},{b:.2f})'")
     return out
