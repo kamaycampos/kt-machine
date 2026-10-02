@@ -1,0 +1,39 @@
+# THE SHARED ENGINE'S MANIFEST KEEPS ITSELF TRUE. 2 Oct 2026: two improvements to
+# shared/ landed on 30 Sept without their hashes, and setup.sh - correctly - refused
+# every factory run for two days. Kamay's and Yaren's queues stopped filling and
+# nothing said so. A forgotten hash is a bookkeeping slip, not drift, so this job
+# re-hashes on every push that touches shared/ and commits the manifest back.
+# Real drift (a project carrying its own fork of a shared file) is still caught:
+# that copy lives outside shared/ and never reaches this job.
+name: shared-manifest
+on:
+  push:
+    branches: [main]
+    paths: ["shared/**"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: shared-manifest
+  cancel-in-progress: false
+jobs:
+  rehash:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Re-hash shared/ and commit the manifest if it changed
+        run: |
+          python3 - <<'PY'
+          import hashlib, json
+          p = "shared/MANIFEST.json"
+          m = json.load(open(p))
+          for f in m["files"]:
+              m["files"][f] = hashlib.sha1(open("shared/" + f, "rb").read()).hexdigest()
+          open(p, "w").write(json.dumps(m, indent=1) + "\n")
+          PY
+          git diff --quiet shared/MANIFEST.json && { echo "manifest already true"; exit 0; }
+          git config user.name "kt-machine"
+          git config user.email "kt-machine@users.noreply.github.com"
+          git add shared/MANIFEST.json
+          git commit -q -m "shared: manifest re-hashed"
+          for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && break; sleep 5; done
