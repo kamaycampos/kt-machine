@@ -114,7 +114,7 @@ function statusChips(c) {
     else if (/inbox|draft/i.test(v)) { k = 'warn'; t = 'in drafts'; }
     else if (/not configured/i.test(v)) { k = ''; t = 'not connected'; }
     else if (/skipped/i.test(v)) { k = ''; t = 'skipped'; }
-    out.push(`<span class="chip ${k}" title="${esc(v)}">${p.slice(0,2).toUpperCase()} · ${t}</span>`);
+    out.push(`<span class="chip ${k}" title="${esc(v)}">${({instagram:'IG',facebook:'FB',youtube:'YT',tiktok:'TT'})[p]} · ${t}</span>`);
   }
   if (!c.posted && !c.retired) out.unshift(`<span class="chip warn">${c.scheduled ? 'scheduled ' + when(c.scheduled) : 'waiting for a slot'}</span>`);
   if (c.retired) out.unshift('<span class="chip">retired</span>');

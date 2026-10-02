@@ -74,6 +74,13 @@ def series_index():
     return idx
 
 
+def pretty(t):
+    """'The_1_Wealth_Attractor_In_Every_Billionaire' -> 'The 1 Wealth Attractor In Every Billionaire'."""
+    t = re.sub(r"\.(mp4|mov|mkv)$", "", str(t or ""), flags=re.I)
+    t = re.sub(r"[_]+", " ", t).strip()
+    return re.sub(r"\s+", " ", t)
+
+
 def clip_rows():
     man = load("state/manifest.json", {}).get("clips", [])
     met = latest_metrics(load("state/metrics.json", []))
@@ -113,7 +120,7 @@ def clip_rows():
             "saves": ig.get("saved"),
             "watch": round(ig["ig_reels_avg_watch_time"] / 1000, 1)
                      if ig.get("ig_reels_avg_watch_time") else None,
-            "source": {"id": sid, "title": ep.get("title") or sid, "url": ep.get("url", ""),
+            "source": {"id": sid, "title": pretty(ep.get("title") or sid), "url": ep.get("url", ""),
                        "in": s.get("in"), "out": s.get("out")},
             "media": f"https://github.com/{REPO}/releases/download/media/{f.replace('/', '--')}",
         })
