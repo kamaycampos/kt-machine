@@ -488,7 +488,26 @@ def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
         out = body + ["", cta]
     if tags:
         out += [""] + tags
-    return "\n".join(out).strip()
+    return with_disclosure("\n".join(out).strip())
+
+
+def with_disclosure(cap):
+    """The affiliate disclosure, on every post, when this machine is told one.
+
+    2 Oct 2026, the Affiliate Factory: a member's copy promises "#ad - I earn a
+    commission if you buy through my link" on every post, and nothing added it.
+    Set by the DISCLOSURE variable; unset (Kamay's account today) = unchanged.
+    It goes above the hashtags so it is read, not buried."""
+    d = os.environ.get("DISCLOSURE", "").strip()
+    if not d or not cap or d.lower() in cap.lower():
+        return cap
+    lines = cap.split("\n")
+    i = len(lines)
+    while i > 0 and lines[i - 1].strip().startswith("#"):
+        i -= 1
+    head = "\n".join(lines[:i]).rstrip()
+    tail = "\n".join(lines[i:])
+    return (head + "\n\n" + d + ("\n\n" + tail if tail else "")).strip()
 
 
 def title_for(path, caption):
