@@ -1,0 +1,33 @@
+# Proves a framing rule on real footage before it goes live: contact sheets of
+# the old crop (biggest face) beside the new one (who is speaking). Manual only.
+name: framing-probe
+on:
+  workflow_dispatch:
+    inputs:
+      series:
+        description: "kt_series.json key"
+        default: "success_code"
+      clips:
+        description: "how many clips"
+        default: "6"
+env:
+  FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+  GH_TOKEN: ${{ github.token }}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/cache@v4
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v2-portable }
+      - run: bash factory/setup.sh
+      - run: python factory/framing_probe.py "${{ inputs.series }}" "${{ inputs.clips }}"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: framing-probe
+          path: /tmp/probe/*.j*
+          retention-days: 7

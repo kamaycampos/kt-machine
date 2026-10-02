@@ -41,25 +41,104 @@ def shot_cuts(src, threshold=6):
     return sorted(set(cuts))
 
 
+# FRAME THE MAN WHO IS TALKING, NOT THE BIGGEST HEAD. 2 Oct 2026, Kamay, looking
+# at the control room: in the two-person interviews the clip's thumbnail did not
+# show Kevin. Every crop here was chosen by "biggest face = Kevin" - true in his
+# close-ups, false the moment the camera favours the interviewer, who sits nearer
+# the lens in a two-shot. So each second is sampled SUB times and every face's
+# MOUTH is compared frame to frame; the face whose mouth moves is the speaker.
+# Clips are cut on Kevin's speech, so the speaker is Kevin almost always - and when
+# the other person really is talking, framing them is right too.
+# VSC_SPEAKER=1 turns it on; off, the old biggest-face choice is exactly preserved.
+SPEAKER = os.environ.get("VSC_SPEAKER", "0") == "1"   # ON after the probe proves it
+SUB = 5                 # frames per second when choosing who is speaking
+SAME = 0.08             # two boxes within this fraction of width are one person
+
+
+def _mouth(gray, f):
+    """A brightness-normalised patch of the mouth, from YuNet's mouth corners."""
+    x1, y1, x2, y2 = float(f[10]), float(f[11]), float(f[12]), float(f[13])
+    mw = max(abs(x2 - x1), float(f[2]) * 0.3)
+    cx, cy = (x1 + x2) / 2, (y1 + y2) / 2
+    h, w = gray.shape[:2]
+    t, b = int(max(0, cy - 0.35 * mw)), int(min(h, cy + 0.65 * mw))
+    l, r = int(max(0, cx - 0.75 * mw)), int(min(w, cx + 0.75 * mw))
+    if b - t < 4 or r - l < 4:
+        return None
+    patch = cv2.resize(gray[t:b, l:r], (32, 20)).astype(np.float32)
+    return patch / (patch.mean() + 1.0)
+
+
+def _speaker(frames, w, h, prev_cx):
+    """frames: [[face rows] per sub-frame] plus their gray images. Returns the
+    chosen face as (cx, fw, cy) or None."""
+    people = []                               # [{cx, boxes:[(j, row)]}]
+    for j, (faces, gray) in enumerate(frames):
+        for f in faces:
+            cx = float((f[0] + f[2] / 2) / w)
+            hit = next((p for p in people if abs(p["cx"] - cx) <= SAME), None)
+            if hit is None:
+                hit = {"cx": cx, "boxes": []}
+                people.append(hit)
+            hit["boxes"].append((j, f, gray))
+    if not people:
+        return None
+    for p in people:
+        pats = {j: _mouth(g, f) for j, f, g in p["boxes"]}
+        js = sorted(k for k, v in pats.items() if v is not None)
+        diffs = [float(np.mean(np.abs(pats[a] - pats[b])))
+                 for a, b in zip(js, js[1:]) if b - a == 1]
+        p["motion"] = float(np.mean(diffs)) if diffs else 0.0
+        p["area"] = float(np.median([f[2] * f[3] for _, f, _ in p["boxes"]]))
+    biggest = max(people, key=lambda p: p["area"])
+    pick = biggest
+    if SPEAKER and len(people) > 1:
+        ranked = sorted(people, key=lambda p: -p["motion"])
+        top, second = ranked[0], ranked[1]
+        if top["motion"] > 0.02 and top["motion"] >= 1.35 * second["motion"]:
+            pick = top                         # one mouth is clearly moving
+        elif prev_cx is not None:              # undecided: stay on who we had
+            pick = min(people, key=lambda p: abs(p["cx"] - prev_cx))
+    fs = [f for _, f, _ in pick["boxes"]]
+    return (float(np.median([(f[0] + f[2] / 2) / w for f in fs])),
+            float(np.median([f[2] / w for f in fs])),
+            float(np.median([(f[1] + f[3] / 2) / h for f in fs])))
+
+
 def face_track(src, dur):
-    """cx/fw per sampled second. None where no face was found."""
+    """cx/fw/cy per sampled second, of the person SPEAKING. None where no face."""
     tmp = "/tmp/vsc_probe_%05d.jpg"
-    subprocess.run([FFMPEG, "-i", src, "-vf", f"fps={FPS},scale={SAMPLE_W}:-2",
+    rate = SUB if SPEAKER else FPS
+    subprocess.run([FFMPEG, "-i", src, "-vf", f"fps={rate},scale={SAMPLE_W}:-2",
                     "-q:v", "4", "-y", tmp, "-loglevel", "error"], check=True)
     det = cv2.FaceDetectorYN_create(MODEL, "", (320, 320), 0.6, 0.3, 5000)
-    track, i = [], 1
-    while True:
-        f = tmp % i
-        if not os.path.exists(f): break
-        img = cv2.imread(f); h, w = img.shape[:2]
-        det.setInputSize((w, h))
-        ok, faces = det.detect(img)
-        if faces is None or len(faces) == 0:
-            track.append(None)
+    files, i = [], 1
+    while os.path.exists(tmp % i):
+        files.append(tmp % i); i += 1
+    per = int(rate) if SPEAKER else 1
+    track, prev = [], None
+    for s in range(0, len(files), per):
+        frames, w, h = [], 0, 0
+        for f in files[s:s + per]:
+            img = cv2.imread(f); h, w = img.shape[:2]
+            det.setInputSize((w, h))
+            ok, faces = det.detect(img)
+            frames.append(([] if faces is None else list(faces),
+                           cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)))
+            os.remove(f)
+        if not SPEAKER:                          # the old rule, byte for byte
+            faces = frames[0][0] if frames else []
+            if not faces:
+                got = None
+            else:
+                b = max(faces, key=lambda r: r[2] * r[3])       # biggest face
+                got = (float((b[0] + b[2] / 2) / w), float(b[2] / w),
+                       float((b[1] + b[3] / 2) / h))
         else:
-            b = max(faces, key=lambda r: r[2] * r[3])       # biggest face = Kevin
-            track.append((float((b[0] + b[2] / 2) / w), float(b[2] / w), float((b[1] + b[3] / 2) / h)))
-        os.remove(f); i += 1
+            got = _speaker(frames, w, h, prev) if w else None
+        track.append(got)
+        if got:
+            prev = got[0]
     return track
 
 
@@ -127,6 +206,14 @@ def segments(cuts, dur, track):
         if b - a < 0.4: continue
         vals = [track[i] for i in range(int(a), min(int(b) + 1, len(track)))
                 if i < len(track) and track[i] is not None]
+        if vals and SPEAKER:
+            # ONE PERSON PER SHOT. A median across two people lands on the empty
+            # space between them; keep the person framed for the most seconds.
+            groups = []
+            for v in vals:
+                g = next((g for g in groups if abs(g[0][0] - v[0]) <= SAME), None)
+                (g.append(v) if g is not None else groups.append([v]))
+            vals = max(groups, key=len)
         if vals:
             cx = float(np.median([v[0] for v in vals]))
             fw = float(np.median([v[1] for v in vals]))
