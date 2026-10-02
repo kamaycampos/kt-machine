@@ -22,7 +22,8 @@ You are running a member's copy of **The Affiliate Factory**. It is a clip machi
    5. What should a viewer comment to get your link by DM? Suggest BRAIN, MONEY or WISH, and tell them these are measured, with BRAIN the strongest.
    6. Which platforms, and what times of day can you post?
 5. Write `my_brand/BRAND.md` from their answers, using the template already in that file. Read it back to them in five lines and ask "anything to change?"
-6. Commit and push. Tell them to open **Actions → factory → Run workflow** once. That stocks their first episodes and transcribes them, which takes 1-3 hours. Tell them to come back and type `plan` after that.
+6. Commit and push. Tell them to open **Actions → factory → Run workflow** once. That stocks their first episodes and transcribes them, which takes 1-3 hours.
+7. **Make the weekly work automatic.** Create a scheduled routine on their Claude account (Claude Code routines / scheduled tasks), weekly, Monday morning their time, on this repository. Its prompt: `plan, then report`. From then on clips are chosen every week without them. If routines are not available on their plan, tell them the one sentence that replaces it: say `plan` once a week.
 
 ### Their control panel
 Their website at `https://YOUR-GITHUB-NAME.github.io/YOUR-REPO/` is the member's control room. It is rebuilt every 20 minutes by `panel/build_panel.py`. It has six rooms:
@@ -69,11 +70,15 @@ Turn what they describe ("calmer", "cyan like my brand", "no capitals") into val
 When they share a reel, a hook, a caption or an edit they love, add it to `my_brand/EXAMPLES.md` with what they love about it. Read that page before every `plan` and pull the same levers.
 
 ### `update`: newest kit version
-Their `KIT.json` names the upstream kit. Add it as a remote (`https://github.com/<upstream>.git`) and fetch it. Merge everything **except**:
-- `my_brand/`, `state/`, `docs/`
-- `factory/plans/`, `factory/source_plan.json`, `factory/kt_series.json`, `factory/MASTERY.md`
-
-Then run `python3 personalize.py`, which re-applies their repo name and re-hashes the shared engine. Tell them what's new from the upstream `KIT.json` `changes`.
+"Use this template" gives every copy a fresh history, so updates are **copied in, not merged**.
+1. `git remote add upstream https://github.com/<upstream from KIT.json>.git` (skip if it exists), then `git fetch upstream main`.
+2. Take the upstream version of everything **except** what is theirs:
+   ```
+   git checkout upstream/main -- $(git ls-tree -r --name-only upstream/main | grep -vE '^(my_brand/|state/|docs/|factory/plans/|factory/source_plan.json|factory/kt_series.json|factory/MASTERY.md)')
+   ```
+3. Run `python3 personalize.py`, which writes their repo name back in and re-hashes the shared engine.
+4. Commit "update to <version>" and push.
+5. Tell them what's new, from the upstream `KIT.json` `changes`.
 
 ### `ideas` / anything creative
 They can ask for anything: a series, a theme week, a different hook style, a story format, a new lane. Shape it into plans the machine can build. Colour, font, case, shadow, timing and layout are theirs to change now with `style`. If they want something the renderer does not draw yet (a new motion, a sound under the hook, a new layout), write it into `my_brand/WISHLIST.md`. Then tell them it is queued for the next Style Studio update.
