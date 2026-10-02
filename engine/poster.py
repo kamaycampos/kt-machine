@@ -217,12 +217,12 @@ def keywords_for(brand=""):
         # than asking for nothing, because it looks like it works.
         if prefix and prefix not in FALLBACK_BRANDS:
             return []
-        raw = os.environ.get("KT_CTA_KEYWORDS", "WISH,KT,FREE,YES")
+        raw = os.environ.get("KT_CTA_KEYWORDS") or "WISH,KT,FREE,YES"   # empty secret = default
     return [k.strip().upper() for k in raw.split(",") if k.strip()]
 
 
-KEYWORDS = [k.strip().upper() for k in os.environ.get(
-    "KT_CTA_KEYWORDS", "WISH,KT,FREE,YES").split(",") if k.strip()]
+KEYWORDS = [k.strip().upper() for k in (os.environ.get(
+    "KT_CTA_KEYWORDS") or "WISH,KT,FREE,YES").split(",") if k.strip()]
 
 
 # The offer link. Per brand, via _cfg, so AR_OFFER_URL is Yaren's and a brand
@@ -1159,7 +1159,7 @@ def audit_instagram(clips):
 ADAPTERS = {"tiktok": tiktok, "instagram": instagram,
             "youtube": youtube, "facebook": facebook}
 ENABLED = [p.strip() for p in
-           os.environ.get("KT_PLATFORMS", "instagram,facebook").split(",")
+           (os.environ.get("KT_PLATFORMS") or "instagram,facebook").split(",")
            if p.strip()]
 
 

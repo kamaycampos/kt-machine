@@ -95,8 +95,11 @@ MIN_GAP = 45 * 60        # seconds between two posts by the SAME person
 # whole point of the system. Anything uploaded with no schedule gets dropped
 # into the next free slot automatically, so the calendar is always full and the
 # only thing he ever does is look at it.
-SLOTS = [t.strip() for t in os.environ.get(
-    "KT_SLOTS", "08:00,11:30,14:30,17:30,20:30").split(",") if t.strip()]
+# "or", not a default argument: a GitHub secret that was never filled in arrives
+# as an EMPTY STRING, not as missing (2 Oct 2026, first member copy: no slots at
+# all, so nothing was ever scheduled).
+SLOTS = [t.strip() for t in (os.environ.get("KT_SLOTS") or
+         "08:00,11:30,14:30,17:30,20:30").split(",") if t.strip()]
 
 
 def brand_slots(prefix):
