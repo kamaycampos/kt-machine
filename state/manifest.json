@@ -6220,7 +6220,7 @@
    "bytes": 97355137,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T12:40",
+   "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "MONEY",
    "cta_variant": 26,
    "cta_kind": "offer"
@@ -6452,7 +6452,7 @@
    "bytes": 79714644,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T08:05",
+   "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
    "cta_kind": "offer"
@@ -6476,7 +6476,7 @@
    "bytes": 97374473,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T08:05",
+   "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "WISH",
    "cta_variant": 12,
    "cta_kind": "offer"
@@ -6488,7 +6488,7 @@
    "bytes": 102470318,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T08:05",
+   "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "WISH",
    "cta_variant": 17,
    "cta_kind": "offer"
@@ -6500,7 +6500,7 @@
    "bytes": 18923464,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T08:05",
+   "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "BRAIN",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -6512,7 +6512,7 @@
    "bytes": 19909883,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T08:05",
+   "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -6522,12 +6522,26 @@
    "caption": "A man walks up to the gate of an ancient walled city and asks the guard what the people inside are like.\n\nTell me first, the guard says, what were the people like where you came from? Terrible, the man says - dishonest, mean, nothing but thieves. That's why I left. The guard sighs: I'm sorry, you'll find those same people here.\n\nLater that night, another traveler asks the same question. Wonderful people, he says - honest, hardworking, warm. I just wanted to see more of the world. Good news, the guard tells him: you'll find those exact same people here too.\n\nYou create the life you want wherever you go.\n\n#kevintrudeau #manifestation #mindset #lawofattraction #selfawareness #personalgrowth",
    "hook": "The guard gave the same answer",
    "bytes": 40571666,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-02T07:34",
    "cta_keyword": "WISH",
    "cta_variant": 24,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1108774734980013/",
+    "instagram": "https://www.instagram.com/reel/Dd_8GBJEw-T/",
+    "youtube": "https://youtube.com/shorts/iv446xMeiUo"
+   },
+   "caption_at_post": "A man walks up to the gate of an ancient walled city and asks the guard what the people inside are like.\n\nTell me first, the guard says, what were the people like where you came from? Terrible, the man says - dishonest, mean, nothing but thieves. That's why I left. The guard sighs: I'm sorry, you'll find those same people here.\n\nLater that night, another traveler asks the same question. Wonderful people, he says - honest, hardworking, warm. I just wanted to see more of the world. Good news, the guard tells him: you'll find those exact same people here too.\n\nYou create the life you want wherever you go.\n\n#kevintrudeau #manifestation #mindset #lawofattraction #selfawareness #personalgrowth",
+   "posted_at": "2026-10-02T12:45"
   },
   {
    "file": "KT_UNCENSORED/02_10X-UPSIDE-LOSE-THE-HOUSE_102s.mp4",
@@ -6548,7 +6562,7 @@
    "bytes": 31673543,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T08:05",
+   "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "BRAIN",
    "cta_variant": 19,
    "cta_kind": "question"
@@ -6560,7 +6574,7 @@
    "bytes": 31484951,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T08:05",
+   "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "MONEY",
    "cta_variant": 14,
    "cta_kind": "offer"
@@ -6572,7 +6586,7 @@
    "bytes": 29051341,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T10:24",
+   "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "BRAIN",
    "cta_variant": 25,
    "cta_kind": "question"
@@ -6610,7 +6624,7 @@
    "bytes": 27753876,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T08:05",
+   "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "MONEY",
    "cta_variant": 20,
    "cta_kind": "offer"
@@ -6622,7 +6636,7 @@
    "bytes": 21569033,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T08:05",
+   "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "BRAIN",
    "cta_variant": 15,
    "cta_kind": "offer"
