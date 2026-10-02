@@ -7,6 +7,18 @@ K="$HOME/Kamay"
 mkdir -p "$K/bin" "$K/Kamay Content/1_RAW/KT_SOURCE" "$K/POST_TODAY" "$K/work/proposals" \
          "$K/transcripts" "$K/logs" "$K/whisper.cpp/build/bin" "$K/whisper.cpp/models"
 
+# THE THREE RELEASES THE FACTORY STORES INTO (2 Oct 2026). kt-machine made them by
+# hand long ago; a brand-new copy has none, so on the first member run every
+# upload failed quietly and 14 minutes of downloads were thrown away. sources =
+# encrypted episodes + transcripts, media = finished clips, state = posted log.
+# Already there = nothing happens.
+if [ -n "${GH_TOKEN:-}" ] && [ -n "${GITHUB_REPOSITORY:-}" ]; then
+  for tag in sources media state; do
+    gh release view "$tag" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || \
+      gh release create "$tag" -R "$GITHUB_REPOSITORY" --title "$tag" \
+        --notes "Storage for the factory. Do not delete." >/dev/null && echo "release $tag ready"
+  done
+fi
 sudo apt-get -qq update >/dev/null
 sudo apt-get -qq install -y ffmpeg fonts-liberation cmake >/dev/null
 pip install -q opencv-python-headless numpy pillow
