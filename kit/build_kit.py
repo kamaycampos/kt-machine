@@ -127,7 +127,26 @@ def build(out):
     # The member's README is the front door, not Kamay's engine notes.
     shutil.move(os.path.join(out, "README.md"), os.path.join(out, "ENGINE.md"))
     shutil.copy2(os.path.join(MEMBER, "START_HERE.md"), os.path.join(out, "README.md"))
+    rehash_shared(out)
     print(f"kit built: {out} ({sum(len(f) for _, _, f in os.walk(out))} files)")
+
+
+def rehash_shared(root):
+    """Re-hash shared/MANIFEST.json after the repo name is written into shared/.
+
+    setup.sh refuses every factory run when a shared module's hash is wrong
+    (30 Sept 2026: the factory sat dead for a day on exactly that). Writing the
+    member's repo name into shared/kt_lock.py changes its hash, so the manifest
+    is rewritten here, the moment the file changes."""
+    import hashlib
+    p = os.path.join(root, "shared", "MANIFEST.json")
+    if not os.path.exists(p):
+        return
+    man = json.load(open(p))
+    for f in man["files"]:
+        man["files"][f] = hashlib.sha1(open(os.path.join(root, "shared", f), "rb").read()).hexdigest()
+    json.dump(man, open(p, "w"), indent=1)
+    open(p, "a").write("\n")
 
 
 def check(out):
@@ -156,7 +175,14 @@ def check(out):
     if r.returncode:
         print(r.stdout + r.stderr)
         return 1
-    print("check ok: nothing private, every module compiles")
+    import hashlib
+    man = json.load(open(os.path.join(out, "shared", "MANIFEST.json")))["files"]
+    drift = [f for f, h in man.items() if hashlib.sha1(
+        open(os.path.join(out, "shared", f), "rb").read()).hexdigest() != h]
+    if drift:
+        print(f"shared engine drifted, setup.sh would refuse every run: {drift}")
+        return 1
+    print("check ok: nothing private, every module compiles, shared manifest true")
     return 0
 
 

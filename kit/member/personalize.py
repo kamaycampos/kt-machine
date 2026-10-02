@@ -9,6 +9,7 @@ Your Claude runs this for you during setup. It:
     python3 personalize.py                  # reads your repo name from git
     python3 personalize.py --repo you/name  # or say it
 """
+import json
 import os
 import re
 import secrets
@@ -33,6 +34,24 @@ def repo_from_git():
     return m.group(1) if m else None
 
 
+def rehash_shared(root):
+    """Re-hash shared/MANIFEST.json after the repo name is written into shared/.
+
+    setup.sh refuses every factory run when a shared module's hash is wrong
+    (30 Sept 2026: the factory sat dead for a day on exactly that). Writing the
+    member's repo name into shared/kt_lock.py changes its hash, so the manifest
+    is rewritten here, the moment the file changes."""
+    import hashlib
+    p = os.path.join(root, "shared", "MANIFEST.json")
+    if not os.path.exists(p):
+        return
+    man = json.load(open(p))
+    for f in man["files"]:
+        man["files"][f] = hashlib.sha1(open(os.path.join(root, "shared", f), "rb").read()).hexdigest()
+    json.dump(man, open(p, "w"), indent=1)
+    open(p, "a").write("\n")
+
+
 def main():
     repo = sys.argv[sys.argv.index("--repo") + 1] if "--repo" in sys.argv else repo_from_git()
     if not repo or "/" not in repo:
@@ -52,6 +71,7 @@ def main():
             if t != s:
                 open(p, "w", encoding="utf-8").write(t)
                 changed += 1
+    rehash_shared(HERE)
     print(f"Your machine now knows it is {repo} ({changed} files).")
     print()
     print("Two secrets to paste. Repo -> Settings -> Secrets and variables -> Actions -> New repository secret")

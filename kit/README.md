@@ -4,7 +4,7 @@ This turns this live machine into a product: a template that any KT affiliate me
 
 | Path | What it is |
 |---|---|
-| `build_kit.py` | Generates the member template from this repo. It strips Kamay's state, plans and secrets and Yaren's AR lane, and switches posting to Studio mode by default. Run `python3 kit/build_kit.py OUT --check`, which fails if anything private leaks or a module stops compiling. |
+| `build_kit.py` | Generates the member template from this repo, then re-hashes `shared/MANIFEST.json` so `setup.sh` accepts it. It strips Kamay's state, plans and secrets and Yaren's AR lane, and switches posting to Studio mode by default. Run `python3 kit/build_kit.py OUT --check`, which fails if anything private leaks or a module stops compiling. |
 | `member/` | The files laid over the top of the member's copy: `CLAUDE.md` (the member's Claude: `start` / `plan` / `clips` / `post` / `report`), `START_HERE.md` (which becomes their README), `SETUP_POSTING.md`, `playbook/COMPLIANCE.md`, `my_brand/`, and `personalize.py` |
 | `dustin/` | The proposal for the affiliate program: an HTML source and the PDF |
 
