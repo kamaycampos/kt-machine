@@ -94,6 +94,7 @@ def clip_rows():
         if not m:   # older names carry no length suffix
             slug = re.sub(r"^\d+_|_\d+s$|\.mp4$", "", name)
             slug = re.sub(r"_\d+s$", "", slug)
+        slug = re.sub(r"^(\d+_)+", "", slug)      # some names carry the index twice
         hook = c.get("hook") or slug.replace("-", " ").capitalize()
         live = c.get("posted_at") or ("yes" if any(v == "posted" for v in (c.get("status") or {}).values()) else None)
         if isinstance(hook, list):
