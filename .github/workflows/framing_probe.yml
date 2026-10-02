@@ -10,6 +10,8 @@ on:
       clips:
         description: "how many clips"
         default: "6"
+permissions:
+  contents: write
 env:
   FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
   GH_TOKEN: ${{ github.token }}
@@ -25,6 +27,18 @@ jobs:
         with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v2-portable }
       - run: bash factory/setup.sh
       - run: python factory/framing_probe.py "${{ inputs.series }}" "${{ inputs.clips }}"
+      # Artifacts live in blob storage the Connector's network cannot reach; a
+      # prerelease on this repo is readable from anywhere, so the sheets go there too.
+      - name: Publish the sheets to the framing-probe prerelease
+        if: always()
+        run: |
+          gh release view framing-probe >/dev/null 2>&1 || \
+            gh release create framing-probe --prerelease --title "framing probe" --notes "old vs new crop contact sheets"
+          for f in /tmp/probe/*.jpg; do
+            [ -f "$f" ] && cp "$f" "/tmp/probe/${{ inputs.series }}__$(basename "$f")"
+          done
+          ls /tmp/probe/${{ inputs.series }}__*.jpg >/dev/null 2>&1 && \
+            gh release upload framing-probe /tmp/probe/${{ inputs.series }}__*.jpg --clobber || true
       - uses: actions/upload-artifact@v4
         if: always()
         with:
