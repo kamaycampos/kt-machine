@@ -155,7 +155,7 @@ const rooms = {
     ${D.clips.length ? `
     <section style="display:grid;gap:14px"><h2>Up <span class="gold">next</span></h2>
       ${next.length ? `<div class="grid">${next.map(clipCard).join('')}</div>` : '<p class="small">Nothing waiting. Type <b>plan</b> in Claude to choose this week\'s clips.</p>'}</section>
-    <section style="display:grid;gap:14px"><h2>Your <span class="gold">best</span></h2><div class="grid">${top.map(clipCard).join('')}</div></section>`
+    ${top.length ? `<section style="display:grid;gap:14px"><h2>Your <span class="gold">best</span></h2><div class="grid">${top.map(clipCard).join('')}</div></section>` : ''}`
     : `<section class="empty"><h3>Your first clips are on the way</h3>
        <p>Open Claude and type <b>plan</b> once your first episodes are transcribed. That takes 1-3 hours after setup. This page fills itself in as clips are made and posted.</p>
        <div class="row"><a class="btn primary" href="https://claude.ai/code" target="_blank" rel="noopener">Open Claude</a><a class="btn" href="${GH}/actions" target="_blank" rel="noopener">See the factory working</a></div></section>`}`;
