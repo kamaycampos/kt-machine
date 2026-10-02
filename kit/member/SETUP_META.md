@@ -1,6 +1,6 @@
 # Connect Instagram + Facebook: posting and comment → DM
 
-**About 20 minutes, once.** Type `post` in Claude and it walks you through this page one step at a time. This page is for when you want to see every click. **You** = a click only you can make. **Claude** = Claude does it for you.
+**With your computer connected ([SETUP_COMPUTER.md](SETUP_COMPUTER.md)), your Claude does every step below in your browser. You only log in and click "Continue as…".** Without it, it takes about 20 minutes once: type `post` in Claude and it walks you through this page one step at a time. This page is for when you want to see every click. **You** = a click only you can make. **Claude** = Claude does it for you.
 
 ## 1. Instagram becomes a Professional account (2 min). You:
 1. Open the Instagram app → your profile → **☰** (top right) → **Settings and activity**

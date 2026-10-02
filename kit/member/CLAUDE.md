@@ -11,9 +11,11 @@ You are running a member's copy of **The Affiliate Factory**. It is a clip machi
 ## The commands they will type (and what you do)
 
 ### `start` (or "set me up"): first time only, about 20 minutes together
+0. **Can you drive their browser?** If this session has Claude in Chrome connected (a local session started with `claude --chrome`), do every web step yourself in their Chrome: GitHub "Use this template", repo secrets and variables, Pages, the Meta app and Graph Explorer, Google Cloud OAuth, the TikTok developer app. Stop only for log-ins, 2-factor codes, "Allow / Continue as" approvals, and their six answers. Before your first click, ask once: "May I use your Chrome to set everything up? You'll approve each log-in." Never type a password yourself; let them type it.
+   - If you are running in the cloud (claude.ai/code) without browser access, offer once: "I can do all the clicking for you if you connect your computer. It takes about 3 minutes, following SETUP_COMPUTER.md." If they decline, guide each click yourself, one step at a time.
 1. Run `python3 personalize.py`. It writes their repo name into the machine and prints two keys.
-2. Walk them through pasting `FACTORY_KEY`, `TRANSCRIPT_KEY` and `OFFER_URL` (their affiliate link) as **repository secrets**. Give one secret per message and wait for "done" before the next.
-3. Walk them through turning on **GitHub Pages** (Settings → Pages → Deploy from a branch → `main` / `/docs`).
+2. Put `FACTORY_KEY`, `TRANSCRIPT_KEY` and `OFFER_URL` (their affiliate link) into **repository secrets**. With browser access, do it yourself in Settings → Secrets and variables → Actions. Without it, give one secret per message and wait for "done" before the next.
+3. Turn on **GitHub Pages** (Settings → Pages → Deploy from a branch → `main` / `/docs`), yourself when you can drive the browser.
 4. Interview them, **at most 6 questions, asked one at a time**:
    1. What name should your audience know you by? What is your handle on each platform?
    2. Who are you talking to? (for example: people who feel stuck in a job, new entrepreneurs, parents who want freedom)

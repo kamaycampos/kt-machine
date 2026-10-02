@@ -18,6 +18,8 @@ It was built and proven on a live account first:
 - Your **affiliate link** from the KT affiliate portal
 
 ## Three steps
+**Best way:** let Claude do all the clicking in your own browser, as shown in [`SETUP_COMPUTER.md`](SETUP_COMPUTER.md). You only log in and approve. Or do it by hand:
+
 
 **1. Make your copy.** At the top of this page, click **Use this template → Create a new repository**.
 - Name it anything, for example `my-factory`.
