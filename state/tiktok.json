@@ -1,15 +1,15 @@
 {
- "at": "2026-10-02T06:09",
+ "at": "2026-10-02T13:08",
  "profile": {
-  "video_count": 152,
-  "follower_count": 415,
+  "follower_count": 414,
   "following_count": 8,
-  "likes_count": 5809
+  "likes_count": 5809,
+  "video_count": 152
  },
  "videos": {
   "KT_LEDGER/01_TWO-PIZZAS-AND-A-BILLION-DOLLARS_66s.mp4": {
    "id": "7691802431088282893",
-   "view_count": 6,
+   "view_count": 7,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -359,7 +359,7 @@
   },
   "KT_SECRET/03_SIXTY-AND-BROKE_44s.mp4": {
    "id": "7688344513672170765",
-   "view_count": 479,
+   "view_count": 480,
    "like_count": 34,
    "comment_count": 0,
    "share_count": 3,
@@ -409,7 +409,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3655,
+   "view_count": 3656,
    "like_count": 153,
    "comment_count": 7,
    "share_count": 16,
@@ -599,7 +599,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38010,
+   "view_count": 38011,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
@@ -709,7 +709,7 @@
   },
   "KT_RICH/03_03_WHAT-A-ROOM-OF-BROKE-PEOPLE-DOES_50s.mp4": {
    "id": "7684360053482081549",
-   "view_count": 446,
+   "view_count": 447,
    "like_count": 48,
    "comment_count": 2,
    "share_count": 6,
