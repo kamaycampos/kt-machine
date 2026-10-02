@@ -94,10 +94,27 @@ def opens_on_face(src, a):
     return any(seen)
 
 
-def face_start(src, a, b, min_len=45.0, reach=15.0):
+def _floor(a, b):
+    """How short a moved clip may get: the lane minimum check_plan enforces for
+    a clip planned at or above it; a clip planned shorter may lose at most 5s.
+    Never under kt_qc's hard minimum."""
+    try:
+        from lengths import MIN_LEN
+    except Exception:
+        MIN_LEN = 40.0
+    try:
+        from kt_qc import MIN_SECS
+    except Exception:
+        MIN_SECS = 8.0
+    length = b - a
+    return MIN_LEN if length >= MIN_LEN else max(MIN_SECS, length - 5.0)
+
+
+def face_start(src, a, b, reach=15.0):
     """The nearest later sentence start, within `reach`s, that opens on a face,
-    does not open on a weak connective, and leaves at least min_len seconds."""
+    does not open on a weak connective, and keeps the clip above its floor."""
     import kt_payoff
+    min_len = _floor(a, b)
     for s0, _s1, *rest in sorted(kt_payoff.sentences(src, a, a + reach + 5)):
         if not (a < s0 <= a + reach) or b - s0 < min_len:
             continue
