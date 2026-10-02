@@ -15,7 +15,7 @@ Any post that touches supplements or health products also carries the official l
 > These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary.
 
 ## 2b. Your link lives in your bio, never in a caption
-A link in an Instagram or TikTok caption or a title gets accounts restricted. Viewers comment your keyword, and the machine sends them your link by DM. It also puts the link in your bio, and on YouTube and Facebook where links are allowed. This measured 3.47 comments per 1,000 views, against 1.60 for a question. Paste your link exactly as the portal gives it into the `OFFER_URL` secret.
+A link in an Instagram or TikTok caption or a title gets accounts restricted. Viewers comment your keyword, and an automatic DM, set up once in Meta's own comment automation, sends them your link. The machine writes the keyword ask into every caption. It puts the link itself only where links are allowed: YouTube descriptions and Facebook posts. Your link also goes in your bio. This measured 3.47 comments per 1,000 views, against 1.60 for a question. Paste your link exactly as the portal gives it into the `OFFER_URL` secret.
 
 ## 3. No health or cure claims
 Do not post clips or captions that promise a treatment, cure or medical result. The planner already skips health and diet advice. Keep it that way.
