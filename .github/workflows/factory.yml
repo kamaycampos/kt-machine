@@ -43,7 +43,7 @@ jobs:
 
   tlist:
     needs: stock
-    if: always()
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.l.outputs.matrix }}
@@ -55,7 +55,7 @@ jobs:
 
   transcribe:
     needs: tlist
-    if: always() && needs.tlist.outputs.count != '0'
+    if: ${{ !cancelled() && needs.tlist.outputs.count != '0' }}
     runs-on: ubuntu-latest
     timeout-minutes: 180
     strategy:
@@ -75,7 +75,7 @@ jobs:
 
   tmark:
     needs: transcribe
-    if: always()
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -121,7 +121,7 @@ jobs:
 
   queue:
     needs: [plan, build]
-    if: always() && needs.plan.outputs.count != '0'
+    if: ${{ !cancelled() && needs.plan.outputs.count != '0' }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:

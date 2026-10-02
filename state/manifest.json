@@ -6218,12 +6218,26 @@
    "caption": "A consultant sat in a CEO's office for a month and didn't say a word.\n\nCharles Schwab ran U.S. Steel, the largest company in the world, and he was overwhelmed. After watching him, Ivy Lee gave him one instruction: every night, write the six most important things you have to do tomorrow, in order. Work only on the first one until it's done. Then move to the second.\n\nSchwab was skeptical, so Ivy Lee said to try it 60 days, then pay whatever he thought it was worth.\n\nThirty days later, Ivy Lee opened a check for $250,000 - over $5 million in today's money.\n\nWhat would one focused list be worth to your business?\n\n#kevintrudeau #productivity #businesstips #successhabits #timemanagement #entrepreneur",
    "hook": "A $250,000 check for one list",
    "bytes": 97355137,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "MONEY",
    "cta_variant": 26,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/28424602730543722/",
+    "instagram": "https://www.instagram.com/reel/DeAaQsRDkvi/",
+    "youtube": "https://youtube.com/shorts/mEsdh3B1CFw"
+   },
+   "caption_at_post": "A consultant sat in a CEO's office for a month and didn't say a word.\n\nCharles Schwab ran U.S. Steel, the largest company in the world, and he was overwhelmed. After watching him, Ivy Lee gave him one instruction: every night, write the six most important things you have to do tomorrow, in order. Work only on the first one until it's done. Then move to the second.\n\nSchwab was skeptical, so Ivy Lee said to try it 60 days, then pay whatever he thought it was worth.\n\nThirty days later, Ivy Lee opened a check for $250,000 - over $5 million in today's money.\n\nWhat would one focused list be worth to your business?\n\n#kevintrudeau #productivity #businesstips #successhabits #timemanagement #entrepreneur",
+   "posted_at": "2026-10-02T17:08"
   },
   {
    "file": "KT_CLOCK/01_THE-TO-DO-LIST-MISTAKE-EVERYONE-MAKES_90s.mp4",
@@ -6414,7 +6428,7 @@
    "bytes": 83015453,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T15:26",
+   "scheduled_at": "2026-10-02T17:50",
    "cta_keyword": "BRAIN",
    "cta_variant": 27,
    "cta_kind": "offer"
@@ -6452,7 +6466,7 @@
    "bytes": 79714644,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T13:26",
+   "scheduled_at": "2026-10-02T17:50",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
    "cta_kind": "offer"
@@ -6476,7 +6490,7 @@
    "bytes": 97374473,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T13:26",
+   "scheduled_at": "2026-10-02T17:50",
    "cta_keyword": "WISH",
    "cta_variant": 12,
    "cta_kind": "offer"
@@ -6488,7 +6502,7 @@
    "bytes": 102470318,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-02T13:26",
+   "scheduled_at": "2026-10-02T17:50",
    "cta_keyword": "WISH",
    "cta_variant": 17,
    "cta_kind": "offer"
@@ -6498,24 +6512,26 @@
    "caption": "Kevin Trudeau says most business owners set their monthly targets wrong.\n\nThey aim for $100,000 or $200,000, miss it every single month, and never notice they're training themselves to lose.\n\nHis fix: aim for $80,000 instead. Hit it in the first week, and you've banked a win - you're ahead of schedule, building momentum. It's the same reason a struggling football team calls a short, easy pass first: momentum comes from wins, not from reaching.\n\nSet the number you'll actually beat, then let the beating compound.\n\nWhat target are you currently missing every month?\n\n#kevintrudeau #businesstips #entrepreneur #wealthmindset #successhabits #goalsetting",
    "hook": "Aim for 80,000 not 100,000",
    "bytes": 18923464,
-   "done": false,
+   "done": true,
    "status": {},
    "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "BRAIN",
    "cta_variant": 9,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "held": "framing: interviewer framed instead of Kevin (2 Oct 2026) - re-cut with speaker framing"
   },
   {
    "file": "KT_UNCENSORED/01_THE-FIRST-QUESTION-BEFORE-ANY-DECISION_41s.mp4",
    "caption": "Before Kevin Trudeau says yes to any deal, he asks one question first: is this in alignment with who I am?\n\nA friend once pitched him on a chain of strip clubs - \"we're going to make a fortune.\" Kevin told him plainly: you're going to make a lot of money. And he did - it just wasn't a fit for who Kevin was, so he passed.\n\nMost people skip this question and jump straight to the money. He asks it first, every time, because a deal that's out of alignment goes sideways eventually, no matter how good the numbers look.\n\nWhat deal are you chasing that isn't actually you?\n\n#kevintrudeau #entrepreneur #businesstips #mindset #wealthmindset #successhabits",
    "hook": "The first question before any decision",
    "bytes": 19909883,
-   "done": false,
+   "done": true,
    "status": {},
    "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "WISH",
    "cta_variant": 6,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "held": "framing: interviewer framed instead of Kevin (2 Oct 2026) - re-cut with speaker framing"
   },
   {
    "file": "KT_UNCENSORED/01_THE-GUARD-GAVE-THE-SAME-ANSWER_85s.mp4",
@@ -6548,48 +6564,52 @@
    "caption": "Kevin Trudeau's real risk test has nothing to do with the upside.\n\nMost people ask what can I make first. He asks what's the actual worst case first - and forces total honesty about it. Not just I lose $100,000. The real worst case might be losing the money and getting sued on top of it.\n\nThen: can I actually handle that, financially and emotionally? Only after answering yes does he even look at the upside. Skip that order and a $10 million upside next to a $1 million downside gets you greedy - thinking about the ten, not the mortgage on the house you'd lose.\n\nIf the worst case costs you your house, it's not the right deal for you.\n\n#kevintrudeau #wealthmindset #businesstips #investing #entrepreneur #riskmanagement",
    "hook": "10x upside Lose the house?",
    "bytes": 50259259,
-   "done": false,
+   "done": true,
    "status": {},
    "scheduled_at": "2026-10-02T20:04",
    "cta_keyword": "WISH",
    "cta_variant": 29,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "held": "framing: interviewer framed instead of Kevin (2 Oct 2026) - re-cut with speaker framing"
   },
   {
    "file": "KT_UNCENSORED/02_150-MILLION-IN-SALES-STILL-STUCK_69s.mp4",
    "caption": "A business owner Kevin Trudeau knows built a company doing $150 million a year - and hit a wall. His answer was to hire more people.\n\nKevin's response: your sales are flat, but your profits keep shrinking, because your overhead keeps growing. You're pushing a rope.\n\nHis friend Al Dunlap - nicknamed Chainsaw Al, a turnaround expert - had the opposite instinct: cut expenses everywhere. Even if sales dip 10%, profits jump. Profit, not revenue, is the money that actually lands in your pocket - or moves your stock price if you're public.\n\nEveryone tries to throw money at a growth problem. The fix is usually the opposite.\n\n#kevintrudeau #businesstips #entrepreneur #wealthmindset #profitfirst #successhabits",
    "hook": "$150 million in sales still stuck",
    "bytes": 31673543,
-   "done": false,
+   "done": true,
    "status": {},
    "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "BRAIN",
    "cta_variant": 19,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "held": "framing: interviewer framed instead of Kevin (2 Oct 2026) - re-cut with speaker framing"
   },
   {
    "file": "KT_UNCENSORED/02_WHAT-REPLACED-OSWALD-THE-RABBIT_63s.mp4",
    "caption": "Walt Disney's first cartoon character wasn't Mickey Mouse.\n\nHe created one with four business partners, meant to make him rich and famous. Then his partners manipulated the contract and took it from him. Disney fought to get it back and finally admitted he couldn't.\n\nThen he said something that mattered more than the character itself: they stole it, but they didn't steal his ability to create.\n\nSo he created another one. The stolen character was called Oswald the Rabbit. Almost nobody remembers Oswald. Everybody remembers what Disney made next: Mickey Mouse.\n\n#kevintrudeau #entrepreneur #successstory #wealthmindset #businesstips #mindset",
    "hook": "What replaced Oswald the rabbit",
    "bytes": 31484951,
-   "done": false,
+   "done": true,
    "status": {},
    "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "MONEY",
    "cta_variant": 14,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "held": "framing: interviewer framed instead of Kevin (2 Oct 2026) - re-cut with speaker framing"
   },
   {
    "file": "KT_UNSTUCK/01_100-PERCENT-BLINDFOLDED-WIN_73s.mp4",
    "caption": "Zig Ziglar once told Kevin Trudeau he could beat the world's greatest archer in a match, every single time.\n\nKevin's reaction: that's impossible, the guy's an Olympian. Ziglar's answer: it's simple. Blindfold him.\n\nHow's he supposed to hit a target he can't see? Exactly, Ziglar said. Most people live their whole life trying to hit a target they don't even have.\n\nKevin ties it back to Napoleon Hill's Think and Grow Rich: the entire key to success comes down to one thing - define your dream, and get a burning desire for its achievement. Everything else is details.\n\nWhat's the target you haven't actually named yet?\n\n#kevintrudeau #successhabits #mindset #goalsetting #motivation #entrepreneur",
    "hook": "100% blindfolded win against an Olympian",
    "bytes": 29051341,
-   "done": false,
+   "done": true,
    "status": {},
    "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "BRAIN",
    "cta_variant": 25,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "held": "framing: interviewer framed instead of Kevin (2 Oct 2026) - re-cut with speaker framing"
   },
   {
    "file": "KT_UNSTUCK/01_WHAT-ARNOLD-SAW-BEFORE-MR-OLYMPIA_60s.mp4",
@@ -6622,24 +6642,26 @@
    "caption": "I meet this gal - blonde, blue-eyed, a cheerleader for an NFL team, Kevin Trudeau says. He asked her to dinner Friday, said he'd pick her up at seven, told her to dress nice because he would be.\n\nThe next morning, she told him what actually got her attention that night. It wasn't the restaurant or the sport coat.\n\nIt was that he never once asked what food she liked or where she wanted to go. He just decided, and took her. \"Guys don't do that anymore,\" she told him. \"You took charge without being controlling. That's what made you a man.\"\n\nDecisive isn't the same as controlling. Most guys never learn the difference.\n\n#kevintrudeau #relationshipadvice #mindset #masculinity #datingtips #selfimprovement",
    "hook": "What turned her on the most",
    "bytes": 27753876,
-   "done": false,
+   "done": true,
    "status": {},
    "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "MONEY",
    "cta_variant": 20,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "held": "framing: interviewer framed instead of Kevin (2 Oct 2026) - re-cut with speaker framing"
   },
   {
    "file": "KT_UNSTUCK/02_THE-MAN-WHO-BEAT-MUHAMMAD-ALI_60s.mp4",
    "caption": "Ken Norton was heavyweight champion of the world. He's one of the only men who ever beat Muhammad Ali. He started with nothing and built success in business long after boxing.\n\nKevin Trudeau says that every single time he shakes Ken Norton's hand, Norton says the same thing, like a greeting: \"Whatever the mind of man can conceive and bring itself to believe, it can achieve.\" Napoleon Hill's words, repeated so many times they became how Norton says hello.\n\nKevin's advice to any man listening is the same line: go for your dreams, and don't let anyone steal them.\n\n#kevintrudeau #successhabits #mindset #motivation #kennorton #entrepreneur",
    "hook": "The man who beat Muhammad Ali",
    "bytes": 21569033,
-   "done": false,
+   "done": true,
    "status": {},
    "scheduled_at": "2026-10-02T13:26",
    "cta_keyword": "BRAIN",
    "cta_variant": 15,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "held": "framing: interviewer framed instead of Kevin (2 Oct 2026) - re-cut with speaker framing"
   },
   {
    "file": "KT_SPIRITUAL/02_WHY-IT-TOOK-HER-3-HOURS_56s.mp4",
@@ -6664,6 +6686,150 @@
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "offer"
+  },
+  {
+   "file": "AR_ENGRAM/01_LOVE-CHANGED-THE-SHAPE_74s.mp4",
+   "caption": "Two glasses of the same tap water. One got a frequency of love. One got hate.\n\nDr. Emoto froze both after broadcasting a thought at them, nothing more, then sliced and photographed the crystals. The love water formed something symmetrical and beautiful. The hate water froze into chaos.\n\nYour body is seventy percent water. Every thought you broadcast at yourself all day is doing the same thing to you that the beam did to that glass \u2014 you're just not in a lab watching it happen.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#consciousness #awakening #spirituality #mindset #universe #kevintrudeau",
+   "hook": "Love changed the shape of water",
+   "bytes": 45135898,
+   "done": false,
+   "status": {},
+   "scheduled_at": "2026-10-02T20:18",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
+  },
+  {
+   "file": "AR_KARMA/02_TREAT-HIM-BETTER-THAN-HE-DESERVES_111s.mp4",
+   "caption": "A drunk driver runs a red light and smashes into your car. What you do next is the whole teaching.\n\nMost people react \u2014 blame him, blame the universe. That keeps the debt open. The harder option is the one that pays: treat him with more kindness than the moment calls for, knowing whatever you put out is what comes back.\n\nResponding instead of reacting to the worst moment in your day is the hardest karma to create \u2014 exactly why it produces the biggest return.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#karma #awakening #spirituality #mindset #universe #kevintrudeau",
+   "hook": "Treat him better than he deserves",
+   "bytes": 70120577,
+   "done": false,
+   "status": {},
+   "scheduled_at": "2026-10-03T10:29",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
+  },
+  {
+   "file": "AR_RELEASE/01_HALF-AN-INCH-FROM-THE-GROUND_46s.mp4",
+   "caption": "Picture yourself gripping a bar, terrified, certain that letting go means falling a thousand feet.\n\nThat's what holding onto old pain, old anger, old regret feels like from the inside \u2014 your knuckles white, your whole life organized around not letting go.\n\nNow picture the actual truth: your feet are already a half an inch from the ground. There was never a fall waiting for you. Let go, and you land exactly where you already were.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#letgo #awakening #spirituality #mindset #healing #kevintrudeau",
+   "hook": "Half an inch from solid ground",
+   "bytes": 30665006,
+   "done": false,
+   "status": {},
+   "scheduled_at": "2026-10-02T18:10",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
+  },
+  {
+   "file": "AR_RELEASE/01_LETTING-GO-ISNT-FORGIVING_64s.mp4",
+   "caption": "Letting go doesn't mean the thing that happened is suddenly okay.\n\nIt isn't forgiveness, and it isn't pretending things will magically fall into place once you release it. Letting go doesn't make things come to you.\n\nWhat it does is change your frequency so things are finally allowed to come. A judge put him in prison for eight and a half years without a crime. He let it go anyway \u2014 not because it was fine, but because today was the only day actually available to him.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#letgo #awakening #spirituality #mindset #consciousness #kevintrudeau",
+   "hook": "Letting go isn't forgiving them",
+   "bytes": 44116782,
+   "done": false,
+   "status": {},
+   "scheduled_at": "2026-10-03T06:53",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
+  },
+  {
+   "file": "AR_RELEASE/02_BLESS-THE-PEOPLE-WHO-HURT-YOU_89s.mp4",
+   "caption": "The bedtime prayer you were taught left out the part that actually works.\n\nSay your prayers wasn't the whole instruction. The real version has two parts, and almost nobody still does the first one: bless the people you love, then bless the people who wronged you, by name, including the ones you're still angry at.\n\nThen, separately, give thanks for what's already here. No asking for anything. He says it opens something up that nothing else will.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#prayer #letgo #spirituality #awakening #gratitude #kevintrudeau",
+   "hook": "Bless the people who hurt you",
+   "bytes": 59107124,
+   "done": false,
+   "status": {},
+   "scheduled_at": "2026-10-03T12:05",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
+  },
+  {
+   "file": "AR_RELEASE/02_NO-MUFFINS-STILL-A-GOOD-MORNING_96s.mp4",
+   "caption": "An old sitcom taught this better than most spiritual books ever have.\n\nA husband spends all night looking forward to fresh blueberry muffins. His wife forgot to buy them. Her face goes pale, bracing for the reaction \u2014 and he just shrugs: I'm not going to let the absence of muffins ruin my morning. What else is there for breakfast?\n\nThat's the whole practice in one scene. Not suppressing disappointment, just refusing to let a small thing cost you the entire day.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#letgo #awakening #spirituality #mindset #innerpeace #kevintrudeau",
+   "hook": "No muffins. Still a good morning.",
+   "bytes": 68542795,
+   "done": false,
+   "status": {},
+   "scheduled_at": "2026-10-03T15:39",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
+  },
+  {
+   "file": "KT_DUTY/01_HEADLIGHTS-ON-A-DARK-ROAD_91s.mp4",
+   "caption": "You don't need the whole road lit up to start driving.\n\nKevin Trudeau compares life to a pitch-black country road at night - no moon, no stars, nothing but headlights that only show you a few feet ahead. You can still drive for miles. Every time you move forward, you see a little further.\n\nThe people waiting to see around the corner before they'll move never move at all.\n\nStop waiting for the whole picture. Go as far as you can see, then go again.\n\n#kevintrudeau #mindset #nextstep #motivation #dharma #successmindset",
+   "hook": "One step is all you need",
+   "bytes": 60085691,
+   "done": false,
+   "status": {},
+   "scheduled_at": "2026-10-03T12:51",
+   "cta_keyword": "WISH",
+   "cta_variant": 7,
+   "cta_kind": "offer"
+  },
+  {
+   "file": "KT_DUTY/01_PURPOSE-IS-THE-WRONG-WORD_91s.mp4",
+   "caption": "Most people spend their whole life searching for something that was never there.\n\nKevin Trudeau says mission and purpose are modern myths - words invented to give people something to chase that they can never catch, so they stay empty forever.\n\nThere is a real word underneath it, an ancient one most people never hear: Dharma. It simply means duty, the thing you agreed to do before you got here.\n\nStop hunting for a purpose. Start doing the next thing you already know is yours to do.\n\nWhat if the emptiness was never about finding purpose at all?\n\n#kevintrudeau #dharma #mindset #purpose #selfimprovement #manifesting",
+   "hook": "The purpose myth Duty is real",
+   "bytes": 60377814,
+   "done": false,
+   "status": {},
+   "scheduled_at": "2026-10-03T18:10",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 9,
+   "cta_kind": "offer"
+  },
+  {
+   "file": "KT_MEMORY/01_CHICAGO-UNION-SAID-NO_86s.mp4",
+   "caption": "Kevin Trudeau once offered an entire school district free memory training worth millions of dollars.\n\nEvery teacher, every student, no cost to the district, in exchange for the publicity.\n\nChicago turned him down. Word was the teachers' union worried that students who could actually remember what they were taught might need fewer teachers to reteach it.\n\nHe never got confirmation that was the real reason. He only got the no.\n\nIf it's true, whose job security won that vote: the students' or the system's?\n\n#kevintrudeau #memory #education #schools #learning #mindset",
+   "hook": "Why isn't this taught in schools",
+   "bytes": 83987082,
+   "done": false,
+   "status": {},
+   "scheduled_at": "2026-10-03T19:43",
+   "cta_keyword": "KT",
+   "cta_variant": 10,
+   "cta_kind": "offer"
+  },
+  {
+   "file": "KT_SILENT/01_I-HOPE-HE-FAILS_66s.mp4",
+   "caption": "Tell a friend you're starting a restaurant and watch what happens.\n\nOut loud they say go for it. Kevin Trudeau says underneath, a different voice runs: I hope he fails, I hope he fails.\n\nHe calls it counter intention - the gap between what people say to your face and what they quietly hope happens. Even people who love you carry it, because your rise moves the bar they're measured against.\n\nThat's why the goal stays untold until it's real.\n\nWould your closest friend really want you to out-earn them tenfold?\n\n#kevintrudeau #mindset #successmindset #wealthmindset #selfimprovement #moneymindset",
+   "hook": "Why friends want you to fail",
+   "bytes": 54111522,
+   "done": false,
+   "status": {},
+   "scheduled_at": "2026-10-02T20:04",
+   "cta_keyword": "KT",
+   "cta_variant": 6,
+   "cta_kind": "offer"
+  },
+  {
+   "file": "KT_SILENT/02_THE-TWO-FINGER-TEST_69s.mp4",
+   "caption": "A man stands on stage, arm held straight out, told simply to resist.\n\nKevin Trudeau describes the old muscle-testing demonstration: hold up one finger while the room sends love, and the arm stays locked. Hold up two fingers while the room silently sends hate, and the same strong arm drops instantly - no fatigue, no warning, just intention in the air.\n\nHe says that's the exact force friends and family aim at your goals in silence.\n\nIf strangers can move your arm with a thought, what is your own family doing to your dream?\n\n#kevintrudeau #energy #mindpower #manifestation #mindset #success",
+   "hook": "A two-finger test weakens your arm",
+   "bytes": 57013608,
+   "done": false,
+   "status": {},
+   "scheduled_at": "2026-10-03T15:05",
+   "cta_keyword": "MONEY",
+   "cta_variant": 8,
+   "cta_kind": "question"
+  },
+  {
+   "file": "KT_SILENT/02_TWO-PEOPLE-SAME-GOAL_97s.mp4",
+   "caption": "There is exactly one situation where Kevin Trudeau says it's safe to say your goal out loud.\n\nHe calls it the mastermind principle: two or more people chasing the identical goal, in harmony, each one winning if it happens. A business partner who wants the same expansion. A spouse who wants the same lake house. No competing interest, no counter intention.\n\nEveryone else still gets silence, because a shared goal and a borrowed one aren't the same thing.\n\nWho in your life actually wants the exact outcome you do?\n\n#kevintrudeau #mastermind #successmindset #wealthmindset #businessmindset #mindset",
+   "hook": "Two people, same goal win more",
+   "bytes": 84209399,
+   "done": false,
+   "status": {},
+   "scheduled_at": "2026-10-04T07:02",
+   "cta_keyword": "WISH",
+   "cta_variant": 11,
+   "cta_kind": "question"
   }
  ]
 }

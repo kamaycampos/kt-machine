@@ -33,6 +33,7 @@ import json, os, re, subprocess, sys
 FF = os.path.expanduser("~/Kamay/bin/ffmpeg")
 MIN_SECS, MAX_SECS = 8.0, 185.0
 CONNECTORS = {"and", "or", "to", "of", "after", "upon", "by", "over", "on", "the", "a"}
+COPULA = {"is", "are", "was", "were", "be", "not", "isn't", "aren't", "wasn't", "no"}
 STARTERS = {"the", "this", "that", "these", "we", "you", "they", "he", "she", "it",
             "and", "but", "so", "guess", "now", "what", "if", "because", "there",
             "well", "look", "every", "most", "without", "when", "successful", "people"}
@@ -43,7 +44,12 @@ OPENERS = {"and", "but", "so", "because", "it", "the", "a", "an", "if", "when", 
 # function words that recur in correct English one word apart: "that firing that",
 # "the gold the", "to it to". Damage repeats content words, not these.
 REPEATABLE = {"that", "the", "a", "to", "of", "it", "is", "in", "on", "at", "as",
-              "was", "had", "very", "no", "you", "they", "he", "she", "we", "i"}
+              "was", "had", "very", "no", "you", "they", "he", "she", "we", "i",
+              # 2 Oct 2026: auxiliaries wrap a question around its subject - "What do
+              # you do?", "what did you do", "are you, are you" - and failed
+              # THE-450-MILLION-BREAKUP, which was right.
+              "do", "did", "does", "are", "were", "have", "has", "can", "will",
+              "would"}
 
 
 def sh(*a):
@@ -101,6 +107,12 @@ def text_faults(caps):
                 # at it" are correct English with a function word recurring. Damage
                 # scrambles CONTENT words - "said He it said", "was It when was".
                 and norm[i] not in REPEATABLE
+                # 2 Oct 2026, two clips that were RIGHT: "an obstacle or a challenge or
+                # a major situation" is a list ("or X or"), and "successful people are
+                # not people without problems" is a definition ("X are not X"). A list
+                # word or a copula/negation in between is grammar, not a scramble.
+                and norm[i] not in CONNECTORS
+                and not any(norm[i + k] in COPULA for k in (1, 2))
                 # "every single one, every single one had more" - he repeats a whole
                 # phrase for emphasis, and emphasis is PUNCTUATED. Transcription damage
                 # never is: "said He it said", "was It when was", "do It things does"
