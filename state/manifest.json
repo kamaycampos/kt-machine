@@ -6334,12 +6334,26 @@
    "caption": "Before Amazon was Amazon, a billionaire called Kevin Trudeau and told him to buy stock in an online bookstore nobody understood yet. He did.\n\nYears later, another call: two guys in a garage were starting a computer company called Apple. The CEO of the largest computer company in the world had just said there was no market for computers in the home. Kevin bought it anyway.\n\nBoth calls came from the same place: people who could see the shape of something before it had a name.\n\nWhat are you dismissing right now that someone else is quietly buying?\n\n#kevintrudeau #wealthmindset #investing #richpeoplethink #applestock #financialfreedom",
    "hook": "The call before Amazon and Apple",
    "bytes": 46499014,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-01T20:53",
    "cta_keyword": "BRAIN",
    "cta_variant": 23,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2385024652023592/",
+    "instagram": "https://www.instagram.com/reel/Dd-wZr1DAXd/",
+    "youtube": "https://youtube.com/shorts/O5OwSlSxEss"
+   },
+   "caption_at_post": "Before Amazon was Amazon, a billionaire called Kevin Trudeau and told him to buy stock in an online bookstore nobody understood yet. He did.\n\nYears later, another call: two guys in a garage were starting a computer company called Apple. The CEO of the largest computer company in the world had just said there was no market for computers in the home. Kevin bought it anyway.\n\nBoth calls came from the same place: people who could see the shape of something before it had a name.\n\nWhat are you dismissing right now that someone else is quietly buying?\n\n#kevintrudeau #wealthmindset #investing #richpeoplethink #applestock #financialfreedom",
+   "posted_at": "2026-10-02T01:43"
   },
   {
    "file": "KT_LEDGER/01_THREE-IDEAS-THEY-CALLED-INSANE_60s.mp4",
@@ -6412,7 +6426,7 @@
    "bytes": 101385776,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-01T20:53",
+   "scheduled_at": "2026-10-02T02:24",
    "cta_keyword": "KT",
    "cta_variant": 22,
    "cta_kind": "question"
@@ -6424,7 +6438,7 @@
    "bytes": 79714644,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-01T20:53",
+   "scheduled_at": "2026-10-02T02:24",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
    "cta_kind": "offer"
@@ -6448,7 +6462,7 @@
    "bytes": 97374473,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-01T20:53",
+   "scheduled_at": "2026-10-02T02:24",
    "cta_keyword": "WISH",
    "cta_variant": 12,
    "cta_kind": "offer"
@@ -6460,7 +6474,7 @@
    "bytes": 102470318,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-01T20:53",
+   "scheduled_at": "2026-10-02T02:24",
    "cta_keyword": "WISH",
    "cta_variant": 17,
    "cta_kind": "offer"
@@ -6472,7 +6486,7 @@
    "bytes": 18923464,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-01T20:53",
+   "scheduled_at": "2026-10-02T02:24",
    "cta_keyword": "BRAIN",
    "cta_variant": 9,
    "cta_kind": "question"
@@ -6484,7 +6498,7 @@
    "bytes": 19909883,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-01T20:53",
+   "scheduled_at": "2026-10-02T02:24",
    "cta_keyword": "WISH",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -6520,7 +6534,7 @@
    "bytes": 31673543,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-01T20:53",
+   "scheduled_at": "2026-10-02T02:24",
    "cta_keyword": "BRAIN",
    "cta_variant": 19,
    "cta_kind": "question"
@@ -6532,7 +6546,7 @@
    "bytes": 31484951,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-01T20:53",
+   "scheduled_at": "2026-10-02T02:24",
    "cta_keyword": "MONEY",
    "cta_variant": 14,
    "cta_kind": "offer"
@@ -6582,7 +6596,7 @@
    "bytes": 27753876,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-01T20:53",
+   "scheduled_at": "2026-10-02T02:24",
    "cta_keyword": "MONEY",
    "cta_variant": 20,
    "cta_kind": "offer"
@@ -6594,7 +6608,7 @@
    "bytes": 21569033,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-01T20:53",
+   "scheduled_at": "2026-10-02T02:24",
    "cta_keyword": "BRAIN",
    "cta_variant": 15,
    "cta_kind": "offer"
