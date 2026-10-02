@@ -56,6 +56,60 @@ def _find_words(src, phrase, near, last):
     return None
 
 
+_DET = []
+WEAK_OPENERS = {"and", "but", "so", "now", "because", "that's", "thats", "or", "then"}
+
+
+def _has_face(src, t):
+    """Is a speaker's face on screen at t in the SOURCE? YuNet, already in bin/.
+    No model or no OpenCV = None (the gate stands aside rather than block)."""
+    try:
+        import cv2
+    except Exception:
+        return None
+    if not _DET:
+        model = os.path.join(K, "bin", "yunet.onnx")
+        if not (os.path.exists(model) and hasattr(cv2, "FaceDetectorYN_create")):
+            return None
+        _DET.append(cv2.FaceDetectorYN_create(model, "", (320, 320), 0.6, 0.3, 5000))
+    q = "/tmp/_open_face.jpg"
+    sh("ffmpeg", "-y", "-loglevel", "error", "-ss", f"{t:.2f}", "-i", src,
+       "-frames:v", "1", "-vf", "scale=640:-2", "-q:v", "3", q)
+    img = cv2.imread(q)
+    if img is None:
+        return None
+    h, w = img.shape[:2]
+    _DET[0].setInputSize((w, h))
+    _, faces = _DET[0].detect(img)
+    return bool(faces is not None and len(faces) and max(f[2] for f in faces) / w >= 0.04)
+
+
+def opens_on_face(src, a):
+    """THE FIRST SECOND SHOWS THE SPEAKER (2 Oct 2026, Kamay's first-3-seconds
+    rule). A member clip opened on four seconds of B-roll - the back of a head in
+    headphones. True / False, or None when the detector is unavailable."""
+    seen = [_has_face(src, a + d) for d in (0.2, 0.5, 0.9)]
+    if all(x is None for x in seen):
+        return None
+    return any(seen)
+
+
+def face_start(src, a, b, min_len=45.0, reach=15.0):
+    """The nearest later sentence start, within `reach`s, that opens on a face,
+    does not open on a weak connective, and leaves at least min_len seconds."""
+    import kt_payoff
+    for s0, _s1, *rest in sorted(kt_payoff.sentences(src, a, a + reach + 5)):
+        if not (a < s0 <= a + reach) or b - s0 < min_len:
+            continue
+        text = (rest[0] if rest else "") or ""
+        first = re.sub(r"[^a-z']", "", (text.split() or [""])[0].lower())
+        if first in WEAK_OPENERS:
+            continue
+        if opens_on_face(src, s0):
+            return round(max(0.0, s0 - 0.10), 2)
+    return None
+
+
 def fix_edges(key):
     """Put each cut on a real sentence boundary, measured at WORD level here.
 
@@ -93,6 +147,9 @@ def fix_edges(key):
                     near = [s for s in kt_payoff.sentences(src, max(0, a - 20), a + 20) if abs(s[0] - a) <= 3.0]
                     if near:
                         a = round(max(0.0, min(near, key=lambda s: abs(s[0] - a))[0] - 0.10), 2)
+                a = _face_gate(src, c, a, b)
+                if a is None:
+                    continue
                 c["in"], c["out"] = a, b
                 keep.append(c)
                 continue
@@ -111,12 +168,28 @@ def fix_edges(key):
                 continue
             print(f"  {c['slug']}: ending {b} -> {fixed:.2f}")
             b = round(fixed, 2)
+        a = _face_gate(src, c, a, b)
+        if a is None:
+            continue
         if (a, b) != (float(c["in"]), float(c["out"])):
             print(f"  {c['slug']}: cut {c['in']}-{c['out']} -> {a}-{b}")
         c["in"], c["out"] = a, b
         keep.append(c)
     p["clips"] = keep
     json.dump(p, open(path, "w"), indent=1, ensure_ascii=False)
+
+
+def _face_gate(src, c, a, b):
+    """Opening must show a face within 1.0s: keep, move to a face sentence, or drop."""
+    ok = opens_on_face(src, a)
+    if ok is None or ok:
+        return a
+    moved = face_start(src, a, b)
+    if moved is not None:
+        print(f"  {c['slug']}: opens on B-roll - start moved {a} -> {moved} (face on screen)")
+        return moved
+    print(f"  {c['slug']}: opens on B-roll, no face - dropped")
+    return None
 
 
 def batch(keys, test):

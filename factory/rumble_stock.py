@@ -19,7 +19,7 @@ SRC = os.path.join(K, "Kamay Content", "1_RAW", "KT_SOURCE")
 # the factory on the first push, before setup has added FACTORY_KEY. openssl
 # would then encrypt with an EMPTY password and upload files the member's real
 # key can never open. No key = nothing stocked, nothing uploaded, a clear note.
-if not os.environ.get("FACTORY_KEY"):
+if __name__ == "__main__" and not os.environ.get("FACTORY_KEY"):   # run as a job, not imported
     print("::notice::FACTORY_KEY is not set yet - finish setup (say 'set me up' to your Claude). Nothing was stocked.")
     sys.exit(0)
 
