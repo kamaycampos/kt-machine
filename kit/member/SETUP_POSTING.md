@@ -23,6 +23,10 @@ Your Claude gets your Page token with you in the Graph API Explorer and turns it
 - `FB_PAGE_ID`
 - `FB_ACCESS_TOKEN`
 
+### Comment → DM: your link, delivered
+Your captions ask viewers to comment your keyword, for example BRAIN. Meta's own comment automation, which is free, replies with your link by DM. You set it up once in **Meta Business Suite → Inbox → Automations**: choose your keyword, and the DM text is your link plus your disclosure. Your Claude walks you through it. This pattern measured 3.47 comments per 1,000 views, against 1.60 for a plain question.
+**Optional upgrade:** ManyChat (paid) adds follow-up sequences and lead capture on top. It's not needed to start.
+
 ## YouTube
 You need a free Google Cloud project with **YouTube Data API v3** turned on, and an OAuth client. Your Claude gets the refresh token with you in Google's OAuth Playground. You then paste three secrets:
 - `YT_CLIENT_ID`
