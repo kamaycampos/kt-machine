@@ -143,6 +143,37 @@ def sources():
     return out
 
 
+def dm_stats(rows):
+    """Comment -> DM, per keyword: DMs sent, and DMs per 1,000 Instagram views on
+    the clips that asked for that keyword (MASTERY finding 19 measured 3.47)."""
+    d = load("state/dms.json", {}) or {}
+    sent = list((d.get("sent") or {}).values())
+    by = {}
+    for r in sent:
+        k = by.setdefault(r.get("keyword", "?"), {"keyword": r.get("keyword", "?"), "dms": 0,
+                                                    "instagram": 0, "facebook": 0, "views": 0})
+        k["dms"] += 1
+        k[r.get("platform", "instagram")] = k.get(r.get("platform", "instagram"), 0) + 1
+    for c in rows:
+        kw = (c.get("keyword") or "").upper()
+        if kw in by:
+            by[kw]["views"] += c["views"].get("instagram") or 0
+    for k in by.values():
+        k["per_1k"] = round(k["dms"] * 1000 / k["views"], 2) if k["views"] else None
+    week = (datetime.now(timezone.utc).timestamp() - 7 * 86400)
+    recent = sum(1 for r in sent if _when(r.get("sent_at")) >= week)
+    return {"total": len(sent), "week": recent, "keywords": sorted(by.values(), key=lambda x: -x["dms"]),
+            "errors": (d.get("errors") or [])[-5:],
+            "on": bool(sent) or bool(d.get("seen"))}
+
+
+def _when(t):
+    try:
+        return datetime.fromisoformat(str(t)).timestamp()
+    except ValueError:
+        return 0
+
+
 def build():
     os.makedirs(DOCS, exist_ok=True)
     board = os.path.join(DOCS, "index.html")
@@ -154,6 +185,7 @@ def build():
         "built": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
         "kit": load("KIT.json", {}),
         "summary": summary(rows),
+        "dms": dm_stats(rows),
         "clips": sorted(rows, key=lambda r: r["scheduled"] or r["posted"] or "", reverse=True),
         "sources": sources(),
         "style": {k: v for k, v in load("my_brand/style.json", {}).items() if not k.startswith("_")},

@@ -10,7 +10,7 @@ You are running a member's copy of **The Affiliate Factory**. It is a clip machi
 
 ## The commands they will type (and what you do)
 
-### `start`: first time only, about 20 minutes together
+### `start` (or "set me up"): first time only, about 20 minutes together
 1. Run `python3 personalize.py`. It writes their repo name into the machine and prints two keys.
 2. Walk them through pasting `FACTORY_KEY`, `TRANSCRIPT_KEY` and `OFFER_URL` (their affiliate link) as **repository secrets**. Give one secret per message and wait for "done" before the next.
 3. Walk them through turning on **GitHub Pages** (Settings → Pages → Deploy from a branch → `main` / `/docs`).
@@ -44,7 +44,12 @@ Brand folders are `KT_<ONEWORD>`, one per episode. Never use `AR_`. Push to a `c
 Read `state/manifest.json` and `factory/reports/latest.md`. List each new clip with its hook, length and status. Point them to their board at `https://YOUR-GITHUB-NAME.github.io/YOUR-REPO/`, where every clip has its caption ready to copy.
 
 ### `post`: switch on autopilot (optional, any time)
-Walk them through `SETUP_POSTING.md`, one platform at a time, in the order Instagram + Facebook first (one Meta setup covers both), then YouTube, then TikTok. When at least one platform is set up, have them add the repository **variable** `AUTOPOST` = `on`. Until then the machine is in **Studio mode**: it makes and schedules clips and they post by hand from the board.
+Walk them through `SETUP_POSTING.md`, one platform at a time, in the order Instagram + Facebook first (one Meta setup covers both), then YouTube, then TikTok. When Instagram + Facebook are connected, also switch on **comment → DM**:
+- give the Page token `pages_messaging` and `instagram_manage_messages`
+- have them allow message access in Instagram's settings
+- set the variable `DM_AUTO` = `on`
+
+Then run `python3 dm/dm_reply.py --dry` with their secrets to show which comments would get the link. When at least one platform is set up, have them add the repository **variable** `AUTOPOST` = `on`. Until then the machine is in **Studio mode**: it makes and schedules clips and they post by hand from the board.
 
 ### `report`: what is working
 Read `state/metrics.json`, `state/tiktok.json` and `factory/MASTERY.md`. Rank each platform separately. The headline number is **skip rate** on Instagram, where lower is better and the target is under 40%. Say three things: what won, what lost, and what to change next week. If their numbers confirm or contradict a MASTERY pattern, add a dated line to the changelog at the end of `factory/MASTERY.md`. Never rewrite a pattern.

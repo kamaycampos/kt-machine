@@ -59,6 +59,7 @@ EMPTY = {
         "note": "Your month's episodes. Your Claude fills this in (append only).",
         "episodes": []},
     "docs/thumbs.json": {},
+    "state/dms.json": {"sent": {}, "seen": {}, "errors": []},
 }
 
 # Text a member's copy must not carry. --check fails the build on any of these.
@@ -89,6 +90,25 @@ def studio_by_default(path):
     s = re.sub(r"KT_TZ: *\"?America/New_York\"?", "KT_TZ: ${{ vars.KT_TZ || 'America/New_York' }}", s)
     s = s.replace("DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}",
                   "DRY_RUN: ${{ (inputs.dry_run || vars.AUTOPOST != 'on') && '1' || '0' }}")
+    # Comment -> DM runs on every pass, just before the board and panel are rebuilt.
+    s = s.replace("      - name: Rebuild the calendar and the captions board\n", """      - name: Comment keyword -> DM with the link
+        if: ${{ !inputs.dry_run && inputs.trial == '' }}
+        continue-on-error: true          # a DM pass must never block a post
+        env:
+          DM_AUTO: ${{ vars.DM_AUTO }}
+          DM_TEXT: ${{ vars.DM_TEXT }}
+          OFFER_URL: ${{ secrets.OFFER_URL }}
+          KT_CTA_KEYWORDS: ${{ secrets.KT_CTA_KEYWORDS }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+        run: python dm/dm_reply.py
+
+      - name: Rebuild the calendar and the captions board
+""")
+    s = s.replace("git add state/manifest.json state/metrics.json docs",
+                  "git add state/manifest.json state/metrics.json state/dms.json docs")
     # The member's control panel is written right after the captions board.
     s = s.replace("run: python build_pages.py", "run: python build_pages.py && python panel/build_panel.py")
     # Awakened Rise's credentials are Yaren's account - a member has one account.

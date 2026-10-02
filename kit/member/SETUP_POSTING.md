@@ -6,7 +6,7 @@ Each platform is separate. Connect one, switch autopilot on, and add the next wh
 
 | Platform | Time | What you get |
 |---|---|---|
-| Instagram + Facebook | ~20 min, one setup covers both | Reels and Stories posted fully automatically |
+| Instagram + Facebook | ~20 min, one setup covers both | Reels, Stories and Trial Reels posted automatically, and comment → DM with your link |
 | YouTube | ~15 min + a one-time Google review | Shorts posted automatically with covers |
 | TikTok | ~15 min | Each clip lands in your TikTok drafts with its caption; you tap **Post** |
 
@@ -23,9 +23,16 @@ Your Claude gets your Page token with you in the Graph API Explorer and turns it
 - `FB_PAGE_ID`
 - `FB_ACCESS_TOKEN`
 
-### Comment → DM: your link, delivered
-Your captions ask viewers to comment your keyword, for example BRAIN. Meta's own comment automation, which is free, replies with your link by DM. You set it up once in **Meta Business Suite → Inbox → Automations**: choose your keyword, and the DM text is your link plus your disclosure. Your Claude walks you through it. This pattern measured 3.47 comments per 1,000 views, against 1.60 for a plain question.
-**Optional upgrade:** ManyChat (paid) adds follow-up sequences and lead capture on top. It's not needed to start.
+### Comment → DM: your link, delivered automatically
+Your captions ask viewers to comment your keyword, for example BRAIN. Within 20 minutes the factory sends each of them your link in a private message, with your disclosure. It works on Instagram and Facebook, and nobody is messaged twice. Your control panel's **Messages** room counts DMs per keyword per 1,000 views, so you can see which word earns the most.
+
+Your Claude switches it on in the same Meta setup as posting:
+- the Page token gets two more permissions, `pages_messaging` and `instagram_manage_messages`
+- Instagram → Settings → Messages and story replies → Message controls → **Allow access to messages** is turned on
+- the repository variable `DM_AUTO` is set to `on`
+- *Optional:* the variable `DM_TEXT` holds your own message, for example `Here's the free audio: {link}`. Your disclosure is always added.
+
+**If you already use Meta's built-in auto-replies or ManyChat**, keep one system only, or people get two DMs. ManyChat (paid) adds follow-up sequences and lead capture. It is never needed.
 
 ## YouTube
 You need a free Google Cloud project with **YouTube Data API v3** turned on, and an OAuth client. Your Claude gets the refresh token with you in Google's OAuth Playground. You then paste three secrets:

@@ -102,7 +102,7 @@ async function copy(text, label) {
   try { await navigator.clipboard.writeText(text); toast(label || 'Copied'); }
   catch { const a = document.createElement('textarea'); a.value = text; document.body.append(a); a.select(); try { document.execCommand('copy'); toast(label || 'Copied'); } catch {} a.remove(); }
 }
-const say = (text) => `<button data-copy="${esc(text)}" data-label="Copied. Paste it to your Claude">Tell Claude</button>`;
+const say = (text, label = 'Tell Claude') => `<button data-copy="${esc(text)}" data-label="Copied. Paste it to your Claude" title="Copies: ${esc(text)}">${esc(label)}</button>`;
 
 function statusChips(c) {
   const order = ['instagram', 'facebook', 'youtube', 'tiktok'];
@@ -136,7 +136,7 @@ function clipCard(c) {
       <div class="small">From <a href="${esc(src.url || '#')}" target="_blank" rel="noopener">${esc(src.title || 'source')}</a>${range}</div>
       <div class="row small"><a href="${esc(c.media)}" target="_blank" rel="noopener">Watch</a>${links ? ' · ' + links : ''}</div>
       <div class="row"><button data-copy="${esc(c.caption)}" data-label="Caption copied">Copy caption</button>
-        ${say(`Look at my clip "${c.hook}" (${c.file}) and tell me how to make the next one stronger.`)}</div>
+        ${say(`Look at my clip "${c.hook}" (${c.file}) and tell me how to make the next one stronger.`, 'Improve the next one')}</div>
     </div></article>`;
 }
 
@@ -168,14 +168,31 @@ const rooms = {
         <input type="search" id="q" placeholder="Search hooks and captions" aria-label="Search clips"></div>
       <div class="grid" id="cl"></div></section>`;
   },
+  Messages() {
+    const m = D.dms || {total:0, week:0, keywords:[], errors:[]};
+    return `<section style="display:grid;gap:14px">
+      <h2>Comment <span class="gold">→ DM</span></h2>
+      <p class="small">When someone comments your keyword on Instagram or Facebook, the factory sends them your link in a private message within 20 minutes, with your disclosure. Nobody is messaged twice.</p>
+      <section class="tiles">
+        <div class="tile"><span class="label">Links sent</span><b>${fmt(m.total)}</b><small>all time</small></div>
+        <div class="tile"><span class="label">This week</span><b>${fmt(m.week)}</b><small>last 7 days</small></div>
+        <div class="tile"><span class="label">Best keyword</span><b>${esc((m.keywords[0]||{}).keyword || '–')}</b><small>${m.keywords[0] && m.keywords[0].per_1k != null ? m.keywords[0].per_1k + ' DMs per 1,000 views' : 'measured as comments arrive'}</small></div>
+      </section>
+      ${m.keywords.length ? `<div class="list">${m.keywords.map(k => `<div class="item"><div><b>${esc(k.keyword)}</b><div class="nums">${fmt(k.instagram)} Instagram · ${fmt(k.facebook)} Facebook${k.per_1k != null ? ` · ${k.per_1k} per 1,000 views` : ''}</div></div><span class="chip good">${fmt(k.dms)} sent</span></div>`).join('')}</div>`
+        : `<div class="empty"><h3>${m.on ? 'Listening for your keyword' : 'Switch it on in one sentence'}</h3><p>${m.on ? 'The first DMs show up here as soon as someone comments your keyword.' : 'Type <b>post</b> in Claude. It connects Instagram and Facebook and turns comment → DM on for you.'}</p></div>`}
+      ${(m.errors||[]).length ? `<h3>Last problems</h3><div class="list">${m.errors.map(e => `<div class="item"><div class="nums">${esc(e.platform)} · ${esc(e.error)}</div></div>`).join('')}</div>` : ''}
+      <div class="row">${say('Which DM keyword is working best for me, and what should I try next?', 'Ask which keyword wins')}
+        ${say('Change my DM message to: ', 'Change my DM message')}
+        <a class="btn" href="${GH}/settings/variables/actions" target="_blank" rel="noopener">DM settings</a></div></section>`;
+  },
   Sources() {
     const s = D.sources;
     return `<section style="display:grid;gap:14px">
       <h2>Where your clips <span class="gold">come from</span></h2>
       <p class="small">These are this month's episodes. The factory downloads them in HD, transcribes them, and your Claude picks the moments. You can add, remove or reorder any of them.</p>
       <div class="row"><a class="btn primary" href="${edit('factory/source_plan.json')}" target="_blank" rel="noopener">Edit my sources</a>
-        ${say('Add this episode to my sources and plan clips from it: ')}
-        ${say('Find me the 5 best new Kevin Trudeau episodes for my lane and add them to my sources.')}</div>
+        ${say('Add this episode to my sources and plan clips from it: ', 'Add an episode')}
+        ${say('Find me the 5 best new Kevin Trudeau episodes for my lane and add them to my sources.', 'Find me 5 episodes')}</div>
       ${s.length ? `<div class="list">${s.map(e => `<div class="item"><div><a href="${esc(e.url || '#')}" target="_blank" rel="noopener">${esc(e.title)}</a><div class="nums">${esc(e.id)}</div></div>
         <span class="chip ${e.planned ? 'good' : 'warn'}">${e.planned ? 'clipped' : 'waiting'}</span></div>`).join('')}</div>`
       : '<div class="empty"><h3>No sources chosen yet</h3><p>Type <b>plan</b> in Claude and it picks the best episodes for your lane, or add your own with the buttons above.</p></div>'}
@@ -196,7 +213,7 @@ const rooms = {
         </div>
         <div class="row"><button class="btn primary" id="s_copy">Copy my style</button>
           <a class="btn" href="${edit('my_brand/style.json')}" target="_blank" rel="noopener">Open style file</a>
-          ${say('style: ')}</div>
+          ${say('style: ', 'Describe a look to Claude')}</div>
         <p class="small">You can also ask for anything not listed: your own font, a new motion, a sound under the hook, a different layout. Type <b>style</b> in Claude and describe it.</p>
       </div>
       <div class="preview" id="pv" aria-label="Preview of your hook and caption"><div class="h" id="pv_h">How rich people<br><span>actually buy houses</span></div><div class="c" id="pv_c">$40</div></div>
@@ -208,7 +225,7 @@ const rooms = {
       <p class="small">Your Claude reads this before every clip it chooses. Change it here and the next <b>plan</b> follows it.</p>
       <div class="row"><a class="btn primary" href="${edit('my_brand/BRAND.md')}" target="_blank" rel="noopener">Edit my brand</a>
         <a class="btn" href="${edit('my_brand/EXAMPLES.md')}" target="_blank" rel="noopener">Add examples I love</a>
-        ${say('Here is a reel I love. Learn from it for my next plan: ')}</div>
+        ${say('Here is a reel I love. Learn from it for my next plan: ', 'Teach it a reel')}</div>
       <pre>${esc(D.brand || 'Not written yet. Type start in Claude.')}</pre>
       ${D.report ? `<h3>Latest factory report</h3><pre>${esc(D.report)}</pre>` : ''}</section>`;
   },
@@ -223,8 +240,8 @@ const rooms = {
       </div>
       <div id="changes"></div>
       <div class="row"><a class="btn" href="${GH}/issues/new" target="_blank" rel="noopener">Report a problem</a>
-        ${say('update: bring my factory up to the newest kit version, keep my brand, style and clips.')}
-        ${say('What new things can my factory do that I am not using yet?')}</div></section>`;
+        ${say('update: bring my factory up to the newest kit version, keep my brand, style and clips.', 'Update my factory')}
+        ${say('What new things can my factory do that I am not using yet?', 'What am I not using?')}</div></section>`;
   },
 };
 
