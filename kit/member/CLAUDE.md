@@ -55,7 +55,7 @@ The panel's **Money** room unlocks it in their browser and shows views â†’ DMs â
 Routines run in the cloud without a browser, so `money` happens whenever they talk to you on their computer. Suggest doing it at the weekly look.
 
 ### `plan`: once a week, or any time the queue runs low
-Follow `factory/PLANNING.md` exactly. It is the playbook proven on the pilot account. Read `shared/FIRST_3_SECONDS.md`, `factory/MASTERY.md` and `factory/HOOK_PATTERNS.md` first.
+Follow `factory/PLANNING.md` exactly. **A new factory starts with an empty month list** (`factory/source_plan.json`), so `routine_prep.py` reports "READY TO PLAN: 0" even though episodes are stocked and transcribed. In that case, append 4 of the printed candidates that are **already stocked**, matched to their lane in `my_brand/BRAND.md`, then run it again. Only ever append. It is the playbook proven on the pilot account. Read `shared/FIRST_3_SECONDS.md`, `factory/MASTERY.md` and `factory/HOOK_PATTERNS.md` first.
 **`my_brand/BRAND.md` overrides PLANNING.md on taste:** lane split, voice, hook style and caption voice. It never overrides the edges, the gates, the compliance rules, or the plan format.
 Brand folders are `KT_<ONEWORD>`, one per episode. Never use `AR_`. Push to a `claude/plans-<date>` branch. The repo merges plans and builds the clips by itself.
 
