@@ -29,6 +29,8 @@ class R:
 
 
 def get(url, params=None, timeout=None):
+    if url.endswith("/IG"):
+        return R({"username": "me_myself"})
     if url.endswith("/IG/media"):
         return R({"data": [{"id": "M1", "timestamp": iso(timedelta(days=1))}]})
     if url.endswith("/M1/comments"):
@@ -36,7 +38,8 @@ def get(url, params=None, timeout=None):
             {"id": "c1", "text": "Brain!", "timestamp": iso(timedelta(hours=2)), "username": "ann"},
             {"id": "c2", "text": "brainstorm idea", "timestamp": iso(timedelta(hours=2)), "username": "bob"},
             {"id": "c3", "text": "BRAIN", "timestamp": iso(timedelta(days=9)), "username": "old"},
-            {"id": "c4", "text": "money please", "timestamp": iso(timedelta(hours=1)), "username": "cy"}]})
+            {"id": "c4", "text": "money please", "timestamp": iso(timedelta(hours=1)), "username": "cy"},
+            {"id": "c5", "text": "Comment BRAIN for the link", "timestamp": iso(timedelta(hours=1)), "username": "me_myself"}]})
     if url.endswith("/PG/video_reels"):
         return R({"data": [{"id": "V1"}]})
     if url.endswith("/V1/comments"):

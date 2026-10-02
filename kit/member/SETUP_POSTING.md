@@ -26,7 +26,7 @@ Your Claude gets your Page token with you in the Graph API Explorer and turns it
 ### Comment → DM: your link, delivered automatically
 Your captions ask viewers to comment your keyword, for example BRAIN. Within 20 minutes the factory sends each of them your link in a private message, with your disclosure. It works on Instagram and Facebook, and nobody is messaged twice. Your control panel's **Messages** room counts DMs per keyword per 1,000 views, so you can see which word earns the most.
 
-Your Claude switches it on in the same Meta setup as posting:
+Every click is in **[SETUP_META.md](SETUP_META.md)**, written for someone who has never opened Meta for Developers. Your Claude switches it on in the same Meta setup as posting:
 - the Page token gets two more permissions, `pages_messaging` and `instagram_manage_messages`
 - Instagram → Settings → Messages and story replies → Message controls → **Allow access to messages** is turned on
 - the repository variable `DM_AUTO` is set to `on`

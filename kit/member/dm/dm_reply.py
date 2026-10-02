@@ -145,6 +145,11 @@ def run(dry=False):
     page, ftok = os.environ.get("FB_PAGE_ID", ""), os.environ.get("FB_ACCESS_TOKEN", "")
     ig, itok = os.environ.get("IG_USER_ID", ""), os.environ.get("IG_ACCESS_TOKEN", "")
     me = {page, ig}
+    if ig and itok:                      # their own replies never DM themselves
+        try:
+            me.add(_get(f"{G}/{ig}", {"fields": "username", "access_token": itok}).get("username", ""))
+        except Exception:
+            pass
     sources = []
     if ig and itok and page:
         sources.append(("instagram", lambda: instagram_comments(ig, itok), ftok or itok))

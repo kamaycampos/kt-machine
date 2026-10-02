@@ -44,7 +44,7 @@ Brand folders are `KT_<ONEWORD>`, one per episode. Never use `AR_`. Push to a `c
 Read `state/manifest.json` and `factory/reports/latest.md`. List each new clip with its hook, length and status. Point them to their board at `https://YOUR-GITHUB-NAME.github.io/YOUR-REPO/`, where every clip has its caption ready to copy.
 
 ### `post`: switch on autopilot (optional, any time)
-Walk them through `SETUP_POSTING.md`, one platform at a time, in the order Instagram + Facebook first (one Meta setup covers both), then YouTube, then TikTok. When Instagram + Facebook are connected, also switch on **comment → DM**:
+Walk them through `SETUP_POSTING.md` (for Instagram + Facebook follow `SETUP_META.md` step by step, doing every "Claude" step yourself), one platform at a time, in the order Instagram + Facebook first (one Meta setup covers both), then YouTube, then TikTok. When Instagram + Facebook are connected, also switch on **comment → DM**:
 - give the Page token `pages_messaging` and `instagram_manage_messages`
 - have them allow message access in Instagram's settings
 - set the variable `DM_AUTO` = `on`

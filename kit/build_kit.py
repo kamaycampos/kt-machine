@@ -116,6 +116,36 @@ def studio_by_default(path):
     open(path, "w").write(s)
 
 
+def guard_template(path):
+    """Every job runs in a MEMBER's copy, never in the template itself.
+    Without this the template would post-run every 20 minutes and commit its
+    own board back to itself - polluting the copy every new member starts from."""
+    cond = f"github.repository != '{UPSTREAM}'"
+    lines, out, in_jobs = open(path).read().split("\n"), [], False
+    i = 0
+    while i < len(lines):
+        ln = lines[i]
+        out.append(ln)
+        if ln.startswith("jobs:"):
+            in_jobs = True
+        elif in_jobs and re.match(r"^  [A-Za-z0-9_-]+:\s*$", ln):
+            # look at this job's own keys (4-space indent) for an existing if:
+            j = i + 1
+            while j < len(lines) and (lines[j].startswith("    ") or not lines[j].strip()):
+                m = re.match(r"^    if:\s*(.+)$", lines[j])
+                if m:
+                    orig = m.group(1).strip()
+                    if orig.startswith("${{") and orig.endswith("}}"):
+                        orig = orig[3:-2].strip()
+                    lines[j] = f"    if: {cond} && ({orig})"
+                    break
+                j += 1
+            else:
+                out.append(f"    if: {cond}")
+        i += 1
+    open(path, "w").write("\n".join(out))
+
+
 def build(out):
     if os.path.exists(out) and os.listdir(out):
         sys.exit(f"{out} is not empty - refusing to write over it")
@@ -140,6 +170,7 @@ def build(out):
     open(p, "w").write(s)
     for wf in os.listdir(os.path.join(out, ".github", "workflows")):
         studio_by_default(os.path.join(out, ".github", "workflows", wf))
+        guard_template(os.path.join(out, ".github", "workflows", wf))
     # The member's own files go on top, at the root of their repo.
     for base, _, files in os.walk(MEMBER):
         for name in files:
