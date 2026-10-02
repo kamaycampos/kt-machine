@@ -45,6 +45,7 @@ EXCLUDE = [
     r"^factory/source_plan\.json$",
     r"^connector/",
     r"^kit/",                         # the builder itself and Dustin's brief
+    r"^\.github/workflows/framing_probe\.yml$",   # a kt-machine/VSC probe, not a member job
 ]
 
 # Records reset to empty, in the exact shape the engine reads.
@@ -124,6 +125,18 @@ def studio_by_default(path):
     open(path, "w").write(s)
 
 
+def no_always(path):
+    """always() is true for a CANCELLED run, so a job gated on it keeps running
+    after a cancel and holds the concurrency queue (VSC, 2 Oct 2026, three
+    times). Job-level gates use !cancelled() - one expression, never
+    '${{ !cancelled() }} && ...', which is always truthy."""
+    s = open(path).read()
+    s = re.sub(r"(?m)^(    if:\s*)\$\{\{\s*always\(\)\s*\}\}\s*$", r"\1${{ !cancelled() }}", s)
+    s = re.sub(r"(?m)^(    if:\s*)always\(\)\s*$", r"\1${{ !cancelled() }}", s)
+    s = re.sub(r"(?m)^(    if:\s*)always\(\)\s*&&\s*(.+)$", r"\1${{ !cancelled() && \2 }}", s)
+    open(path, "w").write(s)
+
+
 def guard_template(path):
     """Every job runs in a MEMBER's copy, never in the template itself.
     Without this the template would post-run every 20 minutes and commit its
@@ -178,6 +191,7 @@ def build(out):
     open(p, "w").write(s)
     for wf in os.listdir(os.path.join(out, ".github", "workflows")):
         studio_by_default(os.path.join(out, ".github", "workflows", wf))
+        no_always(os.path.join(out, ".github", "workflows", wf))
         guard_template(os.path.join(out, ".github", "workflows", wf))
     # The member's own files go on top, at the root of their repo.
     for base, _, files in os.walk(MEMBER):
