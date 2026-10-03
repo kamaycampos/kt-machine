@@ -455,6 +455,19 @@ def anchor_by_identity(wav, words, ons, last_free=25, log=None):
             continue
         if abs(words[hit][0] - t) > MAX_PULL:
             continue            # no anchor moves a word further than a clock can drift
+        # THE RATE TEST GOES HERE, BEFORE THE SEARCH MOVES ON. 3 Oct 2026, member
+        # clip TEN-YEARS: the onset at 46.34s re-read speech already anchored
+        # ("i can't change the fact that") and paired it with the NEXT "I can't",
+        # two seconds on. The rate test (then run after the loop) rejected it - but only
+        # after `at` had moved past it, so at 48.86s, where Kevin really says
+        # "I can't control that", the right word was out of reach and the onset
+        # went to the "I" of "but I can control" instead. Captions ran 1.3s early,
+        # then left a 2.5s hole. A rejected anchor must not move the search.
+        if pts:
+            j, u = pts[-1]
+            rate = (hit - j) / (t - u) if t > u else 99.0
+            if not 0.3 <= rate <= 9.0:
+                continue
         pts.append((hit, t))
         at = hit + 1
     # NOT drop_impossible here. That guard compares the true span against OUR span
@@ -462,15 +475,43 @@ def anchor_by_identity(wav, words, ons, last_free=25, log=None):
     # what a compressed hesitation needs ("my"->"ultimate" is 0.17s in our clock
     # and 0.79s in the sound, a ratio of 4.6). It was silently deleting every
     # correction. Identity already proves the pairing; all that is left to catch is
-    # an absurdity, so the test is on the SOUND alone: words per second between two
+    # an absurdity, so the test (in the loop above) is on the SOUND alone: words per second between two
     # anchors must be something a person could say.
-    ok = [pts[0]] if pts else []
-    for i, t in pts[1:]:
-        j, u = ok[-1] if ok else (None, None)
-        rate = (i - j) / (t - u) if t > u else 99.0
-        if 0.3 <= rate <= 9.0:
-            ok.append((i, t))
-    return ok
+    return _despike(words, pts)
+
+
+SPIKE = 0.8         # an anchor this far off the line through its neighbours is a mispairing
+AGREE = 0.4         # ...when those neighbours agree with each other this closely
+
+
+def _despike(words, pts):
+    """Drop an anchor whose correction is a lone spike.
+
+    3 Oct 2026, same clip: at 54.03s Kevin says "as well feel good", and the
+    1.4s read came back "i might as well feel good" - two words that are not in
+    that window - so "I" was pinned 1.2s after he said it. The anchors either
+    side corrected whisper's clock by -0.06s and +0.01s. Whisper's clock does
+    not jump for one word and come straight back: a hesitation it compressed
+    pushes EVERY word after it, so the next anchor carries the same correction
+    and stays. One anchor far off a line its two neighbours agree on is a
+    mispairing. Only on a COMMON word, which is where a short read is
+    ambiguous: a spike pinned on a distinctive word ("prison") is trusted, so a
+    real hesitation whisper re-syncs from straight after is never undone.
+    """
+    pts = list(pts)
+    k = 1
+    while 0 < k < len(pts) - 1:
+        (i0, t0), (i1, t1), (i2, t2) = pts[k - 1], pts[k], pts[k + 1]
+        r0, r1, r2 = words[i0][0], words[i1][0], words[i2][0]
+        d0, d1, d2 = t0 - r0, t1 - r1, t2 - r2
+        f = (r1 - r0) / (r2 - r0) if r2 > r0 else 0.5
+        common = re.sub(r"[^a-z0-9']", "", words[i1][2].lower()) in COMMON
+        if common and abs(d0 - d2) < AGREE and abs(d1 - (d0 + f * (d2 - d0))) > SPIKE:
+            del pts[k]
+            k = max(1, k - 1)
+        else:
+            k += 1
+    return pts
 
 
 def warp_by_index(words, pts):
