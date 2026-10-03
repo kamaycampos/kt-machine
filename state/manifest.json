@@ -6740,7 +6740,7 @@
    "bytes": 35345098,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-03T15:18",
+   "scheduled_at": "2026-10-03T18:27",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
    "cta_kind": "offer"
@@ -6752,7 +6752,7 @@
    "bytes": 43958429,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-03T15:18",
+   "scheduled_at": "2026-10-03T18:27",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "offer"
@@ -6866,12 +6866,26 @@
    "caption": "The bedtime prayer you were taught left out the part that actually works.\n\nSay your prayers wasn't the whole instruction. The real version has two parts, and almost nobody still does the first one: bless the people you love, then bless the people who wronged you, by name, including the ones you're still angry at.\n\nThen, separately, give thanks for what's already here. No asking for anything. He says it opens something up that nothing else will.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#prayer #letgo #spirituality #awakening #gratitude #kevintrudeau",
    "hook": "Bless the people who hurt you",
    "bytes": 59107124,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-03T15:18",
    "cta_keyword": "LUCKY",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1789159165662286/",
+    "instagram": "https://www.instagram.com/reel/DeDDnsklJ77/",
+    "youtube": "https://youtube.com/shorts/j5AdhUGuQ5Y"
+   },
+   "caption_at_post": "The bedtime prayer you were taught left out the part that actually works.\n\nSay your prayers wasn't the whole instruction. The real version has two parts, and almost nobody still does the first one: bless the people you love, then bless the people who wronged you, by name, including the ones you're still angry at.\n\nThen, separately, give thanks for what's already here. No asking for anything. He says it opens something up that nothing else will.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#prayer #letgo #spirituality #awakening #gratitude #kevintrudeau",
+   "posted_at": "2026-10-03T17:48"
   },
   {
    "file": "AR_RELEASE/02_NO-MUFFINS-STILL-A-GOOD-MORNING_96s.mp4",
@@ -6880,7 +6894,7 @@
    "bytes": 68542795,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-03T15:39",
+   "scheduled_at": "2026-10-03T18:27",
    "cta_keyword": "YES",
    "cta_variant": 5,
    "cta_kind": "question"
@@ -6892,7 +6906,7 @@
    "bytes": 60085691,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-03T15:18",
+   "scheduled_at": "2026-10-03T18:27",
    "cta_keyword": "WISH",
    "cta_variant": 7,
    "cta_kind": "offer"
@@ -6928,7 +6942,7 @@
    "bytes": 54111522,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-03T15:18",
+   "scheduled_at": "2026-10-03T18:27",
    "cta_keyword": "KT",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -6938,12 +6952,26 @@
    "caption": "A man stands on stage, arm held straight out, told simply to resist.\n\nKevin Trudeau describes the old muscle-testing demonstration: hold up one finger while the room sends love, and the arm stays locked. Hold up two fingers while the room silently sends hate, and the same strong arm drops instantly - no fatigue, no warning, just intention in the air.\n\nHe says that's the exact force friends and family aim at your goals in silence.\n\nIf strangers can move your arm with a thought, what is your own family doing to your dream?\n\n#kevintrudeau #energy #mindpower #manifestation #mindset #success",
    "hook": "A two-finger test weakens your arm",
    "bytes": 57013608,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-03T15:05",
    "cta_keyword": "MONEY",
    "cta_variant": 8,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1433901718180204/",
+    "instagram": "https://www.instagram.com/reel/DeDDTzslPU5/",
+    "youtube": "https://youtube.com/shorts/Jrkc0Omg9rE"
+   },
+   "caption_at_post": "A man stands on stage, arm held straight out, told simply to resist.\n\nKevin Trudeau describes the old muscle-testing demonstration: hold up one finger while the room sends love, and the arm stays locked. Hold up two fingers while the room silently sends hate, and the same strong arm drops instantly - no fatigue, no warning, just intention in the air.\n\nHe says that's the exact force friends and family aim at your goals in silence.\n\nIf strangers can move your arm with a thought, what is your own family doing to your dream?\n\n#kevintrudeau #energy #mindpower #manifestation #mindset #success",
+   "posted_at": "2026-10-03T17:45"
   },
   {
    "file": "KT_SILENT/02_TWO-PEOPLE-SAME-GOAL_97s.mp4",
