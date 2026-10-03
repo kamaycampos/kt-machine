@@ -108,11 +108,30 @@ def plan_probe(path):
         tmp = f"/tmp/kt_sync.{os.getpid()}"
         heard = kt_words.parse_word_srt(tmp + ".srt") if os.path.exists(tmp + ".srt") else []
         c = next(c for c in fixed if c["slug"] == slug)
-        wkey = os.path.basename(os.path.dirname(mp4)) + "/" + slug
+        # the renderer keyed the words by BRAND/slug; a failed clip now sits in _failed
+        wkey = p["brand"] + "/" + slug
         cache = kt_words._load_cache()
         raw = next((v for k, v in cache.items() if k.startswith(wkey + "@")), None)
+        # and the anchoring step itself: onsets, which word each one pinned, result
+        anch = {}
+        try:
+            import tempfile
+            import vsc_v2_time as V
+            src = R.fetch_source(vid)                # already on disk: just its path
+            a, b = float(c["in"]), float(c["out"])
+            words = [tuple(w) for w in raw or []]
+            wav = os.path.join(tempfile.gettempdir(), "probe_anchor.wav")
+            run(FF, "-y", "-loglevel", "error", "-ss", f"{a:.3f}", "-to", f"{b:.3f}", "-i", src,
+                "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", wav)
+            ons = V.onsets(V.envelope(src, a, b))
+            pts = V.anchor_by_identity(wav, words, ons) if words else []
+            anch = {"onsets": [round(t, 2) for t in ons],
+                    "anchors": [[i, round(t, 2), words[i][2], round(words[i][0], 2)] for i, t in pts],
+                    "anchored": V.warp_by_index(words, pts) if len(pts) >= 2 else words}
+        except Exception as e:                      # evidence, never a crash
+            anch = {"error": f"{type(e).__name__}: {e}"}
         report["checks"][slug] = {"ok": ok, "msg": msg, "in": c["in"], "out": c["out"],
-                                  "heard": heard, "words": raw}
+                                  "heard": heard, "words": raw, **anch}
         print(f"{slug}: {msg}")
         run(FF, "-v", "error", "-y", "-i", mp4, "-vf", "fps=1,scale=180:-2,tile=10x8",
             "-frames:v", "1", os.path.join(OUT, f"{slug}_sheet.jpg"))
