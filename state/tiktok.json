@@ -1,12 +1,32 @@
 {
- "at": "2026-10-02T22:33",
+ "at": "2026-10-03T11:59",
  "profile": {
+  "video_count": 154,
   "follower_count": 414,
   "following_count": 8,
-  "likes_count": 5824,
-  "video_count": 152
+  "likes_count": 5825
  },
  "videos": {
+  "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
+   "id": "7692247488756976909",
+   "view_count": 17,
+   "like_count": 1,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7692247488756976909?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 149,
+   "posted": "2026-10-03T01:29"
+  },
+  "KT_UNCENSORED/01_THE-GUARD-GAVE-THE-SAME-ANSWER_85s.mp4": {
+   "id": "7692207047164677389",
+   "view_count": 0,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7692207047164677389?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 84,
+   "posted": "2026-10-02T22:52"
+  },
   "KT_LEDGER/01_TWO-PIZZAS-AND-A-BILLION-DOLLARS_66s.mp4": {
    "id": "7691802431088282893",
    "view_count": 14,
@@ -189,7 +209,7 @@
   },
   "KT_WEALTH/02_ROCKEFELLER-EVERY-DISASTER_103s.mp4": {
    "id": "7689976707771567374",
-   "view_count": 32,
+   "view_count": 33,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -239,7 +259,7 @@
   },
   "KT_YWIYC/02_HOW-WINNERS-HANDLE-DISASTER_112s.mp4": {
    "id": "7689670671466564877",
-   "view_count": 6,
+   "view_count": 8,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -289,7 +309,7 @@
   },
   "KT_FREEDOM/01_WHY-HAVING-IT-WONT-FIX-YOU_67s.mp4": {
    "id": "7689098540093541645",
-   "view_count": 327,
+   "view_count": 328,
    "like_count": 30,
    "comment_count": 0,
    "share_count": 2,
@@ -319,7 +339,7 @@
   },
   "KT_RICH/04_THE-CUP-HOLDER-IDEA_180s.mp4": {
    "id": "7688688158082469134",
-   "view_count": 664,
+   "view_count": 665,
    "like_count": 62,
    "comment_count": 0,
    "share_count": 7,
@@ -399,7 +419,7 @@
   },
   "KT_SECRET/05_NOT-THE-HAMBURGER-BUSINESS_124s.mp4": {
    "id": "7688020668356545806",
-   "view_count": 81,
+   "view_count": 82,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -409,7 +429,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3656,
+   "view_count": 3657,
    "like_count": 153,
    "comment_count": 7,
    "share_count": 16,
@@ -449,7 +469,7 @@
   },
   "KT_RICH/05_WHAT-IS-KEEPING-YOU-POOR_58s.mp4": {
    "id": "7687048596029541645",
-   "view_count": 27,
+   "view_count": 28,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -599,7 +619,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38017,
+   "view_count": 38022,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
@@ -709,7 +729,7 @@
   },
   "KT_RICH/03_03_WHAT-A-ROOM-OF-BROKE-PEOPLE-DOES_50s.mp4": {
    "id": "7684360053482081549",
-   "view_count": 447,
+   "view_count": 448,
    "like_count": 48,
    "comment_count": 2,
    "share_count": 6,
@@ -1039,7 +1059,7 @@
   },
   "unmatched/7680227684198141197": {
    "id": "7680227684198141197",
-   "view_count": 269,
+   "view_count": 270,
    "like_count": 17,
    "comment_count": 2,
    "share_count": 1,
