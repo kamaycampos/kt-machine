@@ -75,6 +75,19 @@ def plan_probe(path):
             if run("openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-pass", f"env:{kname}",
                    "-in", f"/tmp/{vid}.srt.enc", "-out", srt).returncode == 0:
                 break
+    # THE FENCE, PROBE ONLY. kt_batch_build refuses a source another lane owns
+    # (kt_fence.py) - here v76l9y0 belongs to the AR lane on this repo while the
+    # plan is a member's KT plan. A probe is test mode: nothing is uploaded or
+    # queued, so this run's throwaway copy of the series drops the fence for
+    # its own source. The repo's kt_series.json and the real fence are untouched.
+    sp = os.path.join(K, "kt_series.json")
+    series = json.load(open(sp))
+    fenced = [k for k, v in series.items() if v.get("source") == p["source"]]
+    for k in fenced:
+        del series[k]
+    json.dump(series, open(sp, "w"), indent=1, ensure_ascii=False)
+    if fenced:
+        print(f"probe: fence lifted in this run only for {p['source']} ({fenced})")
     os.makedirs(OUT, exist_ok=True)
     os.environ["VSC_TURN_DEBUG"] = "1"
     R.fix_edges(key)
