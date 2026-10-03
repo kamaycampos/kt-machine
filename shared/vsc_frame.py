@@ -50,7 +50,11 @@ def shot_cuts(src, threshold=6):
 # Clips are cut on Kevin's speech, so the speaker is Kevin almost always - and when
 # the other person really is talking, framing them is right too.
 # VSC_SPEAKER=1 turns it on; off, the old biggest-face choice is exactly preserved.
-SPEAKER = os.environ.get("VSC_SPEAKER", "0") == "1"   # ON after the probe proves it
+# 3 Oct 2026: ON by default. Proven on the ep_v6vm6pp probe sheets (2 Oct): the old
+# choice flipped between people up to 14 times a clip; this follows the speaker.
+# Known follow-up: a listener drinking from a cup can read as talking.
+# VSC_SPEAKER=0 restores the old biggest-face choice exactly.
+SPEAKER = os.environ.get("VSC_SPEAKER", "1") == "1"
 SUB = 5                 # frames per second when choosing who is speaking
 SAME = 0.08             # two boxes within this fraction of width are one person
 

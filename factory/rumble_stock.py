@@ -14,6 +14,15 @@ import json, os, re, subprocess, sys, time
 HERE = os.path.dirname(os.path.abspath(__file__))
 K = os.path.expanduser("~/Kamay")
 SRC = os.path.join(K, "Kamay Content", "1_RAW", "KT_SOURCE")
+
+# A NEW COPY RUNS BEFORE ITS KEYS EXIST (2 Oct 2026). "Use this template" starts
+# the factory on the first push, before setup has added FACTORY_KEY. openssl
+# would then encrypt with an EMPTY password and upload files the member's real
+# key can never open. No key = nothing stocked, nothing uploaded, a clear note.
+if __name__ == "__main__" and not os.environ.get("FACTORY_KEY"):   # run as a job, not imported
+    print("::notice::FACTORY_KEY is not set yet - finish setup (say 'set me up' to your Claude). Nothing was stocked.")
+    sys.exit(0)
+
 TAG, REPO = "sources", os.environ.get("GITHUB_REPOSITORY", "kamaycampos/kt-machine")
 arg = lambda n, d: int(sys.argv[sys.argv.index(n) + 1]) if n in sys.argv else d
 MAX, STOCK = arg("--max", 2), arg("--stock", 6)
