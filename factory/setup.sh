@@ -26,7 +26,7 @@ pip install -q opencv-python-headless numpy pillow
 ln -sf /usr/bin/ffmpeg  "$K/bin/ffmpeg"
 ln -sf /usr/bin/ffprobe "$K/bin/ffprobe"
 ln -sf "$(command -v gh)" "$K/bin/gh"
-cp factory/assets/mont_black.ttf factory/assets/yunet.onnx "$K/bin/"
+cp factory/assets/mont_black.ttf factory/assets/yunet.onnx factory/assets/voice_encoder.npz "$K/bin/"
 # Liberation Sans is metrically identical to Arial and free to ship; Apple's
 # Arial file is not ours to publish in a public repository.
 ln -sf /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf "$K/bin/arial_bold.ttf"

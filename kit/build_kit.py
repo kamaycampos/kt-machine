@@ -46,6 +46,7 @@ EXCLUDE = [
     r"^connector/",
     r"^kit/",                         # the builder itself and Dustin's brief
     r"^\.github/workflows/framing_probe\.yml$",   # a kt-machine/VSC probe, not a member job
+    r"^factory/probe_plans/",          # the plans those probes build
 ]
 
 # Records reset to empty, in the exact shape the engine reads.
