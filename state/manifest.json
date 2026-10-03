@@ -6478,12 +6478,26 @@
    "caption": "Larry King once asked Bill Gates, live on CNN, what the secret to his success was.\n\nGates - at the time one of the richest men alive - said number one: he was at the right place at the right time, and luck had a lot to do with it.\n\nKevin Trudeau calls that moment \"stop the presses\": the richest man in the world, on live television, crediting luck first.\n\nBut Gates didn't stop there. Plenty of other people were standing in that exact same room, at that exact same moment, just as lucky. The difference, he said, was that he actually saw the potential in software and home computing. They didn't.\n\nLuck gets you in the room. Vision is what you do once you're there.\n\n#kevintrudeau #wealthmindset #mindset #billgates #scienceofluck #successhabits",
    "hook": "Bill Gates' #1 reason: luck",
    "bytes": 79714644,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-03T02:25",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1129184089547740/",
+    "instagram": "https://www.instagram.com/reel/DeB4Urzjviu/",
+    "youtube": "https://youtube.com/shorts/RVkp2s0GHc4"
+   },
+   "caption_at_post": "Larry King once asked Bill Gates, live on CNN, what the secret to his success was.\n\nGates - at the time one of the richest men alive - said number one: he was at the right place at the right time, and luck had a lot to do with it.\n\nKevin Trudeau calls that moment \"stop the presses\": the richest man in the world, on live television, crediting luck first.\n\nBut Gates didn't stop there. Plenty of other people were standing in that exact same room, at that exact same moment, just as lucky. The difference, he said, was that he actually saw the potential in software and home computing. They didn't.\n\nLuck gets you in the room. Vision is what you do once you're there.\n\n#kevintrudeau #wealthmindset #mindset #billgates #scienceofluck #successhabits",
+   "posted_at": "2026-10-03T06:50"
   },
   {
    "file": "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4",
@@ -6518,7 +6532,7 @@
    "bytes": 97374473,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-03T02:25",
+   "scheduled_at": "2026-10-03T07:31",
    "cta_keyword": "WISH",
    "cta_variant": 12,
    "cta_kind": "offer"
@@ -6530,7 +6544,7 @@
    "bytes": 102470318,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-03T02:25",
+   "scheduled_at": "2026-10-03T07:31",
    "cta_keyword": "WISH",
    "cta_variant": 17,
    "cta_kind": "offer"
@@ -6858,7 +6872,7 @@
    "bytes": 54111522,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-03T02:25",
+   "scheduled_at": "2026-10-03T07:31",
    "cta_keyword": "KT",
    "cta_variant": 6,
    "cta_kind": "offer"
