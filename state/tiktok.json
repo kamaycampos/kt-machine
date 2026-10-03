@@ -1,15 +1,15 @@
 {
- "at": "2026-10-03T05:43",
+ "at": "2026-10-03T11:59",
  "profile": {
+  "video_count": 154,
   "follower_count": 414,
   "following_count": 8,
-  "likes_count": 5825,
-  "video_count": 154
+  "likes_count": 5825
  },
  "videos": {
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 8,
+   "view_count": 17,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -259,7 +259,7 @@
   },
   "KT_YWIYC/02_HOW-WINNERS-HANDLE-DISASTER_112s.mp4": {
    "id": "7689670671466564877",
-   "view_count": 7,
+   "view_count": 8,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -729,7 +729,7 @@
   },
   "KT_RICH/03_03_WHAT-A-ROOM-OF-BROKE-PEOPLE-DOES_50s.mp4": {
    "id": "7684360053482081549",
-   "view_count": 447,
+   "view_count": 448,
    "like_count": 48,
    "comment_count": 2,
    "share_count": 6,
