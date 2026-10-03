@@ -4,6 +4,9 @@
 """
 import json, os, re, sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from lengths import MIN_LEN, MAX_LEN  # noqa: E402
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "pipeline"))
 def _core(h, b):
@@ -98,7 +101,7 @@ for path in sys.argv[1:]:
     for c in p.get("clips", []):
         s = c.get("slug", "?"); d = float(c["out"]) - float(c["in"])
         if not re.fullmatch(r"[A-Z0-9]+(-[A-Z0-9]+)*", s): errs.append(f"{s}: slug must be UPPER-DASHED")
-        if not 40 <= d <= 190: errs.append(f"{s}: length {d:.0f}s outside 40-190")
+        if not MIN_LEN <= d <= MAX_LEN: errs.append(f"{s}: length {d:.0f}s outside {MIN_LEN:.0f}-{MAX_LEN:.0f}")
         for e in lint(c.get("hook") or [], b): errs.append(f"{s}: hook - {e}")
         worn = [w for w in re.findall(r"[a-z']+", " ".join(c.get("hook") or []).lower()) if w in tired]
         if worn: errs.append(f"{s}: hook leans on worn-out word(s): {', '.join(sorted(set(worn)))}")

@@ -68,3 +68,6 @@ His account opens with a direct promise (Why / How / What). **Hers does not, and
 ```
 Every episode gets its own `AR_` folder, not used by any other plan. The scheduler allows two posts
 per folder a day, so separate folders keep her slots full.
+
+## Openings
+- **Start where the speaker is on camera.** The first second must show the speaker's face (Kamay's first-3-seconds rule, 2 Oct 2026). Episodes often cut to B-roll mid-story. If your opening sentence plays over a cutaway, start on the next sentence where Kevin is on screen. The build checks the first 1.0s with face detection: it moves the start to the nearest sentence on camera, or drops the clip with "opens on B-roll, no face".
