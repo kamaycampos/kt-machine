@@ -92,7 +92,8 @@ def plan_probe(path):
     os.environ["VSC_TURN_DEBUG"] = "1"
     R.fix_edges(key)
     fixed = json.load(open(os.path.join(R.PLANS, key + ".json")))["clips"]
-    R.batch([key], test=True)
+    if not ANCHORS_ONLY:
+        R.batch([key], test=True)
     post = os.path.join(K, "POST_TODAY")
     found = {}
     for c in fixed:
@@ -103,11 +104,18 @@ def plan_probe(path):
     sys.path.insert(0, K)
     import kt_sync_check as SC
     report = {"clips": fixed, "checks": {}}
+    if ANCHORS_ONLY:                                 # no render: words straight from source
+        found = {c["slug"]: None for c in fixed}
     for slug, mp4 in found.items():
-        ok, msg = SC.check(mp4)
-        tmp = f"/tmp/kt_sync.{os.getpid()}"
-        heard = kt_words.parse_word_srt(tmp + ".srt") if os.path.exists(tmp + ".srt") else []
         c = next(c for c in fixed if c["slug"] == slug)
+        if mp4 is None:
+            ok, msg, heard = None, "anchors only - not rendered", []
+            kt_words.words_for(R.fetch_source(vid), float(c["in"]), float(c["out"]),
+                               p["brand"] + "/" + slug)
+        else:
+            ok, msg = SC.check(mp4)
+            tmp = f"/tmp/kt_sync.{os.getpid()}"
+            heard = kt_words.parse_word_srt(tmp + ".srt") if os.path.exists(tmp + ".srt") else []
         # the renderer keyed the words by BRAND/slug; a failed clip now sits in _failed
         wkey = p["brand"] + "/" + slug
         cache = kt_words._load_cache()
@@ -124,25 +132,34 @@ def plan_probe(path):
             run(FF, "-y", "-loglevel", "error", "-ss", f"{a:.3f}", "-to", f"{b:.3f}", "-i", src,
                 "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", wav)
             ons = V.onsets(V.envelope(src, a, b))
-            pts = V.anchor_by_identity(wav, words, ons) if words else []
+            log = []
+            pts = V.anchor_by_identity(wav, words, ons, log=log) if words else []
             anch = {"onsets": [round(t, 2) for t in ons],
                     "anchors": [[i, round(t, 2), words[i][2], round(words[i][0], 2)] for i, t in pts],
-                    "anchored": V.warp_by_index(words, pts) if len(pts) >= 2 else words}
+                    "anchored": V.warp_by_index(words, pts) if len(pts) >= 2 else words,
+                    "heard_at_onsets": log}
         except Exception as e:                      # evidence, never a crash
             anch = {"error": f"{type(e).__name__}: {e}"}
         report["checks"][slug] = {"ok": ok, "msg": msg, "in": c["in"], "out": c["out"],
                                   "heard": heard, "words": raw, **anch}
         print(f"{slug}: {msg}")
-        run(FF, "-v", "error", "-y", "-i", mp4, "-vf", "fps=1,scale=180:-2,tile=10x8",
-            "-frames:v", "1", os.path.join(OUT, f"{slug}_sheet.jpg"))
+        if mp4:
+            run(FF, "-v", "error", "-y", "-i", mp4, "-vf", "fps=1,scale=180:-2,tile=10x8",
+                "-frames:v", "1", os.path.join(OUT, f"{slug}_sheet.jpg"))
     json.dump(report, open(os.path.join(OUT, "plan_report.json"), "w"), indent=1)
     rep = os.path.join(K, "work", "proposals", "BATCH_REPORT.md")
     if os.path.exists(rep):
         shutil.copy(rep, os.path.join(OUT, "batch_report.md"))
 
 
+ANCHORS_ONLY = False
+
+
 def main():
+    global ANCHORS_ONLY
     key = sys.argv[1]
+    if key.startswith("anchors:"):                   # plan probe without the render
+        ANCHORS_ONLY, key = True, "plan:" + key[8:]
     if key.startswith("plan:"):
         return plan_probe(os.path.join(os.path.dirname(HERE), key[5:]))
     n = int(sys.argv[2]) if len(sys.argv) > 2 else 6

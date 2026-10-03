@@ -396,7 +396,7 @@ def _same(a, b):
     return difflib.SequenceMatcher(a=a, b=b).ratio() >= 0.8
 
 
-def anchor_by_identity(wav, words, ons, last_free=25):
+def anchor_by_identity(wav, words, ons, last_free=25, log=None):
     """[(index, true_time)] - anchored by WHICH WORD is heard at each onset.
 
     Nearest-in-time pairing assumes our clock is already within 0.40s of the
@@ -422,6 +422,8 @@ def anchor_by_identity(wav, words, ons, last_free=25):
         r = subprocess.run([WH, "-m", MD, "-f", "/tmp/v2on.wav", "-bs", "5", "-nt"],
                            capture_output=True, text=True).stdout
         heard = [nm(w) for w in re.sub(r"\[.*?\]|\(.*?\)", " ", r).split() if nm(w)]
+        if log is not None:                  # evidence for a probe; changes nothing
+            log.append({"t": round(t, 2), "heard": heard[:8]})
         if not heard:
             continue
         # Score every position just ahead of the last anchor instead of demanding an
@@ -446,6 +448,9 @@ def anchor_by_identity(wav, words, ons, last_free=25):
             # seconds. A common word is not evidence of position.
             near = [i for i in range(at, min(len(on), at + 5)) if on[i] == want[0]]
             hit = near[0] if len(near) == 1 else None
+        if log is not None:
+            log[-1]["hit"] = hit
+            log[-1]["scores"] = best[0], second
         if hit is None:
             continue
         if abs(words[hit][0] - t) > MAX_PULL:
