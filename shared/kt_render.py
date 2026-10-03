@@ -593,7 +593,7 @@ def caption_chain(ps):
         out.append(
             f"drawtext=fontfile={f}:text='{esc(up(text))}':fontsize={size}"
             f":fontcolor={colour}{SHADOW}:x=(w-tw)/2:y={CAP_Y}"
-            f":enable='between(t,{a:.2f},{b:.2f})'")
+            f":enable='gte(t,{a:.2f})*lt(t,{b:.2f})'")   # half-open: a shared boundary shows ONE caption
     return out
 
 

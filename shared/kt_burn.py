@@ -198,7 +198,7 @@ def chain(ps):
             f":borderw={BORDER_W}:bordercolor={BORDER_C}"
             f":shadowcolor={SHADOW_C}:shadowx=0:shadowy={SHADOW_Y}"
             f":x=(w-tw)/2:y={CAP_Y}"
-            f":enable='between(t,{a},{b})'")
+            f":enable='gte(t,{a})*lt(t,{b})'")   # half-open: no 1-frame double caption
     return ",".join(parts)
 
 
