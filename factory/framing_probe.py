@@ -62,7 +62,7 @@ def plan_probe(path):
     import run_plans as R
     import kt_words
     p = json.load(open(path))
-    key = "_probe_" + os.path.splitext(os.path.basename(path))[0]
+    key = "probe_" + os.path.splitext(os.path.basename(path))[0]   # "_" files are skipped by the batch
     json.dump(dict(p, test=True), open(os.path.join(R.PLANS, key + ".json"), "w"), indent=1)
     vid = p["source"][:-4]
     R.fetch_source(vid)
