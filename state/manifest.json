@@ -6946,12 +6946,26 @@
    "caption": "You don't need the whole road lit up to start driving.\n\nKevin Trudeau compares life to a pitch-black country road at night - no moon, no stars, nothing but headlights that only show you a few feet ahead. You can still drive for miles. Every time you move forward, you see a little further.\n\nThe people waiting to see around the corner before they'll move never move at all.\n\nStop waiting for the whole picture. Go as far as you can see, then go again.\n\n#kevintrudeau #mindset #nextstep #motivation #dharma #successmindset",
    "hook": "One step is all you need",
    "bytes": 60085691,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-04T08:17",
    "cta_keyword": "WISH",
    "cta_variant": 7,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1099320663061422/",
+    "instagram": "https://www.instagram.com/reel/DeFApzqgbD_/",
+    "youtube": "https://youtube.com/shorts/kCUV3VURY-U"
+   },
+   "caption_at_post": "You don't need the whole road lit up to start driving.\n\nKevin Trudeau compares life to a pitch-black country road at night - no moon, no stars, nothing but headlights that only show you a few feet ahead. You can still drive for miles. Every time you move forward, you see a little further.\n\nThe people waiting to see around the corner before they'll move never move at all.\n\nStop waiting for the whole picture. Go as far as you can see, then go again.\n\n#kevintrudeau #mindset #nextstep #motivation #dharma #successmindset",
+   "posted_at": "2026-10-04T12:01"
   },
   {
    "file": "KT_DUTY/01_PURPOSE-IS-THE-WRONG-WORD_91s.mp4",
@@ -6986,7 +7000,7 @@
    "bytes": 83987082,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-04T08:17",
+   "scheduled_at": "2026-10-04T12:42",
    "cta_keyword": "KT",
    "cta_variant": 10,
    "cta_kind": "offer"
@@ -6998,7 +7012,7 @@
    "bytes": 54111522,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-04T08:17",
+   "scheduled_at": "2026-10-04T12:42",
    "cta_keyword": "KT",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -7036,7 +7050,7 @@
    "bytes": 84209399,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-04T08:17",
+   "scheduled_at": "2026-10-04T12:42",
    "cta_keyword": "WISH",
    "cta_variant": 11,
    "cta_kind": "question"
