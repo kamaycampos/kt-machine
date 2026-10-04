@@ -6740,7 +6740,7 @@
    "bytes": 35345098,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-03T18:27",
+   "scheduled_at": "2026-10-03T20:58",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
    "cta_kind": "offer"
@@ -6752,7 +6752,7 @@
    "bytes": 43958429,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-03T18:27",
+   "scheduled_at": "2026-10-03T20:58",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "offer"
@@ -6892,12 +6892,26 @@
    "caption": "An old sitcom taught this better than most spiritual books ever have.\n\nA husband spends all night looking forward to fresh blueberry muffins. His wife forgot to buy them. Her face goes pale, bracing for the reaction \u2014 and he just shrugs: I'm not going to let the absence of muffins ruin my morning. What else is there for breakfast?\n\nThat's the whole practice in one scene. Not suppressing disappointment, just refusing to let a small thing cost you the entire day.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#letgo #awakening #spirituality #mindset #innerpeace #kevintrudeau",
    "hook": "No muffins. Still a good morning.",
    "bytes": 68542795,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202610040018561AF4220A4F0500F9118A'}}"
+   },
    "scheduled_at": "2026-10-03T18:27",
    "cta_keyword": "YES",
    "cta_variant": 5,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1662798145561274/",
+    "instagram": "https://www.instagram.com/reel/DeDU732DafQ/",
+    "youtube": "https://youtube.com/shorts/jw7Ru4_Tvuc"
+   },
+   "caption_at_post": "An old sitcom taught this better than most spiritual books ever have.\n\nA husband spends all night looking forward to fresh blueberry muffins. His wife forgot to buy them. Her face goes pale, bracing for the reaction \u2014 and he just shrugs: I'm not going to let the absence of muffins ruin my morning. What else is there for breakfast?\n\nThat's the whole practice in one scene. Not suppressing disappointment, just refusing to let a small thing cost you the entire day.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#letgo #awakening #spirituality #mindset #innerpeace #kevintrudeau",
+   "posted_at": "2026-10-03T20:18"
   },
   {
    "file": "KT_DUTY/01_HEADLIGHTS-ON-A-DARK-ROAD_91s.mp4",
@@ -6906,7 +6920,7 @@
    "bytes": 60085691,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-03T18:27",
+   "scheduled_at": "2026-10-03T20:58",
    "cta_keyword": "WISH",
    "cta_variant": 7,
    "cta_kind": "offer"
@@ -6916,12 +6930,26 @@
    "caption": "Most people spend their whole life searching for something that was never there.\n\nKevin Trudeau says mission and purpose are modern myths - words invented to give people something to chase that they can never catch, so they stay empty forever.\n\nThere is a real word underneath it, an ancient one most people never hear: Dharma. It simply means duty, the thing you agreed to do before you got here.\n\nStop hunting for a purpose. Start doing the next thing you already know is yours to do.\n\nWhat if the emptiness was never about finding purpose at all?\n\n#kevintrudeau #dharma #mindset #purpose #selfimprovement #manifesting",
    "hook": "The purpose myth Duty is real",
    "bytes": 60377814,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-03T18:10",
    "cta_keyword": "BRAIN",
    "cta_variant": 9,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2102463003963793/",
+    "instagram": "https://www.instagram.com/reel/DeDUiYelp2u/",
+    "youtube": "https://youtube.com/shorts/9Qo_PizIOuc"
+   },
+   "caption_at_post": "Most people spend their whole life searching for something that was never there.\n\nKevin Trudeau says mission and purpose are modern myths - words invented to give people something to chase that they can never catch, so they stay empty forever.\n\nThere is a real word underneath it, an ancient one most people never hear: Dharma. It simply means duty, the thing you agreed to do before you got here.\n\nStop hunting for a purpose. Start doing the next thing you already know is yours to do.\n\nWhat if the emptiness was never about finding purpose at all?\n\n#kevintrudeau #dharma #mindset #purpose #selfimprovement #manifesting",
+   "posted_at": "2026-10-03T20:16"
   },
   {
    "file": "KT_MEMORY/01_CHICAGO-UNION-SAID-NO_86s.mp4",
@@ -6930,7 +6958,7 @@
    "bytes": 83987082,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-03T19:43",
+   "scheduled_at": "2026-10-03T20:58",
    "cta_keyword": "KT",
    "cta_variant": 10,
    "cta_kind": "offer"
@@ -6942,7 +6970,7 @@
    "bytes": 54111522,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-03T18:27",
+   "scheduled_at": "2026-10-03T20:58",
    "cta_keyword": "KT",
    "cta_variant": 6,
    "cta_kind": "offer"
