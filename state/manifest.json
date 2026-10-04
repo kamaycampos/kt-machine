@@ -7024,12 +7024,26 @@
    "caption": "Tell a friend you're starting a restaurant and watch what happens.\n\nOut loud they say go for it. Kevin Trudeau says underneath, a different voice runs: I hope he fails, I hope he fails.\n\nHe calls it counter intention - the gap between what people say to your face and what they quietly hope happens. Even people who love you carry it, because your rise moves the bar they're measured against.\n\nThat's why the goal stays untold until it's real.\n\nWould your closest friend really want you to out-earn them tenfold?\n\n#kevintrudeau #mindset #successmindset #wealthmindset #selfimprovement #moneymindset",
    "hook": "Why friends want you to fail",
    "bytes": 54111522,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-04T15:44",
    "cta_keyword": "KT",
    "cta_variant": 6,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1665140698379041/",
+    "instagram": "https://www.instagram.com/reel/DeFrwZxDP_t/",
+    "youtube": "https://youtube.com/shorts/FwexnUn9pk0"
+   },
+   "caption_at_post": "Tell a friend you're starting a restaurant and watch what happens.\n\nOut loud they say go for it. Kevin Trudeau says underneath, a different voice runs: I hope he fails, I hope he fails.\n\nHe calls it counter intention - the gap between what people say to your face and what they quietly hope happens. Even people who love you carry it, because your rise moves the bar they're measured against.\n\nThat's why the goal stays untold until it's real.\n\nWould your closest friend really want you to out-earn them tenfold?\n\n#kevintrudeau #mindset #successmindset #wealthmindset #selfimprovement #moneymindset",
+   "posted_at": "2026-10-04T18:18"
   },
   {
    "file": "KT_SILENT/02_THE-TWO-FINGER-TEST_69s.mp4",
@@ -7064,7 +7078,7 @@
    "bytes": 84209399,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-04T15:44",
+   "scheduled_at": "2026-10-04T18:59",
    "cta_keyword": "WISH",
    "cta_variant": 11,
    "cta_kind": "question"
