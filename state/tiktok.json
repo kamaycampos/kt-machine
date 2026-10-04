@@ -1,12 +1,22 @@
 {
- "at": "2026-10-04T12:50",
+ "at": "2026-10-04T21:54",
  "profile": {
-  "video_count": 158,
-  "follower_count": 413,
-  "following_count": 8,
-  "likes_count": 5827
+  "likes_count": 5827,
+  "video_count": 159,
+  "follower_count": 414,
+  "following_count": 8
  },
  "videos": {
+  "KT_LUCK/02_WHY-DNA-REACTED-ACROSS-THE-PLANET_130s.mp4": {
+   "id": "7692842177801637133",
+   "view_count": 0,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7692842177801637133?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 130,
+   "posted": "2026-10-04T15:57"
+  },
   "KT_SPIRITUAL/02_WHY-LOSING-IT-ALL-DIDNT-HURT_70s.mp4": {
    "id": "7692625004940250381",
    "view_count": 0,
@@ -29,7 +39,7 @@
   },
   "KT_LEDGER/02_LOST-27-MILLION-STILL-WON_160s.mp4": {
    "id": "7692503921260088590",
-   "view_count": 4,
+   "view_count": 6,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -39,7 +49,7 @@
   },
   "KT_LUCK/01_BILL-GATES-NUMBER-ONE-REASON-LUCK_110s.mp4": {
    "id": "7692426337788661005",
-   "view_count": 13,
+   "view_count": 14,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -49,7 +59,7 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 48,
+   "view_count": 54,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -69,7 +79,7 @@
   },
   "KT_LEDGER/01_TWO-PIZZAS-AND-A-BILLION-DOLLARS_66s.mp4": {
    "id": "7691802431088282893",
-   "view_count": 14,
+   "view_count": 15,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -119,7 +129,7 @@
   },
   "KT_TAXHACK/02_NO-LLC-NEEDED-FOR-WRITE-OFFS_55s.mp4": {
    "id": "7690948145840180494",
-   "view_count": 6,
+   "view_count": 7,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -209,7 +219,7 @@
   },
   "KT_FREEDOM/02_HOW-I-MADE-A-MILLION-BEFORE-18_138s.mp4": {
    "id": "7690276043977985293",
-   "view_count": 1,
+   "view_count": 2,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -419,7 +429,7 @@
   },
   "KT_SECRET/03_SIXTY-AND-BROKE_44s.mp4": {
    "id": "7688344513672170765",
-   "view_count": 482,
+   "view_count": 484,
    "like_count": 35,
    "comment_count": 0,
    "share_count": 3,
@@ -429,7 +439,7 @@
   },
   "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
    "id": "7688148098480098573",
-   "view_count": 477,
+   "view_count": 478,
    "like_count": 39,
    "comment_count": 2,
    "share_count": 6,
@@ -459,7 +469,7 @@
   },
   "KT_SECRET/05_NOT-THE-HAMBURGER-BUSINESS_124s.mp4": {
    "id": "7688020668356545806",
-   "view_count": 85,
+   "view_count": 89,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -519,7 +529,7 @@
   },
   "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4": {
    "id": "7686887912297843981",
-   "view_count": 2312,
+   "view_count": 2314,
    "like_count": 78,
    "comment_count": 5,
    "share_count": 11,
@@ -559,7 +569,7 @@
   },
   "KT_LIES/03_THE-DRYER-FUND_57s.mp4": {
    "id": "7686521175207382286",
-   "view_count": 675,
+   "view_count": 676,
    "like_count": 41,
    "comment_count": 1,
    "share_count": 1,
@@ -609,7 +619,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14095,
+   "view_count": 14096,
    "like_count": 867,
    "comment_count": 59,
    "share_count": 196,
@@ -659,7 +669,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38032,
+   "view_count": 38035,
    "like_count": 787,
    "comment_count": 27,
    "share_count": 171,
@@ -699,7 +709,7 @@
   },
   "KT_POS/03_03_THE-INGREDIENT-NOBODY-TEACHES_102s.mp4": {
    "id": "7685133057686326542",
-   "view_count": 1775,
+   "view_count": 1776,
    "like_count": 229,
    "comment_count": 22,
    "share_count": 42,
@@ -939,7 +949,7 @@
   },
   "KT_LIES/01_HALF-AN-HOUR-FIVE-HUNDRED_138s.mp4": {
    "id": "7682548909163531533",
-   "view_count": 201,
+   "view_count": 202,
    "like_count": 7,
    "comment_count": 1,
    "share_count": 1,
