@@ -1,15 +1,35 @@
 {
- "at": "2026-10-03T11:59",
+ "at": "2026-10-03T21:44",
  "profile": {
-  "video_count": 154,
-  "follower_count": 414,
-  "following_count": 8,
-  "likes_count": 5825
+  "likes_count": 5826,
+  "video_count": 156,
+  "follower_count": 413,
+  "following_count": 8
  },
  "videos": {
+  "KT_LEDGER/02_LOST-27-MILLION-STILL-WON_160s.mp4": {
+   "id": "7692503921260088590",
+   "view_count": 3,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7692503921260088590?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 160,
+   "posted": "2026-10-03T18:04"
+  },
+  "KT_LUCK/01_BILL-GATES-NUMBER-ONE-REASON-LUCK_110s.mp4": {
+   "id": "7692426337788661005",
+   "view_count": 13,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7692426337788661005?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 109,
+   "posted": "2026-10-03T13:03"
+  },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 17,
+   "view_count": 33,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -19,7 +39,7 @@
   },
   "KT_UNCENSORED/01_THE-GUARD-GAVE-THE-SAME-ANSWER_85s.mp4": {
    "id": "7692207047164677389",
-   "view_count": 0,
+   "view_count": 1,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -209,7 +229,7 @@
   },
   "KT_WEALTH/02_ROCKEFELLER-EVERY-DISASTER_103s.mp4": {
    "id": "7689976707771567374",
-   "view_count": 33,
+   "view_count": 34,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -419,7 +439,7 @@
   },
   "KT_SECRET/05_NOT-THE-HAMBURGER-BUSINESS_124s.mp4": {
    "id": "7688020668356545806",
-   "view_count": 82,
+   "view_count": 85,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -429,7 +449,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3657,
+   "view_count": 3660,
    "like_count": 153,
    "comment_count": 7,
    "share_count": 16,
@@ -439,8 +459,8 @@
   },
   "KT_SECRET/02_TEN-THOUSAND-WAYS_113s.mp4": {
    "id": "7687673803677224206",
-   "view_count": 527,
-   "like_count": 55,
+   "view_count": 529,
+   "like_count": 56,
    "comment_count": 2,
    "share_count": 2,
    "share_url": "https://www.tiktok.com/@kt_student/video/7687673803677224206?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -449,7 +469,7 @@
   },
   "KT_RICH/06_PEP-TALKS-WHEN-ALONE_71s.mp4": {
    "id": "7687607782639537422",
-   "view_count": 1196,
+   "view_count": 1197,
    "like_count": 93,
    "comment_count": 4,
    "share_count": 27,
@@ -569,7 +589,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14089,
+   "view_count": 14092,
    "like_count": 867,
    "comment_count": 59,
    "share_count": 196,
@@ -599,7 +619,7 @@
   },
   "unmatched/7685818408352435470": {
    "id": "7685818408352435470",
-   "view_count": 804,
+   "view_count": 805,
    "like_count": 99,
    "comment_count": 2,
    "share_count": 5,
@@ -619,7 +639,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38022,
+   "view_count": 38024,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
@@ -649,7 +669,7 @@
   },
   "KT_HOME/05_05_THE-SINGLE-MOST-POWERFUL-OBJECT_86s.mp4": {
    "id": "7685101409963871501",
-   "view_count": 1352,
+   "view_count": 1353,
    "like_count": 102,
    "comment_count": 4,
    "share_count": 9,
@@ -899,7 +919,7 @@
   },
   "KT_LIES/01_HALF-AN-HOUR-FIVE-HUNDRED_138s.mp4": {
    "id": "7682548909163531533",
-   "view_count": 200,
+   "view_count": 201,
    "like_count": 7,
    "comment_count": 1,
    "share_count": 1,
@@ -929,7 +949,7 @@
   },
   "unmatched/7682064766667427086": {
    "id": "7682064766667427086",
-   "view_count": 333,
+   "view_count": 334,
    "like_count": 13,
    "comment_count": 2,
    "share_count": 3,
