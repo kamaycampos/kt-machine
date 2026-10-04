@@ -6764,12 +6764,26 @@
    "caption": "Kevin Trudeau had dozens of cars worth millions and homes in Zurich, Sydney, New York, Chicago, Dallas, Florida, Beverly Hills and Ojai, some staffed and furnished with fine art, all at once.\n\nThen the government took it all away.\n\nPeople asked how he was coping. He says he felt nothing, because he was never attached to any of it. He'd enjoyed it while it was his. Now it's somebody else's turn.\n\nWhen you're not attached to something, losing it doesn't touch you.\n\nComment WISH and I'll send you Kevin's free audios.\n\n#kevintrudeau #manifestation #mindsetshift #wealthmindset #spiritualawakening #successmindset",
    "hook": "Why losing it all didn't hurt",
    "bytes": 43958429,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-04T02:40",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1614388070169791/",
+    "instagram": "https://www.instagram.com/reel/DeEiNd1ASDS/",
+    "youtube": "https://youtube.com/shorts/ovU1hiQLlfs"
+   },
+   "caption_at_post": "Kevin Trudeau had dozens of cars worth millions and homes in Zurich, Sydney, New York, Chicago, Dallas, Florida, Beverly Hills and Ojai, some staffed and furnished with fine art, all at once.\n\nThen the government took it all away.\n\nPeople asked how he was coping. He says he felt nothing, because he was never attached to any of it. He'd enjoyed it while it was his. Now it's somebody else's turn.\n\nWhen you're not attached to something, losing it doesn't touch you.\n\nComment WISH and I'll send you Kevin's free audios.\n\n#kevintrudeau #manifestation #mindsetshift #wealthmindset #spiritualawakening #successmindset",
+   "posted_at": "2026-10-04T07:34"
   },
   {
    "file": "AR_ENGRAM/01_LOVE-CHANGED-THE-SHAPE_74s.mp4",
@@ -6934,7 +6948,7 @@
    "bytes": 60085691,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-04T02:40",
+   "scheduled_at": "2026-10-04T08:17",
    "cta_keyword": "WISH",
    "cta_variant": 7,
    "cta_kind": "offer"
@@ -6972,7 +6986,7 @@
    "bytes": 83987082,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-04T02:40",
+   "scheduled_at": "2026-10-04T08:17",
    "cta_keyword": "KT",
    "cta_variant": 10,
    "cta_kind": "offer"
@@ -6984,7 +6998,7 @@
    "bytes": 54111522,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-04T02:40",
+   "scheduled_at": "2026-10-04T08:17",
    "cta_keyword": "KT",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -7022,7 +7036,7 @@
    "bytes": 84209399,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-04T07:02",
+   "scheduled_at": "2026-10-04T08:17",
    "cta_keyword": "WISH",
    "cta_variant": 11,
    "cta_kind": "question"
