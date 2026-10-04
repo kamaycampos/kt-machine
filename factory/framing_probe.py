@@ -49,8 +49,119 @@ def cx_at(segs, t):
     return segs[-1]["cx"] if segs else 0.5
 
 
+def plan_probe(path):
+    """`plan:<file>` - build a whole plan exactly as a factory shard does (edges,
+    render, every gate), never queue it, and keep the evidence: what was burned,
+    what whisper heard, the gate's verdict, the framing, the covers.
+
+    3 Oct 2026: the caption gate failed two member clips and the only question
+    was WHAT is in the gap - a word nobody captioned, or a laugh. That needs the
+    real whisper pass on the real render, which only exists here.
+    """
+    import glob, shutil
+    import run_plans as R
+    import kt_words
+    p = json.load(open(path))
+    key = "probe_" + os.path.splitext(os.path.basename(path))[0]   # "_" files are skipped by the batch
+    json.dump(dict(p, test=True), open(os.path.join(R.PLANS, key + ".json"), "w"), indent=1)
+    vid = p["source"][:-4]
+    R.fetch_source(vid)
+    srt = os.path.join(K, "transcripts", f"{vid}.srt")
+    if not os.path.exists(srt):
+        run("gh", "release", "download", "sources", "-R",
+            os.environ.get("GITHUB_REPOSITORY", "kamaycampos/kt-machine"),
+            "-p", f"{vid}.srt.enc", "-D", "/tmp", "--clobber")
+        for kname in ("TRANSCRIPT_KEY", "FACTORY_KEY"):
+            if run("openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-pass", f"env:{kname}",
+                   "-in", f"/tmp/{vid}.srt.enc", "-out", srt).returncode == 0:
+                break
+    # THE FENCE, PROBE ONLY. kt_batch_build refuses a source another lane owns
+    # (kt_fence.py) - here v76l9y0 belongs to the AR lane on this repo while the
+    # plan is a member's KT plan. A probe is test mode: nothing is uploaded or
+    # queued, so this run's throwaway copy of the series drops the fence for
+    # its own source. The repo's kt_series.json and the real fence are untouched.
+    sp = os.path.join(K, "kt_series.json")
+    series = json.load(open(sp))
+    fenced = [k for k, v in series.items() if v.get("source") == p["source"]]
+    for k in fenced:
+        del series[k]
+    json.dump(series, open(sp, "w"), indent=1, ensure_ascii=False)
+    if fenced:
+        print(f"probe: fence lifted in this run only for {p['source']} ({fenced})")
+    os.makedirs(OUT, exist_ok=True)
+    os.environ["VSC_TURN_DEBUG"] = "1"
+    R.fix_edges(key)
+    fixed = json.load(open(os.path.join(R.PLANS, key + ".json")))["clips"]
+    if not ANCHORS_ONLY:
+        R.batch([key], test=True)
+    post = os.path.join(K, "POST_TODAY")
+    found = {}
+    for c in fixed:
+        for f in glob.glob(os.path.join(post, "*", f"*_{c['slug']}_*s*")):
+            shutil.copy(f, os.path.join(OUT, os.path.basename(f)))
+            if f.endswith("s.mp4") and "__" not in os.path.basename(f):
+                found[c["slug"]] = f
+    sys.path.insert(0, K)
+    import kt_sync_check as SC
+    report = {"clips": fixed, "checks": {}}
+    if ANCHORS_ONLY:                                 # no render: words straight from source
+        found = {c["slug"]: None for c in fixed}
+    for slug, mp4 in found.items():
+        c = next(c for c in fixed if c["slug"] == slug)
+        if mp4 is None:
+            ok, msg, heard = None, "anchors only - not rendered", []
+            kt_words.words_for(R.fetch_source(vid), float(c["in"]), float(c["out"]),
+                               p["brand"] + "/" + slug)
+        else:
+            ok, msg = SC.check(mp4)
+            tmp = f"/tmp/kt_sync.{os.getpid()}"
+            heard = kt_words.parse_word_srt(tmp + ".srt") if os.path.exists(tmp + ".srt") else []
+        # the renderer keyed the words by BRAND/slug; a failed clip now sits in _failed
+        wkey = p["brand"] + "/" + slug
+        cache = kt_words._load_cache()
+        raw = next((v for k, v in cache.items() if k.startswith(wkey + "@")), None)
+        # and the anchoring step itself: onsets, which word each one pinned, result
+        anch = {}
+        try:
+            import tempfile
+            import vsc_v2_time as V
+            src = R.fetch_source(vid)                # already on disk: just its path
+            a, b = float(c["in"]), float(c["out"])
+            words = [tuple(w) for w in raw or []]
+            wav = os.path.join(tempfile.gettempdir(), "probe_anchor.wav")
+            run(FF, "-y", "-loglevel", "error", "-ss", f"{a:.3f}", "-to", f"{b:.3f}", "-i", src,
+                "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", wav)
+            ons = V.onsets(V.envelope(src, a, b))
+            log = []
+            pts = V.anchor_by_identity(wav, words, ons, log=log) if words else []
+            anch = {"onsets": [round(t, 2) for t in ons],
+                    "anchors": [[i, round(t, 2), words[i][2], round(words[i][0], 2)] for i, t in pts],
+                    "anchored": V.warp_by_index(words, pts) if len(pts) >= 2 else words,
+                    "heard_at_onsets": log}
+        except Exception as e:                      # evidence, never a crash
+            anch = {"error": f"{type(e).__name__}: {e}"}
+        report["checks"][slug] = {"ok": ok, "msg": msg, "in": c["in"], "out": c["out"],
+                                  "heard": heard, "words": raw, **anch}
+        print(f"{slug}: {msg}")
+        if mp4:
+            run(FF, "-v", "error", "-y", "-i", mp4, "-vf", "fps=1,scale=180:-2,tile=10x8",
+                "-frames:v", "1", os.path.join(OUT, f"{slug}_sheet.jpg"))
+    json.dump(report, open(os.path.join(OUT, "plan_report.json"), "w"), indent=1)
+    rep = os.path.join(K, "work", "proposals", "BATCH_REPORT.md")
+    if os.path.exists(rep):
+        shutil.copy(rep, os.path.join(OUT, "batch_report.md"))
+
+
+ANCHORS_ONLY = False
+
+
 def main():
+    global ANCHORS_ONLY
     key = sys.argv[1]
+    if key.startswith("anchors:"):                   # plan probe without the render
+        ANCHORS_ONLY, key = True, "plan:" + key[8:]
+    if key.startswith("plan:"):
+        return plan_probe(os.path.join(os.path.dirname(HERE), key[5:]))
     n = int(sys.argv[2]) if len(sys.argv) > 2 else 6
     spec = json.load(open(os.path.join(HERE, "kt_series.json")))[key]
     src = fetch_source(spec["source"][:-4])

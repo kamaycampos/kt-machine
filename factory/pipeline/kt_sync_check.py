@@ -118,10 +118,20 @@ def check(mp4):
     quiet = [(float(a), float(b)) for a, b in silent]
     def speaking(t):
         return not any(a <= t <= b for a, b in quiet)
+    # SOUND IS NOT SPEECH. 3 Oct 2026, member clip 1: the gate failed a gap at
+    # 38.9-40.4s that is both men LAUGHING (checked frame by frame, 37.8-40.0s),
+    # with every word whisper heard already captioned (100%). Loud enough to beat
+    # the silence floor, but nothing there to caption. So a gap only counts when
+    # whisper heard a real word inside it - clip 2's dropped "So I..." still fails.
+    # Tags like [laughter] / (laughs) / *music* and pure "ha ha" are not words.
+    def said(w):
+        n = norm(w)
+        return bool(n) and not re.match(r"^\s*[\[\(\*]", w) and not re.fullmatch(r"(ha)+h?|(he){2,}h?", n)
     holes = []
     for k in range(len(bursts) - 1):
         a, b = bursts[k][1], bursts[k + 1][0]
-        if b - a > 1.2 and speaking((a + b) / 2):
+        if (b - a > 1.2 and speaking((a + b) / 2)
+                and any(a + 0.1 <= hs < b - 0.1 and said(w) for hs, _he, w in heard)):
             holes.append((round(a, 1), round(b, 1)))
     cw = sum(len(t.split()) for _a, _b, t in bursts)
     cover = cw / max(1, len(heard))

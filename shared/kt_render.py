@@ -653,7 +653,23 @@ def yt_window(sil, t_in, t_out):
     return best
 
 
-def thumb(video):
+def main_person(shots):
+    """When a clip frames more than one person, the clip-time windows of the one
+    framed longest. None when there is only one."""
+    groups = []                                      # [[cx, seconds, [(a, b)]]]
+    for sh in shots or []:
+        g = next((g for g in groups if abs(g[0] - sh["cx"]) <= 0.08), None)
+        if g is None:
+            g = [sh["cx"], 0.0, []]
+            groups.append(g)
+        g[1] += sh["end"] - sh["start"]
+        g[2].append((sh["start"], sh["end"]))
+    if len(groups) < 2:
+        return None
+    return max(groups, key=lambda g: g[1])[2]
+
+
+def thumb(video, prefer=None, card=None):
     """A cover for YouTube, grabbed while the hook is on screen.
 
     30 Aug: I told Kamay custom thumbnails probably do not work on Shorts and
@@ -785,6 +801,17 @@ def thumb(video):
     # so a clip whose face is there early keeps exactly the cover it had.
     if det is not None and not any(x["face"] >= 0.12 for x in scored):
         _probe(LATE)
+    # 3 Oct 2026: THE COVER SHOWS WHO THE CLIP IS ABOUT. Member clip 1 opens on
+    # the interviewer asking the question, so every probe above found HIS face
+    # and he became the cover of a Kevin clip. `prefer` is when the person
+    # framed longest is on screen (main_person). If he is not on screen during
+    # the hook, look at his first seconds instead, and put the hook card on
+    # that frame so the cover still carries the promise.
+    def mine(t):
+        return not prefer or any(a <= t < b for a, b in prefer)
+    if prefer and det is not None and not any(mine(x["t"]) and x["face"] >= 0.12 for x in scored):
+        a, b = prefer[0]
+        _probe([a + 0.6 + 0.2 * i for i in range(10) if a + 0.6 + 0.2 * i < b - 0.2])
 
     best_t = None
     if scored:
@@ -796,7 +823,8 @@ def thumb(video):
             x["score"] = (0.65 * (1.0 - x["motion"] / mm)
                           + 0.35 * (x["sharp"] / ms)
                           - (0.5 if x["lit"] < 35 else 0.0)
-                          + (1.5 if x["face"] >= 0.12 else 0.0))   # a face wins
+                          + (1.5 if x["face"] >= 0.12 else 0.0)    # a face wins
+                          + (1.0 if prefer and mine(x["t"]) and x["face"] >= 0.12 else 0.0))
         best_t = max(scored, key=lambda x: x["score"])["t"]
         if det is not None and not any(x["face"] >= 0.12 for x in scored):
             print(f"  NOTE {os.path.basename(video)}: no face in the first "
@@ -804,9 +832,16 @@ def thumb(video):
 
     if best_t is None:
         best_t = 1.5
-    subprocess.run([FFMPEG, "-y", "-loglevel", "error", "-ss", f"{best_t:.2f}",
-                    "-i", video, "-frames:v", "1", "-filter_complex", vf,
-                    "-q:v", "3", dest], capture_output=True)
+    if card and card[0] and os.path.exists(card[0]) and best_t >= HOOK_SECS - 0.4:
+        # a frame from after the hook: draw the hook card on it, where the clip has it
+        subprocess.run([FFMPEG, "-y", "-loglevel", "error", "-ss", f"{best_t:.2f}",
+                        "-i", video, "-i", card[0], "-frames:v", "1", "-filter_complex",
+                        f"[0:v][1:v]overlay=x=(W-w)/2:y={card[1]}[p];[p]" + vf,
+                        "-q:v", "3", dest], capture_output=True)
+    else:
+        subprocess.run([FFMPEG, "-y", "-loglevel", "error", "-ss", f"{best_t:.2f}",
+                        "-i", video, "-frames:v", "1", "-filter_complex", vf,
+                        "-q:v", "3", dest], capture_output=True)
 
     # WHAT INSTAGRAM NEEDS. It picks its own cover unless the container is given
     # thumb_offset in milliseconds - which is why her grid was showing frame
@@ -1242,7 +1277,7 @@ MAGNITUDE_WORDS = {"billion", "million", "thousand", "hundred", "percent",
 
 def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
            hook_y=None, yt_win=None, slug=None, fix=None, shots=None,
-           track=None):
+           track=None, cuts=None):
     burn.MAX_CHARS = CAP_MAX          # short bursts, not subtitle lines
     # Real word timings when we have them; the old estimate only as a fallback.
     import kt_words
@@ -1268,6 +1303,20 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
             words = vsc_v2_time.anchor_words(src, t_in, t_out, words)
         except Exception as e:                       # never let timing polish lose a clip
             sys.stderr.write(f"      caption anchoring skipped: {type(e).__name__}: {e}\n")
+    # TWO PEOPLE IN ONE SHOT: FRAME WHOEVER IS TALKING. See vsc_frame.speaker_turns.
+    # It needs the final word times, because a switch may only land on the first
+    # word of a sentence.
+    if shots and words and cuts is not None:
+        try:
+            import vsc_frame as VF
+            turned = VF.speaker_turns(src, t_in, t_out, shots, cuts,
+                                      VF.sentence_starts(words))
+            if turned != shots:
+                print("      speaker turns: " + ", ".join(
+                    f"{s['start']:.1f}s {s['cx']:.2f}" for s in turned))
+                shots = turned
+        except Exception as e:                       # never let framing polish lose a clip
+            sys.stderr.write(f"      speaker turns skipped: {type(e).__name__}: {e}\n")
     ps = phrases_from_words(words) if words else burn.phrases(cues, t_in, t_out)
     # KEEP A RECORD OF WHAT WAS BURNED. 16 Sept 2026: captions drifted up to
     # 9.5s ahead of the speech on seven clips, and nothing could see it - the
@@ -1346,7 +1395,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     # so any clip already under 60 seconds got no cover at all and YouTube picked
     # its own frame - which is the exact problem covers exist to solve. Yaren's
     # 50-second clip was the one that exposed it.
-    thumb(dest)
+    thumb(dest, prefer=main_person(shots), card=(card, cy_px))
 
     # The YouTube cut, only when the full clip would break the 60s rule.
     if t_out - t_in > YT_MAX:
@@ -1435,7 +1484,9 @@ def shots_for(src, t_in, t_out, slug):
     if os.path.exists(cache):
         try:
             j = json.load(open(cache))
-            return {"segments": j["segments"], "track": j.get("track") or []}
+            if "cuts" in j:           # older caches lack the cuts speaker turns need
+                return {"segments": j["segments"], "track": j.get("track") or [],
+                        "cuts": j["cuts"]}
         except (ValueError, OSError, KeyError):
             pass
     try:
@@ -1453,16 +1504,17 @@ def shots_for(src, t_in, t_out, slug):
     try:
         dur = VF.duration(win)
         track = VF.face_track(win, dur)
-        segs = VF.segments(VF.shot_cuts(win), dur, track)
+        cuts = VF.shot_cuts(win)
+        segs = VF.segments(cuts, dur, track)
         # The per-second track is kept as well as the shots. The hook lives for
         # three seconds and a shot can run thirty, so a shot's AVERAGE face
         # position is the wrong number to place the card against - measured on
         # KT_POS/02 the shot average put his face at 29% of frame height while
         # in the first three seconds it was at 13%.
-        json.dump({"segments": segs,
+        json.dump({"segments": segs, "cuts": cuts,
                    "track": [list(t) if t else None for t in track]},
                   open(cache, "w"), indent=1)
-        return {"segments": segs, "track": track}
+        return {"segments": segs, "track": track, "cuts": cuts}
     except (Exception, SystemExit) as e:
         # SystemExit DELIBERATELY, and this cost a batch. 15 Sept 2026: the
         # fourth of four clips died on "cannot read duration" and everything
@@ -1543,7 +1595,8 @@ def run_series(key, spec, apply, only):
                   + ", ".join(f"{s['cx']:.2f}" for s in shots))
         bursts = render(src, dest, c["in"], c["out"], c["hook"], cues,
                         cx, apply, zoom, c.get("hook_yt"), yt_win,
-                        c["slug"], c.get("fix"), shots, track)
+                        c["slug"], c.get("fix"), shots, track,
+                        (frames or {}).get("cuts"))
         print(f"  {'rendered' if apply else 'plan'} {brand}/{name}  "
               f"{bursts} bursts  hook={' / '.join(c['hook'][:2])}")
         n += 1

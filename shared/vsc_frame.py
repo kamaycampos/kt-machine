@@ -12,7 +12,7 @@ which reads as amateur. One crop per SHOT is invisible and correct.
 
 Writes <video>.frame.json: [{"start","end","cx","fw"}], cx/fw as fractions.
 """
-import cv2, json, os, subprocess, sys, numpy as np
+import cv2, glob, json, os, subprocess, sys, numpy as np
 
 FFMPEG = os.path.expanduser("~/Kamay/bin/ffmpeg")
 MODEL  = os.path.expanduser("~/Kamay/bin/yunet.onnx")
@@ -240,6 +240,254 @@ def segments(cuts, dur, track):
         else:
             out.append(s2)
     return out
+
+
+# ------------------------------------------------------------ who is talking
+# A numpy port of Resemblyzer's VoiceEncoder (Apache-2.0, github.com/resemble-ai/
+# Resemblyzer): 40 mel bands -> 3-layer LSTM(256) -> a 256-d voiceprint. Its
+# published weights are factory/assets/voice_encoder.npz, copied to ~/Kamay/bin
+# by setup.sh. No torch: the whole forward pass is below and runs a 75-second
+# clip in about a second. Without the file, speaker_turns() changes nothing.
+VOICE = os.path.expanduser("~/Kamay/bin/voice_encoder.npz")
+_SR, _NFFT, _HOP, _PART = 16000, 400, 160, 160
+
+
+def _mel_basis(n_mels=40):
+    """librosa.filters.mel(sr=16000, n_fft=400, n_mels=40): Slaney scale and norm."""
+    lin, logstep = 1000.0 / (200.0 / 3), np.log(6.4) / 27.0
+    def hz2mel(f):
+        return np.where(f >= 1000.0, lin + np.log(np.maximum(f, 1e-10) / 1000.0) / logstep,
+                        f / (200.0 / 3))
+    def mel2hz(m):
+        return np.where(m >= lin, 1000.0 * np.exp(logstep * (m - lin)), m * (200.0 / 3))
+    fft = np.linspace(0, _SR / 2, _NFFT // 2 + 1)
+    mf = mel2hz(np.linspace(hz2mel(np.array(0.0)), hz2mel(np.array(_SR / 2.0)), n_mels + 2))
+    fd, ramps = np.diff(mf), mf[:, None] - fft[None, :]
+    w = np.stack([np.maximum(0, np.minimum(-ramps[i] / fd[i], ramps[i + 2] / fd[i + 1]))
+                  for i in range(n_mels)])
+    return (w * (2.0 / (mf[2:] - mf[:-2]))[:, None]).astype(np.float32)
+
+
+class _Voices:
+    def __init__(self, path):
+        z = np.load(path)
+        f = lambda k: z[k].astype(np.float32)
+        self.lstm = [(f(f"lstm.weight_ih_l{k}"), f(f"lstm.weight_hh_l{k}"),
+                      f(f"lstm.bias_ih_l{k}") + f(f"lstm.bias_hh_l{k}")) for k in range(3)]
+        self.W, self.b, self.mel = f("linear.weight"), f("linear.bias"), _mel_basis()
+
+    def _forward(self, X):                          # batch x 160 frames x 40
+        h = X
+        for Wi, Wh, bias in self.lstm:
+            pre = h @ Wi.T + bias
+            hs = np.zeros((len(X), 256), np.float32)
+            cs = np.zeros_like(hs)
+            out = np.empty(pre.shape[:2] + (256,), np.float32)
+            for t in range(pre.shape[1]):           # PyTorch gate order: i, f, g, o
+                g = np.clip(pre[:, t] + hs @ Wh.T, -30, 30)
+                i, fg, o = (1 / (1 + np.exp(-g[:, k:k + 256])) for k in (0, 256, 768))
+                cs = fg * cs + i * np.tanh(g[:, 512:768])
+                hs = o * np.tanh(cs)
+                out[:, t] = hs
+            h = out
+        e = np.maximum(0, hs @ self.W.T + self.b)
+        return e / (np.linalg.norm(e, axis=1, keepdims=True) + 1e-9)
+
+    def embed(self, wav):
+        """One L2-normed voiceprint for a stretch of 16 kHz mono audio."""
+        x = np.pad(wav.astype(np.float32), _NFFT // 2)
+        fr = np.lib.stride_tricks.sliding_window_view(x, _NFFT)[::_HOP]
+        win = (0.5 - 0.5 * np.cos(2 * np.pi * np.arange(_NFFT) / _NFFT)).astype(np.float32)
+        M = (np.abs(np.fft.rfft(fr * win, axis=1)) ** 2) @ self.mel.T
+        if len(M) < _PART:
+            M = np.pad(M, ((0, _PART - len(M)), (0, 0)))
+        step = int(round(_SR / 1.3 / _HOP))         # Resemblyzer's partials, rate 1.3/s
+        e = self._forward(np.stack([M[k:k + _PART] for k in
+                                    range(0, len(M) - _PART + 1, step)])).mean(0)
+        return e / (np.linalg.norm(e) + 1e-9)
+
+
+TURN_MIN = 1.5          # no speaker segment shorter than this
+TURN_BOTH = 0.8         # both faces on screen in this share of a block's frames
+TURN_MARGIN = 0.04      # a span changes hands only when one voice is clearly nearer
+TURN_SHORT = 0.8        # spans shorter than this are too little sound to judge
+TURN_ISLAND = 2.5       # a run this short between two of the other person is a reaction
+
+
+def sentence_starts(words, gap=0.7):
+    """Clip-relative times a new sentence begins: after . ? ! or a long pause."""
+    out, prev = [], None
+    for a, b, w in words:
+        end = prev and prev[2].strip().strip("\"'\u201d\u2019)").endswith((".", "?", "!"))
+        if prev is None or end or a - prev[1] >= gap:
+            out.append(float(a))
+        prev = (a, b, w)
+    return out
+
+
+def speaker_turns(src, t_in, t_out, segs, cuts, starts):
+    """Two people in one shot: frame whoever is TALKING, switching on sentences.
+
+    3 Oct 2026, member clip 1 (a remote interview: interviewer left, Kevin
+    right, one shot, no cuts). The tracker switched to Kevin at 23.0s; he
+    starts answering at 19.4s ("Yeah."). For three and a half seconds the crop
+    held the silent interviewer while Kevin talked - Kamay saw it as lag.
+
+    The tracker reads MOUTHS, once a second, and holds its choice until one
+    clearly out-moves the other. On this clip that is the wrong signal:
+    measured, the listener nodding under a noisy webcam moved his mouth patch
+    more than Kevin talking (0.117 vs 0.107 over 19.4-26.8s). Lip/sound sync
+    and hand-made voice features were tried and each named the wrong man
+    somewhere on the two test clips.
+
+    A VOICEPRINT does not. Seeded with the tracker's own framing, refined
+    twice, each sentence goes to the nearer voice: on clip 1 the interviewer
+    scores 0.72-0.80 against his own voice to 18.5s and Kevin wins every second
+    from 19.0s; on clip 2 it recovers the confirmed 0-2 / 2-4 / 4-8 turns and
+    keeps 72-84s on Kevin, where sync had put the interviewer.
+
+    Only inside a stretch between camera cuts where both faces are on screen
+    (TURN_BOTH) and the tracker already framed both people. A switch lands on
+    a sentence start, so the reframe meets the new speaker's first word, and
+    no segment is shorter than TURN_MIN. Anything else is returned unchanged.
+    """
+    if not SPEAKER or len(segs) < 2 or len(starts) < 2 or not os.path.exists(VOICE):
+        return segs
+    dur = t_out - t_in
+    hard = sorted(c for c in cuts if 0 < c < dur)
+    blocks = [(a, b) for a, b in zip([0.0] + hard, hard + [dur]) if b - a >= 2 * TURN_MIN]
+    todo = []
+    for a, b in blocks:
+        inner = [sg for sg in segs if sg["end"] > a + 0.01 and sg["start"] < b - 0.01]
+        people = []                                  # [[cx, fw, cy, seconds]]
+        for sg in inner:
+            n = min(sg["end"], b) - max(sg["start"], a)
+            p = next((p for p in people if abs(p[0] - sg["cx"]) <= 2 * SAME), None)
+            if p is None:
+                people.append([sg["cx"], sg["fw"], sg["cy"], n])
+            else:
+                p[3] += n
+        if len(people) == 2:
+            todo.append((a, b, inner, people))
+    if not todo:
+        return segs
+    raw = subprocess.run([FFMPEG, "-ss", f"{t_in:.2f}", "-t", f"{dur:.2f}", "-i", src,
+                          "-vn", "-ac", "1", "-ar", str(_SR), "-f", "s16le", "-",
+                          "-loglevel", "error"], capture_output=True).stdout
+    pcm = np.frombuffer(raw, np.int16).astype(np.float32) / 32768.0
+    if len(pcm) < _SR * 2:
+        return segs
+    enc = _Voices(VOICE)
+    det = cv2.FaceDetectorYN_create(MODEL, "", (320, 320), 0.6, 0.3, 5000)
+    out = []
+    for a, b, inner, people in todo:
+        # both faces really on screen? one probe a second
+        tmp = "/tmp/vsc_turn_%04d.jpg"
+        for f in glob.glob("/tmp/vsc_turn_*.jpg"):
+            os.remove(f)
+        subprocess.run([FFMPEG, "-ss", f"{t_in + a:.2f}", "-t", f"{b - a:.2f}", "-i", src,
+                        "-vf", f"fps=1,scale={SAMPLE_W}:-2", "-q:v", "5", "-y", tmp,
+                        "-loglevel", "error"], check=True)
+        hits = []
+        for f in sorted(glob.glob("/tmp/vsc_turn_*.jpg")):
+            img = cv2.imread(f)
+            os.remove(f)
+            if img is None:
+                continue
+            h, w = img.shape[:2]
+            det.setInputSize((w, h))
+            _, faces = det.detect(img)
+            xs = [float((r[0] + r[2] / 2) / w) for r in (faces if faces is not None else [])]
+            hits.append(all(any(abs(x - p[0]) <= 2 * SAME for x in xs) for p in people))
+        if not hits or sum(hits) < TURN_BOTH * len(hits):
+            continue
+        # sentence spans, each first labelled with whom the tracker framed
+        # A sentence too short to judge ("Yeah.") opens the turn after it more
+        # often than it closes the one before, so it joins the NEXT sentence.
+        cut = [a] + [s for s in starts if a + 0.3 < s < b - 0.3] + [b]
+        spans = []
+        for s, e in zip(cut, cut[1:]):
+            if spans and spans[-1][1] - spans[-1][0] < TURN_SHORT:
+                spans[-1] = (spans[-1][0], e)
+            elif e - s > 0.05:
+                spans.append((s, e))
+
+        def tracked(t):
+            sg = next((sg for sg in inner if sg["start"] <= t < sg["end"]), inner[-1])
+            return min((0, 1), key=lambda k: abs(people[k][0] - sg["cx"]))
+        lab = [tracked((s + e) / 2) for s, e in spans]
+        vec = [enc.embed(pcm[int(s * _SR):int(e * _SR)]) if e - s >= TURN_SHORT else None
+               for s, e in spans]
+        for _ in range(2):                           # refine the two voiceprints
+            refs = []
+            for k in (0, 1):
+                v = [vec[i] * (spans[i][1] - spans[i][0]) for i in range(len(spans))
+                     if lab[i] == k and vec[i] is not None]
+                refs.append(np.sum(v, 0) / (np.linalg.norm(np.sum(v, 0)) + 1e-9) if v else None)
+            if refs[0] is None or refs[1] is None:
+                break
+            lab = [(int(v @ refs[1] > v @ refs[0])
+                    if v is not None and abs(v @ refs[1] - v @ refs[0]) >= TURN_MARGIN
+                    else tracked((s + e) / 2))
+                   for (s, e), v in zip(spans, vec)]
+        if refs[0] is None or refs[1] is None:
+            continue
+        if os.environ.get("VSC_TURN_DEBUG"):
+            print("    spans: " + " ".join(
+                f"{s:.1f}:{'AB'[k]}{'' if v is None else f'({v @ refs[1] - v @ refs[0]:+.2f})'}"
+                for (s, e), k, v in zip(spans, lab, vec)))
+        runs = []
+        for (s, e), k in zip(spans, lab):
+            if runs and runs[-1][2] == k:
+                runs[-1][1] = e
+            else:
+                runs.append([s, e, k])
+        while len(runs) > 1:                         # nothing shorter than TURN_MIN
+            i = min(range(len(runs)), key=lambda i: runs[i][1] - runs[i][0])
+            if runs[i][1] - runs[i][0] >= TURN_MIN:
+                break
+            j = i - 1 if i == len(runs) - 1 or (i > 0 and runs[i - 1][1] - runs[i - 1][0]
+                                                  >= runs[i + 1][1] - runs[i + 1][0]) else i + 1
+            runs[j] = [min(runs[i][0], runs[j][0]), max(runs[i][1], runs[j][1]), runs[j][2]]
+            del runs[i]
+            k = 1
+            while k < len(runs):
+                if runs[k][2] == runs[k - 1][2]:
+                    runs[k - 1][1] = runs.pop(k)[1]
+                else:
+                    k += 1
+        # A REACTION IS NOT A TURN. Both men laugh at 37.8-40.0s on clip 1 and
+        # the interviewer is the louder voice, so his face would come in for two
+        # seconds and leave again. A short run with the same person on both
+        # sides is a laugh or an "mm-hm"; clip 2's real 2.7s interjection stays.
+        i = 1
+        while i < len(runs) - 1:
+            if (runs[i - 1][2] == runs[i + 1][2] != runs[i][2]
+                    and runs[i][1] - runs[i][0] < TURN_ISLAND):
+                runs[i - 1][1] = runs[i + 1][1]
+                del runs[i:i + 2]
+                i = max(1, i - 1)
+            else:
+                i += 1
+        merged = runs
+        if os.environ.get("VSC_TURN_DEBUG"):
+            print("    voices: " + " ".join(f"{s:.1f}-{e:.1f}:{'AB'[k]}" for s, e, k in merged))
+        out.append((a, b, [{"start": round(s, 3), "end": round(e, 3),
+                            "cx": round(people[k][0], 4), "cy": round(people[k][2], 4),
+                            "fw": round(people[k][1], 4), "faces": 0, "turn": True}
+                           for s, e, k in merged]))
+    if not out:
+        return segs
+    new = []                                         # segments() everywhere else
+    for sg in segs:
+        pieces = [(sg["start"], sg["end"])]
+        for a, b, _ in out:
+            pieces = [q for s, e in pieces for q in ((s, min(e, a)), (max(s, b), e))
+                      if q[1] - q[0] > 0.01]
+        new += [dict(sg, start=round(s, 3), end=round(e, 3)) for s, e in pieces]
+    for _, _, rs in out:
+        new += rs
+    return sorted(new, key=lambda sg: sg["start"])
 
 
 if __name__ == "__main__":
