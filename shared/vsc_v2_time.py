@@ -50,6 +50,20 @@ def envelope(src, a, b):
 
 def onsets(db):
     """Times where sound rises out of quiet. Threshold per 60s block, not a constant."""
+    thr = quiet_line(db)
+    out, quiet = [], 10
+    for i in range(len(db)):
+        if db[i] <= thr[i]:
+            quiet += 1
+            continue
+        if quiet >= 8 and all(db[k] > thr[k] for k in range(i, min(i + 3, len(db)))):
+            out.append(i * HOP)
+        quiet = 0
+    return out
+
+
+def quiet_line(db):
+    """Per frame, the level below which this room is quiet (see onsets)."""
     blk = int(60 / HOP)
     thr = np.empty_like(db)
     for i in range(0, len(db), blk):
@@ -67,15 +81,7 @@ def onsets(db):
             real = s
         lo, hi = np.percentile(real, 12), np.percentile(real, 92)
         thr[i:i + blk] = lo + (hi - lo) * 0.38
-    out, quiet = [], 10
-    for i in range(len(db)):
-        if db[i] <= thr[i]:
-            quiet += 1
-            continue
-        if quiet >= 8 and all(db[k] > thr[k] for k in range(i, min(i + 3, len(db)))):
-            out.append(i * HOP)
-        quiet = 0
-    return out
+    return thr
 
 
 def anchor(words, ons):
@@ -396,7 +402,7 @@ def _same(a, b):
     return difflib.SequenceMatcher(a=a, b=b).ratio() >= 0.8
 
 
-def anchor_by_identity(wav, words, ons, last_free=25):
+def anchor_by_identity(wav, words, ons, last_free=25, log=None, db=None):
     """[(index, true_time)] - anchored by WHICH WORD is heard at each onset.
 
     Nearest-in-time pairing assumes our clock is already within 0.40s of the
@@ -422,6 +428,8 @@ def anchor_by_identity(wav, words, ons, last_free=25):
         r = subprocess.run([WH, "-m", MD, "-f", "/tmp/v2on.wav", "-bs", "5", "-nt"],
                            capture_output=True, text=True).stdout
         heard = [nm(w) for w in re.sub(r"\[.*?\]|\(.*?\)", " ", r).split() if nm(w)]
+        if log is not None:                  # evidence for a probe; changes nothing
+            log.append({"t": round(t, 2), "heard": heard[:8]})
         if not heard:
             continue
         # Score every position just ahead of the last anchor instead of demanding an
@@ -446,10 +454,26 @@ def anchor_by_identity(wav, words, ons, last_free=25):
             # seconds. A common word is not evidence of position.
             near = [i for i in range(at, min(len(on), at + 5)) if on[i] == want[0]]
             hit = near[0] if len(near) == 1 else None
+        if log is not None:
+            log[-1]["hit"] = hit
+            log[-1]["scores"] = best[0], second
         if hit is None:
             continue
         if abs(words[hit][0] - t) > MAX_PULL:
             continue            # no anchor moves a word further than a clock can drift
+        # THE RATE TEST GOES HERE, BEFORE THE SEARCH MOVES ON. 3 Oct 2026, member
+        # clip TEN-YEARS: the onset at 46.34s re-read speech already anchored
+        # ("i can't change the fact that") and paired it with the NEXT "I can't",
+        # two seconds on. The rate test (then run after the loop) rejected it - but only
+        # after `at` had moved past it, so at 48.86s, where Kevin really says
+        # "I can't control that", the right word was out of reach and the onset
+        # went to the "I" of "but I can control" instead. Captions ran 1.3s early,
+        # then left a 2.5s hole. A rejected anchor must not move the search.
+        if pts:
+            j, u = pts[-1]
+            rate = (hit - j) / (t - u) if t > u else 99.0
+            if not 0.3 <= rate <= 9.0:
+                continue
         pts.append((hit, t))
         at = hit + 1
     # NOT drop_impossible here. That guard compares the true span against OUR span
@@ -457,15 +481,58 @@ def anchor_by_identity(wav, words, ons, last_free=25):
     # what a compressed hesitation needs ("my"->"ultimate" is 0.17s in our clock
     # and 0.79s in the sound, a ratio of 4.6). It was silently deleting every
     # correction. Identity already proves the pairing; all that is left to catch is
-    # an absurdity, so the test is on the SOUND alone: words per second between two
+    # an absurdity, so the test (in the loop above) is on the SOUND alone: words per second between two
     # anchors must be something a person could say.
-    ok = [pts[0]] if pts else []
-    for i, t in pts[1:]:
-        j, u = ok[-1] if ok else (None, None)
-        rate = (i - j) / (t - u) if t > u else 99.0
-        if 0.3 <= rate <= 9.0:
-            ok.append((i, t))
-    return ok
+    return _despike(words, pts, db)
+
+
+SPIKE = 0.8         # an anchor this far off the line through its neighbours is suspect
+AGREE = 0.4         # ...when those neighbours agree with each other this closely
+
+
+def _despike(words, pts, db=None):
+    """Drop an anchor whose correction is a lone spike AND whose word the
+    transcript placed inside speech.
+
+    3 Oct 2026, member clip TEN-YEARS: at 54.03s Kevin says "as well feel
+    good", the 1.4s read came back "i might as well feel good", and "I" was
+    pinned 1.2s after he said it. The anchors either side corrected whisper's
+    clock by -0.06s and +0.01s; this one by +1.23s. At 43.64s the read skipped
+    a laugh and pinned "And" a second before he says it.
+
+    A lone spike is not proof on its own. On THE-FIRST-WORD-IS-WISH whisper's
+    clock put "is wish" 0.8s late, inside the silence after it, and the read
+    at 7.12s that fixed it was right. The sound tells them apart: where the
+    transcript's own time for the word is SILENT, the clock is what is wrong
+    and the anchor stays; where it is speech, the read misheard and the
+    anchor goes. Checked against the audio on all five spikes in these clips.
+    Only on COMMON words, where a short read is ambiguous, and only when the
+    caller passes the envelope (db) - otherwise nothing is dropped.
+    """
+    if db is None or len(pts) < 3:
+        return list(pts)
+    thr = quiet_line(db)
+
+    def speech(t):
+        i = int(round(t / HOP))
+        w, q = db[i:i + 15], thr[i:i + 15]
+        return len(w) > 0 and float(np.mean(w)) > float(np.mean(q))
+
+    pts = list(pts)
+    k = 1
+    while 0 < k < len(pts) - 1:
+        (i0, t0), (i1, t1), (i2, t2) = pts[k - 1], pts[k], pts[k + 1]
+        r0, r1, r2 = words[i0][0], words[i1][0], words[i2][0]
+        d0, d1, d2 = t0 - r0, t1 - r1, t2 - r2
+        f = (r1 - r0) / (r2 - r0) if r2 > r0 else 0.5
+        common = re.sub(r"[^a-z0-9']", "", words[i1][2].lower()) in COMMON
+        if (common and abs(d0 - d2) < AGREE and abs(d1 - (d0 + f * (d2 - d0))) > SPIKE
+                and speech(r1)):
+            del pts[k]
+            k = max(1, k - 1)
+        else:
+            k += 1
+    return pts
 
 
 def warp_by_index(words, pts):
@@ -554,8 +621,9 @@ def anchor_words(src, a, b, words, quiet=False):
     subprocess.run([FF, "-y", "-loglevel", "error", "-ss", f"{a:.3f}", "-to", f"{b:.3f}",
                     "-i", src, "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", wav], check=True)
     try:
-        ons = onsets(envelope(src, a, b))
-        pts = anchor_by_identity(wav, [tuple(w) for w in words], ons)
+        db = envelope(src, a, b)
+        ons = onsets(db)
+        pts = anchor_by_identity(wav, [tuple(w) for w in words], ons, db=db)
         if len(pts) < 2:
             if not quiet:
                 print(f"      caption timing: only {len(pts)} anchor(s), left as transcribed")
