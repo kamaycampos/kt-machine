@@ -6998,12 +6998,26 @@
    "caption": "Kevin Trudeau once offered an entire school district free memory training worth millions of dollars.\n\nEvery teacher, every student, no cost to the district, in exchange for the publicity.\n\nChicago turned him down. Word was the teachers' union worried that students who could actually remember what they were taught might need fewer teachers to reteach it.\n\nHe never got confirmation that was the real reason. He only got the no.\n\nIf it's true, whose job security won that vote: the students' or the system's?\n\n#kevintrudeau #memory #education #schools #learning #mindset",
    "hook": "Why isn't this taught in schools",
    "bytes": 83987082,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-04T12:42",
    "cta_keyword": "KT",
    "cta_variant": 10,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1761728638229622/",
+    "instagram": "https://www.instagram.com/reel/DeFVi3BDR5j/",
+    "youtube": "https://youtube.com/shorts/aZw4ySvg3mo"
+   },
+   "caption_at_post": "Kevin Trudeau once offered an entire school district free memory training worth millions of dollars.\n\nEvery teacher, every student, no cost to the district, in exchange for the publicity.\n\nChicago turned him down. Word was the teachers' union worried that students who could actually remember what they were taught might need fewer teachers to reteach it.\n\nHe never got confirmation that was the real reason. He only got the no.\n\nIf it's true, whose job security won that vote: the students' or the system's?\n\n#kevintrudeau #memory #education #schools #learning #mindset",
+   "posted_at": "2026-10-04T15:03"
   },
   {
    "file": "KT_SILENT/01_I-HOPE-HE-FAILS_66s.mp4",
@@ -7012,7 +7026,7 @@
    "bytes": 54111522,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-04T12:42",
+   "scheduled_at": "2026-10-04T15:44",
    "cta_keyword": "KT",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -7050,7 +7064,7 @@
    "bytes": 84209399,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-04T12:42",
+   "scheduled_at": "2026-10-04T15:44",
    "cta_keyword": "WISH",
    "cta_variant": 11,
    "cta_kind": "question"
