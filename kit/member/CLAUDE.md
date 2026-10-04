@@ -16,7 +16,15 @@ You are running a member's copy of **The Affiliate Factory**. It is a clip machi
 1. Run `python3 personalize.py`. It writes their repo name into the machine and prints two keys.
 2. Put `FACTORY_KEY`, `TRANSCRIPT_KEY` and `OFFER_URL` (their affiliate link) into **repository secrets**. With browser access, do it yourself in Settings → Secrets and variables → Actions. Without it, give one secret per message and wait for "done" before the next.
 3. Turn on **GitHub Pages** (Settings → Pages → Deploy from a branch → `main` / `/docs`), yourself when you can drive the browser.
-4. Interview them, **at most 6 questions, asked one at a time**:
+4. **If they pasted a setup** (a JSON block with `"affiliate_factory_setup"`, copied from The Affiliate Factory page), the choices are already made. Do NOT ask the questions below. Write from it:
+   - `OFFER_URL` = `link`
+   - `my_brand/BRAND.md` = name and handle, `lanes` as the topic split, `voice` as the caption voice, `hook_style` as the hook style, `keyword`
+   - `my_brand/style.json` = the look:
+     - `gold`: `accent_color #FFE500`, uppercase, `shadow heavy`
+     - `cyan`: `accent_color #00E5FF`, not uppercase, `shadow outline`, `caption_y 1120`
+   - secrets `KT_PLATFORMS` = `platforms`, `KT_SLOTS` = `times` (one per clip a day, `per_day`), `KT_CTA_KEYWORDS` = `keyword`
+
+   Then go straight to step 6. Otherwise interview them, **at most 6 questions, asked one at a time**:
    1. What name should your audience know you by? What is your handle on each platform?
    2. Who are you talking to? (for example: people who feel stuck in a job, new entrepreneurs, parents who want freedom)
    3. Which of Kevin's themes moves you most? Offer these: money and wealth habits, real estate, business stories, manifesting / *Your Wish Is Your Command*, success mindset, the brain and self-image. Then ask for a rough split.
@@ -63,7 +71,11 @@ Brand folders are `KT_<ONEWORD>`, one per episode. Never use `AR_`. Push to a `c
 Read `state/manifest.json` and `factory/reports/latest.md`. List each new clip with its hook, length and status. Point them to their board at `https://YOUR-GITHUB-NAME.github.io/YOUR-REPO/`, where every clip has its caption ready to copy.
 
 ### `post`: switch on autopilot (optional, any time)
-Walk them through `SETUP_POSTING.md` (for Instagram + Facebook follow `SETUP_META.md` step by step, doing every "Claude" step yourself), one platform at a time, in the order Instagram + Facebook first (one Meta setup covers both), then YouTube, then TikTok. When Instagram + Facebook are connected, also switch on **comment → DM**:
+Walk them through `SETUP_POSTING.md` (for Instagram + Facebook follow `SETUP_META.md` step by step, doing every "Claude" step yourself), one platform at a time, in the order Instagram + Facebook first (one Meta setup covers both), then YouTube, then TikTok. Only the platforms in their setup; each one is optional and can be added later.
+- **YouTube:** publish their own Google project's OAuth consent screen to **Production** before the consent step. "Testing" tokens die after 7 days. Production shows Google's "unverified app" screen once; tell them to tap **Advanced → Go to … → Allow**.
+- **TikTok:** their own app runs in **Sandbox**. Add their own TikTok account as a sandbox target user. Clips arrive as **drafts** (`/inbox/`), and they **tap Post in the TikTok app**. Say it plainly. Remind them to clear their drafts: TikTok blocks new uploads while too many are pending (`spam_risk_too_many_pending_share`). Their own app can never auto-post publicly, because TikTok's review refuses apps for personal use.
+
+When Instagram + Facebook are connected, also switch on **comment → DM**:
 - give the Page token `pages_messaging` and `instagram_manage_messages`
 - have them allow message access in Instagram's settings
 - set the variable `DM_AUTO` = `on`

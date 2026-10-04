@@ -50,7 +50,7 @@ You need a free TikTok developer app with **Content Posting API** and **Login Ki
 - `TT_CLIENT_SECRET`
 - `TT_REFRESH_TOKEN`
 
-Clips land in your TikTok inbox as drafts, which lets you add a trending sound before you tap Post.
+Your app stays in **Sandbox**. Add your own TikTok account as a **target user** (Sandbox → Target users), then authorize it. That is all TikTok allows for a personal app: clips land in your TikTok inbox as drafts. Open TikTok, add a trending sound if you like, and tap Post. Clear your drafts: TikTok refuses new uploads while too many are pending.
 
 ## Switch it on
 1. Repo → Settings → Secrets and variables → Actions → **Variables** tab → New variable: `AUTOPOST` = `on`
