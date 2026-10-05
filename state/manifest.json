@@ -7076,12 +7076,26 @@
    "caption": "There is exactly one situation where Kevin Trudeau says it's safe to say your goal out loud.\n\nHe calls it the mastermind principle: two or more people chasing the identical goal, in harmony, each one winning if it happens. A business partner who wants the same expansion. A spouse who wants the same lake house. No competing interest, no counter intention.\n\nEveryone else still gets silence, because a shared goal and a borrowed one aren't the same thing.\n\nWho in your life actually wants the exact outcome you do?\n\n#kevintrudeau #mastermind #successmindset #wealthmindset #businessmindset #mindset",
    "hook": "Two people, same goal win more",
    "bytes": 84209399,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202610050059107342BE3F6064E992C737'}}"
+   },
    "scheduled_at": "2026-10-04T18:59",
    "cta_keyword": "WISH",
    "cta_variant": 11,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1095586633205823/",
+    "instagram": "https://www.instagram.com/reel/DeF-VExklQl/",
+    "youtube": "https://youtube.com/shorts/vLfETGzKbtw"
+   },
+   "caption_at_post": "There is exactly one situation where Kevin Trudeau says it's safe to say your goal out loud.\n\nHe calls it the mastermind principle: two or more people chasing the identical goal, in harmony, each one winning if it happens. A business partner who wants the same expansion. A spouse who wants the same lake house. No competing interest, no counter intention.\n\nEveryone else still gets silence, because a shared goal and a borrowed one aren't the same thing.\n\nWho in your life actually wants the exact outcome you do?\n\n#kevintrudeau #mastermind #successmindset #wealthmindset #businessmindset #mindset",
+   "posted_at": "2026-10-04T20:59"
   }
  ]
 }
