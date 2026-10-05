@@ -43,6 +43,14 @@ jobs:
           # before 5 Oct, so nothing he posted after 30 Sept could be stocked).
           timeout 15m python factory/rumble_catalog.py || echo "catalogue refresh failed - using the one on disk"
           python factory/rumble_stock.py --max 16 --stock 20
+      - name: Save the refreshed catalogue (vsc-factory matches its assignments against it)
+        run: |
+          git config user.name "kt-factory"
+          git config user.email "kt-factory@users.noreply.github.com"
+          git add factory/rumble_catalog.json
+          git diff --staged --quiet && exit 0
+          git commit -q -m "rumble catalogue refreshed $(date -u +%FT%TZ)"
+          for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && break; sleep 5; done
 
   tlist:
     needs: stock
