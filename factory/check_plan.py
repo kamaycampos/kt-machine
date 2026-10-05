@@ -50,11 +50,14 @@ def lint(h, b):
 # something the viewer wants, fears or recognises - "3 hours" of a stranger's walk is
 # trivia. Same failure as "What a stranger / told him" and "The dog on / the nail".
 # The hook must hold at least one of: the viewer (you/your), money or status, a loss
-# or a cost, a result, or a named person/brand. KT brands only - Yaren's stab rule is
-# her own. Against the 152 KT hooks planned to 5 Oct this flags 40, and they are
+# or a cost, a result, or a named person/brand. KT brands get it as a rule. Yaren's stab rule is
+# her own, and this word list is tuned to the money lane - so for AR_ it WARNS and never
+# blocks (Kamay, 5 Oct: "merge for all projects"; it flags "Color came back / in one
+# exhale" and "Ten strangers waited / in the basement", but also "Show me where / God
+# is not", which is hers and good). Against the 152 KT hooks planned to 5 Oct this flags 40, and they are
 # the weak ones ("Why it took her 3 hours", "The camping trip that changed everything").
 STAKES = re.compile(
-    r"(\byou\b|\byour\b|\byou'?re\b|[$%]|\bmillion|\bbillion|\bthousand|"
+    r"(\byou\b|\byour\b|\byou'?re\b|[$%]|\bdollar|\bmillion|\bbillion|\bthousand|"
     r"\brich|\bwealth|\bmoney|\bbroke|\bpoor|\bcash|\bincome|\bdebt|\bsales|\bprofit|"
     r"\bfortune|\bpaid|\bpay|\bfinanc|\bfreedom|\bmansion|\binvest|\bbusiness|\bpower|"
     r"\bsuccess|\bmillionaire|\bbillionaire|\bwin\b|\bwon\b|\bwinners?\b|\bfail|\blost\b|"
@@ -64,8 +67,6 @@ STAKES = re.compile(
 
 
 def no_stakes(h, b):
-    if str(b).upper().startswith("AR"):
-        return None
     t = " ".join(h)
     named = any(re.search(r"(?<!^)\b[A-Z][a-z]{2,}", l.strip()) for l in h)
     if STAKES.search(t) or named:
@@ -142,7 +143,7 @@ for path in sys.argv[1:]:
         if not MIN_LEN <= d <= MAX_LEN: errs.append(f"{s}: length {d:.0f}s outside {MIN_LEN:.0f}-{MAX_LEN:.0f}")
         for e in lint(c.get("hook") or [], b): errs.append(f"{s}: hook - {e}")
         ns = no_stakes(c.get("hook") or [], b)
-        if ns and STAKES_WARN: print(f"   ~ {s}: hook - {ns}")
+        if ns and (STAKES_WARN or fam == "AR"): print(f"   ~ {s}: hook - {ns}")
         elif ns: errs.append(f"{s}: hook - {ns}")
         worn = [w for w in re.findall(r"[a-z']+", " ".join(c.get("hook") or []).lower()) if w in tired]
         if worn: errs.append(f"{s}: hook leans on worn-out word(s): {', '.join(sorted(set(worn)))}")

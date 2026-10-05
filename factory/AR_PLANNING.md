@@ -20,6 +20,8 @@ between filling her queue and crossing that line, leave the queue empty and say 
    (see below). Read each episode's `work/<id>_blocks.txt` in full. Choose 6-9 clips.
 4. Write `factory/plans/ar_<id>.json` (same shape as his, brand `AR_<ONEWORD>`).
 5. `python factory/check_plan.py factory/plans/ar_<id>.json` and fix everything it reports.
+   Lines starting `~` are warnings, not errors: a hook with **no stakes** (nothing the viewer gets, fears or
+   recognises, e.g. "Ten strangers waited / in the basement") gets one. Rewrite it unless the stab lands without a stake.
 6. Commit only your new `ar_*.json` files (plus `factory/ar_source_plan.json` if you extended it -
    append only) and push to a branch `claude/ar-plans-<YYYY-MM-DD>`. The merge job checks them again
    and starts the factory. Never push to main.
