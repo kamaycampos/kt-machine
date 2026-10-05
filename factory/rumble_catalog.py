@@ -10,12 +10,12 @@ behind Cloudflare, so this poses as Chrome (curl_cffi) and retries.
 """
 import json, os, re, sys, time
 
-# THE CHANNEL ADDRESS IS DEAD AS OF 30 SEPT 2026. rumble.com/c/TheKevinTrudeauOfficial
-# answers 404 (Rumble serves its generic page, which is why a crawl "succeeds"
-# and finds nothing). /c/KevinTrudeau answers 200 but lists no videos. So no new
-# episode has entered the system since the change, and the catalogue is frozen at
-# 632. FIND THE REAL ADDRESS FIRST - open the channel on his Mac and read the URL
-# from the address bar - then this file and factory/rumble_stock.py both work again.
+# THE ADDRESS IS rumble.com/c/TheKevinTrudeauOfficial (Kamay confirmed it again 5 Oct
+# 2026). On 30 Sept it briefly answered 404 and the catalogue froze at 632; it works.
+# Since 5 Oct this runs at the start of every factory run (factory.yml, stock job), so
+# a new upload enters the catalogue the day it appears - before, it ran only by hand,
+# and nothing Kevin posted after 30 Sept could be stocked. A refused crawl changes
+# nothing: the catalogue on disk is kept as it was.
 
 # OUR OWN queue.py WAS SHADOWING PYTHON'S. 30 Sept 2026: this crawler died with
 # "IndexError" inside factory/queue.py - because Python puts a script's own

@@ -39,6 +39,9 @@ jobs:
       - name: Stock the month's HD episodes from Rumble (factory/source_plan.json first)
         run: |
           pip install -q -U "yt-dlp[default,curl-cffi]" curl_cffi
+          # Kevin's newest uploads first enter the catalogue here (it ran only by hand
+          # before 5 Oct, so nothing he posted after 30 Sept could be stocked).
+          timeout 15m python factory/rumble_catalog.py || echo "catalogue refresh failed - using the one on disk"
           python factory/rumble_stock.py --max 16 --stock 20
 
   tlist:
