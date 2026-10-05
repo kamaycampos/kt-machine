@@ -1,12 +1,22 @@
 {
- "at": "2026-10-05T06:11",
+ "at": "2026-10-05T15:14",
  "profile": {
+  "follower_count": 413,
   "following_count": 8,
-  "likes_count": 5827,
-  "video_count": 160,
-  "follower_count": 414
+  "likes_count": 5828,
+  "video_count": 161
  },
  "videos": {
+  "KT_SPIRITUAL/02_WHY-IT-TOOK-HER-3-HOURS_56s.mp4": {
+   "id": "7693186933891058957",
+   "view_count": 0,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7693186933891058957?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 56,
+   "posted": "2026-10-05T14:15"
+  },
   "KT_DUTY/01_HEADLIGHTS-ON-A-DARK-ROAD_91s.mp4": {
    "id": "7692937439102504206",
    "view_count": 3,
@@ -59,7 +69,7 @@
   },
   "KT_LUCK/01_BILL-GATES-NUMBER-ONE-REASON-LUCK_110s.mp4": {
    "id": "7692426337788661005",
-   "view_count": 15,
+   "view_count": 16,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -69,8 +79,8 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 60,
-   "like_count": 1,
+   "view_count": 66,
+   "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7692247488756976909?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -479,7 +489,7 @@
   },
   "KT_SECRET/05_NOT-THE-HAMBURGER-BUSINESS_124s.mp4": {
    "id": "7688020668356545806",
-   "view_count": 89,
+   "view_count": 90,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -629,7 +639,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14098,
+   "view_count": 14099,
    "like_count": 867,
    "comment_count": 59,
    "share_count": 196,
@@ -679,7 +689,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38036,
+   "view_count": 38041,
    "like_count": 787,
    "comment_count": 27,
    "share_count": 171,
@@ -709,7 +719,7 @@
   },
   "KT_HOME/05_05_THE-SINGLE-MOST-POWERFUL-OBJECT_86s.mp4": {
    "id": "7685101409963871501",
-   "view_count": 1353,
+   "view_count": 1354,
    "like_count": 102,
    "comment_count": 4,
    "share_count": 9,
@@ -789,7 +799,7 @@
   },
   "KT_RICH/03_03_WHAT-A-ROOM-OF-BROKE-PEOPLE-DOES_50s.mp4": {
    "id": "7684360053482081549",
-   "view_count": 450,
+   "view_count": 452,
    "like_count": 48,
    "comment_count": 2,
    "share_count": 6,
@@ -1179,7 +1189,7 @@
   },
   "unmatched/7679507079249333518": {
    "id": "7679507079249333518",
-   "view_count": 266,
+   "view_count": 267,
    "like_count": 18,
    "comment_count": 0,
    "share_count": 2,
@@ -1359,7 +1369,7 @@
   },
   "unmatched/7677248683225730317": {
    "id": "7677248683225730317",
-   "view_count": 152,
+   "view_count": 153,
    "like_count": 13,
    "comment_count": 0,
    "share_count": 3,
