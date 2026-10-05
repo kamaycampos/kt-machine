@@ -7102,12 +7102,26 @@
    "caption": "Most people assume the rich started giving once they had money to spare. Kevin Trudeau says it's backwards.\n\nJohn D. Rockefeller's first paycheck, selling newspapers, was $1.50. He gave 30% of it away immediately, and kept giving at least 30% of every dollar he ever earned for the rest of his life, long before he became the richest man alive.\n\nHis own words: that giving is the single thing he'd point to for building his fortune.\n\nHe gave first. The wealth came after.\n\n#kevintrudeau #wealthmindset #rockefeller #giving #money #success",
    "hook": "Rockefeller's 30% rule made him rich",
    "bytes": 39539910,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-05T13:08",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1835646510783292/",
+    "instagram": "https://www.instagram.com/reel/DeIO86PDlfO/",
+    "youtube": "https://youtube.com/shorts/nsUoITaqdYA"
+   },
+   "caption_at_post": "Most people assume the rich started giving once they had money to spare. Kevin Trudeau says it's backwards.\n\nJohn D. Rockefeller's first paycheck, selling newspapers, was $1.50. He gave 30% of it away immediately, and kept giving at least 30% of every dollar he ever earned for the rest of his life, long before he became the richest man alive.\n\nHis own words: that giving is the single thing he'd point to for building his fortune.\n\nHe gave first. The wealth came after.\n\n#kevintrudeau #wealthmindset #rockefeller #giving #money #success",
+   "posted_at": "2026-10-05T18:04"
   },
   {
    "file": "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4",
@@ -7116,7 +7130,7 @@
    "bytes": 41586500,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-05T14:47",
+   "scheduled_at": "2026-10-05T18:45",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "offer"
