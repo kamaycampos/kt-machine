@@ -7103,7 +7103,11 @@
    "hook": "Rockefeller's 30% rule made him rich",
    "bytes": 39539910,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-05T13:08",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4",
@@ -7111,7 +7115,11 @@
    "hook": "Her $400 million castle burned down",
    "bytes": 41586500,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-05T14:47",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
