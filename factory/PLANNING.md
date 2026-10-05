@@ -60,6 +60,12 @@ You work alone; nobody is watching. Be excellent, and never guess at facts.
   a newspaper ad` - "its BS, it dosnt tell anything". Only `A million dollars before he turned 18`
   survived. A mechanism tease ("one word", "this trick", "a stranger") is not a promise; it is a
   riddle wearing a promise's clothes. If the hook has no concrete thing in it, it is not finished.
+- **A number is not a promise on its own - the hook needs STAKES.** 5 Oct 2026: `Why it took her / 3 hours`
+  passed every rule (Why + a number + 6 words) and Kamay: "so stupid, so useless... it doesn't give me
+  anything." The 3 hours were a stranger's garden walk; the clip's real payoff was how to hold money
+  without fear of losing it. Every hook must hold at least one of: the viewer (you/your), money or
+  status, a loss or cost, a result, or a named person. Test: would a broke 30-year-old scrolling at
+  midnight feel it is about THEM? `check_plan.py` fails hooks with none of these.
 - **6 words total at most**, direct: start with Why / How / What. State the benefit or the claim plainly. No riddles, and never claim what Kevin doesn't say.
 - A hook promises; the clip must pay it. Carry the specific thing - the number, the name - into the hook when there is one.
 

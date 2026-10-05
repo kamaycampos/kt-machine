@@ -22,7 +22,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
       - name: Take the new plans, check them, commit to main
-        env: { GH_TOKEN: "${{ github.token }}", BR: "${{ github.ref_name }}" }
+        env: { GH_TOKEN: "${{ github.token }}", BR: "${{ github.ref_name }}", HOOK_STAKES: warn }
         run: |
           pip install -q pillow numpy opencv-python-headless
           mkdir -p ~/Kamay/bin && cp -r factory/assets/* ~/Kamay/bin/ 2>/dev/null || true

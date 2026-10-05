@@ -43,6 +43,44 @@ def lint(h, b):
         print(f"(hook lint failed on {h}: {type(e).__name__}; using the core rules)")
         return _core(h, b)
 
+# NO STAKES, NO HOOK. 5 Oct 2026, Kamay sent "WHY IT TOOK HER / 3 HOURS" (Ep. 86,
+# KAMAY's account): "its so stupid, so useless... if i read that hook i absolutely pass
+# by because it doesnt give me anything." It passed every rule above: opens on Why,
+# carries a number, six words. A number is only a promise when it is attached to
+# something the viewer wants, fears or recognises - "3 hours" of a stranger's walk is
+# trivia. Same failure as "What a stranger / told him" and "The dog on / the nail".
+# The hook must hold at least one of: the viewer (you/your), money or status, a loss
+# or a cost, a result, or a named person/brand. KT brands only - Yaren's stab rule is
+# her own. Against the 152 KT hooks planned to 5 Oct this flags 40, and they are
+# the weak ones ("Why it took her 3 hours", "The camping trip that changed everything").
+STAKES = re.compile(
+    r"(\byou\b|\byour\b|\byou'?re\b|[$%]|\bmillion|\bbillion|\bthousand|"
+    r"\brich|\bwealth|\bmoney|\bbroke|\bpoor|\bcash|\bincome|\bdebt|\bsales|\bprofit|"
+    r"\bfortune|\bpaid|\bpay|\bfinanc|\bfreedom|\bmansion|\binvest|\bbusiness|\bpower|"
+    r"\bsuccess|\bmillionaire|\bbillionaire|\bwin\b|\bwon\b|\bwinners?\b|\bfail|\blost\b|"
+    r"\blos(e|es|ing)\b|\bcancer|\bheal|\bprison|\bdied|\bdeath|\bfired|\bbanned|\bsued|\bhabit|"
+    r"\bfear|\bpain|\bsuffer|\bsecret|\blie\b|\bmistake|\bnever|\bstop|\bwork(s|ing)?\b|"
+    r"\bmanifest)", re.I)
+
+
+def no_stakes(h, b):
+    if str(b).upper().startswith("AR"):
+        return None
+    t = " ".join(h)
+    named = any(re.search(r"(?<!^)\b[A-Z][a-z]{2,}", l.strip()) for l in h)
+    if STAKES.search(t) or named:
+        return None
+    return ("no stakes - names nothing the viewer gets, fears or recognises. A number "
+            "alone is trivia (\"Why it took her / 3 hours\"). Hook the money, the cost, "
+            "the result, or say it to YOU")
+
+
+# The merge job DELETES a plan that fails. A wording judgement must never throw an
+# episode away there, so it only warns there (HOOK_STAKES=warn); the planner, which
+# can rewrite, gets it as an error.
+STAKES_WARN = os.environ.get("HOOK_STAKES") == "warn"
+
+
 # WORD OVEREXPOSURE. A hook word that appears in more than a third of recent
 # posts has stopped differentiating anything - it sits in the winners and the
 # losers alike, so it can no longer be why either happened. Retire it for a
@@ -103,6 +141,9 @@ for path in sys.argv[1:]:
         if not re.fullmatch(r"[A-Z0-9]+(-[A-Z0-9]+)*", s): errs.append(f"{s}: slug must be UPPER-DASHED")
         if not MIN_LEN <= d <= MAX_LEN: errs.append(f"{s}: length {d:.0f}s outside {MIN_LEN:.0f}-{MAX_LEN:.0f}")
         for e in lint(c.get("hook") or [], b): errs.append(f"{s}: hook - {e}")
+        ns = no_stakes(c.get("hook") or [], b)
+        if ns and STAKES_WARN: print(f"   ~ {s}: hook - {ns}")
+        elif ns: errs.append(f"{s}: hook - {ns}")
         worn = [w for w in re.findall(r"[a-z']+", " ".join(c.get("hook") or []).lower()) if w in tired]
         if worn: errs.append(f"{s}: hook leans on worn-out word(s): {', '.join(sorted(set(worn)))}")
         cap = c.get("caption", "")
