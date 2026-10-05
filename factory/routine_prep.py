@@ -65,7 +65,8 @@ if len(order) - len([v for v in order if f'"{v}.mp4"' in plans_txt]) < 6:
     used = {norm(os.path.splitext(s.get("source", ""))[0]) for s in series.values()}
     cands = [(e["date"], u, e) for u, e in cat.items() if not e["short"] and e["dur"] >= 1200 and e["height"] >= 1080
              and norm(e["title"]) not in used and re.search(r"/(v[a-z0-9]+)-", u)[1] not in order]
-    extra = [v for v, e in idx.items() if v not in order and not e.get("test") and f'"{v}.mp4"' not in plans_txt]
+    extra = [v for v, e in idx.items() if v not in order and not e.get("test") and f'"{v}.mp4"' not in plans_txt
+             and e.get("status") != "fetch_failed"]       # never downloaded: not stock
     print("ALREADY STOCKED, not in the month list:", ", ".join(f"{v} '{idx[v]['title'][:60]}'" for v in extra) or "none")
     print("CANDIDATES to append to source_plan.json - PICK HOUSE/PROPERTY EPISODES FIRST:")
     for d, u, e in sorted(cands, reverse=True)[:15]:

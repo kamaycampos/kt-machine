@@ -44,10 +44,24 @@ def fetch_source(vid):
     if os.path.exists(mp4):
         return mp4
     r = sh("gh", "release", "download", TAG, "-R", REPO, "-p", f"{vid}.mp4.enc", "-D", "/tmp", "--clobber")
-    if r.returncode:
-        raise SystemExit(f"download failed for {vid}: {r.stderr[-200:]}")
-    crypt(f"/tmp/{vid}.mp4.enc", mp4, decrypt=True)
-    os.remove(f"/tmp/{vid}.mp4.enc")
+    if r.returncode == 0:
+        crypt(f"/tmp/{vid}.mp4.enc", mp4, decrypt=True)
+        os.remove(f"/tmp/{vid}.mp4.enc")
+        return mp4
+    # An episode over 2 GiB is stored in parts (rumble_stock.py): join them byte for
+    # byte, in order, straight into openssl.
+    r2 = sh("gh", "release", "download", TAG, "-R", REPO, "-p", f"{vid}.mp4.enc.part*",
+            "-D", "/tmp", "--clobber")
+    parts = sorted(f"/tmp/{f}" for f in os.listdir("/tmp") if f.startswith(f"{vid}.mp4.enc.part"))
+    if r2.returncode or not parts:
+        raise SystemExit(f"download failed for {vid}: {r.stderr[-200:]} / {r2.stderr[-200:]}")
+    j = subprocess.run("cat " + " ".join(f'"{p}"' for p in parts) +
+                       f' | openssl enc -aes-256-cbc -pbkdf2 -d -pass env:FACTORY_KEY -in /dev/stdin -out "{mp4}"',
+                       shell=True, capture_output=True, text=True)
+    for p in parts:
+        os.remove(p)
+    if j.returncode:
+        raise SystemExit(f"openssl failed joining {len(parts)} parts of {vid}: {j.stderr[-200:]}")
     return mp4
 
 

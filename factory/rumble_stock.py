@@ -26,6 +26,8 @@ if __name__ == "__main__" and not os.environ.get("FACTORY_KEY"):   # run as a jo
 TAG, REPO = "sources", os.environ.get("GITHUB_REPOSITORY", "kamaycampos/kt-machine")
 arg = lambda n, d: int(sys.argv[sys.argv.index(n) + 1]) if n in sys.argv else d
 MAX, STOCK = arg("--max", 2), arg("--stock", 6)
+GIVE_UP = 3                     # failed runs before an unfetchable episode steps aside
+PART = 1900 * 1024 * 1024       # GitHub refuses a release asset of 2 GiB or more
 
 
 def sh(*a):
@@ -56,7 +58,14 @@ def main():
     series = json.load(open(os.path.join(HERE, "kt_series.json")))
     used = {norm(os.path.splitext(s.get("source", ""))[0])[:40] for s in series.values()}
     cat = json.load(open(os.path.join(HERE, "rumble_catalog.json")))
-    have = {e.get("rumble") for e in idx.values()}
+    # A FAILED FETCH IS REMEMBERED (5 Oct 2026). Every run spent ~5 minutes on each of
+    # five episodes whose saved stream was a signed CDN link that had expired
+    # (hugh.cdn.rumble.cloud/....mp4 - 403) and whose page Cloudflare refuses, while
+    # the rumble.com/hls-vod/ links kept working. They are retried on the next runs,
+    # and after GIVE_UP failed runs they step aside so the slot goes to an episode
+    # that can actually be fetched.
+    have = {e.get("rumble") for e in idx.values()
+            if not (e.get("status") == "fetch_failed" and e.get("fails", 0) < GIVE_UP)}
     # AN EPISODE HE NAMED IS NEVER FILTERED OUT BY LENGTH. 30 Sept 2026: Kamay
     # put that day's upload at the top of the list - "You Keep Missing The
     # Biggest Opportunities", 4K, SIX MINUTES - and the stocker silently ignored
@@ -88,7 +97,14 @@ def main():
         rank = lambda ue: order.index(re.search(r"/(v[a-z0-9]+)-", ue[0])[1]) \
             if re.search(r"/(v[a-z0-9]+)-", ue[0])[1] in order else len(order)
         pick.sort(key=rank)
-    for url, e in pick[:need]:
+    # Within that order, an episode whose stream is a rumble.com/hls-vod/ playlist goes
+    # before one carrying an old signed CDN file link (those expire and answer 403).
+    pick.sort(key=lambda ue: 0 if "/hls-vod/" in (ue[1].get("hls") or "") else 1)
+    stocked, tried = 0, 0
+    for url, e in pick:
+        if stocked >= need or tried >= need * 2:
+            break
+        tried += 1
         vid = re.search(r"/(v[a-z0-9]+)-", url)[1]
         mp4 = os.path.join(SRC, f"{vid}.mp4")
         print(f"  {vid}  {e['dur']/60:.0f} min  {e['height']}p  {e['title'][:70]}")
@@ -105,21 +121,48 @@ def main():
         if h == 0:
             # Cloudflare turned every attempt away. Not the episode's fault: try
             # again on the next run instead of writing it off.
-            print(f"    NOT FETCHED this run, will retry ({r.stderr.strip()[-120:]})")
+            prev = idx.get(vid, {})
+            fails = prev.get("fails", 0) + 1 if prev.get("status") == "fetch_failed" else 1
+            idx[vid] = {"title": e["title"], "rumble": url, "status": "fetch_failed", "fails": fails}
+            print(f"    NOT FETCHED ({fails}/{GIVE_UP}) ({r.stderr.strip()[-120:]})")
             continue
         if h < 1080:
             print(f"    REFUSED: {h}p - under the 1080p gate")
             idx[vid] = {"title": e["title"], "rumble": url, "status": "rejected", "height": h}
             continue
+        # OVER 2 GiB GOES UP IN PARTS (5 Oct 2026). GitHub refuses any release asset of
+        # 2 GiB or more, and every episode over ~70 minutes encrypts past that: five of
+        # ten downloads in one run were thrown away at upload ("size must be less than
+        # 2147483648"), so nothing new reached the planners and both queues ran dry.
+        # The ciphertext is cut into <vid>.mp4.enc.part00, part01, ... and
+        # transcribe.fetch_source joins them back byte for byte before decrypting.
+        # Streamed through split, so the disk holds the video once, not twice.
         enc = f"/tmp/{vid}.mp4.enc"
-        sh("openssl", "enc", "-aes-256-cbc", "-pbkdf2", "-salt", "-pass", "env:FACTORY_KEY", "-in", mp4, "-out", enc)
-        u = sh("gh", "release", "upload", TAG, enc, "--clobber", "-R", REPO)
-        os.remove(enc)
+        if os.path.getsize(mp4) < PART - 1024 * 1024:
+            sh("openssl", "enc", "-aes-256-cbc", "-pbkdf2", "-salt", "-pass", "env:FACTORY_KEY",
+               "-in", mp4, "-out", enc)
+            files = [enc]
+        else:
+            subprocess.run(f'openssl enc -aes-256-cbc -pbkdf2 -salt -pass env:FACTORY_KEY -in "{mp4}" '
+                           f'| split -b {PART} -d -a 2 - "{enc}.part"', shell=True, check=True)
+            files = sorted(f"/tmp/{f}" for f in os.listdir("/tmp") if f.startswith(f"{vid}.mp4.enc.part"))
+        u = None
+        for f in files:
+            u = sh("gh", "release", "upload", TAG, f, "--clobber", "-R", REPO)
+            os.remove(f)
+            if u.returncode:
+                break
+        # The download is in the release now (or failed); keep the runner's disk free
+        # for the next one - ten long episodes do not fit on one runner at once.
+        os.remove(mp4)
         if u.returncode:
             print(f"    UPLOAD FAILED {u.stderr[-150:]}")
             continue
+        if len(files) > 1:
+            print(f"    uploaded in {len(files)} parts")
         idx[vid] = {"title": e["title"], "rumble": url, "duration": e["dur"], "height": h,
                     "status": "stocked", "uploaded": time.strftime("%Y-%m-%dT%H:%M")}
+        stocked += 1
         print(f"    STOCKED {h}p")
     json.dump(idx, open("/tmp/sources_index.json", "w"), indent=1)
     sh("gh", "release", "upload", TAG, "/tmp/sources_index.json", "--clobber", "-R", REPO)
