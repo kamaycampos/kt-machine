@@ -145,6 +145,16 @@ def main():
             mp4 = os.path.join(bdir, f)
             s = subprocess.run([sys.executable, os.path.join(HOME, "kt_sync_check.py"), mp4],
                                capture_output=True, text=True, cwd=HOME)
+            off = constant_offset(s.stdout) if s.returncode else None
+            if off is not None:
+                # every caption late (or early) by the same amount: move them by the
+                # measured amount, render this clip once more, and judge it again
+                log(f"  RETIME {f}: captions {off:+.2f}s off throughout - re-rendering once")
+                subprocess.run([sys.executable, os.path.join(HOME, "kt_render.py"), key, "--apply",
+                                "--only", m.group(1)], capture_output=True, text=True, cwd=HOME,
+                               env=dict(os.environ, CAPTION_SHIFT=f"{-off:.3f}"))
+                s = subprocess.run([sys.executable, os.path.join(HOME, "kt_sync_check.py"), mp4],
+                                   capture_output=True, text=True, cwd=HOME)
             if s.returncode:
                 log(f"  FAIL {f}: {s.stdout.strip()[-220:]}")
                 for side in glob.glob(os.path.splitext(mp4)[0] + "*"):
@@ -197,6 +207,23 @@ def main():
         log("pushed")
     return finish()
 
+
+
+def constant_offset(sync_out):
+    """The median offset when a sync FAIL is one constant shift, else None.
+
+    6 Oct 2026: 38 clips failed caption timing since 23 Sept; on about ten of them
+    every caption was off by the same amount (median +0.64s, worst-10% 0.69s).
+    That is a shift, and a shift is measured, so it can be undone. Drift (worst far
+    beyond the median), speech left uncaptioned, or too little to judge is not."""
+    m = re.search(r"median ([+-]?[\d.]+)s\s+worst-10% ([\d.]+)s", sync_out)
+    cov = re.search(r"words captioned (\d+)%", sync_out)
+    if not m or "UNCAPTIONED" in sync_out or (cov and int(cov.group(1)) < 85):
+        return None
+    med, p90 = float(m.group(1)), float(m.group(2))
+    if abs(med) <= 0.30 or p90 - abs(med) > 0.40 or abs(med) > 3.0:
+        return None
+    return med
 
 
 def closes_wrong(verify_out, named):
