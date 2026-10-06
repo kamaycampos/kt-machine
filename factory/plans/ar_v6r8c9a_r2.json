@@ -1,0 +1,21 @@
+{
+  "source": "v6r8c9a.mp4",
+  "brand": "AR_TELEPHONER2",
+  "test": false,
+  "note": "28 Sept 2026 - 'Why Your Prayers Go Unanswered {And How To Fix It}' (Rumble v6r8c9a). Awakened Rise weekly agent. SECOND CHANCE re-cut (6 Oct 2026 gate failures) - edges/hook re-fit from work/<id>.srt, same lessons.",
+  "clips": [
+    {
+      "slug": "MISTRANSLATED-PRAYER",
+      "in": 780.96,
+      "out": 827.52,
+      "start_words": "Next, it says, Give us today",
+      "end_words": "for meeting all my daily needs",
+      "hook": [
+        "Your prayer was",
+        "mistranslated."
+      ],
+      "caption": "The most famous prayer in the world has a line almost everyone gets wrong.\n\n\"Give us this day our daily bread\" sounds like a request. In the original language, it isn't one. It's closer to \"thank you, God, for meeting all my daily needs\" \u2014 already happened, already true, said in gratitude instead of asking.\n\nThat single shift changes how the whole prayer works. You stop begging for what you don't have and start thanking for what's already yours.\n\nComment RISE and I'll send you the full breakdown.\n\n#awakening #spirituality #prayer #ancientwisdom #manifestation #kevintrudeau",
+      "retry_of": "ar_v6r8c9a/MISTRANSLATED-PRAYER"
+    }
+  ]
+}
