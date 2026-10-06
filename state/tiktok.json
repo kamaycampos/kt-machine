@@ -1,45 +1,25 @@
 {
- "at": "2026-10-05T15:14",
+ "at": "2026-10-06T00:18",
  "profile": {
-  "follower_count": 413,
+  "follower_count": 412,
   "following_count": 8,
-  "likes_count": 5828,
-  "video_count": 161
+  "likes_count": 5831,
+  "video_count": 163
  },
  "videos": {
-  "KT_SPIRITUAL/02_WHY-IT-TOOK-HER-3-HOURS_56s.mp4": {
-   "id": "7693186933891058957",
-   "view_count": 0,
-   "like_count": 0,
-   "comment_count": 0,
-   "share_count": 0,
-   "share_url": "https://www.tiktok.com/@kt_student/video/7693186933891058957?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
-   "duration": 56,
-   "posted": "2026-10-05T14:15"
-  },
   "KT_DUTY/01_HEADLIGHTS-ON-A-DARK-ROAD_91s.mp4": {
    "id": "7692937439102504206",
-   "view_count": 3,
-   "like_count": 0,
+   "view_count": 6,
+   "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7692937439102504206?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 90,
    "posted": "2026-10-04T22:06"
   },
-  "KT_LUCK/02_WHY-DNA-REACTED-ACROSS-THE-PLANET_130s.mp4": {
-   "id": "7692842177801637133",
-   "view_count": 0,
-   "like_count": 0,
-   "comment_count": 0,
-   "share_count": 0,
-   "share_url": "https://www.tiktok.com/@kt_student/video/7692842177801637133?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
-   "duration": 130,
-   "posted": "2026-10-04T15:57"
-  },
   "KT_SPIRITUAL/02_WHY-LOSING-IT-ALL-DIDNT-HURT_70s.mp4": {
    "id": "7692625004940250381",
-   "view_count": 0,
+   "view_count": 3,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -47,10 +27,30 @@
    "duration": 69,
    "posted": "2026-10-04T01:54"
   },
+  "KT_SPIRITUAL/02_WHY-IT-TOOK-HER-3-HOURS_56s.mp4": {
+   "id": "7693186933891058957",
+   "view_count": 3,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7693186933891058957?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 56,
+   "posted": "2026-10-05T14:15"
+  },
+  "KT_LUCK/02_WHY-DNA-REACTED-ACROSS-THE-PLANET_130s.mp4": {
+   "id": "7692842177801637133",
+   "view_count": 2,
+   "like_count": 0,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7692842177801637133?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 130,
+   "posted": "2026-10-04T15:57"
+  },
   "KT_LUCK/02_WHAT-HE-SAW-IN-ONE-ACORN_113s.mp4": {
    "id": "7692585073467591949",
-   "view_count": 5,
-   "like_count": 0,
+   "view_count": 7,
+   "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7692585073467591949?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -59,7 +59,7 @@
   },
   "KT_LEDGER/02_LOST-27-MILLION-STILL-WON_160s.mp4": {
    "id": "7692503921260088590",
-   "view_count": 6,
+   "view_count": 8,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -79,7 +79,7 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 66,
+   "view_count": 74,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -99,7 +99,7 @@
   },
   "KT_LEDGER/01_TWO-PIZZAS-AND-A-BILLION-DOLLARS_66s.mp4": {
    "id": "7691802431088282893",
-   "view_count": 17,
+   "view_count": 18,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -149,7 +149,7 @@
   },
   "KT_TAXHACK/02_NO-LLC-NEEDED-FOR-WRITE-OFFS_55s.mp4": {
    "id": "7690948145840180494",
-   "view_count": 7,
+   "view_count": 8,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -299,7 +299,7 @@
   },
   "KT_YWIYC/02_WHY-I-WALKED-OUT-OF-HARVARD_151s.mp4": {
    "id": "7689898664533183758",
-   "view_count": 22,
+   "view_count": 23,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -359,7 +359,7 @@
   },
   "KT_FREEDOM/02_WHAT-FINANCIAL-FREEDOM-REALLY-COSTS_70s.mp4": {
    "id": "7689440511798611214",
-   "view_count": 9,
+   "view_count": 10,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -499,7 +499,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3661,
+   "view_count": 3662,
    "like_count": 153,
    "comment_count": 7,
    "share_count": 16,
@@ -549,7 +549,7 @@
   },
   "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4": {
    "id": "7686887912297843981",
-   "view_count": 2314,
+   "view_count": 2315,
    "like_count": 78,
    "comment_count": 5,
    "share_count": 11,
@@ -639,7 +639,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14099,
+   "view_count": 14102,
    "like_count": 867,
    "comment_count": 59,
    "share_count": 196,
@@ -649,8 +649,8 @@
   },
   "KT_RICH/05_05_HOW-EVERY-RICH-PERSON-LEARNED-IT_103s.mp4": {
    "id": "7685885571121696014",
-   "view_count": 487,
-   "like_count": 58,
+   "view_count": 488,
+   "like_count": 59,
    "comment_count": 0,
    "share_count": 2,
    "share_url": "https://www.tiktok.com/@kt_student/video/7685885571121696014?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -689,7 +689,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38041,
+   "view_count": 38044,
    "like_count": 787,
    "comment_count": 27,
    "share_count": 171,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/05_05_THE-SINGLE-MOST-POWERFUL-OBJECT_86s.mp4": {
    "id": "7685101409963871501",
-   "view_count": 1354,
+   "view_count": 1355,
    "like_count": 102,
    "comment_count": 4,
    "share_count": 9,
@@ -729,7 +729,7 @@
   },
   "KT_POS/03_03_THE-INGREDIENT-NOBODY-TEACHES_102s.mp4": {
    "id": "7685133057686326542",
-   "view_count": 1776,
+   "view_count": 1777,
    "like_count": 229,
    "comment_count": 22,
    "share_count": 42,
@@ -739,7 +739,7 @@
   },
   "KT_HOME/02_02_WHY-RICH-HOMES-ARE-FULL-OF-OLD-THINGS_85s.mp4": {
    "id": "7685065417743797518",
-   "view_count": 3465,
+   "view_count": 3466,
    "like_count": 268,
    "comment_count": 6,
    "share_count": 43,
@@ -919,7 +919,7 @@
   },
   "KT_LIES/06_YOUR-HOUSE-IS-TOO-BIG_135s.mp4": {
    "id": "7683191786298166542",
-   "view_count": 179,
+   "view_count": 180,
    "like_count": 6,
    "comment_count": 4,
    "share_count": 1,
@@ -979,7 +979,7 @@
   },
   "unmatched/7682613992774241549": {
    "id": "7682613992774241549",
-   "view_count": 334,
+   "view_count": 335,
    "like_count": 15,
    "comment_count": 0,
    "share_count": 1,
@@ -1419,7 +1419,7 @@
   },
   "unmatched/7674447198158900494": {
    "id": "7674447198158900494",
-   "view_count": 1479,
+   "view_count": 1480,
    "like_count": 107,
    "comment_count": 0,
    "share_count": 6,
