@@ -16,6 +16,15 @@ between filling her queue and crossing that line, leave the queue empty and say 
    next unplanned episodes from her list, and writes 30-second reading blocks.
    - Queue over 50 clips: plan nothing, report, stop. 30-50: plan 2. Under 30: plan 4.
 2b. If the prep printed **TAKEN DOWN BY TIKTOK**, plan a replacement for each from the same episode - same lesson, different moment, different hook - and say so in your report.
+2c. If the prep printed **SECOND CHANCES**, re-cut those clips FIRST - before any new episode. The teaching was already judged worth posting and the episode is transcribed; only a gate stopped it. For each episode listed:
+   - Write `factory/plans/ar_<id>_r2.json` (`_r3` if `_r2` exists) with the same `source`, brand = the old brand + `R2` (e.g. `AR_CANVAS` -> `AR_CANVASR2`), and every clip carrying `"retry_of": "<the key printed, e.g. ar_v6v9urd/WALL-STREET-500-RIVALS>"`.
+   - Fix what the **WHY** line says, in `work/<id>.srt`:
+     - hook lint ("not a direct promise", "opens on a riddle", "no stakes") -> rewrite the hook; keep the cut.
+     - "opens mid-sentence", "ends mid-thought", "ends off the planned words" -> re-find the edges: open on the first words of a complete sentence after a pause, close on the sentence end where the teaching lands; copy `start_words` / `end_words` exactly from the cues.
+     - "word repeated", "phrase scrambled", "(laughing)", "[BLANK_AUDIO]" -> move an edge so the damaged words fall outside the clip; if they sit in the middle of the teaching, skip the clip.
+     - "captions vs the sound", "UNCAPTIONED SPEECH", "too few to judge" -> move both edges to different sentence boundaries (a few seconds re-times every caption). If the gap named is someone else talking, cut so it falls outside.
+   - `tries 2` means this is its last chance: skip it unless you can see the cause and fix it.
+   - Second chances count toward this run's clips. Report how many you re-cut and how many you skipped, and why.
 3. Read `factory/HOOK_PATTERNS.md` for the story and caption craft - then **invert the hook rule**
    (see below). Read each episode's `work/<id>_blocks.txt` in full. Choose 6-9 clips.
 4. Write `factory/plans/ar_<id>.json` (same shape as his, brand `AR_<ONEWORD>`).
