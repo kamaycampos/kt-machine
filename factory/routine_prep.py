@@ -43,6 +43,11 @@ idx = json.loads(get("sources_index.json"))
 # MAX_TRIES times in all; one already re-cut (a plan clip with "retry_of") is not
 # offered again until that re-cut has run.
 MAX_TRIES = 3
+# At most AGAIN episodes of second chances per run (6 Oct 2026). The first run after
+# second chances shipped was handed the whole backlog since 23 Sept - 24 episodes for
+# KT, 29 clips for AR - fanned out 21 agents and hit the account's usage limit with
+# nothing pushed. The rest wait for the next daily run.
+AGAIN = int(sys.argv[sys.argv.index("--again") + 1]) if "--again" in sys.argv else 3
 try:
     _f = json.load(open(os.path.join(HERE, "plans", "_failed.json")))["clips"]
 except (OSError, ValueError, KeyError):
@@ -54,6 +59,18 @@ again = {}
 for k, e in _f.items():
     if k.startswith(MINE) and e.get("tries", 1) < MAX_TRIES and k not in _recut:
         again.setdefault(e["source"][:-4], []).append((k, e))
+# a refusal with no recorded words or reason cannot be diagnosed - never offer it
+blind = {v: [(k, e) for k, e in items if not (e.get("why") and e.get("start_words"))] for v, items in again.items()}
+again = {v: [(k, e) for k, e in items if e.get("why") and e.get("start_words")] for v, items in again.items()}
+again = {v: items for v, items in again.items() if items}
+n_blind = sum(len(v) for v in blind.values())
+if n_blind:
+    print(f"(second chances: {n_blind} refused clip(s) have no recorded reason or words - not offered)")
+waiting = 0
+if len(again) > AGAIN:
+    keep = sorted(again, key=lambda v: -len(again[v]))[:AGAIN]
+    waiting = len(again) - AGAIN
+    again = {v: again[v] for v in keep}
 if again:
     n = sum(len(v) for v in again.values())
     print(f"SECOND CHANCES: {n} clip(s) on {len(again)} episode(s) failed a gate - re-cut these FIRST "
@@ -65,6 +82,8 @@ if again:
             print(f"      start '{e.get('start_words', '')}'  end '{e.get('end_words', '')}'")
             for w in e.get("why", [])[:2]:
                 print(f"      WHY: {w[:220]}")
+    if waiting:
+        print(f"  ({waiting} more episode(s) of second chances wait for the next run)")
 ALL = os.listdir(os.path.join(HERE, "plans"))
 plans_txt = " ".join(open(os.path.join(HERE, "plans", f)).read() for f in ALL if f.endswith(".json"))
 order = [e["id"] for e in json.load(open(os.path.join(HERE, PLAN_FILE)))["episodes"]]

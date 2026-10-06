@@ -5,6 +5,12 @@ Everything else runs by itself on GitHub: stocking episodes from Rumble, transcr
 Your job, once a week, is to choose the clips: write plan files that the factory turns into posts.
 You work alone; nobody is watching. Be excellent, and never guess at facts.
 
+**Work alone, in this one session.** Never use the Agent or Task tool, never start subagents or background
+tasks: read and write every plan yourself, one episode at a time. (6 Oct 2026: a run fanned out 21 agents
+on the second-chance backlog, hit the account's usage limit, and pushed nothing.) **Commit and push after
+each plan passes `check_plan.py`**, to the same branch - the merge job takes each push - so a run that is
+cut off still keeps the plans it finished.
+
 ## Procedure
 1. `pip install -q opencv-python-headless pillow numpy 2>/dev/null` (so the hook lint can load).
 2. `python factory/routine_prep.py --max 4`. This prints the queue depth, downloads and decrypts the next unplanned episodes' transcripts into `work/`, and writes 30-second reading blocks for each.
