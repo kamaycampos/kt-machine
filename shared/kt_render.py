@@ -1332,6 +1332,14 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
             words = vsc_v2_time.anchor_words(src, t_in, t_out, words)
         except Exception as e:                       # never let timing polish lose a clip
             sys.stderr.write(f"      caption anchoring skipped: {type(e).__name__}: {e}\n")
+    # A MEASURED CORRECTION, NEVER A GUESS. 6 Oct 2026: clips failed the sync check
+    # with every caption late by the SAME amount (median +0.64s, worst +0.69s) - a
+    # constant offset, not drift. kt_batch_build re-renders such a clip once with
+    # CAPTION_SHIFT = minus the measured median, and the same check judges it again.
+    shift = float(os.environ.get("CAPTION_SHIFT") or 0)
+    if words and shift:
+        words = [(max(0.0, a + shift), max(0.0, b + shift), w) for a, b, w in words]
+        print(f"      captions moved {shift:+.2f}s (measured offset)")
     # TWO PEOPLE IN ONE SHOT: FRAME WHOEVER IS TALKING. See vsc_frame.speaker_turns.
     # It needs the final word times, because a switch may only land on the first
     # word of a sentence.
