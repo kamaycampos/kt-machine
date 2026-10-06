@@ -1,0 +1,41 @@
+# THE HEARTBEAT (Kamay approved, 6 Oct 2026). post.yml asks for "*/20 * * * *", and
+# GitHub ran it at 15:12, 22:01, 02:18, 09:05, 15:57 - every 6-7 hours, not every 20
+# minutes. GitHub's cron is best-effort and starves on busy hours, so a slot waited
+# until whenever the next run landed, and a clip queued at 16:41 sat unscheduled into
+# the night. Both accounts posted at a fraction of their grid.
+#
+# A job that is already running is not throttled. This one starts post.yml every
+# 20 minutes for ~5h40m, then starts itself again before GitHub's 6-hour job limit.
+# A dispatch made with GITHUB_TOKEN does start a run (workflow_dispatch is the
+# exception to the no-recursion rule). post.yml keeps its own cron as the fallback
+# and its own concurrency lock, so a pulse and a cron run never publish together.
+# Free: public repository, and the job only sleeps. To stop it: disable this
+# workflow in Actions -> pulse -> "..." -> Disable workflow.
+name: pulse
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "7 */6 * * *"        # restarts the heartbeat if a chain ever breaks
+permissions:
+  actions: write
+concurrency:
+  group: pulse
+  cancel-in-progress: false       # a second pulse waits; it never runs beside one
+jobs:
+  beat:
+    if: github.repository != 'kamaycampos/affiliate-factory'
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Start post.yml every 20 minutes (publishing, not a dry run)
+        run: |
+          for i in $(seq 1 17); do
+            gh workflow run post.yml -f dry_run=false || echo "dispatch $i failed - next one in 20 min"
+            sleep 1200
+          done
+      - name: Hand over to the next heartbeat
+        if: ${{ !cancelled() }}
+        run: gh workflow run pulse.yml
