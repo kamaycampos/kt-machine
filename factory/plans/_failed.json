@@ -1314,31 +1314,13 @@
     "controls your emotions"
    ]
   },
-  "ep_v733zpw/NOTHING-CAN-TRIGGER-HIM": {
-   "plan": "ep_v733zpw",
-   "source": "v733zpw.mp4",
-   "brand": "KT_BLESSING",
-   "tries": 1,
-   "why": [
-    "FAIL 01_NOTHING-CAN-TRIGGER-HIM_38s.mp4: [????] 01_NOTHING-CAN-TRIGGER-HIM_38s.mp4                     only 4 pause-anchored captions - too few to judge"
-   ],
-   "slug": "NOTHING-CAN-TRIGGER-HIM",
-   "in": 266.32,
-   "out": 306.8,
-   "start_words": "How does one get",
-   "end_words": "an exciting adventure",
-   "hook": [
-    "The training that",
-    "stops old triggers"
-   ]
-  },
   "ep_v733zpw/EVERYTHING-I-LEARNED-AT-THE-BOTTOM": {
    "plan": "ep_v733zpw",
    "source": "v733zpw.mp4",
    "brand": "KT_BLESSING",
-   "tries": 1,
+   "tries": 2,
    "why": [
-    "FAIL 02_EVERYTHING-I-LEARNED-AT-THE-BOTTOM_51s.mp4: [????] 02_EVERYTHING-I-LEARNED-AT-THE-BOTTOM_51s.mp4          only 0 pause-anchored captions - too few to judge"
+    "NOT QUEUED** `02_EVERYTHING-I-LEARNED-AT-THE-BOTTOM_51s.mp4` - opens mid-sentence on \"everything I know\""
    ],
    "slug": "EVERYTHING-I-LEARNED-AT-THE-BOTTOM",
    "in": 413.36,
@@ -1354,9 +1336,9 @@
    "plan": "ep_v733zpw",
    "source": "v733zpw.mp4",
    "brand": "KT_BLESSING",
-   "tries": 1,
+   "tries": 2,
    "why": [
-    "FAIL 01_MAYBE-ITS-BAD-MAYBE-ITS-NOT_91s.mp4: [????] 01_MAYBE-ITS-BAD-MAYBE-ITS-NOT_91s.mp4                 only 1 pause-anchored captions - too few to judge"
+    "NOT QUEUED** `01_MAYBE-ITS-BAD-MAYBE-ITS-NOT_91s.mp4` - phrase scrambled around \"his son because his\"; phrase scrambled around \"one horse and one\"; phrase scrambled around \"son because his son\""
    ],
    "slug": "MAYBE-ITS-BAD-MAYBE-ITS-NOT",
    "in": 464.88,
@@ -1372,9 +1354,9 @@
    "plan": "ep_v733zpw",
    "source": "v733zpw.mp4",
    "brand": "KT_BLESSING",
-   "tries": 1,
+   "tries": 2,
    "why": [
-    "FAIL 02_REACT-OR-RESPOND_76s.mp4: [????] 02_REACT-OR-RESPOND_76s.mp4                            only 0 pause-anchored captions - too few to judge"
+    "NOT QUEUED** `02_REACT-OR-RESPOND_76s.mp4` - opens mid-sentence on \"uncontrollably.\"; phrase scrambled around \"from God or from\"; phrase scrambled around \"things or bad things\""
    ],
    "slug": "REACT-OR-RESPOND",
    "in": 629.2,

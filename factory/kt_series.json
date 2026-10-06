@@ -5019,5 +5019,22 @@
     "locked": true
    }
   ]
+ },
+ "ep_v733zpw": {
+  "source": "v733zpw.mp4",
+  "brand": "KT_BLESSING",
+  "note": "1 Oct 2026 - 'Beyond Good And Bad: The Hidden Reality Code' (Rumble v733zpw). Weekly agent. Only 4 clips, not 6-7: most of this transcript is the same monologue already cut and posted from other source videos - the unjustly-accused/prison framing and 'seeds of a greater benefit' line (PRISON-WAS-THE-ANSWER, SEEDS-OF-A-GREATER-BENEFIT), the paper-suit/tarmac/breath-of-fire story (TWENTY-DEGREES-IN-PAPER, from Going_Through_Tough_Times_Watch_THIS.mp4, same anecdote word for word), 'someday we'll laugh, why wait' (LAUGH-NOW, LAUGH-NOW-ON-PURPOSE), the horror-movie/roller-coaster analogy (PAIN-AND-SUFFERING-ARENT-THE-SAME), and the Viktor Frankl/Nazi-camp reference (THE-NAZIS-COULDNT-CONTROL-THIS-PART) - all already in kt_series.json/plans. Skipped all of that on purpose per the dedup check. The 4 clips below are the only genuinely new material in this recording: the training that stopped him reacting to anything, the 'everything I know at the top I learned at the bottom' passage, the Chinese-farmer parable (never used before), and the react-vs-respond/serenity-prayer close. Every clip ends well before the 'Your Wish Is Your Command' testimonial at the end of the file.",
+  "clips": [
+   {
+    "slug": "NOTHING-CAN-TRIGGER-HIM",
+    "in": 266.48,
+    "out": 304.06,
+    "hook": [
+     "The training that",
+     "stops old triggers"
+    ],
+    "caption": "Some people spend years trying to figure out why they overreact.\n\nKevin Trudeau describes training that cleared out the old emotional imprints that get restimulated and hijack a reaction before a person even notices it happening.\n\nThe result, in his own words: nothing triggers him anymore. Terrible things still happen to him. He just doesn't experience them as terrible - he calls them blessings, gifts, an exciting adventure, and means it.\n\nIs your reaction really about what just happened, or something much older firing off underneath it?\n\n#kevintrudeau #mindset #resilience #selfmastery #manifestation #adversity"
+   }
+  ]
  }
 }
