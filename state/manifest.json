@@ -7155,7 +7155,11 @@
    "hook": "The training that stops old triggers",
    "bytes": 20016893,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-06T18:06",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
