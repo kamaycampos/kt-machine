@@ -36,12 +36,42 @@ except Exception:
     pass
 
 idx = json.loads(get("sources_index.json"))
+
+# SECOND CHANCES (6 Oct 2026). Every clip a gate refused is in plans/_failed.json
+# with the gate's own words. Re-cut them FIRST: the episode is already transcribed
+# and the teaching was already judged worth posting. A clip is offered at most
+# MAX_TRIES times in all; one already re-cut (a plan clip with "retry_of") is not
+# offered again until that re-cut has run.
+MAX_TRIES = 3
+try:
+    _f = json.load(open(os.path.join(HERE, "plans", "_failed.json")))["clips"]
+except (OSError, ValueError, KeyError):
+    _f = {}
+_plans = [json.load(open(os.path.join(HERE, "plans", f))) for f in os.listdir(os.path.join(HERE, "plans"))
+          if f.endswith(".json") and not f.startswith("_")]
+_recut = {c.get("retry_of") for q in _plans for c in q.get("clips", [])}
+again = {}
+for k, e in _f.items():
+    if k.startswith(MINE) and e.get("tries", 1) < MAX_TRIES and k not in _recut:
+        again.setdefault(e["source"][:-4], []).append((k, e))
+if again:
+    n = sum(len(v) for v in again.values())
+    print(f"SECOND CHANCES: {n} clip(s) on {len(again)} episode(s) failed a gate - re-cut these FIRST "
+          f"(PLANNING.md step 2c). Cues for each: work/<id>.srt")
+    for v, items in sorted(again.items(), key=lambda kv: -len(kv[1])):
+        print(f"  {v}  ({items[0][1]['plan']}, brand {items[0][1]['brand']})")
+        for k, e in items:
+            print(f"    {k}  in {e.get('in')} out {e.get('out')}  tries {e.get('tries', 1)}")
+            print(f"      start '{e.get('start_words', '')}'  end '{e.get('end_words', '')}'")
+            for w in e.get("why", [])[:2]:
+                print(f"      WHY: {w[:220]}")
 ALL = os.listdir(os.path.join(HERE, "plans"))
 plans_txt = " ".join(open(os.path.join(HERE, "plans", f)).read() for f in ALL if f.endswith(".json"))
 order = [e["id"] for e in json.load(open(os.path.join(HERE, PLAN_FILE)))["episodes"]]
 ready = [v for v in order if v in idx and idx[v].get("transcript") and f'"{v}.mp4"' not in plans_txt]   # the month list only
 print(f"READY TO PLAN: {len(ready)} episode(s); preparing {min(MAX, len(ready))}")
-for v in ready[:MAX]:
+# the second-chance episodes' cues come too, after the new ones (they need only work/<id>.srt)
+for v in ready[:MAX] + [v for v in again if v not in ready[:MAX] and v in idx and idx[v].get("transcript")]:
     open(f"/tmp/{v}.srt.enc", "wb").write(get(f"{v}.srt.enc"))
     srt = os.path.join(WORK, f"{v}.srt")
     r = subprocess.run(["openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-pass", "env:TRANSCRIPT_KEY",

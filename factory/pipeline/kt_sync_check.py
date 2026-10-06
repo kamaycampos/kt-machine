@@ -94,21 +94,50 @@ def check(mp4):
         if tag == "equal":
             for k in range(i2 - i1):
                 h2c[i1 + k] = j1 + k
-    err = []
-    for t in onsets:
-        idx = [n for n, x in enumerate(heard) if t - 0.6 <= x[0] <= t + 0.6]
-        if not idx:
-            continue
-        hi = min(idx, key=lambda n: abs(heard[n][0] - t))
-        ci = h2c.get(hi)
-        if ci is None or cap_words[ci][1] is None:
-            continue                     # the word at this pause does not open a caption
-        err.append((cap_words[ci][1] + LEAD_IN) - t)
+    def graded(onsets):
+        out = []
+        for t in onsets:
+            idx = [n for n, x in enumerate(heard) if t - 0.6 <= x[0] <= t + 0.6]
+            if not idx:
+                continue
+            hi = min(idx, key=lambda n: abs(heard[n][0] - t))
+            ci = h2c.get(hi)
+            if ci is None or cap_words[ci][1] is None:
+                continue                 # the word at this pause does not open a caption
+            out.append((cap_words[ci][1] + LEAD_IN) - t)
+        return out
+    err, how, med_max, p90_max = graded(onsets), "", MEDIAN_MAX, P90_MAX
+    # TOO FEW PAUSES IS NOT A BAD CLIP. 6 Oct 2026: 21 clips failed "too few to
+    # judge" - ep_v733zpw four times a run for six runs - while nothing said
+    # their captions were wrong. A room whose quiet never falls under -38 dB has
+    # no "pauses" at that floor. Quiet is RELATIVE (vsc-factory: 35 dB under the
+    # speech; 20 here, where only a word onset is needed): measure the clip's own
+    # level and look again, still against the waveform.
+    if len(err) < 5:
+        lv = subprocess.run([FF, "-i", tmp + ".wav", "-af", "volumedetect", "-f", "null", "-"],
+                            capture_output=True, text=True).stderr
+        m = re.search(r"mean_volume: (-?[\d.]+) dB", lv)
+        floor = float(m[1]) - 20 if m else -38.0
+        if floor > -38.0:
+            r2 = subprocess.run([FF, "-i", tmp + ".wav", "-af", f"silencedetect=noise={floor:.1f}dB:d=0.25",
+                                 "-f", "null", "-"], capture_output=True, text=True).stderr
+            e2 = graded([float(x) for x in re.findall(r"silence_end: ([\d.]+)", r2)])
+            if len(e2) > len(err):
+                err, how = e2, f" (pauses at {floor:.0f} dB)"
+    # STILL TOO FEW: a music bed under every pause. Then the clip's own words are
+    # the reference - whisper against whisper, which disagrees by up to ~0.4s on
+    # identical audio (16 Sept), so the bar moves by exactly that and no more.
+    # The 16 Sept drift (1.6s growing to 9.5s) fails this by a mile.
+    if len(err) < 5:
+        e3 = [(a + LEAD_IN) - heard[hi][0] for hi, ci in h2c.items()
+              for a in [cap_words[ci][1]] if a is not None]
+        if len(e3) >= 8:
+            err, how, med_max, p90_max = e3, " (word-referenced: no clear pauses)", 0.40, 0.90
     if len(err) < 5:
         return None, f"only {len(err)} pause-anchored captions - too few to judge"
     med = st.median(err)
     p90 = sorted(abs(d) for d in err)[max(0, int(len(err) * 0.9) - 1)]
-    ok = abs(med) <= MEDIAN_MAX and p90 <= P90_MAX
+    ok = abs(med) <= med_max and p90 <= p90_max
     # AND NOTHING SPOKEN GOES UNCAPTIONED. 16 Sept 2026: a rule meant to drop a
     # half-syllable deleted five whole seconds of captions from the YWIYC
     # flagship ("...New York City at the Carnegie Deli") and the timing check
@@ -137,7 +166,7 @@ def check(mp4):
     cover = cw / max(1, len(heard))
     if holes or cover < 0.85:
         ok = False
-    return ok, (f"{len(err)} captions vs the sound  median {med:+.2f}s  worst-10% {p90:.2f}s  "
+    return ok, (f"{len(err)} captions vs the sound{how}  median {med:+.2f}s  worst-10% {p90:.2f}s  "
                 f"| words captioned {cover:.0%}" + (f"  UNCAPTIONED SPEECH {holes}" if holes else ""))
 
 

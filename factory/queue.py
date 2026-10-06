@@ -26,6 +26,31 @@ print("locked now published:", kt_lock.sync())
 series = json.load(open(SERIES))
 done = json.load(open(os.path.join(HERE, "plans", "_done.json")))
 brands, kinds, report = set(), {}, []
+# SECOND CHANCES. 6 Oct 2026: 205 clips planned, 103 queued - and every clip that
+# failed a gate was simply gone, because a plan that yields one clip is "built".
+# Both accounts ran dry. A failed clip is now written here with why it failed,
+# routine_prep.py hands it back to the planner, and the planner re-cuts it.
+FAILED = os.path.join(HERE, "plans", "_failed.json")
+failed = json.load(open(FAILED)) if os.path.exists(FAILED) else {"clips": {}, "attempts": {}}
+RETIRE_AFTER = 2       # a plan that yields NOTHING this many runs is not retried as-is
+
+
+def note_failures(plan, p, kept, text):
+    """Every planned clip that did not reach the queue, with the gate's words."""
+    for c in p["clips"]:
+        if c["slug"] in kept:
+            failed["clips"].pop(f"{plan}/{c['slug']}", None)
+            continue
+        why = [l.strip(" -*") for l in text.splitlines() if c["slug"] in l
+               and any(k in l for k in ("FAIL", "drop", "NOT QUEUED", "refused"))]
+        # a re-cut carries "retry_of": its tries continue the original's count, so
+        # one clip is offered back at most MAX_TRIES times in all (routine_prep.py)
+        prev = failed["clips"].get(c.get("retry_of", ""), {}).get("tries", 0)
+        failed["clips"][f"{plan}/{c['slug']}"] = {
+            "plan": plan, "source": p["source"], "brand": p["brand"],
+            "tries": max(prev, failed["clips"].get(f"{plan}/{c['slug']}", {}).get("tries", 0)) + 1,
+            "why": [w[:300] for w in why[:3]] or ["no clip came out of the render"],
+            **{k: c[k] for k in ("slug", "in", "out", "start_words", "end_words", "hook") if k in c}}
 for plan, rs in sorted(by_plan.items()):
     p = json.load(open(os.path.join(HERE, "plans", f"{plan}.json")))
     passed = [c for r in sorted(rs, key=lambda r: r["shard"]) for c in r["clips"]]
@@ -40,6 +65,16 @@ for plan, rs in sorted(by_plan.items()):
     # silently lost. A plan that yields nothing stays pending and is retried.
     if passed or p.get("test"):
         done.append(plan)
+    if not passed and not p.get("test"):
+        # 2 Oct - 6 Oct: ep_v733zpw failed the same four clips the same way on six
+        # runs in a row. A render is deterministic; a retry of the same cut is the
+        # same answer. After RETIRE_AFTER runs its clips go back to the planner.
+        n = failed["attempts"][plan] = failed["attempts"].get(plan, 0) + 1
+        if n >= RETIRE_AFTER:
+            done.append(plan)
+            note_failures(plan, p, set(), "\n".join(report))
+            report.append(f"- **RETIRED** after {n} runs with nothing passing; its clips go back "
+                          f"to the planner (factory/plans/_failed.json)")
     if p.get("test") or not passed:
         continue
     spec = series.setdefault(plan, {"source": p["source"], "brand": p["brand"],
@@ -71,6 +106,7 @@ for plan, rs in sorted(by_plan.items()):
                 if not any(f"_{c['slug']}_" in b for b in blocked)}
         passed = [c for c in passed if c["slug"] in keep]
         spec["clips"] = [c for c in spec["clips"] if c["slug"] in keep or c["slug"] in have]
+    note_failures(plan, p, {c["slug"] for c in passed}, "\n".join(report))
     for r in rs:
         for f in r["files"]:
             if any(f.startswith(b[:-4]) for b in blocked):
@@ -84,6 +120,7 @@ for plan, rs in sorted(by_plan.items()):
 json.dump(series, open(SERIES, "w"), indent=1, ensure_ascii=False)
 shutil.copy(SERIES, os.path.join(HERE, "kt_series.json"))
 json.dump(sorted(set(done)), open(os.path.join(HERE, "plans", "_done.json"), "w"), indent=1)
+json.dump(failed, open(FAILED, "w"), indent=1, ensure_ascii=False)
 if brands:
     subprocess.run(["git", "pull", "-q", "--rebase"], cwd=MACHINE)
     up = subprocess.run([sys.executable, "add_clips.py", *sorted(brands)], cwd=MACHINE,

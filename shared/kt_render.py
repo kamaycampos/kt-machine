@@ -1050,6 +1050,34 @@ DANGLING = {
 }
 
 
+TAG_CLOSE = {"(": ")", "[": "]", "*": "*"}
+
+
+def drop_sound_tags(ws):
+    """Whisper's sound markup is never something anyone said.
+
+    6 Oct 2026: "(laughing) Because" and "[BLANK_AUDIO]" were burned into
+    captions, and the queue gate (kt_qc) rightly refused both clips - two good
+    teachings lost to markup. One word per cue splits a tag across cues
+    ("(audience", "laughing)"), so a tag runs from the token that opens it to
+    the token that closes it, at most 4 tokens. A bracket that never closes in
+    that span was not a tag: only that one token goes, the words stay.
+    """
+    out, k = [], 0
+    while k < len(ws):
+        w = ws[k][2]
+        close = TAG_CLOSE.get(w[:1])
+        if close is None:
+            out.append(ws[k])
+            k += 1
+            continue
+        end = next((j for j in range(k, min(k + 4, len(ws)))
+                    if ws[j][2].rstrip(".,!?;:").endswith(close)
+                    and (j > k or len(ws[j][2].rstrip(".,!?;:")) > 1)), None)
+        k = (end if end is not None else k) + 1
+    return out
+
+
 def phrases_from_words(words):
     """Caption bursts timed to when each word is actually SPOKEN.
 
@@ -1074,6 +1102,7 @@ def phrases_from_words(words):
     ws = [(a, b, w.strip().lstrip("-\u2013\u2014").strip())
           for a, b, w in words if w and w.strip()]
     ws = [x for x in ws if x[2]]
+    ws = drop_sound_tags(ws)
     ws = numbers_to_digits(ws)
     n = len(ws)
     if not n:

@@ -11,6 +11,15 @@ You work alone; nobody is watching. Be excellent, and never guess at facts.
    - How many episodes to plan: queue over 50 clips = none (report and stop); 30-50 = 2; under 30 = 4-5. The machine posts 6 a day and roughly 1 clip in 4 fails a quality gate, so plan generously when the queue is low.
    - If fewer episodes are ready than you want, plan what's there. If the month's list (`factory/source_plan.json`) is running out, append the next best episodes from the candidates it prints (money lane first), so stocking continues.
 2b. If the prep printed **TAKEN DOWN BY TIKTOK**, those clips were removed from the account. For each one, plan a **replacement** from the same episode: the same lesson, a different moment and a different angle - never the same cut and never the same hook. Say in your report which clip you replaced and how the new one differs.
+2c. If the prep printed **SECOND CHANCES**, re-cut those clips FIRST - before any new episode. The teaching was already judged worth posting and the episode is transcribed; only a gate stopped it. For each episode listed:
+   - Write `factory/plans/ep_<id>_r2.json` (`_r3` if `_r2` exists) with the same `source`, brand = the old brand + `R2` (e.g. `KT_MEMORY` -> `KT_MEMORYR2`), and every clip carrying `"retry_of": "<the key printed, e.g. ep_v6v9urd/WALL-STREET-500-RIVALS>"`.
+   - Fix what the **WHY** line says, in `work/<id>.srt`:
+     - hook lint ("not a direct promise", "opens on a riddle", "no stakes") -> rewrite the hook; keep the cut.
+     - "opens mid-sentence", "ends mid-thought", "ends off the planned words" -> re-find the edges: open on the first words of a complete sentence after a pause, close on the sentence end where the teaching lands; copy `start_words` / `end_words` exactly from the cues.
+     - "word repeated", "phrase scrambled", "(laughing)", "[BLANK_AUDIO]" -> move an edge so the damaged words fall outside the clip; if they sit in the middle of the teaching, skip the clip.
+     - "captions vs the sound", "UNCAPTIONED SPEECH", "too few to judge" -> move both edges to different sentence boundaries (a few seconds re-times every caption). If the gap named is someone else talking, cut so it falls outside.
+   - `tries 2` means this is its last chance: skip it unless you can see the cause and fix it.
+   - Second chances count toward this run's clips. Report how many you re-cut and how many you skipped, and why.
 3. Read `factory/MASTERY.md` (what is proven to work, with its confidence) and `factory/HOOK_PATTERNS.md`, then read each episode's `work/<id>_blocks.txt` in full. Choose 6-9 clips per episode.
 4. Write `factory/plans/ep_<id>.json` (format below). Get exact start and end times from the cues in `work/<id>.srt`.
 5. `python factory/check_plan.py factory/plans/ep_<id>.json` for every plan. Fix everything it reports.
