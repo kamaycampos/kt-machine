@@ -10,6 +10,12 @@ list, never touch a file named `ep_*.json`, never write a `KT_` folder. `kt_fenc
 source that serves both, and the checker refuses the wrong folder family. If you ever have to choose
 between filling her queue and crossing that line, leave the queue empty and say so.
 
+**Work alone, in this one session.** Never use the Agent or Task tool, never start subagents or background
+tasks: read and write every plan yourself, one episode at a time. (6 Oct 2026: a run fanned out 21 agents
+on the second-chance backlog, hit the account's usage limit, and pushed nothing.) **Commit and push after
+each plan passes `check_plan.py`**, to the same branch - the merge job takes each push - so a run that is
+cut off still keeps the plans it finished.
+
 ## Procedure
 1. `pip install -q opencv-python-headless pillow numpy 2>/dev/null`
 2. `python factory/routine_prep.py --brand ar --max 4` - prints HER queue, downloads and decrypts the
