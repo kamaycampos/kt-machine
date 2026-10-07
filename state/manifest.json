@@ -7338,12 +7338,26 @@
    "caption": "Kevin Trudeau ran a real experiment on one ordinary seventh grade class.\n\nNine hours of memory training. Nothing else about their curriculum changed.\n\nBy the end of the year they were eight months ahead of schedule, averaging A-minus, and reading at a college sophomore's vocabulary level.\n\nThe strangest number wasn't the grades, though. It was attendance: almost zero absences, because the kids finally wanted to be at school.\n\nGrades tend to follow confidence, not the other way around.\n\n#kevintrudeau #memory #education #learning #confidence #mindset",
    "hook": "8 months ahead for your kid",
    "bytes": 53576452,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-07T09:30",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1083138857651598/",
+    "instagram": "https://www.instagram.com/reel/DeMgH4NiD1y/",
+    "youtube": "https://youtube.com/shorts/xBZw5QqeAe4"
+   },
+   "caption_at_post": "Kevin Trudeau ran a real experiment on one ordinary seventh grade class.\n\nNine hours of memory training. Nothing else about their curriculum changed.\n\nBy the end of the year they were eight months ahead of schedule, averaging A-minus, and reading at a college sophomore's vocabulary level.\n\nThe strangest number wasn't the grades, though. It was attendance: almost zero absences, because the kids finally wanted to be at school.\n\nGrades tend to follow confidence, not the other way around.\n\n#kevintrudeau #memory #education #learning #confidence #mindset",
+   "posted_at": "2026-10-07T09:50"
   }
  ]
 }
