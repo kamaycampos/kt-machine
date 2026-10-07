@@ -7181,7 +7181,11 @@
    "hook": "They don't need to force you",
    "bytes": 79156369,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-08T17:08",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 10,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_ENGRAMR2/01_CUT-THE-ROPES-BEFORE-YOU-RISE_122s.mp4",
@@ -7189,7 +7193,11 @@
    "hook": "Cut the ropes before you rise",
    "bytes": 71308090,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-08T07:16",
+   "cta_keyword": "RISE",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_ENGRAMR2/02_TWO-HUNDRED-THOUSAND-DIED_46s.mp4",
@@ -7197,7 +7205,11 @@
    "hook": "200,000 died. He warned first.",
    "bytes": 28913350,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-07T07:17",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_FAILSAFE/02_GORBACHEV-SAID-I-ALREADY-KNOW-YOU_43s.mp4",
@@ -7205,7 +7217,11 @@
    "hook": "Gorbachev said, I already know you.",
    "bytes": 29242039,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-08T15:07",
+   "cta_keyword": "RISE",
+   "cta_variant": 9,
+   "cta_kind": "question"
   },
   {
    "file": "AR_INSTINCTR2/02_THE-SALMON-KNEW-ITS-DNA_106s.mp4",
@@ -7213,7 +7229,11 @@
    "hook": "The salmon almost drowned. DNA won.",
    "bytes": 84328283,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-07T14:54",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_KARMAR2/01_BURN-OFF-THE-DEBT_67s.mp4",
@@ -7221,7 +7241,11 @@
    "hook": "Burn off your karmic debt",
    "bytes": 42848050,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-07T12:08",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_KARMAR2/01_HUNDRED-TIMES-BACK_110s.mp4",
@@ -7229,7 +7253,11 @@
    "hook": "A dollar given returns a hundred",
    "bytes": 68454329,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-08T12:35",
+   "cta_keyword": "YES",
+   "cta_variant": 8,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_OBSESSION/01_ROCKY-GOT-BEATEN-THEN-MAD_71s.mp4",
@@ -7237,7 +7265,11 @@
    "hook": "Rocky got beaten. He got mad.",
    "bytes": 62610552,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-07T10:11",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_OBSESSION/02_HE-WATCHED-BILLIONAIRES-LIVE_114s.mp4",
@@ -7245,7 +7277,11 @@
    "hook": "He watched billionaires. Then copied it.",
    "bytes": 95309001,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-07T17:01",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_RELEASER2/01_COLOR-CAME-BACK-IN-ONE-EXHALE_45s.mp4",
@@ -7253,7 +7289,11 @@
    "hook": "Color came back in one exhale",
    "bytes": 30292972,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-08T10:15",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 7,
+   "cta_kind": "question"
   },
   {
    "file": "AR_TONGUER2/01_MOUTH-IS-A-SPELL_151s.mp4",
@@ -7261,7 +7301,11 @@
    "hook": "Your mouth is literally a spell",
    "bytes": 102106165,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-07T19:25",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   }
  ]
 }
