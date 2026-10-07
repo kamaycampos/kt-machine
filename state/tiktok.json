@@ -1,15 +1,15 @@
 {
- "at": "2026-10-07T13:53",
+ "at": "2026-10-07T23:18",
  "profile": {
-  "likes_count": 5846,
-  "video_count": 165,
   "follower_count": 412,
-  "following_count": 8
+  "following_count": 8,
+  "likes_count": 5847,
+  "video_count": 165
  },
  "videos": {
   "KT_FREQUENCY/02_ROCKEFELLERS-30-PERCENT-RULE_65s.mp4": {
    "id": "7693694151665175822",
-   "view_count": 5,
+   "view_count": 7,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -89,7 +89,7 @@
   },
   "KT_LUCK/01_BILL-GATES-NUMBER-ONE-REASON-LUCK_110s.mp4": {
    "id": "7692426337788661005",
-   "view_count": 17,
+   "view_count": 18,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -99,7 +99,7 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 91,
+   "view_count": 92,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -169,7 +169,7 @@
   },
   "KT_TAXHACK/02_NO-LLC-NEEDED-FOR-WRITE-OFFS_55s.mp4": {
    "id": "7690948145840180494",
-   "view_count": 8,
+   "view_count": 9,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -509,7 +509,7 @@
   },
   "KT_SECRET/05_NOT-THE-HAMBURGER-BUSINESS_124s.mp4": {
    "id": "7688020668356545806",
-   "view_count": 91,
+   "view_count": 93,
    "like_count": 3,
    "comment_count": 0,
    "share_count": 0,
@@ -549,8 +549,8 @@
   },
   "KT_MIND/05_THE-TRASH-TEST_84s.mp4": {
    "id": "7687564395848731917",
-   "view_count": 1027,
-   "like_count": 69,
+   "view_count": 1028,
+   "like_count": 70,
    "comment_count": 2,
    "share_count": 9,
    "share_url": "https://www.tiktok.com/@kt_student/video/7687564395848731917?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -659,7 +659,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14109,
+   "view_count": 14111,
    "like_count": 867,
    "comment_count": 59,
    "share_count": 196,
@@ -669,7 +669,7 @@
   },
   "KT_RICH/05_05_HOW-EVERY-RICH-PERSON-LEARNED-IT_103s.mp4": {
    "id": "7685885571121696014",
-   "view_count": 489,
+   "view_count": 490,
    "like_count": 59,
    "comment_count": 0,
    "share_count": 2,
@@ -709,7 +709,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38054,
+   "view_count": 38057,
    "like_count": 787,
    "comment_count": 27,
    "share_count": 171,
@@ -839,7 +839,7 @@
   },
   "KT_RICH/01_01_WHY-NOBODY-TEACHING-IT-GOT-RICH_43s.mp4": {
    "id": "7684262173295611149",
-   "view_count": 300,
+   "view_count": 301,
    "like_count": 15,
    "comment_count": 2,
    "share_count": 0,
@@ -1149,7 +1149,7 @@
   },
   "unmatched/7680227684198141197": {
    "id": "7680227684198141197",
-   "view_count": 270,
+   "view_count": 271,
    "like_count": 17,
    "comment_count": 2,
    "share_count": 1,
@@ -1249,7 +1249,7 @@
   },
   "unmatched/7679163849597046029": {
    "id": "7679163849597046029",
-   "view_count": 255,
+   "view_count": 256,
    "like_count": 17,
    "comment_count": 0,
    "share_count": 2,
@@ -1269,7 +1269,7 @@
   },
   "unmatched/7679084696050994445": {
    "id": "7679084696050994445",
-   "view_count": 293,
+   "view_count": 294,
    "like_count": 15,
    "comment_count": 0,
    "share_count": 7,
