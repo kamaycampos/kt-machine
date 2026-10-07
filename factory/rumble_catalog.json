@@ -203,7 +203,7 @@
   "date": "2026-04-01",
   "height": 2160,
   "short": false,
-  "page": 1,
+  "page": 2,
   "hls": "https://rumble.com/hls-vod/129HL0lmWsI/playlist.m3u8"
  },
  "https://rumble.com/v77l7um-i-bought-bitcoin-at-1-what-nobody-tells-you-about-making-money-wallstreetbe.html": {
@@ -428,7 +428,7 @@
   "date": "2025-10-27",
   "height": 2160,
   "short": false,
-  "page": 2,
+  "page": 3,
   "hls": "https://hugh.cdn.rumble.cloud/video/fww1/af/s8/2/0/M/h/u/0Mhuz.jaa.mp4"
  },
  "https://rumble.com/v70lzte-the-sound-of-control-this-is-how-they-program-you.html": {
@@ -653,7 +653,7 @@
   "date": "2025-05-28",
   "height": 1080,
   "short": false,
-  "page": 3,
+  "page": 4,
   "hls": "https://rumble.com/hls-vod/k5nVb-nTf4I/playlist.m3u8"
  },
  "https://rumble.com/v6tnhm7-kevin-trudeau-reveals-the-1-manifesting-secret-youre-missing-the-ryan-hanle.html": {
@@ -5731,5 +5731,14 @@
   "short": false,
   "page": 13,
   "hls": "https://hugh.cdn.rumble.cloud/video/s8/2/m/_/V/A/m_VAq.caa.mp4"
+ },
+ "https://rumble.com/v7gisy0-youre-trying-to-make-money-the-wrong-way-the-707-formula.html": {
+  "title": "You're Trying to Make Money the Wrong Way | The 70×7 Formula",
+  "dur": 1524,
+  "date": "2026-10-07",
+  "height": 2160,
+  "short": false,
+  "page": 1,
+  "hls": "https://rumble.com/hls-vod/oHo8I77PRMc/playlist.m3u8"
  }
 }
