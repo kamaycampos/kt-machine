@@ -2482,14 +2482,266 @@
     "Nothing bad happened",
     "to you, ever"
    ]
+  },
+  "ar_v6r8c9a_r2/MISTRANSLATED-PRAYER": {
+   "plan": "ar_v6r8c9a_r2",
+   "source": "v6r8c9a.mp4",
+   "brand": "AR_TELEPHONER2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_MISTRANSLATED-PRAYER_49s.mp4: [FAIL] 01_MISTRANSLATED-PRAYER_49s.mp4                        12 captions vs the sound  median +0.05s  worst-10% 1.16s  | words captioned 100%"
+   ],
+   "slug": "MISTRANSLATED-PRAYER",
+   "in": 780.96,
+   "out": 827.52,
+   "start_words": "Next, it says, Give us today",
+   "end_words": "for meeting all my daily needs",
+   "hook": [
+    "Your prayer was",
+    "mistranslated."
+   ]
+  },
+  "ar_v6yeuyc/YOUR-BRAIN-IS-BROADCASTING-POVERTY": {
+   "plan": "ar_v6yeuyc",
+   "source": "v6yeuyc.mp4",
+   "brand": "AR_SLAVEWAVE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_YOUR-BRAIN-IS-BROADCASTING-POVERTY_70s.mp4: [FAIL] 01_YOUR-BRAIN-IS-BROADCASTING-POVERTY_70s.mp4          46 captions vs the sound (word-referenced: no clear pauses)  median -0.09s  worst-10% 1.10s  | words captioned 100%"
+   ],
+   "slug": "YOUR-BRAIN-IS-BROADCASTING-POVERTY",
+   "in": 0.0,
+   "out": 69.0,
+   "start_words": "Do billionaires or the",
+   "end_words": "the brain emits frequency",
+   "hook": [
+    "Your brain is",
+    "broadcasting pure poverty."
+   ]
+  },
+  "ar_v6yeuyc/BILL-CLINTON-REALLY-FELT-YOUR-PAIN": {
+   "plan": "ar_v6yeuyc",
+   "source": "v6yeuyc.mp4",
+   "brand": "AR_SLAVEWAVE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_BILL-CLINTON-REALLY-FELT-YOUR-PAIN_71s.mp4: [FAIL] 02_BILL-CLINTON-REALLY-FELT-YOUR-PAIN_71s.mp4          8 captions vs the sound  median +0.30s  worst-10% 0.95s  | words captioned 100%"
+   ],
+   "slug": "BILL-CLINTON-REALLY-FELT-YOUR-PAIN",
+   "in": 449.0,
+   "out": 501.0,
+   "start_words": "Sometimes it's called empathy",
+   "end_words": "keep my power in control",
+   "hook": [
+    "Bill Clinton really",
+    "felt your pain."
+   ]
+  },
+  "ar_v6yeuyc/THE-ELITE-DONT-HAVE-SILVER-FILLINGS": {
+   "plan": "ar_v6yeuyc",
+   "source": "v6yeuyc.mp4",
+   "brand": "AR_SLAVEWAVE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THE-ELITE-DONT-HAVE-SILVER-FILLINGS_44s.mp4: [FAIL] 01_THE-ELITE-DONT-HAVE-SILVER-FILLINGS_44s.mp4         28 captions vs the sound (word-referenced: no clear pauses)  median +0.22s  worst-10% 0.73s  | words captioned 100%  UNCAPTIONED SPEECH [(19.4, 21.0)]"
+   ],
+   "slug": "THE-ELITE-DONT-HAVE-SILVER-FILLINGS",
+   "in": 712.0,
+   "out": 756.0,
+   "start_words": "One of the things",
+   "end_words": "slave wave or beta brainwave",
+   "hook": [
+    "The elite don't",
+    "have silver fillings."
+   ]
+  },
+  "ar_v6yeuyc/LEADERS-ARE-ALWAYS-READERS": {
+   "plan": "ar_v6yeuyc",
+   "source": "v6yeuyc.mp4",
+   "brand": "AR_SLAVEWAVE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "LEADERS-ARE-ALWAYS-READERS",
+   "in": 642.0,
+   "out": 696.0,
+   "start_words": "So, how do we",
+   "end_words": "with my physical hands",
+   "hook": [
+    "Leaders are readers.",
+    "That's the trick."
+   ]
+  },
+  "ar_v70c41q_r2/RICH-PEOPLE-BROADCAST-DIFFERENT": {
+   "plan": "ar_v70c41q_r2",
+   "source": "v70c41q.mp4",
+   "brand": "AR_PRISONR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_RICH-PEOPLE-BROADCAST-DIFFERENT_127s.mp4: ends off the planned words: plan ends 'and then manifest it', clip ends 'and this is not foo foo'"
+   ],
+   "slug": "RICH-PEOPLE-BROADCAST-DIFFERENT",
+   "in": 736.0,
+   "out": 858.6,
+   "start_words": "And the third",
+   "end_words": "and then manifest it",
+   "hook": [
+    "Rich people broadcast",
+    "a different frequency"
+   ]
+  },
+  "ar_v70c41q_r2/SHE-CALLED-HERSELF-A-ROCK-STAR": {
+   "plan": "ar_v70c41q_r2",
+   "source": "v70c41q.mp4",
+   "brand": "AR_PRISONR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_SHE-CALLED-HERSELF-A-ROCK-STAR_57s.mp4: ends off the planned words: plan ends 'and then have', clip ends 'that you be first then do'"
+   ],
+   "slug": "SHE-CALLED-HERSELF-A-ROCK-STAR",
+   "in": 975.28,
+   "out": 1033.5,
+   "start_words": "I remember seeing",
+   "end_words": "and then have",
+   "hook": [
+    "She called herself",
+    "a rock star"
+   ]
+  },
+  "ar_v76xweu_r2/THAT-EMPTY-FEELING-HAS-A-NAME": {
+   "plan": "ar_v76xweu_r2",
+   "source": "v76xweu.mp4",
+   "brand": "AR_BROTHERHOODR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_THAT-EMPTY-FEELING-HAS-A-NAME_101s.mp4: ends off the planned words: plan ends 'I don't know what that is', clip ends 'i feel like something is missin'"
+   ],
+   "slug": "THAT-EMPTY-FEELING-HAS-A-NAME",
+   "in": 234.6,
+   "out": 338.0,
+   "start_words": "Number one, they didn't",
+   "end_words": "I don't know what that is",
+   "hook": [
+    "That empty feeling",
+    "has a name"
+   ]
+  },
+  "ar_v77w5tc_r2/YOU-DONT-KNOW-YOURE-BLURRY-YET": {
+   "plan": "ar_v77w5tc_r2",
+   "source": "v77w5tc.mp4",
+   "brand": "AR_BLOODLINER2",
+   "tries": 2,
+   "why": [
+    "render refused:   FIX  AR_BLOODLINER2/YOU-DONT-KNOW-YOURE-BLURRY-YET     out   1637.5  advert   1637.0  +0.5s into it"
+   ],
+   "slug": "YOU-DONT-KNOW-YOURE-BLURRY-YET",
+   "in": 1569.0,
+   "out": 1631.0,
+   "start_words": "I remember not being",
+   "end_words": "you've never had before",
+   "hook": [
+    "You don't know",
+    "you're blurry yet"
+   ]
+  },
+  "ep_v6v9urd_r2/WALL-STREET-500-RIVALS": {
+   "plan": "ep_v6v9urd_r2",
+   "source": "v6v9urd.mp4",
+   "brand": "KT_MEMORYR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_WALL-STREET-500-RIVALS_80s.mp4: [FAIL] 01_WALL-STREET-500-RIVALS_80s.mp4                      65 captions vs the sound (word-referenced: no clear pauses)  median +0.07s  worst-10% 1.09s  | words captioned 100%"
+   ],
+   "slug": "WALL-STREET-500-RIVALS",
+   "in": 283.68,
+   "out": 365.12,
+   "start_words": "The problem was 500",
+   "end_words": "it's costing you money",
+   "hook": [
+    "Beat 500 rivals",
+    "Won 3 promotions"
+   ]
+  },
+  "ep_v6v9urd_r2/FLUNKING-TO-100-PERCENT": {
+   "plan": "ep_v6v9urd_r2",
+   "source": "v6v9urd.mp4",
+   "brand": "KT_MEMORYR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_FLUNKING-TO-100-PERCENT_82s.mp4` - phrase scrambled around \"news and bad news.\"\""
+   ],
+   "slug": "FLUNKING-TO-100-PERCENT",
+   "in": 1377.28,
+   "out": 1462.0,
+   "start_words": "Let me tell you why",
+   "end_words": "teach all the administrative staff",
+   "hook": [
+    "100% on exam",
+    "after flunking calculus"
+   ]
+  },
+  "ep_v6v9urd_r2/COUNTING-CARDS-250K-RENO": {
+   "plan": "ep_v6v9urd_r2",
+   "source": "v6v9urd.mp4",
+   "brand": "KT_MEMORYR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_COUNTING-CARDS-250K-RENO_176s.mp4` - phrase scrambled around \"back with his back\""
+   ],
+   "slug": "COUNTING-CARDS-250K-RENO",
+   "in": 1757.44,
+   "out": 1933.92,
+   "start_words": "I went to the casino",
+   "end_words": "too good for us",
+   "hook": [
+    "What got him banned",
+    "winning $250,000"
+   ]
+  },
+  "ep_v6v9urd_r2/THE-GRIFFIN-BOOK": {
+   "plan": "ep_v6v9urd_r2",
+   "source": "v6v9urd.mp4",
+   "brand": "KT_MEMORYR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_THE-GRIFFIN-BOOK_67s.mp4` - phrase scrambled around \"Griffin book?\" The Griffin\"; phrase scrambled around \"Iraq during the Iraq\"; phrase scrambled around \"book?\" The Griffin book\""
+   ],
+   "slug": "THE-GRIFFIN-BOOK",
+   "in": 1940.8,
+   "out": 2012.8,
+   "start_words": "I'm in Australia a couple",
+   "end_words": "too good for us",
+   "hook": [
+    "The Griffin Book",
+    "banned him twice"
+   ]
+  },
+  "ep_v6v9urd_r2/REMEMBERED-THE-BODYGUARD-200M": {
+   "plan": "ep_v6v9urd_r2",
+   "source": "v6v9urd.mp4",
+   "brand": "KT_MEMORYR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_REMEMBERED-THE-BODYGUARD-200M_108s.mp4` - opens mid-sentence on \"was a guy\""
+   ],
+   "slug": "REMEMBERED-THE-BODYGUARD-200M",
+   "in": 2334.88,
+   "out": 2442.56,
+   "start_words": "There was a guy",
+   "end_words": "That's real world stuff",
+   "hook": [
+    "One remembered name",
+    "$200 million deal"
+   ]
   }
  },
  "attempts": {
   "ep_v733zpw": 6,
-  "ar_v6r8c9a_r2": 1,
-  "ar_v6yeuyc": 1,
-  "ar_v70c41q_r2": 1,
-  "ar_v76xweu_r2": 1,
-  "ar_v77w5tc_r2": 1
+  "ar_v6r8c9a_r2": 2,
+  "ar_v6yeuyc": 2,
+  "ar_v70c41q_r2": 2,
+  "ar_v76xweu_r2": 2,
+  "ar_v77w5tc_r2": 2
  }
 }
