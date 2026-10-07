@@ -1995,9 +1995,501 @@
     "How rich people",
     "talk about money"
    ]
+  },
+  "ar_v6tnhm7_r2/NOT-ABOUT-THE-FERRARI": {
+   "plan": "ar_v6tnhm7_r2",
+   "source": "v6tnhm7.mp4",
+   "brand": "AR_INSTINCTR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_NOT-ABOUT-THE-FERRARI_58s.mp4` - phrase scrambled around \"why behind the why.\""
+   ],
+   "slug": "NOT-ABOUT-THE-FERRARI",
+   "in": 756.48,
+   "out": 819.0,
+   "start_words": "One of the things is",
+   "end_words": "you really want",
+   "hook": [
+    "You don't want",
+    "the Ferrari itself"
+   ]
+  },
+  "ar_v6tnhm7_r2/RAISED-JAPANESE-STILL-ITALIAN": {
+   "plan": "ar_v6tnhm7_r2",
+   "source": "v6tnhm7.mp4",
+   "brand": "AR_INSTINCTR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_RAISED-JAPANESE-STILL-ITALIAN_62s.mp4: [FAIL] 01_RAISED-JAPANESE-STILL-ITALIAN_62s.mp4               12 captions vs the sound  median +0.52s  worst-10% 1.03s  | words captioned 100%"
+   ],
+   "slug": "RAISED-JAPANESE-STILL-ITALIAN",
+   "in": 1861.0,
+   "out": 1922.5,
+   "start_words": "There was a",
+   "end_words": "We can get better",
+   "hook": [
+    "He only spoke",
+    "Japanese. His hands."
+   ]
+  },
+  "ar_v6tnhm7_r2/RICH-PEOPLE-NEVER-HEARD-OF-IT": {
+   "plan": "ar_v6tnhm7_r2",
+   "source": "v6tnhm7.mp4",
+   "brand": "AR_INSTINCTR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_RICH-PEOPLE-NEVER-HEARD-OF-IT_99s.mp4: [FAIL] 02_RICH-PEOPLE-NEVER-HEARD-OF-IT_99s.mp4               67 captions vs the sound (word-referenced: no clear pauses)  median +0.41s  worst-10% 0.61s  | words captioned 100%  UNCAPTIONED SPEECH [(21.7, 23.5)]"
+   ],
+   "slug": "RICH-PEOPLE-NEVER-HEARD-OF-IT",
+   "in": 2705.0,
+   "out": 2803.5,
+   "start_words": "The law of",
+   "end_words": "actually were in possession",
+   "hook": [
+    "Rich people never",
+    "heard of manifesting"
+   ]
+  },
+  "ar_v6vwu4e_r2/TEN-BILLION-DOLLAR-SECRET": {
+   "plan": "ar_v6vwu4e_r2",
+   "source": "v6vwu4e.mp4",
+   "brand": "AR_ENGRAMR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_TEN-BILLION-DOLLAR-SECRET_64s.mp4` - phrase scrambled around \"energy and move energy\"; sentence starts with no stop: \"called The\"; two subjects together: \"I.\" He\""
+   ],
+   "slug": "TEN-BILLION-DOLLAR-SECRET",
+   "in": 572.44,
+   "out": 636.0,
+   "start_words": "This was candle pin",
+   "end_words": "in sales over the years",
+   "hook": [
+    "They made him",
+    "ten billion dollars"
+   ]
+  },
+  "ar_v6vwu4e_r2/YOUR-FEAR-ISNT-YOURS": {
+   "plan": "ar_v6vwu4e_r2",
+   "source": "v6vwu4e.mp4",
+   "brand": "AR_ENGRAMR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_YOUR-FEAR-ISNT-YOURS_70s.mp4` - ends mid-thought on \"our own memory\"; phrase scrambled around \"our ancestors on our\"; sentence starts with no stop: \"drowned So\""
+   ],
+   "slug": "YOUR-FEAR-ISNT-YOURS",
+   "in": 712.8,
+   "out": 782.36,
+   "start_words": "The first area is",
+   "end_words": "from our own memory",
+   "hook": [
+    "Your fear isn't yours",
+    "it's inherited"
+   ]
+  },
+  "ar_v6vwu4e_r2/ONE-BAD-REVIEW-WINS": {
+   "plan": "ar_v6vwu4e_r2",
+   "source": "v6vwu4e.mp4",
+   "brand": "AR_ENGRAMR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_ONE-BAD-REVIEW-WINS_62s.mp4` - word repeated after one: \"other people other\""
+   ],
+   "slug": "ONE-BAD-REVIEW-WINS",
+   "in": 919.8,
+   "out": 981.8,
+   "start_words": "Yeah. He said you",
+   "end_words": "negative influence of other people",
+   "hook": [
+    "One bad review",
+    "beats ten good"
+   ]
+  },
+  "ar_v6wjkyq_r2/COMMANDMENTS-WERE-KARMA": {
+   "plan": "ar_v6wjkyq_r2",
+   "source": "v6wjkyq.mp4",
+   "brand": "AR_KARMAR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_COMMANDMENTS-WERE-KARMA_103s.mp4` - opens mid-sentence on \"safer,\""
+   ],
+   "slug": "COMMANDMENTS-WERE-KARMA",
+   "in": 1764.96,
+   "out": 1867.36,
+   "start_words": "How do we instill",
+   "end_words": "if you break the rule",
+   "hook": [
+    "Commandments were karma",
+    "sold as fear"
+   ]
+  },
+  "ar_v6wjkyq_r2/THE-BIGGEST-LIE-ABOUT-KARMA": {
+   "plan": "ar_v6wjkyq_r2",
+   "source": "v6wjkyq.mp4",
+   "brand": "AR_KARMAR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_THE-BIGGEST-LIE-ABOUT-KARMA_81s.mp4: [FAIL] 02_THE-BIGGEST-LIE-ABOUT-KARMA_81s.mp4                 19 captions vs the sound  median -0.00s  worst-10% 0.75s  | words captioned 99%  UNCAPTIONED SPEECH [(59.4, 61.5)]"
+   ],
+   "slug": "THE-BIGGEST-LIE-ABOUT-KARMA",
+   "in": 2044.88,
+   "out": 2125.68,
+   "start_words": "Another question that came up",
+   "end_words": "We're stuck with it",
+   "hook": [
+    "The biggest lie",
+    "about your karma"
+   ]
+  },
+  "ar_v6x6fvg/ALEX-JONES-FILMED-THE-REAL-MEETING": {
+   "plan": "ar_v6x6fvg",
+   "source": "v6x6fvg.mp4",
+   "brand": "AR_RECRUITED",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "ALEX-JONES-FILMED-THE-REAL-MEETING",
+   "in": 243.0,
+   "out": 303.0,
+   "start_words": "There's Bohemian Grove, which",
+   "end_words": "nobody dares talk about it",
+   "hook": [
+    "Alex Jones filmed",
+    "the real meeting."
+   ]
+  },
+  "ar_v6x6fvg/HIS-UNCLE-WAS-A-JEDI-MASTER": {
+   "plan": "ar_v6x6fvg",
+   "source": "v6x6fvg.mp4",
+   "brand": "AR_RECRUITED",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "HIS-UNCLE-WAS-A-JEDI-MASTER",
+   "in": 423.0,
+   "out": 467.0,
+   "start_words": "So in the Brotherhood",
+   "end_words": "I want you to do this",
+   "hook": [
+    "His uncle was",
+    "a Jedi master."
+   ]
+  },
+  "ar_v6x6fvg/HE-SAT-SILENT-AND-PLANTED-IDEAS": {
+   "plan": "ar_v6x6fvg",
+   "source": "v6x6fvg.mp4",
+   "brand": "AR_RECRUITED",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_HE-SAT-SILENT-AND-PLANTED-IDEAS_74s.mp4` - phrase scrambled around \"princesses and crown princesses,\""
+   ],
+   "slug": "HE-SAT-SILENT-AND-PLANTED-IDEAS",
+   "in": 540.0,
+   "out": 615.0,
+   "start_words": "I was flown around",
+   "end_words": "to a certain direction",
+   "hook": [
+    "He'd sit silent",
+    "and plant ideas."
+   ]
+  },
+  "ar_v6x6fvg/A-FIVE-YEAR-OLD-PLAYED-BEETHOVEN": {
+   "plan": "ar_v6x6fvg",
+   "source": "v6x6fvg.mp4",
+   "brand": "AR_RECRUITED",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_A-FIVE-YEAR-OLD-PLAYED-BEETHOVEN_82s.mp4` - opens mid-sentence on \"on occasion\""
+   ],
+   "slug": "A-FIVE-YEAR-OLD-PLAYED-BEETHOVEN",
+   "in": 627.0,
+   "out": 714.0,
+   "start_words": "And on occasion, there's",
+   "end_words": "And they're 10 years old",
+   "hook": [
+    "A five-year-old played",
+    "Beethoven. No lessons."
+   ]
+  },
+  "ar_v6xhs7q/THEY-NEVER-SHUT-DOWN-REMOTE-VIEWING": {
+   "plan": "ar_v6xhs7q",
+   "source": "v6xhs7q.mp4",
+   "brand": "AR_FAILSAFE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_THEY-NEVER-SHUT-DOWN-REMOTE-VIEWING_64s.mp4` - phrase scrambled around \"them and teaching them\""
+   ],
+   "slug": "THEY-NEVER-SHUT-DOWN-REMOTE-VIEWING",
+   "in": 98.0,
+   "out": 166.48,
+   "start_words": "Look, we know. We",
+   "end_words": "in the KGB",
+   "hook": [
+    "They never shut",
+    "down remote viewing."
+   ]
+  },
+  "ar_v6xhs7q/DISCREDIT-BANKRUPT-PRISON-IN-THAT-ORDER": {
+   "plan": "ar_v6xhs7q",
+   "source": "v6xhs7q.mp4",
+   "brand": "AR_FAILSAFE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_DISCREDIT-BANKRUPT-PRISON-IN-THAT-ORDER_154s.mp4` - phrase scrambled around \"their influence and their\"; phrase scrambled around \"their money and their\"; phrase scrambled around \"their power and their\""
+   ],
+   "slug": "DISCREDIT-BANKRUPT-PRISON-IN-THAT-ORDER",
+   "in": 894.8,
+   "out": 1051.2,
+   "start_words": "Why are you still",
+   "end_words": "10 years in a federal prison",
+   "hook": [
+    "Discredit. Bankrupt. Prison.",
+    "In that order."
+   ]
+  },
+  "ar_v6xhs7q/YOU-HAVE-INFINITE-UNLIMITED-POWER": {
+   "plan": "ar_v6xhs7q",
+   "source": "v6xhs7q.mp4",
+   "brand": "AR_FAILSAFE",
+   "tries": 1,
+   "why": [
+    "note AR_FAILSAFE/YOU-HAVE-INFINITE-UNLIMITED-POWER: ending kept on the planner's words 'dwells within you, as you' (cuts mid-sentence)",
+    "FAIL 01_YOU-HAVE-INFINITE-UNLIMITED-POWER_64s.mp4: [FAIL] 01_YOU-HAVE-INFINITE-UNLIMITED-POWER_64s.mp4           10 captions vs the sound  median -0.00s  worst-10% 0.82s  | words captioned 100%"
+   ],
+   "slug": "YOU-HAVE-INFINITE-UNLIMITED-POWER",
+   "in": 797.6,
+   "out": 860.16,
+   "start_words": "So what is the",
+   "end_words": "dwells within you, as you",
+   "hook": [
+    "You have infinite",
+    "unlimited power."
+   ]
+  },
+  "ar_v73yyiw/THREE-PERCENT-WROTE-IT-DOWN": {
+   "plan": "ar_v73yyiw",
+   "source": "v73yyiw.mp4",
+   "brand": "AR_OBSESSION",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_THREE-PERCENT-WROTE-IT-DOWN_120s.mp4` - phrase scrambled around \"with a pen with\""
+   ],
+   "slug": "THREE-PERCENT-WROTE-IT-DOWN",
+   "in": 2066.64,
+   "out": 2192.48,
+   "start_words": "This first started, there was a story",
+   "end_words": "into the physical universe",
+   "hook": [
+    "3% wrote it down.",
+    "Out-earned everyone."
+   ]
+  },
+  "ar_v73yyiw/BILLIONAIRES-DONT-MEDITATE": {
+   "plan": "ar_v73yyiw",
+   "source": "v73yyiw.mp4",
+   "brand": "AR_OBSESSION",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_BILLIONAIRES-DONT-MEDITATE_107s.mp4` - phrase scrambled around \"top of the top.\""
+   ],
+   "slug": "BILLIONAIRES-DONT-MEDITATE",
+   "in": 943.04,
+   "out": 1050.56,
+   "start_words": "Yeah, I was in",
+   "end_words": "on the next logical step",
+   "hook": [
+    "35 billionaires.",
+    "None of them meditate."
+   ]
+  },
+  "ar_v73yyiw/NOBODY-KNOWS-WHAT-THEY-WANT": {
+   "plan": "ar_v73yyiw",
+   "source": "v73yyiw.mp4",
+   "brand": "AR_OBSESSION",
+   "tries": 1,
+   "why": [
+    "drop AR_OBSESSION/NOBODY-KNOWS-WHAT-THEY-WANT: hook - opens on a vague riddle: \"Nobody knows what\""
+   ],
+   "slug": "NOBODY-KNOWS-WHAT-THEY-WANT",
+   "in": 1240.8,
+   "out": 1327.2,
+   "start_words": "Well, number one, people",
+   "end_words": "He knew exactly what he wanted",
+   "hook": [
+    "Nobody knows what",
+    "they actually want."
+   ]
+  },
+  "ar_v73yyiw/YOULL-SEE-IT-WHEN-YOU-BELIEVE": {
+   "plan": "ar_v73yyiw",
+   "source": "v73yyiw.mp4",
+   "brand": "AR_OBSESSION",
+   "tries": 1,
+   "why": [
+    "FAIL 01_YOULL-SEE-IT-WHEN-YOU-BELIEVE_79s.mp4: ends off the planned words: plan ends 'the universe will present the how', clip ends 'right now the universe will present'"
+   ],
+   "slug": "YOULL-SEE-IT-WHEN-YOU-BELIEVE",
+   "in": 2572.88,
+   "out": 2652.24,
+   "start_words": "You have to put",
+   "end_words": "the universe will present the how",
+   "hook": [
+    "You'll see it",
+    "when you believe."
+   ]
+  },
+  "ar_v74afc8_r2/HIDDEN-COMMAND-IN-DNA": {
+   "plan": "ar_v74afc8_r2",
+   "source": "v74afc8.mp4",
+   "brand": "AR_TONGUER2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_HIDDEN-COMMAND-IN-DNA_92s.mp4: [FAIL] 02_HIDDEN-COMMAND-IN-DNA_92s.mp4                       8 captions vs the sound  median +0.67s  worst-10% 0.96s  | words captioned 100%"
+   ],
+   "slug": "HIDDEN-COMMAND-IN-DNA",
+   "in": 627.0,
+   "out": 718.0,
+   "start_words": "So words have origins",
+   "end_words": "that we were trained in",
+   "hook": [
+    "That question was",
+    "a hidden command"
+   ]
+  },
+  "ar_v75l4i8_r2/BAD-NEWS-TRAVELS-FASTER-ON-PURPOSE": {
+   "plan": "ar_v75l4i8_r2",
+   "source": "v75l4i8.mp4",
+   "brand": "AR_DISCLOSURER2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_BAD-NEWS-TRAVELS-FASTER-ON-PURPOSE_125s.mp4: [FAIL] 02_BAD-NEWS-TRAVELS-FASTER-ON-PURPOSE_125s.mp4         9 captions vs the sound  median +0.09s  worst-10% 0.79s  | words captioned 100%  UNCAPTIONED SPEECH [(117.5, 119.8)]"
+   ],
+   "slug": "BAD-NEWS-TRAVELS-FASTER-ON-PURPOSE",
+   "in": 1181.46,
+   "out": 1313.58,
+   "start_words": "So we as",
+   "end_words": "travels a lot faster than good news",
+   "hook": [
+    "Bad news travels",
+    "faster on purpose"
+   ]
+  },
+  "ar_v76l9y0_r2/ONE-TENTH-THE-COST": {
+   "plan": "ar_v76l9y0_r2",
+   "source": "v76l9y0.mp4",
+   "brand": "AR_CANVASR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_ONE-TENTH-THE-COST_111s.mp4` - ends mid-thought on \"a greater benefit\"; sentence starts with no stop: \"adversity So\"; sentence starts with no stop: \"gold Look\""
+   ],
+   "slug": "ONE-TENTH-THE-COST",
+   "in": 1765.6,
+   "out": 1883.6,
+   "start_words": "So out of the",
+   "end_words": "is the seed of a greater benefit",
+   "hook": [
+    "He paid one-tenth",
+    "by refusing them"
+   ]
+  },
+  "ar_v76l9y0_r2/TAUGHT-MONEY-ISNT-SAFE": {
+   "plan": "ar_v76l9y0_r2",
+   "source": "v76l9y0.mp4",
+   "brand": "AR_CANVASR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_TAUGHT-MONEY-ISNT-SAFE_72s.mp4` - phrase scrambled around \"our DNA from our\""
+   ],
+   "slug": "TAUGHT-MONEY-ISNT-SAFE",
+   "in": 1329.6,
+   "out": 1402.6,
+   "start_words": "So that's kind of",
+   "end_words": "we may have counter intention",
+   "hook": [
+    "You were taught",
+    "money isn't safe"
+   ]
+  },
+  "ar_v76l9y0_r2/ABRACADABRA-CREATES": {
+   "plan": "ar_v76l9y0_r2",
+   "source": "v76l9y0.mp4",
+   "brand": "AR_CANVASR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_ABRACADABRA-CREATES_66s.mp4` - ends mid-thought on \"You\"; phrase scrambled around \"words So our words\"; sentence starts with no stop: \"creative What\""
+   ],
+   "slug": "ABRACADABRA-CREATES",
+   "in": 2534.6,
+   "out": 2600.6,
+   "start_words": "And it's all pep",
+   "end_words": "this amazing powerful tool",
+   "hook": [
+    "Abracadabra means",
+    "I create this"
+   ]
+  },
+  "ar_v76l9y0_r2/GRATITUDE-FIRST-IS-BACKWARDS": {
+   "plan": "ar_v76l9y0_r2",
+   "source": "v76l9y0.mp4",
+   "brand": "AR_CANVASR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_GRATITUDE-FIRST-IS-BACKWARDS_164s.mp4: [FAIL] 02_GRATITUDE-FIRST-IS-BACKWARDS_164s.mp4               10 captions vs the sound  median +0.31s  worst-10% 0.44s  | words captioned 100%"
+   ],
+   "slug": "GRATITUDE-FIRST-IS-BACKWARDS",
+   "in": 2658.6,
+   "out": 2822.6,
+   "start_words": "Can you just break",
+   "end_words": "have to have first",
+   "hook": [
+    "Gratitude first",
+    "is backwards"
+   ]
+  },
+  "ar_v76l9y0_r2/MISSED-MORE-THAN-ANYONE": {
+   "plan": "ar_v76l9y0_r2",
+   "source": "v76l9y0.mp4",
+   "brand": "AR_CANVASR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_MISSED-MORE-THAN-ANYONE_66s.mp4` - ends mid-thought on \"you a loser\"; sentence starts with no stop: \"ball Because\"; sentence starts with no stop: \"history But\""
+   ],
+   "slug": "MISSED-MORE-THAN-ANYONE",
+   "in": 1180.6,
+   "out": 1248.6,
+   "start_words": "And she says",
+   "end_words": "show you a loser",
+   "hook": [
+    "He missed more",
+    "than anyone ever"
+   ]
+  },
+  "ar_v7afnp8_r2/BLESSING-IN-DISGUISE": {
+   "plan": "ar_v7afnp8_r2",
+   "source": "v7afnp8.mp4",
+   "brand": "AR_PRAYERR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_BLESSING-IN-DISGUISE_94s.mp4` - ends mid-thought on \"out absolutely perfect\"; phrase scrambled around \"every adversity in every\"; phrase scrambled around \"every problem in every\""
+   ],
+   "slug": "BLESSING-IN-DISGUISE",
+   "in": 161.1,
+   "out": 243.7,
+   "start_words": "Maybe you're not supposed",
+   "end_words": "going to turn out absolutely perfect",
+   "hook": [
+    "Nothing bad happened",
+    "to you, ever"
+   ]
   }
  },
  "attempts": {
-  "ep_v733zpw": 6
+  "ep_v733zpw": 6,
+  "ar_v6r8c9a_r2": 1,
+  "ar_v6yeuyc": 1,
+  "ar_v70c41q_r2": 1,
+  "ar_v76xweu_r2": 1,
+  "ar_v77w5tc_r2": 1
  }
 }
