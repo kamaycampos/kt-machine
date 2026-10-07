@@ -7370,12 +7370,26 @@
    "caption": "Magicians have been telling you the truth this whole time.\n\nAbracadabra isn't gibberish. In ancient Persian it meant \"I now create with my words\" \u2014 the exact phrase magicians said before they made something appear. It wasn't a joke. It was an instruction.\n\nEvery word you speak is doing the same thing, quietly, all day. Your body changes chemically when you speak \u2014 hormones, blood pressure, even how hungry or awake you feel. You're not just talking. You're casting, constantly, without noticing.\n\nComment RISE and I'll send you the full teaching.\n\n#awakening #spirituality #ancientwisdom #consciousness #manifestation #kevintrudeau",
    "hook": "Your mouth is literally a spell",
    "bytes": 102106165,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202610072331453C41D4CC46520326C3DC'}}"
+   },
    "scheduled_at": "2026-10-07T19:25",
    "cta_keyword": "YES",
    "cta_variant": 5,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1077497801832325/",
+    "instagram": "https://www.instagram.com/reel/DeNiqFVgfeU/",
+    "youtube": "https://youtube.com/shorts/329mUiYdNSU"
+   },
+   "caption_at_post": "Magicians have been telling you the truth this whole time.\n\nAbracadabra isn't gibberish. In ancient Persian it meant \"I now create with my words\" \u2014 the exact phrase magicians said before they made something appear. It wasn't a joke. It was an instruction.\n\nEvery word you speak is doing the same thing, quietly, all day. Your body changes chemically when you speak \u2014 hormones, blood pressure, even how hungry or awake you feel. You're not just talking. You're casting, constantly, without noticing.\n\nComment RISE and I'll send you the full teaching.\n\n#awakening #spirituality #ancientwisdom #consciousness #manifestation #kevintrudeau",
+   "posted_at": "2026-10-07T19:31"
   },
   {
    "file": "KT_MEMORYR2/01_FIFTY-STATES-TEACHER-COMEBACK_123s.mp4",
