@@ -1,0 +1,38 @@
+{
+  "source": "v7d2lxy.mp4",
+  "brand": "KT_PUPPETR2",
+  "test": false,
+  "note": "7 Oct 2026 - second chances for 'The 3 Parts of Your Mind That Control Every Decision You Make' (Rumble v7d2lxy). Weekly agent, re-cut per PLANNING.md 2c. DRUG-DEALER-TO-1M-A-MONTH starts on a pause-anchored line for better caption timing. THE-POVERTY-WAVE-VS-THE-WEALTH-WAVE and WHY-YOU-BLOW-THE-BIG-DEAL both re-found their edges on complete sentences (WHY-YOU-BLOW-THE-BIG-DEAL now opens on the money/religion counter-intention example instead of the mid-sentence 'come home and'). Skipped three: THE-3-MINDS-THAT-CONTROL-YOU (the scrambled phrase sits inside the subconscious-mind definition, one of the three minds the clip promises - trimming it out breaks the premise); THE-GAP-BETWEEN-STIMULUS-RESPONSE (both laugh-tagged sentences are the clip's actual payoff - the Q&A 'why did you say it? Because you reacted' - and the line before them is a mid-quote that can't be cut cleanly); 5K-TO-8-MILLION-IN-18-MONTHS (this stretch of the source is a stitched montage of different readers' testimonials for Your Wish Is Your Command, not a single story - PLANNING.md says to end clips before testimonials, and this segment is nothing else).",
+  "clips": [
+    {
+      "slug": "DRUG-DEALER-TO-1M-A-MONTH",
+      "in": 126.0,
+      "out": 203.92,
+      "start_words": "You know, I'm going",
+      "end_words": "around me affecting me",
+      "hook": ["$1M a month,", "taught in prison"],
+      "caption": "Kevin Trudeau spent eight and a half years in prison for contempt of court - never charged with a crime. While he was there, he taught other inmates how to control their minds instead of reacting to everything around them.\n\nOne of those men was a drug dealer. He got out, cleaned up, and built an online business. Today he makes a million dollars a month.\n\nHis own words: it made him feel like Superman - in control of his life instead of controlled by it.\n\nWhat would you build if nothing could trigger you?\n\n#kevintrudeau #mindset #selfdiscipline #successstory #emotionalcontrol #wealthmindset",
+      "retry_of": "ep_v7d2lxy/DRUG-DEALER-TO-1M-A-MONTH"
+    },
+    {
+      "slug": "THE-POVERTY-WAVE-VS-THE-WEALTH-WAVE",
+      "in": 377.76,
+      "out": 425.76,
+      "start_words": "I want more money",
+      "end_words": "memory from this lifetime",
+      "hook": ["Why you feel", "a poverty headwind"],
+      "caption": "Kevin Trudeau says wealthy people's brains broadcast on a different wave - right between alpha and theta. He calls it the billionaire brainwave. Stay in beta too long, he says, and you're stuck broadcasting the poverty wave instead.\n\nHere's the part most people miss: wanting more money isn't enough if something invisible keeps pushing back. A headwind. A thousand pounds on your back for no reason you can name.\n\nKevin calls that counter intention - and until you clear it, the wanting alone won't move you anywhere.\n\nHave you ever felt that invisible resistance?\n\n#kevintrudeau #manifesting #lawofattraction #wealthmindset #subconsciousmind #mindset",
+      "retry_of": "ep_v7d2lxy/THE-POVERTY-WAVE-VS-THE-WEALTH-WAVE"
+    },
+    {
+      "slug": "WHY-YOU-BLOW-THE-BIG-DEAL",
+      "in": 450.4,
+      "out": 549.36,
+      "start_words": "You're saying, I want",
+      "end_words": "but you did it subconsciously",
+      "hook": ["Why you blow", "the big deal"],
+      "caption": "You land the deal. Then you get drunk the night before, show up late, and blow it. Why would you do that?\n\nKevin Trudeau calls it a counter intention - a subconscious program working against the very thing you say you want. It shows up with money too: want more, but your grandmother taught you money is the root of all evil, and now every dollar you make fights an invisible headwind.\n\nYou didn't do it on purpose. That's the problem - you did it without knowing.\n\nWhat program might be running underneath what you want?\n\n#kevintrudeau #mindset #selfsabotage #subconsciousmind #moneymindset #success",
+      "retry_of": "ep_v7d2lxy/WHY-YOU-BLOW-THE-BIG-DEAL"
+    }
+  ]
+}
