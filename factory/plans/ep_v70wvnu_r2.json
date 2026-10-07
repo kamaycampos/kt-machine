@@ -1,0 +1,68 @@
+{
+  "source": "v70wvnu.mp4",
+  "brand": "KT_TRIGGERR2",
+  "test": false,
+  "note": "7 Oct 2026 - second chances for 'The Hidden Force Running Your Life' (Rumble v70wvnu). Weekly agent, re-cut per PLANNING.md 2c. THE-HIDDEN-FORCE-RUNNING-YOU, NINE-YEARS-NOT-GRIEF, A-3D-CAMERA-ON-YOUR-MIND and THE-FOURTH-GRADE-PROOF moved their edges off the sparse/drifting captions that failed the gate. TWO-FUNERALS-ZERO-EMOTION was re-found on a real pause boundary (its old end ran on into the next sentence) and ends on 'that lasted for an hour' instead. THE-PUPPET-STRING starts earlier (more pause anchors) and now ends on the complete clause 'they control all your emotions' - the transcript truncates one sentence later, so that incomplete tail is no longer in the cut. SPILLED-WATER-MELTDOWN is skipped: its scrambled phrase ('and uncontrollable reaction and') sits at the exact pivot of the story (the trigger into the spouse's reaction) - trimming either side guts the teaching.",
+  "clips": [
+    {
+      "slug": "THE-HIDDEN-FORCE-RUNNING-YOU",
+      "in": 12.72,
+      "out": 77.76,
+      "start_words": "It's activating and triggering",
+      "end_words": "or engram comes from",
+      "hook": ["Why you snap", "and can't stop"],
+      "caption": "Something is pushing your buttons, and it isn't what you think.\n\nKevin Trudeau says one invisible force sits behind nearly every uncontrollable reaction: a trapped memory he calls a samskara, or energetic imprint. Nobody can watch their own mind working, which is why the trigger feels like it came from nowhere.\n\nHe claims he learned how the mind works by seeing inside someone else's: the mental pictures hiding under every overreaction.\n\nIf something keeps triggering you, is it about now, or a memory you never dealt with?\n\n#kevintrudeau #samskara #mindset #selfmastery #emotionalcontrol #personaldevelopment",
+      "retry_of": "ep_v70wvnu/THE-HIDDEN-FORCE-RUNNING-YOU"
+    },
+    {
+      "slug": "NINE-YEARS-NOT-GRIEF",
+      "in": 136.24,
+      "out": 198.88,
+      "start_words": "the facilitator said, tell",
+      "end_words": "it's coming to surface",
+      "hook": ["9 years later", "your pain remains"],
+      "caption": "A woman was in tears describing her mother, grieving so hard it looked fresh.\n\nKevin Trudeau says he watched it happen in a class: the woman was sure her loss had happened days ago. It had been nine years. The facilitator saw it instantly, but she had no idea her own mind was still replaying the same moment.\n\nThat's what an energetic imprint does. It's a trapped picture that reactivates the full emotion every time, undimmed by time.\n\nHow much of what you still feel is happening now, and how much is just an old picture firing again?\n\n#kevintrudeau #samskara #grief #mindset #emotionalhealing #selfmastery",
+      "retry_of": "ep_v70wvnu/NINE-YEARS-NOT-GRIEF"
+    },
+    {
+      "slug": "A-3D-CAMERA-ON-YOUR-MIND",
+      "in": 255.76,
+      "out": 323.6,
+      "start_words": "This is why the",
+      "end_words": "with emotions attached to it",
+      "hook": ["A 3D camera", "records you 24/7"],
+      "caption": "Kevin Trudeau says he once learned to see inside other people's minds, and what he found there changed everything.\n\nHe claims a different dimension let him watch a 3D camera that never turns off: every sight, sound and feeling gets recorded into what he calls the memory bank, around the clock. Not a photo. A full moving picture, with every emotion still attached.\n\nThe part most people never consider: nothing you've felt actually went anywhere. It's still running, waiting for the right trigger.\n\nWhat is still playing in your memory bank right now?\n\n#kevintrudeau #mindset #subconscious #memory #selfmastery #personaldevelopment",
+      "retry_of": "ep_v70wvnu/A-3D-CAMERA-ON-YOUR-MIND"
+    },
+    {
+      "slug": "TWO-FUNERALS-ZERO-EMOTION",
+      "in": 462.8,
+      "out": 557.76,
+      "start_words": "Kevin, let's talk about",
+      "end_words": "lasted for an hour",
+      "hook": ["2 funerals in prison", "Zero emotion"],
+      "caption": "Kevin Trudeau missed both of his parents' funerals, locked in prison for a crime he was never even charged with.\n\nHe describes being denied the chance to say goodbye, yet showing zero negative emotion through any of it. People around him assumed he'd shut down completely and asked if he was even human. His answer: he felt the loss, fully, for about an hour, then chose to remember the good instead of staying trapped in the pain.\n\nHe wasn't suppressing grief. He was refusing to let an old imprint keep controlling him after the feeling had done its job.\n\nCould you choose when your own pain gets to end?\n\n#kevintrudeau #prison #emotionalcontrol #mindset #grief #selfmastery",
+      "retry_of": "ep_v70wvnu/TWO-FUNERALS-ZERO-EMOTION"
+    },
+    {
+      "slug": "THE-FOURTH-GRADE-PROOF",
+      "in": 590.08,
+      "out": 655.52,
+      "start_words": "Sam Scarras only are in",
+      "end_words": "beyond this lifetime",
+      "hook": ["Why your 4th-grade", "memory controls you"],
+      "caption": "Kevin Trudeau claims he can point to the exact moment in your past still controlling you, and prove it on paper.\n\nHe describes naming a traumatic incident from someone's fourth grade year before they'd admit it happened. They avoided the memory as long as they could, until he wrote it down, showed them the paper, and they finally recognized it was true. He calls these trapped memories energetic imprints, and says some may form before birth.\n\nBelieve the claim or not: how many of your reactions trace back to something you never dealt with?\n\n#kevintrudeau #samskara #mindset #subconscious #selfmastery #personaldevelopment",
+      "retry_of": "ep_v70wvnu/THE-FOURTH-GRADE-PROOF"
+    },
+    {
+      "slug": "THE-PUPPET-STRING",
+      "in": 806.72,
+      "out": 882.96,
+      "start_words": "these are sam scars",
+      "end_words": "control all your emotions",
+      "hook": ["The puppet string", "controls your emotions"],
+      "caption": "Kevin Trudeau says almost nobody understands why they react the way they do, and that's how certain people want it kept.\n\nHe claims the mechanics of the mind were taught to him inside a secretive brotherhood, whose members keep it hidden on purpose: once you know which memory controls someone, activating it is enough to run their emotions like a puppet on a string. Clear the imprint, he says, and the string is gone.\n\nKnowing how you get triggered is the first step to no longer being pulled by it.\n\n#kevintrudeau #mindset #selfmastery #subconscious #personaldevelopment #emotionalcontrol",
+      "retry_of": "ep_v70wvnu/THE-PUPPET-STRING"
+    }
+  ]
+}
