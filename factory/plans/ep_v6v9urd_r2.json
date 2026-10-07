@@ -1,0 +1,78 @@
+{
+  "source": "v6v9urd.mp4",
+  "brand": "KT_MEMORYR2",
+  "test": false,
+  "note": "7 Oct 2026 - second chances for 'How To Remember Anything: The Story Behind The Mega Memory System' (Rumble v6v9urd). Weekly agent, re-cut per PLANNING.md 2c. WALL-STREET-500-RIVALS, NINE-HOURS-EIGHT-MONTHS-AHEAD and THE-GRIFFIN-BOOK moved their edges off the sparse/duplicated captions that failed the gate; FIFTY-STATES-TEACHER-COMEBACK, FLUNKING-TO-100-PERCENT, COUNTING-CARDS-250K-RENO and REMEMBERED-THE-BODYGUARD-200M kept their cuts and got rewritten hooks (the old ones were riddles with no concrete promise).",
+  "clips": [
+    {
+      "slug": "WALL-STREET-500-RIVALS",
+      "in": 283.68,
+      "out": 365.12,
+      "start_words": "The problem was 500",
+      "end_words": "it's costing you money",
+      "hook": ["Beat 500 rivals", "Won 3 promotions"],
+      "caption": "A caller once phoned a radio show just to thank Kevin Trudeau for his best business decision ever.\n\n500 people applied for the same Wall Street job. To stand apart, he memorized every interviewer's name, then all 1,500 NYSE companies and stock symbols.\n\nExecutives started pulling each other in just to watch him recall it live.\n\nHe got the job. Three promotions followed. He still isn't sure if people think he's smart, or just impossible to forget.\n\nWhat would one remembered detail do for your next interview?\n\n#kevintrudeau #memory #careeradvice #jobinterview #success #wealthmindset",
+      "retry_of": "ep_v6v9urd/WALL-STREET-500-RIVALS"
+    },
+    {
+      "slug": "NINE-HOURS-EIGHT-MONTHS-AHEAD",
+      "in": 379.36,
+      "out": 434.96,
+      "start_words": "If you say you've",
+      "end_words": "self-image and self-esteem",
+      "hook": ["8 months ahead", "for your kid"],
+      "caption": "Kevin Trudeau ran a real experiment on one ordinary seventh grade class.\n\nNine hours of memory training. Nothing else about their curriculum changed.\n\nBy the end of the year they were eight months ahead of schedule, averaging A-minus, and reading at a college sophomore's vocabulary level.\n\nThe strangest number wasn't the grades, though. It was attendance: almost zero absences, because the kids finally wanted to be at school.\n\nGrades tend to follow confidence, not the other way around.\n\n#kevintrudeau #memory #education #learning #confidence #mindset",
+      "retry_of": "ep_v6v9urd/NINE-HOURS-EIGHT-MONTHS-AHEAD"
+    },
+    {
+      "slug": "FIFTY-STATES-TEACHER-COMEBACK",
+      "in": 436.32,
+      "out": 563.2,
+      "start_words": "I was doing a live",
+      "end_words": "I guess you're just stupid",
+      "hook": ["How you could", "memorize 50 states"],
+      "caption": "A mother stood up in front of 500 people at one of Kevin Trudeau's seminars to tell this story.\n\nHer daughter failed a history exam so badly her teacher told her, in front of the whole class, that she must be stupid.\n\nThree days into a memory course, that same girl walked back into that classroom and recited all 50 states and capitals in order, backwards included.\n\nThen she looked her teacher in the eye and handed the insult back.\n\nConfidence came back before a single grade did. Which one shows up first for you?\n\n#kevintrudeau #memory #confidence #parenting #education #selfesteem",
+      "retry_of": "ep_v6v9urd/FIFTY-STATES-TEACHER-COMEBACK"
+    },
+    {
+      "slug": "FLUNKING-TO-100-PERCENT",
+      "in": 1377.28,
+      "out": 1462.0,
+      "start_words": "Let me tell you why",
+      "end_words": "teach all the administrative staff",
+      "hook": ["100% on exam", "after flunking calculus"],
+      "caption": "A college student walked into Kevin Trudeau's class with one request: I'm flunking calculus, can you help.\n\nHe couldn't hold equations in his head long enough to use them on an exam.\n\nOne lesson on memorizing formulas later, he scored 100 percent, the only student in the class to do it, in a tenth of the usual time.\n\nHis professor assumed he'd cheated and sent him to the principal's office. He walked out with an invite to train the staff instead.\n\nSometimes the fix isn't more study time, it's a better way to hold what you learned.\n\n#kevintrudeau #memory #studytips #college #learning #mindset",
+      "retry_of": "ep_v6v9urd/FLUNKING-TO-100-PERCENT"
+    },
+    {
+      "slug": "COUNTING-CARDS-250K-RENO",
+      "in": 1757.44,
+      "out": 1933.92,
+      "start_words": "I went to the casino",
+      "end_words": "too good for us",
+      "hook": ["What got him banned", "winning $250,000"],
+      "caption": "Kevin Trudeau says he once tested his memory against a casino, on purpose.\n\nSingle deck blackjack, no gimmicks: he tracked every card already played, calculated exactly what remained in the deck, and hit on 17 when the math said to, against basic strategy.\n\nAn hour later he'd won $250,000. Then two men tapped him on the shoulder.\n\nThe owner let him keep every dollar of it. He just banned him from the tables for being too good to beat.\n\nA mind that keeps score can outlast a pit boss.\n\n#kevintrudeau #memory #blackjack #casino #mindset #wealthmindset",
+      "retry_of": "ep_v6v9urd/COUNTING-CARDS-250K-RENO"
+    },
+    {
+      "slug": "THE-GRIFFIN-BOOK",
+      "in": 1940.8,
+      "out": 2012.8,
+      "start_words": "I'm in Australia a couple",
+      "end_words": "too good for us",
+      "hook": ["The Griffin Book", "banned him twice"],
+      "caption": "Years after his Reno win, Kevin Trudeau sat down at a blackjack table in Australia with General Norman Schwartzkopf.\n\nThe dealer dealt cards to the general. Not to him.\n\nWhen he asked why, the casino told him he was listed in something called the Griffin book: a registry of players who never cheat, but count well enough to get barred anyway.\n\nTwo countries, two casinos, the same verdict on the same memory.\n\nBeing the best player at the table isn't always the same as being welcome at it.\n\n#kevintrudeau #memory #casino #blackjack #mindset #success",
+      "retry_of": "ep_v6v9urd/THE-GRIFFIN-BOOK"
+    },
+    {
+      "slug": "REMEMBERED-THE-BODYGUARD-200M",
+      "in": 2334.88,
+      "out": 2442.56,
+      "start_words": "There was a guy",
+      "end_words": "That's real world stuff",
+      "hook": ["One remembered name", "$200 million deal"],
+      "caption": "Kevin Trudeau met Australian billionaire Rene Rifkin for maybe two minutes at a cocktail party.\n\nTwo days later, in a hotel elevator, Rifkin's bodyguard was standing just out of sight behind him.\n\nKevin greeted Rifkin and his assistant by name, then named the bodyguard too, a man he'd barely glimpsed once.\n\nRifkin was stunned enough to invite him home for dinner. That dinner turned into a business deal worth over $200 million.\n\nA name remembered can outperform a pitch rehearsed for weeks.\n\n#kevintrudeau #memory #networking #business #wealthmindset #success",
+      "retry_of": "ep_v6v9urd/REMEMBERED-THE-BODYGUARD-200M"
+    }
+  ]
+}
