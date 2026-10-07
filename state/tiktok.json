@@ -1,15 +1,25 @@
 {
- "at": "2026-10-06T22:47",
+ "at": "2026-10-07T06:25",
  "profile": {
-  "following_count": 8,
-  "likes_count": 5836,
-  "video_count": 164,
-  "follower_count": 412
+  "likes_count": 5846,
+  "video_count": 165,
+  "follower_count": 412,
+  "following_count": 8
  },
  "videos": {
+  "KT_FREQUENCY/02_ROCKEFELLERS-30-PERCENT-RULE_65s.mp4": {
+   "id": "7693694151665175822",
+   "view_count": 4,
+   "like_count": 1,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7693694151665175822?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 64,
+   "posted": "2026-10-06T23:03"
+  },
   "KT_MEMORY/01_CHICAGO-UNION-SAID-NO_86s.mp4": {
    "id": "7693574857245674765",
-   "view_count": 2,
+   "view_count": 4,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -69,7 +79,7 @@
   },
   "KT_LEDGER/02_LOST-27-MILLION-STILL-WON_160s.mp4": {
    "id": "7692503921260088590",
-   "view_count": 8,
+   "view_count": 10,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -79,7 +89,7 @@
   },
   "KT_LUCK/01_BILL-GATES-NUMBER-ONE-REASON-LUCK_110s.mp4": {
    "id": "7692426337788661005",
-   "view_count": 16,
+   "view_count": 17,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -89,7 +99,7 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 85,
+   "view_count": 90,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -179,7 +189,7 @@
   },
   "KT_MATH/02_HOW-TO-BREAK-A-HABIT-INSTANTLY_147s.mp4": {
    "id": "7690729994804268301",
-   "view_count": 3,
+   "view_count": 4,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -189,8 +199,8 @@
   },
   "KT_FREEDOM/02_WHAT-BILLIONAIRES-DO-DIFFERENTLY_151s.mp4": {
    "id": "7690688777131412750",
-   "view_count": 3,
-   "like_count": 0,
+   "view_count": 4,
+   "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7690688777131412750?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -489,8 +499,8 @@
   },
   "KT_MIND/07_TWO-SALESMEN-QUIT_145s.mp4": {
    "id": "7688069633349274894",
-   "view_count": 27,
-   "like_count": 3,
+   "view_count": 28,
+   "like_count": 4,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7688069633349274894?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -499,8 +509,8 @@
   },
   "KT_SECRET/05_NOT-THE-HAMBURGER-BUSINESS_124s.mp4": {
    "id": "7688020668356545806",
-   "view_count": 90,
-   "like_count": 2,
+   "view_count": 91,
+   "like_count": 3,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7688020668356545806?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -509,7 +519,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3662,
+   "view_count": 3664,
    "like_count": 153,
    "comment_count": 7,
    "share_count": 16,
@@ -609,8 +619,8 @@
   },
   "KT_DEBT/02_THE-ECONOMY-WAS-SLUGGISH_119s.mp4": {
    "id": "7686471838095969550",
-   "view_count": 234,
-   "like_count": 9,
+   "view_count": 235,
+   "like_count": 10,
    "comment_count": 2,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7686471838095969550?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -619,7 +629,7 @@
   },
   "KT_POS/01_01_NOT-ONE-BILLIONAIRE-SAID-IT_127s.mp4": {
    "id": "7685438259249351950",
-   "view_count": 481,
+   "view_count": 482,
    "like_count": 61,
    "comment_count": 4,
    "share_count": 4,
@@ -649,7 +659,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14108,
+   "view_count": 14109,
    "like_count": 867,
    "comment_count": 59,
    "share_count": 196,
@@ -689,8 +699,8 @@
   },
   "KT_POS/05_05_TWO-GROUPS-WHO-THINK-THEYRE-POSITIVE_166s.mp4": {
    "id": "7685558760319880462",
-   "view_count": 676,
-   "like_count": 77,
+   "view_count": 679,
+   "like_count": 78,
    "comment_count": 2,
    "share_count": 10,
    "share_url": "https://www.tiktok.com/@kt_student/video/7685558760319880462?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -699,7 +709,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38049,
+   "view_count": 38051,
    "like_count": 787,
    "comment_count": 27,
    "share_count": 171,
@@ -729,8 +739,8 @@
   },
   "KT_HOME/05_05_THE-SINGLE-MOST-POWERFUL-OBJECT_86s.mp4": {
    "id": "7685101409963871501",
-   "view_count": 1356,
-   "like_count": 102,
+   "view_count": 1358,
+   "like_count": 103,
    "comment_count": 4,
    "share_count": 9,
    "share_url": "https://www.tiktok.com/@kt_student/video/7685101409963871501?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -839,7 +849,7 @@
   },
   "KT_DEBT/06_THREE-CARDS-AT-ZERO_150s.mp4": {
    "id": "7683909645118803213",
-   "view_count": 476,
+   "view_count": 477,
    "like_count": 30,
    "comment_count": 1,
    "share_count": 0,
@@ -859,8 +869,8 @@
   },
   "KT_MED/10_MEDITATION-IS-NO-TRY_142s.mp4": {
    "id": "7683679889840540941",
-   "view_count": 13,
-   "like_count": 1,
+   "view_count": 14,
+   "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7683679889840540941?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -1019,7 +1029,7 @@
   },
   "unmatched/7681756121522097421": {
    "id": "7681756121522097421",
-   "view_count": 340,
+   "view_count": 341,
    "like_count": 24,
    "comment_count": 0,
    "share_count": 0,
@@ -1219,8 +1229,8 @@
   },
   "unmatched/7679249420302470414": {
    "id": "7679249420302470414",
-   "view_count": 270,
-   "like_count": 21,
+   "view_count": 271,
+   "like_count": 22,
    "comment_count": 1,
    "share_count": 4,
    "share_url": "https://www.tiktok.com/@kt_student/video/7679249420302470414?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -1249,8 +1259,8 @@
   },
   "unmatched/7679115645090401549": {
    "id": "7679115645090401549",
-   "view_count": 282,
-   "like_count": 22,
+   "view_count": 283,
+   "like_count": 23,
    "comment_count": 2,
    "share_count": 3,
    "share_url": "https://www.tiktok.com/@kt_student/video/7679115645090401549?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
