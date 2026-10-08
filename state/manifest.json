@@ -7542,12 +7542,26 @@
    "caption": "When he left the Brotherhood, two of the men who stayed behind were Henry Kissinger and Mikhail Gorbachev.\n\nThey wished him well. And then they told him, plainly, which secret he wasn't supposed to take with him \u2014 the single easiest lever they have for controlling the masses. Not a weapon. Not money. A part of the brain most people have never been taught to protect, let alone grow.\n\nThat's exactly why he's teaching it now, to anyone willing to listen.\n\nComment RISE and I'll send you what they didn't want you to know.\n\n#brotherhood #secretsociety #awakening #consciousness #thirdeye #kevintrudeau",
    "hook": "Kissinger and Gorbachev knew this secret.",
    "bytes": 37036433,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261008235400022061C4C02A22B0960B'}}"
+   },
    "scheduled_at": "2026-10-08T19:32",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1060109700188894/",
+    "instagram": "https://www.instagram.com/reel/DeQKG-ojJE3/",
+    "youtube": "https://youtube.com/shorts/LxJvrLCHb0M"
+   },
+   "caption_at_post": "When he left the Brotherhood, two of the men who stayed behind were Henry Kissinger and Mikhail Gorbachev.\n\nThey wished him well. And then they told him, plainly, which secret he wasn't supposed to take with him \u2014 the single easiest lever they have for controlling the masses. Not a weapon. Not money. A part of the brain most people have never been taught to protect, let alone grow.\n\nThat's exactly why he's teaching it now, to anyone willing to listen.\n\nComment RISE and I'll send you what they didn't want you to know.\n\n#brotherhood #secretsociety #awakening #consciousness #thirdeye #kevintrudeau",
+   "posted_at": "2026-10-08T19:54"
   },
   {
    "file": "AR_HIPPOCAMPUS/01_THE-COMPANY-ISNT-EVIL-GREED-IS_43s.mp4",
@@ -7700,11 +7714,24 @@
    "hook": "What to do when you're stuck",
    "bytes": 32253538,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "reels start failed: Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda. | feed fallback: upload failed 400: {'error': {'message': 'Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda.', 'type': 'OAuthException', 'code': 368, 'error_d",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-08T19:48",
    "cta_keyword": "KT",
    "cta_variant": 14,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeQKSqMDbgz/",
+    "youtube": "https://youtube.com/shorts/FfYjgqP5fG0"
+   },
+   "caption_at_post": "If something feels missing right now, Kevin Trudeau has one piece of advice: stop trying to name your mission.\n\nRelease the need to know it. Breathe. Come back to this exact moment, and just do the next logical step you can actually see - nothing further than that, nothing further than you need.\n\nMission and purpose, he says, were never real to begin with. Duty is the actual road, and it's the one that leads to everything you think is missing on the inside.\n\nWhat's the next logical step you've been avoiding?\n\n#kevintrudeau #dharma #mindset #purpose #motivation #selfimprovement",
+   "posted_at": "2026-10-08T19:56"
   },
   {
    "file": "KT_DUTYR2/02_PATTON-DID-IT-OUT-OF-DUTY_63s.mp4",
