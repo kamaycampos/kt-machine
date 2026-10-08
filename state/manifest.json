@@ -7736,11 +7736,24 @@
    "hook": "Why rich people's brains work differently",
    "bytes": 35215666,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "reels start failed: Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda. | feed fallback: upload failed 400: {'error': {'message': 'Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda.', 'type': 'OAuthException', 'code': 368, 'error_d",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-08T17:13",
    "cta_keyword": "BRAIN",
    "cta_variant": 13,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeP5_INEQfB/",
+    "youtube": "https://youtube.com/shorts/PIRiFn_xAWw"
+   },
+   "caption_at_post": "Kevin Trudeau says wealthy people's brains were tested on biofeedback machines, and what showed up wasn't random. Their brains broadcast alpha and theta most of the day, especially at the exact moment they're focused on something they want.\n\nTiming matters as much as intensity. It's not just being relaxed. It's being relaxed AND actively wanting something, at the same time.\n\nPeople who manifest quickly, he says, show something measurably different happening in their brain.\n\nCould the state you're in when you ask for something be the whole problem?\n\n#kevintrudeau #manifesting #lawofattraction #mindset #wealthmindset #subconsciousmind",
+   "posted_at": "2026-10-08T17:33"
   },
   {
    "file": "KT_FREQUENCYR2/02_THE-HIPPOCAMPUS-OF-THE-RICH_65s.mp4",
