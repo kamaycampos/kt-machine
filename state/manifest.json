@@ -7244,12 +7244,26 @@
    "caption": "The first time he ever met Mikhail Gorbachev, Gorbachev looked at him and said, I know you.\n\nThey'd never spoken. Never been in the same room. And Gorbachev said it anyway \u2014 we've always talked about you. The two of them became real friends after that, a relationship that lasted until Gorbachev's wife passed, and later Gorbachev himself.\n\nThe same remote-viewing ability that let him see inside a locked room from across the world is the same one Gorbachev had apparently been hearing about for years, from people neither of them had ever met in person.\n\nComment RISE and I'll send you the rest of the story.\n\n#brotherhood #secretsociety #disclosure #awakening #esoteric #kevintrudeau",
    "hook": "Gorbachev said, I already know you.",
    "bytes": 29242039,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-08T15:07",
    "cta_keyword": "RISE",
    "cta_variant": 9,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1424581702334729/",
+    "instagram": "https://www.instagram.com/reel/DePqU7rD1yt/",
+    "youtube": "https://youtube.com/shorts/X0QO0-a5S8Y"
+   },
+   "caption_at_post": "The first time he ever met Mikhail Gorbachev, Gorbachev looked at him and said, I know you.\n\nThey'd never spoken. Never been in the same room. And Gorbachev said it anyway \u2014 we've always talked about you. The two of them became real friends after that, a relationship that lasted until Gorbachev's wife passed, and later Gorbachev himself.\n\nThe same remote-viewing ability that let him see inside a locked room from across the world is the same one Gorbachev had apparently been hearing about for years, from people neither of them had ever met in person.\n\nComment RISE and I'll send you the rest of the story.\n\n#brotherhood #secretsociety #disclosure #awakening #esoteric #kevintrudeau",
+   "posted_at": "2026-10-08T15:18"
   },
   {
    "file": "AR_INSTINCTR2/02_THE-SALMON-KNEW-ITS-DNA_106s.mp4",
@@ -7635,11 +7649,24 @@
    "hook": "45% in 4 days 99% lose",
    "bytes": 77840085,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "reels start failed: Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda. | feed fallback: upload failed 400: {'error': {'message': 'Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda.', 'type': 'OAuthException', 'code': 368, 'error_d",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-08T14:59",
    "cta_keyword": "MONEY",
    "cta_variant": 12,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DePp8EsAXfq/",
+    "youtube": "https://youtube.com/shorts/XKdHz0lFJ7E"
+   },
+   "caption_at_post": "Kevin Trudeau walked into a casino and turned it into a 45% return in four days.\n\nHis rule, before he ever sat down: a win goal (the number he's leaving with), a loss limit (the number that makes him walk away), and a time limit. He hit one of the first two almost every single time - some days in six minutes.\n\nMeanwhile, he says most people in that casino walk out with nothing. Not because the game beat them. Because they never set a number to walk away at - winning or losing, they just keep playing until the money runs out.\n\nThe same rule works in the market. Do you have a number, or are you just hoping?\n\n#kevintrudeau #mindset #discipline #investing #wealthmindset #money",
+   "posted_at": "2026-10-08T15:14"
   },
   {
    "file": "KT_BITCOIN/02_LAUGHED-AT-APPLE-BOUGHT-ANYWAY_152s.mp4",
