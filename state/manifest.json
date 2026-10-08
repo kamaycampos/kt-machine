@@ -7491,7 +7491,11 @@
    "hook": "Face your fear. It vanishes.",
    "bytes": 49630676,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-09T20:06",
+   "cta_keyword": "RISE",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_HIPPOCAMPUS/01_BILLIONAIRES-BIGGER-BRAIN_48s.mp4",
@@ -7499,7 +7503,11 @@
    "hook": "A billionaire's brain is 50% bigger.",
    "bytes": 42146116,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-09T14:46",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_HIPPOCAMPUS/01_KISSINGER-AND-GORBACHEV-KNEW_41s.mp4",
@@ -7507,7 +7515,11 @@
    "hook": "Kissinger and Gorbachev knew this secret.",
    "bytes": 37036433,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-08T19:32",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_HIPPOCAMPUS/01_THE-COMPANY-ISNT-EVIL-GREED-IS_43s.mp4",
@@ -7515,7 +7527,11 @@
    "hook": "The company isn't evil. Greed is.",
    "bytes": 34120092,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-09T09:53",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_HIPPOCAMPUS/02_SCROLLING-SHRINKS-YOUR-BRAIN_83s.mp4",
@@ -7523,7 +7539,11 @@
    "hook": "Scrolling is shrinking your brain.",
    "bytes": 73375997,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-10T09:31",
+   "cta_keyword": "YES",
+   "cta_variant": 8,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_KARMAR2R2/02_THE-BIGGEST-LIE-ABOUT-KARMA_53s.mp4",
@@ -7531,7 +7551,11 @@
    "hook": "The biggest lie about your karma",
    "bytes": 31614398,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-10T12:51",
+   "cta_keyword": "RISE",
+   "cta_variant": 9,
+   "cta_kind": "question"
   },
   {
    "file": "AR_LUCK/01_WRONG-TURN-MET-A-BILLIONAIRE_80s.mp4",
@@ -7539,7 +7563,11 @@
    "hook": "Wrong turn. Met a billionaire.",
    "bytes": 72591869,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-09T11:52",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_OBSESSIONR2/02_YOULL-SEE-IT-WHEN-YOU-BELIEVE_87s.mp4",
@@ -7547,7 +7575,11 @@
    "hook": "You'll see it when you believe.",
    "bytes": 65669508,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-10T07:04",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 7,
+   "cta_kind": "question"
   },
   {
    "file": "AR_PRAYERFIX/01_A-KID-NEVER-WANTS-THE-SANDCASTLE_49s.mp4",
@@ -7555,7 +7587,11 @@
    "hook": "A kid never wants the sandcastle.",
    "bytes": 35669628,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-09T06:51",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_PRAYERFIX/02_EVEN-JESUS-PRAYED-IN-SECRET_69s.mp4",
@@ -7563,7 +7599,11 @@
    "hook": "Even Jesus prayed in secret.",
    "bytes": 50272489,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-10T15:23",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 10,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_RECRUITEDR2/01_HE-SAT-SILENT-AND-PLANTED-IDEAS_62s.mp4",
@@ -7571,7 +7611,11 @@
    "hook": "He didn't speak. He planted power.",
    "bytes": 62713073,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-09T18:09",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "AR_SAMSKARA/01_TWO-PERCENT-MORE-BENEFIT_36s.mp4",
@@ -7579,7 +7623,11 @@
    "hook": "You gain 2% for 3 hours.",
    "bytes": 20557768,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-10T17:55",
+   "cta_keyword": "YES",
+   "cta_variant": 11,
+   "cta_kind": "question"
   },
   {
    "file": "KT_BITCOIN/02_45-PERCENT-IN-4-DAYS_96s.mp4",
@@ -7587,7 +7635,11 @@
    "hook": "45% in 4 days 99% lose",
    "bytes": 77840085,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-08T14:59",
+   "cta_keyword": "MONEY",
+   "cta_variant": 12,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_BITCOIN/02_LAUGHED-AT-APPLE-BOUGHT-ANYWAY_152s.mp4",
@@ -7595,7 +7647,11 @@
    "hook": "How picking Apple made him rich",
    "bytes": 121767053,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-10T10:08",
+   "cta_keyword": "KT",
+   "cta_variant": 22,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_DUTYR2/01_WHAT-TO-DO-WHEN-YOURE-STUCK_47s.mp4",
@@ -7603,7 +7659,11 @@
    "hook": "What to do when you're stuck",
    "bytes": 32253538,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-08T19:48",
+   "cta_keyword": "KT",
+   "cta_variant": 14,
+   "cta_kind": "question"
   },
   {
    "file": "KT_DUTYR2/02_PATTON-DID-IT-OUT-OF-DUTY_63s.mp4",
@@ -7611,7 +7671,11 @@
    "hook": "Why duty beats loving your job",
    "bytes": 50520992,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-09T15:23",
+   "cta_keyword": "KT",
+   "cta_variant": 18,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_EXPOSED/01_SLEEPING-ON-A-NAIL_103s.mp4",
@@ -7620,7 +7684,10 @@
    "bytes": 33176210,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-10T07:13",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 21
   },
   {
    "file": "KT_FREQUENCYR2/01_WHY-RICH-BRAINS-WORK-DIFFERENTLY_51s.mp4",
@@ -7628,7 +7695,11 @@
    "hook": "Why rich people's brains work differently",
    "bytes": 35215666,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-08T17:13",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 13,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_FREQUENCYR2/02_THE-HIPPOCAMPUS-OF-THE-RICH_65s.mp4",
@@ -7636,7 +7707,11 @@
    "hook": "The brain part wealthy people grow",
    "bytes": 40963158,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-09T07:58",
+   "cta_keyword": "WISH",
+   "cta_variant": 15,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_INSIDER/01_YOUR-5-FRIENDS-DECIDE-YOUR-INCOME_80s.mp4",
@@ -7644,7 +7719,11 @@
    "hook": "Your 5 friends decide your income",
    "bytes": 60452205,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-09T20:28",
+   "cta_keyword": "MONEY",
+   "cta_variant": 20,
+   "cta_kind": "question"
   },
   {
    "file": "KT_MISSINGR2/01_THE-BRAINWAVE-ONLY-THE-RICH-USE_149s.mp4",
@@ -7653,7 +7732,10 @@
    "bytes": 97418785,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-09T09:41",
+   "cta_keyword": "MONEY",
+   "cta_variant": 16
   },
   {
    "file": "KT_RELEASE/02_CARE-BUT-NOT-THAT-MUCH_48s.mp4",
@@ -7661,7 +7743,11 @@
    "hook": "Why caring less makes you happier",
    "bytes": 32211830,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-09T17:08",
+   "cta_keyword": "WISH",
+   "cta_variant": 19,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_TRIGGERR2/02_TWO-FUNERALS-ZERO-EMOTION_95s.mp4",
@@ -7669,7 +7755,11 @@
    "hook": "2 funerals in prison Zero emotion",
    "bytes": 90441209,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-09T12:56",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 17,
+   "cta_kind": "question"
   }
  ]
 }
