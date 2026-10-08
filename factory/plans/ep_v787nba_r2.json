@@ -1,0 +1,58 @@
+{
+ "source": "v787nba.mp4",
+ "brand": "KT_DUTYR2",
+ "test": false,
+ "note": "7 Oct 2026 - second chances for 'Your Purpose is a Lie: The Ancient Truth You're Missing' (Rumble v787nba). Weekly agent, PLANNING.md step 2c. AN-AGREEMENT-FROM-A-PAST-LIFE: too few pause-anchored captions - end moved to the next sentence boundary ('...connectedness. That's not how it works.') to give the sync check more to work with. PATTON-DID-IT-OUT-OF-DUTY: same cut, hook rewritten to open on 'Why' instead of 'The difference...' (was 801px, over the safe zone). FIGHT-YOUR-OWN-FAMILY: both edges moved to the next sentence boundaries - opens on 'Arjuna went out into the battlefield' (a sharper, more pictureable opening than 'Krishna was the charioteer') and ends on Krishna's actual command rather than Kevin's framing line; hook also rewritten (added 'your family') since the current check_plan.py stakes rule (added 5 Oct, after this plan was written 1 Oct) now fails the old hook. THE-EMPLOYEE-WHO-BECAME-A-CARPENTER: was ending mid-thought on 'But remember,' - end moved forward to where that thought resolves, which lands exactly where WHAT-TO-DO-WHEN-YOURE-STUCK used to start; hook also rewritten for the same now-enforced stakes rule. WHAT-TO-DO-WHEN-YOURE-STUCK: start moved to the next sentence boundary so the two clips no longer open on the same cut point. All five recut; none skipped. NOTE: PURPOSE-IS-THE-WRONG-WORD in the original ep_v787nba.json plan (not a second chance, already live) would also fail the current stakes rule - flagging per PLANNING.md step 7, not touching it since it is outside this run's second-chance list.",
+ "clips": [
+  {
+   "slug": "AN-AGREEMENT-FROM-A-PAST-LIFE",
+   "in": 88.08,
+   "out": 167.92,
+   "start_words": "Dharma is nothing that",
+   "end_words": "That's not how it works",
+   "hook": ["What you agreed to", "before birth"],
+   "retry_of": "ep_v787nba/AN-AGREEMENT-FROM-A-PAST-LIFE",
+   "caption": "Before you ever showed up here, Kevin Trudeau says you made a decision nobody forced on you.\n\nNot a mission handed down from somewhere else. An agreement you made with yourself, in a previous existence, about what you would do while you were here. No one else signed it - there was no one else to sign it with.\n\nThe only way to keep that agreement is to live it out, day by day, duty by duty.\n\nHere's the strange part: the moment you do, the hunger for \"purpose\" disappears on its own.\n\nWhat agreement do you think you made?\n\n#kevintrudeau #dharma #pastlife #purpose #mindset #manifesting"
+  },
+  {
+   "slug": "PATTON-DID-IT-OUT-OF-DUTY",
+   "in": 671.2,
+   "out": 737.52,
+   "start_words": "How does someone know",
+   "end_words": "but you embrace it",
+   "hook": ["Why duty beats", "loving your job"],
+   "retry_of": "ep_v787nba/PATTON-DID-IT-OUT-OF-DUTY",
+   "caption": "Two generals, same war, two completely different reasons for showing up.\n\nKevin Trudeau tells the real story, pulled from the diaries, not just the movie script: General Bradley told Patton, in effect, I do this job because it's my duty - you do it because you love it.\n\nThat's the whole difference between duty and passion. One is the agreement you keep no matter what. The other is a bonus you don't need in order to keep it.\n\nYou don't have to love your duty. You just have to follow it.\n\nWhich one is actually driving you right now?\n\n#kevintrudeau #patton #duty #mindset #discipline #dharma"
+  },
+  {
+   "slug": "FIGHT-YOUR-OWN-FAMILY",
+   "in": 788.0,
+   "out": 857.2,
+   "start_words": "Arjuna went out into",
+   "end_words": "killing the people in front of you",
+   "hook": ["Why duty means fighting", "your family"],
+   "retry_of": "ep_v787nba/FIGHT-YOUR-OWN-FAMILY",
+   "caption": "Imagine lining up for battle and realizing the other side is your own teachers, cousins and friends.\n\nThat is the position Arjuna was in, in the ancient story of the Bhagavad Gita that Kevin Trudeau uses to explain duty at its most extreme. Arjuna wanted to walk away. Krishna's answer was blunt: what is your dharma? You are a warrior - fighting is your duty.\n\nFollow it, Krishna told him, and you stay in alignment even when the duty is unbearable.\n\nMost of us will never face a choice that heavy, but the lesson holds at any size: do the duty in front of you, even the part you don't want.\n\n#kevintrudeau #bhagavadgita #dharma #duty #mindset #ancientwisdom"
+  },
+  {
+   "slug": "THE-EMPLOYEE-WHO-BECAME-A-CARPENTER",
+   "in": 942.16,
+   "out": 1050.08,
+   "start_words": "How do you follow",
+   "end_words": "that life can give you",
+   "hook": ["Why bliss is", "still your duty"],
+   "retry_of": "ep_v787nba/THE-EMPLOYEE-WHO-BECAME-A-CARPENTER",
+   "caption": "You don't have to pick between your duty and what makes you happy.\n\nKevin Trudeau's example: a man has a duty to be a good employee, and - the part people miss - a duty to also follow his bliss, which for him means starting his own carpentry business. He doesn't ghost his boss. He resigns properly, keeps every agreement, then starts the thing he actually wants.\n\nThat's what lets him keep his self-image as honest and trustworthy, which opens the door to everything else.\n\nCan you follow your duty and your bliss at the same time?\n\n#kevintrudeau #dharma #duty #career #mindset #entrepreneurship"
+  },
+  {
+   "slug": "WHAT-TO-DO-WHEN-YOURE-STUCK",
+   "in": 1058.32,
+   "out": 1104.88,
+   "start_words": "Release a need to know",
+   "end_words": "missing on the inside",
+   "hook": ["What to do", "when you're stuck"],
+   "retry_of": "ep_v787nba/WHAT-TO-DO-WHEN-YOURE-STUCK",
+   "caption": "If something feels missing right now, Kevin Trudeau has one piece of advice: stop trying to name your mission.\n\nRelease the need to know it. Breathe. Come back to this exact moment, and just do the next logical step you can actually see - nothing further than that, nothing further than you need.\n\nMission and purpose, he says, were never real to begin with. Duty is the actual road, and it's the one that leads to everything you think is missing on the inside.\n\nWhat's the next logical step you've been avoiding?\n\n#kevintrudeau #dharma #mindset #purpose #motivation #selfimprovement"
+  }
+ ]
+}
