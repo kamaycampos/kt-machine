@@ -1,0 +1,28 @@
+{
+ "source": "v6wjkyq.mp4",
+ "brand": "AR_KARMAR2R2",
+ "test": false,
+ "note": "8 Oct 2026 - 'How Karma Really Works (And How the Elites Use it)' (Rumble v6wjkyq). Awakened Rise weekly agent. SECOND CHANCE re-cut (6 Oct 2026 gate failures). COMMANDMENTS-WERE-KARMA: the previous try's start time landed on the entry boundary instead of the quoted line it was meant to open on, so the clip actually opened mid-sentence on 'safer,' - the start is moved to where 'How do we instill' is really spoken. THE-BIGGEST-LIE-ABOUT-KARMA: the same uncaptioned-speech gap (~2104-2106s) survived a first edge shift, so this cut starts after it instead of crossing it, and runs on to the fuller payoff ('karma is cause and effect... you created it'). FIFTY-PERCENT-MORE-SALES skipped: both scrambled phrases sit inside the one passage that proves the story's claim (identical mailings, different results) and can't be cut around without losing the point.",
+ "clips": [
+  {
+   "slug": "COMMANDMENTS-WERE-KARMA",
+   "in": 1774.5,
+   "out": 1867.36,
+   "start_words": "How do we instill",
+   "end_words": "if you break the rule",
+   "hook": ["Commandments were karma", "sold as fear"],
+   "caption": "Nobody in that crowd understood why stealing was wrong. So they were given a reason that would actually work.\n\nPicture the meeting: a room full of people who'd never been told not to take their neighbor's cow. \"Because it's wrong\" meant nothing to them. \"Because you'll be struck down\" meant everything.\n\nThat's where the commandments came from — karma, repackaged as consequence, aimed at people with no other reason to behave. The fear was the delivery system. The mechanism underneath it was real.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#karma #disclosure #spirituality #ancientwisdom #awakening #kevintrudeau",
+   "retry_of": "ar_v6wjkyq_r2/COMMANDMENTS-WERE-KARMA"
+  },
+  {
+   "slug": "THE-BIGGEST-LIE-ABOUT-KARMA",
+   "in": 2109.2,
+   "out": 2162.0,
+   "start_words": "The best time to",
+   "end_words": "what you put out first",
+   "hook": ["The biggest lie", "about your karma"],
+   "caption": "The biggest lie about karma isn't a mystical one. It's the one that tells you it's already decided.\n\nIt's believing you're stuck with it — that whatever happened 20 years ago, 50 years ago, ten lifetimes ago, has already written the ending, and there's nothing left to do about it now.\n\nThe best time to create good karma was decades ago. The second best time is today. Karma is just cause and effect: what's happening in your life right now, you created it. Take responsibility for it instead of blaming other people, and what's coming back to you starts to change.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#karma #mindset #awakening #spirituality #manifestation #kevintrudeau",
+   "retry_of": "ar_v6wjkyq_r2/THE-BIGGEST-LIE-ABOUT-KARMA"
+  }
+ ]
+}
