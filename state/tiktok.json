@@ -1,12 +1,22 @@
 {
- "at": "2026-10-08T14:00",
+ "at": "2026-10-08T23:32",
  "profile": {
   "follower_count": 412,
   "following_count": 8,
-  "likes_count": 5846,
-  "video_count": 165
+  "likes_count": 5845,
+  "video_count": 166
  },
  "videos": {
+  "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
+   "id": "7694313777382182157",
+   "view_count": 1,
+   "like_count": 1,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@kt_student/video/7694313777382182157?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 75,
+   "posted": "2026-10-08T15:07"
+  },
   "KT_FREQUENCY/02_ROCKEFELLERS-30-PERCENT-RULE_65s.mp4": {
    "id": "7693694151665175822",
    "view_count": 9,
@@ -39,7 +49,7 @@
   },
   "KT_SPIRITUAL/02_WHY-LOSING-IT-ALL-DIDNT-HURT_70s.mp4": {
    "id": "7692625004940250381",
-   "view_count": 3,
+   "view_count": 4,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -99,7 +109,7 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 95,
+   "view_count": 103,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -179,7 +189,7 @@
   },
   "unmatched/7690766787335474446": {
    "id": "7690766787335474446",
-   "view_count": 14,
+   "view_count": 18,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -189,7 +199,7 @@
   },
   "KT_MATH/02_HOW-TO-BREAK-A-HABIT-INSTANTLY_147s.mp4": {
    "id": "7690729994804268301",
-   "view_count": 4,
+   "view_count": 5,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -449,7 +459,7 @@
   },
   "KT_SECRET/04_NINE-TO-FIVE-BILLIONAIRE_120s.mp4": {
    "id": "7688427490800405774",
-   "view_count": 34,
+   "view_count": 35,
    "like_count": 4,
    "comment_count": 0,
    "share_count": 0,
@@ -519,8 +529,8 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3664,
-   "like_count": 153,
+   "view_count": 3665,
+   "like_count": 152,
    "comment_count": 7,
    "share_count": 16,
    "share_url": "https://www.tiktok.com/@kt_student/video/7687831766358428941?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -659,7 +669,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14113,
+   "view_count": 14114,
    "like_count": 867,
    "comment_count": 59,
    "share_count": 196,
@@ -709,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38060,
+   "view_count": 38065,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
@@ -819,7 +829,7 @@
   },
   "KT_RICH/03_03_WHAT-A-ROOM-OF-BROKE-PEOPLE-DOES_50s.mp4": {
    "id": "7684360053482081549",
-   "view_count": 454,
+   "view_count": 455,
    "like_count": 48,
    "comment_count": 2,
    "share_count": 6,
@@ -899,7 +909,7 @@
   },
   "unmatched/7683583423298014478": {
    "id": "7683583423298014478",
-   "view_count": 3,
+   "view_count": 4,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -1209,7 +1219,7 @@
   },
   "unmatched/7679507079249333518": {
    "id": "7679507079249333518",
-   "view_count": 268,
+   "view_count": 269,
    "like_count": 18,
    "comment_count": 0,
    "share_count": 2,
@@ -1279,7 +1289,7 @@
   },
   "unmatched/7679028922297666830": {
    "id": "7679028922297666830",
-   "view_count": 613,
+   "view_count": 614,
    "like_count": 28,
    "comment_count": 0,
    "share_count": 1,
