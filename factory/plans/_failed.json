@@ -2734,6 +2734,1032 @@
     "One remembered name",
     "$200 million deal"
    ]
+  },
+  "ar_v6p4et6/BILL-GATES-SAID-IT-WAS-LUCK": {
+   "plan": "ar_v6p4et6",
+   "source": "v6p4et6.mp4",
+   "brand": "AR_LUCK",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_BILL-GATES-SAID-IT-WAS-LUCK_123s.mp4` - ends mid-thought on \"So\"; phrase scrambled around \"King show Larry King\"; phrase scrambled around \"Larry King show Larry\""
+   ],
+   "slug": "BILL-GATES-SAID-IT-WAS-LUCK",
+   "in": 332.6,
+   "out": 461.88,
+   "start_words": "All these successful people",
+   "end_words": "I saw the vision",
+   "hook": [
+    "Bill Gates said",
+    "it was luck"
+   ]
+  },
+  "ar_v6p4et6/HE-SAW-A-FOREST": {
+   "plan": "ar_v6p4et6",
+   "source": "v6p4et6.mp4",
+   "brand": "AR_LUCK",
+   "tries": 1,
+   "why": [
+    "FAIL 01_HE-SAW-A-FOREST_60s.mp4: ends off the planned words: plan ends 'to a forest Depth of vision', clip ends 'which can lead to a forest'"
+   ],
+   "slug": "HE-SAW-A-FOREST",
+   "in": 567.2,
+   "out": 628.72,
+   "start_words": "What is depth of",
+   "end_words": "to a forest Depth of vision",
+   "hook": [
+    "Same acorn.",
+    "You see a tree."
+   ]
+  },
+  "ar_v6p4et6/WHAT-YOU-WANT-WANTS-YOU": {
+   "plan": "ar_v6p4et6",
+   "source": "v6p4et6.mp4",
+   "brand": "AR_LUCK",
+   "tries": 1,
+   "why": [
+    "drop AR_LUCK/WHAT-YOU-WANT-WANTS-YOU: hook - announces a topic instead of making a claim: \"What you want\" - cut the first word"
+   ],
+   "slug": "WHAT-YOU-WANT-WANTS-YOU",
+   "in": 883.0,
+   "out": 934.36,
+   "start_words": "If you come to",
+   "end_words": "then change your luck",
+   "hook": [
+    "What you want",
+    "wants you back"
+   ]
+  },
+  "ar_v6rykax/YOUR-PRAYERS-ARE-ALWAYS-HEARD": {
+   "plan": "ar_v6rykax",
+   "source": "v6rykax.mp4",
+   "brand": "AR_PRAYERFIX",
+   "tries": 1,
+   "why": [
+    "FAIL 01_YOUR-PRAYERS-ARE-ALWAYS-HEARD_40s.mp4: [FAIL] 01_YOUR-PRAYERS-ARE-ALWAYS-HEARD_40s.mp4               10 captions vs the sound  median +0.09s  worst-10% 1.16s  | words captioned 100%"
+   ],
+   "slug": "YOUR-PRAYERS-ARE-ALWAYS-HEARD",
+   "in": 285.0,
+   "out": 328.0,
+   "start_words": "When you pray properly",
+   "end_words": "This takes faith and trust",
+   "hook": [
+    "Your prayers are",
+    "always heard."
+   ]
+  },
+  "ar_v6rykax/80-PERCENT-RECOVERY-ANY-GOD-WORKED": {
+   "plan": "ar_v6rykax",
+   "source": "v6rykax.mp4",
+   "brand": "AR_PRAYERFIX",
+   "tries": 1,
+   "why": [
+    "FAIL 02_80-PERCENT-RECOVERY-ANY-GOD-WORKED_127s.mp4: [FAIL] 02_80-PERCENT-RECOVERY-ANY-GOD-WORKED_127s.mp4         20 captions vs the sound  median +0.24s  worst-10% 0.91s  | words captioned 101%"
+   ],
+   "slug": "80-PERCENT-RECOVERY-ANY-GOD-WORKED",
+   "in": 345.0,
+   "out": 472.0,
+   "start_words": "one of the greatest studies",
+   "end_words": "it's quantum physics",
+   "hook": [
+    "80% recovery rate.",
+    "Any god worked."
+   ]
+  },
+  "ar_v6rykax/HE-THANKED-GOD-FOR-PRISON": {
+   "plan": "ar_v6rykax",
+   "source": "v6rykax.mp4",
+   "brand": "AR_PRAYERFIX",
+   "tries": 1,
+   "why": [
+    "FAIL 01_HE-THANKED-GOD-FOR-PRISON_89s.mp4: [FAIL] 01_HE-THANKED-GOD-FOR-PRISON_89s.mp4                   15 captions vs the sound  median +0.05s  worst-10% 0.98s  | words captioned 100%"
+   ],
+   "slug": "HE-THANKED-GOD-FOR-PRISON",
+   "in": 483.0,
+   "out": 574.0,
+   "start_words": "No, my friends, your",
+   "end_words": "follow my purpose and mission",
+   "hook": [
+    "He thanked God for",
+    "prison."
+   ]
+  },
+  "ar_v6rykax/99-PERCENT-IS-OFF-YOUR-RADAR": {
+   "plan": "ar_v6rykax",
+   "source": "v6rykax.mp4",
+   "brand": "AR_PRAYERFIX",
+   "tries": 1,
+   "why": [
+    "FAIL 02_99-PERCENT-IS-OFF-YOUR-RADAR_42s.mp4: ends off the planned words: plan ends 'miracles will happen in your life', clip ends 'it in miracles will happen in'"
+   ],
+   "slug": "99-PERCENT-IS-OFF-YOUR-RADAR",
+   "in": 584.0,
+   "out": 630.0,
+   "start_words": "don't think your prayers",
+   "end_words": "miracles will happen in your life",
+   "hook": [
+    "99% is off",
+    "your radar screen."
+   ]
+  },
+  "ar_v6sfb21/SAMSKARAS-BLOCKING-YOUR-LIFE": {
+   "plan": "ar_v6sfb21",
+   "source": "v6sfb21.mp4",
+   "brand": "AR_SAMSKARA",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_SAMSKARAS-BLOCKING-YOUR-LIFE_49s.mp4` - ends mid-thought on \"in life\"; phrase scrambled around \"an engram It's an\"; sentence starts with no stop: \"life So\""
+   ],
+   "slug": "SAMSKARAS-BLOCKING-YOUR-LIFE",
+   "in": 96.0,
+   "out": 151.0,
+   "start_words": "The main purpose of meditating",
+   "end_words": "preventing you from getting what you want",
+   "hook": [
+    "It's blocking your",
+    "life, 24/7."
+   ]
+  },
+  "ar_v6sfb21/OSHO-97-ROLLS-ROYCES": {
+   "plan": "ar_v6sfb21",
+   "source": "v6sfb21.mp4",
+   "brand": "AR_SAMSKARA",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "OSHO-97-ROLLS-ROYCES",
+   "in": 291.0,
+   "out": 338.0,
+   "start_words": "Osho, a lot of people",
+   "end_words": "changed his name to Osho",
+   "hook": [
+    "He owned 97",
+    "Rolls Royces."
+   ]
+  },
+  "ar_v6sfb21/EVEN-SEX-BECOMES-MEDITATION": {
+   "plan": "ar_v6sfb21",
+   "source": "v6sfb21.mp4",
+   "brand": "AR_SAMSKARA",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "EVEN-SEX-BECOMES-MEDITATION",
+   "in": 386.0,
+   "out": 468.0,
+   "start_words": "how often do you meditate",
+   "end_words": "making love you are meditating",
+   "hook": [
+    "Even sex becomes",
+    "meditation eventually."
+   ]
+  },
+  "ar_v6sfb21/SANDBAGS-ARE-TIED-TO-YOU": {
+   "plan": "ar_v6sfb21",
+   "source": "v6sfb21.mp4",
+   "brand": "AR_SAMSKARA",
+   "tries": 1,
+   "why": [
+    "FAIL 01_SANDBAGS-ARE-TIED-TO-YOU_60s.mp4: [FAIL] 01_SANDBAGS-ARE-TIED-TO-YOU_60s.mp4                    37 captions vs the sound (word-referenced: no clear pauses)  median +0.49s  worst-10% 0.82s  | words captioned 100%"
+   ],
+   "slug": "SANDBAGS-ARE-TIED-TO-YOU",
+   "in": 489.0,
+   "out": 552.0,
+   "start_words": "imagine a hot air balloon",
+   "end_words": "the same thing with spirituality",
+   "hook": [
+    "You have sandbags",
+    "tied to you."
+   ]
+  },
+  "ar_v6sfb21/YOU-CANT-SIT-STILL-ANYMORE": {
+   "plan": "ar_v6sfb21",
+   "source": "v6sfb21.mp4",
+   "brand": "AR_SAMSKARA",
+   "tries": 1,
+   "why": [
+    "FAIL 01_YOU-CANT-SIT-STILL-ANYMORE_72s.mp4: [FAIL] 01_YOU-CANT-SIT-STILL-ANYMORE_72s.mp4                  5 captions vs the sound  median +1.38s  worst-10% 2.25s  | words captioned 99%"
+   ],
+   "slug": "YOU-CANT-SIT-STILL-ANYMORE",
+   "in": 599.0,
+   "out": 674.0,
+   "start_words": "the fact that you are restless",
+   "end_words": "need meditation more than anything",
+   "hook": [
+    "You can't sit",
+    "still anymore."
+   ]
+  },
+  "ar_v6sfb21/RAGE-ISNT-ANGER-ITS-A-BUTTON": {
+   "plan": "ar_v6sfb21",
+   "source": "v6sfb21.mp4",
+   "brand": "AR_SAMSKARA",
+   "tries": 1,
+   "why": [
+    "FAIL 02_RAGE-ISNT-ANGER-ITS-A-BUTTON_53s.mp4: [FAIL] 02_RAGE-ISNT-ANGER-ITS-A-BUTTON_53s.mp4                30 captions vs the sound (word-referenced: no clear pauses)  median +0.45s  worst-10% 1.12s  | words captioned 100%"
+   ],
+   "slug": "RAGE-ISNT-ANGER-ITS-A-BUTTON",
+   "in": 747.0,
+   "out": 805.0,
+   "start_words": "if somebody walks up to you",
+   "end_words": "one of your buttons are being pushed",
+   "hook": [
+    "That's not anger.",
+    "It's your button."
+   ]
+  },
+  "ar_v6wjkyq_r3/COMMANDMENTS-WERE-KARMA": {
+   "plan": "ar_v6wjkyq_r3",
+   "source": "v6wjkyq.mp4",
+   "brand": "AR_KARMAR2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_COMMANDMENTS-WERE-KARMA_90s.mp4: [FAIL] 01_COMMANDMENTS-WERE-KARMA_90s.mp4                     17 captions vs the sound  median +0.10s  worst-10% 0.84s  | words captioned 100%"
+   ],
+   "slug": "COMMANDMENTS-WERE-KARMA",
+   "in": 1774.5,
+   "out": 1867.36,
+   "start_words": "How do we instill",
+   "end_words": "if you break the rule",
+   "hook": [
+    "Commandments were karma",
+    "sold as fear"
+   ]
+  },
+  "ar_v6x6fvg_r2/A-FIVE-YEAR-OLD-PLAYED-BEETHOVEN": {
+   "plan": "ar_v6x6fvg_r2",
+   "source": "v6x6fvg.mp4",
+   "brand": "AR_RECRUITEDR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_A-FIVE-YEAR-OLD-PLAYED-BEETHOVEN_66s.mp4: [FAIL] 02_A-FIVE-YEAR-OLD-PLAYED-BEETHOVEN_66s.mp4            40 captions vs the sound (word-referenced: no clear pauses)  median +0.31s  worst-10% 0.86s  | words captioned 99%  UNCAPTIONED SPEECH [(4.9, 6.5)]"
+   ],
+   "slug": "A-FIVE-YEAR-OLD-PLAYED-BEETHOVEN",
+   "in": 643.0,
+   "out": 714.0,
+   "start_words": "This is not fantasy",
+   "end_words": "And they're 10 years old",
+   "hook": [
+    "A five-year-old played",
+    "Beethoven. No lessons."
+   ]
+  },
+  "ar_v6yeuyc_r2/YOUR-BRAIN-IS-BROADCASTING-POVERTY": {
+   "plan": "ar_v6yeuyc_r2",
+   "source": "v6yeuyc.mp4",
+   "brand": "AR_SLAVEWAVER2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_YOUR-BRAIN-IS-BROADCASTING-POVERTY_73s.mp4: [FAIL] 01_YOUR-BRAIN-IS-BROADCASTING-POVERTY_73s.mp4          48 captions vs the sound (word-referenced: no clear pauses)  median -0.08s  worst-10% 1.10s  | words captioned 100%"
+   ],
+   "slug": "YOUR-BRAIN-IS-BROADCASTING-POVERTY",
+   "in": 0.0,
+   "out": 72.0,
+   "start_words": "Do billionaires or the",
+   "end_words": "receiver and transmitter of frequency",
+   "hook": [
+    "Your brain is",
+    "broadcasting poverty."
+   ]
+  },
+  "ar_v6yeuyc_r2/BILL-CLINTON-REALLY-FELT-YOUR-PAIN": {
+   "plan": "ar_v6yeuyc_r2",
+   "source": "v6yeuyc.mp4",
+   "brand": "AR_SLAVEWAVER2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_BILL-CLINTON-REALLY-FELT-YOUR-PAIN_62s.mp4` - ends mid-thought on \"with and I\"; phrase scrambled around \"me and give me\""
+   ],
+   "slug": "BILL-CLINTON-REALLY-FELT-YOUR-PAIN",
+   "in": 444.0,
+   "out": 506.0,
+   "start_words": "This is something that",
+   "end_words": "that I was born with",
+   "hook": [
+    "I feel",
+    "your pain."
+   ]
+  },
+  "ar_v6yeuyc_r2/THE-ELITE-DONT-HAVE-SILVER-FILLINGS": {
+   "plan": "ar_v6yeuyc_r2",
+   "source": "v6yeuyc.mp4",
+   "brand": "AR_SLAVEWAVER2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_THE-ELITE-DONT-HAVE-SILVER-FILLINGS_68s.mp4: [FAIL] 01_THE-ELITE-DONT-HAVE-SILVER-FILLINGS_68s.mp4         42 captions vs the sound (word-referenced: no clear pauses)  median -0.03s  worst-10% 1.04s  | words captioned 100%"
+   ],
+   "slug": "THE-ELITE-DONT-HAVE-SILVER-FILLINGS",
+   "in": 696.0,
+   "out": 764.0,
+   "start_words": "It affects the brain",
+   "end_words": "what the situation is",
+   "hook": [
+    "Your fillings hide",
+    "a deadly poison."
+   ]
+  },
+  "ar_v6ypiao/THEY-CALCIFY-YOUR-PINEAL-GLAND": {
+   "plan": "ar_v6ypiao",
+   "source": "v6ypiao.mp4",
+   "brand": "AR_HIPPOCAMPUS",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_THEY-CALCIFY-YOUR-PINEAL-GLAND_43s.mp4` - opens mid-sentence on \"something that the\""
+   ],
+   "slug": "THEY-CALCIFY-YOUR-PINEAL-GLAND",
+   "in": 150.0,
+   "out": 194.0,
+   "start_words": "the privileged elite know",
+   "end_words": "the pineal gland and the hippocampus",
+   "hook": [
+    "They calcify your",
+    "pineal gland."
+   ]
+  },
+  "ar_v6ypiao/5-MILLION-EACH-LET-THEM-DIE": {
+   "plan": "ar_v6ypiao",
+   "source": "v6ypiao.mp4",
+   "brand": "AR_HIPPOCAMPUS",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_5-MILLION-EACH-LET-THEM-DIE_115s.mp4` - opens mid-sentence on \"of this, Ford\""
+   ],
+   "slug": "5-MILLION-EACH-LET-THEM-DIE",
+   "in": 484.0,
+   "out": 604.0,
+   "start_words": "Ford Motor Company, they had",
+   "end_words": "that's exactly what was said at that meeting",
+   "hook": [
+    "$5 million each.",
+    "Let them die."
+   ]
+  },
+  "ar_v6ypiao/FLUORIDE-IN-YOUR-WATER-SUPPLY": {
+   "plan": "ar_v6ypiao",
+   "source": "v6ypiao.mp4",
+   "brand": "AR_HIPPOCAMPUS",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "FLUORIDE-IN-YOUR-WATER-SUPPLY",
+   "in": 636.0,
+   "out": 694.0,
+   "start_words": "the food industry is being used",
+   "end_words": "making you an easy slave",
+   "hook": [
+    "Fluoride in your",
+    "water supply."
+   ]
+  },
+  "ar_v73yyiw_r2/NOBODY-KNOWS-WHAT-THEY-WANT": {
+   "plan": "ar_v73yyiw_r2",
+   "source": "v73yyiw.mp4",
+   "brand": "AR_OBSESSIONR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_NOBODY-KNOWS-WHAT-THEY-WANT_85s.mp4: ends off the planned words: plan ends 'He knew exactly what he wanted', clip ends 'largest steel producer in the world'"
+   ],
+   "slug": "NOBODY-KNOWS-WHAT-THEY-WANT",
+   "in": 1240.8,
+   "out": 1327.2,
+   "start_words": "Well, number one, people",
+   "end_words": "He knew exactly what he wanted",
+   "hook": [
+    "You can't name",
+    "your own number."
+   ]
+  },
+  "ar_v779sqa/SEVEN-MONTHS-ALONE": {
+   "plan": "ar_v779sqa",
+   "source": "v779sqa.mp4",
+   "brand": "AR_CAVE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_SEVEN-MONTHS-ALONE_50s.mp4: [FAIL] 01_SEVEN-MONTHS-ALONE_50s.mp4                          8 captions vs the sound  median +0.09s  worst-10% 0.78s  | words captioned 100%"
+   ],
+   "slug": "SEVEN-MONTHS-ALONE",
+   "in": 0.0,
+   "out": 58.96,
+   "start_words": "I went to my uncle",
+   "end_words": "broadcasting from their brains that can affect you",
+   "hook": [
+    "You couldn't survive",
+    "seven months silent."
+   ]
+  },
+  "ar_v779sqa/YOUR-MIND-IS-A-LAKE": {
+   "plan": "ar_v779sqa",
+   "source": "v779sqa.mp4",
+   "brand": "AR_CAVE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_YOUR-MIND-IS-A-LAKE_54s.mp4: [FAIL] 02_YOUR-MIND-IS-A-LAKE_54s.mp4                         9 captions vs the sound  median +1.26s  worst-10% 1.97s  | words captioned 100%"
+   ],
+   "slug": "YOUR-MIND-IS-A-LAKE",
+   "in": 70.0,
+   "out": 127.52,
+   "start_words": "It's like wind",
+   "end_words": "pure beingness emanates",
+   "hook": [
+    "Your mind is",
+    "a lake."
+   ]
+  },
+  "ar_v779sqa/YOU-CANT-STAND-SILENCE": {
+   "plan": "ar_v779sqa",
+   "source": "v779sqa.mp4",
+   "brand": "AR_CAVE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_YOU-CANT-STAND-SILENCE_68s.mp4` - phrase scrambled around \"players or cassette players.\""
+   ],
+   "slug": "YOU-CANT-STAND-SILENCE",
+   "in": 143.0,
+   "out": 213.6,
+   "start_words": "Most people can't be",
+   "end_words": "surrounded by noise",
+   "hook": [
+    "You can't stand",
+    "silence."
+   ]
+  },
+  "ar_v779sqa/SEVEN-MONTHS-WASNT-RANDOM": {
+   "plan": "ar_v779sqa",
+   "source": "v779sqa.mp4",
+   "brand": "AR_CAVE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_SEVEN-MONTHS-WASNT-RANDOM_47s.mp4` - ends mid-thought on \"the magical number\"; phrase scrambled around \"said yes I said\"; sentence starts with no stop: \"abilities And\""
+   ],
+   "slug": "SEVEN-MONTHS-WASNT-RANDOM",
+   "in": 355.0,
+   "out": 403.0,
+   "start_words": "my spiritual and mental training master",
+   "end_words": "we still hit the magical number",
+   "hook": [
+    "Seven months wasn't",
+    "random. It's magic."
+   ]
+  },
+  "ar_v779sqa/HE-CAME-OUT-WITH-NO-BUTTONS": {
+   "plan": "ar_v779sqa",
+   "source": "v779sqa.mp4",
+   "brand": "AR_CAVE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_HE-CAME-OUT-WITH-NO-BUTTONS_104s.mp4: ends off the planned words: plan ends 'I got the congratulations', clip ends 'point is confronting is the key'"
+   ],
+   "slug": "HE-CAME-OUT-WITH-NO-BUTTONS",
+   "in": 634.0,
+   "out": 722.0,
+   "start_words": "You want to eliminate",
+   "end_words": "I got the congratulations",
+   "hook": [
+    "You have buttons.",
+    "He has none."
+   ]
+  },
+  "ar_v779sqa/YOUR-FEAR-IS-A-PAPER-TIGER": {
+   "plan": "ar_v779sqa",
+   "source": "v779sqa.mp4",
+   "brand": "AR_CAVE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_YOUR-FEAR-IS-A-PAPER-TIGER_67s.mp4` - opens mid-sentence on \"confront\""
+   ],
+   "slug": "YOUR-FEAR-IS-A-PAPER-TIGER",
+   "in": 956.0,
+   "out": 1023.0,
+   "start_words": "confront it and look at it",
+   "end_words": "I spent seven months in total silence",
+   "hook": [
+    "Your fear is",
+    "a paper tiger."
+   ]
+  },
+  "ep_v6qmko0/WHY-NOT-CARING-SETS-YOU-FREE": {
+   "plan": "ep_v6qmko0",
+   "source": "v6qmko0.mp4",
+   "brand": "KT_RELEASE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_WHY-NOT-CARING-SETS-YOU-FREE_60s.mp4` - opens mid-sentence on \"releasing yourself from\"; ends mid-thought on \"don't care there's\"; phrase scrambled around \"\"Now you're free.\" \"Now\""
+   ],
+   "slug": "WHY-NOT-CARING-SETS-YOU-FREE",
+   "in": 337.68,
+   "out": 398.24,
+   "start_words": "Releasing yourself from attachment",
+   "end_words": "liberated because you don't care",
+   "hook": [
+    "Why not caring",
+    "sets you free"
+   ]
+  },
+  "ep_v6qmko0/WHAT-YOU-LEARN-FROM-BLUEBERRY-MUFFINS": {
+   "plan": "ep_v6qmko0",
+   "source": "v6qmko0.mp4",
+   "brand": "KT_RELEASE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_WHAT-YOU-LEARN-FROM-BLUEBERRY-MUFFINS_90s.mp4: [FAIL] 01_WHAT-YOU-LEARN-FROM-BLUEBERRY-MUFFINS_90s.mp4       9 captions vs the sound  median -0.00s  worst-10% 0.50s  | words captioned 100%  UNCAPTIONED SPEECH [(9.9, 11.5)]"
+   ],
+   "slug": "WHAT-YOU-LEARN-FROM-BLUEBERRY-MUFFINS",
+   "in": 575.2,
+   "out": 665.52,
+   "start_words": "I'll never forget I",
+   "end_words": "was not like that",
+   "hook": [
+    "What you learn",
+    "from blueberry muffins"
+   ]
+  },
+  "ep_v6xt8s2/HOW-ARNOLD-DID-IT-TWICE": {
+   "plan": "ep_v6xt8s2",
+   "source": "v6xt8s2.mp4",
+   "brand": "KT_INSIDER",
+   "tries": 1,
+   "why": [
+    "drop KT_INSIDER/HOW-ARNOLD-DID-IT-TWICE: hook - 826px wide at 44px - over the 780px safe zone, will be cut off on a phone"
+   ],
+   "slug": "HOW-ARNOLD-DID-IT-TWICE",
+   "in": 332.46,
+   "out": 387.1,
+   "start_words": "Arnold Schwarzenegger talked about",
+   "end_words": "had more experience than him",
+   "hook": [
+    "How Arnold Schwarzenegger",
+    "did it twice"
+   ]
+  },
+  "ep_v6z25lm_r2/A-290000-WEEK-FROM-ONE-SANDWICH": {
+   "plan": "ep_v6z25lm_r2",
+   "source": "v6z25lm.mp4",
+   "brand": "KT_MISSINGR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_A-290000-WEEK-FROM-ONE-SANDWICH_144s.mp4` - word repeated: \"Bobby.\" Bobby\""
+   ],
+   "slug": "A-290000-WEEK-FROM-ONE-SANDWICH",
+   "in": 640.32,
+   "out": 784.48,
+   "start_words": "Virtually within a week I",
+   "end_words": "You can do the math",
+   "hook": [
+    "A $290,000 week",
+    "from one sandwich"
+   ]
+  },
+  "ep_v6z25lm_r2/HE-HAD-400-BILLION-IN-CASH": {
+   "plan": "ep_v6z25lm_r2",
+   "source": "v6z25lm.mp4",
+   "brand": "KT_MISSINGR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_HE-HAD-400-BILLION-IN-CASH_80s.mp4` - ends mid-thought on \"Mm-hmm\"; sentence starts with no stop: \"cash And\"; sentence starts with no stop: \"cash He\""
+   ],
+   "slug": "HE-HAD-400-BILLION-IN-CASH",
+   "in": 1309.92,
+   "out": 1398.16,
+   "start_words": "Andrew Carnegie was the richest",
+   "end_words": "who's going to work in my factories",
+   "hook": [
+    "He had $400 billion",
+    "in cash"
+   ]
+  },
+  "ep_v6z25lm_r2/SLEEPING-ON-A-BLOW-MATTRESS": {
+   "plan": "ep_v6z25lm_r2",
+   "source": "v6z25lm.mp4",
+   "brand": "KT_MISSINGR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_SLEEPING-ON-A-BLOW-MATTRESS_48s.mp4` - opens mid-sentence on \"to me he\"; phrase scrambled around \"his wife in his\""
+   ],
+   "slug": "SLEEPING-ON-A-BLOW-MATTRESS",
+   "in": 2211.68,
+   "out": 2270.0,
+   "start_words": "He was sleeping on a",
+   "end_words": "in just a year or two",
+   "hook": [
+    "$50,000 a year",
+    "Then $1 million"
+   ]
+  },
+  "ep_v70wvnu_r2/THE-HIDDEN-FORCE-RUNNING-YOU": {
+   "plan": "ep_v70wvnu_r2",
+   "source": "v70wvnu.mp4",
+   "brand": "KT_TRIGGERR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_THE-HIDDEN-FORCE-RUNNING-YOU_65s.mp4: [FAIL] 01_THE-HIDDEN-FORCE-RUNNING-YOU_65s.mp4                6 captions vs the sound  median +0.10s  worst-10% 0.99s  | words captioned 100%"
+   ],
+   "slug": "THE-HIDDEN-FORCE-RUNNING-YOU",
+   "in": 12.72,
+   "out": 77.76,
+   "start_words": "It's activating and triggering",
+   "end_words": "or engram comes from",
+   "hook": [
+    "Why you snap",
+    "and can't stop"
+   ]
+  },
+  "ep_v70wvnu_r2/NINE-YEARS-NOT-GRIEF": {
+   "plan": "ep_v70wvnu_r2",
+   "source": "v70wvnu.mp4",
+   "brand": "KT_TRIGGERR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_NINE-YEARS-NOT-GRIEF_63s.mp4` - phrase scrambled around \"her love for her\"; word repeated after one: \"nine years.\" Nine\"; word repeated after one: \"years.\" Nine years?\""
+   ],
+   "slug": "NINE-YEARS-NOT-GRIEF",
+   "in": 136.24,
+   "out": 198.88,
+   "start_words": "the facilitator said, tell",
+   "end_words": "it's coming to surface",
+   "hook": [
+    "9 years later",
+    "your pain remains"
+   ]
+  },
+  "ep_v70wvnu_r2/A-3D-CAMERA-ON-YOUR-MIND": {
+   "plan": "ep_v70wvnu_r2",
+   "source": "v70wvnu.mp4",
+   "brand": "KT_TRIGGERR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_A-3D-CAMERA-ON-YOUR-MIND_64s.mp4: ends off the planned words: plan ends 'with emotions attached to it', clip ends 'pictures in three dimensions with emotion'"
+   ],
+   "slug": "A-3D-CAMERA-ON-YOUR-MIND",
+   "in": 255.76,
+   "out": 323.6,
+   "start_words": "This is why the",
+   "end_words": "with emotions attached to it",
+   "hook": [
+    "A 3D camera",
+    "records you 24/7"
+   ]
+  },
+  "ep_v70wvnu_r2/THE-FOURTH-GRADE-PROOF": {
+   "plan": "ep_v70wvnu_r2",
+   "source": "v70wvnu.mp4",
+   "brand": "KT_TRIGGERR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_THE-FOURTH-GRADE-PROOF_58s.mp4: [FAIL] 01_THE-FOURTH-GRADE-PROOF_58s.mp4                      9 captions vs the sound  median +0.00s  worst-10% 0.70s  | words captioned 100%"
+   ],
+   "slug": "THE-FOURTH-GRADE-PROOF",
+   "in": 590.08,
+   "out": 655.52,
+   "start_words": "Sam Scarras only are in",
+   "end_words": "beyond this lifetime",
+   "hook": [
+    "Why your 4th-grade",
+    "memory controls you"
+   ]
+  },
+  "ep_v70wvnu_r2/THE-PUPPET-STRING": {
+   "plan": "ep_v70wvnu_r2",
+   "source": "v70wvnu.mp4",
+   "brand": "KT_TRIGGERR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_THE-PUPPET-STRING_72s.mp4: [FAIL] 02_THE-PUPPET-STRING_72s.mp4                           8 captions vs the sound  median +0.21s  worst-10% 1.07s  | words captioned 100%"
+   ],
+   "slug": "THE-PUPPET-STRING",
+   "in": 806.72,
+   "out": 882.96,
+   "start_words": "these are sam scars",
+   "end_words": "control all your emotions",
+   "hook": [
+    "The puppet string",
+    "controls your emotions"
+   ]
+  },
+  "ep_v72tj4g/THE-SECRET-FROZEN-IN-ICE-CREAM": {
+   "plan": "ep_v72tj4g",
+   "source": "v72tj4g.mp4",
+   "brand": "KT_EXPOSED",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_THE-SECRET-FROZEN-IN-ICE-CREAM_95s.mp4` - phrase scrambled around \"Kreskin and Kreskin Kreskin\"; phrase scrambled around \"his check from his\"; phrase scrambled around \"so forth and so\""
+   ],
+   "slug": "THE-SECRET-FROZEN-IN-ICE-CREAM",
+   "in": 903.36,
+   "out": 998.0,
+   "start_words": "You may remember",
+   "end_words": "100% using the mind",
+   "hook": [
+    "The secret hidden",
+    "frozen ice cream"
+   ]
+  },
+  "ep_v72tj4g/MICHAEL-JORDAN-MISSED-THE-MOST": {
+   "plan": "ep_v72tj4g",
+   "source": "v72tj4g.mp4",
+   "brand": "KT_EXPOSED",
+   "tries": 1,
+   "why": [
+    "drop KT_EXPOSED/MICHAEL-JORDAN-MISSED-THE-MOST: hook - not a direct promise: \"Michael Jordan missed\""
+   ],
+   "slug": "MICHAEL-JORDAN-MISSED-THE-MOST",
+   "in": 3494.8,
+   "out": 3573.2,
+   "start_words": "everyone was born",
+   "end_words": "win or you learn",
+   "hook": [
+    "Michael Jordan missed",
+    "the most shots"
+   ]
+  },
+  "ep_v72tj4g/HE-SKIPPED-THE-RECESSION": {
+   "plan": "ep_v72tj4g",
+   "source": "v72tj4g.mp4",
+   "brand": "KT_EXPOSED",
+   "tries": 1,
+   "why": [
+    "drop KT_EXPOSED/HE-SKIPPED-THE-RECESSION: hook - opens on a riddle/scene: \"He skipped the recession\""
+   ],
+   "slug": "HE-SKIPPED-THE-RECESSION",
+   "in": 2526.0,
+   "out": 2598.0,
+   "start_words": "I had a friend",
+   "end_words": "instead of being at effect",
+   "hook": [
+    "He skipped the recession",
+    "Record profit"
+   ]
+  },
+  "ep_v72tj4g/WHAT-MADE-LIBERACE-BELIEVE": {
+   "plan": "ep_v72tj4g",
+   "source": "v72tj4g.mp4",
+   "brand": "KT_EXPOSED",
+   "tries": 1,
+   "why": [
+    "FAIL 01_WHAT-MADE-LIBERACE-BELIEVE_71s.mp4: [FAIL] 01_WHAT-MADE-LIBERACE-BELIEVE_71s.mp4                  16 captions vs the sound  median -0.00s  worst-10% 1.00s  | words captioned 102%"
+   ],
+   "slug": "WHAT-MADE-LIBERACE-BELIEVE",
+   "in": 2702.24,
+   "out": 2772.16,
+   "start_words": "It is so important",
+   "end_words": "quality of their life",
+   "hook": [
+    "What made Liberace",
+    "believe in himself"
+   ]
+  },
+  "ep_v77l7um/BLEW-BITCOIN-AT-50-CENTS": {
+   "plan": "ep_v77l7um",
+   "source": "v77l7um.mp4",
+   "brand": "KT_BITCOIN",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_BLEW-BITCOIN-AT-50-CENTS_68s.mp4` - ends mid-thought on \"really a key\"; phrase scrambled around \"be an open be\"; word repeated after one: \"correct that's correct\""
+   ],
+   "slug": "BLEW-BITCOIN-AT-50-CENTS",
+   "in": 29.68,
+   "out": 102.4,
+   "start_words": "You were an early",
+   "end_words": "That's really a key",
+   "hook": [
+    "The $1 lesson",
+    "he almost missed"
+   ]
+  },
+  "ep_v77l7um/BANNED-FROM-BLACKJACK-BUILT-BACCARAT": {
+   "plan": "ep_v77l7um",
+   "source": "v77l7um.mp4",
+   "brand": "KT_BITCOIN",
+   "tries": 1,
+   "why": [
+    "FAIL 01_BANNED-FROM-BLACKJACK-BUILT-BACCARAT_118s.mp4: [FAIL] 01_BANNED-FROM-BLACKJACK-BUILT-BACCARAT_118s.mp4       7 captions vs the sound  median -0.00s  worst-10% 0.44s  | words captioned 100%  UNCAPTIONED SPEECH [(113.7, 115.3)]"
+   ],
+   "slug": "BANNED-FROM-BLACKJACK-BUILT-BACCARAT",
+   "in": 575.12,
+   "out": 696.64,
+   "start_words": "I am banned from",
+   "end_words": "take all their money",
+   "hook": [
+    "100% win rate",
+    "for 18 months"
+   ]
+  },
+  "ep_v77l7um/3-TRADERS-SIX-FIGURES-15-SECONDS": {
+   "plan": "ep_v77l7um",
+   "source": "v77l7um.mp4",
+   "brand": "KT_BITCOIN",
+   "tries": 1,
+   "why": [
+    "FAIL 02_3-TRADERS-SIX-FIGURES-15-SECONDS_158s.mp4: [FAIL] 02_3-TRADERS-SIX-FIGURES-15-SECONDS_158s.mp4           116 captions vs the sound (word-referenced: no clear pauses)  median +0.31s  worst-10% 0.48s  | words captioned 97%  UNCAPTIONED SPEECH [(56.4, 58.6)]"
+   ],
+   "slug": "3-TRADERS-SIX-FIGURES-15-SECONDS",
+   "in": 1008.56,
+   "out": 1163.44,
+   "start_words": "I want to learn",
+   "end_words": "made six figures",
+   "hook": [
+    "3 traders, 15 seconds",
+    "all won"
+   ]
+  },
+  "ep_v77l7um/SECOND-RICHEST-FREE-NEWSLETTER": {
+   "plan": "ep_v77l7um",
+   "source": "v77l7um.mp4",
+   "brand": "KT_BITCOIN",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_SECOND-RICHEST-FREE-NEWSLETTER_147s.mp4` - ends mid-thought on \"they they faltered\"; phrase scrambled around \"he's trading and he's\"; phrase scrambled around \"sold and I sold\""
+   ],
+   "slug": "SECOND-RICHEST-FREE-NEWSLETTER",
+   "in": 736.24,
+   "out": 886.24,
+   "start_words": "I was in Australia",
+   "end_words": "And then they faltered",
+   "hook": [
+    "60 cars, cash",
+    "from one newsletter"
+   ]
+  },
+  "ep_v77l7um/RAILROADS-TRIED-TO-RUIN-HIM": {
+   "plan": "ep_v77l7um",
+   "source": "v77l7um.mp4",
+   "brand": "KT_BITCOIN",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_RAILROADS-TRIED-TO-RUIN-HIM_88s.mp4` - ends mid-thought on \"to crush him\"; phrase scrambled around \"pipeline and the pipeline\"; sentence starts with no stop: \"adversity The\""
+   ],
+   "slug": "RAILROADS-TRIED-TO-RUIN-HIM",
+   "in": 2500.0,
+   "out": 2590.08,
+   "start_words": "Every single time the",
+   "end_words": "tried to crush him",
+   "hook": [
+    "5x more money",
+    "after government attacked"
+   ]
+  },
+  "ep_v77l7um/30-MILLION-PAINTING-ILLIQUID": {
+   "plan": "ep_v77l7um",
+   "source": "v77l7um.mp4",
+   "brand": "KT_BITCOIN",
+   "tries": 1,
+   "why": [
+    "FAIL 01_30-MILLION-PAINTING-ILLIQUID_140s.mp4: [FAIL] 01_30-MILLION-PAINTING-ILLIQUID_140s.mp4               9 captions vs the sound  median +0.11s  worst-10% 0.31s  | words captioned 98%  UNCAPTIONED SPEECH [(2.9, 4.4)]"
+   ],
+   "slug": "30-MILLION-PAINTING-ILLIQUID",
+   "in": 3097.12,
+   "out": 3243.2,
+   "start_words": "I was with a",
+   "end_words": "pay cash for it",
+   "hook": [
+    "$30 million painting",
+    "He's just illiquid"
+   ]
+  },
+  "ep_v787nba_r2/AN-AGREEMENT-FROM-A-PAST-LIFE": {
+   "plan": "ep_v787nba_r2",
+   "source": "v787nba.mp4",
+   "brand": "KT_DUTYR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_AN-AGREEMENT-FROM-A-PAST-LIFE_78s.mp4` - word repeated: \"you you\""
+   ],
+   "slug": "AN-AGREEMENT-FROM-A-PAST-LIFE",
+   "in": 88.08,
+   "out": 167.92,
+   "start_words": "Dharma is nothing that",
+   "end_words": "That's not how it works",
+   "hook": [
+    "What you agreed to",
+    "before birth"
+   ]
+  },
+  "ep_v787nba_r2/FIGHT-YOUR-OWN-FAMILY": {
+   "plan": "ep_v787nba_r2",
+   "source": "v787nba.mp4",
+   "brand": "KT_DUTYR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_FIGHT-YOUR-OWN-FAMILY_69s.mp4: [FAIL] 01_FIGHT-YOUR-OWN-FAMILY_69s.mp4                       8 captions vs the sound  median +0.40s  worst-10% 1.08s  | words captioned 100%"
+   ],
+   "slug": "FIGHT-YOUR-OWN-FAMILY",
+   "in": 788.0,
+   "out": 857.2,
+   "start_words": "Arjuna went out into",
+   "end_words": "killing the people in front of you",
+   "hook": [
+    "Why duty means fighting",
+    "your family"
+   ]
+  },
+  "ep_v787nba_r2/THE-EMPLOYEE-WHO-BECAME-A-CARPENTER": {
+   "plan": "ep_v787nba_r2",
+   "source": "v787nba.mp4",
+   "brand": "KT_DUTYR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_THE-EMPLOYEE-WHO-BECAME-A-CARPENTER_110s.mp4` - ends mid-thought on \"So far,\""
+   ],
+   "slug": "THE-EMPLOYEE-WHO-BECAME-A-CARPENTER",
+   "in": 942.16,
+   "out": 1050.08,
+   "start_words": "How do you follow",
+   "end_words": "that life can give you",
+   "hook": [
+    "Why bliss is",
+    "still your duty"
+   ]
+  },
+  "ep_v7d2lxy_r2/DRUG-DEALER-TO-1M-A-MONTH": {
+   "plan": "ep_v7d2lxy_r2",
+   "source": "v7d2lxy.mp4",
+   "brand": "KT_PUPPETR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_DRUG-DEALER-TO-1M-A-MONTH_74s.mp4` - phrase scrambled around \"irrational Having an irrational\"; sentence starts with no stop: \"control There\"; sentence starts with no stop: \"dealers They\""
+   ],
+   "slug": "DRUG-DEALER-TO-1M-A-MONTH",
+   "in": 126.0,
+   "out": 203.92,
+   "start_words": "You know, I'm going",
+   "end_words": "around me affecting me",
+   "hook": [
+    "$1M a month,",
+    "taught in prison"
+   ]
+  },
+  "ep_v7d2lxy_r2/THE-POVERTY-WAVE-VS-THE-WEALTH-WAVE": {
+   "plan": "ep_v7d2lxy_r2",
+   "source": "v7d2lxy.mp4",
+   "brand": "KT_PUPPETR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_THE-POVERTY-WAVE-VS-THE-WEALTH-WAVE_38s.mp4` - phrase scrambled around \"your DNA from your\""
+   ],
+   "slug": "THE-POVERTY-WAVE-VS-THE-WEALTH-WAVE",
+   "in": 377.76,
+   "out": 425.76,
+   "start_words": "I want more money",
+   "end_words": "memory from this lifetime",
+   "hook": [
+    "Why you feel",
+    "a poverty headwind"
+   ]
+  },
+  "ep_v7d2lxy_r2/WHY-YOU-BLOW-THE-BIG-DEAL": {
+   "plan": "ep_v7d2lxy_r2",
+   "source": "v7d2lxy.mp4",
+   "brand": "KT_PUPPETR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_WHY-YOU-BLOW-THE-BIG-DEAL_94s.mp4` - ends mid-thought on \"did it subconsciously\"; sentence starts with no stop: \"consciously But\"; sentence starts with no stop: \"earth The\""
+   ],
+   "slug": "WHY-YOU-BLOW-THE-BIG-DEAL",
+   "in": 450.4,
+   "out": 549.36,
+   "start_words": "You're saying, I want",
+   "end_words": "but you did it subconsciously",
+   "hook": [
+    "Why you blow",
+    "the big deal"
+   ]
+  },
+  "ep_v7e1nwe_r2/THE-MOST-POWERFUL-EMOTION": {
+   "plan": "ep_v7e1nwe_r2",
+   "source": "v7e1nwe.mp4",
+   "brand": "KT_FREQUENCYR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_THE-MOST-POWERFUL-EMOTION_129s.mp4: [FAIL] 01_THE-MOST-POWERFUL-EMOTION_129s.mp4                  22 captions vs the sound  median +0.09s  worst-10% 0.38s  | words captioned 100%  UNCAPTIONED SPEECH [(9.9, 12.4)]"
+   ],
+   "slug": "THE-MOST-POWERFUL-EMOTION",
+   "in": 0.0,
+   "out": 132.24,
+   "start_words": "The most powerful emotion",
+   "end_words": "you go through the dance",
+   "hook": [
+    "The most powerful emotion",
+    "isn't gratitude"
+   ]
+  },
+  "ep_v7e1nwe_r2/THE-WRONG-FREQUENCY": {
+   "plan": "ep_v7e1nwe_r2",
+   "source": "v7e1nwe.mp4",
+   "brand": "KT_FREQUENCYR2",
+   "tries": 2,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "THE-WRONG-FREQUENCY",
+   "in": 185.28,
+   "out": 238.56,
+   "start_words": "The physical universe is",
+   "end_words": "on the wrong frequency",
+   "hook": [
+    "1040 AM.",
+    "You're stuck on 97.9"
+   ]
   }
  },
  "attempts": {
@@ -2742,6 +3768,8 @@
   "ar_v6yeuyc": 2,
   "ar_v70c41q_r2": 2,
   "ar_v76xweu_r2": 2,
-  "ar_v77w5tc_r2": 2
+  "ar_v77w5tc_r2": 2,
+  "ar_v76l9y0_r3": 1,
+  "ar_v76l9y0_r4": 1
  }
 }
