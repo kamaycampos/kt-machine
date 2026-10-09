@@ -7795,11 +7795,24 @@
    "hook": "Why duty beats loving your job",
    "bytes": 50520992,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "reels start failed: Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda. | feed fallback: upload failed 400: {'error': {'message': 'Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda.', 'type': 'OAuthException', 'code': 368, 'error_d",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-09T15:23",
    "cta_keyword": "KT",
    "cta_variant": 18,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeSRW0PGIlT/",
+    "youtube": "https://youtube.com/shorts/tK5-REag9e0"
+   },
+   "caption_at_post": "Two generals, same war, two completely different reasons for showing up.\n\nKevin Trudeau tells the real story, pulled from the diaries, not just the movie script: General Bradley told Patton, in effect, I do this job because it's my duty - you do it because you love it.\n\nThat's the whole difference between duty and passion. One is the agreement you keep no matter what. The other is a bonus you don't need in order to keep it.\n\nYou don't have to love your duty. You just have to follow it.\n\nWhich one is actually driving you right now?\n\n#kevintrudeau #patton #duty #mindset #discipline #dharma",
+   "posted_at": "2026-10-09T15:36"
   },
   {
    "file": "KT_EXPOSED/01_SLEEPING-ON-A-NAIL_103s.mp4",
