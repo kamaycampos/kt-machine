@@ -7802,11 +7802,24 @@
    "hook": "The brain part wealthy people grow",
    "bytes": 40963158,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "reels start failed: Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda. | feed fallback: upload failed 400: {'error': {'message': 'Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda.', 'type': 'OAuthException', 'code': 368, 'error_d",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-09T07:58",
    "cta_keyword": "WISH",
    "cta_variant": 15,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeRe4_DCbPC/",
+    "youtube": "https://youtube.com/shorts/YBONp26duRk"
+   },
+   "caption_at_post": "There's a part of your brain called the hippocampus, and Kevin Trudeau says it looks different depending on whether you manifest your goals or keep missing them.\n\nIn people who stay poor or fail at everything they try, it's small and barely active. In people who manifest quickly and easily, it's bigger - and far more active.\n\nHis claim: the first real step isn't positive thinking. It's growing that part of your brain and switching it on.\n\nWhether or not you buy the biology, the practice behind it is worth testing.\n\n#kevintrudeau #manifesting #lawofattraction #brainscience #mindset #success",
+   "posted_at": "2026-10-09T08:16"
   },
   {
    "file": "KT_INSIDER/01_YOUR-5-FRIENDS-DECIDE-YOUR-INCOME_80s.mp4",
@@ -7862,7 +7875,11 @@
    "hook": "You can't sit still anymore.",
    "bytes": 41525013,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-10T20:01",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
