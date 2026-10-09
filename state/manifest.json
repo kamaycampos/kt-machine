@@ -7904,11 +7904,24 @@
    "hook": "2 funerals in prison Zero emotion",
    "bytes": 90441209,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "reels start failed: Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda. | feed fallback: upload failed 400: {'error': {'message': 'Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda.', 'type': 'OAuthException', 'code': 368, 'error_d",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261009171554AEF06C3C6C29EF18CECD'}}"
+   },
    "scheduled_at": "2026-10-09T12:56",
    "cta_keyword": "BRAIN",
    "cta_variant": 17,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeSBUKREpeF/",
+    "youtube": "https://youtube.com/shorts/q9XIaRWEo9w"
+   },
+   "caption_at_post": "Kevin Trudeau missed both of his parents' funerals, locked in prison for a crime he was never even charged with.\n\nHe describes being denied the chance to say goodbye, yet showing zero negative emotion through any of it. People around him assumed he'd shut down completely and asked if he was even human. His answer: he felt the loss, fully, for about an hour, then chose to remember the good instead of staying trapped in the pain.\n\nHe wasn't suppressing grief. He was refusing to let an old imprint keep controlling him after the feeling had done its job.\n\nCould you choose when your own pain gets to end?\n\n#kevintrudeau #prison #emotionalcontrol #mindset #grief #selfmastery",
+   "posted_at": "2026-10-09T13:15"
   },
   {
    "file": "AR_SAMSKARAR2/02_YOU-CANT-SIT-STILL-ANYMORE_73s.mp4",
