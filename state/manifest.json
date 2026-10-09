@@ -7914,7 +7914,11 @@
    "hook": "Skip seven years, you still qualify.",
    "bytes": 34865880,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-11T07:01",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_CAVER2/01_YOUR-FEAR-IS-A-PAPER-TIGER_68s.mp4",
@@ -7922,7 +7926,11 @@
    "hook": "Your fear is a paper tiger.",
    "bytes": 48115168,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-11T12:40",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_CAVER2/02_HE-CAME-OUT-WITH-NO-BUTTONS_99s.mp4",
@@ -7930,7 +7938,11 @@
    "hook": "You have buttons. He has none.",
    "bytes": 64970131,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-11T15:24",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_CAVER2/02_YOUR-MIND-IS-A-LAKE_53s.mp4",
@@ -7938,7 +7950,11 @@
    "hook": "Your mind is a lake.",
    "bytes": 35171673,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-11T10:17",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "KT_TRIGGERR3/01_THE-HIDDEN-FORCE-RUNNING-YOU_52s.mp4",
@@ -7946,7 +7962,11 @@
    "hook": "Why you snap and can't stop",
    "bytes": 45576830,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-10T12:05",
+   "cta_keyword": "MONEY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   }
  ]
 }
