@@ -7568,12 +7568,26 @@
    "caption": "Everyone wants to believe the big companies are evil. He says that's not quite it.\n\nThe scientists at Monsanto, the chemists at Pfizer \u2014 most of them are decent people who go to church on Sunday and believe they're helping. The evil shows up higher up, where someone starts asking how much a stock price can move. That's the moment a company stops serving people and starts using them.\n\nIt's not the logo. It's whoever's doing the math on human lives.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#awakening #consciousness #corporategreed #truth #brotherhood #kevintrudeau",
    "hook": "The company isn't evil. Greed is.",
    "bytes": 34120092,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-09T09:53",
    "cta_keyword": "YES",
    "cta_variant": 2,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/28730197636599969/",
+    "instagram": "https://www.instagram.com/reel/DeRq14jkuZN/",
+    "youtube": "https://youtube.com/shorts/2IIVJK_lg3Y"
+   },
+   "caption_at_post": "Everyone wants to believe the big companies are evil. He says that's not quite it.\n\nThe scientists at Monsanto, the chemists at Pfizer \u2014 most of them are decent people who go to church on Sunday and believe they're helping. The evil shows up higher up, where someone starts asking how much a stock price can move. That's the moment a company stops serving people and starts using them.\n\nIt's not the logo. It's whoever's doing the math on human lives.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#awakening #consciousness #corporategreed #truth #brotherhood #kevintrudeau",
+   "posted_at": "2026-10-09T10:01"
   },
   {
    "file": "AR_HIPPOCAMPUS/02_SCROLLING-SHRINKS-YOUR-BRAIN_83s.mp4",
@@ -7839,11 +7853,24 @@
    "hook": "The brainwave only the rich use",
    "bytes": 97418785,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "reels start failed: Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda. | feed fallback: upload failed 400: {'error': {'message': 'Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda.', 'type': 'OAuthException', 'code': 368, 'error_d",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-09T09:41",
    "cta_keyword": "MONEY",
-   "cta_variant": 16
+   "cta_variant": 16,
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeRqXMfASvL/",
+    "youtube": "https://youtube.com/shorts/1_DXAc5rBwA"
+   },
+   "caption_at_post": "Kevin Trudeau says there are exactly three reasons the law of attraction fails for most people.\n\nFirst, people skip steps in the manifesting formula. Second, they carry counter intentions buried in their own DNA. Third, their brain broadcasts on the wrong wave.\n\nPoor people broadcast mostly on beta. Rich people broadcast between alpha and theta \u2014 what Kevin calls the wealth wave.\n\nFix those three, and the law of attraction can finally work.\n\nComment WISH and I'll send you Kevin's free audios.\n\n#kevintrudeau #manifestation #lawofattraction #wealthmindset #yourwishisyourcommand #mindset",
+   "posted_at": "2026-10-09T09:56"
   },
   {
    "file": "KT_RELEASE/02_CARE-BUT-NOT-THAT-MUCH_48s.mp4",
