@@ -7628,12 +7628,26 @@
    "caption": "A kid at the beach never says, I want a sandcastle. He says, I want to build one.\n\nThat's the part almost everyone misses about getting what they want: it was never about possessing the thing. It's the creating that gives you the high. Sit back and let it be handed to you with nothing left to build, and most people don't feel grateful \u2014 they feel hollow, sometimes dangerously so. The universe isn't testing your patience. It's inviting you to build something.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#manifestation #awakening #mindset #consciousness #purpose #kevintrudeau",
    "hook": "A kid never wants the sandcastle.",
    "bytes": 35669628,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026100910550900E70662F0B0690442EE'}}"
+   },
    "scheduled_at": "2026-10-09T06:51",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1445072834464055/",
+    "instagram": "https://www.instagram.com/reel/DeRVynkDQir/",
+    "youtube": "https://youtube.com/shorts/BAFzqV4zNw0"
+   },
+   "caption_at_post": "A kid at the beach never says, I want a sandcastle. He says, I want to build one.\n\nThat's the part almost everyone misses about getting what they want: it was never about possessing the thing. It's the creating that gives you the high. Sit back and let it be handed to you with nothing left to build, and most people don't feel grateful \u2014 they feel hollow, sometimes dangerously so. The universe isn't testing your patience. It's inviting you to build something.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#manifestation #awakening #mindset #consciousness #purpose #kevintrudeau",
+   "posted_at": "2026-10-09T06:55"
   },
   {
    "file": "AR_PRAYERFIX/02_EVEN-JESUS-PRAYED-IN-SECRET_69s.mp4",
