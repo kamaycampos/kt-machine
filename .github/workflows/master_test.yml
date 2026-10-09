@@ -1,0 +1,54 @@
+# THE MASTER TRANSCRIPT, END TO END ON ONE KT SHARD (shared/kt_master.py, opt-in,
+# 9 Oct 2026). Manual only: nothing is queued, committed or posted. Prints the caption
+# diff (today's path vs cut from the master), then renders the shard with
+# MASTER_TRANSCRIPT=1 through every gate and uploads what passed as an artifact.
+name: master-test
+on:
+  workflow_dispatch:
+    inputs:
+      plan: { description: "factory/plans/<plan>.json", default: "ep_v6v9urd" }
+      shard: { description: "Shard number (2 clips each)", default: "0" }
+      engine: { description: "small | turbo | turbo-names | deepgram | elevenlabs | assemblyai", default: "turbo" }
+permissions:
+  contents: read
+concurrency:
+  group: master-test
+  cancel-in-progress: true
+env:
+  GH_TOKEN: ${{ github.token }}
+  FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+  TRANSCRIPT_KEY: ${{ secrets.TRANSCRIPT_KEY }}
+  ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+  DEEPGRAM_API_KEY: ${{ secrets.DEEPGRAM_API_KEY }}
+  ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+  ASSEMBLYAI_API_KEY: ${{ secrets.ASSEMBLYAI_API_KEY }}
+jobs:
+  shard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/cache@v4
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v2-portable }
+      - uses: actions/cache@v4
+        if: ${{ startsWith(inputs.engine, 'turbo') }}
+        with: { path: ~/wturbo, key: ggml-large-v3-turbo-v1 }
+      - run: bash factory/setup.sh
+      - name: Turbo model
+        if: ${{ startsWith(inputs.engine, 'turbo') }}
+        run: |
+          mkdir -p ~/wturbo
+          [ -s ~/wturbo/ggml-large-v3-turbo.bin ] || curl -sL --retry 3 -o ~/wturbo/ggml-large-v3-turbo.bin \
+            https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo.bin
+      - name: Master transcript + caption diff (before = today's path, after = MASTER_TRANSCRIPT=1)
+        run: |
+          pip install -q anthropic
+          python factory/master_test.py "${{ inputs.plan }}" "${{ inputs.shard }}" "${{ inputs.engine }}" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Render the shard from the master, every gate (MASTER_TRANSCRIPT=1)
+        env: { MASTER_TRANSCRIPT: "1" }
+        run: python factory/build_shard.py "${{ inputs.plan }}" "${{ inputs.shard }}"
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with: { name: master-test, path: /tmp/shard_out, retention-days: 14 }
