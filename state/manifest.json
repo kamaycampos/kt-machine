@@ -7919,11 +7919,24 @@
    "hook": "Why caring less makes you happier",
    "bytes": 32211830,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "reels start failed: Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda. | feed fallback: upload failed 400: {'error': {'message': 'Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda.', 'type': 'OAuthException', 'code': 368, 'error_d",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261009211331ECBE274C152BD72D5D48'}}"
+   },
    "scheduled_at": "2026-10-09T17:08",
    "cta_keyword": "WISH",
    "cta_variant": 19,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeSchZ6nCqJ/",
+    "youtube": "https://youtube.com/shorts/cBQ9xlDgZ50"
+   },
+   "caption_at_post": "Kevin Trudeau learned this from Herb Cohen, the negotiation expert behind \"You Can Negotiate Anybody.\"\n\nCohen loved cigars so much he negotiated the right to smoke one while teaching a seminar - in a non-smoking hotel room. His own rule for getting what he wanted: \"You have to care, but not that much.\"\n\nKevin Trudeau says that's the whole secret to happiness too. Want things. Work for things. Just don't let your peace depend on getting them.\n\nCare enough to try. Not enough to suffer.\n\n#kevintrudeau #mindset #lettinggo #negotiation #selfimprovement #innerpeace",
+   "posted_at": "2026-10-09T17:13"
   },
   {
    "file": "KT_TRIGGERR2/02_TWO-FUNERALS-ZERO-EMOTION_95s.mp4",
