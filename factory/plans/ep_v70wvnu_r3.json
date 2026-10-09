@@ -1,0 +1,38 @@
+{
+  "source": "v70wvnu.mp4",
+  "brand": "KT_TRIGGERR3",
+  "test": false,
+  "note": "9 Oct 2026 - third chances for 'The Hidden Force Running Your Life' (Rumble v70wvnu). Weekly agent, re-cut per PLANNING.md 2c. THE-HIDDEN-FORCE-RUNNING-YOU and THE-FOURTH-GRADE-PROOF both failed 'captions vs the sound' twice while sharing the same edge each time (12.72/0.0 always ending at 77.76; 590.08 always starting there) - since the edge that stayed fixed is the common factor, this try moves THAT one instead: THE-HIDDEN-FORCE-RUNNING-YOU now opens on the episode's actual cold-open tease and ends later, past the jargon-list zone; THE-FOURTH-GRADE-PROOF now opens on 'Nobody can push your button' rather than the repeatedly-mismatched 'Sam Scarras only are in...' line, keeping the same proof-on-paper ending that worked on try 1. A-3D-CAMERA-ON-YOUR-MIND failed twice ending on/near 'with emotions attached to it' - moved past that exact phrase to the next complete sentence ('...or an end print') and opened on a cleaner independent line instead of 'This is why the...'. Not attempted again (last chance already spent or no clean fix exists): NINE-YEARS-NOT-GRIEF (the repeated/scrambled words sit inside the one line the whole clip is built on - 'nine years... nine years?' - cutting around it guts the clip) and THE-PUPPET-STRING (no window of 40s+ opens on a line that isn't 'this/these/and/but/so/because' pointing back without also dragging in the unrelated modalities-list filler already skipped from this episode).",
+  "clips": [
+    {
+      "slug": "THE-HIDDEN-FORCE-RUNNING-YOU",
+      "in": 49.12,
+      "out": 104.08,
+      "start_words": "At the end of the day",
+      "end_words": "an uncontrollable and irrational emotion",
+      "hook": ["Why you snap", "and can't stop"],
+      "caption": "Something is pushing your buttons, and it isn't what you think.\n\nKevin Trudeau says one invisible force sits behind nearly every uncontrollable reaction: a trapped memory he calls a samskara, or energetic imprint. Nobody can watch their own mind working, which is why the trigger feels like it came from nowhere.\n\nHe claims he learned how the mind works by seeing inside someone else's: the mental pictures hiding under every overreaction.\n\nIf something keeps triggering you, is it about now, or a memory you never dealt with?\n\n#kevintrudeau #samskara #mindset #selfmastery #emotionalcontrol #personaldevelopment",
+      "retry_of": "ep_v70wvnu_r2/THE-HIDDEN-FORCE-RUNNING-YOU"
+    },
+    {
+      "slug": "A-3D-CAMERA-ON-YOUR-MIND",
+      "in": 275.92,
+      "out": 333.68,
+      "start_words": "I could see the picture",
+      "end_words": "or an end print",
+      "hook": ["A 3D camera", "records you 24/7"],
+      "caption": "Kevin Trudeau says he once learned to see inside other people's minds, and what he found there changed everything.\n\nHe claims a different dimension let him watch a 3D camera that never turns off: every sight, sound and feeling gets recorded into what he calls the memory bank, around the clock. Not a photo. A full moving picture, with every emotion still attached.\n\nThe part most people never consider: nothing you've felt actually went anywhere. It's still running, waiting for the right trigger.\n\nWhat is still playing in your memory bank right now?\n\n#kevintrudeau #mindset #subconscious #memory #selfmastery #personaldevelopment",
+      "retry_of": "ep_v70wvnu_r2/A-3D-CAMERA-ON-YOUR-MIND"
+    },
+    {
+      "slug": "THE-FOURTH-GRADE-PROOF",
+      "in": 583.92,
+      "out": 645.12,
+      "start_words": "Nobody can push your button",
+      "end_words": "there I can see it",
+      "hook": ["Why your 4th-grade", "memory controls you"],
+      "caption": "Kevin Trudeau claims he can point to the exact moment in your past still controlling you, and prove it on paper.\n\nHe describes naming a traumatic incident from someone's fourth grade year before they'd admit it happened. They avoided the memory as long as they could, until he wrote it down, showed them the paper, and they finally recognized it was true. He calls these trapped memories energetic imprints, and says some may form before birth.\n\nBelieve the claim or not: how many of your reactions trace back to something you never dealt with?\n\n#kevintrudeau #samskara #mindset #subconscious #selfmastery #personaldevelopment",
+      "retry_of": "ep_v70wvnu_r2/THE-FOURTH-GRADE-PROOF"
+    }
+  ]
+}

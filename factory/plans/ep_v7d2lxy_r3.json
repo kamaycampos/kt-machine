@@ -1,0 +1,38 @@
+{
+  "source": "v7d2lxy.mp4",
+  "brand": "KT_PUPPETR3",
+  "test": false,
+  "note": "9 Oct 2026 - third chances for 'The 3 Parts of Your Mind That Control Every Decision You Make' (Rumble v7d2lxy). Weekly agent, re-cut per PLANNING.md 2c. DRUG-DEALER-TO-1M-A-MONTH failed try 1 ('too few pause-anchored captions') starting on 'When I was in prison' and failed try 2 ('phrase scrambled', 'sentence starts with no stop') starting 6s earlier on the scrambled 'irrational, having an irrational' line - this try starts later still, on the dialogue-dense 'Leroy, come here' scene (short clipped lines give the caption check real pause anchors), and keeps 'prison' in the clip via the line at ~163s so the hook still pays off. THE-POVERTY-WAVE-VS-THE-WEALTH-WAVE failed try 2 by extending into 'your DNA from your ancestors' (scrambled) chasing a fuller ending; this try reverts to try 1's clean ending ('called counter intention') and keeps try 2's start (never flagged), trimmed to a different sentence so the two edges aren't identical to either prior attempt. WHY-YOU-BLOW-THE-BIG-DEAL failed try 2 ending on 'but you did it subconsciously' ('ends mid-thought', a no-stop boundary right there) - this try keeps the same start (also never flagged) and ends one beat earlier, on the concrete 'and you blow the deal' instead of the explanation after it. Skipped three for good, same reasoning as try 2: THE-3-MINDS-THAT-CONTROL-YOU (the scrambled phrase sits inside the subconscious-mind definition, one of the three minds the clip promises); THE-GAP-BETWEEN-STIMULUS-RESPONSE (the only two laugh-tagged lines ARE the clip's payoff - 'why did you say it? Because you reacted' - no 40s+ cut avoids both and still ends on a resolution, not a setup); 5K-TO-8-MILLION-IN-18-MONTHS (no recorded reason for the failure exists to diagnose - 'not in the reports kept since 23 Sept').",
+  "clips": [
+    {
+      "slug": "DRUG-DEALER-TO-1M-A-MONTH",
+      "in": 146.88,
+      "out": 203.92,
+      "start_words": "My brother's over there",
+      "end_words": "around me affecting me",
+      "hook": ["$1M a month,", "taught in prison"],
+      "caption": "Kevin Trudeau spent eight and a half years in prison for contempt of court - never charged with a crime. While he was there, he taught other inmates how to control their minds instead of reacting to everything around them.\n\nOne of those men was a drug dealer. He got out, cleaned up, and built an online business. Today he makes a million dollars a month.\n\nHis own words: it made him feel like Superman - in control of his life instead of controlled by it.\n\nWhat would you build if nothing could trigger you?\n\n#kevintrudeau #mindset #selfdiscipline #successstory #emotionalcontrol #wealthmindset",
+      "retry_of": "ep_v7d2lxy_r2/DRUG-DEALER-TO-1M-A-MONTH"
+    },
+    {
+      "slug": "THE-POVERTY-WAVE-VS-THE-WEALTH-WAVE",
+      "in": 371.68,
+      "out": 415.52,
+      "start_words": "we learned because I could",
+      "end_words": "called counter intention",
+      "hook": ["Why you feel", "a poverty headwind"],
+      "caption": "Kevin Trudeau says he can feel it when someone wants more money but can't seem to get there.\n\nHe calls it counter intention: an invisible headwind pushing back against the very thing you're trying to create. You feel like you're swimming upstream, or walking uphill with a thousand pounds on your back, and you can't explain why.\n\nThe wanting isn't the problem. Something underneath it is fighting back.\n\nHave you ever felt that kind of resistance chasing a goal?\n\n#kevintrudeau #mindset #subconsciousmind #manifesting #moneymindset #wealthmindset",
+      "retry_of": "ep_v7d2lxy_r2/THE-POVERTY-WAVE-VS-THE-WEALTH-WAVE"
+    },
+    {
+      "slug": "WHY-YOU-BLOW-THE-BIG-DEAL",
+      "in": 450.4,
+      "out": 545.76,
+      "start_words": "You're saying, I want",
+      "end_words": "and you blow the deal",
+      "hook": ["Why you blow", "the big deal"],
+      "caption": "You land the deal. Then you get drunk the night before, show up late, and blow it. Why would you do that?\n\nKevin Trudeau calls it a counter intention - a subconscious program working against the very thing you say you want. It shows up with money too: want more, but your grandmother taught you money is the root of all evil, and now every dollar you make fights an invisible headwind.\n\nYou didn't do it on purpose. That's the problem - you did it without knowing.\n\nWhat program might be running underneath what you want?\n\n#kevintrudeau #mindset #selfsabotage #subconsciousmind #moneymindset #success",
+      "retry_of": "ep_v7d2lxy_r2/WHY-YOU-BLOW-THE-BIG-DEAL"
+    }
+  ]
+}
