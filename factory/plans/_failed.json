@@ -3760,6 +3760,96 @@
     "1040 AM.",
     "You're stuck on 97.9"
    ]
+  },
+  "ar_v6sfb21_r2/SANDBAGS-ARE-TIED-TO-YOU": {
+   "plan": "ar_v6sfb21_r2",
+   "source": "v6sfb21.mp4",
+   "brand": "AR_SAMSKARAR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_SANDBAGS-ARE-TIED-TO-YOU_60s.mp4: [FAIL] 01_SANDBAGS-ARE-TIED-TO-YOU_60s.mp4                    37 captions vs the sound (word-referenced: no clear pauses)  median +0.49s  worst-10% 0.82s  | words captioned 100%"
+   ],
+   "slug": "SANDBAGS-ARE-TIED-TO-YOU",
+   "in": 490.4,
+   "out": 549.5,
+   "start_words": "imagine a hot air balloon",
+   "end_words": "the same thing with spirituality",
+   "hook": [
+    "You have sandbags",
+    "tied to you."
+   ]
+  },
+  "ar_v6sfb21_r2/RAGE-ISNT-ANGER-ITS-A-BUTTON": {
+   "plan": "ar_v6sfb21_r2",
+   "source": "v6sfb21.mp4",
+   "brand": "AR_SAMSKARAR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_RAGE-ISNT-ANGER-ITS-A-BUTTON_72s.mp4` - sentence starts with no stop: \"buttons That\"; sentence starts with no stop: \"response And\"; word repeated after one: \"not yet not\""
+   ],
+   "slug": "RAGE-ISNT-ANGER-ITS-A-BUTTON",
+   "in": 743.8,
+   "out": 814.5,
+   "start_words": "the emotion of anger or jealousy",
+   "end_words": "that's exactly what you want",
+   "hook": [
+    "That's not anger.",
+    "It's your button."
+   ]
+  },
+  "ar_v76l9y0_r3/TAUGHT-MONEY-ISNT-SAFE": {
+   "plan": "ar_v76l9y0_r3",
+   "source": "v76l9y0.mp4",
+   "brand": "AR_CANVASR2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_TAUGHT-MONEY-ISNT-SAFE_53s.mp4: [FAIL] 01_TAUGHT-MONEY-ISNT-SAFE_53s.mp4                      37 captions vs the sound (word-referenced: no clear pauses)  median +0.43s  worst-10% 0.87s  | words captioned 100%"
+   ],
+   "slug": "TAUGHT-MONEY-ISNT-SAFE",
+   "in": 1348.6,
+   "out": 1402.6,
+   "start_words": "Let's say that your parents",
+   "end_words": "we may have counter intention",
+   "hook": [
+    "You were taught",
+    "money isn't safe"
+   ]
+  },
+  "ar_v76l9y0_r3/GRATITUDE-FIRST-IS-BACKWARDS": {
+   "plan": "ar_v76l9y0_r3",
+   "source": "v76l9y0.mp4",
+   "brand": "AR_CANVASR2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 02_GRATITUDE-FIRST-IS-BACKWARDS_143s.mp4: [FAIL] 02_GRATITUDE-FIRST-IS-BACKWARDS_143s.mp4               11 captions vs the sound  median +0.38s  worst-10% 0.62s  | words captioned 100%"
+   ],
+   "slug": "GRATITUDE-FIRST-IS-BACKWARDS",
+   "in": 2680.6,
+   "out": 2823.6,
+   "start_words": "Let me tell you the story",
+   "end_words": "It's necessary",
+   "hook": [
+    "You're grateful.",
+    "That's backwards."
+   ]
+  },
+  "ar_v76l9y0_r4/TEN-YEARS-A-GIFT": {
+   "plan": "ar_v76l9y0_r4",
+   "source": "v76l9y0.mp4",
+   "brand": "AR_CANVASR2R2R2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_TEN-YEARS-A-GIFT_49s.mp4: [FAIL] 01_TEN-YEARS-A-GIFT_49s.mp4                            7 captions vs the sound  median +1.13s  worst-10% 1.21s  | words captioned 99%  UNCAPTIONED SPEECH [(13.3, 15.2), (43.6, 45.2)]"
+   ],
+   "slug": "TEN-YEARS-A-GIFT",
+   "in": 1962.6,
+   "out": 2012.6,
+   "start_words": "I want to ask you",
+   "end_words": "It was a gift",
+   "hook": [
+    "Ten years in prison.",
+    "A gift."
+   ]
   }
  },
  "attempts": {
@@ -3769,7 +3859,7 @@
   "ar_v70c41q_r2": 2,
   "ar_v76xweu_r2": 2,
   "ar_v77w5tc_r2": 2,
-  "ar_v76l9y0_r3": 1,
-  "ar_v76l9y0_r4": 1
+  "ar_v76l9y0_r3": 2,
+  "ar_v76l9y0_r4": 2
  }
 }
