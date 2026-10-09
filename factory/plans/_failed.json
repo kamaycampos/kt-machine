@@ -3850,6 +3850,114 @@
     "Ten years in prison.",
     "A gift."
    ]
+  },
+  "ar_v779sqa_r2/SEVEN-MONTHS-ALONE": {
+   "plan": "ar_v779sqa_r2",
+   "source": "v779sqa.mp4",
+   "brand": "AR_CAVER2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_SEVEN-MONTHS-ALONE_68s.mp4` - word repeated after one: \"months.\" Seven months\"; word repeated after one: \"seven months.\" Seven\""
+   ],
+   "slug": "SEVEN-MONTHS-ALONE",
+   "in": 7.3,
+   "out": 74.0,
+   "start_words": "I want to go to the next level",
+   "end_words": "which allows your brain to be quiet",
+   "hook": [
+    "You couldn't survive",
+    "seven months silent."
+   ]
+  },
+  "ep_v70wvnu_r3/A-3D-CAMERA-ON-YOUR-MIND": {
+   "plan": "ep_v70wvnu_r3",
+   "source": "v70wvnu.mp4",
+   "brand": "KT_TRIGGERR3",
+   "tries": 3,
+   "why": [
+    "FAIL 02_A-3D-CAMERA-ON-YOUR-MIND_57s.mp4: ends off the planned words: plan ends 'or an end print', clip ends 'is a part of the company'"
+   ],
+   "slug": "A-3D-CAMERA-ON-YOUR-MIND",
+   "in": 275.92,
+   "out": 333.68,
+   "start_words": "I could see the picture",
+   "end_words": "or an end print",
+   "hook": [
+    "A 3D camera",
+    "records you 24/7"
+   ]
+  },
+  "ep_v70wvnu_r3/THE-FOURTH-GRADE-PROOF": {
+   "plan": "ep_v70wvnu_r3",
+   "source": "v70wvnu.mp4",
+   "brand": "KT_TRIGGERR3",
+   "tries": 3,
+   "why": [
+    "FAIL 01_THE-FOURTH-GRADE-PROOF_60s.mp4: ends off the planned words: plan ends 'there I can see it', clip ends 'of paper and i go yeah'"
+   ],
+   "slug": "THE-FOURTH-GRADE-PROOF",
+   "in": 583.92,
+   "out": 645.12,
+   "start_words": "Nobody can push your button",
+   "end_words": "there I can see it",
+   "hook": [
+    "Why your 4th-grade",
+    "memory controls you"
+   ]
+  },
+  "ep_v7d2lxy_r3/DRUG-DEALER-TO-1M-A-MONTH": {
+   "plan": "ep_v7d2lxy_r3",
+   "source": "v7d2lxy.mp4",
+   "brand": "KT_PUPPETR3",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_DRUG-DEALER-TO-1M-A-MONTH_54s.mp4` - word repeated after one: \"me affecting me.\""
+   ],
+   "slug": "DRUG-DEALER-TO-1M-A-MONTH",
+   "in": 146.88,
+   "out": 203.92,
+   "start_words": "My brother's over there",
+   "end_words": "around me affecting me",
+   "hook": [
+    "$1M a month,",
+    "taught in prison"
+   ]
+  },
+  "ep_v7d2lxy_r3/THE-POVERTY-WAVE-VS-THE-WEALTH-WAVE": {
+   "plan": "ep_v7d2lxy_r3",
+   "source": "v7d2lxy.mp4",
+   "brand": "KT_PUPPETR3",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `02_THE-POVERTY-WAVE-VS-THE-WEALTH-WAVE_40s.mp4` - ends mid-thought on \"counter intention and\"; sentence starts with no stop: \"back You\"; sentence starts with no stop: \"intention So\""
+   ],
+   "slug": "THE-POVERTY-WAVE-VS-THE-WEALTH-WAVE",
+   "in": 371.68,
+   "out": 415.52,
+   "start_words": "we learned because I could",
+   "end_words": "called counter intention",
+   "hook": [
+    "Why you feel",
+    "a poverty headwind"
+   ]
+  },
+  "ep_v7d2lxy_r3/WHY-YOU-BLOW-THE-BIG-DEAL": {
+   "plan": "ep_v7d2lxy_r3",
+   "source": "v7d2lxy.mp4",
+   "brand": "KT_PUPPETR3",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_WHY-YOU-BLOW-THE-BIG-DEAL_89s.mp4` - sentence starts with no stop: \"earth The\"; sentence starts with no stop: \"else And\"; sentence starts with no stop: \"flourish So\""
+   ],
+   "slug": "WHY-YOU-BLOW-THE-BIG-DEAL",
+   "in": 450.4,
+   "out": 545.76,
+   "start_words": "You're saying, I want",
+   "end_words": "and you blow the deal",
+   "hook": [
+    "Why you blow",
+    "the big deal"
+   ]
   }
  },
  "attempts": {
@@ -3860,6 +3968,7 @@
   "ar_v76xweu_r2": 2,
   "ar_v77w5tc_r2": 2,
   "ar_v76l9y0_r3": 2,
-  "ar_v76l9y0_r4": 2
+  "ar_v76l9y0_r4": 2,
+  "ar_v6yeuyc_r3": 1
  }
 }
