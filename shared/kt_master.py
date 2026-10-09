@@ -113,7 +113,12 @@ def whisper_cpp(wav, model, prompt=None):
             t = tok.get("text", "")
             if not t or t.startswith("[_") or t.startswith("<|"):
                 continue
-            a, b = tok["offsets"]["from"] / 1000.0, tok["offsets"]["to"] / 1000.0
+            off = tok.get("offsets")
+            if off:
+                a, b = off["from"] / 1000.0, off["to"] / 1000.0
+            else:                                      # a token can lack its own times:
+                a = out[-1][1] if out else seg["offsets"]["from"] / 1000.0   # it follows the last
+                b = a
             if t.startswith(" ") or not out:
                 if t.strip():
                     out.append([a, b, t.strip()])
