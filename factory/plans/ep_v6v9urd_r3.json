@@ -1,0 +1,21 @@
+{
+  "source": "v6v9urd.mp4",
+  "brand": "KT_MEMORYR2R2",
+  "test": false,
+  "note": "10 Oct 2026 - second chances, round 3, for 'How To Remember Anything: The Story Behind The Mega Memory System' (Rumble v6v9urd). Weekly agent, re-cut per PLANNING.md 2c. REMEMBERED-THE-BODYGUARD-200M opened mid-sentence on 'was a guy' - the sentence it was clipped from also leans on 'down there' pointing back to Australia, mentioned a cue earlier - so the start moved to that prior sentence, 'When I was in Australia...', which stands alone and still sets the scene. The other four last-chance clips (WALL-STREET-500-RIVALS, FLUNKING-TO-100-PERCENT, COUNTING-CARDS-250K-RENO, THE-GRIFFIN-BOOK) had already had their edges moved once this week and failed again - on caption drift through one long continuous quoted story with no pauses to re-anchor on, or on scrambled-sounding phrases sitting inside the restaurant/Griffin-book scenes that the ending depends on. Tries 2 means last chance, and no sentence boundary was available that would dodge the problem without cutting the setup or the payoff, so they were skipped rather than guessed at.",
+  "clips": [
+    {
+      "slug": "REMEMBERED-THE-BODYGUARD-200M",
+      "in": 2325.52,
+      "out": 2442.56,
+      "start_words": "When I was in Australia",
+      "end_words": "That's real world stuff",
+      "hook": [
+        "One remembered name",
+        "$200 million deal"
+      ],
+      "caption": "Kevin Trudeau met Australian billionaire Rene Rifkin for maybe two minutes at a cocktail party.\n\nTwo days later, in a hotel elevator, Rifkin's bodyguard was standing just out of sight behind him.\n\nKevin greeted Rifkin and his assistant by name, then named the bodyguard too, a man he'd barely glimpsed once.\n\nRifkin was stunned enough to invite him home for dinner. That dinner turned into a business deal worth over $200 million.\n\nA name remembered can outperform a pitch rehearsed for weeks.\n\n#kevintrudeau #memory #networking #business #wealthmindset #success",
+      "retry_of": "ep_v6v9urd_r2/REMEMBERED-THE-BODYGUARD-200M"
+    }
+  ]
+}
