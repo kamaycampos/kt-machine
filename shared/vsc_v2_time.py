@@ -178,17 +178,26 @@ def words_per_burst(bursts, words):
     put the next caption's first word into this one ("go" / "crazy. One").
     """
     out, i = [], 0
-    for _s, _e, t in bursts:
+    for k, (_s, _e, t) in enumerate(bursts):
         want = "".join(re.sub(r"[^a-z0-9]", "", x.lower()) for x in t.split())
         grp, acc = [], ""
         while i < len(words) and len(acc) < len(want):
             grp.append(words[i])
             acc += re.sub(r"[^a-z0-9]", "", words[i][2].lower())
             i += 1
-        if acc != want:                 # numbers_to_digits rewrote a word: fall back
-            n = len(t.split())
-            i = i - len(grp) + n
-            grp = words[max(0, i - n):i]
+        if acc != want:
+            # numbers_to_digits rewrote words, so the text cannot be matched: take this
+            # caption's words BY TIME - every word that starts before the next caption.
+            # 10 Oct 2026: the old fallback counted the caption's tokens instead, and
+            # "in a million years" is 3 words but 2 tokens ("in 1,000,000"), so every
+            # caption after it in TWO-WRONG-BELIEFS was built one word off - "problems.
+            # What" / "over the" - and the clip's last word was dropped.
+            i -= len(grp)
+            nxt = bursts[k + 1][0] if k + 1 < len(bursts) else float("inf")
+            grp = []
+            while i < len(words) and (not grp or words[i][0] < nxt - 1e-6):
+                grp.append(words[i])
+                i += 1
         out.append(grp)
     return out
 
