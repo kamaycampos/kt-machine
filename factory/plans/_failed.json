@@ -4030,6 +4030,114 @@
     "$30 million painting",
     "He's just illiquid"
    ]
+  },
+  "ar_v6rykax_r2/YOUR-PRAYERS-ARE-ALWAYS-HEARD": {
+   "plan": "ar_v6rykax_r2",
+   "source": "v6rykax.mp4",
+   "brand": "AR_PRAYERFIXR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_YOUR-PRAYERS-ARE-ALWAYS-HEARD_41s.mp4` - ends mid-thought on \"and Trust\"; sentence starts with no stop: \"heard The\""
+   ],
+   "slug": "YOUR-PRAYERS-ARE-ALWAYS-HEARD",
+   "in": 281.0,
+   "out": 328.3,
+   "start_words": "Next how does somebody know",
+   "end_words": "This takes faith and trust",
+   "hook": [
+    "Your prayers are",
+    "always heard."
+   ]
+  },
+  "ar_v6rykax_r2/80-PERCENT-RECOVERY-ANY-GOD-WORKED": {
+   "plan": "ar_v6rykax_r2",
+   "source": "v6rykax.mp4",
+   "brand": "AR_PRAYERFIXR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_80-PERCENT-RECOVERY-ANY-GOD-WORKED_130s.mp4: [FAIL] 02_80-PERCENT-RECOVERY-ANY-GOD-WORKED_130s.mp4         21 captions vs the sound  median +0.32s  worst-10% 0.91s  | words captioned 100%"
+   ],
+   "slug": "80-PERCENT-RECOVERY-ANY-GOD-WORKED",
+   "in": 345.0,
+   "out": 480.0,
+   "start_words": "one of the greatest studies",
+   "end_words": "It is quantum physics",
+   "hook": [
+    "80% recovery rate.",
+    "Any god worked."
+   ]
+  },
+  "ar_v6rykax_r2/99-PERCENT-IS-OFF-YOUR-RADAR": {
+   "plan": "ar_v6rykax_r2",
+   "source": "v6rykax.mp4",
+   "brand": "AR_PRAYERFIXR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_99-PERCENT-IS-OFF-YOUR-RADAR_42s.mp4: ends off the planned words: plan ends 'miracles will happen in your life', clip ends 'it in miracles will happen in'"
+   ],
+   "slug": "99-PERCENT-IS-OFF-YOUR-RADAR",
+   "in": 584.0,
+   "out": 631.0,
+   "start_words": "don't think your prayers",
+   "end_words": "miracles will happen in your life",
+   "hook": [
+    "99% is off",
+    "your radar screen."
+   ]
+  },
+  "ar_v76l9y0_r5/TEN-YEARS-A-GIFT": {
+   "plan": "ar_v76l9y0_r5",
+   "source": "v76l9y0.mp4",
+   "brand": "AR_CANVASR2R2R2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_TEN-YEARS-A-GIFT_86s.mp4` - the spoken word was on screen in only 8 of 11 moments"
+   ],
+   "slug": "TEN-YEARS-A-GIFT",
+   "in": 2012.6,
+   "out": 2098.6,
+   "start_words": "Were you in prison for 10 years",
+   "end_words": "the best sabbatical I could ever imagine",
+   "hook": [
+    "Prison.",
+    "Called it a gift."
+   ]
+  },
+  "ep_v6rjcpv_r2/30-BILLIONAIRES-DONT-MEDITATE": {
+   "plan": "ep_v6rjcpv_r2",
+   "source": "v6rjcpv.mp4",
+   "brand": "KT_NEUROR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_30-BILLIONAIRES-DONT-MEDITATE_52s.mp4: [FAIL] 02_30-BILLIONAIRES-DONT-MEDITATE_52s.mp4               28 captions vs the sound (word-referenced: no clear pauses)  median +0.58s  worst-10% 1.43s  | words captioned 103%"
+   ],
+   "slug": "30-BILLIONAIRES-DONT-MEDITATE",
+   "in": 892.36,
+   "out": 946.12,
+   "start_words": "I was just with 30",
+   "end_words": "this is theory. It's BS.",
+   "hook": [
+    "30 billionaires",
+    "none of them meditate"
+   ]
+  },
+  "ep_v6v9urd_r3/REMEMBERED-THE-BODYGUARD-200M": {
+   "plan": "ep_v6v9urd_r3",
+   "source": "v6v9urd.mp4",
+   "brand": "KT_MEMORYR2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_REMEMBERED-THE-BODYGUARD-200M_117s.mp4` - stray full stop: \"stuff. and\""
+   ],
+   "slug": "REMEMBERED-THE-BODYGUARD-200M",
+   "in": 2325.52,
+   "out": 2442.56,
+   "start_words": "When I was in Australia",
+   "end_words": "That's real world stuff",
+   "hook": [
+    "One remembered name",
+    "$200 million deal"
+   ]
   }
  },
  "attempts": {
