@@ -191,16 +191,38 @@ Never: rephrase, tidy grammar he really spoke, add words he did not say, change
 punctuation or capitals for style, or touch a word you are not sure is wrong.
 Fewer, certain edits beat many guesses.
 
+A line may be followed by "~" notes: there a SECOND speech model heard something
+different. Neither model is always right - it is a clue where to look, judged by
+meaning. Never copy a "~" note into `wrong`; `wrong` is always words from an L line.
+
 Each edit: `line` = the L-number where the wrong words START; `wrong` = the exact words
 as they appear in the transcript (copy them, 1-6 words, may run onto the next line);
 `right` = what he said; `why` = a few words."""
 
 
-def lines_of(words, per=18):
+def hints(words, other, per=18):
+    """{line: ['"this" / other model: "that"', ...]} where a second engine disagrees.
+
+    9 Oct 2026, master-test: the correction pass missed "NeXT because he that I know"
+    (he says "because he says, I know") - nothing in the text alone says it is wrong. A
+    second free model hearing the same audio differently is exactly that signal."""
+    a, b = [norm(w[2]) for w in words], [norm(w[2]) for w in other]
+    out = {}
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(a=a, b=b, autojunk=False).get_opcodes():
+        if tag == "replace" and i2 - i1 <= 6 and j2 - j1 <= 6:
+            here = " ".join(w[2] for w in words[i1:i2])
+            alt = " ".join(w[2] for w in other[j1:j2])
+            out.setdefault(i1 // per, []).append(f'"{here}" / other model: "{alt}"')
+    return out
+
+
+def lines_of(words, per=18, notes=None):
     out = []
     for k in range(0, len(words), per):
         t = words[k][0]
         out.append(f"L{k // per} [{int(t // 60)}:{int(t % 60):02d}] " + " ".join(w[2] for w in words[k:k + per]))
+        for n in (notes or {}).get(k // per, []):
+            out.append(f"   ~ {n}")
     return "\n".join(out)
 
 
@@ -238,10 +260,11 @@ def _allowed(wrong, right, vocab):
     return "not a correction of these words"
 
 
-def apply_edits(words, edits, per=18, names=NAMES):
+def apply_edits(words, edits, per=18, names=NAMES, heard=()):
     """Apply validated word edits. Timing outside an edit never moves; an edit's new
-    words share its span by length. Edits never overlap (no stacking, ever)."""
-    vocab = {norm(t) for n in names for t in n.split()}
+    words share its span by length. Edits never overlap (no stacking, ever).
+    `heard`: words a second engine heard where it disagreed - real audio, not invention."""
+    vocab = {norm(t) for n in names for t in n.split()} | set(heard)
     words = [tuple(w) for w in words]
     cap = max(25, len(words) // 25)
     taken, rejected, plan = [], [], []
@@ -275,7 +298,7 @@ def apply_edits(words, edits, per=18, names=NAMES):
     return words, sorted(taken, key=lambda x: x["at"]), rejected
 
 
-def correct(words, context="", names=NAMES, model=MODEL):
+def correct(words, context="", names=NAMES, model=MODEL, other=None):
     """ONE Claude call (no tools, structured output) proposes edits; code decides.
 
     Returns (words, taken, rejected, usage). Without ANTHROPIC_API_KEY, or if the call
@@ -290,7 +313,8 @@ def correct(words, context="", names=NAMES, model=MODEL):
     try:
         with client.messages.stream(
                 model=model, max_tokens=32000, system=system,
-                messages=[{"role": "user", "content": "Transcript:\n\n" + lines_of(words)}],
+                messages=[{"role": "user", "content": "Transcript:\n\n" + lines_of(
+                    words, notes=hints(words, other) if other else None)}],
                 output_config={"effort": "high", "format": {"type": "json_schema", "schema": SCHEMA}},
         ) as s:
             r = s.get_final_message()
@@ -306,7 +330,13 @@ def correct(words, context="", names=NAMES, model=MODEL):
     except Exception:
         print("  correction answer unreadable - master left uncorrected", flush=True)
         return words, [], [], None
-    w, taken, rejected = apply_edits(words, edits, names=names)
+    heard = set()
+    if other:
+        a, b = [norm(x[2]) for x in words], [norm(x[2]) for x in other]
+        for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(a=a, b=b, autojunk=False).get_opcodes():
+            if tag == "replace":
+                heard.update(b[j1:j2])
+    w, taken, rejected = apply_edits(words, edits, names=names, heard=heard)
     u = r.usage
     usage = {"input": u.input_tokens, "output": u.output_tokens,
              "usd": round(u.input_tokens * 4e-6 + u.output_tokens * 20e-6, 4)}
@@ -396,15 +426,17 @@ def cut(src, t_in, t_out, timed=None):
     return [(round(a, 3), round(b, 3), w) for a, b, w in out]
 
 
-def build(src, engine, correct_it=False, context="", fixes=(), out=None):
+def build(src, engine, correct_it=False, context="", fixes=(), out=None, second=None):
+    """`second`: another free engine whose disagreements the correction pass is shown."""
     os.makedirs(MASTER_DIR, exist_ok=True)
     wav = wav_of(src, os.path.join("/tmp", f"master_{os.getpid()}.wav"))
     t0 = time.time()
     raw = collapse_stutters(transcribe(wav, engine))
+    other = collapse_stutters(transcribe(wav, second)) if second and correct_it else None
     took = round(time.time() - t0, 1)
-    words, taken, rejected, usage = (correct(raw, context) if correct_it else (raw, [], [], None))
+    words, taken, rejected, usage = (correct(raw, context, other=other) if correct_it else (raw, [], [], None))
     words = apply_fixes(words, fixes) if fixes else words
-    m = {"src": os.path.basename(src), "engine": engine, "seconds": took, "words": words,
+    m = {"src": os.path.basename(src), "engine": engine + (f" (+{second} hints)" if other else ""), "seconds": took, "words": words,
          "raw": raw, "edits": taken, "rejected": rejected, "usage": usage}
     p = out or path_for(src)
     json.dump(m, open(p, "w"), indent=0)

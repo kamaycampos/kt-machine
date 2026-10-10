@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """The master transcript (shared/kt_master.py), end to end on one KT plan shard.
 
-    python factory/master_test.py <plan> <shard> <engine>
+    python factory/master_test.py <plan> <shard> <engine> [<second engine>]
 
 Builds the episode's master (whole-episode transcription + one Claude correction call
 when ANTHROPIC_API_KEY is set), then prints, clip by clip, the caption bursts today's
@@ -31,9 +31,10 @@ def bursts(src, c, key):
 
 
 plan, shard, engine = sys.argv[1], int(sys.argv[2]), sys.argv[3]
+second = ENGINES.get(sys.argv[4]) if len(sys.argv) > 4 else None    # hints for Claude
 p = json.load(open(os.path.join(R.PLANS, f"{plan}.json")))
 src = R.fetch_source(p["source"][:-4])
-m = kt_master.build(src, ENGINES[engine], True, p.get("note", ""))
+m = kt_master.build(src, ENGINES[engine], True, p.get("note", ""), second=second)
 for e in m["edits"]:
     print(f"    EDIT {e['at']:7.1f}s  {e['wrong']!r} -> {e['right']!r}  ({e['why']})")
 for e in m["rejected"]:
