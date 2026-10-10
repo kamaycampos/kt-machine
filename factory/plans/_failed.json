@@ -3958,6 +3958,78 @@
     "Why you blow",
     "the big deal"
    ]
+  },
+  "ar_v6yeuyc_r3/YOUR-BRAIN-IS-BROADCASTING-POVERTY": {
+   "plan": "ar_v6yeuyc_r3",
+   "source": "v6yeuyc.mp4",
+   "brand": "AR_SLAVEWAVER3",
+   "tries": 3,
+   "why": [
+    "FAIL 01_YOUR-BRAIN-IS-BROADCASTING-POVERTY_70s.mp4: [FAIL] 01_YOUR-BRAIN-IS-BROADCASTING-POVERTY_70s.mp4          46 captions vs the sound (word-referenced: no clear pauses)  median -0.09s  worst-10% 1.10s  | words captioned 100%"
+   ],
+   "slug": "YOUR-BRAIN-IS-BROADCASTING-POVERTY",
+   "in": 0.0,
+   "out": 69.0,
+   "start_words": "Do billionaires or the",
+   "end_words": "that the brain emits frequency",
+   "hook": [
+    "Your brain is",
+    "broadcasting poverty."
+   ]
+  },
+  "ar_v6yeuyc_r3/BILL-CLINTON-REALLY-FELT-YOUR-PAIN": {
+   "plan": "ar_v6yeuyc_r3",
+   "source": "v6yeuyc.mp4",
+   "brand": "AR_SLAVEWAVER3",
+   "tries": 3,
+   "why": [
+    "FAIL 02_BILL-CLINTON-REALLY-FELT-YOUR-PAIN_51s.mp4: ends off the planned words: plan ends 'and if they do it'll resonate', clip ends 'if they do it will resonate'"
+   ],
+   "slug": "BILL-CLINTON-REALLY-FELT-YOUR-PAIN",
+   "in": 444.0,
+   "out": 495.0,
+   "start_words": "This is something that",
+   "end_words": "and if they do it'll resonate",
+   "hook": [
+    "I feel",
+    "your pain."
+   ]
+  },
+  "ar_v6yeuyc_r3/THE-ELITE-DONT-HAVE-SILVER-FILLINGS": {
+   "plan": "ar_v6yeuyc_r3",
+   "source": "v6yeuyc.mp4",
+   "brand": "AR_SLAVEWAVER3",
+   "tries": 3,
+   "why": [
+    "FAIL 01_THE-ELITE-DONT-HAVE-SILVER-FILLINGS_74s.mp4: [FAIL] 01_THE-ELITE-DONT-HAVE-SILVER-FILLINGS_74s.mp4         45 captions vs the sound (word-referenced: no clear pauses)  median +0.02s  worst-10% 0.96s  | words captioned 101%"
+   ],
+   "slug": "THE-ELITE-DONT-HAVE-SILVER-FILLINGS",
+   "in": 697.3,
+   "out": 771.0,
+   "start_words": "There's a whole host of things",
+   "end_words": "they can't overcome it",
+   "hook": [
+    "Your fillings hide",
+    "a deadly poison."
+   ]
+  },
+  "ep_v77l7um_r2/30-MILLION-PAINTING-ILLIQUID": {
+   "plan": "ep_v77l7um_r2",
+   "source": "v77l7um.mp4",
+   "brand": "KT_BITCOINR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_30-MILLION-PAINTING-ILLIQUID_137s.mp4` - sentence starts with no stop: \"watching The\"; two subjects together: \"you we\""
+   ],
+   "slug": "30-MILLION-PAINTING-ILLIQUID",
+   "in": 3097.12,
+   "out": 3243.2,
+   "start_words": "We walked into a restaurant",
+   "end_words": "pay cash for it",
+   "hook": [
+    "$30 million painting",
+    "He's just illiquid"
+   ]
   }
  },
  "attempts": {
@@ -3969,6 +4041,6 @@
   "ar_v77w5tc_r2": 2,
   "ar_v76l9y0_r3": 2,
   "ar_v76l9y0_r4": 2,
-  "ar_v6yeuyc_r3": 1
+  "ar_v6yeuyc_r3": 2
  }
 }
