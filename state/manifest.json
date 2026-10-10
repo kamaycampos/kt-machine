@@ -8136,7 +8136,11 @@
    "hook": "He thanked God for prison.",
    "bytes": 34777448,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-11T17:07",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_NEUROR2/01_THE-CHOCOLATE-CAKE-RECIPE_154s.mp4",
@@ -8144,7 +8148,11 @@
    "hook": "Why your manifesting recipe fails",
    "bytes": 102842374,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-10T17:22",
+   "cta_keyword": "KT",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_NEUROR2/01_THE-MUSIC-THAT-REVIVED-DEAD-PLANTS_84s.mp4",
@@ -8152,7 +8160,11 @@
    "hook": "The frequency that revives your manifesting",
    "bytes": 60328555,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-10T15:27",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
