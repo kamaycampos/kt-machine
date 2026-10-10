@@ -8189,11 +8189,24 @@
    "hook": "Why your manifesting recipe fails",
    "bytes": 102842374,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "reels start failed: Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda. | feed fallback: upload failed 400: {'error': {'message': 'Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda.', 'type': 'OAuthException', 'code': 368, 'error_d",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261010213937548B177994F7DC5251D0'}}"
+   },
    "scheduled_at": "2026-10-10T17:22",
    "cta_keyword": "KT",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeVEQmtllcO/",
+    "youtube": "https://youtube.com/shorts/onsUUbocLTk"
+   },
+   "caption_at_post": "Every manifesting book Kevin Trudeau has read is missing something.\n\nPicture a recipe for a chocolate cake that only lists flour, water and salt. No eggs, no vanilla, no chocolate. Follow it perfectly and you still never get the cake.\n\nThat's what happens with most manifesting advice - a few ingredients, often in the wrong order, and nobody asks why nothing bakes.\n\nThe people who actually manifest easily have the full recipe. Most of us only get pieces of it.\n\nComment WISH and I'll send you Kevin's free audios.\n\n#kevintrudeau #manifestation #lawofattraction #mindsetshift #wealthmindset #yourwishisyourcommand",
+   "posted_at": "2026-10-10T17:39"
   },
   {
    "file": "KT_NEUROR2/01_THE-MUSIC-THAT-REVIVED-DEAD-PLANTS_84s.mp4",
