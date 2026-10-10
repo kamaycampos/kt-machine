@@ -1,0 +1,48 @@
+{
+ "source": "v6rykax.mp4",
+ "brand": "AR_PRAYERFIXR2",
+ "test": false,
+ "note": "10 Oct 2026 - 'Ask and You Shall Receive: The Prayer Fix Q & A' (Rumble v6rykax). Awakened Rise weekly agent. SECOND CHANCE re-cut (7 Oct 2026 gate failures, all 'captions vs the sound'). YOUR-PRAYERS-ARE-ALWAYS-HEARD: start moved back to the clear 'Good question.' pause before 'Next, how does somebody know...', past the ambiguous 'Excellent question. When' seam the old start sat on. 80-PERCENT-RECOVERY-ANY-GOD-WORKED: end moved off the first, mid-sentence 'it's quantum physics' (the old out landed between two near-identical occurrences of the phrase) onto the second, sentence-final 'It is quantum physics.' right before the next question. HE-THANKED-GOD-FOR-PRISON: start moved past the dense, stuttered prayer recitation ('my, my spiritual nature... and, and reveal') onto the plain 'Within months, I was sued by the government' sentence; the 'thank you God' payoff and the clean-slate ending are unchanged. 99-PERCENT-IS-OFF-YOUR-RADAR: out extended half a second so the clip actually finishes 'in your life' instead of cutting into it.",
+ "clips": [
+  {
+   "slug": "YOUR-PRAYERS-ARE-ALWAYS-HEARD",
+   "in": 281.0,
+   "out": 328.3,
+   "start_words": "Next how does somebody know",
+   "end_words": "This takes faith and trust",
+   "hook": ["Your prayers are", "always heard."],
+   "caption": "If you're waiting for proof your prayer landed, you're already doing it wrong.\n\nWhen a prayer is done properly, it's always heard — the last step isn't waiting for results, it's releasing your grip on exactly how they arrive. Say it, mean it, then hand the method back to the universe and trust it's handling the delivery better than you could have planned it yourself. The checking, the doubting — that's the part actually blocking you.\n\nComment RISE and I'll send you how to let go of the outcome.\n\n#manifestation #prayer #awakening #mindset #spirituality #kevintrudeau",
+   "retry_of": "ar_v6rykax/YOUR-PRAYERS-ARE-ALWAYS-HEARD"
+  },
+  {
+   "slug": "80-PERCENT-RECOVERY-ANY-GOD-WORKED",
+   "in": 345.0,
+   "out": 480.0,
+   "start_words": "one of the greatest studies",
+   "end_words": "It is quantum physics",
+   "hook": ["80% recovery rate.", "Any god worked."],
+   "caption": "A double-blind study put sick patients in groups: Catholics prayed, Jews prayed, Muslims prayed, Native Americans prayed to their own gods, atheists sent an intention, some got nothing at all.\n\nThe gap between prayer and no prayer wasn't subtle — recovery rates jumped as much as 80%. The detail that stunned researchers: it didn't matter whose god, or whether there was a god at all. Results were identical. He says that's not mysticism. That's quantum physics, measured in a hospital.\n\nComment RISE and I'll send you the study.\n\n#manifestation #prayer #consciousness #awakening #spirituality #kevintrudeau",
+   "retry_of": "ar_v6rykax/80-PERCENT-RECOVERY-ANY-GOD-WORKED"
+  },
+  {
+   "slug": "HE-THANKED-GOD-FOR-PRISON",
+   "in": 522.0,
+   "out": 574.0,
+   "start_words": "Within months I was sued by the government",
+   "end_words": "follow my purpose and mission",
+   "hook": ["He thanked God for", "prison."],
+   "caption": "He prayed to make a bigger impact on the world. Months later, the government sued him and took everything he owned.\n\nEight and a half years, for contempt of court. Everyone around him said his prayer wasn't answered. He said thank you — the same day. Because a clean slate, a blank canvas, no staff, no company, no distractions left standing, was exactly what he'd actually asked for, just not in a shape he could've recognized while still holding the old one.\n\nComment RISE and I'll send you the rest of this story.\n\n#manifestation #prayer #awakening #mindset #spirituality #kevintrudeau",
+   "retry_of": "ar_v6rykax/HE-THANKED-GOD-FOR-PRISON"
+  },
+  {
+   "slug": "99-PERCENT-IS-OFF-YOUR-RADAR",
+   "in": 584.0,
+   "out": 631.0,
+   "start_words": "don't think your prayers",
+   "end_words": "miracles will happen in your life",
+   "hook": ["99% is off", "your radar screen."],
+   "caption": "Your prayer isn't unanswered. It just hasn't reached the part of reality you can actually see yet.\n\nHe says ninety-nine percent of what's possible sits completely off your radar screen — not imaginary, just outside what your current thinking can perceive. The moment you stop demanding it arrive on your timeline, in your imagined shape, and actually trust the universe with the method, that's when the thing you'd have never dreamed up yourself starts arriving instead.\n\nComment RISE and I'll send you the rest.\n\n#manifestation #prayer #awakening #consciousness #mindset #kevintrudeau",
+   "retry_of": "ar_v6rykax/99-PERCENT-IS-OFF-YOUR-RADAR"
+  }
+ ]
+}
