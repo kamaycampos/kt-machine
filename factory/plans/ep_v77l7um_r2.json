@@ -1,0 +1,21 @@
+{
+  "source": "v77l7um.mp4",
+  "brand": "KT_BITCOINR2",
+  "test": false,
+  "note": "10 Oct 2026 - second chances for 'I Bought Bitcoin At $1 - What Nobody Tells You About Making Money (Wallstreetbets Founder Exclusive)' (Rumble v77l7um). Weekly agent, re-cut per PLANNING.md 2c. 30-MILLION-PAINTING-ILLIQUID's uncaptioned-speech gap sat right at the open, inside 'I was with a guy, 1979' - moved the start past it to the next sentence, 'We walked into a restaurant', which still carries the mentor scene. The other five second chances (BLEW-BITCOIN-AT-50-CENTS, BANNED-FROM-BLACKJACK-BUILT-BACCARAT, 3-TRADERS-SIX-FIGURES-15-SECONDS, SECOND-RICHEST-FREE-NEWSLETTER, RAILROADS-TRIED-TO-RUIN-HIM) had their damaged words or caption/audio gaps sitting in the middle of the story - between the setup and the payoff, with every sentence boundary nearby still inside that span - so no edge move could exclude them without cutting the lesson itself. Skipped those per the rule rather than guess.",
+  "clips": [
+    {
+      "slug": "30-MILLION-PAINTING-ILLIQUID",
+      "in": 3097.12,
+      "out": 3243.2,
+      "start_words": "We walked into a restaurant",
+      "end_words": "pay cash for it",
+      "hook": [
+        "$30 million painting",
+        "He's just illiquid"
+      ],
+      "caption": "A mentor once told Kevin Trudeau: when you walk into any room, walk in like you own it.\n\nKevin said the obvious thing back - easy when you already have the money. The mentor's answer stuck for life: the money doesn't give you the attitude, the attitude gives you the money. When you're broke, just say you're a little illiquid at the moment.\n\nYears later he watched a TV character use that exact line after losing everything, standing in front of a $30 million painting.\n\nA man on one of his cruises waited two full years for a Rolex he couldn't afford, then paid cash the day it finally arrived.\n\nDream big before the money shows up.\n\n#kevintrudeau #mindset #wealthmindset #success #moneymindset #abundance",
+      "retry_of": "ep_v77l7um/30-MILLION-PAINTING-ILLIQUID"
+    }
+  ]
+}
