@@ -1,0 +1,47 @@
+{
+  "source": "v6rjcpv.mp4",
+  "brand": "KT_NEUROR2",
+  "test": false,
+  "note": "10 Oct 2026 - second chances for 'NEURO WEALTH - The Forbidden Science Behind Manifestation & Success' (Rumble v6rjcpv). Weekly agent, re-cut per PLANNING.md 2c. THE-CHOCOLATE-CAKE-RECIPE's captions drifted across one long unbroken monologue, so the start moved back a sentence to the thesis line ('The basic ingredients are there...') to give the re-time a different anchor. 30-BILLIONAIRES-DONT-MEDITATE and THE-MUSIC-THAT-REVIVED-DEAD-PLANTS both ended on a dangling word ('No, no.' trailing into 'so,' set up for a sentence never finished) - both now run one clause further, to the actual payoff ('It's BS' / 'stimulates the growth of your hippocampus'). THE-MUSIC-THAT-REVIVED-DEAD-PLANTS also had its hook rewritten - `check_plan.py` now flags the old 'The music that / revived dead plants' as no-stakes (no viewer, money or named person), so it carries 'your manifesting' instead. TOUR-A-20-MILLION-YACHT was skipped: it's one breathless, punctuation-less list of images end to end, with no sentence boundary anywhere in it to move the edges to.",
+  "clips": [
+    {
+      "slug": "THE-CHOCOLATE-CAKE-RECIPE",
+      "in": 136.92,
+      "out": 297.0,
+      "start_words": "The basic ingredients are there",
+      "end_words": "getting their recipe in total",
+      "hook": [
+        "Why your manifesting",
+        "recipe fails"
+      ],
+      "caption": "Every manifesting book Kevin Trudeau has read is missing something.\n\nPicture a recipe for a chocolate cake that only lists flour, water and salt. No eggs, no vanilla, no chocolate. Follow it perfectly and you still never get the cake.\n\nThat's what happens with most manifesting advice - a few ingredients, often in the wrong order, and nobody asks why nothing bakes.\n\nThe people who actually manifest easily have the full recipe. Most of us only get pieces of it.\n\nComment WISH and I'll send you Kevin's free audios.\n\n#kevintrudeau #manifestation #lawofattraction #mindsetshift #wealthmindset #yourwishisyourcommand",
+      "retry_of": "ep_v6rjcpv/THE-CHOCOLATE-CAKE-RECIPE"
+    },
+    {
+      "slug": "30-BILLIONAIRES-DONT-MEDITATE",
+      "in": 892.36,
+      "out": 946.12,
+      "start_words": "I was just with 30",
+      "end_words": "this is theory. It's BS.",
+      "hook": [
+        "30 billionaires",
+        "none of them meditate"
+      ],
+      "caption": "Kevin Trudeau spends time with a group of men whose combined net worth is close to a trillion dollars.\n\nHe asked all 30 of them one question: do you meditate, or did you ever, especially when you were building your wealth?\n\nThey looked at him like he was insane. Not one of them did.\n\nThe popular advice says sit, breathe, visualize abundance. Kevin says that's theory - he's telling you what wealthy people actually do.\n\nComment WISH and I'll send you Kevin's free audios.\n\n#kevintrudeau #manifestation #wealthmindset #richmindset #successmindset #mindsetshift",
+      "retry_of": "ep_v6rjcpv/30-BILLIONAIRES-DONT-MEDITATE"
+    },
+    {
+      "slug": "THE-MUSIC-THAT-REVIVED-DEAD-PLANTS",
+      "in": 2429.08,
+      "out": 2515.32,
+      "start_words": "There were two greenhouses set",
+      "end_words": "growth of your hippocampus",
+      "hook": [
+        "The frequency that",
+        "revives your manifesting"
+      ],
+      "caption": "Researchers set up two identical greenhouses, side by side, with the same plants in each.\n\nOne played rock music around the clock. The other played baroque classical. After a month, almost every plant in the rock music room was dead. The baroque room was thriving - some plants two or three times bigger.\n\nThen they moved the baroque music into the dying room. Thirty days later, the plants came back to life.\n\nKevin Trudeau says that same frequency can shift your own brain into the state where it actually creates.\n\n#kevintrudeau #manifestation #wealthmindset #mindsetshift #lawofattraction #success",
+      "retry_of": "ep_v6rjcpv/THE-MUSIC-THAT-REVIVED-DEAD-PLANTS"
+    }
+  ]
+}
