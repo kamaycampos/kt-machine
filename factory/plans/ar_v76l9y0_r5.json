@@ -1,0 +1,18 @@
+{
+ "source": "v76l9y0.mp4",
+ "brand": "AR_CANVASR2R2R2R2",
+ "test": false,
+ "note": "10 Oct 2026 - 'The Success Code Within You (Most Never Unlock It)' (Rumble v76l9y0). Awakened Rise weekly agent. SECOND CHANCE re-cut, tries 2 (last chance) for all four. TEN-YEARS-A-GIFT: the two UNCAPTIONED SPEECH gaps sat at ~13-15s and ~44-45s into the old cut (1962.6-2012.6), both inside the interviewer's lead-in question and the quoted back-and-forth right after it; this try starts fresh at the host's plain 'Were you in prison for 10 years?' (2012.6, past both gaps) and runs through the warden story to 'the best sabbatical I could ever imagine' (2098.6), a continuous Kevin monologue with no speaker-switch seams. ONE-TENTH-THE-COST, ABRACADABRA-CREATES and MISSED-MORE-THAN-ANYONE skipped: each flagged 'sentence starts with no stop' sits on a transcript boundary ('gold. Look', 'adversity. So Rockefeller's', 'words. So our words', 'ball.' quote end into 'Because', 'history. But') that falls inside the explanation the clip's hook is built to pay off, not at an edge that could be trimmed away, and the quote-heavy Jordan/Lombardi passage in MISSED-MORE-THAN-ANYONE repeats the same quote-boundary pattern at every candidate cut point tried.",
+ "clips": [
+  {
+   "slug": "TEN-YEARS-A-GIFT",
+   "in": 2012.6,
+   "out": 2098.6,
+   "start_words": "Were you in prison for 10 years",
+   "end_words": "the best sabbatical I could ever imagine",
+   "hook": ["Prison.", "Called it a gift."],
+   "caption": "Ten years in federal prison. The warden had processed thousands of inmates — and told Kevin Trudeau he was the only one who looked happy to be there.\n\nYou don't choose what happens to you. You choose what it means. Call ten years a sentence, and you serve one. Call it a sabbatical, and you fill it with yoga, languages, books, people worth meeting. Same walls, a completely different decade — because the walls never decided that. He did.\n\nComment RISE and I'll send you how to reframe what you're carrying right now.\n\n#mindset #awakening #consciousness #subconscious #manifestation #kevintrudeau",
+   "retry_of": "ar_v76l9y0_r4/TEN-YEARS-A-GIFT"
+  }
+ ]
+}
