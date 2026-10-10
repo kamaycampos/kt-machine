@@ -7672,12 +7672,26 @@
    "caption": "Everyone says they'll believe it when they see it. That's backwards, and it's the reason most people never see it.\n\nYou have to believe it first, while there's still no evidence at all \u2014 the same thing an old text calls faith: the substance of things hoped for, the evidence of things not seen. Look at a ten-million-dollar mansion while you're broke and think, I'm going to live in this. Someone asks how. You don't know how. You just know.\n\nThe moment that belief is steady, the universe starts handing you the how \u2014 people, circumstances, timing you couldn't have planned.\n\nComment RISE and I'll send you the rest.\n\n#manifestation #faith #awakening #lawofattraction #mindset #kevintrudeau",
    "hook": "You'll see it when you believe.",
    "bytes": 65669508,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261010111830657C07A842D8A323988B'}}"
+   },
    "scheduled_at": "2026-10-10T07:04",
    "cta_keyword": "LUCKY",
    "cta_variant": 7,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1075719241948327/",
+    "instagram": "https://www.instagram.com/reel/DeT9LKaClTL/",
+    "youtube": "https://youtube.com/shorts/yhFHE7QhcY4"
+   },
+   "caption_at_post": "Everyone says they'll believe it when they see it. That's backwards, and it's the reason most people never see it.\n\nYou have to believe it first, while there's still no evidence at all \u2014 the same thing an old text calls faith: the substance of things hoped for, the evidence of things not seen. Look at a ten-million-dollar mansion while you're broke and think, I'm going to live in this. Someone asks how. You don't know how. You just know.\n\nThe moment that belief is steady, the universe starts handing you the how \u2014 people, circumstances, timing you couldn't have planned.\n\nComment RISE and I'll send you the rest.\n\n#manifestation #faith #awakening #lawofattraction #mindset #kevintrudeau",
+   "posted_at": "2026-10-10T07:18"
   },
   {
    "file": "AR_PRAYERFIX/01_A-KID-NEVER-WANTS-THE-SANDCASTLE_49s.mp4",
@@ -7848,11 +7862,24 @@
    "hook": "Why you're sleeping on a nail",
    "bytes": 33176210,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "reels start failed: Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda. | feed fallback: upload failed 400: {'error': {'message': 'Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda.', 'type': 'OAuthException', 'code': 368, 'error_d",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-10T07:13",
    "cta_keyword": "BRAIN",
-   "cta_variant": 21
+   "cta_variant": 21,
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeT9hxgCKUb/",
+    "youtube": "https://youtube.com/shorts/MUuOabvdfiA"
+   },
+   "caption_at_post": "There's an old story Kevin Trudeau tells: a dog is lying on a porch, and every few minutes it whimpers like it's in pain, then does nothing about it.\n\nSomeone finally asks why. 'He's sleeping on a nail.' 'Then why won't he move?' 'Because it doesn't hurt him enough to bother.'\n\nThat's most people's whole life. Step one of Kevin's manifesting formula: get specific about what you're actually fed up with - you need a nail painful enough to make you move.\n\nThen: decide exactly what you want. Feel yourself already holding it. Then let go of needing it to happen on any schedule.\n\nTen seconds, repeated fifty times a day - that's the whole practice.\n\n#kevintrudeau #manifesting #mindset #yourwishisyourcommand #lawofattraction #goals",
+   "posted_at": "2026-10-10T07:22"
   },
   {
    "file": "KT_FREQUENCYR2/01_WHY-RICH-BRAINS-WORK-DIFFERENTLY_51s.mp4",
