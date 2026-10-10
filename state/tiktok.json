@@ -1,10 +1,10 @@
 {
- "at": "2026-10-10T06:21",
+ "at": "2026-10-10T13:01",
  "profile": {
-  "follower_count": 412,
   "following_count": 8,
   "likes_count": 5844,
-  "video_count": 166
+  "video_count": 166,
+  "follower_count": 412
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -109,7 +109,7 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 117,
+   "view_count": 119,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -519,7 +519,7 @@
   },
   "KT_SECRET/05_NOT-THE-HAMBURGER-BUSINESS_124s.mp4": {
    "id": "7688020668356545806",
-   "view_count": 94,
+   "view_count": 95,
    "like_count": 3,
    "comment_count": 0,
    "share_count": 0,
@@ -559,7 +559,7 @@
   },
   "KT_MIND/05_THE-TRASH-TEST_84s.mp4": {
    "id": "7687564395848731917",
-   "view_count": 1028,
+   "view_count": 1029,
    "like_count": 70,
    "comment_count": 2,
    "share_count": 9,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38078,
+   "view_count": 38080,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
@@ -749,7 +749,7 @@
   },
   "KT_HOME/05_05_THE-SINGLE-MOST-POWERFUL-OBJECT_86s.mp4": {
    "id": "7685101409963871501",
-   "view_count": 1361,
+   "view_count": 1362,
    "like_count": 103,
    "comment_count": 4,
    "share_count": 9,
@@ -1049,7 +1049,7 @@
   },
   "KT_LIES/03_BUY-THE-THREE-YEAR-OLD-CAR_133s.mp4": {
    "id": "7681722759096978702",
-   "view_count": 330,
+   "view_count": 331,
    "like_count": 20,
    "comment_count": 1,
    "share_count": 1,
@@ -1079,7 +1079,7 @@
   },
   "KT_PROB/01_THE-FOREST-FIRE_156s.mp4": {
    "id": "7681447590923177229",
-   "view_count": 241,
+   "view_count": 242,
    "like_count": 11,
    "comment_count": 0,
    "share_count": 1,
