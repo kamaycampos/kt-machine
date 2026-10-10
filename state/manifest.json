@@ -7814,11 +7814,24 @@
    "hook": "How picking Apple made him rich",
    "bytes": 121767053,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "reels start failed: Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda. | feed fallback: upload failed 413: {'_raw': ''}",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-10T10:08",
    "cta_keyword": "KT",
    "cta_variant": 22,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeUR3H5E41v/",
+    "youtube": "https://youtube.com/shorts/YiqoIeHscH0"
+   },
+   "caption_at_post": "Kevin Trudeau says he laughed at every stock he was ever told to buy.\n\nApple? 'What a stupid name for a computer company, it's a piece of fruit.' Amazon? 'Books online - that's insane, people want to hold the product.' DirectTV? '500 channels, who even watches that much TV?'\n\nHe bought all three anyway, plus Bitcoin at a dollar, because of one rule: listen to people who already have what you want and have already been where you are.\n\nSeeing the potential mattered more than being right about the joke.\n\nWhat's the 'stupid' idea you're dismissing right now?\n\n#kevintrudeau #investing #wealthmindset #mindset #stockmarket #success",
+   "posted_at": "2026-10-10T10:21"
   },
   {
    "file": "KT_DUTYR2/01_WHAT-TO-DO-WHEN-YOURE-STUCK_47s.mp4",
