@@ -8,7 +8,7 @@ on:
     inputs:
       plan: { description: "factory/plans/<plan>.json", default: "ep_v6v9urd" }
       shard: { description: "Shard number (2 clips each)", default: "0" }
-      engine: { description: "small | turbo | turbo-names | deepgram | elevenlabs | assemblyai", default: "turbo" }
+      engine: { description: "small | turbo | turbo-names (free whisper.cpp only)", default: "small" }
 permissions:
   contents: read
 concurrency:
@@ -19,9 +19,6 @@ env:
   FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
   TRANSCRIPT_KEY: ${{ secrets.TRANSCRIPT_KEY }}
   ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-  DEEPGRAM_API_KEY: ${{ secrets.DEEPGRAM_API_KEY }}
-  ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-  ASSEMBLYAI_API_KEY: ${{ secrets.ASSEMBLYAI_API_KEY }}
 jobs:
   shard:
     runs-on: ubuntu-latest

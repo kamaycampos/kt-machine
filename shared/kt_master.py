@@ -14,14 +14,13 @@ PERFECT, I don't care how". The diagnosis:
     ("problems. problems.");
   - nothing checks MEANING (QC_AGENT.md, Layer 2): "Steven Jobs" passes every
     mechanical check.
-So: transcribe the WHOLE episode once with the best engine available, have ONE Claude
+So: transcribe the WHOLE episode once (free whisper.cpp on the runner), have ONE Claude
 call correct it (word-level edits only, validated by code: no timing changes outside
 an edit, bounded, nothing invented), and cut every clip's captions from that. A
 correction is written once per episode and moving an edge never breaks it.
 
     python kt_master.py build <video> --engine whisper:<ggml model> [--correct]
     python kt_master.py build <video> --engine whisper+names:<ggml model>   # names as prompt
-    python kt_master.py build <video> --engine deepgram|elevenlabs|assemblyai [--correct]
     python kt_master.py cut <video> <t0> <t1>          # what a clip would get
 
 A master lives at $MASTER_DIR/<video stem>.master.json (default ~/Kamay/masters).
@@ -34,10 +33,6 @@ import re
 import subprocess
 import sys
 import time
-import urllib.error
-import urllib.parse
-import urllib.request
-import uuid
 
 HOME = os.path.expanduser("~/Kamay")
 MASTER_DIR = os.environ.get("MASTER_DIR") or os.path.join(HOME, "masters")
@@ -128,88 +123,27 @@ def whisper_cpp(wav, model, prompt=None):
     return [(round(a, 3), round(max(b, a + 0.02), 3), w) for a, b, w in out if w.strip()]
 
 
-def _http(url, data=None, headers=None, method=None, timeout=900):
-    req = urllib.request.Request(url, data=data, headers=headers or {}, method=method)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.loads(r.read().decode())
-
-
-def deepgram(wav, names=NAMES):
-    """Deepgram Nova-3, pre-recorded. Key terms ride on `keyterm`."""
-    key = os.environ["DEEPGRAM_API_KEY"]
-    q = [("model", "nova-3"), ("language", "en"), ("smart_format", "true"),
-         ("punctuate", "true")] + [("keyterm", n) for n in names]
-    body = open(wav, "rb").read()
-    hdr = {"Authorization": f"Token {key}", "Content-Type": "audio/wav"}
-    try:
-        j = _http("https://api.deepgram.com/v1/listen?" + urllib.parse.urlencode(q), body, hdr)
-    except urllib.error.HTTPError as e:                    # key terms refused: plain run
-        print(f"  deepgram with key terms refused ({e.code}); plain run", flush=True)
-        j = _http("https://api.deepgram.com/v1/listen?" + urllib.parse.urlencode(q[:4]), body, hdr)
-    ws = j["results"]["channels"][0]["alternatives"][0]["words"]
-    return [(round(w["start"], 3), round(w["end"], 3), w.get("punctuated_word") or w["word"]) for w in ws]
-
-
-def elevenlabs(wav, names=NAMES):
-    """ElevenLabs Scribe v2. Key terms as `keyterms` form fields."""
-    key = os.environ["ELEVENLABS_API_KEY"]
-
-    def post(fields):
-        bnd = uuid.uuid4().hex
-        parts = []
-        for k, v in fields:
-            parts.append(f'--{bnd}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n'.encode())
-        parts.append(f'--{bnd}\r\nContent-Disposition: form-data; name="file"; filename="a.wav"\r\n'
-                     f'Content-Type: audio/wav\r\n\r\n'.encode() + open(wav, "rb").read() + b"\r\n")
-        parts.append(f"--{bnd}--\r\n".encode())
-        return _http("https://api.elevenlabs.io/v1/speech-to-text", b"".join(parts),
-                     {"xi-api-key": key, "Content-Type": f"multipart/form-data; boundary={bnd}"})
-    base = [("model_id", os.environ.get("ELEVENLABS_STT_MODEL", "scribe_v2")), ("language_code", "en"),
-            ("timestamps_granularity", "word"), ("tag_audio_events", "false")]
-    try:
-        j = post(base + [("keyterms", n) for n in names])
-    except urllib.error.HTTPError as e:
-        print(f"  elevenlabs with key terms refused ({e.code}); plain run", flush=True)
-        j = post(base)
-    return [(round(w["start"], 3), round(w["end"], 3), w["text"].strip())
-            for w in j.get("words", []) if w.get("type") == "word" and w["text"].strip()]
-
-
-def assemblyai(wav, names=NAMES):
-    """AssemblyAI Universal. Upload, request, poll."""
-    key = os.environ["ASSEMBLYAI_API_KEY"]
-    hdr = {"authorization": key}
-    up = _http("https://api.assemblyai.com/v2/upload", open(wav, "rb").read(),
-               dict(hdr, **{"Content-Type": "application/octet-stream"}))["upload_url"]
-    base = {"audio_url": up, "language_code": "en", "punctuate": True, "format_text": True,
-            "speech_model": os.environ.get("ASSEMBLYAI_MODEL", "universal")}
-    job = None
-    for extra in ({"keyterms_prompt": names}, {"word_boost": names}, {}):
-        try:
-            job = _http("https://api.assemblyai.com/v2/transcript", json.dumps(dict(base, **extra)).encode(),
-                        dict(hdr, **{"Content-Type": "application/json"}))
-            break
-        except urllib.error.HTTPError as e:
-            print(f"  assemblyai refused {list(extra) or 'plain'} ({e.code})", flush=True)
-    if job is None:
-        raise RuntimeError("assemblyai refused every request")
-    while True:
-        j = _http(f"https://api.assemblyai.com/v2/transcript/{job['id']}", headers=hdr)
-        if j["status"] in ("completed", "error"):
-            break
-        time.sleep(5)
-    if j["status"] == "error":
-        raise RuntimeError(j.get("error"))
-    return [(round(w["start"] / 1000, 3), round(w["end"] / 1000, 3), w["text"]) for w in j["words"]]
-
-
 def transcribe(wav, engine, names=NAMES):
-    """engine: whisper:<model path>, whisper+names:<model path>, deepgram, elevenlabs, assemblyai."""
-    if engine.startswith("whisper"):
-        kind, model = engine.split(":", 1)
-        prompt = ("Kevin Trudeau talks about " + ", ".join(names) + ".") if kind == "whisper+names" else None
-        return whisper_cpp(wav, model, prompt)
-    return {"deepgram": deepgram, "elevenlabs": elevenlabs, "assemblyai": assemblyai}[engine](wav, names)
+    """engine: whisper:<ggml model path>, or whisper+names:<path> (names as the prompt).
+
+    FREE ONLY (Kamay, 9 Oct 2026): no paid speech-to-text, ever. The one paid piece is
+    the Claude correction pass below, cents per episode on the existing key."""
+    kind, model = engine.split(":", 1)
+    prompt = ("Kevin Trudeau talks about " + ", ".join(names) + ".") if kind == "whisper+names" else None
+    return whisper_cpp(wav, model, prompt)
+
+
+def collapse_stutters(words):
+    """'I'm I'm the genius' -> 'I'm the genius'. Only an EXACT repeat with no punctuation
+    on the first copy: Kevin's emphasis is punctuated ("attacking, attacking"), damage is
+    not (QC_AGENT.md) - and kt_qc fails an unpunctuated repeat anyway."""
+    out = []
+    for w in words:
+        if out and w[2] == out[-1][2] and norm(w[2]) and not re.search(r"[.,!?;:]$", out[-1][2]):
+            out[-1] = (out[-1][0], w[1], w[2])          # one word, spanning both
+            continue
+        out.append(tuple(w))
+    return out
 
 
 # ------------------------------------------------------------------------ correction
@@ -415,24 +349,58 @@ def load(src):
     return _cache[p]
 
 
-def cut(src, t_in, t_out):
+def cut(src, t_in, t_out, timed=None):
     """Clip-relative [(start, end, word)] for t_in..t_out, or None when there is no master
-    (the caller then does exactly what it did before). A word belongs to the clip when
-    its middle is inside the window."""
+    (the caller then does exactly what it did before).
+
+    With `timed` (the window's own per-clip timing pass, clip-relative), the master
+    gives the WORDS and `timed` gives the TIMES and the edges. 9 Oct 2026, master-test:
+    whole-episode token times were looser than the per-window pass (turbo 260/780 ms
+    median/p90 against 220/676) and cutting by time alone dropped "So flip" off the
+    head of a KT clip. Aligning the two keeps the first and last words the window
+    really hears, and every caption on the times that were graded against the sound."""
     m = load(src)
     if not m:
         print(f"  no master transcript at {path_for(src)} - per-clip transcription", flush=True)
         return None
-    out = [(round(a - t_in, 3), round(b - t_in, 3), w) for a, b, w in m["words"]
-           if t_in <= (a + b) / 2 < t_out]
-    return out
+    if not timed:
+        return [(round(a - t_in, 3), round(b - t_in, 3), w) for a, b, w in m["words"]
+                if t_in <= (a + b) / 2 < t_out]
+    mw = [(a - t_in, b - t_in, w) for a, b, w in m["words"] if t_in - 4 <= a < t_out + 4]
+    tw = [tuple(x) for x in timed if norm(x[2])]
+    mn, tn = [norm(w[2]) for w in mw], [norm(w[2]) for w in tw]
+    blocks = [b for b in difflib.SequenceMatcher(a=mn, b=tn, autojunk=False).get_matching_blocks() if b.size >= 2]
+    if not blocks:
+        print("  master and window do not line up - window words kept", flush=True)
+        return list(timed)
+    lo = max(0, blocks[0].a - blocks[0].b)
+    hi = min(len(mw), blocks[-1].a + blocks[-1].size + (len(tw) - blocks[-1].b - blocks[-1].size))
+    mw, mn = mw[lo:hi], mn[lo:hi]
+    out = []
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(a=mn, b=tn, autojunk=False).get_opcodes():
+        if tag == "equal" or (tag == "replace" and i2 - i1 == j2 - j1):
+            out += [(tw[j1 + k][0], tw[j1 + k][1], mw[i1 + k][2]) for k in range(i2 - i1)]
+        elif tag in ("replace", "delete"):
+            # master words the window heard differently (or not at all): they share the
+            # window's span for them, or the gap they sit in, by length
+            ts = tw[j1][0] if j2 > j1 else (tw[j1 - 1][1] if j1 else mw[i1][0])
+            te = tw[j2 - 1][1] if j2 > j1 else (tw[j1][0] if j1 < len(tw) else mw[i2 - 1][1])
+            te = max(te, ts + 0.08 * (i2 - i1))
+            ws = [mw[k][2] for k in range(i1, i2)]
+            tot, t = sum(len(w) for w in ws) or 1, ts
+            for w in ws:
+                d = (te - ts) * len(w) / tot
+                out.append((t, t + d, w))
+                t += d
+        # "insert": a word only the window heard - the corrected master wins, it goes
+    return [(round(a, 3), round(b, 3), w) for a, b, w in out]
 
 
 def build(src, engine, correct_it=False, context="", fixes=(), out=None):
     os.makedirs(MASTER_DIR, exist_ok=True)
     wav = wav_of(src, os.path.join("/tmp", f"master_{os.getpid()}.wav"))
     t0 = time.time()
-    raw = transcribe(wav, engine)
+    raw = collapse_stutters(transcribe(wav, engine))
     took = round(time.time() - t0, 1)
     words, taken, rejected, usage = (correct(raw, context) if correct_it else (raw, [], [], None))
     words = apply_fixes(words, fixes) if fixes else words

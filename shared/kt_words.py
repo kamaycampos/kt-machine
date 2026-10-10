@@ -124,13 +124,18 @@ def _save_cache(key, value):
 def words_for(src, t_in, t_out, key):
     """Word timings for one clip window, clip-relative. Cached by key."""
     # OPT-IN, DEFAULT OFF (9 Oct 2026): with MASTER_TRANSCRIPT=1 and a master file for
-    # this source, the words are CUT from the episode's one corrected transcript
-    # (kt_master.py) instead of re-transcribed per window. No master = unchanged.
+    # this source, the WORDS come from the episode's one corrected transcript
+    # (kt_master.py) and the TIMES from this window's own pass below - the pass graded
+    # against the waveform. No master = unchanged.
     if os.environ.get("MASTER_TRANSCRIPT") == "1":
         import kt_master
-        got = kt_master.cut(src, t_in, t_out)
-        if got is not None:
-            return got
+        if kt_master.load(src):
+            return kt_master.cut(src, t_in, t_out, timed=_timed(src, t_in, t_out, key))
+    return _timed(src, t_in, t_out, key)
+
+
+def _timed(src, t_in, t_out, key):
+    """The per-window timing pass (today's path), clip-relative."""
     # THE WINDOW IS PART OF THE IDENTITY. 3 Sept: the book clip was recut to
     # start 31 seconds later, the video was correct, and the captions were still
     # the OLD ones - because the cache key was the clip's NAME. Same name, new

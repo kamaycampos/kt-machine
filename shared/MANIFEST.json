@@ -3,11 +3,11 @@
  "files": {
   "kt_burn.py": "01cffcedfc3cfb1163178bb91ca223a8e4f8813a",
   "kt_lock.py": "18d20a99b05da99d2203f994ad6c3c79a6da9791",
-  "kt_master.py": "b385b8b72ecf37aaace69156e332d6901bd8b37b",
+  "kt_master.py": "bba7fe488f4a75a95ce1fb2d3bf0adde6743e17e",
   "kt_qc.py": "97ea24102fde1633ee22aaa963a8e41186b6e932",
   "kt_render.py": "c04b7bdd619d0292c5480b478e9d479f97ccab59",
   "kt_snap.py": "4cde48bcc10f070e2574cb7f444e0ecc26a38e0c",
-  "kt_words.py": "54227dc4e18f8321101950f558034cfd62084812",
+  "kt_words.py": "0c3c27db978d4d9647d5f6759be35f2e91cd05b0",
   "vsc_edges.py": "f588fe22fbfc175842152c5c433890056e950d3f",
   "vsc_frame.py": "e96e66bde600ff6f57893fb1ca6dab26ac61ec9d",
   "vsc_v2_onscreen.py": "244c301d1f3251400373e7536b8086e56aab3fd8",

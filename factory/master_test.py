@@ -19,8 +19,7 @@ import kt_master, kt_render, kt_words  # noqa: E402
 
 ENGINES = {"small": "whisper:" + os.path.expanduser("~/wcache/ggml-small.en.bin"),
            "turbo": "whisper:" + os.path.expanduser("~/wturbo/ggml-large-v3-turbo.bin"),
-           "turbo-names": "whisper+names:" + os.path.expanduser("~/wturbo/ggml-large-v3-turbo.bin"),
-           "deepgram": "deepgram", "elevenlabs": "elevenlabs", "assemblyai": "assemblyai"}
+           "turbo-names": "whisper+names:" + os.path.expanduser("~/wturbo/ggml-large-v3-turbo.bin")}
 
 
 def bursts(src, c, key):
