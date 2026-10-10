@@ -7804,12 +7804,26 @@
    "caption": "People hear stories about meditation retreats, hallucinations, twelve-hour days, and think more must be better. It isn't, not for you, not yet.\n\nPush past twenty minutes, twice a day, and you hit a wall fast: three extra hours buys you roughly two percent more benefit. The people doing marathon sessions spent years at the basic practice first. Skipping to the deep end doesn't get you there faster. It just means you're meditating wrong, longer.\n\nComment RISE and I'll send you the actual routine.\n\n#meditation #awakening #consciousness #mindset #manifestation #kevintrudeau",
    "hook": "You gain 2% for 3 hours.",
    "bytes": 20557768,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-10T17:55",
    "cta_keyword": "YES",
    "cta_variant": 11,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1106744128508573/",
+    "instagram": "https://www.instagram.com/reel/DeVGjUjgDyb/",
+    "youtube": "https://youtube.com/shorts/otKnjyyvPB8"
+   },
+   "caption_at_post": "People hear stories about meditation retreats, hallucinations, twelve-hour days, and think more must be better. It isn't, not for you, not yet.\n\nPush past twenty minutes, twice a day, and you hit a wall fast: three extra hours buys you roughly two percent more benefit. The people doing marathon sessions spent years at the basic practice first. Skipping to the deep end doesn't get you there faster. It just means you're meditating wrong, longer.\n\nComment RISE and I'll send you the actual routine.\n\n#meditation #awakening #consciousness #mindset #manifestation #kevintrudeau",
+   "posted_at": "2026-10-10T17:59"
   },
   {
    "file": "KT_BITCOIN/02_45-PERCENT-IN-4-DAYS_96s.mp4",
