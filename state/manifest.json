@@ -8124,11 +8124,24 @@
    "hook": "Why you snap and can't stop",
    "bytes": 45576830,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "reels start failed: Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda. | feed fallback: upload failed 400: {'error': {'message': 'Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda.', 'type': 'OAuthException', 'code': 368, 'error_d",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-10T12:05",
    "cta_keyword": "MONEY",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeUfi0tk9pK/",
+    "youtube": "https://youtube.com/shorts/vGgdDzFGiHk"
+   },
+   "caption_at_post": "Something is pushing your buttons, and it isn't what you think.\n\nKevin Trudeau says one invisible force sits behind nearly every uncontrollable reaction: a trapped memory he calls a samskara, or energetic imprint. Nobody can watch their own mind working, which is why the trigger feels like it came from nowhere.\n\nHe claims he learned how the mind works by seeing inside someone else's: the mental pictures hiding under every overreaction.\n\nIf something keeps triggering you, is it about now, or a memory you never dealt with?\n\n#kevintrudeau #samskara #mindset #selfmastery #emotionalcontrol #personaldevelopment",
+   "posted_at": "2026-10-10T12:20"
   },
   {
    "file": "AR_PRAYERFIXR2/01_HE-THANKED-GOD-FOR-PRISON_50s.mp4",
