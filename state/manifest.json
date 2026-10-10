@@ -7910,11 +7910,24 @@
    "hook": "Your 5 friends decide your income",
    "bytes": 60452205,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "reels start failed: Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda. | feed fallback: upload failed 400: {'error': {'message': 'Por motivos de seguridad, tu cuenta tendr\u00e1 acceso limitado al sitio durante unos d\u00edas. Si tienes alguna pregunta, visita nuestro servicio de ayuda.', 'type': 'OAuthException', 'code': 368, 'error_d",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "scheduled_at": "2026-10-09T20:28",
    "cta_keyword": "MONEY",
    "cta_variant": 20,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeSzwK-Cbc5/",
+    "youtube": "https://youtube.com/shorts/FFqfVqlVGQE"
+   },
+   "caption_at_post": "Aristotle Onassis, one of the richest men who ever lived, had one rule for when he was broke: go get in the room with people who have more money than you.\n\nHe'd study how they thought and acted, and mimic it, on purpose.\n\nKevin Trudeau's version of the same rule: your income is always the average of your five best friends. Your parents were right when they told you to stop hanging around certain people - it works the same way in reverse, with the right crowd.\n\nWho are your five? And what are they averaging you toward?\n\n#kevintrudeau #wealthmindset #networking #success #mindset #moneymindset",
+   "posted_at": "2026-10-09T20:38"
   },
   {
    "file": "KT_MISSINGR2/01_THE-BRAINWAVE-ONLY-THE-RICH-USE_149s.mp4",
