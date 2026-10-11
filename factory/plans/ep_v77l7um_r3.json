@@ -1,0 +1,21 @@
+{
+    "source": "v77l7um.mp4",
+    "brand": "KT_BITCOINR2R2",
+    "test": false,
+    "note": "11 Oct 2026 - second chances for 'I Bought Bitcoin At $1 - What Nobody Tells You About Making Money (Wallstreetbets Founder Exclusive)' (Rumble v77l7um). Weekly agent, re-cut per PLANNING.md 2c, last try on 30-MILLION-PAINTING-ILLIQUID. The r2 cut failed again on two new flags both sitting well past the mentor scene: 'sentence starts with no stop: watching The' lands right where the clip moves into the Blacklist/painting anecdote (~57s in), and 'two subjects together: you we' lands inside the Rolex-watch anecdote after that (~85s in). Rather than guess the checker is wrong a second time, cut the clip back to just the mentor scene itself - the restaurant advice and 'the attitude gives you the money' line - which ends at 45.5s, well before either flagged region, and still lands a complete, strong, quotable payoff. Hook and caption rewritten around the shorter scene since the painting and the Rolex stories are no longer in it. The other five second chances on this episode (BLEW-BITCOIN-AT-50-CENTS, BANNED-FROM-BLACKJACK-BUILT-BACCARAT, 3-TRADERS-SIX-FIGURES-15-SECONDS, SECOND-RICHEST-FREE-NEWSLETTER, RAILROADS-TRIED-TO-RUIN-HIM) were checked again by hand against work/v77l7um.srt: every flagged repeat/scramble/uncaptioned-gap sits deep inside the teaching (a stutter mid-story, a caption gap right before the punchline, a stammer in the middle of an anecdote) with every nearby sentence boundary still inside that span, so no edge move excludes the damage without cutting the lesson itself. Skipped again per the rule rather than guess.",
+    "clips": [
+        {
+            "slug": "THE-ATTITUDE-GIVES-YOU-THE-MONEY",
+            "in": 3097.12,
+            "out": 3142.64,
+            "start_words": "We walked into a restaurant",
+            "end_words": "The attitude gives you the money",
+            "hook": [
+                "How rich people",
+                "act before money"
+            ],
+            "caption": "In 1979, a young Kevin Trudeau sat down uninvited at a table full of grown men who clearly wanted him gone - \"get away from me, kid.\"\n\nHe asked anyway: what's your best advice for a young person trying to make money?\n\nThe answer: walk into any room like you already own it. Kevin pushed back - easy to say once you actually have the money. The man corrected him on the spot: the money doesn't give you the attitude. The attitude gives you the money.\n\nHe carried that one line for the rest of his life.\n\nWhich room are you still walking into small?\n\n#kevintrudeau #mindset #wealthmindset #success #moneymindset #confidence",
+            "retry_of": "ep_v77l7um_r2/30-MILLION-PAINTING-ILLIQUID"
+        }
+    ]
+}
