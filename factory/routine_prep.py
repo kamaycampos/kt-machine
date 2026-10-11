@@ -88,6 +88,35 @@ ALL = os.listdir(os.path.join(HERE, "plans"))
 plans_txt = " ".join(open(os.path.join(HERE, "plans", f)).read() for f in ALL if f.endswith(".json"))
 order = [e["id"] for e in json.load(open(os.path.join(HERE, PLAN_FILE)))["episodes"]]
 ready = [v for v in order if v in idx and idx[v].get("transcript") and f'"{v}.mp4"' not in plans_txt]   # the month list only
+# THE NEWEST UPLOAD FIRST, THE SAME DAY (Kamay, 11 Oct 2026: "from the last video of kt
+# take the most value of it and the most high quality clips to post it the same day as
+# #1 priority"). The 7 Oct episode sat stocked and transcribed for four days because it
+# was not on the month list. Any upload from the last 14 days, transcribed and never
+# planned, goes to the top of Kamay's reading. Yaren's lane keeps her own list, and a
+# source on her list is never offered here (kt_fence: one source, one person).
+if not AR:
+    _theirs = set()
+    try:
+        _theirs = {e["id"] for e in json.load(open(os.path.join(HERE, "ar_source_plan.json")))["episodes"]}
+    except (OSError, ValueError, KeyError):
+        pass
+    _cut = __import__("datetime").datetime.utcnow() - __import__("datetime").timedelta(days=14)
+    # Kevin's publish date comes from the Rumble catalogue. sources_index "uploaded" is
+    # when WE stocked it - an old episode stocked yesterday is not new.
+    _pub = {}
+    for _u, _e in json.load(open(os.path.join(HERE, "rumble_catalog.json"))).items():
+        _m = re.search(r"/(v[a-z0-9]+)-", _u)
+        if _m and not _e.get("short"):
+            _pub[_m[1]] = _e.get("date", "")
+    fresh = sorted((v for v, e in idx.items()
+                    if e.get("transcript") and not e.get("test") and v not in _theirs
+                    and _pub.get(v, "") >= _cut.strftime("%Y-%m-%d")
+                    and f'"{v}.mp4"' not in plans_txt),
+                   key=lambda v: _pub[v], reverse=True)
+    if fresh:
+        print("NEWEST UPLOADS - PLAN THESE FIRST (same-day rule): " + ", ".join(
+            f"{v} '{idx[v]['title'][:50]}' (published {_pub[v]})" for v in fresh))
+    ready = fresh + [v for v in ready if v not in fresh]
 print(f"READY TO PLAN: {len(ready)} episode(s); preparing {min(MAX, len(ready))}")
 # the second-chance episodes' cues come too, after the new ones (they need only work/<id>.srt)
 for v in ready[:MAX] + [v for v in again if v not in ready[:MAX] and v in idx and idx[v].get("transcript")]:

@@ -45,7 +45,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
+      # ALWAYS THE NEWEST STATE (11 Oct 2026). A queued run checks out the commit that
+      # was current when it was QUEUED, not when it starts. Two runs queued together:
+      # the second started from a manifest that did not know what the first had just
+      # posted, its state push collided on every derived file, and the run "failed"
+      # (two failure emails on 11 Oct). ref: main reads the state as it is now.
       - uses: actions/checkout@v4
+        with: { ref: main }
 
       - uses: actions/setup-python@v5
         with:
@@ -170,5 +176,16 @@ jobs:
           # 22 Sept 2026: a plain push lost a race and a clip was published
           # twice. Rebase and retry; the posted log in the release is the
           # safety net if even this fails.
-          for i in 1 2 3 4 5; do git pull -q --rebase --autostash && git push -q && ok=1 && break; sleep $((i*5)); done
+          # 11 Oct 2026: a rebase that hit a conflict was left half-done, so every retry
+          # died on "unmerged files". On a collision the derived files (calendar, boards,
+          # metrics) keep THIS run's copy (-X theirs = the commit being replayed), the
+          # rebase is aborted cleanly if it still cannot finish, and the JSON is
+          # checked before anything is pushed.
+          for i in 1 2 3 4 5; do
+            if git pull -q --rebase -X theirs --autostash \
+               && python -c "import json; json.load(open('state/manifest.json')); json.load(open('state/metrics.json'))" \
+               && git push -q; then ok=1; break; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i*5))
+          done
           [ -n "$ok" ] || { echo "::error::state push failed - see posted_log.txt"; exit 1; }

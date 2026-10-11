@@ -52,12 +52,23 @@ def main():
     waiting = [v for v, e in idx.items() if e.get("status") == "stocked" and not e.get("test")
                and v not in planned]
     need = min(MAX, STOCK - len(waiting))
-    print(f"{len(waiting)} stocked episode(s) not yet planned; stock target {STOCK}; fetching {max(need, 0)}")
-    if need <= 0:
-        return
     series = json.load(open(os.path.join(HERE, "kt_series.json")))
     used = {norm(os.path.splitext(s.get("source", ""))[0])[:40] for s in series.values()}
     cat = json.load(open(os.path.join(HERE, "rumble_catalog.json")))
+    # THE NEWEST UPLOAD IS NEVER KEPT WAITING (Kamay, 11 Oct 2026: the latest episode is
+    # cut and posted the same day, priority #1). A full episode uploaded in the last 14
+    # days that is not stocked yet is fetched even when the stock target is met, and it
+    # goes ahead of the month lists below.
+    _cut = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 14 * 86400))
+    _vid = lambda u: (re.search(r"/(v[a-z0-9]+)-", u) or [None, ""])[1]
+    fresh = {_vid(u) for u, e in cat.items()
+             if not e["short"] and e.get("date", "") >= _cut and _vid(u) not in idx}
+    if fresh and need <= 0:
+        need = min(MAX, len(fresh))
+    print(f"{len(waiting)} stocked episode(s) not yet planned; stock target {STOCK}; "
+          f"{len(fresh)} new upload(s); fetching {max(need, 0)}")
+    if need <= 0:
+        return
     # A FAILED FETCH IS REMEMBERED (5 Oct 2026). Every run spent ~5 minutes on each of
     # five episodes whose saved stream was a signed CDN link that had expired
     # (hugh.cdn.rumble.cloud/....mp4 - 403) and whose page Cloudflare refuses, while
@@ -79,7 +90,7 @@ def main():
         if os.path.exists(fp):
             listed |= {x["id"] for x in json.load(open(fp))["episodes"]}
     vid_of = lambda u: (re.search(r"/(v[a-z0-9]+)-", u) or [None, ""])[1]
-    floor = lambda u, e: 180 if vid_of(u) in listed else 1200
+    floor = lambda u, e: 180 if vid_of(u) in listed or vid_of(u) in fresh else 1200
     pick = [(u, e) for u, e in sorted(cat.items(), key=lambda x: x[1]["date"], reverse=True)
             if not e["short"] and e["dur"] >= floor(u, e) and e["height"] >= 1080
             and u not in have and norm(e["title"])[:40] not in used]
@@ -100,6 +111,7 @@ def main():
     # Within that order, an episode whose stream is a rumble.com/hls-vod/ playlist goes
     # before one carrying an old signed CDN file link (those expire and answer 403).
     pick.sort(key=lambda ue: 0 if "/hls-vod/" in (ue[1].get("hls") or "") else 1)
+    pick.sort(key=lambda ue: 0 if _vid(ue[0]) in fresh else 1)      # newest uploads first, always
     stocked, tried = 0, 0
     for url, e in pick:
         if stocked >= need or tried >= need * 2:
