@@ -55,6 +55,7 @@ cut off still keeps the plans it finished.
 
 ## The edges (the #1 thing viewers notice)
 - **Start where the speaker is on camera.** The first second must show the speaker's face (Kamay's first-3-seconds rule, 2 Oct 2026). Episodes often cut to B-roll mid-story. If your opening sentence plays over a cutaway, start on the next sentence where Kevin is on screen. The build checks the first 1.0s with face detection: it moves the start to the nearest sentence on camera, or drops the clip with "opens on B-roll, no face".
+- **Never open on the wind-up.** "There's three reasons why...", "Well...", "Let me tell you...", "First..." are the run-up BEFORE the line. 11 Oct 2026: "THE BRAINWAVE ONLY THE RICH USE" opened on "Well, there's three reasons" over the back of Kevin's head, and the brainwave arrived two minutes later - Kamay: "completely bad taken". Open on the sentence the hook promises. `check_plan.py` refuses the common wind-ups.
 - **Start** on the first word of a sentence that stands alone. Never start on "And / But / So / Now / Because / That's why", or on a line that points back ("this", "that" referring to something earlier). Interviewer questions are fine openers if they set up the answer.
 - **End** on the payoff: the punchline, the lesson, the turn. The last line must not need the next one. Never end on a setup, mid-list, or running into a testimonial or advert (reader testimonials about "Your Wish Is Your Command" often follow a segment, so end before them).
 - Length: 45-180 seconds. Value wins over length, but cut the wind-up.

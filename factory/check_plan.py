@@ -117,6 +117,12 @@ tired = overexposed(recent_hooks())
 if tired:
     print("worn-out hook words (in over a third of recent posts): "
           + ", ".join(f"{w} x{k}" for w, k in sorted(tired.items(), key=lambda x: -x[1])))
+WIND_UP = re.compile(
+    r"(well|so|and|but|now|because|okay|ok|um|uh|look|listen|anyway|alright|all right)\b"
+    r"|let me (tell|explain|show)|here'?s the thing|the reason (is|why)|that'?s why"
+    r"|there'?s (two|three|four|five|six|seven|\d+) (reasons|things|ways|steps|keys)"
+    r"|there are (two|three|four|five|six|seven|\d+) (reasons|things|ways|steps|keys)"
+    r"|(first|number one|step one)\b", re.I)
 others = {}
 for f in os.listdir(os.path.join(HERE, "plans")):
     if f.endswith(".json") and not f.startswith("_"):
@@ -154,6 +160,13 @@ for path in sys.argv[1:]:
         for k in ("start_words", "end_words"):
             n = len(str(c.get(k) or "").split())
             if not 2 <= n <= 8: errs.append(f"{s}: {k} must be the clip's exact first/last 3-5 words")
+        # NO WIND-UP AT SECOND ZERO (11 Oct 2026). "THE BRAINWAVE ONLY THE RICH USE" opened on
+        # "There's three reasons why..." - the hook promised the brainwave and the brainwave
+        # arrived two minutes later. Kamay: "completely bad taken, it brokens the rule that
+        # the most important of every single clips are the first 3 seconds." A list intro,
+        # a filler word or a pointer back is the wind-up BEFORE the line; open on the line.
+        if fam == "KT" and WIND_UP.match(str(c.get("start_words") or "").strip()):
+            errs.append(f"{s}: opens on a wind-up ('{c.get('start_words')}') - start on the sharpest line itself (FIRST_3_SECONDS.md)")
     print(f"{name}: {'OK' if not errs else 'PROBLEMS'} ({len(slugs)} clips)")
     for e in errs: print("   -", e)
     bad += bool(errs)
