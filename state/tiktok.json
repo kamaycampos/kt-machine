@@ -1,10 +1,10 @@
 {
- "at": "2026-10-11T13:29",
+ "at": "2026-10-11T22:27",
  "profile": {
-  "follower_count": 412,
   "following_count": 8,
-  "likes_count": 5844,
-  "video_count": 166
+  "likes_count": 5847,
+  "video_count": 166,
+  "follower_count": 411
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -109,8 +109,8 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 126,
-   "like_count": 2,
+   "view_count": 132,
+   "like_count": 3,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7692247488756976909?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -489,7 +489,7 @@
   },
   "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
    "id": "7688148098480098573",
-   "view_count": 487,
+   "view_count": 489,
    "like_count": 39,
    "comment_count": 2,
    "share_count": 6,
@@ -539,7 +539,7 @@
   },
   "KT_SECRET/02_TEN-THOUSAND-WAYS_113s.mp4": {
    "id": "7687673803677224206",
-   "view_count": 530,
+   "view_count": 531,
    "like_count": 56,
    "comment_count": 1,
    "share_count": 2,
@@ -579,7 +579,7 @@
   },
   "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4": {
    "id": "7686887912297843981",
-   "view_count": 2317,
+   "view_count": 2318,
    "like_count": 78,
    "comment_count": 5,
    "share_count": 11,
@@ -669,7 +669,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14119,
+   "view_count": 14121,
    "like_count": 866,
    "comment_count": 59,
    "share_count": 196,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38089,
+   "view_count": 38096,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
@@ -1079,8 +1079,8 @@
   },
   "KT_PROB/01_THE-FOREST-FIRE_156s.mp4": {
    "id": "7681447590923177229",
-   "view_count": 242,
-   "like_count": 11,
+   "view_count": 243,
+   "like_count": 12,
    "comment_count": 0,
    "share_count": 1,
    "share_url": "https://www.tiktok.com/@kt_student/video/7681447590923177229?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -1219,7 +1219,7 @@
   },
   "unmatched/7679507079249333518": {
    "id": "7679507079249333518",
-   "view_count": 269,
+   "view_count": 270,
    "like_count": 18,
    "comment_count": 0,
    "share_count": 2,
@@ -1289,7 +1289,7 @@
   },
   "unmatched/7679028922297666830": {
    "id": "7679028922297666830",
-   "view_count": 615,
+   "view_count": 616,
    "like_count": 28,
    "comment_count": 0,
    "share_count": 1,
