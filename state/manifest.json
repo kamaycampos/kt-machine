@@ -8259,12 +8259,26 @@
    "caption": "He prayed to make a bigger impact on the world. Months later, the government sued him and took everything he owned.\n\nEight and a half years, for contempt of court. Everyone around him said his prayer wasn't answered. He said thank you \u2014 the same day. Because a clean slate, a blank canvas, no staff, no company, no distractions left standing, was exactly what he'd actually asked for, just not in a shape he could've recognized while still holding the old one.\n\nComment RISE and I'll send you the rest of this story.\n\n#manifestation #prayer #awakening #mindset #spirituality #kevintrudeau",
    "hook": "He thanked God for prison.",
    "bytes": 34777448,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261011212242D42555CE0CF701871DDA'}}"
+   },
    "scheduled_at": "2026-10-11T17:07",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/956794983651999/",
+    "instagram": "https://www.instagram.com/reel/DeXnFrhFYar/",
+    "youtube": "https://youtube.com/shorts/eyGAz8fQwwo"
+   },
+   "caption_at_post": "He prayed to make a bigger impact on the world. Months later, the government sued him and took everything he owned.\n\nEight and a half years, for contempt of court. Everyone around him said his prayer wasn't answered. He said thank you \u2014 the same day. Because a clean slate, a blank canvas, no staff, no company, no distractions left standing, was exactly what he'd actually asked for, just not in a shape he could've recognized while still holding the old one.\n\nComment RISE and I'll send you the rest of this story.\n\n#manifestation #prayer #awakening #mindset #spirituality #kevintrudeau",
+   "posted_at": "2026-10-11T17:22"
   },
   {
    "file": "KT_NEUROR2/01_THE-CHOCOLATE-CAKE-RECIPE_154s.mp4",
