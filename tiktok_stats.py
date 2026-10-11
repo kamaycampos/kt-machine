@@ -45,6 +45,16 @@ def token():
 
 
 def main():
+    # NO TIKTOK CONNECTED IS NOT A FAILURE (11 Oct 2026). A copy of the kit with no
+    # TikTok account crashed here every 6 hours - 27 "Run failed" emails in nine days
+    # for a step that had nothing to read. No keys or no saved token = a quiet notice.
+    if not (os.environ.get("TT_CLIENT_KEY") and os.environ.get("TT_CLIENT_SECRET")):
+        print("::notice::TikTok is not connected - no numbers to read.")
+        return
+    if "tt_stats_token.enc" not in sh("gh", "release", "view", "sources", "-R", R, "--json", "assets",
+                                      "-q", ".assets[].name").stdout:
+        print("::notice::No TikTok stats token saved yet - run the tiktok_token workflow once.")
+        return
     tok = token()
     fields = "id,create_time,duration,view_count,like_count,comment_count,share_count,video_description,share_url"
     vids, cursor = [], None
