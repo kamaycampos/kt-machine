@@ -8318,11 +8318,14 @@
    "hook": "Same $1,000 Worth 10x more",
    "bytes": 49102482,
    "done": false,
-   "status": {},
+   "status": {
+    "recovered": "published; the state commit was lost"
+   },
    "scheduled_at": "2026-10-11T12:21",
    "cta_keyword": "KT",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posted_at": "2026-10-11T16:30"
   }
  ]
 }
