@@ -8294,7 +8294,11 @@
    "hook": "Feeling hopeless means you're controlled.",
    "bytes": 23050882,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-11T20:36",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_BANNED/02_THE-BILLIONAIRE-BRAINWAVE_87s.mp4",
@@ -8302,7 +8306,11 @@
    "hook": "The billionaire brainwave is real.",
    "bytes": 43886817,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-12T07:33",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "KT_SHARKR2/01_GOING-PUBLIC-10X-YOUR-MONEY_74s.mp4",
@@ -8310,7 +8318,11 @@
    "hook": "Same $1,000 Worth 10x more",
    "bytes": 49102482,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-11T12:21",
+   "cta_keyword": "KT",
+   "cta_variant": 2,
+   "cta_kind": "question"
   }
  ]
 }
