@@ -8387,11 +8387,25 @@
    "hook": "Why asking \"how\" keeps you broke",
    "bytes": 35816016,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-11T17:49",
    "cta_keyword": "MONEY",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeXruFpCIdJ/",
+    "youtube": "https://youtube.com/shorts/irw7V6SBAjU"
+   },
+   "caption_at_post": "The moment you name the income you want, a voice starts: but how am I going to get that?\n\nKevin Trudeau calls that a failure habit - the exact habit that keeps people broke.\n\nYour job right now is not to figure out the how. Your job is to define the what: a specific monthly number you are confident you can reach in the next year.\n\nThe how comes later. Asking for it first is how most goals die before they start.\n\nWhat number would you write down if you weren't allowed to ask how?\n\n#kevintrudeau #moneymindset #goals #mindsetshift #financialfreedom #yourwishisyourcommand",
+   "posted_at": "2026-10-11T18:02",
+   "tiktok_retry": true
   },
   {
    "file": "KT_SEVENTY/02_CARNEGIES-ANSWER-TO-WHAT-DO-YOU-WANT_64s.mp4",
