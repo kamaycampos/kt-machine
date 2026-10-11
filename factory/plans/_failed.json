@@ -4138,6 +4138,24 @@
     "One remembered name",
     "$200 million deal"
    ]
+  },
+  "ar_v6vwu4e_r3/ONE-BAD-REVIEW-WINS": {
+   "plan": "ar_v6vwu4e_r3",
+   "source": "v6vwu4e.mp4",
+   "brand": "AR_ENGRAMR3",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_ONE-BAD-REVIEW-WINS_62s.mp4` - word repeated after one: \"other people other\""
+   ],
+   "slug": "ONE-BAD-REVIEW-WINS",
+   "in": 919.8,
+   "out": 981.0,
+   "start_words": "Yeah. He said you",
+   "end_words": "negative influence of other people",
+   "hook": [
+    "One bad review",
+    "controls you more"
+   ]
   }
  },
  "attempts": {
