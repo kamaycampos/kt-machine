@@ -4300,6 +4300,114 @@
     "How to copy",
     "a winner's day"
    ]
+  },
+  "ep_v77l7um_r3/THE-ATTITUDE-GIVES-YOU-THE-MONEY": {
+   "plan": "ep_v77l7um_r3",
+   "source": "v77l7um.mp4",
+   "brand": "KT_BITCOINR2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_THE-ATTITUDE-GIVES-YOU-THE-MONEY_39s.mp4: ends off the planned words: plan ends 'The attitude gives you the money', clip ends 'you the attitude the attitude g'"
+   ],
+   "slug": "THE-ATTITUDE-GIVES-YOU-THE-MONEY",
+   "in": 3097.12,
+   "out": 3142.64,
+   "start_words": "We walked into a restaurant",
+   "end_words": "The attitude gives you the money",
+   "hook": [
+    "How rich people",
+    "act before money"
+   ]
+  },
+  "ep_v7gisy0/WHY-YOUR-DREAM-HOUSE-IS-TOO-SMALL": {
+   "plan": "ep_v7gisy0",
+   "source": "v7gisy0.mp4",
+   "brand": "KT_SEVENTY",
+   "tries": 1,
+   "why": [
+    "FAIL 02_WHY-YOUR-DREAM-HOUSE-IS-TOO-SMALL_104s.mp4: [FAIL] 02_WHY-YOUR-DREAM-HOUSE-IS-TOO-SMALL_104s.mp4          9 captions vs the sound  median +0.40s  worst-10% 1.12s  | words captioned 101%"
+   ],
+   "slug": "WHY-YOUR-DREAM-HOUSE-IS-TOO-SMALL",
+   "in": 208.76,
+   "out": 312.52,
+   "start_words": "You have to be able",
+   "end_words": "back to its original shape.",
+   "hook": [
+    "Why your dream house",
+    "is tiny"
+   ]
+  },
+  "ep_v7gisy0/STOP-TYPING-YOUR-GOALS-ON-YOUR-PHONE": {
+   "plan": "ep_v7gisy0",
+   "source": "v7gisy0.mp4",
+   "brand": "KT_SEVENTY",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_STOP-TYPING-YOUR-GOALS-ON-YOUR-PHONE_127s.mp4` - ends mid-thought on \"We use\"; phrase scrambled around \"not taking you're not\"; sentence starts with no stop: \"achievement But\""
+   ],
+   "slug": "STOP-TYPING-YOUR-GOALS-ON-YOUR-PHONE",
+   "in": 637.24,
+   "out": 765.88,
+   "start_words": "We were told to write",
+   "end_words": "manifest it for you.",
+   "hook": [
+    "Why goals typed",
+    "on phones fail"
+   ]
+  },
+  "ep_v7gisy0/YOUR-BRAIN-BROADCASTS-5000-OR-50000-WATTS": {
+   "plan": "ep_v7gisy0",
+   "source": "v7gisy0.mp4",
+   "brand": "KT_SEVENTY",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_YOUR-BRAIN-BROADCASTS-5000-OR-50000-WATTS_90s.mp4` - phrase scrambled around \"something or attract something,\"; phrase scrambled around \"something or create something\"; phrase scrambled around \"tower and the tower\""
+   ],
+   "slug": "YOUR-BRAIN-BROADCASTS-5000-OR-50000-WATTS",
+   "in": 1006.92,
+   "out": 1098.36,
+   "start_words": "remember in the old days",
+   "end_words": "and saying it out loud",
+   "hook": [
+    "How to 10x",
+    "your money signal"
+   ]
+  },
+  "ep_v7gisy0/WRITE-YOUR-INCOME-GOAL-70-TIMES": {
+   "plan": "ep_v7gisy0",
+   "source": "v7gisy0.mp4",
+   "brand": "KT_SEVENTY",
+   "tries": 1,
+   "why": [
+    "FAIL 02_WRITE-YOUR-INCOME-GOAL-70-TIMES_118s.mp4: [FAIL] 02_WRITE-YOUR-INCOME-GOAL-70-TIMES_118s.mp4            10 captions vs the sound  median +0.34s  worst-10% 0.78s  | words captioned 100%"
+   ],
+   "slug": "WRITE-YOUR-INCOME-GOAL-70-TIMES",
+   "in": 1182.92,
+   "out": 1299.0,
+   "start_words": "you want it to work",
+   "end_words": "attachment to the outcome",
+   "hook": [
+    "The 70x7 rule",
+    "for your income"
+   ]
+  },
+  "ep_v7gisy0/MANIFEST-MONEY-LIKE-AN-AMAZON-ORDER": {
+   "plan": "ep_v7gisy0",
+   "source": "v7gisy0.mp4",
+   "brand": "KT_SEVENTY",
+   "tries": 1,
+   "why": [
+    "FAIL 01_MANIFEST-MONEY-LIKE-AN-AMAZON-ORDER_59s.mp4: [FAIL] 01_MANIFEST-MONEY-LIKE-AN-AMAZON-ORDER_59s.mp4         10 captions vs the sound  median -0.37s  worst-10% 0.51s  | words captioned 100%"
+   ],
+   "slug": "MANIFEST-MONEY-LIKE-AN-AMAZON-ORDER",
+   "in": 1401.0,
+   "out": 1461.08,
+   "start_words": "you place an order on",
+   "end_words": "with god with source",
+   "hook": [
+    "How to order",
+    "money like Amazon"
+   ]
   }
  },
  "attempts": {
@@ -4312,6 +4420,6 @@
   "ar_v76l9y0_r3": 2,
   "ar_v76l9y0_r4": 2,
   "ar_v6yeuyc_r3": 2,
-  "ep_v77l7um_r3": 1
+  "ep_v77l7um_r3": 2
  }
 }
