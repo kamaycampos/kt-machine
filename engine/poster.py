@@ -1251,7 +1251,17 @@ def publish(clip, path, public_url, only=None):
     # Facebook says it already has this video, nothing else posts.
     order = ([p for p in ENABLED if p == "facebook"]
              + [p for p in ENABLED if p != "facebook"])
+    # ONE ACCOUNT'S PLATFORM CAN BE SWITCHED OFF WITHOUT TOUCHING THE OTHER (11 Oct 2026).
+    # KT_PLATFORMS is shared by Kamay and Yaren. Kamay's TikTok was flagged and his
+    # Facebook page restricted (code 368), and he posts the new ones by hand - so
+    # KT_PLATFORMS_OFF=tiktok,facebook stops his, while Yaren's keep posting.
+    _acct = cred_prefix(brand_of(clip))
+    _acct = "KT" if _acct in FALLBACK_BRANDS else _acct        # MINDSET_* posts as Kamay
+    off = {p.strip() for p in os.environ.get(_acct + "_PLATFORMS_OFF", "").split(",") if p.strip()}
     for name in order:
+        if name in off:
+            out[name] = clip.get("status", {}).get(name) or "off for this account"
+            continue
         if name != "facebook" and str(out.get("facebook", "")).startswith(
                 "DUPLICATE"):
             out[name] = "skipped - already published, see Facebook"
