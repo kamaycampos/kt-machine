@@ -1,0 +1,60 @@
+{
+    "source": "v6tccff.mp4",
+    "brand": "KT_SHARKR2",
+    "test": false,
+    "note": "11 Oct 2026 - second chances for 'One-Man Shark Tank Reveals His Secret To Massive Money Success' (Rumble v6tccff). Weekly agent, re-cut per PLANNING.md 2c. HE-LOST-65-MILLION-THEN-THIS ended off its planned words (rendered clip truncated mid-word on 'perspe[ctive]') - moved the end one sentence earlier to the prior complete line, 'And that tragedy of losing a $65 million company literally overnight is what led me to where I am,' which is itself a clean close and gives the aligner a slower, less rushed cue to land on. 340-LEASES-SIGNED-WHILE-EVERYONE-PANICKED had uncaptioned speech ~91-94s in, inside the interviewer's recap line ('your guy, a winner, saw opportunity in adversity') that bridges to the Onassis analogy - moved the end back to the EverBowl story's own natural close, 'And now look at us four years later, we're the biggest chain that there is,' which is before the gap and a stronger, more concrete payoff. GO-BE-THEIR-ASSISTANT and GOING-PUBLIC-10X-YOUR-MONEY both failed on too few pause-anchored captions (dense, short back-and-forth cues gave the checker nothing to anchor on) - both now open one beat earlier, on the interviewer's full setup question, which is an allowed opener and adds several short, naturally pause-anchored cues ahead of the answer without changing the payoff or the hook.",
+    "clips": [
+        {
+            "slug": "HE-LOST-65-MILLION-THEN-THIS",
+            "in": 1587.0,
+            "out": 1684.0,
+            "start_words": "Ten weeks later, my online",
+            "end_words": "is what led me to where I am",
+            "hook": [
+                "He lost $65M",
+                "Then this"
+            ],
+            "caption": "He built the fifth-biggest online poker site in the world in ten months.\n\nThen on Black Friday, the FBI seized his three biggest competitors' bank accounts. His own account was never touched — he'd done nothing wrong.\n\nMost owners would have kept running quietly. Instead he shut the company down and personally paid back 41,000 players in four days, while his competitors took years, or never paid at all.\n\nThat collapse is what got him hired by casinos and Morgan Stanley. Kevin Trudeau's guest calls it the best thing that ever happened to his career.\n\nWhat would you walk away from today if it meant building something bigger tomorrow?\n\n#kevintrudeau #entrepreneur #businessstory #resilience #wealthmindset #successstory",
+            "retry_of": "ep_v6tccff/HE-LOST-65-MILLION-THEN-THIS"
+        },
+        {
+            "slug": "340-LEASES-SIGNED-WHILE-EVERYONE-PANICKED",
+            "in": 2219.0,
+            "out": 2269.0,
+            "start_words": "I just posted about",
+            "end_words": "we're the biggest chain that there is",
+            "hook": [
+                "How 340 leases",
+                "became pure profit"
+            ],
+            "caption": "When COVID shut the world down, one franchise founder didn't slow down — he sped up.\n\nWhile every other restaurant chain froze, he signed over 340 leases, locking in twelve months of free rent and huge improvement allowances landlords were desperate to give away. Kevin Trudeau's guest backed him early, and today that chain has grown to 98 locations.\n\nIt's the same move Aristotle Onassis made after World War II: everyone else saw a glut of ships nobody wanted. He saw a shortage coming and bought every ship he could, many of them for free.\n\nFear empties a market. That's exactly when the smart money moves in.\n\n#kevintrudeau #entrepreneur #businessstory #wealthmindset #investing #opportunity",
+            "retry_of": "ep_v6tccff/340-LEASES-SIGNED-WHILE-EVERYONE-PANICKED"
+        },
+        {
+            "slug": "GO-BE-THEIR-ASSISTANT",
+            "in": 3006.0,
+            "out": 3115.0,
+            "start_words": "If there's one thing",
+            "end_words": "all the little details",
+            "hook": [
+                "How to copy",
+                "a winner's day"
+            ],
+            "caption": "If you want a certain kind of success, stop reading about it and go stand next to someone who already has it.\n\nKevin Trudeau's guest says his one piece of advice for anyone stuck is simple: go work for a winner in your exact category. Want to write bestsellers? Go be that author's assistant. Want to build a clothing empire? Go work for the guy who's already done four billion in sales.\n\nKevin backs it up with his own story — three days as a silent \"fly on the wall\" inside a billionaire's home, just watching how he ran his day.\n\nProximity teaches what books can't.\n\n#kevintrudeau #mentorship #successhabits #entrepreneur #wealthmindset #careeradvice",
+            "retry_of": "ep_v6tccff/GO-BE-THEIR-ASSISTANT"
+        },
+        {
+            "slug": "GOING-PUBLIC-10X-YOUR-MONEY",
+            "in": 839.0,
+            "out": 912.0,
+            "start_words": "What about the guy",
+            "end_words": "it'd be worth $100,000",
+            "hook": [
+                "Same $1,000",
+                "Worth 10x more"
+            ],
+            "caption": "The exact same business can be worth ten times more, depending on one decision.\n\nKevin Trudeau's guest breaks down the math: a company doing $5 million in sales might be worth $10 million privately — but the same business, taken public, can carry a $110 million valuation for no reason other than liquidity.\n\nPut $1,000 into that private company and it grows to $10,000. Put it into the public version and that same growth is worth $100,000.\n\nNothing about the business changed. Only who could buy and sell it, and how fast.\n\nWould you rather own 100% of something small, or a piece of something the whole market can trade?\n\n#kevintrudeau #investing #wealthmindset #stockmarket #entrepreneur #businessstory",
+            "retry_of": "ep_v6tccff/GOING-PUBLIC-10X-YOUR-MONEY"
+        }
+    ]
+}
