@@ -8362,7 +8362,10 @@
    "bytes": 56268676,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-12T10:23",
+   "cta_keyword": "WISH",
+   "cta_variant": 3
   },
   {
    "file": "KT_SEVENTY/01_WHY-ASKING-HOW-KEEPS-YOU-BROKE_61s.mp4",
@@ -8371,7 +8374,10 @@
    "bytes": 35816016,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-11T17:49",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0
   },
   {
    "file": "KT_SEVENTY/02_CARNEGIES-ANSWER-TO-WHAT-DO-YOU-WANT_64s.mp4",
@@ -8379,7 +8385,11 @@
    "hook": "What Carnegie said every single time",
    "bytes": 39505910,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-11T20:38",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_SEVENTY/02_HOW-150K-BECAME-A-200K-TARGET_80s.mp4",
@@ -8387,7 +8397,11 @@
    "hook": "How $150K became a $200K target",
    "bytes": 49880304,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-12T07:48",
+   "cta_keyword": "KT",
+   "cta_variant": 2,
+   "cta_kind": "question"
   }
  ]
 }
