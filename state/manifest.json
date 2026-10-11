@@ -8182,11 +8182,24 @@
    "hook": "Your mind is a lake.",
    "bytes": 35171673,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "init failed 409: {'error': {'code': 409, 'message': 'Requested entity already exists', 'errors': [{'message': 'Requested entity already exists', 'domain': 'global', 'reason': 'alreadyExists'}], 'status': 'ALREADY_EXIS",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261011142140F9520B158805016E66C4'}}"
+   },
    "scheduled_at": "2026-10-11T10:17",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2131126034476684/",
+    "instagram": "https://www.instagram.com/reel/DeW27rRD9Fk/"
+   },
+   "caption_at_post": "Picture a lake in the wind. Choppy, broken, impossible to see through.\n\nNow picture it with no wind at all \u2014 glass. That's your mind around other people's noise versus your mind alone. Every nearby brain is wind on the water. Remove it, and there's a stillness most people never actually experience: the space between thoughts, where he says awareness, oneness, and the connection to source actually live.\n\nYou don't find that state. You just stop disturbing the water.\n\nComment RISE and I'll send you how.\n\n#manifestation #consciousness #awakening #stillness #mindset #kevintrudeau",
+   "posted_at": "2026-10-11T10:21"
   },
   {
    "file": "KT_TRIGGERR3/01_THE-HIDDEN-FORCE-RUNNING-YOU_52s.mp4",
