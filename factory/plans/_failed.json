@@ -4156,6 +4156,150 @@
     "One bad review",
     "controls you more"
    ]
+  },
+  "ar_v71ktjy/RECRUITED-AT-SIX": {
+   "plan": "ar_v71ktjy",
+   "source": "v71ktjy.mp4",
+   "brand": "AR_BANNED",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_RECRUITED-AT-SIX_114s.mp4` - sentence starts with no stop: \"called The\""
+   ],
+   "slug": "RECRUITED-AT-SIX",
+   "in": 883.0,
+   "out": 996.0,
+   "start_words": "back in 1969",
+   "end_words": "to ever leave the group",
+   "hook": [
+    "Six years old,",
+    "into a secret."
+   ]
+  },
+  "ar_v71ktjy/DIVISION-CHAOS-YOUR-FIX": {
+   "plan": "ar_v71ktjy",
+   "source": "v71ktjy.mp4",
+   "brand": "AR_BANNED",
+   "tries": 1,
+   "why": [
+    "FAIL 01_DIVISION-CHAOS-YOUR-FIX_58s.mp4: [FAIL] 01_DIVISION-CHAOS-YOUR-FIX_58s.mp4                     5 captions vs the sound (pauses at -34 dB)  median -0.00s  worst-10% 0.81s  | words captioned 100%"
+   ],
+   "slug": "DIVISION-CHAOS-YOUR-FIX",
+   "in": 688.6,
+   "out": 747.0,
+   "start_words": "So I started looking",
+   "end_words": "they wanted from the beginning",
+   "hook": [
+    "Division. Chaos.",
+    "Then your fix."
+   ]
+  },
+  "ar_v71ktjy/SAME-SCRIPT-DIFFERENT-RESULT": {
+   "plan": "ar_v71ktjy",
+   "source": "v71ktjy.mp4",
+   "brand": "AR_BANNED",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_SAME-SCRIPT-DIFFERENT-RESULT_74s.mp4` - ends mid-thought on \"There-\""
+   ],
+   "slug": "SAME-SCRIPT-DIFFERENT-RESULT",
+   "in": 1854.4,
+   "out": 1928.2,
+   "start_words": "They came to me",
+   "end_words": "did produced results",
+   "hook": [
+    "They copied him",
+    "exactly. It failed."
+   ]
+  },
+  "ar_v71ktjy/MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE": {
+   "plan": "ar_v71ktjy",
+   "source": "v71ktjy.mp4",
+   "brand": "AR_BANNED",
+   "tries": 1,
+   "why": [
+    "FAIL 02_MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE_61s.mp4: ends off the planned words: plan ends 'probably the highest level', clip ends 'the as me is probably the'"
+   ],
+   "slug": "MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE",
+   "in": 3430.5,
+   "out": 3491.9,
+   "start_words": "I learned another concept",
+   "end_words": "probably the highest level",
+   "hook": [
+    "Most people never",
+    "leave level one."
+   ]
+  },
+  "ar_v71ktjy/DREAM-SO-BIG-IT-SCARES-YOU": {
+   "plan": "ar_v71ktjy",
+   "source": "v71ktjy.mp4",
+   "brand": "AR_BANNED",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_DREAM-SO-BIG-IT-SCARES-YOU_45s.mp4` - phrase scrambled around \"\"That's the point.\" That's\""
+   ],
+   "slug": "DREAM-SO-BIG-IT-SCARES-YOU",
+   "in": 1124.8,
+   "out": 1169.3,
+   "start_words": "a person has to dream big",
+   "end_words": "That's what losers do",
+   "hook": [
+    "Dream so big",
+    "it scares you."
+   ]
+  },
+  "ep_v6tccff_r2/HE-LOST-65-MILLION-THEN-THIS": {
+   "plan": "ep_v6tccff_r2",
+   "source": "v6tccff.mp4",
+   "brand": "KT_SHARKR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_HE-LOST-65-MILLION-THEN-THIS_97s.mp4` - opens mid-sentence on \"where 10 weeks\""
+   ],
+   "slug": "HE-LOST-65-MILLION-THEN-THIS",
+   "in": 1587.0,
+   "out": 1684.0,
+   "start_words": "Ten weeks later, my online",
+   "end_words": "is what led me to where I am",
+   "hook": [
+    "He lost $65M",
+    "Then this"
+   ]
+  },
+  "ep_v6tccff_r2/340-LEASES-SIGNED-WHILE-EVERYONE-PANICKED": {
+   "plan": "ep_v6tccff_r2",
+   "source": "v6tccff.mp4",
+   "brand": "KT_SHARKR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_340-LEASES-SIGNED-WHILE-EVERYONE-PANICKED_51s.mp4: ends off the planned words: plan ends 'we're the biggest chain that there is', clip ends 'i know'"
+   ],
+   "slug": "340-LEASES-SIGNED-WHILE-EVERYONE-PANICKED",
+   "in": 2219.0,
+   "out": 2269.0,
+   "start_words": "I just posted about",
+   "end_words": "we're the biggest chain that there is",
+   "hook": [
+    "How 340 leases",
+    "became pure profit"
+   ]
+  },
+  "ep_v6tccff_r2/GO-BE-THEIR-ASSISTANT": {
+   "plan": "ep_v6tccff_r2",
+   "source": "v6tccff.mp4",
+   "brand": "KT_SHARKR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_GO-BE-THEIR-ASSISTANT_109s.mp4: ends off the planned words: plan ends 'all the little details', clip ends 'you do it day to day'"
+   ],
+   "slug": "GO-BE-THEIR-ASSISTANT",
+   "in": 3006.0,
+   "out": 3115.0,
+   "start_words": "If there's one thing",
+   "end_words": "all the little details",
+   "hook": [
+    "How to copy",
+    "a winner's day"
+   ]
   }
  },
  "attempts": {
@@ -4167,6 +4311,7 @@
   "ar_v77w5tc_r2": 2,
   "ar_v76l9y0_r3": 2,
   "ar_v76l9y0_r4": 2,
-  "ar_v6yeuyc_r3": 2
+  "ar_v6yeuyc_r3": 2,
+  "ep_v77l7um_r3": 1
  }
 }
