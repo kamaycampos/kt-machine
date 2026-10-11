@@ -5,7 +5,7 @@ name: factory-test
 on: workflow_dispatch
 jobs:
   fetch:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - name: Rumble, posing as Chrome

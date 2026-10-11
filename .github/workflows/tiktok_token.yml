@@ -11,7 +11,7 @@ permissions:
   contents: write
 jobs:
   swap:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Exchange and store encrypted
         env:

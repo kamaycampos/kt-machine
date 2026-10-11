@@ -27,7 +27,7 @@ env:
   GH_TOKEN: ${{ github.token }}
 jobs:
   stock:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
@@ -55,7 +55,7 @@ jobs:
   tlist:
     needs: stock
     if: ${{ !cancelled() }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       matrix: ${{ steps.l.outputs.matrix }}
       count: ${{ steps.l.outputs.count }}
@@ -67,7 +67,7 @@ jobs:
   transcribe:
     needs: tlist
     if: ${{ !cancelled() && needs.tlist.outputs.count != '0' }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 180
     strategy:
       fail-fast: false
@@ -87,7 +87,7 @@ jobs:
   tmark:
     needs: transcribe
     if: ${{ !cancelled() }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - name: Record every finished transcript (single writer)
@@ -96,7 +96,7 @@ jobs:
         run: python factory/rekey_transcripts.py
 
   plan:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       matrix: ${{ steps.s.outputs.matrix }}
       count: ${{ steps.s.outputs.count }}
@@ -108,7 +108,7 @@ jobs:
   build:
     needs: plan
     if: needs.plan.outputs.count != '0'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 120
     strategy:
       fail-fast: false
@@ -133,7 +133,7 @@ jobs:
   queue:
     needs: [plan, build]
     if: ${{ !cancelled() && needs.plan.outputs.count != '0' }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
