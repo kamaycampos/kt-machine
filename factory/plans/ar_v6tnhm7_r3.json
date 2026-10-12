@@ -1,0 +1,28 @@
+{
+ "source": "v6tnhm7.mp4",
+ "brand": "AR_INSTINCTR2R2",
+ "test": false,
+ "note": "12 Oct 2026 - 'Kevin Trudeau Reveals The #1 Manifesting Secret You're Missing | The Ryan Hanley Show Podcast' (Rumble v6tnhm7). Awakened Rise weekly agent. SECOND CHANCE re-cut (11 Oct 2026 gate failures, 2nd round) - edges moved to different sentence boundaries per AR_PLANNING.md 2c. RICH-PEOPLE-NEVER-HEARD-OF-IT skipped: the 'no clear pauses' flag sits on the quoted back-and-forth ('I say... they say...') that is the clip's whole demonstration - cutting before it loses the payoff, and two rounds of edge moves inside that same passage have already failed.",
+ "clips": [
+  {
+   "slug": "NOT-ABOUT-THE-FERRARI",
+   "in": 768.7,
+   "out": 819.0,
+   "start_words": "A person says I want",
+   "end_words": "you really want",
+   "hook": ["You don't want", "the Ferrari itself"],
+   "caption": "You don't actually want the Ferrari. You want how people look at you when you're in it.\n\nAsk yourself why you want anything enough times and it stops being about the object. It becomes about a feeling you don't currently have — and about being seen a certain way by people whose opinion you've never admitted matters to you. Most people get embarrassed the second they realize this. They shouldn't. Naming the real want is the only way to actually get free of it.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#awakening #consciousness #selfawareness #mindset #spirituality #kevintrudeau",
+   "retry_of": "ar_v6tnhm7_r2/NOT-ABOUT-THE-FERRARI"
+  },
+  {
+   "slug": "RAISED-JAPANESE-STILL-ITALIAN",
+   "in": 1857.0,
+   "out": 1919.8,
+   "start_words": "So we have traits",
+   "end_words": "is in our DNA",
+   "hook": ["He only spoke", "Japanese. His hands."],
+   "caption": "An Italian baby, orphaned within weeks, raised entirely by a Japanese family. Never left Japan. Never heard another language. Never met another Italian.\n\nHe spoke perfect Japanese, followed every custom, lived every day as Japanese as anyone in the room. Except when he got excited. Then his hands started moving, wildly, completely against Japanese custom — exactly the way an Italian talks. Nobody taught him that. Nobody could have.\n\nSome things aren't learned. They're carried.\n\nComment RISE and I'll send you the rest of this.\n\n#awakening #ancestraltrauma #consciousness #mindset #spirituality #kevintrudeau",
+   "retry_of": "ar_v6tnhm7_r2/RAISED-JAPANESE-STILL-ITALIAN"
+  }
+ ]
+}
