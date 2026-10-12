@@ -8467,11 +8467,25 @@
    "hook": "How $150K became a $200K target",
    "bytes": 49880304,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-12T07:48",
    "cta_keyword": "KT",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeZMA40mp1w/",
+    "youtube": "https://youtube.com/shorts/YfhyoWoWncA"
+   },
+   "caption_at_post": "He was already making $100,000 a month, and his goal was $150,000. His confidence he could hit it: five out of ten.\n\nOn a one-on-one call, Kevin Trudeau didn't touch his business plan. He ran him through one exercise first - dream far past the goal, then come back to reality.\n\nWhen he came back, the number had changed on its own. $200,000 a month, and his confidence was now a nine.\n\nSame man, same business, bigger target, more certainty. The only thing that moved was the size of his thinking.\n\nWhat would your number be after that exercise?\n\n#kevintrudeau #entrepreneur #businessgrowth #moneymindset #mindset #goalsetting",
+   "posted_at": "2026-10-12T08:04",
+   "tiktok_retry": true
   },
   {
    "file": "AR_BANNEDR2/01_DREAM-SO-BIG-IT-SCARES-YOU_53s.mp4",
@@ -8479,7 +8493,11 @@
    "hook": "Dream so big it scares you.",
    "bytes": 27614716,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-12T09:44",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_INSTINCTR2R2/02_RAISED-JAPANESE-STILL-ITALIAN_61s.mp4",
@@ -8487,7 +8505,11 @@
    "hook": "He only spoke Japanese. His hands.",
    "bytes": 49742932,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-12T12:50",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   }
  ]
 }
