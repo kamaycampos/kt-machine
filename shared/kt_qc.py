@@ -33,6 +33,8 @@ import json, os, re, subprocess, sys
 FF = os.path.expanduser("~/Kamay/bin/ffmpeg")
 MIN_SECS, MAX_SECS = 8.0, 185.0
 CONNECTORS = {"and", "or", "to", "of", "after", "upon", "by", "over", "on", "the", "a"}
+LIST_JOIN = {"or", "and", "nor", "than", "versus", "vs"}
+CLAUSE = {"that", "which", "who", "whom", "whose", "whether"}
 COPULA = {"is", "are", "was", "were", "be", "not", "isn't", "aren't", "wasn't", "no"}
 STARTERS = {"the", "this", "that", "these", "we", "you", "they", "he", "she", "it",
             "and", "but", "so", "guess", "now", "what", "if", "because", "there",
@@ -113,6 +115,14 @@ def text_faults(caps):
                 # word or a copula/negation in between is grammar, not a scramble.
                 and norm[i] not in CONNECTORS
                 and not any(norm[i + k] in COPULA for k in (1, 2))
+                # 12 Oct 2026, three more that were RIGHT (VSC TWO-WRONG-BELIEFS, held
+                # back for days): "major problems or major failures" and "this disaster
+                # or this failure" are lists with the joining word BETWEEN the repeats,
+                # and "people that are not successful think that successful people" is
+                # a clause ("X think that X"). Damage never has a list word or a
+                # "that/which/who" there - "said He it said", "was It when was".
+                and not any(norm[i + k] in LIST_JOIN for k in (1, 2))
+                and norm[i + 2] not in CLAUSE
                 # "every single one, every single one had more" - he repeats a whole
                 # phrase for emphasis, and emphasis is PUNCTUATED. Transcription damage
                 # never is: "said He it said", "was It when was", "do It things does"
