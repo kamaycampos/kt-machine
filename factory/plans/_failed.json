@@ -4408,6 +4408,78 @@
     "How to order",
     "money like Amazon"
    ]
+  },
+  "ar_v6tnhm7_r3/NOT-ABOUT-THE-FERRARI": {
+   "plan": "ar_v6tnhm7_r3",
+   "source": "v6tnhm7.mp4",
+   "brand": "AR_INSTINCTR2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_NOT-ABOUT-THE-FERRARI_50s.mp4` - ends mid-thought on \"you really want\"; sentence starts with no stop: \"feeling So\"; word repeated after one: \"want you want\""
+   ],
+   "slug": "NOT-ABOUT-THE-FERRARI",
+   "in": 768.7,
+   "out": 819.0,
+   "start_words": "A person says I want",
+   "end_words": "you really want",
+   "hook": [
+    "You don't want",
+    "the Ferrari itself"
+   ]
+  },
+  "ar_v71ktjy_r2/DIVISION-CHAOS-YOUR-FIX": {
+   "plan": "ar_v71ktjy_r2",
+   "source": "v71ktjy.mp4",
+   "brand": "AR_BANNEDR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_DIVISION-CHAOS-YOUR-FIX_46s.mp4: [FAIL] 01_DIVISION-CHAOS-YOUR-FIX_46s.mp4                     9 captions vs the sound  median +0.00s  worst-10% 0.82s  | words captioned 99%"
+   ],
+   "slug": "DIVISION-CHAOS-YOUR-FIX",
+   "in": 702.4,
+   "out": 746.6,
+   "start_words": "The first thing they do",
+   "end_words": "they wanted from the beginning",
+   "hook": [
+    "Division. Chaos.",
+    "Then your fix."
+   ]
+  },
+  "ar_v71ktjy_r2/SAME-SCRIPT-DIFFERENT-RESULT": {
+   "plan": "ar_v71ktjy_r2",
+   "source": "v71ktjy.mp4",
+   "brand": "AR_BANNEDR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_SAME-SCRIPT-DIFFERENT-RESULT_74s.mp4` - ends mid-thought on \"There-\""
+   ],
+   "slug": "SAME-SCRIPT-DIFFERENT-RESULT",
+   "in": 1854.4,
+   "out": 1927.9,
+   "start_words": "They came to me",
+   "end_words": "did produced results",
+   "hook": [
+    "They copied him",
+    "exactly. It failed."
+   ]
+  },
+  "ar_v71ktjy_r2/MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE": {
+   "plan": "ar_v71ktjy_r2",
+   "source": "v71ktjy.mp4",
+   "brand": "AR_BANNEDR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE_61s.mp4: ends off the planned words: plan ends 'probably the highest level', clip ends 'the as me is probably the'"
+   ],
+   "slug": "MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE",
+   "in": 3430.5,
+   "out": 3492.6,
+   "start_words": "I learned another concept",
+   "end_words": "probably the highest level",
+   "hook": [
+    "Most people never",
+    "leave level one."
+   ]
   }
  },
  "attempts": {
