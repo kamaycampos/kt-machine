@@ -8403,11 +8403,25 @@
    "hook": "The #1 money mistake you're making",
    "bytes": 56268676,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-12T10:23",
    "cta_keyword": "WISH",
-   "cta_variant": 3
+   "cta_variant": 3,
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeZeWPpkTFw/",
+    "youtube": "https://youtube.com/shorts/idJeD4bmvLQ"
+   },
+   "caption_at_post": "Ask anyone their phone number and they answer instantly. Ask them what they actually want, and they have to think about it.\n\nKevin Trudeau says that pause is the number one reason people stay broke. Not the wrong app, not the wrong course - the missing first step.\n\n\"I want more money\" is not a goal. It is vague, and vague gets you nothing.\n\nThe formula starts with knowing exactly what you want, as fast as you know your own name.\n\nCould you answer it right now, in one sentence?\n\n#kevintrudeau #moneymindset #goalsetting #wealthmindset #successhabits #yourwishisyourcommand",
+   "posted_at": "2026-10-12T10:44",
+   "tiktok_retry": true
   },
   {
    "file": "KT_SEVENTY/01_WHY-ASKING-HOW-KEEPS-YOU-BROKE_61s.mp4",
