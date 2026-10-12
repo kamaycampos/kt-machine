@@ -4480,6 +4480,114 @@
     "Most people never",
     "leave level one."
    ]
+  },
+  "ep_v6z25lm_r3/HE-HAD-400-BILLION-IN-CASH": {
+   "plan": "ep_v6z25lm_r3",
+   "source": "v6z25lm.mp4",
+   "brand": "KT_MISSINGR2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_HE-HAD-400-BILLION-IN-CASH_48s.mp4` - ends mid-thought on \"this and he\"; sentence starts with no stop: \"cash And\"; sentence starts with no stop: \"cash So\""
+   ],
+   "slug": "HE-HAD-400-BILLION-IN-CASH",
+   "in": 1309.92,
+   "out": 1361.04,
+   "start_words": "Andrew Carnegie was the richest",
+   "end_words": "Nobody knows this",
+   "hook": [
+    "He had $400 billion",
+    "in cash"
+   ]
+  },
+  "ep_v6z25lm_r3/FROM-50K-TO-1M-IN-A-YEAR": {
+   "plan": "ep_v6z25lm_r3",
+   "source": "v6z25lm.mp4",
+   "brand": "KT_MISSINGR2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `02_FROM-50K-TO-1M-IN-A-YEAR_42s.mp4` - phrase scrambled around \"peaches at a peaches,\""
+   ],
+   "slug": "FROM-50K-TO-1M-IN-A-YEAR",
+   "in": 2222.08,
+   "out": 2270.0,
+   "start_words": "He was flipping pizzas",
+   "end_words": "in just a year or two",
+   "hook": [
+    "$50,000 a year",
+    "Then $1 million"
+   ]
+  },
+  "ep_v77l7um_r4/BANNED-FROM-BLACKJACK-BUILT-BACCARAT": {
+   "plan": "ep_v77l7um_r4",
+   "source": "v77l7um.mp4",
+   "brand": "KT_BITCOINR2R2R2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_BANNED-FROM-BLACKJACK-BUILT-BACCARAT_114s.mp4` - ends mid-thought on \"they'll have intuition\"; phrase scrambled around \"You've drilled us you've\"; phrase scrambled around \"gonna play i'm gonna\""
+   ],
+   "slug": "BANNED-FROM-BLACKJACK-BUILT-BACCARAT",
+   "in": 575.12,
+   "out": 688.56,
+   "start_words": "I am banned from",
+   "end_words": "Then they'll have intuition",
+   "hook": [
+    "100% win rate",
+    "for 18 months"
+   ]
+  },
+  "ep_v7gisy0_r2/WHY-YOUR-DREAM-HOUSE-IS-TOO-SMALL": {
+   "plan": "ep_v7gisy0_r2",
+   "source": "v7gisy0.mp4",
+   "brand": "KT_SEVENTYR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_WHY-YOUR-DREAM-HOUSE-IS-TOO-SMALL_117s.mp4` - phrase scrambled around \"Dream about your dream\"; sentence starts with no stop: \"called The\"; word repeated after one: \"first process first\""
+   ],
+   "slug": "WHY-YOUR-DREAM-HOUSE-IS-TOO-SMALL",
+   "in": 196.2,
+   "out": 312.52,
+   "start_words": "There's a great book called",
+   "end_words": "back to its original shape.",
+   "hook": [
+    "Why your dream house",
+    "is tiny"
+   ]
+  },
+  "ep_v7gisy0_r2/STOP-TYPING-YOUR-GOALS-ON-YOUR-PHONE": {
+   "plan": "ep_v7gisy0_r2",
+   "source": "v7gisy0.mp4",
+   "brand": "KT_SEVENTYR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_STOP-TYPING-YOUR-GOALS-ON-YOUR-PHONE_132s.mp4` - ends mid-thought on \"it but the\"; phrase scrambled around \"not taking you're not\"; sentence starts with no stop: \"achievement But\""
+   ],
+   "slug": "STOP-TYPING-YOUR-GOALS-ON-YOUR-PHONE",
+   "in": 637.24,
+   "out": 768.44,
+   "start_words": "We were told to write",
+   "end_words": "You're really creating it",
+   "hook": [
+    "Why goals typed",
+    "on phones fail"
+   ]
+  },
+  "ep_v7gisy0_r2/WRITE-YOUR-INCOME-GOAL-70-TIMES": {
+   "plan": "ep_v7gisy0_r2",
+   "source": "v7gisy0.mp4",
+   "brand": "KT_SEVENTYR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_WRITE-YOUR-INCOME-GOAL-70-TIMES_118s.mp4: [FAIL] 01_WRITE-YOUR-INCOME-GOAL-70-TIMES_118s.mp4            10 captions vs the sound  median +0.34s  worst-10% 0.78s  | words captioned 100%"
+   ],
+   "slug": "WRITE-YOUR-INCOME-GOAL-70-TIMES",
+   "in": 1174.92,
+   "out": 1299.0,
+   "start_words": "you want it to work",
+   "end_words": "attachment to the outcome",
+   "hook": [
+    "The 70x7 rule",
+    "for your income"
+   ]
   }
  },
  "attempts": {
