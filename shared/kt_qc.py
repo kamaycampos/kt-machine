@@ -125,6 +125,9 @@ def text_faults(caps):
                 # a clause ("X think that X"). Damage never has a list word or a
                 # "that/which/who" there - "said He it said", "was It when was".
                 and not any(norm[i + k] in LIST_JOIN for k in (1, 2))
+                # "I need this to happen this month" (VSC NO-DEADLINES-FOR-GOD, 13 Oct):
+                # a joining word right after the first repeat is grammar too.
+                and norm[i + 1] not in CONNECTORS
                 and norm[i + 2] not in CLAUSE
                 # "every single one, every single one had more" - he repeats a whole
                 # phrase for emphasis, and emphasis is PUNCTUATED. Transcription damage
