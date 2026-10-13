@@ -8560,7 +8560,10 @@
    "bytes": 68112336,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-13T12:41",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0
   }
  ]
 }
