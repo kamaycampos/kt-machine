@@ -4588,6 +4588,24 @@
     "The 70x7 rule",
     "for your income"
    ]
+  },
+  "ar_v71ktjy_r3/SAME-SCRIPT-DIFFERENT-RESULT": {
+   "plan": "ar_v71ktjy_r3",
+   "source": "v71ktjy.mp4",
+   "brand": "AR_BANNEDR2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_SAME-SCRIPT-DIFFERENT-RESULT_74s.mp4` - ends mid-thought on \"There-\""
+   ],
+   "slug": "SAME-SCRIPT-DIFFERENT-RESULT",
+   "in": 1854.4,
+   "out": 1927.5,
+   "start_words": "They came to me",
+   "end_words": "did produced results",
+   "hook": [
+    "They copied him",
+    "exactly. It failed."
+   ]
   }
  },
  "attempts": {
