@@ -4606,6 +4606,96 @@
     "They copied him",
     "exactly. It failed."
    ]
+  },
+  "ep_v6v9urd_r4/WALL-STREET-500-RIVALS": {
+   "plan": "ep_v6v9urd_r4",
+   "source": "v6v9urd.mp4",
+   "brand": "KT_MEMORYR2R2R2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_WALL-STREET-500-RIVALS_80s.mp4: [FAIL] 01_WALL-STREET-500-RIVALS_80s.mp4                      64 captions vs the sound (word-referenced: no clear pauses)  median +0.07s  worst-10% 0.99s  | words captioned 100%"
+   ],
+   "slug": "WALL-STREET-500-RIVALS",
+   "in": 282.1,
+   "out": 361.2,
+   "start_words": "I was applying for",
+   "end_words": "equals more money in business",
+   "hook": [
+    "Beat 500 rivals",
+    "Won 3 promotions"
+   ]
+  },
+  "ep_v6v9urd_r4/FLUNKING-TO-100-PERCENT": {
+   "plan": "ep_v6v9urd_r4",
+   "source": "v6v9urd.mp4",
+   "brand": "KT_MEMORYR2R2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `02_FLUNKING-TO-100-PERCENT_80s.mp4` - opens mid-sentence on \"flunking calculus.\"\""
+   ],
+   "slug": "FLUNKING-TO-100-PERCENT",
+   "in": 1379.9,
+   "out": 1462.0,
+   "start_words": "I'm flunking calculus",
+   "end_words": "teach all the administrative staff",
+   "hook": [
+    "100% on exam",
+    "after flunking calculus"
+   ]
+  },
+  "ep_v6v9urd_r4/THE-GRIFFIN-BOOK": {
+   "plan": "ep_v6v9urd_r4",
+   "source": "v6v9urd.mp4",
+   "brand": "KT_MEMORYR2R2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_THE-GRIFFIN-BOOK_67s.mp4` - phrase scrambled around \"Griffin book?\" The Griffin\"; phrase scrambled around \"Iraq during the Iraq\"; phrase scrambled around \"book?\" The Griffin book\""
+   ],
+   "slug": "THE-GRIFFIN-BOOK",
+   "in": 1938.0,
+   "out": 2012.8,
+   "start_words": "I'm in Australia a couple",
+   "end_words": "too good for us",
+   "hook": [
+    "The Griffin Book",
+    "banned him twice"
+   ]
+  },
+  "ep_v7gisy0_r3/MANIFEST-MONEY-LIKE-AN-AMAZON-ORDER": {
+   "plan": "ep_v7gisy0_r3",
+   "source": "v7gisy0.mp4",
+   "brand": "KT_SEVENTYR2R2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_MANIFEST-MONEY-LIKE-AN-AMAZON-ORDER_55s.mp4` - ends mid-thought on \"with source,\"; the spoken word was on screen in only 8 of 11 moments"
+   ],
+   "slug": "MANIFEST-MONEY-LIKE-AN-AMAZON-ORDER",
+   "in": 1406.6,
+   "out": 1461.08,
+   "start_words": "i want this set of cookware",
+   "end_words": "with god with source",
+   "hook": [
+    "How to order",
+    "money like Amazon"
+   ]
+  },
+  "ep_v7gisy0_r3/WHY-YOUR-DREAM-HOUSE-IS-TOO-SMALL": {
+   "plan": "ep_v7gisy0_r3",
+   "source": "v7gisy0.mp4",
+   "brand": "KT_SEVENTYR2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_WHY-YOUR-DREAM-HOUSE-IS-TOO-SMALL_105s.mp4` - opens mid-sentence on \"of thinking big.\"; phrase scrambled around \"dream about your dream\""
+   ],
+   "slug": "WHY-YOUR-DREAM-HOUSE-IS-TOO-SMALL",
+   "in": 197.9,
+   "out": 302.04,
+   "start_words": "The Magic of Thinking Big",
+   "end_words": "come back to reality",
+   "hook": [
+    "Why your dream house",
+    "is tiny"
+   ]
   }
  },
  "attempts": {
@@ -4618,6 +4708,7 @@
   "ar_v76l9y0_r3": 2,
   "ar_v76l9y0_r4": 2,
   "ar_v6yeuyc_r3": 2,
-  "ep_v77l7um_r3": 2
+  "ep_v77l7um_r3": 2,
+  "ep_v77l7um_r5": 1
  }
 }
