@@ -8559,11 +8559,25 @@
    "hook": "The 70x7 rule for your income",
    "bytes": 68112336,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-13T12:41",
    "cta_keyword": "MONEY",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DecRQybFMf6/",
+    "youtube": "https://youtube.com/shorts/4PaxMKovAdc"
+   },
+   "caption_at_post": "Write your goal down once and you send one burst. It works - but slowly.\n\nKevin Trudeau's 70 x 7: every day for seven days, write your income goal by hand 70 times, and say it out loud each time. About 15 to 20 minutes a day.\n\nThe goal must be realistic - a number you are confident you can reach this year, not a fantasy. And you still don't think about how.\n\nAfter day seven, throw the papers away and let it go. Release the attachment to the outcome - that is when the universe can actually deliver it.\n\nWould you give it seven days?\n\n#kevintrudeau #70x7 #manifestation #goalsetting #moneymindset #yourwishisyourcommand",
+   "posted_at": "2026-10-13T12:47",
+   "tiktok_retry": true
   }
  ]
 }
