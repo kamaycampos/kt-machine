@@ -1,0 +1,18 @@
+{
+ "source": "v71ktjy.mp4",
+ "brand": "AR_BANNEDR2R2",
+ "test": false,
+ "note": "13 Oct 2026 - 'Kevin Trudeau: Banned, Censored, Still Speaking Truth.' (Rumble v71ktjy). Awakened Rise weekly agent. SECOND CHANCE re-cut (12 Oct 2026 gate failures, 2nd round) - edges moved to different sentence boundaries per AR_PLANNING.md 2c. SAME-SCRIPT-DIFFERENT-RESULT: out pulled back from 1927.9 to 1927.5 - the r2 cut still spilled into the first syllable of the next sentence ('Their energy wasn't...'), rendering as the mid-word fragment 'There-'; ending earlier clears it. DIVISION-CHAOS-YOUR-FIX skipped: two rounds of different edges (688.6-747.0, then 702.4-746.6) both failed the same 'no clear pauses' caption-sync check on this rapid interview cross-talk passage, and no silence gap exists anywhere in work/v71ktjy.srt across the whole span to anchor a third attempt. MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE skipped: two different out-points (3491.9, then 3492.6, 0.7s apart) both rendered truncated at the identical words ('...is probably the'), which points to an alignment problem in the source audio around 'highest level' rather than a timestamp a third guess could fix. RECRUITED-AT-SIX stays skipped per the prior round's note (the flagged break sits on the clip's own subject, 'called the Brotherhood').",
+ "clips": [
+  {
+   "slug": "SAME-SCRIPT-DIFFERENT-RESULT",
+   "in": 1854.4,
+   "out": 1927.5,
+   "start_words": "They came to me",
+   "end_words": "did produced results",
+   "hook": ["They copied him", "exactly. It failed."],
+   "caption": "A multi-billion dollar infomercial company built an exact copy of his show — same script, a look-alike actor, an identical set, a decoy interviewer.\n\nSide by side, you couldn't tell which was real. It still didn't sell. They wore wristbands that said \"what would Kevin do?\" because they couldn't figure out what was missing.\n\nThe answer was never in the words — he believed in the product and used it himself. They only wanted the money. Same script, different energy, different result.\n\nComment RISE for the rest of the teaching.\n\n#mindset #energy #manifestation #awakening #subconscious #kevintrudeau",
+   "retry_of": "ar_v71ktjy_r2/SAME-SCRIPT-DIFFERENT-RESULT"
+  }
+ ]
+}
