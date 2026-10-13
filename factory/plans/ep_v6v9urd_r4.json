@@ -1,0 +1,47 @@
+{
+  "source": "v6v9urd.mp4",
+  "brand": "KT_MEMORYR2R2R2",
+  "test": false,
+  "note": "13 Oct 2026 - 'How To Remember Anything: The Story Behind The Mega Memory System' (Rumble v6v9urd). Weekly agent, second chance (round 4, last chance on these three). Re-cut WALL-STREET-500-RIVALS and FLUNKING-TO-100-PERCENT onto cleaner sentence starts; kept THE-GRIFFIN-BOOK's content (its two 'scrambled' flags are ordinary dialogue repeating a just-introduced term, e.g. a question echoing the phrase it asks about - not damage) and nudged its start. Skipped COUNTING-CARDS-250K-RENO for good - the restaurant-scene line \"big Italian guy in the back with his back\" is a genuine garble sitting in the middle of the climax and can't be cut around.",
+  "clips": [
+    {
+      "slug": "WALL-STREET-500-RIVALS",
+      "in": 282.1,
+      "out": 361.2,
+      "start_words": "I was applying for",
+      "end_words": "equals more money in business",
+      "retry_of": "ep_v6v9urd/WALL-STREET-500-RIVALS",
+      "hook": [
+        "Beat 500 rivals",
+        "Won 3 promotions"
+      ],
+      "caption": "A caller once phoned a radio show just to thank Kevin Trudeau for his best business decision ever.\n\n500 people applied for the same Wall Street job. To stand apart, he memorized every interviewer's name, then all 1,500 NYSE companies and stock symbols.\n\nExecutives started pulling each other in just to watch him recall it live.\n\nHe got the job. Three promotions followed. He still isn't sure if people think he's smart, or just impossible to forget.\n\nWhat would one remembered detail do for your next interview?\n\n#kevintrudeau #memory #careeradvice #jobinterview #success #wealthmindset"
+    },
+    {
+      "slug": "FLUNKING-TO-100-PERCENT",
+      "in": 1379.9,
+      "out": 1462.0,
+      "start_words": "I'm flunking calculus",
+      "end_words": "teach all the administrative staff",
+      "retry_of": "ep_v6v9urd_r2/FLUNKING-TO-100-PERCENT",
+      "hook": [
+        "100% on exam",
+        "after flunking calculus"
+      ],
+      "caption": "A college student walked into Kevin Trudeau's class with one request: I'm flunking calculus, can you help.\n\nHe couldn't hold equations in his head long enough to use them on an exam.\n\nOne lesson on memorizing formulas later, he scored 100 percent, the only student in the class to do it, in a tenth of the usual time.\n\nHis professor assumed he'd cheated and sent him to the principal's office. He walked out with an invite to train the staff instead.\n\nSometimes the fix isn't more study time, it's a better way to hold what you learned.\n\n#kevintrudeau #memory #studytips #college #learning #mindset"
+    },
+    {
+      "slug": "THE-GRIFFIN-BOOK",
+      "in": 1938.0,
+      "out": 2012.8,
+      "start_words": "I'm in Australia a couple",
+      "end_words": "too good for us",
+      "retry_of": "ep_v6v9urd_r2/THE-GRIFFIN-BOOK",
+      "hook": [
+        "The Griffin Book",
+        "banned him twice"
+      ],
+      "caption": "Years after his Reno win, Kevin Trudeau sat down at a blackjack table in Australia with General Norman Schwartzkopf.\n\nThe dealer dealt cards to the general. Not to him.\n\nWhen he asked why, the casino told him he was listed in something called the Griffin book: a registry of players who never cheat, but count well enough to get barred anyway.\n\nTwo countries, two casinos, the same verdict on the same memory.\n\nBeing the best player at the table isn't always the same as being welcome at it.\n\n#kevintrudeau #memory #casino #blackjack #mindset #success"
+    }
+  ]
+}
