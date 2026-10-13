@@ -32,7 +32,8 @@ import json, os, re, subprocess, sys
 
 FF = os.path.expanduser("~/Kamay/bin/ffmpeg")
 MIN_SECS, MAX_SECS = 8.0, 185.0
-CONNECTORS = {"and", "or", "to", "of", "after", "upon", "by", "over", "on", "the", "a"}
+CONNECTORS = {"and", "or", "to", "of", "after", "upon", "by", "over", "on", "the", "a",
+              "as"}   # "us as us", "as good as": 13 Oct 2026
 LIST_JOIN = {"or", "and", "nor", "than", "versus", "vs"}
 CLAUSE = {"that", "which", "who", "whom", "whose", "whether"}
 COPULA = {"is", "are", "was", "were", "be", "not", "isn't", "aren't", "wasn't", "no"}
@@ -72,7 +73,9 @@ def text_faults(caps):
     actually shipped on 29 Sept, so none of them is hypothetical."""
     out = []
     words = [(w, i) for i, (_a, _b, t) in enumerate(caps) for w in t.split()]
-    flat = [w for w, _ in words]
+    # A closing quote hides the punctuation inside it: "'my father,' 'our father,'"
+    # read as a repeat with no comma (VSC OUR-FATHER-NOT-MY-FATHER, 13 Oct 2026).
+    flat = [w.rstrip("'\"\u2019\u201d") or w for w, _ in words]
     norm = [re.sub(r"[^a-z']", "", w.lower()) for w in flat]
 
     for i in range(len(norm) - 1):
