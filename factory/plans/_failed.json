@@ -4697,6 +4697,135 @@
     "is tiny"
    ]
   },
+<<<<<<< Updated upstream
+=======
+  "ar_v5ky88y/DNA-WASNT-INVENTED-IT-WAS-FOUND": {
+   "plan": "ar_v5ky88y",
+   "source": "v5ky88y.mp4",
+   "brand": "AR_DISCOVERY",
+   "tries": 1,
+   "why": [
+    "drop AR_DISCOVERY/DNA-WASNT-INVENTED-IT-WAS-FOUND: hook - opens on a vague riddle: \"Nobody invented DNA.\""
+   ],
+   "slug": "DNA-WASNT-INVENTED-IT-WAS-FOUND",
+   "in": 99.0,
+   "out": 147.0,
+   "start_words": "When it comes to",
+   "end_words": "it was discovered, as was quantum physics",
+   "hook": [
+    "Nobody invented DNA.",
+    "Or your mind."
+   ]
+  },
+  "ar_v5ky88y/EINSTEIN-NEVER-SAID-HE-INVENTED": {
+   "plan": "ar_v5ky88y",
+   "source": "v5ky88y.mp4",
+   "brand": "AR_DISCOVERY",
+   "tries": 1,
+   "why": [
+    "FAIL 02_EINSTEIN-NEVER-SAID-HE-INVENTED_51s.mp4: [FAIL] 02_EINSTEIN-NEVER-SAID-HE-INVENTED_51s.mp4             10 captions vs the sound  median +0.09s  worst-10% 1.09s  | words captioned 100%"
+   ],
+   "slug": "EINSTEIN-NEVER-SAID-HE-INVENTED",
+   "in": 452.0,
+   "out": 503.0,
+   "start_words": "Truth coming from anyone",
+   "end_words": "they said they discovered",
+   "hook": [
+    "Einstein never said",
+    "he invented anything."
+   ]
+  },
+  "ar_v5ky88y/YOU-BROADCAST-24-HOURS-7-DAYS": {
+   "plan": "ar_v5ky88y",
+   "source": "v5ky88y.mp4",
+   "brand": "AR_DISCOVERY",
+   "tries": 1,
+   "why": [
+    "FAIL 01_YOU-BROADCAST-24-HOURS-7-DAYS_64s.mp4: [FAIL] 01_YOU-BROADCAST-24-HOURS-7-DAYS_64s.mp4               6 captions vs the sound  median +0.23s  worst-10% 0.83s  | words captioned 102%"
+   ],
+   "slug": "YOU-BROADCAST-24-HOURS-7-DAYS",
+   "in": 1362.0,
+   "out": 1426.0,
+   "start_words": "the more you will",
+   "end_words": "your world will change",
+   "hook": [
+    "You broadcast",
+    "24 hours, 7 days."
+   ]
+  },
+  "ar_v71xlg4/HER-FEAR-IS-STILL-RUNNING-YOU": {
+   "plan": "ar_v71xlg4",
+   "source": "v71xlg4.mp4",
+   "brand": "AR_MIRROR",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_HER-FEAR-IS-STILL-RUNNING-YOU_118s.mp4` - ends mid-thought on \"your next relationship\"; sentence starts with no stop: \"dog You\"; sentence starts with no stop: \"dogs The\""
+   ],
+   "slug": "HER-FEAR-IS-STILL-RUNNING-YOU",
+   "in": 217.5,
+   "out": 337.5,
+   "start_words": "The answer is counter",
+   "end_words": "counter intention to your next relationship",
+   "hook": [
+    "Her fear is",
+    "still running you."
+   ]
+  },
+  "ar_v71xlg4/HE-DIDNT-CHANGE-YOU-JUST-DID": {
+   "plan": "ar_v71xlg4",
+   "source": "v71xlg4.mp4",
+   "brand": "AR_MIRROR",
+   "tries": 1,
+   "why": [
+    "FAIL 01_HE-DIDNT-CHANGE-YOU-JUST-DID_51s.mp4: ends off the planned words: plan ends 'and that other person changes', clip ends 'is changing and that other pe'"
+   ],
+   "slug": "HE-DIDNT-CHANGE-YOU-JUST-DID",
+   "in": 822.5,
+   "out": 873.5,
+   "start_words": "And then through matching",
+   "end_words": "and that other person changes",
+   "hook": [
+    "He didn't change.",
+    "You just did."
+   ]
+  },
+  "ar_v71xlg4/THERES-NOT-JUST-ONE": {
+   "plan": "ar_v71xlg4",
+   "source": "v71xlg4.mp4",
+   "brand": "AR_MIRROR",
+   "tries": 1,
+   "why": [
+    "drop AR_MIRROR/THERES-NOT-JUST-ONE: hook - opens on a vague riddle: \"There's no soulmate.\""
+   ],
+   "slug": "THERES-NOT-JUST-ONE",
+   "in": 1555.5,
+   "out": 1619.5,
+   "start_words": "All I can say is",
+   "end_words": "There's not just one",
+   "hook": [
+    "There's no soulmate.",
+    "There's a shortlist."
+   ]
+  },
+  "ar_v71xlg4/YOU-COMPLETE-ME-IS-A-TRAP": {
+   "plan": "ar_v71xlg4",
+   "source": "v71xlg4.mp4",
+   "brand": "AR_MIRROR",
+   "tries": 1,
+   "why": [
+    "FAIL 01_YOU-COMPLETE-ME-IS-A-TRAP_41s.mp4: [FAIL] 01_YOU-COMPLETE-ME-IS-A-TRAP_41s.mp4                   10 captions vs the sound  median +0.03s  worst-10% 0.78s  | words captioned 99%"
+   ],
+   "slug": "YOU-COMPLETE-ME-IS-A-TRAP",
+   "in": 1882.5,
+   "out": 1923.5,
+   "start_words": "They think the other",
+   "end_words": "new entity that we create called us",
+   "hook": [
+    "You complete me",
+    "is a trap."
+   ]
+  },
+>>>>>>> Stashed changes
   "ep_v77l7um_r5/3-TRADERS-SIX-FIGURES-15-SECONDS": {
    "plan": "ep_v77l7um_r5",
    "source": "v77l7um.mp4",
