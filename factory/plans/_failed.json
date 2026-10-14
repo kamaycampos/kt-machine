@@ -4697,8 +4697,60 @@
     "is tiny"
    ]
   },
-<<<<<<< Updated upstream
-=======
+  "ep_v77l7um_r5/3-TRADERS-SIX-FIGURES-15-SECONDS": {
+   "plan": "ep_v77l7um_r5",
+   "source": "v77l7um.mp4",
+   "brand": "KT_BITCOINR2R2R2R2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_3-TRADERS-SIX-FIGURES-15-SECONDS_124s.mp4: [FAIL] 01_3-TRADERS-SIX-FIGURES-15-SECONDS_124s.mp4           86 captions vs the sound (word-referenced: no clear pauses)  median +0.31s  worst-10% 1.01s  | words captioned 100%"
+   ],
+   "slug": "3-TRADERS-SIX-FIGURES-15-SECONDS",
+   "in": 1040.08,
+   "out": 1163.44,
+   "start_words": "The three traders, they",
+   "end_words": "made six figures",
+   "hook": [
+    "3 traders, 15 seconds",
+    "all won"
+   ]
+  },
+  "ep_v77l7um_r5/RAILROADS-TRIED-TO-RUIN-HIM": {
+   "plan": "ep_v77l7um_r5",
+   "source": "v77l7um.mp4",
+   "brand": "KT_BITCOINR2R2R2R2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_RAILROADS-TRIED-TO-RUIN-HIM_90s.mp4: ends off the planned words: plan ends 'seed of a greater benefit', clip ends 'because they tried to crush him'"
+   ],
+   "slug": "RAILROADS-TRIED-TO-RUIN-HIM",
+   "in": 2500.0,
+   "out": 2594.64,
+   "start_words": "Every single time the",
+   "end_words": "seed of a greater benefit",
+   "hook": [
+    "5x more money",
+    "after government attacked"
+   ]
+  },
+  "ep_v77l7um_r5/BANNED-FROM-BLACKJACK-BUILT-BACCARAT": {
+   "plan": "ep_v77l7um_r5",
+   "source": "v77l7um.mp4",
+   "brand": "KT_BITCOINR2R2R2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_BANNED-FROM-BLACKJACK-BUILT-BACCARAT_118s.mp4: [FAIL] 01_BANNED-FROM-BLACKJACK-BUILT-BACCARAT_118s.mp4       7 captions vs the sound  median -0.00s  worst-10% 0.44s  | words captioned 100%  UNCAPTIONED SPEECH [(113.7, 115.3)]"
+   ],
+   "slug": "BANNED-FROM-BLACKJACK-BUILT-BACCARAT",
+   "in": 575.12,
+   "out": 696.64,
+   "start_words": "I am banned from",
+   "end_words": "I'll take all their money",
+   "hook": [
+    "100% win rate",
+    "for 18 months"
+   ]
+  },
   "ar_v5ky88y/DNA-WASNT-INVENTED-IT-WAS-FOUND": {
    "plan": "ar_v5ky88y",
    "source": "v5ky88y.mp4",
@@ -4823,61 +4875,6 @@
    "hook": [
     "You complete me",
     "is a trap."
-   ]
-  },
->>>>>>> Stashed changes
-  "ep_v77l7um_r5/3-TRADERS-SIX-FIGURES-15-SECONDS": {
-   "plan": "ep_v77l7um_r5",
-   "source": "v77l7um.mp4",
-   "brand": "KT_BITCOINR2R2R2R2",
-   "tries": 2,
-   "why": [
-    "FAIL 01_3-TRADERS-SIX-FIGURES-15-SECONDS_124s.mp4: [FAIL] 01_3-TRADERS-SIX-FIGURES-15-SECONDS_124s.mp4           86 captions vs the sound (word-referenced: no clear pauses)  median +0.31s  worst-10% 1.01s  | words captioned 100%"
-   ],
-   "slug": "3-TRADERS-SIX-FIGURES-15-SECONDS",
-   "in": 1040.08,
-   "out": 1163.44,
-   "start_words": "The three traders, they",
-   "end_words": "made six figures",
-   "hook": [
-    "3 traders, 15 seconds",
-    "all won"
-   ]
-  },
-  "ep_v77l7um_r5/RAILROADS-TRIED-TO-RUIN-HIM": {
-   "plan": "ep_v77l7um_r5",
-   "source": "v77l7um.mp4",
-   "brand": "KT_BITCOINR2R2R2R2",
-   "tries": 2,
-   "why": [
-    "FAIL 02_RAILROADS-TRIED-TO-RUIN-HIM_90s.mp4: ends off the planned words: plan ends 'seed of a greater benefit', clip ends 'because they tried to crush him'"
-   ],
-   "slug": "RAILROADS-TRIED-TO-RUIN-HIM",
-   "in": 2500.0,
-   "out": 2594.64,
-   "start_words": "Every single time the",
-   "end_words": "seed of a greater benefit",
-   "hook": [
-    "5x more money",
-    "after government attacked"
-   ]
-  },
-  "ep_v77l7um_r5/BANNED-FROM-BLACKJACK-BUILT-BACCARAT": {
-   "plan": "ep_v77l7um_r5",
-   "source": "v77l7um.mp4",
-   "brand": "KT_BITCOINR2R2R2R2",
-   "tries": 3,
-   "why": [
-    "FAIL 01_BANNED-FROM-BLACKJACK-BUILT-BACCARAT_118s.mp4: [FAIL] 01_BANNED-FROM-BLACKJACK-BUILT-BACCARAT_118s.mp4       7 captions vs the sound  median -0.00s  worst-10% 0.44s  | words captioned 100%  UNCAPTIONED SPEECH [(113.7, 115.3)]"
-   ],
-   "slug": "BANNED-FROM-BLACKJACK-BUILT-BACCARAT",
-   "in": 575.12,
-   "out": 696.64,
-   "start_words": "I am banned from",
-   "end_words": "I'll take all their money",
-   "hook": [
-    "100% win rate",
-    "for 18 months"
    ]
   }
  },

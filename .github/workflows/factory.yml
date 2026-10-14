@@ -136,7 +136,11 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 60
     steps:
+      # MAIN AS IT IS NOW, not the commit that started the run (14 Oct 2026). A run
+      # that waited behind another factory run otherwise merged its clips into the
+      # kt_series.json of hours before, and the save collided with the newer one.
       - uses: actions/checkout@v4
+        with: { ref: main }
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
       - uses: actions/cache@v4
@@ -151,6 +155,11 @@ jobs:
           python factory/queue.py /tmp/shards
       - name: Save
         run: |
+          # Never commit a JSON file that does not parse: one broken kt_series.json
+          # (conflict markers, 14 Oct 2026) stopped every factory run for both accounts.
+          for f in $(git ls-files -m -o --exclude-standard state docs factory | grep '\.json$'); do
+            python -c "import json,sys; json.load(open(sys.argv[1]))" "$f" || { echo "REFUSED: $f is not valid JSON"; exit 1; }
+          done
           git add -A state docs factory
           git diff --staged --quiet || git commit -q -m "factory: clips built and queued $(date -u +%FT%TZ)"
           for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && break; sleep 5; done
