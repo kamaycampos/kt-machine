@@ -90,14 +90,18 @@ def _ts(t):
 
 def instagram_comments(ig, tok):
     """(comment_id, text, when, media_id, author) on the newest posts."""
-    media = _get(f"{G}/{ig}/media", {"fields": "id,timestamp", "limit": RECENT_POSTS,
+    media = _get(f"{G}/{ig}/media", {"fields": "id,timestamp,comments_count", "limit": RECENT_POSTS,
                                        "access_token": tok}).get("data", [])
+    diag = os.environ.get("DM_DIAG") == "1"
     out = []
     for m in media:
         if _ts(m["timestamp"]) < datetime.now(timezone.utc) - WINDOW - timedelta(days=30):
             continue
         cs = _get(f"{G}/{m['id']}/comments", {"fields": "id,text,timestamp,username,replies{username}",
                                                "limit": 50, "access_token": tok}).get("data", [])
+        if diag:
+            print(f"  post {m['timestamp'][:16]}: says {m.get('comments_count')} comments, API gave {len(cs)}"
+                  f" {[(c.get('text') or '')[:12] for c in cs]}")
         out += [(c["id"], c.get("text", ""), c["timestamp"], m["id"], c.get("username", ""),
                  {r.get("username", "") for r in (c.get("replies") or {}).get("data", [])})
                 for c in cs]

@@ -164,6 +164,7 @@ jobs:
         env:
           DM_AUTO: ${{ vars.DM_AUTO }}
           DM_TEXT: ${{ vars.DM_TEXT }}
+          DM_DIAG: ${{ vars.DM_DIAG }}
           OFFER_URL: ${{ secrets.OFFER_URL }}
           KT_CTA_KEYWORDS: ${{ secrets.KT_CTA_KEYWORDS }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
