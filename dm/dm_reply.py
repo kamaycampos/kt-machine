@@ -206,6 +206,18 @@ def run(dry=False):
                 rec["message"] = private_reply(page, tok, cid, text)
                 d["sent"][cid] = rec
                 sent += 1
+                # THE PUBLIC REPLY, like Meta's own rule did (14 Oct 2026, Kamay: "before it
+                # replied to the comment"). It tells the viewer to check their messages -
+                # a DM from a page they don't follow lands in Requests - and other viewers
+                # see that commenting works. Never fatal: the DM is what matters.
+                if platform == "instagram" and os.environ.get("DM_PUBLIC_REPLY", "on") != "off":
+                    try:
+                        r = requests.post(f"{G}/{cid}/replies", timeout=T, params={
+                            "message": os.environ.get("DM_PUBLIC_TEXT") or "Just sent it to you - check your messages \U0001F4E9",
+                            "access_token": tok})
+                        rec["public_reply"] = "ok" if r.ok and "id" in (r.json() or {}) else (r.json() or {}).get("error", {}).get("message", "")[:120]
+                    except Exception as e:
+                        rec["public_reply"] = f"error: {type(e).__name__}"
             except Exception as e:
                 d["errors"].append({"at": now.isoformat(), "platform": platform,
                                     "comment": cid, "error": str(e)})

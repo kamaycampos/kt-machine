@@ -53,6 +53,8 @@ def get(url, params=None, timeout=None):
 
 
 def post(url, params=None, json=None, timeout=None):
+    if url.endswith("/replies"):
+        return R({"id": "r1"})
     sent.append((json["recipient"]["comment_id"], json["message"]["text"]))
     return R({"message_id": "mid"})
 
