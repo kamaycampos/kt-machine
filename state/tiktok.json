@@ -1,10 +1,10 @@
 {
- "at": "2026-10-13T23:06",
+ "at": "2026-10-14T05:21",
  "profile": {
-  "following_count": 8,
-  "likes_count": 5850,
   "video_count": 166,
-  "follower_count": 411
+  "follower_count": 411,
+  "following_count": 8,
+  "likes_count": 5851
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -89,7 +89,7 @@
   },
   "KT_LEDGER/02_LOST-27-MILLION-STILL-WON_160s.mp4": {
    "id": "7692503921260088590",
-   "view_count": 10,
+   "view_count": 11,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -109,7 +109,7 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 155,
+   "view_count": 160,
    "like_count": 3,
    "comment_count": 0,
    "share_count": 0,
@@ -379,7 +379,7 @@
   },
   "KT_YWIYC/01_HOW-TO-START-ACTUALLY-DOING-IT_87s.mp4": {
    "id": "7689168512304123150",
-   "view_count": 225,
+   "view_count": 226,
    "like_count": 12,
    "comment_count": 0,
    "share_count": 0,
@@ -479,7 +479,7 @@
   },
   "KT_SECRET/03_SIXTY-AND-BROKE_44s.mp4": {
    "id": "7688344513672170765",
-   "view_count": 485,
+   "view_count": 486,
    "like_count": 35,
    "comment_count": 0,
    "share_count": 3,
@@ -529,7 +529,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3683,
+   "view_count": 3684,
    "like_count": 152,
    "comment_count": 7,
    "share_count": 16,
@@ -619,7 +619,7 @@
   },
   "KT_LIES/03_THE-DRYER-FUND_57s.mp4": {
    "id": "7686521175207382286",
-   "view_count": 677,
+   "view_count": 678,
    "like_count": 41,
    "comment_count": 1,
    "share_count": 1,
@@ -669,7 +669,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14123,
+   "view_count": 14124,
    "like_count": 866,
    "comment_count": 59,
    "share_count": 196,
@@ -719,8 +719,8 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38120,
-   "like_count": 786,
+   "view_count": 38131,
+   "like_count": 787,
    "comment_count": 27,
    "share_count": 171,
    "share_url": "https://www.tiktok.com/@kt_student/video/7685518951098453262?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
