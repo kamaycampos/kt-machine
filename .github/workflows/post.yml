@@ -153,6 +153,25 @@ jobs:
           AR_YT_REFRESH_TOKEN: ${{ secrets.AR_YT_REFRESH_TOKEN }}
         run: python measure.py ${{ inputs.measure_now && '--force' || '' }}
 
+      # COMMENT KEYWORD -> DM, OUR OWN (14 Oct 2026). Meta's built-in rule stopped answering
+      # (a "Money" comment on 14 Oct got nothing) while the page sits under a restriction.
+      # This pass reads Kamay's comments through the API, sends the link once per person,
+      # skips anything the account already answered, and logs every send and every
+      # refusal in state/dms.json - so a silent funnel can never happen again unseen.
+      - name: Comment keyword -> DM with the link (Kamay's account)
+        if: ${{ !inputs.dry_run && inputs.trial == '' }}
+        continue-on-error: true          # a DM pass must never block a post
+        env:
+          DM_AUTO: ${{ vars.DM_AUTO }}
+          DM_TEXT: ${{ vars.DM_TEXT }}
+          OFFER_URL: ${{ secrets.OFFER_URL }}
+          KT_CTA_KEYWORDS: ${{ secrets.KT_CTA_KEYWORDS }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+        run: python dm/dm_reply.py
+
       - name: Rebuild the calendar and the captions board
         if: ${{ !inputs.dry_run && inputs.trial == '' }}
         env:
@@ -173,6 +192,7 @@ jobs:
           git config user.name  "kt-machine"
           git config user.email "noreply@github.com"
           git add state/manifest.json state/metrics.json docs
+          git add state/dms.json 2>/dev/null || true
           # Nothing due is the normal case; an empty commit would be noise.
           git diff --staged --quiet || git commit -m "state: $(date -u +%FT%TZ)"
           # 22 Sept 2026: a plain push lost a race and a clip was published
