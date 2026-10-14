@@ -153,7 +153,10 @@ def run(dry=False):
             pass
     sources = []
     if ig and itok and page:
-        sources.append(("instagram", lambda: instagram_comments(ig, itok), ftok or itok))
+        # Read with the Page token when there is one: it carries instagram_manage_comments.
+        # 14 Oct 2026: the Instagram token saw 5 comments in a week and missed a real
+        # "Money" - it was never granted comment access.
+        sources.append(("instagram", lambda: instagram_comments(ig, ftok or itok), ftok or itok))
     if page and ftok:
         sources.append(("facebook", lambda: facebook_comments(page, ftok), ftok))
     if not sources:
