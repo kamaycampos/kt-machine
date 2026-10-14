@@ -31,8 +31,12 @@ import sys
 import urllib.request
 
 HOME = os.path.expanduser("~/Kamay")
-STATE = ("https://raw.githubusercontent.com/kamaycampos/kt-machine/"
-         "main/state/manifest.json")
+# WHOSE posted clips count. Every existing machine reads Kamay's state, exactly as before;
+# a copy of the Affiliate Factory sets KT_LOCK_REPO to its own repository (14 Oct 2026),
+# so a member's clips are never locked - or unlocked - by somebody else's posting record.
+STATE = ("https://raw.githubusercontent.com/"
+         + (os.environ.get("KT_LOCK_REPO") or "kamaycampos/kt-machine")
+         + "/main/state/manifest.json")
 
 
 def _published(c):
