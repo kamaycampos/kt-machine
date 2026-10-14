@@ -1,0 +1,21 @@
+{
+ "source": "v6xhs7q.mp4",
+ "brand": "AR_FAILSAFER2",
+ "test": false,
+ "note": "14 Oct 2026 - 'Classified Secret Society File 2: The Truth About The Brotherhood's Hidden Agenda EXPOSED!' (Rumble v6xhs7q). Awakened Rise weekly agent. SECOND CHANCE re-cut (6 Oct 2026 gate failures) per AR_PLANNING.md 2c. YOU-HAVE-INFINITE-UNLIMITED-POWER: both edges were set to full cue boundaries that ran past the intended words (in=797.6 actually started mid-word inside 'secret societies'; out=860.16 ran past 'as you.' into the next sentence, 'Their idea was...') - moved both to the real word positions inside the same cues, which also re-times every caption. THEY-NEVER-SHUT-DOWN-REMOTE-VIEWING skipped: the scrambled phrase ('them and teaching them') sits 22s into a 68s clip, deep in the middle of the teaching, not at an edge that could be moved. DISCREDIT-BANKRUPT-PRISON-IN-THAT-ORDER skipped: all three scrambled phrases ('their money and their', 'their power and their influence and their', etc.) sit 60-70s into a 156s clip, also mid-teaching.",
+ "clips": [
+  {
+   "slug": "YOU-HAVE-INFINITE-UNLIMITED-POWER",
+   "in": 795.6,
+   "out": 859.6,
+   "start_words": "So what is the",
+   "end_words": "dwells within you, as you",
+   "hook": [
+    "You have infinite",
+    "unlimited power."
+   ],
+   "caption": "For centuries, the people in power had one real strategy: keep everyone else illiterate.\n\nNot because reading is dangerous. Because the moment you can think clearly for yourself, the lie stops working — the lie that you're less than them, not as capable, not as smart, basically helpless. That belief is the entire mechanism of control. Take it away and the control goes with it.\n\nThe truth they didn't want taught: you are a creative being with the power to build the actual life you want. Not someday. Now.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#awakening #consciousness #spirituality #disclosure #manifestation #kevintrudeau",
+   "retry_of": "ar_v6xhs7q/YOU-HAVE-INFINITE-UNLIMITED-POWER"
+  }
+ ]
+}
