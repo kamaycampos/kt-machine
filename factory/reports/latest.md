@@ -1,7 +1,7 @@
 ## ar_v6rs0nv: 5 of 6 clip(s) passed every gate
 
 
-## 2026-10-14 14:07
+## 2026-10-14 15:13
   note AR_WEALTHWAVE/NOT-JUST-MONEY-EVERYTHING-RESPONDS: ending kept on the planner's words 'than if you're broadcasting on beta' (cuts mid-sentence)
   note AR_WEALTHWAVE/RELEASE-YOUR-OUTCOME-SKIP-THE-HOW: ending kept on the planner's words 'you don't focus on the how' (ends inside a quote)
 ar_v6rs0nv__s2 (AR_WEALTHWAVE): 2 of 2 passed pre-render gates
@@ -14,7 +14,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_WEALTHWAVE
 
 
 
-## 2026-10-14 14:15
+## 2026-10-14 15:13
   note AR_WEALTHWAVE/ANGER-TURNS-WATER-JAGGED: ending kept on the planner's words 'your brainwaves affect physical matter' (next line completes it)
 ar_v6rs0nv__s0 (AR_WEALTHWAVE): 2 of 2 passed pre-render gates
 
@@ -28,7 +28,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_WEALTHWAVE
 
 
 
-## 2026-10-14 14:08
+## 2026-10-14 15:06
   note AR_WEALTHWAVE/OLD-GOLD-HOLDS-FREQUENCY: ending kept on the planner's words 'billionaire brainwave so think about that' (ends on 'that')
   note AR_WEALTHWAVE/THIRTY-FIVE-BILLIONAIRES-ZERO-MEDITATE: ending kept on the planner's words 'they still broadcast on that wave' (cuts mid-sentence)
 ar_v6rs0nv__s1 (AR_WEALTHWAVE): 2 of 2 passed pre-render gates
@@ -50,7 +50,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_WEALTHWAVE
 ## ar_v6rv5w3: 3 of 6 clip(s) passed every gate
 
 
-## 2026-10-14 14:31
+## 2026-10-14 15:29
   note AR_LIMBIC/DAMAGED-BRAIN-EMPTIES-YOU: ending kept on the planner's words 'all of their validation from external sources' (cuts mid-sentence)
   note AR_LIMBIC/CORTISOL-REWIRED-THE-BRAIN: ending kept on the planner's words 'and it's called narcissistic injury' (cuts mid-sentence)
 ar_v6rv5w3__s0 (AR_LIMBIC): 2 of 2 passed pre-render gates
@@ -61,7 +61,7 @@ RENDER ar_v6rv5w3__s0
 
 
 
-## 2026-10-14 14:19
+## 2026-10-14 15:18
   note AR_LIMBIC/NOT-WORTHLESS-TOO-VALUABLE: ending kept on the planner's words 'you have to' (cuts mid-sentence)
   note AR_LIMBIC/SO-SWEET-THAT-WAS-THE-MASK: ending kept on the planner's words 'what this person was' (ends on 'was')
 ar_v6rv5w3__s2 (AR_LIMBIC): 2 of 2 passed pre-render gates
@@ -74,7 +74,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_LIMBIC
 
 
 
-## 2026-10-14 14:23
+## 2026-10-14 15:22
   note AR_LIMBIC/FOUR-PEOPLE-EVERY-RELATIONSHIP: ending kept on the planner's words 'attracted to at the beginning' (cuts mid-sentence)
   note AR_LIMBIC/THREE-FINGERS-POINT-BACK: ending kept on the planner's words 'you see the world as you are' (ends on 'are')
 ar_v6rv5w3__s1 (AR_LIMBIC): 2 of 2 passed pre-render gates
@@ -94,18 +94,18 @@ TEST MODE - passing clips NOT uploaded or queued: AR_LIMBIC
 ## ar_v6x6fvg_r3: 0 of 1 clip(s) passed every gate
 
 
-## 2026-10-14 13:57
+## 2026-10-14 14:55
   drop AR_RECRUITEDR3/A-FIVE-YEAR-OLD-PLAYED-BEETHOVEN: hook - 798px wide at 44px - over the 780px safe zone, will be cut off on a phone
 ar_v6x6fvg_r3__s0 (AR_RECRUITEDR3): 0 of 1 passed pre-render gates
 nothing to build
 
 
-- **RETIRED** after 2 runs with nothing passing; its clips go back to the planner (factory/plans/_failed.json)
+- **RETIRED** after 3 runs with nothing passing; its clips go back to the planner (factory/plans/_failed.json)
 
 ## ar_v6xhs7q_r2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-10-14 14:20
+## 2026-10-14 15:08
   note AR_FAILSAFER2/YOU-HAVE-INFINITE-UNLIMITED-POWER: ending kept on the planner's words 'dwells within you, as you' (cuts mid-sentence)
 ar_v6xhs7q_r2__s0 (AR_FAILSAFER2): 1 of 1 passed pre-render gates
 
@@ -114,12 +114,12 @@ RENDER ar_v6xhs7q_r2__s0
   FAIL 01_YOU-HAVE-INFINITE-UNLIMITED-POWER_64s.mp4: [FAIL] 01_YOU-HAVE-INFINITE-UNLIMITED-POWER_64s.mp4           10 captions vs the sound  median -0.00s  worst-10% 0.82s  | words captioned 100%
 
 
-- **RETIRED** after 2 runs with nothing passing; its clips go back to the planner (factory/plans/_failed.json)
+- **RETIRED** after 3 runs with nothing passing; its clips go back to the planner (factory/plans/_failed.json)
 
 ## ar_v794yks: 1 of 4 clip(s) passed every gate
 
 
-## 2026-10-14 13:57
+## 2026-10-14 14:53
   note AR_INWARD/SAY-I-LOVE-YOU-SILENTLY: ending kept on the planner's words 'you have a right to be happy' (cuts mid-sentence)
   note AR_INWARD/SNAKE-IN-DARKNESS-ROPE-IN-LIGHT: ending kept on the planner's words 'It was just an awakening' (cuts mid-sentence)
 ar_v794yks__s1 (AR_INWARD): 2 of 2 passed pre-render gates
@@ -133,7 +133,7 @@ render refused: a clip runs past the teaching into the advert
 
 
 
-## 2026-10-14 14:17
+## 2026-10-14 15:19
   note AR_INWARD/NOT-COMFORTABLE-IN-YOUR-SKIN: ending kept on the planner's words 'if there's one thing a person can do' (cuts mid-sentence)
 ar_v794yks__s0 (AR_INWARD): 2 of 2 passed pre-render gates
 
@@ -149,7 +149,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_INWARD
 ## ar_v7fvnxm: 5 of 6 clip(s) passed every gate
 
 
-## 2026-10-14 14:18
+## 2026-10-14 15:26
   note AR_AUTOPILOT/TWO-PHRASES-TWO-DIFFERENT-LIVES: ending kept on the planner's words 'Let's figure this out' (cuts mid-sentence)
 ar_v7fvnxm__s1 (AR_AUTOPILOT): 2 of 2 passed pre-render gates
 
@@ -162,7 +162,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_AUTOPILOT
 
 
 
-## 2026-10-14 14:14
+## 2026-10-14 15:04
 ar_v7fvnxm__s0 (AR_AUTOPILOT): 2 of 2 passed pre-render gates
 
 RENDER ar_v7fvnxm__s0
@@ -173,7 +173,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_AUTOPILOT
 
 
 
-## 2026-10-14 14:34
+## 2026-10-14 15:28
   note AR_AUTOPILOT/WRONG-HOUSE-ON-AUTOPILOT: ending kept on the planner's words 'half an hour to my new house' (ends inside a quote)
   note AR_AUTOPILOT/SAY-CANCEL-CANCEL-THATS-THE-FIX: ending kept on the planner's words 'operating with deliberate intent' (cuts mid-sentence)
 ar_v7fvnxm__s2 (AR_AUTOPILOT): 2 of 2 passed pre-render gates
@@ -191,25 +191,4 @@ TEST MODE - passing clips NOT uploaded or queued: AR_AUTOPILOT
 - **NOT QUEUED** `02_SAY-CANCEL-CANCEL-THATS-THE-FIX_60s.mp4` - ends mid-thought on "deliberate intent and"
 
 ## UPLOAD
-6 clip(s) to add:
-   AR_AUTOPILOT/01_TWO-PHRASES-TWO-DIFFERENT-LIVES_62s.mp4  (38 MB)
-   AR_AUTOPILOT/02_A-HEROIN-HIT-FROM-YOUR-HABIT_62s.mp4  (37 MB)
-   AR_AUTOPILOT/02_YOUR-SPEECH-IS-100-HABIT_54s.mp4  (32 MB)
-   AR_LIMBIC/01_SO-SWEET-THAT-WAS-THE-MASK_90s.mp4  (73 MB)
-   AR_WEALTHWAVE/01_OLD-GOLD-HOLDS-FREQUENCY_42s.mp4  (31 MB)
-   AR_WEALTHWAVE/02_ANGER-TURNS-WATER-JAGGED_49s.mp4  (34 MB)
-      + 01_TWO-PHRASES-TWO-DIFFERENT-LIVES_62s__story.mp4
-      + 01_TWO-PHRASES-TWO-DIFFERENT-LIVES_62s__yt59.mp4
-   added AR_AUTOPILOT/01_TWO-PHRASES-TWO-DIFFERENT-LIVES_62s.mp4
-      + 02_A-HEROIN-HIT-FROM-YOUR-HABIT_62s__story.mp4
-      + 02_A-HEROIN-HIT-FROM-YOUR-HABIT_62s__yt59.mp4
-   added AR_AUTOPILOT/02_A-HEROIN-HIT-FROM-YOUR-HABIT_62s.mp4
-   added AR_AUTOPILOT/02_YOUR-SPEECH-IS-100-HABIT_54s.mp4
-      + 01_SO-SWEET-THAT-WAS-THE-MASK_90s__story.mp4
-      + 01_SO-SWEET-THAT-WAS-THE-MASK_90s__yt59.mp4
-   added AR_LIMBIC/01_SO-SWEET-THAT-WAS-THE-MASK_90s.mp4
-   added AR_WEALTHWAVE/01_OLD-GOLD-HOLDS-FREQUENCY_42s.mp4
-   added AR_WEALTHWAVE/02_ANGER-TURNS-WATER-JAGGED_49s.mp4
-
-manifest now holds 365 clips
-commit and push state/manifest.json to let the machine see them
+nothing new to add
