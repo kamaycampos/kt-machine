@@ -1219,6 +1219,83 @@ def audit_instagram(clips):
     return sorted(bad)
 
 
+# THE EASY ROUTE: UPLOAD-POST (14 Oct 2026). Connecting a member's own Meta app, Google
+# Cloud project and TikTok developer app is the wall a member hit ("complicated to set
+# up"), and TikTok refuses personal apps outright. Upload-Post is an approved publisher:
+# the member logs into each platform once in its dashboard, and one API key posts to all
+# four - TikTok included, public, no thumb. Dormant unless UPLOADPOST_API_KEY is set
+# (per brand, like every credential). The Idempotency-Key is the clip + platform, so a
+# retry or a lost state commit can never publish the same clip twice.
+UP = "https://api.upload-post.com/api"
+
+
+def uploadpost_platforms(brand):
+    (key,), missing = _cfg("UPLOADPOST_API_KEY", brand=brand)
+    if missing:
+        return set()
+    raw = os.environ.get(cred_prefix(brand) + "_UPLOADPOST_PLATFORMS") or os.environ.get(
+        "UPLOADPOST_PLATFORMS") or "tiktok,instagram,youtube,facebook"
+    return {p.strip() for p in raw.split(",") if p.strip()}
+
+
+def via_uploadpost(name, path, caption, public_url, clip=None):
+    import hashlib
+    brand = brand_of(clip)
+    (key, user), missing = _cfg("UPLOADPOST_API_KEY", "UPLOADPOST_USER", brand=brand)
+    if missing:
+        return "not configured: " + ", ".join(missing)
+    if not str(public_url).startswith("https://"):
+        return "upload-post needs a public https link to the clip"
+    first = next((l for l in caption.splitlines() if l.strip()), "")[:95]
+    title = (clip or {}).get("hook") or first
+    if isinstance(title, list):
+        title = " ".join(title)
+    form = [("user", user), ("platform[]", name), ("video", public_url),
+            ("title", str(title)[:95]), ("async_upload", "true")]
+    if name == "youtube":
+        form += [("youtube_title", f"{str(title)[:90]} #shorts"), ("youtube_description", caption),
+                 ("privacyStatus", "public")]
+    elif name == "instagram":
+        form += [("instagram_title", caption), ("media_type", "REELS"), ("share_to_feed", "true")]
+    elif name == "facebook":
+        page = os.environ.get(cred_prefix(brand) + "_UPLOADPOST_FB_PAGE") or os.environ.get("UPLOADPOST_FB_PAGE", "")
+        form += [("facebook_title", first), ("facebook_description", caption),
+                 ("facebook_media_type", "REELS")] + ([("facebook_page_id", page)] if page else [])
+    elif name == "tiktok":
+        form += [("tiktok_title", caption[:2200]), ("post_mode", "DIRECT_POST")]
+    idem = hashlib.sha1(f"{(clip or {}).get('file', path)}|{name}".encode()).hexdigest()
+    h = {"Authorization": f"Apikey {key}", "Idempotency-Key": idem}
+    r = requests.post(f"{UP}/upload", headers=h, files=[(k, (None, str(v))) for k, v in form], timeout=120)
+    d = _j(r)
+    if r.status_code >= 400 or d.get("success") is False:
+        return f"upload-post refused ({r.status_code}): {str(d.get('message') or d.get('error') or d)[:160]}"
+
+    def result(d):
+        res = d.get("results") or {}
+        one = res.get(name) if isinstance(res, dict) else next(
+            (x for x in res if isinstance(x, dict) and x.get("platform") == name), None)
+        if isinstance(one, dict):
+            if one.get("skipped"):
+                return f"upload-post: {name} is not connected in the dashboard"
+            if one.get("success") and (one.get("url") or one.get("post_id")):
+                return "posted", one.get("url") or ""
+            if one.get("error"):
+                return f"upload-post error: {str(one['error'])[:160]}"
+        return None
+
+    got = result(d)
+    rid = d.get("request_id")
+    for _ in range(24):                      # up to ~6 minutes for TikTok/YouTube processing
+        if got or not rid:
+            break
+        time.sleep(15)
+        got = result(_j(requests.get(f"{UP}/uploadposts/status", headers=h,
+                                     params={"request_id": rid}, timeout=T)))
+    # Not confirmed is NOT "posted" (verify the artifact, not the call). The next run
+    # retries, and the Idempotency-Key hands back the same job instead of a second post.
+    return got or f"upload-post accepted, not yet confirmed (request {rid})"
+
+
 ADAPTERS = {"tiktok": tiktok, "instagram": instagram,
             "youtube": youtube, "facebook": facebook}
 ENABLED = [p.strip() for p in
@@ -1334,6 +1411,8 @@ def publish(clip, path, public_url, only=None):
                 out[name] = clip["status"][name]
             continue
         fn = ADAPTERS.get(name)
+        if name in uploadpost_platforms(brand_of(clip)):
+            fn = (lambda n: lambda p, c, u, cl: via_uploadpost(n, p, c, u, cl))(name)
         if not fn:
             out[name] = "unknown platform"
             continue
@@ -1363,7 +1442,8 @@ def publish(clip, path, public_url, only=None):
             out[name] = res
         # A reel that posted also goes to stories. Bonus, never fatal - wrapped
         # so a story failure cannot turn a good reel into a bad status.
-        if name == "instagram" and out.get(name) == "posted" and STORIES_ON:
+        if (name == "instagram" and out.get(name) == "posted" and STORIES_ON
+                and "instagram" not in uploadpost_platforms(brand_of(clip))):
             try:
                 out["instagram_story"] = instagram_story(path, public_url, clip)
             except Exception as e:
