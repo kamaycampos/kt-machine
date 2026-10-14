@@ -18,6 +18,7 @@ on:
     - cron: "7 */6 * * *"        # restarts the heartbeat if a chain ever breaks
 permissions:
   actions: write
+  contents: write                 # the DM pass commits state/dms.json
 concurrency:
   group: pulse
   cancel-in-progress: false       # a second pulse waits; it never runs beside one
@@ -29,12 +30,52 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
+      # COMMENT -> DM IN 2-3 MINUTES (14 Oct 2026, Kamay: "answer in 2-3 minutes
+      # instead of ~20"). The DM pass moved here from post.yml: it runs every 150 s
+      # between post dispatches. This job is the ONLY writer of state/dms.json, so two
+      # passes can never read the same comment as new and DM one person twice.
+      DM_AUTO: ${{ vars.DM_AUTO }}
+      DM_TEXT: ${{ vars.DM_TEXT }}
+      DM_DIAG: ${{ vars.DM_DIAG }}
+      OFFER_URL: ${{ secrets.OFFER_URL }}
+      KT_CTA_KEYWORDS: ${{ secrets.KT_CTA_KEYWORDS }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+      FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
     steps:
-      - name: Start post.yml every 20 minutes (publishing, not a dry run)
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Start post.yml every 20 minutes, answer keyword comments every 2.5
         run: |
+          git config user.name  "kt-machine"
+          git config user.email "noreply@github.com"
+          dm_pass() {   # $1 = how many recent posts to read
+            git pull -q --rebase --autostash || git rebase --abort 2>/dev/null || true
+            DM_RECENT_POSTS=$1 timeout 120 python dm/dm_reply.py || echo "DM pass failed - next in 150 s"
+            git add state/dms.json 2>/dev/null || true
+            git diff --staged --quiet && return 0
+            git commit -q -m "dms: $(date -u +%FT%TZ)"
+            for i in 1 2 3; do
+              git pull -q --rebase --autostash && git push -q && return 0
+              git rebase --abort 2>/dev/null || true; sleep 3
+            done
+            echo "::warning::dms.json push failed - sent DMs are still marked by the public reply"
+          }
           for i in $(seq 1 17); do
+            start=$SECONDS
             gh workflow run post.yml -f dry_run=false || echo "dispatch $i failed - next one in 20 min"
-            sleep 1200
+            dm_pass 25                              # the full sweep, once per 20 min
+            while [ $((SECONDS - start)) -lt 1050 ]; do
+              sleep 150
+              dm_pass 6                             # the newest posts, every 2.5 min
+            done
+            left=$((1200 - (SECONDS - start)))
+            if [ $left -gt 0 ]; then sleep $left; fi   # never a failing last line under bash -e
           done
       - name: Hand over to the next heartbeat
         if: ${{ !cancelled() }}

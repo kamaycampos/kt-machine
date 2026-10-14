@@ -35,10 +35,13 @@ STATE = os.path.join(ROOT, "state", "dms.json")
 G = "https://graph.facebook.com/v21.0"
 T = 30
 WINDOW = timedelta(days=7)           # Meta's private-reply window
-RECENT_POSTS = 25                    # comments arrive on the newest posts
+# comments arrive on the newest posts. The 2-3 minute pass (pulse.yml) reads only the
+# newest few to stay far under Meta's rate limits; the 20-minute sweep reads 25.
+RECENT_POSTS = int(os.environ.get("DM_RECENT_POSTS") or 25)
 MAX_PER_RUN = 60                     # stay far under Meta's messaging limits
-DISCLOSURE = "#ad - I earn a commission if you buy through my link."
-DEFAULT_TEXT = "Here it is: {link}\n\n{disclosure}"
+# 14 Oct 2026, Kamay: the "#ad - I earn a commission" line is gone from the DM.
+# {disclosure} stays accepted (empty) so an older DM_TEXT never breaks the send.
+DEFAULT_TEXT = "Here it is: {link}"
 
 
 def keywords():
@@ -97,6 +100,8 @@ def instagram_comments(ig, tok):
     for m in media:
         if _ts(m["timestamp"]) < datetime.now(timezone.utc) - WINDOW - timedelta(days=30):
             continue
+        if m.get("comments_count") == 0 and not diag:
+            continue                     # nothing to read: save the call
         cs = _get(f"{G}/{m['id']}/comments", {"fields": "id,text,timestamp,username,replies{username}",
                                                "limit": 50, "access_token": tok}).get("data", [])
         if diag:
@@ -143,9 +148,7 @@ def run(dry=False):
     if not link.startswith("https://"):
         print("comment -> DM needs your link: set the OFFER_URL secret")
         return 0
-    text = (os.environ.get("DM_TEXT") or DEFAULT_TEXT).format(link=link, disclosure=DISCLOSURE)
-    if DISCLOSURE not in text:
-        text += "\n\n" + DISCLOSURE              # the disclosure is never optional
+    text = (os.environ.get("DM_TEXT") or DEFAULT_TEXT).format(link=link, disclosure="").strip()
     kws, d, now = keywords(), load(), datetime.now(timezone.utc)
     page, ftok = os.environ.get("FB_PAGE_ID", ""), os.environ.get("FB_ACCESS_TOKEN", "")
     ig, itok = os.environ.get("IG_USER_ID", ""), os.environ.get("IG_ACCESS_TOKEN", "")

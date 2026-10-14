@@ -153,25 +153,8 @@ jobs:
           AR_YT_REFRESH_TOKEN: ${{ secrets.AR_YT_REFRESH_TOKEN }}
         run: python measure.py ${{ inputs.measure_now && '--force' || '' }}
 
-      # COMMENT KEYWORD -> DM, OUR OWN (14 Oct 2026). Meta's built-in rule stopped answering
-      # (a "Money" comment on 14 Oct got nothing) while the page sits under a restriction.
-      # This pass reads Kamay's comments through the API, sends the link once per person,
-      # skips anything the account already answered, and logs every send and every
-      # refusal in state/dms.json - so a silent funnel can never happen again unseen.
-      - name: Comment keyword -> DM with the link (Kamay's account)
-        if: ${{ !inputs.dry_run && inputs.trial == '' }}
-        continue-on-error: true          # a DM pass must never block a post
-        env:
-          DM_AUTO: ${{ vars.DM_AUTO }}
-          DM_TEXT: ${{ vars.DM_TEXT }}
-          DM_DIAG: ${{ vars.DM_DIAG }}
-          OFFER_URL: ${{ secrets.OFFER_URL }}
-          KT_CTA_KEYWORDS: ${{ secrets.KT_CTA_KEYWORDS }}
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
-          FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
-        run: python dm/dm_reply.py
+      # COMMENT KEYWORD -> DM moved to pulse.yml on 14 Oct 2026 (every 2.5 min instead
+      # of every post run). pulse is the only writer of state/dms.json.
 
       - name: Rebuild the calendar and the captions board
         if: ${{ !inputs.dry_run && inputs.trial == '' }}

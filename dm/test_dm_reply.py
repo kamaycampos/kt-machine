@@ -4,7 +4,7 @@
 Proves: a whole-word keyword in any case gets ONE DM, 'brainstorm' does not,
 comments older than Meta's 7-day window are skipped, the member's own comments
 are skipped, a comment the account already answered (Meta's own rule) is skipped,
-a second run sends nothing twice, and the disclosure always rides."""
+a second run sends nothing twice, and the link always rides with no #ad line."""
 import json
 import os
 import sys
@@ -68,6 +68,6 @@ first = sorted(c for c, _ in sent)
 m.run()
 assert first == ["c1", "c4", "f1"], first
 assert len(sent) == 3, "a second run must send nothing"
-assert all("#ad" in t and "https://example.com/me" in t for _, t in sent)
+assert all("#ad" not in t and "https://example.com/me" in t for _, t in sent)
 assert set(json.load(open(m.STATE))["sent"]) == {"c1", "c4", "f1"}
 print("comment -> DM: all checks pass")
