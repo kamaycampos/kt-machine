@@ -1,10 +1,10 @@
 {
- "at": "2026-10-14T05:21",
+ "at": "2026-10-14T12:20",
  "profile": {
-  "video_count": 166,
-  "follower_count": 411,
+  "follower_count": 412,
   "following_count": 8,
-  "likes_count": 5851
+  "likes_count": 5851,
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -109,7 +109,7 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 160,
+   "view_count": 163,
    "like_count": 3,
    "comment_count": 0,
    "share_count": 0,
@@ -489,7 +489,7 @@
   },
   "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
    "id": "7688148098480098573",
-   "view_count": 491,
+   "view_count": 492,
    "like_count": 39,
    "comment_count": 2,
    "share_count": 6,
@@ -619,7 +619,7 @@
   },
   "KT_LIES/03_THE-DRYER-FUND_57s.mp4": {
    "id": "7686521175207382286",
-   "view_count": 678,
+   "view_count": 680,
    "like_count": 41,
    "comment_count": 1,
    "share_count": 1,
@@ -1249,7 +1249,7 @@
   },
   "unmatched/7679204237678578958": {
    "id": "7679204237678578958",
-   "view_count": 290,
+   "view_count": 291,
    "like_count": 26,
    "comment_count": 4,
    "share_count": 0,
