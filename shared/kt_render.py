@@ -128,6 +128,22 @@ HOOK_START = float(STYLE.get("hook_size", 92))
 ACCENT_CAPTIONS = bool(STYLE.get("accent_captions", True))
 
 
+def _rgb(key, default):
+    """A hex colour from style.json ("#0F3D2E"), else the house colour. 14 Oct 2026:
+    WB Organics wanted a jungle-green hook card with a gold bar; the card colours were
+    hard-coded. No key - KT, Awakened Rise, VSC - means the old colours, byte for byte."""
+    h = str(STYLE.get(key) or "").lstrip("#")
+    try:
+        return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4)) if len(h) == 6 else default
+    except ValueError:
+        return default
+
+
+CARD_RGB = _rgb("hook_card_color", (10, 11, 14))
+CARD_BAR = _rgb("hook_bar_color", (245, 197, 66))
+CARD_TEXT = _rgb("hook_text_color", (255, 255, 255))
+
+
 def up(t):
     return t.upper() if UPPER else t
 
@@ -369,12 +385,12 @@ def hook_card(lines, path, width=None, soft=False, max_h=None):
     # card_y. Less opaque so his features read through it instead of a slab
     # being dropped on him.
     d.rounded_rectangle([0, 0, cw - 1, ch - 1], 24,
-                        fill=(10, 11, 14, 186 if soft else 225))
-    d.rounded_rectangle([34, ch - 16, 150, ch - 10], 3, fill=(245, 197, 66))
+                        fill=CARD_RGB + (186 if soft else 225,))
+    d.rounded_rectangle([34, ch - 16, 150, ch - 10], 3, fill=CARD_BAR)
     y = 28
     for l in lines:
         d.text(((cw - probe.textlength(l, font=fo)) / 2, y), l, font=fo,
-               fill=(255, 255, 255))
+               fill=CARD_TEXT)
         y += step
     img.save(path)
     return path, cw, ch
