@@ -5201,6 +5201,61 @@
     "Say cancel, cancel.",
     "Fix your habit."
    ]
+  },
+  "ep_v7gukou/THE-MONEY-LIES-YOUR-FAMILY-TAUGHT-YOU": {
+   "plan": "ep_v7gukou",
+   "source": "v7gukou.mp4",
+   "brand": "KT_BRAKE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_THE-MONEY-LIES-YOUR-FAMILY-TAUGHT-YOU_58s.mp4` - the spoken word was on screen in only 7 of 12 moments"
+   ],
+   "slug": "THE-MONEY-LIES-YOUR-FAMILY-TAUGHT-YOU",
+   "in": 153.0,
+   "out": 212.0,
+   "start_words": "Money is the root of",
+   "end_words": "you'll always be broke.",
+   "hook": [
+    "The money lies",
+    "your parents taught"
+   ]
+  },
+  "ep_v7gukou/WHY-FAILING-ONCE-KEEPS-YOU-BROKE": {
+   "plan": "ep_v7gukou",
+   "source": "v7gukou.mp4",
+   "brand": "KT_BRAKE",
+   "tries": 1,
+   "why": [
+    "RETIME 02_WHY-FAILING-ONCE-KEEPS-YOU-BROKE_93s.mp4: captions +0.68s off throughout - re-rendering once",
+    "FAIL 02_WHY-FAILING-ONCE-KEEPS-YOU-BROKE_93s.mp4: [FAIL] 02_WHY-FAILING-ONCE-KEEPS-YOU-BROKE_93s.mp4            8 captions vs the sound  median +0.68s  worst-10% 0.71s  | words captioned 100%"
+   ],
+   "slug": "WHY-FAILING-ONCE-KEEPS-YOU-BROKE",
+   "in": 362.0,
+   "out": 454.0,
+   "start_words": "If you've ever tried to",
+   "end_words": "that you don't make money.",
+   "hook": [
+    "Why failing once",
+    "keeps you broke"
+   ]
+  },
+  "ep_v7gukou/A-MILLION-DOLLARS-BEFORE-HE-TURNED-18": {
+   "plan": "ep_v7gukou",
+   "source": "v7gukou.mp4",
+   "brand": "KT_BRAKE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_A-MILLION-DOLLARS-BEFORE-HE-TURNED-18_127s.mp4: ends off the planned words: plan ends 'clearing out one counter intention.', clip ends 'it but people can feel it'"
+   ],
+   "slug": "A-MILLION-DOLLARS-BEFORE-HE-TURNED-18",
+   "in": 707.0,
+   "out": 826.0,
+   "start_words": "I could start with $100",
+   "end_words": "clearing out one counter intention.",
+   "hook": [
+    "$1 million before",
+    "he turned 18"
+   ]
   }
  },
  "attempts": {
