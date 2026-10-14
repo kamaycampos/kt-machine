@@ -8697,7 +8697,11 @@
    "hook": "Two phrases. Your life follows one.",
    "bytes": 38210526,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-15T14:20",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_AUTOPILOT/02_A-HEROIN-HIT-FROM-YOUR-HABIT_62s.mp4",
@@ -8705,7 +8709,11 @@
    "hook": "A heroin hit. From your habit.",
    "bytes": 37187196,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-16T07:49",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "AR_AUTOPILOT/02_YOUR-SPEECH-IS-100-HABIT_54s.mp4",
@@ -8713,7 +8721,11 @@
    "hook": "Your speech is 100% habit.",
    "bytes": 31954656,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-15T09:49",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_LIMBIC/01_SO-SWEET-THAT-WAS-THE-MASK_90s.mp4",
@@ -8721,7 +8733,11 @@
    "hook": "So sweet. That was your trap.",
    "bytes": 73048084,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-15T17:56",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_WEALTHWAVE/01_OLD-GOLD-HOLDS-FREQUENCY_42s.mp4",
@@ -8729,7 +8745,11 @@
    "hook": "Old gold holds your family's frequency",
    "bytes": 30533334,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-15T13:03",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_WEALTHWAVE/02_ANGER-TURNS-WATER-JAGGED_49s.mp4",
@@ -8737,7 +8757,11 @@
    "hook": "Your anger turns water jagged",
    "bytes": 33928504,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-15T19:32",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   }
  ]
 }
