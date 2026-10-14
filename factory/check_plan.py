@@ -154,6 +154,12 @@ for path in sys.argv[1:]:
         worn = [w for w in re.findall(r"[a-z']+", " ".join(c.get("hook") or []).lower()) if w in tired]
         if worn: errs.append(f"{s}: hook leans on worn-out word(s): {', '.join(sorted(set(worn)))}")
         cap = c.get("caption", "")
+        # Words the platforms' filters read as an income/health guarantee or spam bait.
+        # A warning, not a refusal: the poster softens them anyway (poster.soften).
+        flag = re.findall(r"\b(guaranteed|get rich quick|free money|risk[- ]free|miracle|cures?|"
+                          r"100% (?:guaranteed|sure)|click (?:the|my) link|dm me)\b", cap, re.I)
+        if flag and fam == "KT":
+            print(f"   ~ {s}: caption uses words platforms flag ({', '.join(sorted(set(f.lower() for f in flag)))}) - reword")
         if not 300 <= len(cap) <= 750: errs.append(f"{s}: caption {len(cap)} chars (want 400-600)")
         if "#kevintrudeau" not in cap: errs.append(f"{s}: caption needs #kevintrudeau")
         if c.get("cta_kind") not in (None, "offer"): errs.append(f"{s}: cta_kind must be 'offer' or absent")

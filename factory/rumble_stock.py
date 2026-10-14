@@ -149,6 +149,27 @@ def main():
             idx[vid] = {"title": e["title"], "rumble": url, "status": "fetch_failed", "fails": fails}
             print(f"    NOT FETCHED ({fails}/{GIVE_UP}) ({r.stderr.strip()[-120:]})")
             continue
+        # THE TOP RESOLUTION KEVIN UPLOADED, NOT THE FIRST ONE THAT ARRIVED (14 Oct 2026).
+        # Six episodes came in below what Rumble offers - the 7 Oct one at 1440p while its
+        # stream carries 3840x2160 - because a refused stream fell back to the page, which
+        # can serve less. Kamay: "only deliver the best of the best quality". When the
+        # file is short of the catalogue's height, fetch the stream again and keep the
+        # better copy.
+        want = int(e.get("height") or 0)
+        if 0 < h < want and e.get("hls"):
+            better = mp4[:-4] + ".hi.mp4"
+            for attempt in range(3):
+                sh("yt-dlp", "--no-warnings", "-q", "--impersonate", "chrome", "-N", "8",
+                   "-f", "bv*[height<=2160]+ba/b[height<=2160]", "--merge-output-format", "mp4",
+                   "-o", better, e["hls"])
+                if os.path.exists(better) and height(better) > h:
+                    os.replace(better, mp4)
+                    print(f"    upgraded {h}p -> {height(mp4)}p (catalogue says {want}p)")
+                    h = height(mp4)
+                    break
+                time.sleep(20 * (attempt + 1))
+            if h < want:
+                print(f"    NOTE: kept {h}p, Rumble lists {want}p - the stream refused a better copy")
         if h < 1080:
             print(f"    REFUSED: {h}p - under the 1080p gate")
             idx[vid] = {"title": e["title"], "rumble": url, "status": "rejected", "height": h}

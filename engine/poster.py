@@ -309,6 +309,33 @@ def ar_ask(body_text, kw, url, platform, variant=None):
     return ""
 
 
+# WHICH KEYWORD FITS WHICH CLIP (14 Oct 2026). The comment word is the viewer's way of
+# saying "I want more of THIS" - so it should name what the clip was about. Words not
+# in the account's live list (KT_CTA_KEYWORDS, which Meta and dm_reply listen for) are
+# never chosen; the rotation is the fallback when nothing matches.
+KEYWORD_THEMES = {
+    "MONEY": r"money|income|rich|wealth|million|billion|\$|invest|broke|business|salary|debt|price|profit",
+    "WISH": r"wish|manifest|goal|universe|dream|desire|attract|write (it|them) down|70 ?x ?7|order",
+    "BRAIN": r"brain|mind|subconscious|frequency|wave|thought|belief|habit|program|imprint",
+}
+
+
+def keyword_for_clip(clip, allowed, previous=None):
+    """The allowed keyword whose theme the clip's hook and caption speak about most,
+    never the same as the previous post's when another fits."""
+    text = " ".join([str(clip.get("hook") or ""), str(clip.get("caption") or "")]).lower()
+    allowed = [k.upper() for k in allowed]
+    score = {k: len(re.findall(KEYWORD_THEMES[k], text)) for k in allowed if k in KEYWORD_THEMES}
+    ranked = sorted(allowed, key=lambda k: -score.get(k, 0))
+    for k in ranked:
+        if k != (previous or "").upper() and score.get(k, 0) > 0:
+            return k
+    for k in allowed:                       # nothing on theme: rotate, never repeat
+        if k != (previous or "").upper():
+            return k
+    return allowed[0]
+
+
 # Questions that end a post instead of selling it. Deliberately about THEM and
 # about the clip they just watched, never about us.
 ASK_LINES = [
@@ -475,6 +502,22 @@ def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
     #
     # A question is NOT moved to the top. It is a closing line - asking "what
     # did you take from this one?" before they have seen anything is nonsense.
+    # ONE QUESTION, NOT TWO (14 Oct 2026). Every planner caption already ends on its own
+    # question ("Could you answer it right now, in one sentence?"), and the machine then
+    # added "What did you take from this one?" under it on every post - two questions
+    # back to back, the second one identical across the whole account. When the body
+    # already asks, the generic question goes and only the keyword line stays.
+    last = next((l for l in reversed(body) if l.strip()), "")
+    mine_only = cred_prefix(brand) != "AR"          # Yaren's captions are hers to change
+    if mine_only and last.rstrip().endswith("?") and cta:
+        cta = "\n".join(l for l in cta.split("\n")
+                         if l.strip() and l.strip().lower() not in {a.lower() for a in ASK_LINES}).strip()
+    # YouTube descriptions take a working link and it costs nothing (RULES #24) - a
+    # question post used to leave it out there.
+    if platform == "youtube" and url and url not in (cta or "") and cred_prefix(brand) != "AR":
+        cta = ((cta or "") + f"\n\nGet access here: {url}").strip()
+    if mine_only:
+        body = [soften(l) for l in body]
     if not (cta or "").strip():
         out = list(body)
     elif (cred_prefix(brand) == "AR" and platform == "instagram"
@@ -489,6 +532,26 @@ def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
     if tags:
         out += [""] + tags
     return with_disclosure("\n".join(out).strip())
+
+
+# A LITTLE CAREFUL WITH WORDS THE PLATFORMS' FILTERS FLAG (Cali, 14 Oct 2026: "be a
+# little more careful... do not take it extreme"). Only phrases that read as an income
+# or health GUARANTEE, or as spam bait, are reworded at post time; Kevin's stories,
+# numbers and claims stay as he said them. check_plan.py warns the planner too.
+SOFTEN = [
+    (r"\bguaranteed\b", "proven"), (r"\bget rich quick\b", "get rich fast the wrong way"),
+    (r"\bfree money\b", "money people leave on the table"), (r"\brisk[- ]free\b", "low-risk"),
+    (r"\bmiracle\b", "breakthrough"), (r"\bcures?\b(?! they)", "helps with"),
+    (r"\b100% (guaranteed|sure|certain)\b", "very likely"), (r"\bclick (the|my) link\b", "see the link"),
+    (r"\bDM me\b", "comment below"), (r"\bmake \$[\d,]+ (fast|quick|overnight)\b", "build real income"),
+]
+
+
+def soften(line):
+    for rx, to in SOFTEN:
+        line = re.sub(rx, lambda m: to if m.group(0)[:1].islower() else to[:1].upper() + to[1:],
+                      line, flags=re.I)
+    return line
 
 
 def with_disclosure(cap):

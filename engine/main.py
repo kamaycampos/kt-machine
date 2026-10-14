@@ -276,6 +276,7 @@ def plan(man):
         return 0
 
     placed = 0
+    last_kw = {}          # brand account -> the keyword asked on its previous post
     for prefix, idxs in sorted(pool.items()):
         slots = brand_slots(prefix)
         # A SLOT IS ONLY TAKEN BY A CLIP THAT WILL ACTUALLY POST.
@@ -447,8 +448,16 @@ def plan(man):
                 # `poster.keywords_for(brand)` has existed since the brand fence
                 # was built for exactly this, and plan() never called it.
                 kws = poster.keywords_for(brand_of(nxt))
+                acct = poster.cred_prefix(brand_of(nxt))
                 if not nxt.get("cta_keyword"):
-                    nxt["cta_keyword"] = kws[placed % len(kws)]
+                    # THE WORD MATCHES THE CLIP (14 Oct 2026, RULES #7 "TO BUILD"). A clip
+                    # about income asks for MONEY, one about manifesting for WISH, one
+                    # about the mind for BRAIN - never the same word twice in a row.
+                    # Kamay's account only; Yaren's keeps its own rotation.
+                    nxt["cta_keyword"] = (poster.keyword_for_clip(nxt, kws, last_kw.get(acct))
+                                          if acct in poster.FALLBACK_BRANDS
+                                          else kws[placed % len(kws)])
+                last_kw[acct] = nxt["cta_keyword"]
                 # The WORDING rotates too, in posting order and for the same
                 # reason - so two posts in a row never read identically.
                 if nxt.get("cta_variant") is None:
