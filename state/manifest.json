@@ -8797,7 +8797,11 @@
    "hook": "The $300 course you never finished",
    "bytes": 78497790,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-15T12:16",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_BRAKE/01_WHAT-HIS-WELDER-DAD-BELIEVED-ABOUT-MONEY_81s.mp4",
@@ -8805,7 +8809,11 @@
    "hook": "What his dad believed about money",
    "bytes": 55934212,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-15T08:05",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_BRAKE/01_WHY-GETTING-RICH-FEELS-SO-HARD_67s.mp4",
@@ -8813,7 +8821,11 @@
    "hook": "Why getting rich feels so hard",
    "bytes": 42747641,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-14T19:54",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_BRAKE/01_WHY-YOU-SECRETLY-WANT-TO-STAY-BROKE_81s.mp4",
@@ -8821,7 +8833,11 @@
    "hook": "Why you secretly stay broke",
    "bytes": 52515699,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-15T09:32",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   }
  ]
 }
