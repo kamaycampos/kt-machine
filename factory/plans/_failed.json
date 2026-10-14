@@ -4876,6 +4876,331 @@
     "You complete me",
     "is a trap."
    ]
+  },
+  "ar_v6rs0nv/SOUND-SHATTERS-GLASS-AND-YOU": {
+   "plan": "ar_v6rs0nv",
+   "source": "v6rs0nv.mp4",
+   "brand": "AR_WEALTHWAVE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_SOUND-SHATTERS-GLASS-AND-YOU_46s.mp4` - opens mid-sentence on \"wealthy people\"; ends mid-thought on \"glass shatters\"; phrase scrambled around \"crystal like a crystal\""
+   ],
+   "slug": "SOUND-SHATTERS-GLASS-AND-YOU",
+   "in": 65.0,
+   "out": 128.0,
+   "start_words": "Can different brainwaves be affected",
+   "end_words": "The crystal glass shatters",
+   "hook": [
+    "Sound shatters glass.",
+    "It shatters you."
+   ]
+  },
+  "ar_v6rs0nv/THIRTY-FIVE-BILLIONAIRES-ZERO-MEDITATE": {
+   "plan": "ar_v6rs0nv",
+   "source": "v6rs0nv.mp4",
+   "brand": "AR_WEALTHWAVE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_THIRTY-FIVE-BILLIONAIRES-ZERO-MEDITATE_42s.mp4` - ends mid-thought on \"on that wave\"; phrase scrambled around \"I've been around I've\"; phrase scrambled around \"been around I've been\""
+   ],
+   "slug": "THIRTY-FIVE-BILLIONAIRES-ZERO-MEDITATE",
+   "in": 275.0,
+   "out": 320.0,
+   "start_words": "What I said was wealthy people",
+   "end_words": "they still broadcast on that wave",
+   "hook": [
+    "Thirty-five billionaires.",
+    "Zero meditate."
+   ]
+  },
+  "ar_v6rs0nv/NOT-JUST-MONEY-EVERYTHING-RESPONDS": {
+   "plan": "ar_v6rs0nv",
+   "source": "v6rs0nv.mp4",
+   "brand": "AR_WEALTHWAVE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_NOT-JUST-MONEY-EVERYTHING-RESPONDS_53s.mp4` - ends mid-thought on \"So,\""
+   ],
+   "slug": "NOT-JUST-MONEY-EVERYTHING-RESPONDS",
+   "in": 444.0,
+   "out": 519.0,
+   "start_words": "can activating the right brain frequencies",
+   "end_words": "than if you're broadcasting on beta",
+   "hook": [
+    "Not just money.",
+    "Everything responds."
+   ]
+  },
+  "ar_v6rs0nv/RELEASE-YOUR-OUTCOME-SKIP-THE-HOW": {
+   "plan": "ar_v6rs0nv",
+   "source": "v6rs0nv.mp4",
+   "brand": "AR_WEALTHWAVE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_RELEASE-YOUR-OUTCOME-SKIP-THE-HOW_35s.mp4: [FAIL] 02_RELEASE-YOUR-OUTCOME-SKIP-THE-HOW_35s.mp4           28 captions vs the sound (word-referenced: no clear pauses)  median +0.02s  worst-10% 1.08s  | words captioned 100%"
+   ],
+   "slug": "RELEASE-YOUR-OUTCOME-SKIP-THE-HOW",
+   "in": 518.0,
+   "out": 565.0,
+   "start_words": "You actually have to use",
+   "end_words": "you don't focus on the how",
+   "hook": [
+    "Release your outcome.",
+    "Skip the how."
+   ]
+  },
+  "ar_v6rv5w3/DAMAGED-BRAIN-EMPTIES-YOU": {
+   "plan": "ar_v6rv5w3",
+   "source": "v6rv5w3.mp4",
+   "brand": "AR_LIMBIC",
+   "tries": 1,
+   "why": [
+    "FAIL 01_DAMAGED-BRAIN-EMPTIES-YOU_125s.mp4: [FAIL] 01_DAMAGED-BRAIN-EMPTIES-YOU_125s.mp4                  12 captions vs the sound  median +0.06s  worst-10% 1.72s  | words captioned 100%  UNCAPTIONED SPEECH [(46.4, 48.3)]"
+   ],
+   "slug": "DAMAGED-BRAIN-EMPTIES-YOU",
+   "in": 66.0,
+   "out": 193.0,
+   "start_words": "This is a person who experienced",
+   "end_words": "all of their validation from external sources",
+   "hook": [
+    "Damaged brain.",
+    "It empties you."
+   ]
+  },
+  "ar_v6rv5w3/CORTISOL-REWIRED-THE-BRAIN": {
+   "plan": "ar_v6rv5w3",
+   "source": "v6rv5w3.mp4",
+   "brand": "AR_LIMBIC",
+   "tries": 1,
+   "why": [
+    "FAIL 02_CORTISOL-REWIRED-THE-BRAIN_98s.mp4: [FAIL] 02_CORTISOL-REWIRED-THE-BRAIN_98s.mp4                  17 captions vs the sound  median +0.12s  worst-10% 0.72s  | words captioned 100%"
+   ],
+   "slug": "CORTISOL-REWIRED-THE-BRAIN",
+   "in": 404.0,
+   "out": 502.0,
+   "start_words": "So when we were children",
+   "end_words": "and it's called narcissistic injury",
+   "hook": [
+    "Cortisol rewired",
+    "their childhood brain"
+   ]
+  },
+  "ar_v6rv5w3/FOUR-PEOPLE-EVERY-RELATIONSHIP": {
+   "plan": "ar_v6rv5w3",
+   "source": "v6rv5w3.mp4",
+   "brand": "AR_LIMBIC",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_FOUR-PEOPLE-EVERY-RELATIONSHIP_71s.mp4` - phrase scrambled around \"think sometimes people think,\""
+   ],
+   "slug": "FOUR-PEOPLE-EVERY-RELATIONSHIP",
+   "in": 985.0,
+   "out": 1056.0,
+   "start_words": "Maybe their parents were narcissists",
+   "end_words": "attracted to at the beginning",
+   "hook": [
+    "You invited one.",
+    "Four showed up."
+   ]
+  },
+  "ar_v6rv5w3/THREE-FINGERS-POINT-BACK": {
+   "plan": "ar_v6rv5w3",
+   "source": "v6rv5w3.mp4",
+   "brand": "AR_LIMBIC",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_THREE-FINGERS-POINT-BACK_105s.mp4` - opens mid-sentence on \"newspaper reporter asked\"; ends mid-thought on \"as you are\"; phrase scrambled around \"asshole this guy asshole\""
+   ],
+   "slug": "THREE-FINGERS-POINT-BACK",
+   "in": 2089.0,
+   "out": 2194.0,
+   "start_words": "A newspaper reporter asked Deepak",
+   "end_words": "you see the world as you are",
+   "hook": [
+    "Three fingers point",
+    "back at you"
+   ]
+  },
+  "ar_v6rv5w3/NOT-WORTHLESS-TOO-VALUABLE": {
+   "plan": "ar_v6rv5w3",
+   "source": "v6rv5w3.mp4",
+   "brand": "AR_LIMBIC",
+   "tries": 1,
+   "why": [
+    "FAIL 02_NOT-WORTHLESS-TOO-VALUABLE_40s.mp4: [FAIL] 02_NOT-WORTHLESS-TOO-VALUABLE_40s.mp4                  23 captions vs the sound (word-referenced: no clear pauses)  median +0.32s  worst-10% 1.12s  | words captioned 93%"
+   ],
+   "slug": "NOT-WORTHLESS-TOO-VALUABLE",
+   "in": 2245.0,
+   "out": 2290.0,
+   "start_words": "Narcissists don't attach themselves",
+   "end_words": "you have to",
+   "hook": [
+    "You're not worthless.",
+    "You're too valuable."
+   ]
+  },
+  "ar_v6x6fvg_r3/A-FIVE-YEAR-OLD-PLAYED-BEETHOVEN": {
+   "plan": "ar_v6x6fvg_r3",
+   "source": "v6x6fvg.mp4",
+   "brand": "AR_RECRUITEDR3",
+   "tries": 3,
+   "why": [
+    "drop AR_RECRUITEDR3/A-FIVE-YEAR-OLD-PLAYED-BEETHOVEN: hook - 798px wide at 44px - over the 780px safe zone, will be cut off on a phone"
+   ],
+   "slug": "A-FIVE-YEAR-OLD-PLAYED-BEETHOVEN",
+   "in": 643.0,
+   "out": 707.8,
+   "start_words": "This is not fantasy",
+   "end_words": "And they're 10 years old",
+   "hook": [
+    "Five years old.",
+    "Played Beethoven. Untaught."
+   ]
+  },
+  "ar_v6xhs7q_r2/YOU-HAVE-INFINITE-UNLIMITED-POWER": {
+   "plan": "ar_v6xhs7q_r2",
+   "source": "v6xhs7q.mp4",
+   "brand": "AR_FAILSAFER2",
+   "tries": 2,
+   "why": [
+    "note AR_FAILSAFER2/YOU-HAVE-INFINITE-UNLIMITED-POWER: ending kept on the planner's words 'dwells within you, as you' (cuts mid-sentence)",
+    "FAIL 01_YOU-HAVE-INFINITE-UNLIMITED-POWER_64s.mp4: [FAIL] 01_YOU-HAVE-INFINITE-UNLIMITED-POWER_64s.mp4           10 captions vs the sound  median -0.00s  worst-10% 0.82s  | words captioned 100%"
+   ],
+   "slug": "YOU-HAVE-INFINITE-UNLIMITED-POWER",
+   "in": 795.6,
+   "out": 859.6,
+   "start_words": "So what is the",
+   "end_words": "dwells within you, as you",
+   "hook": [
+    "You have infinite",
+    "unlimited power."
+   ]
+  },
+  "ar_v794yks/NOT-A-BODY-A-SPIRITUAL-BEING": {
+   "plan": "ar_v794yks",
+   "source": "v794yks.mp4",
+   "brand": "AR_INWARD",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_NOT-A-BODY-A-SPIRITUAL-BEING_73s.mp4` - phrase scrambled around \"We're happiest when we're\""
+   ],
+   "slug": "NOT-A-BODY-A-SPIRITUAL-BEING",
+   "in": 5.0,
+   "out": 81.0,
+   "start_words": "You're not a body",
+   "end_words": "It's only fun creating it",
+   "hook": [
+    "Not a body.",
+    "You're pure spirit."
+   ]
+  },
+  "ar_v794yks/NOT-COMFORTABLE-IN-YOUR-SKIN": {
+   "plan": "ar_v794yks",
+   "source": "v794yks.mp4",
+   "brand": "AR_INWARD",
+   "tries": 1,
+   "why": [
+    "FAIL 02_NOT-COMFORTABLE-IN-YOUR-SKIN_39s.mp4: ends off the planned words: plan ends 'if there's one thing a person can do', clip ends 'but how do you do that'"
+   ],
+   "slug": "NOT-COMFORTABLE-IN-YOUR-SKIN",
+   "in": 80.0,
+   "out": 123.0,
+   "start_words": "And as we create we expand",
+   "end_words": "if there's one thing a person can do",
+   "hook": [
+    "Not comfortable",
+    "in your own skin."
+   ]
+  },
+  "ar_v794yks/SAY-I-LOVE-YOU-SILENTLY": {
+   "plan": "ar_v794yks",
+   "source": "v794yks.mp4",
+   "brand": "AR_INWARD",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "SAY-I-LOVE-YOU-SILENTLY",
+   "in": 122.0,
+   "out": 204.0,
+   "start_words": "It was in a book",
+   "end_words": "you have a right to be happy",
+   "hook": [
+    "Say \"I love you.\"",
+    "To everyone."
+   ]
+  },
+  "ar_v794yks/SNAKE-IN-DARKNESS-ROPE-IN-LIGHT": {
+   "plan": "ar_v794yks",
+   "source": "v794yks.mp4",
+   "brand": "AR_INWARD",
+   "tries": 1,
+   "why": [
+    "render refused:   FIX  AR_INWARD/SNAKE-IN-DARKNESS-ROPE-IN-LIGHT    out    326.8  advert    323.8  +3.0s into it"
+   ],
+   "slug": "SNAKE-IN-DARKNESS-ROPE-IN-LIGHT",
+   "in": 210.0,
+   "out": 329.0,
+   "start_words": "You will start realizing",
+   "end_words": "It was just an awakening",
+   "hook": [
+    "Snake in darkness.",
+    "Rope in light."
+   ]
+  },
+  "ar_v7fvnxm/NOTHING-WORKS-UNTIL-YOU-FIX-THIS": {
+   "plan": "ar_v7fvnxm",
+   "source": "v7fvnxm.mp4",
+   "brand": "AR_AUTOPILOT",
+   "tries": 1,
+   "why": [
+    "FAIL 01_NOTHING-WORKS-UNTIL-YOU-FIX-THIS_40s.mp4: [FAIL] 01_NOTHING-WORKS-UNTIL-YOU-FIX-THIS_40s.mp4            27 captions vs the sound (word-referenced: no clear pauses)  median +0.39s  worst-10% 0.95s  | words captioned 100%"
+   ],
+   "slug": "NOTHING-WORKS-UNTIL-YOU-FIX-THIS",
+   "in": 0.0,
+   "out": 40.0,
+   "start_words": "All the success training",
+   "end_words": "and everything in your life changes",
+   "hook": [
+    "Nothing works.",
+    "Until you fix this."
+   ]
+  },
+  "ar_v7fvnxm/WRONG-HOUSE-ON-AUTOPILOT": {
+   "plan": "ar_v7fvnxm",
+   "source": "v7fvnxm.mp4",
+   "brand": "AR_AUTOPILOT",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_WRONG-HOUSE-ON-AUTOPILOT_44s.mp4` - opens mid-sentence on \"habit.\""
+   ],
+   "slug": "WRONG-HOUSE-ON-AUTOPILOT",
+   "in": 553.0,
+   "out": 596.0,
+   "start_words": "I'll tell you an interesting story",
+   "end_words": "half an hour to my new house",
+   "hook": [
+    "You'd drive home.",
+    "Wrong home."
+   ]
+  },
+  "ar_v7fvnxm/SAY-CANCEL-CANCEL-THATS-THE-FIX": {
+   "plan": "ar_v7fvnxm",
+   "source": "v7fvnxm.mp4",
+   "brand": "AR_AUTOPILOT",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_SAY-CANCEL-CANCEL-THATS-THE-FIX_60s.mp4` - ends mid-thought on \"deliberate intent and\""
+   ],
+   "slug": "SAY-CANCEL-CANCEL-THATS-THE-FIX",
+   "in": 626.0,
+   "out": 690.0,
+   "start_words": "So the actual way that",
+   "end_words": "operating with deliberate intent",
+   "hook": [
+    "Say cancel, cancel.",
+    "Fix your habit."
+   ]
   }
  },
  "attempts": {
@@ -4890,7 +5215,7 @@
   "ar_v6yeuyc_r3": 2,
   "ep_v77l7um_r3": 2,
   "ep_v77l7um_r5": 2,
-  "ar_v6x6fvg_r3": 1,
-  "ar_v6xhs7q_r2": 1
+  "ar_v6x6fvg_r3": 2,
+  "ar_v6xhs7q_r2": 2
  }
 }
