@@ -160,6 +160,7 @@ def run(dry=False):
         print("comment -> DM needs Instagram/Facebook connected (type `post` in Claude)")
         return 0
     sent = 0
+    tally = {"keyword comments": 0, "already answered": 0, "outside 7 days": 0, "failed": 0}
     for platform, fetch, tok in sources:
         try:
             comments = fetch()
@@ -176,12 +177,15 @@ def run(dry=False):
             # the one mistake this must never make.
             if repliers & me:
                 d["seen"][cid] = now.isoformat()
+                tally["already answered"] += matched(body, kws) is not None
                 continue
             d["seen"][cid] = now.isoformat()
             kw = matched(body, kws)
             if not kw:
                 continue
+            tally["keyword comments"] += 1
             if now - _ts(when) > WINDOW:
+                tally["outside 7 days"] += 1
                 continue
             if sent >= MAX_PER_RUN:
                 d["seen"].pop(cid, None)          # next run picks it up
@@ -198,6 +202,7 @@ def run(dry=False):
             except Exception as e:
                 d["errors"].append({"at": now.isoformat(), "platform": platform,
                                     "comment": cid, "error": str(e)})
+                tally["failed"] += 1
                 # A FAILED SEND IS NOT A HANDLED COMMENT (14 Oct 2026). It stayed "seen",
                 # so when the missing permission was granted, the viewer who asked
                 # (a real "Money" comment) was never answered. Retry on later runs,
@@ -208,7 +213,8 @@ def run(dry=False):
                     d["seen"].pop(cid, None)
     if not dry:
         save(d)
-    print(f"comment -> DM: {sent} sent this run, {len(d['sent'])} total")
+    print(f"comment -> DM: {sent} sent this run, {len(d['sent'])} total | "
+          + ", ".join(f"{k} {v}" for k, v in tally.items()))
     return 0
 
 
