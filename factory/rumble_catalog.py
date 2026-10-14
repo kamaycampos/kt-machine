@@ -30,23 +30,35 @@ OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "rumble_catalog.j
 
 
 def get(url):
+    """The channel page, or "" if every route is refused.
+
+    14 Oct 2026: from GitHub's servers the page came back with no videos on every
+    run since 7 Oct ("page 1: 0") while the same request from the Mac read all 639 -
+    Cloudflare treats datacenter addresses differently. Kevin's 14 Oct upload was
+    invisible for that reason alone. So: several browser fingerprints, and the log says which worked."""
     try:
         from curl_cffi import requests as cr
-        fetch = lambda: cr.get(url, impersonate="chrome", timeout=30)
+        fetchers = [(f"curl_cffi/{imp}", (lambda imp=imp: cr.get(url, impersonate=imp, timeout=30)))
+                    for imp in ("chrome", "safari", "edge", "chrome120", "firefox")]
     except ImportError:
         import urllib.request
         ua = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
               "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
-        fetch = lambda: type("R", (), {"status_code": 200, "text": urllib.request.urlopen(
-            urllib.request.Request(url, headers={"User-Agent": ua}), timeout=30).read().decode("utf-8", "replace")})
-    for attempt in range(5):
-        try:
-            r = fetch()
-            if r.status_code == 200 and '"object_type":"video"' in r.text:
-                return r.text
-        except Exception:
-            pass
-        time.sleep(3 * (attempt + 1))
+        fetchers = [("urllib", lambda: type("R", (), {"status_code": 200, "text": urllib.request.urlopen(
+            urllib.request.Request(url, headers={"User-Agent": ua}), timeout=30).read().decode("utf-8", "replace")}))]
+    for attempt in range(2):
+        for name, fetch in fetchers:
+            try:
+                r = fetch()
+                if r.status_code == 200 and '"object_type":"video"' in r.text:
+                    if attempt or name != fetchers[0][0]:
+                        print(f"  (page read via {name})")
+                    return r.text
+                print(f"  {name}: HTTP {r.status_code}, {len(r.text)} bytes, no video data")
+            except Exception as e:
+                print(f"  {name}: {type(e).__name__}")
+            time.sleep(2)
+        time.sleep(10)
     return ""
 
 
@@ -78,6 +90,10 @@ def main():
             break
         for u, e in got.items():
             cat.setdefault(u, {}).update(e)
+    if p == 1:
+        # Refused from this machine: the catalogue on disk is kept, and the Mac's daily
+        # refresh (or anyone running this by hand) fills the gap. Say so loudly.
+        print("::warning::Rumble channel page refused from here - catalogue NOT refreshed")
     json.dump(cat, open(OUT, "w"), indent=1, ensure_ascii=False)
     full = [e for e in cat.values() if not e["short"] and e["dur"] >= 1200]
     print(f"{len(cat)} videos, {len(full)} full episodes, {sum(1 for e in full if e['height'] >= 1080)} at 1080p+")

@@ -49,9 +49,20 @@ def main():
     done = set(json.load(open(os.path.join(HERE, "plans", "_done.json"))))
     planned = " ".join(open(os.path.join(HERE, "plans", f)).read()
                        for f in os.listdir(os.path.join(HERE, "plans")) if f.endswith(".json"))
+    # ONLY WHAT A PLANNER WILL PLAN COUNTS AS WAITING (14 Oct 2026). Every stocked episode
+    # that was never planned counted here - dozens picked up automatically weeks ago that
+    # neither month list names - so the stock looked full, nothing was fetched, five
+    # episodes on Kamay's list were never downloaded and his queue ran dry for 27 hours.
+    _lists = set()
+    for _f in ("source_plan.json", "ar_source_plan.json"):
+        if os.path.exists(os.path.join(HERE, _f)):
+            _lists |= {x["id"] for x in json.load(open(os.path.join(HERE, _f)))["episodes"]}
     waiting = [v for v, e in idx.items() if e.get("status") == "stocked" and not e.get("test")
-               and v not in planned]
-    need = min(MAX, STOCK - len(waiting))
+               and v not in planned and v in _lists]
+    missing = [v for v in _lists if v not in idx or (idx[v].get("status") == "fetch_failed"
+                                                     and idx[v].get("fails", 0) < GIVE_UP)]
+    need = min(MAX, max(STOCK - len(waiting), len(missing)))
+    print(f"month lists: {len(_lists)} episodes, {len(missing)} not downloaded yet")
     series = json.load(open(os.path.join(HERE, "kt_series.json")))
     used = {norm(os.path.splitext(s.get("source", ""))[0])[:40] for s in series.values()}
     cat = json.load(open(os.path.join(HERE, "rumble_catalog.json")))

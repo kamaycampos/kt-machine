@@ -117,6 +117,18 @@ if not AR:
         print("NEWEST UPLOADS - PLAN THESE FIRST (same-day rule): " + ", ".join(
             f"{v} '{idx[v]['title'][:50]}' (published {_pub[v]})" for v in fresh))
     ready = fresh + [v for v in ready if v not in fresh]
+    # NEVER AN EMPTY RUN WHILE TRANSCRIBED EPISODES SIT UNUSED (14 Oct 2026). The month list
+    # was used up, "READY TO PLAN: 0", and the planner spent three days only re-cutting
+    # refused clips while 40+ downloaded, transcribed episodes were never offered. Top up
+    # from those, newest first. The planner still applies every PLANNING.md skip rule.
+    if len(ready) < MAX:
+        _spare = sorted((v for v, e in idx.items()
+                         if e.get("transcript") and not e.get("test") and v not in _theirs
+                         and v not in ready and f'"{v}.mp4"' not in plans_txt),
+                        key=lambda v: _pub.get(v, ""), reverse=True)
+        if _spare:
+            print(f"MONTH LIST USED UP - also ready (stocked, transcribed, never planned): {len(_spare)}")
+        ready += _spare[:MAX - len(ready)]
 print(f"READY TO PLAN: {len(ready)} episode(s); preparing {min(MAX, len(ready))}")
 # the second-chance episodes' cues come too, after the new ones (they need only work/<id>.srt)
 for v in ready[:MAX] + [v for v in again if v not in ready[:MAX] and v in idx and idx[v].get("transcript")]:
