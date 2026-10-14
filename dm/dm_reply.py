@@ -198,6 +198,14 @@ def run(dry=False):
             except Exception as e:
                 d["errors"].append({"at": now.isoformat(), "platform": platform,
                                     "comment": cid, "error": str(e)})
+                # A FAILED SEND IS NOT A HANDLED COMMENT (14 Oct 2026). It stayed "seen",
+                # so when the missing permission was granted, the viewer who asked
+                # (a real "Money" comment) was never answered. Retry on later runs,
+                # at most 3 times, inside Meta's 7-day window.
+                tries = d.setdefault("tries", {})
+                tries[cid] = tries.get(cid, 0) + 1
+                if tries[cid] < 3:
+                    d["seen"].pop(cid, None)
     if not dry:
         save(d)
     print(f"comment -> DM: {sent} sent this run, {len(d['sent'])} total")
