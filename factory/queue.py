@@ -122,7 +122,10 @@ shutil.copy(SERIES, os.path.join(HERE, "kt_series.json"))
 json.dump(sorted(set(done)), open(os.path.join(HERE, "plans", "_done.json"), "w"), indent=1)
 json.dump(failed, open(FAILED, "w"), indent=1, ensure_ascii=False)
 if brands:
-    subprocess.run(["git", "pull", "-q", "--rebase"], cwd=MACHINE)
+    # --autostash: kt_series.json, _done.json and _failed.json were just written, and a
+    # plain rebase refuses a dirty tree ("cannot pull with rebase: You have unstaged
+    # changes", 13 Oct 2026) - add_clips then edited a stale manifest.
+    subprocess.run(["git", "pull", "-q", "--rebase", "--autostash"], cwd=MACHINE)
     up = subprocess.run([sys.executable, "add_clips.py", *sorted(brands)], cwd=MACHINE,
                         capture_output=True, text=True)
     report.append("## UPLOAD\n" + up.stdout[-2500:] + up.stderr[-500:])

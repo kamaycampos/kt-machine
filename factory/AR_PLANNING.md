@@ -31,6 +31,12 @@ cut off still keeps the plans it finished.
      - "captions vs the sound", "UNCAPTIONED SPEECH", "too few to judge" -> move both edges to different sentence boundaries (a few seconds re-times every caption). If the gap named is someone else talking, cut so it falls outside.
    - `tries 2` means this is its last chance: skip it unless you can see the cause and fix it.
    - Second chances count toward this run's clips. Report how many you re-cut and how many you skipped, and why.
+2d. If the prep printed **MONTH LIST RUNNING OUT**, append 6 episodes to `factory/ar_source_plan.json`
+   (append only, never reorder or drop) - from the stocked list and the candidates it printed, her lane
+   only. Do this EVERY time it prints, even when second chances fill the run: an empty list is how her
+   queue hit zero on 12 Oct 2026 and stayed there. The factory stocks and transcribes them overnight,
+   and the next run plans them. If READY TO PLAN is 0, the second chances are the only clips you can
+   make today - say so in the report.
 3. Read `factory/HOOK_PATTERNS.md` for the story and caption craft - then **invert the hook rule**
    (see below). Read each episode's `work/<id>_blocks.txt` in full. Choose 6-9 clips.
 4. Write `factory/plans/ar_<id>.json` (same shape as his, brand `AR_<ONEWORD>`).

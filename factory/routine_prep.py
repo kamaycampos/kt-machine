@@ -141,11 +141,30 @@ if len(order) - len([v for v in order if f'"{v}.mp4"' in plans_txt]) < 6:
     series = json.load(open(os.path.join(HERE, "kt_series.json")))
     norm = lambda s: re.sub(r"[^a-z0-9]", "", s.lower())[:40]
     used = {norm(os.path.splitext(s.get("source", ""))[0]) for s in series.values()}
-    cands = [(e["date"], u, e) for u, e in cat.items() if not e["short"] and e["dur"] >= 1200 and e["height"] >= 1080
-             and norm(e["title"]) not in used and re.search(r"/(v[a-z0-9]+)-", u)[1] not in order]
-    extra = [v for v, e in idx.items() if v not in order and not e.get("test") and f'"{v}.mp4"' not in plans_txt
-             and e.get("status") != "fetch_failed"]       # never downloaded: not stock
+    # THE OTHER ACCOUNT'S LIST IS NEVER A CANDIDATE (14 Oct 2026). Her list ran dry on
+    # 12 Oct and this block offered episodes from his list too, under his file name and
+    # his "house episodes first" hint - so her planner extended nothing, and her queue
+    # sat at zero while the planner only re-cut old refusals.
+    try:
+        _other = {e["id"] for e in json.load(open(os.path.join(
+            HERE, "source_plan.json" if AR else "ar_source_plan.json")))["episodes"]}
+    except (OSError, ValueError, KeyError):
+        _other = set()
+    # An episode he named may be short; one stocked by hand for a list may be too.
+    # Listed episodes only need to hold a clip (rumble_stock.py takes 3 min and up).
+    cands = [(e["date"], u, e) for u, e in cat.items() if not e["short"] and e["dur"] >= 300 and e["height"] >= 1080
+             and norm(e["title"]) not in used and re.search(r"/(v[a-z0-9]+)-", u)[1] not in order
+             and re.search(r"/(v[a-z0-9]+)-", u)[1] not in _other
+             and f'"{re.search(r"/(v[a-z0-9]+)-", u)[1]}.mp4"' not in plans_txt]
+    extra = [v for v, e in idx.items() if v not in order and v not in _other and not e.get("test")
+             and f'"{v}.mp4"' not in plans_txt
+             and e.get("status") not in ("fetch_failed", "rejected")]       # never downloaded: not stock
     print("ALREADY STOCKED, not in the month list:", ", ".join(f"{v} '{idx[v]['title'][:60]}'" for v in extra) or "none")
-    print("CANDIDATES to append to source_plan.json - PICK HOUSE/PROPERTY EPISODES FIRST:")
-    for d, u, e in sorted(cands, reverse=True)[:15]:
+    if AR:
+        print(f"MONTH LIST RUNNING OUT - APPEND 6 to {PLAN_FILE} (AR_PLANNING.md step 2d). HER LANE ONLY: "
+              "prayer, the Brotherhood, the subconscious, energy, meditation, manifesting, disclosure. "
+              "Never money, health or politics. Stocked ones above can be planned on the next run.")
+    else:
+        print(f"CANDIDATES to append to {PLAN_FILE} - PICK HOUSE/PROPERTY EPISODES FIRST:")
+    for d, u, e in sorted(cands, reverse=True)[:25 if AR else 15]:
         print(f"  {re.search(r'/(v[a-z0-9]+)-', u)[1]} {d} {e['dur'] // 60}m {e['height']}p {e['title'][:80]}")
