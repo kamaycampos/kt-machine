@@ -8585,7 +8585,11 @@
    "hook": "A million euros. He burned it.",
    "bytes": 38348472,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-14T17:20",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_DISCOVERY/01_I-INVENTED-IT-NOT-EVOLVED-EGO_72s.mp4",
@@ -8593,7 +8597,11 @@
    "hook": "\u2018I invented it.\u2019 Not evolved. Ego.",
    "bytes": 41051924,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-14T12:40",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_DISCOVERY/01_THEY-KNEW-THIS-5000-YEARS-BACK_52s.mp4",
@@ -8601,7 +8609,11 @@
    "hook": "They knew this 5,000 years back.",
    "bytes": 29689964,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-14T07:26",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_DISCOVERY/02_JESUS-SAID-THIS-LOVE-THEM-ANYWAY_130s.mp4",
@@ -8609,7 +8621,11 @@
    "hook": "Jesus said this: Love them anyway.",
    "bytes": 72791067,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-15T07:10",
+   "cta_keyword": "RISE",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_MIRROR/01_POINT-YOUR-FINGER-THREE-POINT-BACK_68s.mp4",
@@ -8617,7 +8633,11 @@
    "hook": "Point your finger. Three point back.",
    "bytes": 43489605,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-14T20:00",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "AR_MIRROR/02_NO-LIE-TOLD-STILL-NOT-HONEST_64s.mp4",
@@ -8625,7 +8645,11 @@
    "hook": "No lie told. Still not honest.",
    "bytes": 41248491,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-14T15:22",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_MIRROR/02_TUNED-TO-94-5-WRONG-STATION_47s.mp4",
@@ -8633,7 +8657,11 @@
    "hook": "You're tuned to 94.5. Wrong station.",
    "bytes": 31377019,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-14T09:54",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   }
  ]
 }
