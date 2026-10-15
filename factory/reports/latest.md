@@ -1,7 +1,7 @@
 ## ar_v6mce7x: 5 of 7 clip(s) passed every gate
 
 
-## 2026-10-15 11:59
+## 2026-10-15 13:23
   note AR_VAMPIRE/SAILBOAT-WITHOUT-A-RUDDER: ending kept on the planner's words 'happen it affects you' (cuts mid-sentence)
 ar_v6mce7x__s1 (AR_VAMPIRE): 2 of 2 passed pre-render gates
 
@@ -14,7 +14,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_VAMPIRE
 
 
 
-## 2026-10-15 11:52
+## 2026-10-15 13:25
   note AR_VAMPIRE/SOMEBODY-PUTTING-RATS-IN-YOUR-HEAD: ending kept on the planner's words 'turn around and get out' (ends on 'out')
 ar_v6mce7x__s2 (AR_VAMPIRE): 2 of 2 passed pre-render gates
 
@@ -27,7 +27,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_VAMPIRE
 
 
 
-## 2026-10-15 11:49
+## 2026-10-15 13:10
   note AR_VAMPIRE/THE-SYSTEM-THAT-BUILDS-YOUR-BUBBLE: ending kept on the planner's words 'system of success' (introduces, does not claim)
 ar_v6mce7x__s3 (AR_VAMPIRE): 1 of 1 passed pre-render gates
 
@@ -38,7 +38,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_VAMPIRE
 
 
 
-## 2026-10-15 12:09
+## 2026-10-15 13:35
   note AR_VAMPIRE/YOU-MIGHT-BE-THE-VAMPIRE: ending kept on the planner's words 'This is insane. It's insanity' (cuts mid-sentence)
 ar_v6mce7x__s0 (AR_VAMPIRE): 2 of 2 passed pre-render gates
 
@@ -56,7 +56,7 @@ RENDER ar_v6mce7x__s0
 ## ar_v6rv5w3_r2: 0 of 2 clip(s) passed every gate
 
 
-## 2026-10-15 11:51
+## 2026-10-15 13:19
   drop AR_LIMBICR2/DAMAGED-BRAIN-EMPTIES-YOU: hook - opens on a vague riddle: "Someone you love is"
   note AR_LIMBICR2/CORTISOL-REWIRED-THE-BRAIN: ending kept on the planner's words 'dealing with this narcissistic rage' (cuts mid-sentence)
 ar_v6rv5w3_r2__s0 (AR_LIMBICR2): 1 of 2 passed pre-render gates
@@ -65,10 +65,12 @@ RENDER ar_v6rv5w3_r2__s0
   FAIL 01_CORTISOL-REWIRED-THE-BRAIN_109s.mp4: [FAIL] 01_CORTISOL-REWIRED-THE-BRAIN_109s.mp4                 20 captions vs the sound  median +0.11s  worst-10% 0.77s  | words captioned 100%
 
 
+- **RETIRED** after 2 runs with nothing passing; its clips go back to the planner (factory/plans/_failed.json)
+
 ## ar_v71xlg4_r2: 2 of 4 clip(s) passed every gate
 
 
-## 2026-10-15 11:59
+## 2026-10-15 13:14
   note AR_MIRRORR2/HER-FEAR-IS-STILL-RUNNING-YOU: ending kept on the planner's words 'scientifically proven to be true' (introduces, does not claim)
 ar_v71xlg4_r2__s0 (AR_MIRRORR2): 2 of 2 passed pre-render gates
 
@@ -80,7 +82,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_MIRRORR2
 
 
 
-## 2026-10-15 12:11
+## 2026-10-15 13:35
   note AR_MIRRORR2/YOU-COMPLETE-ME-IS-A-TRAP: ending kept on the planner's words 'that's separate from you' (cuts mid-sentence)
 ar_v71xlg4_r2__s1 (AR_MIRRORR2): 2 of 2 passed pre-render gates
 
@@ -96,7 +98,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_MIRRORR2
 ## ar_v73eiqy: 3 of 7 clip(s) passed every gate
 
 
-## 2026-10-15 11:54
+## 2026-10-15 13:13
 ar_v73eiqy__s1 (AR_SEEDS): 1 of 1 passed pre-render gates
 
 RENDER ar_v73eiqy__s1
@@ -106,7 +108,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_SEEDS
 
 
 
-## 2026-10-15 11:59
+## 2026-10-15 13:20
   drop AR_SEEDS/WHAT-YOU-THINK-YOU-BECOME: hook - announces a topic instead of making a claim: "What you think" - cut the first word
 ar_v73eiqy__s0 (AR_SEEDS): 1 of 2 passed pre-render gates
 
@@ -115,7 +117,7 @@ RENDER ar_v73eiqy__s0
 
 
 
-## 2026-10-15 11:59
+## 2026-10-15 13:21
   note AR_SEEDS/BELIEVE-IT-LIKE-FACT: ending kept on the planner's words 'called the present' (cuts mid-sentence)
 ar_v73eiqy__s3 (AR_SEEDS): 1 of 1 passed pre-render gates
 
@@ -126,7 +128,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_SEEDS
 
 
 
-## 2026-10-15 11:55
+## 2026-10-15 13:19
   note AR_SEEDS/THE-DOTS-CONNECT-LATER: ending kept on the planner's words 'interspaces of the universe' (cuts mid-sentence)
 ar_v73eiqy__s2 (AR_SEEDS): 1 of 1 passed pre-render gates
 
@@ -139,7 +141,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_SEEDS
 ## ep_v6sg6dz: 5 of 6 clip(s) passed every gate
 
 
-## 2026-10-15 12:08
+## 2026-10-15 13:42
   note KT_ELITE/WHY-HE-DIED-WITH-A-SMILE: ending kept on the planner's words 'would never have given their life for' (ends on 'for')
   note KT_ELITE/WHY-TESLAS-VISION-SKIPS-THE-CAR: ending kept on the planner's words 'advance as a human civilization' (next line completes it)
 ep_v6sg6dz__s2 (KT_ELITE): 2 of 2 passed pre-render gates
@@ -152,7 +154,7 @@ TEST MODE - passing clips NOT uploaded or queued: KT_ELITE
 
 
 
-## 2026-10-15 12:28
+## 2026-10-15 13:51
   note KT_ELITE/WHY-HE-FORGETS-EVERY-LOSING-GAME: ending kept on the planner's words 'priority that you give to the facts' (introduces, does not claim)
 ep_v6sg6dz__s1 (KT_ELITE): 2 of 2 passed pre-render gates
 
@@ -166,7 +168,7 @@ TEST MODE - passing clips NOT uploaded or queued: KT_ELITE
 
 
 
-## 2026-10-15 12:28
+## 2026-10-15 13:56
   note KT_ELITE/WHAT-WINNERS-HAVE-THAT-CONFIDENCE-DOESNT: ending kept on the planner's words 'I can make the next one' (cuts mid-sentence)
 ep_v6sg6dz__s0 (KT_ELITE): 2 of 2 passed pre-render gates
 
@@ -185,7 +187,7 @@ TEST MODE - passing clips NOT uploaded or queued: KT_ELITE
 ## ep_v6zdmb0: 1 of 5 clip(s) passed every gate
 
 
-## 2026-10-15 12:10
+## 2026-10-15 13:52
   note KT_RATIO/WANT-IT-LIKE-YOU-WANT-TO-BREATHE: ending kept on the planner's words 'that's when you'll get it' (cuts mid-sentence)
 ep_v6zdmb0__s2 (KT_RATIO): 1 of 1 passed pre-render gates
 
@@ -196,7 +198,7 @@ TEST MODE - passing clips NOT uploaded or queued: KT_RATIO
 
 
 
-## 2026-10-15 12:16
+## 2026-10-15 14:04
   note KT_RATIO/RON-POPEIL-CALLED-HIM-A-LIAR: ending kept on the planner's words 'they were like oh my god' (cuts mid-sentence)
   note KT_RATIO/THE-WORD-THAT-FLOODED-HIS-MAILBOX: ending kept on the planner's words 'this is in the seventies' (introduces, does not claim)
 ep_v6zdmb0__s0 (KT_RATIO): 2 of 2 passed pre-render gates
@@ -207,7 +209,7 @@ RENDER ep_v6zdmb0__s0
 
 
 
-## 2026-10-15 12:33
+## 2026-10-15 14:08
   note KT_RATIO/PIZZA-GUY-TO-200-MILLION: ending kept on the planner's words 'he became stupidly successful' (cuts mid-sentence)
 ep_v6zdmb0__s1 (KT_RATIO): 2 of 2 passed pre-render gates
 
@@ -219,7 +221,7 @@ RENDER ep_v6zdmb0__s1
 ## ep_v70wvnu_r4: 1 of 1 clip(s) passed every gate
 
 
-## 2026-10-15 12:12
+## 2026-10-15 13:49
 ep_v70wvnu_r4__s0 (KT_TRIGGERR3R2): 1 of 1 passed pre-render gates
 
 RENDER ep_v70wvnu_r4__s0
@@ -230,34 +232,10 @@ TEST MODE - passing clips NOT uploaded or queued: KT_TRIGGERR3R2
 
 - **NOT QUEUED** `01_SPILLED-WATER-MELTDOWN_43s.mp4` - opens mid-sentence on "all you know"; the spoken word was on screen in only 8 of 11 moments
 
-## ep_v72tj4g_r2: 1 of 3 clip(s) passed every gate
-
-
-## 2026-10-15 12:22
-  note KT_EXPOSEDR2/WHAT-MADE-LIBERACE-BELIEVE: ending kept on the planner's words 'There's magic in believing' (cuts mid-sentence)
-ep_v72tj4g_r2__s1 (KT_EXPOSEDR2): 1 of 1 passed pre-render gates
-
-RENDER ep_v72tj4g_r2__s1
-  FAIL 01_WHAT-MADE-LIBERACE-BELIEVE_66s.mp4: [FAIL] 01_WHAT-MADE-LIBERACE-BELIEVE_66s.mp4                  15 captions vs the sound  median +0.00s  worst-10% 1.00s  | words captioned 102%
-
-
-
-## 2026-10-15 12:27
-  note KT_EXPOSEDR2/MICHAEL-JORDAN-MISSED-THE-MOST: ending kept on the planner's words 'win or you learn' (cuts mid-sentence)
-  note KT_EXPOSEDR2/HE-SKIPPED-THE-RECESSION: ending kept on the planner's words 'instead of being at effect' (next line completes it)
-ep_v72tj4g_r2__s0 (KT_EXPOSEDR2): 2 of 2 passed pre-render gates
-
-RENDER ep_v72tj4g_r2__s0
-  FAIL 01_HE-SKIPPED-THE-RECESSION_72s.mp4: [FAIL] 01_HE-SKIPPED-THE-RECESSION_72s.mp4                    8 captions vs the sound  median +0.38s  worst-10% 1.71s  | words captioned 100%
-  PASS 02_MICHAEL-JORDAN-MISSED-THE-MOST_78s.mp4  02_MICHAEL-JORDAN-MISSED-THE-MOST_78s.mp4              13 captions vs the sound  median +0
-       FIRST 5s : See, everyone was born to win, but we have been conditioned to lose. | LAST  8s : You don't see people say I either win or I'm either going to win or lose. No. You either win or you learn.
-TEST MODE - passing clips NOT uploaded or queued: KT_EXPOSEDR2
-
-
 ## ep_v77l7um_r6: 2 of 2 clip(s) passed every gate
 
 
-## 2026-10-15 12:37
+## 2026-10-15 14:10
   note KT_BITCOINR2R2R2R2R2/BLEW-BITCOIN-AT-50-CENTS: ending kept on the planner's words 'they think they know it all' (ends on 'all')
   note KT_BITCOINR2R2R2R2R2/RAILROADS-TRIED-TO-RUIN-HIM: ending kept on the planner's words 'because they tried to crush him' (cuts mid-sentence)
 ep_v77l7um_r6__s0 (KT_BITCOINR2R2R2R2R2): 2 of 2 passed pre-render gates
@@ -275,35 +253,4 @@ TEST MODE - passing clips NOT uploaded or queued: KT_BITCOINR2R2R2R2R2
 - **NOT QUEUED** `02_RAILROADS-TRIED-TO-RUIN-HIM_88s.mp4` - ends mid-thought on "to crush him"; sentence starts with no stop: "adversity The"; sentence starts with no stop: "money He"
 
 ## UPLOAD
-10 clip(s) to add:
-   AR_MIRRORR2/01_THERES-NOT-JUST-ONE_62s.mp4  (39 MB)
-   AR_SEEDS/01_BELIEVE-IT-LIKE-FACT_54s.mp4  (25 MB)
-   AR_SEEDS/01_THE-DOTS-CONNECT-LATER_48s.mp4  (15 MB)
-   AR_SEEDS/01_UNHAPPY-CHILDHOODS-BUILD-SUCCESS_59s.mp4  (28 MB)
-   AR_VAMPIRE/01_SAILBOAT-WITHOUT-A-RUDDER_74s.mp4  (48 MB)
-   AR_VAMPIRE/01_THE-SYSTEM-THAT-BUILDS-YOUR-BUBBLE_76s.mp4  (45 MB)
-   KT_ELITE/01_WHY-YOURE-NOT-A-WARRIOR-YET_45s.mp4  (29 MB)
-   KT_ELITE/02_WHAT-WINNERS-HAVE-THAT-CONFIDENCE-DOESNT_39s.mp4  (24 MB)
-   KT_ELITE/02_WHY-TESLAS-VISION-SKIPS-THE-CAR_54s.mp4  (33 MB)
-   KT_RATIO/01_WANT-IT-LIKE-YOU-WANT-TO-BREATHE_91s.mp4  (62 MB)
-      + 01_THERES-NOT-JUST-ONE_62s__story.mp4
-      + 01_THERES-NOT-JUST-ONE_62s__yt59.mp4
-   added AR_MIRRORR2/01_THERES-NOT-JUST-ONE_62s.mp4
-   added AR_SEEDS/01_BELIEVE-IT-LIKE-FACT_54s.mp4
-   added AR_SEEDS/01_THE-DOTS-CONNECT-LATER_48s.mp4
-   added AR_SEEDS/01_UNHAPPY-CHILDHOODS-BUILD-SUCCESS_59s.mp4
-      + 01_SAILBOAT-WITHOUT-A-RUDDER_74s__story.mp4
-      + 01_SAILBOAT-WITHOUT-A-RUDDER_74s__yt59.mp4
-   added AR_VAMPIRE/01_SAILBOAT-WITHOUT-A-RUDDER_74s.mp4
-      + 01_THE-SYSTEM-THAT-BUILDS-YOUR-BUBBLE_76s__story.mp4
-      + 01_THE-SYSTEM-THAT-BUILDS-YOUR-BUBBLE_76s__yt59.mp4
-   added AR_VAMPIRE/01_THE-SYSTEM-THAT-BUILDS-YOUR-BUBBLE_76s.mp4
-   added KT_ELITE/01_WHY-YOURE-NOT-A-WARRIOR-YET_45s.mp4
-   added KT_ELITE/02_WHAT-WINNERS-HAVE-THAT-CONFIDENCE-DOESNT_39s.mp4
-   added KT_ELITE/02_WHY-TESLAS-VISION-SKIPS-THE-CAR_54s.mp4
-      + 01_WANT-IT-LIKE-YOU-WANT-TO-BREATHE_91s__story.mp4
-      + 01_WANT-IT-LIKE-YOU-WANT-TO-BREATHE_91s__yt59.mp4
-   added KT_RATIO/01_WANT-IT-LIKE-YOU-WANT-TO-BREATHE_91s.mp4
-
-manifest now holds 380 clips
-commit and push state/manifest.json to let the machine see them
+nothing new to add

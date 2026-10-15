@@ -5297,7 +5297,7 @@
    "plan": "ar_v6mce7x",
    "source": "v6mce7x.mp4",
    "brand": "AR_VAMPIRE",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "FAIL 01_KEVIN-I-HAVE-AN-ENERGY-VAMPIRE_96s.mp4: [FAIL] 01_KEVIN-I-HAVE-AN-ENERGY-VAMPIRE_96s.mp4              7 captions vs the sound  median +0.10s  worst-10% 1.53s  | words captioned 114%"
    ],
@@ -5315,7 +5315,7 @@
    "plan": "ar_v6mce7x",
    "source": "v6mce7x.mp4",
    "brand": "AR_VAMPIRE",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "FAIL 02_YOU-MIGHT-BE-THE-VAMPIRE_127s.mp4: ends off the planned words: plan ends 'This is insane. It's insanity', clip ends 'energy vampire this is insane insanity'"
    ],
@@ -5333,7 +5333,7 @@
    "plan": "ar_v6mce7x",
    "source": "v6mce7x.mp4",
    "brand": "AR_VAMPIRE",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "NOT QUEUED** `02_ZIG-ZIGLAR-CALLED-IT-SNIOP_43s.mp4` - ends mid-thought on \"to trigger anymore\"; sentence starts with no stop: \"people Most\""
    ],
@@ -5351,7 +5351,7 @@
    "plan": "ar_v6mce7x",
    "source": "v6mce7x.mp4",
    "brand": "AR_VAMPIRE",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "NOT QUEUED** `01_MY-ENERGY-FIELD-IS-BIG-ENOUGH_50s.mp4` - ends mid-thought on \"is big enough\"; sentence starts with no stop: \"car The\"; sentence starts with no stop: \"umbrella Because\""
    ],
@@ -5369,7 +5369,7 @@
    "plan": "ar_v6mce7x",
    "source": "v6mce7x.mp4",
    "brand": "AR_VAMPIRE",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "NOT QUEUED** `02_SOMEBODY-PUTTING-RATS-IN-YOUR-HEAD_67s.mp4` - opens mid-sentence on \"think of this\"; ends mid-thought on \"but you\"; word repeated after one: \"hello landmark hello\""
    ],
@@ -5387,7 +5387,7 @@
    "plan": "ar_v71xlg4_r2",
    "source": "v71xlg4.mp4",
    "brand": "AR_MIRRORR2",
-   "tries": 2,
+   "tries": 3,
    "why": [
     "NOT QUEUED** `01_HER-FEAR-IS-STILL-RUNNING-YOU_55s.mp4` - word repeated: \"father's father's\""
    ],
@@ -5405,7 +5405,7 @@
    "plan": "ar_v71xlg4_r2",
    "source": "v71xlg4.mp4",
    "brand": "AR_MIRRORR2",
-   "tries": 2,
+   "tries": 3,
    "why": [
     "FAIL 02_HE-DIDNT-CHANGE-YOU-JUST-DID_51s.mp4: ends off the planned words: plan ends 'and that other person changes', clip ends 'is changing and that other pe'"
    ],
@@ -5423,7 +5423,7 @@
    "plan": "ar_v71xlg4_r2",
    "source": "v71xlg4.mp4",
    "brand": "AR_MIRRORR2",
-   "tries": 2,
+   "tries": 3,
    "why": [
     "FAIL 02_YOU-COMPLETE-ME-IS-A-TRAP_60s.mp4: [FAIL] 02_YOU-COMPLETE-ME-IS-A-TRAP_60s.mp4                   15 captions vs the sound  median +0.07s  worst-10% 0.76s  | words captioned 101%"
    ],
@@ -5441,7 +5441,7 @@
    "plan": "ar_v73eiqy",
    "source": "v73eiqy.mp4",
    "brand": "AR_SEEDS",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "FAIL 01_BROADCAST-ON-A-NARROW-BEAM_74s.mp4: [FAIL] 01_BROADCAST-ON-A-NARROW-BEAM_74s.mp4                  8 captions vs the sound  median -0.00s  worst-10% 0.78s  | words captioned 100%"
    ],
@@ -5459,7 +5459,7 @@
    "plan": "ar_v73eiqy",
    "source": "v73eiqy.mp4",
    "brand": "AR_SEEDS",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "drop AR_SEEDS/WHAT-YOU-THINK-YOU-BECOME: hook - announces a topic instead of making a claim: \"What you think\" - cut the first word"
    ],
@@ -5477,7 +5477,7 @@
    "plan": "ar_v73eiqy",
    "source": "v73eiqy.mp4",
    "brand": "AR_SEEDS",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "no clip came out of the render"
    ],
@@ -5495,7 +5495,7 @@
    "plan": "ar_v73eiqy",
    "source": "v73eiqy.mp4",
    "brand": "AR_SEEDS",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "no clip came out of the render"
    ],
@@ -5513,7 +5513,7 @@
    "plan": "ep_v6sg6dz",
    "source": "v6sg6dz.mp4",
    "brand": "KT_ELITE",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "NOT QUEUED** `01_WHAT-MAKES-AN-INVESTOR-CALM_125s.mp4` - opens mid-sentence on \"is Charlie Munger\""
    ],
@@ -5531,7 +5531,7 @@
    "plan": "ep_v6sg6dz",
    "source": "v6sg6dz.mp4",
    "brand": "KT_ELITE",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "NOT QUEUED** `02_WHY-HE-FORGETS-EVERY-LOSING-GAME_68s.mp4` - ends mid-thought on \"to the facts\"; sentence starts with no stop: \"shot He\"; sentence starts with no stop: \"that And\""
    ],
@@ -5549,7 +5549,7 @@
    "plan": "ep_v6sg6dz",
    "source": "v6sg6dz.mp4",
    "brand": "KT_ELITE",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "FAIL 01_WHY-HE-DIED-WITH-A-SMILE_43s.mp4: ends off the planned words: plan ends 'would never have given their life for', clip ends 'for something they would never ha'"
    ],
@@ -5567,7 +5567,7 @@
    "plan": "ep_v6zdmb0",
    "source": "v6zdmb0.mp4",
    "brand": "KT_RATIO",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "FAIL 01_RON-POPEIL-CALLED-HIM-A-LIAR_107s.mp4: [FAIL] 01_RON-POPEIL-CALLED-HIM-A-LIAR_107s.mp4               16 captions vs the sound  median +0.09s  worst-10% 0.79s  | words captioned 100%"
    ],
@@ -5585,7 +5585,7 @@
    "plan": "ep_v6zdmb0",
    "source": "v6zdmb0.mp4",
    "brand": "KT_RATIO",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "FAIL 02_THE-WORD-THAT-FLOODED-HIS-MAILBOX_48s.mp4: ends off the planned words: plan ends 'this is in the seventies', clip ends 'day this is in the 70s'"
    ],
@@ -5603,7 +5603,7 @@
    "plan": "ep_v6zdmb0",
    "source": "v6zdmb0.mp4",
    "brand": "KT_RATIO",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "FAIL 01_PIZZA-GUY-TO-200-MILLION_60s.mp4: [FAIL] 01_PIZZA-GUY-TO-200-MILLION_60s.mp4                    40 captions vs the sound (word-referenced: no clear pauses)  median +0.50s  worst-10% 1.01s  | words captioned 100%"
    ],
@@ -5621,7 +5621,7 @@
    "plan": "ep_v6zdmb0",
    "source": "v6zdmb0.mp4",
    "brand": "KT_RATIO",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "FAIL 02_OUTSOLD-ZIG-ZIGLAR-2-TO-1_95s.mp4: [FAIL] 02_OUTSOLD-ZIG-ZIGLAR-2-TO-1_95s.mp4                   8 captions vs the sound  median +0.30s  worst-10% 0.84s  | words captioned 99%"
    ],
@@ -5639,7 +5639,7 @@
    "plan": "ep_v70wvnu_r4",
    "source": "v70wvnu.mp4",
    "brand": "KT_TRIGGERR3R2",
-   "tries": 2,
+   "tries": 3,
    "why": [
     "NOT QUEUED** `01_SPILLED-WATER-MELTDOWN_43s.mp4` - opens mid-sentence on \"all you know\"; the spoken word was on screen in only 8 of 11 moments"
    ],
@@ -5657,7 +5657,7 @@
    "plan": "ep_v77l7um_r6",
    "source": "v77l7um.mp4",
    "brand": "KT_BITCOINR2R2R2R2R2",
-   "tries": 2,
+   "tries": 3,
    "why": [
     "NOT QUEUED** `01_BLEW-BITCOIN-AT-50-CENTS_42s.mp4` - ends mid-thought on \"it all yep\"; word repeated after one: \"correct that's correct\"; word repeated: \"the the\""
    ],
@@ -5675,7 +5675,7 @@
    "plan": "ep_v77l7um_r6",
    "source": "v77l7um.mp4",
    "brand": "KT_BITCOINR2R2R2R2R2",
-   "tries": 3,
+   "tries": 4,
    "why": [
     "NOT QUEUED** `02_RAILROADS-TRIED-TO-RUIN-HIM_88s.mp4` - ends mid-thought on \"to crush him\"; sentence starts with no stop: \"adversity The\"; sentence starts with no stop: \"money He\""
    ],
@@ -5687,6 +5687,42 @@
    "hook": [
     "5x more money",
     "after government attacked"
+   ]
+  },
+  "ar_v6rv5w3_r2/DAMAGED-BRAIN-EMPTIES-YOU": {
+   "plan": "ar_v6rv5w3_r2",
+   "source": "v6rv5w3.mp4",
+   "brand": "AR_LIMBICR2",
+   "tries": 3,
+   "why": [
+    "drop AR_LIMBICR2/DAMAGED-BRAIN-EMPTIES-YOU: hook - opens on a vague riddle: \"Someone you love is\""
+   ],
+   "slug": "DAMAGED-BRAIN-EMPTIES-YOU",
+   "in": 155.6,
+   "out": 205.8,
+   "start_words": "this is a person",
+   "end_words": "who they are internally",
+   "hook": [
+    "Someone you love is",
+    "empty inside."
+   ]
+  },
+  "ar_v6rv5w3_r2/CORTISOL-REWIRED-THE-BRAIN": {
+   "plan": "ar_v6rv5w3_r2",
+   "source": "v6rv5w3.mp4",
+   "brand": "AR_LIMBICR2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_CORTISOL-REWIRED-THE-BRAIN_109s.mp4: [FAIL] 01_CORTISOL-REWIRED-THE-BRAIN_109s.mp4                 20 captions vs the sound  median +0.11s  worst-10% 0.77s  | words captioned 100%"
+   ],
+   "slug": "CORTISOL-REWIRED-THE-BRAIN",
+   "in": 404.0,
+   "out": 513.2,
+   "start_words": "So when we were children",
+   "end_words": "dealing with this narcissistic rage",
+   "hook": [
+    "Your narcissist's brain",
+    "never grew up."
    ]
   }
  },
@@ -5704,6 +5740,6 @@
   "ep_v77l7um_r5": 2,
   "ar_v6x6fvg_r3": 3,
   "ar_v6xhs7q_r2": 3,
-  "ar_v6rv5w3_r2": 1
+  "ar_v6rv5w3_r2": 2
  }
 }
