@@ -1,0 +1,21 @@
+{
+  "source": "v70wvnu.mp4",
+  "brand": "KT_TRIGGERR3R2",
+  "test": false,
+  "note": "15 Oct 2026 - fourth chances for 'The Hidden Force Running Your Life' (Rumble v70wvnu). Weekly agent, re-cut per PLANNING.md 2c. SPILLED-WATER-MELTDOWN: the scrambled phrase ('and uncontrollable reaction and') sits a few seconds into the old cut; moved the start past it to 'All you know is you're living and screaming because I spilled this water' (the clip's own hook subject, so nothing is lost) and pushed the end further out to the stronger, fuller payoff ('you can go through life and nothing triggers you') to clear the 40-second floor. Not attempted again (last chance already spent on both, and no clean fix exists): NINE-YEARS-NOT-GRIEF - the 'repeated' words the gate flags ('nine years... nine years?') are the actual surprise reveal the whole clip is built on, not a transcription error; cutting around them removes the clip's only punchline. THE-PUPPET-STRING - checked the whole window again myself: every sentence boundary in it opens on 'this/these/and/but/so/because', pointing back to the sam-scars explanation that's already excluded from this episode, with no independent line long enough to open on instead.",
+  "clips": [
+    {
+      "slug": "SPILLED-WATER-MELTDOWN",
+      "in": 363.5,
+      "out": 407.04,
+      "start_words": "All you know is",
+      "end_words": "nothing triggers you",
+      "retry_of": "ep_v70wvnu/SPILLED-WATER-MELTDOWN",
+      "hook": [
+        "Why spilled water",
+        "triggers your rage"
+      ],
+      "caption": "A little spilled water should never end in screaming - and that's exactly the point.\n\nKevin Trudeau describes it: water spills, and suddenly there's a full screaming reaction with no real explanation. Your partner asks what's wrong and you don't actually know.\n\nWhat really happened: the moment triggered an old wound buried in your memory. That's why the reaction was so irrational and uncontrolled.\n\nThe fix: release that stored energy and you become powerful. Nothing triggers you anymore.\n\nWhat is your overreaction really about?\n\n#kevintrudeau #selfsabotage #relationships #mindset #emotionalcontrol #triggers"
+    }
+  ]
+}
