@@ -8901,7 +8901,11 @@
    "hook": "What Michael Jordan missed the most",
    "bytes": 16614189,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-15T15:29",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
