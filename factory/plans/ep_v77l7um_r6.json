@@ -1,0 +1,34 @@
+{
+  "source": "v77l7um.mp4",
+  "brand": "KT_BITCOINR2R2R2R2R2",
+  "test": false,
+  "note": "15 Oct 2026 - second chances (round 6) for 'I Bought Bitcoin At $1 - What Nobody Tells You About Making Money (Wallstreetbets Founder Exclusive)' (Rumble v77l7um). Weekly agent, re-cut per PLANNING.md 2c. BLEW-BITCOIN-AT-50-CENTS: ended mid-thought and ran into a stutter ('be an be an empty vessel') later in the cue; moved the end back onto the teachability-index payoff plus the 'most people think they know it all' closer, well clear of that stutter zone. RAILROADS-TRIED-TO-RUIN-HIM: the planned end phrase 'seed of a greater benefit' is Kevin's repeated catchphrase (it appears three times in this passage), so the word-search kept landing on the wrong occurrence and the render ended a sentence early; moved the end onto the unique, unambiguous line right before it ('because they tried to crush him'), which is also a stronger, more concrete payoff. Skipped again (no clean single cut exists): SECOND-RICHEST-FREE-NEWSLETTER - the scrambled phrases ('he's trading and he's', 'sold and I sold') sit inside the newsletter-mechanism explanation itself, between the setup and the payoff, so no edge move excludes them without cutting the lesson. 3-TRADERS-SIX-FIGURES-15-SECONDS (last chance, tries 2) - the whole 123-second passage is one continuous run of rapid-fire, broken speech with no clear pauses anywhere in it, which is exactly what the gate flagged ('no clear pauses'); it is not one bad sentence to edit around, it is the way Kevin tells the entire story, so no edge move fixes it.",
+  "clips": [
+    {
+      "slug": "BLEW-BITCOIN-AT-50-CENTS",
+      "in": 29.68,
+      "out": 72.96,
+      "start_words": "You were an early",
+      "end_words": "they think they know it all",
+      "retry_of": "ep_v77l7um/BLEW-BITCOIN-AT-50-CENTS",
+      "hook": [
+        "The $1 lesson",
+        "he almost missed"
+      ],
+      "caption": "Kevin Trudeau bought Bitcoin at a dollar. He still brings up the part he got wrong.\n\nA friend told him to buy it at 50 cents first. He didn't listen - and he calls that blown opportunity the real lesson, not the win that came after.\n\nWhat changed things afterward: he decided to always listen to people who already have what he wants and have already been where he's trying to go. He calls it having a high 'teachability index' - a willingness to learn, a willingness to change.\n\nMost people in their 20s think they already know it all. He did too, once.\n\n#kevintrudeau #bitcoin #mindset #investing #wealthmindset #successmindset"
+    },
+    {
+      "slug": "RAILROADS-TRIED-TO-RUIN-HIM",
+      "in": 2500.0,
+      "out": 2590.08,
+      "start_words": "Every single time the",
+      "end_words": "because they tried to crush him",
+      "retry_of": "ep_v77l7um_r5/RAILROADS-TRIED-TO-RUIN-HIM",
+      "hook": [
+        "5x more money",
+        "after government attacked"
+      ],
+      "caption": "Two railroads once tried to extort John D. Rockefeller. They were the only way to move his kerosene, so they tripled the price and figured he had no choice.\n\nHe went from a fortune to nearly broke overnight. Then he looked at his own refineries and realized oil moves through pipes. He built the first pipeline across America and cut the railroads out completely. His profits went up 10x.\n\nYears later, the government broke up Standard Oil as a monopoly, trying to cut him down for good. Instead, his stock in the 36 companies they split it into made him five times richer within a year.\n\nEvery attack on him became the thing that made him more money.\n\n#kevintrudeau #wealthmindset #mindset #businesshistory #success #money"
+    }
+  ]
+}
