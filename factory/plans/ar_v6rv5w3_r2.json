@@ -1,0 +1,34 @@
+{
+ "source": "v6rv5w3.mp4",
+ "brand": "AR_LIMBICR2",
+ "test": false,
+ "note": "15 Oct 2026 - '\"THE NARCISSIST SLAYER\" REVEALS: How Narcissists TRAP You' (Rumble v6rv5w3). Awakened Rise weekly agent. SECOND CHANCE re-cut (gate failures on tries=2, last chance) per PLANNING.md 2c. DAMAGED-BRAIN-EMPTIES-YOU: the flagged uncaptioned-speech gap sat in the long qualifier block (109-125s, 'you kind of have to be careful about how you use the word...'); re-cut to a tighter, cleanly-paced run of short sentences (the 'totally and completely empty inside' definition through the contrast with grounded people) that skips that block entirely. CORTISOL-REWIRED-THE-BRAIN: moved the out point to the next full-stop sentence boundary ('dealing with this narcissistic rage') for a stronger, differently-timed close. Skipped three on this last chance: FOUR-PEOPLE-EVERY-RELATIONSHIP's flagged repetition ('I think, sometimes people end up repeating patterns... and I think sometimes people think') is genuine mid-sentence speech, sitting in the middle of the only usable window, not at an edge that can be moved. THREE-FINGERS-POINT-BACK's only clean continuous window that opens on the Deepak Chopra anecdote and closes on the 'you see the world as you are' payoff also contains a profane aside ('this guy, asshole, this guy, asshole') with no edge that excludes it without breaking the story. NOT-WORTHLESS-TOO-VALUABLE's cut already opens and closes on clean sentence boundaries; the caption-sync failure names no specific scrambled phrase or gap to re-anchor on, so there is no diagnosable fix left to try.",
+ "clips": [
+  {
+   "slug": "DAMAGED-BRAIN-EMPTIES-YOU",
+   "in": 155.6,
+   "out": 205.8,
+   "start_words": "this is a person",
+   "end_words": "who they are internally",
+   "hook": [
+    "Someone you love is",
+    "empty inside."
+   ],
+   "caption": "Nobody starts out this way.\n\nStrip away the diagnosis and the real definition is simpler than you'd think: a person who feels totally and completely empty inside, no matter what they build or achieve. So they go looking outside themselves for something to fill it — your attention, your approval, your energy, anything that makes them feel like they exist at all.\n\nMost people don't live like this. Most people carry some sense of groundedness, of knowing who they are without anyone else in the room.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#subconscious #innerwork #awakening #selfawareness #emotionalhealing #kevintrudeau",
+   "retry_of": "ar_v6rv5w3/DAMAGED-BRAIN-EMPTIES-YOU"
+  },
+  {
+   "slug": "CORTISOL-REWIRED-THE-BRAIN",
+   "in": 404.0,
+   "out": 513.2,
+   "start_words": "So when we were children",
+   "end_words": "dealing with this narcissistic rage",
+   "hook": [
+    "Your narcissist's brain",
+    "never grew up."
+   ],
+   "caption": "This isn't a personality flaw. It's biology.\n\nEvery time a child is thrown into fight or flight — and it happens on a loop, not once — cortisol floods the brain. Do that long enough and the limbic system, the emotional core, stops developing normally. It stays hypersensitive for life.\n\nSo the adult version of that brain reads an eye roll, a tone of voice, as a threat to survival. The logical part shuts off completely, and what's left is raw, unfiltered emotion — what shows up on the outside as narcissistic rage.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#subconscious #innerwork #awakening #nervoussystem #selfawareness #kevintrudeau",
+   "retry_of": "ar_v6rv5w3/CORTISOL-REWIRED-THE-BRAIN"
+  }
+ ]
+}
