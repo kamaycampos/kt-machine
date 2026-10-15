@@ -5256,6 +5256,42 @@
     "$1 million before",
     "he turned 18"
    ]
+  },
+  "ep_v72tj4g_r2/HE-SKIPPED-THE-RECESSION": {
+   "plan": "ep_v72tj4g_r2",
+   "source": "v72tj4g.mp4",
+   "brand": "KT_EXPOSEDR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_HE-SKIPPED-THE-RECESSION_72s.mp4: [FAIL] 01_HE-SKIPPED-THE-RECESSION_72s.mp4                    8 captions vs the sound  median +0.38s  worst-10% 1.71s  | words captioned 100%"
+   ],
+   "slug": "HE-SKIPPED-THE-RECESSION",
+   "in": 2526.0,
+   "out": 2598.0,
+   "start_words": "I had a friend",
+   "end_words": "instead of being at effect",
+   "hook": [
+    "How his business",
+    "beat the recession"
+   ]
+  },
+  "ep_v72tj4g_r2/WHAT-MADE-LIBERACE-BELIEVE": {
+   "plan": "ep_v72tj4g_r2",
+   "source": "v72tj4g.mp4",
+   "brand": "KT_EXPOSEDR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_WHAT-MADE-LIBERACE-BELIEVE_66s.mp4: [FAIL] 01_WHAT-MADE-LIBERACE-BELIEVE_66s.mp4                  15 captions vs the sound  median +0.00s  worst-10% 1.00s  | words captioned 102%"
+   ],
+   "slug": "WHAT-MADE-LIBERACE-BELIEVE",
+   "in": 2702.24,
+   "out": 2766.8,
+   "start_words": "It is so important",
+   "end_words": "There's magic in believing",
+   "hook": [
+    "What made Liberace",
+    "believe in himself"
+   ]
   }
  },
  "attempts": {
