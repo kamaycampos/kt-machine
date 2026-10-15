@@ -21,11 +21,32 @@ DOCS = os.path.join(HERE, "docs")
 TZ = os.environ.get("KT_TZ", "America/New_York")
 
 
+# OTHER BRANDS ON THE SAME BOARD (15 Oct 2026, Kamay: "add the WB clips descriptions
+# to our dashboard together with Yaren, me and WB"). Each one is a public factory repo;
+# its manifest is read as it is right now, and its clips carry `_who` so the board can
+# label and filter them. A repo that cannot be read is skipped - KT's board never breaks.
+EXTRA = {"WB": "kamaycampos/wb-factory"}
+NAMES = {"KAMAY": "KAMAY", "AR": "AWAKENED RISE", "WB": "WB ORGANICS"}
+
+
+def owner(c):
+    return c.get("_who") or ("AR" if c["file"].startswith("AR_") else "KAMAY")
+
+
 def clips():
     try:
-        return json.load(open(STATE)).get("clips", [])
+        cs = json.load(open(STATE)).get("clips", [])
     except (OSError, ValueError):
-        return []
+        cs = []
+    import urllib.request
+    for who, repo in EXTRA.items():
+        try:
+            raw = urllib.request.urlopen(
+                f"https://raw.githubusercontent.com/{repo}/main/state/manifest.json", timeout=20).read()
+            cs += [dict(c, _who=who) for c in json.loads(raw).get("clips", [])]
+        except Exception as e:
+            print(f"board: {who} not read ({type(e).__name__})")
+    return cs
 
 
 def _utc(txt, plus=0):
@@ -212,8 +233,8 @@ def board(cs):
 
     def card(c, is_ready):
         f = c["file"]
-        who = "AWAKENED RISE" if f.startswith("AR_") else "KAMAY"
-        key = "AR" if f.startswith("AR_") else "KAMAY"
+        key = owner(c)
+        who = NAMES[key]
         when = c.get("posted_at") or c.get("scheduled_at")
         tag = "READY TO POST" if is_ready else (
             "posted" if c.get("posted_at") else "scheduled")
@@ -243,15 +264,17 @@ def board(cs):
          f"<style>{css}</style>", "<h1>Captions</h1>",
          "<div><button class='pick on' onclick=\"pick('all',this)\">All</button>"
          "<button class='pick' onclick=\"pick('KAMAY',this)\">Kamay</button>"
-         "<button class='pick' onclick=\"pick('AR',this)\">Awakened Rise</button></div>",
+         "<button class='pick' onclick=\"pick('AR',this)\">Awakened Rise</button>"
+         "<button class='pick' onclick=\"pick('WB',this)\">WB Organics</button></div>",
          "<div><a href='descriptions.html' style='color:#f5c542'>"
          "All descriptions &rarr;</a></div>",
          f"<h2>READY TO POST ON TIKTOK &middot; {len(todo)}</h2>"]
-    mine = [c for c in todo if not c["file"].startswith("AR_")]
-    hers = [c for c in todo if c["file"].startswith("AR_")]
+    mine = [c for c in todo if owner(c) == "KAMAY"]
+    hers = [c for c in todo if owner(c) == "AR"]
+    wb = [c for c in todo if owner(c) == "WB"]
     if not todo:
         p += ["<div class=c>Nothing waiting.</div>"]
-    for title, group in (("KAMAY", mine), ("AWAKENED RISE", hers)):
+    for title, group in (("KAMAY", mine), ("AWAKENED RISE", hers), ("WB ORGANICS", wb)):
         if group:
             p += [f"<h2>{title} &middot; {len(group)}</h2>"] + [card(c, True) for c in group]
     p += [f"<button class='pick' onclick=\"document.getElementById('more')"
@@ -322,7 +345,7 @@ def archive(cs):
         f = c["file"]
         cid = "a" + str(abs(hash(f)))
         when = c.get("posted_at") or c.get("scheduled_at") or ""
-        who = "AWAKENED RISE" if f.startswith("AR_") else "KAMAY"
+        who = NAMES[owner(c)]
         state = "posted" if c.get("posted_at") else ("retired" if c.get("done") else "waiting")
         out.append(f"<div class=c><div class=w>{who} &middot; {state} {when}</div>"
                    + (f"<div class=hk>&ldquo;{html.escape(c['hook'])}&rdquo;</div>" if c.get("hook") else "")
@@ -337,7 +360,8 @@ def archive(cs):
 def main():
     os.makedirs(DOCS, exist_ok=True)
     cs = clips()
-    open(os.path.join(DOCS, "calendar.ics"), "w").write(calendar_ics(cs))
+    # The calendar is Kamay's own posting calendar: KT and AR only, never another brand.
+    open(os.path.join(DOCS, "calendar.ics"), "w").write(calendar_ics([c for c in cs if not c.get("_who")]))
     open(os.path.join(DOCS, "index.html"), "w").write(board(cs))
     open(os.path.join(DOCS, "descriptions.html"), "w").write(archive(cs))
     print(f"pages built from {len(cs)} clips")
