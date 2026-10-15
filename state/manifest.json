@@ -8790,12 +8790,26 @@
    "caption": "The words you reach for aren't a choice. They're a habit, 100% of the time.\n\nThe way you react when something goes wrong, the phrase that comes out of your mouth before you've even thought about it - none of that is deliberate. It's autopilot, running a script that was written a long time ago, usually by someone who wasn't you.\n\nSuccessful people aren't smarter in the moment. They just have a different script running.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#subconscious #awakening #innerwork #mindset #habits #kevintrudeau",
    "hook": "Your speech is 100% habit.",
    "bytes": 31954656,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-15T09:49",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1552668243280587/",
+    "instagram": "https://www.instagram.com/reel/DehHPQKAI0s/",
+    "youtube": "https://youtube.com/shorts/s17XrgXeZ8Q"
+   },
+   "caption_at_post": "The words you reach for aren't a choice. They're a habit, 100% of the time.\n\nThe way you react when something goes wrong, the phrase that comes out of your mouth before you've even thought about it - none of that is deliberate. It's autopilot, running a script that was written a long time ago, usually by someone who wasn't you.\n\nSuccessful people aren't smarter in the moment. They just have a different script running.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#subconscious #awakening #innerwork #mindset #habits #kevintrudeau",
+   "posted_at": "2026-10-15T09:57"
   },
   {
    "file": "AR_LIMBIC/01_SO-SWEET-THAT-WAS-THE-MASK_90s.mp4",
@@ -8921,7 +8935,8 @@
    },
    "caption_at_post": "You say you want $20,000 a month. Maybe $100,000. Maybe $10 million in the bank and no debt.\n\nKevin Trudeau says that is only your conscious intention. Below it, in your subconscious, there is often the exact opposite one: stay poor.\n\nSo you push the gas and the brake at the same time - and then wonder why all that effort goes nowhere.\n\nEvery money course teaches the gas pedal. Almost none of them mention the brake.\n\nWhich one have you been pressing harder?\n\n#kevintrudeau #moneymindset #subconsciousmind #wealthmindset #selfsabotage #financialfreedom",
    "posted_at": "2026-10-15T09:40",
-   "tiktok_retry": true
+   "tiktok_retry": true,
+   "tiktok_tries": 1
   },
   {
    "file": "KT_EXPOSEDR2/02_MICHAEL-JORDAN-MISSED-THE-MOST_78s.mp4",
