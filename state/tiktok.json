@@ -1,10 +1,10 @@
 {
- "at": "2026-10-15T05:08",
+ "at": "2026-10-15T12:04",
  "profile": {
-  "follower_count": 412,
   "following_count": 8,
   "likes_count": 5851,
-  "video_count": 166
+  "video_count": 166,
+  "follower_count": 412
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -109,7 +109,7 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 167,
+   "view_count": 170,
    "like_count": 3,
    "comment_count": 0,
    "share_count": 0,
@@ -399,7 +399,7 @@
   },
   "KT_YWIYC/01_WHY-HONEST-WORK-KEEPS-YOU-BROKE_71s.mp4": {
    "id": "7689209177406786829",
-   "view_count": 197,
+   "view_count": 198,
    "like_count": 11,
    "comment_count": 0,
    "share_count": 0,
@@ -489,7 +489,7 @@
   },
   "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
    "id": "7688148098480098573",
-   "view_count": 493,
+   "view_count": 494,
    "like_count": 39,
    "comment_count": 2,
    "share_count": 6,
@@ -529,7 +529,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3686,
+   "view_count": 3687,
    "like_count": 152,
    "comment_count": 7,
    "share_count": 16,
@@ -579,7 +579,7 @@
   },
   "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4": {
    "id": "7686887912297843981",
-   "view_count": 2321,
+   "view_count": 2322,
    "like_count": 78,
    "comment_count": 5,
    "share_count": 11,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38133,
+   "view_count": 38134,
    "like_count": 787,
    "comment_count": 27,
    "share_count": 171,
