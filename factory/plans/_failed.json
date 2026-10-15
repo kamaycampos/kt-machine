@@ -5261,7 +5261,7 @@
    "plan": "ep_v72tj4g_r2",
    "source": "v72tj4g.mp4",
    "brand": "KT_EXPOSEDR2",
-   "tries": 2,
+   "tries": 3,
    "why": [
     "FAIL 01_HE-SKIPPED-THE-RECESSION_72s.mp4: [FAIL] 01_HE-SKIPPED-THE-RECESSION_72s.mp4                    8 captions vs the sound  median +0.38s  worst-10% 1.71s  | words captioned 100%"
    ],
@@ -5279,7 +5279,7 @@
    "plan": "ep_v72tj4g_r2",
    "source": "v72tj4g.mp4",
    "brand": "KT_EXPOSEDR2",
-   "tries": 2,
+   "tries": 3,
    "why": [
     "FAIL 01_WHAT-MADE-LIBERACE-BELIEVE_66s.mp4: [FAIL] 01_WHAT-MADE-LIBERACE-BELIEVE_66s.mp4                  15 captions vs the sound  median +0.00s  worst-10% 1.00s  | words captioned 102%"
    ],
@@ -5291,6 +5291,402 @@
    "hook": [
     "What made Liberace",
     "believe in himself"
+   ]
+  },
+  "ar_v6mce7x/KEVIN-I-HAVE-AN-ENERGY-VAMPIRE": {
+   "plan": "ar_v6mce7x",
+   "source": "v6mce7x.mp4",
+   "brand": "AR_VAMPIRE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_KEVIN-I-HAVE-AN-ENERGY-VAMPIRE_96s.mp4: [FAIL] 01_KEVIN-I-HAVE-AN-ENERGY-VAMPIRE_96s.mp4              7 captions vs the sound  median +0.10s  worst-10% 1.53s  | words captioned 114%"
+   ],
+   "slug": "KEVIN-I-HAVE-AN-ENERGY-VAMPIRE",
+   "in": 7.0,
+   "out": 105.0,
+   "start_words": "Many of you talk",
+   "end_words": "exhausted and overwhelmed",
+   "hook": [
+    "They control how",
+    "you feel. Supposedly."
+   ]
+  },
+  "ar_v6mce7x/YOU-MIGHT-BE-THE-VAMPIRE": {
+   "plan": "ar_v6mce7x",
+   "source": "v6mce7x.mp4",
+   "brand": "AR_VAMPIRE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_YOU-MIGHT-BE-THE-VAMPIRE_127s.mp4: ends off the planned words: plan ends 'This is insane. It's insanity', clip ends 'energy vampire this is insane insanity'"
+   ],
+   "slug": "YOU-MIGHT-BE-THE-VAMPIRE",
+   "in": 150.0,
+   "out": 277.0,
+   "start_words": "Common traits of an",
+   "end_words": "This is insane. It's insanity",
+   "hook": [
+    "You might be",
+    "the energy vampire."
+   ]
+  },
+  "ar_v6mce7x/ZIG-ZIGLAR-CALLED-IT-SNIOP": {
+   "plan": "ar_v6mce7x",
+   "source": "v6mce7x.mp4",
+   "brand": "AR_VAMPIRE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_ZIG-ZIGLAR-CALLED-IT-SNIOP_43s.mp4` - ends mid-thought on \"to trigger anymore\"; sentence starts with no stop: \"people Most\""
+   ],
+   "slug": "ZIG-ZIGLAR-CALLED-IT-SNIOP",
+   "in": 406.0,
+   "out": 449.0,
+   "start_words": "Zig Ziglar used to",
+   "end_words": "nothing to trigger anymore",
+   "hook": [
+    "Zig Ziglar called it",
+    "a SNIOP."
+   ]
+  },
+  "ar_v6mce7x/MY-ENERGY-FIELD-IS-BIG-ENOUGH": {
+   "plan": "ar_v6mce7x",
+   "source": "v6mce7x.mp4",
+   "brand": "AR_VAMPIRE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_MY-ENERGY-FIELD-IS-BIG-ENOUGH_50s.mp4` - ends mid-thought on \"is big enough\"; sentence starts with no stop: \"car The\"; sentence starts with no stop: \"umbrella Because\""
+   ],
+   "slug": "MY-ENERGY-FIELD-IS-BIG-ENOUGH",
+   "in": 472.0,
+   "out": 522.0,
+   "start_words": "Now you do have",
+   "end_words": "field is big enough",
+   "hook": [
+    "Rain can't reach you.",
+    "Not anymore."
+   ]
+  },
+  "ar_v6mce7x/SOMEBODY-PUTTING-RATS-IN-YOUR-HEAD": {
+   "plan": "ar_v6mce7x",
+   "source": "v6mce7x.mp4",
+   "brand": "AR_VAMPIRE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_SOMEBODY-PUTTING-RATS-IN-YOUR-HEAD_67s.mp4` - opens mid-sentence on \"think of this\"; ends mid-thought on \"but you\"; word repeated after one: \"hello landmark hello\""
+   ],
+   "slug": "SOMEBODY-PUTTING-RATS-IN-YOUR-HEAD",
+   "in": 525.0,
+   "out": 590.0,
+   "start_words": "Think of this analogy",
+   "end_words": "turn around and get out",
+   "hook": [
+    "Rats in your head.",
+    "Say stop."
+   ]
+  },
+  "ar_v71xlg4_r2/HER-FEAR-IS-STILL-RUNNING-YOU": {
+   "plan": "ar_v71xlg4_r2",
+   "source": "v71xlg4.mp4",
+   "brand": "AR_MIRRORR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_HER-FEAR-IS-STILL-RUNNING-YOU_55s.mp4` - word repeated: \"father's father's\""
+   ],
+   "slug": "HER-FEAR-IS-STILL-RUNNING-YOU",
+   "in": 314.5,
+   "out": 368.5,
+   "start_words": "So if you have in your ancestors",
+   "end_words": "scientifically proven to be true",
+   "hook": [
+    "Your fear is",
+    "in your DNA."
+   ]
+  },
+  "ar_v71xlg4_r2/HE-DIDNT-CHANGE-YOU-JUST-DID": {
+   "plan": "ar_v71xlg4_r2",
+   "source": "v71xlg4.mp4",
+   "brand": "AR_MIRRORR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_HE-DIDNT-CHANGE-YOU-JUST-DID_51s.mp4: ends off the planned words: plan ends 'and that other person changes', clip ends 'is changing and that other pe'"
+   ],
+   "slug": "HE-DIDNT-CHANGE-YOU-JUST-DID",
+   "in": 822.5,
+   "out": 875.0,
+   "start_words": "And then through matching",
+   "end_words": "and that other person changes",
+   "hook": [
+    "He didn't change.",
+    "You just did."
+   ]
+  },
+  "ar_v71xlg4_r2/YOU-COMPLETE-ME-IS-A-TRAP": {
+   "plan": "ar_v71xlg4_r2",
+   "source": "v71xlg4.mp4",
+   "brand": "AR_MIRRORR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_YOU-COMPLETE-ME-IS-A-TRAP_60s.mp4: [FAIL] 02_YOU-COMPLETE-ME-IS-A-TRAP_60s.mp4                   15 captions vs the sound  median +0.07s  worst-10% 0.76s  | words captioned 101%"
+   ],
+   "slug": "YOU-COMPLETE-ME-IS-A-TRAP",
+   "in": 1874.5,
+   "out": 1934.5,
+   "start_words": "But unfortunately what most",
+   "end_words": "that's separate from you",
+   "hook": [
+    "You complete me",
+    "is a trap."
+   ]
+  },
+  "ar_v73eiqy/BROADCAST-ON-A-NARROW-BEAM": {
+   "plan": "ar_v73eiqy",
+   "source": "v73eiqy.mp4",
+   "brand": "AR_SEEDS",
+   "tries": 1,
+   "why": [
+    "FAIL 01_BROADCAST-ON-A-NARROW-BEAM_74s.mp4: [FAIL] 01_BROADCAST-ON-A-NARROW-BEAM_74s.mp4                  8 captions vs the sound  median -0.00s  worst-10% 0.78s  | words captioned 100%"
+   ],
+   "slug": "BROADCAST-ON-A-NARROW-BEAM",
+   "in": 31.0,
+   "out": 104.0,
+   "start_words": "we did this in",
+   "end_words": "an incredibly powerful process",
+   "hook": [
+    "A narrow beam hits",
+    "your mind."
+   ]
+  },
+  "ar_v73eiqy/WHAT-YOU-THINK-YOU-BECOME": {
+   "plan": "ar_v73eiqy",
+   "source": "v73eiqy.mp4",
+   "brand": "AR_SEEDS",
+   "tries": 1,
+   "why": [
+    "drop AR_SEEDS/WHAT-YOU-THINK-YOU-BECOME: hook - announces a topic instead of making a claim: \"What you think\" - cut the first word"
+   ],
+   "slug": "WHAT-YOU-THINK-YOU-BECOME",
+   "in": 104.0,
+   "out": 163.0,
+   "start_words": "What you think you",
+   "end_words": "in the beginning Gandhi",
+   "hook": [
+    "What you think",
+    "you truly become."
+   ]
+  },
+  "ar_v73eiqy/NOT-PHILOSOPHY-ITS-PHYSICS": {
+   "plan": "ar_v73eiqy",
+   "source": "v73eiqy.mp4",
+   "brand": "AR_SEEDS",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "NOT-PHILOSOPHY-ITS-PHYSICS",
+   "in": 163.0,
+   "out": 215.0,
+   "start_words": "Everything is energy and",
+   "end_words": "your way of thinking",
+   "hook": [
+    "Your reality isn't philosophy.",
+    "It's physics."
+   ]
+  },
+  "ar_v73eiqy/TESLA-KNEW-THE-SECRET": {
+   "plan": "ar_v73eiqy",
+   "source": "v73eiqy.mp4",
+   "brand": "AR_SEEDS",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "TESLA-KNEW-THE-SECRET",
+   "in": 321.0,
+   "out": 366.0,
+   "start_words": "A thought in this",
+   "end_words": "frequency and vibration Tesla",
+   "hook": [
+    "Tesla knew the secret.",
+    "It's vibration."
+   ]
+  },
+  "ep_v6sg6dz/WHAT-MAKES-AN-INVESTOR-CALM": {
+   "plan": "ep_v6sg6dz",
+   "source": "v6sg6dz.mp4",
+   "brand": "KT_ELITE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_WHAT-MAKES-AN-INVESTOR-CALM_125s.mp4` - opens mid-sentence on \"is Charlie Munger\""
+   ],
+   "slug": "WHAT-MAKES-AN-INVESTOR-CALM",
+   "in": 237.3,
+   "out": 362.0,
+   "start_words": "Charlie Munger talked about",
+   "end_words": "going to change that flat tire",
+   "hook": [
+    "What makes a great",
+    "investor calm"
+   ]
+  },
+  "ep_v6sg6dz/WHY-HE-FORGETS-EVERY-LOSING-GAME": {
+   "plan": "ep_v6sg6dz",
+   "source": "v6sg6dz.mp4",
+   "brand": "KT_ELITE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_WHY-HE-FORGETS-EVERY-LOSING-GAME_68s.mp4` - ends mid-thought on \"to the facts\"; sentence starts with no stop: \"shot He\"; sentence starts with no stop: \"that And\""
+   ],
+   "slug": "WHY-HE-FORGETS-EVERY-LOSING-GAME",
+   "in": 1748.5,
+   "out": 1815.84,
+   "start_words": "I have a friend",
+   "end_words": "priority that you give to the facts",
+   "hook": [
+    "Why he forgets",
+    "every losing game"
+   ]
+  },
+  "ep_v6sg6dz/WHY-HE-DIED-WITH-A-SMILE": {
+   "plan": "ep_v6sg6dz",
+   "source": "v6sg6dz.mp4",
+   "brand": "KT_ELITE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_WHY-HE-DIED-WITH-A-SMILE_43s.mp4: ends off the planned words: plan ends 'would never have given their life for', clip ends 'for something they would never ha'"
+   ],
+   "slug": "WHY-HE-DIED-WITH-A-SMILE",
+   "in": 970.96,
+   "out": 1013.0,
+   "start_words": "Back here is one",
+   "end_words": "would never have given their life for",
+   "hook": [
+    "Why he died",
+    "with a smile"
+   ]
+  },
+  "ep_v6zdmb0/RON-POPEIL-CALLED-HIM-A-LIAR": {
+   "plan": "ep_v6zdmb0",
+   "source": "v6zdmb0.mp4",
+   "brand": "KT_RATIO",
+   "tries": 1,
+   "why": [
+    "FAIL 01_RON-POPEIL-CALLED-HIM-A-LIAR_107s.mp4: [FAIL] 01_RON-POPEIL-CALLED-HIM-A-LIAR_107s.mp4               16 captions vs the sound  median +0.09s  worst-10% 0.79s  | words captioned 100%"
+   ],
+   "slug": "RON-POPEIL-CALLED-HIM-A-LIAR",
+   "in": 190.5,
+   "out": 301.04,
+   "start_words": "I didn't show the product",
+   "end_words": "they were like oh my god",
+   "hook": [
+    "Why Ron Popeil",
+    "said he lied"
+   ]
+  },
+  "ep_v6zdmb0/THE-WORD-THAT-FLOODED-HIS-MAILBOX": {
+   "plan": "ep_v6zdmb0",
+   "source": "v6zdmb0.mp4",
+   "brand": "KT_RATIO",
+   "tries": 1,
+   "why": [
+    "FAIL 02_THE-WORD-THAT-FLOODED-HIS-MAILBOX_48s.mp4: ends off the planned words: plan ends 'this is in the seventies', clip ends 'day this is in the 70s'"
+   ],
+   "slug": "THE-WORD-THAT-FLOODED-HIS-MAILBOX",
+   "in": 530.96,
+   "out": 578.4,
+   "start_words": "I ran the exact",
+   "end_words": "this is in the seventies",
+   "hook": [
+    "How one word",
+    "brought him cash"
+   ]
+  },
+  "ep_v6zdmb0/PIZZA-GUY-TO-200-MILLION": {
+   "plan": "ep_v6zdmb0",
+   "source": "v6zdmb0.mp4",
+   "brand": "KT_RATIO",
+   "tries": 1,
+   "why": [
+    "FAIL 01_PIZZA-GUY-TO-200-MILLION_60s.mp4: [FAIL] 01_PIZZA-GUY-TO-200-MILLION_60s.mp4                    40 captions vs the sound (word-referenced: no clear pauses)  median +0.50s  worst-10% 1.01s  | words captioned 100%"
+   ],
+   "slug": "PIZZA-GUY-TO-200-MILLION",
+   "in": 610.5,
+   "out": 673.76,
+   "start_words": "I had one guy",
+   "end_words": "he became stupidly successful",
+   "hook": [
+    "The pizza guy",
+    "worth $200 million"
+   ]
+  },
+  "ep_v6zdmb0/OUTSOLD-ZIG-ZIGLAR-2-TO-1": {
+   "plan": "ep_v6zdmb0",
+   "source": "v6zdmb0.mp4",
+   "brand": "KT_RATIO",
+   "tries": 1,
+   "why": [
+    "FAIL 02_OUTSOLD-ZIG-ZIGLAR-2-TO-1_95s.mp4: [FAIL] 02_OUTSOLD-ZIG-ZIGLAR-2-TO-1_95s.mp4                   8 captions vs the sound  median +0.30s  worst-10% 0.84s  | words captioned 99%"
+   ],
+   "slug": "OUTSOLD-ZIG-ZIGLAR-2-TO-1",
+   "in": 1280.16,
+   "out": 1375.36,
+   "start_words": "You've heard Zig Ziglar",
+   "end_words": "two to one combined",
+   "hook": [
+    "How he beat",
+    "Zig Ziglar"
+   ]
+  },
+  "ep_v70wvnu_r4/SPILLED-WATER-MELTDOWN": {
+   "plan": "ep_v70wvnu_r4",
+   "source": "v70wvnu.mp4",
+   "brand": "KT_TRIGGERR3R2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_SPILLED-WATER-MELTDOWN_43s.mp4` - opens mid-sentence on \"all you know\"; the spoken word was on screen in only 8 of 11 moments"
+   ],
+   "slug": "SPILLED-WATER-MELTDOWN",
+   "in": 363.5,
+   "out": 407.04,
+   "start_words": "All you know is",
+   "end_words": "nothing triggers you",
+   "hook": [
+    "Why spilled water",
+    "triggers your rage"
+   ]
+  },
+  "ep_v77l7um_r6/BLEW-BITCOIN-AT-50-CENTS": {
+   "plan": "ep_v77l7um_r6",
+   "source": "v77l7um.mp4",
+   "brand": "KT_BITCOINR2R2R2R2R2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_BLEW-BITCOIN-AT-50-CENTS_42s.mp4` - ends mid-thought on \"it all yep\"; word repeated after one: \"correct that's correct\"; word repeated: \"the the\""
+   ],
+   "slug": "BLEW-BITCOIN-AT-50-CENTS",
+   "in": 29.68,
+   "out": 72.96,
+   "start_words": "You were an early",
+   "end_words": "they think they know it all",
+   "hook": [
+    "The $1 lesson",
+    "he almost missed"
+   ]
+  },
+  "ep_v77l7um_r6/RAILROADS-TRIED-TO-RUIN-HIM": {
+   "plan": "ep_v77l7um_r6",
+   "source": "v77l7um.mp4",
+   "brand": "KT_BITCOINR2R2R2R2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `02_RAILROADS-TRIED-TO-RUIN-HIM_88s.mp4` - ends mid-thought on \"to crush him\"; sentence starts with no stop: \"adversity The\"; sentence starts with no stop: \"money He\""
+   ],
+   "slug": "RAILROADS-TRIED-TO-RUIN-HIM",
+   "in": 2500.0,
+   "out": 2590.08,
+   "start_words": "Every single time the",
+   "end_words": "because they tried to crush him",
+   "hook": [
+    "5x more money",
+    "after government attacked"
    ]
   }
  },
@@ -5307,6 +5703,7 @@
   "ep_v77l7um_r3": 2,
   "ep_v77l7um_r5": 2,
   "ar_v6x6fvg_r3": 3,
-  "ar_v6xhs7q_r2": 3
+  "ar_v6xhs7q_r2": 3,
+  "ar_v6rv5w3_r2": 1
  }
 }
