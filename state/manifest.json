@@ -8662,12 +8662,26 @@
    "caption": "Watch for this in anyone you're about to follow: do they need to be right, need credit, need you to agree?\n\nThat's fear wearing the costume of confidence. Someone operating from love doesn't need to win the argument, doesn't fear losing what they have, isn't threatened when you disagree. It doesn't mean the fear-based ones are evil, just that you should know which one you're actually listening to, and love them anyway, because most of them don't know they're doing it.\n\nComment RISE and I'll send you the full list.\n\n#awakening #consciousness #spirituality #mindset #esoteric #kevintrudeau",
    "hook": "Jesus said this: Love them anyway.",
    "bytes": 72791067,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202610151116582EAA31556C50CD03E37D'}}"
+   },
    "scheduled_at": "2026-10-15T07:10",
    "cta_keyword": "RISE",
    "cta_variant": 6,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/852872281221530/",
+    "instagram": "https://www.instagram.com/reel/Deg0739COcv/",
+    "youtube": "https://youtube.com/shorts/1Mtxvtl9rMg"
+   },
+   "caption_at_post": "Watch for this in anyone you're about to follow: do they need to be right, need credit, need you to agree?\n\nThat's fear wearing the costume of confidence. Someone operating from love doesn't need to win the argument, doesn't fear losing what they have, isn't threatened when you disagree. It doesn't mean the fear-based ones are evil, just that you should know which one you're actually listening to, and love them anyway, because most of them don't know they're doing it.\n\nComment RISE and I'll send you the full list.\n\n#awakening #consciousness #spirituality #mindset #esoteric #kevintrudeau",
+   "posted_at": "2026-10-15T07:17"
   },
   {
    "file": "AR_MIRROR/01_POINT-YOUR-FINGER-THREE-POINT-BACK_68s.mp4",
