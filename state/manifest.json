@@ -8870,7 +8870,7 @@
    "caption_at_post": "Kevin Trudeau's mother kept the house. His father was a welder. Neither went to college.\n\nTheir truth was simple: people like us don't get rich. Rich people are born into it, go to college, become doctors and lawyers. That's not our destiny.\n\nOn top of it came the warnings - money leads to trouble, rich people can't trust anyone, an honest day's pay is all you deserve.\n\nNone of it was said to hurt him. It was what they knew. And it went into him anyway.\n\nWhat did your parents believe about money?\n\n#kevintrudeau #bluecollar #moneymindset #familymoney #mindsetshift #wealthmindset",
    "posted_at": "2026-10-15T08:16",
    "tiktok_retry": true,
-   "tiktok_tries": 2
+   "tiktok_tries": 3
   },
   {
    "file": "KT_BRAKE/01_WHY-GETTING-RICH-FEELS-SO-HARD_67s.mp4",
@@ -8928,7 +8928,11 @@
    "hook": "You have more than one soulmate.",
    "bytes": 39209977,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-16T17:00",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_SEEDS/01_BELIEVE-IT-LIKE-FACT_54s.mp4",
@@ -8936,7 +8940,11 @@
    "hook": "Believe it like fact. It manifests.",
    "bytes": 25477963,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-16T15:21",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_SEEDS/01_THE-DOTS-CONNECT-LATER_48s.mp4",
@@ -8944,7 +8952,11 @@
    "hook": "Your dots connect later. Trust that.",
    "bytes": 14562087,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-16T10:17",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_SEEDS/01_UNHAPPY-CHILDHOODS-BUILD-SUCCESS_59s.mp4",
@@ -8952,7 +8964,11 @@
    "hook": "Unhappy childhoods build the most success.",
    "bytes": 27715672,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-17T07:38",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "AR_VAMPIRE/01_SAILBOAT-WITHOUT-A-RUDDER_74s.mp4",
@@ -8960,7 +8976,11 @@
    "hook": "Without a rudder, wind controls you.",
    "bytes": 47744256,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-16T12:46",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_VAMPIRE/01_THE-SYSTEM-THAT-BUILDS-YOUR-BUBBLE_76s.mp4",
@@ -8968,7 +8988,11 @@
    "hook": "Four habits build your protective bubble.",
    "bytes": 44743628,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-16T19:31",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_ELITE/01_WHY-YOURE-NOT-A-WARRIOR-YET_45s.mp4",
@@ -8976,7 +9000,11 @@
    "hook": "Why you're not a warrior yet",
    "bytes": 28908503,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-16T07:59",
+   "cta_keyword": "MONEY",
+   "cta_variant": 8,
+   "cta_kind": "question"
   },
   {
    "file": "KT_ELITE/02_WHAT-WINNERS-HAVE-THAT-CONFIDENCE-DOESNT_39s.mp4",
@@ -8984,7 +9012,11 @@
    "hook": "What winners have that confidence doesn't",
    "bytes": 24051107,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-15T18:08",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_ELITE/02_WHY-TESLAS-VISION-SKIPS-THE-CAR_54s.mp4",
@@ -8992,7 +9024,11 @@
    "hook": "Why Tesla's vision skips the car",
    "bytes": 32626684,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-16T09:20",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 9,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_RATIO/01_WANT-IT-LIKE-YOU-WANT-TO-BREATHE_91s.mp4",
@@ -9001,7 +9037,10 @@
    "bytes": 62386839,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-15T19:26",
+   "cta_keyword": "WISH",
+   "cta_variant": 7
   }
  ]
 }
