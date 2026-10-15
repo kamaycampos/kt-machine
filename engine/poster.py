@@ -1071,8 +1071,13 @@ def tiktok(path, caption, public_url, clip=None):
         return "uploaded, but TikTok returned no publish_id - cannot confirm"
     import time as _t
     last = {}
-    for attempt in range(6):
-        _t.sleep(2 + attempt * 2)
+    # 15 Oct 2026, WB's first clip: "still processing after ~40s" and it never
+    # reached the inbox - and with no publish_id kept, nobody could ask why. Wait
+    # up to ~3 minutes for TikTok's final word, and always keep the id.
+    deadline = _t.time() + 180
+    attempt = 0
+    while _t.time() < deadline:
+        _t.sleep(min(4 + attempt * 3, 20)); attempt += 1
         st = requests.post(
             "https://open.tiktokapis.com/v2/post/publish/status/fetch/",
             headers={"Authorization": f"Bearer {tok}",
@@ -1085,9 +1090,9 @@ def tiktok(path, caption, public_url, clip=None):
             return "in your TikTok inbox - open TikTok and tap post"
         if status == "FAILED":
             reason = info.get("fail_reason") or str(last)[:160]
-            return f"TikTok REJECTED it: {reason}"
-    return ("uploaded but TikTok still processing after ~40s - "
-            f"last status {str((last.get('data') or {}).get('status'))[:60]}")
+            return f"TikTok REJECTED it: {reason} (publish_id {publish_id})"
+    return ("uploaded but TikTok still processing after ~3 min - "
+            f"last status {str((last.get('data') or {}).get('status'))[:60]} (publish_id {publish_id})")
 
 
 def already_on_instagram(caption, brand=""):
