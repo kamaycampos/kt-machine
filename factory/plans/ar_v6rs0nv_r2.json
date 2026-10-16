@@ -1,0 +1,38 @@
+{
+ "source": "v6rs0nv.mp4",
+ "brand": "AR_WEALTHWAVER2",
+ "test": false,
+ "note": "16 Oct 2026 - 'Ask And You Shall Receive: Billionaire Brainwave Secrets Q & A!' (Rumble v6rs0nv). Awakened Rise weekly agent. SECOND CHANCE re-cut (last try, tries 2) per PLANNING.md 2c. THIRTY-FIVE-BILLIONAIRES-ZERO-MEDITATE: the flagged 'phrase scrambled - I've been around I've, been around I've been' is Kevin's own false start right at the old in-point (275.0); moved the start past it to the clean sentence 'I've been in the room for seven days' (281.44), and extended the old out (320.0, which overran into the next sentence - 'ends mid-thought on on that wave') past the 40s floor to the next full sentence close at 354.32 ('...so you can manifest what you want'), which also pays off the caption's 'born with the ability' line a beat further. NOT-JUST-MONEY-EVERYTHING-RESPONDS: the old out (519.0) ran past the planned end_words into the next sentence ('ends mid-thought on So,'); pulled back to 512.3, right after '...broadcasting on beta.' RELEASE-YOUR-OUTCOME-SKIP-THE-HOW: failed on captions-vs-sound (word-referenced, no clear pauses) - moved both edges to different sentence boundaries, in 521.4 (the exact 'You actually have to use' sentence start, a few seconds later than the old 518.0) and out 564.6 (the next full sentence close, '...manifest your goals, dreams, and desire', after the old 565.0 had instead run 7s past the planned payoff into unrelated content). SOUND-SHATTERS-GLASS-AND-YOU skipped: three faults at once (opens mid-sentence, ends mid-thought, and a scrambled 'crystal like a crystal' flag inside the gold/silver/crystal build-up that the hook's glass-shattering payoff needs) - too much damage to fix with confidence on a last try.",
+ "clips": [
+  {
+   "slug": "THIRTY-FIVE-BILLIONAIRES-ZERO-MEDITATE",
+   "in": 281.44,
+   "out": 354.32,
+   "start_words": "I've been in the room for seven days",
+   "end_words": "so you can manifest what you want",
+   "hook": ["Thirty-five billionaires.", "Zero meditate."],
+   "caption": "Thirty-five guys in one room, controlling over a trillion dollars between them. He asked every one of them the same question: do you meditate?\n\nNot one of them did. No affirmations either - no \"I am rich, I am powerful\" in the mirror. And they still broadcast on the exact brainwave that pulls in what they want.\n\nMeditation isn't the secret. It's one tool, for people still building the ability those thirty-five were born already having. The real work is the brainwave state itself, not the ritual that gets you there.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#manifestation #brainwave #awakening #mindset #subconscious #kevintrudeau",
+   "retry_of": "ar_v6rs0nv/THIRTY-FIVE-BILLIONAIRES-ZERO-MEDITATE"
+  },
+  {
+   "slug": "NOT-JUST-MONEY-EVERYTHING-RESPONDS",
+   "in": 444.0,
+   "out": 512.3,
+   "start_words": "can activating the right brain frequencies",
+   "end_words": "than if you're broadcasting on beta",
+   "hook": ["Not just money.", "Everything responds."],
+   "caption": "People hear \"brainwave\" and assume this is only about money. It isn't.\n\nThe same alpha-theta state that pulls in wealth works on every other desire too - a better relationship, better health, less anxiety, a job that actually fits. The brainwave doesn't know the difference between a dollar and a relationship. It just responds to what you broadcast, in whatever direction you point it.\n\nWhatever you're trying to manifest, the mechanism is identical. Only the target changes.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#manifestation #awakening #brainwave #mindset #energy #kevintrudeau",
+   "retry_of": "ar_v6rs0nv/NOT-JUST-MONEY-EVERYTHING-RESPONDS"
+  },
+  {
+   "slug": "RELEASE-YOUR-OUTCOME-SKIP-THE-HOW",
+   "in": 521.4,
+   "out": 564.6,
+   "start_words": "You actually have to use",
+   "end_words": "your goals, dreams, and desire",
+   "hook": ["Release your outcome.", "Skip the how."],
+   "caption": "The manifesting formula has a step most people skip, and it's the one that actually makes it work.\n\nYou define exactly what you want. You feel yourself already in possession of it. And then - this is the part people can't do - you release attachment to the outcome. You say, and mean it, if this never happens, that's perfectly okay. You stop trying to figure out how it will happen.\n\nThe grip is what blocks it. Loosen the grip, keep the desire.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#manifestation #awakening #subconscious #mindset #energy #kevintrudeau",
+   "retry_of": "ar_v6rs0nv/RELEASE-YOUR-OUTCOME-SKIP-THE-HOW"
+  }
+ ]
+}

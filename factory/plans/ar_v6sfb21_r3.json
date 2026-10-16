@@ -1,0 +1,21 @@
+{
+ "source": "v6sfb21.mp4",
+ "brand": "AR_SAMSKARAR3",
+ "test": false,
+ "note": "16 Oct 2026 - 'Meditate More To Manifest More!' (Rumble v6sfb21). Awakened Rise weekly agent. THIRD CHANCE re-cut (9 Oct 2026 r2 gate failures) per PLANNING.md 2c. SANDBAGS-ARE-TIED-TO-YOU failed r2 on captions-vs-sound (word-referenced, no clear pauses) over a 59s span starting on the balloon setup - moved both edges to a different sentence pair: opens earlier still, on 'So meditation transcends a specific meditation technique' (the samskaras explanation that leads into the metaphor, a clean sentence start after a full stop), closes on the same 'spirituality' payoff. RAGE-ISNT-ANGER-ITS-A-BUTTON is its last try (tries 2) and skipped: two of its three flagged faults are plain run-on sentence boundaries inside the necessary anger/horn illustration, but the third - 'word repeated after one: not yet not' - names words that do not appear anywhere in work/v6sfb21.srt, so the damage cannot be located or fixed with confidence on a final attempt. OSHO-97-ROLLS-ROYCES and EVEN-SEX-BECOMES-MEDITATION were not re-offered this run (already skipped in r2 for 'no clip came out of the render', a cause that names nothing to fix).",
+ "clips": [
+  {
+   "slug": "SANDBAGS-ARE-TIED-TO-YOU",
+   "in": 468.48,
+   "out": 550.0,
+   "start_words": "So meditation transcends a specific meditation technique",
+   "end_words": "the same thing with spirituality",
+   "hook": [
+    "You have sandbags",
+    "tied to you."
+   ],
+   "caption": "You keep filling the balloon with hot air and it won't lift off the ground. More effort isn't the problem.\n\nYou're still tied down by sandbags — the energetic imprints weighing on your field that no amount of positive thinking burns off. Untie the ropes and you might rise an inch. Cut the sandbags loose, the ones built from years of unprocessed emotion and programming, and that's when you actually leave the ground. Manifesting works the exact same way.\n\nComment RISE and I'll send you how to find yours.\n\n#manifestation #meditation #awakening #consciousness #mindset #kevintrudeau",
+   "retry_of": "ar_v6sfb21_r2/SANDBAGS-ARE-TIED-TO-YOU"
+  }
+ ]
+}
