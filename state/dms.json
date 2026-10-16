@@ -60,6 +60,11 @@
    "platform": "instagram",
    "comment": "17913914424531684",
    "error": "(#230) Requires instagram_manage_messages permission to manage the object"
+  },
+  {
+   "at": "2026-10-16T06:14:48.067416+00:00",
+   "platform": "instagram",
+   "error": "Response ended prematurely"
   }
  ]
 }
