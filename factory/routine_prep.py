@@ -48,6 +48,8 @@ MAX_TRIES = 3
 # KT, 29 clips for AR - fanned out 21 agents and hit the account's usage limit with
 # nothing pushed. The rest wait for the next daily run.
 AGAIN = int(sys.argv[sys.argv.index("--again") + 1]) if "--again" in sys.argv else 3
+SECOND_MIN_EP, SECOND_FREE = 30, 15     # second pass: episodes of 30+ min with 15+ unused min
+second = {}                              # second-pass episode -> the clips already cut from it
 try:
     _f = json.load(open(os.path.join(HERE, "plans", "_failed.json")))["clips"]
 except (OSError, ValueError, KeyError):
@@ -129,6 +131,46 @@ if not AR:
         if _spare:
             print(f"MONTH LIST USED UP - also ready (stocked, transcribed, never planned): {len(_spare)}")
         ready += _spare[:MAX - len(ready)]
+    # SECOND PASS (16 Oct 2026). An episode was "done" once planned, after 6-9 clips. KT's
+    # 37 planned episodes run 1,295 minutes and their plans touch 302 of them; a full read
+    # of two long interviews found 8 and 10 new arcs in the unused minutes, as strong as
+    # the first pick. So once new episodes run short, go back to an HD episode for arcs no
+    # clip has used. check_plan.py refuses any clip that re-uses another clip's minutes.
+    # Never while a clip of that source is still waiting to post or to be built: a new
+    # folder of the same video must not stack a third post on its day (RULES #21).
+    if len(ready) < MAX:
+        _named = {f[:-5]: json.load(open(os.path.join(HERE, "plans", f))) for f in os.listdir(os.path.join(HERE, "plans"))
+                  if f.endswith(".json") and not f.startswith("_")}
+        try:
+            _built = set(json.load(open(os.path.join(HERE, "plans", "_done.json"))))
+        except (OSError, ValueError):
+            _built = set()
+        _src = {q["brand"]: q["source"][:-4] for q in _named.values()}
+        _busy = ({_src.get(c["file"].split("/")[0]) for c in queue} | set(again)
+                 | {q["source"][:-4] for k, q in _named.items() if k not in _built})
+        _fenced = {q["source"][:-4] for k, q in _named.items() if k.startswith(THEIRS)} | _theirs
+        _used = {}
+        for k, q in _named.items():
+            if k.startswith(MINE):
+                _used.setdefault(q["source"][:-4], []).extend((float(c["in"]), float(c["out"]), c["slug"]) for c in q["clips"])
+        def _free(v):
+            t, end = 0.0, 60.0                     # the first minute is the intro
+            for a, b, _s in sorted(_used[v]):
+                t += max(0.0, a - end); end = max(end, b)
+            return t + max(0.0, idx[v].get("duration", 0) - 60 - end)
+        _cand = sorted(((_free(v), v) for v in _used
+                        if v in idx and idx[v].get("transcript") and idx[v].get("height", 0) >= 1080
+                        and idx[v].get("duration", 0) >= SECOND_MIN_EP * 60
+                        and v not in _busy and v not in _fenced and v not in ready), reverse=True)
+        _cand = [(t, v) for t, v in _cand if t >= SECOND_FREE * 60]
+        if _cand:
+            print(f"SECOND PASS - {len(_cand)} HD episode(s) already cut hold {sum(t for t, _ in _cand) / 3600:.1f} h "
+                  f"no clip has used. Plan NEW arcs from these after the new episodes (PLANNING.md 'SECOND PASS'):")
+        for t, v in _cand[:MAX - len(ready)]:
+            second[v] = sorted(_used[v])
+            print(f"  {v} '{idx[v]['title'][:50]}' {idx[v]['duration'] / 60:.0f} min, {t / 60:.0f} min unused, "
+                  f"{len(second[v])} clips already cut - write factory/plans/ep_{v}_p2.json (_p3 if taken)")
+        ready += list(second)
 print(f"READY TO PLAN: {len(ready)} episode(s); preparing {min(MAX, len(ready))}")
 # the second-chance episodes' cues come too, after the new ones (they need only work/<id>.srt)
 for v in ready[:MAX] + [v for v in again if v not in ready[:MAX] and v in idx and idx[v].get("transcript")]:
@@ -139,9 +181,17 @@ for v in ready[:MAX] + [v for v in again if v not in ready[:MAX] and v in idx an
     if r.returncode:
         print(f"  {v}: cannot decrypt ({r.stderr.strip()[-80:]}) - skip"); continue
     cues = re.findall(r"(\d+):(\d+):(\d+)[,.](\d+) --> [^\n]+\n(.+?)(?:\n\n|\Z)", open(srt, errors="ignore").read(), re.S)
-    blk = {}
+    blk, shown = {}, []
     for h, m, s, _ms, t in cues:
-        blk.setdefault((int(h) * 3600 + int(m) * 60 + int(s)) // 30 * 30, []).append(" ".join(t.split()))
+        x = int(h) * 3600 + int(m) * 60 + int(s)
+        # a second pass reads only what no clip has used; the used stretches are one line each
+        cut = next((c for c in second.get(v, []) if c[0] - 2 <= x <= c[1]), None)
+        if cut:
+            if cut not in shown:
+                shown.append(cut)
+                blk.setdefault(x // 30 * 30, []).append(f"=== USED by {cut[2]} ({cut[0]:.0f}-{cut[1]:.0f}s): taken, never cut inside ===")
+            continue
+        blk.setdefault(x // 30 * 30, []).append(" ".join(t.split()))
     open(os.path.join(WORK, f"{v}_blocks.txt"), "w").write("\n".join(f"{k} {' '.join(blk[k])}" for k in sorted(blk)))
     e = idx[v]
     print(f"  {v}: '{e['title']}' {e.get('duration', 0) / 60:.0f} min -> work/{v}_blocks.txt (cues: work/{v}.srt)")

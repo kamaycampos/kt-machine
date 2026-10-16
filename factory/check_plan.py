@@ -123,6 +123,7 @@ WIND_UP = re.compile(
     r"|there'?s (two|three|four|five|six|seven|\d+) (reasons|things|ways|steps|keys)"
     r"|there are (two|three|four|five|six|seven|\d+) (reasons|things|ways|steps|keys)"
     r"|(first|number one|step one)\b", re.I)
+OVERLAP_MAX = 10.0     # seconds two clips of one source may share (a border sentence)
 others = {}
 for f in os.listdir(os.path.join(HERE, "plans")):
     if f.endswith(".json") and not f.startswith("_"):
@@ -143,6 +144,27 @@ for path in sys.argv[1:]:
     if not re.fullmatch(r"v[a-z0-9]+\.mp4", p.get("source", "")): errs.append("source must be <rumble id>.mp4")
     slugs = [c.get("slug") for c in p.get("clips", [])]
     if len(slugs) != len(set(slugs)): errs.append("duplicate slugs")
+    # ONE ARC, ONE CLIP - ACROSS PLANS TOO (16 Oct 2026). An episode is not "done" after
+    # its first 6-9 clips: KT's 37 planned episodes are 1,295 minutes and their plans
+    # touch 302 of them. A SECOND PASS (PLANNING.md) goes back for new arcs, and this is
+    # what keeps it honest: no clip may re-use another clip's minutes. A re-cut of the
+    # same arc (same slug, or the slug its retry_of names) is the one exception; a shared
+    # sentence at a border (up to OVERLAP_MAX) is not a repeat. Kamay's lane only.
+    if fam == "KT":
+        for c in p.get("clips", []):
+            a, z = float(c["in"]), float(c["out"])
+            same = {c.get("slug"), str(c.get("retry_of") or "").split("/")[-1]}
+            for f, o in sorted(others.items()):
+                if o.get("source") != p.get("source"):
+                    continue
+                for d in o.get("clips", []):
+                    if d.get("slug") in same or str(d.get("retry_of") or "").split("/")[-1] == c.get("slug"):
+                        continue
+                    ov = min(z, float(d["out"])) - max(a, float(d["in"]))
+                    if ov > OVERLAP_MAX:
+                        errs.append(f"{c.get('slug')}: re-uses {ov:.0f}s of {f[:-5]}/{d.get('slug')} "
+                                    f"({float(d['in']):.0f}-{float(d['out']):.0f}s) - a new clip takes only "
+                                    f"minutes no clip has used; move the edges or drop it")
     for c in p.get("clips", []):
         s = c.get("slug", "?"); d = float(c["out"]) - float(c["in"])
         if not re.fullmatch(r"[A-Z0-9]+(-[A-Z0-9]+)*", s): errs.append(f"{s}: slug must be UPPER-DASHED")
