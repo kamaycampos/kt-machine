@@ -9141,7 +9141,6 @@
    },
    "caption_at_post": "Former Navy SEAL Garrett Unclebock draws a hard line between two kinds of strong men.\n\nBarbarians are strong and tough - you've met plenty of them in business, guys with power who use it to take. Warriors are also strong. The difference is who it's for.\n\nHis own words on why he wanted to be a SEAL: not to prove how strong he was, but because there were people who couldn't do that job, and he could do it for them.\n\nThat same shift - from strength that's about you to strength that's for someone else - is what he says actually grows a man into the best version of himself.\n\nWhich one are you building toward?\n\n#kevintrudeau #mindset #leadership #navyseal #discipline #purpose",
    "posted_at": "2026-10-16T08:16",
-   "tiktok_retry": true,
    "tiktok_tries": 3
   },
   {
@@ -9176,11 +9175,25 @@
    "hook": "Why Tesla's vision skips the car",
    "bytes": 32626684,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-16T09:20",
    "cta_keyword": "BRAIN",
    "cta_variant": 9,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Dejp2VWiYeH/",
+    "youtube": "https://youtube.com/shorts/NLyb7RuKzfw"
+   },
+   "caption_at_post": "Most people don't know Tesla's actual vision statement. It says nothing about cars: 'to accelerate the world's transition to renewable energy.'\n\nFormer Navy SEAL Garrett Unclebock uses it to explain vision versus mission. The vision is advancing human civilization - the thing worth building a life around.\n\nThe mission is just the clear target that serves it: 'make the most compelling electric car of the 21st century.' Make it cool, people buy it, that funds the battery technology the real vision needed all along.\n\nMost people chase the mission and never define the vision it's supposed to serve.\n\n#kevintrudeau #mindset #business #purpose #successmindset #leadership",
+   "posted_at": "2026-10-16T09:37",
+   "tiktok_retry": true
   },
   {
    "file": "KT_RATIO/01_WANT-IT-LIKE-YOU-WANT-TO-BREATHE_91s.mp4",
