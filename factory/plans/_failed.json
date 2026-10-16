@@ -5868,6 +5868,24 @@
     "What rock bottom",
     "could teach you"
    ]
+  },
+  "ep_v759ffq_r3/FROM-900-SQUARE-FEET-TO-MANSIONS": {
+   "plan": "ep_v759ffq_r3",
+   "source": "v759ffq.mp4",
+   "brand": "KT_ANCIENTR3",
+   "tries": 3,
+   "why": [
+    "FAIL 01_FROM-900-SQUARE-FEET-TO-MANSIONS_50s.mp4: [FAIL] 01_FROM-900-SQUARE-FEET-TO-MANSIONS_50s.mp4            26 captions vs the sound (word-referenced: no clear pauses)  median +0.33s  worst-10% 0.99s  | words captioned 100%"
+   ],
+   "slug": "FROM-900-SQUARE-FEET-TO-MANSIONS",
+   "in": 264.88,
+   "out": 321.0,
+   "start_words": "When I was in a",
+   "end_words": "There'll be no state change",
+   "hook": [
+    "From 900 square feet",
+    "to mansions"
+   ]
   }
  },
  "attempts": {
@@ -5888,6 +5906,7 @@
   "ep_v6zdmb0_r2": 2,
   "ep_v759ffq_r2": 2,
   "ar_v6sfb21_r3": 2,
-  "ep_v759ffq_r3": 1
+  "ep_v759ffq_r3": 2,
+  "ep_v7e1nwe_r3": 1
  }
 }
