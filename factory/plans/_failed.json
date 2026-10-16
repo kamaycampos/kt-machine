@@ -5886,6 +5886,60 @@
     "From 900 square feet",
     "to mansions"
    ]
+  },
+  "ep_v787nba_r3/FIGHT-YOUR-OWN-FAMILY": {
+   "plan": "ep_v787nba_r3",
+   "source": "v787nba.mp4",
+   "brand": "KT_DUTYR2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 02_FIGHT-YOUR-OWN-FAMILY_69s.mp4: [FAIL] 02_FIGHT-YOUR-OWN-FAMILY_69s.mp4                       8 captions vs the sound  median +0.40s  worst-10% 1.08s  | words captioned 100%"
+   ],
+   "slug": "FIGHT-YOUR-OWN-FAMILY",
+   "in": 786.0,
+   "out": 858.5,
+   "start_words": "Arjuna went out into",
+   "end_words": "killing the people in front of you",
+   "hook": [
+    "Why duty means fighting",
+    "your family"
+   ]
+  },
+  "ep_v787nba_r3/THE-EMPLOYEE-WHO-BECAME-A-CARPENTER": {
+   "plan": "ep_v787nba_r3",
+   "source": "v787nba.mp4",
+   "brand": "KT_DUTYR2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_THE-EMPLOYEE-WHO-BECAME-A-CARPENTER_110s.mp4` - ends mid-thought on \"So far,\""
+   ],
+   "slug": "THE-EMPLOYEE-WHO-BECAME-A-CARPENTER",
+   "in": 942.16,
+   "out": 1057.52,
+   "start_words": "How do you follow",
+   "end_words": "that life can give you",
+   "hook": [
+    "Why bliss is",
+    "still your duty"
+   ]
+  },
+  "ep_v7e1nwe_r3/750-BILLION-DOLLARS-ONE-HABIT": {
+   "plan": "ep_v7e1nwe_r3",
+   "source": "v7e1nwe.mp4",
+   "brand": "KT_FREQUENCYR2R2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_750-BILLION-DOLLARS-ONE-HABIT_114s.mp4: [FAIL] 01_750-BILLION-DOLLARS-ONE-HABIT_114s.mp4              9 captions vs the sound  median +0.16s  worst-10% 1.34s  | words captioned 100%"
+   ],
+   "slug": "750-BILLION-DOLLARS-ONE-HABIT",
+   "in": 416.5,
+   "out": 535.84,
+   "start_words": "Nobody mentions it",
+   "end_words": "were first starting off",
+   "hook": [
+    "$750 billion.",
+    "One missing habit"
+   ]
   }
  },
  "attempts": {
@@ -5907,6 +5961,6 @@
   "ep_v759ffq_r2": 2,
   "ar_v6sfb21_r3": 2,
   "ep_v759ffq_r3": 2,
-  "ep_v7e1nwe_r3": 1
+  "ep_v7e1nwe_r3": 2
  }
 }
