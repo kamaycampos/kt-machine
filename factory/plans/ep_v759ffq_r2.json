@@ -1,0 +1,34 @@
+{
+  "source": "v759ffq.mp4",
+  "brand": "KT_ANCIENTR2",
+  "test": false,
+  "note": "16 Oct 2026 - second chance, 'Why Manifesting Fails [The Ancient Missing Key]' (Rumble v759ffq). Weekly agent. FROM-900-SQUARE-FEET-TO-MANSIONS: the plan's end_words ('that's the critical element') live in the cue ending 00:05:51,520 (351.52s), but out was set to the NEXT cue's end (358.64s) - the clip was running 7s past its own payoff into a new, unfinished sentence about Brotherhood training, which is almost certainly why so few of its captions pause-anchored. Moved out back to 351.52s to match the stated end_words. THE-FIVE-WORDS-THAT-FREE-YOU: edges were already clean sentence boundaries, so for the generic caption-drift failure I moved the start back one sentence to the 'journey of a thousand miles... what is that first step?' lead-in, which also re-times every caption and strengthens the open. Skipped THE-CAMPING-TRIP-THAT-CHANGED-EVERYTHING: the damaged words ('We're miserable. We're wet. We're having fun.') are the clip's own punchline, not something that can be cut around.",
+  "clips": [
+    {
+      "slug": "FROM-900-SQUARE-FEET-TO-MANSIONS",
+      "in": 264.88,
+      "out": 351.52,
+      "start_words": "When I was in a",
+      "end_words": "that's the critical element",
+      "retry_of": "ep_v759ffq/FROM-900-SQUARE-FEET-TO-MANSIONS",
+      "hook": [
+        "From 900 square feet",
+        "to mansions"
+      ],
+      "caption": "Kevin Trudeau lived in a 900 square foot apartment with a sheet covering the window because he was broke.\n\nEvery day he pictured himself in a mansion — not wanting it, actually feeling like he already lived there.\n\nThe apartment eventually became multiple mansions worth millions. The part that mattered, he says: his internal state never changed. Same feeling in 900 square feet as in the mansion, in a beat-up car as in a Rolls-Royce.\n\nThat's the piece most people skip.\n\nComment WISH and I'll send you Kevin's free audios.\n\n#kevintrudeau #manifestation #lawofattraction #wealthmindset #mindsetshift #yourwishisyourcommand"
+    },
+    {
+      "slug": "THE-FIVE-WORDS-THAT-FREE-YOU",
+      "in": 541.76,
+      "out": 606.8,
+      "start_words": "A journey of a thousand miles",
+      "end_words": "to break you free",
+      "retry_of": "ep_v759ffq/THE-FIVE-WORDS-THAT-FREE-YOU",
+      "hook": [
+        "The five words",
+        "that free you"
+      ],
+      "caption": "Herb Cohen walked into his negotiation seminar smoking a cigar and said the secret of life in five words: care, but not that much.\n\nKevin Trudeau says he heard the same lesson inside The Brotherhood, over and over — you care too much, release, let go.\n\nWanting something desperately is exactly what blocks it. The people who actually get what they want have released their grip on needing it.\n\nComment WISH and I'll send you Kevin's free audios.\n\n#kevintrudeau #manifestation #lawofattraction #mindsetshift #wealthmindset #successmindset"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "source": "v6zdmb0.mp4",
+  "brand": "KT_RATIOR2",
+  "test": false,
+  "note": "16 Oct 2026 - second chance, 'How Energy, Mindset, And Marketing Really Work' (Rumble v6zdmb0). Weekly agent. THE-WORD-THAT-FLOODED-HIS-MAILBOX failed because the planned end_words ('this is in the seventies') don't match how the word-level transcript renders the number ('this is in the 70s') - fixed the words to match exactly, same cut, same payoff. Skipped the other 3 second chances from this episode (RON-POPEIL-CALLED-HIM-A-LIAR, PIZZA-GUY-TO-200-MILLION, OUTSOLD-ZIG-ZIGLAR-2-TO-1): all failed on generic caption-vs-sound drift with no specific damaged phrase or bad edge visible in the transcript to fix, and this is their tries-2 last chance.",
+  "clips": [
+    {
+      "slug": "THE-WORD-THAT-FLOODED-HIS-MAILBOX",
+      "in": 530.96,
+      "out": 578.4,
+      "start_words": "I ran the exact",
+      "end_words": "this is in the 70s",
+      "retry_of": "ep_v6zdmb0/THE-WORD-THAT-FLOODED-HIS-MAILBOX",
+      "hook": [
+        "How one word",
+        "brought him cash"
+      ],
+      "caption": "Kevin Trudeau ran a classified ad in the 1970s. It flopped - almost no replies, almost no orders.\n\nA few weeks later he ran the exact same ad. He changed one word.\n\nThe mailman started showing up with a bag full of inquiries - before he could even get the last batch out of the mailbox. He had to call friends over just to help stuff envelopes on the kitchen table. Within days it was two mail bags, and the letters weren't just inquiries anymore - they were orders, with cash and money orders inside.\n\nOne word. That's the whole difference between an ad nobody answers and one that buries you in mail.\n\n#kevintrudeau #copywriting #marketing #directmail #success #mindset"
+    }
+  ]
+}
