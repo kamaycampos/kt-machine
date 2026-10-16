@@ -135,7 +135,7 @@ def main():
             # Alternate: the direct stream (skips the page Cloudflare guards) and the page.
             target = e.get("hls") if (attempt % 2 == 0 and e.get("hls")) else url
             r = sh("yt-dlp", "--no-warnings", "-q", "--impersonate", "chrome", "-N", "8",
-                   "-f", "bv*[height<=2160]+ba/b[height<=2160]", "--merge-output-format", "mp4",
+                   "-f", "bv*[height<=?2160]+ba/b[height<=?2160]", "--merge-output-format", "mp4",
                    "-o", mp4, target)
             if os.path.exists(mp4):
                 break
@@ -160,7 +160,7 @@ def main():
             better = mp4[:-4] + ".hi.mp4"
             for attempt in range(3):
                 sh("yt-dlp", "--no-warnings", "-q", "--impersonate", "chrome", "-N", "8",
-                   "-f", "bv*[height<=2160]+ba/b[height<=2160]", "--merge-output-format", "mp4",
+                   "-f", "bv*[height<=?2160]+ba/b[height<=?2160]", "--merge-output-format", "mp4",
                    "-o", better, e["hls"])
                 if os.path.exists(better) and height(better) > h:
                     os.replace(better, mp4)
