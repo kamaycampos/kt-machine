@@ -29,6 +29,13 @@ EXTRA = {"WB": "kamaycampos/wb-factory"}
 NAMES = {"KAMAY": "KAMAY", "AR": "AWAKENED RISE", "WB": "WB ORGANICS"}
 
 
+def video_url(c):
+    """The clip's own file, to save and post by hand (15 Oct 2026, Kamay posts Facebook
+    himself for two weeks). Every published clip sits in its repo's public 'media' release."""
+    repo = EXTRA.get(c.get("_who"), "kamaycampos/kt-machine")
+    return f"https://github.com/{repo}/releases/download/media/" + c["file"].replace("/", "--")
+
+
 def owner(c):
     return c.get("_who") or ("AR" if c["file"].startswith("AR_") else "KAMAY")
 
@@ -223,7 +230,9 @@ def board(cs):
            "button.pick{background:#242a36;color:#e8e8ea;margin:2px 6px 12px 0;"
            "font-weight:600}button.pick.on{background:#f5c542;color:#111}"
            "details{margin:2px 0 0}summary{color:#8b93a5;font-size:12px;cursor:pointer}"
-           "#more{display:none}")
+           "#more{display:none}"
+           "a.dl{display:inline-block;margin-top:10px;padding:9px 14px;border-radius:8px;"
+           "background:#242a36;color:#e8e8ea;font-weight:700;text-decoration:none}")
 
     tb = thumbs()
     # A picture on every one of a hundred cards is a 300KB page on a phone for
@@ -257,7 +266,8 @@ def board(cs):
                 # card vanished anyway, so he lost the description and got an
                 # empty paste. Never hide what a copy button copies.
                 + f"<pre id='{cid}'>{html.escape(c.get('caption') or '')}</pre>"
-                + f"<button onclick=\"cp('{cid}',this)\">Copy</button></div>")
+                + f"<button onclick=\"cp('{cid}',this)\">Copy</button>"
+                + f" <a class=dl href='{video_url(c)}' download>&#11015; Video</a></div>")
 
     p = ["<meta charset=utf-8><meta name=viewport "
          "content='width=device-width,initial-scale=1'><title>Captions</title>",
