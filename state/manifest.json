@@ -9076,12 +9076,26 @@
    "caption": "The best investment anyone ever makes is in themselves \u2014 before there's any proof it's going to work.\n\nBelieving you'll be rich, or whole, or free, while you have zero evidence of it yet, isn't delusion. It's the mechanism. You have to trust the dots will connect looking backward, because you will never get to see them connect looking forward. By thought, the thing you want gets brought toward you. By action, you actually receive it. Skip the first step and the second one has nothing to work with.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#manifestation #mindset #awakening #subconscious #lawofattraction #kevintrudeau",
    "hook": "Your dots connect later. Trust that.",
    "bytes": 14562087,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026101614262693030708E585004DA8C9'}}"
+   },
    "scheduled_at": "2026-10-16T10:17",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2230210677527531/",
+    "instagram": "https://www.instagram.com/reel/DejvYxgDSPX/",
+    "youtube": "https://youtube.com/shorts/6sIC8AmBVoc"
+   },
+   "caption_at_post": "The best investment anyone ever makes is in themselves \u2014 before there's any proof it's going to work.\n\nBelieving you'll be rich, or whole, or free, while you have zero evidence of it yet, isn't delusion. It's the mechanism. You have to trust the dots will connect looking backward, because you will never get to see them connect looking forward. By thought, the thing you want gets brought toward you. By action, you actually receive it. Skip the first step and the second one has nothing to work with.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#manifestation #mindset #awakening #subconscious #lawofattraction #kevintrudeau",
+   "posted_at": "2026-10-16T10:26"
   },
   {
    "file": "AR_SEEDS/01_UNHAPPY-CHILDHOODS-BUILD-SUCCESS_59s.mp4",
@@ -9194,7 +9208,7 @@
    "caption_at_post": "Most people don't know Tesla's actual vision statement. It says nothing about cars: 'to accelerate the world's transition to renewable energy.'\n\nFormer Navy SEAL Garrett Unclebock uses it to explain vision versus mission. The vision is advancing human civilization - the thing worth building a life around.\n\nThe mission is just the clear target that serves it: 'make the most compelling electric car of the 21st century.' Make it cool, people buy it, that funds the battery technology the real vision needed all along.\n\nMost people chase the mission and never define the vision it's supposed to serve.\n\n#kevintrudeau #mindset #business #purpose #successmindset #leadership",
    "posted_at": "2026-10-16T09:37",
    "tiktok_retry": true,
-   "tiktok_tries": 2
+   "tiktok_tries": 3
   },
   {
    "file": "KT_RATIO/01_WANT-IT-LIKE-YOU-WANT-TO-BREATHE_91s.mp4",
