@@ -9125,11 +9125,23 @@
    "hook": "Why you're not a warrior yet",
    "bytes": 28908503,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "publish failed 500: {'error': {'message': 'An unknown error has occurred.', 'type': 'OAuthException', 'code': 1, 'fbtrace_id': 'AZc6T3mrXTirj8jr_Ydx3LG'}}",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-16T07:59",
    "cta_keyword": "MONEY",
    "cta_variant": 8,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "youtube": "https://youtube.com/shorts/0AcrzmEXB9Q"
+   },
+   "caption_at_post": "Former Navy SEAL Garrett Unclebock draws a hard line between two kinds of strong men.\n\nBarbarians are strong and tough - you've met plenty of them in business, guys with power who use it to take. Warriors are also strong. The difference is who it's for.\n\nHis own words on why he wanted to be a SEAL: not to prove how strong he was, but because there were people who couldn't do that job, and he could do it for them.\n\nThat same shift - from strength that's about you to strength that's for someone else - is what he says actually grows a man into the best version of himself.\n\nWhich one are you building toward?\n\n#kevintrudeau #mindset #leadership #navyseal #discipline #purpose",
+   "posted_at": "2026-10-16T08:16",
+   "tiktok_retry": true
   },
   {
    "file": "KT_ELITE/02_WHAT-WINNERS-HAVE-THAT-CONFIDENCE-DOESNT_39s.mp4",
@@ -9201,7 +9213,11 @@
    "hook": "Release your outcome. Skip the how.",
    "bytes": 28385058,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-17T09:21",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_MIRROR/01_SAME-MOTHER-TWO-TOTALLY-DIFFERENT-NIGHTS_114s.mp4",
@@ -9209,7 +9225,11 @@
    "hook": "Why toxic people aren't your fault",
    "bytes": 79066694,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-16T12:09",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
