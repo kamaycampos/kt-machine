@@ -175,6 +175,10 @@ def main():
             print(f"::warning::player route failed too ({type(e).__name__}) - catalogue NOT refreshed")
     json.dump(cat, open(OUT, "w"), indent=1, ensure_ascii=False)
     full = [e for e in cat.values() if not e["short"] and e["dur"] >= 1200]
+    # Kevin uploads weekly. A newest episode older than 9 days means every route missed one.
+    newest = max((e.get("date", "") for e in full), default="")
+    if newest and (time.time() - time.mktime(time.strptime(newest, "%Y-%m-%d"))) > 9 * 86400:
+        print(f"::warning::newest Kevin episode in the catalogue is {newest} - a new upload may be missing")
     print(f"{len(cat)} videos, {len(full)} full episodes, {sum(1 for e in full if e['height'] >= 1080)} at 1080p+")
 
 
