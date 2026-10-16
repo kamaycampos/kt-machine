@@ -6391,5 +6391,39 @@
   "brand": "KT_BITCOINR2R2R2R2R2",
   "note": "15 Oct 2026 - second chances (round 6) for 'I Bought Bitcoin At $1 - What Nobody Tells You About Making Money (Wallstreetbets Founder Exclusive)' (Rumble v77l7um). Weekly agent, re-cut per PLANNING.md 2c. BLEW-BITCOIN-AT-50-CENTS: ended mid-thought and ran into a stutter ('be an be an empty vessel') later in the cue; moved the end back onto the teachability-index payoff plus the 'most people think they know it all' closer, well clear of that stutter zone. RAILROADS-TRIED-TO-RUIN-HIM: the planned end phrase 'seed of a greater benefit' is Kevin's repeated catchphrase (it appears three times in this passage), so the word-search kept landing on the wrong occurrence and the render ended a sentence early; moved the end onto the unique, unambiguous line right before it ('because they tried to crush him'), which is also a stronger, more concrete payoff. Skipped again (no clean single cut exists): SECOND-RICHEST-FREE-NEWSLETTER - the scrambled phrases ('he's trading and he's', 'sold and I sold') sit inside the newsletter-mechanism explanation itself, between the setup and the payoff, so no edge move excludes them without cutting the lesson. 3-TRADERS-SIX-FIGURES-15-SECONDS (last chance, tries 2) - the whole 123-second passage is one continuous run of rapid-fire, broken speech with no clear pauses anywhere in it, which is exactly what the gate flagged ('no clear pauses'); it is not one bad sentence to edit around, it is the way Kevin tells the entire story, so no edge move fixes it.",
   "clips": []
+ },
+ "ar_v6rs0nv_r2": {
+  "source": "v6rs0nv.mp4",
+  "brand": "AR_WEALTHWAVER2",
+  "note": "16 Oct 2026 - 'Ask And You Shall Receive: Billionaire Brainwave Secrets Q & A!' (Rumble v6rs0nv). Awakened Rise weekly agent. SECOND CHANCE re-cut (last try, tries 2) per PLANNING.md 2c. THIRTY-FIVE-BILLIONAIRES-ZERO-MEDITATE: the flagged 'phrase scrambled - I've been around I've, been around I've been' is Kevin's own false start right at the old in-point (275.0); moved the start past it to the clean sentence 'I've been in the room for seven days' (281.44), and extended the old out (320.0, which overran into the next sentence - 'ends mid-thought on on that wave') past the 40s floor to the next full sentence close at 354.32 ('...so you can manifest what you want'), which also pays off the caption's 'born with the ability' line a beat further. NOT-JUST-MONEY-EVERYTHING-RESPONDS: the old out (519.0) ran past the planned end_words into the next sentence ('ends mid-thought on So,'); pulled back to 512.3, right after '...broadcasting on beta.' RELEASE-YOUR-OUTCOME-SKIP-THE-HOW: failed on captions-vs-sound (word-referenced, no clear pauses) - moved both edges to different sentence boundaries, in 521.4 (the exact 'You actually have to use' sentence start, a few seconds later than the old 518.0) and out 564.6 (the next full sentence close, '...manifest your goals, dreams, and desire', after the old 565.0 had instead run 7s past the planned payoff into unrelated content). SOUND-SHATTERS-GLASS-AND-YOU skipped: three faults at once (opens mid-sentence, ends mid-thought, and a scrambled 'crystal like a crystal' flag inside the gold/silver/crystal build-up that the hook's glass-shattering payoff needs) - too much damage to fix with confidence on a last try.",
+  "clips": [
+   {
+    "slug": "RELEASE-YOUR-OUTCOME-SKIP-THE-HOW",
+    "in": 521.97,
+    "out": 564.91,
+    "hook": [
+     "Release your outcome.",
+     "Skip the how."
+    ],
+    "caption": "The manifesting formula has a step most people skip, and it's the one that actually makes it work.\n\nYou define exactly what you want. You feel yourself already in possession of it. And then - this is the part people can't do - you release attachment to the outcome. You say, and mean it, if this never happens, that's perfectly okay. You stop trying to figure out how it will happen.\n\nThe grip is what blocks it. Loosen the grip, keep the desire.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#manifestation #awakening #subconscious #mindset #energy #kevintrudeau"
+   }
+  ]
+ },
+ "ep_v6jxezj": {
+  "source": "v6jxezj.mp4",
+  "brand": "KT_MIRROR",
+  "note": "16 Oct 2026 - 'Lose Losers From Your Life!' (Rumble v6jxezj). Weekly agent. This episode is one continuous lecture that reuses a lot of Kevin's stock material word-for-word with episodes already planned or posted: the 'average of your 5 friends' opener duplicates YOUR-5-FRIENDS-DECIDE-YOUR-INCOME (ep_v6xt8s2, already flagged as a repeat in ep_v6zdmb0's note); the energy-vampire definition, the sailboat/rudder metaphor, the SNIOP acronym, the rain-in-the-car and rats-at-the-door metaphors, and the four-habit system are the exact same bit already clipped under Awakened Rise's ar_v6mce7x.json ('No More Energy Vampires!'); and the closing Napoleon Hill / Andrew Carnegie / mastermind story duplicates both HE-HAD-400-BILLION-IN-CASH (ep_v6z25lm and its retries) and CARNEGIES-ANSWER-TO-WHAT-DO-YOU-WANT (ep_v7gisy0), and the YPO/Global Information Network support-group pitch duplicates THE-YPO-EXCEPTION (ep_v79gchk). Only two moments in the whole 37 minutes were genuinely unused: Kevin's own two-girlfriends-same-mother story, and the tomato-seed giving teaching near the end (before the Global Information Network plug, which was cut around). Did not force extra clips from the repeated material just to hit a count.",
+  "clips": [
+   {
+    "slug": "SAME-MOTHER-TWO-TOTALLY-DIFFERENT-NIGHTS",
+    "in": 358.32,
+    "out": 472.61,
+    "hook": [
+     "Why toxic people",
+     "aren't your fault"
+    ],
+    "caption": "Kevin Trudeau once dated a woman who warned him her mother was impossible - irritating, impossible to be around.\n\nHe went anyway. He and her mother hit it off instantly: jokes, real conversation, a great night. His girlfriend sat there stunned, convinced the dinner had been a disaster.\n\nSame mother, same room, same words. Two people, two completely different nights.\n\nThe mother never changed. What changed was who was doing the looking.\n\nWho in your life might not be the problem you think they are?\n\n#kevintrudeau #mindset #selfimprovement #relationships #perspective #growthmindset"
+   }
+  ]
  }
 }

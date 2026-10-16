@@ -5724,6 +5724,114 @@
     "Your narcissist's brain",
     "never grew up."
    ]
+  },
+  "ar_v6rs0nv_r2/THIRTY-FIVE-BILLIONAIRES-ZERO-MEDITATE": {
+   "plan": "ar_v6rs0nv_r2",
+   "source": "v6rs0nv.mp4",
+   "brand": "AR_WEALTHWAVER2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_THIRTY-FIVE-BILLIONAIRES-ZERO-MEDITATE_74s.mp4: [FAIL] 01_THIRTY-FIVE-BILLIONAIRES-ZERO-MEDITATE_74s.mp4      6 captions vs the sound  median +0.62s  worst-10% 1.07s  | words captioned 99%"
+   ],
+   "slug": "THIRTY-FIVE-BILLIONAIRES-ZERO-MEDITATE",
+   "in": 281.44,
+   "out": 354.32,
+   "start_words": "I've been in the room for seven days",
+   "end_words": "so you can manifest what you want",
+   "hook": [
+    "Thirty-five billionaires.",
+    "Zero meditate."
+   ]
+  },
+  "ar_v6rs0nv_r2/NOT-JUST-MONEY-EVERYTHING-RESPONDS": {
+   "plan": "ar_v6rs0nv_r2",
+   "source": "v6rs0nv.mp4",
+   "brand": "AR_WEALTHWAVER2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `02_NOT-JUST-MONEY-EVERYTHING-RESPONDS_53s.mp4` - ends mid-thought on \"So,\""
+   ],
+   "slug": "NOT-JUST-MONEY-EVERYTHING-RESPONDS",
+   "in": 444.0,
+   "out": 512.3,
+   "start_words": "can activating the right brain frequencies",
+   "end_words": "than if you're broadcasting on beta",
+   "hook": [
+    "Not just money.",
+    "Everything responds."
+   ]
+  },
+  "ep_v6jxezj/THE-TOMATO-SEED-RULE-FOR-MONEY": {
+   "plan": "ep_v6jxezj",
+   "source": "v6jxezj.mp4",
+   "brand": "KT_MIRROR",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_THE-TOMATO-SEED-RULE-FOR-MONEY_81s.mp4` - word repeated after one: \"around comes around.\""
+   ],
+   "slug": "THE-TOMATO-SEED-RULE-FOR-MONEY",
+   "in": 1568.92,
+   "out": 1658.3,
+   "start_words": "Whatever you plant, you",
+   "end_words": "you give money first",
+   "hook": [
+    "How to attract",
+    "money, give first"
+   ]
+  },
+  "ep_v6zdmb0_r2/THE-WORD-THAT-FLOODED-HIS-MAILBOX": {
+   "plan": "ep_v6zdmb0_r2",
+   "source": "v6zdmb0.mp4",
+   "brand": "KT_RATIOR2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_THE-WORD-THAT-FLOODED-HIS-MAILBOX_49s.mp4: ends off the planned words: plan ends 'this is in the 70s', clip ends 'it is important isnt it'"
+   ],
+   "slug": "THE-WORD-THAT-FLOODED-HIS-MAILBOX",
+   "in": 530.96,
+   "out": 578.4,
+   "start_words": "I ran the exact",
+   "end_words": "this is in the 70s",
+   "hook": [
+    "How one word",
+    "brought him cash"
+   ]
+  },
+  "ep_v759ffq_r2/FROM-900-SQUARE-FEET-TO-MANSIONS": {
+   "plan": "ep_v759ffq_r2",
+   "source": "v759ffq.mp4",
+   "brand": "KT_ANCIENTR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_FROM-900-SQUARE-FEET-TO-MANSIONS_77s.mp4: ends off the planned words: plan ends 'that's the critical element', clip ends 'or the bentley or anything else'"
+   ],
+   "slug": "FROM-900-SQUARE-FEET-TO-MANSIONS",
+   "in": 264.88,
+   "out": 351.52,
+   "start_words": "When I was in a",
+   "end_words": "that's the critical element",
+   "hook": [
+    "From 900 square feet",
+    "to mansions"
+   ]
+  },
+  "ep_v759ffq_r2/THE-FIVE-WORDS-THAT-FREE-YOU": {
+   "plan": "ep_v759ffq_r2",
+   "source": "v759ffq.mp4",
+   "brand": "KT_ANCIENTR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_THE-FIVE-WORDS-THAT-FREE-YOU_60s.mp4: [FAIL] 02_THE-FIVE-WORDS-THAT-FREE-YOU_60s.mp4                27 captions vs the sound (word-referenced: no clear pauses)  median +0.60s  worst-10% 1.31s  | words captioned 99%"
+   ],
+   "slug": "THE-FIVE-WORDS-THAT-FREE-YOU",
+   "in": 541.76,
+   "out": 606.8,
+   "start_words": "A journey of a thousand miles",
+   "end_words": "to break you free",
+   "hook": [
+    "The five words",
+    "that free you"
+   ]
   }
  },
  "attempts": {
@@ -5741,7 +5849,8 @@
   "ar_v6x6fvg_r3": 3,
   "ar_v6xhs7q_r2": 3,
   "ar_v6rv5w3_r2": 2,
-  "ep_v6zdmb0_r2": 1,
-  "ep_v759ffq_r2": 1
+  "ep_v6zdmb0_r2": 2,
+  "ep_v759ffq_r2": 2,
+  "ar_v6sfb21_r3": 1
  }
 }
