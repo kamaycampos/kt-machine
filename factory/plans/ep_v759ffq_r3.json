@@ -1,0 +1,15 @@
+{
+  "source": "v759ffq.mp4",
+  "brand": "KT_ANCIENTR3",
+  "test": false,
+  "note": "16 Oct 2026 - second chance (last try), 'Why Manifesting Fails [The Ancient Missing Key]' (Rumble v759ffq). Weekly agent, re-cut per PLANNING.md 2c. FROM-900-SQUARE-FEET-TO-MANSIONS: try 2 moved out to 351.52 to match end_words 'that's the critical element,' but the render still ended early on 'or the Bentley or anything else' - the word-level timing for that phrase isn't landing where the cue text implies. Rather than guess at the same phrase a third time, moved the end to a different, unambiguous sentence boundary entirely: 'There'll be no state change' (cue ending 321.0s), a clean standalone payoff that doesn't pass through the Rolls-Royce/Bentley line at all. Caption trimmed to match - it no longer references the car line since that's outside the clip now. Skipped THE-FIVE-WORDS-THAT-FREE-YOU for good (tries 2, last chance): both attempts failed on caption-vs-sound drift, and try 2 (moving the start earlier) made it worse, not better (6 captions/+0.53s median on try 1 vs 27 captions/+0.60s median, worst-10% 1.31s on try 2). The likely cause is the dense quoted dialogue in the middle of the clip (Herb Cohen's cigar-smoking monologue, 'stop the tape, play that back...') which has few clear pauses to anchor captions to - that stretch is in the interior of the clip, not at an edge, so moving either edge again can't fix it without cutting content the clip needs. Skipped THE-CAMPING-TRIP-THAT-CHANGED-EVERYTHING for good (tries 1, but unfixable): the flagged 'word repeated' triad ('We're miserable. We're wet. We're having fun.') is Kevin's own rhetorical repetition right before the lesson ('I was told, do that every single day... regardless of conditions') - it can't be cut without either losing the payoff (if the clip ends before it) or losing the setup (if it starts after).",
+  "clips": [
+    {"slug": "FROM-900-SQUARE-FEET-TO-MANSIONS",
+     "in": 264.88, "out": 321.0,
+     "start_words": "When I was in a",
+     "end_words": "There'll be no state change",
+     "retry_of": "ep_v759ffq_r2/FROM-900-SQUARE-FEET-TO-MANSIONS",
+     "hook": ["From 900 square feet", "to mansions"],
+     "caption": "Kevin Trudeau lived in a 900 square foot apartment with a sheet covering the window because he was broke.\n\nEvery day he pictured himself in a mansion - not wanting it, actually feeling like he already owned several of them, worth tens of millions.\n\nHe kept that feeling anyway, broke apartment and all. His point: by the time the mansions were real, nothing on the inside had to change. He'd already felt it before it happened.\n\nThat's the piece most people skip.\n\nComment WISH and I'll send you Kevin's free audios.\n\n#kevintrudeau #manifestation #lawofattraction #wealthmindset #mindsetshift #yourwishisyourcommand"}
+  ]
+}

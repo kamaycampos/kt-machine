@@ -1,0 +1,15 @@
+{
+  "source": "v733zpw.mp4",
+  "brand": "KT_BLESSINGR2",
+  "test": false,
+  "note": "16 Oct 2026 - second chance (last try), 'Beyond Good And Bad: The Hidden Reality Code' (Rumble v733zpw). Weekly agent, re-cut per PLANNING.md 2c. EVERYTHING-I-LEARNED-AT-THE-BOTTOM: in=413.36 landed right at the start of the cue '...it was. Everything I know at the top, I learned at the bottom.' - almost certainly cutting into the tail of 'it was.' before reaching 'Everything,' which is why the render opened mid-sentence. Moved in to 414.3, just past where 'it was.' finishes, same start_words. Skipped the other two for good (both tries 2, last chance): MAYBE-ITS-BAD-MAYBE-ITS-NOT - the scrambled phrases ('his son because the son had a broken leg') are the parable's actual turn, tying the earlier broken-leg bad-luck beat to the army not taking him; no edge excludes it without cutting the story's resolution. REACT-OR-RESPOND - two separate scrambled phrases ('no good things or bad things,' 'a gift...from God or from the universe') sit respectively at the clip's thesis statement and its emotional turn into the serenity-prayer close; both are load-bearing and the clip can't reach its payoff without passing through them.",
+  "clips": [
+    {"slug": "EVERYTHING-I-LEARNED-AT-THE-BOTTOM",
+     "in": 414.3, "out": 464.24,
+     "start_words": "Everything I know at the top",
+     "end_words": "a person has to make",
+     "retry_of": "ep_v733zpw/EVERYTHING-I-LEARNED-AT-THE-BOTTOM",
+     "hook": ["What rock bottom", "could teach you"],
+     "caption": "Kevin Trudeau doesn't talk about his hardest years like a tragedy he barely survived.\n\nHe talks about them like tuition: time to write, time to meditate, time to actually sit still, and people from backgrounds, races and economic situations he says he'd never have crossed paths with otherwise.\n\nHis line for it: everything he knows at the top, he learned at the bottom. He won't even call it overcoming something bad - he calls it a blessing, full stop.\n\nMost people never get handed that classroom. What would you actually do with it?\n\n#kevintrudeau #mindset #resilience #selfimprovement #manifestation #adversity"}
+  ]
+}
