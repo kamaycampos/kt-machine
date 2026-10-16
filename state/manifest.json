@@ -9321,7 +9321,11 @@
    "hook": "How winners earn their scars",
    "bytes": 24799824,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-17T07:31",
+   "cta_keyword": "MONEY",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_ARENA/01_WINNERS-GO-INTO-ATTACK-MODE_55s.mp4",
@@ -9329,7 +9333,11 @@
    "hook": "Why winners' brains attack, not retreat",
    "bytes": 34227946,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-16T20:17",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_ARENA/02_TURN-THE-MOUNTAIN-INTO-GOLD_116s.mp4",
@@ -9337,7 +9345,11 @@
    "hook": "Why winners crave adversity, not comfort",
    "bytes": 70446315,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-17T10:25",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 2,
+   "cta_kind": "question"
   }
  ]
 }
