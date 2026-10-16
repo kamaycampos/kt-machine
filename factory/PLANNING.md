@@ -16,8 +16,10 @@ Since 16 Oct 2026 this routine also fires every afternoon, so Kevin's new upload
 it appears (`kevin_watch.yml` spots it within the hour and the factory transcribes it first).
 In that run: do steps 1 and 2 only. If the prep printed **NEWEST UPLOADS - PLAN THESE FIRST**,
 plan ONLY those episodes (steps 3-7, all the usual rules, no second chances, no other episodes),
-whatever the queue depth. If it did not, report "no new upload" in one line and stop. Do not read
-anything else first: an afternoon with nothing new must cost almost nothing.
+whatever the queue depth. If it did not: when the prep's QUEUE line shows **under 12 clips**, this
+is a refill run - follow the full Procedure below exactly as a morning run would (the queue ran dry
+on 16 Oct with this run standing idle). Otherwise report "no new upload" in one line and stop. Do not
+read anything else first: an afternoon with nothing new and a full queue must cost almost nothing.
 
 ## Procedure
 1. `pip install -q opencv-python-headless pillow numpy 2>/dev/null` (so the hook lint can load).
