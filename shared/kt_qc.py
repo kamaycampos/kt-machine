@@ -34,6 +34,12 @@ FF = os.path.expanduser("~/Kamay/bin/ffmpeg")
 MIN_SECS, MAX_SECS = 8.0, 185.0
 CONNECTORS = {"and", "or", "to", "of", "after", "upon", "by", "over", "on", "the", "a",
               "as"}   # "us as us", "as good as": 13 Oct 2026
+# words a sentence cannot end on: a capital He / His / Him right after one is reverent
+# ("will He care"), while "the market He" is still a missing full stop
+CANT_END = {"will", "would", "shall", "should", "can", "could", "may", "might", "must", "does",
+            "did", "do", "has", "have", "had", "is", "was", "are", "were", "be", "to", "for",
+            "of", "with", "from", "by", "in", "on", "that", "and", "but", "or", "if", "when",
+            "because", "as", "so", "how", "what", "why", "where", "than", "let", "make", "makes"}
 LIST_JOIN = {"or", "and", "nor", "than", "versus", "vs"}
 CLAUSE = {"that", "which", "who", "whom", "whose", "whether"}
 COPULA = {"is", "are", "was", "were", "be", "not", "isn't", "aren't", "wasn't", "no"}
@@ -157,6 +163,9 @@ def text_faults(caps):
         # bad ones, because either way nobody believes what it says.
         if (not flat[i].endswith((".", "!", "?", ",", ":", ";", "-", '"'))
                 and norm[i + 1] in STARTERS and flat[i + 1][:1].isupper()
+                # a reverent capital for God mid-sentence: "how much more will He care
+                # for you" (VSC WORRY-ABOUT-NOTHING, 15 Oct 2026)
+                and not (flat[i + 1].strip(",.?!") in ("He", "His", "Him") and norm[i] in CANT_END)
                 and not flat[i][:1].isupper()):
             out.append(f'sentence starts with no stop: "{flat[i]} {flat[i+1]}"')
     return sorted(set(out))
