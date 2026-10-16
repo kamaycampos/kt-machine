@@ -26,6 +26,9 @@ sys.path[:] = [q for q in sys.path
                if os.path.abspath(q or ".") != os.path.dirname(os.path.abspath(__file__))]
 
 CHANNEL = "https://rumble.com/c/TheKevinTrudeauOfficial/videos?page={}"
+# --quick: the hourly watcher (kevin_watch.yml). One try at the page, then only the first
+# few related videos of the two newest episodes - Kevin's next upload led 7 Oct's list.
+QUICK = "--quick" in sys.argv
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "rumble_catalog.json")
 
 
@@ -46,8 +49,8 @@ def get(url):
               "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
         fetchers = [("urllib", lambda: type("R", (), {"status_code": 200, "text": urllib.request.urlopen(
             urllib.request.Request(url, headers={"User-Agent": ua}), timeout=30).read().decode("utf-8", "replace")}))]
-    for attempt in range(2):
-        for name, fetch in fetchers:
+    for attempt in range(1 if QUICK else 2):
+        for name, fetch in (fetchers[:1] if QUICK else fetchers):
             try:
                 r = fetch()
                 if r.status_code == 200 and '"object_type":"video"' in r.text:
@@ -103,7 +106,7 @@ def discover(cat, budget=120):
     every video), and follow each new find in turn. Returns how many were added."""
     from urllib.parse import quote
     seeds = sorted((u for u, e in cat.items() if not e.get("short")),
-                   key=lambda u: cat[u].get("date", ""), reverse=True)[:6]
+                   key=lambda u: cat[u].get("date", ""), reverse=True)[:2 if QUICK else 6]
     frontier, seen, added, calls = [], set(), 0, 0
     for u in seeds:
         v = cat[u].get("embed")
@@ -122,7 +125,7 @@ def discover(cat, budget=120):
         v = frontier.pop(0)
         try:
             calls += 1
-            rel = _json(EMBED.format("related", v)) or []
+            rel = (_json(EMBED.format("related", v)) or [])[:5 if QUICK else None]
         except Exception as e:
             print(f"  related {v}: {type(e).__name__}")
             continue
@@ -176,7 +179,7 @@ def main():
     json.dump(cat, open(OUT, "w"), indent=1, ensure_ascii=False)
     full = [e for e in cat.values() if not e["short"] and e["dur"] >= 1200]
     # Kevin uploads weekly. A newest episode older than 9 days means every route missed one.
-    newest = max((e.get("date", "") for e in full), default="")
+    newest = max((e.get("date", "") for e in cat.values() if not e["short"] and e["dur"] >= 600), default="")
     if newest and (time.time() - time.mktime(time.strptime(newest, "%Y-%m-%d"))) > 9 * 86400:
         print(f"::warning::newest Kevin episode in the catalogue is {newest} - a new upload may be missing")
     print(f"{len(cat)} videos, {len(full)} full episodes, {sum(1 for e in full if e['height'] >= 1080)} at 1080p+")

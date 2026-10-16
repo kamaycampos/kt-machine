@@ -1,0 +1,53 @@
+# KEVIN'S NEW UPLOAD, CUT THE SAME DAY - 16 Oct 2026.
+# The factory's own timer fires once a day and GitHub runs it hours late (07:17 ran at
+# 12:42 and 12:55 UTC on 14-15 Oct), so an upload at 14:00 UTC waited ~21 hours. This
+# looks every hour with the light player route (~8 requests). When a full episode
+# published in the last 3 days enters the catalogue, it saves the catalogue and starts
+# the factory, which stocks and transcribes it first (~30 min). The planner's afternoon
+# run (18:53 UTC, factory/PLANNING.md "SAME-DAY RUN") then plans it, and its push starts
+# the build. Nothing new: nothing is committed and nothing starts.
+name: kevin-watch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 * * * *"
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kevin-watch
+  cancel-in-progress: false
+jobs:
+  watch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Look for a new Kevin upload
+        id: look
+        run: |
+          pip install -q curl_cffi
+          cp factory/rumble_catalog.json /tmp/before.json
+          timeout 5m python factory/rumble_catalog.py --quick || echo "refresh failed - nothing changes"
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import datetime, json
+          old = json.load(open("/tmp/before.json")); new = json.load(open("factory/rumble_catalog.json"))
+          cut = (datetime.datetime.utcnow() - datetime.timedelta(days=3)).strftime("%Y-%m-%d")
+          fresh = [e["title"] for u, e in new.items() if u not in old and not e.get("short")
+                   and e.get("dur", 0) >= 600 and e.get("date", "") >= cut]
+          print("new=" + ("yes" if fresh else "no"))
+          print("titles=" + " | ".join(fresh)[:300])
+          PY
+      - name: Save the catalogue and start the factory
+        if: steps.look.outputs.new == 'yes'
+        env: { GH_TOKEN: "${{ github.token }}", TITLES: "${{ steps.look.outputs.titles }}" }
+        run: |
+          echo "NEW KEVIN UPLOAD: $TITLES"
+          git config user.name "kt-factory"
+          git config user.email "kt-factory@users.noreply.github.com"
+          git add factory/rumble_catalog.json
+          git commit -q -m "rumble catalogue: new Kevin upload $(date -u +%FT%TZ)"
+          for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && break; sleep 5; done
+          gh workflow run factory.yml --ref main

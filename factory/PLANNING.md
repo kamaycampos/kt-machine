@@ -11,10 +11,18 @@ on the second-chance backlog, hit the account's usage limit, and pushed nothing.
 each plan passes `check_plan.py`**, to the same branch - the merge job takes each push - so a run that is
 cut off still keeps the plans it finished.
 
+## SAME-DAY RUN (any run that starts at 15:00 UTC or later - check with `date -u`)
+Since 16 Oct 2026 this routine also fires every afternoon, so Kevin's new upload is cut the day
+it appears (`kevin_watch.yml` spots it within the hour and the factory transcribes it first).
+In that run: do steps 1 and 2 only. If the prep printed **NEWEST UPLOADS - PLAN THESE FIRST**,
+plan ONLY those episodes (steps 3-7, all the usual rules, no second chances, no other episodes),
+whatever the queue depth. If it did not, report "no new upload" in one line and stop. Do not read
+anything else first: an afternoon with nothing new must cost almost nothing.
+
 ## Procedure
 1. `pip install -q opencv-python-headless pillow numpy 2>/dev/null` (so the hook lint can load).
 2. `python factory/routine_prep.py --max 4`. This prints the queue depth, downloads and decrypts the next unplanned episodes' transcripts into `work/`, and writes 30-second reading blocks for each.
-   - How many episodes to plan: queue over 50 clips = none (report and stop); 30-50 = 2; under 30 = 4-5. The machine posts 6 a day and roughly 1 clip in 4 fails a quality gate, so plan generously when the queue is low.
+   - How many episodes to plan: queue over 50 clips = none (report and stop); 30-50 = 2; under 30 = 4-5. **Except: an episode under NEWEST UPLOADS is always planned, whatever the queue** (it counts toward the number). The machine posts 6 a day and roughly 1 clip in 4 fails a quality gate, so plan generously when the queue is low.
    - If fewer episodes are ready than you want, plan what's there. If the month's list (`factory/source_plan.json`) is running out, append the next best episodes from the candidates it prints (money lane first), so stocking continues.
 2b. If the prep printed **TAKEN DOWN BY TIKTOK**, those clips were removed from the account. For each one, plan a **replacement** from the same episode: the same lesson, a different moment and a different angle - never the same cut and never the same hook. Say in your report which clip you replaced and how the new one differs.
 2c. If the prep printed **SECOND CHANCES**, re-cut those clips FIRST - before any new episode. The teaching was already judged worth posting and the episode is transcribed; only a gate stopped it. For each episode listed:
