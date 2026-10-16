@@ -9114,12 +9114,26 @@
    "caption": "You're either at cause over your life, or at effect of it. There's no third option.\n\nPicture two identical sailboats in the same storm. One has a sail and a rudder \u2014 the person on board can adjust and sail straight into the wind if they know how. The other has neither. Whatever the wind and the tide decide to do, that boat does. Most people are living in the second boat, getting pushed around by every external situation, and calling it their personality.\n\nThe boat was never the problem.\n\nComment RISE and I'll send you how to build the rudder.\n\n#subconscious #mindset #awakening #consciousness #manifestation #kevintrudeau",
    "hook": "Without a rudder, wind controls you.",
    "bytes": 47744256,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026101616574676280CBFA7A130555019'}}"
+   },
    "scheduled_at": "2026-10-16T12:46",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/967978313016794/",
+    "instagram": "https://www.instagram.com/reel/DekAxu5j6vA/",
+    "youtube": "https://youtube.com/shorts/BwxIN5XmV2w"
+   },
+   "caption_at_post": "You're either at cause over your life, or at effect of it. There's no third option.\n\nPicture two identical sailboats in the same storm. One has a sail and a rudder \u2014 the person on board can adjust and sail straight into the wind if they know how. The other has neither. Whatever the wind and the tide decide to do, that boat does. Most people are living in the second boat, getting pushed around by every external situation, and calling it their personality.\n\nThe boat was never the problem.\n\nComment RISE and I'll send you how to build the rudder.\n\n#subconscious #mindset #awakening #consciousness #manifestation #kevintrudeau",
+   "posted_at": "2026-10-16T12:57"
   },
   {
    "file": "AR_VAMPIRE/01_THE-SYSTEM-THAT-BUILDS-YOUR-BUBBLE_76s.mp4",
@@ -9272,7 +9286,7 @@
    "caption_at_post": "Kevin Trudeau once dated a woman who warned him her mother was impossible - irritating, impossible to be around.\n\nHe went anyway. He and her mother hit it off instantly: jokes, real conversation, a great night. His girlfriend sat there stunned, convinced the dinner had been a disaster.\n\nSame mother, same room, same words. Two people, two completely different nights.\n\nThe mother never changed. What changed was who was doing the looking.\n\nWho in your life might not be the problem you think they are?\n\n#kevintrudeau #mindset #selfimprovement #relationships #perspective #growthmindset",
    "posted_at": "2026-10-16T12:18",
    "tiktok_retry": true,
-   "tiktok_tries": 1
+   "tiktok_tries": 2
   }
  ]
 }
