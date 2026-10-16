@@ -5832,6 +5832,24 @@
     "The five words",
     "that free you"
    ]
+  },
+  "ar_v6sfb21_r3/SANDBAGS-ARE-TIED-TO-YOU": {
+   "plan": "ar_v6sfb21_r3",
+   "source": "v6sfb21.mp4",
+   "brand": "AR_SAMSKARAR3",
+   "tries": 3,
+   "why": [
+    "FAIL 01_SANDBAGS-ARE-TIED-TO-YOU_81s.mp4: [FAIL] 01_SANDBAGS-ARE-TIED-TO-YOU_81s.mp4                    48 captions vs the sound (word-referenced: no clear pauses)  median +0.62s  worst-10% 0.90s  | words captioned 100%"
+   ],
+   "slug": "SANDBAGS-ARE-TIED-TO-YOU",
+   "in": 468.48,
+   "out": 550.0,
+   "start_words": "So meditation transcends a specific meditation technique",
+   "end_words": "the same thing with spirituality",
+   "hook": [
+    "You have sandbags",
+    "tied to you."
+   ]
   }
  },
  "attempts": {
@@ -5851,6 +5869,6 @@
   "ar_v6rv5w3_r2": 2,
   "ep_v6zdmb0_r2": 2,
   "ep_v759ffq_r2": 2,
-  "ar_v6sfb21_r3": 1
+  "ar_v6sfb21_r3": 2
  }
 }
