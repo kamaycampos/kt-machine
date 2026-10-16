@@ -5850,6 +5850,24 @@
     "You have sandbags",
     "tied to you."
    ]
+  },
+  "ep_v733zpw_r2/EVERYTHING-I-LEARNED-AT-THE-BOTTOM": {
+   "plan": "ep_v733zpw_r2",
+   "source": "v733zpw.mp4",
+   "brand": "KT_BLESSINGR2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_EVERYTHING-I-LEARNED-AT-THE-BOTTOM_51s.mp4` - opens mid-sentence on \"everything I know\""
+   ],
+   "slug": "EVERYTHING-I-LEARNED-AT-THE-BOTTOM",
+   "in": 414.3,
+   "out": 464.24,
+   "start_words": "Everything I know at the top",
+   "end_words": "a person has to make",
+   "hook": [
+    "What rock bottom",
+    "could teach you"
+   ]
   }
  },
  "attempts": {
@@ -5869,6 +5887,7 @@
   "ar_v6rv5w3_r2": 2,
   "ep_v6zdmb0_r2": 2,
   "ep_v759ffq_r2": 2,
-  "ar_v6sfb21_r3": 2
+  "ar_v6sfb21_r3": 2,
+  "ep_v759ffq_r3": 1
  }
 }
