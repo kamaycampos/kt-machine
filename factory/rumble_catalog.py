@@ -8,7 +8,7 @@ behind Cloudflare, so this poses as Chrome (curl_cffi) and retries.
 
     python factory/rumble_catalog.py
 """
-import json, os, re, sys, time
+import html, json, os, re, sys, time
 
 # THE ADDRESS IS rumble.com/c/TheKevinTrudeauOfficial (Kamay confirmed it again 5 Oct
 # 2026). On 30 Sept it briefly answered 404 and the catalogue froze at 632; it works.
@@ -80,6 +80,81 @@ def parse(html, page):
     return out
 
 
+EMBED = "https://rumble.com/embedJS/u3/?request={}&ver=2&v={}"
+CHANNEL_ID = "/c/TheKevinTrudeauOfficial"
+
+
+def _json(url):
+    # Plain and honest: these player endpoints answer GitHub's servers to a plain request,
+    # while the Chrome disguise gets the same 403 the channel page gives (probe, 16 Oct).
+    import urllib.request
+    req = urllib.request.Request(url, headers={"User-Agent": "kt-factory/1.0"})
+    return json.loads(urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "replace"))
+
+
+def discover(cat, budget=120):
+    """The cloud route: Kevin's new uploads found through Rumble's embed player.
+
+    16 Oct 2026: the channel page and every video page answer GitHub's servers with
+    Cloudflare's 403, but the player's own endpoints (oEmbed, embedJS video + related,
+    the hls stream) answer them 200. The related list of an episode carries the
+    channel's NEXT upload: 7 Oct's list had 14 Oct's episode first. So walk forward
+    from the newest episodes we know, keep only Kevin's channel (author checked on
+    every video), and follow each new find in turn. Returns how many were added."""
+    from urllib.parse import quote
+    seeds = sorted((u for u, e in cat.items() if not e.get("short")),
+                   key=lambda u: cat[u].get("date", ""), reverse=True)[:6]
+    frontier, seen, added, calls = [], set(), 0, 0
+    for u in seeds:
+        v = cat[u].get("embed")
+        if not v:
+            try:
+                calls += 1
+                v = re.search(r"/embed/(v[0-9a-z]+)/", _json(
+                    "https://rumble.com/api/Media/oembed.json?url=" + quote(u, safe=":/"))["html"])[1]
+                cat[u]["embed"] = v
+            except Exception as e:
+                print(f"  oembed {u[-40:]}: {type(e).__name__}")
+                continue
+        frontier.append(v)
+        seen.add(v)
+    while frontier and calls < budget:
+        v = frontier.pop(0)
+        try:
+            calls += 1
+            rel = _json(EMBED.format("related", v)) or []
+        except Exception as e:
+            print(f"  related {v}: {type(e).__name__}")
+            continue
+        for r in rel:
+            url = "https://rumble.com" + (r.get("l") or "").split("?")[0]
+            if r.get("v") in seen or calls >= budget or not re.match(r"https://rumble\.com/v[a-z0-9]+-", url):
+                continue
+            seen.add(r["v"])
+            if url in cat:
+                cat[url].setdefault("embed", r["v"])
+                continue
+            try:
+                calls += 1
+                d = _json(EMBED.format("video", r["v"]))
+            except Exception as e:
+                print(f"  video {r['v']}: {type(e).__name__}")
+                continue
+            if not (d.get("author") or {}).get("url", "").endswith(CHANNEL_ID):
+                continue
+            w, h = int(d.get("w") or 0), int(d.get("h") or 0)
+            cat[url] = {"title": html.unescape(d.get("title", "")), "dur": int(d.get("duration") or 0),
+                        "date": (d.get("pubDate") or "")[:10], "height": min(w, h) if w and h else h,
+                        "short": h > w, "page": 0, "embed": r["v"],
+                        "hls": ((d.get("u") or {}).get("hls") or {}).get("url")}
+            added += 1
+            frontier.append(r["v"])
+            print(f"  found via the player: {cat[url]['date']} {cat[url]['title'][:60]}")
+        time.sleep(0.5)
+    print(f"  player route: {added} new, {calls} requests")
+    return added
+
+
 def main():
     cat = json.load(open(OUT)) if os.path.exists(OUT) else {}
     for p in range(1, 60):
@@ -91,9 +166,13 @@ def main():
         for u, e in got.items():
             cat.setdefault(u, {}).update(e)
     if p == 1:
-        # Refused from this machine: the catalogue on disk is kept, and the Mac's daily
-        # refresh (or anyone running this by hand) fills the gap. Say so loudly.
-        print("::warning::Rumble channel page refused from here - catalogue NOT refreshed")
+        # Refused from this machine (GitHub's servers, since 7 Oct): the player route
+        # finds the new uploads instead. Say so loudly only if that fails too.
+        print("Rumble channel page refused from here - trying the player route")
+        try:
+            discover(cat)
+        except Exception as e:
+            print(f"::warning::player route failed too ({type(e).__name__}) - catalogue NOT refreshed")
     json.dump(cat, open(OUT, "w"), indent=1, ensure_ascii=False)
     full = [e for e in cat.values() if not e["short"] and e["dur"] >= 1200]
     print(f"{len(cat)} videos, {len(full)} full episodes, {sum(1 for e in full if e['height'] >= 1080)} at 1080p+")
