@@ -5945,7 +5945,7 @@
    "plan": "ep_v77l7um_p2",
    "source": "v77l7um.mp4",
    "brand": "KT_SATOSHI",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "FAIL 02_WHEN-THE-FACTS-CHANGE_99s.mp4: ends off the planned words: plan ends 'I change my mind', clip ends 'when the facts change i change'"
    ],
@@ -5963,7 +5963,7 @@
    "plan": "ep_v77l7um_p2",
    "source": "v77l7um.mp4",
    "brand": "KT_SATOSHI",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "FAIL 01_THERES-NO-HAPPILY-EVER-AFTER_56s.mp4: [FAIL] 01_THERES-NO-HAPPILY-EVER-AFTER_56s.mp4                7 captions vs the sound  median +0.58s  worst-10% 1.30s  | words captioned 96%"
    ],
@@ -5975,6 +5975,132 @@
    "hook": [
     "Why waiting to be happy",
     "fails"
+   ]
+  },
+  "ar_v6mce7x_r2/KEVIN-I-HAVE-AN-ENERGY-VAMPIRE": {
+   "plan": "ar_v6mce7x_r2",
+   "source": "v6mce7x.mp4",
+   "brand": "AR_VAMPIRER2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_KEVIN-I-HAVE-AN-ENERGY-VAMPIRE_61s.mp4: [FAIL] 01_KEVIN-I-HAVE-AN-ENERGY-VAMPIRE_61s.mp4              36 captions vs the sound (word-referenced: no clear pauses)  median +0.54s  worst-10% 1.03s  | words captioned 99%"
+   ],
+   "slug": "KEVIN-I-HAVE-AN-ENERGY-VAMPIRE",
+   "in": 57.0,
+   "out": 117.0,
+   "start_words": "I have talked to",
+   "end_words": "more power than you",
+   "hook": [
+    "They control how",
+    "you feel. Supposedly."
+   ]
+  },
+  "ar_v6mce7x_r2/YOU-MIGHT-BE-THE-VAMPIRE": {
+   "plan": "ar_v6mce7x_r2",
+   "source": "v6mce7x.mp4",
+   "brand": "AR_VAMPIRER2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `02_YOU-MIGHT-BE-THE-VAMPIRE_125s.mp4` - phrase scrambled around \"me you love me,\"; phrase scrambled around \"me you love me.\""
+   ],
+   "slug": "YOU-MIGHT-BE-THE-VAMPIRE",
+   "in": 150.0,
+   "out": 275.0,
+   "start_words": "Common traits of an",
+   "end_words": "could be an energy vampire",
+   "hook": [
+    "You might be",
+    "the energy vampire."
+   ]
+  },
+  "ar_v7c2880/YOUR-WORST-DISASTER-WAS-A-GIFT": {
+   "plan": "ar_v7c2880",
+   "source": "v7c2880.mp4",
+   "brand": "AR_VOID",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_YOUR-WORST-DISASTER-WAS-A-GIFT_50s.mp4` - phrase scrambled around \"with being presented with\""
+   ],
+   "slug": "YOUR-WORST-DISASTER-WAS-A-GIFT",
+   "in": 327.8,
+   "out": 377.4,
+   "start_words": "So in my life, I never",
+   "end_words": "there was treasures inside them",
+   "hook": [
+    "Your worst disaster",
+    "was a gift."
+   ]
+  },
+  "ar_v7c2880/WHATEVER-YOU-FEAR-MOST": {
+   "plan": "ar_v7c2880",
+   "source": "v7c2880.mp4",
+   "brand": "AR_VOID",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "WHATEVER-YOU-FEAR-MOST",
+   "in": 377.36,
+   "out": 427.44,
+   "start_words": "If you look in",
+   "end_words": "which means he felt good",
+   "hook": [
+    "Whatever you fear most",
+    "finds you."
+   ]
+  },
+  "ep_v6y4es4_p2/WHY-YOU-HAVE-NO-EXCUSE-NOW": {
+   "plan": "ep_v6y4es4_p2",
+   "source": "v6y4es4.mp4",
+   "brand": "KT_YACHT",
+   "tries": 1,
+   "why": [
+    "FAIL 01_WHY-YOU-HAVE-NO-EXCUSE-NOW_99s.mp4: [FAIL] 01_WHY-YOU-HAVE-NO-EXCUSE-NOW_99s.mp4                  17 captions vs the sound  median +0.09s  worst-10% 0.83s  | words captioned 100%"
+   ],
+   "slug": "WHY-YOU-HAVE-NO-EXCUSE-NOW",
+   "in": 686.24,
+   "out": 789.44,
+   "start_words": "It's easier to make",
+   "end_words": "an expert at excuses",
+   "hook": [
+    "Why you have no excuse",
+    "now"
+   ]
+  },
+  "ep_v6y4es4_p2/DREAM-BIG-BEFORE-THE-MONEY": {
+   "plan": "ep_v6y4es4_p2",
+   "source": "v6y4es4.mp4",
+   "brand": "KT_YACHT",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_DREAM-BIG-BEFORE-THE-MONEY_90s.mp4` - ends mid-thought on \"manifest the dream\"; phrase scrambled around \"i'm dreaming I'm i'm\"; phrase scrambled around \"people do it people\""
+   ],
+   "slug": "DREAM-BIG-BEFORE-THE-MONEY",
+   "in": 2503.52,
+   "out": 2600.16,
+   "start_words": "You have to dream",
+   "end_words": "to manifest the dream",
+   "hook": [
+    "Why dream big before",
+    "the money"
+   ]
+  },
+  "ep_v6zdmb0_p2/CANCEL-CANCEL-BREAKS-THE-HABIT": {
+   "plan": "ep_v6zdmb0_p2",
+   "source": "v6zdmb0.mp4",
+   "brand": "KT_CANCEL",
+   "tries": 1,
+   "why": [
+    "FAIL 01_CANCEL-CANCEL-BREAKS-THE-HABIT_135s.mp4: [FAIL] 01_CANCEL-CANCEL-BREAKS-THE-HABIT_135s.mp4             17 captions vs the sound  median +0.09s  worst-10% 1.37s  | words captioned 100%  UNCAPTIONED SPEECH [(90.5, 93.1)]"
+   ],
+   "slug": "CANCEL-CANCEL-BREAKS-THE-HABIT",
+   "in": 3514.64,
+   "out": 3650.8,
+   "start_words": "The magic words are",
+   "end_words": "nothing's going to happen",
+   "hook": [
+    "The two words that break",
+    "habits"
    ]
   }
  },
@@ -5997,6 +6123,7 @@
   "ep_v759ffq_r2": 2,
   "ar_v6sfb21_r3": 2,
   "ep_v759ffq_r3": 2,
-  "ep_v7e1nwe_r3": 2
+  "ep_v7e1nwe_r3": 2,
+  "ar_v794yks_r2": 1
  }
 }

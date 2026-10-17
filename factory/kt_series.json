@@ -6303,7 +6303,8 @@
      "Unhappy childhoods build",
      "the most success."
     ],
-    "caption": "Trace back almost anyone who built something extraordinary and you'll find the same starting point: a childhood that hurt.\n\nIt isn't a coincidence. Adversity creates a kind of ruthless, fixed purpose that comfort never forces you to develop — without it, most people simply don't push hard enough to need the breakthrough. Even the setbacks you'd call bad luck tend to flip, later, into the exact thing that helped you most. The pain isn't separate from the outcome. It's raw material for it.\n\nNothing you survived was wasted.\n\nComment RISE and I'll send you how to use what happened to you.\n\n#manifestation #mindset #resilience #awakening #subconscious #kevintrudeau"
+    "caption": "Trace back almost anyone who built something extraordinary and you'll find the same starting point: a childhood that hurt.\n\nIt isn't a coincidence. Adversity creates a kind of ruthless, fixed purpose that comfort never forces you to develop — without it, most people simply don't push hard enough to need the breakthrough. Even the setbacks you'd call bad luck tend to flip, later, into the exact thing that helped you most. The pain isn't separate from the outcome. It's raw material for it.\n\nNothing you survived was wasted.\n\nComment RISE and I'll send you how to use what happened to you.\n\n#manifestation #mindset #resilience #awakening #subconscious #kevintrudeau",
+    "locked": true
    },
    {
     "slug": "THE-DOTS-CONNECT-LATER",
@@ -6511,6 +6512,62 @@
      "make excuses"
     ],
     "caption": "Most people wait to feel confident before they go after money. Kevin Trudeau says that's backwards.\n\nHe explains self-image decides the outcome before anything happens: two people get the identical opportunity, and the one who believes he's worthy succeeds while the other, who doesn't, finds a way to fail.\n\nThen he names the real disease behind most failure: excusitis. Losers are great at one thing - making excuses. Winners take responsibility instead, even when the start is bad.\n\nConfidence doesn't come first. It comes from acting like you already have it.\n\nWhat's the excuse you've been making today?\n\n#kevintrudeau #mindset #moneymindset #selfbelief #successhabits #wealthmindset"
+   }
+  ]
+ },
+ "ar_v6mce7x_r2": {
+  "source": "v6mce7x.mp4",
+  "brand": "AR_VAMPIRER2",
+  "note": "17 Oct 2026 - second chance for 'No More Energy Vampires!' (Rumble v6mce7x). Awakened Rise weekly agent, last try (tries 2) per AR_PLANNING.md 2c. KEVIN-I-HAVE-AN-ENERGY-VAMPIRE failed captions-vs-sound (worst-10% 1.53s, words captioned 114%) - the two rapid-fire 'Uh, uh, uh, uh...' stammer lines (00:34-00:36 and 00:52-00:55 in work/v6mce7x.srt) sit inside the old 7-105s window and are the likely source of the drift; moved both edges past them entirely, opening on 'I have talked to psychics' (57.0, a clean sentence start right after the second stammer line) and closing on 'So that means that energy vampire has more power than you.' (117.0, the next clean payoff sentence, which still pays the 'They control how you feel' hook). Caption rewritten since the opening Kevin-dialogue framing is no longer in the clip. YOU-MIGHT-BE-THE-VAMPIRE failed on 'ends off the planned words' (plan ended 'This is insane. It's insanity', clip actually ended on the merged 'energy vampire this is insane insanity') - the three short back-to-back sentences there (...an energy vampire. This is insane. It's insanity.) read as one run-on to the render's re-transcription; pulled the end back 2s to the unambiguous single-sentence close '...they could be an energy vampire.' (275.0), which also lands the hook ('You might be the energy vampire') as a direct payoff instead of a punchline that needed stitching. ZIG-ZIGLAR-CALLED-IT-SNIOP, MY-ENERGY-FIELD-IS-BIG-ENOUGH and SOMEBODY-PUTTING-RATS-IN-YOUR-HEAD are their last try (tries 2) and skipped: each has a flagged scramble/no-stop/repeat sitting inside content the clip cannot lose without gutting its own teaching (the SNIOP acronym explanation at ~415s; the car/rain/umbrella metaphor itself at ~557-560s/the knock-on-the-door 'rats' bit with its own 'Hello... Land truck... Hello' line) - no edge move excludes the flagged words without cutting the lesson, so per the rule these are left for good rather than guessed at on a final attempt.",
+  "clips": []
+ },
+ "ar_v7c2880": {
+  "source": "v7c2880.mp4",
+  "brand": "AR_VOID",
+  "note": "17 Oct 2026 - 'The Reason You're Stuck Has Nothing To Do With Your Circumstances' (Rumble v7c2880). Awakened Rise weekly agent. Short (8 min) episode built almost entirely around a car-dealership/finance-manager origin story and a Rockefeller/Standard-Oil business anecdote - that is Kamay's lane (money mechanics, business), not hers, so both are excluded wholesale rather than skimmed for a line or two. Only the universal-law teaching that survives on its own, stripped of the business specifics, is cut: the void/forest-fire principle (215-260s, right after the dealership story ends and before the Rockefeller story starts), his own reframe of adversity as a gift (327.8-377.4s, right after the Rockefeller/Standard-Oil section ends), and the book-of-Job fear/surrender story (377.4-427.4s). The episode's last ~70s ('It was just an awakening... my income has doubled...') is the same 'Your Wish Is Your Command' testimonial advert factory/pipeline/kt_ads.py detects in other sources by that exact opening line - excluded. Only 3 clips from this one: the rest of the runtime is off-lane for her account.",
+  "clips": [
+   {
+    "slug": "FOREST-FIRE-BEFORE-NEW-GROWTH",
+    "in": 214.82,
+    "out": 260.87,
+    "hook": [
+     "You need fire",
+     "before you grow."
+    ],
+    "caption": "A forest fire looks like the end of everything. It's actually the only way new growth gets to happen — the old foliage has to burn before anything fresh can break through the ground.\n\nYour life runs on the same law. Every door that closes, every plan that collapses, every version of you that gets wiped out — it's making room. You can't create a void and keep clinging to what was sitting in it.\n\nThere's an old line worth sitting with: in every adversity is the seed of a greater benefit. Not despite the fire. Because of it.\n\nComment RISE and I'll send you how to find the seed in yours.\n\n#manifestation #universallaw #mindset #awakening #consciousness #kevintrudeau"
+   }
+  ]
+ },
+ "ep_v6y4es4_p2": {
+  "source": "v6y4es4.mp4",
+  "brand": "KT_YACHT",
+  "note": "17 Oct 2026 - 'Kevin Trudeau Uncensored The Untold Story Of Wealth, Health & Business Success' (Rumble v6y4es4). Second pass - weekly agent.",
+  "clips": []
+ },
+ "ep_v6zdmb0_p2": {
+  "source": "v6zdmb0.mp4",
+  "brand": "KT_CANCEL",
+  "note": "17 Oct 2026 - 'How Energy, Mindset, And Marketing Really Work: Kevin Trudeau Reveals All!' (Rumble v6zdmb0). Second pass - weekly agent.",
+  "clips": [
+   {
+    "slug": "I-DONT-FOLLOW-THE-LEADER",
+    "in": 739.17,
+    "out": 854.19,
+    "hook": [
+     "Why copying everyone else",
+     "fails"
+    ],
+    "caption": "Everyone selling on TV in the 80s used the same formula: testimonials, a fake studio audience, 'sell, sell, sell' into the camera.\n\nKevin Trudeau did the opposite. No testimonials. No studio audience. He never showed the product or mentioned the price - just an interview, and a number to call.\n\nIt broke every rule in the playbook. It also broke every sales record he'd ever had, because nobody watching felt sold to.\n\nPeople love to buy. They hate being sold. Copy the room and you're invisible in it.\n\nWhat's the industry 'formula' in your field that's actually just noise now?\n\n#kevintrudeau #marketing #businessstrategy #entrepreneur #salestips #directresponse"
+   },
+   {
+    "slug": "THE-LETTER-THAT-DOUBLED-HIS-MONEY",
+    "in": 974.52,
+    "out": 1042.35,
+    "hook": [
+     "The letter that doubled",
+     "his money"
+    ],
+    "caption": "Everyone told Kevin Trudeau his email list was dead. He'd hit the same names for six months and sales had slowed to nothing.\n\nHis team said stop wasting money on that list. Kevin did the opposite - he mailed them a plain, eight-page letter. No design, just a letter and a QR code.\n\nHis team called it throwing money away on postage. Thirty days later, the return was 200% - every dollar back, plus one more.\n\nPut up $100,000 and get $200,000 back every month, and the only question left is how often you want to do that.\n\n'Dead' channels aren't dead. They're just empty of effort.\n\n#kevintrudeau #directmail #marketing #smallbusiness #moneymindset #entrepreneur"
    }
   ]
  }
