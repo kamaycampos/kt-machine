@@ -1,10 +1,10 @@
 {
- "at": "2026-10-17T04:57",
+ "at": "2026-10-17T11:09",
  "profile": {
+  "likes_count": 5854,
+  "video_count": 166,
   "follower_count": 411,
-  "following_count": 8,
-  "likes_count": 5853,
-  "video_count": 166
+  "following_count": 8
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -19,7 +19,7 @@
   },
   "KT_FREQUENCY/02_ROCKEFELLERS-30-PERCENT-RULE_65s.mp4": {
    "id": "7693694151665175822",
-   "view_count": 12,
+   "view_count": 13,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -39,8 +39,8 @@
   },
   "KT_DUTY/01_HEADLIGHTS-ON-A-DARK-ROAD_91s.mp4": {
    "id": "7692937439102504206",
-   "view_count": 8,
-   "like_count": 2,
+   "view_count": 10,
+   "like_count": 3,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7692937439102504206?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -109,7 +109,7 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 177,
+   "view_count": 178,
    "like_count": 3,
    "comment_count": 0,
    "share_count": 0,
@@ -529,7 +529,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3693,
+   "view_count": 3694,
    "like_count": 152,
    "comment_count": 7,
    "share_count": 16,
@@ -549,7 +549,7 @@
   },
   "KT_RICH/06_PEP-TALKS-WHEN-ALONE_71s.mp4": {
    "id": "7687607782639537422",
-   "view_count": 1207,
+   "view_count": 1208,
    "like_count": 93,
    "comment_count": 4,
    "share_count": 27,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38144,
+   "view_count": 38145,
    "like_count": 787,
    "comment_count": 27,
    "share_count": 171,
