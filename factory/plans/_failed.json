@@ -6102,6 +6102,60 @@
     "The two words that break",
     "habits"
    ]
+  },
+  "ar_v794yks_r2/NOT-COMFORTABLE-IN-YOUR-SKIN": {
+   "plan": "ar_v794yks_r2",
+   "source": "v794yks.mp4",
+   "brand": "AR_INWARDR2",
+   "tries": 3,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "NOT-COMFORTABLE-IN-YOUR-SKIN",
+   "in": 80.0,
+   "out": 126.0,
+   "start_words": "And as we create we expand",
+   "end_words": "who they really are is this",
+   "hook": [
+    "Not comfortable",
+    "in your own skin."
+   ]
+  },
+  "ar_v794yks_r2/SNAKE-IN-DARKNESS-ROPE-IN-LIGHT": {
+   "plan": "ar_v794yks_r2",
+   "source": "v794yks.mp4",
+   "brand": "AR_INWARDR2",
+   "tries": 3,
+   "why": [
+    "render refused:   FIX  AR_INWARDR2/SNAKE-IN-DARKNESS-ROPE-IN-LIGHT    out    324.4  advert    323.8  +0.6s into it"
+   ],
+   "slug": "SNAKE-IN-DARKNESS-ROPE-IN-LIGHT",
+   "in": 210.0,
+   "out": 323.5,
+   "start_words": "You will start realizing",
+   "end_words": "are as a spiritual being",
+   "hook": [
+    "Snake in darkness.",
+    "Rope in light."
+   ]
+  },
+  "ep_v6y4es4_r2/WHY-YOU-HAVE-NO-EXCUSE-NOW": {
+   "plan": "ep_v6y4es4_r2",
+   "source": "v6y4es4.mp4",
+   "brand": "KT_UNCENSOREDR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_WHY-YOU-HAVE-NO-EXCUSE-NOW_62s.mp4` - phrase scrambled around \"money without any money.\""
+   ],
+   "slug": "WHY-YOU-HAVE-NO-EXCUSE-NOW",
+   "in": 686.24,
+   "out": 752.88,
+   "start_words": "It's easier to make",
+   "end_words": "and they can make fortunes",
+   "hook": [
+    "Why you have no excuse",
+    "now"
+   ]
   }
  },
  "attempts": {
@@ -6124,6 +6178,8 @@
   "ar_v6sfb21_r3": 2,
   "ep_v759ffq_r3": 2,
   "ep_v7e1nwe_r3": 2,
-  "ar_v794yks_r2": 1
+  "ar_v794yks_r2": 2,
+  "ep_v6zdmb0_r3": 1,
+  "ep_v77l7um_r7": 1
  }
 }
