@@ -120,7 +120,10 @@ def main():
         for c in keep:
             if c["slug"] in have:
                 continue
-            spec["clips"].append({k: c[k] for k in ("slug", "in", "out", "hook", "caption")
+            # "opener" (the cinematic shot), "no_layout" and "fix" travel too (17 Oct 2026):
+            # a field left off this list is a field the renderer never sees.
+            spec["clips"].append({k: c[k] for k in ("slug", "in", "out", "hook", "caption",
+                                                    "opener", "no_layout", "fix")
                                   if k in c} | ({"cta_kind": c["cta_kind"]} if c.get("cta_kind") else {}))
         spec["clips"].sort(key=lambda x: float(x["in"]))
     json.dump(series, open(SERIES, "w"), indent=1)

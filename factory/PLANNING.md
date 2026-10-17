@@ -26,6 +26,19 @@ The growth strategist rewrites it daily from the real numbers (skip rate, views,
 orders on topic priority, hook shape, offer clips and what to skip come before your own taste. It
 never overrides a gate, the edges, the fence or the brand's compliance. If it is missing, carry on.
 
+## THE CINEMATIC OPENER: name the shot for EVERY clip (17 Oct 2026, Kamay approved)
+Every clip opens on 3 seconds of a 4K moving shot that IS the hook's subject, with Kevin's voice
+already running under it, then crossfades into Kevin. You choose the shot; the factory finds it on
+Pixabay (free, commercial use) and builds it. Add to each clip:
+  `"opener": "<2-6 plain lowercase words>"`, e.g. "basketball hoop net", "mansion pool night", "stack of money", "city skyline night", "old letter handwriting", "private jet runway".
+- **The picture of the hook's noun**, concrete and filmable: an object, a place, an action. Not an idea
+  ("success", "freedom"), not a person's, brand's or film's name (`check_plan.py` refuses those).
+- **Cinematic beats literal-but-ugly**: prefer night, golden hour, slow motion, macro, aerial, dramatic sky.
+  For "What Michael Jordan missed the most" the winner was a torn net against a storm sky, not a game.
+- Same opener words twice in one day only when the subject is truly the same.
+- If nothing filmable fits the hook, leave the field off: the clip opens on Kevin as before.
+- Podcast-screen episodes (Kevin in one panel of a stream layout) are framed on his panel automatically.
+
 ## Procedure
 1. `pip install -q opencv-python-headless pillow numpy 2>/dev/null` (so the hook lint can load).
 2. `python factory/routine_prep.py --max 4`. This prints the queue depth, downloads and decrypts the next unplanned episodes' transcripts into `work/`, and writes 30-second reading blocks for each.
@@ -119,7 +132,8 @@ never overrides a gate, the edges, the fence or the brand's compliance. If it is
  "clips": [{"slug": "UPPER-DASHED-NAME", "in": 211.6, "out": 291.0,
             "start_words": "It was the worst snowstorm", "end_words": "and that's how I got rich",
             "hook": ["How a snowstorm", "made me money"],
-            "caption": "...\n\n#kevintrudeau #...", "cta_kind": "offer"}]}
+            "caption": "...\n\n#kevintrudeau #...", "cta_kind": "offer",
+            "opener": "snowy street night"}]}
 ```
 - Every episode gets its **own** brand folder (`KT_` + one word, not used by any other plan). The scheduler allows only 2 posts per folder per day, so separate folders keep 4 posts a day flowing.
 - Never use an `AR_` folder. Those belong to a different person's account.

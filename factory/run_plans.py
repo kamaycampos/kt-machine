@@ -198,6 +198,12 @@ def fix_edges(key):
 
 def _face_gate(src, c, a, b):
     """Opening must show a face within 1.0s: keep, move to a face sentence, or drop."""
+    # A CINEMATIC OPENER OWNS THE FIRST SECONDS (17 Oct 2026, Kamay approved): the
+    # clip opens on the planned 4K shot by design, so the source's opening frame is
+    # not what the viewer sees and is no reason to move or drop the clip.
+    if c.get("opener") and (os.environ.get("OPENER_LIVE") == "on"
+                            or os.environ.get("OPENER_PREVIEW") == "1"):
+        return a
     ok = opens_on_face(src, a)
     if ok is None or ok:
         return a

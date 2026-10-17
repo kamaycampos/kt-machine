@@ -1322,7 +1322,7 @@ MAGNITUDE_WORDS = {"billion", "million", "thousand", "hundred", "percent",
 
 def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
            hook_y=None, yt_win=None, slug=None, fix=None, shots=None,
-           track=None, cuts=None):
+           track=None, cuts=None, opener=None, geo=None):
     burn.MAX_CHARS = CAP_MAX          # short bursts, not subtitle lines
     # Real word timings when we have them; the old estimate only as a fallback.
     import kt_words
@@ -1382,7 +1382,9 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
                       open(os.path.splitext(dest)[0] + "__caps.json", "w"))
         except OSError:
             pass
-    geo = fill_crop(src, cx, zoom, shots)
+    # geo: an explicit crop for a layout the face tracker cannot read (a podcast
+    # screen with the speaker in a side panel). None = the usual tracked crop.
+    geo = geo or fill_crop(src, cx, zoom, shots)
     caps = caption_chain(ps)
     # THE HOOK IS A CARD, COMPOSITED - see hook_card(). persist=True (the
     # YouTube cut) still uses drawtext, because a card that never leaves would
@@ -1411,7 +1413,20 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     dur = t_out - t_in
     fs = min(FADE_OUT, max(0.35, dur * 0.12))
     pre = ",".join([geo] + caps)
-    fc = (f"[0:v]{pre}[bg];"
+    # THE CINEMATIC OPENER (kt_opener.py, 17 Oct 2026): a 4K shot of the hook's
+    # subject for the first seconds, Kevin's voice under it, a low hit, then a
+    # crossfade into Kevin. Captions and the hook card ride on top. Off unless the
+    # clip carries an opener; without one this graph is byte-for-byte the old one.
+    if opener:
+        import kt_opener as OP
+        vin = (OP.video_graph(geo, 2, opener.get("secs", OP.OPEN_SECS)) + ";"
+               + "[kv0]" + (",".join(caps) or "null") + "[bg];")
+        ain, asrc = OP.audio_graph(3) + ";", "[a0]"
+        extra = ["-ss", f"{float(opener.get('start', 0)):.2f}", "-i", opener["path"],
+                 "-i", OP.sting()]
+    else:
+        vin, ain, asrc, extra = f"[0:v]{pre}[bg];", "", "[0:a]", []
+    fc = (vin +
           # NO FADE IN. 13 Sept 2026, Kamay: "THE HOOK HAS TO START NOT SLOWLY
           # BUT AT ONCE FROM THE VERY BEGINNING SO IF THE THUMBNAIL CHOOSES THE
           # VERY FIRST PART OF THE CLIP IT CATCHES THE HOOK." TikTok and
@@ -1422,12 +1437,12 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
           f"[bg][hk]overlay=x=(W-w)/2:y={cy_px}:"
           f"enable='lt(t,{HOOK_SECS})'[vv];"
           f"[vv]fade=t=out:st={dur - fs:.2f}:d={fs:.2f}[v];"
-          f"[0:a]afade=t=out:st={dur - fs:.2f}:d={fs:.2f}[a]")
+          f"{ain}{asrc}afade=t=out:st={dur - fs:.2f}:d={fs:.2f}[a]")
     vf = ["-filter_complex", fc, "-map", "[v]", "-map", "[a]"]
     cmd = [FFMPEG, "-y", "-loglevel", "error", "-ss", f"{t_in:.2f}",
            "-t", f"{t_out - t_in:.2f}", "-i", src,
            "-loop", "1", "-framerate", "30", "-t", f"{HOOK_SECS:.2f}",
-           "-i", card,
+           "-i", card, *extra,
            *vf, "-c:v", "libx264", "-preset", "medium", "-crf", "19",
            "-maxrate", "9000k", "-bufsize", "18000k",
            "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k",
@@ -1443,6 +1458,15 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
         if r.returncode:
             sys.stderr.write(r.stderr[-1500:] + "\n")
             raise SystemExit(f"render failed: {dest}")
+
+    if opener:
+        # Every shot used is on record beside the clip: source, id, licence.
+        try:
+            meta = json.load(open(opener["path"][:-4] + ".json"))
+            meta.update({"query": opener.get("query"), "start": opener.get("start", 0)})
+            json.dump(meta, open(os.path.splitext(dest)[0] + "__opener.json", "w"), indent=1)
+        except Exception:
+            pass
 
     # EVERY clip gets a cover. Originally thumb() only ran inside the 59s branch,
     # so any clip already under 60 seconds got no cover at all and YouTube picked
@@ -1471,7 +1495,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
                       and b <= ye - t_in] if words else []
             ywords = [(a - (ys - t_in), b - (ys - t_in), w) for a, b, w in ywords]
             yps = phrases_from_words(ywords) if ywords else burn.phrases(cues, ys, ye)
-            ygeo = fill_crop(src, cx, zoom)
+            ygeo = geo or fill_crop(src, cx, zoom)
             # The window is often a DIFFERENT teaching from the full clip, so
             # the full clip's hook can promise something this cut never
             # delivers. hook_yt in kt_series.json overrides it where they differ.
@@ -1497,6 +1521,23 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
            "-maxrate", "9000k", "-bufsize", "18000k",
                     "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k",
                     "-movflags", "+faststart", yt_path(dest)]
+            if opener:
+                # THE YOUTUBE CUT OPENS THE SAME WAY (17 Oct 2026, Kamay: "YouTube and
+                # story cuts get it too"). The story is cut from the finished clip, so
+                # it inherits the opener; this window is rendered from the source.
+                import kt_opener as OP
+                yd = ye - ys
+                yfc = (OP.video_graph(ygeo, 1, opener.get("secs", OP.OPEN_SECS)) + ";[kv0]"
+                       + ",".join(ydraws) + f",fade=t=out:st={yd - yfs:.2f}:d={yfs:.2f}[v];"
+                       + OP.audio_graph(2) + f";[a0]afade=t=out:st={yd - yfs:.2f}:d={yfs:.2f}[a]")
+                ycmd = [FFMPEG, "-y", "-loglevel", "error", "-ss", f"{ys:.2f}",
+                        "-t", f"{yd:.2f}", "-i", src,
+                        "-ss", f"{float(opener.get('start', 0)):.2f}", "-i", opener["path"],
+                        "-i", OP.sting(), "-filter_complex", yfc, "-map", "[v]", "-map", "[a]",
+                        "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                        "-maxrate", "9000k", "-bufsize", "18000k",
+                        "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k",
+                        "-movflags", "+faststart", yt_path(dest)]
             ry = subprocess.run(ycmd, capture_output=True, text=True)
             if ry.returncode:
                 sys.stderr.write(ry.stderr[-800:] + "\n")
@@ -1646,10 +1687,33 @@ def run_series(key, spec, apply, only):
         if shots and len(shots) > 1:
             print(f"      {len(shots)} camera setup(s): "
                   + ", ".join(f"{s['cx']:.2f}" for s in shots))
+        # PODCAST SCREENS (kt_layout.py, 17 Oct 2026): when Kevin sits in one panel of
+        # a stream layout, crop from inside his panel, never the middle of the screen.
+        lgeo = None
+        if not c.get("no_layout"):
+            try:
+                import kt_layout
+                lgeo, lwhy = kt_layout.panel_geo(src, float(c["in"]), float(c["out"]))
+                if lgeo:
+                    print(f"      {lwhy}")
+            except Exception as e:               # a measurement never costs a clip
+                sys.stderr.write(f"      layout check skipped: {type(e).__name__}: {e}\n")
+        # THE CINEMATIC OPENER (kt_opener.py): the plan names the shot ("opener":
+        # "basketball hoop net"); no key, no match or no field = the clip as before.
+        op = None
+        # OPENER_LIVE=on (repo variable) once Kamay approved the first automatic one;
+        # until then only preview (test) plans get openers (OPENER_PREVIEW, build_shard).
+        live = os.environ.get("OPENER_LIVE") == "on" or os.environ.get("OPENER_PREVIEW") == "1"
+        if c.get("opener") and apply and live:
+            try:
+                import kt_opener
+                op = kt_opener.pick(str(c["opener"]))
+            except Exception as e:
+                sys.stderr.write(f"      opener skipped: {type(e).__name__}: {e}\n")
         bursts = render(src, dest, c["in"], c["out"], c["hook"], cues,
                         cx, apply, zoom, c.get("hook_yt"), yt_win,
                         c["slug"], c.get("fix"), shots, track,
-                        (frames or {}).get("cuts"))
+                        (frames or {}).get("cuts"), opener=op, geo=lgeo)
         print(f"  {'rendered' if apply else 'plan'} {brand}/{name}  "
               f"{bursts} bursts  hook={' / '.join(c['hook'][:2])}")
         n += 1

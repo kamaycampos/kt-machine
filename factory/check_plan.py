@@ -195,6 +195,16 @@ for path in sys.argv[1:]:
         # a filler word or a pointer back is the wind-up BEFORE the line; open on the line.
         if fam == "KT" and WIND_UP.match(str(c.get("start_words") or "").strip()):
             errs.append(f"{s}: opens on a wind-up ('{c.get('start_words')}') - start on the sharpest line itself (FIRST_3_SECONDS.md)")
+        # THE CINEMATIC OPENER (17 Oct 2026): a 2-6 word stock-footage search for a moving
+        # shot that IS the hook's subject. Plain words only; never a person's, brand's or
+        # film's name (stock libraries do not carry them and we never use film footage).
+        op = c.get("opener")
+        if op is not None:
+            if not isinstance(op, str) or not re.fullmatch(r"[a-z][a-z ]{2,60}", op.strip()) \
+                    or not 2 <= len(op.split()) <= 6:
+                errs.append(f"{s}: opener must be 2-6 plain lowercase words, e.g. \"tap water pouring glass\"")
+            elif re.search(r"\b(movie|film|scene|trailer|nba|nfl|celebrity|logo|jordan|kevin|trudeau)\b", op):
+                errs.append(f"{s}: opener '{op}' names a film/brand/person - describe the picture instead")
     print(f"{name}: {'OK' if not errs else 'PROBLEMS'} ({len(slugs)} clips)")
     for e in errs: print("   -", e)
     bad += bool(errs)

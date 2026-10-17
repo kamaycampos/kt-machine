@@ -41,6 +41,8 @@ out = "/tmp/shard_out"
 os.makedirs(out, exist_ok=True)
 result = {"plan": plan, "shard": shard, "brand": p["brand"], "source": p["source"],
           "test": bool(p.get("test")), "height": h, "clips": [], "files": []}
+if p.get("test"):
+    os.environ["OPENER_PREVIEW"] = "1"          # a preview build shows the opener before it goes live
 if h < 1080:
     print(f"REFUSED: source is {h}p, the gate is 1080p")
 else:

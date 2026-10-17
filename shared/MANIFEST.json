@@ -4,13 +4,15 @@
   "kt_burn.py": "01cffcedfc3cfb1163178bb91ca223a8e4f8813a",
   "kt_lock.py": "2d84f72d6a72675e946174fc36414558d0b54b26",
   "kt_qc.py": "2627e833b7448ca4bc098fcb05ffc74dd5e296b7",
-  "kt_render.py": "374a563d4838d7ef7e78100e03a891ddf9c6ab98",
+  "kt_render.py": "55dc1e69f800716db3131cdd6d43ec95e2e32744",
   "kt_snap.py": "4cde48bcc10f070e2574cb7f444e0ecc26a38e0c",
   "kt_words.py": "10f9d3b11e22b218bfd39f6a7e4df3814b3aaba2",
   "vsc_edges.py": "f588fe22fbfc175842152c5c433890056e950d3f",
   "vsc_frame.py": "e96e66bde600ff6f57893fb1ca6dab26ac61ec9d",
   "vsc_v2_onscreen.py": "244c301d1f3251400373e7536b8086e56aab3fd8",
   "vsc_v2_time.py": "138d72cce4be40045e2c974ff2530d5044972a67",
-  "vsc_words.py": "88da9bca76fdc8ff0bf612736a820072f97f4d84"
+  "vsc_words.py": "88da9bca76fdc8ff0bf612736a820072f97f4d84",
+  "kt_opener.py": "16b6e53e504fcbe625aa00a4ea8b8e88484da1c4",
+  "kt_layout.py": "070328ea4aeb20eb2d7de3e0518a90dcc4f81d72"
  }
 }
