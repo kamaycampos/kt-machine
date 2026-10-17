@@ -1,0 +1,34 @@
+{
+    "source": "v6mce7x.mp4",
+    "brand": "AR_VAMPIRER2",
+    "test": false,
+    "note": "17 Oct 2026 - second chance for 'No More Energy Vampires!' (Rumble v6mce7x). Awakened Rise weekly agent, last try (tries 2) per AR_PLANNING.md 2c. KEVIN-I-HAVE-AN-ENERGY-VAMPIRE failed captions-vs-sound (worst-10% 1.53s, words captioned 114%) - the two rapid-fire 'Uh, uh, uh, uh...' stammer lines (00:34-00:36 and 00:52-00:55 in work/v6mce7x.srt) sit inside the old 7-105s window and are the likely source of the drift; moved both edges past them entirely, opening on 'I have talked to psychics' (57.0, a clean sentence start right after the second stammer line) and closing on 'So that means that energy vampire has more power than you.' (117.0, the next clean payoff sentence, which still pays the 'They control how you feel' hook). Caption rewritten since the opening Kevin-dialogue framing is no longer in the clip. YOU-MIGHT-BE-THE-VAMPIRE failed on 'ends off the planned words' (plan ended 'This is insane. It's insanity', clip actually ended on the merged 'energy vampire this is insane insanity') - the three short back-to-back sentences there (...an energy vampire. This is insane. It's insanity.) read as one run-on to the render's re-transcription; pulled the end back 2s to the unambiguous single-sentence close '...they could be an energy vampire.' (275.0), which also lands the hook ('You might be the energy vampire') as a direct payoff instead of a punchline that needed stitching. ZIG-ZIGLAR-CALLED-IT-SNIOP, MY-ENERGY-FIELD-IS-BIG-ENOUGH and SOMEBODY-PUTTING-RATS-IN-YOUR-HEAD are their last try (tries 2) and skipped: each has a flagged scramble/no-stop/repeat sitting inside content the clip cannot lose without gutting its own teaching (the SNIOP acronym explanation at ~415s; the car/rain/umbrella metaphor itself at ~557-560s/the knock-on-the-door 'rats' bit with its own 'Hello... Land truck... Hello' line) - no edge move excludes the flagged words without cutting the lesson, so per the rule these are left for good rather than guessed at on a final attempt.",
+    "clips": [
+        {
+            "slug": "KEVIN-I-HAVE-AN-ENERGY-VAMPIRE",
+            "in": 57.0,
+            "out": 117.0,
+            "start_words": "I have talked to",
+            "end_words": "more power than you",
+            "hook": [
+                "They control how",
+                "you feel. Supposedly."
+            ],
+            "caption": "Energy workers and psychics say they can literally see it: an invisible drain pulling energy straight out of your field the moment a certain person walks into the room.\n\nLook up the actual definition and it holds up. An energy vampire drains the emotional energy of others, leaving them exhausted and overwhelmed — which is exactly how you feel every time, so the feeling isn't fake.\n\nHere's the part everyone skips over: if someone else decides how drained you feel, that means they have more power over you than you do.\n\nComment RISE and I'll send you how to take it back.\n\n#subconscious #energy #awakening #consciousness #selfawareness #kevintrudeau",
+            "retry_of": "ar_v6mce7x/KEVIN-I-HAVE-AN-ENERGY-VAMPIRE"
+        },
+        {
+            "slug": "YOU-MIGHT-BE-THE-VAMPIRE",
+            "in": 150.0,
+            "out": 275.0,
+            "start_words": "Common traits of an",
+            "end_words": "could be an energy vampire",
+            "hook": [
+                "You might be",
+                "the energy vampire."
+            ],
+            "caption": "Before you name the energy vampire in your life, run the actual checklist.\n\nDrama, and needing to be the center of attention. Victim mentality, blaming others for what's going wrong. Constantly needing validation, compliments, reassurance. Criticizing people. Making others feel small. And this is the one nobody sees coming — being charismatic, warm, the \"life of the party,\" is on the list too.\n\nRead that back honestly. Most people watching just found themselves on it at least once.\n\nIt's not an insult. It's information.\n\nComment RISE and I'll send you how to actually use it.\n\n#subconscious #selfawareness #awakening #consciousness #shadowwork #kevintrudeau",
+            "retry_of": "ar_v6mce7x/YOU-MIGHT-BE-THE-VAMPIRE"
+        }
+    ]
+}

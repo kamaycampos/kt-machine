@@ -1,0 +1,34 @@
+{
+    "source": "v794yks.mp4",
+    "brand": "AR_INWARDR2",
+    "test": false,
+    "note": "17 Oct 2026 - second chance for 'You're Not Who You Think You Are - This Is The Missing Piece' (Rumble v794yks). Awakened Rise weekly agent, last try (tries 2) per AR_PLANNING.md 2c. NOT-COMFORTABLE-IN-YOUR-SKIN failed on 'ends off the planned words' (plan ended mid-clause on 'if there's one thing a person can do', clip actually ended on 'but how do you do that') - the plan's own intended end_words were never a finished sentence; extended the out by 3s to the actual period at the end of that same clause, '...who they really are is this.' (126.0), which keeps the exact same cliffhanger the caption already promises ('there's one thing that moves it faster') but now a grammatically complete one. SNAKE-IN-DARKNESS-ROPE-IN-LIGHT failed with 'render refused: out 326.8 advert 323.8 +3.0s into it' - checked factory/pipeline/kt_ads.py: 'it was just an awakening' is literally the advert's own opening line (OPENER/FIRST_WORDS regex), not teaching, so the old end_words ('It was just an awakening') was always inside the ad, which is why best_end kept landing a few seconds into it no matter how the out was nudged. Pulled the end back to the real last line of teaching, 'Enlightenment allows you to see what you truly are as a spiritual being.' (out 323.5, just before the 323.8 ad boundary); the hook (snake/rope, seeing clearly) is still paid in full. NOT-A-BODY-A-SPIRITUAL-BEING and SAY-I-LOVE-YOU-SILENTLY are skipped: the first's flagged 'phrase scrambled around We're happiest when we're' is Kevin's own deliberate three-times repetition ('We're not happy... we're not happy... we're happiest when we're creating') and is the clip's entire thesis sentence - no edge move removes it without removing the point of the clip; the second has no recorded reason ('no clip came out of the render') to diagnose or fix.",
+    "clips": [
+        {
+            "slug": "NOT-COMFORTABLE-IN-YOUR-SKIN",
+            "in": 80.0,
+            "out": 126.0,
+            "start_words": "And as we create we expand",
+            "end_words": "who they really are is this",
+            "hook": [
+                "Not comfortable",
+                "in your own skin."
+            ],
+            "caption": "Most people walk around disassociated from themselves, and they can't even name what's missing.\n\nNot liking who they are. Not comfortable in their own skin. Always reaching for something they can't describe, let alone locate. That's not a small percentage of people struggling - that's the majority.\n\nThe process of getting out of that isn't instant, and it may not even finish in this lifetime. But there's one thing that moves it faster than almost anything else.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#subconscious #awakening #selfawareness #consciousness #innerwork #kevintrudeau",
+            "retry_of": "ar_v794yks/NOT-COMFORTABLE-IN-YOUR-SKIN"
+        },
+        {
+            "slug": "SNAKE-IN-DARKNESS-ROPE-IN-LIGHT",
+            "in": 210.0,
+            "out": 323.5,
+            "start_words": "You will start realizing",
+            "end_words": "are as a spiritual being",
+            "hook": [
+                "Snake in darkness.",
+                "Rope in light."
+            ],
+            "caption": "Walk into a dark basement and see something coiled in the corner, and your whole body reacts - it's a snake.\n\nTurn the light on and look again. It was always a rope. Nothing in the room changed. Only what you could see changed.\n\nThat's what enlightenment actually means - not a new power, just enough light to see what was already there the whole time: that you're one with everything, that looking inward finds more than looking outward ever did. The kingdom was never far away. You just needed the light on.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#awakening #enlightenment #consciousness #spirituality #oneness #kevintrudeau",
+            "retry_of": "ar_v794yks/SNAKE-IN-DARKNESS-ROPE-IN-LIGHT"
+        }
+    ]
+}
