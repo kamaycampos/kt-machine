@@ -21,6 +21,11 @@ is a refill run - follow the full Procedure below exactly as a morning run would
 on 16 Oct with this run standing idle). Otherwise report "no new upload" in one line and stop. Do not
 read anything else first: an afternoon with nothing new and a full queue must cost almost nothing.
 
+## READ factory/STRATEGY.md FIRST (17 Oct 2026)
+The growth strategist rewrites it daily from the real numbers (skip rate, views, DMs, money). Its
+orders on topic priority, hook shape, offer clips and what to skip come before your own taste. It
+never overrides a gate, the edges, the fence or the brand's compliance. If it is missing, carry on.
+
 ## Procedure
 1. `pip install -q opencv-python-headless pillow numpy 2>/dev/null` (so the hook lint can load).
 2. `python factory/routine_prep.py --max 4`. This prints the queue depth, downloads and decrypts the next unplanned episodes' transcripts into `work/`, and writes 30-second reading blocks for each.

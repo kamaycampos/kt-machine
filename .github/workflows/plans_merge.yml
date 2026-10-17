@@ -39,6 +39,11 @@ jobs:
             git show "origin/$BR:$f" > "$f"
             if python factory/check_plan.py "$f"; then OK="$OK $f"; else echo "REJECTED $f"; rm "$f"; fi
           done
+          # THE STRATEGIST'S ORDERS (17 Oct 2026). The growth-strategist routine rewrites
+          # factory/STRATEGY.md daily; the planner reads it first. Only that one file is taken.
+          if git diff --name-only main...origin/$BR | grep -qx factory/STRATEGY.md; then
+            git show "origin/$BR:factory/STRATEGY.md" > factory/STRATEGY.md && OK="$OK factory/STRATEGY.md"
+          fi
           for SP in factory/source_plan.json factory/ar_source_plan.json; do
             git diff --name-only main...origin/$BR | grep -qx "$SP" || continue
             git show "origin/$BR:$SP" > /tmp/sp.json
@@ -48,9 +53,9 @@ jobs:
               echo "REJECTED $SP"
             fi
           done
-          [ -z "$OK" ] && { echo "nothing to merge"; exit 0; }
+          [ -z "$OK" ] && { echo "nothing to merge"; git push -q origin --delete "$BR" || true; exit 0; }
           git add $OK
           git commit -q -m "weekly plans from $BR:$OK"
           for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && break; sleep 5; done
-          gh workflow run factory.yml --ref main
+          echo "$OK" | grep -q "factory/plans/" && gh workflow run factory.yml --ref main
           git push -q origin --delete "$BR" || true
