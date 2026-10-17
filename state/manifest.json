@@ -9415,11 +9415,25 @@
    "hook": "Why winners crave adversity, not comfort",
    "bytes": 70446315,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-17T10:25",
    "cta_keyword": "BRAIN",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DemVnalis25/",
+    "youtube": "https://youtube.com/shorts/FJSEGLDMjK8"
+   },
+   "caption_at_post": "There's a creed Kevin Trudeau quotes often: when you hit a mountain, you don't quit. You climb over it, tunnel under it, go around it, or turn it into a gold mine.\n\nMost people treat a setback as proof they should stop. Kevin Trudeau says that's backwards - the gap between winners and everyone else isn't talent, it's what happens inside you the second things go wrong.\n\nWinners don't get scared when adversity hits. They get fired up. That's a decision, not a personality trait.\n\n#kevintrudeau #mindset #success #resilience #wealthmindset #adversity",
+   "posted_at": "2026-10-17T10:38",
+   "tiktok_retry": true
   },
   {
    "file": "KT_DUTYR2R2/01_AN-AGREEMENT-FROM-A-PAST-LIFE_41s.mp4",
