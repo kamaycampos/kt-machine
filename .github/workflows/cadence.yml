@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Is today short?
         id: d
-        env: { KT_TZ: "${{ vars.KT_TZ }}" }
+        env: { KT_TZ: "${{ vars.KT_TZ }}", CADENCE_MIN: "${{ vars.CADENCE_MIN }}", CADENCE_STOCK: "${{ vars.CADENCE_STOCK }}" }
         run: python factory/cadence.py | tee /dev/stderr | grep -v '^#' >> "$GITHUB_OUTPUT"
       - name: Build the waiting plans
         if: steps.d.outputs.build == 'yes'
