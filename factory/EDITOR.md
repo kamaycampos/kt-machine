@@ -19,6 +19,14 @@ and SHOWN to Kamay (that rule stands).
 - **No film or TV footage, ever.** The reference account cuts in movie scenes; that is a copyright strike
   waiting to happen and a takedown costs a young account more than ten good posts earn.
 
+## Status, 17 Oct 2026 (night)
+- **BUILT + pushed** (kt `b1f5101`, wb `9eb202e`): opener (`shared/kt_opener.py`), podcast-layout lock
+  (`shared/kt_layout.py`), both in the full clip and the YouTube 59s cut; the story inherits them.
+  The planner names the shot per clip (`"opener"`, PLANNING.md); `check_plan.py` validates it.
+- **OFF until Kamay approves the first automatic clip:** repo variable `OPENER_LIVE` = on switches it
+  on for every build; until then only test plans render openers (`OPENER_PREVIEW`).
+- Known: the YouTube cut still draws its hook as plain mid-screen text near the captions (older code).
+
 ## The build, in order (each one rendered, shown, then measured)
 1. **Opening visual gate.** Score the first 3 s of every render: brightness, sharpness, colour cast,
    face clear and lit, stray overlays. Below the bar -> flag `BAD OPENING VISUAL` and route the clip to
