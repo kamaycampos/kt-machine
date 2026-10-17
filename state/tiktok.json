@@ -1,10 +1,10 @@
 {
- "at": "2026-10-16T21:41",
+ "at": "2026-10-17T04:57",
  "profile": {
-  "likes_count": 5853,
-  "video_count": 166,
   "follower_count": 411,
-  "following_count": 8
+  "following_count": 8,
+  "likes_count": 5853,
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -269,7 +269,7 @@
   },
   "KT_FREEDOM/02_HOW-I-MADE-A-MILLION-BEFORE-18_138s.mp4": {
    "id": "7690276043977985293",
-   "view_count": 2,
+   "view_count": 3,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -399,7 +399,7 @@
   },
   "KT_YWIYC/01_WHY-HONEST-WORK-KEEPS-YOU-BROKE_71s.mp4": {
    "id": "7689209177406786829",
-   "view_count": 199,
+   "view_count": 200,
    "like_count": 11,
    "comment_count": 0,
    "share_count": 0,
@@ -539,7 +539,7 @@
   },
   "KT_SECRET/02_TEN-THOUSAND-WAYS_113s.mp4": {
    "id": "7687673803677224206",
-   "view_count": 535,
+   "view_count": 536,
    "like_count": 57,
    "comment_count": 1,
    "share_count": 2,
@@ -699,7 +699,7 @@
   },
   "unmatched/7685818408352435470": {
    "id": "7685818408352435470",
-   "view_count": 806,
+   "view_count": 807,
    "like_count": 99,
    "comment_count": 2,
    "share_count": 5,
