@@ -5940,6 +5940,42 @@
     "$750 billion.",
     "One missing habit"
    ]
+  },
+  "ep_v77l7um_p2/WHEN-THE-FACTS-CHANGE": {
+   "plan": "ep_v77l7um_p2",
+   "source": "v77l7um.mp4",
+   "brand": "KT_SATOSHI",
+   "tries": 1,
+   "why": [
+    "FAIL 02_WHEN-THE-FACTS-CHANGE_99s.mp4: ends off the planned words: plan ends 'I change my mind', clip ends 'when the facts change i change'"
+   ],
+   "slug": "WHEN-THE-FACTS-CHANGE",
+   "in": 2088.0,
+   "out": 2191.44,
+   "start_words": "Albert Einstein and Hawkins",
+   "end_words": "I change my mind",
+   "hook": [
+    "Why changing your mind",
+    "wins"
+   ]
+  },
+  "ep_v77l7um_p2/THERES-NO-HAPPILY-EVER-AFTER": {
+   "plan": "ep_v77l7um_p2",
+   "source": "v77l7um.mp4",
+   "brand": "KT_SATOSHI",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THERES-NO-HAPPILY-EVER-AFTER_56s.mp4: [FAIL] 01_THERES-NO-HAPPILY-EVER-AFTER_56s.mp4                7 captions vs the sound  median +0.58s  worst-10% 1.30s  | words captioned 96%"
+   ],
+   "slug": "THERES-NO-HAPPILY-EVER-AFTER",
+   "in": 2355.04,
+   "out": 2417.68,
+   "start_words": "The journey is the reward",
+   "end_words": "There's no end to the movie",
+   "hook": [
+    "Why waiting to be happy",
+    "fails"
+   ]
   }
  },
  "attempts": {
