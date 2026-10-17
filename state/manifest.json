@@ -9130,12 +9130,26 @@
    "caption": "Trace back almost anyone who built something extraordinary and you'll find the same starting point: a childhood that hurt.\n\nIt isn't a coincidence. Adversity creates a kind of ruthless, fixed purpose that comfort never forces you to develop \u2014 without it, most people simply don't push hard enough to need the breakthrough. Even the setbacks you'd call bad luck tend to flip, later, into the exact thing that helped you most. The pain isn't separate from the outcome. It's raw material for it.\n\nNothing you survived was wasted.\n\nComment RISE and I'll send you how to use what happened to you.\n\n#manifestation #mindset #resilience #awakening #subconscious #kevintrudeau",
    "hook": "Unhappy childhoods build the most success.",
    "bytes": 27715672,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-17T07:38",
    "cta_keyword": "YES",
    "cta_variant": 5,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1650492879993556/",
+    "instagram": "https://www.instagram.com/reel/DemDTo4io1D/",
+    "youtube": "https://youtube.com/shorts/puVZT0e_7X8"
+   },
+   "caption_at_post": "Trace back almost anyone who built something extraordinary and you'll find the same starting point: a childhood that hurt.\n\nIt isn't a coincidence. Adversity creates a kind of ruthless, fixed purpose that comfort never forces you to develop \u2014 without it, most people simply don't push hard enough to need the breakthrough. Even the setbacks you'd call bad luck tend to flip, later, into the exact thing that helped you most. The pain isn't separate from the outcome. It's raw material for it.\n\nNothing you survived was wasted.\n\nComment RISE and I'll send you how to use what happened to you.\n\n#manifestation #mindset #resilience #awakening #subconscious #kevintrudeau",
+   "posted_at": "2026-10-17T07:58"
   },
   {
    "file": "AR_VAMPIRE/01_SAILBOAT-WITHOUT-A-RUDDER_74s.mp4",
@@ -9353,7 +9367,8 @@
    },
    "caption_at_post": "Kevin Trudeau opens this one with a passage you've probably heard without knowing where it's from: Theodore Roosevelt's \"Man in the Arena\" speech, 1910.\n\nThe credit belongs to the person in the arena - face marred by dust and blood, failing again and again, never the cold and timid souls who never tried.\n\nKevin Trudeau's point: if you want to succeed, you will get knocked down, your face will get marred and scarred, and it won't go the way you planned.\n\nThat's life. The question is whether you stay in the arena anyway.\n\n#kevintrudeau #mindset #resilience #success #motivation #adversity",
    "posted_at": "2026-10-17T07:37",
-   "tiktok_retry": true
+   "tiktok_retry": true,
+   "tiktok_tries": 1
   },
   {
    "file": "KT_ARENA/01_WINNERS-GO-INTO-ATTACK-MODE_55s.mp4",
@@ -9411,7 +9426,11 @@
    "hook": "Why winners never make excuses",
    "bytes": 72739765,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-17T14:35",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
