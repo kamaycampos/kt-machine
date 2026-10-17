@@ -42,7 +42,15 @@ import re
 import sys
 
 sys.path.insert(0, os.path.expanduser("~/Kamay"))
-import kt_render as R                                   # noqa: E402
+# THE RENDERER IS OPTIONAL HERE (17 Oct 2026). It is only needed for the pixel
+# width check, and it pulls in cv2 + fonts. Where it does not load (the cloud
+# planner), check_plan.py fell back to "6 words max" and passed 11 WB hooks the
+# factory then dropped - 0 of 13 clips built. Every text rule runs everywhere;
+# only the width check waits for the renderer.
+try:
+    import kt_render as R                               # noqa: E402
+except Exception:
+    R = None
 
 SERIES = os.path.join(os.path.expanduser("~/Kamay"), "kt_series.json")
 
@@ -101,6 +109,8 @@ def problems(hook, brand=""):
         if hook[-1].strip().endswith("."):
             out.append("ends in a full stop - a hook is a headline, "
                        "not a sentence")
+    if R is None:
+        return out
     lines = [l.upper() for l in hook]
     size = R.fit_size(lines, 92)
     widest = max(R.text_w(l, size) for l in lines)

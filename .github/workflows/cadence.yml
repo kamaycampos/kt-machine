@@ -1,0 +1,48 @@
+# THE CADENCE RULE - Kamay, 17 Oct 2026 (factory/cadence.py has the why).
+# Every 2 hours: if today has fewer than 4 posts (posted + still booked today), do the next
+# production step - build waiting plans, or wake the cloud planner - and look again in 2
+# hours, until the day is covered. On a covered day it does nothing at all.
+# The planner wakes on a repository_dispatch: a claude.ai webhook trigger (created 17 Oct)
+# turns that event into a planner run. THIS WORKFLOW IS THE ONLY SENDER - any other
+# repository_dispatch on this repo would also start the planner.
+name: cadence
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "11 */2 * * *"
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: cadence
+  cancel-in-progress: false
+jobs:
+  cadence:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Is today short?
+        id: d
+        env: { KT_TZ: "${{ vars.KT_TZ }}" }
+        run: python factory/cadence.py | tee /dev/stderr | grep -v '^#' >> "$GITHUB_OUTPUT"
+      - name: Build the waiting plans
+        if: steps.d.outputs.build == 'yes'
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          # Not when a factory run is going or ran in the last 3 hours: the same plans would
+          # only fail the same gates again.
+          recent=$(gh run list --workflow factory.yml -L 5 --json status,createdAt -q \
+            "[.[] | select(.status != \"completed\" or (.createdAt | fromdateiso8601) > (now - 10800))] | length")
+          if [ "$recent" = "0" ]; then gh workflow run factory.yml --ref main && echo "factory started"
+          else echo "factory ran or is running within 3h - skip"; fi
+      - name: Wake the planner
+        if: steps.d.outputs.plan == 'yes'
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh api "repos/${{ github.repository }}/dispatches" -f event_type=cadence-plan
+          git config user.name "kt-factory"
+          git config user.email "kt-factory@users.noreply.github.com"
+          git tag -f -a cadence-plan-fired -m "planner woken $(date -u +%FT%TZ)"
+          git push -q -f origin refs/tags/cadence-plan-fired
+          echo "planner woken"
