@@ -6192,6 +6192,60 @@
     "Why changing your mind",
     "wins"
    ]
+  },
+  "ep_v7ed2gy/BANNED-BOOK-BEAT-HARRY-POTTER": {
+   "plan": "ep_v7ed2gy",
+   "source": "v7ed2gy.mp4",
+   "brand": "KT_PHOENIX",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_BANNED-BOOK-BEAT-HARRY-POTTER_122s.mp4` - phrase scrambled around \"for life except for\""
+   ],
+   "slug": "BANNED-BOOK-BEAT-HARRY-POTTER",
+   "in": 460.16,
+   "out": 587.6,
+   "start_words": "I got sued by",
+   "end_words": "all of America in hardback",
+   "hook": [
+    "The book that",
+    "beat Harry Potter"
+   ]
+  },
+  "ep_v7ed2gy/TURN-THE-MOUNTAIN-INTO-GOLD": {
+   "plan": "ep_v7ed2gy",
+   "source": "v7ed2gy.mp4",
+   "brand": "KT_PHOENIX",
+   "tries": 1,
+   "why": [
+    "FAIL 02_TURN-THE-MOUNTAIN-INTO-GOLD_169s.mp4: [FAIL] 02_TURN-THE-MOUNTAIN-INTO-GOLD_169s.mp4                39 captions vs the sound  median +0.06s  worst-10% 0.83s  | words captioned 100%"
+   ],
+   "slug": "TURN-THE-MOUNTAIN-INTO-GOLD",
+   "in": 617.68,
+   "out": 796.24,
+   "start_words": "Do you react to situations",
+   "end_words": "turn the mountain into a gold mine",
+   "hook": [
+    "Why winners turn",
+    "pain into gold"
+   ]
+  },
+  "ep_v7ed2gy/REPLACE-YOUR-HABIT-LAUGH-NOW": {
+   "plan": "ep_v7ed2gy",
+   "source": "v7ed2gy.mp4",
+   "brand": "KT_PHOENIX",
+   "tries": 1,
+   "why": [
+    "FAIL 01_REPLACE-YOUR-HABIT-LAUGH-NOW_92s.mp4: ends off the planned words: plan ends 'get up eight', clip ends 'fall down seven times get up'"
+   ],
+   "slug": "REPLACE-YOUR-HABIT-LAUGH-NOW",
+   "in": 838.96,
+   "out": 938.56,
+   "start_words": "You don't eliminate habits",
+   "end_words": "get up eight",
+   "hook": [
+    "The one habit",
+    "that erases pain"
+   ]
   }
  },
  "attempts": {
