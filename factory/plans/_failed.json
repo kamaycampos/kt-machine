@@ -6552,6 +6552,96 @@
     "The one move",
     "that changes income"
    ]
+  },
+  "ep_v6jjx1s/PRISON-FOR-5-DAYS-LATE": {
+   "plan": "ep_v6jjx1s",
+   "source": "v6jjx1s.mp4",
+   "brand": "KT_MINDSET",
+   "tries": 1,
+   "why": [
+    "FAIL 01_PRISON-FOR-5-DAYS-LATE_99s.mp4: [FAIL] 01_PRISON-FOR-5-DAYS-LATE_99s.mp4                      6 captions vs the sound  median +0.85s  worst-10% 1.80s  | words captioned 100%"
+   ],
+   "slug": "PRISON-FOR-5-DAYS-LATE",
+   "in": 113.08,
+   "out": 211.8,
+   "start_words": "There was one guy there",
+   "end_words": "Find the gold",
+   "hook": [
+    "5 days late",
+    "Year in prison"
+   ]
+  },
+  "ep_v6jjx1s/HE-CHOSE-TO-LOVE-PRISON": {
+   "plan": "ep_v6jjx1s",
+   "source": "v6jjx1s.mp4",
+   "brand": "KT_MINDSET",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_HE-CHOSE-TO-LOVE-PRISON_81s.mp4` - ends mid-thought on \"I come out\"; phrase scrambled around \"I'm gonna rest i'm\"; phrase scrambled around \"gonna meditate i'm gonna\""
+   ],
+   "slug": "HE-CHOSE-TO-LOVE-PRISON",
+   "in": 219.44,
+   "out": 299.52,
+   "start_words": "I control my thoughts",
+   "end_words": "blessing for when I come out",
+   "hook": [
+    "Why he chose to",
+    "love prison"
+   ]
+  },
+  "ep_v6jjx1s/THE-ONLY-HAPPY-INMATE": {
+   "plan": "ep_v6jjx1s",
+   "source": "v6jjx1s.mp4",
+   "brand": "KT_MINDSET",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_THE-ONLY-HAPPY-INMATE_100s.mp4` - ends mid-thought on \"deal with adversity\"; phrase scrambled around \"goes truedo He goes,\"; phrase scrambled around \"not angry You're not\""
+   ],
+   "slug": "THE-ONLY-HAPPY-INMATE",
+   "in": 300.48,
+   "out": 399.32,
+   "start_words": "I was walking down the",
+   "end_words": "how you deal with adversity",
+   "hook": [
+    "The only happy inmate",
+    "in prison"
+   ]
+  },
+  "ep_v6qh3hy/A-MILLION-IN-SALES-ISNT-RICH": {
+   "plan": "ep_v6qh3hy",
+   "source": "v6qh3hy.mp4",
+   "brand": "KT_OBSESSION",
+   "tries": 1,
+   "why": [
+    "FAIL 01_A-MILLION-IN-SALES-ISNT-RICH_104s.mp4: [FAIL] 01_A-MILLION-IN-SALES-ISNT-RICH_104s.mp4               13 captions vs the sound  median +2.18s  worst-10% 2.21s  | words captioned 94%"
+   ],
+   "slug": "A-MILLION-IN-SALES-ISNT-RICH",
+   "in": 25.68,
+   "out": 131.2,
+   "start_words": "Becoming a millionaire simply means",
+   "end_words": "That's a million bucks",
+   "hook": [
+    "Why $1M in sales",
+    "isn't rich"
+   ]
+  },
+  "ep_v6qh3hy/HE-LOCKED-HIS-GOLF-CLUBS-AWAY": {
+   "plan": "ep_v6qh3hy",
+   "source": "v6qh3hy.mp4",
+   "brand": "KT_OBSESSION",
+   "tries": 1,
+   "why": [
+    "FAIL 01_HE-LOCKED-HIS-GOLF-CLUBS-AWAY_130s.mp4: [FAIL] 01_HE-LOCKED-HIS-GOLF-CLUBS-AWAY_130s.mp4              6 captions vs the sound  median +0.51s  worst-10% 1.10s  | words captioned 100%"
+   ],
+   "slug": "HE-LOCKED-HIS-GOLF-CLUBS-AWAY",
+   "in": 533.68,
+   "out": 670.4,
+   "start_words": "He was living in Punta",
+   "end_words": "focused in on what you're doing",
+   "hook": [
+    "Why millionaires go broke",
+    "on purpose"
+   ]
   }
  },
  "attempts": {
@@ -6576,6 +6666,7 @@
   "ep_v7e1nwe_r3": 2,
   "ar_v794yks_r2": 2,
   "ep_v6zdmb0_r3": 2,
-  "ep_v77l7um_r7": 2
+  "ep_v77l7um_r7": 2,
+  "ep_v7bf6rm_r2": 1
  }
 }
