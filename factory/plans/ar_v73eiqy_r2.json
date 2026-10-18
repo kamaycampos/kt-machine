@@ -1,0 +1,34 @@
+{
+ "source": "v73eiqy.mp4",
+ "brand": "AR_SEEDSR2",
+ "test": false,
+ "note": "18 Oct 2026 - 'Mental Seeds To Plant For 2026' (Rumble v73eiqy). Awakened Rise weekly agent. SECOND CHANCE re-cut (first-run gate failures) per PLANNING.md 2c. BROADCAST-ON-A-NARROW-BEAM failed captions-vs-sound - moved both edges to a different sentence pair: opens on 'It's actually a process' (a few seconds later than the old start) and closes on 'as a seed that will be planted', which also lands the clip on the SEEDS theme. WHAT-YOU-THINK-YOU-BECOME failed hook lint ('What you think' announces a topic) - rewrote the hook to a claim, kept the same cut. NOT-PHILOSOPHY-ITS-PHYSICS and TESLA-KNEW-THE-SECRET not re-offered: their only recorded reason was 'no clip came out of the render', which names no content problem to diagnose or fix.",
+ "clips": [
+  {
+   "slug": "BROADCAST-ON-A-NARROW-BEAM",
+   "in": 36.0,
+   "out": 96.0,
+   "start_words": "It's actually a process",
+   "end_words": "as a seed that will be planted",
+   "hook": [
+    "A narrow beam hits",
+    "your mind."
+   ],
+   "caption": "At the highest levels of certain groups, they don't just teach you something. They broadcast it.\n\nA rapid sequence of phrases, sent out on what's described as a narrow beam, aimed to move straight through the analytical mind — the part of you built to resist — and the conscious mind right behind it. What gets past both doesn't stay on the surface. It drops into the subconscious as a seed, planted on purpose, left to grow on its own.\n\nYou were never meant to notice it happening. That's the whole design.\n\nComment RISE and I'll send you what to watch for.\n\n#subconscious #programming #awakening #consciousness #secretsociety #kevintrudeau",
+   "retry_of": "ar_v73eiqy/BROADCAST-ON-A-NARROW-BEAM"
+  },
+  {
+   "slug": "WHAT-YOU-THINK-YOU-BECOME",
+   "in": 104.0,
+   "out": 163.0,
+   "start_words": "What you think you",
+   "end_words": "in the beginning Gandhi",
+   "hook": [
+    "Your thoughts are building",
+    "your reality."
+   ],
+   "caption": "Four of the most quoted minds in history were all describing the exact same mechanism.\n\nBuddha: what you think, you become. Henry Ford: believe you can or can't, either way you're right. Patanjali: get inspired by a real purpose and your thoughts break their own limits. Gandhi: believe you can't do something and you make it true; believe you can, and the ability shows up that wasn't there before.\n\nDifferent centuries, different languages, same law. Your belief isn't a reaction to your life. It's building it.\n\nComment RISE and I'll send you how to use this on purpose.\n\n#manifestation #mindset #awakening #subconscious #lawofattraction #kevintrudeau",
+   "retry_of": "ar_v73eiqy/WHAT-YOU-THINK-YOU-BECOME"
+  }
+ ]
+}
