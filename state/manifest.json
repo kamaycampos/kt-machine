@@ -9615,7 +9615,8 @@
    },
    "caption_at_post": "Kevin Trudeau watched Jeff Bezos launch an online bookstore before almost anyone saw the internet as real money. \"This guy is a winner,\" Kevin thought - and he was right.\n\nYears later, someone brought him a different opportunity: buy Bitcoin at $20. He said no - fake money, made no sense to him. It came back around at $20,000. Still said no. He missed it completely.\n\nHere's how he keeps that from wrecking him: you never actually get it wrong. You either win, or you learn. Most people are so afraid of a bad decision that they never make one.\n\nWhat opportunity are you still punishing yourself for missing?\n\n#kevintrudeau #mindset #wealthmindset #investing #entrepreneur #successhabits",
    "posted_at": "2026-10-18T10:19",
-   "tiktok_retry": true
+   "tiktok_retry": true,
+   "tiktok_tries": 1
   },
   {
    "file": "KT_PHOENIX/01_JOBS-FIRED-THEN-SAVED-APPLE_107s.mp4",
@@ -9658,12 +9659,26 @@
    "caption": "A Harvard class was asked who had a goal. Seventy percent said yes.\n\nOnly three percent had written it down. Fifteen years later, researchers found that same three percent \u2014 not seventy, just three \u2014 had built more wealth than the other ninety-seven combined.\n\nWriting it down isn't a productivity trick. It's the one variable researchers could actually isolate between the ones who got there and the ones who just talked about it.\n\nComment RISE and I'll send you how to do it properly.\n\n#manifestation #awakening #goals #lawofattraction #mindset #kevintrudeau",
    "hook": "3% wrote it down. Out-earned everyone.",
    "bytes": 40459102,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-18T10:33",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/914748271569086/",
+    "instagram": "https://www.instagram.com/reel/Deo6lqVky44/",
+    "youtube": "https://youtube.com/shorts/X00GXccViRE"
+   },
+   "caption_at_post": "A Harvard class was asked who had a goal. Seventy percent said yes.\n\nOnly three percent had written it down. Fifteen years later, researchers found that same three percent \u2014 not seventy, just three \u2014 had built more wealth than the other ninety-seven combined.\n\nWriting it down isn't a productivity trick. It's the one variable researchers could actually isolate between the ones who got there and the ones who just talked about it.\n\nComment RISE and I'll send you how to do it properly.\n\n#manifestation #awakening #goals #lawofattraction #mindset #kevintrudeau",
+   "posted_at": "2026-10-18T10:41"
   },
   {
    "file": "KT_CIRCLE/02_CLUB-SODA-AT-THE-RICH-PEOPLE-BAR_81s.mp4",
@@ -9695,7 +9710,11 @@
    "hook": "Why $25,000 goals feel too small",
    "bytes": 66637189,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-19T09:44",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
