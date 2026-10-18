@@ -1,7 +1,7 @@
 ## ar_v73eiqy_r2: 1 of 2 clip(s) passed every gate
 
 
-## 2026-10-18 12:27
+## 2026-10-18 13:58
   note AR_SEEDSR2/BROADCAST-ON-A-NARROW-BEAM: ending kept on the planner's words 'as a seed that will be planted' (next line completes it)
 ar_v73eiqy_r2__s0 (AR_SEEDSR2): 2 of 2 passed pre-render gates
 
@@ -17,7 +17,7 @@ TEST MODE - passing clips NOT uploaded or queued: AR_SEEDSR2
 ## ar_v73yyiw_r3: 1 of 2 clip(s) passed every gate
 
 
-## 2026-10-18 12:29
+## 2026-10-18 13:52
 ar_v73yyiw_r3__s0 (AR_OBSESSIONR3): 2 of 2 passed pre-render gates
 
 RENDER ar_v73yyiw_r3__s0
@@ -27,10 +27,10 @@ RENDER ar_v73yyiw_r3__s0
 TEST MODE - passing clips NOT uploaded or queued: AR_OBSESSIONR3
 
 
-## ep_v73obcq: 1 of 4 clip(s) passed every gate
+## ep_v73obcq: 2 of 4 clip(s) passed every gate
 
 
-## 2026-10-18 12:22
+## 2026-10-18 13:53
 ep_v73obcq__s1 (KT_LIFT): 2 of 2 passed pre-render gates
 
 RENDER ep_v73obcq__s1
@@ -41,13 +41,15 @@ TEST MODE - passing clips NOT uploaded or queued: KT_LIFT
 
 
 
-## 2026-10-18 12:37
+## 2026-10-18 13:54
   note KT_LIFT/I-SEE-A-FOREST: ending kept on the planner's words 'making yourself bigger' (cuts mid-sentence)
 ep_v73obcq__s0 (KT_LIFT): 2 of 2 passed pre-render gates
 
 RENDER ep_v73obcq__s0
-  FAIL 01_I-SEE-A-FOREST_123s.mp4: [FAIL] 01_I-SEE-A-FOREST_123s.mp4                             19 captions vs the sound  median +0.16s  worst-10% 0.77s  | words captioned 99%
+  PASS 01_I-SEE-A-FOREST_123s.mp4  01_I-SEE-A-FOREST_123s.mp4                             18 captions vs the sound  median +0
+       FIRST 5s : You know, you've heard me talk about the Larry King interview with Bill Gates, co-founder | LAST  8s : Does it ever go back to its original size? No. You keep expanding. You keep making yourself bigger.
   FAIL 02_DROP-THE-SANDBAGS_60s.mp4: [FAIL] 02_DROP-THE-SANDBAGS_60s.mp4                           49 captions vs the sound (word-referenced: no clear pauses)  median +0.41s  worst-10% 0.91s  | words captioned 99%
+TEST MODE - passing clips NOT uploaded or queued: KT_LIFT
 
 
 - **NOT QUEUED** `02_THE-RICH-MAN-LEARNS-FROM-THE-FOOL_48s.mp4` - ends mid-thought on "with discernment even"; phrase scrambled around "fool But the fool"; sentence starts with no stop: "fool But"
@@ -55,7 +57,7 @@ RENDER ep_v73obcq__s0
 ## ep_v7bf6rm: 2 of 6 clip(s) passed every gate
 
 
-## 2026-10-18 12:44
+## 2026-10-18 13:58
   note KT_FORMULA/BROKE-STUTTERER-GOT-HIRED: ending kept on the planner's words 'was a sales presentation' (introduces, does not claim)
   note KT_FORMULA/SIX-QUESTIONS-THAT-WIN-FRIENDS: ending kept on the planner's words 'instantly like you more' (ends on 'more')
 ep_v7bf6rm__s0 (KT_FORMULA): 2 of 2 passed pre-render gates
@@ -68,7 +70,7 @@ TEST MODE - passing clips NOT uploaded or queued: KT_FORMULA
 
 
 
-## 2026-10-18 12:13
+## 2026-10-18 13:42
   note KT_FORMULA/WHY-IS-THAT-SELLS-ITSELF: ending kept on the planner's words 'Oh, show me' (cuts mid-sentence)
   note KT_FORMULA/THE-SECRET-ZIG-ZIGLAR-GAVE-HIM: ending kept on the planner's words 'through John Jones eyes' (ends inside a quote)
 ep_v7bf6rm__s1 (KT_FORMULA): 2 of 2 passed pre-render gates
@@ -82,7 +84,7 @@ render refused: a clip runs past the teaching into the advert
 
 
 
-## 2026-10-18 12:32
+## 2026-10-18 14:05
   note KT_FORMULA/HOW-HE-COPIED-RICH-SALESMEN: ending kept on the planner's words 'then develops affinity' (next line completes it)
 ep_v7bf6rm__s2 (KT_FORMULA): 2 of 2 passed pre-render gates
 
@@ -95,10 +97,10 @@ TEST MODE - passing clips NOT uploaded or queued: KT_FORMULA
 
 - **NOT QUEUED** `02_BROKE-STUTTERER-GOT-HIRED_66s.mp4` - ends mid-thought on "And if--"
 
-## ep_v7dfhw8: 4 of 7 clip(s) passed every gate
+## ep_v7dfhw8: 3 of 7 clip(s) passed every gate
 
 
-## 2026-10-18 12:44
+## 2026-10-18 14:07
   note KT_CIRCLE/CLUB-SODA-AT-THE-RICH-PEOPLE-BAR: ending kept on the planner's words 'started dreaming bigger' (cuts mid-sentence)
 ep_v7dfhw8__s1 (KT_CIRCLE): 2 of 2 passed pre-render gates
 
@@ -111,30 +113,28 @@ TEST MODE - passing clips NOT uploaded or queued: KT_CIRCLE
 
 
 
-## 2026-10-18 12:48
+## 2026-10-18 14:09
 ep_v7dfhw8__s0 (KT_CIRCLE): 2 of 2 passed pre-render gates
 
 RENDER ep_v7dfhw8__s0
-  FAIL 01_FIVE-FRIENDS-SET-YOUR-INCOME_135s.mp4: [FAIL] 01_FIVE-FRIENDS-SET-YOUR-INCOME_135s.mp4               28 captions vs the sound  median +0.08s  worst-10% 0.10s  | words captioned 100%  UNCAPTIONED SPEECH [(85.5, 88.0)]
-  PASS 02_WORKED-NEAR-RICH-PEOPLE_105s.mp4  02_WORKED-NEAR-RICH-PEOPLE_105s.mp4                    24 captions vs the sound  median +0
-       FIRST 5s : Go and become a caddy at the Country Club, and that way you could be | LAST  8s : A imagination, a dream, it transformed to physical reality right in front of me.
-TEST MODE - passing clips NOT uploaded or queued: KT_CIRCLE
+  FAIL 01_FIVE-FRIENDS-SET-YOUR-INCOME_135s.mp4: [FAIL] 01_FIVE-FRIENDS-SET-YOUR-INCOME_135s.mp4               29 captions vs the sound  median +0.08s  worst-10% 0.12s  | words captioned 100%  UNCAPTIONED SPEECH [(85.5, 88.0)]
+  FAIL 02_WORKED-NEAR-RICH-PEOPLE_105s.mp4: [FAIL] 02_WORKED-NEAR-RICH-PEOPLE_105s.mp4                    28 captions vs the sound  median +0.09s  worst-10% 0.76s  | words captioned 100%
 
 
 
-## 2026-10-18 12:31
+## 2026-10-18 14:05
   note KT_CIRCLE/YOUR-FEED-REVEALS-YOUR-FUTURE: ending kept on the planner's words 'tell you how you're thinking' (cuts mid-sentence)
 ep_v7dfhw8__s2 (KT_CIRCLE): 2 of 2 passed pre-render gates
 
 RENDER ep_v7dfhw8__s2
-  PASS 01_YOUR-FEED-REVEALS-YOUR-FUTURE_64s.mp4  01_YOUR-FEED-REVEALS-YOUR-FUTURE_64s.mp4               8 captions vs the sound  median +0.
+  PASS 01_YOUR-FEED-REVEALS-YOUR-FUTURE_64s.mp4  01_YOUR-FEED-REVEALS-YOUR-FUTURE_64s.mp4               7 captions vs the sound  median +0.
        FIRST 5s : The algorithm is telling you what you're thinking. Someone was at my house the other day, went down and I was going to watch... | LAST  8s : And see what the algorithm is recommending that you watch. That is going to tell you how you're thinking.
-  FAIL 02_HE-PICKED-UP-A-SOUTHERN-ACCENT_62s.mp4: [FAIL] 02_HE-PICKED-UP-A-SOUTHERN-ACCENT_62s.mp4              12 captions vs the sound  median -0.00s  worst-10% 0.27s  | words captioned 98%  UNCAPTIONED SPEECH [(10.3, 12.7)]
+  FAIL 02_HE-PICKED-UP-A-SOUTHERN-ACCENT_62s.mp4: [FAIL] 02_HE-PICKED-UP-A-SOUTHERN-ACCENT_62s.mp4              10 captions vs the sound  median -0.01s  worst-10% 0.72s  | words captioned 98%  UNCAPTIONED SPEECH [(10.3, 12.7)]
 TEST MODE - passing clips NOT uploaded or queued: KT_CIRCLE
 
 
 
-## 2026-10-18 12:35
+## 2026-10-18 14:08
   note KT_CIRCLE/GET-RID-OF-YOUR-FRIENDS: ending kept on the planner's words 'change the room' (cuts mid-sentence)
 ep_v7dfhw8__s3 (KT_CIRCLE): 1 of 1 passed pre-render gates
 
@@ -144,64 +144,14 @@ RENDER ep_v7dfhw8__s3
 
 - **NOT QUEUED** `01_HE-LOST-EVERYTHING-THEN-REBUILT_62s.mp4` - word repeated: "of of"
 
-- **NOT QUEUED** `02_WORKED-NEAR-RICH-PEOPLE_105s.mp4` - opens mid-sentence on "go and become"
-
 - **NOT QUEUED** `01_YOUR-FEED-REVEALS-YOUR-FUTURE_64s.mp4` - ends mid-thought on "look at it"; sentence starts with no stop: "feed And"; sentence starts with no stop: "friends He"
 
-## ep_v7ed2gy: 4 of 6 clip(s) passed every gate
-
-
-## 2026-10-18 12:58
-  note KT_PHOENIX/REPLACE-YOUR-HABIT-LAUGH-NOW: ending kept on the planner's words 'get up eight' (cuts mid-sentence)
-ep_v7ed2gy__s2 (KT_PHOENIX): 2 of 2 passed pre-render gates
-
-RENDER ep_v7ed2gy__s2
-  FAIL 01_REPLACE-YOUR-HABIT-LAUGH-NOW_92s.mp4: ends off the planned words: plan ends 'get up eight', clip ends 'fall down seven times get up'
-  PASS 02_YOUR-BREAKTHROUGH-BURIED-IN-DIRT_53s.mp4  02_YOUR-BREAKTHROUGH-BURIED-IN-DIRT_53s.mp4            5 captions vs the sound  median +0.
-       FIRST 5s : People move tons of dirt just to get a few ounces of | LAST  8s : Really, there can be no success. The day everything falls apart, that's the day that your success begins.
-TEST MODE - passing clips NOT uploaded or queued: KT_PHOENIX
-
-
-
-## 2026-10-18 13:01
-  note KT_PHOENIX/JOBS-FIRED-THEN-SAVED-APPLE: ending kept on the planner's words 'turn my life around' (cuts mid-sentence)
-ep_v7ed2gy__s0 (KT_PHOENIX): 2 of 2 passed pre-render gates
-
-RENDER ep_v7ed2gy__s0
-  PASS 01_JOBS-FIRED-THEN-SAVED-APPLE_107s.mp4  01_JOBS-FIRED-THEN-SAVED-APPLE_107s.mp4                24 captions vs the sound  median +0
-       FIRST 5s : Even Jobs was fired from Apple by the board. He was kicked out, the founder of Apple. | LAST  8s : It was when she was at the bottom. That's when she made the decision. I'm going to turn my life around.
-  PASS 02_BROKE-UP-SOLD-450-MILLION_61s.mp4  02_BROKE-UP-SOLD-450-MILLION_61s.mp4                   11 captions vs the sound  median +0
-       FIRST 5s : I had a partner in the memory training business. I was launching the American Memory Institute, taught live semi | LAST  8s : And I became the infomercial king and went on to generate billions and billions and billions of dollars on TV around the world.
-TEST MODE - passing clips NOT uploaded or queued: KT_PHOENIX
-
-
-
-## 2026-10-18 13:20
-  note KT_PHOENIX/BANNED-BOOK-BEAT-HARRY-POTTER: ending kept on the planner's words 'all of America in hardback' (introduces, does not claim)
-  note KT_PHOENIX/TURN-THE-MOUNTAIN-INTO-GOLD: ending kept on the planner's words 'turn the mountain into a gold mine' (cuts mid-sentence)
-ep_v7ed2gy__s1 (KT_PHOENIX): 2 of 2 passed pre-render gates
-
-RENDER ep_v7ed2gy__s1
-  PASS 01_BANNED-BOOK-BEAT-HARRY-POTTER_122s.mp4  01_BANNED-BOOK-BEAT-HARRY-POTTER_122s.mp4              17 captions vs the sound  median +0
-       FIRST 5s : I got sued by the Federal Trade Commission because I was selling a product called Coral Calcium. | LAST  8s : It became the best-selling book in all of America the year it came out, Beat Harry Potter. It was number one in all of America in hardback.
-  FAIL 02_TURN-THE-MOUNTAIN-INTO-GOLD_169s.mp4: [FAIL] 02_TURN-THE-MOUNTAIN-INTO-GOLD_169s.mp4                39 captions vs the sound  median +0.05s  worst-10% 0.83s  | words captioned 100%
-TEST MODE - passing clips NOT uploaded or queued: KT_PHOENIX
-
-
-- **NOT QUEUED** `01_BANNED-BOOK-BEAT-HARRY-POTTER_122s.mp4` - phrase scrambled around "for life except for"
-
 ## UPLOAD
-3 clip(s) to add:
-   AR_OBSESSIONR3/02_THREE-PERCENT-WROTE-IT-DOWN_54s.mp4  (40 MB)
-   KT_CIRCLE/02_CLUB-SODA-AT-THE-RICH-PEOPLE-BAR_81s.mp4  (50 MB)
-   KT_FORMULA/01_WHY-WINNERS-LISTEN-MORE-THAN-TALK_61s.mp4  (45 MB)
-   added AR_OBSESSIONR3/02_THREE-PERCENT-WROTE-IT-DOWN_54s.mp4
-      + 02_CLUB-SODA-AT-THE-RICH-PEOPLE-BAR_81s__story.mp4
-      + 02_CLUB-SODA-AT-THE-RICH-PEOPLE-BAR_81s__yt59.mp4
-   added KT_CIRCLE/02_CLUB-SODA-AT-THE-RICH-PEOPLE-BAR_81s.mp4
-      + 01_WHY-WINNERS-LISTEN-MORE-THAN-TALK_61s__story.mp4
-      + 01_WHY-WINNERS-LISTEN-MORE-THAN-TALK_61s__yt59.mp4
-   added KT_FORMULA/01_WHY-WINNERS-LISTEN-MORE-THAN-TALK_61s.mp4
+1 clip(s) to add:
+   KT_LIFT/01_I-SEE-A-FOREST_123s.mp4  (67 MB)
+      + 01_I-SEE-A-FOREST_123s__story.mp4
+      + 01_I-SEE-A-FOREST_123s__yt59.mp4
+   added KT_LIFT/01_I-SEE-A-FOREST_123s.mp4
 
-manifest now holds 398 clips
+manifest now holds 399 clips
 commit and push state/manifest.json to let the machine see them
