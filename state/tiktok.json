@@ -1,16 +1,16 @@
 {
- "at": "2026-10-18T16:17",
+ "at": "2026-10-18T21:01",
  "profile": {
-  "video_count": 166,
-  "follower_count": 411,
   "following_count": 8,
-  "likes_count": 5854
+  "likes_count": 5855,
+  "video_count": 166,
+  "follower_count": 411
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
    "id": "7694313777382182157",
-   "view_count": 5,
-   "like_count": 1,
+   "view_count": 6,
+   "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7694313777382182157?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -469,7 +469,7 @@
   },
   "KT_RICH/01_WHAT-A-MILLION-REALLY-MEANS_109s.mp4": {
    "id": "7688387138974387469",
-   "view_count": 412,
+   "view_count": 413,
    "like_count": 22,
    "comment_count": 0,
    "share_count": 1,
@@ -649,7 +649,7 @@
   },
   "KT_LIES/01_LIVE-WITHIN-YOUR-MEANS-IS-THE-LIE_99s.mp4": {
    "id": "7686255138599636237",
-   "view_count": 447,
+   "view_count": 449,
    "like_count": 32,
    "comment_count": 0,
    "share_count": 1,
@@ -769,7 +769,7 @@
   },
   "KT_HOME/02_02_WHY-RICH-HOMES-ARE-FULL-OF-OLD-THINGS_85s.mp4": {
    "id": "7685065417743797518",
-   "view_count": 3474,
+   "view_count": 3478,
    "like_count": 268,
    "comment_count": 6,
    "share_count": 43,
@@ -979,7 +979,7 @@
   },
   "KT_MED/07_IT-REDUCES-CORTISOL_132s.mp4": {
    "id": "7682414527195008270",
-   "view_count": 344,
+   "view_count": 345,
    "like_count": 22,
    "comment_count": 4,
    "share_count": 1,
