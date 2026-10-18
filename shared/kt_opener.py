@@ -40,6 +40,17 @@ def _key():
     return None
 
 
+_STOP = set("a an the of at in on with and or to for from by into over under very lone close up closeup "
+             "slow motion slowmotion shot macro aerial cinematic night day golden hour vintage old new "
+             "big small dark bright empty single".split())
+
+
+def _content(query):
+    """The words that name the picture: nouns and verbs, not the mood words."""
+    ws = [w for w in query.lower().split() if len(w) > 2 and w not in _STOP]
+    return ws or query.lower().split()
+
+
 def search(query, n=12):
     """Pixabay videos for a query, best first: 4K, then editors' choice, then size."""
     k = _key()
@@ -49,16 +60,21 @@ def search(query, n=12):
         {"key": k, "q": query, "per_page": n, "safesearch": "true", "video_type": "film"})
     hits = json.load(urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": UA}),
                                            timeout=30)).get("hits", [])
-    # RELEVANCE FIRST. Pixabay's own order put tigers and blossoms above the one
-    # basketball shot for "basketball slow motion" (17 Oct 2026): every word of the
-    # subject (the query's first word) must be in the shot's tags.
-    subject = query.split()[0].lower()
-    hits = [h for h in hits if subject in h.get("tags", "").lower()]
+    # RELEVANCE FIRST, ON EVERY MEANINGFUL WORD (18 Oct 2026). Pixabay's own order put
+    # tigers above the one basketball shot (17 Oct); then a first-word filter matched rain on
+    # glass to "stack of hundred dollar bills" and found nothing for "lone office light at
+    # night". A shot must carry at least half of the query's content words in its tags,
+    # and more matching words rank first.
+    words = _content(query)
+    need = max(1, (len(words) + 1) // 2)
+    for h in hits:
+        tags = h.get("tags", "").lower()
+        h["_match"] = sum(1 for w in words if w in tags)
+    hits = [h for h in hits if h["_match"] >= need]
 
     def rank(h):
         big = h["videos"].get("large") or {}
-        return (big.get("width", 0) >= 3840, h.get("editors_choice", False) if "editors_choice" in h else False,
-                big.get("width", 0), h.get("likes", 0))
+        return (h.get("_match", 0), big.get("width", 0) >= 3840, big.get("width", 0), h.get("likes", 0))
     return sorted(hits, key=rank, reverse=True)
 
 
@@ -88,14 +104,24 @@ def pick(query, secs=OPEN_SECS):
         used = json.load(open(used_p))
     except Exception:
         used = []
-    try:
-        hits = [h for h in search(query, n=30)
-                if (h.get("duration") or 0) >= secs + 2
-                and max((h["videos"].get("large") or {}).get("width", 0),
-                        (h["videos"].get("large") or {}).get("height", 0)) >= 1920]
-    except Exception as e:
-        print(f"      opener: search failed for '{query}' ({type(e).__name__})")
-        return None
+    # The full query first, then its content words alone, then the last two (the noun
+    # usually sits at the end: "lone office light at night" -> "office light").
+    ws = _content(query)
+    tries = [query, " ".join(ws), " ".join(ws[-2:]), ws[-1] if ws else query]
+    hits = []
+    for q in dict.fromkeys(t for t in tries if t):
+        try:
+            hits = [h for h in search(q, n=40)
+                    if (h.get("duration") or 0) >= secs + 2
+                    and max((h["videos"].get("large") or {}).get("width", 0),
+                            (h["videos"].get("large") or {}).get("height", 0)) >= 1920]
+        except Exception as e:
+            print(f"      opener: search failed for '{q}' ({type(e).__name__})")
+            return None
+        if hits:
+            if q != query:
+                print(f"      opener: '{query}' found nothing usable; used '{q}'")
+            break
     fresh = [h for h in hits if h["id"] not in used] or hits
     if not fresh:
         print(f"      opener: no usable shot for '{query}'")
