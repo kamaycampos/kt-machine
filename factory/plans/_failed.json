@@ -6197,7 +6197,7 @@
    "plan": "ep_v7ed2gy",
    "source": "v7ed2gy.mp4",
    "brand": "KT_PHOENIX",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "NOT QUEUED** `01_BANNED-BOOK-BEAT-HARRY-POTTER_122s.mp4` - phrase scrambled around \"for life except for\""
    ],
@@ -6215,9 +6215,9 @@
    "plan": "ep_v7ed2gy",
    "source": "v7ed2gy.mp4",
    "brand": "KT_PHOENIX",
-   "tries": 1,
+   "tries": 2,
    "why": [
-    "FAIL 02_TURN-THE-MOUNTAIN-INTO-GOLD_169s.mp4: [FAIL] 02_TURN-THE-MOUNTAIN-INTO-GOLD_169s.mp4                39 captions vs the sound  median +0.06s  worst-10% 0.83s  | words captioned 100%"
+    "FAIL 02_TURN-THE-MOUNTAIN-INTO-GOLD_169s.mp4: [FAIL] 02_TURN-THE-MOUNTAIN-INTO-GOLD_169s.mp4                39 captions vs the sound  median +0.05s  worst-10% 0.83s  | words captioned 100%"
    ],
    "slug": "TURN-THE-MOUNTAIN-INTO-GOLD",
    "in": 617.68,
@@ -6233,7 +6233,7 @@
    "plan": "ep_v7ed2gy",
    "source": "v7ed2gy.mp4",
    "brand": "KT_PHOENIX",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "FAIL 01_REPLACE-YOUR-HABIT-LAUGH-NOW_92s.mp4: ends off the planned words: plan ends 'get up eight', clip ends 'fall down seven times get up'"
    ],
@@ -6245,6 +6245,330 @@
    "hook": [
     "The one habit",
     "that erases pain"
+   ]
+  },
+  "ar_v73eiqy_r2/BROADCAST-ON-A-NARROW-BEAM": {
+   "plan": "ar_v73eiqy_r2",
+   "source": "v73eiqy.mp4",
+   "brand": "AR_SEEDSR2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_BROADCAST-ON-A-NARROW-BEAM_61s.mp4: [FAIL] 01_BROADCAST-ON-A-NARROW-BEAM_61s.mp4                  6 captions vs the sound  median +0.00s  worst-10% 0.78s  | words captioned 101%"
+   ],
+   "slug": "BROADCAST-ON-A-NARROW-BEAM",
+   "in": 36.0,
+   "out": 96.0,
+   "start_words": "It's actually a process",
+   "end_words": "as a seed that will be planted",
+   "hook": [
+    "A narrow beam hits",
+    "your mind."
+   ]
+  },
+  "ar_v73eiqy_r2/WHAT-YOU-THINK-YOU-BECOME": {
+   "plan": "ar_v73eiqy_r2",
+   "source": "v73eiqy.mp4",
+   "brand": "AR_SEEDSR2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `02_WHAT-YOU-THINK-YOU-BECOME_56s.mp4` - ends mid-thought on \"Everything is--\""
+   ],
+   "slug": "WHAT-YOU-THINK-YOU-BECOME",
+   "in": 104.0,
+   "out": 163.0,
+   "start_words": "What you think you",
+   "end_words": "in the beginning Gandhi",
+   "hook": [
+    "Your thoughts are building",
+    "your reality."
+   ]
+  },
+  "ar_v73yyiw_r3/NOBODY-KNOWS-WHAT-THEY-WANT": {
+   "plan": "ar_v73yyiw_r3",
+   "source": "v73yyiw.mp4",
+   "brand": "AR_OBSESSIONR3",
+   "tries": 3,
+   "why": [
+    "FAIL 01_NOBODY-KNOWS-WHAT-THEY-WANT_85s.mp4: ends off the planned words: plan ends 'He knew exactly what he wanted', clip ends 'largest steel producer in the world'"
+   ],
+   "slug": "NOBODY-KNOWS-WHAT-THEY-WANT",
+   "in": 1240.8,
+   "out": 1330.0,
+   "start_words": "Well, number one, people",
+   "end_words": "He knew exactly what he wanted",
+   "hook": [
+    "You can't name",
+    "your own number."
+   ]
+  },
+  "ep_v73obcq/I-SEE-A-FOREST": {
+   "plan": "ep_v73obcq",
+   "source": "v73obcq.mp4",
+   "brand": "KT_LIFT",
+   "tries": 1,
+   "why": [
+    "FAIL 01_I-SEE-A-FOREST_123s.mp4: [FAIL] 01_I-SEE-A-FOREST_123s.mp4                             19 captions vs the sound  median +0.16s  worst-10% 0.77s  | words captioned 99%"
+   ],
+   "slug": "I-SEE-A-FOREST",
+   "in": 59.44,
+   "out": 180.16,
+   "start_words": "You've heard me talk",
+   "end_words": "making yourself bigger",
+   "hook": [
+    "Why $25,000 goals",
+    "feel too small"
+   ]
+  },
+  "ep_v73obcq/DROP-THE-SANDBAGS": {
+   "plan": "ep_v73obcq",
+   "source": "v73obcq.mp4",
+   "brand": "KT_LIFT",
+   "tries": 1,
+   "why": [
+    "FAIL 02_DROP-THE-SANDBAGS_60s.mp4: [FAIL] 02_DROP-THE-SANDBAGS_60s.mp4                           49 captions vs the sound (word-referenced: no clear pauses)  median +0.41s  worst-10% 0.91s  | words captioned 99%"
+   ],
+   "slug": "DROP-THE-SANDBAGS",
+   "in": 302.56,
+   "out": 362.56,
+   "start_words": "If you're in a",
+   "end_words": "the counter intention",
+   "hook": [
+    "The sandbags holding",
+    "your balloon down"
+   ]
+  },
+  "ep_v73obcq/SNAKE-IN-THE-DARK-WAS-A-ROPE": {
+   "plan": "ep_v73obcq",
+   "source": "v73obcq.mp4",
+   "brand": "KT_LIFT",
+   "tries": 1,
+   "why": [
+    "FAIL 01_SNAKE-IN-THE-DARK-WAS-A-ROPE_55s.mp4: [FAIL] 01_SNAKE-IN-THE-DARK-WAS-A-ROPE_55s.mp4                33 captions vs the sound (word-referenced: no clear pauses)  median +0.34s  worst-10% 1.14s  | words captioned 99%  UNCAPTIONED SPEECH [(30.6, 33.0)]"
+   ],
+   "slug": "SNAKE-IN-THE-DARK-WAS-A-ROPE",
+   "in": 373.28,
+   "out": 426.48,
+   "start_words": "The light gets turned",
+   "end_words": "that it's a rope",
+   "hook": [
+    "Why your fear",
+    "is a rope"
+   ]
+  },
+  "ep_v73obcq/THE-RICH-MAN-LEARNS-FROM-THE-FOOL": {
+   "plan": "ep_v73obcq",
+   "source": "v73obcq.mp4",
+   "brand": "KT_LIFT",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_THE-RICH-MAN-LEARNS-FROM-THE-FOOL_48s.mp4` - ends mid-thought on \"with discernment even\"; phrase scrambled around \"fool But the fool\"; sentence starts with no stop: \"fool But\""
+   ],
+   "slug": "THE-RICH-MAN-LEARNS-FROM-THE-FOOL",
+   "in": 488.32,
+   "out": 535.92,
+   "start_words": "Everyone, remember, you learn",
+   "end_words": "read all books with discernment",
+   "hook": [
+    "Why the rich",
+    "learn from fools"
+   ]
+  },
+  "ep_v7bf6rm/BROKE-STUTTERER-GOT-HIRED": {
+   "plan": "ep_v7bf6rm",
+   "source": "v7bf6rm.mp4",
+   "brand": "KT_FORMULA",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_BROKE-STUTTERER-GOT-HIRED_66s.mp4` - ends mid-thought on \"And if--\""
+   ],
+   "slug": "BROKE-STUTTERER-GOT-HIRED",
+   "in": 496.2,
+   "out": 563.2,
+   "start_words": "There was an ad in",
+   "end_words": "was a sales presentation",
+   "hook": [
+    "How a broke",
+    "stutterer got hired"
+   ]
+  },
+  "ep_v7bf6rm/SIX-QUESTIONS-THAT-WIN-FRIENDS": {
+   "plan": "ep_v7bf6rm",
+   "source": "v7bf6rm.mp4",
+   "brand": "KT_FORMULA",
+   "tries": 1,
+   "why": [
+    "FAIL 01_SIX-QUESTIONS-THAT-WIN-FRIENDS_122s.mp4: [FAIL] 01_SIX-QUESTIONS-THAT-WIN-FRIENDS_122s.mp4             28 captions vs the sound  median -0.02s  worst-10% 0.82s  | words captioned 100%"
+   ],
+   "slug": "SIX-QUESTIONS-THAT-WIN-FRIENDS",
+   "in": 287.2,
+   "out": 408.2,
+   "start_words": "The technical part is",
+   "end_words": "instantly like you more",
+   "hook": [
+    "Six questions that",
+    "win people over"
+   ]
+  },
+  "ep_v7bf6rm/WHY-IS-THAT-SELLS-ITSELF": {
+   "plan": "ep_v7bf6rm",
+   "source": "v7bf6rm.mp4",
+   "brand": "KT_FORMULA",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "WHY-IS-THAT-SELLS-ITSELF",
+   "in": 728.2,
+   "out": 839.2,
+   "start_words": "We had a young salesman",
+   "end_words": "Oh, show me",
+   "hook": [
+    "Why is that",
+    "sells for you"
+   ]
+  },
+  "ep_v7bf6rm/THE-SECRET-ZIG-ZIGLAR-GAVE-HIM": {
+   "plan": "ep_v7bf6rm",
+   "source": "v7bf6rm.mp4",
+   "brand": "KT_FORMULA",
+   "tries": 1,
+   "why": [
+    "render refused:   FIX  KT_FORMULA/THE-SECRET-ZIG-ZIGLAR-GAVE-HIM     out   1057.3  advert   1056.2  +1.1s into it"
+   ],
+   "slug": "THE-SECRET-ZIG-ZIGLAR-GAVE-HIM",
+   "in": 903.2,
+   "out": 1056.2,
+   "start_words": "I had a friend who",
+   "end_words": "through John Jones eyes",
+   "hook": [
+    "The secret Zig",
+    "Ziglar gave him"
+   ]
+  },
+  "ep_v7bf6rm/HOW-HE-COPIED-RICH-SALESMEN": {
+   "plan": "ep_v7bf6rm",
+   "source": "v7bf6rm.mp4",
+   "brand": "KT_FORMULA",
+   "tries": 1,
+   "why": [
+    "FAIL 02_HOW-HE-COPIED-RICH-SALESMEN_63s.mp4: ends off the planned words: plan ends 'then develops affinity', clip ends 'said and ask for more questions'"
+   ],
+   "slug": "HOW-HE-COPIED-RICH-SALESMEN",
+   "in": 647.2,
+   "out": 711.2,
+   "start_words": "In the automobile business",
+   "end_words": "then develops affinity",
+   "hook": [
+    "How he copied",
+    "rich salesmen"
+   ]
+  },
+  "ep_v7dfhw8/FIVE-FRIENDS-SET-YOUR-INCOME": {
+   "plan": "ep_v7dfhw8",
+   "source": "v7dfhw8.mp4",
+   "brand": "KT_CIRCLE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_FIVE-FRIENDS-SET-YOUR-INCOME_135s.mp4: [FAIL] 01_FIVE-FRIENDS-SET-YOUR-INCOME_135s.mp4               28 captions vs the sound  median +0.08s  worst-10% 0.10s  | words captioned 100%  UNCAPTIONED SPEECH [(85.5, 88.0)]"
+   ],
+   "slug": "FIVE-FRIENDS-SET-YOUR-INCOME",
+   "in": 66.4,
+   "out": 207.6,
+   "start_words": "Your income is the average",
+   "end_words": "health, wealth and happiness",
+   "hook": [
+    "The 5 friends",
+    "setting your income"
+   ]
+  },
+  "ep_v7dfhw8/WORKED-NEAR-RICH-PEOPLE": {
+   "plan": "ep_v7dfhw8",
+   "source": "v7dfhw8.mp4",
+   "brand": "KT_CIRCLE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_WORKED-NEAR-RICH-PEOPLE_105s.mp4` - opens mid-sentence on \"go and become\""
+   ],
+   "slug": "WORKED-NEAR-RICH-PEOPLE",
+   "in": 218.72,
+   "out": 323.6,
+   "start_words": "I was told go",
+   "end_words": "right in front of me",
+   "hook": [
+    "Why he worked",
+    "near rich people"
+   ]
+  },
+  "ep_v7dfhw8/HE-LOST-EVERYTHING-THEN-REBUILT": {
+   "plan": "ep_v7dfhw8",
+   "source": "v7dfhw8.mp4",
+   "brand": "KT_CIRCLE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_HE-LOST-EVERYTHING-THEN-REBUILT_62s.mp4` - word repeated: \"of of\""
+   ],
+   "slug": "HE-LOST-EVERYTHING-THEN-REBUILT",
+   "in": 508.32,
+   "out": 577.04,
+   "start_words": "If you listened to",
+   "end_words": "start believing in yourself",
+   "hook": [
+    "How a broke",
+    "busboy rebuilt"
+   ]
+  },
+  "ep_v7dfhw8/YOUR-FEED-REVEALS-YOUR-FUTURE": {
+   "plan": "ep_v7dfhw8",
+   "source": "v7dfhw8.mp4",
+   "brand": "KT_CIRCLE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_YOUR-FEED-REVEALS-YOUR-FUTURE_64s.mp4` - ends mid-thought on \"look at it\"; sentence starts with no stop: \"feed And\"; sentence starts with no stop: \"friends He\""
+   ],
+   "slug": "YOUR-FEED-REVEALS-YOUR-FUTURE",
+   "in": 406.48,
+   "out": 478.8,
+   "start_words": "The algorithm is telling",
+   "end_words": "tell you how you're thinking",
+   "hook": [
+    "What your YouTube",
+    "feed reveals"
+   ]
+  },
+  "ep_v7dfhw8/HE-PICKED-UP-A-SOUTHERN-ACCENT": {
+   "plan": "ep_v7dfhw8",
+   "source": "v7dfhw8.mp4",
+   "brand": "KT_CIRCLE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_HE-PICKED-UP-A-SOUTHERN-ACCENT_62s.mp4: [FAIL] 02_HE-PICKED-UP-A-SOUTHERN-ACCENT_62s.mp4              12 captions vs the sound  median -0.00s  worst-10% 0.27s  | words captioned 98%  UNCAPTIONED SPEECH [(10.3, 12.7)]"
+   ],
+   "slug": "HE-PICKED-UP-A-SOUTHERN-ACCENT",
+   "in": 736.96,
+   "out": 804.96,
+   "start_words": "I had a friend of",
+   "end_words": "the people he's around",
+   "hook": [
+    "How fast you",
+    "copy people"
+   ]
+  },
+  "ep_v7dfhw8/GET-RID-OF-YOUR-FRIENDS": {
+   "plan": "ep_v7dfhw8",
+   "source": "v7dfhw8.mp4",
+   "brand": "KT_CIRCLE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_GET-RID-OF-YOUR-FRIENDS_95s.mp4: ends off the planned words: plan ends 'change the room', clip ends 'music playing'"
+   ],
+   "slug": "GET-RID-OF-YOUR-FRIENDS",
+   "in": 805.76,
+   "out": 900.8,
+   "start_words": "Watch videos on YouTube",
+   "end_words": "change the room",
+   "hook": [
+    "The one move",
+    "that changes income"
    ]
   }
  },
