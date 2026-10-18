@@ -26,6 +26,7 @@ sys.path[:] = [q for q in sys.path
                if os.path.abspath(q or ".") != os.path.dirname(os.path.abspath(__file__))]
 
 CHANNEL = "https://rumble.com/c/TheKevinTrudeauOfficial/videos?page={}"
+LIVE = "https://rumble.com/c/TheKevinTrudeauOfficial/livestreams?page={}"
 # --quick: the hourly watcher (kevin_watch.yml). One try at the page, then only the first
 # few related videos of the two newest episodes - Kevin's next upload led 7 Oct's list.
 QUICK = "--quick" in sys.argv
@@ -160,14 +161,22 @@ def discover(cat, budget=120):
 
 def main():
     cat = json.load(open(OUT)) if os.path.exists(OUT) else {}
-    for p in range(1, 60):
-        html = get(CHANNEL.format(p))
-        got = parse(html, p) if html else {}
-        print(f"page {p}: {len(got)}")
-        if not got:
-            break
-        for u, e in got.items():
-            cat.setdefault(u, {}).update(e)
+    # THE LIVESTREAMS TAB TOO (18 Oct 2026). Only /videos was read, and Kevin's 2024 shows
+    # were live streams, listed on /livestreams alone: 78 episodes were never catalogued,
+    # so VSC's "Hollywood Insider Reveals Secret Path to Success" (v572lr0, 3468 s) was
+    # "not on Rumble" while it sat on his own channel.
+    for tab in (CHANNEL, LIVE):
+        for p in range(1, 60):
+            html = get(tab.format(p))
+            got = parse(html, p) if html else {}
+            print(f"{tab.split('/')[-1].split('?')[0]} page {p}: {len(got)}")
+            if not got:
+                break
+            for u, e in got.items():
+                cat.setdefault(u, {}).update(e)
+        if tab is CHANNEL and p == 1:
+            break                                  # refused from here: the player route below
+    p = 1 if tab is CHANNEL else 2
     if p == 1:
         # Refused from this machine (GitHub's servers, since 7 Oct): the player route
         # finds the new uploads instead. Say so loudly only if that fails too.
