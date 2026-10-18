@@ -9623,11 +9623,25 @@
    "hook": "The firing that saved Apple",
    "bytes": 81694131,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-18T17:55",
    "cta_keyword": "BRAIN",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Deps4ynDU2N/",
+    "youtube": "https://youtube.com/shorts/Jk3_PMsrfzM"
+   },
+   "caption_at_post": "Steve Jobs got fired from the company he built.\n\nJensen Huang almost couldn't make payroll before Nvidia became one of the most valuable companies on earth. J.K. Rowling was living out of her car, broke and divorced, before Harry Potter made her a billionaire.\n\nKevin Trudeau says every one of them had more disasters than the average person will ever face - and the disaster is exactly what built them.\n\nThe day everything falls apart isn't the end. It's the day your success actually starts, the moment you decide to turn it around.\n\nWhat's the disaster in your life that could be your turning point?\n\n#kevintrudeau #successmindset #mindsetmatters #entrepreneurtips #wealthhabits #businessmotivation",
+   "posted_at": "2026-10-18T17:59",
+   "tiktok_retry": true
   },
   {
    "file": "KT_PHOENIX/02_BROKE-UP-SOLD-450-MILLION_61s.mp4",
