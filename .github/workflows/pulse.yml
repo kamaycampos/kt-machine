@@ -69,6 +69,11 @@ jobs:
           for i in $(seq 1 17); do
             start=$SECONDS
             gh workflow run post.yml -f dry_run=false || echo "dispatch $i failed - next one in 20 min"
+            # GitHub's own timer skipped every cadence run and a TikTok-stats run (17 Oct
+            # 2026); the heartbeat never sleeps through, so it carries them: cadence every
+            # 2 h (the 4-6/day rule), TikTok stats once per heartbeat (~6 h).
+            if [ $((i % 6)) -eq 1 ]; then gh workflow run cadence.yml || echo "cadence dispatch failed"; fi
+            if [ "$i" -eq 1 ]; then gh workflow run tiktok_stats.yml || echo "stats dispatch failed"; fi
             dm_pass 25                              # the full sweep, once per 20 min
             while [ $((SECONDS - start)) -lt 1050 ]; do
               sleep 150
