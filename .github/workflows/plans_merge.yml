@@ -56,6 +56,6 @@ jobs:
           [ -z "$OK" ] && { echo "nothing to merge"; git push -q origin --delete "$BR" || true; exit 0; }
           git add $OK
           git commit -q -m "weekly plans from $BR:$OK"
-          for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && break; sleep 5; done
+          bash factory/save_state.sh
           echo "$OK" | grep -q "factory/plans/" && gh workflow run factory.yml --ref main
           git push -q origin --delete "$BR" || true

@@ -52,7 +52,7 @@ jobs:
           git add factory/rumble_catalog.json
           git diff --staged --quiet && exit 0
           git commit -q -m "rumble catalogue refreshed $(date -u +%FT%TZ)"
-          for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && break; sleep 5; done
+          bash factory/save_state.sh
 
   tlist:
     needs: stock
@@ -164,4 +164,4 @@ jobs:
           done
           git add -A state docs factory
           git diff --staged --quiet || git commit -q -m "factory: clips built and queued $(date -u +%FT%TZ)"
-          for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && break; sleep 5; done
+          bash factory/save_state.sh

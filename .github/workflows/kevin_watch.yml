@@ -49,5 +49,5 @@ jobs:
           git config user.email "kt-factory@users.noreply.github.com"
           git add factory/rumble_catalog.json
           git commit -q -m "rumble catalogue: new Kevin upload $(date -u +%FT%TZ)"
-          for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && break; sleep 5; done
+          bash factory/save_state.sh
           gh workflow run factory.yml --ref main
