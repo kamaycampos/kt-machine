@@ -9645,7 +9645,11 @@
    "hook": "3% wrote it down. Out-earned everyone.",
    "bytes": 40459102,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-18T10:33",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_CIRCLE/02_CLUB-SODA-AT-THE-RICH-PEOPLE-BAR_81s.mp4",
@@ -9653,7 +9657,11 @@
    "hook": "The club soda worth $1.5 billion",
    "bytes": 50015458,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-18T20:07",
+   "cta_keyword": "MONEY",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_FORMULA/01_WHY-WINNERS-LISTEN-MORE-THAN-TALK_61s.mp4",
@@ -9661,7 +9669,11 @@
    "hook": "Why winners listen more than talk",
    "bytes": 45390468,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-19T08:01",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 2,
+   "cta_kind": "question"
   }
  ]
 }
