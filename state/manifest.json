@@ -9597,11 +9597,25 @@
    "hook": "Bitcoin was $20 He said no",
    "bytes": 33480977,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-18T09:58",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Deo4LuhlN-5/",
+    "youtube": "https://youtube.com/shorts/HP0abWcsLdE"
+   },
+   "caption_at_post": "Kevin Trudeau watched Jeff Bezos launch an online bookstore before almost anyone saw the internet as real money. \"This guy is a winner,\" Kevin thought - and he was right.\n\nYears later, someone brought him a different opportunity: buy Bitcoin at $20. He said no - fake money, made no sense to him. It came back around at $20,000. Still said no. He missed it completely.\n\nHere's how he keeps that from wrecking him: you never actually get it wrong. You either win, or you learn. Most people are so afraid of a bad decision that they never make one.\n\nWhat opportunity are you still punishing yourself for missing?\n\n#kevintrudeau #mindset #wealthmindset #investing #entrepreneur #successhabits",
+   "posted_at": "2026-10-18T10:19",
+   "tiktok_retry": true
   },
   {
    "file": "KT_PHOENIX/01_JOBS-FIRED-THEN-SAVED-APPLE_107s.mp4",
