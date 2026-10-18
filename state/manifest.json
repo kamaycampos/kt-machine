@@ -9647,11 +9647,25 @@
    "hook": "Why your gold is buried",
    "bytes": 46876074,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-18T12:17",
    "cta_keyword": "BRAIN",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DepF8YajEzo/",
+    "youtube": "https://youtube.com/shorts/P4-giQcwpZM"
+   },
+   "caption_at_post": "To get a few ounces of gold, miners move tons and tons of dirt through bulldozers and wash machines. They're not looking for the dirt - they're looking for the gold.\n\nKevin Trudeau says life works the same way: without setbacks, there's no breakthrough. Without pain, there's no growth. Without disasters, there's no real success.\n\nThe day everything falls apart isn't the end of your story - it's the day your success actually begins, if you keep moving the dirt.\n\nWhat dirt are you moving right now on the way to your gold?\n\n#kevintrudeau #successmindset #wealthhabits #mindsetmatters #personalgrowth #businessmotivation",
+   "posted_at": "2026-10-18T12:19",
+   "tiktok_retry": true
   },
   {
    "file": "AR_OBSESSIONR3/02_THREE-PERCENT-WROTE-IT-DOWN_54s.mp4",
