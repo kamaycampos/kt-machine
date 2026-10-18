@@ -6156,6 +6156,42 @@
     "Why you have no excuse",
     "now"
    ]
+  },
+  "ep_v6zdmb0_r3/CANCEL-CANCEL-BREAKS-THE-HABIT": {
+   "plan": "ep_v6zdmb0_r3",
+   "source": "v6zdmb0.mp4",
+   "brand": "KT_RATIOR2R2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_CANCEL-CANCEL-BREAKS-THE-HABIT_81s.mp4: [FAIL] 01_CANCEL-CANCEL-BREAKS-THE-HABIT_81s.mp4              9 captions vs the sound  median +0.09s  worst-10% 0.88s  | words captioned 100%"
+   ],
+   "slug": "CANCEL-CANCEL-BREAKS-THE-HABIT",
+   "in": 3514.64,
+   "out": 3599.04,
+   "start_words": "The magic words are",
+   "end_words": "a counter intention or a bad habit",
+   "hook": [
+    "The two words that break",
+    "habits"
+   ]
+  },
+  "ep_v77l7um_r7/WHEN-THE-FACTS-CHANGE": {
+   "plan": "ep_v77l7um_r7",
+   "source": "v77l7um.mp4",
+   "brand": "KT_BITCOINR2R2R2R2R2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_WHEN-THE-FACTS-CHANGE_94s.mp4: ends off the planned words: plan ends 'the facts have changed', clip ends 'at that time but now th'"
+   ],
+   "slug": "WHEN-THE-FACTS-CHANGE",
+   "in": 2088.0,
+   "out": 2186.88,
+   "start_words": "Albert Einstein and Hawkins",
+   "end_words": "the facts have changed",
+   "hook": [
+    "Why changing your mind",
+    "wins"
+   ]
   }
  },
  "attempts": {
@@ -6179,7 +6215,7 @@
   "ep_v759ffq_r3": 2,
   "ep_v7e1nwe_r3": 2,
   "ar_v794yks_r2": 2,
-  "ep_v6zdmb0_r3": 1,
-  "ep_v77l7um_r7": 1
+  "ep_v6zdmb0_r3": 2,
+  "ep_v77l7um_r7": 2
  }
 }
