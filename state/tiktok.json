@@ -1,10 +1,10 @@
 {
- "at": "2026-10-18T21:57",
+ "at": "2026-10-19T03:37",
  "profile": {
-  "following_count": 8,
-  "likes_count": 5855,
+  "likes_count": 5854,
   "video_count": 166,
-  "follower_count": 411
+  "follower_count": 412,
+  "following_count": 8
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -549,7 +549,7 @@
   },
   "KT_RICH/06_PEP-TALKS-WHEN-ALONE_71s.mp4": {
    "id": "7687607782639537422",
-   "view_count": 1208,
+   "view_count": 1209,
    "like_count": 93,
    "comment_count": 4,
    "share_count": 27,
@@ -619,7 +619,7 @@
   },
   "KT_LIES/03_THE-DRYER-FUND_57s.mp4": {
    "id": "7686521175207382286",
-   "view_count": 681,
+   "view_count": 682,
    "like_count": 41,
    "comment_count": 1,
    "share_count": 1,
@@ -719,8 +719,8 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38152,
-   "like_count": 787,
+   "view_count": 38154,
+   "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
    "share_url": "https://www.tiktok.com/@kt_student/video/7685518951098453262?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -1119,7 +1119,7 @@
   },
   "KT_MED/02_THE-SLAVE-WAVE_135s.mp4": {
    "id": "7680651944918011150",
-   "view_count": 486,
+   "view_count": 487,
    "like_count": 33,
    "comment_count": 4,
    "share_count": 2,
