@@ -1,0 +1,18 @@
+{"source": "v7bf6rm.mp4", "brand": "KT_FORMULAR3", "test": false,
+ "note": "19 Oct 2026 - second-chance re-cut of 'The 2-Step Formula To Influence Anyone (Used To Build BILLIONS)' (Rumble v7bf6rm). Weekly agent. BROKE-STUTTERER-GOT-HIRED and WHY-IS-THAT-SELLS-ITSELF skipped (tries 2, no confident fix - no clear cause of render failure). SIX-QUESTIONS-THAT-WIN-FRIENDS: captions-vs-sound drift, so the end was moved two sentences further to re-time the captions. THE-SECRET-ZIG-ZIGLAR-GAVE-HIM: the out point landed 1.1s into the next advert/testimonial segment, so it was pulled 2s earlier for a safety margin.",
+ "clips": [
+  {"slug": "SIX-QUESTIONS-THAT-WIN-FRIENDS", "in": 287.2, "out": 425.2,
+   "start_words": "The technical part is",
+   "end_words": "at that point or your idea",
+   "retry_of": "ep_v7bf6rm/SIX-QUESTIONS-THAT-WIN-FRIENDS",
+   "hook": ["Six questions that", "win people over"],
+   "caption": "Kevin Trudeau says persuasion isn't about talking - it's six words: what, when, where, who, how and why.\n\nAsk specific questions and people start developing affinity with you, because you're showing genuine interest instead of trying to convince them of anything.\n\nThen add two magic phrases: why is that, and tell me more. Say this is fascinating, I want to hear more to someone, and Kevin says they light up like a Christmas tree - they instantly like you more.\n\nYou've just won them as a friend, and now they're completely open to whatever you suggest next.\n\n#kevintrudeau #persuasiontips #salestraining #wealthmindset #communicationskills #businessmotivation",
+   "opener": "handshake close up slowmotion"},
+  {"slug": "THE-SECRET-ZIG-ZIGLAR-GAVE-HIM", "in": 903.2, "out": 1054.2,
+   "start_words": "I had a friend who",
+   "end_words": "through John Jones eyes",
+   "retry_of": "ep_v7bf6rm/THE-SECRET-ZIG-ZIGLAR-GAVE-HIM",
+   "hook": ["The secret Zig", "Ziglar gave him"],
+   "caption": "A friend begged Kevin Trudeau to teach him how to sell - Kevin had done billions in TV sales, and the friend wanted the secret.\n\nKevin brought him to Ojai, California for three days and never trained him once. They hiked, drove a 1944 Willys Jeep, shopped, watched a movie. The friend kept asking when the training would start.\n\nOn the last day, two hours before he left, the friend finally gave up waiting - and Kevin told him: the secret is genuine interest in what the other person wants, not in how you sell.\n\nAs Zig Ziglar put it: you can always sell John Jones what he buys, if you see it through John Jones's eyes.\n\n#kevintrudeau #salestraining #persuasiontips #wealthmindset #businessmotivation #entrepreneurtips",
+   "opener": "vintage jeep desert road"}
+ ]}
