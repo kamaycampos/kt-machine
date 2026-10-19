@@ -145,9 +145,21 @@ def queue_alarm_events(cs, now):
 def thumbs():
     """Cover images, made on the Mac by make_thumbs.py. Absent is fine."""
     try:
-        return json.load(open(os.path.join(DOCS, "thumbs.json")))
+        tb = json.load(open(os.path.join(DOCS, "thumbs.json")))
     except (OSError, ValueError):
-        return {}
+        tb = {}
+    # the other brands' pictures too (19 Oct 2026): WB's cards showed a grey box, and
+    # the picture is how he matches a caption to the draft in his TikTok inbox
+    import urllib.request
+    for who, repo in EXTRA.items():
+        try:
+            raw = urllib.request.urlopen(
+                f"https://raw.githubusercontent.com/{repo}/main/docs/thumbs.json", timeout=20).read()
+            for k, v in json.loads(raw).items():
+                tb.setdefault(k, v)
+        except Exception as e:
+            print(f"board: {who} pictures not read ({type(e).__name__})")
+    return tb
 
 
 def board(cs):
@@ -287,9 +299,12 @@ def board(cs):
     wb = [c for c in todo if owner(c) == "WB"]
     if not todo:
         p += ["<div class=c>Nothing waiting.</div>"]
-    for title, group in (("KAMAY", mine), ("AWAKENED RISE", hers), ("WB ORGANICS", wb)):
+    # a brand's heading belongs to its brand: picking WB Organics showed "AWAKENED RISE
+    # 21" above the WB cards (19 Oct 2026), so headings filter with the cards
+    for key, title, group in (("KAMAY", "KAMAY", mine), ("AR", "AWAKENED RISE", hers),
+                              ("WB", "WB ORGANICS", wb)):
         if group:
-            p += [f"<h2>{title} &middot; {len(group)}</h2>"] + [card(c, True) for c in group]
+            p += [f"<h2 class=g data-who='{key}'>{title} &middot; {len(group)}</h2>"] + [card(c, True) for c in group]
     p += [f"<button class='pick' onclick=\"document.getElementById('more')"
           f".style.display='block';this.remove()\">See all {len(rest)}</button>",
           "<div id=more>"]
@@ -299,6 +314,8 @@ def board(cs):
           "function pick(w,b){document.querySelectorAll('button.pick')"
           ".forEach(x=>x.classList.remove('on'));b.classList.add('on');"
           "document.querySelectorAll('.c').forEach(e=>{"
+          "e.hidden=w!=='all'&&e.dataset.who!==w;});"
+          "document.querySelectorAll('h2.g').forEach(e=>{"
           "e.hidden=w!=='all'&&e.dataset.who!==w;});}"
           # Copy then hide. The list should empty as he works through it.
           "function hide(id,b){const c=b.closest('.c');"
