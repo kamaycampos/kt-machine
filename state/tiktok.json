@@ -1,10 +1,10 @@
 {
- "at": "2026-10-19T05:17",
+ "at": "2026-10-19T09:18",
  "profile": {
-  "following_count": 8,
   "likes_count": 5855,
   "video_count": 166,
-  "follower_count": 412
+  "follower_count": 412,
+  "following_count": 8
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -649,7 +649,7 @@
   },
   "KT_LIES/01_LIVE-WITHIN-YOUR-MEANS-IS-THE-LIE_99s.mp4": {
    "id": "7686255138599636237",
-   "view_count": 449,
+   "view_count": 450,
    "like_count": 32,
    "comment_count": 0,
    "share_count": 1,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38154,
+   "view_count": 38155,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
@@ -1379,7 +1379,7 @@
   },
   "unmatched/7678168548383968543": {
    "id": "7678168548383968543",
-   "view_count": 407,
+   "view_count": 408,
    "like_count": 36,
    "comment_count": 2,
    "share_count": 8,
