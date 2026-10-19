@@ -10,6 +10,7 @@ The calendar is the one that matters. Kamay subscribed to it in Google Calendar
 on the wealth broadcast account, so its URL has to keep working - the new one
 replaces the old subscription once Railway is gone.
 """
+import hashlib
 import html
 import json
 import os
@@ -247,7 +248,9 @@ def board(cs):
         when = c.get("posted_at") or c.get("scheduled_at")
         tag = "READY TO POST" if is_ready else (
             "posted" if c.get("posted_at") else "scheduled")
-        cid = "t" + str(abs(hash(f)))
+        # STABLE across rebuilds (19 Oct 2026): hash() changes every run, so a card
+        # ticked off with Copy came back 20 minutes later under a new id.
+        cid = "t" + hashlib.sha1(f.encode()).hexdigest()[:16]
         # The picture is the point: he is holding a phone with a clip in the
         # TikTok inbox and needs to know THIS caption belongs to THAT video.
         img = tb.get(f) if is_ready or f in recent else None
@@ -353,7 +356,9 @@ def archive(cs):
            ".forEach(e=>{e.hidden=v&&!e.textContent.toLowerCase().includes(v)})\">"]
     for c in rows:
         f = c["file"]
-        cid = "a" + str(abs(hash(f)))
+        # STABLE across rebuilds (19 Oct 2026): hash() changes every run, so a card
+        # ticked off with Copy came back 20 minutes later under a new id.
+        cid = "a" + hashlib.sha1(f.encode()).hexdigest()[:16]
         when = c.get("posted_at") or c.get("scheduled_at") or ""
         who = NAMES[owner(c)]
         state = "posted" if c.get("posted_at") else ("retired" if c.get("done") else "waiting")
