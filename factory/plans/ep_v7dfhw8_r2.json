@@ -1,0 +1,19 @@
+{"source": "v7dfhw8.mp4", "brand": "KT_CIRCLER2", "test": false,
+ "note": "19 Oct 2026 - second chance on 'Your Friends Are Keeping You Broke' (Rumble v7dfhw8). Weekly agent. Re-cut 2 of 6 failed clips with new edges; skipped the other 4 (see report).",
+ "clips": [
+   {"slug": "WORKED-NEAR-RICH-PEOPLE", "in": 218.72, "out": 313.2,
+    "start_words": "I was told go",
+    "end_words": "right in front of me",
+    "retry_of": "ep_v7dfhw8/WORKED-NEAR-RICH-PEOPLE",
+    "hook": ["Why he worked", "near rich people"],
+    "caption": "Kevin Trudeau grew up around plumbers, welders and union workers - no business owners, no wealthy people to learn from.\n\nSo he became a caddy at a country club just to stand near rich members, and later a busboy at the fanciest restaurant in town, just to watch how wealthy people walked, talked and dressed.\n\nHe saw the Cadillacs and the Lincolns out front, the Lobster Thermidor on the table, the expensive watches - and wealth stopped being a fantasy. It became something real he could actually see.\n\nYou don't need money to start studying money. You need proximity.\n\n#kevintrudeau #wealthmindset #millionairemindset #successhabits #moneymindset #businessmotivation",
+    "opener": "vintage cadillac parked restaurant"},
+
+   {"slug": "GET-RID-OF-YOUR-FRIENDS", "in": 805.76, "out": 896.32,
+    "start_words": "Watch videos on YouTube",
+    "end_words": "in their physical presence",
+    "retry_of": "ep_v7dfhw8/GET-RID-OF-YOUR-FRIENDS",
+    "hook": ["The one move", "that changes income"],
+    "caption": "Kevin Trudeau's advice gets uncomfortable fast: follow only wealthy, successful people on social media. Go sit at the bar in restaurants where the rich go, even if all you can afford is a club soda. Join a club where successful people are members.\n\nThen comes the hard part. He says you may have to get rid of some of your current friends and go find new ones, because you become what you think about most of the time - and your thinking is shaped by who you watch, listen to and spend time with.\n\nIf you want to change your income and your financial situation, change the room you're in.\n\n#kevintrudeau #wealthmindset #millionairemindset #successhabits #moneymindset #businessmotivation",
+    "opener": "empty chair new room"}
+ ]}
