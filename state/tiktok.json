@@ -1,10 +1,10 @@
 {
- "at": "2026-10-19T03:37",
+ "at": "2026-10-19T05:17",
  "profile": {
-  "likes_count": 5854,
+  "following_count": 8,
+  "likes_count": 5855,
   "video_count": 166,
-  "follower_count": 412,
-  "following_count": 8
+  "follower_count": 412
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -469,7 +469,7 @@
   },
   "KT_RICH/01_WHAT-A-MILLION-REALLY-MEANS_109s.mp4": {
    "id": "7688387138974387469",
-   "view_count": 413,
+   "view_count": 414,
    "like_count": 22,
    "comment_count": 0,
    "share_count": 1,
@@ -489,8 +489,8 @@
   },
   "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
    "id": "7688148098480098573",
-   "view_count": 496,
-   "like_count": 39,
+   "view_count": 498,
+   "like_count": 40,
    "comment_count": 2,
    "share_count": 6,
    "share_url": "https://www.tiktok.com/@kt_student/video/7688148098480098573?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -579,7 +579,7 @@
   },
   "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4": {
    "id": "7686887912297843981",
-   "view_count": 2322,
+   "view_count": 2323,
    "like_count": 78,
    "comment_count": 5,
    "share_count": 11,
