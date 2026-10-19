@@ -1,0 +1,47 @@
+{
+ "source": "v6p4et6.mp4",
+ "brand": "AR_LUCKR2",
+ "test": false,
+ "note": "19 Oct 2026 - 'What The Rich Know About Luck (And You Don't)' (Rumble v6p4et6). Awakened Rise weekly agent. SECOND CHANCE re-cut (8 Oct 2026 gate failures) per PLANNING.md 2c. BILL-GATES-SAID-IT-WAS-LUCK: the scrambled phrase ('The Larry King Show. Larry King was a live interview...') sat in the skippable intro explaining who Larry King is, not the teaching - moved the start past it to the next clean sentence, 'So Bill Gates was asked by Larry King' (344.2s); the old out (461.88) ran past the closing quote into the next sentence and cut off mid-word on 'So' - pulled back to right after the quote closes, 'I saw the vision' (~456.3s), the same payoff as before. HE-SAW-A-FOREST: the old out (628.72) was meant to land after 'Depth of vision' but the render actually stopped at 'which can lead to a forest', short of the plan - rather than guess at that boundary again, ended on the cleaner, more certain edge: the stranger's own quoted payoff line, 'I see a forest' (~613.1s), which the hook's tree/forest contrast already pays off in full. WHAT-YOU-WANT-WANTS-YOU: cut was fine, only the hook failed lint (opened on 'What', an announcer word banned for AR) - kept the same in/out and rewrote the hook as a stab that keeps the clip's concrete number ('twice as much' food).",
+ "clips": [
+  {
+   "slug": "BILL-GATES-SAID-IT-WAS-LUCK",
+   "in": 344.2,
+   "out": 456.3,
+   "start_words": "So Bill Gates was asked by Larry King",
+   "end_words": "I saw the vision",
+   "hook": [
+    "Bill Gates said",
+    "it was luck"
+   ],
+   "caption": "Larry King asked Bill Gates, live, on national television: what's the secret to your success?\n\nHe didn't say hard work. He didn't say intelligence. He said he was at the right place at the right time, and luck had a lot to do with it. Most successful people say the same thing behind closed doors — they just don't say it on camera.\n\nBut there's a second half to what he said that almost nobody repeats: there were plenty of other people standing in that exact same lucky spot. The difference was vision. He could see what the opportunity actually was.\n\nLuck opens the door. Vision is what lets you walk through it.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#success #luck #mindset #awakening #visualization #kevintrudeau",
+   "retry_of": "ar_v6p4et6/BILL-GATES-SAID-IT-WAS-LUCK"
+  },
+  {
+   "slug": "HE-SAW-A-FOREST",
+   "in": 567.2,
+   "out": 613.1,
+   "start_words": "What is depth of",
+   "end_words": "I see a forest",
+   "hook": [
+    "Same acorn.",
+    "You see a tree."
+   ],
+   "caption": "A stranger in a hotel bar in 1979 taught Kevin something that took decades to fully understand.\n\nHe was a young guy trying to make it, and asked an older, wealthy businessman the secret to success. The man picked up a box of matches and said: imagine this is an acorn. What do you see?\n\nKevin said a tree. The man said that was good — but when he looked at the same acorn, he saw a forest. One acorn, a tree, and every tree that tree could ever grow.\n\nThat's depth of vision. Most people are still looking at the matchbox.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#manifestation #mindset #visualization #awakening #success #kevintrudeau",
+   "retry_of": "ar_v6p4et6/HE-SAW-A-FOREST"
+  },
+  {
+   "slug": "WHAT-YOU-WANT-WANTS-YOU",
+   "in": 883.0,
+   "out": 934.36,
+   "start_words": "If you come to",
+   "end_words": "then change your luck",
+   "hook": [
+    "Taste it,",
+    "double comes to you."
+   ],
+   "caption": "If you cook someone a beautiful meal and they barely touch it, you don't cook for them again.\n\nThe universe works exactly the same way. It wants to give you what you want — but if you're handed an opportunity and you don't actually take it, don't appreciate it, don't use it, it stops showing up. Taste it, love it, and the universe starts cooking you twice as much.\n\nWhat you want wants you back. Kevin says it isn't a metaphor — it's the actual mechanism behind what people call luck.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#manifestation #universe #lawofattraction #awakening #spirituality #kevintrudeau",
+   "retry_of": "ar_v6p4et6/WHAT-YOU-WANT-WANTS-YOU"
+  }
+ ]
+}
