@@ -6647,7 +6647,7 @@
    "plan": "ar_v6p4et6_r2",
    "source": "v6p4et6.mp4",
    "brand": "AR_LUCKR2",
-   "tries": 2,
+   "tries": 3,
    "why": [
     "FAIL 01_BILL-GATES-SAID-IT-WAS-LUCK_112s.mp4: [FAIL] 01_BILL-GATES-SAID-IT-WAS-LUCK_112s.mp4                13 captions vs the sound  median -0.00s  worst-10% 0.56s  | words captioned 100%  UNCAPTIONED SPEECH [(86.2, 87.8)]"
    ],
@@ -6665,9 +6665,9 @@
    "plan": "ep_v7bf6rm_r2",
    "source": "v7bf6rm.mp4",
    "brand": "KT_FORMULAR2",
-   "tries": 3,
+   "tries": 4,
    "why": [
-    "FAIL 01_HOW-HE-COPIED-RICH-SALESMEN_63s.mp4: ends off the planned words: plan ends 'that person then develops affinity', clip ends 'more questions that person then develops'"
+    "FAIL 01_HOW-HE-COPIED-RICH-SALESMEN_63s.mp4: ends off the planned words: plan ends 'that person then develops affinity', clip ends 'said and ask for more questions'"
    ],
    "slug": "HOW-HE-COPIED-RICH-SALESMEN",
    "in": 647.2,
@@ -6677,6 +6677,42 @@
    "hook": [
     "How he copied",
     "rich salesmen"
+   ]
+  },
+  "ar_v6p4et6_r2/HE-SAW-A-FOREST": {
+   "plan": "ar_v6p4et6_r2",
+   "source": "v6p4et6.mp4",
+   "brand": "AR_LUCKR2",
+   "tries": 2,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "HE-SAW-A-FOREST",
+   "in": 567.2,
+   "out": 613.1,
+   "start_words": "What is depth of",
+   "end_words": "I see a forest",
+   "hook": [
+    "Same acorn.",
+    "You see a tree."
+   ]
+  },
+  "ep_v7dfhw8_r2/WORKED-NEAR-RICH-PEOPLE": {
+   "plan": "ep_v7dfhw8_r2",
+   "source": "v7dfhw8.mp4",
+   "brand": "KT_CIRCLER2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_WORKED-NEAR-RICH-PEOPLE_90s.mp4` - opens mid-sentence on \"go and become\""
+   ],
+   "slug": "WORKED-NEAR-RICH-PEOPLE",
+   "in": 218.72,
+   "out": 313.2,
+   "start_words": "I was told go",
+   "end_words": "right in front of me",
+   "hook": [
+    "Why he worked",
+    "near rich people"
    ]
   }
  },
@@ -6703,6 +6739,7 @@
   "ar_v794yks_r2": 2,
   "ep_v6zdmb0_r3": 2,
   "ep_v77l7um_r7": 2,
-  "ep_v7bf6rm_r2": 2
+  "ep_v7bf6rm_r2": 3,
+  "ep_v6zdmb0_r4": 1
  }
 }
