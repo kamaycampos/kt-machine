@@ -376,6 +376,19 @@ def plan(man):
             queue.append(folders[picked].pop(0))
             rnd += 1
 
+        # A DAY HOLDS AS MANY POSTS AS ITS GRID HAS SLOTS - POSTED ONES INCLUDED.
+        # 19 Oct 2026: Kamay had WB's one clip of the day posted at 07:40 instead of
+        # its 20:00 slot. "taken" above counts only clips still WAITING, so the
+        # evening slot would have looked free and a freshly built clip would have
+        # gone out the same day - two posts on an account in its 1-a-day warm-up.
+        per_day = {}
+        for c in man["clips"]:
+            if poster.account_key(brand_of(c)) != prefix:
+                continue
+            t = c.get("posted_at") or (None if c.get("done") else c.get("scheduled_at"))
+            if t:
+                per_day[t[:10]] = per_day.get(t[:10], 0) + 1
+
         day = now.date()
         for _ in range(HORIZON_DAYS):
             for hhmm in slots:
@@ -411,6 +424,8 @@ def plan(man):
                 # the day gets it anyway - a gap serves nobody - but that is now
                 # the exception it should always have been.
                 dkey = when.strftime("%Y-%m-%d")
+                if per_day.get(dkey, 0) >= len(slots):
+                    continue
                 spent = used.setdefault(dkey, {})
 
                 def ok(qi, strict):
@@ -427,6 +442,7 @@ def plan(man):
                 spent[brand_of(nxt)] = spent.get(brand_of(nxt), 0) + 1
                 last_src[0] = brand_of(nxt)
                 nxt["scheduled_at"] = key
+                per_day[dkey] = per_day.get(dkey, 0) + 1
                 # ROTATE THE COMMENT KEYWORD, IN POSTING ORDER. Daniel's point
                 # via Kamay: consecutive posts must ask for DIFFERENT words so
                 # each one feels like a new thing rather than the same ad. Doing
