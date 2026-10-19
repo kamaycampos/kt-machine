@@ -1,10 +1,10 @@
 {
- "at": "2026-10-19T09:18",
+ "at": "2026-10-19T13:55",
  "profile": {
-  "likes_count": 5855,
-  "video_count": 166,
   "follower_count": 412,
-  "following_count": 8
+  "following_count": 8,
+  "likes_count": 5855,
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -109,7 +109,7 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 178,
+   "view_count": 179,
    "like_count": 3,
    "comment_count": 0,
    "share_count": 0,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38155,
+   "view_count": 38157,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
