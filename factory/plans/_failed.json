@@ -6714,6 +6714,42 @@
     "Why he worked",
     "near rich people"
    ]
+  },
+  "ep_v6zdmb0_r4/RON-POPEIL-CALLED-HIM-A-LIAR": {
+   "plan": "ep_v6zdmb0_r4",
+   "source": "v6zdmb0.mp4",
+   "brand": "KT_RATIOR3",
+   "tries": 3,
+   "why": [
+    "FAIL 01_RON-POPEIL-CALLED-HIM-A-LIAR_112s.mp4: [FAIL] 01_RON-POPEIL-CALLED-HIM-A-LIAR_112s.mp4               14 captions vs the sound  median +0.16s  worst-10% 0.73s  | words captioned 99%"
+   ],
+   "slug": "RON-POPEIL-CALLED-HIM-A-LIAR",
+   "in": 193.36,
+   "out": 305.52,
+   "start_words": "I broke all the rules",
+   "end_words": "trying to pick my brain",
+   "hook": [
+    "Why Ron Popeil",
+    "said he lied"
+   ]
+  },
+  "ep_v6zdmb0_r4/OUTSOLD-ZIG-ZIGLAR-2-TO-1": {
+   "plan": "ep_v6zdmb0_r4",
+   "source": "v6zdmb0.mp4",
+   "brand": "KT_RATIOR3",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `02_OUTSOLD-ZIG-ZIGLAR-2-TO-1_126s.mp4` - ends mid-thought on \"It was\"; phrase scrambled around \"it's $89 because it's\"; sentence starts with no stop: \"around So\""
+   ],
+   "slug": "OUTSOLD-ZIG-ZIGLAR-2-TO-1",
+   "in": 1280.16,
+   "out": 1403.7,
+   "start_words": "You've heard Zig Ziglar",
+   "end_words": "teaching and selling simultaneously",
+   "hook": [
+    "How he beat",
+    "Zig Ziglar"
+   ]
   }
  },
  "attempts": {
