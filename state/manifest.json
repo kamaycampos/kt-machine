@@ -9779,11 +9779,24 @@
    "hook": "Why $25,000 goals feel too small",
    "bytes": 66637189,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-19T09:44",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Ddyc_2VCM4o/",
+    "youtube": "https://youtube.com/shorts/iVxG_fVARls"
+   },
+   "caption_at_post": "Larry King once asked Bill Gates, one of the richest men in the world, what the secret to his success was.\n\nGates said it starts with luck - being in the right place at the right time. But the real edge, he said, is depth of vision: seeing potential others don't.\n\nKevin Trudeau was tested on this himself. Handed a matchbook and told to picture it as an acorn, he said, I see a tree. The wealthy man testing him said, I see a forest.\n\nIf you can only picture a $25,000 raise, that's the ceiling. Stretch your mind to a million dollars a year, and the $25,000 becomes easy - like a rubber band that never shrinks back once you stretch it.\n\n#kevintrudeau #thinkbig #wealthmindset #successmindset #manifestation #businessmotivation",
+   "posted_at": "2026-10-19T09:58",
+   "tiktok_retry": true
   },
   {
    "file": "KT_MINDSET/01_WHAT-WINNERS-DO-THAT-LOSERS-DONT_48s.mp4",
@@ -9891,7 +9904,11 @@
    "hook": "The one move that changes income",
    "bytes": 56487969,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-20T07:37",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
