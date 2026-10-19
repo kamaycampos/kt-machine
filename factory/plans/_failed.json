@@ -6750,6 +6750,42 @@
     "How he beat",
     "Zig Ziglar"
    ]
+  },
+  "ep_v6c74p7/SAME-START-200-MILLION-APART": {
+   "plan": "ep_v6c74p7",
+   "source": "v6c74p7.mp4",
+   "brand": "KT_BIGDREAM",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_SAME-START-200-MILLION-APART_90s.mp4` - ends mid-thought on \"of their dream\"; word repeated after one: \"this house this\""
+   ],
+   "slug": "SAME-START-200-MILLION-APART",
+   "in": 1497.0,
+   "out": 1589.0,
+   "start_words": "They're doing a real estate deal",
+   "end_words": "was the size of their dream",
+   "hook": [
+    "How one dream",
+    "made $200 million"
+   ]
+  },
+  "ep_v6c74p7/HE-CELEBRATED-HIS-COMPETITORS": {
+   "plan": "ep_v6c74p7",
+   "source": "v6c74p7.mp4",
+   "brand": "KT_BIGDREAM",
+   "tries": 1,
+   "why": [
+    "FAIL 01_HE-CELEBRATED-HIS-COMPETITORS_124s.mp4: [FAIL] 01_HE-CELEBRATED-HIS-COMPETITORS_124s.mp4              9 captions vs the sound  median +0.36s  worst-10% 0.97s  | words captioned 100%"
+   ],
+   "slug": "HE-CELEBRATED-HIS-COMPETITORS",
+   "in": 2821.0,
+   "out": 2945.0,
+   "start_words": "I brought some staff in",
+   "end_words": "we remain good friends",
+   "hook": [
+    "Why winners celebrate",
+    "their competitors"
+   ]
   }
  },
  "attempts": {
