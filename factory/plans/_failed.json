@@ -6755,7 +6755,7 @@
    "plan": "ep_v6c74p7",
    "source": "v6c74p7.mp4",
    "brand": "KT_BIGDREAM",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "NOT QUEUED** `01_SAME-START-200-MILLION-APART_90s.mp4` - ends mid-thought on \"of their dream\"; word repeated after one: \"this house this\""
    ],
@@ -6773,9 +6773,9 @@
    "plan": "ep_v6c74p7",
    "source": "v6c74p7.mp4",
    "brand": "KT_BIGDREAM",
-   "tries": 1,
+   "tries": 2,
    "why": [
-    "FAIL 01_HE-CELEBRATED-HIS-COMPETITORS_124s.mp4: [FAIL] 01_HE-CELEBRATED-HIS-COMPETITORS_124s.mp4              9 captions vs the sound  median +0.36s  worst-10% 0.97s  | words captioned 100%"
+    "FAIL 01_HE-CELEBRATED-HIS-COMPETITORS_124s.mp4: [FAIL] 01_HE-CELEBRATED-HIS-COMPETITORS_124s.mp4              9 captions vs the sound  median +0.36s  worst-10% 0.97s  | words captioned 101%"
    ],
    "slug": "HE-CELEBRATED-HIS-COMPETITORS",
    "in": 2821.0,
@@ -6785,6 +6785,78 @@
    "hook": [
     "Why winners celebrate",
     "their competitors"
+   ]
+  },
+  "ep_v5kg9ip/SHE-MAKES-26K-A-MONTH-ON-ETSY": {
+   "plan": "ep_v5kg9ip",
+   "source": "v5kg9ip.mp4",
+   "brand": "KT_SIDEHUSTLE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_SHE-MAKES-26K-A-MONTH-ON-ETSY_55s.mp4` - stray full stop: \"now. do\""
+   ],
+   "slug": "SHE-MAKES-26K-A-MONTH-ON-ETSY",
+   "in": 2413.0,
+   "out": 2469.0,
+   "start_words": "It's easier today than",
+   "end_words": "anywhere in the world",
+   "hook": [
+    "How she clears $26,000",
+    "a month"
+   ]
+  },
+  "ep_v66j311/GLASS-BRIDGE-OVER-THE-CANYON": {
+   "plan": "ep_v66j311",
+   "source": "v66j311.mp4",
+   "brand": "KT_FIREBIRD",
+   "tries": 1,
+   "why": [
+    "FAIL 02_GLASS-BRIDGE-OVER-THE-CANYON_74s.mp4: [FAIL] 02_GLASS-BRIDGE-OVER-THE-CANYON_74s.mp4                44 captions vs the sound (word-referenced: no clear pauses)  median +0.44s  worst-10% 1.10s  | words captioned 97%"
+   ],
+   "slug": "GLASS-BRIDGE-OVER-THE-CANYON",
+   "in": 3980.96,
+   "out": 4058.76,
+   "start_words": "Good friend of mine in",
+   "end_words": "straight down. It's awesome",
+   "hook": [
+    "How 90 days made",
+    "$4 million"
+   ]
+  },
+  "ep_v6bge5y/THE-10000-DOLLAR-SEMINAR-INSULT": {
+   "plan": "ep_v6bge5y",
+   "source": "v6bge5y.mp4",
+   "brand": "KT_NOEXCUSES",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_THE-10000-DOLLAR-SEMINAR-INSULT_140s.mp4` - stray full stop: \"it. open\""
+   ],
+   "slug": "THE-10000-DOLLAR-SEMINAR-INSULT",
+   "in": 2975.0,
+   "out": 3115.0,
+   "start_words": "I remember I was interested",
+   "end_words": "It's on you",
+   "hook": [
+    "Why excuses make you",
+    "a loser"
+   ]
+  },
+  "ep_v7d2lxy_r4/HOW-TO-CONTROL-YOUR-REACTIONS": {
+   "plan": "ep_v7d2lxy_r4",
+   "source": "v7d2lxy.mp4",
+   "brand": "KT_PUPPETR4",
+   "tries": 2,
+   "why": [
+    "FAIL 01_HOW-TO-CONTROL-YOUR-REACTIONS_51s.mp4: ends off the planned words: plan ends 'how to control the mind', clip ends 'people call this how to c'"
+   ],
+   "slug": "HOW-TO-CONTROL-YOUR-REACTIONS",
+   "in": 64.32,
+   "out": 116.88,
+   "start_words": "Then you have the",
+   "end_words": "how to control the mind",
+   "hook": [
+    "How to control your",
+    "own reactions"
    ]
   }
  },
@@ -6812,6 +6884,8 @@
   "ep_v6zdmb0_r3": 2,
   "ep_v77l7um_r7": 2,
   "ep_v7bf6rm_r2": 3,
-  "ep_v6zdmb0_r4": 1
+  "ep_v6zdmb0_r4": 1,
+  "ep_v5ratln": 1,
+  "ep_v7bf6rm_r3": 1
  }
 }
