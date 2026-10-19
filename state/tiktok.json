@@ -1,10 +1,10 @@
 {
- "at": "2026-10-19T13:55",
+ "at": "2026-10-19T14:58",
  "profile": {
-  "follower_count": 412,
-  "following_count": 8,
   "likes_count": 5855,
-  "video_count": 166
+  "video_count": 166,
+  "follower_count": 412,
+  "following_count": 8
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -79,7 +79,7 @@
   },
   "KT_LUCK/02_WHAT-HE-SAW-IN-ONE-ACORN_113s.mp4": {
    "id": "7692585073467591949",
-   "view_count": 7,
+   "view_count": 8,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -489,7 +489,7 @@
   },
   "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
    "id": "7688148098480098573",
-   "view_count": 498,
+   "view_count": 499,
    "like_count": 40,
    "comment_count": 2,
    "share_count": 6,
