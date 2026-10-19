@@ -6642,6 +6642,42 @@
     "Why millionaires go broke",
     "on purpose"
    ]
+  },
+  "ar_v6p4et6_r2/BILL-GATES-SAID-IT-WAS-LUCK": {
+   "plan": "ar_v6p4et6_r2",
+   "source": "v6p4et6.mp4",
+   "brand": "AR_LUCKR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_BILL-GATES-SAID-IT-WAS-LUCK_112s.mp4: [FAIL] 01_BILL-GATES-SAID-IT-WAS-LUCK_112s.mp4                13 captions vs the sound  median -0.00s  worst-10% 0.56s  | words captioned 100%  UNCAPTIONED SPEECH [(86.2, 87.8)]"
+   ],
+   "slug": "BILL-GATES-SAID-IT-WAS-LUCK",
+   "in": 344.2,
+   "out": 456.3,
+   "start_words": "So Bill Gates was asked by Larry King",
+   "end_words": "I saw the vision",
+   "hook": [
+    "Bill Gates said",
+    "it was luck"
+   ]
+  },
+  "ep_v7bf6rm_r2/HOW-HE-COPIED-RICH-SALESMEN": {
+   "plan": "ep_v7bf6rm_r2",
+   "source": "v7bf6rm.mp4",
+   "brand": "KT_FORMULAR2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_HOW-HE-COPIED-RICH-SALESMEN_63s.mp4: ends off the planned words: plan ends 'that person then develops affinity', clip ends 'more questions that person then develops'"
+   ],
+   "slug": "HOW-HE-COPIED-RICH-SALESMEN",
+   "in": 647.2,
+   "out": 711.2,
+   "start_words": "In the automobile business",
+   "end_words": "that person then develops affinity",
+   "hook": [
+    "How he copied",
+    "rich salesmen"
+   ]
   }
  },
  "attempts": {
@@ -6667,6 +6703,6 @@
   "ar_v794yks_r2": 2,
   "ep_v6zdmb0_r3": 2,
   "ep_v77l7um_r7": 2,
-  "ep_v7bf6rm_r2": 1
+  "ep_v7bf6rm_r2": 2
  }
 }
