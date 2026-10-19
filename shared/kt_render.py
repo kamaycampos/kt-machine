@@ -1320,6 +1320,37 @@ MAGNITUDE_WORDS = {"billion", "million", "thousand", "hundred", "percent",
                    "dollar", "year", "grand", "k"}
 
 
+EDGE_TAIL = 0.30    # a word starting this close to the cut is not in the clip
+
+
+def edge_words(words, cues, t_in, t_out):
+    """The two whisper slips at a clip's edges, undone from the source transcript.
+
+    18 Oct 2026, WB "What's leaching into your food": the last gate blocked a clip
+    that opens and ends clean, because the caption record said it "opens mid-sentence
+    on 'black colored plastic'" and "ends mid-thought on 'It says--'". The source
+    reads "Kevin was right file. Black colored plastic..." and "...gets in your body.
+    It says tiny shards...". whisper, reading the window alone, wrote the first word
+    in lowercase, and heard the first breath of the NEXT sentence at the very cut and
+    gave it a caption that sat on screen for the last 0.17s.
+      TAIL  a word that starts within EDGE_TAIL of the end is the next sentence
+            leaking in: drop it (nobody can read 9 frames anyway).
+      HEAD  a lowercase first word that the source transcript writes capitalised
+            right after a full stop is a sentence start: take the source's casing.
+            A first word the source does NOT start a sentence with stays lowercase,
+            so kt_qc still fails a real mid-sentence open."""
+    span = t_out - t_in
+    while len(words) > 1 and words[-1][0] >= span - EDGE_TAIL:
+        words = words[:-1]
+    a, b, w = words[0]
+    bare = re.sub(r"[^A-Za-z']", "", w)
+    if bare[:1].islower() and cues:
+        near = " ".join(t for s, e, t in cues if e >= t_in - 20 and s <= t_in + 5)
+        if re.search(r"[.!?][\"'”)]*\s+" + re.escape(bare[:1].upper() + bare[1:]) + r"\b", near):
+            words = [(a, b, w.replace(bare, bare[:1].upper() + bare[1:], 1))] + list(words[1:])
+    return words
+
+
 def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
            hook_y=None, yt_win=None, slug=None, fix=None, shots=None,
            track=None, cuts=None, opener=None, geo=None):
@@ -1356,6 +1387,8 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     if words and shift:
         words = [(max(0.0, a + shift), max(0.0, b + shift), w) for a, b, w in words]
         print(f"      captions moved {shift:+.2f}s (measured offset)")
+    if words:
+        words = edge_words(words, cues, t_in, t_out)
     # TWO PEOPLE IN ONE SHOT: FRAME WHOEVER IS TALKING. See vsc_frame.speaker_turns.
     # It needs the final word times, because a switch may only land on the first
     # word of a sentence.
