@@ -9727,11 +9727,25 @@
    "hook": "The club soda worth $1.5 billion",
    "bytes": 50015458,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-18T20:07",
    "cta_keyword": "MONEY",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Dep85WsjKpk/",
+    "youtube": "https://youtube.com/shorts/w54w1q8l830"
+   },
+   "caption_at_post": "Josh and Matt Altman - the stars of Million Dollar Listing Los Angeles, now sitting on a billion and a half dollars in real estate - started out broke, sharing a one-bedroom apartment.\n\nKevin Trudeau says they knew one thing: they had to be in the same physical space as wealthy people. So they went to a Beverly Hills bar lined with Rolls-Royces and Ferraris out front, and ordered a single club soda because that's all they could afford.\n\nThey sat, they listened, and they left angry every time - if they can do it, why can't we? That anger is what made them start dreaming bigger.\n\n#kevintrudeau #wealthmindset #millionairemindset #successhabits #moneymindset #businessmotivation",
+   "posted_at": "2026-10-18T20:19",
+   "tiktok_retry": true
   },
   {
    "file": "KT_FORMULA/01_WHY-WINNERS-LISTEN-MORE-THAN-TALK_61s.mp4",
