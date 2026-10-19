@@ -1333,15 +1333,18 @@ def edge_words(words, cues, t_in, t_out):
     It says tiny shards...". whisper, reading the window alone, wrote the first word
     in lowercase, and heard the first breath of the NEXT sentence at the very cut and
     gave it a caption that sat on screen for the last 0.17s.
-      TAIL  a word that starts within EDGE_TAIL of the end is the next sentence
-            leaking in: drop it (nobody can read 9 frames anyway).
+      TAIL  words AFTER the last full stop that start within EDGE_TAIL of the end are
+            the next sentence leaking in: drop them (nobody can read 9 frames anyway).
+            Only after a full stop: on the same clip "body." itself started 0.16s
+            before "It", and a plain time rule cut the clip's real last word.
       HEAD  a lowercase first word that the source transcript writes capitalised
             right after a full stop is a sentence start: take the source's casing.
             A first word the source does NOT start a sentence with stays lowercase,
             so kt_qc still fails a real mid-sentence open."""
     span = t_out - t_in
-    while len(words) > 1 and words[-1][0] >= span - EDGE_TAIL:
-        words = words[:-1]
+    stops = [i for i, x in enumerate(words) if x[2].rstrip("\"'”)").endswith((".", "!", "?"))]
+    if stops and stops[-1] < len(words) - 1 and words[stops[-1] + 1][0] >= span - EDGE_TAIL:
+        words = words[:stops[-1] + 1]
     a, b, w = words[0]
     bare = re.sub(r"[^A-Za-z']", "", w)
     if bare[:1].islower() and cues:
@@ -1703,8 +1706,12 @@ def run_series(key, spec, apply, only):
             for f in os.listdir(bdir):
                 # NEVER match a YouTube cut here. It also contains the slug, so
                 # reusing its name produced "..._yt59__yt59.mp4" - a cut of a cut.
+                # NOR THE STORY CUT (19 Oct 2026): "_127s__story.mp4" has no "_NNs.mp4"
+                # ending, so it was taken as the name and every RETIME re-render of a
+                # clip over 60s wrote into the story file - the clip itself never moved
+                # (WB +0.77s -> +0.77s, KT +2.18s -> +2.18s). Any "__" file is a sidecar.
                 if (f.endswith(".mp4") and c["slug"] in f
-                        and "__yt" not in f):
+                        and "__" not in f):
                     m = re.search(r"_(\d+)s\.mp4$", f)
                     if m and abs(int(m.group(1)) - dur) > 2:
                         break          # a different cut: it must be renamed

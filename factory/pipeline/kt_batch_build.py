@@ -153,9 +153,11 @@ def main():
                 # every caption late (or early) by the same amount: move them by the
                 # measured amount, render this clip once more, and judge it again
                 log(f"  RETIME {f}: captions {off:+.2f}s off throughout - re-rendering once")
-                subprocess.run([sys.executable, os.path.join(HOME, "kt_render.py"), key, "--apply",
-                                "--only", m.group(1)], capture_output=True, text=True, cwd=HOME,
-                               env=dict(os.environ, CAPTION_SHIFT=f"{-off:.3f}"))
+                rr = subprocess.run([sys.executable, os.path.join(HOME, "kt_render.py"), key, "--apply",
+                                     "--only", m.group(1)], capture_output=True, text=True, cwd=HOME,
+                                    env=dict(os.environ, CAPTION_SHIFT=f"{-off:.3f}"))
+                if rr.returncode or "captions moved" not in rr.stdout:
+                    log(f"  RETIME render did not apply: {(rr.stdout + rr.stderr)[-300:]}")
                 s = subprocess.run([sys.executable, os.path.join(HOME, "kt_sync_check.py"), mp4],
                                    capture_output=True, text=True, cwd=HOME)
             if s.returncode:
