@@ -9825,7 +9825,11 @@
    "hook": "Taste it, double comes to you.",
    "bytes": 46985532,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-19T09:25",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_LUCKR2/02_HE-SAW-A-FOREST_45s.mp4",
@@ -9833,7 +9837,11 @@
    "hook": "Same acorn. You see a tree.",
    "bytes": 39109555,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-19T07:58",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
