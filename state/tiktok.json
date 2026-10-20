@@ -1,10 +1,10 @@
 {
- "at": "2026-10-20T07:59",
+ "at": "2026-10-20T12:07",
  "profile": {
+  "likes_count": 5859,
+  "video_count": 166,
   "follower_count": 412,
-  "following_count": 8,
-  "likes_count": 5856,
-  "video_count": 166
+  "following_count": 8
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -289,8 +289,8 @@
   },
   "KT_WEALTH/01_DEPROGRAM-YOUR-MIND-DAILY_123s.mp4": {
    "id": "7690200580903521549",
-   "view_count": 3,
-   "like_count": 2,
+   "view_count": 7,
+   "like_count": 3,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@kt_student/video/7690200580903521549?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -409,8 +409,8 @@
   },
   "KT_FREEDOM/01_WHY-HAVING-IT-WONT-FIX-YOU_67s.mp4": {
    "id": "7689098540093541645",
-   "view_count": 328,
-   "like_count": 30,
+   "view_count": 329,
+   "like_count": 31,
    "comment_count": 0,
    "share_count": 2,
    "share_url": "https://www.tiktok.com/@kt_student/video/7689098540093541645?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -489,7 +489,7 @@
   },
   "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
    "id": "7688148098480098573",
-   "view_count": 499,
+   "view_count": 500,
    "like_count": 40,
    "comment_count": 2,
    "share_count": 6,
@@ -1319,7 +1319,7 @@
   },
   "unmatched/7678813116536343822": {
    "id": "7678813116536343822",
-   "view_count": 826,
+   "view_count": 827,
    "like_count": 87,
    "comment_count": 15,
    "share_count": 11,
@@ -1379,10 +1379,10 @@
   },
   "unmatched/7678168548383968543": {
    "id": "7678168548383968543",
-   "view_count": 408,
-   "like_count": 36,
+   "view_count": 409,
+   "like_count": 37,
    "comment_count": 2,
-   "share_count": 8,
+   "share_count": 9,
    "share_url": "https://www.tiktok.com/@kt_student/video/7678168548383968543?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 30,
    "posted": "2026-08-26T02:55"
