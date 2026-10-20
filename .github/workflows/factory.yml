@@ -103,7 +103,13 @@ jobs:
       matrix: ${{ steps.s.outputs.matrix }}
       count: ${{ steps.s.outputs.count }}
     steps:
+      # MAIN AS IT IS NOW here too (20 Oct 2026). A run that waited behind another read
+      # _done.json from the commit that started it, so it rebuilt plans the first run had
+      # already queued - and filed the clip it could not re-render (HE-SAW-A-FOREST, posted
+      # 19 Oct) as failed, offering a posted clip back to the planner. Build reads main
+      # as well, so every plan the shard list names is on disk.
       - uses: actions/checkout@v4
+        with: { ref: main }
       - id: s
         run: python factory/shard.py
 
@@ -119,6 +125,7 @@ jobs:
         include: ${{ fromJSON(needs.plan.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
+        with: { ref: main }
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
       - uses: actions/cache@v4

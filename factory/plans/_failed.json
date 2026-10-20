@@ -6679,24 +6679,6 @@
     "rich salesmen"
    ]
   },
-  "ar_v6p4et6_r2/HE-SAW-A-FOREST": {
-   "plan": "ar_v6p4et6_r2",
-   "source": "v6p4et6.mp4",
-   "brand": "AR_LUCKR2",
-   "tries": 2,
-   "why": [
-    "no clip came out of the render"
-   ],
-   "slug": "HE-SAW-A-FOREST",
-   "in": 567.2,
-   "out": 613.1,
-   "start_words": "What is depth of",
-   "end_words": "I see a forest",
-   "hook": [
-    "Same acorn.",
-    "You see a tree."
-   ]
-  },
   "ep_v7dfhw8_r2/WORKED-NEAR-RICH-PEOPLE": {
    "plan": "ep_v7dfhw8_r2",
    "source": "v7dfhw8.mp4",

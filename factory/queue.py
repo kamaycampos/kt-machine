@@ -32,13 +32,21 @@ brands, kinds, report = set(), {}, []
 # routine_prep.py hands it back to the planner, and the planner re-cuts it.
 FAILED = os.path.join(HERE, "plans", "_failed.json")
 failed = json.load(open(FAILED)) if os.path.exists(FAILED) else {"clips": {}, "attempts": {}}
+try:
+    _queued_files = [c["file"] for c in json.load(open(os.path.join(MACHINE, "state", "manifest.json")))["clips"]]
+except (OSError, ValueError, KeyError):
+    _queued_files = []
 RETIRE_AFTER = 2       # a plan that yields NOTHING this many runs is not retried as-is
 
 
 def note_failures(plan, p, kept, text):
     """Every planned clip that did not reach the queue, with the gate's words."""
+    # A CLIP AN EARLIER RUN ALREADY QUEUED IS NOT A FAILURE (20 Oct 2026): a re-build of a
+    # finished plan cannot re-render it, and filing it here offered a POSTED clip back.
+    queued = {c["slug"] for c in series.get(plan, {}).get("clips", [])
+              if any(m.startswith(p["brand"] + "/") and f"_{c['slug']}_" in m for m in _queued_files)}
     for c in p["clips"]:
-        if c["slug"] in kept:
+        if c["slug"] in kept or c["slug"] in queued:
             failed["clips"].pop(f"{plan}/{c['slug']}", None)
             continue
         why = [l.strip(" -*") for l in text.splitlines() if c["slug"] in l
