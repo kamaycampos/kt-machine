@@ -26,10 +26,13 @@ The growth strategist rewrites it daily from the real numbers (skip rate, views,
 orders on topic priority, hook shape, offer clips and what to skip come before your own taste. It
 never overrides a gate, the edges, the fence or the brand's compliance. If it is missing, carry on.
 
-## THE CINEMATIC OPENER: name the shot for EVERY clip (17 Oct 2026, Kamay approved)
-Every clip opens on 3 seconds of a 4K moving shot that IS the hook's subject, with Kevin's voice
+## THE CINEMATIC OPENER: a RESCUE only (20 Oct 2026, Kamay: stock shots on every clip looked cheap, views dropped)
+Kevin opens the clip. The factory throws your shot away whenever the source opens on his face; it is
+used ONLY when the opening frame has no face (B-roll, back of a head) and the teaching is strong.
+Name a shot only for those clips, and only one that truly looks premium. Otherwise leave it off.
+When used: 3 seconds of a 4K moving shot that IS the hook's subject, with Kevin's voice
 already running under it, then crossfades into Kevin. You choose the shot; the factory finds it on
-Pixabay (free, commercial use) and builds it. Add to each clip:
+Pixabay (free, commercial use) and builds it. Add to that clip:
   `"opener": "<2-6 plain lowercase words>"`, e.g. "basketball hoop net", "mansion pool night", "stack of money", "city skyline night", "old letter handwriting", "private jet runway".
 - **The picture of the hook's noun**, concrete and filmable: an object, a place, an action. Not an idea
   ("success", "freedom"), not a person's, brand's or film's name (`check_plan.py` refuses those).

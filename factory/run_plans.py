@@ -198,14 +198,17 @@ def fix_edges(key):
 
 def _face_gate(src, c, a, b):
     """Opening must show a face within 1.0s: keep, move to a face sentence, or drop."""
-    # A CINEMATIC OPENER OWNS THE FIRST SECONDS (17 Oct 2026, Kamay approved): the
-    # clip opens on the planned 4K shot by design, so the source's opening frame is
-    # not what the viewer sees and is no reason to move or drop the clip.
-    if c.get("opener") and (os.environ.get("OPENER_LIVE") == "on"
-                            or os.environ.get("OPENER_PREVIEW") == "1"):
-        return a
+    # THE OPENER IS A RESCUE, NOT A STYLE (20 Oct 2026, Kamay): stock shots on every
+    # clip looked cheap and views dropped. Kevin opens whenever the source shows him;
+    # the planned shot only covers an opening with no face, so a strong teaching
+    # is not dropped for a bad first frame.
     ok = opens_on_face(src, a)
     if ok is None or ok:
+        c.pop("opener", None)
+        return a
+    if c.get("opener") and (os.environ.get("OPENER_LIVE") == "on"
+                            or os.environ.get("OPENER_PREVIEW") == "1"):
+        print(f"  {c['slug']}: opens on B-roll - opener covers it")
         return a
     moved = face_start(src, a, b)
     if moved is not None:
