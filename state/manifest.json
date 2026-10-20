@@ -10150,7 +10150,11 @@
    "hook": "Why this millionaire felt poor here",
    "bytes": 24727175,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-21T14:20",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
