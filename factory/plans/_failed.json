@@ -6930,6 +6930,60 @@
     "The secret Zig",
     "Ziglar gave him"
    ]
+  },
+  "ar_v6ypiao_r2/THEY-CALCIFY-YOUR-PINEAL-GLAND": {
+   "plan": "ar_v6ypiao_r2",
+   "source": "v6ypiao.mp4",
+   "brand": "AR_HIPPOCAMPUSR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_THEY-CALCIFY-YOUR-PINEAL-GLAND_45s.mp4: [FAIL] 01_THEY-CALCIFY-YOUR-PINEAL-GLAND_45s.mp4              25 captions vs the sound (word-referenced: no clear pauses)  median -0.32s  worst-10% 1.54s  | words captioned 101%"
+   ],
+   "slug": "THEY-CALCIFY-YOUR-PINEAL-GLAND",
+   "in": 150.2,
+   "out": 194.0,
+   "start_words": "This is something that",
+   "end_words": "the pineal gland and the hippocampus",
+   "hook": [
+    "They calcify your",
+    "pineal gland."
+   ]
+  },
+  "ar_v6ypiao_r2/5-MILLION-EACH-LET-THEM-DIE": {
+   "plan": "ar_v6ypiao_r2",
+   "source": "v6ypiao.mp4",
+   "brand": "AR_HIPPOCAMPUSR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_5-MILLION-EACH-LET-THEM-DIE_117s.mp4: [FAIL] 02_5-MILLION-EACH-LET-THEM-DIE_117s.mp4                8 captions vs the sound  median +0.15s  worst-10% 1.18s  | words captioned 100%"
+   ],
+   "slug": "5-MILLION-EACH-LET-THEM-DIE",
+   "in": 478.8,
+   "out": 604.0,
+   "start_words": "we look at a perfect example of this",
+   "end_words": "that's exactly what was said at that meeting",
+   "hook": [
+    "$5 million each.",
+    "Let them die."
+   ]
+  },
+  "ep_v5hg63e/STEVE-JOBS-10-MINUTE-RULE": {
+   "plan": "ep_v5hg63e",
+   "source": "v5hg63e.mp4",
+   "brand": "KT_RIGHTFILE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_STEVE-JOBS-10-MINUTE-RULE_76s.mp4` - word repeated after one: \"your Wishes Your\""
+   ],
+   "slug": "STEVE-JOBS-10-MINUTE-RULE",
+   "in": 652.0,
+   "out": 727.0,
+   "start_words": "Steven Jobs swore the",
+   "end_words": "the centuries have always done",
+   "hook": [
+    "Why wealthy people walk",
+    "when stuck"
+   ]
   }
  },
  "attempts": {
@@ -6958,6 +7012,7 @@
   "ep_v7bf6rm_r2": 3,
   "ep_v6zdmb0_r4": 1,
   "ep_v5ratln": 2,
-  "ep_v7bf6rm_r3": 2
+  "ep_v7bf6rm_r3": 2,
+  "ar_v6sfb21_r4": 1
  }
 }
