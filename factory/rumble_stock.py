@@ -43,9 +43,40 @@ def height(p):
     return int(m[2]) if m else 0
 
 
+def plain_links(url, e):
+    """Fresh direct file links for an episode, best first, from Rumble's player.
+
+    20 Oct 2026. Ten episodes - five of them on Yaren's list - were given up after three
+    runs: every try went through yt-dlp posing as Chrome, and the 16 Oct probe found that
+    GitHub's servers get Cloudflare's 403 WITH the Chrome disguise while a plain request
+    to the player and its file links answers 200. The same 1080p links download fine
+    from the Mac. So when the disguised tries fail, ask the player (oEmbed -> embedJS)
+    for its current file list and fetch the tallest one plainly."""
+    import urllib.request
+    from urllib.parse import quote
+    J = lambda u: json.loads(urllib.request.urlopen(urllib.request.Request(
+        u, headers={"User-Agent": "kt-factory/1.0"}), timeout=30).read().decode("utf-8", "replace"))
+    out = []
+    try:
+        v = e.get("embed") or re.search(r"/embed/(v[0-9a-z]+)/", J(
+            "https://rumble.com/api/Media/oembed.json?url=" + quote(url, safe=":/"))["html"])[1]
+        d = J(f"https://rumble.com/embedJS/u3/?request=video&ver=2&v={v}")
+        mp4s = ((d.get("ua") or {}).get("mp4") or {})
+        out = [x["url"] for _h, x in sorted(mp4s.items(), key=lambda kv: -int(kv[0])) if x.get("url")][:1]
+    except Exception as ex:
+        print(f"    player: {type(ex).__name__}")
+    if (e.get("hls") or "").endswith(".mp4") and e["hls"] not in out:
+        out.append(e["hls"])
+    return out
+
+
 def main():
     sh("gh", "release", "download", TAG, "-R", REPO, "-p", "sources_index.json", "-D", "/tmp", "--clobber")
     idx = json.load(open("/tmp/sources_index.json")) if os.path.exists("/tmp/sources_index.json") else {}
+    # Given up after GIVE_UP runs - unless it never had the plain route (plain_links):
+    # those get their rounds again, once, and are marked "plain" when they fail.
+    retry = lambda e: e.get("status") == "fetch_failed" and (e.get("fails", 0) < GIVE_UP
+                                                             or not e.get("plain"))
     done = set(json.load(open(os.path.join(HERE, "plans", "_done.json"))))
     planned = " ".join(open(os.path.join(HERE, "plans", f)).read()
                        for f in os.listdir(os.path.join(HERE, "plans")) if f.endswith(".json"))
@@ -59,8 +90,7 @@ def main():
             _lists |= {x["id"] for x in json.load(open(os.path.join(HERE, _f)))["episodes"]}
     waiting = [v for v, e in idx.items() if e.get("status") == "stocked" and not e.get("test")
                and v not in planned and v in _lists]
-    missing = [v for v in _lists if v not in idx or (idx[v].get("status") == "fetch_failed"
-                                                     and idx[v].get("fails", 0) < GIVE_UP)]
+    missing = [v for v in _lists if v not in idx or retry(idx[v])]
     need = min(MAX, max(STOCK - len(waiting), len(missing)))
     print(f"month lists: {len(_lists)} episodes, {len(missing)} not downloaded yet")
     series = json.load(open(os.path.join(HERE, "kt_series.json")))
@@ -86,8 +116,7 @@ def main():
     # the rumble.com/hls-vod/ links kept working. They are retried on the next runs,
     # and after GIVE_UP failed runs they step aside so the slot goes to an episode
     # that can actually be fetched.
-    have = {e.get("rumble") for e in idx.values()
-            if not (e.get("status") == "fetch_failed" and e.get("fails", 0) < GIVE_UP)}
+    have = {e.get("rumble") for e in idx.values() if not retry(e)}
     # AN EPISODE HE NAMED IS NEVER FILTERED OUT BY LENGTH. 30 Sept 2026: Kamay
     # put that day's upload at the top of the list - "You Keep Missing The
     # Biggest Opportunities", 4K, SIX MINUTES - and the stocker silently ignored
@@ -140,13 +169,23 @@ def main():
             if os.path.exists(mp4):
                 break
             time.sleep(15 * (attempt + 1))
+        if not os.path.exists(mp4):
+            for link in plain_links(url, e):
+                r = sh("curl", "-sSLf", "--retry", "3", "--retry-delay", "10", "-A", "kt-factory/1.0",
+                       "-o", mp4, link)
+                if r.returncode == 0 and height(mp4) > 0:
+                    print("    fetched by the plain route (player file link)")
+                    break
+                if os.path.exists(mp4):
+                    os.remove(mp4)
         h = height(mp4) if os.path.exists(mp4) else 0
         if h == 0:
             # Cloudflare turned every attempt away. Not the episode's fault: try
             # again on the next run instead of writing it off.
             prev = idx.get(vid, {})
             fails = prev.get("fails", 0) + 1 if prev.get("status") == "fetch_failed" else 1
-            idx[vid] = {"title": e["title"], "rumble": url, "status": "fetch_failed", "fails": fails}
+            idx[vid] = {"title": e["title"], "rumble": url, "status": "fetch_failed", "fails": fails,
+                        "plain": True}
             print(f"    NOT FETCHED ({fails}/{GIVE_UP}) ({r.stderr.strip()[-120:]})")
             continue
         # THE TOP RESOLUTION KEVIN UPLOADED, NOT THE FIRST ONE THAT ARRIVED (14 Oct 2026).
