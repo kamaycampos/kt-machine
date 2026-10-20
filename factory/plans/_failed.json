@@ -6840,6 +6840,96 @@
     "How to control your",
     "own reactions"
    ]
+  },
+  "ep_v5ratln/250K-BAIL-NO-STRINGS-ATTACHED": {
+   "plan": "ep_v5ratln",
+   "source": "v5ratln.mp4",
+   "brand": "KT_MAGICWORDS",
+   "tries": 1,
+   "why": [
+    "FAIL 01_250K-BAIL-NO-STRINGS-ATTACHED_132s.mp4: [FAIL] 01_250K-BAIL-NO-STRINGS-ATTACHED_132s.mp4              22 captions vs the sound  median -0.01s  worst-10% 1.16s  | words captioned 105%"
+   ],
+   "slug": "250K-BAIL-NO-STRINGS-ATTACHED",
+   "in": 404.0,
+   "out": 545.0,
+   "start_words": "I remember it was a fellow",
+   "end_words": "work out some way somehow",
+   "hook": [
+    "How $250,000 bought",
+    "a friend's freedom"
+   ]
+  },
+  "ep_v5ratln/THE-WORLDS-GREATEST-CONVERSATIONALIST": {
+   "plan": "ep_v5ratln",
+   "source": "v5ratln.mp4",
+   "brand": "KT_MAGICWORDS",
+   "tries": 1,
+   "why": [
+    "FAIL 02_THE-WORLDS-GREATEST-CONVERSATIONALIST_172s.mp4: [FAIL] 02_THE-WORLDS-GREATEST-CONVERSATIONALIST_172s.mp4      19 captions vs the sound  median +1.47s  worst-10% 2.17s  | words captioned 100%"
+   ],
+   "slug": "THE-WORLDS-GREATEST-CONVERSATIONALIST",
+   "in": 2555.0,
+   "out": 2727.0,
+   "start_words": "In New York City one",
+   "end_words": "genuine interest. He listened",
+   "hook": [
+    "Why silence makes you",
+    "unforgettable"
+   ]
+  },
+  "ep_v5ratln/THE-MARLIN-PHOTO-ON-THE-WALL": {
+   "plan": "ep_v5ratln",
+   "source": "v5ratln.mp4",
+   "brand": "KT_MAGICWORDS",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THE-MARLIN-PHOTO-ON-THE-WALL_143s.mp4: [FAIL] 01_THE-MARLIN-PHOTO-ON-THE-WALL_143s.mp4               15 captions vs the sound  median +0.59s  worst-10% 1.29s  | words captioned 100%"
+   ],
+   "slug": "THE-MARLIN-PHOTO-ON-THE-WALL",
+   "in": 2961.0,
+   "out": 3103.0,
+   "start_words": "There was a guy who",
+   "end_words": "with the guy big client",
+   "hook": [
+    "How one photo won",
+    "the business"
+   ]
+  },
+  "ep_v7bf6rm_r3/SIX-QUESTIONS-THAT-WIN-FRIENDS": {
+   "plan": "ep_v7bf6rm_r3",
+   "source": "v7bf6rm.mp4",
+   "brand": "KT_FORMULAR3",
+   "tries": 3,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "SIX-QUESTIONS-THAT-WIN-FRIENDS",
+   "in": 287.2,
+   "out": 425.2,
+   "start_words": "The technical part is",
+   "end_words": "at that point or your idea",
+   "hook": [
+    "Six questions that",
+    "win people over"
+   ]
+  },
+  "ep_v7bf6rm_r3/THE-SECRET-ZIG-ZIGLAR-GAVE-HIM": {
+   "plan": "ep_v7bf6rm_r3",
+   "source": "v7bf6rm.mp4",
+   "brand": "KT_FORMULAR3",
+   "tries": 3,
+   "why": [
+    "render refused:   FIX  KT_FORMULAR3/THE-SECRET-ZIG-ZIGLAR-GAVE-HIM     out   1057.3  advert   1056.2  +1.1s into it"
+   ],
+   "slug": "THE-SECRET-ZIG-ZIGLAR-GAVE-HIM",
+   "in": 903.2,
+   "out": 1054.2,
+   "start_words": "I had a friend who",
+   "end_words": "through John Jones eyes",
+   "hook": [
+    "The secret Zig",
+    "Ziglar gave him"
+   ]
   }
  },
  "attempts": {
@@ -6867,7 +6957,7 @@
   "ep_v77l7um_r7": 2,
   "ep_v7bf6rm_r2": 3,
   "ep_v6zdmb0_r4": 1,
-  "ep_v5ratln": 1,
-  "ep_v7bf6rm_r3": 1
+  "ep_v5ratln": 2,
+  "ep_v7bf6rm_r3": 2
  }
 }
