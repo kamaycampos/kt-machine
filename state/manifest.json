@@ -9979,7 +9979,7 @@
    "caption_at_post": "Kevin Trudeau's advice gets uncomfortable fast: follow only wealthy, successful people on social media. Go sit at the bar in restaurants where the rich go, even if all you can afford is a club soda. Join a club where successful people are members.\n\nThen comes the hard part. He says you may have to get rid of some of your current friends and go find new ones, because you become what you think about most of the time - and your thinking is shaped by who you watch, listen to and spend time with.\n\nIf you want to change your income and your financial situation, change the room you're in.\n\n#kevintrudeau #wealthmindset #millionairemindset #successhabits #moneymindset #businessmotivation",
    "posted_at": "2026-10-20T07:41",
    "tiktok_retry": true,
-   "tiktok_tries": 1
+   "tiktok_tries": 2
   },
   {
    "file": "KT_BIGDREAM/02_NOBODY-TOLD-HER-TO-FIX-IT_174s.mp4",
@@ -10035,7 +10035,11 @@
    "hook": "Fluoride in your water supply.",
    "bytes": 34194233,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-20T10:00",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_RIGHTFILE/01_DIMON-BANNED-BITCOIN-THEN-BOUGHT-IT_54s.mp4",
@@ -10043,7 +10047,11 @@
    "hook": "How $1,000 beat Jamie Dimon's warning",
    "bytes": 35495969,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-20T19:43",
+   "cta_keyword": "MONEY",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
