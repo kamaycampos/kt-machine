@@ -7074,6 +7074,222 @@
     "Why rich cards",
     "can't carry debt"
    ]
+  },
+  "ep_v5dm94d/THE-ONE-BLOCK-STOPPING-YOUR-MONEY": {
+   "plan": "ep_v5dm94d",
+   "source": "v5dm94d.mp4",
+   "brand": "KT_BLUEPRINT",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_THE-ONE-BLOCK-STOPPING-YOUR-MONEY_175s.mp4` - phrase scrambled around \"if you know if\"; phrase scrambled around \"know if you know\"; word repeated: \"of of\""
+   ],
+   "slug": "THE-ONE-BLOCK-STOPPING-YOUR-MONEY",
+   "in": 827.76,
+   "out": 1002.36,
+   "start_words": "There are energetic blocks",
+   "end_words": "the same with making money",
+   "hook": [
+    "The one block",
+    "stopping your money"
+   ]
+  },
+  "ep_v5dm94d/12-5M-FROM-ZERO-IN-18-MONTHS": {
+   "plan": "ep_v5dm94d",
+   "source": "v5dm94d.mp4",
+   "brand": "KT_BLUEPRINT",
+   "tries": 1,
+   "why": [
+    "FAIL 01_12-5M-FROM-ZERO-IN-18-MONTHS_96s.mp4: ends off the planned words: plan ends 'Over $12.5 million', clip ends 'the bank statements over 12 5'"
+   ],
+   "slug": "12-5M-FROM-ZERO-IN-18-MONTHS",
+   "in": 2122.36,
+   "out": 2220.36,
+   "start_words": "I remember when I went",
+   "end_words": "Over $12.5 million",
+   "hook": [
+    "$12.5M from zero",
+    "in 18 months"
+   ]
+  },
+  "ep_v6j5tha/THE-ONE-HACK-FOR-YOUR-PROBLEMS": {
+   "plan": "ep_v6j5tha",
+   "source": "v6j5tha.mp4",
+   "brand": "KT_ADVERSITY",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_THE-ONE-HACK-FOR-YOUR-PROBLEMS_86s.mp4` - phrase scrambled around \"your eye on your\""
+   ],
+   "slug": "THE-ONE-HACK-FOR-YOUR-PROBLEMS",
+   "in": 7.04,
+   "out": 92.4,
+   "start_words": "Are you looking at",
+   "end_words": "don't resist the problem",
+   "hook": [
+    "The one hack",
+    "for your problems"
+   ]
+  },
+  "ep_v6j5tha/BANNED-FROM-TV-HE-FOUND-A-LOOPHOLE": {
+   "plan": "ep_v6j5tha",
+   "source": "v6j5tha.mp4",
+   "brand": "KT_ADVERSITY",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_BANNED-FROM-TV-HE-FOUND-A-LOOPHOLE_112s.mp4` - opens mid-sentence on \"calcium.\""
+   ],
+   "slug": "BANNED-FROM-TV-HE-FOUND-A-LOOPHOLE",
+   "in": 228.08,
+   "out": 338.56,
+   "start_words": "I got sued by",
+   "end_words": "when they signed the deal",
+   "hook": [
+    "The loophole",
+    "that saved his business"
+   ]
+  },
+  "ep_v6j5tha/THE-BOOK-THAT-SOLD-50-MILLION-COPIES": {
+   "plan": "ep_v6j5tha",
+   "source": "v6j5tha.mp4",
+   "brand": "KT_ADVERSITY",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_THE-BOOK-THAT-SOLD-50-MILLION-COPIES_91s.mp4` - sentence starts with no stop: \"called The\""
+   ],
+   "slug": "THE-BOOK-THAT-SOLD-50-MILLION-COPIES",
+   "in": 402.32,
+   "out": 492.72,
+   "start_words": "There are natural ways",
+   "end_words": "50 million copies in hardcover",
+   "hook": [
+    "The book",
+    "that sold 50 million"
+   ]
+  },
+  "ep_v6j5tha/HOW-HE-ESCAPED-A-37M-WIPEOUT": {
+   "plan": "ep_v6j5tha",
+   "source": "v6j5tha.mp4",
+   "brand": "KT_ADVERSITY",
+   "tries": 1,
+   "why": [
+    "FAIL 02_HOW-HE-ESCAPED-A-37M-WIPEOUT_113s.mp4: ends off the planned words: plan ends 'would never have existed', clip ends 'we formed the global information network'"
+   ],
+   "slug": "HOW-HE-ESCAPED-A-37M-WIPEOUT",
+   "in": 526.88,
+   "out": 639.52,
+   "start_words": "A few years later",
+   "end_words": "would never have existed",
+   "hook": [
+    "How he escaped",
+    "a $37M wipeout"
+   ]
+  },
+  "ep_v6j5tha/HIS-10-YEAR-SENTENCE-BECAME-A-WIN": {
+   "plan": "ep_v6j5tha",
+   "source": "v6j5tha.mp4",
+   "brand": "KT_ADVERSITY",
+   "tries": 1,
+   "why": [
+    "FAIL 01_HIS-10-YEAR-SENTENCE-BECAME-A-WIN_183s.mp4: [FAIL] 01_HIS-10-YEAR-SENTENCE-BECAME-A-WIN_183s.mp4          16 captions vs the sound  median +0.16s  worst-10% 1.22s  | words captioned 100%"
+   ],
+   "slug": "HIS-10-YEAR-SENTENCE-BECAME-A-WIN",
+   "in": 720.56,
+   "out": 902.32,
+   "start_words": "I got charged with",
+   "end_words": "would not exist today",
+   "hook": [
+    "His 10-year sentence",
+    "became a win"
+   ]
+  },
+  "ep_v6j5tha/HOW-HIS-MIND-BEAT-20-DEGREE-COLD": {
+   "plan": "ep_v6j5tha",
+   "source": "v6j5tha.mp4",
+   "brand": "KT_ADVERSITY",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_HOW-HIS-MIND-BEAT-20-DEGREE-COLD_176s.mp4` - the spoken word was on screen in only 8 of 11 moments"
+   ],
+   "slug": "HOW-HIS-MIND-BEAT-20-DEGREE-COLD",
+   "in": 1173.84,
+   "out": 1351.36,
+   "start_words": "The bus goes to",
+   "end_words": "charge of the adversity",
+   "hook": [
+    "How your mind",
+    "beats 20-degree cold"
+   ]
+  },
+  "ep_v6oq1ll/RANDOM-MACHINE-BENDS-TO-YOUR-MIND": {
+   "plan": "ep_v6oq1ll",
+   "source": "v6oq1ll.mp4",
+   "brand": "KT_COMPASS",
+   "tries": 1,
+   "why": [
+    "FAIL 01_RANDOM-MACHINE-BENDS-TO-YOUR-MIND_180s.mp4: [FAIL] 01_RANDOM-MACHINE-BENDS-TO-YOUR-MIND_180s.mp4          26 captions vs the sound  median +0.15s  worst-10% 0.58s  | words captioned 99%  UNCAPTIONED SPEECH [(56.3, 58.6)]"
+   ],
+   "slug": "RANDOM-MACHINE-BENDS-TO-YOUR-MIND",
+   "in": 108.0,
+   "out": 288.14,
+   "start_words": "They had a machine",
+   "end_words": "gave them that",
+   "hook": [
+    "How your mind",
+    "bends random odds"
+   ]
+  },
+  "ep_v6oq1ll/THE-RESULTS-WERE-ALREADY-SET": {
+   "plan": "ep_v6oq1ll",
+   "source": "v6oq1ll.mp4",
+   "brand": "KT_COMPASS",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_THE-RESULTS-WERE-ALREADY-SET_60s.mp4` - sentence starts with no stop: \"and They\"; sentence starts with no stop: \"ran It\"; sentence starts with no stop: \"run It\""
+   ],
+   "slug": "THE-RESULTS-WERE-ALREADY-SET",
+   "in": 322.38,
+   "out": 383.34,
+   "start_words": "The machine was put on",
+   "end_words": "that's what the machine gave",
+   "hook": [
+    "Why luck",
+    "obeys your mind"
+   ]
+  },
+  "ep_v6oq1ll/HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN": {
+   "plan": "ep_v6oq1ll",
+   "source": "v6oq1ll.mp4",
+   "brand": "KT_COMPASS",
+   "tries": 1,
+   "why": [
+    "FAIL 01_HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN_156s.mp4: [FAIL] 01_HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN_156s.mp4        8 captions vs the sound  median +0.41s  worst-10% 1.15s  | words captioned 100%"
+   ],
+   "slug": "HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN",
+   "in": 447.06,
+   "out": 601.5,
+   "start_words": "We had a Boy Scout",
+   "end_words": "you can change your luck",
+   "hook": [
+    "How he predicted",
+    "his own win"
+   ]
+  },
+  "ep_v6oq1ll/HOW-YOUR-DNA-REACTS-FROM-ANYWHERE": {
+   "plan": "ep_v6oq1ll",
+   "source": "v6oq1ll.mp4",
+   "brand": "KT_COMPASS",
+   "tries": 1,
+   "why": [
+    "FAIL 02_HOW-YOUR-DNA-REACTS-FROM-ANYWHERE_126s.mp4: [FAIL] 02_HOW-YOUR-DNA-REACTS-FROM-ANYWHERE_126s.mp4          23 captions vs the sound  median +0.10s  worst-10% 0.95s  | words captioned 100%"
+   ],
+   "slug": "HOW-YOUR-DNA-REACTS-FROM-ANYWHERE",
+   "in": 623.86,
+   "out": 750.02,
+   "start_words": "DNA was taken out",
+   "end_words": "also expanded",
+   "hook": [
+    "How your DNA",
+    "reacts from anywhere"
+   ]
   }
  },
  "attempts": {
@@ -7103,6 +7319,7 @@
   "ep_v6zdmb0_r4": 1,
   "ep_v5ratln": 2,
   "ep_v7bf6rm_r3": 2,
-  "ar_v6sfb21_r4": 2
+  "ar_v6sfb21_r4": 2,
+  "ep_v67ions": 1
  }
 }
