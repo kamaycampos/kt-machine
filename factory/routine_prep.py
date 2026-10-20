@@ -198,7 +198,15 @@ for v in ready[:MAX] + [v for v in again if v not in ready[:MAX] and v in idx an
 
 waiting = [v for v in order if v not in idx or not idx[v].get("transcript")]
 print(f"MONTH LIST: {len(order)} episodes, {len(waiting)} not transcribed yet")
-if len(order) - len([v for v in order if f'"{v}.mp4"' in plans_txt]) < 6:
+# A DEAD EPISODE IS NOT STOCK (20 Oct 2026). Her list held 7 unplanned episodes, so this
+# never warned - but all 7 were dead (5 fetch_failed x3, 2 rejected at 480p). Her planner
+# only re-cut old refusals for days and her queue hit zero. Count only what can be planned.
+_dead = {v for v, e in idx.items() if e.get("status") in ("fetch_failed", "rejected")}
+_left = [v for v in order if f'"{v}.mp4"' not in plans_txt and v not in _dead]
+if [v for v in order if v in _dead and f'"{v}.mp4"' not in plans_txt]:
+    print("DEAD ON THE MONTH LIST (never downloaded / below 1080p, cannot be planned): "
+          + ", ".join(v for v in order if v in _dead and f'"{v}.mp4"' not in plans_txt))
+if len(_left) < 6:
     cat = json.load(open(os.path.join(HERE, "rumble_catalog.json")))
     series = json.load(open(os.path.join(HERE, "kt_series.json")))
     norm = lambda s: re.sub(r"[^a-z0-9]", "", s.lower())[:40]
