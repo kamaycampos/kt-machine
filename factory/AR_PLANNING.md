@@ -29,6 +29,8 @@ cut off still keeps the plans it finished.
      - "opens mid-sentence", "ends mid-thought", "ends off the planned words" -> re-find the edges: open on the first words of a complete sentence after a pause, close on the sentence end where the teaching lands; copy `start_words` / `end_words` exactly from the cues.
      - "word repeated", "phrase scrambled", "(laughing)", "[BLANK_AUDIO]" -> move an edge so the damaged words fall outside the clip; if they sit in the middle of the teaching, skip the clip.
      - "captions vs the sound", "UNCAPTIONED SPEECH", "too few to judge" -> move both edges to different sentence boundaries (a few seconds re-times every caption). If the gap named is someone else talking, cut so it falls outside.
+     - "opens on B-roll, no face" -> open on a different sentence where Kevin is speaking on camera (not over a graphic or clip); "runs into" / "no passing ending" -> end on an earlier sentence that closes the thought.
+     - "no clip came out of the render" (filed before 20 Oct 2026) is NOT "nothing to fix": it was the edge step dropping the clip without saying why - almost always one of the two lines above. Re-cut it: open on a different complete sentence with Kevin on camera, close on a clean sentence end.
    - `tries 2` means this is its last chance: skip it unless you can see the cause and fix it.
    - Second chances count toward this run's clips. Report how many you re-cut and how many you skipped, and why.
 2d. If the prep printed **MONTH LIST RUNNING OUT**, append 6 episodes to `factory/ar_source_plan.json`

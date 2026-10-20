@@ -46,7 +46,20 @@ if p.get("test"):
 if h < 1080:
     print(f"REFUSED: source is {h}p, the gate is 1080p")
 else:
-    R.fix_edges(key)
+    # A CLIP DROPPED HERE MUST SAY WHY (20 Oct 2026). fix_edges drops a clip that runs
+    # into the next topic, has no clean ending near, or opens on B-roll with no face -
+    # but only printed it to this job's log. queue.py reads reasons from report.md, so
+    # 12 of Yaren's clips were filed as "no clip came out of the render", and her
+    # planner refused to re-cut them ("names nothing to fix"). Keep the words.
+    import contextlib, io
+    buf = io.StringIO()
+
+    class _Tee(io.TextIOBase):
+        def write(self, t):
+            buf.write(t); sys.__stdout__.write(t); return len(t)
+    with contextlib.redirect_stdout(_Tee()):
+        R.fix_edges(key)
+    edge_drops = [l.strip() for l in buf.getvalue().splitlines() if "dropped" in l]
     fixed = json.load(open(os.path.join(R.PLANS, f"{key}.json")))["clips"]
     R.batch([key], test=True)                       # render + check, never queue here
     bdir = os.path.join(R.K, "POST_TODAY", p["brand"])
@@ -61,5 +74,8 @@ else:
 rep = os.path.join(R.K, "work", "proposals", "BATCH_REPORT.md")
 if os.path.exists(rep):
     shutil.copy(rep, os.path.join(out, "report.md"))
+if h >= 1080 and edge_drops:                      # last, so queue.py's tail always holds them
+    with open(os.path.join(out, "report.md"), "a") as fh:
+        fh.write("\n" + "\n".join(f"  drop {p['brand']}/{l}" for l in edge_drops) + "\n")
 json.dump(result, open(os.path.join(out, "result.json"), "w"), indent=1, ensure_ascii=False)
 print(f"shard {key}: {len(result['clips'])} of {len(sub['clips'])} clip(s) passed every gate")
