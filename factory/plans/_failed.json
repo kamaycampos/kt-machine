@@ -7020,6 +7020,60 @@
     "You're already meditating.",
     "Even during sex."
    ]
+  },
+  "ep_v5hfvrp/25M-HOUSE-BREAKS-FENG-SHUI": {
+   "plan": "ep_v5hfvrp",
+   "source": "v5hfvrp.mp4",
+   "brand": "KT_LANTERN",
+   "tries": 1,
+   "why": [
+    "FAIL 01_25M-HOUSE-BREAKS-FENG-SHUI_79s.mp4: [FAIL] 01_25M-HOUSE-BREAKS-FENG-SHUI_79s.mp4                  6 captions vs the sound  median +1.86s  worst-10% 2.77s  | words captioned 100%"
+   ],
+   "slug": "25M-HOUSE-BREAKS-FENG-SHUI",
+   "in": 188.96,
+   "out": 274.16,
+   "start_words": "I was just in Beverly Hills",
+   "end_words": "before I bought the house",
+   "hook": [
+    "His $25M house",
+    "defies feng shui"
+   ]
+  },
+  "ep_v5hfvrp/THE-HEIRLOOM-KEEPING-YOU-POOR": {
+   "plan": "ep_v5hfvrp",
+   "source": "v5hfvrp.mp4",
+   "brand": "KT_LANTERN",
+   "tries": 1,
+   "why": [
+    "FAIL 02_THE-HEIRLOOM-KEEPING-YOU-POOR_38s.mp4: [FAIL] 02_THE-HEIRLOOM-KEEPING-YOU-POOR_38s.mp4               21 captions vs the sound (word-referenced: no clear pauses)  median +0.53s  worst-10% 1.17s  | words captioned 100%"
+   ],
+   "slug": "THE-HEIRLOOM-KEEPING-YOU-POOR",
+   "in": 742.96,
+   "out": 784.72,
+   "start_words": "Think about this strongly",
+   "end_words": "creating a poverty attractor field",
+   "hook": [
+    "The heirloom",
+    "keeping you poor"
+   ]
+  },
+  "ep_v5hfvrp/WHY-RICH-CARDS-CANT-CARRY-DEBT": {
+   "plan": "ep_v5hfvrp",
+   "source": "v5hfvrp.mp4",
+   "brand": "KT_LANTERN",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_WHY-RICH-CARDS-CANT-CARRY-DEBT_79s.mp4` - opens mid-sentence on \"trying okay.\""
+   ],
+   "slug": "WHY-RICH-CARDS-CANT-CARRY-DEBT",
+   "in": 957.68,
+   "out": 1042.88,
+   "start_words": "An American Express card",
+   "end_words": "charge interest on the balance",
+   "hook": [
+    "Why rich cards",
+    "can't carry debt"
+   ]
   }
  },
  "attempts": {
