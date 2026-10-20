@@ -171,6 +171,33 @@ def text_faults(caps):
     return sorted(set(out))
 
 
+def trim_tail(mp4, why):
+    """A clip whose ONLY fault is its last line ends at the last full stop instead.
+
+    20 Oct 2026, Kamay: WB posts once a day and the slot sat empty two nights running.
+    5 of the last 6 clips the last gate blocked were good teachings cut at a bad
+    edge; "Why your vegan food isn't healthy" ran 0.8s past "...chemicals in food
+    packaging." into "And it says,". Only the END is trimmed: the hook is drawn on
+    the first HOOK_SECS, so a bad start still fails. True when the file was cut
+    (the caller checks it again)."""
+    if not why or not all(w.startswith("ends mid-thought") for w in why):
+        return False
+    side = mp4[:-4] + "__caps.json"
+    caps = json.load(open(side))
+    ends = [i for i, c in enumerate(caps) if c[2].rstrip().endswith((".", "!", "?", '"'))]
+    if not ends or caps[ends[-1]][1] + 0.12 < MIN_SECS:
+        return False
+    t = caps[ends[-1]][1] + 0.12
+    tmp = mp4[:-4] + ".trim.mp4"
+    r = sh(FF, "-nostdin", "-y", "-i", mp4, "-t", f"{t:.2f}", "-c", "copy",
+           "-movflags", "+faststart", tmp)
+    if r.returncode or not os.path.exists(tmp):
+        return False
+    os.replace(tmp, mp4)
+    json.dump(caps[:ends[-1] + 1], open(side, "w"))
+    return True
+
+
 def check(mp4, samples=12):
     """(verdict, reasons) - verdict is 'pass', 'look' or 'fail'."""
     name = re.sub(r"_\d+s$", "", os.path.basename(mp4)[:-4])

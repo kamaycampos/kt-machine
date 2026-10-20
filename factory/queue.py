@@ -105,6 +105,9 @@ for plan, rs in sorted(by_plan.items()):
             if not (f.endswith(".mp4") and "__" not in f):
                 continue
             v, why = kt_qc.check(os.path.join(d, f))
+            if v == "fail" and kt_qc.trim_tail(os.path.join(d, f), why):
+                print(f"  TRIMMED {f}: {why[0]} - now ends on the last full sentence", flush=True)
+                v, why = kt_qc.check(os.path.join(d, f))
             if v == "fail":
                 blocked.add(f)
                 report.append(f"- **NOT QUEUED** `{f}` - {'; '.join(why[:3])}")
