@@ -10204,7 +10204,11 @@
    "hook": "An Italian baby, raised in Japan.",
    "bytes": 58006282,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-22T09:53",
+   "cta_keyword": "RISE",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_HAPPINESSCODE/02_HAPPINESS-IS-JUST-A-MATH-EQUATION_51s.mp4",
@@ -10212,7 +10216,11 @@
    "hook": "Happiness is just a math equation.",
    "bytes": 31910088,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-21T12:53",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_INNERSTATE/01_PRISON-WRITE-UPS-FELL-TO-ZERO_100s.mp4",
@@ -10220,7 +10228,11 @@
    "hook": "Prison write-ups fell to almost zero.",
    "bytes": 60029430,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-22T08:02",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "AR_INNERSTATE/02_98-PERCENT-OF-LOTTERY-WINNERS_79s.mp4",
@@ -10228,7 +10240,11 @@
    "hook": "98% of lottery winners go broke.",
    "bytes": 45833352,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-21T14:44",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_INNERSTATE/02_THIS-TEXT-IS-100000-YEARS-OLD_39s.mp4",
@@ -10236,7 +10252,11 @@
    "hook": "They hid this for 100,000 years.",
    "bytes": 20589183,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-21T10:19",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_PRAYERFORMULA/01_BEGGING-MEANS-NO-FAITH_48s.mp4",
@@ -10244,7 +10264,11 @@
    "hook": "Begging proves you have no faith.",
    "bytes": 31390849,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-21T20:40",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_SOWLOVE/02_IMAGINE-A-LEMON-YOULL-TASTE-IT_63s.mp4",
@@ -10252,7 +10276,11 @@
    "hook": "Imagine a lemon. You'll taste it.",
    "bytes": 36650438,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-21T16:58",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "KT_ADVERSITYR2/01_THE-ONE-HACK-FOR-YOUR-PROBLEMS_67s.mp4",
@@ -10260,7 +10288,11 @@
    "hook": "The one hack for your problems",
    "bytes": 46742152,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-21T17:10",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 7,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_ADVERSITYR2/02_BANNED-FROM-TV-HE-FOUND-A-LOOPHOLE_103s.mp4",
@@ -10268,7 +10300,11 @@
    "hook": "The loophole that saved his business",
    "bytes": 72205193,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-21T20:25",
+   "cta_keyword": "MONEY",
+   "cta_variant": 8,
+   "cta_kind": "question"
   },
   {
    "file": "KT_ADVERSITYR2/02_HOW-HIS-MIND-BEAT-20-DEGREE-COLD_182s.mp4",
@@ -10276,7 +10312,11 @@
    "hook": "How your mind beats 20-degree cold",
    "bytes": 131624292,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-22T07:17",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 9,
+   "cta_kind": "offer"
   }
  ]
 }
