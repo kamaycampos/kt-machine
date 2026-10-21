@@ -8,33 +8,34 @@ The strategist rewrites this file daily from `state/metrics.json`, `state/tiktok
 
 **Score: $11.70 earned of $1,777,000** (portfolio as of 30 Sept; nobody has read it since).
 
-## 20 Oct 2026 (strategist, 50 KT clips with Instagram numbers in 14 days; AR_ ignored; windows = 13-19 Oct vs 6-12 Oct)
+## 21 Oct 2026 (strategist, 55 KT clips with Instagram numbers in 14 days; AR_ ignored; windows = 14-20 Oct vs 7-13 Oct)
 
 ### What the numbers say
-- **Pace:** 30 posts in the last 7 days = 4.3/day vs the 4-6 target (13 Oct 1, 14 Oct 1, then 6/4/6/6/6 on 15-19 Oct = 5.6/day for 5 days). Yesterday: 6. 52 clips sit unposted in the manifest (13 scheduled, 5 today, 39 unscheduled): about 9 days of stock.
-- **Reach flat-up, skip flat:** median IG views **322** (n=29) vs **265** (n=21); median skip **49.2%** vs **48.9%** (target under 40). Shares+saves per 1k views **25.8** vs 21.3. YouTube median 574 (n=30) vs 1,185 (n=21): the 18-19 Oct clips are under 48h old, so read this as LOW until Thursday.
-- **DMs:** 5 in the window (14 Oct 4, 15 Oct 1: KT, MONEY x2, WISH x2), **0 in the 5 days since 15 Oct** with ~1,100 IG views a day. 3 DM errors logged (14 Oct missing instagram_manage_messages; two Meta timeouts on 16 Oct). Score still $11.70: conversion is the wall, not reach.
-- **Winners (14d):** "How winners earn their scars" **3,517** views, skip 48.5, 140 shares+saves (MONEY, 07h, 83s); "Why Tesla's vision skips the car" 2,430, skip 33.3 (BRAIN, 09h, 54s); "Why toxic people aren't your fault" 2,408, skip **26.1** (BRAIN, 12h, 114s). Also "Why Edison never went to bed" 1,504 in 1 day (15h, workshop opener). A named person or a feeling, and line one is about the viewer's own life.
-- **Losers (14d):** "What winners do that losers don't" 36 views, skip 67.9 (18h, stormy-sky opener, question CTA); "What Michael Jordan missed the most" 60, skip 68.2 (15h); "How you could memorize 50 states" 83, skip 64.5. Abstract winner/loser lines, trivia and a memory trick: no stake for the viewer.
-- **Hook word (14d):** How n=5 median **806** views, skip 48.5 (LOW); The n=10 334, skip 52.6; Why n=20 260, skip 49.8; What n=8 244, skip **57.5**. What is the weakest opener this fortnight.
-- **CTA (14d):** offer n=39 median 282, skip 48.9 vs question n=11 241, skip 52.5. Keyword: MONEY n=18 315 views, skip **48.0**; BRAIN n=23 247, skip 52.7; KT n=5 241, skip 52.5; WISH n=4 372, skip 48.8 (LOW). MONEY beats BRAIN on skip and views; BRAIN has the most comments in MASTERY 19 but no DM has come from it since 14 Oct.
-- **Length (14d):** over 75s n=25 median 305 views, skip 48.5; 46-75s n=21 245, skip 52.5; under 45s n=4 913 (LOW, outliers). Longer story clips hold better again.
-- **Hour (NY, 14d):** 09h n=5 skip **42.5** (340 views); 10h n=4 45.4; 12h n=7 46.8 (362); 20h n=5 46.8; 17h n=5 52.7; 15h n=6 56.0; 19h n=4 59.0; 08h n=4 59.4. 07h n=3 54.5 (LOW). 14h has no sample.
-- **Cinematic opener (first 10, posted 18-19 Oct; LOW, n<5 usable per side):** median 210 views, skip **53.7** vs 40 clips with none 286, skip 48.4. The split is in the shot: gloomy shots skip 68-76% (rain on window 75.7, lone office light 74.6, stormy sky 67.9; n=3) while luxury or growth shots hold 39-49% (rolls royce at night 39.4, acorn/oak 42.5, workshop desk 48.9; n=3). Neutral: bulldozer 51.1, storm clouds parting 52.7, diner neon 54.7, whispering ear 56.3.
-- **Source (14d, n=2-4, LOW):** best skip KT_ELITE n=2 38.7 (1,376 views), KT_BITCOIN n=2 40.8, KT_SEVENTY n=4 47.8; worst KT_MINDSET n=2 71.8, KT_OBSESSION 61.8, KT_NEUROR2 61.5, KT_FREQUENCYR2 58.7.
+- **Pace:** 35 posts in 7 days = 5.0/day (6/4/6/6/6/6 on 15-20 Oct; 1 on 14 Oct). Inside the 4-6 target. Yesterday 6; today 0 so far.
+- **Skip got worse:** median skip **53.2%** (n=34) vs **48.6%** (n=21), target under 40. Median IG views **256** vs **277**. Shares+saves per 1k **24.5** vs 25.4. YouTube median 548 (n=35) vs 1,206 (n=21): the newest clips are under 48h old, LOW.
+- **The drop starts on 18 Oct:** 14-17 Oct n=16 median 337 views, skip 48.5; 18-20 Oct n=18 median 194 views, skip 54.1. Those are the days the cinematic openers went out. 20 Oct is under 24h old (skip 60.2, n=6, LOW), so wait for Friday before calling it.
+- **DMs:** 5 sent in total, last on 15 Oct. **0 in the last 6 days** at roughly 1,100 IG views a day; 3 errors logged. Score still $11.70.
+- **Winners (14d):** "How winners earn their scars" **3,589** views, skip 48.6, 142 shares+saves (MONEY, 07h, 83s); "Why Edison never went to bed" 2,500, skip 48.7 (MONEY, 15h, 42s); "Why Tesla's vision skips the car" 2,439, skip **33.4** (BRAIN, 09h, 54s). Each names a person or a feeling the viewer knows.
+- **Losers (14d):** "Why winners act without being told" 54 views, skip 68.3 (13h, 174s, KT_BIGDREAM); "What Michael Jordan missed the most" 62, skip 67.4 (15h, KT_EXPOSEDR2); "The one move that changes income" 69, skip 54.0 (07h, 90s). Abstract winner lines, a vague "one move", and a 174s clip.
+- **Hook word (14d):** How n=7 median 308 views, skip 49.2; Why n=23 260, skip 52.0; The n=10 334, skip 52.6; What n=8 247, skip **57.8**. In the last 7 days What n=6 skip 63.0. What stays the weakest opener (n=6-8).
+- **CTA (14d):** offer n=44 median 272, skip 50.8 vs question n=11 245, skip 52.7. MONEY n=20 298 views, skip **48.7**; BRAIN n=25 253, skip 52.9; WISH n=5 358, skip 49.2 (LOW); KT n=5 245, skip 52.7. MONEY still beats BRAIN.
+- **Length (14d):** over 75s n=28 median 298, skip 50.6; 46-75s n=22 250, skip 52.7; under 45s n=5 322, skip 48.7. The 174s clip is the worst of the fortnight, so cap length.
+- **Hour (NY, 14d):** 09h n=6 skip **43.5** (326 views); 10h n=4 45.1; 20h n=6 46.9; 12h n=7 47.1 (363); 17h n=6 52.8; 15h n=6 56.2; 19h n=4 58.9; 08h n=4 60.4; 13h n=3 68.3 (LOW).
+- **Source (14d, n=1-4, LOW):** best skip KT_ELITE n=2 38.8, KT_BITCOIN n=2 40.7, KT_MIRROR n=1 26.1, KT_TRIGGERR2 n=1 34.9; worst KT_MINDSET n=2 68.2, KT_BIGDREAM n=2 67.2, KT_NEUROR2 n=2 61.6, KT_FREQUENCYR2 n=2 58.7, KT_PUPPETR4 n=1 71.9.
+- **Cinematic opener:** the media release is not readable from this run, so the opener split could not be refreshed. Last read (20 Oct, n=10, LOW): gloomy shots skip 68-76, luxury or growth shots 39-49.
 
 ### Orders for the planner
-1. **Keep 6 queued every night.** Pace is back at 6/day; stock is 52, keep it above 30 and plan the next 4 sources before it falls under 40.
-2. **Hook shape:** line one names a person plus a stake, a method or a feeling ("How winners earn their scars", "Why Tesla's vision skips the car", toxic people, Edison). Use How for methods and stories (n=5, LOW); avoid What-openers for now (skip 57.5, n=8) and avoid "What <celebrity> missed", rule lists, trivia and abstract "winners vs losers" lines.
-3. **Offer clips: 2 a day,** keyword MONEY or WISH first (skip 48.0 and 48.8), KT next, BRAIN only on a mind or self-image clip. Put the keyword ask in the first two caption lines. No extra offer clips while DMs sit at 0.
-4. **Openers:** keep one only where the subject is a concrete picture; prefer luxury, growth or craft shots at night or golden hour (rolls royce, oak tree, workshop). **Never gloomy shots** (rain on window, lone light, stormy sky: skip 68-76, n=3), and no opener on an abstract hook. Re-measure at n>=5 per side on Friday.
-5. **Topics:** how the wealthy and famous think, work and fail, and feelings (toxic people, scars, fear of being left behind); property stays the franchise (MASTERY 18). Skip memory tricks, trivia, Michael Jordan-style "missed" clips, and KT_MINDSET, KT_OBSESSION, KT_NEUROR2, KT_FREQUENCYR2 moments for now (LOW).
-6. **Length:** story clips of 80-120s first; 46-75s only for a method with a number in it. Never pad.
-7. **Source mix:** at most 2 clips a day from one episode; give KT_ELITE, KT_BITCOIN and KT_SEVENTY more moments (LOW).
-8. **Posting hours (NY), proposal:** 09:00, 10:30, 12:00, 14:00 (untested, one-week trial), 17:00, 20:00. Drop 07:00, 08:00, 15:00 and 19:00 unless the clip is the day's strongest (skip 54-59, n=3-6).
+1. **Keep 6 queued every night, but fix skip before adding volume.** Stock is healthy; quality of the first 3 seconds is the lever, not more clips.
+2. **Hook shape:** a named person plus a stake or a feeling in line one (scars, Tesla, Edison, toxic people). Use How for methods and stories. Stop What-openers (skip 57.8 over 14d, 63.0 over 7d), "What <celebrity> missed", vague "the one move..." lines and abstract "winners act" lines.
+3. **Offer clips: 2 a day,** MONEY or WISH first (skip 48.7 and 49.2), KT next, BRAIN only on a mind or self-image clip. Keyword ask in the first two caption lines. No extra offer clips while DMs sit at 0.
+4. **Openers:** pause the cinematic opener on any hook that is not a concrete picture; use it only for luxury, growth or craft shots (rolls royce, oak tree, workshop). Never gloomy shots (rain, lone light, stormy sky). Re-measure Friday at n>=5 per side.
+5. **Topics:** how the wealthy and famous think, work and fail, and feelings; property stays the franchise (MASTERY 18). Skip memory tricks, trivia, Jordan-style "missed" clips and KT_MINDSET, KT_BIGDREAM, KT_NEUROR2, KT_FREQUENCYR2, KT_PUPPETR4 moments for now (LOW).
+6. **Length:** 60-110s story clips first; never above 120s (174s clip: skip 68.3, 54 views). 46-75s only for a method with a number in it.
+7. **Source mix:** at most 2 clips a day from one episode; give KT_ELITE, KT_BITCOIN, KT_MIRROR and KT_SEVENTY more moments (LOW).
+8. **Posting hours (NY):** 09:00, 10:30, 12:00, 14:00 (untested), 17:00, 20:00. Drop 07:00, 08:00, 13:00, 15:00 and 19:00 unless the clip is the day's strongest (skip 54-68, n=3-6).
 
 ### Watch list
-- DMs at 0 since 15 Oct: is the keyword visible in the first caption lines, is instagram_manage_messages live (14 Oct error)? Re-check 22 Oct.
-- YouTube 574 vs 1,185: re-measure when 18-19 Oct clips are 3 days old.
-- Opener n=10 now; recompute Friday with the gloomy/luxury split. TikTok (412 followers) and Facebook are hand-posted and not scored here.
-- Skip must fall under 45% for two weeks before more offer clips go out.
+- DMs at 0 since 15 Oct: is the keyword visible in the first caption lines, is instagram_manage_messages live? Re-check 22 Oct.
+- Skip 53.2 median: if 18-20 Oct clips are still above 52 on Friday at 48h, the openers are the suspect.
+- YouTube 548 vs 1,206: re-measure when 19-20 Oct clips are 3 days old.
+- TikTok and Facebook are hand-posted and not scored here. Skip must fall under 45% for two weeks before more offer clips go out.
