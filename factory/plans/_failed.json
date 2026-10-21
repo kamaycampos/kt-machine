@@ -7704,6 +7704,96 @@
     "His 10-year sentence",
     "became a win"
    ]
+  },
+  "ep_v6oq1ll_r2/RANDOM-MACHINE-BENDS-TO-YOUR-MIND": {
+   "plan": "ep_v6oq1ll_r2",
+   "source": "v6oq1ll.mp4",
+   "brand": "KT_COMPASSR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_RANDOM-MACHINE-BENDS-TO-YOUR-MIND_113s.mp4: [FAIL] 01_RANDOM-MACHINE-BENDS-TO-YOUR-MIND_113s.mp4          21 captions vs the sound  median +0.09s  worst-10% 0.54s  | words captioned 100%  UNCAPTIONED SPEECH [(46.9, 49.0)]"
+   ],
+   "slug": "RANDOM-MACHINE-BENDS-TO-YOUR-MIND",
+   "in": 175.8,
+   "out": 288.14,
+   "start_words": "They did thousands and",
+   "end_words": "gave them that",
+   "hook": [
+    "How your mind",
+    "bends random odds"
+   ]
+  },
+  "ep_v6oq1ll_r2/THE-RESULTS-WERE-ALREADY-SET": {
+   "plan": "ep_v6oq1ll_r2",
+   "source": "v6oq1ll.mp4",
+   "brand": "KT_COMPASSR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_THE-RESULTS-WERE-ALREADY-SET_42s.mp4: [FAIL] 02_THE-RESULTS-WERE-ALREADY-SET_42s.mp4                25 captions vs the sound (word-referenced: no clear pauses)  median +0.57s  worst-10% 1.04s  | words captioned 98%"
+   ],
+   "slug": "THE-RESULTS-WERE-ALREADY-SET",
+   "in": 344.58,
+   "out": 385.1,
+   "start_words": "Then they brought in",
+   "end_words": "that's what the machine gave",
+   "hook": [
+    "Why luck",
+    "obeys your mind"
+   ]
+  },
+  "ep_v6oq1ll_r2/HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN": {
+   "plan": "ep_v6oq1ll_r2",
+   "source": "v6oq1ll.mp4",
+   "brand": "KT_COMPASSR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN_151s.mp4: [FAIL] 01_HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN_151s.mp4        8 captions vs the sound  median +0.41s  worst-10% 1.15s  | words captioned 100%"
+   ],
+   "slug": "HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN",
+   "in": 447.06,
+   "out": 598.3,
+   "start_words": "We had a Boy Scout",
+   "end_words": "that you can be lucky",
+   "hook": [
+    "How he predicted",
+    "his own win"
+   ]
+  },
+  "ep_v6oq1ll_r2/HOW-YOUR-DNA-REACTS-FROM-ANYWHERE": {
+   "plan": "ep_v6oq1ll_r2",
+   "source": "v6oq1ll.mp4",
+   "brand": "KT_COMPASSR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_HOW-YOUR-DNA-REACTS-FROM-ANYWHERE_126s.mp4: [FAIL] 02_HOW-YOUR-DNA-REACTS-FROM-ANYWHERE_126s.mp4          23 captions vs the sound  median +0.10s  worst-10% 0.95s  | words captioned 100%"
+   ],
+   "slug": "HOW-YOUR-DNA-REACTS-FROM-ANYWHERE",
+   "in": 623.86,
+   "out": 750.02,
+   "start_words": "DNA was taken out",
+   "end_words": "also expanded",
+   "hook": [
+    "How your DNA",
+    "reacts from anywhere"
+   ]
+  },
+  "ep_v7dfhw8_r3/HE-PICKED-UP-A-SOUTHERN-ACCENT": {
+   "plan": "ep_v7dfhw8_r3",
+   "source": "v7dfhw8.mp4",
+   "brand": "KT_CIRCLER3",
+   "tries": 3,
+   "why": [
+    "FAIL 01_HE-PICKED-UP-A-SOUTHERN-ACCENT_61s.mp4: [FAIL] 01_HE-PICKED-UP-A-SOUTHERN-ACCENT_61s.mp4              11 captions vs the sound  median +0.06s  worst-10% 0.09s  | words captioned 98%  UNCAPTIONED SPEECH [(8.8, 11.1)]"
+   ],
+   "slug": "HE-PICKED-UP-A-SOUTHERN-ACCENT",
+   "in": 741.44,
+   "out": 804.96,
+   "start_words": "We have heavy Boston",
+   "end_words": "the people he's around",
+   "hook": [
+    "How fast you",
+    "copy people"
+   ]
   }
  },
  "attempts": {
@@ -7735,7 +7825,7 @@
   "ep_v7bf6rm_r3": 2,
   "ar_v6sfb21_r4": 2,
   "ep_v67ions": 2,
-  "ep_v6oq1ll_r2": 1,
-  "ep_v7dfhw8_r3": 1
+  "ep_v6oq1ll_r2": 2,
+  "ep_v7dfhw8_r3": 2
  }
 }
