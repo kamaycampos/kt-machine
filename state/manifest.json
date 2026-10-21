@@ -10166,11 +10166,25 @@
    "hook": "A $39.95 book written by AI",
    "bytes": 49018731,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-21T07:20",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DewUm95k-SG/",
+    "youtube": "https://youtube.com/shorts/stDgUD8ixeE"
+   },
+   "caption_at_post": "Kevin Trudeau tracked down the author of a manifesting book and found nothing - no wealth, no track record, no real name he could verify.\n\nHis theory: the guy bought thirty books on the topic, fed them to an AI, and had it write fifty pages to sell for $39.95.\n\nKevin ran it through a detector - AI-generated, confirmed.\n\nHis rule: listen to people who have what you want and have been where you are, not people who just read about it.\n\nHow do you check if someone teaching you has actually done the thing?\n\n#kevintrudeau #manifestation #lawofattraction #moneymindset #wealthmindset #scamawareness",
+   "posted_at": "2026-10-21T07:42",
+   "tiktok_retry": true
   },
   {
    "file": "KT_BLUEPRINT/01_WHY-THIS-MILLIONAIRE-FELT-POOR-HERE_50s.mp4",
