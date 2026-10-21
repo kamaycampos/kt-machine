@@ -10168,11 +10168,25 @@
    "hook": "Why your self-image decides your wealth",
    "bytes": 71181505,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-21T11:56",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DewyZfBjeu8/",
+    "youtube": "https://youtube.com/shorts/oYnBVfPXphQ"
+   },
+   "caption_at_post": "Most wealthy people heard the same thing on repeat growing up: you're a winner, you're smart, people like you.\n\nKevin Trudeau says that programming builds a self-image - and self-image, not talent, decides how much money you believe you're allowed to have.\n\nTold the opposite as a kid? He says it cuts both ways - it crushes some, fuels others to prove everyone wrong.\n\nWhat comes naturally to some has to be built on purpose by everyone else.\n\nWere you told you were a winner growing up, or did you build that belief yourself?\n\n#kevintrudeau #selfimage #moneymindset #wealthmindset #successhabits #mindsetmatters",
+   "posted_at": "2026-10-21T12:02",
+   "tiktok_retry": true
   },
   {
    "file": "KT_LANTERN/02_39-DOLLAR-BOOK-WRITTEN-BY-AI_84s.mp4",
