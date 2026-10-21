@@ -1,10 +1,10 @@
 {
- "at": "2026-10-21T21:58",
+ "at": "2026-10-21T23:40",
  "profile": {
+  "follower_count": 411,
   "following_count": 8,
   "likes_count": 5860,
-  "video_count": 166,
-  "follower_count": 411
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -89,7 +89,7 @@
   },
   "KT_LEDGER/02_LOST-27-MILLION-STILL-WON_160s.mp4": {
    "id": "7692503921260088590",
-   "view_count": 15,
+   "view_count": 16,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -199,7 +199,7 @@
   },
   "KT_MATH/02_HOW-TO-BREAK-A-HABIT-INSTANTLY_147s.mp4": {
    "id": "7690729994804268301",
-   "view_count": 6,
+   "view_count": 7,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -239,7 +239,7 @@
   },
   "KT_YWIYC/02_WHY-I-WANT-DOESNT-WORK_172s.mp4": {
    "id": "7690394619636469005",
-   "view_count": 2,
+   "view_count": 3,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -529,7 +529,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3698,
+   "view_count": 3699,
    "like_count": 152,
    "comment_count": 7,
    "share_count": 16,
