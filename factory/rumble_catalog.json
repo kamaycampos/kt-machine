@@ -6457,5 +6457,15 @@
   "short": false,
   "page": 4,
   "hls": "https://hugh.cdn.rumble.cloud/video/s8/2/l/6/5/M/l65Mq.aaa.rec.mp4"
+ },
+ "https://rumble.com/v7h6jyi-youre-one-sentence-away-from-getting-rich.html": {
+  "title": "You're ONE SENTENCE Away From Getting RICH",
+  "dur": 1661,
+  "date": "2026-10-21",
+  "height": 2160,
+  "short": false,
+  "page": 0,
+  "embed": "v7f0710",
+  "hls": "https://rumble.com/hls-vod/hbv8qb9GjPg/playlist.m3u8"
  }
 }
