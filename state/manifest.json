@@ -10142,11 +10142,25 @@
    "hook": "How Mark Cuban's card got declined",
    "bytes": 61874191,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-21T10:04",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Dewm8lwgnL2/",
+    "youtube": "https://youtube.com/shorts/-mjiPLDTraA"
+   },
+   "caption_at_post": "Mark Cuban just won a championship, out celebrating with his team, and puts a $140,000 bottle of champagne on his brand new black card.\n\nDeclined. In front of everyone.\n\nKevin Trudeau points out what every article got wrong - they called it a credit card. It isn't one, and that word is the whole lesson rich people understand.\n\nA reporter's mistake became the perfect example of a rule billionaires live by.\n\nDo you know what kind of card is actually in your own wallet?\n\n#kevintrudeau #markcuban #moneymindset #wealthmindset #financialliteracy #richhabits",
+   "posted_at": "2026-10-21T10:23",
+   "tiktok_retry": true
   },
   {
    "file": "KT_LANTERN/01_YOUR-SELF-IMAGE-DECIDES-YOUR-WEALTH_115s.mp4",
@@ -10251,12 +10265,26 @@
    "caption": "A book sitting in plain sight that historians still can't actually date.\n\nThe Bhagavad Gita talks about meditation in detail \u2014 and nobody agrees on when it was written. Mainstream estimates say a few thousand years. The evidence he points to says it could be ten thousand, maybe more, with the stories inside it reaching back even further. The technique didn't start recently. It's one of the oldest instructions humans ever bothered to write down.\n\nComment RISE and I'll send you the rest of this history.\n\n#ancientwisdom #meditation #awakening #consciousness #disclosure #kevintrudeau",
    "hook": "They hid this for 100,000 years.",
    "bytes": 20589183,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-21T10:19",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/28296033523409838/",
+    "instagram": "https://www.instagram.com/reel/DewnS0_AQXM/",
+    "youtube": "https://youtube.com/shorts/pb16Ky6TCvo"
+   },
+   "caption_at_post": "A book sitting in plain sight that historians still can't actually date.\n\nThe Bhagavad Gita talks about meditation in detail \u2014 and nobody agrees on when it was written. Mainstream estimates say a few thousand years. The evidence he points to says it could be ten thousand, maybe more, with the stories inside it reaching back even further. The technique didn't start recently. It's one of the oldest instructions humans ever bothered to write down.\n\nComment RISE and I'll send you the rest of this history.\n\n#ancientwisdom #meditation #awakening #consciousness #disclosure #kevintrudeau",
+   "posted_at": "2026-10-21T10:25"
   },
   {
    "file": "AR_PRAYERFORMULA/01_BEGGING-MEANS-NO-FAITH_48s.mp4",
