@@ -10359,12 +10359,26 @@
    "caption": "Picture it. Hold it. Smell it. Cut it in half. Bite in.\n\nEveryone in that room had a mouthful of saliva \u2014 and nobody actually touched a lemon. It was all imagination. That's not a parlor trick. The body genuinely cannot tell the difference between something you vividly imagine and something that's actually happening, hormones and all. Which means whatever you rehearse in your head isn't neutral. It's running through your system exactly like it was real.\n\nComment RISE and I'll send you how to use this on purpose.\n\n#manifestation #mindset #awakening #consciousness #subconscious #kevintrudeau",
    "hook": "Imagine a lemon. You'll taste it.",
    "bytes": 36650438,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-21T16:58",
    "cta_keyword": "RISE",
    "cta_variant": 3,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2633708507099651/",
+    "instagram": "https://www.instagram.com/reel/DexUy8-kfYp/",
+    "youtube": "https://youtube.com/shorts/0cHeSgqH1EA"
+   },
+   "caption_at_post": "Picture it. Hold it. Smell it. Cut it in half. Bite in.\n\nEveryone in that room had a mouthful of saliva \u2014 and nobody actually touched a lemon. It was all imagination. That's not a parlor trick. The body genuinely cannot tell the difference between something you vividly imagine and something that's actually happening, hormones and all. Which means whatever you rehearse in your head isn't neutral. It's running through your system exactly like it was real.\n\nComment RISE and I'll send you how to use this on purpose.\n\n#manifestation #mindset #awakening #consciousness #subconscious #kevintrudeau",
+   "posted_at": "2026-10-21T17:04"
   },
   {
    "file": "KT_ADVERSITYR2/01_THE-ONE-HACK-FOR-YOUR-PROBLEMS_67s.mp4",
@@ -10444,7 +10458,11 @@
    "hook": "Why 9-to-5 won't make you rich",
    "bytes": 72178598,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-22T16:54",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
