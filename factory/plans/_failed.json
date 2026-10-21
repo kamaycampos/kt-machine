@@ -7794,6 +7794,96 @@
     "How fast you",
     "copy people"
    ]
+  },
+  "ep_v6q8y3o/WHY-MONEY-NEVER-RUNS-OUT": {
+   "plan": "ep_v6q8y3o",
+   "source": "v6q8y3o.mp4",
+   "brand": "KT_RENEWABLE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_WHY-MONEY-NEVER-RUNS-OUT_106s.mp4: [FAIL] 01_WHY-MONEY-NEVER-RUNS-OUT_106s.mp4                   14 captions vs the sound  median +0.06s  worst-10% 0.91s  | words captioned 100%"
+   ],
+   "slug": "WHY-MONEY-NEVER-RUNS-OUT",
+   "in": 28.96,
+   "out": 137.16,
+   "start_words": "A broke person thinks that",
+   "end_words": "tons of opportunities",
+   "hook": [
+    "Why money never",
+    "runs out"
+   ]
+  },
+  "ep_v6q8y3o/HOW-AN-ENRON-EXEC-MISSED-MILLIONS": {
+   "plan": "ep_v6q8y3o",
+   "source": "v6q8y3o.mp4",
+   "brand": "KT_RENEWABLE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_HOW-AN-ENRON-EXEC-MISSED-MILLIONS_156s.mp4: [FAIL] 01_HOW-AN-ENRON-EXEC-MISSED-MILLIONS_156s.mp4          23 captions vs the sound  median +0.09s  worst-10% 0.35s  | words captioned 100%  UNCAPTIONED SPEECH [(39.5, 41.9)]"
+   ],
+   "slug": "HOW-AN-ENRON-EXEC-MISSED-MILLIONS",
+   "in": 537.68,
+   "out": 696.88,
+   "start_words": "Jeff Skilling was with Enron",
+   "end_words": "you are a creative force",
+   "hook": [
+    "How an Enron exec",
+    "missed millions"
+   ]
+  },
+  "ep_v7fk1y0/ATTITUDE-GETS-YOU-THE-MONEY": {
+   "plan": "ep_v7fk1y0",
+   "source": "v7fk1y0.mp4",
+   "brand": "KT_ATTITUDE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_ATTITUDE-GETS-YOU-THE-MONEY_97s.mp4` - the spoken word was on screen in only 8 of 12 moments"
+   ],
+   "slug": "ATTITUDE-GETS-YOU-THE-MONEY",
+   "in": 61.52,
+   "out": 161.76,
+   "start_words": "Years ago, I think it",
+   "end_words": "the mentality of a loser",
+   "hook": [
+    "How attitude creates",
+    "your money"
+   ]
+  },
+  "ep_v7fk1y0/ONE-NOTCH-OFF-COURSE": {
+   "plan": "ep_v7fk1y0",
+   "source": "v7fk1y0.mp4",
+   "brand": "KT_ATTITUDE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_ONE-NOTCH-OFF-COURSE_89s.mp4` - phrase scrambled around \"my plane with my\""
+   ],
+   "slug": "ONE-NOTCH-OFF-COURSE",
+   "in": 314.8,
+   "out": 405.68,
+   "start_words": "People don't understand how",
+   "end_words": "change outcomes radically",
+   "hook": [
+    "One notch off",
+    "course costs you"
+   ]
+  },
+  "ep_v7fk1y0/NOT-A-MONEY-PROBLEM": {
+   "plan": "ep_v7fk1y0",
+   "source": "v7fk1y0.mp4",
+   "brand": "KT_ATTITUDE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_NOT-A-MONEY-PROBLEM_91s.mp4` - opens mid-sentence on \"manifesting\""
+   ],
+   "slug": "NOT-A-MONEY-PROBLEM",
+   "in": 567.68,
+   "out": 661.04,
+   "start_words": "Manifesting and law of attraction",
+   "end_words": "you have an attitude problem",
+   "hook": [
+    "Why it's not",
+    "a money problem"
+   ]
   }
  },
  "attempts": {
