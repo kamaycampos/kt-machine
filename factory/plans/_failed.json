@@ -7290,6 +7290,114 @@
     "How your DNA",
     "reacts from anywhere"
    ]
+  },
+  "ar_v6rykax_r3/YOUR-PRAYERS-ARE-ALWAYS-HEARD": {
+   "plan": "ar_v6rykax_r3",
+   "source": "v6rykax.mp4",
+   "brand": "AR_PRAYERFIXR3",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_YOUR-PRAYERS-ARE-ALWAYS-HEARD_41s.mp4` - ends mid-thought on \"and Trust\"; sentence starts with no stop: \"heard The\""
+   ],
+   "slug": "YOUR-PRAYERS-ARE-ALWAYS-HEARD",
+   "in": 281.0,
+   "out": 329.0,
+   "start_words": "Next how does somebody know",
+   "end_words": "This takes faith and trust",
+   "hook": [
+    "Your prayers are",
+    "always heard."
+   ]
+  },
+  "ar_v6rykax_r3/80-PERCENT-RECOVERY-ANY-GOD-WORKED": {
+   "plan": "ar_v6rykax_r3",
+   "source": "v6rykax.mp4",
+   "brand": "AR_PRAYERFIXR3",
+   "tries": 3,
+   "why": [
+    "FAIL 02_80-PERCENT-RECOVERY-ANY-GOD-WORKED_137s.mp4: [FAIL] 02_80-PERCENT-RECOVERY-ANY-GOD-WORKED_137s.mp4         13 captions vs the sound  median +0.10s  worst-10% 1.95s  | words captioned 100%"
+   ],
+   "slug": "80-PERCENT-RECOVERY-ANY-GOD-WORKED",
+   "in": 339.5,
+   "out": 476.0,
+   "start_words": "In the book called The Field",
+   "end_words": "It is quantum physics",
+   "hook": [
+    "80% recovery rate.",
+    "Any god worked."
+   ]
+  },
+  "ar_v6rykax_r3/99-PERCENT-IS-OFF-YOUR-RADAR": {
+   "plan": "ar_v6rykax_r3",
+   "source": "v6rykax.mp4",
+   "brand": "AR_PRAYERFIXR3",
+   "tries": 3,
+   "why": [
+    "FAIL 01_99-PERCENT-IS-OFF-YOUR-RADAR_42s.mp4: ends off the planned words: plan ends 'miracles will happen in your life', clip ends 'it in miracles will happen in'"
+   ],
+   "slug": "99-PERCENT-IS-OFF-YOUR-RADAR",
+   "in": 584.0,
+   "out": 633.0,
+   "start_words": "don't think your prayers",
+   "end_words": "miracles will happen in your life",
+   "hook": [
+    "99% is off",
+    "your radar screen."
+   ]
+  },
+  "ar_v76l9y0_r6/ONE-TENTH-THE-COST": {
+   "plan": "ar_v76l9y0_r6",
+   "source": "v76l9y0.mp4",
+   "brand": "AR_CANVASR6",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_ONE-TENTH-THE-COST_101s.mp4` - ends mid-thought on \"paying for so\"; sentence starts with no stop: \"adversity So\"; sentence starts with no stop: \"gold Look\""
+   ],
+   "slug": "ONE-TENTH-THE-COST",
+   "in": 1765.6,
+   "out": 1867.6,
+   "start_words": "So out of the adversity",
+   "end_words": "what he was originally paying for",
+   "hook": [
+    "He paid one-tenth",
+    "by refusing them"
+   ]
+  },
+  "ep_v67ions/A-HEART-ATTACK-BROKE-HIS-HABIT": {
+   "plan": "ep_v67ions",
+   "source": "v67ions.mp4",
+   "brand": "KT_GRADUATION",
+   "tries": 1,
+   "why": [
+    "FAIL 01_A-HEART-ATTACK-BROKE-HIS-HABIT_166s.mp4: [FAIL] 01_A-HEART-ATTACK-BROKE-HIS-HABIT_166s.mp4             29 captions vs the sound  median +0.01s  worst-10% 0.71s  | words captioned 100%"
+   ],
+   "slug": "A-HEART-ATTACK-BROKE-HIS-HABIT",
+   "in": 1306.32,
+   "out": 1480.8,
+   "start_words": "I said we have",
+   "end_words": "I'm not smoking ever again",
+   "hook": [
+    "A heart attack",
+    "broke his habit"
+   ]
+  },
+  "ep_v67ions/WHY-THE-CRITIC-NEVER-WINS": {
+   "plan": "ep_v67ions",
+   "source": "v67ions.mp4",
+   "brand": "KT_GRADUATION",
+   "tries": 1,
+   "why": [
+    "FAIL 02_WHY-THE-CRITIC-NEVER-WINS_101s.mp4: [FAIL] 02_WHY-THE-CRITIC-NEVER-WINS_101s.mp4                  18 captions vs the sound  median +0.09s  worst-10% 0.77s  | words captioned 100%"
+   ],
+   "slug": "WHY-THE-CRITIC-NEVER-WINS",
+   "in": 2774.32,
+   "out": 2881.12,
+   "start_words": "It's not the critic",
+   "end_words": "neither victory nor defeat",
+   "hook": [
+    "Why the critic",
+    "never wins"
+   ]
   }
  },
  "attempts": {
@@ -7320,6 +7428,6 @@
   "ep_v5ratln": 2,
   "ep_v7bf6rm_r3": 2,
   "ar_v6sfb21_r4": 2,
-  "ep_v67ions": 1
+  "ep_v67ions": 2
  }
 }
