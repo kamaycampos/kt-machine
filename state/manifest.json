@@ -10408,7 +10408,11 @@
    "hook": "4 words broke people always say",
    "bytes": 34242950,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-22T14:52",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_ATTITUDE/02_THE-EXCUSE-THAT-KEEPS-YOU-STUCK_47s.mp4",
@@ -10416,7 +10420,11 @@
    "hook": "The excuse that keeps you stuck",
    "bytes": 29240185,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-22T09:25",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_RENEWABLE/02_HOW-WALT-DISNEY-LOST-EVERYTHING_116s.mp4",
@@ -10424,7 +10432,11 @@
    "hook": "How Walt Disney lost everything",
    "bytes": 72349754,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-22T12:16",
+   "cta_keyword": "MONEY",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
