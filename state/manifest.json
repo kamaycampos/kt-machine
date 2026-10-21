@@ -10116,11 +10116,25 @@
    "hook": "How $1,000 beat Jamie Dimon's warning",
    "bytes": 35495969,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-20T19:43",
    "cta_keyword": "MONEY",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DevEcckklfE/",
+    "youtube": "https://youtube.com/shorts/9aTOiKEJ33U"
+   },
+   "caption_at_post": "Jamie Dimon, the head of JPMorgan Chase, once called Bitcoin a fraud and said he would fire any employee caught buying it.\n\nAt that exact same time, he and his associates were buying cryptocurrency through other companies.\n\nIf you had ignored his warning and put $1,000 into Bitcoin that day, you would have $14,547.40 today.\n\nKevin Trudeau has pointed out for years that the people warning you off an opportunity are often the ones quietly taking it for themselves.\n\nSo who's really the fool here?\n\n#kevintrudeau #bitcoin #cryptocurrency #wealthmindset #financialfreedom #investing",
+   "posted_at": "2026-10-20T20:01",
+   "tiktok_retry": true
   },
   {
    "file": "KT_LANTERN/01_HOW-MARK-CUBANS-CARD-GOT-DECLINED_106s.mp4",
