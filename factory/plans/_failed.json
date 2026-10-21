@@ -7398,6 +7398,312 @@
     "Why the critic",
     "never wins"
    ]
+  },
+  "ar_v4lw3gr/68-SECONDS-THATS-ALL-IT-TAKES": {
+   "plan": "ar_v4lw3gr",
+   "source": "v4lw3gr.mp4",
+   "brand": "AR_SOWLOVE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_68-SECONDS-THATS-ALL-IT-TAKES_84s.mp4: [FAIL] 01_68-SECONDS-THATS-ALL-IT-TAKES_84s.mp4               8 captions vs the sound  median +0.56s  worst-10% 1.39s  | words captioned 102%"
+   ],
+   "slug": "68-SECONDS-THATS-ALL-IT-TAKES",
+   "in": 6230.42,
+   "out": 6311.74,
+   "start_words": "First what's my current",
+   "end_words": "from producing lack",
+   "hook": [
+    "68 seconds is",
+    "all you need."
+   ]
+  },
+  "ar_v4lw3gr/MAKE-ME-AN-INSTRUMENT-OF-PEACE": {
+   "plan": "ar_v4lw3gr",
+   "source": "v4lw3gr.mp4",
+   "brand": "AR_SOWLOVE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_MAKE-ME-AN-INSTRUMENT-OF-PEACE_129s.mp4: [FAIL] 01_MAKE-ME-AN-INSTRUMENT-OF-PEACE_129s.mp4             13 captions vs the sound  median +0.57s  worst-10% 0.65s  | words captioned 100%  UNCAPTIONED SPEECH [(115.4, 117.1)]"
+   ],
+   "slug": "MAKE-ME-AN-INSTRUMENT-OF-PEACE",
+   "in": 7284.7,
+   "out": 7412.52,
+   "start_words": "Love people without condition",
+   "end_words": "light so are you",
+   "hook": [
+    "Make me an",
+    "instrument of peace."
+   ]
+  },
+  "ar_v5mvcu5/THE-KNIGHTS-TEMPLAR-WERE-MEDITATORS": {
+   "plan": "ar_v5mvcu5",
+   "source": "v5mvcu5.mp4",
+   "brand": "AR_INNERSTATE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_THE-KNIGHTS-TEMPLAR-WERE-MEDITATORS_56s.mp4: [FAIL] 02_THE-KNIGHTS-TEMPLAR-WERE-MEDITATORS_56s.mp4         9 captions vs the sound  median +0.09s  worst-10% 1.18s  | words captioned 98%"
+   ],
+   "slug": "THE-KNIGHTS-TEMPLAR-WERE-MEDITATORS",
+   "in": 797.85,
+   "out": 855.4,
+   "start_words": "However in many ancient",
+   "end_words": "using this technique",
+   "hook": [
+    "The Knights Templar",
+    "were secret meditators."
+   ]
+  },
+  "ar_v5mvcu5/ONE-MEDITATING-COMMUNITY": {
+   "plan": "ar_v5mvcu5",
+   "source": "v5mvcu5.mp4",
+   "brand": "AR_INNERSTATE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_ONE-MEDITATING-COMMUNITY_41s.mp4: [FAIL] 01_ONE-MEDITATING-COMMUNITY_41s.mp4                    8 captions vs the sound  median -0.01s  worst-10% 1.79s  | words captioned 100%"
+   ],
+   "slug": "ONE-MEDITATING-COMMUNITY",
+   "in": 388.05,
+   "out": 429.32,
+   "start_words": "Relationships get better now",
+   "end_words": "rooms goes down dramatically",
+   "hook": [
+    "One meditating community.",
+    "Crime rates collapsed."
+   ]
+  },
+  "ar_v5mvcu5/HARVARD-HEART-SURGEONS": {
+   "plan": "ar_v5mvcu5",
+   "source": "v5mvcu5.mp4",
+   "brand": "AR_INNERSTATE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_HARVARD-HEART-SURGEONS_45s.mp4: ends off the planned words: plan ends 'stroke without drugs', clip ends 'having a heart attack or stroke'"
+   ],
+   "slug": "HARVARD-HEART-SURGEONS",
+   "in": 252.2,
+   "out": 296.86,
+   "start_words": "Now let's talk about",
+   "end_words": "stroke without drugs",
+   "hook": [
+    "Harvard heart surgeons",
+    "are prescribing this."
+   ]
+  },
+  "ar_v6pwfg0/YOURE-NOT-STUCK-WITH-YOUR-DNA": {
+   "plan": "ar_v6pwfg0",
+   "source": "v6pwfg0.mp4",
+   "brand": "AR_HAPPINESSCODE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_YOURE-NOT-STUCK-WITH-YOUR-DNA_76s.mp4` - opens mid-sentence on \"first one is\"; ends mid-thought on \"that's the data\"; phrase scrambled around \"doesn't if it doesn't\""
+   ],
+   "slug": "YOURE-NOT-STUCK-WITH-YOUR-DNA",
+   "in": 47.85,
+   "out": 124.45,
+   "start_words": "The first one is",
+   "end_words": "That's the data",
+   "hook": [
+    "You're not stuck",
+    "with your DNA."
+   ]
+  },
+  "ar_v6pwfg0/BABIES-FEAR-WATER-WITH-ZERO-TRAUMA": {
+   "plan": "ar_v6pwfg0",
+   "source": "v6pwfg0.mp4",
+   "brand": "AR_HAPPINESSCODE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_BABIES-FEAR-WATER-WITH-ZERO-TRAUMA_91s.mp4` - phrase scrambled around \"this child has this\"; word repeated: \"parents parents\"; word repeated: \"parents parents,\""
+   ],
+   "slug": "BABIES-FEAR-WATER-WITH-ZERO-TRAUMA",
+   "in": 129.25,
+   "out": 220.24,
+   "start_words": "We also know",
+   "end_words": "phobia toward water",
+   "hook": [
+    "Babies fear water",
+    "with zero trauma."
+   ]
+  },
+  "ar_v6pwfg0/HAPPINESS-NEEDS-A-REASON": {
+   "plan": "ar_v6pwfg0",
+   "source": "v6pwfg0.mp4",
+   "brand": "AR_HAPPINESSCODE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_HAPPINESS-NEEDS-A-REASON_52s.mp4: [FAIL] 01_HAPPINESS-NEEDS-A-REASON_52s.mp4                    9 captions vs the sound  median +0.08s  worst-10% 0.10s  | words captioned 100%  UNCAPTIONED SPEECH [(31.7, 34.5)]"
+   ],
+   "slug": "HAPPINESS-NEEDS-A-REASON",
+   "in": 374.71,
+   "out": 425.76,
+   "start_words": "What can happen is",
+   "end_words": "external situations are",
+   "hook": [
+    "Happiness needs a reason.",
+    "Bliss doesn't."
+   ]
+  },
+  "ar_v6pwfg0/YOU-DONT-NEED-THE-ROLLER-COASTER": {
+   "plan": "ar_v6pwfg0",
+   "source": "v6pwfg0.mp4",
+   "brand": "AR_HAPPINESSCODE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_YOU-DONT-NEED-THE-ROLLER-COASTER_44s.mp4` - ends mid-thought on \"rides in life\"; word repeated after one: \"Eternal internal Eternal\"; word repeated after one: \"another it's another\""
+   ],
+   "slug": "YOU-DONT-NEED-THE-ROLLER-COASTER",
+   "in": 425.76,
+   "out": 469.36,
+   "start_words": "So there's two factors",
+   "end_words": "roller coaster rides in life",
+   "hook": [
+    "You don't need",
+    "the roller coaster."
+   ]
+  },
+  "ar_v6rbvsk/TELLING-THE-TRUTH-IN-ADVANCE": {
+   "plan": "ar_v6rbvsk",
+   "source": "v6rbvsk.mp4",
+   "brand": "AR_PRAYERFORMULA",
+   "tries": 1,
+   "why": [
+    "FAIL 01_TELLING-THE-TRUTH-IN-ADVANCE_42s.mp4: [FAIL] 01_TELLING-THE-TRUTH-IN-ADVANCE_42s.mp4                22 captions vs the sound (word-referenced: no clear pauses)  median +0.55s  worst-10% 1.14s  | words captioned 101%"
+   ],
+   "slug": "TELLING-THE-TRUTH-IN-ADVANCE",
+   "in": 246.3,
+   "out": 287.8,
+   "start_words": "What you do is",
+   "end_words": "telling the truth in advance",
+   "hook": [
+    "You're not lying.",
+    "You're just early."
+   ]
+  },
+  "ar_v6rbvsk/GRAPEFRUIT-SIZED-TUMOR-GONE": {
+   "plan": "ar_v6rbvsk",
+   "source": "v6rbvsk.mp4",
+   "brand": "AR_PRAYERFORMULA",
+   "tries": 1,
+   "why": [
+    "drop AR_PRAYERFORMULA/GRAPEFRUIT-SIZED-TUMOR-GONE: hook - 883px wide at 44px - over the 780px safe zone, will be cut off on a phone"
+   ],
+   "slug": "GRAPEFRUIT-SIZED-TUMOR-GONE",
+   "in": 328.08,
+   "out": 382.48,
+   "start_words": "There are documented studies",
+   "end_words": "come back no tumor",
+   "hook": [
+    "Grapefruit-sized tumor.",
+    "Then it completely disappeared."
+   ]
+  },
+  "ar_v6rbvsk/RICHEST-FATHER-IN-THE-UNIVERSE": {
+   "plan": "ar_v6rbvsk",
+   "source": "v6rbvsk.mp4",
+   "brand": "AR_PRAYERFORMULA",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_RICHEST-FATHER-IN-THE-UNIVERSE_126s.mp4` - sentence starts with no stop: \"means He\""
+   ],
+   "slug": "RICHEST-FATHER-IN-THE-UNIVERSE",
+   "in": 59.88,
+   "out": 187.66,
+   "start_words": "So here is the formula",
+   "end_words": "wants to bless you with them",
+   "hook": [
+    "The richest father",
+    "in the universe."
+   ]
+  },
+  "ar_v6rbvsk/YOUR-PRAYERS-ARENT-EVEN-HEARD": {
+   "plan": "ar_v6rbvsk",
+   "source": "v6rbvsk.mp4",
+   "brand": "AR_PRAYERFORMULA",
+   "tries": 1,
+   "why": [
+    "FAIL 02_YOUR-PRAYERS-ARENT-EVEN-HEARD_42s.mp4: ends off the planned words: plan ends 'not the formula that I outlined', clip ends 'state of lack it doesnt connect'"
+   ],
+   "slug": "YOUR-PRAYERS-ARENT-EVEN-HEARD",
+   "in": 199.8,
+   "out": 241.7,
+   "start_words": "Next state your prayer",
+   "end_words": "not the formula that I outlined",
+   "hook": [
+    "Your prayers aren't",
+    "even being heard."
+   ]
+  },
+  "ar_v6rbvsk/LIBERACE-READ-ONE-BOOK": {
+   "plan": "ar_v6rbvsk",
+   "source": "v6rbvsk.mp4",
+   "brand": "AR_PRAYERFORMULA",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_LIBERACE-READ-ONE-BOOK_48s.mp4` - sentence starts with no stop: \"called The\""
+   ],
+   "slug": "LIBERACE-READ-ONE-BOOK",
+   "in": 442.1,
+   "out": 489.3,
+   "start_words": "In other words you",
+   "end_words": "reason for my success",
+   "hook": [
+    "Liberace read a book.",
+    "Millions followed."
+   ]
+  },
+  "ep_v6j5tha_r2/THE-BOOK-THAT-SOLD-50-MILLION-COPIES": {
+   "plan": "ep_v6j5tha_r2",
+   "source": "v6j5tha.mp4",
+   "brand": "KT_ADVERSITYR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_THE-BOOK-THAT-SOLD-50-MILLION-COPIES_76s.mp4` - opens mid-sentence on \"with natural cures\""
+   ],
+   "slug": "THE-BOOK-THAT-SOLD-50-MILLION-COPIES",
+   "in": 414.24,
+   "out": 492.72,
+   "start_words": "I came up with",
+   "end_words": "50 million copies in hardcover",
+   "hook": [
+    "The book",
+    "that sold 50 million"
+   ]
+  },
+  "ep_v6j5tha_r2/HOW-HE-ESCAPED-A-37M-WIPEOUT": {
+   "plan": "ep_v6j5tha_r2",
+   "source": "v6j5tha.mp4",
+   "brand": "KT_ADVERSITYR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_HOW-HE-ESCAPED-A-37M-WIPEOUT_113s.mp4: ends off the planned words: plan ends 'would never have existed', clip ends 'we formed the global information network'"
+   ],
+   "slug": "HOW-HE-ESCAPED-A-37M-WIPEOUT",
+   "in": 526.88,
+   "out": 646.96,
+   "start_words": "A few years later",
+   "end_words": "would never have existed",
+   "hook": [
+    "How he escaped",
+    "a $37M wipeout"
+   ]
+  },
+  "ep_v6j5tha_r2/HIS-10-YEAR-SENTENCE-BECAME-A-WIN": {
+   "plan": "ep_v6j5tha_r2",
+   "source": "v6j5tha.mp4",
+   "brand": "KT_ADVERSITYR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_HIS-10-YEAR-SENTENCE-BECAME-A-WIN_160s.mp4: [FAIL] 01_HIS-10-YEAR-SENTENCE-BECAME-A-WIN_160s.mp4          14 captions vs the sound  median +0.17s  worst-10% 0.97s  | words captioned 100%"
+   ],
+   "slug": "HIS-10-YEAR-SENTENCE-BECAME-A-WIN",
+   "in": 743.44,
+   "out": 902.32,
+   "start_words": "I got charged with",
+   "end_words": "would not exist today",
+   "hook": [
+    "His 10-year sentence",
+    "became a win"
+   ]
   }
  },
  "attempts": {
@@ -7428,6 +7734,8 @@
   "ep_v5ratln": 2,
   "ep_v7bf6rm_r3": 2,
   "ar_v6sfb21_r4": 2,
-  "ep_v67ions": 2
+  "ep_v67ions": 2,
+  "ep_v6oq1ll_r2": 1,
+  "ep_v7dfhw8_r3": 1
  }
 }
