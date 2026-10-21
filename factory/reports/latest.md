@@ -1,84 +1,48 @@
-## ep_v6q8y3o: 1 of 3 clip(s) passed every gate
+## ep_v625tet: 1 of 3 clip(s) passed every gate
 
 
-## 2026-10-21 19:23
-  note KT_RENEWABLE/HOW-AN-ENRON-EXEC-MISSED-MILLIONS: ending kept on the planner's words 'you are a creative force' (ends inside a quote)
-ep_v6q8y3o__s1 (KT_RENEWABLE): 1 of 1 passed pre-render gates
+## 2026-10-21 20:39
+ep_v625tet__s0 (KT_MAYBACH): 2 of 2 passed pre-render gates
 
-RENDER ep_v6q8y3o__s1
-  FAIL 01_HOW-AN-ENRON-EXEC-MISSED-MILLIONS_156s.mp4: [FAIL] 01_HOW-AN-ENRON-EXEC-MISSED-MILLIONS_156s.mp4          23 captions vs the sound  median +0.09s  worst-10% 0.35s  | words captioned 100%  UNCAPTIONED SPEECH [(39.5, 41.9)]
-
-
-
-## 2026-10-21 19:47
-  note KT_RENEWABLE/WHY-MONEY-NEVER-RUNS-OUT: ending kept on the planner's words 'tons of opportunities' (cuts mid-sentence)
-ep_v6q8y3o__s0 (KT_RENEWABLE): 2 of 2 passed pre-render gates
-
-RENDER ep_v6q8y3o__s0
-  FAIL 01_WHY-MONEY-NEVER-RUNS-OUT_106s.mp4: [FAIL] 01_WHY-MONEY-NEVER-RUNS-OUT_106s.mp4                   14 captions vs the sound  median +0.06s  worst-10% 0.91s  | words captioned 100%
-  PASS 02_HOW-WALT-DISNEY-LOST-EVERYTHING_116s.mp4  02_HOW-WALT-DISNEY-LOST-EVERYTHING_116s.mp4            22 captions vs the sound  median +0
-       FIRST 5s : Now, Walt Disney had some business partners in New York. A little unscrupulous. | LAST  8s : Think about it. No one can take away your ability to create.
-TEST MODE - passing clips NOT uploaded or queued: KT_RENEWABLE
-
-
-## ep_v7fk1y0: 5 of 5 clip(s) passed every gate
-
-
-## 2026-10-21 19:35
-  note KT_ATTITUDE/FOUR-WORDS-BROKE-PEOPLE-NEVER-SAY: ending kept on the planner's words 'capital to that right now' (cuts mid-sentence)
-  note KT_ATTITUDE/ONE-NOTCH-OFF-COURSE: ending kept on the planner's words 'change outcomes radically' (ends inside a quote)
-ep_v7fk1y0__s1 (KT_ATTITUDE): 2 of 2 passed pre-render gates
-
-RENDER ep_v7fk1y0__s1
-  PASS 01_FOUR-WORDS-BROKE-PEOPLE-NEVER-SAY_55s.mp4  01_FOUR-WORDS-BROKE-PEOPLE-NEVER-SAY_55s.mp4           11 captions vs the sound  median +0
-       FIRST 5s : Another phrase that unsuccessful people always say, and that is | LAST  8s : Rich people don't say that. They go, "I don't think I feel like allocating my capital to that right now."
-  PASS 02_ONE-NOTCH-OFF-COURSE_89s.mp4  02_ONE-NOTCH-OFF-COURSE_89s.mp4                        25 captions vs the sound  median +0
-       FIRST 5s : People don't understand how a subtle thing can make a monumental difference. | LAST  8s : Not right now. That's completely different and will change outcomes radically.
-TEST MODE - passing clips NOT uploaded or queued: KT_ATTITUDE
+RENDER ep_v625tet__s0
+  FAIL 01_THE-ONE-BOOK-EVERY-BILLIONAIRE-READ_134s.mp4: ends off the planned words: plan ends 'nothing's going to work', clip ends 'these other books they hadnt read'
+  RETIME 02_WHY-ROCKEFELLER-GAVE-AWAY-30-PERCENT_56s.mp4: captions +0.45s off throughout - re-rendering once
+  PASS 02_WHY-ROCKEFELLER-GAVE-AWAY-30-PERCENT_56s.mp4  02_WHY-ROCKEFELLER-GAVE-AWAY-30-PERCENT_56s.mp4        5 captions vs the sound  median +0.
+       FIRST 5s : John D. Rockefeller, the richest man on the planet, probably the richest man of all time. | LAST  8s : He made $1.50 for the week. He gave 30% of that away.
+TEST MODE - passing clips NOT uploaded or queued: KT_MAYBACH
 
 
 
-## 2026-10-21 19:32
-  note KT_ATTITUDE/ATTITUDE-GETS-YOU-THE-MONEY: ending kept on the planner's words 'the mentality of a loser' (cuts mid-sentence)
-  note KT_ATTITUDE/THE-EXCUSE-THAT-KEEPS-YOU-STUCK: ending kept on the planner's words 'have confidence that it will' (ends on 'will')
-ep_v7fk1y0__s0 (KT_ATTITUDE): 2 of 2 passed pre-render gates
+## 2026-10-21 20:15
+  note KT_MAYBACH/HE-SKIPPED-A-430K-MAYBACH: ending kept on the planner's words 'fund this homeless shelter' (next line completes it)
+ep_v625tet__s1 (KT_MAYBACH): 1 of 1 passed pre-render gates
 
-RENDER ep_v7fk1y0__s0
-  PASS 01_ATTITUDE-GETS-YOU-THE-MONEY_97s.mp4  01_ATTITUDE-GETS-YOU-THE-MONEY_97s.mp4                 12 captions vs the sound  median +0
-       FIRST 5s : Years ago, I think it was probably 1979, I was listening | LAST  8s : Do you ever think that attaining something is going to change your emotional state or your attitude? That's the mentality of a loser.
-  RETIME 02_THE-EXCUSE-THAT-KEEPS-YOU-STUCK_47s.mp4: captions +0.53s off throughout - re-rendering once
-  PASS 02_THE-EXCUSE-THAT-KEEPS-YOU-STUCK_47s.mp4  02_THE-EXCUSE-THAT-KEEPS-YOU-STUCK_47s.mp4             6 captions vs the sound  median -0.
-       FIRST 5s : The second excuse that people give as to why they | LAST  8s : The how will always work itself out and present itself if you have confidence that it will.
-TEST MODE - passing clips NOT uploaded or queued: KT_ATTITUDE
+RENDER ep_v625tet__s1
+  FAIL 01_HE-SKIPPED-A-430K-MAYBACH_182s.mp4: [FAIL] 01_HE-SKIPPED-A-430K-MAYBACH_182s.mp4                  18 captions vs the sound  median +0.06s  worst-10% 0.86s  | words captioned 98%  UNCAPTIONED SPEECH [(51.2, 53.3)]
 
 
+- **NOT QUEUED** `02_WHY-ROCKEFELLER-GAVE-AWAY-30-PERCENT_56s.mp4` - ends mid-thought on "of that away"; phrase scrambled around "His first paycheck his"; phrase scrambled around "first paycheck his first"
 
-## 2026-10-21 19:30
-  note KT_ATTITUDE/NOT-A-MONEY-PROBLEM: ending kept on the planner's words 'you have an attitude problem' (cuts mid-sentence)
-ep_v7fk1y0__s2 (KT_ATTITUDE): 1 of 1 passed pre-render gates
-
-RENDER ep_v7fk1y0__s2
-  PASS 01_NOT-A-MONEY-PROBLEM_91s.mp4  01_NOT-A-MONEY-PROBLEM_91s.mp4                         10 captions vs the sound  median +0
-       FIRST 5s : Manifesting and law of attraction really should be called attitude or | LAST  8s : You're doing exactly the same activity. The difference is the attitude. You don't have a money problem. You have an attitude problem.
-TEST MODE - passing clips NOT uploaded or queued: KT_ATTITUDE
+## ep_v6r4kuu: 1 of 2 clip(s) passed every gate
 
 
-- **NOT QUEUED** `02_ONE-NOTCH-OFF-COURSE_89s.mp4` - phrase scrambled around "my plane with my"
+## 2026-10-21 20:25
+  note KT_RUTHLESS/THE-MCDONALDS-FOUNDERS-RUTHLESS-SECRET: ending kept on the planner's words 'effective when you need it' (next line completes it)
+ep_v6r4kuu__s0 (KT_RUTHLESS): 2 of 2 passed pre-render gates
 
-- **NOT QUEUED** `01_ATTITUDE-GETS-YOU-THE-MONEY_97s.mp4` - the spoken word was on screen in only 8 of 12 moments
+RENDER ep_v6r4kuu__s0
+  FAIL 01_THE-MCDONALDS-FOUNDERS-RUTHLESS-SECRET_107s.mp4: [FAIL] 01_THE-MCDONALDS-FOUNDERS-RUTHLESS-SECRET_107s.mp4     8 captions vs the sound  median -0.01s  worst-10% 1.14s  | words captioned 100%
+  PASS 02_WHY-9-TO-5-WONT-MAKE-YOU-RICH_106s.mp4  02_WHY-9-TO-5-WONT-MAKE-YOU-RICH_106s.mp4              22 captions vs the sound  median +0
+       FIRST 5s : I want to be a multi-billionaire, but, God damn it, Kevin, I am not | LAST  8s : And do things that other people are not willing to do. That's what Ray Kroc did. That's the key.
+TEST MODE - passing clips NOT uploaded or queued: KT_RUTHLESS
 
-- **NOT QUEUED** `01_NOT-A-MONEY-PROBLEM_91s.mp4` - opens mid-sentence on "manifesting"
 
 ## UPLOAD
-3 clip(s) to add:
-   KT_ATTITUDE/01_FOUR-WORDS-BROKE-PEOPLE-NEVER-SAY_55s.mp4  (34 MB)
-   KT_ATTITUDE/02_THE-EXCUSE-THAT-KEEPS-YOU-STUCK_47s.mp4  (29 MB)
-   KT_RENEWABLE/02_HOW-WALT-DISNEY-LOST-EVERYTHING_116s.mp4  (72 MB)
-   added KT_ATTITUDE/01_FOUR-WORDS-BROKE-PEOPLE-NEVER-SAY_55s.mp4
-   added KT_ATTITUDE/02_THE-EXCUSE-THAT-KEEPS-YOU-STUCK_47s.mp4
-      + 02_HOW-WALT-DISNEY-LOST-EVERYTHING_116s__story.mp4
-      + 02_HOW-WALT-DISNEY-LOST-EVERYTHING_116s__yt59.mp4
-   added KT_RENEWABLE/02_HOW-WALT-DISNEY-LOST-EVERYTHING_116s.mp4
+1 clip(s) to add:
+   KT_RUTHLESS/02_WHY-9-TO-5-WONT-MAKE-YOU-RICH_106s.mp4  (72 MB)
+      + 02_WHY-9-TO-5-WONT-MAKE-YOU-RICH_106s__story.mp4
+      + 02_WHY-9-TO-5-WONT-MAKE-YOU-RICH_106s__yt59.mp4
+   added KT_RUTHLESS/02_WHY-9-TO-5-WONT-MAKE-YOU-RICH_106s.mp4
 
-manifest now holds 429 clips
+manifest now holds 430 clips
 commit and push state/manifest.json to let the machine see them

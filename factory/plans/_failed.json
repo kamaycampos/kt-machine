@@ -7884,6 +7884,78 @@
     "Why it's not",
     "a money problem"
    ]
+  },
+  "ep_v625tet/THE-ONE-BOOK-EVERY-BILLIONAIRE-READ": {
+   "plan": "ep_v625tet",
+   "source": "v625tet.mp4",
+   "brand": "KT_MAYBACH",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THE-ONE-BOOK-EVERY-BILLIONAIRE-READ_134s.mp4: ends off the planned words: plan ends 'nothing's going to work', clip ends 'these other books they hadnt read'"
+   ],
+   "slug": "THE-ONE-BOOK-EVERY-BILLIONAIRE-READ",
+   "in": 221.76,
+   "out": 356.72,
+   "start_words": "The combined net worth was",
+   "end_words": "nothing's going to work",
+   "hook": [
+    "The one book every",
+    "billionaire read"
+   ]
+  },
+  "ep_v625tet/WHY-ROCKEFELLER-GAVE-AWAY-30-PERCENT": {
+   "plan": "ep_v625tet",
+   "source": "v625tet.mp4",
+   "brand": "KT_MAYBACH",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_WHY-ROCKEFELLER-GAVE-AWAY-30-PERCENT_56s.mp4` - ends mid-thought on \"of that away\"; phrase scrambled around \"His first paycheck his\"; phrase scrambled around \"first paycheck his first\""
+   ],
+   "slug": "WHY-ROCKEFELLER-GAVE-AWAY-30-PERCENT",
+   "in": 502.24,
+   "out": 566.88,
+   "start_words": "John D. Rockefeller, the richest",
+   "end_words": "gave 30% of that away",
+   "hook": [
+    "Why Rockefeller gave",
+    "away 30%"
+   ]
+  },
+  "ep_v625tet/HE-SKIPPED-A-430K-MAYBACH": {
+   "plan": "ep_v625tet",
+   "source": "v625tet.mp4",
+   "brand": "KT_MAYBACH",
+   "tries": 1,
+   "why": [
+    "FAIL 01_HE-SKIPPED-A-430K-MAYBACH_182s.mp4: [FAIL] 01_HE-SKIPPED-A-430K-MAYBACH_182s.mp4                  18 captions vs the sound  median +0.06s  worst-10% 0.86s  | words captioned 98%  UNCAPTIONED SPEECH [(51.2, 53.3)]"
+   ],
+   "slug": "HE-SKIPPED-A-430K-MAYBACH",
+   "in": 2972.6,
+   "out": 3155.48,
+   "start_words": "Right next to the parking",
+   "end_words": "fund this homeless shelter",
+   "hook": [
+    "He skipped a $430K",
+    "Maybach"
+   ]
+  },
+  "ep_v6r4kuu/THE-MCDONALDS-FOUNDERS-RUTHLESS-SECRET": {
+   "plan": "ep_v6r4kuu",
+   "source": "v6r4kuu.mp4",
+   "brand": "KT_RUTHLESS",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THE-MCDONALDS-FOUNDERS-RUTHLESS-SECRET_107s.mp4: [FAIL] 01_THE-MCDONALDS-FOUNDERS-RUTHLESS-SECRET_107s.mp4     8 captions vs the sound  median -0.01s  worst-10% 1.14s  | words captioned 100%"
+   ],
+   "slug": "THE-MCDONALDS-FOUNDERS-RUTHLESS-SECRET",
+   "in": 35.92,
+   "out": 153.72,
+   "start_words": "Ray Kroc was on camera",
+   "end_words": "effective when you need it",
+   "hook": [
+    "The McDonald's founder's",
+    "ruthless secret"
+   ]
   }
  },
  "attempts": {
