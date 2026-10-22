@@ -1,10 +1,10 @@
 {
- "at": "2026-10-22T12:22",
+ "at": "2026-10-22T16:41",
  "profile": {
-  "video_count": 166,
   "follower_count": 412,
   "following_count": 8,
-  "likes_count": 5861
+  "likes_count": 5861,
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -489,7 +489,7 @@
   },
   "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
    "id": "7688148098480098573",
-   "view_count": 507,
+   "view_count": 511,
    "like_count": 40,
    "comment_count": 2,
    "share_count": 6,
@@ -669,7 +669,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14130,
+   "view_count": 14131,
    "like_count": 866,
    "comment_count": 59,
    "share_count": 196,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38173,
+   "view_count": 38175,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
@@ -1429,7 +1429,7 @@
   },
   "unmatched/7674804931349597454": {
    "id": "7674804931349597454",
-   "view_count": 1147,
+   "view_count": 1148,
    "like_count": 113,
    "comment_count": 4,
    "share_count": 8,
