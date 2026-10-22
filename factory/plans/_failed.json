@@ -8460,6 +8460,42 @@
     "30 steps",
     "won't make you rich"
    ]
+  },
+  "ep_v69n40y/HE-WAITED-200-MILLION-BEFORE-TEACHING": {
+   "plan": "ep_v69n40y",
+   "source": "v69n40y.mp4",
+   "brand": "KT_THETAWAVE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_HE-WAITED-200-MILLION-BEFORE-TEACHING_81s.mp4` - phrase scrambled around \"real businesses in real\""
+   ],
+   "slug": "HE-WAITED-200-MILLION-BEFORE-TEACHING",
+   "in": 611.36,
+   "out": 695.52,
+   "start_words": "Ed Forman one of",
+   "end_words": "depth of knowledge in the data",
+   "hook": [
+    "He waited $200 million",
+    "before teaching"
+   ]
+  },
+  "ep_v69n40y/WHAT-100-MILLION-ACTUALLY-MEANS": {
+   "plan": "ep_v69n40y",
+   "source": "v69n40y.mp4",
+   "brand": "KT_THETAWAVE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_WHAT-100-MILLION-ACTUALLY-MEANS_57s.mp4: [FAIL] 02_WHAT-100-MILLION-ACTUALLY-MEANS_57s.mp4             33 captions vs the sound (word-referenced: no clear pauses)  median +0.96s  worst-10% 1.56s  | words captioned 96%"
+   ],
+   "slug": "WHAT-100-MILLION-ACTUALLY-MEANS",
+   "in": 1044.16,
+   "out": 1104.64,
+   "start_words": "Let's take the difference",
+   "end_words": "it's cash",
+   "hook": [
+    "What $100 million",
+    "actually means"
+   ]
   }
  },
  "attempts": {
