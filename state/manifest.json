@@ -10584,11 +10584,25 @@
    "hook": "Why 9-to-5 won't make you rich",
    "bytes": 72178598,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-22T16:54",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Dez5pMRCVt_/",
+    "youtube": "https://youtube.com/shorts/hVLbCFhgpt8"
+   },
+   "caption_at_post": "'I want to be a multi-billionaire, but I'm not giving up my weekends.' Kevin Trudeau hears that one a lot.\n\nHis own dad worked a steady nine-to-five - bowling one night, cards another, fishing on weekends. A genuinely great life. But Kevin is blunt about it: his dad was never going to become a multi-billionaire, and neither will you, on that schedule.\n\nA balanced life isn't wrong. It just has a ceiling. Ray Kroc became one of the wealthiest men alive because he was willing to do what everyone else was still just talking about.\n\nYou can have balance, or you can have extreme results. Pick one honestly.\n\n#kevintrudeau #raykroc #moneymindset #richmindset #mindset #wealthhabits",
+   "posted_at": "2026-10-22T17:03",
+   "tiktok_retry": true
   },
   {
    "file": "AR_PRAYERFORMULAR2/01_RICHEST-FATHER-IN-THE-UNIVERSE_43s.mp4",
@@ -10671,12 +10685,26 @@
    "caption": "Watch closely next time: a politician looks dead into the camera and states something as absolute fact. Confident. Certain. Convincing.\n\nMost of them didn't write a word of it. They were handed a script by a lobbyist who's paying for the outcome, and they read it like a teleprompter because that's exactly what it is. Former U.S. senators have said this on the record \u2014 and then you never hear their name again. Dead silence. That's not an accident either.\n\nComment RISE and I'll send you how to spot the tell.\n\n#deepstate #disclosure #lobbyists #awakening #consciousness #kevintrudeau",
    "hook": "Your politician reads a script.",
    "bytes": 38454651,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-22T16:54",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1470418761653009/",
+    "instagram": "https://www.instagram.com/reel/Dez599kD65V/",
+    "youtube": "https://youtube.com/shorts/olNhOkuHY3U"
+   },
+   "caption_at_post": "Watch closely next time: a politician looks dead into the camera and states something as absolute fact. Confident. Certain. Convincing.\n\nMost of them didn't write a word of it. They were handed a script by a lobbyist who's paying for the outcome, and they read it like a teleprompter because that's exactly what it is. Former U.S. senators have said this on the record \u2014 and then you never hear their name again. Dead silence. That's not an accident either.\n\nComment RISE and I'll send you how to spot the tell.\n\n#deepstate #disclosure #lobbyists #awakening #consciousness #kevintrudeau",
+   "posted_at": "2026-10-22T17:06"
   },
   {
    "file": "AR_FREQUENCY/02_YOUR-BRAIN-IS-DIALED-TO-POVERTY_46s.mp4",
@@ -10828,7 +10856,11 @@
    "hook": "How to save $150 a month",
    "bytes": 40052191,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-24T07:38",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_KNOCKOFF/01_WHY-COPYING-HIM-STILL-FAILED_104s.mp4",
@@ -10836,7 +10868,11 @@
    "hook": "Why copying him still failed",
    "bytes": 64395671,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-24T09:47",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
