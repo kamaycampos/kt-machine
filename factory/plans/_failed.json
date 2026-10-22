@@ -7956,6 +7956,60 @@
     "The McDonald's founder's",
     "ruthless secret"
    ]
+  },
+  "ar_v6rbvsk_r2/TELLING-THE-TRUTH-IN-ADVANCE": {
+   "plan": "ar_v6rbvsk_r2",
+   "source": "v6rbvsk.mp4",
+   "brand": "AR_PRAYERFORMULAR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_TELLING-THE-TRUTH-IN-ADVANCE_43s.mp4: [FAIL] 01_TELLING-THE-TRUTH-IN-ADVANCE_43s.mp4                23 captions vs the sound (word-referenced: no clear pauses)  median +0.84s  worst-10% 2.07s  | words captioned 100%"
+   ],
+   "slug": "TELLING-THE-TRUTH-IN-ADVANCE",
+   "in": 252.0,
+   "out": 295.0,
+   "start_words": "There is a scripture",
+   "end_words": "This is a scriptural principle",
+   "hook": [
+    "You're not lying.",
+    "You're just early."
+   ]
+  },
+  "ar_v6rbvsk_r2/GRAPEFRUIT-SIZED-TUMOR-GONE": {
+   "plan": "ar_v6rbvsk_r2",
+   "source": "v6rbvsk.mp4",
+   "brand": "AR_PRAYERFORMULAR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_GRAPEFRUIT-SIZED-TUMOR-GONE_56s.mp4` - ends mid-thought on \"No tumor\"; sentence starts with no stop: \"time But\"; sentence starts with no stop: \"x-ray Well,\""
+   ],
+   "slug": "GRAPEFRUIT-SIZED-TUMOR-GONE",
+   "in": 328.08,
+   "out": 382.48,
+   "start_words": "There are documented studies",
+   "end_words": "come back no tumor",
+   "hook": [
+    "A tumor, gone.",
+    "He was healed."
+   ]
+  },
+  "ar_v6rbvsk_r2/LIBERACE-READ-ONE-BOOK": {
+   "plan": "ar_v6rbvsk_r2",
+   "source": "v6rbvsk.mp4",
+   "brand": "AR_PRAYERFORMULAR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_LIBERACE-READ-ONE-BOOK_43s.mp4` - sentence starts with no stop: \"called The\""
+   ],
+   "slug": "LIBERACE-READ-ONE-BOOK",
+   "in": 445.92,
+   "out": 489.3,
+   "start_words": "you say something",
+   "end_words": "reason for my success",
+   "hook": [
+    "Liberace read a book.",
+    "Millions followed."
+   ]
   }
  },
  "attempts": {
