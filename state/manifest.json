@@ -10245,12 +10245,26 @@
    "caption": "Two Italian parents died in a crash. Their baby was adopted and raised by a Japanese family, in Japan, speaking only Japanese, from day one.\n\nNo Italian language, no Italian culture, no Italian family around to copy. And yet \u2014 the hands never stopped moving when he talked, exactly like every Italian who ever raised him didn't. That's not something you learn. Personality, temperament, even the shy kid versus the kid born wanting the spotlight \u2014 more of it than you think was already decided before you took your first breath.\n\nComment RISE and I'll send you the rest of this research.\n\n#subconscious #epigenetics #awakening #consciousness #mindset #kevintrudeau",
    "hook": "An Italian baby, raised in Japan.",
    "bytes": 58006282,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202610221404460A1936B7868C1B0123C3'}}"
+   },
    "scheduled_at": "2026-10-22T09:53",
    "cta_keyword": "RISE",
    "cta_variant": 6,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1659017619175907/",
+    "instagram": "https://www.instagram.com/reel/DezJsmwAnak/",
+    "youtube": "https://youtube.com/shorts/5qsdAOG1x3g"
+   },
+   "caption_at_post": "Two Italian parents died in a crash. Their baby was adopted and raised by a Japanese family, in Japan, speaking only Japanese, from day one.\n\nNo Italian language, no Italian culture, no Italian family around to copy. And yet \u2014 the hands never stopped moving when he talked, exactly like every Italian who ever raised him didn't. That's not something you learn. Personality, temperament, even the shy kid versus the kid born wanting the spotlight \u2014 more of it than you think was already decided before you took your first breath.\n\nComment RISE and I'll send you the rest of this research.\n\n#subconscious #epigenetics #awakening #consciousness #mindset #kevintrudeau",
+   "posted_at": "2026-10-22T10:04"
   },
   {
    "file": "AR_HAPPINESSCODE/02_HAPPINESS-IS-JUST-A-MATH-EQUATION_51s.mp4",
@@ -10522,7 +10536,8 @@
    },
    "caption_at_post": "He didn't know the first thing about the caviar business - and started it anyway.\n\nKevin Trudeau says the second excuse that keeps people stuck is 'I don't know how.' Successful people never say it. They say 'I'll figure it out as I go,' because they trust the how will show up once they commit.\n\nConfidence comes before competence, not after. Wait for the full plan and you wait forever - everyone successful started without one.\n\nThe strategy, the technique, the method - they all arrive after you move, never before.\n\nWhat opportunity are you still waiting to 'know how' before you take?\n\n#kevintrudeau #mindset #successhabits #entrepreneur #richmindset #moneymindset",
    "posted_at": "2026-10-22T09:43",
-   "tiktok_retry": true
+   "tiktok_retry": true,
+   "tiktok_tries": 1
   },
   {
    "file": "KT_RENEWABLE/02_HOW-WALT-DISNEY-LOST-EVERYTHING_116s.mp4",
