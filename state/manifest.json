@@ -10506,11 +10506,25 @@
    "hook": "4 words broke people always say",
    "bytes": 34242950,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-22T14:52",
    "cta_keyword": "BRAIN",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Dezr9G9Ac5Z/",
+    "youtube": "https://youtube.com/shorts/_kJWyFgKMAI"
+   },
+   "caption_at_post": "Four words separate the broke from the rich - and most people say the wrong ones every day.\n\nKevin Trudeau points out that 'I can't afford that' is a death sentence for your bank account: it's a statement your own mind works overtime to keep true. Rich people never say it.\n\nInstead, they say 'not right now' or 'that's a little out of my budget at the present time.' Same situation, completely different signal.\n\nOne phrase locks the door. The other leaves it open for the money to come later.\n\nWhich one did you say today?\n\n#kevintrudeau #moneymindset #richmindset #wealthhabits #selfimage #abundance",
+   "posted_at": "2026-10-22T15:03",
+   "tiktok_retry": true
   },
   {
    "file": "KT_ATTITUDE/02_THE-EXCUSE-THAT-KEEPS-YOU-STUCK_47s.mp4",
