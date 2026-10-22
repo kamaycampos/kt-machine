@@ -8496,6 +8496,169 @@
     "What $100 million",
     "actually means"
    ]
+  },
+  "ep_v561cfx/67-YEARS-OLD-YOU-CAN-TOO": {
+   "plan": "ep_v561cfx",
+   "source": "v561cfx.mp4",
+   "brand": "KT_KNOCKOFF",
+   "tries": 1,
+   "why": [
+    "FAIL 02_67-YEARS-OLD-YOU-CAN-TOO_45s.mp4: ends off the planned words: plan ends 'now applying a playing card', clip ends 'this course if they want i'"
+   ],
+   "slug": "67-YEARS-OLD-YOU-CAN-TOO",
+   "in": 1531.48,
+   "out": 1574.36,
+   "start_words": "It was so exciting",
+   "end_words": "now applying a playing card",
+   "hook": [
+    "67 years old,",
+    "you can too"
+   ]
+  },
+  "ep_v5lvgyl/WHY-98-PERCENT-OF-WINNERS-GO-BROKE": {
+   "plan": "ep_v5lvgyl",
+   "source": "v5lvgyl.mp4",
+   "brand": "KT_ROLLSROYCE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_WHY-98-PERCENT-OF-WINNERS-GO-BROKE_77s.mp4: ends off the planned words: plan ends 'go bankrupt Think about that', clip ends 'of all lottery winners go bankrupt'"
+   ],
+   "slug": "WHY-98-PERCENT-OF-WINNERS-GO-BROKE",
+   "in": 1206.56,
+   "out": 1298.4,
+   "start_words": "I met a guy",
+   "end_words": "go bankrupt Think about that",
+   "hook": [
+    "Why 98% of winners",
+    "go broke"
+   ]
+  },
+  "ep_v5lvgyl/WHAT-KEVIN-TAUGHT-INMATES-IN-PRISON": {
+   "plan": "ep_v5lvgyl",
+   "source": "v5lvgyl.mp4",
+   "brand": "KT_ROLLSROYCE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_WHAT-KEVIN-TAUGHT-INMATES-IN-PRISON_101s.mp4` - ends mid-thought on \"you change the\"; phrase scrambled around \"call them we call\"; phrase scrambled around \"them we call them\""
+   ],
+   "slug": "WHAT-KEVIN-TAUGHT-INMATES-IN-PRISON",
+   "in": 1040.76,
+   "out": 1141.04,
+   "start_words": "When I was in",
+   "end_words": "This is how it works",
+   "hook": [
+    "What Kevin taught",
+    "inmates in prison"
+   ]
+  },
+  "ep_v5lvgyl/THE-1000-DOLLAR-GUIDED-MEDITATION-SCAM": {
+   "plan": "ep_v5lvgyl",
+   "source": "v5lvgyl.mp4",
+   "brand": "KT_ROLLSROYCE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_THE-1000-DOLLAR-GUIDED-MEDITATION-SCAM_46s.mp4` - ends mid-thought on \"that's hypnosis or\""
+   ],
+   "slug": "THE-1000-DOLLAR-GUIDED-MEDITATION-SCAM",
+   "in": 3333.4,
+   "out": 3385.0,
+   "start_words": "Close your eyes Hi",
+   "end_words": "backwards That's hypnosis",
+   "hook": [
+    "The $1,000 guided",
+    "meditation scam"
+   ]
+  },
+  "ep_v5v95gt/WHY-RICH-PEOPLE-BUY-BOATS-LAST": {
+   "plan": "ep_v5v95gt",
+   "source": "v5v95gt.mp4",
+   "brand": "KT_DIVIDEND",
+   "tries": 1,
+   "why": [
+    "FAIL 01_WHY-RICH-PEOPLE-BUY-BOATS-LAST_68s.mp4: [FAIL] 01_WHY-RICH-PEOPLE-BUY-BOATS-LAST_68s.mp4              8 captions vs the sound  median +0.89s  worst-10% 1.49s  | words captioned 100%"
+   ],
+   "slug": "WHY-RICH-PEOPLE-BUY-BOATS-LAST",
+   "in": 575.52,
+   "out": 641.92,
+   "start_words": "Rich people buy appreciating",
+   "end_words": "person understands delayed gratification",
+   "hook": [
+    "Why rich people",
+    "buy boats last"
+   ]
+  },
+  "ep_v5v95gt/THE-10-PERCENT-RULE-FOR-FINANCIAL-FREEDOM": {
+   "plan": "ep_v5v95gt",
+   "source": "v5v95gt.mp4",
+   "brand": "KT_DIVIDEND",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_THE-10-PERCENT-RULE-FOR-FINANCIAL-FREEDOM_112s.mp4` - ends mid-thought on \"pay yourself first\""
+   ],
+   "slug": "THE-10-PERCENT-RULE-FOR-FINANCIAL-FREEDOM",
+   "in": 1970.32,
+   "out": 2085.76,
+   "start_words": "My mom and dad",
+   "end_words": "You pay yourself first",
+   "hook": [
+    "The 10% rule",
+    "for financial freedom"
+   ]
+  },
+  "ep_v5v95gt/10000-A-YEAR-DOING-NOTHING": {
+   "plan": "ep_v5v95gt",
+   "source": "v5v95gt.mp4",
+   "brand": "KT_DIVIDEND",
+   "tries": 1,
+   "why": [
+    "FAIL 02_10000-A-YEAR-DOING-NOTHING_63s.mp4: [FAIL] 02_10000-A-YEAR-DOING-NOTHING_63s.mp4                  5 captions vs the sound  median +1.59s  worst-10% 2.18s  | words captioned 98%"
+   ],
+   "slug": "10000-A-YEAR-DOING-NOTHING",
+   "in": 2306.8,
+   "out": 2372.64,
+   "start_words": "You have equity in",
+   "end_words": "we don't have to do anything",
+   "hook": [
+    "$10,000 a year,",
+    "doing nothing"
+   ]
+  },
+  "ep_v5v95gt/HOW-BLAINE-FAILED-THEN-STARTED": {
+   "plan": "ep_v5v95gt",
+   "source": "v5v95gt.mp4",
+   "brand": "KT_DIVIDEND",
+   "tries": 1,
+   "why": [
+    "note KT_DIVIDEND/HOW-BLAINE-FAILED-THEN-STARTED: ending kept on the planner's words 'but he became a starter' (cuts mid-sentence)",
+    "FAIL 01_HOW-BLAINE-FAILED-THEN-STARTED_40s.mp4: [FAIL] 01_HOW-BLAINE-FAILED-THEN-STARTED_40s.mp4              23 captions vs the sound (word-referenced: no clear pauses)  median +0.81s  worst-10% 1.28s  | words captioned 100%"
+   ],
+   "slug": "HOW-BLAINE-FAILED-THEN-STARTED",
+   "in": 988.56,
+   "out": 1041.36,
+   "start_words": "Blaine Athorn told a",
+   "end_words": "but he became a starter",
+   "hook": [
+    "How Blaine failed,",
+    "then started"
+   ]
+  },
+  "ep_v5v95gt/THE-300-MILLION-YACHT-PHONE-CALL": {
+   "plan": "ep_v5v95gt",
+   "source": "v5v95gt.mp4",
+   "brand": "KT_DIVIDEND",
+   "tries": 1,
+   "why": [
+    "FAIL 02_THE-300-MILLION-YACHT-PHONE-CALL_180s.mp4: [FAIL] 02_THE-300-MILLION-YACHT-PHONE-CALL_180s.mp4           13 captions vs the sound  median +0.00s  worst-10% 0.77s  | words captioned 98%"
+   ],
+   "slug": "THE-300-MILLION-YACHT-PHONE-CALL",
+   "in": 1161.84,
+   "out": 1344.64,
+   "start_words": "I remember I was",
+   "end_words": "cost you any money",
+   "hook": [
+    "A $300 million yacht",
+    "phone call"
+   ]
   }
  },
  "attempts": {
