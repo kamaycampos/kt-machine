@@ -1,10 +1,10 @@
 {
- "at": "2026-10-22T11:01",
+ "at": "2026-10-22T12:22",
  "profile": {
+  "video_count": 166,
   "follower_count": 412,
   "following_count": 8,
-  "likes_count": 5861,
-  "video_count": 166
+  "likes_count": 5861
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -369,7 +369,7 @@
   },
   "KT_BASEMENT/02_HE-WORKED-90-HOUR-WEEKS-FIRST_76s.mp4": {
    "id": "7689272753676995853",
-   "view_count": 134,
+   "view_count": 135,
    "like_count": 11,
    "comment_count": 0,
    "share_count": 0,
