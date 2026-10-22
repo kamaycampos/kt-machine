@@ -10525,7 +10525,7 @@
    "caption_at_post": "Four words separate the broke from the rich - and most people say the wrong ones every day.\n\nKevin Trudeau points out that 'I can't afford that' is a death sentence for your bank account: it's a statement your own mind works overtime to keep true. Rich people never say it.\n\nInstead, they say 'not right now' or 'that's a little out of my budget at the present time.' Same situation, completely different signal.\n\nOne phrase locks the door. The other leaves it open for the money to come later.\n\nWhich one did you say today?\n\n#kevintrudeau #moneymindset #richmindset #wealthhabits #selfimage #abundance",
    "posted_at": "2026-10-22T15:03",
    "tiktok_retry": true,
-   "tiktok_tries": 2
+   "tiktok_tries": 3
   },
   {
    "file": "KT_ATTITUDE/02_THE-EXCUSE-THAT-KEEPS-YOU-STUCK_47s.mp4",
@@ -10622,12 +10622,26 @@
    "caption": "\"Please, please, I need a miracle\" \u2014 if that's how you pray, here's why it keeps going unanswered.\n\nBegging comes from a state of desperation and lack, and lack doesn't connect to anything. The formula was never \"ask harder.\" It's ask differently: state what you want like it's already handled, not like you're pleading into a void. One version gets heard. The other one doesn't even place the call.\n\nComment RISE and I'll send you the version that works.\n\n#manifestation #prayer #awakening #abundance #mindset #kevintrudeau",
    "hook": "Your prayers aren't even being heard.",
    "bytes": 29450296,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-22T15:31",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1051320041296514/",
+    "instagram": "https://www.instagram.com/reel/DezwlEjjdmr/",
+    "youtube": "https://youtube.com/shorts/0-F5hbRqzgA"
+   },
+   "caption_at_post": "\"Please, please, I need a miracle\" \u2014 if that's how you pray, here's why it keeps going unanswered.\n\nBegging comes from a state of desperation and lack, and lack doesn't connect to anything. The formula was never \"ask harder.\" It's ask differently: state what you want like it's already handled, not like you're pleading into a void. One version gets heard. The other one doesn't even place the call.\n\nComment RISE and I'll send you the version that works.\n\n#manifestation #prayer #awakening #abundance #mindset #kevintrudeau",
+   "posted_at": "2026-10-22T15:44"
   },
   {
    "file": "AR_DEEPSTATE/01_EVEN-GORBACHEV-CALLED-IT-STATE-RUN_91s.mp4",
@@ -10779,7 +10793,11 @@
    "hook": "How he manifested $25 billion",
    "bytes": 20852630,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-23T17:24",
+   "cta_keyword": "MONEY",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_THETAWAVE/01_THE-BRAINWAVE-THAT-ATTRACTS-WEALTH_39s.mp4",
@@ -10787,7 +10805,11 @@
    "hook": "The brainwave that attracts wealth",
    "bytes": 18684989,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-23T14:30",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_THETAWAVE/02_WHY-COPYING-THE-RICH-USUALLY-FAILS_123s.mp4",
@@ -10795,7 +10817,11 @@
    "hook": "Why copying the rich usually fails",
    "bytes": 56005854,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-23T19:56",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 2,
+   "cta_kind": "question"
   }
  ]
 }
