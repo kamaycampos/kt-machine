@@ -10283,12 +10283,26 @@
    "caption": "The officers thought someone had cast a spell on the cell block.\n\nHe taught a meditation class inside federal prison, and the inmate disciplinary reports didn't dip \u2014 they fell off a cliff, down to almost zero, and stayed there. The guards asked what hypnotic trick he'd used. The real answer: nothing happened to anyone from the outside in. As within, so without \u2014 change the inside first, and the conditions around you have no choice but to follow.\n\nComment RISE and I'll send you how to start.\n\n#manifestation #meditation #awakening #consciousness #mindset #kevintrudeau",
    "hook": "Prison write-ups fell to almost zero.",
    "bytes": 60029430,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261022122500BE70D904152801058AE0'}}"
+   },
    "scheduled_at": "2026-10-22T08:02",
    "cta_keyword": "YES",
    "cta_variant": 5,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1459001666434267/",
+    "instagram": "https://www.instagram.com/reel/Dey-NJTk0tP/",
+    "youtube": "https://youtube.com/shorts/7eT5hpketkI"
+   },
+   "caption_at_post": "The officers thought someone had cast a spell on the cell block.\n\nHe taught a meditation class inside federal prison, and the inmate disciplinary reports didn't dip \u2014 they fell off a cliff, down to almost zero, and stayed there. The guards asked what hypnotic trick he'd used. The real answer: nothing happened to anyone from the outside in. As within, so without \u2014 change the inside first, and the conditions around you have no choice but to follow.\n\nComment RISE and I'll send you how to start.\n\n#manifestation #meditation #awakening #consciousness #mindset #kevintrudeau",
+   "posted_at": "2026-10-22T08:25"
   },
   {
    "file": "AR_INNERSTATE/02_98-PERCENT-OF-LOTTERY-WINNERS_79s.mp4",
@@ -10471,7 +10485,7 @@
    "caption_at_post": "Kevin Trudeau was being transferred between federal prisons, stripped, searched, and handed paper pants and a paper T-shirt before being marched onto a tarmac in 20-degree weather.\n\nTwelve armed marshals stood guard while every other prisoner shook and some nearly cried from the cold. Kevin used a technique called the breath of fire, the same one Tibetan monks use to sit on snow and melt it around them.\n\nHe stood there generating his own heat while the guards stared at him in amazement. One asked how. His answer: you can train your mind to do anything.\n\nHe didn't let the adversity control him. He took charge of it.\n\n#kevintrudeau #mindsetmatters #successstory #wealthmindset #millionairemindset #motivation",
    "posted_at": "2026-10-22T07:24",
    "tiktok_retry": true,
-   "tiktok_tries": 2
+   "tiktok_tries": 3
   },
   {
    "file": "KT_ATTITUDE/01_FOUR-WORDS-BROKE-PEOPLE-NEVER-SAY_55s.mp4",
@@ -10527,7 +10541,11 @@
    "hook": "The richest father in the universe.",
    "bytes": 30425714,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-22T12:47",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_PRAYERFORMULAR2/02_YOUR-PRAYERS-ARENT-EVEN-HEARD_45s.mp4",
@@ -10535,7 +10553,11 @@
    "hook": "Your prayers aren't even being heard.",
    "bytes": 29450296,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-22T15:31",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   }
  ]
 }
