@@ -1,10 +1,10 @@
 {
- "at": "2026-10-22T05:20",
+ "at": "2026-10-22T11:01",
  "profile": {
+  "follower_count": 412,
   "following_count": 8,
   "likes_count": 5861,
-  "video_count": 166,
-  "follower_count": 412
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -109,7 +109,7 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 199,
+   "view_count": 201,
    "like_count": 4,
    "comment_count": 0,
    "share_count": 0,
@@ -309,7 +309,7 @@
   },
   "KT_WEALTH/02_ROCKEFELLER-EVERY-DISASTER_103s.mp4": {
    "id": "7689976707771567374",
-   "view_count": 49,
+   "view_count": 51,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
