@@ -8010,6 +8010,456 @@
     "Liberace read a book.",
     "Millions followed."
    ]
+  },
+  "ar_v4q0ust/HE-TOLD-GORBACHEV-THE-TRUTH": {
+   "plan": "ar_v4q0ust",
+   "source": "v4q0ust.mp4",
+   "brand": "AR_SHADOWSTATE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_HE-TOLD-GORBACHEV-THE-TRUTH_46s.mp4` - opens mid-sentence on \"given,\""
+   ],
+   "slug": "HE-TOLD-GORBACHEV-THE-TRUTH",
+   "in": 354.96,
+   "out": 400.18,
+   "start_words": "The control of that",
+   "end_words": "in the Soviet Union",
+   "hook": [
+    "The CIA controls",
+    "you, covertly."
+   ]
+  },
+  "ar_v4q0ust/PROGRAMMED-FROM-BIRTH": {
+   "plan": "ar_v4q0ust",
+   "source": "v4q0ust.mp4",
+   "brand": "AR_SHADOWSTATE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_PROGRAMMED-FROM-BIRTH_64s.mp4: [FAIL] 01_PROGRAMMED-FROM-BIRTH_64s.mp4                       7 captions vs the sound  median +0.00s  worst-10% 0.96s  | words captioned 101%"
+   ],
+   "slug": "PROGRAMMED-FROM-BIRTH",
+   "in": 266.88,
+   "out": 332.84,
+   "start_words": "It's what you're being",
+   "end_words": "what we're programmed with",
+   "hook": [
+    "A different birthplace.",
+    "A different God."
+   ]
+  },
+  "ar_v4q0ust/THE-CIA-PICKS-WHAT-CONGRESS-HEARS": {
+   "plan": "ar_v4q0ust",
+   "source": "v4q0ust.mp4",
+   "brand": "AR_SHADOWSTATE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_THE-CIA-PICKS-WHAT-CONGRESS-HEARS_68s.mp4: [FAIL] 02_THE-CIA-PICKS-WHAT-CONGRESS-HEARS_68s.mp4           9 captions vs the sound  median +0.90s  worst-10% 1.31s  | words captioned 100%"
+   ],
+   "slug": "THE-CIA-PICKS-WHAT-CONGRESS-HEARS",
+   "in": 499.12,
+   "out": 568.08,
+   "start_words": "We do whatever we",
+   "end_words": "I'm not telling you",
+   "hook": [
+    "The CIA picks",
+    "what Congress hears."
+   ]
+  },
+  "ar_v4q0ust/CLINTON-LIED-ABOUT-AREA-51": {
+   "plan": "ar_v4q0ust",
+   "source": "v4q0ust.mp4",
+   "brand": "AR_SHADOWSTATE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_CLINTON-LIED-ABOUT-AREA-51_140s.mp4: ends off the planned words: plan ends 'I lied about it', clip ends 'because the cia wont let me'"
+   ],
+   "slug": "CLINTON-LIED-ABOUT-AREA-51",
+   "in": 571.72,
+   "out": 710.92,
+   "start_words": "Is there a secret",
+   "end_words": "I lied about it",
+   "hook": [
+    "Even Clinton lied",
+    "about Area 51."
+   ]
+  },
+  "ar_v4q0ust/EVERY-HEADLINE-IS-A-TRICK": {
+   "plan": "ar_v4q0ust",
+   "source": "v4q0ust.mp4",
+   "brand": "AR_SHADOWSTATE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_EVERY-HEADLINE-IS-A-TRICK_119s.mp4: [FAIL] 01_EVERY-HEADLINE-IS-A-TRICK_119s.mp4                  26 captions vs the sound  median +0.09s  worst-10% 1.07s  | words captioned 100%"
+   ],
+   "slug": "EVERY-HEADLINE-IS-A-TRICK",
+   "in": 932.24,
+   "out": 1046.08,
+   "start_words": "Every time you see",
+   "end_words": "from personal experience",
+   "hook": [
+    "Every headline",
+    "is lying to you."
+   ]
+  },
+  "ar_v50s5f8/COMFORT-KEEPS-YOU-STUCK": {
+   "plan": "ar_v50s5f8",
+   "source": "v50s5f8.mp4",
+   "brand": "AR_TENSTEPS",
+   "tries": 1,
+   "why": [
+    "FAIL 02_COMFORT-KEEPS-YOU-STUCK_159s.mp4: [FAIL] 02_COMFORT-KEEPS-YOU-STUCK_159s.mp4                    10 captions vs the sound  median +0.16s  worst-10% 1.38s  | words captioned 107%  UNCAPTIONED SPEECH [(129.8, 132.3)]"
+   ],
+   "slug": "COMFORT-KEEPS-YOU-STUCK",
+   "in": 1483.68,
+   "out": 1644.6,
+   "start_words": "The first thing you",
+   "end_words": "create what you want",
+   "hook": [
+    "Comfort keeps you stuck.",
+    "Hate it."
+   ]
+  },
+  "ar_v50s5f8/EVEN-POMPEO-GOT-DISGUSTED-THEN-CHANGED": {
+   "plan": "ar_v50s5f8",
+   "source": "v50s5f8.mp4",
+   "brand": "AR_TENSTEPS",
+   "tries": 1,
+   "why": [
+    "FAIL 01_EVEN-POMPEO-GOT-DISGUSTED-THEN-CHANGED_72s.mp4: [FAIL] 01_EVEN-POMPEO-GOT-DISGUSTED-THEN-CHANGED_72s.mp4      10 captions vs the sound  median +0.39s  worst-10% 1.58s  | words captioned 102%"
+   ],
+   "slug": "EVEN-POMPEO-GOT-DISGUSTED-THEN-CHANGED",
+   "in": 1848.1,
+   "out": 1919.58,
+   "start_words": "I remember there's the",
+   "end_words": "exercising and changed my diet",
+   "hook": [
+    "Even Pompeo got",
+    "disgusted, then changed."
+   ]
+  },
+  "ar_v50s5f8/GO-TOUCH-THE-ROLEX": {
+   "plan": "ar_v50s5f8",
+   "source": "v50s5f8.mp4",
+   "brand": "AR_TENSTEPS",
+   "tries": 1,
+   "why": [
+    "FAIL 02_GO-TOUCH-THE-ROLEX_66s.mp4: ends off the planned words: plan ends 'go look at nice homes', clip ends 'that into your life much faster'"
+   ],
+   "slug": "GO-TOUCH-THE-ROLEX",
+   "in": 2341.8,
+   "out": 2405.31,
+   "start_words": "This also intensifies the",
+   "end_words": "go look at nice homes",
+   "hook": [
+    "Go touch the Rolex.",
+    "It works."
+   ]
+  },
+  "ar_v50s5f8/EVEN-ELON-MUSK-JOINED-A-CLUB": {
+   "plan": "ar_v50s5f8",
+   "source": "v50s5f8.mp4",
+   "brand": "AR_TENSTEPS",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_EVEN-ELON-MUSK-JOINED-A-CLUB_44s.mp4` - opens mid-sentence on \"at somebody who's\"; phrase scrambled around \"club like Rotary Club.\"; phrase scrambled around \"our DNA to our\""
+   ],
+   "slug": "EVEN-ELON-MUSK-JOINED-A-CLUB",
+   "in": 4801.72,
+   "out": 4844.19,
+   "start_words": "Somebody who's making that",
+   "end_words": "our DNA to our family",
+   "hook": [
+    "Even Elon Musk",
+    "joined a club."
+   ]
+  },
+  "ar_v50s5f8/CEOS-MEET-SECRETLY-AND-YOU-DONT": {
+   "plan": "ar_v50s5f8",
+   "source": "v50s5f8.mp4",
+   "brand": "AR_TENSTEPS",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_CEOS-MEET-SECRETLY-AND-YOU-DONT_56s.mp4` - ends mid-thought on \"is Absolutely critical\"; sentence starts with no stop: \"good But\"; sentence starts with no stop: \"industries But\""
+   ],
+   "slug": "CEOS-MEET-SECRETLY-AND-YOU-DONT",
+   "in": 4903.73,
+   "out": 4959.96,
+   "start_words": "Every successful person is",
+   "end_words": "support network is absolutely critical",
+   "hook": [
+    "CEOs meet secretly,",
+    "and you don't."
+   ]
+  },
+  "ar_v524rh9/ROYALTY-TEACHES-KIDS-THIS-IN-SECRET": {
+   "plan": "ar_v524rh9",
+   "source": "v524rh9.mp4",
+   "brand": "AR_FREQUENCY",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_ROYALTY-TEACHES-KIDS-THIS-IN-SECRET_41s.mp4` - phrase scrambled around \"know if you know\""
+   ],
+   "slug": "ROYALTY-TEACHES-KIDS-THIS-IN-SECRET",
+   "in": 632.32,
+   "out": 675.28,
+   "start_words": "The secret society success",
+   "end_words": "we learned basic principles",
+   "hook": [
+    "Royalty teaches kids",
+    "this in secret."
+   ]
+  },
+  "ar_v524rh9/POVERTY-IS-GENETIC": {
+   "plan": "ar_v524rh9",
+   "source": "v524rh9.mp4",
+   "brand": "AR_FREQUENCY",
+   "tries": 1,
+   "why": [
+    "FAIL 02_POVERTY-IS-GENETIC_165s.mp4: [FAIL] 02_POVERTY-IS-GENETIC_165s.mp4                         28 captions vs the sound  median +0.10s  worst-10% 3.05s  | words captioned 99%  UNCAPTIONED SPEECH [(4.1, 6.0)]"
+   ],
+   "slug": "POVERTY-IS-GENETIC",
+   "in": 705.81,
+   "out": 874.4,
+   "start_words": "We also know that",
+   "end_words": "It's genetic",
+   "hook": [
+    "Poverty is genetic.",
+    "So is wealth."
+   ]
+  },
+  "ar_v524rh9/MADE-MILLIONS-BEFORE-18": {
+   "plan": "ar_v524rh9",
+   "source": "v524rh9.mp4",
+   "brand": "AR_FREQUENCY",
+   "tries": 1,
+   "why": [
+    "FAIL 01_MADE-MILLIONS-BEFORE-18_44s.mp4: [FAIL] 01_MADE-MILLIONS-BEFORE-18_44s.mp4                     7 captions vs the sound  median +0.10s  worst-10% 0.73s  | words captioned 99%"
+   ],
+   "slug": "MADE-MILLIONS-BEFORE-18",
+   "in": 1298.15,
+   "out": 1345.18,
+   "start_words": "But what happened was",
+   "end_words": "all over the world in business",
+   "hook": [
+    "Made millions",
+    "before he turned 18."
+   ]
+  },
+  "ar_v524rh9/HENRY-FORD-BURIED-THE-REAL-SECRET": {
+   "plan": "ar_v524rh9",
+   "source": "v524rh9.mp4",
+   "brand": "AR_FREQUENCY",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_HENRY-FORD-BURIED-THE-REAL-SECRET_44s.mp4` - sentence starts with no stop: \"called The\""
+   ],
+   "slug": "HENRY-FORD-BURIED-THE-REAL-SECRET",
+   "in": 1480.42,
+   "out": 1524.14,
+   "start_words": "Well, if you go",
+   "end_words": "was think and grow rich",
+   "hook": [
+    "Henry Ford buried",
+    "the real secret."
+   ]
+  },
+  "ar_v524rh9/SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE": {
+   "plan": "ar_v524rh9",
+   "source": "v524rh9.mp4",
+   "brand": "AR_FREQUENCY",
+   "tries": 1,
+   "why": [
+    "FAIL 02_SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE_60s.mp4: ends off the planned words: plan ends 'have access to this information', clip ends 'thats fair i think everyone sh'"
+   ],
+   "slug": "SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE",
+   "in": 2666.26,
+   "out": 2727.64,
+   "start_words": "Why did Henry",
+   "end_words": "have access to this information",
+   "hook": [
+    "Skull and Bones",
+    "keeps this secret."
+   ]
+  },
+  "ar_v524rh9/YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER": {
+   "plan": "ar_v524rh9",
+   "source": "v524rh9.mp4",
+   "brand": "AR_FREQUENCY",
+   "tries": 1,
+   "why": [
+    "FAIL 01_YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER_66s.mp4: [FAIL] 01_YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER_66s.mp4          10 captions vs the sound  median +0.05s  worst-10% 0.78s  | words captioned 99%"
+   ],
+   "slug": "YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER",
+   "in": 2584.5,
+   "out": 2649.98,
+   "start_words": "Well the scientific question",
+   "end_words": "at the quantum level",
+   "hook": [
+    "Your thoughts move",
+    "physical matter."
+   ]
+  },
+  "ar_v68yges/YOU-CAN-DISAPPEAR-IN-MINUTES": {
+   "plan": "ar_v68yges",
+   "source": "v68yges.mp4",
+   "brand": "AR_DEEPSTATE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_YOU-CAN-DISAPPEAR-IN-MINUTES_57s.mp4` - the spoken word was on screen in only 8 of 12 moments"
+   ],
+   "slug": "YOU-CAN-DISAPPEAR-IN-MINUTES",
+   "in": 1086,
+   "out": 1142.3,
+   "start_words": "We are told, or",
+   "end_words": "not given access to anyone",
+   "hook": [
+    "You can disappear",
+    "in minutes."
+   ]
+  },
+  "ar_v68yges/THIRTY-ARMED-AGENTS-ZERO-COVERAGE": {
+   "plan": "ar_v68yges",
+   "source": "v68yges.mp4",
+   "brand": "AR_DEEPSTATE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_THIRTY-ARMED-AGENTS-ZERO-COVERAGE_64s.mp4` - ends mid-thought on \"this and the\"; phrase scrambled around \"coverage Zero media coverage\"; phrase scrambled around \"major arrest a major\""
+   ],
+   "slug": "THIRTY-ARMED-AGENTS-ZERO-COVERAGE",
+   "in": 2010,
+   "out": 2073,
+   "start_words": "They take the guy",
+   "end_words": "This did not happen",
+   "hook": [
+    "Thirty armed agents.",
+    "It stayed secret."
+   ]
+  },
+  "ar_v68yges/YOU-COMMIT-FELONIES-EVERY-DAY": {
+   "plan": "ar_v68yges",
+   "source": "v68yges.mp4",
+   "brand": "AR_DEEPSTATE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_YOU-COMMIT-FELONIES-EVERY-DAY_108s.mp4: [FAIL] 02_YOU-COMMIT-FELONIES-EVERY-DAY_108s.mp4              9 captions vs the sound  median +0.44s  worst-10% 1.28s  | words captioned 100%"
+   ],
+   "slug": "YOU-COMMIT-FELONIES-EVERY-DAY",
+   "in": 3451,
+   "out": 3559,
+   "start_words": "And the reason it",
+   "end_words": "free and fair justice system",
+   "hook": [
+    "You commit felonies",
+    "every single day."
+   ]
+  },
+  "ar_v68yges/INDEPENDENT-MEDIA-IS-THE-BIGGEST-LIE": {
+   "plan": "ar_v68yges",
+   "source": "v68yges.mp4",
+   "brand": "AR_DEEPSTATE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_INDEPENDENT-MEDIA-IS-THE-BIGGEST-LIE_89s.mp4: [FAIL] 01_INDEPENDENT-MEDIA-IS-THE-BIGGEST-LIE_89s.mp4        9 captions vs the sound  median +0.21s  worst-10% 0.75s  | words captioned 98%  UNCAPTIONED SPEECH [(35.9, 37.5)]"
+   ],
+   "slug": "INDEPENDENT-MEDIA-IS-THE-BIGGEST-LIE",
+   "in": 2479.6,
+   "out": 2569,
+   "start_words": "the concept of the",
+   "end_words": "don't care about me",
+   "hook": [
+    "Independent media is",
+    "the biggest lie."
+   ]
+  },
+  "ar_v6pwfg0_r2/YOURE-NOT-STUCK-WITH-YOUR-DNA": {
+   "plan": "ar_v6pwfg0_r2",
+   "source": "v6pwfg0.mp4",
+   "brand": "AR_HAPPINESSCODER2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_YOURE-NOT-STUCK-WITH-YOUR-DNA_50s.mp4` - opens mid-sentence on \"case of the\"; phrase scrambled around \"scientists like real scientists\"; phrase scrambled around \"your DNA from your\""
+   ],
+   "slug": "YOURE-NOT-STUCK-WITH-YOUR-DNA",
+   "in": 42.2,
+   "out": 92.0,
+   "start_words": "Let me just give",
+   "end_words": "in the scientific community",
+   "hook": [
+    "You're not stuck",
+    "with your DNA."
+   ]
+  },
+  "ar_v6pwfg0_r2/HAPPINESS-NEEDS-A-REASON": {
+   "plan": "ar_v6pwfg0_r2",
+   "source": "v6pwfg0.mp4",
+   "brand": "AR_HAPPINESSCODER2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_HAPPINESS-NEEDS-A-REASON_55s.mp4: [FAIL] 02_HAPPINESS-NEEDS-A-REASON_55s.mp4                    8 captions vs the sound  median +0.07s  worst-10% 0.98s  | words captioned 100%  UNCAPTIONED SPEECH [(34.5, 37.3)]"
+   ],
+   "slug": "HAPPINESS-NEEDS-A-REASON",
+   "in": 371.15,
+   "out": 425.76,
+   "start_words": "And we've tested",
+   "end_words": "the external situations are",
+   "hook": [
+    "Happiness needs a reason.",
+    "You don't."
+   ]
+  },
+  "ar_v6pwfg0_r2/YOU-DONT-NEED-THE-ROLLER-COASTER": {
+   "plan": "ar_v6pwfg0_r2",
+   "source": "v6pwfg0.mp4",
+   "brand": "AR_HAPPINESSCODER2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_YOU-DONT-NEED-THE-ROLLER-COASTER_46s.mp4` - ends mid-thought on \"the time so\"; sentence starts with no stop: \"life You\"; sentence starts with no stop: \"spirituality That\""
+   ],
+   "slug": "YOU-DONT-NEED-THE-ROLLER-COASTER",
+   "in": 430.52,
+   "out": 476.24,
+   "start_words": "If you have access",
+   "end_words": "happy all the time",
+   "hook": [
+    "You don't need",
+    "the roller coaster."
+   ]
+  },
+  "ar_v6sfb21_r5/SAMSKARAS-BLOCKING-YOUR-LIFE": {
+   "plan": "ar_v6sfb21_r5",
+   "source": "v6sfb21.mp4",
+   "brand": "AR_SAMSKARAR5",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_SAMSKARAS-BLOCKING-YOUR-LIFE_45s.mp4` - ends mid-thought on \"want in life\"; phrase scrambled around \"an engram It's an\"; word repeated after one: \"meditating is meditating\""
+   ],
+   "slug": "SAMSKARAS-BLOCKING-YOUR-LIFE",
+   "in": 96.0,
+   "out": 144.72,
+   "start_words": "The main purpose of meditating",
+   "end_words": "the things you want in life",
+   "hook": [
+    "It's blocking your",
+    "life, 24/7."
+   ]
+  },
+  "ep_v7h6jyi/30-STEPS-WONT-MAKE-YOU-RICH": {
+   "plan": "ep_v7h6jyi",
+   "source": "v7h6jyi.mp4",
+   "brand": "KT_NUGGET",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_30-STEPS-WONT-MAKE-YOU-RICH_79s.mp4` - ends mid-thought on \"an oil baron\"; phrase scrambled around \"boom boom boom boom\"; phrase scrambled around \"content lots of content\""
+   ],
+   "slug": "30-STEPS-WONT-MAKE-YOU-RICH",
+   "in": 440.0,
+   "out": 519.44,
+   "start_words": "You've seen guys go",
+   "end_words": "become an oil baron",
+   "hook": [
+    "30 steps",
+    "won't make you rich"
+   ]
   }
  },
  "attempts": {
