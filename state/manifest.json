@@ -10775,12 +10775,26 @@
    "caption": "Back in the 70s, a teenager got pulled into something that doesn't show up in any success book: an organization called the Brotherhood.\n\nIt worked alongside Skull and Bones out of Yale, Bohemian Grove, the Bilderberg Group, and the highest levels of Freemasonry. Inside those rooms, the training wasn't positive thinking or hustle culture \u2014 it was how to move and manipulate energy with the power of the mind, how to actually create reality with it. None of that gets taught in the mainstream. It's taught behind closed doors, on purpose.\n\nComment RISE and I'll send you what else was in that training.\n\n#brotherhood #secretsocieties #manifestation #awakening #consciousness #kevintrudeau",
    "hook": "Skull and Bones trained him secretly.",
    "bytes": 15799259,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261023142500242E9473FE51E6291444'}}"
+   },
    "scheduled_at": "2026-10-23T10:17",
    "cta_keyword": "RISE",
    "cta_variant": 3,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1832998111090358/",
+    "instagram": "https://www.instagram.com/reel/De1w2XRFYre/",
+    "youtube": "https://youtube.com/shorts/nFvSAPq2ZgY"
+   },
+   "caption_at_post": "Back in the 70s, a teenager got pulled into something that doesn't show up in any success book: an organization called the Brotherhood.\n\nIt worked alongside Skull and Bones out of Yale, Bohemian Grove, the Bilderberg Group, and the highest levels of Freemasonry. Inside those rooms, the training wasn't positive thinking or hustle culture \u2014 it was how to move and manipulate energy with the power of the mind, how to actually create reality with it. None of that gets taught in the mainstream. It's taught behind closed doors, on purpose.\n\nComment RISE and I'll send you what else was in that training.\n\n#brotherhood #secretsocieties #manifestation #awakening #consciousness #kevintrudeau",
+   "posted_at": "2026-10-23T10:25"
   },
   {
    "file": "AR_TENSTEPS/02_FEEL-LIKE-YOU-ALREADY-HAVE-IT_125s.mp4",
