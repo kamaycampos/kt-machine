@@ -8659,6 +8659,42 @@
     "A $300 million yacht",
     "phone call"
    ]
+  },
+  "ep_v57b3cd/THE-OCEAN-TRICK-FOR-A-STUCK-MIND": {
+   "plan": "ep_v57b3cd",
+   "source": "v57b3cd.mp4",
+   "brand": "KT_ANCHOR",
+   "tries": 1,
+   "why": [
+    "FAIL 02_THE-OCEAN-TRICK-FOR-A-STUCK-MIND_99s.mp4: [FAIL] 02_THE-OCEAN-TRICK-FOR-A-STUCK-MIND_99s.mp4            9 captions vs the sound  median +0.19s  worst-10% 0.89s  | words captioned 100%"
+   ],
+   "slug": "THE-OCEAN-TRICK-FOR-A-STUCK-MIND",
+   "in": 1030.04,
+   "out": 1136.96,
+   "start_words": "Meditation is simply focusing",
+   "end_words": "this is how you meditate",
+   "hook": [
+    "How trapped energy",
+    "controls your emotions"
+   ]
+  },
+  "ep_v57b3cd/WHY-YOUR-FAMILY-FEELS-YOUR-STRESS": {
+   "plan": "ep_v57b3cd",
+   "source": "v57b3cd.mp4",
+   "brand": "KT_ANCHOR",
+   "tries": 1,
+   "why": [
+    "FAIL 01_WHY-YOUR-FAMILY-FEELS-YOUR-STRESS_111s.mp4: [FAIL] 01_WHY-YOUR-FAMILY-FEELS-YOUR-STRESS_111s.mp4          15 captions vs the sound  median +0.32s  worst-10% 0.84s  | words captioned 100%"
+   ],
+   "slug": "WHY-YOUR-FAMILY-FEELS-YOUR-STRESS",
+   "in": 292.12,
+   "out": 404.56,
+   "start_words": "Would you like to have",
+   "end_words": "that you're living with",
+   "hook": [
+    "How to stop",
+    "family stress tonight"
+   ]
   }
  },
  "attempts": {
