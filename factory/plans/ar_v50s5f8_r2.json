@@ -1,0 +1,60 @@
+{
+ "source": "v50s5f8.mp4",
+ "brand": "AR_TENSTEPSR2",
+ "test": false,
+ "note": "23 Oct 2026 - second chances for '10 Steps To Manifest Anything You Want | The Kevin Trudeau Show | Ep. 20' (Rumble v50s5f8). Awakened Rise weekly agent, re-cut per AR_PLANNING.md 2c. COMFORT-KEEPS-YOU-STUCK and GO-TOUCH-THE-ROLEX had the same bug: their in/out were snapped to the edge of an SRT block instead of the actual position of start_words/end_words - COMFORT's in started 3.5s into the NEXT sentence past 'The first thing you' (re-measured and moved back), its out ran 4.4s past 'create what you want' into the next, uncaptioned sentence (trimmed back); ROLEX's in started at the tail end of 'This also intensifies the energy', not the start of it (moved back to the real start), and since its planned ending measured correctly on the transcript yet still came back wrong in the render, ran the out on to the next clean sentence end ('...this is your exercise called dream building') instead of guessing at the same spot again. EVEN-POMPEO-GOT-DISGUSTED-THEN-CHANGED's end measured exactly right already; only tightened its start by half a second onto the real sentence boundary. EVEN-ELON-MUSK-JOINED-A-CLUB opened mid-clause ('at somebody who's...', missing the 'If you're looking' before it) and its old ending sat right on top of a scrambled 'our DNA to our' - rather than chase that scramble, moved the start back onto the 'your income is the average of your five best friends' line and the end onto the clean 'a group or an association' sentence just before the scrambled one; caption rewritten to match since the DNA/family line it referenced is no longer in the clip. CEOS-MEET-SECRETLY-AND-YOU-DONT skipped: both 'sentence starts with no stop' breaks ('good But', 'industries But') sit deep inside the CEO-club story with no edge that excludes them without cutting the story itself, and the flagged ending sits on a complete, correctly-transcribed sentence with no better one nearby.",
+ "clips": [
+  {
+   "slug": "COMFORT-KEEPS-YOU-STUCK",
+   "in": 1480.22,
+   "out": 1640.17,
+   "start_words": "The first thing you",
+   "end_words": "create what you want",
+   "retry_of": "ar_v50s5f8/COMFORT-KEEPS-YOU-STUCK",
+   "hook": [
+    "Comfort keeps you stuck.",
+    "Hate it."
+   ],
+   "caption": "Everything in the personal growth world tells you to practice gratitude first. Here's the step almost nobody teaches, and it comes before the gratitude: you have to hate where you are right now.\n\nNegative energy contracts, and that contraction is what gives you the force to actually move — like Darth Vader's \"your anger makes you focus,\" except real. There's an old hound dog that whines every few minutes because he's lying on a nail. He never moves. Why? Because it doesn't hurt quite enough yet. The pain has to get big enough that staying still is worse than changing.\n\nComment RISE and I'll send you what comes after the pain.\n\n#manifestation #subconscious #awakening #consciousness #mindset #kevintrudeau"
+  },
+  {
+   "slug": "EVEN-POMPEO-GOT-DISGUSTED-THEN-CHANGED",
+   "in": 1848.75,
+   "out": 1919.58,
+   "start_words": "I remember there's the",
+   "end_words": "exercising and changed my diet",
+   "retry_of": "ar_v50s5f8/EVEN-POMPEO-GOT-DISGUSTED-THEN-CHANGED",
+   "hook": [
+    "Even Pompeo got",
+    "disgusted, then changed."
+   ],
+   "caption": "Mike Pompeo ballooned up while he was Secretary of State. Later, seeing him in person, he looked so different it was unrecognizable — lean, in phenomenal shape.\n\nHis own explanation: he stepped out of the shower, looked in the mirror, and felt disgusted with what he saw. Not for a second — he stood there with that feeling for five full minutes. And that was the whole trigger. That same day, not the next day, he started exercising and changed his diet. One moment of real disgust did more than years of good intentions ever did.\n\nComment RISE and I'll send you the rest of the mechanism.\n\n#manifestation #mindset #awakening #consciousness #transformation #kevintrudeau"
+  },
+  {
+   "slug": "GO-TOUCH-THE-ROLEX",
+   "in": 2338.15,
+   "out": 2411.14,
+   "start_words": "This also intensifies the",
+   "end_words": "this is your exercise called dream building",
+   "retry_of": "ar_v50s5f8/GO-TOUCH-THE-ROLEX",
+   "hook": [
+    "Go touch the Rolex.",
+    "It works."
+   ],
+   "caption": "Writing your goal down is step one. Here's the step after it that almost nobody does: go physically touch the thing.\n\nWant a car? Go to the dealership, sit in it, touch the wheel, smell the interior. Want a Rolex? Go put it on your wrist and have someone take a photo of you wearing it. It sounds like a gimmick, but it isn't — touching something in the physical universe changes your energy around it, and that's what actually speeds up how fast it shows up in your life.\n\nComment RISE and I'll send you the rest of the technique.\n\n#manifestation #lawofattraction #dreamboard #awakening #consciousness #kevintrudeau"
+  },
+  {
+   "slug": "EVEN-ELON-MUSK-JOINED-A-CLUB",
+   "in": 4765.07,
+   "out": 4827.2,
+   "start_words": "Who do you spend",
+   "end_words": "a group or an association",
+   "retry_of": "ar_v50s5f8/EVEN-ELON-MUSK-JOINED-A-CLUB",
+   "hook": [
+    "Even Elon Musk",
+    "joined a club."
+   ],
+   "caption": "There's an old line that your income is the average of your five best friends. Most people hear it and think budgeting advice, not who actually surrounds them.\n\nLook at anyone who ever made real money — Andrew Carnegie, Henry Ford, all the way up through Elon Musk and Steve Jobs. Every single one of them belongs to something: a private club, a secret society, a country club, an association. Not a coincidence. The people you associate with set the ceiling on what you believe is possible for you.\n\nComment RISE and I'll send you how to choose yours.\n\n#association #manifestation #brotherhood #awakening #consciousness #kevintrudeau"
+  }
+ ]
+}

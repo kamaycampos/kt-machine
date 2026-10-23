@@ -1,0 +1,73 @@
+{
+ "source": "v4q0ust.mp4",
+ "brand": "AR_SHADOWSTATER2",
+ "test": false,
+ "note": "23 Oct 2026 - second chances for 'Why Spy Agencies Need To Use Propaganda | The Kevin Trudeau Show | 009' (Rumble v4q0ust). Awakened Rise weekly agent, re-cut per AR_PLANNING.md 2c. All five clips measured as textually correct against the transcript on the old cut, so each one's in and/or out was moved a few seconds to a different, still-clean sentence boundary rather than guessed-at: HE-TOLD-GORBACHEV-THE-TRUTH's start moved past the tail of the prior sentence ('given,') the checker said it was opening on; PROGRAMMED-FROM-BIRTH and THE-CIA-PICKS-WHAT-CONGRESS-HEARS both pulled their start back one full sentence for a cleaner lead-in while keeping the same payoff line; EVERY-HEADLINE-IS-A-TRICK's start moved back onto the rhetorical question right before the hook's line. CLINTON-LIED-ABOUT-AREA-51's planned ending ('I lied about it') matched the transcript exactly and still came back short in the render, so its out got a ~1s buffer past the same words rather than a different ending entirely. SECRET-SPY-AGENCY and WHO-REALLY-CONTROLS-AMERICA are not here - they were not on the second-chances list, only these five were.",
+ "clips": [
+  {
+   "slug": "HE-TOLD-GORBACHEV-THE-TRUTH",
+   "in": 355.5,
+   "out": 400.18,
+   "start_words": "The control of that",
+   "end_words": "in the Soviet Union",
+   "retry_of": "ar_v4q0ust/HE-TOLD-GORBACHEV-THE-TRUTH",
+   "hook": [
+    "The CIA controls",
+    "you, covertly."
+   ],
+   "caption": "Information flow is the ultimate power — whoever controls what people get to know, controls what they do next. That line isn't theory. It came up in an actual conversation with Mikhail Gorbachev, the last leader of the Soviet Union.\n\nThey talked about how the KGB covertly ran everything inside the USSR — and how the CIA does the exact same thing inside America, just with better PR. Same mechanism, same secrecy, different flag on the building.\n\nComment RISE and I'll send you the rest of that conversation.\n\n#disclosure #cia #secretsocieties #awakening #consciousness #kevintrudeau"
+  },
+  {
+   "slug": "PROGRAMMED-FROM-BIRTH",
+   "in": 264.88,
+   "out": 332.84,
+   "start_words": "Think about this",
+   "end_words": "what we're programmed with",
+   "retry_of": "ar_v4q0ust/PROGRAMMED-FROM-BIRTH",
+   "hook": [
+    "A different birthplace.",
+    "A different God."
+   ],
+   "caption": "If you'd been born in Dallas, you'd bleed Cowboys blue and silver. Born in Wisconsin, you'd call the Packers your religion. Neither one is really yours — it's just geography.\n\nSame exact pattern, bigger stakes: born in the American South, you grew up certain Jesus is Lord. Born in China that same decade, certain there's no God at all. Born in India, the Hindu tradition. Born in Saudi Arabia, the Quran. None of you chose it. It was installed before you could ask questions.\n\nComment RISE and I'll send you how to actually choose for yourself.\n\n#subconscious #awakening #programming #consciousness #mindset #kevintrudeau"
+  },
+  {
+   "slug": "THE-CIA-PICKS-WHAT-CONGRESS-HEARS",
+   "in": 495.6,
+   "out": 568.08,
+   "start_words": "And he laughs",
+   "end_words": "I'm not telling you",
+   "retry_of": "ar_v4q0ust/THE-CIA-PICKS-WHAT-CONGRESS-HEARS",
+   "hook": [
+    "The CIA picks",
+    "what Congress hears."
+   ],
+   "caption": "In the film about its own founding, the CIA's own director jokes about it on camera, the hearing coming up: \"I tell them only what I want to tell them.\"\n\nThat's not satire. That's oversight working exactly as designed. A senator asks a secret agency a secret question, and the secret agency answers only what it decides to answer, every single time. \"Did you do anything else?\" No. \"Thank you for coming, have a nice day.\" That's the whole hearing.\n\nComment RISE and I'll send you what else gets left out.\n\n#disclosure #cia #secretsocieties #awakening #consciousness #kevintrudeau"
+  },
+  {
+   "slug": "CLINTON-LIED-ABOUT-AREA-51",
+   "in": 571.72,
+   "out": 711.9,
+   "start_words": "Is there a secret",
+   "end_words": "I lied about it",
+   "retry_of": "ar_v4q0ust/CLINTON-LIED-ABOUT-AREA-51",
+   "hook": [
+    "Even Clinton lied",
+    "about Area 51."
+   ],
+   "caption": "For thirty straight years, the answer to Congress was the same: \"There's nothing at Groom Lake. No operation. No underground anything.\" Sitting presidents said it, on the record.\n\nThen the whistleblowers started talking, and Bill Clinton finally said it himself: \"Okay, I lied about Area 51. I didn't tell you the truth. We do have underground research and it's secret, and yeah, the CIA kind of runs it — and I'm not even allowed in, because the CIA won't let me.\" The sitting president. Locked out by his own government.\n\nComment RISE and I'll send you what else they've admitted to since.\n\n#disclosure #area51 #secretsocieties #awakening #truth #kevintrudeau"
+  },
+  {
+   "slug": "EVERY-HEADLINE-IS-A-TRICK",
+   "in": 930.32,
+   "out": 1046.08,
+   "start_words": "Is that headline real",
+   "end_words": "from personal experience",
+   "retry_of": "ar_v4q0ust/EVERY-HEADLINE-IS-A-TRICK",
+   "hook": [
+    "Every headline",
+    "is lying to you."
+   ],
+   "caption": "A magician shows you a quarter, closes his hand, opens it — gone. You didn't just watch a coin disappear. You watched misdirection: the coin never left his hand, he just controlled where you were looking.\n\nEvery headline, every thumbnail on your feed, is the same trick. The story is real. But what you're being shown and what's actually happening are two different things, and the skill isn't making something vanish — it's making sure you never look at the right hand.\n\nComment RISE and I'll send you how to spot it.\n\n#awakening #mindcontrol #consciousness #disclosure #subconscious #kevintrudeau"
+  }
+ ]
+}

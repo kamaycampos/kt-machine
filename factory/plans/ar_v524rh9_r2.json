@@ -1,0 +1,60 @@
+{
+ "source": "v524rh9.mp4",
+ "brand": "AR_FREQUENCYR2",
+ "test": false,
+ "note": "23 Oct 2026 - second chances for 'Your Wish Is Your Command | The Kevin Trudeau Show | Ep. 22' (Rumble v524rh9). Awakened Rise weekly agent, re-cut per AR_PLANNING.md 2c. POVERTY-IS-GENETIC and MADE-MILLIONS-BEFORE-18 both failed on a trailing tail: the old out was snapped to the end of its SRT block, which ran several seconds past the planned end_words into the next, uncaptioned sentence - trimmed the out back to right after the actual end_words ('It's genetic' / '...in business') and nudged POVERTY's in from 'We also know that' to the clean sentence before it to re-time the early caption gap. YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER's out landed one word early, cutting the clip off before 'level' was even spoken (the planned end_words is 'at the quantum level') - extended out by the length of that one word. SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE's planned ending ('have access to this information') measured correctly on the transcript but the render still landed short of it; rather than guess at sub-second audio pacing again, ran the out on to the next clean sentence end ('That's why I put this together') and updated end_words to match. ROYALTY-TEACHES-KIDS-THIS-IN-SECRET and HENRY-FORD-BURIED-THE-REAL-SECRET skipped: ROYALTY's scrambled phrase ('I don't know if you know that') sits in the middle of the teaching with no edge that excludes it without losing the setup or the payoff; HENRY-FORD's 'no stop' break is 'called The' right at 'a book in 1926 called The Law of Success' - the name of the buried book the whole clip is about, not a movable edge (same pattern this repo has skipped before on other episodes).",
+ "clips": [
+  {
+   "slug": "POVERTY-IS-GENETIC",
+   "in": 705.81,
+   "out": 868.44,
+   "start_words": "We also know that",
+   "end_words": "It's genetic",
+   "retry_of": "ar_v524rh9/POVERTY-IS-GENETIC",
+   "hook": [
+    "Poverty is genetic.",
+    "So is wealth."
+   ],
+   "caption": "Breed two aggressive dogs, you get an aggressive puppy. Breed two gentle dogs, you get a gentle one. Nobody argues with that — it's just genetics, and it works the same way with people.\n\nSomewhere in your lineage, a devoutly religious ancestor decided money was of the devil, that only the poor get into heaven — and that belief didn't stay a belief. It became wiring. There's a reason some brains broadcast on what's called the wealth wave, and others stay locked on the poverty wave, and it isn't willpower. It's inherited, and it's genetic — which also means it can be cleared.\n\nComment RISE and I'll send you how.\n\n#subconscious #manifestation #awakening #consciousness #abundance #kevintrudeau"
+  },
+  {
+   "slug": "MADE-MILLIONS-BEFORE-18",
+   "in": 1298.15,
+   "out": 1342.88,
+   "start_words": "But what happened was",
+   "end_words": "all over the world in business",
+   "retry_of": "ar_v524rh9/MADE-MILLIONS-BEFORE-18",
+   "hook": [
+    "Made millions",
+    "before he turned 18."
+   ],
+   "caption": "No connections. No college. No wealthy family, no famous last name. A welder's son who barely finished high school.\n\nAt fifteen, an organization called the Brotherhood took him in and taught him something that's never written in the self-help books: how to use your own brain as a transmitter and receiver of frequency, and how to actually focus it. He thought it sounded too good to be true. Then he made millions of dollars before he turned eighteen.\n\nComment RISE and I'll send you the part they left out of the books.\n\n#brotherhood #manifestation #lawofattraction #awakening #consciousness #kevintrudeau"
+  },
+  {
+   "slug": "SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE",
+   "in": 2666.26,
+   "out": 2733.38,
+   "start_words": "Why did Henry",
+   "end_words": "That's why I put this together",
+   "retry_of": "ar_v524rh9/SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE",
+   "hook": [
+    "Skull and Bones",
+    "keeps this secret."
+   ],
+   "caption": "Why would anyone bury the one piece of knowledge that actually works? Simple: because sharing it creates competition, and competition is the one thing the people at the top don't want.\n\nSkull and Bones. The highest levels of Freemasonry. The Bilderberg Group. The Trilateral Commission. The Council on Foreign Relations. The Brotherhood. Different names, same policy: keep it inside the circle. Over the last twenty years the wealthiest one percent have multiplied their share a hundredfold while everyone else fell further behind — and that gap is not an accident, it's the business model.\n\nComment RISE and I'll send you why he walked away from it.\n\n#brotherhood #secretsocieties #disclosure #awakening #consciousness #kevintrudeau"
+  },
+  {
+   "slug": "YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER",
+   "in": 2584.97,
+   "out": 2650.34,
+   "start_words": "Well the scientific question",
+   "end_words": "at the quantum level",
+   "retry_of": "ar_v524rh9/YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER",
+   "hook": [
+    "Your thoughts move",
+    "physical matter."
+   ],
+   "caption": "For decades, scientists insisted there was zero evidence the brain transmits or receives frequency — even while Einstein and Edison both said otherwise, and ancient texts described the exact same thing centuries earlier.\n\nNow there's hardware that proves it: paraplegics moving a cursor left and right by thought alone, people with no hands typing by thinking the letters, a ball on a screen steered purely by brainwaves. Science has now confirmed what it denied for a hundred years — your thoughts generate frequency, and that frequency measurably affects physical matter at the quantum level.\n\nComment RISE and I'll send you the rest of the research.\n\n#subconscious #manifestation #quantum #awakening #consciousness #kevintrudeau"
+  }
+ ]
+}
