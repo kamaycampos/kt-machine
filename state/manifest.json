@@ -10810,11 +10810,25 @@
    "hook": "How Henry Ford built the impossible",
    "bytes": 43578152,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-22T20:15",
    "cta_keyword": "MONEY",
    "cta_variant": 8,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/De0QkNzjuy1/",
+    "youtube": "https://youtube.com/shorts/qkG8uLNIBeM"
+   },
+   "caption_at_post": "Kevin Trudeau's favorite proof that facts aren't permanent: Henry Ford's own engineers.\n\nThey told him, as a fact, that a V8 engine could not be built - the ratios didn't work, the mechanics didn't work, it was impossible.\n\nHenry didn't know engineering. He just knew he wanted a V8, and gave his team six weeks or he'd find people who could build it.\n\nSix weeks later, he had his engine - and it helped build his billions.\n\nWhat \"impossible\" fact are you still obeying?\n\n#kevintrudeau #mindset #success #entrepreneur #wealthmindset #businessowner",
+   "posted_at": "2026-10-22T20:23",
+   "tiktok_retry": true
   },
   {
    "file": "KT_NUGGET/02_WHY-YOUR-FACTS-ARE-JUST-OPINIONS_89s.mp4",
