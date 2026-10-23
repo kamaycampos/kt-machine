@@ -1,10 +1,10 @@
 {
- "at": "2026-10-23T05:19",
+ "at": "2026-10-23T09:42",
  "profile": {
-  "video_count": 166,
-  "follower_count": 410,
   "following_count": 8,
-  "likes_count": 5863
+  "likes_count": 5863,
+  "video_count": 166,
+  "follower_count": 410
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -279,7 +279,7 @@
   },
   "KT_HUSTLE/01_THE-ADS-WERE-THE-PROBLEM_186s.mp4": {
    "id": "7690244007015746829",
-   "view_count": 4,
+   "view_count": 5,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -529,7 +529,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3702,
+   "view_count": 3706,
    "like_count": 152,
    "comment_count": 7,
    "share_count": 16,
