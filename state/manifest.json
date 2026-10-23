@@ -10830,7 +10830,6 @@
    },
    "caption_at_post": "Kevin Trudeau says the richest man who ever lived, J.D. Rockefeller, built his fortune on one word: perseverance.\n\nNever stopping. Never yielding. Never bending. Getting knocked down and getting back up, every single time, no matter how big the mountain in front of you.\n\nThat's not a quote for a poster - it's the actual attitude behind every fortune Kevin has studied, including his own.\n\nThe facts don't care how many times you've failed. Your attitude decides what happens next.\n\nIs your attitude right today?\n\n#kevintrudeau #mindset #perseverance #successmindset #wealthmindset #richmindset",
    "posted_at": "2026-10-23T08:04",
-   "tiktok_retry": true,
    "tiktok_tries": 3
   },
   {
@@ -10949,7 +10948,11 @@
    "hook": "The priest returned never spoke again.",
    "bytes": 113810388,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-24T13:08",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_ONENESS/02_TRUE-GURUS-DONT-WANT-YOUR-LOYALTY_56s.mp4",
@@ -10957,7 +10960,11 @@
    "hook": "True gurus don't want your loyalty.",
    "bytes": 51345629,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-24T07:01",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_ONENESS/02_YOUR-BELIEFS-WERE-INSTALLED-NOT-CHOSEN_138s.mp4",
@@ -10965,7 +10972,11 @@
    "hook": "Your beliefs were installed, not chosen.",
    "bytes": 111885656,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-24T17:22",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_SHADOWSTATER2/01_EVERY-HEADLINE-IS-A-TRICK_122s.mp4",
@@ -10973,7 +10984,11 @@
    "hook": "Every headline is lying to you.",
    "bytes": 73617617,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-24T10:24",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_TENSTEPSR2/02_EVEN-ELON-MUSK-JOINED-A-CLUB_62s.mp4",
@@ -10981,7 +10996,11 @@
    "hook": "Even Elon Musk joined a club.",
    "bytes": 24451588,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-24T15:40",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "KT_DIVIDENDR2/01_HOW-BLAINE-FAILED-THEN-STARTED_46s.mp4",
@@ -10989,7 +11008,11 @@
    "hook": "How Blaine failed, then started",
    "bytes": 26131541,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-24T14:41",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "KT_DIVIDENDR2/01_THE-300-MILLION-YACHT-PHONE-CALL_95s.mp4",
@@ -10997,7 +11020,11 @@
    "hook": "How Kiyosaki defines financial independence",
    "bytes": 58501312,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-25T07:55",
+   "cta_keyword": "MONEY",
+   "cta_variant": 8,
+   "cta_kind": "question"
   },
   {
    "file": "KT_DIVIDENDR2/02_10000-A-YEAR-DOING-NOTHING_56s.mp4",
@@ -11005,7 +11032,11 @@
    "hook": "$10,000 a year, doing nothing",
    "bytes": 37004552,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-24T19:45",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 7,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_MEMORYR2R2R2R2/02_COUNTING-CARDS-250K-RENO_81s.mp4",
@@ -11013,7 +11044,11 @@
    "hook": "How he won $250,000 at blackjack",
    "bytes": 85010476,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-24T17:35",
+   "cta_keyword": "MONEY",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   }
  ]
 }
