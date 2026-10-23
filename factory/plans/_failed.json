@@ -8695,6 +8695,312 @@
     "How to stop",
     "family stress tonight"
    ]
+  },
+  "ar_v4q0ust_r2/HE-TOLD-GORBACHEV-THE-TRUTH": {
+   "plan": "ar_v4q0ust_r2",
+   "source": "v4q0ust.mp4",
+   "brand": "AR_SHADOWSTATER2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_HE-TOLD-GORBACHEV-THE-TRUTH_46s.mp4` - opens mid-sentence on \"given,\""
+   ],
+   "slug": "HE-TOLD-GORBACHEV-THE-TRUTH",
+   "in": 355.5,
+   "out": 400.18,
+   "start_words": "The control of that",
+   "end_words": "in the Soviet Union",
+   "hook": [
+    "The CIA controls",
+    "you, covertly."
+   ]
+  },
+  "ar_v4q0ust_r2/PROGRAMMED-FROM-BIRTH": {
+   "plan": "ar_v4q0ust_r2",
+   "source": "v4q0ust.mp4",
+   "brand": "AR_SHADOWSTATER2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_PROGRAMMED-FROM-BIRTH_66s.mp4: [FAIL] 01_PROGRAMMED-FROM-BIRTH_66s.mp4                       30 captions vs the sound (word-referenced: no clear pauses)  median +0.40s  worst-10% 1.77s  | words captioned 100%"
+   ],
+   "slug": "PROGRAMMED-FROM-BIRTH",
+   "in": 264.88,
+   "out": 332.84,
+   "start_words": "Think about this",
+   "end_words": "what we're programmed with",
+   "hook": [
+    "A different birthplace.",
+    "A different God."
+   ]
+  },
+  "ar_v4q0ust_r2/THE-CIA-PICKS-WHAT-CONGRESS-HEARS": {
+   "plan": "ar_v4q0ust_r2",
+   "source": "v4q0ust.mp4",
+   "brand": "AR_SHADOWSTATER2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_THE-CIA-PICKS-WHAT-CONGRESS-HEARS_71s.mp4: [FAIL] 01_THE-CIA-PICKS-WHAT-CONGRESS-HEARS_71s.mp4           15 captions vs the sound  median +0.10s  worst-10% 0.24s  | words captioned 100%  UNCAPTIONED SPEECH [(5.3, 8.1)]"
+   ],
+   "slug": "THE-CIA-PICKS-WHAT-CONGRESS-HEARS",
+   "in": 495.6,
+   "out": 568.08,
+   "start_words": "And he laughs",
+   "end_words": "I'm not telling you",
+   "hook": [
+    "The CIA picks",
+    "what Congress hears."
+   ]
+  },
+  "ar_v4q0ust_r2/CLINTON-LIED-ABOUT-AREA-51": {
+   "plan": "ar_v4q0ust_r2",
+   "source": "v4q0ust.mp4",
+   "brand": "AR_SHADOWSTATER2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_CLINTON-LIED-ABOUT-AREA-51_140s.mp4: ends off the planned words: plan ends 'I lied about it', clip ends 'because the cia wont let me'"
+   ],
+   "slug": "CLINTON-LIED-ABOUT-AREA-51",
+   "in": 571.72,
+   "out": 711.9,
+   "start_words": "Is there a secret",
+   "end_words": "I lied about it",
+   "hook": [
+    "Even Clinton lied",
+    "about Area 51."
+   ]
+  },
+  "ar_v50s5f8_r2/COMFORT-KEEPS-YOU-STUCK": {
+   "plan": "ar_v50s5f8_r2",
+   "source": "v50s5f8.mp4",
+   "brand": "AR_TENSTEPSR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_COMFORT-KEEPS-YOU-STUCK_159s.mp4: [FAIL] 01_COMFORT-KEEPS-YOU-STUCK_159s.mp4                    10 captions vs the sound  median +0.16s  worst-10% 1.38s  | words captioned 107%  UNCAPTIONED SPEECH [(129.8, 132.3)]"
+   ],
+   "slug": "COMFORT-KEEPS-YOU-STUCK",
+   "in": 1480.22,
+   "out": 1640.17,
+   "start_words": "The first thing you",
+   "end_words": "create what you want",
+   "hook": [
+    "Comfort keeps you stuck.",
+    "Hate it."
+   ]
+  },
+  "ar_v50s5f8_r2/EVEN-POMPEO-GOT-DISGUSTED-THEN-CHANGED": {
+   "plan": "ar_v50s5f8_r2",
+   "source": "v50s5f8.mp4",
+   "brand": "AR_TENSTEPSR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_EVEN-POMPEO-GOT-DISGUSTED-THEN-CHANGED_72s.mp4: [FAIL] 02_EVEN-POMPEO-GOT-DISGUSTED-THEN-CHANGED_72s.mp4      10 captions vs the sound  median +0.39s  worst-10% 1.58s  | words captioned 102%"
+   ],
+   "slug": "EVEN-POMPEO-GOT-DISGUSTED-THEN-CHANGED",
+   "in": 1848.75,
+   "out": 1919.58,
+   "start_words": "I remember there's the",
+   "end_words": "exercising and changed my diet",
+   "hook": [
+    "Even Pompeo got",
+    "disgusted, then changed."
+   ]
+  },
+  "ar_v50s5f8_r2/GO-TOUCH-THE-ROLEX": {
+   "plan": "ar_v50s5f8_r2",
+   "source": "v50s5f8.mp4",
+   "brand": "AR_TENSTEPSR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_GO-TOUCH-THE-ROLEX_72s.mp4: ends off the planned words: plan ends 'this is your exercise called dream building', clip ends 'this is your exercise called dream'"
+   ],
+   "slug": "GO-TOUCH-THE-ROLEX",
+   "in": 2338.15,
+   "out": 2411.14,
+   "start_words": "This also intensifies the",
+   "end_words": "this is your exercise called dream building",
+   "hook": [
+    "Go touch the Rolex.",
+    "It works."
+   ]
+  },
+  "ar_v64x4f4/SPIRITUAL-HIGHS-ARE-IMITATION-CRAB": {
+   "plan": "ar_v64x4f4",
+   "source": "v64x4f4.mp4",
+   "brand": "AR_ONENESS",
+   "tries": 1,
+   "why": [
+    "FAIL 02_SPIRITUAL-HIGHS-ARE-IMITATION-CRAB_109s.mp4: [FAIL] 02_SPIRITUAL-HIGHS-ARE-IMITATION-CRAB_109s.mp4         25 captions vs the sound  median +0.10s  worst-10% 0.94s  | words captioned 100%"
+   ],
+   "slug": "SPIRITUAL-HIGHS-ARE-IMITATION-CRAB",
+   "in": 2356.3,
+   "out": 2468.97,
+   "start_words": "I was with my friend",
+   "end_words": "then you know what a fraud is",
+   "hook": [
+    "Your spiritual high",
+    "is imitation crab."
+   ]
+  },
+  "ar_v64x4f4/A-FISH-BREACHED-CALLED-IT-HEAVEN": {
+   "plan": "ar_v64x4f4",
+   "source": "v64x4f4.mp4",
+   "brand": "AR_ONENESS",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_A-FISH-BREACHED-CALLED-IT-HEAVEN_72s.mp4` - ends mid-thought on \"out there spirituality\"; phrase scrambled around \"i've reached heaven I've\"; phrase scrambled around \"i've reached nirvana i've\""
+   ],
+   "slug": "A-FISH-BREACHED-CALLED-IT-HEAVEN",
+   "in": 439.3,
+   "out": 511.48,
+   "start_words": "I want you to imagine",
+   "end_words": "what else is out there",
+   "hook": [
+    "You broke the surface.",
+    "Not heaven."
+   ]
+  },
+  "ar_v64x4f4/PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD": {
+   "plan": "ar_v64x4f4",
+   "source": "v64x4f4.mp4",
+   "brand": "AR_ONENESS",
+   "tries": 1,
+   "why": [
+    "FAIL 01_PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD_46s.mp4: [FAIL] 01_PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD_46s.mp4           6 captions vs the sound  median -0.00s  worst-10% 0.84s  | words captioned 100%"
+   ],
+   "slug": "PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD",
+   "in": 603.58,
+   "out": 650.56,
+   "start_words": "This has been done all",
+   "end_words": "This is how it's been always",
+   "hook": [
+    "Priests gatekeep",
+    "your line to God."
+   ]
+  },
+  "ar_v64x4f4/A-DOG-WHISTLE-EXPOSES-YOUR-SENSES": {
+   "plan": "ar_v64x4f4",
+   "source": "v64x4f4.mp4",
+   "brand": "AR_ONENESS",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_A-DOG-WHISTLE-EXPOSES-YOUR-SENSES_70s.mp4` - the spoken word was on screen in only 8 of 11 moments"
+   ],
+   "slug": "A-DOG-WHISTLE-EXPOSES-YOUR-SENSES",
+   "in": 1022.45,
+   "out": 1091.64,
+   "start_words": "If you blow a dog",
+   "end_words": "a spiritual realm at all",
+   "hook": [
+    "A dog whistle",
+    "exposes your senses."
+   ]
+  },
+  "ar_v64x4f4/ROCKEFELLERS-LAST-WORDS": {
+   "plan": "ar_v64x4f4",
+   "source": "v64x4f4.mp4",
+   "brand": "AR_ONENESS",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_ROCKEFELLERS-LAST-WORDS_51s.mp4` - opens mid-sentence on \"more.\""
+   ],
+   "slug": "ROCKEFELLERS-LAST-WORDS",
+   "in": 3848.54,
+   "out": 3898.87,
+   "start_words": "John D. Rockefeller,",
+   "end_words": "You have it within you right now",
+   "hook": [
+    "Rockefeller's words:",
+    "'Just a little more.'"
+   ]
+  },
+  "ep_v5v95gt_r2/WHY-RICH-PEOPLE-BUY-BOATS-LAST": {
+   "plan": "ep_v5v95gt_r2",
+   "source": "v5v95gt.mp4",
+   "brand": "KT_DIVIDENDR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_WHY-RICH-PEOPLE-BUY-BOATS-LAST_72s.mp4: [FAIL] 01_WHY-RICH-PEOPLE-BUY-BOATS-LAST_72s.mp4              8 captions vs the sound  median +0.89s  worst-10% 1.49s  | words captioned 101%"
+   ],
+   "slug": "WHY-RICH-PEOPLE-BUY-BOATS-LAST",
+   "in": 575.52,
+   "out": 649.2,
+   "start_words": "Rich people buy appreciating",
+   "end_words": "think differently than broke people",
+   "hook": [
+    "Why rich people",
+    "buy boats last"
+   ]
+  },
+  "ep_v5v95gt_r2/THE-10-PERCENT-RULE-FOR-FINANCIAL-FREEDOM": {
+   "plan": "ep_v5v95gt_r2",
+   "source": "v5v95gt.mp4",
+   "brand": "KT_DIVIDENDR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_THE-10-PERCENT-RULE-FOR-FINANCIAL-FREEDOM_95s.mp4: ends off the planned words: plan ends 'The Richest Man in Babylon', clip ends 'of the book the richest m'"
+   ],
+   "slug": "THE-10-PERCENT-RULE-FOR-FINANCIAL-FREEDOM",
+   "in": 1994.48,
+   "out": 2092.8,
+   "start_words": "If you can't pay cash",
+   "end_words": "The Richest Man in Babylon",
+   "hook": [
+    "The 10% rule",
+    "for financial freedom"
+   ]
+  },
+  "ep_v6oq1ll_r3/RANDOM-MACHINE-BENDS-TO-YOUR-MIND": {
+   "plan": "ep_v6oq1ll_r3",
+   "source": "v6oq1ll.mp4",
+   "brand": "KT_COMPASSR2R2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_RANDOM-MACHINE-BENDS-TO-YOUR-MIND_54s.mp4: [FAIL] 01_RANDOM-MACHINE-BENDS-TO-YOUR-MIND_54s.mp4           36 captions vs the sound (word-referenced: no clear pauses)  median +0.42s  worst-10% 0.87s  | words captioned 99%"
+   ],
+   "slug": "RANDOM-MACHINE-BENDS-TO-YOUR-MIND",
+   "in": 234.6,
+   "out": 288.14,
+   "start_words": "The researchers took someone",
+   "end_words": "gave them that",
+   "hook": [
+    "How your mind",
+    "bends random odds"
+   ]
+  },
+  "ep_v6oq1ll_r3/HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN": {
+   "plan": "ep_v6oq1ll_r3",
+   "source": "v6oq1ll.mp4",
+   "brand": "KT_COMPASSR2R2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN_54s.mp4` - ends mid-thought on \"your way if\"; sentence starts with no stop: \"prize They\"; sentence starts with no stop: \"prizes So\""
+   ],
+   "slug": "HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN",
+   "in": 553.1,
+   "out": 605.9,
+   "start_words": "They had three prizes",
+   "end_words": "can go your way",
+   "hook": [
+    "How he predicted",
+    "his own win"
+   ]
+  },
+  "ep_v6v9urd_r5/WALL-STREET-500-RIVALS": {
+   "plan": "ep_v6v9urd_r5",
+   "source": "v6v9urd.mp4",
+   "brand": "KT_MEMORYR2R2R2R2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_WALL-STREET-500-RIVALS_55s.mp4` - opens mid-sentence on \"techniques and I\"; phrase scrambled around \"I'm smart because I'm\""
+   ],
+   "slug": "WALL-STREET-500-RIVALS",
+   "in": 309.04,
+   "out": 365.12,
+   "start_words": "I used the mega memory",
+   "end_words": "it's costing you money",
+   "hook": [
+    "How memory",
+    "equals more money"
+   ]
   }
  },
  "attempts": {
@@ -8727,6 +9033,7 @@
   "ar_v6sfb21_r4": 2,
   "ep_v67ions": 2,
   "ep_v6oq1ll_r2": 2,
-  "ep_v7dfhw8_r3": 2
+  "ep_v7dfhw8_r3": 2,
+  "ar_v524rh9_r2": 1
  }
 }
