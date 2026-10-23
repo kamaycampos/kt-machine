@@ -10812,11 +10812,25 @@
    "hook": "What Rockefeller said about getting rich",
    "bytes": 48535317,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-23T07:51",
    "cta_keyword": "BRAIN",
    "cta_variant": 9,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/De1guApCW_6/",
+    "youtube": "https://youtube.com/shorts/NHkko48UjDU"
+   },
+   "caption_at_post": "Kevin Trudeau says the richest man who ever lived, J.D. Rockefeller, built his fortune on one word: perseverance.\n\nNever stopping. Never yielding. Never bending. Getting knocked down and getting back up, every single time, no matter how big the mountain in front of you.\n\nThat's not a quote for a poster - it's the actual attitude behind every fortune Kevin has studied, including his own.\n\nThe facts don't care how many times you've failed. Your attitude decides what happens next.\n\nIs your attitude right today?\n\n#kevintrudeau #mindset #perseverance #successmindset #wealthmindset #richmindset",
+   "posted_at": "2026-10-23T08:04",
+   "tiktok_retry": true
   },
   {
    "file": "KT_NUGGET/02_HOW-HENRY-FORD-BUILT-THE-IMPOSSIBLE_72s.mp4",
