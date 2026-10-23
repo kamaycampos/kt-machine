@@ -10922,7 +10922,11 @@
    "hook": "How little meditation you actually need",
    "bytes": 37233896,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-24T12:12",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
