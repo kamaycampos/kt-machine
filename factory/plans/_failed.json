@@ -9001,6 +9001,78 @@
     "How memory",
     "equals more money"
    ]
+  },
+  "ar_v524rh9_r2/POVERTY-IS-GENETIC": {
+   "plan": "ar_v524rh9_r2",
+   "source": "v524rh9.mp4",
+   "brand": "AR_FREQUENCYR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_POVERTY-IS-GENETIC_165s.mp4: [FAIL] 01_POVERTY-IS-GENETIC_165s.mp4                         28 captions vs the sound  median +0.10s  worst-10% 3.05s  | words captioned 99%  UNCAPTIONED SPEECH [(4.1, 6.0)]"
+   ],
+   "slug": "POVERTY-IS-GENETIC",
+   "in": 705.81,
+   "out": 868.44,
+   "start_words": "We also know that",
+   "end_words": "It's genetic",
+   "hook": [
+    "Poverty is genetic.",
+    "So is wealth."
+   ]
+  },
+  "ar_v524rh9_r2/MADE-MILLIONS-BEFORE-18": {
+   "plan": "ar_v524rh9_r2",
+   "source": "v524rh9.mp4",
+   "brand": "AR_FREQUENCYR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_MADE-MILLIONS-BEFORE-18_44s.mp4: [FAIL] 02_MADE-MILLIONS-BEFORE-18_44s.mp4                     7 captions vs the sound  median +0.10s  worst-10% 0.73s  | words captioned 99%"
+   ],
+   "slug": "MADE-MILLIONS-BEFORE-18",
+   "in": 1298.15,
+   "out": 1342.88,
+   "start_words": "But what happened was",
+   "end_words": "all over the world in business",
+   "hook": [
+    "Made millions",
+    "before he turned 18."
+   ]
+  },
+  "ar_v524rh9_r2/SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE": {
+   "plan": "ar_v524rh9_r2",
+   "source": "v524rh9.mp4",
+   "brand": "AR_FREQUENCYR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE_63s.mp4: ends off the planned words: plan ends 'That's why I put this together', clip ends 'they choose to take it that'"
+   ],
+   "slug": "SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE",
+   "in": 2666.26,
+   "out": 2733.38,
+   "start_words": "Why did Henry",
+   "end_words": "That's why I put this together",
+   "hook": [
+    "Skull and Bones",
+    "keeps this secret."
+   ]
+  },
+  "ar_v524rh9_r2/YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER": {
+   "plan": "ar_v524rh9_r2",
+   "source": "v524rh9.mp4",
+   "brand": "AR_FREQUENCYR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER_66s.mp4: [FAIL] 01_YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER_66s.mp4          10 captions vs the sound  median +0.05s  worst-10% 0.78s  | words captioned 99%"
+   ],
+   "slug": "YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER",
+   "in": 2584.97,
+   "out": 2650.34,
+   "start_words": "Well the scientific question",
+   "end_words": "at the quantum level",
+   "hook": [
+    "Your thoughts move",
+    "physical matter."
+   ]
   }
  },
  "attempts": {
@@ -9034,6 +9106,6 @@
   "ep_v67ions": 2,
   "ep_v6oq1ll_r2": 2,
   "ep_v7dfhw8_r3": 2,
-  "ar_v524rh9_r2": 1
+  "ar_v524rh9_r2": 2
  }
 }
