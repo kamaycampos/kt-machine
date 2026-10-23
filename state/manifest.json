@@ -10878,11 +10878,25 @@
    "hook": "Why your facts are just opinions",
    "bytes": 54538280,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-23T10:32",
    "cta_keyword": "MONEY",
    "cta_variant": 10,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/De1zHp9iWwq/",
+    "youtube": "https://youtube.com/shorts/HSOA34vGx4c"
+   },
+   "caption_at_post": "Kevin Trudeau says most of what you call a fact is really just someone's opinion.\n\nIt was once a \"fact\" the earth was flat. A \"fact\" that bloodletting cured disease. A \"fact\" that your tonsils and appendix did nothing and should come out.\n\nEven the FDA has approved drugs as safe, only to pull them off shelves ten years later when the facts changed.\n\nIf the experts have been wrong about facts for centuries, the one holding your money back right now might be wrong too.\n\nWhich \"fact\" about your own life have you never questioned?\n\n#kevintrudeau #mindset #moneymindset #successmindset #selfimprovement #wealthmindset",
+   "posted_at": "2026-10-23T10:45",
+   "tiktok_retry": true
   },
   {
    "file": "KT_THETAWAVE/01_HOW-HE-MANIFESTED-25-BILLION_45s.mp4",
