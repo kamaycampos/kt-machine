@@ -11069,7 +11069,7 @@
    "caption_at_post": "Someone begged Kevin Trudeau to come fix their finances. He said yes - on one condition: show me everything.\n\nFirst target: subscriptions. A gym membership they hadn't used in two years - gone. He showed them home workouts instead.\n\nThen insurance: switching car insurance saved $1,000 a year. Combining two phone plans onto one carrier saved another $150 a month.\n\nNone of it was complicated. It just required someone willing to actually look.\n\nIf Kevin Trudeau opened your bank statement tonight, what would he cut first?\n\n#kevintrudeau #moneymindset #budgeting #financialfreedom #savemoney #wealthmindset",
    "posted_at": "2026-10-24T07:45",
    "tiktok_retry": true,
-   "tiktok_tries": 1
+   "tiktok_tries": 2
   },
   {
    "file": "KT_KNOCKOFF/01_WHY-COPYING-HIM-STILL-FAILED_104s.mp4",
@@ -11223,7 +11223,11 @@
    "hook": "A wish is powerless. Needing wins.",
    "bytes": 41696536,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-24T20:25",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_GURU/01_ADVERSITY-ISNT-RANDOM-ITS-KARMA_69s.mp4",
@@ -11231,7 +11235,11 @@
    "hook": "Your pain isn't random. It's karma.",
    "bytes": 38199025,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-25T08:06",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_GURU/01_CHRIST-WAS-CALLED-A-GURU-TOO_113s.mp4",
@@ -11239,7 +11247,11 @@
    "hook": "You met a guru. Missed it.",
    "bytes": 47079058,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-25T14:45",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_GURU/01_TOLSTOYS-LIFE-CHANGED-IN-ONE-INSTANT_119s.mp4",
@@ -11247,7 +11259,11 @@
    "hook": "Your life changes in one instant.",
    "bytes": 57372901,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-25T17:37",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "AR_GURU/02_ITS-CALLED-SHAKTIPAT_119s.mp4",
@@ -11255,7 +11271,11 @@
    "hook": "You've felt grace. It's called Shaktipat.",
    "bytes": 56658875,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-25T19:37",
+   "cta_keyword": "RISE",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_GURU/02_YOU-DONT-FEEL-WORTHY-OF-IT_89s.mp4",
@@ -11263,7 +11283,11 @@
    "hook": "You don't feel worthy of it.",
    "bytes": 56813532,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-25T09:46",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_GURU/02_YOUR-FAMILYS-SINS-LAST-SEVEN-GENERATIONS_104s.mp4",
@@ -11271,7 +11295,11 @@
    "hook": "Your family's sins last seven generations.",
    "bytes": 64305383,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-25T11:51",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   }
  ]
 }
