@@ -1,0 +1,21 @@
+{
+    "source": "v6oq1ll.mp4",
+    "brand": "KT_COMPASSR2R2R2",
+    "test": false,
+    "note": "24 Oct 2026 - second chance (round 4, last chance) for 'The Book That Will Make You Lucky' (Rumble v6oq1ll). Weekly agent, per PLANNING.md 2c. HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN: the r2 cut (full 151s, preamble included) failed on caption drift; the r3 cut (553.1-605.9, drawing only) fixed the drift but ended mid-thought on 'your way if' - 'things can go your way' is not a complete thought without the 'if you do a certain thing with your mind' that follows it, which check_plan correctly flagged. This cut keeps r3's clean start (skips the rambling which-school/theta-brainwave preamble, starts on the short pause-rich sentences of the drawing itself) but moves the end back to the drawing's own payoff - 'that was the moment that I knew that you can be lucky' (cue ending 598.3s) - the same clean, complete line the very first cut used, well before the dangling 'go your way if' conditional. RANDOM-MACHINE-BENDS-TO-YOUR-MIND, THE-RESULTS-WERE-ALREADY-SET and HOW-YOUR-DNA-REACTS-FROM-ANYWHERE are not re-cut again: each already failed two differently-edited attempts (recorded in ep_v6oq1ll_r2.json/_r3.json) on the same generic caption/sound-drift or repeated-phrase problem spanning the whole passage, with no sentence boundary available that dodges it without cutting the setup or the payoff - per PLANNING.md 2c (tries 2, skip unless the cause is obvious) they stay skipped rather than guessed at again.",
+    "clips": [
+        {
+            "slug": "HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN",
+            "in": 553.1,
+            "out": 598.3,
+            "start_words": "They had three prizes",
+            "end_words": "that you can be lucky",
+            "retry_of": "ep_v6oq1ll/HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN",
+            "hook": [
+                "How he predicted",
+                "his own win"
+            ],
+            "caption": "Back in the mid-1970s, a young Kevin Trudeau sat in a school auditorium at a Boy Scout raffle with maybe a hundred tickets in the drawing.\n\nHe'd just learned a technique for broadcasting intention on a specific brainwave frequency, the same science described in the book The Field. So he quietly decided: I want to win.\n\nThe first prize was called - not him. The second prize was called - not him. Then they pulled the third ticket and read his name before he even reached the stage. He says he saw it coming that clearly.\n\nThat was the moment he knew luck wasn't random for him anymore.\n\n#kevintrudeau #manifestation #lawofattraction #mindsetmatters #successstory #quantumfield"
+        }
+    ]
+}
