@@ -9073,6 +9073,42 @@
     "Your thoughts move",
     "physical matter."
    ]
+  },
+  "ar_v64x4f4_r2/ROCKEFELLERS-LAST-WORDS": {
+   "plan": "ar_v64x4f4_r2",
+   "source": "v64x4f4.mp4",
+   "brand": "AR_ONENESSR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_ROCKEFELLERS-LAST-WORDS_50s.mp4` - opens mid-sentence on \"fellow,\""
+   ],
+   "slug": "ROCKEFELLERS-LAST-WORDS",
+   "in": 3849.58,
+   "out": 3898.87,
+   "start_words": "the richest man in the world",
+   "end_words": "You have it within you right now",
+   "hook": [
+    "Rockefeller's words:",
+    "'Just a little more.'"
+   ]
+  },
+  "ar_v64x4f4_r2/PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD": {
+   "plan": "ar_v64x4f4_r2",
+   "source": "v64x4f4.mp4",
+   "brand": "AR_ONENESSR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD_42s.mp4` - opens mid-sentence on \"ancient times in\"; ends mid-thought on \"it's been always\"; phrase scrambled around \"ancient times in ancient\""
+   ],
+   "slug": "PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD",
+   "in": 608.56,
+   "out": 650.56,
+   "start_words": "in ancient times",
+   "end_words": "This is how it's been always",
+   "hook": [
+    "Priests gatekeep",
+    "your line to God."
+   ]
   }
  },
  "attempts": {

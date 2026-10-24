@@ -1,23 +1,23 @@
-## ar_v524rh9_r2: 0 of 4 clip(s) passed every gate
+## ar_v64x4f4_r2: 2 of 2 clip(s) passed every gate
 
 
-## 2026-10-23 13:46
-  note AR_FREQUENCYR2/POVERTY-IS-GENETIC: ending kept on the planner's words 'It's genetic' (next line completes it)
-  note AR_FREQUENCYR2/MADE-MILLIONS-BEFORE-18: ending kept on the planner's words 'all over the world in business' (cuts mid-sentence)
-ar_v524rh9_r2__s0 (AR_FREQUENCYR2): 2 of 2 passed pre-render gates
+## 2026-10-24 11:31
+  note AR_ONENESSR2/ROCKEFELLERS-LAST-WORDS: ending kept on the planner's words 'You have it within you right now' (next line completes it)
+  note AR_ONENESSR2/PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD: ending kept on the planner's words 'This is how it's been always' (introduces, does not claim)
+ar_v64x4f4_r2__s0 (AR_ONENESSR2): 2 of 2 passed pre-render gates
 
-RENDER ar_v524rh9_r2__s0
-  FAIL 01_POVERTY-IS-GENETIC_165s.mp4: [FAIL] 01_POVERTY-IS-GENETIC_165s.mp4                         28 captions vs the sound  median +0.10s  worst-10% 3.05s  | words captioned 99%  UNCAPTIONED SPEECH [(4.1, 6.0)]
-  FAIL 02_MADE-MILLIONS-BEFORE-18_44s.mp4: [FAIL] 02_MADE-MILLIONS-BEFORE-18_44s.mp4                     7 captions vs the sound  median +0.10s  worst-10% 0.73s  | words captioned 99%
-
-
-
-## 2026-10-23 13:51
-ar_v524rh9_r2__s1 (AR_FREQUENCYR2): 2 of 2 passed pre-render gates
-
-RENDER ar_v524rh9_r2__s1
-  FAIL 01_YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER_66s.mp4: [FAIL] 01_YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER_66s.mp4          10 captions vs the sound  median +0.05s  worst-10% 0.78s  | words captioned 99%
-  FAIL 02_SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE_63s.mp4: ends off the planned words: plan ends 'That's why I put this together', clip ends 'they choose to take it that'
+RENDER ar_v64x4f4_r2__s0
+  RETIME 01_PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD_42s.mp4: captions +0.41s off throughout - re-rendering once
+  PASS 01_PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD_42s.mp4  01_PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD_42s.mp4           20 captions vs the sound (word-refe
+       FIRST 5s : In ancient times, in ancient Egypt. | LAST  8s : Forgiveness, and then give you the penance. This is how it's been always.
+  PASS 02_ROCKEFELLERS-LAST-WORDS_50s.mp4  02_ROCKEFELLERS-LAST-WORDS_50s.mp4                     26 captions vs the sound (word-refe
+       === 02_ROCKEFELLERS-LAST-WORDS_50s.mp4  (50s) | FIRST 5s : A fellow of the richest man in the world was on his deathbed, making more money, working on new things. | LAST  8s : It is what we journeyed to, and it is nothing you have to attain. You have it within you right now.
+TEST MODE - passing clips NOT uploaded or queued: AR_ONENESSR2
 
 
-- **RETIRED** after 2 runs with nothing passing; its clips go back to the planner (factory/plans/_failed.json)
+- **NOT QUEUED** `02_ROCKEFELLERS-LAST-WORDS_50s.mp4` - opens mid-sentence on "fellow,"
+
+- **NOT QUEUED** `01_PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD_42s.mp4` - opens mid-sentence on "ancient times in"; ends mid-thought on "it's been always"; phrase scrambled around "ancient times in ancient"
+
+## UPLOAD
+nothing new to add
