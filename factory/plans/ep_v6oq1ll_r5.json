@@ -1,0 +1,18 @@
+{
+  "source": "v6oq1ll.mp4",
+  "brand": "KT_COMPASSR2R2R2R2",
+  "test": false,
+  "note": "24 Oct 2026 - second chance (round 5, last chance) for 'The Book That Will Make You Lucky' (Rumble v6oq1ll). Weekly agent, per PLANNING.md 2c. HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN: r4 (also 24 Oct) kept this exact in/out and start_words but ended on 'that you can be lucky' - the gate reported the clip actually rendered ending on 'i knew that you can be', dropping 'lucky'. The sentence has THREE occurrences of the word 'that' in a row ('...the moment that I knew that you can be lucky'), so the word-search for end_words most likely locked onto the wrong 'that' and stopped short. This attempt keeps everything else identical but drops the leading 'that' from end_words - 'you can be lucky' is a unique 4-word string in this clip with no other 'you' nearby to confuse the match, while still landing on the exact same payoff moment and out time (598.3s). RANDOM-MACHINE-BENDS-TO-YOUR-MIND, THE-RESULTS-WERE-ALREADY-SET and HOW-YOUR-DNA-REACTS-FROM-ANYWHERE stay skipped: each already failed on a generic caption/sound-drift or mid-teaching repeated-phrase problem with no sentence boundary that dodges it without cutting the setup or payoff.",
+  "clips": [
+    {
+      "slug": "HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN",
+      "in": 553.1,
+      "out": 598.3,
+      "start_words": "They had three prizes",
+      "end_words": "you can be lucky",
+      "retry_of": "ep_v6oq1ll/HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN",
+      "hook": ["How he predicted", "his own win"],
+      "caption": "Back in the mid-1970s, a young Kevin Trudeau sat in a school auditorium at a Boy Scout raffle with maybe a hundred tickets in the drawing.\n\nHe'd just learned a technique for broadcasting intention on a specific brainwave frequency, the same science described in the book The Field. So he quietly decided: I want to win.\n\nThe first prize was called - not him. The second prize was called - not him. Then they pulled the third ticket and read his name before he even reached the stage. He says he saw it coming that clearly.\n\nThat was the moment he knew luck wasn't random for him anymore.\n\n#kevintrudeau #manifestation #lawofattraction #mindsetmatters #successstory #quantumfield"
+    }
+  ]
+}
