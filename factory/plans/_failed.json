@@ -9163,6 +9163,42 @@
     "How he predicted",
     "his own win"
    ]
+  },
+  "ep_v62tz85/CARNEGIE-NEVER-TALKED-ABOUT-HIMSELF": {
+   "plan": "ep_v62tz85",
+   "source": "v62tz85.mp4",
+   "brand": "KT_HARVEST",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_CARNEGIE-NEVER-TALKED-ABOUT-HIMSELF_110s.mp4` - ends mid-thought on \"showing genuine interest\"; sentence starts with no stop: \"and The\"; sentence starts with no stop: \"distinction She\""
+   ],
+   "slug": "CARNEGIE-NEVER-TALKED-ABOUT-HIMSELF",
+   "in": 2633.18,
+   "out": 2749.82,
+   "start_words": "Carnegie shows up and they",
+   "end_words": "and showing genuine interest",
+   "hook": [
+    "How Dale Carnegie",
+    "won every room"
+   ]
+  },
+  "ep_v62tz85/NEVER-PITCH-ASK-ABOUT-FISH": {
+   "plan": "ep_v62tz85",
+   "source": "v62tz85.mp4",
+   "brand": "KT_HARVEST",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_NEVER-PITCH-ASK-ABOUT-FISH_154s.mp4` - ends mid-thought on \"about creating affinity\"; phrase scrambled around \"blah blah blah blah\"; phrase scrambled around \"couldn't sell insurance Couldn't\""
+   ],
+   "slug": "NEVER-PITCH-ASK-ABOUT-FISH",
+   "in": 2975.1,
+   "out": 3128.46,
+   "start_words": "There was a guy who",
+   "end_words": "about creating affinity",
+   "hook": [
+    "How one question",
+    "won the sale"
+   ]
   }
  },
  "attempts": {
@@ -9197,6 +9233,7 @@
   "ep_v6oq1ll_r2": 2,
   "ep_v7dfhw8_r3": 2,
   "ar_v524rh9_r2": 2,
-  "ep_v6oq1ll_r4": 2
+  "ep_v6oq1ll_r4": 2,
+  "ep_v6oq1ll_r5": 1
  }
 }
