@@ -11296,11 +11296,25 @@
    "hook": "$10,000 a year, doing nothing",
    "bytes": 37004552,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-24T19:45",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/De5WrSXis2c/",
+    "youtube": "https://youtube.com/shorts/1Z4FGvBOECg"
+   },
+   "caption_at_post": "Kevin Trudeau's advice to a couple drowning in bills: you have equity in that house. Sell it.\n\nThey loved the house - or thought they did. Turns out they'd only lived there six years. Not exactly a lifetime of memories.\n\nSo they sold it, had a garage sale, and invested every dollar instead of spending it.\n\nThree years later they told Kevin Trudeau: \"We're already earning $10,000 a year on our investments, and we don't have to do anything.\" They've since lost weight, saved more, and started having more fun than they've had in years.\n\nWhat's sitting in your house that could be working for you instead?\n\n#kevintrudeau #realestate #wealthmindset #financialfreedom #moneymindset #investing",
+   "posted_at": "2026-10-24T19:53",
+   "tiktok_retry": true
   },
   {
    "file": "KT_MEMORYR2R2R2R2/02_COUNTING-CARDS-250K-RENO_81s.mp4",
