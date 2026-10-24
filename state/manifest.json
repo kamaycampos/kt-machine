@@ -11076,11 +11076,25 @@
    "hook": "Why copying him still failed",
    "bytes": 64395671,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-24T09:47",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/De4SGnJjptL/",
+    "youtube": "https://youtube.com/shorts/VDlWZTADA1g"
+   },
+   "caption_at_post": "Guthrie Rinker Corporation was one of the biggest infomercial companies in the world. So they decided to copy Kevin Trudeau's mega memory show, exactly.\n\nSame set. A lookalike actor playing Kevin. The same script, word for word. The same lighting, the same camera angles.\n\nIt flopped. They called Kevin, baffled: how do you copy something a hundred percent and have it fail?\n\nHis answer: you copied everything except the one thing that mattered. The actor was performing belief. Kevin actually believed in what he was selling - and people can feel the difference.\n\nWhat are you copying from someone successful that you don't actually believe in yet?\n\n#kevintrudeau #marketing #entrepreneurship #businessowner #successmindset #salestips",
+   "posted_at": "2026-10-24T09:54",
+   "tiktok_retry": true
   },
   {
    "file": "KT_ANCHOR/01_HOW-LITTLE-MEDITATION-YOU-ACTUALLY-NEED_66s.mp4",
