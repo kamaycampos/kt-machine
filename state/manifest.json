@@ -11390,7 +11390,11 @@
    "hook": "Gave $250,000, never asked back",
    "bytes": 94956254,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-25T12:48",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_HARVEST/02_TWENTY-YEARS-LATER-1-MILLION_55s.mp4",
@@ -11398,7 +11402,11 @@
    "hook": "20 years later, $1 million",
    "bytes": 39418182,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-25T09:23",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
