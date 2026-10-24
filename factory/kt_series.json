@@ -7541,7 +7541,8 @@
      "How to save",
      "$150 a month"
     ],
-    "caption": "Someone begged Kevin Trudeau to come fix their finances. He said yes - on one condition: show me everything.\n\nFirst target: subscriptions. A gym membership they hadn't used in two years - gone. He showed them home workouts instead.\n\nThen insurance: switching car insurance saved $1,000 a year. Combining two phone plans onto one carrier saved another $150 a month.\n\nNone of it was complicated. It just required someone willing to actually look.\n\nIf Kevin Trudeau opened your bank statement tonight, what would he cut first?\n\n#kevintrudeau #moneymindset #budgeting #financialfreedom #savemoney #wealthmindset"
+    "caption": "Someone begged Kevin Trudeau to come fix their finances. He said yes - on one condition: show me everything.\n\nFirst target: subscriptions. A gym membership they hadn't used in two years - gone. He showed them home workouts instead.\n\nThen insurance: switching car insurance saved $1,000 a year. Combining two phone plans onto one carrier saved another $150 a month.\n\nNone of it was complicated. It just required someone willing to actually look.\n\nIf Kevin Trudeau opened your bank statement tonight, what would he cut first?\n\n#kevintrudeau #moneymindset #budgeting #financialfreedom #savemoney #wealthmindset",
+    "locked": true
    }
   ]
  },
@@ -7699,5 +7700,82 @@
   "brand": "AR_ONENESSR2",
   "note": "24 Oct 2026 - second chances for 'Awakening and Enlightenment From A Self Realized Master | Ep. 79' (Rumble v64x4f4). Awakened Rise weekly agent, re-cut per AR_PLANNING.md 2c. ROCKEFELLERS-LAST-WORDS opened mid-sentence on 'more.' (the tail of 'you think it must be a little more') instead of the planned 'John D. Rockefeller,' - moved the in to the next cue boundary (3849.58) and dropped the name from start_words, opening on 'the richest man in the world' instead (the hook already names him). PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD had 6 captions drift up to 0.84s - its old in (603.58) started mid-caption-block instead of on a block boundary, same pattern as other mid-block starts on this account; moved the in to the next clean block boundary (608.56), opening on 'In ancient times, in ancient Egypt, where the priests were special' instead, which is a stronger, more concrete opening anyway. SPIRITUAL-HIGHS-ARE-IMITATION-CRAB (25 captions wrong, clip-wide, not an edge issue), A-FISH-BREACHED-CALLED-IT-HEAVEN (two scrambled phrases - 'i've reached heaven I've', 'i've reached nirvana i've' - sitting in the middle of the restaurant-story payoff, no edge excludes them without losing the setup or the turn), and A-DOG-WHISTLE-EXPOSES-YOUR-SENSES ('the spoken word was on screen in only 8 of 11 moments' - not one of the documented failure patterns, no clear fix) are skipped - last chance on all three not spent since none of these plans this run.",
   "clips": []
+ },
+ "ar_v4zcvll": {
+  "source": "v4zcvll.mp4",
+  "brand": "AR_GURU",
+  "note": "24 Oct 2026 - 'The Power of a Guru | The Kevin Trudeau Show | Ep. 18' (Rumble v4zcvll). Awakened Rise weekly agent. This episode is saturated with pitches for the Global Information Network / Guru Kev book / a $5,000 seminar - every clip below was cut to end or start clear of those mentions (e.g. the ancestral-DNA clip ends right before 'this is one of the energetic blocks that are in the money processes'; the deserve-affirmation clip starts right after 'when you join the club you're going to get the self-image lessons'). Also skipped for the same reason: the opening 'three reasons you're not manifesting' framing (introduced as being from the paid seminar) and the full caller-clearing demo (starts clean but the energetic-blocks line sits in the middle of it).",
+  "clips": [
+   {
+    "slug": "TOLSTOYS-LIFE-CHANGED-IN-ONE-INSTANT",
+    "in": 1268.66,
+    "out": 1387.91,
+    "hook": [
+     "Your life changes",
+     "in one instant."
+    ],
+    "caption": "Leo Tolstoy described the exact moment his own life changed — not over years, but in a single instant of recognition.\n\nMost people wait for a reason to feel different: a relationship, a promotion, a better year. But the shift he's describing isn't earned slowly. It's the moment you stop sleepwalking through your own life and actually feel something real move through you — and once it does, nothing about how you see things goes back to how it was.\n\nComment RISE and I'll send you what that moment actually feels like.\n\n#awakening #consciousness #spirituality #subconscious #oneness #kevintrudeau"
+   },
+   {
+    "slug": "ITS-CALLED-SHAKTIPAT",
+    "in": 1562.22,
+    "out": 1681.15,
+    "hook": [
+     "You've felt grace.",
+     "It's called Shaktipat."
+    ],
+    "caption": "There's a word for the feeling you've had — the certainty, the peace, the sense that everything is suddenly okay. In the East it's called Shaktipat: the descent of divine energy.\n\nIt isn't exclusive to one tradition. Every religion has its own name for the same transmission — a moment where something outside you reaches in and lights up what was already there. You don't travel to find it. It finds you, usually right at the point you've stopped resisting and let go.\n\nComment RISE and I'll send you how to recognize it when it happens.\n\n#grace #awakening #consciousness #spirituality #oneness #kevintrudeau"
+   },
+   {
+    "slug": "CHRIST-WAS-CALLED-A-GURU-TOO",
+    "in": 1780.94,
+    "out": 1894.15,
+    "hook": [
+     "You met a guru.",
+     "Missed it."
+    ],
+    "caption": "A guru isn't a costume — not the robes, not the accent, not the pillow he's sitting cross-legged on. It's a specific role: someone whose purpose is to hand grace to other people.\n\nBy that definition, the East doesn't own the word. Christ did the same thing for his followers without anyone calling it that, and so has every true teacher in every tradition who pointed people back to what was already inside them instead of keeping them dependent — a nearness some traditions call a 'Buddha field,' that works the same way no matter the name on it.\n\nComment RISE and I'll send you how to spot the real ones.\n\n#brotherhood #disclosure #awakening #consciousness #oneness #kevintrudeau"
+   },
+   {
+    "slug": "YOUR-FAMILYS-SINS-LAST-SEVEN-GENERATIONS",
+    "in": 3306.02,
+    "out": 3410.07,
+    "hook": [
+     "Your family's sins",
+     "last seven generations."
+    ],
+    "caption": "It's in the Bible: the sins of the father are passed down through seven generations. Most people read that as punishment. It's actually genetics.\n\nSomewhere in your mother's line, someone tried something, failed, and got hurt badly enough that the belief \"I'll never try that again\" became wiring, not just a memory. They had children. The children inherited the energy, the same way they'd inherit military genes from a soldier or artistic genes from a painter — which means it was never a character flaw. It's just sitting in the field, waiting to be cleared.\n\nComment RISE and I'll send you how.\n\n#subconscious #manifestation #awakening #consciousness #abundance #kevintrudeau"
+   },
+   {
+    "slug": "A-WISH-IS-POWERLESS",
+    "in": 3676.98,
+    "out": 3743.07,
+    "hook": [
+     "A wish is powerless.",
+     "Needing wins."
+    ],
+    "caption": "A wish has no energy behind it — that's exactly why it's called wishful thinking. A want isn't much stronger either: it broadcasts lack, so the universe keeps handing you more wanting instead of having.\n\nA need is different. Not \"I'd like this,\" but \"I have to have this, there's no option.\" That's the exact point the signal gets strong enough to actually move something, strong enough to put you on the frequency where things start showing up instead of staying just out of reach. Desperation isn't the enemy of manifesting. Indifference is.\n\nComment RISE and I'll send you how to find that edge on purpose.\n\n#manifestation #lawofattraction #subconscious #awakening #frequency #kevintrudeau"
+   },
+   {
+    "slug": "YOU-DONT-FEEL-WORTHY-OF-IT",
+    "in": 3789.83,
+    "out": 3879.19,
+    "hook": [
+     "You don't feel",
+     "worthy of it."
+    ],
+    "caption": "Every wealthy person shares one quiet belief: they think they deserve it. The best seat, the money, the love, the respect — owed to them, not earned through guilt.\n\nUnsuccessful people almost never feel that. Not because they haven't worked hard enough, but because somewhere they decided they're not good enough, not worthy, not the kind of person things come easily to — and the universe keeps matching that belief right back to them. The fix isn't more effort. It's saying it out loud until you actually believe it: I deserve this.\n\nComment RISE and I'll send you the exact words to use.\n\n#manifestation #abundance #subconscious #awakening #consciousness #kevintrudeau"
+   },
+   {
+    "slug": "ADVERSITY-ISNT-RANDOM-ITS-KARMA",
+    "in": 2128.26,
+    "out": 2196.93,
+    "hook": [
+     "Your pain isn't random.",
+     "It's karma."
+    ],
+    "caption": "When something goes wrong, you have exactly two options: react, or respond. Most people never even notice there's a choice.\n\nWhat actually triggers the irrational, uncontrollable reaction isn't the event itself — it's an old energetic imprint getting activated by it. That's not bad luck. It's karma, something you created, and the universe isn't doing it to you, it's doing it for you: a chance to finally clear that imprint instead of reliving it one more time. Earl Nightingale said successful people aren't people without problems — they're the ones who learn to respond instead of react.\n\nComment RISE and I'll send you how.\n\n#subconscious #manifestation #awakening #consciousness #karma #kevintrudeau"
+   }
+  ]
  }
 }

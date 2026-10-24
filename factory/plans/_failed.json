@@ -9109,6 +9109,42 @@
     "Priests gatekeep",
     "your line to God."
    ]
+  },
+  "ar_v4zcvll/STOP-HATE-IS-THE-WRONG-GOAL": {
+   "plan": "ar_v4zcvll",
+   "source": "v4zcvll.mp4",
+   "brand": "AR_GURU",
+   "tries": 1,
+   "why": [
+    "FAIL 02_STOP-HATE-IS-THE-WRONG-GOAL_161s.mp4: [FAIL] 02_STOP-HATE-IS-THE-WRONG-GOAL_161s.mp4                23 captions vs the sound  median -0.01s  worst-10% 0.04s  | words captioned 102%  UNCAPTIONED SPEECH [(61.2, 62.7)]"
+   ],
+   "slug": "STOP-HATE-IS-THE-WRONG-GOAL",
+   "in": 2480.1,
+   "out": 2640.96,
+   "start_words": "I want to stop war",
+   "end_words": "you're achieving your goal",
+   "hook": [
+    "Stop hate is",
+    "the wrong goal."
+   ]
+  },
+  "ar_v4zcvll/EVEN-THE-BIBLE-CONTRADICTS-ITSELF": {
+   "plan": "ar_v4zcvll",
+   "source": "v4zcvll.mp4",
+   "brand": "AR_GURU",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_EVEN-THE-BIBLE-CONTRADICTS-ITSELF_60s.mp4` - opens mid-sentence on \"showing\"; phrase scrambled around \"An eye for an\"; phrase scrambled around \"an eye for an\""
+   ],
+   "slug": "EVEN-THE-BIBLE-CONTRADICTS-ITSELF",
+   "in": 2882.88,
+   "out": 2947.0,
+   "start_words": "taking Bible verses and showing",
+   "end_words": "so which one is it",
+   "hook": [
+    "Even the Bible",
+    "contradicts itself here."
+   ]
   }
  },
  "attempts": {
@@ -9142,6 +9178,7 @@
   "ep_v67ions": 2,
   "ep_v6oq1ll_r2": 2,
   "ep_v7dfhw8_r3": 2,
-  "ar_v524rh9_r2": 2
+  "ar_v524rh9_r2": 2,
+  "ep_v6oq1ll_r4": 1
  }
 }
