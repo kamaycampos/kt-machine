@@ -1,10 +1,10 @@
 {
- "at": "2026-10-24T04:59",
+ "at": "2026-10-24T08:23",
  "profile": {
-  "following_count": 8,
   "likes_count": 5864,
   "video_count": 166,
-  "follower_count": 410
+  "follower_count": 410,
+  "following_count": 8
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -249,7 +249,7 @@
   },
   "KT_HUSTLE/02_WHY-THE-PRODUCT-NEVER-MATTERS_85s.mp4": {
    "id": "7690348359667780877",
-   "view_count": 6,
+   "view_count": 7,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38176,
+   "view_count": 38178,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
