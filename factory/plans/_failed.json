@@ -9145,6 +9145,24 @@
     "Even the Bible",
     "contradicts itself here."
    ]
+  },
+  "ep_v6oq1ll_r4/HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN": {
+   "plan": "ep_v6oq1ll_r4",
+   "source": "v6oq1ll.mp4",
+   "brand": "KT_COMPASSR2R2R2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN_45s.mp4: ends off the planned words: plan ends 'that you can be lucky', clip ends 'i knew that you can be'"
+   ],
+   "slug": "HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN",
+   "in": 553.1,
+   "out": 598.3,
+   "start_words": "They had three prizes",
+   "end_words": "that you can be lucky",
+   "hook": [
+    "How he predicted",
+    "his own win"
+   ]
   }
  },
  "attempts": {
@@ -9179,6 +9197,6 @@
   "ep_v6oq1ll_r2": 2,
   "ep_v7dfhw8_r3": 2,
   "ar_v524rh9_r2": 2,
-  "ep_v6oq1ll_r4": 1
+  "ep_v6oq1ll_r4": 2
  }
 }
