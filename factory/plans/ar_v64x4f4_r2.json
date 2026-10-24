@@ -1,0 +1,34 @@
+{
+ "source": "v64x4f4.mp4",
+ "brand": "AR_ONENESSR2",
+ "test": false,
+ "note": "24 Oct 2026 - second chances for 'Awakening and Enlightenment From A Self Realized Master | Ep. 79' (Rumble v64x4f4). Awakened Rise weekly agent, re-cut per AR_PLANNING.md 2c. ROCKEFELLERS-LAST-WORDS opened mid-sentence on 'more.' (the tail of 'you think it must be a little more') instead of the planned 'John D. Rockefeller,' - moved the in to the next cue boundary (3849.58) and dropped the name from start_words, opening on 'the richest man in the world' instead (the hook already names him). PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD had 6 captions drift up to 0.84s - its old in (603.58) started mid-caption-block instead of on a block boundary, same pattern as other mid-block starts on this account; moved the in to the next clean block boundary (608.56), opening on 'In ancient times, in ancient Egypt, where the priests were special' instead, which is a stronger, more concrete opening anyway. SPIRITUAL-HIGHS-ARE-IMITATION-CRAB (25 captions wrong, clip-wide, not an edge issue), A-FISH-BREACHED-CALLED-IT-HEAVEN (two scrambled phrases - 'i've reached heaven I've', 'i've reached nirvana i've' - sitting in the middle of the restaurant-story payoff, no edge excludes them without losing the setup or the turn), and A-DOG-WHISTLE-EXPOSES-YOUR-SENSES ('the spoken word was on screen in only 8 of 11 moments' - not one of the documented failure patterns, no clear fix) are skipped - last chance on all three not spent since none of these plans this run.",
+ "clips": [
+  {
+   "slug": "ROCKEFELLERS-LAST-WORDS",
+   "in": 3849.58,
+   "out": 3898.87,
+   "start_words": "the richest man in the world",
+   "end_words": "You have it within you right now",
+   "retry_of": "ar_v64x4f4/ROCKEFELLERS-LAST-WORDS",
+   "hook": [
+    "Rockefeller's words:",
+    "'Just a little more.'"
+   ],
+   "caption": "John D. Rockefeller was the richest man who had ever lived, and on his deathbed, he was still working on making more money. A reporter asked him the obvious question: how much more do you need? With tears in his eyes, he said, 'just a little more.'\n\nThe richest man in the world, and it was never enough — because what he was actually chasing was never in the money to begin with. It was the feeling of being whole, and that was available the entire time, free, already inside him.\n\nComment RISE and I'll send you where that feeling actually comes from.\n\n#manifestation #abundance #awakening #consciousness #oneness #kevintrudeau"
+  },
+  {
+   "slug": "PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD",
+   "in": 608.56,
+   "out": 650.56,
+   "start_words": "in ancient times",
+   "end_words": "This is how it's been always",
+   "retry_of": "ar_v64x4f4/PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD",
+   "hook": [
+    "Priests gatekeep",
+    "your line to God."
+   ],
+   "caption": "In ancient Egypt, only the priests were allowed near the gods. In Judaism, only the Levites could enter the holy of holies. In Catholic practice, you still confess to a priest instead of speaking to God directly — he's the intermediary, the one who hands your forgiveness back to you.\n\nSame structure, every era, every religion: someone positions themselves between you and the source, and once you believe you need them, you never leave. You didn't need a middleman then, and the part of you that's actually divine doesn't need one now either.\n\nComment RISE and I'll send you how to go direct.\n\n#brotherhood #disclosure #awakening #consciousness #oneness #kevintrudeau"
+  }
+ ]
+}
