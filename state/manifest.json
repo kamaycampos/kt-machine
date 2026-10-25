@@ -11470,7 +11470,11 @@
    "hook": "Skull and Bones keeps this secret.",
    "bytes": 43125334,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-26T07:21",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
