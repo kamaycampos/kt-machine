@@ -11284,11 +11284,25 @@
    "hook": "How Kiyosaki defines financial independence",
    "bytes": 58501312,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-25T07:55",
    "cta_keyword": "MONEY",
    "cta_variant": 8,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/De6qouKDJF1/",
+    "youtube": "https://youtube.com/shorts/GhIBOBZWnKM"
+   },
+   "caption_at_post": "Kevin Trudeau was in a hot tub on a billionaire's yacht in Sydney Harbor when his cell phone rang.\n\nIt was Robert Kiyosaki, author of Rich Dad Poor Dad, asking if Kevin knew an investor named Renee Rifkin. Kevin was sitting right next to him - it was Rifkin's yacht, his own 50/50 partner in a venture that did $300 million in two years.\n\nKiyosaki's real lesson, Kevin says, is simple: stop buying things that lose value. Buy things that go up in value and cost you nothing to hold - that's how you become financially independent.\n\nWhich one did your last purchase do?\n\n#kevintrudeau #richdadpoordad #wealthmindset #moneymindset #investing #financialfreedom",
+   "posted_at": "2026-10-25T08:06",
+   "tiktok_retry": true
   },
   {
    "file": "KT_DIVIDENDR2/02_10000-A-YEAR-DOING-NOTHING_56s.mp4",
