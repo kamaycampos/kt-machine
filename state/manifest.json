@@ -11302,7 +11302,8 @@
    },
    "caption_at_post": "Kevin Trudeau was in a hot tub on a billionaire's yacht in Sydney Harbor when his cell phone rang.\n\nIt was Robert Kiyosaki, author of Rich Dad Poor Dad, asking if Kevin knew an investor named Renee Rifkin. Kevin was sitting right next to him - it was Rifkin's yacht, his own 50/50 partner in a venture that did $300 million in two years.\n\nKiyosaki's real lesson, Kevin says, is simple: stop buying things that lose value. Buy things that go up in value and cost you nothing to hold - that's how you become financially independent.\n\nWhich one did your last purchase do?\n\n#kevintrudeau #richdadpoordad #wealthmindset #moneymindset #investing #financialfreedom",
    "posted_at": "2026-10-25T08:06",
-   "tiktok_retry": true
+   "tiktok_retry": true,
+   "tiktok_tries": 1
   },
   {
    "file": "KT_DIVIDENDR2/02_10000-A-YEAR-DOING-NOTHING_56s.mp4",
@@ -11387,12 +11388,26 @@
    "caption": "When something goes wrong, you have exactly two options: react, or respond. Most people never even notice there's a choice.\n\nWhat actually triggers the irrational, uncontrollable reaction isn't the event itself \u2014 it's an old energetic imprint getting activated by it. That's not bad luck. It's karma, something you created, and the universe isn't doing it to you, it's doing it for you: a chance to finally clear that imprint instead of reliving it one more time. Earl Nightingale said successful people aren't people without problems \u2014 they're the ones who learn to respond instead of react.\n\nComment RISE and I'll send you how.\n\n#subconscious #manifestation #awakening #consciousness #karma #kevintrudeau",
    "hook": "Your pain isn't random. It's karma.",
    "bytes": 38199025,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-25T08:06",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1739032807201897/",
+    "instagram": "https://www.instagram.com/reel/De6s2MOCBBl/",
+    "youtube": "https://youtube.com/shorts/4LXtiwll47M"
+   },
+   "caption_at_post": "When something goes wrong, you have exactly two options: react, or respond. Most people never even notice there's a choice.\n\nWhat actually triggers the irrational, uncontrollable reaction isn't the event itself \u2014 it's an old energetic imprint getting activated by it. That's not bad luck. It's karma, something you created, and the universe isn't doing it to you, it's doing it for you: a chance to finally clear that imprint instead of reliving it one more time. Earl Nightingale said successful people aren't people without problems \u2014 they're the ones who learn to respond instead of react.\n\nComment RISE and I'll send you how.\n\n#subconscious #manifestation #awakening #consciousness #karma #kevintrudeau",
+   "posted_at": "2026-10-25T08:28"
   },
   {
    "file": "AR_GURU/01_CHRIST-WAS-CALLED-A-GURU-TOO_113s.mp4",
@@ -11496,7 +11511,11 @@
    "hook": "Plant now. You harvest later.",
    "bytes": 56473224,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-26T10:12",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_PURPOSE/02_TEN-MILLION-BEFORE-THE-INHERITANCE_165s.mp4",
@@ -11504,7 +11523,11 @@
    "hook": "Ten million dollars before any inheritance.",
    "bytes": 130924718,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-26T12:28",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "KT_COMPASSR2R2R2R2R2/01_RANDOM-MACHINE-BENDS-TO-YOUR-MIND_67s.mp4",
@@ -11512,7 +11535,11 @@
    "hook": "How your mind bends random numbers",
    "bytes": 56452198,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-25T16:56",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_COMPASSR2R2R2R2R2/02_THE-RESULTS-WERE-ALREADY-SET_67s.mp4",
@@ -11520,7 +11547,11 @@
    "hook": "How your results were already set",
    "bytes": 50618726,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-26T08:00",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "KT_VERDICT/01_OUT-OF-PRISON-WITH-NOTHING_100s.mp4",
@@ -11528,7 +11559,11 @@
    "hook": "How he left prison broke",
    "bytes": 60003827,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-26T09:53",
+   "cta_keyword": "MONEY",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_VERDICT/02_300-MILLION-NEVER-EXISTED_90s.mp4",
@@ -11536,7 +11571,11 @@
    "hook": "How $300 million was never real",
    "bytes": 62303589,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-25T20:19",
+   "cta_keyword": "MONEY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_VERDICT/02_46-PAGES-FTC-GOT-NOTHING_64s.mp4",
@@ -11544,7 +11583,11 @@
    "hook": "How he won every single page",
    "bytes": 42281613,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-25T14:48",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   }
  ]
 }
