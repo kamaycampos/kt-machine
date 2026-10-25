@@ -1,12 +1,22 @@
-## ep_v6oq1ll_r5: 0 of 1 clip(s) passed every gate
+## ar_v524rh9_r3: 1 of 1 clip(s) passed every gate
 
 
-## 2026-10-25 04:41
-ep_v6oq1ll_r5__s0 (KT_COMPASSR2R2R2R2): 1 of 1 passed pre-render gates
+## 2026-10-25 11:17
+  note AR_FREQUENCYR3/SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE: ending kept on the planner's words 'on a large scale' (introduces, does not claim)
+ar_v524rh9_r3__s0 (AR_FREQUENCYR3): 1 of 1 passed pre-render gates
 
-RENDER ep_v6oq1ll_r5__s0
-  RETIME 01_HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN_45s.mp4: captions +0.67s off throughout - re-rendering once
-  FAIL 01_HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN_45s.mp4: ends off the planned words: plan ends 'you can be lucky', clip ends 'i knew that you can be'
+RENDER ar_v524rh9_r3__s0
+  PASS 01_SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE_68s.mp4  01_SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE_68s.mp4       14 captions vs the sound  median +0
+       FIRST 5s : Why did Henry Ford and others not want people to have it? | LAST  8s : It is fine. That is why I put this together. It is the first time in history that this information is being released to the general public on a large scale.
+TEST MODE - passing clips NOT uploaded or queued: AR_FREQUENCYR3
 
 
-- **RETIRED** after 2 runs with nothing passing; its clips go back to the planner (factory/plans/_failed.json)
+## UPLOAD
+1 clip(s) to add:
+   AR_FREQUENCYR3/01_SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE_68s.mp4  (43 MB)
+      + 01_SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE_68s__story.mp4
+      + 01_SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE_68s__yt59.mp4
+   added AR_FREQUENCYR3/01_SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE_68s.mp4
+
+manifest now holds 469 clips
+commit and push state/manifest.json to let the machine see them
