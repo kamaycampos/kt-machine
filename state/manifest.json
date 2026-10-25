@@ -11449,12 +11449,26 @@
    "caption": "Every wealthy person shares one quiet belief: they think they deserve it. The best seat, the money, the love, the respect \u2014 owed to them, not earned through guilt.\n\nUnsuccessful people almost never feel that. Not because they haven't worked hard enough, but because somewhere they decided they're not good enough, not worthy, not the kind of person things come easily to \u2014 and the universe keeps matching that belief right back to them. The fix isn't more effort. It's saying it out loud until you actually believe it: I deserve this.\n\nComment RISE and I'll send you the exact words to use.\n\n#manifestation #abundance #subconscious #awakening #consciousness #kevintrudeau",
    "hook": "You don't feel worthy of it.",
    "bytes": 56813532,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261025140628905FD704822123AE0B23'}}"
+   },
    "scheduled_at": "2026-10-25T09:46",
    "cta_keyword": "YES",
    "cta_variant": 2,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1073916898981354/",
+    "instagram": "https://www.instagram.com/reel/De64UhACZmB/",
+    "youtube": "https://youtube.com/shorts/LVe38STpdp8"
+   },
+   "caption_at_post": "Every wealthy person shares one quiet belief: they think they deserve it. The best seat, the money, the love, the respect \u2014 owed to them, not earned through guilt.\n\nUnsuccessful people almost never feel that. Not because they haven't worked hard enough, but because somewhere they decided they're not good enough, not worthy, not the kind of person things come easily to \u2014 and the universe keeps matching that belief right back to them. The fix isn't more effort. It's saying it out loud until you actually believe it: I deserve this.\n\nComment RISE and I'll send you the exact words to use.\n\n#manifestation #abundance #subconscious #awakening #consciousness #kevintrudeau",
+   "posted_at": "2026-10-25T10:06"
   },
   {
    "file": "AR_GURU/02_YOUR-FAMILYS-SINS-LAST-SEVEN-GENERATIONS_104s.mp4",
@@ -11505,7 +11519,7 @@
    "caption_at_post": "Twenty years after quietly covering a friend's $250,000 bail, Kevin Trudeau got a phone call he didn't expect.\n\nThe friend said he still couldn't believe Kevin had never once asked for the money back.\n\nHe said a couple of good real estate deals had finally put him in a position to pay it off.\n\nHe didn't write a check for $250,000. He wrote one for $1 million, and said, \"I always remember my friends.\"\n\nWhat you give without strings has a way of coming back multiplied.\n\n#kevintrudeau #wealthmindset #givingback #manifestation #moneymindset #success",
    "posted_at": "2026-10-25T09:25",
    "tiktok_retry": true,
-   "tiktok_tries": 1
+   "tiktok_tries": 2
   },
   {
    "file": "AR_FREQUENCYR3/01_SKULL-AND-BONES-HIDES-THIS-ON-PURPOSE_68s.mp4",
