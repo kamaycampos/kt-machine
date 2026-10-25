@@ -11413,12 +11413,26 @@
    "caption": "A guru isn't a costume \u2014 not the robes, not the accent, not the pillow he's sitting cross-legged on. It's a specific role: someone whose purpose is to hand grace to other people.\n\nBy that definition, the East doesn't own the word. Christ did the same thing for his followers without anyone calling it that, and so has every true teacher in every tradition who pointed people back to what was already inside them instead of keeping them dependent \u2014 a nearness some traditions call a 'Buddha field,' that works the same way no matter the name on it.\n\nComment RISE and I'll send you how to spot the real ones.\n\n#brotherhood #disclosure #awakening #consciousness #oneness #kevintrudeau",
    "hook": "You met a guru. Missed it.",
    "bytes": 47079058,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261025190707D9A5A6A68A4736C2E599'}}"
+   },
    "scheduled_at": "2026-10-25T14:45",
    "cta_keyword": "LUCKY",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1843447570125744/",
+    "instagram": "https://www.instagram.com/reel/De7atydiSjK/",
+    "youtube": "https://youtube.com/shorts/_lihGFZA384"
+   },
+   "caption_at_post": "A guru isn't a costume \u2014 not the robes, not the accent, not the pillow he's sitting cross-legged on. It's a specific role: someone whose purpose is to hand grace to other people.\n\nBy that definition, the East doesn't own the word. Christ did the same thing for his followers without anyone calling it that, and so has every true teacher in every tradition who pointed people back to what was already inside them instead of keeping them dependent \u2014 a nearness some traditions call a 'Buddha field,' that works the same way no matter the name on it.\n\nComment RISE and I'll send you how to spot the real ones.\n\n#brotherhood #disclosure #awakening #consciousness #oneness #kevintrudeau",
+   "posted_at": "2026-10-25T15:07"
   },
   {
    "file": "AR_GURU/01_TOLSTOYS-LIFE-CHANGED-IN-ONE-INSTANT_119s.mp4",
@@ -11638,11 +11652,25 @@
    "hook": "How he won every single page",
    "bytes": 42281613,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-25T14:48",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/De7bBzoAB4J/",
+    "youtube": "https://youtube.com/shorts/N7cqjapAeNo"
+   },
+   "caption_at_post": "After waiting four months for a ruling, Kevin Trudeau's new judge finally came back with a 46-page decision.\n\nPage after page said the same thing: I agree with Trudeau on this point. Then came the FTC's requests, one after another: denied, denied, denied.\n\nForty-six pages, and the government that spent years and tens of millions of dollars trying to put him back in prison got exactly nothing it asked for.\n\nRight after that ruling, the FTC called and said it was time to settle.\n\nSometimes the system takes its time, but it still gets there.\n\nHave you ever been patient enough to let the truth catch up?\n\n#kevintrudeau #justice #patience #vindication #ftc #truth",
+   "posted_at": "2026-10-25T15:09",
+   "tiktok_retry": true
   }
  ]
 }
