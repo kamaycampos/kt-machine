@@ -11604,11 +11604,25 @@
    "hook": "How your mind bends random numbers",
    "bytes": 56452198,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-25T16:56",
    "cta_keyword": "BRAIN",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/De7oZCtgsH0/",
+    "youtube": "https://youtube.com/shorts/_7hrNL3S6ks"
+   },
+   "caption_at_post": "Researchers ran a random number generator a billion times. Right around half the time it landed on one number, half on the other, like flipping a fair coin.\n\nThen they sat someone down in front of the same machine and had them simply want more ones than zeros, over and over.\n\nThe number one started coming up more. Not 50/50 anymore. 51, even 52 percent.\n\nThey repeated it again and again. Every time, the person's desire bent the outcome.\n\nKevin Trudeau calls this empirical evidence that the mind can affect pure chance.\n\nHave you ever wanted something so clearly that it just seemed to show up?\n\n#kevintrudeau #manifesting #yourwishisyourcommand #luck #mindset #science",
+   "posted_at": "2026-10-25T17:06",
+   "tiktok_retry": true
   },
   {
    "file": "KT_COMPASSR2R2R2R2R2/02_THE-RESULTS-WERE-ALREADY-SET_67s.mp4",
