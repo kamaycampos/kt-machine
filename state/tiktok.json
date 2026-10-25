@@ -1,10 +1,10 @@
 {
- "at": "2026-10-25T07:04",
+ "at": "2026-10-25T11:58",
  "profile": {
-  "video_count": 166,
   "follower_count": 410,
   "following_count": 8,
-  "likes_count": 5866
+  "likes_count": 5866,
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -379,7 +379,7 @@
   },
   "KT_YWIYC/01_HOW-TO-START-ACTUALLY-DOING-IT_87s.mp4": {
    "id": "7689168512304123150",
-   "view_count": 228,
+   "view_count": 229,
    "like_count": 12,
    "comment_count": 0,
    "share_count": 0,
@@ -449,7 +449,7 @@
   },
   "KT_SECRET/01_THE-SAME-RECORDS_150s.mp4": {
    "id": "7688541338953862413",
-   "view_count": 417,
+   "view_count": 418,
    "like_count": 40,
    "comment_count": 2,
    "share_count": 1,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38180,
+   "view_count": 38182,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
