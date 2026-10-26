@@ -11621,12 +11621,26 @@
    "caption": "You planted something. You can't see it yet, and that's making you anxious \u2014 so you keep digging the dirt back up to check.\n\nA seed doesn't answer to anxiety. There's a time to plant and a time to harvest, and no amount of worry moves the calendar. Do the quiet work, then let the season do what a season does.\n\nOne day you won't even remember deciding. You'll just notice you're already living it.\n\nComment RISE and I'll send you how to do the quiet work.\n\n#manifestation #patience #subconscious #awakening #consciousness #kevintrudeau",
    "hook": "Plant now. You harvest later.",
    "bytes": 56473224,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-26T10:12",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1102278199340541/",
+    "instagram": "https://www.instagram.com/reel/De9fgHHgAWl/",
+    "youtube": "https://youtube.com/shorts/AygzOjjAKvs"
+   },
+   "caption_at_post": "You planted something. You can't see it yet, and that's making you anxious \u2014 so you keep digging the dirt back up to check.\n\nA seed doesn't answer to anxiety. There's a time to plant and a time to harvest, and no amount of worry moves the calendar. Do the quiet work, then let the season do what a season does.\n\nOne day you won't even remember deciding. You'll just notice you're already living it.\n\nComment RISE and I'll send you how to do the quiet work.\n\n#manifestation #patience #subconscious #awakening #consciousness #kevintrudeau",
+   "posted_at": "2026-10-26T10:29"
   },
   {
    "file": "AR_PURPOSE/02_TEN-MILLION-BEFORE-THE-INHERITANCE_165s.mp4",
@@ -11716,7 +11730,8 @@
    },
    "caption_at_post": "After ten years in prison, Kevin Trudeau walked out with two suitcases and some old clothes. That's it.\n\nNo toothbrush. No money. No home. He moved into a friend's living room because he had nowhere else to go.\n\nThe gray t-shirt and sweatpants in his first photos after release came from the prison commissary. The shoes had holes in the soles. The socks were ripped.\n\nHe kept wearing those same clothes for years afterward, not out of nostalgia, but because he genuinely couldn't afford to replace them.\n\nRock bottom, for him, was starting over with nothing to his name.\n\nIf you had to rebuild from zero tomorrow, would you know where to start?\n\n#kevintrudeau #startingover #resilience #prison #rockbottom #mindset",
    "posted_at": "2026-10-26T10:07",
-   "tiktok_retry": true
+   "tiktok_retry": true,
+   "tiktok_tries": 1
   },
   {
    "file": "KT_VERDICT/02_300-MILLION-NEVER-EXISTED_90s.mp4",
