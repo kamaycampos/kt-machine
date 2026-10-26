@@ -11904,7 +11904,11 @@
    "hook": "He lost $65M Then this",
    "bytes": 43524501,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-26T17:35",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
