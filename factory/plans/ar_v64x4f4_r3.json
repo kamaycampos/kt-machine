@@ -1,0 +1,34 @@
+{
+ "source": "v64x4f4.mp4",
+ "brand": "AR_ONENESSR3",
+ "test": false,
+ "note": "26 Oct 2026 - third chance re-cut for 'Awakening and Enlightenment From A Self Realized Master | Ep. 79' (Rumble v64x4f4). Awakened Rise weekly agent, re-cut per AR_PLANNING.md 2c. ROCKEFELLERS-LAST-WORDS still opened mid-word ('fellow,') even starting exactly on r2's cue boundary (3849.58) - 'Rockefeller,' is the last word of the PREVIOUS cue, so its trailing '-feller' sound was bleeding past the stated boundary into the cut; nudged the in forward 0.3s (3849.88) to clear it, dropping the leading 'the' from start_words. PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD had the same bleed at its open - r2's in (608.56) is also a cue boundary, but the cue text there is 'times, in ancient Egypt...', a continuation of 'It's discussed in ancient' from the cue before, so the trailing 'in ancient' was leaking in and being heard twice ('ancient times in ancient'); moved the in past the whole repeated phrase to 'Egypt, where the priests were special' (610.48). Its close ('ends mid-thought on it's been always') is the same pattern at the tail: out (650.56) lands exactly on the sentence's full stop, likely clipping the end of 'always.' itself - pushed out 0.4s to 651.0 for a clean tail. SPIRITUAL-HIGHS-ARE-IMITATION-CRAB (25 captions wrong clip-wide, no edge to move), A-FISH-BREACHED-CALLED-IT-HEAVEN (its two scrambled phrases sit in the middle of the restaurant-story payoff), and A-DOG-WHISTLE-EXPOSES-YOUR-SENSES ('on screen in only 8 of 11 moments' names no movable edge) are unchanged from r2's finding and still skipped - still tries 1, no try spent.",
+ "clips": [
+  {
+   "slug": "ROCKEFELLERS-LAST-WORDS",
+   "in": 3849.88,
+   "out": 3898.87,
+   "start_words": "richest man in the world",
+   "end_words": "You have it within you right now",
+   "retry_of": "ar_v64x4f4_r2/ROCKEFELLERS-LAST-WORDS",
+   "hook": [
+    "Rockefeller's words:",
+    "'Just a little more.'"
+   ],
+   "caption": "John D. Rockefeller was the richest man who had ever lived, and on his deathbed, he was still working on making more money. A reporter asked him the obvious question: how much more do you need? With tears in his eyes, he said, 'just a little more.'\n\nThe richest man in the world, and it was never enough — because what he was actually chasing was never in the money to begin with. It was the feeling of being whole, and that was available the entire time, free, already inside him.\n\nComment RISE and I'll send you where that feeling actually comes from.\n\n#manifestation #abundance #awakening #consciousness #oneness #kevintrudeau"
+  },
+  {
+   "slug": "PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD",
+   "in": 610.48,
+   "out": 651.0,
+   "start_words": "Egypt, where the priests",
+   "end_words": "This is how it's been always",
+   "retry_of": "ar_v64x4f4_r2/PRIESTS-GATEKEEP-YOUR-LINE-TO-GOD",
+   "hook": [
+    "Priests gatekeep",
+    "your line to God."
+   ],
+   "caption": "In ancient Egypt, only the priests were allowed near the gods. In Judaism, only the Levites could enter the holy of holies. In Catholic practice, you still confess to a priest instead of speaking to God directly — he's the intermediary, the one who hands your forgiveness back to you.\n\nSame structure, every era, every religion: someone positions themselves between you and the source, and once you believe you need them, you never leave. You didn't need a middleman then, and the part of you that's actually divine doesn't need one now either.\n\nComment RISE and I'll send you how to go direct.\n\n#brotherhood #disclosure #awakening #consciousness #oneness #kevintrudeau"
+  }
+ ]
+}
