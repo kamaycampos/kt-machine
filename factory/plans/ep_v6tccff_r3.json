@@ -1,0 +1,21 @@
+{
+    "source": "v6tccff.mp4",
+    "brand": "KT_SHARKR2R2",
+    "test": false,
+    "note": "26 Oct 2026 - second chance (round 3, last chance) for 'One-Man Shark Tank Reveals His Secret To Massive Money Success' (Rumble v6tccff). Weekly agent, per PLANNING.md 2c. HE-LOST-65-MILLION-THEN-THIS: the r2 cut opened on 'Ten weeks later, my online' but the build reported it actually opens mid-sentence on 'where 10 weeks' - the real audio has a connecting word before 'Ten' that the cue text (which smooths 'went there. Ten weeks later...' into two separate sentences) doesn't show. The same cue has a second, unambiguous sentence start one beat later, right after the cue's own period ('...was live. Ten months later, I'm the fifth biggest poker site in the world.'), which is a stronger, more concrete opener anyway (a ranking and a number) and keeps the identical, already-validated ending. 340-LEASES-SIGNED-WHILE-EVERYONE-PANICKED and GO-BE-THEIR-ASSISTANT are not re-cut: both already used the exact correct words from the cues (end_words matches the cue's own final sentence verbatim in both cases) and still came back 'ends off the planned words', which means the mismatch is between the real spoken audio and this cue text, not a bad edge choice on our part - there is no sentence boundary available to try instead. Per PLANNING.md 2c (tries 2, skip unless the cause is obvious and fixable), both stay skipped rather than guessed at a third time.",
+    "clips": [
+        {
+            "slug": "HE-LOST-65-MILLION-THEN-THIS",
+            "in": 1589.0,
+            "out": 1684.0,
+            "start_words": "Ten months later, I'm",
+            "end_words": "is what led me to where I am",
+            "hook": [
+                "He lost $65M",
+                "Then this"
+            ],
+            "caption": "He built the fifth-biggest online poker site in the world in ten months.\n\nThen on Black Friday, the FBI seized his three biggest competitors' bank accounts. His own account was never touched — he'd done nothing wrong.\n\nMost owners would have kept running quietly. Instead he shut the company down and personally paid back 41,000 players in four days, while his competitors took years, or never paid at all.\n\nThat collapse is what got him hired by casinos and Morgan Stanley. Kevin Trudeau's guest calls it the best thing that ever happened to his career.\n\nWhat would you walk away from today if it meant building something bigger tomorrow?\n\n#kevintrudeau #entrepreneur #businessstory #resilience #wealthmindset #successstory",
+            "retry_of": "ep_v6tccff_r2/HE-LOST-65-MILLION-THEN-THIS"
+        }
+    ]
+}
