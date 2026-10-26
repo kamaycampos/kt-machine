@@ -1,10 +1,10 @@
 {
- "at": "2026-10-25T21:13",
+ "at": "2026-10-26T00:04",
  "profile": {
-  "following_count": 8,
   "likes_count": 5867,
   "video_count": 166,
-  "follower_count": 410
+  "follower_count": 410,
+  "following_count": 8
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -749,7 +749,7 @@
   },
   "KT_HOME/05_05_THE-SINGLE-MOST-POWERFUL-OBJECT_86s.mp4": {
    "id": "7685101409963871501",
-   "view_count": 1373,
+   "view_count": 1374,
    "like_count": 103,
    "comment_count": 4,
    "share_count": 9,
@@ -779,7 +779,7 @@
   },
   "KT_HOME/06_06_THREE-THINGS-TO-DO-TO-YOUR-HOME_69s.mp4": {
    "id": "7684994156057447693",
-   "view_count": 2069,
+   "view_count": 2070,
    "like_count": 176,
    "comment_count": 4,
    "share_count": 35,
