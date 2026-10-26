@@ -9361,6 +9361,186 @@
     "Why your happy ending",
     "never comes"
    ]
+  },
+  "ar_v5btpf9/A-SCIENTIST-FROZE-YOUR-WORDS": {
+   "plan": "ar_v5btpf9",
+   "source": "v5btpf9.mp4",
+   "brand": "AR_WATERWORDS",
+   "tries": 1,
+   "why": [
+    "FAIL 01_A-SCIENTIST-FROZE-YOUR-WORDS_167s.mp4: [FAIL] 01_A-SCIENTIST-FROZE-YOUR-WORDS_167s.mp4               45 captions vs the sound  median +0.10s  worst-10% 0.64s  | words captioned 100%  UNCAPTIONED SPEECH [(152.3, 160.8)]"
+   ],
+   "slug": "A-SCIENTIST-FROZE-YOUR-WORDS",
+   "in": 923.0,
+   "out": 1090.0,
+   "start_words": "So whether he put",
+   "end_words": "you're changing the structure of water",
+   "hook": [
+    "A single prayer",
+    "changed polluted water."
+   ]
+  },
+  "ar_v5btpf9/EVERY-GURUS-ONE-SECRET": {
+   "plan": "ar_v5btpf9",
+   "source": "v5btpf9.mp4",
+   "brand": "AR_WATERWORDS",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_EVERY-GURUS-ONE-SECRET_132s.mp4` - opens mid-sentence on \"master.\"; phrase scrambled around \"experience that you experience\""
+   ],
+   "slug": "EVERY-GURUS-ONE-SECRET",
+   "in": 3240.0,
+   "out": 3374.0,
+   "start_words": "The reason why it's",
+   "end_words": "without exception and without condition",
+   "hook": [
+    "Every guru's secret:",
+    "love, no exceptions."
+   ]
+  },
+  "ar_v5cpz6r/EVERY-COURTROOM-HAS-STAIRS": {
+   "plan": "ar_v5cpz6r",
+   "source": "v5cpz6r.mp4",
+   "brand": "AR_IMAGEMAKERS",
+   "tries": 1,
+   "why": [
+    "FAIL 01_EVERY-COURTROOM-HAS-STAIRS_161s.mp4: [FAIL] 01_EVERY-COURTROOM-HAS-STAIRS_161s.mp4                 12 captions vs the sound  median +0.26s  worst-10% 1.06s  | words captioned 100%"
+   ],
+   "slug": "EVERY-COURTROOM-HAS-STAIRS",
+   "in": 344.31,
+   "out": 508.56,
+   "start_words": "The CIA knows it",
+   "end_words": "It's in your DNA",
+   "hook": [
+    "Every courtroom has",
+    "stairs. On purpose."
+   ]
+  },
+  "ar_v5cpz6r/A-BANNED-BOOK-DESCRIBES-A-UFO": {
+   "plan": "ar_v5cpz6r",
+   "source": "v5cpz6r.mp4",
+   "brand": "AR_IMAGEMAKERS",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_A-BANNED-BOOK-DESCRIBES-A-UFO_179s.mp4` - opens mid-sentence on \"of the book\"; word repeated after one: \"from God from\""
+   ],
+   "slug": "A-BANNED-BOOK-DESCRIBES-A-UFO",
+   "in": 3611.77,
+   "out": 3786.96,
+   "start_words": "The book of Enoch",
+   "end_words": "Sounds like an alien abduction to me",
+   "hook": [
+    "A banned book",
+    "describes a UFO."
+   ]
+  },
+  "ar_v5ky2q7/A-BLIND-KING-USED-A-PSYCHIC": {
+   "plan": "ar_v5ky2q7",
+   "source": "v5ky2q7.mp4",
+   "brand": "AR_TEACHABLE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_A-BLIND-KING-USED-A-PSYCHIC_49s.mp4: [FAIL] 01_A-BLIND-KING-USED-A-PSYCHIC_49s.mp4                 5 captions vs the sound  median +0.00s  worst-10% 0.87s  | words captioned 100%"
+   ],
+   "slug": "A-BLIND-KING-USED-A-PSYCHIC",
+   "in": 423.46,
+   "out": 473.68,
+   "start_words": "the evil king in",
+   "end_words": "how this was written and who wrote it",
+   "hook": [
+    "A blind king",
+    "used a psychic."
+   ]
+  },
+  "ar_v5n7l7w/TWO-WINDOWS-A-DAY": {
+   "plan": "ar_v5n7l7w",
+   "source": "v5n7l7w.mp4",
+   "brand": "AR_TWOWINDOWS",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_TWO-WINDOWS-A-DAY_182s.mp4` - phrase scrambled around \"up So wake up\"; phrase scrambled around \"wake up So wake\"; sentence starts with no stop: \"day And\""
+   ],
+   "slug": "TWO-WINDOWS-A-DAY",
+   "in": 53.0,
+   "out": 233.0,
+   "start_words": "All right, so number",
+   "end_words": "So that's when do you meditate",
+   "hook": [
+    "Two windows a day",
+    "reset you."
+   ]
+  },
+  "ar_v64x4f4_r3/ROCKEFELLERS-LAST-WORDS": {
+   "plan": "ar_v64x4f4_r3",
+   "source": "v64x4f4.mp4",
+   "brand": "AR_ONENESSR3",
+   "tries": 3,
+   "why": [
+    "FAIL 02_ROCKEFELLERS-LAST-WORDS_50s.mp4: [FAIL] 02_ROCKEFELLERS-LAST-WORDS_50s.mp4                     29 captions vs the sound (word-referenced: no clear pauses)  median +0.05s  worst-10% 1.08s  | words captioned 100%"
+   ],
+   "slug": "ROCKEFELLERS-LAST-WORDS",
+   "in": 3849.88,
+   "out": 3898.87,
+   "start_words": "richest man in the world",
+   "end_words": "You have it within you right now",
+   "hook": [
+    "Rockefeller's words:",
+    "'Just a little more.'"
+   ]
+  },
+  "ep_v6mb9h9/WHY-CHRISTY-LOVED-HIS-NUTS-MOTHER": {
+   "plan": "ep_v6mb9h9",
+   "source": "v6mb9h9.mp4",
+   "brand": "KT_REFLECT",
+   "tries": 1,
+   "why": [
+    "FAIL 02_WHY-CHRISTY-LOVED-HIS-NUTS-MOTHER_84s.mp4: [FAIL] 02_WHY-CHRISTY-LOVED-HIS-NUTS-MOTHER_84s.mp4           5 captions vs the sound  median +3.24s  worst-10% 3.25s  | words captioned 113%"
+   ],
+   "slug": "WHY-CHRISTY-LOVED-HIS-NUTS-MOTHER",
+   "in": 455.0,
+   "out": 542.0,
+   "start_words": "I told my girlfriend",
+   "end_words": "was the problem",
+   "hook": [
+    "Why Christy loved",
+    "his nuts mother"
+   ]
+  },
+  "ep_v6qzmik/RAY-KROCS-DREAM-STEALER-WIFE": {
+   "plan": "ep_v6qzmik",
+   "source": "v6qzmik.mp4",
+   "brand": "KT_DREAMTEAM",
+   "tries": 1,
+   "why": [
+    "FAIL 01_RAY-KROCS-DREAM-STEALER-WIFE_168s.mp4: [FAIL] 01_RAY-KROCS-DREAM-STEALER-WIFE_168s.mp4               19 captions vs the sound  median +0.00s  worst-10% 0.91s  | words captioned 100%"
+   ],
+   "slug": "RAY-KROCS-DREAM-STEALER-WIFE",
+   "in": 35.52,
+   "out": 207.6,
+   "start_words": "Ray Kroc did something",
+   "end_words": "it is an unstoppable force",
+   "hook": [
+    "Why Ray Kroc",
+    "divorced his wife"
+   ]
+  },
+  "ep_v6qzmik/DREAM-STEALER-OR-DREAM-BUILDER": {
+   "plan": "ep_v6qzmik",
+   "source": "v6qzmik.mp4",
+   "brand": "KT_DREAMTEAM",
+   "tries": 1,
+   "why": [
+    "FAIL 02_DREAM-STEALER-OR-DREAM-BUILDER_68s.mp4: [FAIL] 02_DREAM-STEALER-OR-DREAM-BUILDER_68s.mp4              9 captions vs the sound  median +0.09s  worst-10% 0.87s  | words captioned 106%"
+   ],
+   "slug": "DREAM-STEALER-OR-DREAM-BUILDER",
+   "in": 209.36,
+   "out": 275.84,
+   "start_words": "Men do you build",
+   "end_words": "your spouse makes a huge difference",
+   "hook": [
+    "Why your spouse decides",
+    "your success"
+   ]
   }
  },
  "attempts": {
@@ -9398,6 +9578,7 @@
   "ep_v6oq1ll_r4": 2,
   "ep_v6oq1ll_r5": 2,
   "ep_v77l7um_r8": 2,
-  "ep_v6qzmik": 1
+  "ep_v6qzmik": 2,
+  "ep_v7e1nwe_r4": 1
  }
 }
