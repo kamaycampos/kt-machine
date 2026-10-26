@@ -88,6 +88,11 @@
    "at": "2026-10-22T10:00:41.330048+00:00",
    "platform": "instagram",
    "error": "Please reduce the amount of data you're asking for, then retry your request"
+  },
+  {
+   "at": "2026-10-26T21:23:25.791102+00:00",
+   "platform": "facebook",
+   "error": "Cannot call API for app 1375569221086887 on behalf of user 2963031047362559"
   }
  ]
 }
