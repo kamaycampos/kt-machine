@@ -9541,6 +9541,24 @@
     "Why your spouse decides",
     "your success"
    ]
+  },
+  "ep_v7e1nwe_r4/750-BILLION-DOLLARS-ONE-HABIT": {
+   "plan": "ep_v7e1nwe_r4",
+   "source": "v7e1nwe.mp4",
+   "brand": "KT_FREQUENCYR2R2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_750-BILLION-DOLLARS-ONE-HABIT_94s.mp4: [FAIL] 01_750-BILLION-DOLLARS-ONE-HABIT_94s.mp4               7 captions vs the sound  median +0.10s  worst-10% 1.04s  | words captioned 100%"
+   ],
+   "slug": "750-BILLION-DOLLARS-ONE-HABIT",
+   "in": 416.5,
+   "out": 505.44,
+   "start_words": "Nobody mentions it",
+   "end_words": "of their income and net worth",
+   "hook": [
+    "$750 billion.",
+    "One missing habit"
+   ]
   }
  },
  "attempts": {
@@ -9579,6 +9597,6 @@
   "ep_v6oq1ll_r5": 2,
   "ep_v77l7um_r8": 2,
   "ep_v6qzmik": 2,
-  "ep_v7e1nwe_r4": 1
+  "ep_v7e1nwe_r4": 2
  }
 }
