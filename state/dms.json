@@ -93,6 +93,11 @@
    "at": "2026-10-26T21:23:25.791102+00:00",
    "platform": "facebook",
    "error": "Cannot call API for app 1375569221086887 on behalf of user 2963031047362559"
+  },
+  {
+   "at": "2026-10-26T21:47:51.197333+00:00",
+   "platform": "instagram",
+   "error": "An unexpected error has occurred. Please retry your request later."
   }
  ]
 }
