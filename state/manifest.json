@@ -11690,7 +11690,6 @@
    },
    "caption_at_post": "Here's the stranger version of the experiment, according to Kevin Trudeau.\n\nA machine ran a billion random picks between 1 and 0, with nobody watching, and the results were locked in before anyone said a word.\n\nThen they brought in a test subject and asked him to pick a number. He said zero. Now look at the machine, they said. The results are already there. Just want more zeros.\n\nHe focused on wanting more zeros. More zeros. More zeros.\n\nThey checked the results that had been set before he ever walked in the room. Whatever number he wanted more of, that's what the machine showed.\n\nIf the outcome was already fixed, how did his mind still match it?\n\n#kevintrudeau #manifesting #yourwishisyourcommand #luck #mindset #science",
    "posted_at": "2026-10-26T08:07",
-   "tiktok_retry": true,
    "tiktok_tries": 3
   },
   {
@@ -11763,7 +11762,11 @@
    "hook": "Priests gatekeep your line to God.",
    "bytes": 40855826,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-26T19:38",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_TEACHABLE/01_A-TEACHER-POURED-TEA-UNTIL-IT-OVERFLOWED_68s.mp4",
@@ -11771,7 +11774,11 @@
    "hook": "Your mind is that overflowing cup.",
    "bytes": 37293029,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-26T15:05",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_TEACHABLE/02_YOUR-BODY-IS-A-LITERAL-MAGNET_76s.mp4",
@@ -11779,7 +11786,11 @@
    "hook": "Your body is a literal magnet.",
    "bytes": 42542476,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-27T09:42",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_WATERWORDS/01_ONE-PUPPET-MASTER-CONTROLS-BOTH_58s.mp4",
@@ -11787,7 +11798,11 @@
    "hook": "One puppet master controls both fighters.",
    "bytes": 25379053,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-26T17:03",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_WATERWORDS/02_CURSING-SOMEONE-HURTS-YOU-MORE_121s.mp4",
@@ -11795,7 +11810,11 @@
    "hook": "Cursing them hurts you 100x more.",
    "bytes": 76339328,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-27T07:05",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "KT_REFLECT/01_WHY-DEEPAK-CHOPRAS-SON-ATTACKED-HIM_147s.mp4",
@@ -11803,7 +11822,11 @@
    "hook": "Why Deepak Chopra's son attacked him",
    "bytes": 88093901,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-26T11:53",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 5,
+   "cta_kind": "question"
   }
  ]
 }
