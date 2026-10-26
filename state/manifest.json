@@ -11682,11 +11682,25 @@
    "hook": "How $300 million was never real",
    "bytes": 62303589,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-25T20:19",
    "cta_keyword": "MONEY",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/De7_X5ZjsEG/",
+    "youtube": "https://youtube.com/shorts/cgH6EjCZkA4"
+   },
+   "caption_at_post": "The government told a judge that Kevin Trudeau was hiding $250 to $300 million somewhere offshore.\n\nHis response: if I actually had that kind of money, why would I risk ten years in prison instead of just writing a check?\n\nSo he did something most people accused of hiding money never do. He asked the FTC to bring in its own top forensic accountants and search everything himself, his banks, his books, his records, everywhere.\n\nThey flew to Switzerland. They interviewed his accountant of twenty years. They searched the whole world for the missing fortune.\n\nThey found nothing, because there was nothing to find.\n\nEver been accused of something you couldn't prove wasn't true?\n\n#kevintrudeau #ftc #moneymindset #wealth #government #truth",
+   "posted_at": "2026-10-25T20:28",
+   "tiktok_retry": true
   },
   {
    "file": "KT_VERDICT/02_46-PAGES-FTC-GOT-NOTHING_64s.mp4",
