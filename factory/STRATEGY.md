@@ -8,35 +8,34 @@ The strategist rewrites this file daily from `state/metrics.json`, `state/tiktok
 
 **Score: $11.70 earned of $1,777,000** (portfolio as of 30 Sept; nobody has read it since).
 
-## 26 Oct 2026 (strategist; KT clips with Instagram numbers; AR_ ignored; windows = posted 19-25 Oct n=38 vs 12-18 Oct n=26, clips older than 24h; win/lose and splits use 12-25 Oct, n=62)
+## 27 Oct 2026 (strategist; KT clips with Instagram numbers; AR_ ignored; windows = posted 20-26 Oct n=40 vs 13-19 Oct n=30, clips older than 24h scored; win/lose and splits use 13-26 Oct, n=64)
 
 ### What the numbers say
-- **Pace:** 6 posts a day for 7 days running (19-25 Oct, 42 posts) = top of the 4-6 target. Yesterday 6. Today 5 are queued (07:21 to 12:28) and nothing is scheduled past today.
-- **Skip is still over the alarm line:** median skip **50.8%** (n=37) vs 49.4% (n=25); target under 40. Median IG views **233** vs **358** (down 35%). Shares+saves per 1k 22.0 vs 26.3. YouTube median 354 vs 922 (n=38 vs 26). Views and holding are both slipping at full volume.
-- **DMs:** 5 sent in total, all 14-15 Oct. **0 in 11 days**, 4 errors unchanged. Score still $11.70.
-- **Winners (12-25 Oct):** "How winners earn their scars" **3,807** views, skip 50 (MONEY, 07h, 83s, KT_ARENA); "How he won $250,000 at blackjack" 2,953, skip **29.6** (MONEY, 17h, 81s, KT_MEMORYR2R2R2R2); "What Rockefeller said about getting rich" 2,768, skip 51.3 (BRAIN, 08h, 83s). Best skip: "Why toxic people aren't your fault" **26.3** (2,455 views, 12h, 114s, KT_MIRROR), "Why Tesla's vision skips the car" 33.5 (2,465, 09h, 54s). Each is a named person or a concrete stake and a story.
-- **Losers:** "How your mind beats 20-degree cold" 61 views (182s); "What Michael Jordan missed the most" 65 views, skip 65.3 (15h); "How to save $150 a month" 72 views, skip 56.9 (07h, 68s). Worst skip: "Why suffering is your choice" 72.2 (13h, KT_MINDSET), "How Blaine failed, then started" 70.2 (14h), "Why you say things you regret" 68.4 (17h). Abstract advice, "missed" and plain-saving lines.
-- **Hook word:** Why n=21 median 271 views, skip 49.7; How n=15 257, 49.4; The n=12 329, 48.5; What n=7 253, skip **60.5**. What is the worst for the fifth week running; How has lost its lead (was skip 44.2). A number in the hook is neutral (n=21, skip 50.6 vs 49.7).
-- **CTA:** offer n=48 median 262 views, skip 50.4 vs question n=14 245, skip **46.5**. MONEY n=27 skip **45.6**, 257 views; BRAIN n=31 skip 51.5, 250; WISH n=3 and KT n=1 LOW. MONEY clips hold better than BRAIN again.
-- **Length:** 76-120s n=28 median **359** views, skip **47.4**; 46-75s n=23 241, skip 53.1; under 45s n=7 255, 49.0; over 120s n=4 157 (LOW). 76-120s story clips are the only band that holds.
-- **Hour (NY, as stored):** 12h n=9 **523** views, skip 45.6; 10h n=5 skip **43.3**; 09h n=7 44.6; 20h n=6 46.1 and 302 views; 17h n=7 47.8; 08h n=5 51.3 (368 views); 14h n=5 53.2; 07h n=6 53.6 (134 views); 19h n=4 58.2 and 13h n=2 68.4 (LOW).
-- **Source (all LOW, n=1-4):** KT_NUGGET n=4 skip **38.0**, 1,923 median views; KT_ELITE n=2 39.1; KT_LANTERN n=3 42.5; KT_MIRROR 26.3 (n=1); KT_MEMORYR2R2R2R2 29.6 (n=1). Worst: KT_MINDSET 66.3, KT_BIGDREAM 65.8 (n=2 each), KT_ANCHOR 67.1, KT_PUPPETR4 68.4 (n=1).
-- **Cinematic opener:** not measurable: no `opener` key in kt_series.json (0) or in metrics/manifest rows, and the release is not readable here. Last read (20 Oct, n=10, LOW): gloomy shots skip 68-76, luxury or growth shots 39-49.
+- **Pace:** 5.7 posts a day over the last 7 days (40 posts) = inside the 4-6 target. Yesterday (26 Oct) **4** (08:07, 10:07, 12:08, 17:47), the first day under 6 in 10 days. Nothing in the manifest is scheduled for 27 Oct (the only `scheduled_at` left are 8 stale entries from 2 Oct), though 47 finished clips are unposted.
+- **Skip is stuck at the alarm line:** median skip **49.7%** (n=35) vs 50.1% (n=29); target under 40. Median IG views **235** vs **333** (down 29%). Shares+saves per 1k **17.7** vs 26.3. YouTube median 281 vs 617. Holding is flat, reach is sliding.
+- **DMs:** 5 sent in total, last on 15 Oct. **0 in 12 days**, errors now 8 (were 4). Score still $11.70.
+- **Winners (13-26 Oct):** "How winners earn their scars" **3,815** views, skip 50.1 (MONEY, 07h, 83s, KT_ARENA, YouTube 1,254); "How he won $250,000 at blackjack" 3,011, skip **30.0** (MONEY, 17h, 81s); "What Rockefeller said about getting rich" 2,786, skip 51.3 (BRAIN, 08h, KT_NUGGET). Best skip: "How $300 million was never real" **22.4** (1,554), "Gave $250,000, never asked back" **25.8** (1,701), "Why toxic people aren't your fault" 26.3 (2,458). Each is a named person or a big concrete sum plus a story.
+- **Losers:** "How to save $150 a month" 78 views (skip 56.1), "What Michael Jordan missed the most" 65 (skip 65.3), "How your mind beats 20-degree cold" 64 (182s). Worst skip: "Why suffering is your choice" 71.5, "How Blaine failed, then started" 69.8, "Why you say things you regret" 68.4. Abstract advice, plain-saving lines, "missed", over-long clips.
+- **Hook word:** Why n=21 median 271 views, skip 50.0; How n=17 257, 49.4; The n=11 285, 47.8; What n=7 253, skip **60.5** (worst again, sixth week). A number in the hook is neutral (n=21 skip 51.3 vs n=43 skip 50.0).
+- **CTA:** offer n=50 median 270 views, skip 50.0 vs question n=14 235, skip **47.0**. MONEY n=29 skip **45.4**, 272 views; BRAIN n=33 skip 51.4, 253; WISH n=2 LOW (533 views).
+- **Length:** 76-120s n=27 median **359** views, skip **46.0**; 46-75s n=28 243, skip 53.3; over 120s n=5 236, 52.8; under 45s n=4 LOW (1,312 views, skip 48.3).
+- **Hour (NY, as stored):** 12h n=10 **609** views, skip 44.8; 09h n=7 skip **44.5**; 10h n=4 42.8 (LOW); 20h n=7 skip 46.0, 333 views; 17h n=8 48.8; 07h n=6 skip 54.3 (134 views); 14h n=5 53.2; 08h n=4 54.5 and 19h n=4 59.3 (LOW); 13h n=2 67.1 (LOW).
+- **Source (mostly LOW, n=1-4):** KT_NUGGET n=4 skip **38.7**, 1,940 views; KT_ELITE n=2 39.1; KT_VERDICT n=2 29.1; KT_HARVEST n=2 39.8; KT_LANTERN n=3 42.5. Worst: KT_MINDSET n=2 66.0, KT_BIGDREAM n=2 64.8, KT_BRAKE n=4 54.8 (346 views).
+- **Cinematic opener:** still not measurable: no `opener` key in kt_series.json for any episode or in manifest/metrics rows. Last read (20 Oct, n=10, LOW): gloomy shots skip 68-76, luxury or growth shots 39-49.
 
 ### Orders for the planner
-1. **Keep 6 KT clips a day, but only strong ones; stock tomorrow now.** Only 5 clips are queued, all for today. Median skip 50.8 and views down 35% mean a weak sixth slot costs more than it earns: if fewer than 6 clips pass the bar, post 5 and never fill with a weak one.
-2. **Hook shape:** a named person, an amount or a stake plus a story in line one (scars, blackjack $250,000, Rockefeller, Tesla). How for a story or method. No What-openers (skip 60.5, n=7), no "What <celebrity> missed", no abstract "your choice / you say / winners act" lines, no plain how-to-save lines ($150 a month, skip 56.9).
-3. **Offer clips: 2 a day, MONEY first** (skip 45.6, n=27); BRAIN only on a mind or self-image story (skip 51.5). The question CTA held better (46.5, n=14): make the other 4 clips question CTAs with the keyword in the first two caption lines. DMs are at 0, so never above 2 offers a day.
-4. **Openers:** only luxury, growth or craft shots (rolls royce, oak tree, workshop), never gloomy shots (rain, lone light, storm); none when the source opens on Kevin's face or the hook is not a concrete picture. Record `opener` in kt_series.json so it can be measured at n>=5 a side.
-5. **Topics:** how the wealthy and famous think, work, fail and feel (Edison, Rockefeller, Tesla, blackjack, mirror and relationship clips from KT_MIRROR); property stays the franchise (MASTERY 18). Skip KT_MINDSET, KT_BIGDREAM, KT_ANCHOR, KT_PUPPETR4 and Jordan-style "missed" moments (LOW).
-6. **Length:** 76-120s story clips first (359 views, skip 47.4, n=28); 46-75s only for a method with a number in it (skip 53.1, n=23); never above 120s (n=4, 157 views).
-7. **Source mix:** at most 2 clips a day from one episode; give KT_NUGGET, KT_ELITE, KT_LANTERN, KT_MIRROR and KT_BLUEPRINT more moments (LOW).
-8. **Posting hours (NY):** 09:00, 10:30, 12:00, 17:00, 20:00, plus 08:00 for a strong clip. Drop 07:00 (134 views, skip 53.6, n=6), 13:00, 14:00 (53.2, n=5), 15:00 and 19:00. Today's queue still has 07:21: move it to 09:00 or later.
+1. **Stock and schedule today first.** 4 clips went out yesterday and none is scheduled for 27 Oct, with 47 finished clips waiting. Fill 5-6 slots from the strongest; a weak clip still never fills a slot (skip 49.7, views -29%).
+2. **Hook shape:** a named person or a big concrete sum plus a story in line one ("lost $65 million", "$250,000 at blackjack", "never asked back", "$300 million"). How or Why for a story. No What-openers (skip 60.5, n=7), no "What <celebrity> missed", no abstract "your choice / you say" lines, no plain saving how-tos.
+3. **Offers: 2 a day, MONEY first** (skip 45.4, n=29); BRAIN only on a mind or self-image story (51.4). The other clips use the question CTA (47.0, n=14) with the keyword in the first two caption lines. DMs are at 0, so never above 2 offers a day.
+4. **Openers:** only luxury, growth or craft shots; never gloomy ones (rain, lone light, storm); none when the source opens on Kevin's face. Write `opener` into kt_series.json for every clip that gets one so it can be scored at n>=5 a side.
+5. **Topics:** how the wealthy and famous win, lose and recover (Rockefeller, blackjack, scars, big sums given away, mirror and relationship clips). Property stays the franchise (MASTERY 18). Skip KT_MINDSET, KT_BIGDREAM and Jordan-style "missed" moments (LOW).
+6. **Length:** 76-120s story clips first (359 views, skip 46.0, n=27); 46-75s only for a method with a number in it; never above 120s (n=5, skip 52.8).
+7. **Source mix:** max 2 clips a day from one episode; give KT_NUGGET, KT_ELITE, KT_VERDICT, KT_HARVEST and KT_LANTERN more moments (LOW).
+8. **Posting hours (NY):** 09:00, 10:30, 12:00 (best: 609 views), 17:00, 20:00, plus 08:00 for a strong clip. Drop 07:00 (134 views, skip 54.3, n=6), 13:00, 14:00, 15:00 and 19:00.
 
 ### Watch list
-- Median skip 50.8 for the second day over 50 and views -35%: re-read 27 Oct. If the 7d median stays above 50, drop to 5 a day.
-- DMs at 0 for 11 days (last 15 Oct): is the keyword in the first caption lines, is instagram_manage_messages live (4 errors in dms.json)? Needs a person.
-- Queue holds 5 clips, all dated 26 Oct: check that 27 Oct is scheduled.
-- YouTube 354 vs 922: re-measure when 22-25 Oct clips are 3 days old.
-- Opener data: write `opener` into kt_series.json or the metrics rows.
-- TikTok (166 videos, hand-posted) and Facebook are not scored here.
+- Nothing scheduled for 27 Oct: confirm the poster ran. If the 7d median skip stays above 50, drop to 5 a day.
+- DMs at 0 for 12 days; dms.json errors 8 (was 4): is instagram_manage_messages live? Needs a person.
+- 20 older clips carry "NOT on the account... re-queued" on Instagram (no dates); check none is a new takedown.
+- YouTube median 281 vs 617: re-measure when 24-26 Oct clips are 3 days old.
+- TikTok (166 videos, 410 followers) and Facebook are hand-posted and not scored here.
