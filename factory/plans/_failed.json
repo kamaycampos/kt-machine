@@ -9667,6 +9667,42 @@
     "How to predict",
     "your own luck"
    ]
+  },
+  "ar_v5nav8n/GIVE-ANYONE-POWER-THEY-CHANGE": {
+   "plan": "ar_v5nav8n",
+   "source": "v5nav8n.mp4",
+   "brand": "AR_PRISONEXPERIMENT",
+   "tries": 1,
+   "why": [
+    "FAIL 01_GIVE-ANYONE-POWER-THEY-CHANGE_151s.mp4: [FAIL] 01_GIVE-ANYONE-POWER-THEY-CHANGE_151s.mp4              15 captions vs the sound  median +0.04s  worst-10% 1.41s  | words captioned 99%"
+   ],
+   "slug": "GIVE-ANYONE-POWER-THEY-CHANGE",
+   "in": 125.2,
+   "out": 275.92,
+   "start_words": "In this experiment, which was",
+   "end_words": "You really become possessed",
+   "hook": [
+    "Give you power.",
+    "You go insane."
+   ]
+  },
+  "ar_v5owvgw/TRUST-ALLAH-TRUST-KRISHNA": {
+   "plan": "ar_v5owvgw",
+   "source": "v5owvgw.mp4",
+   "brand": "AR_SERENITY",
+   "tries": 1,
+   "why": [
+    "FAIL 01_TRUST-ALLAH-TRUST-KRISHNA_73s.mp4: [FAIL] 01_TRUST-ALLAH-TRUST-KRISHNA_73s.mp4                   9 captions vs the sound  median +0.08s  worst-10% 0.71s  | words captioned 99%"
+   ],
+   "slug": "TRUST-ALLAH-TRUST-KRISHNA",
+   "in": 3864.3,
+   "out": 3939.2,
+   "start_words": "The serenity prayer is the answer",
+   "end_words": "it just means it's not the end",
+   "hook": [
+    "Trust Allah.",
+    "Trust Krishna."
+   ]
   }
  },
  "attempts": {
@@ -9707,7 +9743,7 @@
   "ep_v6qzmik": 2,
   "ep_v7e1nwe_r4": 2,
   "ar_v6sfb21_r6": 2,
-  "ar_v5nav8n": 1,
-  "ar_v5owvgw": 1
+  "ar_v5nav8n": 2,
+  "ar_v5owvgw": 2
  }
 }
