@@ -110,6 +110,11 @@
    "at": "2026-10-26T22:00:49.805108+00:00",
    "platform": "facebook",
    "error": "An unexpected error has occurred. Please retry your request later."
+  },
+  {
+   "at": "2026-10-27T14:45:53.530912+00:00",
+   "platform": "facebook",
+   "error": "Please reduce the amount of data you're asking for, then retry your request"
   }
  ]
 }
