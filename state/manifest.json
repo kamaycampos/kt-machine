@@ -12013,7 +12013,10 @@
    "bytes": 33261504,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-27T17:51",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0
   },
   {
    "file": "KT_BRAKER2/02_WHY-FAILING-ONCE-KEEPS-YOU-BROKE_95s.mp4",
@@ -12021,7 +12024,11 @@
    "hook": "Why failing once keeps you broke",
    "bytes": 64200335,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-27T20:08",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
