@@ -1,0 +1,49 @@
+{
+ "source": "v7gukou.mp4",
+ "brand": "KT_BRAKER2",
+ "test": false,
+ "note": "27 Oct 2026 - second chance re-cut of 'You Don't Actually Want to Get Rich: The Invisible Brake' (Rumble v7gukou). Fixes: THE-MONEY-LIES moved both edges one sentence later (captions-vs-sound mismatch); WHY-FAILING-ONCE moved both edges to a later sentence pair (systemic +0.68s drift persisted after one re-render); A-MILLION-DOLLARS trimmed the end a few words earlier, off the 'counter intention' phrase that recurs seconds later and was grabbing the wrong occurrence.",
+ "clips": [
+  {
+   "slug": "THE-MONEY-LIES-YOUR-FAMILY-TAUGHT-YOU",
+   "retry_of": "ep_v7gukou/THE-MONEY-LIES-YOUR-FAMILY-TAUGHT-YOU",
+   "in": 159.0,
+   "out": 212.0,
+   "start_words": "Money doesn't grow on trees",
+   "end_words": "you'll always be broke.",
+   "hook": [
+    "The money lies",
+    "your parents taught"
+   ],
+   "caption": "Money doesn't grow on trees. We were born on the wrong side of the tracks. We're workers. Rich people are miserable.\n\nKevin Trudeau calls these counter intentions - beliefs handed down through a family until they feel like facts.\n\nYou can be working hard on making money while one of them quietly sabotages every effort, because underneath, it says you shouldn't have it.\n\nHis point: until you clear it out, the struggle keeps coming back no matter how hard you work.\n\nWhich of these did you grow up hearing?\n\n#kevintrudeau #moneybeliefs #mindset #generationalwealth #wealthmindset #subconsciousmind",
+   "cta_kind": "offer"
+  },
+  {
+   "slug": "WHY-FAILING-ONCE-KEEPS-YOU-BROKE",
+   "retry_of": "ep_v7gukou/WHY-FAILING-ONCE-KEEPS-YOU-BROKE",
+   "in": 373.0,
+   "out": 468.0,
+   "start_words": "It's in your mind",
+   "end_words": "it leads to pain.",
+   "hook": [
+    "Why failing once",
+    "keeps you broke"
+   ],
+   "caption": "You tried to make money once and it failed. The embarrassment, the people who laughed - it stung.\n\nKevin Trudeau says your mind files that away the same way it filed the first time you touched a hot stove: trying to make money leads to pain.\n\nFrom then on, part of you works against you. You hesitate, you pick the wrong move, you do something careless - and nobody sees why.\n\nIt also happens to people who made money and then lost it all.\n\nWhat failure is still running your money decisions?\n\n#kevintrudeau #failure #selfsabotage #moneymindset #mindset #entrepreneur"
+  },
+  {
+   "slug": "A-MILLION-DOLLARS-BEFORE-HE-TURNED-18",
+   "retry_of": "ep_v7gukou/A-MILLION-DOLLARS-BEFORE-HE-TURNED-18",
+   "in": 707.0,
+   "out": 826.0,
+   "start_words": "I could start with $100",
+   "end_words": "I was 18 years old.",
+   "hook": [
+    "$1 million before",
+    "he turned 18"
+   ],
+   "caption": "Kevin Trudeau started his first business with $100 he'd saved from shoveling snow and delivering newspapers. Direct mail, from his house.\n\nIt was a struggle. Ads that should have worked didn't. It felt like walking uphill with something pushing back.\n\nHis mentor helped him clear one belief that was working against him. He went back to the same business, changed one word in one headline - and the money started pouring in.\n\nHe made over a million dollars before he turned 18.\n\nWhat would change if your work stopped feeling like a struggle?\n\n#kevintrudeau #entrepreneur #directmail #youngentrepreneur #moneymindset #success",
+   "cta_kind": "offer"
+  }
+ ]
+}
