@@ -9559,6 +9559,114 @@
     "$750 billion.",
     "One missing habit"
    ]
+  },
+  "ar_v5pqb2b/CANT-BE-FIRED-EVEN-DRUNK": {
+   "plan": "ar_v5pqb2b",
+   "source": "v5pqb2b.mp4",
+   "brand": "AR_UNFIREABLE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_CANT-BE-FIRED-EVEN-DRUNK_59s.mp4` - stray full stop: \"me. a\""
+   ],
+   "slug": "CANT-BE-FIRED-EVEN-DRUNK",
+   "in": 122.0,
+   "out": 182.0,
+   "start_words": "The federal employees clearly want",
+   "end_words": "I'm a federal employee",
+   "hook": [
+    "You pay him",
+    "drunk or not."
+   ]
+  },
+  "ar_v5pqb2b/SEARS-CEO-NEVER-VISITED-A-STORE": {
+   "plan": "ar_v5pqb2b",
+   "source": "v5pqb2b.mp4",
+   "brand": "AR_UNFIREABLE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_SEARS-CEO-NEVER-VISITED-A-STORE_185s.mp4` - 186s is outside 8-185s; stray full stop: \"D.C. and\""
+   ],
+   "slug": "SEARS-CEO-NEVER-VISITED-A-STORE",
+   "in": 300.0,
+   "out": 486.0,
+   "start_words": "Next, these federal employees live",
+   "end_words": "have no clue",
+   "hook": [
+    "He never visited.",
+    "Then Sears vanished."
+   ]
+  },
+  "ar_v5pqb2b/BRAND-NEW-TVS-PAID-BY-YOU": {
+   "plan": "ar_v5pqb2b",
+   "source": "v5pqb2b.mp4",
+   "brand": "AR_UNFIREABLE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_BRAND-NEW-TVS-PAID-BY-YOU_137s.mp4` - two subjects together: \"you I\""
+   ],
+   "slug": "BRAND-NEW-TVS-PAID-BY-YOU",
+   "in": 901.0,
+   "out": 1039.0,
+   "start_words": "The government waste is off",
+   "end_words": "fraud and waste just like that",
+   "hook": [
+    "Brand new TVs.",
+    "Paid by you."
+   ]
+  },
+  "ar_v6sfb21_r6/OSHO-97-ROLLS-ROYCES": {
+   "plan": "ar_v6sfb21_r6",
+   "source": "v6sfb21.mp4",
+   "brand": "AR_SAMSKARAR6",
+   "tries": 3,
+   "why": [
+    "drop AR_SAMSKARAR6/OSHO-97-ROLLS-ROYCES: opens on B-roll, no face - dropped"
+   ],
+   "slug": "OSHO-97-ROLLS-ROYCES",
+   "in": 291.68,
+   "out": 339.8,
+   "start_words": "By the way, Osho a lot of people",
+   "end_words": "he has some teachings",
+   "hook": [
+    "He owned 97",
+    "Rolls Royces."
+   ]
+  },
+  "ep_v6oq1ll_r7/RANDOM-MACHINE-BENDS-TO-YOUR-MIND": {
+   "plan": "ep_v6oq1ll_r7",
+   "source": "v6oq1ll.mp4",
+   "brand": "KT_COMPASSR2R2R2R2R2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_RANDOM-MACHINE-BENDS-TO-YOUR-MIND_54s.mp4: [FAIL] 01_RANDOM-MACHINE-BENDS-TO-YOUR-MIND_54s.mp4           36 captions vs the sound (word-referenced: no clear pauses)  median +0.42s  worst-10% 0.87s  | words captioned 99%"
+   ],
+   "slug": "RANDOM-MACHINE-BENDS-TO-YOUR-MIND",
+   "in": 234.6,
+   "out": 288.14,
+   "start_words": "The researchers took someone",
+   "end_words": "gave them that",
+   "hook": [
+    "How your thoughts",
+    "move a machine"
+   ]
+  },
+  "ep_v6oq1ll_r7/HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN": {
+   "plan": "ep_v6oq1ll_r7",
+   "source": "v6oq1ll.mp4",
+   "brand": "KT_COMPASSR2R2R2R2R2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `02_HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN_47s.mp4` - ends mid-thought on \"you\"; sentence starts with no stop: \"prize They\"; sentence starts with no stop: \"prizes So\""
+   ],
+   "slug": "HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN",
+   "in": 553.1,
+   "out": 601.0,
+   "start_words": "They had three prizes",
+   "end_words": "you can be lucky",
+   "hook": [
+    "How to predict",
+    "your own luck"
+   ]
   }
  },
  "attempts": {
@@ -9598,6 +9706,8 @@
   "ep_v77l7um_r8": 2,
   "ep_v6qzmik": 2,
   "ep_v7e1nwe_r4": 2,
-  "ar_v6sfb21_r6": 1
+  "ar_v6sfb21_r6": 2,
+  "ar_v5nav8n": 1,
+  "ar_v5owvgw": 1
  }
 }
