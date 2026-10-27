@@ -9703,6 +9703,24 @@
     "Trust Allah.",
     "Trust Krishna."
    ]
+  },
+  "ep_v7gukou_r2/A-MILLION-DOLLARS-BEFORE-HE-TURNED-18": {
+   "plan": "ep_v7gukou_r2",
+   "source": "v7gukou.mp4",
+   "brand": "KT_BRAKER2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_A-MILLION-DOLLARS-BEFORE-HE-TURNED-18_116s.mp4` - sentence starts with no stop: \"called The\""
+   ],
+   "slug": "A-MILLION-DOLLARS-BEFORE-HE-TURNED-18",
+   "in": 707.0,
+   "out": 826.0,
+   "start_words": "I could start with $100",
+   "end_words": "I was 18 years old.",
+   "hook": [
+    "$1 million before",
+    "he turned 18"
+   ]
   }
  },
  "attempts": {

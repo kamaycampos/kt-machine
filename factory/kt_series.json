@@ -8077,7 +8077,8 @@
      "Twenty-four hours.",
      "Then you're fired."
     ],
-    "caption": "A new CEO walks in, calls a meeting, says treat the customers right or you're gone in twenty-four hours. The employee asks if he's really got the power to do that. He does. The service gets better immediately.\n\nTry that inside the federal government and nothing moves — the union files a lawsuit, everyone keeps their desk, and the order gets ignored entirely. One system has consequences. The other was built so nothing you do ever has any.\n\nComment RISE and I'll send you why one works and one doesn't.\n\n#disclosure #awakening #consciousness #subconscious #secretsocieties #kevintrudeau"
+    "caption": "A new CEO walks in, calls a meeting, says treat the customers right or you're gone in twenty-four hours. The employee asks if he's really got the power to do that. He does. The service gets better immediately.\n\nTry that inside the federal government and nothing moves — the union files a lawsuit, everyone keeps their desk, and the order gets ignored entirely. One system has consequences. The other was built so nothing you do ever has any.\n\nComment RISE and I'll send you why one works and one doesn't.\n\n#disclosure #awakening #consciousness #subconscious #secretsocieties #kevintrudeau",
+    "locked": true
    }
   ]
  },
@@ -8086,5 +8087,33 @@
   "brand": "KT_COMPASSR2R2R2R2R2R2",
   "note": "27 Oct 2026 - 'The Book That Will Make You Lucky' (Rumble v6oq1ll). Weekly agent. Second-chance re-cut.",
   "clips": []
+ },
+ "ep_v7gukou_r2": {
+  "source": "v7gukou.mp4",
+  "brand": "KT_BRAKER2",
+  "note": "27 Oct 2026 - second chance re-cut of 'You Don't Actually Want to Get Rich: The Invisible Brake' (Rumble v7gukou). Fixes: THE-MONEY-LIES moved both edges one sentence later (captions-vs-sound mismatch); WHY-FAILING-ONCE moved both edges to a later sentence pair (systemic +0.68s drift persisted after one re-render); A-MILLION-DOLLARS trimmed the end a few words earlier, off the 'counter intention' phrase that recurs seconds later and was grabbing the wrong occurrence.",
+  "clips": [
+   {
+    "slug": "THE-MONEY-LIES-YOUR-FAMILY-TAUGHT-YOU",
+    "in": 159.22,
+    "out": 212.67,
+    "hook": [
+     "The money lies",
+     "your parents taught"
+    ],
+    "caption": "Money doesn't grow on trees. We were born on the wrong side of the tracks. We're workers. Rich people are miserable.\n\nKevin Trudeau calls these counter intentions - beliefs handed down through a family until they feel like facts.\n\nYou can be working hard on making money while one of them quietly sabotages every effort, because underneath, it says you shouldn't have it.\n\nHis point: until you clear it out, the struggle keeps coming back no matter how hard you work.\n\nWhich of these did you grow up hearing?\n\n#kevintrudeau #moneybeliefs #mindset #generationalwealth #wealthmindset #subconsciousmind",
+    "cta_kind": "offer"
+   },
+   {
+    "slug": "WHY-FAILING-ONCE-KEEPS-YOU-BROKE",
+    "in": 373.64,
+    "out": 468.43,
+    "hook": [
+     "Why failing once",
+     "keeps you broke"
+    ],
+    "caption": "You tried to make money once and it failed. The embarrassment, the people who laughed - it stung.\n\nKevin Trudeau says your mind files that away the same way it filed the first time you touched a hot stove: trying to make money leads to pain.\n\nFrom then on, part of you works against you. You hesitate, you pick the wrong move, you do something careless - and nobody sees why.\n\nIt also happens to people who made money and then lost it all.\n\nWhat failure is still running your money decisions?\n\n#kevintrudeau #failure #selfsabotage #moneymindset #mindset #entrepreneur"
+   }
+  ]
  }
 }
