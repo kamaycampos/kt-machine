@@ -1,0 +1,21 @@
+{
+ "source": "v6sfb21.mp4",
+ "brand": "AR_SAMSKARAR6",
+ "test": false,
+ "note": "27 Oct 2026 - second chance re-cut of 'Meditate More To Manifest More!' (Rumble v6sfb21). Awakened Rise weekly agent, per AR_PLANNING.md 2c. OSHO-97-ROLLS-ROYCES is tries 2 (last chance): r4's start ('What about the teachings of Osho') still opened on 'opens on B-roll, no face' - that line sits inside the host reading out the viewer's question ('Next question is thank you for the show on meditation. What about the teachings of Osho?'), which work/v6sfb21.srt shows is almost certainly covered by a question-card graphic, not Kevin's face. Moved the start past the whole question, onto Kevin's actual answer - 'By the way, Osho a lot of people don't know his real name' - a clean sentence start right after the '?' and the first point he is plainly on camera talking. Same out and end_words ('he has some teachings'), same hook/caption, still 48s so clears the 40s floor. RAGE-ISNT-ANGER-ITS-A-BUTTON, EVEN-SEX-BECOMES-MEDITATION and SAMSKARAS-BLOCKING-YOUR-LIFE are all tries 2 and stay skipped: RAGE's flagged repeated phrase ('not yet not') still does not appear anywhere in the transcript (confirmed again this run); EVEN-SEX's fault is a generic captions-vs-sound drift with no word or gap named to fix; SAMSKARAS's scrambled phrase ('an engram It's an') still sits in the middle of the teaching, same finding as r2.",
+ "clips": [
+  {
+   "slug": "OSHO-97-ROLLS-ROYCES",
+   "in": 291.68,
+   "out": 339.8,
+   "start_words": "By the way, Osho a lot of people",
+   "end_words": "he has some teachings",
+   "retry_of": "ar_v6sfb21_r4/OSHO-97-ROLLS-ROYCES",
+   "hook": [
+    "He owned 97",
+    "Rolls Royces."
+   ],
+   "caption": "His real name wasn't Osho. It was Bhagwan Rajneesh, and before the name change, he ran a commune in Oregon with 97 Rolls-Royces parked outside it.\n\nPeople got murdered there. It's now a Netflix documentary, and the man at the center of it still has meditation techniques people practice today. The teaching can be real. The teacher can still be a cautionary tale. Those aren't in conflict.\n\nComment RISE and I'll send you the rest of this story.\n\n#meditation #awakening #consciousness #spirituality #secretsociety #kevintrudeau"
+  }
+ ]
+}
