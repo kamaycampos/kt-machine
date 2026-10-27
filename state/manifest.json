@@ -11972,7 +11972,11 @@
    "hook": "Twenty-four hours. Then you're fired.",
    "bytes": 64375935,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-27T12:48",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
