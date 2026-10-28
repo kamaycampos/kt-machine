@@ -1,10 +1,10 @@
 {
- "at": "2026-10-28T14:27",
+ "at": "2026-10-28T20:07",
  "profile": {
-  "likes_count": 5869,
-  "video_count": 166,
   "follower_count": 410,
-  "following_count": 8
+  "following_count": 8,
+  "likes_count": 5869,
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -89,7 +89,7 @@
   },
   "KT_LEDGER/02_LOST-27-MILLION-STILL-WON_160s.mp4": {
    "id": "7692503921260088590",
-   "view_count": 21,
+   "view_count": 22,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -189,7 +189,7 @@
   },
   "unmatched/7690766787335474446": {
    "id": "7690766787335474446",
-   "view_count": 24,
+   "view_count": 25,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -379,7 +379,7 @@
   },
   "KT_YWIYC/01_HOW-TO-START-ACTUALLY-DOING-IT_87s.mp4": {
    "id": "7689168512304123150",
-   "view_count": 230,
+   "view_count": 231,
    "like_count": 12,
    "comment_count": 0,
    "share_count": 0,
@@ -489,7 +489,7 @@
   },
   "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
    "id": "7688148098480098573",
-   "view_count": 516,
+   "view_count": 517,
    "like_count": 40,
    "comment_count": 2,
    "share_count": 6,
@@ -529,7 +529,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3719,
+   "view_count": 3720,
    "like_count": 152,
    "comment_count": 7,
    "share_count": 16,
@@ -579,7 +579,7 @@
   },
   "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4": {
    "id": "7686887912297843981",
-   "view_count": 2336,
+   "view_count": 2337,
    "like_count": 78,
    "comment_count": 5,
    "share_count": 12,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38194,
+   "view_count": 38195,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
@@ -729,7 +729,7 @@
   },
   "KT_POS/04_04_THE-BOW-AND-ARROW_77s.mp4": {
    "id": "7684776913436511501",
-   "view_count": 287,
+   "view_count": 288,
    "like_count": 26,
    "comment_count": 2,
    "share_count": 0,
@@ -759,7 +759,7 @@
   },
   "KT_POS/03_03_THE-INGREDIENT-NOBODY-TEACHES_102s.mp4": {
    "id": "7685133057686326542",
-   "view_count": 1782,
+   "view_count": 1783,
    "like_count": 230,
    "comment_count": 22,
    "share_count": 42,
@@ -769,7 +769,7 @@
   },
   "KT_HOME/02_02_WHY-RICH-HOMES-ARE-FULL-OF-OLD-THINGS_85s.mp4": {
    "id": "7685065417743797518",
-   "view_count": 3481,
+   "view_count": 3482,
    "like_count": 270,
    "comment_count": 6,
    "share_count": 43,
@@ -929,7 +929,7 @@
   },
   "unmatched/7683355434304015630": {
    "id": "7683355434304015630",
-   "view_count": 270,
+   "view_count": 271,
    "like_count": 14,
    "comment_count": 0,
    "share_count": 0,
