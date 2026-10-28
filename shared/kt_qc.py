@@ -166,6 +166,15 @@ def text_faults(caps):
                 # a reverent capital for God mid-sentence: "how much more will He care
                 # for you" (VSC WORRY-ABOUT-NOTHING, 15 Oct 2026)
                 and not (flat[i + 1].strip(",.?!") in ("He", "His", "Him") and norm[i] in CANT_END)
+                # a TITLE in title case, not a sentence: "a great book called The Power of
+                # Now" (VSC FOCUS-ONLY-ON-TODAY, 28 Oct 2026) - the next word is capitalised
+                # and starts no sentence ("The Power"), or this is a small word inside the
+                # title right after a capitalised one ("Power of Now")
+                and not (i + 2 < len(flat) and flat[i + 2][:1].isupper()
+                         and norm[i + 2] not in STARTERS)
+                and not (norm[i] in ("of", "the", "and", "in", "on", "for", "to", "a", "an")
+                         and i > 0 and flat[i - 1][:1].isupper() and norm[i - 1] not in STARTERS
+                         and not flat[i - 1].endswith((".", "!", "?")))
                 and not flat[i][:1].isupper()):
             out.append(f'sentence starts with no stop: "{flat[i]} {flat[i+1]}"')
     return sorted(set(out))
