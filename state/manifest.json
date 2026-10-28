@@ -12076,7 +12076,11 @@
    "hook": "Even Jesus bowed. So should you.",
    "bytes": 33995100,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-28T20:34",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_DISCIPLE/01_HE-MADE-TEN-BILLION-BEFORE-HE-TAUGHT-THIS_55s.mp4",
@@ -12084,7 +12088,11 @@
    "hook": "He made ten billion dollars first.",
    "bytes": 32500577,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-28T14:32",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_DISCIPLE/01_HE-MET-A-SAINT-AND-MISSED-IT_58s.mp4",
@@ -12092,7 +12100,11 @@
    "hook": "He met a saint. Missed it.",
    "bytes": 28635725,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-28T18:07",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_DISCIPLE/02_ONLY-33RD-DEGREE-MASONS-KNOW-THIS_44s.mp4",
@@ -12100,7 +12112,11 @@
    "hook": "Only 33rd-degree Masons get taught this.",
    "bytes": 24447882,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-28T09:30",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_DISCIPLE/02_YOUR-BODY-IS-LITERALLY-A-MAGNET_45s.mp4",
@@ -12108,7 +12124,11 @@
    "hook": "Your body is literally a magnet.",
    "bytes": 25406758,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-28T12:20",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "KT_CRUNCH/02_WHY-DUMB-QUESTIONS-MAKE-YOU-CONFIDENT_46s.mp4",
@@ -12116,7 +12136,11 @@
    "hook": "Why dumb questions make you confident",
    "bytes": 22530083,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-28T12:03",
+   "cta_keyword": "MONEY",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "KT_TITHE/01_THE-FORMULA-JESUS-USED-TO-MANIFEST_128s.mp4",
@@ -12125,7 +12149,10 @@
    "bytes": 70154804,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-28T14:34",
+   "cta_keyword": "WISH",
+   "cta_variant": 6
   }
  ]
 }
