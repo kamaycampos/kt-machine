@@ -9793,6 +9793,114 @@
     "Why successful people",
     "need a partner"
    ]
+  },
+  "ar_v5kmsul/FORCED-TO-KILL-HIS-OWN-FAMILY": {
+   "plan": "ar_v5kmsul",
+   "source": "v5kmsul.mp4",
+   "brand": "AR_DISCIPLE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_FORCED-TO-KILL-HIS-OWN-FAMILY_117s.mp4` - phrase scrambled around \"knows that he knows\"; phrase scrambled around \"knows that he knows,\""
+   ],
+   "slug": "FORCED-TO-KILL-HIS-OWN-FAMILY",
+   "in": 906.0,
+   "out": 1025.0,
+   "start_words": "And Arjuna, the warrior, sees",
+   "end_words": "go learn from him",
+   "hook": [
+    "Forced to kill",
+    "his own family."
+   ]
+  },
+  "ar_v5kmsul/YOUR-CUP-IS-ALREADY-TOO-FULL": {
+   "plan": "ar_v5kmsul",
+   "source": "v5kmsul.mp4",
+   "brand": "AR_DISCIPLE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_YOUR-CUP-IS-ALREADY-TOO-FULL_39s.mp4: [FAIL] 01_YOUR-CUP-IS-ALREADY-TOO-FULL_39s.mp4                6 captions vs the sound  median +0.08s  worst-10% 1.08s  | words captioned 100%"
+   ],
+   "slug": "YOUR-CUP-IS-ALREADY-TOO-FULL",
+   "in": 1080.0,
+   "out": 1121.0,
+   "start_words": "There's a good Zen story",
+   "end_words": "what you already think",
+   "hook": [
+    "Your cup is",
+    "already too full."
+   ]
+  },
+  "ep_v59sdnh/WHY-ASKING-WHY-MAKES-YOU-SMARTER": {
+   "plan": "ep_v59sdnh",
+   "source": "v59sdnh.mp4",
+   "brand": "KT_CRUNCH",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_WHY-ASKING-WHY-MAKES-YOU-SMARTER_96s.mp4` - phrase scrambled around \"green pens with green\""
+   ],
+   "slug": "WHY-ASKING-WHY-MAKES-YOU-SMARTER",
+   "in": 1801.0,
+   "out": 1897.0,
+   "start_words": "I was in the business",
+   "end_words": "Don't be stupid",
+   "hook": [
+    "Why asking why",
+    "makes you smarter"
+   ]
+  },
+  "ep_v59sdnh/THE-EINSTEIN-TRICK-FOR-SIMPLE-ANSWERS": {
+   "plan": "ep_v59sdnh",
+   "source": "v59sdnh.mp4",
+   "brand": "KT_CRUNCH",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THE-EINSTEIN-TRICK-FOR-SIMPLE-ANSWERS_146s.mp4: [FAIL] 01_THE-EINSTEIN-TRICK-FOR-SIMPLE-ANSWERS_146s.mp4      19 captions vs the sound  median +0.47s  worst-10% 2.29s  | words captioned 99%"
+   ],
+   "slug": "THE-EINSTEIN-TRICK-FOR-SIMPLE-ANSWERS",
+   "in": 2064.0,
+   "out": 2210.0,
+   "start_words": "I remember I was sitting",
+   "end_words": "down in very simple terms",
+   "hook": [
+    "The Einstein trick for",
+    "simple answers"
+   ]
+  },
+  "ep_v5gavi4/HOW-150-BECAME-300-BILLION": {
+   "plan": "ep_v5gavi4",
+   "source": "v5gavi4.mp4",
+   "brand": "KT_TITHE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_HOW-150-BECAME-300-BILLION_55s.mp4: [FAIL] 01_HOW-150-BECAME-300-BILLION_55s.mp4                  8 captions vs the sound  median +0.00s  worst-10% 1.80s  | words captioned 105%"
+   ],
+   "slug": "HOW-150-BECAME-300-BILLION",
+   "in": 1280.0,
+   "out": 1334.0,
+   "start_words": "They all will tell you",
+   "end_words": "planting seeds into the universe",
+   "hook": [
+    "How $1.50 became",
+    "$300 billion"
+   ]
+  },
+  "ep_v5gavi4/HOW-GIVING-MONEY-SET-HIM-FREE": {
+   "plan": "ep_v5gavi4",
+   "source": "v5gavi4.mp4",
+   "brand": "KT_TITHE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_HOW-GIVING-MONEY-SET-HIM-FREE_144s.mp4` - word repeated after one: \"even know even\""
+   ],
+   "slug": "HOW-GIVING-MONEY-SET-HIM-FREE",
+   "in": 1719.0,
+   "out": 1864.0,
+   "start_words": "I reach in my pocket",
+   "end_words": "experienced up until that time",
+   "hook": [
+    "How giving money",
+    "set him free"
+   ]
   }
  },
  "attempts": {
@@ -9835,6 +9943,7 @@
   "ar_v6sfb21_r6": 2,
   "ar_v5nav8n": 2,
   "ar_v5owvgw": 2,
-  "ep_v66j311_p2": 2
+  "ep_v66j311_p2": 2,
+  "ar_v50s5f8_r3": 1
  }
 }
