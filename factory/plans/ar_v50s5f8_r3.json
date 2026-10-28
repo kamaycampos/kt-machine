@@ -1,0 +1,21 @@
+{
+ "source": "v50s5f8.mp4",
+ "brand": "AR_TENSTEPSR3",
+ "test": false,
+ "note": "28 Oct 2026 - third-generation second chance for '10 Steps To Manifest Anything You Want | The Kevin Trudeau Show | Ep. 20' (Rumble v50s5f8). Awakened Rise weekly agent, re-cut per AR_PLANNING.md 2c. GO-TOUCH-THE-ROLEX still landed one word short of its r2 ending ('this is your exercise called dream building') - word-rate math on work/v50s5f8.srt puts 'building.' ending right around 2411.1-2411.7s, so the r2 out of 2411.14 was cutting it off mid-word; pushed out to 2412.3 for real margin past the word, same pattern as the other chronic-undershoot clips this episode's r2 already fixed by adding margin. COMFORT-KEEPS-YOU-STUCK and EVEN-POMPEO-GOT-DISGUSTED-THEN-CHANGED are tries 2 (last chance): COMFORT's flagged gap (work/v50s5f8.srt, ~26:50-26:52) sits inside the hound-dog-on-a-nail story the clip's own caption is built around ('He said, \"Well, it doesn't hurt him that bad.\" Think about that...') - no edge excludes it without cutting the metaphor itself, so skipped. POMPEO's fail is generic captions-vs-sound drift with no word or sentence named at all - no edge to move, skipped. CEOS-MEET-SECRETLY-AND-YOU-DONT (tries 1, original plan) checked again against work/v50s5f8.srt: both 'no stop' breaks ('good But' at 'That's all good. But it's more...', 'industries But' at 'different industries, but they're all like-minded...') sit 20s and 38s into a 56s clip, inside the CEO-club story itself - same finding as the r2 note, still skipped.",
+ "clips": [
+  {
+   "slug": "GO-TOUCH-THE-ROLEX",
+   "in": 2338.15,
+   "out": 2412.3,
+   "start_words": "This also intensifies the",
+   "end_words": "this is your exercise called dream building",
+   "retry_of": "ar_v50s5f8_r2/GO-TOUCH-THE-ROLEX",
+   "hook": [
+    "Go touch the Rolex.",
+    "It works."
+   ],
+   "caption": "Writing your goal down is step one. Here's the step after it that almost nobody does: go physically touch the thing.\n\nWant a car? Go to the dealership, sit in it, touch the wheel, smell the interior. Want a Rolex? Go put it on your wrist and have someone take a photo of you wearing it. It sounds like a gimmick, but it isn't — touching something in the physical universe changes your energy around it, and that's what actually speeds up how fast it shows up in your life.\n\nComment RISE and I'll send you the rest of the technique.\n\n#manifestation #lawofattraction #dreamboard #awakening #consciousness #kevintrudeau"
+  }
+ ]
+}
