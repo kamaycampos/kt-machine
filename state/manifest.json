@@ -12064,7 +12064,11 @@
    "hook": "Why fake experts sell you success",
    "bytes": 90314596,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-28T09:34",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
