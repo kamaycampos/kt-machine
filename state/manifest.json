@@ -12064,11 +12064,25 @@
    "hook": "Why fake experts sell you success",
    "bytes": 90314596,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-28T09:34",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfClChVjQZy/",
+    "youtube": "https://youtube.com/shorts/EmUaAqJMAjw"
+   },
+   "caption_at_post": "Kevin Trudeau says 99% of the motivational speakers on YouTube never built anything.\n\nThey went to school, never started a company, never made real money - then wrote a book teaching \"success.\"\n\nA guy wrote him asking to endorse his new book on the billionaire mindset. His day job? Driving a UPS truck.\n\nKevin only trusted the ones who had actually done it: Ed Foreman made hundreds of millions before he ever gave a speech.\n\nBefore you take advice from anyone, ask one question: have they done the thing, or just read about it?\n\n#kevintrudeau #success #mindset #business #motivation #wealth",
+   "posted_at": "2026-10-28T09:52",
+   "tiktok_retry": true
   },
   {
    "file": "AR_DISCIPLE/01_EVEN-JESUS-BOWED-SO-SHOULD-YOU_59s.mp4",
@@ -12111,12 +12125,26 @@
    "caption": "Every guru who ever said \"I invented this\" was lying, and the proof is older than any of them.\n\nThe 5,000-year-old Vedas. The Tao. Kabbalah. Sufi texts. And the teachings kept inside Freemasonry, handed down only once you reach the 33rd degree \u2014 the same ones named inside the Brotherhood. None of it is new. Every success method, every \"secret,\" every technique being sold today as an original discovery is sitting in writings that go back thousands of years, written by people with no name attached to any of it.\n\nComment RISE and I'll send you where to actually find it.\n\n#brotherhood #secretsocieties #disclosure #ancienttexts #awakening #kevintrudeau",
    "hook": "Only 33rd-degree Masons get taught this.",
    "bytes": 24447882,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-28T09:30",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1618954366592204/",
+    "instagram": "https://www.instagram.com/reel/DfCkurhE_ES/",
+    "youtube": "https://youtube.com/shorts/d7QtsPKKuG4"
+   },
+   "caption_at_post": "Every guru who ever said \"I invented this\" was lying, and the proof is older than any of them.\n\nThe 5,000-year-old Vedas. The Tao. Kabbalah. Sufi texts. And the teachings kept inside Freemasonry, handed down only once you reach the 33rd degree \u2014 the same ones named inside the Brotherhood. None of it is new. Every success method, every \"secret,\" every technique being sold today as an original discovery is sitting in writings that go back thousands of years, written by people with no name attached to any of it.\n\nComment RISE and I'll send you where to actually find it.\n\n#brotherhood #secretsocieties #disclosure #ancienttexts #awakening #kevintrudeau",
+   "posted_at": "2026-10-28T09:49"
   },
   {
    "file": "AR_DISCIPLE/02_YOUR-BODY-IS-LITERALLY-A-MAGNET_45s.mp4",
