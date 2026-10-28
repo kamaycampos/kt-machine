@@ -9901,6 +9901,24 @@
     "How giving money",
     "set him free"
    ]
+  },
+  "ar_v50s5f8_r3/GO-TOUCH-THE-ROLEX": {
+   "plan": "ar_v50s5f8_r3",
+   "source": "v50s5f8.mp4",
+   "brand": "AR_TENSTEPSR3",
+   "tries": 3,
+   "why": [
+    "FAIL 01_GO-TOUCH-THE-ROLEX_72s.mp4: ends off the planned words: plan ends 'this is your exercise called dream building', clip ends 'this is your exercise called dream'"
+   ],
+   "slug": "GO-TOUCH-THE-ROLEX",
+   "in": 2338.15,
+   "out": 2412.3,
+   "start_words": "This also intensifies the",
+   "end_words": "this is your exercise called dream building",
+   "hook": [
+    "Go touch the Rolex.",
+    "It works."
+   ]
   }
  },
  "attempts": {
@@ -9944,6 +9962,6 @@
   "ar_v5nav8n": 2,
   "ar_v5owvgw": 2,
   "ep_v66j311_p2": 2,
-  "ar_v50s5f8_r3": 1
+  "ar_v50s5f8_r3": 2
  }
 }
