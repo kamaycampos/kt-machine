@@ -1,11 +1,17 @@
-## ar_v50s5f8_r3: 0 of 1 clip(s) passed every gate
+## ep_v7hhpme: 1 of 2 clip(s) passed every gate
 
 
-## 2026-10-28 14:28
-ar_v50s5f8_r3__s0 (AR_TENSTEPSR3): 1 of 1 passed pre-render gates
+## 2026-10-28 19:38
+ep_v7hhpme__s0 (KT_GOALPOST): 2 of 2 passed pre-render gates
 
-RENDER ar_v50s5f8_r3__s0
-  FAIL 01_GO-TOUCH-THE-ROLEX_72s.mp4: ends off the planned words: plan ends 'this is your exercise called dream building', clip ends 'this is your exercise called dream'
+RENDER ep_v7hhpme__s0
+  FAIL 01_THE-2-NUMBERS-YOU-NEED_80s.mp4: ends off the planned words: plan ends 'when it comes to money', clip ends 'releasing the need to know how'
+  PASS 02_WHY-99-PERCENT-STILL-DONT-MAKE-IT_45s.mp4  02_WHY-99-PERCENT-STILL-DONT-MAKE-IT_45s.mp4           11 captions vs the sound  median +0
+       FIRST 5s : How to trade cryptocurrencies. Here's how to buy real estate with no money down and make a fortune. | LAST  8s : It's why. Because they're focused too much on the how. They think they need to know how before they can make money.
+TEST MODE - passing clips NOT uploaded or queued: KT_GOALPOST
 
 
-- **RETIRED** after 2 runs with nothing passing; its clips go back to the planner (factory/plans/_failed.json)
+- **NOT QUEUED** `02_WHY-99-PERCENT-STILL-DONT-MAKE-IT_45s.mp4` - opens mid-sentence on "how to trade"
+
+## UPLOAD
+nothing new to add

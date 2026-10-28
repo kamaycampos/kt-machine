@@ -9919,6 +9919,42 @@
     "Go touch the Rolex.",
     "It works."
    ]
+  },
+  "ep_v7hhpme/THE-2-NUMBERS-YOU-NEED": {
+   "plan": "ep_v7hhpme",
+   "source": "v7hhpme.mp4",
+   "brand": "KT_GOALPOST",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THE-2-NUMBERS-YOU-NEED_80s.mp4: ends off the planned words: plan ends 'when it comes to money', clip ends 'releasing the need to know how'"
+   ],
+   "slug": "THE-2-NUMBERS-YOU-NEED",
+   "in": 183.0,
+   "out": 264.0,
+   "start_words": "One is the dream",
+   "end_words": "when it comes to money",
+   "hook": [
+    "The 2 numbers",
+    "you need"
+   ]
+  },
+  "ep_v7hhpme/WHY-99-PERCENT-STILL-DONT-MAKE-IT": {
+   "plan": "ep_v7hhpme",
+   "source": "v7hhpme.mp4",
+   "brand": "KT_GOALPOST",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_WHY-99-PERCENT-STILL-DONT-MAKE-IT_45s.mp4` - opens mid-sentence on \"how to trade\""
+   ],
+   "slug": "WHY-99-PERCENT-STILL-DONT-MAKE-IT",
+   "in": 780.0,
+   "out": 839.0,
+   "start_words": "Most people, when they",
+   "end_words": "before they can make money",
+   "hook": [
+    "Why 99% still",
+    "stay broke"
+   ]
   }
  },
  "attempts": {
