@@ -9757,6 +9757,42 @@
     "Why the rich",
     "hide the formula"
    ]
+  },
+  "ep_v4y99ab/HOW-TO-PROGRAM-YOUR-MIND-DAILY": {
+   "plan": "ep_v4y99ab",
+   "source": "v4y99ab.mp4",
+   "brand": "KT_PLAYBACK",
+   "tries": 1,
+   "why": [
+    "FAIL 01_HOW-TO-PROGRAM-YOUR-MIND-DAILY_160s.mp4: [FAIL] 01_HOW-TO-PROGRAM-YOUR-MIND-DAILY_160s.mp4             102 captions vs the sound (word-referenced: no clear pauses)  median +0.79s  worst-10% 0.93s  | words captioned 100%  UNCAPTIONED SPEECH [(145.4, 148.0)]"
+   ],
+   "slug": "HOW-TO-PROGRAM-YOUR-MIND-DAILY",
+   "in": 1851.12,
+   "out": 2001.54,
+   "start_words": "What I used to do",
+   "end_words": "a six tape drive",
+   "hook": [
+    "How to program",
+    "your mind daily"
+   ]
+  },
+  "ep_v4y99ab/WHY-SUCCESSFUL-PEOPLE-NEED-A-PARTNER": {
+   "plan": "ep_v4y99ab",
+   "source": "v4y99ab.mp4",
+   "brand": "KT_PLAYBACK",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_WHY-SUCCESSFUL-PEOPLE-NEED-A-PARTNER_93s.mp4` - opens mid-sentence on \"successful people both\""
+   ],
+   "slug": "WHY-SUCCESSFUL-PEOPLE-NEED-A-PARTNER",
+   "in": 1481.92,
+   "out": 1580.28,
+   "start_words": "All successful people both",
+   "end_words": "a great romantic partner",
+   "hook": [
+    "Why successful people",
+    "need a partner"
+   ]
   }
  },
  "attempts": {
