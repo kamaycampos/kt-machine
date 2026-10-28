@@ -9721,6 +9721,42 @@
     "$1 million before",
     "he turned 18"
    ]
+  },
+  "ep_v66j311_p2/A-DELI-SANDWICH-LED-TO-450-MILLION": {
+   "plan": "ep_v66j311_p2",
+   "source": "v66j311.mp4",
+   "brand": "KT_DANNYROSE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_A-DELI-SANDWICH-LED-TO-450-MILLION_173s.mp4: ends off the planned words: plan ends '$450 million in sales.', clip ends 'went on to do 450 million'"
+   ],
+   "slug": "A-DELI-SANDWICH-LED-TO-450-MILLION",
+   "in": 893.4,
+   "out": 1070.62,
+   "start_words": "You look familiar. You're Bobby Singer,",
+   "end_words": "$450 million in sales.",
+   "hook": [
+    "A deli sandwich",
+    "led to $450M"
+   ]
+  },
+  "ep_v66j311_p2/WHY-THE-RICH-HIDE-THE-REAL-FORMULA": {
+   "plan": "ep_v66j311_p2",
+   "source": "v66j311.mp4",
+   "brand": "KT_DANNYROSE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_WHY-THE-RICH-HIDE-THE-REAL-FORMULA_83s.mp4: [FAIL] 02_WHY-THE-RICH-HIDE-THE-REAL-FORMULA_83s.mp4          16 captions vs the sound  median +0.10s  worst-10% 1.13s  | words captioned 100%"
+   ],
+   "slug": "WHY-THE-RICH-HIDE-THE-REAL-FORMULA",
+   "in": 1281.12,
+   "out": 1370.24,
+   "start_words": "All the wealthy people, they",
+   "end_words": "work in my factories?",
+   "hook": [
+    "Why the rich",
+    "hide the formula"
+   ]
   }
  },
  "attempts": {
@@ -9763,6 +9799,6 @@
   "ar_v6sfb21_r6": 2,
   "ar_v5nav8n": 2,
   "ar_v5owvgw": 2,
-  "ep_v66j311_p2": 1
+  "ep_v66j311_p2": 2
  }
 }
