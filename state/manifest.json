@@ -12101,12 +12101,26 @@
    "caption": "He didn't teach a single class on success until he'd already done over $10 billion in sales.\n\nNot a typo \u2014 ten billion, first, then the course. Compare that to the guy teaching \"how to buy real estate with no money down\" who'd personally only closed a couple of deals and made his real money selling the course instead. One of them actually did it. One of them just talked about it convincingly. The entire difference in who's worth listening to sits right there.\n\nComment RISE and I'll send you how to tell them apart.\n\n#manifestation #success #abundance #consciousness #mindset #kevintrudeau",
    "hook": "He made ten billion dollars first.",
    "bytes": 32500577,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-28T14:32",
    "cta_keyword": "YES",
    "cta_variant": 2,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/993929773041230/",
+    "instagram": "https://www.instagram.com/reel/DfDHFxxFK7H/",
+    "youtube": "https://youtube.com/shorts/BX4qppxHsJw"
+   },
+   "caption_at_post": "He didn't teach a single class on success until he'd already done over $10 billion in sales.\n\nNot a typo \u2014 ten billion, first, then the course. Compare that to the guy teaching \"how to buy real estate with no money down\" who'd personally only closed a couple of deals and made his real money selling the course instead. One of them actually did it. One of them just talked about it convincingly. The entire difference in who's worth listening to sits right there.\n\nComment RISE and I'll send you how to tell them apart.\n\n#manifestation #success #abundance #consciousness #mindset #kevintrudeau",
+   "posted_at": "2026-10-28T14:50"
   },
   {
    "file": "AR_DISCIPLE/01_HE-MET-A-SAINT-AND-MISSED-IT_58s.mp4",
@@ -12204,11 +12218,25 @@
    "hook": "The formula Jesus used to manifest",
    "bytes": 70154804,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-28T14:34",
    "cta_keyword": "WISH",
-   "cta_variant": 6
+   "cta_variant": 6,
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfDHZgFjk8h/",
+    "youtube": "https://youtube.com/shorts/-EDcp_moJzE"
+   },
+   "caption_at_post": "Kevin Trudeau breaks down the exact formula for manifesting that Jesus used, word for word.\n\nFirst: have faith - not hope, but complete certainty the universe works a certain way.\n\nSecond: say exactly what you want out loud. Not in your head. Out loud.\n\nThird: believe it's already done, with zero doubt. And the part almost everyone skips - forgive everyone you're still holding something against, or it blocks the whole thing.\n\nWhich step have you been skipping?\n\n#kevintrudeau #manifesting #yourwishisyourcommand #lawofattraction #mindset #success",
+   "posted_at": "2026-10-28T14:52",
+   "tiktok_retry": true
   }
  ]
 }
