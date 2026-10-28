@@ -12038,11 +12038,25 @@
    "hook": "Why failing once keeps you broke",
    "bytes": 64200335,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "off for this account"
+   },
    "scheduled_at": "2026-10-27T20:08",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfBJJnQlFfx/",
+    "youtube": "https://youtube.com/shorts/QpwFMNl1VjA"
+   },
+   "caption_at_post": "You tried to make money once and it failed. The embarrassment, the people who laughed - it stung.\n\nKevin Trudeau says your mind files that away the same way it filed the first time you touched a hot stove: trying to make money leads to pain.\n\nFrom then on, part of you works against you. You hesitate, you pick the wrong move, you do something careless - and nobody sees why.\n\nIt also happens to people who made money and then lost it all.\n\nWhat failure is still running your money decisions?\n\n#kevintrudeau #failure #selfsabotage #moneymindset #mindset #entrepreneur",
+   "posted_at": "2026-10-27T20:29",
+   "tiktok_retry": true
   }
  ]
 }
