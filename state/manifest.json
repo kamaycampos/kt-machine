@@ -12272,7 +12272,11 @@
    "hook": "$50,000 in cash. Now it's illegal.",
    "bytes": 69949450,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-29T12:13",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_DARKSIDE/01_THREE-CLASSES-MOST-ARE-SLAVES_94s.mp4",
@@ -12280,7 +12284,11 @@
    "hook": "Three classes. You're likely a slave.",
    "bytes": 79009990,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-29T14:20",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_DARKSIDE/02_A-BILLION-PEOPLE-CALLED-USELESS-EATERS_81s.mp4",
@@ -12288,7 +12296,11 @@
    "hook": "A billion people called useless eaters.",
    "bytes": 61703620,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-29T10:13",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_ELITER2/01_WHAT-MAKES-AN-INVESTOR-CALM_156s.mp4",
@@ -12296,7 +12308,11 @@
    "hook": "Why Charlie Munger never loses control",
    "bytes": 77253477,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-29T10:06",
+   "cta_keyword": "MONEY",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_SEVENTYR2R2R2/01_MANIFEST-MONEY-LIKE-AN-AMAZON-ORDER_67s.mp4",
@@ -12305,7 +12321,10 @@
    "bytes": 39973266,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-29T13:05",
+   "cta_keyword": "WISH",
+   "cta_variant": 4
   }
  ]
 }
