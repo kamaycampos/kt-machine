@@ -10081,6 +10081,42 @@
     "Why he died",
     "with a smile"
    ]
+  },
+  "ep_v7hhpme_p2/BOBBY-SINGERS-NO-RISK-DEAL": {
+   "plan": "ep_v7hhpme_p2",
+   "source": "v7hhpme.mp4",
+   "brand": "KT_FOGLIGHT",
+   "tries": 1,
+   "why": [
+    "FAIL 01_BOBBY-SINGERS-NO-RISK-DEAL_68s.mp4: ends off the planned words: plan ends 'You have no risk', clip ends 'pay your royalty you have no'"
+   ],
+   "slug": "BOBBY-SINGERS-NO-RISK-DEAL",
+   "in": 495.0,
+   "out": 561.0,
+   "start_words": "I look at him",
+   "end_words": "You have no risk",
+   "hook": [
+    "The no-risk deal",
+    "Bobby Singer offered"
+   ]
+  },
+  "ep_v7hhpme_r2/WHY-99-PERCENT-STILL-DONT-MAKE-IT": {
+   "plan": "ep_v7hhpme_r2",
+   "source": "v7hhpme.mp4",
+   "brand": "KT_GOALPOSTR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_WHY-99-PERCENT-STILL-DONT-MAKE-IT_45s.mp4` - opens mid-sentence on \"how to trade\""
+   ],
+   "slug": "WHY-99-PERCENT-STILL-DONT-MAKE-IT",
+   "in": 794.0,
+   "out": 839.0,
+   "start_words": "Here's how to trade",
+   "end_words": "before they can make money",
+   "hook": [
+    "Why 99% still",
+    "stay broke"
+   ]
   }
  },
  "attempts": {
