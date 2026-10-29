@@ -33,10 +33,14 @@ REPO = f"{OWNER}/{NAME}"
 REDIRECT = f"https://{OWNER.lower()}.github.io/{NAME}/"
 
 print(f"\n  TikTok inbox for {REPO}. Redirect URI to register in the Sandbox: {REDIRECT}")
-CK = sys.argv[1] if len(sys.argv) > 1 else input("  PASTE THE SANDBOX CLIENT KEY, then Enter: ").strip()
-CS = getpass.getpass("  PASTE THE SANDBOX CLIENT SECRET (nothing shows), then Enter: ").strip()
-if len(CK) < 8 or len(CS) < 8:
-    sys.exit("  One of them was empty. Run this again.")
+# An extra Enter after a paste used to end the script and leave the secret to be typed
+# into the shell (29 Oct 2026). Now an empty line just asks again.
+CK = sys.argv[1] if len(sys.argv) > 1 else ""
+while len(CK) < 8:
+    CK = input("\n  PASTE THE SANDBOX CLIENT KEY, then Enter: ").strip()
+CS = ""
+while len(CS) < 8:
+    CS = getpass.getpass("\n  PASTE THE SANDBOX CLIENT SECRET (nothing shows), then Enter: ").strip()
 
 ver = secrets.token_urlsafe(48)
 state = "tt" + secrets.token_hex(5)
