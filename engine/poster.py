@@ -104,6 +104,22 @@ def _cfg(*keys, brand=""):
     return vals, missing
 
 
+def fb_post_cfg(brand):
+    """The Page a brand's reels are POSTED to. Usually FB_PAGE_ID, but not always.
+
+    29 Oct 2026. Kamay's old Page (Kevin Trudeau Wisdom) was restricted, so he made a new
+    one ("What do you want?") and posted to it by hand. FB_ACCESS_TOKEN must stay the OLD
+    Page's token: the DM bot reads Instagram comments with it (it carries
+    instagram_manage_comments for @kevin_trudeau_student). So the new Page gets its own
+    pair, FB_POST_PAGE_ID + FB_POST_ACCESS_TOKEN, used only for posting and its stats.
+    Not set -> the usual pair, exactly as before.
+    """
+    vals, missing = _cfg("FB_POST_PAGE_ID", "FB_POST_ACCESS_TOKEN", brand=brand)
+    if not missing:
+        return vals, missing
+    return _cfg("FB_PAGE_ID", "FB_ACCESS_TOKEN", brand=brand)
+
+
 def collides_with_default(brand, *identity_keys):
     """Refuse when a fenced brand resolves to the DEFAULT brand's own account.
 
@@ -928,8 +944,7 @@ def facebook(path, caption, public_url, clip=None):
     if it is missing Facebook answers (#100) and that is said plainly rather
     than dressed up as a network error.
     """
-    (page, tok), missing = _cfg("FB_PAGE_ID", "FB_ACCESS_TOKEN",
-                                brand=brand_of(clip))
+    (page, tok), missing = fb_post_cfg(brand_of(clip))
     if missing:
         return "not configured: " + ", ".join(missing)
     clash = collides_with_default(brand_of(clip), "FB_PAGE_ID")
@@ -1498,8 +1513,7 @@ def audit_facebook(clips):
 
     cache, bad = {}, []
     for prefix, idxs in by_prefix.items():
-        (page, tok), missing = _cfg("FB_PAGE_ID", "FB_ACCESS_TOKEN",
-                                    brand=prefix)
+        (page, tok), missing = fb_post_cfg(prefix)
         if missing:
             continue
         if page not in cache:

@@ -41,7 +41,7 @@ import time
 
 import requests
 
-from poster import _cfg, cred_prefix, brand_of, _j, T
+from poster import _cfg, fb_post_cfg, cred_prefix, brand_of, _j, T
 
 
 def instagram_stats(clips):
@@ -192,8 +192,7 @@ def facebook_stats(clips):
         vid = m.group(1) or m.group(2)
         prefix = cred_prefix(brand_of(c))
         if prefix not in cache:
-            (page, tok), missing = _cfg("FB_PAGE_ID", "FB_ACCESS_TOKEN",
-                                        brand=prefix)
+            (page, tok), missing = fb_post_cfg(prefix)
             cache[prefix] = None if missing else tok
         tok = cache.get(prefix)
         if not tok:
