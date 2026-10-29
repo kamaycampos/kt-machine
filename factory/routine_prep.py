@@ -95,6 +95,7 @@ SECOND_MIN_EP, SECOND_FREE = 30, 15     # second pass: episodes of 30+ min with 
 if LANE:
     SECOND_MIN_EP, SECOND_FREE = 10, 4
 second = {}                              # second-pass episode -> the clips already cut from it
+focus = {}                               # lane brand: episode -> its health-dense 30 s blocks
 try:
     _f = json.load(open(os.path.join(HERE, "plans", "_failed.json")))["clips"]
 except (OSError, ValueError, KeyError):
@@ -232,6 +233,43 @@ if not AR:
             print(f"  {v} '{idx[v]['title'][:50]}' {idx[v]['duration'] / 60:.0f} min, {t / 60:.0f} min unused, "
                   f"{len(second[v])} clips already cut - write factory/plans/ep_{v}_p2.json (_p3 if taken)")
         ready += list(second)
+    # HEALTH INSIDE KEVIN'S OTHER EPISODES (29 Oct 2026, Kamay: "there are maaaany moments in
+    # maaany videos of kt talking about health"). Only ~13 of his HD episodes are titled health,
+    # and WB had cut them all. His money and mindset episodes are HD and already stocked here;
+    # a lane brand now reads what he SAYS in them, not their titles. A 30-second block with 3+
+    # lane words is a health block; an episode with 4+ of them (2+ minutes) is offered, the
+    # most health talk first, and its reading holds only those stretches (+-60 s of context).
+    if LANE and len(ready) < MAX:
+        _vague = {"brain", "energy", "heart", "body", "pressure", "drug", "drugs", "drink", "water", "ate", "label", "labels"}
+        _tw = set(json.load(open(os.path.join(ROOT, "my_brand", "lane.json"))).get("topic_words", [])) - _vague
+        _scored = []
+        for v, e in idx.items():
+            if (v in ready or v in _theirs or not e.get("transcript") or e.get("test")
+                    or e.get("height", 0) < 1080 or e.get("status") in ("fetch_failed", "rejected")
+                    or f'"{v}.mp4"' in plans_txt):
+                continue
+            try:
+                open(f"/tmp/{v}.srt.enc", "wb").write(get(f"{v}.srt.enc"))
+                txt = subprocess.run(["openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-pass", "env:TRANSCRIPT_KEY",
+                                      "-in", f"/tmp/{v}.srt.enc"], capture_output=True).stdout.decode("utf-8", "ignore")
+            except Exception:
+                continue
+            hits = {}
+            for h, m, sec, _ms, t in re.findall(r"(\d+):(\d+):(\d+)[,.](\d+) --> [^\n]+\n(.+?)(?:\n\n|\Z)", txt, re.S):
+                k = (int(h) * 3600 + int(m) * 60 + int(sec)) // 30 * 30
+                hits[k] = hits.get(k, 0) + sum(1 for w in re.findall(r"[a-z]+", t.lower()) if w in _tw)
+            dense = sorted(k for k, n in hits.items() if n >= 3)
+            if len(dense) >= 4:
+                _scored.append((len(dense), v, dense))
+        _scored.sort(reverse=True)
+        if _scored:
+            print(f"HEALTH INSIDE OTHER EPISODES - {len(_scored)} HD episode(s) not titled health hold health talk "
+                  f"({sum(n for n, _v, _d in _scored) / 2:.0f} min). Plan ONLY their health stretches "
+                  f"(PLANNING.md 'HEALTH INSIDE'): write factory/plans/ep_<id>.json as usual:")
+        for n, v, dense in _scored[:MAX - len(ready)]:
+            focus[v] = dense
+            print(f"  {v} '{idx[v]['title'][:50]}' {idx[v].get('duration', 0) / 60:.0f} min, ~{n / 2:.0f} min of health talk")
+            ready.append(v)
 print(f"READY TO PLAN: {len(ready)} episode(s); preparing {min(MAX, len(ready))}")
 # the second-chance episodes' cues come too, after the new ones (they need only work/<id>.srt)
 for v in ready[:MAX] + [v for v in again if v not in ready[:MAX] and v in idx and idx[v].get("transcript")]:
@@ -253,7 +291,17 @@ for v in ready[:MAX] + [v for v in again if v not in ready[:MAX] and v in idx an
                 blk.setdefault(x // 30 * 30, []).append(f"=== USED by {cut[2]} ({cut[0]:.0f}-{cut[1]:.0f}s): taken, never cut inside ===")
             continue
         blk.setdefault(x // 30 * 30, []).append(" ".join(t.split()))
-    open(os.path.join(WORK, f"{v}_blocks.txt"), "w").write("\n".join(f"{k} {' '.join(blk[k])}" for k in sorted(blk)))
+    if v in focus:              # health stretches only, +-60 s; the rest is one marker line per gap
+        near = lambda k: any(abs(k - d) <= 60 for d in focus[v])
+        out, gap = [], False
+        for k in sorted(blk):
+            if near(k):
+                out.append(f"{k} {' '.join(blk[k])}"); gap = False
+            elif not gap:
+                out.append(f"{k} === not health: skipped ==="); gap = True
+        open(os.path.join(WORK, f"{v}_blocks.txt"), "w").write("\n".join(out))
+    else:
+        open(os.path.join(WORK, f"{v}_blocks.txt"), "w").write("\n".join(f"{k} {' '.join(blk[k])}" for k in sorted(blk)))
     e = idx[v]
     print(f"  {v}: '{e['title']}' {e.get('duration', 0) / 60:.0f} min -> work/{v}_blocks.txt (cues: work/{v}.srt)")
 
