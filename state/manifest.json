@@ -12417,7 +12417,8 @@
    "status": {},
    "cta_keyword": "MONEY",
    "cta_variant": 6,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-31T08:43"
   },
   {
    "file": "KT_FOGLIGHT/02_THE-15-FOOT-RULE_54s.mp4",
@@ -12440,7 +12441,8 @@
    "status": {},
    "cta_keyword": "BRAIN",
    "cta_variant": 5,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-31T08:18"
   },
   {
    "file": "KT_GOALPOSTR2/01_THE-2-NUMBERS-YOU-NEED_80s.mp4",
