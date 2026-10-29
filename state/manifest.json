@@ -12415,7 +12415,6 @@
    "bytes": 40745827,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-30T19:59",
    "cta_keyword": "MONEY",
    "cta_variant": 6,
    "cta_kind": "offer"
@@ -12439,7 +12438,6 @@
    "bytes": 35760739,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-10-30T16:58",
    "cta_keyword": "BRAIN",
    "cta_variant": 5,
    "cta_kind": "question"
