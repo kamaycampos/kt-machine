@@ -9,6 +9,7 @@ blocks, and lists next candidate episodes if the month's list is running out.
 import json, os, re, subprocess, sys, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
+LANE = os.path.exists(os.path.join(ROOT, "my_brand", "lane.json"))   # a brand with its own lane (WB)
 BASE = "https://github.com/kamaycampos/kt-machine/releases/download/sources/"
 MAX = int(sys.argv[sys.argv.index("--max") + 1]) if "--max" in sys.argv else 4
 # WHOSE MACHINE IS THIS RUN FOR. Two accounts, two lists, two sets of plans, and
@@ -37,6 +38,46 @@ except Exception:
 
 idx = json.loads(get("sources_index.json"))
 
+# KEVIN'S WEDNESDAY EPISODE IS MINED, NOT SAMPLED (29 Oct 2026). Kamay: "the system have
+# not been picking as a priority and making clips from last kt videos, new releases every
+# Wednesday." It wasn't: 28 Oct's 17-minute 4K episode got a 2-clip plan, both refused,
+# 0 posted - and the next morning's run re-cut older episodes, because an episode stopped
+# counting as "newest" the moment ANY plan named it, and second chances went to the
+# episodes with the most refusals. Now, for KT: every Kevin upload from the last 8 days
+# with fewer than NEWEST_TARGET clips posted / waiting / still building stays at the top
+# of every run (morning and afternoon): its refusals are re-cut first, and its unused
+# minutes are offered for new arcs before anything else.
+NEWEST_DAYS, NEWEST_TARGET = 8, 6
+_pub = {}
+try:
+    for _u, _e in json.load(open(os.path.join(HERE, "rumble_catalog.json"))).items():
+        _m = re.search(r"/(v[a-z0-9]+)-", _u)
+        if _m and not _e.get("short"):
+            _pub[_m[1]] = _e.get("date", "")
+except (OSError, ValueError):
+    pass
+_allplans = {f[:-5]: json.load(open(os.path.join(HERE, "plans", f))) for f in os.listdir(os.path.join(HERE, "plans"))
+             if f.endswith(".json") and not f.startswith("_")}
+try:
+    _builtplans = set(json.load(open(os.path.join(HERE, "plans", "_done.json"))))
+except (OSError, ValueError):
+    _builtplans = set()
+def _alive(v):
+    """Clips of source v that are posted, waiting to post, or in a plan not built yet."""
+    keys = [k for k, q in _allplans.items() if k.startswith(MINE) and q.get("source", "")[:-4] == v]
+    brands = {_allplans[k].get("brand") for k in keys}
+    n = sum(1 for c in man if c["file"].split("/")[0] in brands
+            and (c.get("posted_at") or not c.get("done")))
+    return n + sum(len(_allplans[k].get("clips", [])) for k in keys if k not in _builtplans)
+_since = (__import__("datetime").datetime.utcnow() - __import__("datetime").timedelta(days=NEWEST_DAYS)).strftime("%Y-%m-%d")
+undercut = {}
+if not AR and not LANE:             # Kevin's money uploads are KT's lane, not a health brand's
+    for v in sorted((v for v, d in _pub.items() if d >= _since), key=lambda v: _pub[v], reverse=True):
+        if v in idx and idx[v].get("transcript") and f'"{v}.mp4"' in " ".join(json.dumps(q) for q in _allplans.values()):
+            n = _alive(v)
+            if n < NEWEST_TARGET:
+                undercut[v] = n
+
 # SECOND CHANCES (6 Oct 2026). Every clip a gate refused is in plans/_failed.json
 # with the gate's own words. Re-cut them FIRST: the episode is already transcribed
 # and the teaching was already judged worth posting. A clip is offered at most
@@ -49,6 +90,10 @@ MAX_TRIES = 3
 # nothing pushed. The rest wait for the next daily run.
 AGAIN = int(sys.argv[sys.argv.index("--again") + 1]) if "--again" in sys.argv else 3
 SECOND_MIN_EP, SECOND_FREE = 30, 15     # second pass: episodes of 30+ min with 15+ unused min
+# A brand with its own lane (WB: health only) has few HD episodes, mostly 7-20 minute clips
+# shows; its second pass takes any 10+ minute episode with 4+ unused minutes (29 Oct 2026).
+if LANE:
+    SECOND_MIN_EP, SECOND_FREE = 10, 4
 second = {}                              # second-pass episode -> the clips already cut from it
 try:
     _f = json.load(open(os.path.join(HERE, "plans", "_failed.json")))["clips"]
@@ -70,14 +115,15 @@ if n_blind:
     print(f"(second chances: {n_blind} refused clip(s) have no recorded reason or words - not offered)")
 waiting = 0
 if len(again) > AGAIN:
-    keep = sorted(again, key=lambda v: -len(again[v]))[:AGAIN]
+    keep = sorted(again, key=lambda v: (v not in undercut, -len(again[v])))[:AGAIN]
+    keep += [v for v in again if v in undercut and v not in keep]
     waiting = len(again) - AGAIN
     again = {v: again[v] for v in keep}
 if again:
     n = sum(len(v) for v in again.values())
     print(f"SECOND CHANCES: {n} clip(s) on {len(again)} episode(s) failed a gate - re-cut these FIRST "
           f"(PLANNING.md step 2c). Cues for each: work/<id>.srt")
-    for v, items in sorted(again.items(), key=lambda kv: -len(kv[1])):
+    for v, items in sorted(again.items(), key=lambda kv: (kv[0] not in undercut, -len(kv[1]))):
         print(f"  {v}  ({items[0][1]['plan']}, brand {items[0][1]['brand']})")
         for k, e in items:
             print(f"    {k}  in {e.get('in')} out {e.get('out')}  tries {e.get('tries', 1)}")
@@ -119,6 +165,18 @@ if not AR:
         print("NEWEST UPLOADS - PLAN THESE FIRST (same-day rule): " + ", ".join(
             f"{v} '{idx[v]['title'][:50]}' (published {_pub[v]})" for v in fresh))
     ready = fresh + [v for v in ready if v not in fresh]
+    for v, n in undercut.items():
+        _uses = sorted((float(c["in"]), float(c["out"]), c["slug"]) for k, q in _allplans.items()
+                       if k.startswith(MINE) and q.get("source", "")[:-4] == v for c in q.get("clips", []))
+        second[v] = _uses
+        _p = 2
+        while f"ep_{v}_p{_p}" in _allplans:
+            _p += 1
+        print(f"NEWEST UPLOAD UNDER-CUT - PLAN THIS FIRST: {v} '{idx[v]['title'][:50]}' (published {_pub[v]}, "
+              f"{idx[v].get('duration', 0) / 60:.0f} min): only {n} clip(s) posted/waiting/building, target "
+              f"{NEWEST_TARGET}+. Re-cut its SECOND CHANCES, then write factory/plans/ep_{v}_p{_p}.json with "
+              f"{max(NEWEST_TARGET - n, 3)}-{max(9 - n, 4)} NEW arcs from its unused minutes (PLANNING.md 'NEWEST UPLOAD UNDER-CUT').")
+    ready = list(undercut) + [v for v in ready if v not in undercut]
     # NEVER AN EMPTY RUN WHILE TRANSCRIBED EPISODES SIT UNUSED (14 Oct 2026). The month list
     # was used up, "READY TO PLAN: 0", and the planner spent three days only re-cutting
     # refused clips while 40+ downloaded, transcribed episodes were never offered. Top up
@@ -128,7 +186,10 @@ if not AR:
                          if e.get("transcript") and not e.get("test") and v not in _theirs
                          and v not in ready and f'"{v}.mp4"' not in plans_txt),
                         key=lambda v: _pub.get(v, ""), reverse=True)
-        if _spare:
+        if LANE:      # a lane brand only tops up from episodes whose title is on its lane (29 Oct 2026:
+            _tw = set(json.load(open(os.path.join(ROOT, "my_brand", "lane.json"))).get("topic_words", []))
+            _spare = [v for v in _spare if _tw & set(re.findall(r"[a-z]+", idx[v].get("title", "").lower()))]
+        if _spare:    # WB was handed 62 money episodes here, ignored them, and never reached its second pass)
             print(f"MONTH LIST USED UP - also ready (stocked, transcribed, never planned): {len(_spare)}")
         ready += _spare[:MAX - len(ready)]
     # SECOND PASS (16 Oct 2026). An episode was "done" once planned, after 6-9 clips. KT's

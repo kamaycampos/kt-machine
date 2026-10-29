@@ -14,12 +14,27 @@ cut off still keeps the plans it finished.
 ## SAME-DAY RUN (any run that starts at 15:00 UTC or later - check with `date -u`)
 Since 16 Oct 2026 this routine also fires every afternoon, so Kevin's new upload is cut the day
 it appears (`kevin_watch.yml` spots it within the hour and the factory transcribes it first).
-In that run: do steps 1 and 2 only. If the prep printed **NEWEST UPLOADS - PLAN THESE FIRST**,
-plan ONLY those episodes (steps 3-7, all the usual rules, no second chances, no other episodes),
+In that run: do steps 1 and 2 only. If the prep printed **NEWEST UPLOADS - PLAN THESE FIRST** or
+**NEWEST UPLOAD UNDER-CUT**, plan ONLY those episodes (steps 3-7, all the usual rules, no second chances, no other episodes),
 whatever the queue depth. If it did not: when the prep's QUEUE line shows **under 12 clips**, this
 is a refill run - follow the full Procedure below exactly as a morning run would (the queue ran dry
 on 16 Oct with this run standing idle). Otherwise report "no new upload" in one line and stop. Do not
 read anything else first: an afternoon with nothing new and a full queue must cost almost nothing.
+
+## NEWEST UPLOAD UNDER-CUT: KEVIN'S WEDNESDAY EPISODE IS MINED, NOT SAMPLED (29 Oct 2026)
+Kamay: "the system have not been picking as a priority and making clips from last kt videos, new
+releases every Wednesday." Kevin's 28 Oct episode (17 min, 4K) got a 2-clip plan, both refused, 0
+posted; 21 Oct gave 4 of 28 minutes. When the prep prints **NEWEST UPLOAD UNDER-CUT**, that episode
+comes before everything else, in every run, morning or afternoon, whatever the queue:
+1. Re-cut its SECOND CHANCES first (step 2c rules; the WHY line says what to fix).
+2. Then write the `_p2` plan it names (step 2d rules: new brand, never inside a `=== USED` line) with
+   the number of NEW arcs it asks for. A 15-30 minute Kevin solo episode holds 6-9 clips: read every
+   block. One idea = one clip (RULES #20), so look for each separate lesson, story, number and
+   example, not just the headline.
+3. The opening must be a clean sentence start after a pause, the end must be the sentence where the
+   teaching lands: those two edges are what refused 28 Oct's clips.
+A first plan of a NEWEST UPLOADS episode is 6-9 clips, never 2. Fewer only when you name in the
+report why each skipped stretch cannot stand alone.
 
 ## READ factory/STRATEGY.md FIRST (17 Oct 2026)
 The growth strategist rewrites it daily from the real numbers (skip rate, views, DMs, money). Its
