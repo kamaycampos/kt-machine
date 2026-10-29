@@ -12402,7 +12402,11 @@
    "hook": "The $200K wish that paid $250K",
    "bytes": 33290929,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-29T19:47",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_FOGLIGHT/01_THE-ONE-MISTAKE-KEEPING-YOU-BROKE_60s.mp4",
@@ -12410,7 +12414,11 @@
    "hook": "The one mistake keeping you broke",
    "bytes": 40745827,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-30T19:59",
+   "cta_keyword": "MONEY",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_FOGLIGHT/02_THE-15-FOOT-RULE_54s.mp4",
@@ -12418,7 +12426,11 @@
    "hook": "The 15-foot rule for getting rich",
    "bytes": 34272637,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-30T12:02",
+   "cta_keyword": "MONEY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_FOGLIGHT/02_THE-35-DOLLAR-MISTAKE_57s.mp4",
@@ -12426,7 +12438,11 @@
    "hook": "A $35 stamp cost him millions",
    "bytes": 35760739,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-30T16:58",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "KT_GOALPOSTR2/01_THE-2-NUMBERS-YOU-NEED_80s.mp4",
@@ -12435,7 +12451,10 @@
    "bytes": 58156886,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-30T08:57",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2
   },
   {
    "file": "KT_MANSION/01_WHY-THE-SECRET-WASNT-JUST-ONE_125s.mp4",
@@ -12443,7 +12462,11 @@
    "hook": "Why there wasn't just one secret",
    "bytes": 74899326,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-30T08:29",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_NUGGETR2/01_30-STEPS-WONT-MAKE-YOU-RICH_61s.mp4",
@@ -12451,7 +12474,11 @@
    "hook": "30 steps won't make you rich",
    "bytes": 37697920,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-30T10:15",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   }
  ]
 }
