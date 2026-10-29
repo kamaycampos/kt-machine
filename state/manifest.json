@@ -12402,11 +12402,24 @@
    "hook": "The $200K wish that paid $250K",
    "bytes": 33290929,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-29T19:47",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfGOa7XEX6b/",
+    "youtube": "https://youtube.com/shorts/dFxRx3or-UM"
+   },
+   "caption_at_post": "Months earlier, Kevin Trudeau had told the universe he wanted $200,000 a week without having to work for it - laughing at himself, because he had no idea how that was even possible.\n\nThen a Federal Express envelope showed up: his first royalty check from the TV infomercial deal he'd almost turned down twice. Inside was a check for \"$250-something-thousand\" - for one week.\n\nHe'd nearly forgotten he'd even made the request. The universe had answered it twice in one day, through two different strangers, months before that check ever arrived.\n\nHe wasn't chasing the how. He was just clear about the want.\n\nWhat have you asked for and already forgotten you asked?\n\n#kevintrudeau #manifestation #wealthmindset #successmindset #moneymindset #mindset",
+   "posted_at": "2026-10-29T19:51"
   },
   {
    "file": "KT_FOGLIGHT/01_THE-ONE-MISTAKE-KEEPING-YOU-BROKE_60s.mp4",
