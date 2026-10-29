@@ -1,0 +1,38 @@
+{
+  "source": "v6sg6dz.mp4",
+  "brand": "KT_ELITER2",
+  "test": false,
+  "note": "29 Oct 2026 - 'Former NAVY SEAL: #1 Secret For WINNING In Life' (Rumble v6sg6dz). Weekly agent, second chance (round 2). WHAT-MAKES-AN-INVESTOR-CALM opened mid-sentence on 'is Charlie Munger' - moved the start back to the interviewer's question, a clean opener per the edges rule. WHY-HE-FORGETS-EVERY-LOSING-GAME and WHY-HE-DIED-WITH-A-SMILE both cut 1-2 seconds before their payoff word finished ('to the facts' / 'they would never ha-'); extended the out point a few seconds so the full sentence is inside the clip.",
+  "clips": [
+    {
+      "slug": "WHAT-MAKES-AN-INVESTOR-CALM",
+      "in": 206.0,
+      "out": 362.0,
+      "start_words": "Are there any specific",
+      "end_words": "going to change that flat tire",
+      "retry_of": "ep_v6sg6dz/WHAT-MAKES-AN-INVESTOR-CALM",
+      "hook": ["Why Charlie Munger", "never loses control"],
+      "caption": "Charlie Munger said the best investors aren't the smartest - they're the calmest.\n\nA former Navy SEAL explains why: equanimity. The ability to stay level whether things are going great or falling apart.\n\nIn SEAL training they test for it every single day. Crack under pressure once and you go home.\n\nYears later his girlfriend called crying over a flat tire on the highway. He told her the truth: no amount of tears was going to fix that tire.\n\nNot because he didn't care. Because panic never solved anything - action did.\n\nWhere in your life are you crying over the flat tire instead of fixing it?\n\n#kevintrudeau #navyseal #mindset #discipline #selfcontrol #mentaltoughness"
+    },
+    {
+      "slug": "WHY-HE-FORGETS-EVERY-LOSING-GAME",
+      "in": 1748.5,
+      "out": 1817.5,
+      "start_words": "I have a friend",
+      "end_words": "priority that you give to the facts",
+      "retry_of": "ep_v6sg6dz/WHY-HE-FORGETS-EVERY-LOSING-GAME",
+      "hook": ["How a champion", "forgets every failure"],
+      "caption": "A 10-time world pool champion forgot one of his biggest losses completely.\n\nMike Siegel couldn't even remember blowing a game to Efren Reyes. But ask him about the time he came back from down nine games to none against Johnny Archer and won - he remembers every shot.\n\nSame facts, different story. A receiver who catches five of ten passes can call that a great game or a terrible one. The stats don't decide which story gets told - he does.\n\nKeep telling yourself you're the guy who loses, and you'll keep proving yourself right.\n\nWhat story have you been telling yourself about your own setbacks?\n\n#kevintrudeau #mindset #success #mentaltoughness #poolchampion #comeback"
+    },
+    {
+      "slug": "WHY-HE-DIED-WITH-A-SMILE",
+      "in": 970.96,
+      "out": 1014.0,
+      "start_words": "Back here is one",
+      "end_words": "would never have given their life for",
+      "retry_of": "ep_v6sg6dz/WHY-HE-DIED-WITH-A-SMILE",
+      "hook": ["Why he died", "with a smile"],
+      "caption": "Charlie Keating died with a smile on his face.\n\nIt wasn't the $400,000 death benefit his wife would collect. It had nothing to do with money at all.\n\nHe smiled because he'd given his life to something he actually believed in.\n\nMost people never get that. They spend decades dying slowly, one quiet day at a time, for something they would never have actually given their life for if you asked them straight out.\n\nAre you building toward something you'd die for, or just drifting through it?\n\n#kevintrudeau #purpose #legacy #mindset #navyseal #success"
+    }
+  ]
+}
