@@ -1,17 +1,9 @@
-## ep_v7hhpme: 1 of 2 clip(s) passed every gate
+## ar_v524rh9_r4: 0 of 1 clip(s) passed every gate
 
 
-## 2026-10-28 19:38
-ep_v7hhpme__s0 (KT_GOALPOST): 2 of 2 passed pre-render gates
+## 2026-10-29 11:31
+  note AR_FREQUENCYR4/POVERTY-IS-GENETIC: ending kept on the planner's words 'It's genetic' (next line completes it)
+ar_v524rh9_r4__s0 (AR_FREQUENCYR4): 1 of 1 passed pre-render gates
 
-RENDER ep_v7hhpme__s0
-  FAIL 01_THE-2-NUMBERS-YOU-NEED_80s.mp4: ends off the planned words: plan ends 'when it comes to money', clip ends 'releasing the need to know how'
-  PASS 02_WHY-99-PERCENT-STILL-DONT-MAKE-IT_45s.mp4  02_WHY-99-PERCENT-STILL-DONT-MAKE-IT_45s.mp4           11 captions vs the sound  median +0
-       FIRST 5s : How to trade cryptocurrencies. Here's how to buy real estate with no money down and make a fortune. | LAST  8s : It's why. Because they're focused too much on the how. They think they need to know how before they can make money.
-TEST MODE - passing clips NOT uploaded or queued: KT_GOALPOST
-
-
-- **NOT QUEUED** `02_WHY-99-PERCENT-STILL-DONT-MAKE-IT_45s.mp4` - opens mid-sentence on "how to trade"
-
-## UPLOAD
-nothing new to add
+RENDER ar_v524rh9_r4__s0
+  FAIL 01_POVERTY-IS-GENETIC_155s.mp4: [FAIL] 01_POVERTY-IS-GENETIC_155s.mp4                         30 captions vs the sound  median +0.37s  worst-10% 2.99s  | words captioned 100%  UNCAPTIONED SPEECH [(54.9, 56.9)]
