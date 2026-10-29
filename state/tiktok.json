@@ -1,10 +1,10 @@
 {
- "at": "2026-10-29T07:28",
+ "at": "2026-10-29T13:08",
  "profile": {
-  "video_count": 166,
   "follower_count": 410,
   "following_count": 8,
-  "likes_count": 5870
+  "likes_count": 5870,
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -89,7 +89,7 @@
   },
   "KT_LEDGER/02_LOST-27-MILLION-STILL-WON_160s.mp4": {
    "id": "7692503921260088590",
-   "view_count": 22,
+   "view_count": 23,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -579,7 +579,7 @@
   },
   "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4": {
    "id": "7686887912297843981",
-   "view_count": 2337,
+   "view_count": 2338,
    "like_count": 78,
    "comment_count": 5,
    "share_count": 12,
@@ -669,7 +669,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14146,
+   "view_count": 14147,
    "like_count": 868,
    "comment_count": 59,
    "share_count": 196,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38196,
+   "view_count": 38197,
    "like_count": 786,
    "comment_count": 27,
    "share_count": 171,
