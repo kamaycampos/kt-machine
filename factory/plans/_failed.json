@@ -9955,6 +9955,132 @@
     "Why 99% still",
     "stay broke"
    ]
+  },
+  "ar_v4n9vuz/POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT": {
+   "plan": "ar_v4n9vuz",
+   "source": "v4n9vuz.mp4",
+   "brand": "AR_DARKSIDE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT_79s.mp4: [FAIL] 02_POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT_79s.mp4      11 captions vs the sound  median +0.10s  worst-10% 0.82s  | words captioned 101%"
+   ],
+   "slug": "POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT",
+   "in": 1569.83,
+   "out": 1646.05,
+   "start_words": "this is when the shadow",
+   "end_words": "They're puppets on a string",
+   "hook": [
+    "Your vote means nothing.",
+    "Dirt decides."
+   ]
+  },
+  "ar_v4n9vuz/NOT-A-DEMOCRACY-ONLY-LANDOWNERS-VOTED": {
+   "plan": "ar_v4n9vuz",
+   "source": "v4n9vuz.mp4",
+   "brand": "AR_DARKSIDE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_NOT-A-DEMOCRACY-ONLY-LANDOWNERS-VOTED_64s.mp4: [FAIL] 01_NOT-A-DEMOCRACY-ONLY-LANDOWNERS-VOTED_64s.mp4       36 captions vs the sound (word-referenced: no clear pauses)  median +0.49s  worst-10% 0.96s  | words captioned 99%"
+   ],
+   "slug": "NOT-A-DEMOCRACY-ONLY-LANDOWNERS-VOTED",
+   "in": 1454.94,
+   "out": 1515.72,
+   "start_words": "When America started, it",
+   "end_words": "voted and that was it",
+   "hook": [
+    "Never a democracy.",
+    "Not even you."
+   ]
+  },
+  "ar_v4n9vuz/NOT-YOUR-TEETH-ITS-YOUR-ETHER": {
+   "plan": "ar_v4n9vuz",
+   "source": "v4n9vuz.mp4",
+   "brand": "AR_DARKSIDE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_NOT-YOUR-TEETH-ITS-YOUR-ETHER_70s.mp4` - ends mid-thought on \"and have knowingness\"; sentence starts with no stop: \"control And\""
+   ],
+   "slug": "NOT-YOUR-TEETH-ITS-YOUR-ETHER",
+   "in": 1872.68,
+   "out": 1943.4,
+   "start_words": "there's a whole series",
+   "end_words": "have knowingness",
+   "hook": [
+    "Not your teeth.",
+    "Your ether access."
+   ]
+  },
+  "ar_v4n9vuz/WASHED-DISHES-BECAME-A-GLOBAL-STAR": {
+   "plan": "ar_v4n9vuz",
+   "source": "v4n9vuz.mp4",
+   "brand": "AR_DARKSIDE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_WASHED-DISHES-BECAME-A-GLOBAL-STAR_52s.mp4: [FAIL] 01_WASHED-DISHES-BECAME-A-GLOBAL-STAR_52s.mp4          6 captions vs the sound  median +0.07s  worst-10% 1.02s  | words captioned 107%"
+   ],
+   "slug": "WASHED-DISHES-BECAME-A-GLOBAL-STAR",
+   "in": 2845.09,
+   "out": 2897.51,
+   "start_words": "Bruce Lee is probably",
+   "end_words": "a Hollywood star as well",
+   "hook": [
+    "Washed dishes.",
+    "Works for you too."
+   ]
+  },
+  "ar_v524rh9_r4/POVERTY-IS-GENETIC": {
+   "plan": "ar_v524rh9_r4",
+   "source": "v524rh9.mp4",
+   "brand": "AR_FREQUENCYR4",
+   "tries": 3,
+   "why": [
+    "FAIL 01_POVERTY-IS-GENETIC_155s.mp4: [FAIL] 01_POVERTY-IS-GENETIC_155s.mp4                         30 captions vs the sound  median +0.37s  worst-10% 2.99s  | words captioned 100%  UNCAPTIONED SPEECH [(54.9, 56.9)]"
+   ],
+   "slug": "POVERTY-IS-GENETIC",
+   "in": 713.8,
+   "out": 868.44,
+   "start_words": "If you take a very",
+   "end_words": "It's genetic",
+   "hook": [
+    "Poverty is genetic.",
+    "So is wealth."
+   ]
+  },
+  "ep_v6sg6dz_r2/WHY-HE-FORGETS-EVERY-LOSING-GAME": {
+   "plan": "ep_v6sg6dz_r2",
+   "source": "v6sg6dz.mp4",
+   "brand": "KT_ELITER2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `02_WHY-HE-FORGETS-EVERY-LOSING-GAME_68s.mp4` - ends mid-thought on \"to the facts\"; sentence starts with no stop: \"shot He\"; word repeated after one: \"facts are facts,\""
+   ],
+   "slug": "WHY-HE-FORGETS-EVERY-LOSING-GAME",
+   "in": 1748.5,
+   "out": 1817.5,
+   "start_words": "I have a friend",
+   "end_words": "priority that you give to the facts",
+   "hook": [
+    "How a champion",
+    "forgets every failure"
+   ]
+  },
+  "ep_v6sg6dz_r2/WHY-HE-DIED-WITH-A-SMILE": {
+   "plan": "ep_v6sg6dz_r2",
+   "source": "v6sg6dz.mp4",
+   "brand": "KT_ELITER2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_WHY-HE-DIED-WITH-A-SMILE_43s.mp4: ends off the planned words: plan ends 'would never have given their life for', clip ends 'for something they would never ha'"
+   ],
+   "slug": "WHY-HE-DIED-WITH-A-SMILE",
+   "in": 970.96,
+   "out": 1014.0,
+   "start_words": "Back here is one",
+   "end_words": "would never have given their life for",
+   "hook": [
+    "Why he died",
+    "with a smile"
+   ]
   }
  },
  "attempts": {
@@ -9999,6 +10125,6 @@
   "ar_v5owvgw": 2,
   "ep_v66j311_p2": 2,
   "ar_v50s5f8_r3": 2,
-  "ar_v524rh9_r4": 1
+  "ar_v524rh9_r4": 2
  }
 }
