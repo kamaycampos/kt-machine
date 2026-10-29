@@ -12295,12 +12295,26 @@
    "caption": "The conspiracy everyone's heard is that the elite want to kill a billion people off the planet. That's not quite it.\n\nSomeone who sat inside the Bilderberg Group says the real plan is narrower, and in a way colder: not depopulation, reclassification. A person who isn't earning and isn't spending gets filed as a \"useless eater.\" The fix isn't a bullet. It's raising you just enough that you start buying things.\n\nYou're not being eliminated. You're being converted into a customer.\n\nComment RISE and I'll send you the rest of this.\n\n#disclosure #bilderberg #awakening #consciousness #hiddenagenda #kevintrudeau",
    "hook": "A billion people called useless eaters.",
    "bytes": 61703620,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-29T10:13",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1947388436639320/",
+    "instagram": "https://www.instagram.com/reel/DfFNlNmCEXF/",
+    "youtube": "https://youtube.com/shorts/tAPMN8H6MkU"
+   },
+   "caption_at_post": "The conspiracy everyone's heard is that the elite want to kill a billion people off the planet. That's not quite it.\n\nSomeone who sat inside the Bilderberg Group says the real plan is narrower, and in a way colder: not depopulation, reclassification. A person who isn't earning and isn't spending gets filed as a \"useless eater.\" The fix isn't a bullet. It's raising you just enough that you start buying things.\n\nYou're not being eliminated. You're being converted into a customer.\n\nComment RISE and I'll send you the rest of this.\n\n#disclosure #bilderberg #awakening #consciousness #hiddenagenda #kevintrudeau",
+   "posted_at": "2026-10-29T10:25"
   },
   {
    "file": "KT_ELITER2/01_WHAT-MAKES-AN-INVESTOR-CALM_156s.mp4",
@@ -12326,7 +12340,8 @@
    },
    "caption_at_post": "Charlie Munger said the best investors aren't the smartest - they're the calmest.\n\nA former Navy SEAL explains why: equanimity. The ability to stay level whether things are going great or falling apart.\n\nIn SEAL training they test for it every single day. Crack under pressure once and you go home.\n\nYears later his girlfriend called crying over a flat tire on the highway. He told her the truth: no amount of tears was going to fix that tire.\n\nNot because he didn't care. Because panic never solved anything - action did.\n\nWhere in your life are you crying over the flat tire instead of fixing it?\n\n#kevintrudeau #navyseal #mindset #discipline #selfcontrol #mentaltoughness",
    "posted_at": "2026-10-29T10:10",
-   "tiktok_retry": true
+   "tiktok_retry": true,
+   "tiktok_tries": 1
   },
   {
    "file": "KT_SEVENTYR2R2R2/01_MANIFEST-MONEY-LIKE-AN-AMAZON-ORDER_67s.mp4",
