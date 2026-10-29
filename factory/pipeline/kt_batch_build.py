@@ -146,9 +146,12 @@ def main():
             if not m or m.group(1) not in slugs:
                 continue
             mp4 = os.path.join(bdir, f)
+            anchors = os.path.splitext(mp4)[0] + "__anchors.json"
+            senv = dict(os.environ, SYNC_ANCHORS=anchors)
             s = subprocess.run([sys.executable, os.path.join(HOME, "kt_sync_check.py"), mp4],
-                               capture_output=True, text=True, cwd=HOME)
+                               capture_output=True, text=True, cwd=HOME, env=senv)
             off = constant_offset(s.stdout) if s.returncode else None
+            shift = None
             if off is not None:
                 # every caption late (or early) by the same amount: move them by the
                 # measured amount, render this clip once more, and judge it again
@@ -158,8 +161,24 @@ def main():
                                     env=dict(os.environ, CAPTION_SHIFT=f"{-off:.3f}"))
                 if rr.returncode or "captions moved" not in rr.stdout:
                     log(f"  RETIME render did not apply: {(rr.stdout + rr.stderr)[-300:]}")
+                else:
+                    shift = f"{-off:.3f}"
+                s = subprocess.run([sys.executable, os.path.join(HOME, "kt_sync_check.py"), mp4],
+                                   capture_output=True, text=True, cwd=HOME, env=senv)
+            # WARP: a few captions off, not all of them (29 Oct 2026, kt_render.warp_words).
+            # Once per clip, only for timing - speech with no caption is a different fault.
+            if (s.returncode and "captions vs the sound" in s.stdout and "UNCAPTIONED" not in s.stdout
+                    and os.path.exists(anchors)):
+                log(f"  WARP {f}: {s.stdout.strip()[-120:]} - re-timing each caption once")
+                wenv = dict(os.environ, CAPTION_WARP=anchors) | ({"CAPTION_SHIFT": shift} if shift else {})
+                rr = subprocess.run([sys.executable, os.path.join(HOME, "kt_render.py"), key, "--apply",
+                                     "--only", m.group(1)], capture_output=True, text=True, cwd=HOME, env=wenv)
+                if rr.returncode or "re-timed word by word" not in rr.stdout:
+                    log(f"  WARP render did not apply: {(rr.stdout + rr.stderr)[-300:]}")
                 s = subprocess.run([sys.executable, os.path.join(HOME, "kt_sync_check.py"), mp4],
                                    capture_output=True, text=True, cwd=HOME)
+            if os.path.exists(anchors):
+                os.remove(anchors)
             if s.returncode:
                 log(f"  FAIL {f}: {s.stdout.strip()[-220:]}")
                 for side in glob.glob(os.path.splitext(mp4)[0] + "*"):

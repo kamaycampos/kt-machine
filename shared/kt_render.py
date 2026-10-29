@@ -1323,6 +1323,47 @@ MAGNITUDE_WORDS = {"billion", "million", "thousand", "hundred", "percent",
 EDGE_TAIL = 0.30    # a word starting this close to the cut is not in the clip
 
 
+def warp_words(words, path):
+    """Move each caption to its own word, by what the sync check MEASURED (29 Oct 2026).
+
+    RETIME fixes captions that are all late by the same amount. Most timing refusals are
+    not that: the median is near zero and a few captions sit 0.8-3 s off, because the
+    word timings drift in one stretch of the clip. kt_sync_check (SYNC_ANCHORS) writes,
+    for every caption it could grade against the waveform, its start and its error. Each
+    word here is moved by minus the error at its time, interpolated between the graded
+    captions (held flat before the first and after the last). Order is kept. Nothing is
+    guessed: no file, or fewer than 5 points, and the words come back unchanged - and the
+    re-rendered clip is judged by the same check as any other, on points it never saw."""
+    if not words or not path:
+        return words
+    try:
+        pts = sorted((float(a), float(e)) for a, e in json.load(open(path)))
+    except (OSError, ValueError, TypeError):
+        return words
+    if len(pts) < 5:
+        return words
+    # LEARN FROM HALF, BE JUDGED ON THE OTHER HALF. Fitting every graded point would put
+    # each one exactly on its pause and the re-check would grade its own answers. Only
+    # every other point moves the words; the points left out are the honest test.
+    pts = pts[::2]
+    def corr(t):
+        if t <= pts[0][0]:
+            return -pts[0][1]
+        for (a0, e0), (a1, e1) in zip(pts, pts[1:]):
+            if t <= a1:
+                f = (t - a0) / (a1 - a0) if a1 > a0 else 0.0
+                return -(e0 + f * (e1 - e0))
+        return -pts[-1][1]
+    out, last = [], 0.0
+    for a, b, w in words:
+        d = corr(a)
+        na = max(last, a + d, 0.0)
+        out.append((na, max(na + 0.05, b + d), w))
+        last = na
+    print(f"      captions re-timed word by word from {len(pts)} measured points")
+    return out
+
+
 def edge_words(words, cues, t_in, t_out):
     """The two whisper slips at a clip's edges, undone from the source transcript.
 
@@ -1390,6 +1431,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     if words and shift:
         words = [(max(0.0, a + shift), max(0.0, b + shift), w) for a, b, w in words]
         print(f"      captions moved {shift:+.2f}s (measured offset)")
+    words = warp_words(words, os.environ.get("CAPTION_WARP"))
     if words:
         words = edge_words(words, cues, t_in, t_out)
     # TWO PEOPLE IN ONE SHOT: FRAME WHOEVER IS TALKING. See vsc_frame.speaker_turns.
