@@ -332,7 +332,7 @@ def plan(man):
                         _vid[_q["brand"]] = _q["source"]
         except (OSError, ValueError):
             pass
-        src_of = lambda c: _vid.get(brand_of(c)) or brand_of(c)
+        src_of = lambda c: (_vid.get(brand_of(c)) if prefix != "AR" else None) or brand_of(c)   # Yaren's unchanged
         last_src = [None]          # source of the post placed immediately before
         used = {}
         for c in man["clips"]:
@@ -459,7 +459,7 @@ def plan(man):
                 # the "bored" day RULES #21 forbids. Over the limit is allowed only while the day
                 # is under DAY_FLOOR posts; past it, the slot waits for another video.
                 if pick is None:
-                    if per_day.get(dkey, 0) >= DAY_FLOOR:
+                    if per_day.get(dkey, 0) >= DAY_FLOOR and prefix != "AR":   # Yaren's grid unchanged
                         continue
                     pick = 0
                 nxt = man["clips"][queue.pop(pick)]
