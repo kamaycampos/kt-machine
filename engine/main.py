@@ -317,7 +317,7 @@ def plan(man):
         # Counts clips ALREADY scheduled too, so a re-plan cannot stack onto a
         # day that is already carrying that source.
         PER_SOURCE_PER_DAY = 2
-        DAY_FLOOR = 4              # RULES #5: a day under 4 is a failure, so the mix may bend below it
+        DAY_FLOOR = int(os.environ.get("CADENCE_MIN") or 4)   # RULES #5 floor (KT 4, WB 3): the mix may bend below it
         # THE SOURCE IS THE VIDEO, NOT THE FOLDER (29 Oct 2026). A re-cut (KT_X -> KT_XR2)
         # and a second pass (a new folder name) are the same episode, same shirt, same
         # room - counted by folder they could stack 4-6 posts of one video on one day.
