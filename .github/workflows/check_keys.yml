@@ -1,0 +1,72 @@
+# CHECK KEYS (14 Oct 2026; copied from wb-factory to KT 29 Oct). One click proves every connected platform's key works, by
+# printing only the account NAME each key reaches - never a key. Run it after setup and
+# whenever a platform stops posting: Actions -> check_keys -> Run workflow.
+name: check_keys
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    env:
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+      FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      TT_CLIENT_KEY: ${{ secrets.TT_CLIENT_KEY }}
+      TT_CLIENT_SECRET: ${{ secrets.TT_CLIENT_SECRET }}
+      TT_REFRESH_TOKEN: ${{ secrets.TT_REFRESH_TOKEN }}
+    steps:
+      - name: Which accounts do the keys reach?
+        shell: python
+        run: |
+          import json, os, urllib.parse, urllib.request
+          def get(url, headers=None):
+              try:
+                  return json.load(urllib.request.urlopen(urllib.request.Request(url, headers=headers or {})))
+              except urllib.error.HTTPError as e:
+                  return {"error": json.load(e).get("error", str(e))}
+          G = "https://graph.facebook.com/v21.0"
+          e = os.environ
+          ok = True
+          if e.get("IG_USER_ID"):
+              r = get(f"{G}/{e['IG_USER_ID']}?fields=username&access_token={e['IG_ACCESS_TOKEN']}")
+              print("Instagram:", "@" + r["username"] if "username" in r else f"FAILED {r}"); ok &= "username" in r
+          if e.get("FB_PAGE_ID"):
+              r = get(f"{G}/{e['FB_PAGE_ID']}?fields=name&access_token={e['FB_ACCESS_TOKEN']}")
+              print("Facebook:", r.get("name") or f"FAILED {r}"); ok &= "name" in r
+          if e.get("YT_REFRESH_TOKEN"):
+              data = urllib.parse.urlencode({"client_id": e["YT_CLIENT_ID"], "client_secret": e["YT_CLIENT_SECRET"],
+                                             "refresh_token": e["YT_REFRESH_TOKEN"], "grant_type": "refresh_token"}).encode()
+              tok = json.load(urllib.request.urlopen("https://oauth2.googleapis.com/token", data))
+              r = get("https://www.googleapis.com/youtube/v3/channels?part=snippet&mine=true",
+                      {"Authorization": "Bearer " + tok["access_token"]})
+              items = r.get("items") or []
+              print("YouTube:", items[0]["snippet"]["title"] if items else f"FAILED {r}"); ok &= bool(items)
+          if e.get("TT_REFRESH_TOKEN"):
+              # A refresh does NOT rotate the stored token: TikTok keeps the old one valid.
+              data = urllib.parse.urlencode({"client_key": e["TT_CLIENT_KEY"], "client_secret": e["TT_CLIENT_SECRET"],
+                                             "grant_type": "refresh_token", "refresh_token": e["TT_REFRESH_TOKEN"]}).encode()
+              tok = json.load(urllib.request.urlopen(urllib.request.Request(
+                  "https://open.tiktokapis.com/v2/oauth/token/", data=data,
+                  headers={"Content-Type": "application/x-www-form-urlencoded"})))
+              r = get("https://open.tiktokapis.com/v2/user/info/?fields=display_name,username",
+                      {"Authorization": "Bearer " + tok.get("access_token", "")})
+              u = (r.get("data") or {}).get("user") or {}
+              print("TikTok (inbox):", "@" + u["username"] if u.get("username") else f"FAILED {r}"); ok &= bool(u.get("username"))
+          # KT (29 Oct 2026): which Facebook pages can this key post to? The old KT page was
+          # restricted (code 368) and the new "What do you want?" page was posted by hand.
+          if e.get("FB_ACCESS_TOKEN"):
+              r = get(f"{G}/me/accounts?fields=name,id,tasks&access_token={e['FB_ACCESS_TOKEN']}")
+              for p in r.get("data", []):
+                  print("  page the key manages:", p.get("name"), p.get("id"), ",".join(p.get("tasks", [])),
+                        "<- FB_PAGE_ID" if p.get("id") == e.get("FB_PAGE_ID") else "")
+              if "error" in r:
+                  r2 = get(f"{G}/me?fields=name,id&access_token={e['FB_ACCESS_TOKEN']}")
+                  print("  key belongs to:", r2)
+          if not ok:
+              raise SystemExit("A key does not work - see FAILED above")
