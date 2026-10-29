@@ -317,6 +317,7 @@ def plan(man):
         # Counts clips ALREADY scheduled too, so a re-plan cannot stack onto a
         # day that is already carrying that source.
         PER_SOURCE_PER_DAY = 2
+        DAY_FLOOR = 4              # RULES #5: a day under 4 is a failure, so the mix may bend below it
         # THE SOURCE IS THE VIDEO, NOT THE FOLDER (29 Oct 2026). A re-cut (KT_X -> KT_XR2)
         # and a second pass (a new folder name) are the same episode, same shirt, same
         # room - counted by folder they could stack 4-6 posts of one video on one day.
@@ -452,7 +453,15 @@ def plan(man):
 
                 pick = next((n for n, qi in enumerate(queue) if ok(qi, True)),
                             next((n for n, qi in enumerate(queue)
-                                  if ok(qi, False)), 0))
+                                  if ok(qi, False)), None))
+                # A THIRD CLIP OF ONE VIDEO ONLY TO REACH THE FLOOR (29 Oct 2026). With two videos
+                # in the queue the fallback gave 30 Oct four posts of Kevin's 28 Oct episode -
+                # the "bored" day RULES #21 forbids. Over the limit is allowed only while the day
+                # is under DAY_FLOOR posts; past it, the slot waits for another video.
+                if pick is None:
+                    if per_day.get(dkey, 0) >= DAY_FLOOR:
+                        continue
+                    pick = 0
                 nxt = man["clips"][queue.pop(pick)]
                 spent[src_of(nxt)] = spent.get(src_of(nxt), 0) + 1
                 last_src[0] = src_of(nxt)
