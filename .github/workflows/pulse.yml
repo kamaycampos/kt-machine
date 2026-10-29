@@ -76,6 +76,9 @@ jobs:
             # 2 h (the 4-6/day rule), TikTok stats once per heartbeat (~6 h).
             if [ $((i % 6)) -eq 1 ]; then gh workflow run cadence.yml || echo "cadence dispatch failed"; fi
             if [ "$i" -eq 1 ]; then gh workflow run tiktok_stats.yml || echo "stats dispatch failed"; fi
+            # Kevin's new upload (29 Oct 2026): kevin_watch's hourly cron ran 3 times in 48 h, so a
+            # Wednesday episode could wait past the afternoon planner. The heartbeat starts it hourly.
+            if [ $((i % 3)) -eq 1 ]; then gh workflow run kevin_watch.yml || echo "kevin-watch dispatch failed"; fi
             dm_pass 25                              # the full sweep, once per 20 min
             while [ $((SECONDS - start)) -lt 1050 ]; do
               sleep 150
