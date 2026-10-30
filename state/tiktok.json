@@ -1,10 +1,10 @@
 {
- "at": "2026-10-30T17:29",
+ "at": "2026-10-30T22:38",
  "profile": {
-  "follower_count": 411,
   "following_count": 8,
   "likes_count": 5872,
-  "video_count": 166
+  "video_count": 166,
+  "follower_count": 411
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -369,7 +369,7 @@
   },
   "KT_BASEMENT/02_HE-WORKED-90-HOUR-WEEKS-FIRST_76s.mp4": {
    "id": "7689272753676995853",
-   "view_count": 135,
+   "view_count": 137,
    "like_count": 11,
    "comment_count": 0,
    "share_count": 0,
@@ -669,7 +669,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14151,
+   "view_count": 14152,
    "like_count": 868,
    "comment_count": 59,
    "share_count": 196,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38202,
+   "view_count": 38203,
    "like_count": 787,
    "comment_count": 27,
    "share_count": 171,
