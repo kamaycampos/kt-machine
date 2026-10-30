@@ -12439,11 +12439,24 @@
    "hook": "The 15-foot rule for getting rich",
    "bytes": 34272637,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-30T12:02",
    "cta_keyword": "MONEY",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfH-keYCW9M/",
+    "youtube": "https://youtube.com/shorts/9Xyf21Hni0M"
+   },
+   "caption_at_post": "Kevin Trudeau says you don't need to see the whole road to get rich - just the next 15 feet.\n\nHe compares chasing a goal to driving at night with no streetlights: pitch black, no moon, no stars. Your headlights only show 15 to 20 feet ahead. You keep driving anyway, because when you get there, you see further.\n\nThat's what he calls faith - not needing to know the entire \"how\" before you start. Demand to see the whole plan first, and you freeze. Analysis causes paralysis.\n\nYou don't need the full plan today. You need the next 15 feet, and the will to keep driving.\n\n#kevintrudeau #mindset #successmindset #wealthmindset #moneymindset #faith",
+   "posted_at": "2026-10-30T12:11"
   },
   {
    "file": "KT_FOGLIGHT/02_THE-35-DOLLAR-MISTAKE_57s.mp4",
