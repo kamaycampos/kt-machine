@@ -10171,6 +10171,24 @@
     "Why 99% still",
     "stay broke"
    ]
+  },
+  "ar_v6pwfg0_r3/HAPPINESS-NEEDS-A-REASON": {
+   "plan": "ar_v6pwfg0_r3",
+   "source": "v6pwfg0.mp4",
+   "brand": "AR_HAPPINESSCODER3",
+   "tries": 3,
+   "why": [
+    "FAIL 01_HAPPINESS-NEEDS-A-REASON_59s.mp4: [FAIL] 01_HAPPINESS-NEEDS-A-REASON_59s.mp4                    8 captions vs the sound  median -0.00s  worst-10% 0.58s  | words captioned 100%  UNCAPTIONED SPEECH [(34.5, 37.3)]"
+   ],
+   "slug": "HAPPINESS-NEEDS-A-REASON",
+   "in": 371.15,
+   "out": 430.7,
+   "start_words": "And we've tested",
+   "end_words": "another part of the equation",
+   "hook": [
+    "Happiness needs a reason.",
+    "You don't."
+   ]
   }
  },
  "attempts": {
@@ -10216,6 +10234,6 @@
   "ep_v66j311_p2": 2,
   "ar_v50s5f8_r3": 2,
   "ar_v524rh9_r4": 2,
-  "ar_v6pwfg0_r3": 1
+  "ar_v6pwfg0_r3": 2
  }
 }
