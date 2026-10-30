@@ -12499,7 +12499,11 @@
    "hook": "The no-risk deal Bobby Singer offered",
    "bytes": 49274864,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-31T10:38",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_LODESTAR/02_HE-ASKED-FOR-200K-A-WEEK_81s.mp4",
@@ -12507,7 +12511,11 @@
    "hook": "He wanted $200K without knowing how",
    "bytes": 54921116,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-31T12:36",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
