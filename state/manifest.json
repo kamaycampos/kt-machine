@@ -12513,11 +12513,24 @@
    "hook": "30 steps won't make you rich",
    "bytes": 37697920,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-30T10:15",
    "cta_keyword": "BRAIN",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfHzjZcFTWL/",
+    "youtube": "https://youtube.com/shorts/TXUGZ51JyJs"
+   },
+   "caption_at_post": "Kevin Trudeau watched gurus hand out \"10 secrets\" and \"30 steps\" for years, and noticed something: none of it made anyone rich.\n\nHe compares it to drilling for oil. Ten holes, ten feet each, finds nothing. One hole, drilled hundreds of feet down, finds the treasure and makes you an oil baron.\n\nMost people chase a new book, a new program, a new \"30 steps\" every month - and never drill deep enough into any single one to strike anything.\n\nPick one idea. Drill it until it pays you.\n\nWhich \"next thing\" have you been collecting instead of using?\n\n#kevintrudeau #mindset #success #focus #wealthmindset #moneymindset",
+   "posted_at": "2026-10-30T10:35"
   },
   {
    "file": "KT_FOGLIGHTR2/01_BOBBY-SINGERS-NO-RISK-DEAL_71s.mp4",
@@ -12548,12 +12561,26 @@
    "caption": "CNN. The New York Times. The Washington Post. Ask them and they'll tell you they're independent, holding power accountable, reporting the truth without fear or favor.\n\nThat idea \u2014 independent media \u2014 is one of the biggest lies you're being told, right alongside a free and fair justice system and a government that actually serves the people. A story gets buried not because it isn't true, but because the people paying for the airtime don't want it told. They don't care about you.\n\nComment RISE and I'll send you how to read between the lines.\n\n#deepstate #disclosure #mediacontrol #awakening #consciousness #kevintrudeau",
    "hook": "Independent media is the biggest lie.",
    "bytes": 55353488,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-30T10:11",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2137179633605409/",
+    "instagram": "https://www.instagram.com/reel/DfHzKBOFLoZ/",
+    "youtube": "https://youtube.com/shorts/v1ObJjlO22k"
+   },
+   "caption_at_post": "CNN. The New York Times. The Washington Post. Ask them and they'll tell you they're independent, holding power accountable, reporting the truth without fear or favor.\n\nThat idea \u2014 independent media \u2014 is one of the biggest lies you're being told, right alongside a free and fair justice system and a government that actually serves the people. A story gets buried not because it isn't true, but because the people paying for the airtime don't want it told. They don't care about you.\n\nComment RISE and I'll send you how to read between the lines.\n\n#deepstate #disclosure #mediacontrol #awakening #consciousness #kevintrudeau",
+   "posted_at": "2026-10-30T10:32"
   },
   {
    "file": "KT_PHOENIXR2/01_REPLACE-YOUR-HABIT-LAUGH-NOW_105s.mp4",
