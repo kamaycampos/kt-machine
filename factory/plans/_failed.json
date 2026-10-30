@@ -10117,6 +10117,60 @@
     "Why 99% still",
     "stay broke"
    ]
+  },
+  "ep_v7hhpme_p3/MORE-MONEY-ISNT-A-NUMBER": {
+   "plan": "ep_v7hhpme_p3",
+   "source": "v7hhpme.mp4",
+   "brand": "KT_LODESTAR",
+   "tries": 1,
+   "why": [
+    "FAIL 01_MORE-MONEY-ISNT-A-NUMBER_85s.mp4: ends off the planned words: plan ends 'figure out the how', clip ends 'your job its the universes job'"
+   ],
+   "slug": "MORE-MONEY-ISNT-A-NUMBER",
+   "in": 73.0,
+   "out": 162.0,
+   "start_words": "When I ask people",
+   "end_words": "figure out the how",
+   "hook": [
+    "Why vague wishes",
+    "stay broke"
+   ]
+  },
+  "ep_v7hhpme_p3/THE-ONE-HABIT-KEEPING-YOU-POOR": {
+   "plan": "ep_v7hhpme_p3",
+   "source": "v7hhpme.mp4",
+   "brand": "KT_LODESTAR",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THE-ONE-HABIT-KEEPING-YOU-POOR_119s.mp4: [FAIL] 01_THE-ONE-HABIT-KEEPING-YOU-POOR_119s.mp4             26 captions vs the sound  median +0.09s  worst-10% 0.42s  | words captioned 99%  UNCAPTIONED SPEECH [(91.1, 93.2)]"
+   ],
+   "slug": "THE-ONE-HABIT-KEEPING-YOU-POOR",
+   "in": 847.0,
+   "out": 965.0,
+   "start_words": "What do I want",
+   "end_words": "should be making right now",
+   "hook": [
+    "The one habit",
+    "keeping you poor"
+   ]
+  },
+  "ep_v7hhpme_r4/WHY-99-PERCENT-STILL-DONT-MAKE-IT": {
+   "plan": "ep_v7hhpme_r4",
+   "source": "v7hhpme.mp4",
+   "brand": "KT_GOALPOSTR2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_WHY-99-PERCENT-STILL-DONT-MAKE-IT_45s.mp4` - opens mid-sentence on \"how to trade\""
+   ],
+   "slug": "WHY-99-PERCENT-STILL-DONT-MAKE-IT",
+   "in": 780.0,
+   "out": 839.0,
+   "start_words": "Most people, when they",
+   "end_words": "before they can make money",
+   "hook": [
+    "Why 99% still",
+    "stay broke"
+   ]
   }
  },
  "attempts": {
