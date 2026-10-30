@@ -12463,11 +12463,24 @@
    "hook": "The 2 numbers you need",
    "bytes": 58156886,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-30T09:17",
    "cta_keyword": "MONEY",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfHsRK7jzSc/",
+    "youtube": "https://youtube.com/shorts/x58MHdlSIgQ"
+   },
+   "caption_at_post": "Most people only ever set one number \u2014 and it's usually vague.\n\nKevin Trudeau says you actually need two. The dream number: the big one you can't yet see how to reach, like a million dollars a month. Then the realistic number: the one you already believe, like doubling $10,000 into $20,000 a month within a year.\n\nThe dream pulls you forward. The realistic number is the one you actually act on today.\n\nWrite down both \u2014 not someday, now.\n\n#kevintrudeau #yourwishisyourcommand #moneymindset #goalsetting #wealthmindset #manifestation",
+   "posted_at": "2026-10-30T09:33"
   },
   {
    "file": "KT_MANSION/01_WHY-THE-SECRET-WASNT-JUST-ONE_125s.mp4",
