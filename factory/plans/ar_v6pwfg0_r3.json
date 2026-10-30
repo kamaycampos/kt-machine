@@ -1,0 +1,21 @@
+{
+ "source": "v6pwfg0.mp4",
+ "brand": "AR_HAPPINESSCODER3",
+ "test": false,
+ "note": "30 Oct 2026 - third-round second chance for 'The Happiness Algorithm' (Rumble v6pwfg0). Awakened Rise weekly agent, re-cut per AR_PLANNING.md 2c. HAPPINESS-NEEDS-A-REASON: the r2 cut had UNCAPTIONED SPEECH inside 'You get a present, you feel happy. Somebody invites...' - kept the same start ('And we've tested') but ran the out one sentence further, onto the next clean full stop ('...another part of the equation.'), to re-time the alignment past that gap. BABIES-FEAR-WATER-WITH-ZERO-TRAUMA skipped: the flagged 'parents parents' repeat and 'this child has this' phrase are the genealogy chain the whole payoff rests on ('...it's in the DNA, and that's why this child has this innate genetic disposition to have a fear or phobia toward water') - no edge excludes them without losing the teaching. YOURE-NOT-STUCK-WITH-YOUR-DNA (last chance) skipped: 'your DNA from your' sits in the genetics setup and 'scientists, like real scientists' sits in the credibility line right before the epigenetics claim - both load-bearing, no contiguous span pays the clip without one or the other. YOU-DONT-NEED-THE-ROLLER-COASTER (last chance) skipped: both 'no stop' breaks ('life You', 'spirituality That') fall inside the clip's own teaching (the consciousness-driver line and the roller-coaster payoff line itself), not a movable edge.",
+ "clips": [
+  {
+   "slug": "HAPPINESS-NEEDS-A-REASON",
+   "retry_of": "ar_v6pwfg0_r2/HAPPINESS-NEEDS-A-REASON",
+   "in": 371.15,
+   "out": 430.7,
+   "start_words": "And we've tested",
+   "end_words": "another part of the equation",
+   "hook": [
+    "Happiness needs a reason.",
+    "You don't."
+   ],
+   "caption": "Tested on hundreds of people: the same shift, every time, lethargic and depressed turning into optimistic and positive.\n\nHere's the distinction almost nobody draws. Happiness needs something to happen — a party, a gift, a date that goes well. It's a reaction, borrowed from outside you. Bliss doesn't ask for a reason. It's a spring that was already inside you, running regardless of what your circumstances are doing today. One depends on the world cooperating. The other doesn't need its permission.\n\nComment RISE and I'll send you how to access it.\n\n#manifestation #consciousness #awakening #mindset #spirituality #kevintrudeau"
+  }
+ ]
+}

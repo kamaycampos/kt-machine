@@ -1,0 +1,21 @@
+{
+ "source": "v68yges.mp4",
+ "brand": "AR_DEEPSTATER2",
+ "test": false,
+ "note": "30 Oct 2026 - second chance re-cut of 'BREAKING NEWS | Insider Proof The Deep State Controls Everything | Ep. 82' (Rumble v68yges). Awakened Rise weekly agent, per AR_PLANNING.md 2c. INDEPENDENT-MEDIA-IS-THE-BIGGEST-LIE: the UNCAPTIONED SPEECH window (35.9-37.5s into the clip) lands on 'That is not what is happening. Unfortunately, we want things and the world to look differently' - but both lines the caption actually quotes ('the concept of the independent media is one of the biggest lies', 'They don't care about you. They don't care about me') sit on either side of it, so excluding that one sentence would drop one or the other. Opened the start one exchange earlier instead, on the interviewer's 'How is it that independent journalists... can be controlled' question, keeping the whole span intact and moving the alignment window per AR_PLANNING's captions-vs-sound rule. THIRTY-ARMED-AGENTS-ZERO-COVERAGE skipped: both flagged repeats ('a major arrest, a major military operation' and the interviewer's 'zero media coverage?' echoed by Kevin's confirming 'Zero media coverage. Nothing happened.') are the clip's own dramatic payoff for the hook 'It stayed secret' - cutting either side loses the confirmation the clip is built to deliver. YOU-CAN-DISAPPEAR-IN-MINUTES ('the spoken word was on screen in only 8 of 12 moments') and YOU-COMMIT-FELONIES-EVERY-DAY (9 captions, median +0.44s, worst-10% 1.28s) skipped: neither names a specific word, phrase or uncaptioned window to re-anchor an edge on, just aggregate drift stats - same situation this repo's v524rh9_r3/r4 notes hit on MADE-MILLIONS-BEFORE-18 and YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER, and skipped there rather than guess on no evidence.",
+ "clips": [
+  {
+   "slug": "INDEPENDENT-MEDIA-IS-THE-BIGGEST-LIE",
+   "retry_of": "ar_v68yges/INDEPENDENT-MEDIA-IS-THE-BIGGEST-LIE",
+   "in": 2460,
+   "out": 2569,
+   "start_words": "How is it that",
+   "end_words": "don't care about me",
+   "hook": [
+    "Independent media is",
+    "the biggest lie."
+   ],
+   "caption": "CNN. The New York Times. The Washington Post. Ask them and they'll tell you they're independent, holding power accountable, reporting the truth without fear or favor.\n\nThat idea — independent media — is one of the biggest lies you're being told, right alongside a free and fair justice system and a government that actually serves the people. A story gets buried not because it isn't true, but because the people paying for the airtime don't want it told. They don't care about you.\n\nComment RISE and I'll send you how to read between the lines.\n\n#deepstate #disclosure #mediacontrol #awakening #consciousness #kevintrudeau"
+  }
+ ]
+}
