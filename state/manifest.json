@@ -12601,11 +12601,24 @@
    "hook": "The one habit that erases pain",
    "bytes": 80445761,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-30T16:58",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfIg7Fxm_nJ/",
+    "youtube": "https://youtube.com/shorts/VStk3bYA6vQ"
+   },
+   "caption_at_post": "Kevin Trudeau says you can't eliminate a bad habit - you can only replace it with a better one.\n\nWhen disaster hits, most people's habit is to panic, play victim, or go numb. Kevin teaches a different habit: say out loud, someday I'll look back at this and laugh - and actually laugh now instead of waiting for someday.\n\nPhysically laughing releases endorphins that change your body chemistry in real time, so you can look at the same problem completely differently.\n\nIt sounds simple, but it's the habit that turns a disaster into something you can handle today: every adversity, he says, is the seed of a greater benefit.\n\n#kevintrudeau #successmindset #mindsetmatters #wealthhabits #personalgrowth #businessmotivation",
+   "posted_at": "2026-10-30T17:12"
   }
  ]
 }
