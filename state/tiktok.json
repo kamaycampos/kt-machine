@@ -1,10 +1,10 @@
 {
- "at": "2026-10-31T04:50",
+ "at": "2026-10-31T06:15",
  "profile": {
+  "video_count": 166,
   "follower_count": 409,
   "following_count": 8,
-  "likes_count": 5872,
-  "video_count": 166
+  "likes_count": 5872
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -679,7 +679,7 @@
   },
   "KT_RICH/05_05_HOW-EVERY-RICH-PERSON-LEARNED-IT_103s.mp4": {
    "id": "7685885571121696014",
-   "view_count": 490,
+   "view_count": 491,
    "like_count": 59,
    "comment_count": 0,
    "share_count": 2,
