@@ -12626,7 +12626,11 @@
    "hook": "The CIA controls you, covertly.",
    "bytes": 26427545,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-31T09:15",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_CIRCLER3R2/02_YOUR-FEED-REVEALS-YOUR-FUTURE_62s.mp4",
@@ -12634,7 +12638,11 @@
    "hook": "What your YouTube feed reveals",
    "bytes": 39069184,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-10-31T16:36",
+   "cta_keyword": "MONEY",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_LIFTR2/01_DROP-THE-SANDBAGS_41s.mp4",
@@ -12643,7 +12651,10 @@
    "bytes": 26335863,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-31T20:18",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 2
   }
  ]
 }
