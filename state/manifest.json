@@ -12427,11 +12427,24 @@
    "hook": "The one mistake keeping you broke",
    "bytes": 40745827,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_keyword": "MONEY",
    "cta_variant": 6,
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-31T09:18"
+   "scheduled_at": "2026-10-31T09:18",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfKRcsnjej-/",
+    "youtube": "https://youtube.com/shorts/iVt9s1mX3zU"
+   },
+   "caption_at_post": "Most people think getting rich is about figuring out the how.\n\nKevin Trudeau says that's the number one mistake broke people make. They wait to even let themselves want a number until they know the technique first - the trading strategy, the real estate hack, the business plan.\n\nChase the how first and you get stuck asking \"how, how, how\" forever, with no answer. The people who actually build wealth do the opposite: decide exactly what they want, then let the how show up later.\n\nWhich one have you been doing - deciding what you want, or stalling on how to get it?\n\n#kevintrudeau #moneymindset #wealthmindset #successhabits #mindsetshift #richmindset",
+   "posted_at": "2026-10-31T09:35"
   },
   {
    "file": "KT_FOGLIGHT/02_THE-15-FOOT-RULE_54s.mp4",
@@ -12638,12 +12651,26 @@
    "caption": "Information flow is the ultimate power \u2014 whoever controls what people get to know, controls what they do next. That line isn't theory. It came up in an actual conversation with Mikhail Gorbachev, the last leader of the Soviet Union.\n\nThey talked about how the KGB covertly ran everything inside the USSR \u2014 and how the CIA does the exact same thing inside America, just with better PR. Same mechanism, same secrecy, different flag on the building.\n\nComment RISE and I'll send you the rest of that conversation.\n\n#disclosure #cia #secretsocieties #awakening #consciousness #kevintrudeau",
    "hook": "The CIA controls you, covertly.",
    "bytes": 26427545,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-31T09:15",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1464395712297045/",
+    "instagram": "https://www.instagram.com/reel/DfKRMfDlXlm/",
+    "youtube": "https://youtube.com/shorts/F5MDaoCIgS4"
+   },
+   "caption_at_post": "Information flow is the ultimate power \u2014 whoever controls what people get to know, controls what they do next. That line isn't theory. It came up in an actual conversation with Mikhail Gorbachev, the last leader of the Soviet Union.\n\nThey talked about how the KGB covertly ran everything inside the USSR \u2014 and how the CIA does the exact same thing inside America, just with better PR. Same mechanism, same secrecy, different flag on the building.\n\nComment RISE and I'll send you the rest of that conversation.\n\n#disclosure #cia #secretsocieties #awakening #consciousness #kevintrudeau",
+   "posted_at": "2026-10-31T09:32"
   },
   {
    "file": "KT_CIRCLER3R2/02_YOUR-FEED-REVEALS-YOUR-FUTURE_62s.mp4",
