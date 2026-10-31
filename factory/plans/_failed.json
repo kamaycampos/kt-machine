@@ -10207,6 +10207,60 @@
     "Henry Ford buried",
     "the real secret."
    ]
+  },
+  "ar_v4q0ust_r3/CLINTON-LIED-ABOUT-AREA-51": {
+   "plan": "ar_v4q0ust_r3",
+   "source": "v4q0ust.mp4",
+   "brand": "AR_SHADOWSTATER3",
+   "tries": 3,
+   "why": [
+    "FAIL 02_CLINTON-LIED-ABOUT-AREA-51_140s.mp4: ends off the planned words: plan ends 'I lied about it', clip ends 'because the cia wont let me'"
+   ],
+   "slug": "CLINTON-LIED-ABOUT-AREA-51",
+   "in": 571.72,
+   "out": 710.92,
+   "start_words": "Is there a secret",
+   "end_words": "I lied about it",
+   "hook": [
+    "Even Clinton lied",
+    "about Area 51."
+   ]
+  },
+  "ep_v73obcq_r2/SNAKE-IN-THE-DARK-WAS-A-ROPE": {
+   "plan": "ep_v73obcq_r2",
+   "source": "v73obcq.mp4",
+   "brand": "KT_LIFTR2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `02_SNAKE-IN-THE-DARK-WAS-A-ROPE_42s.mp4` - ends mid-thought on \"is you\""
+   ],
+   "slug": "SNAKE-IN-THE-DARK-WAS-A-ROPE",
+   "in": 389.12,
+   "out": 430.0,
+   "start_words": "You walk into a",
+   "end_words": "this is what enlightenment is",
+   "hook": [
+    "Why your fear",
+    "is a rope"
+   ]
+  },
+  "ep_v7dfhw8_r4/FIVE-FRIENDS-SET-YOUR-INCOME": {
+   "plan": "ep_v7dfhw8_r4",
+   "source": "v7dfhw8.mp4",
+   "brand": "KT_CIRCLER3R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_FIVE-FRIENDS-SET-YOUR-INCOME_90s.mp4: [FAIL] 01_FIVE-FRIENDS-SET-YOUR-INCOME_90s.mp4                16 captions vs the sound  median +0.09s  worst-10% 0.75s  | words captioned 100%  UNCAPTIONED SPEECH [(40.3, 43.0)]"
+   ],
+   "slug": "FIVE-FRIENDS-SET-YOUR-INCOME",
+   "in": 110.72,
+   "out": 207.6,
+   "start_words": "Your income is going",
+   "end_words": "health, wealth and happiness",
+   "hook": [
+    "The 5 friends",
+    "setting your income"
+   ]
   }
  },
  "attempts": {
