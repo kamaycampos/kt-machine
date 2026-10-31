@@ -12602,11 +12602,24 @@
    "hook": "He wanted $200K without knowing how",
    "bytes": 54921116,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-31T12:36",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfKoJIWClsO/",
+    "youtube": "https://youtube.com/shorts/tqZfcS6WOPk"
+   },
+   "caption_at_post": "Kevin Trudeau was deep into building his Mega Memory courses in the 1980s \u2014 loved the work, loved the team \u2014 when one question stopped him in his office: what do I really want next?\n\nThe answer came out almost embarrassing to say out loud: $200,000 a week, deposited into his account, with no work required. He laughed \u2014 the only way he could picture it happening was winning the lottery.\n\nSo he said it anyway: \"That's not my job, universe. My job is to want it. Your job is to figure out how.\"\n\nTwo weeks later, in a New York deli, the answer sat down right next to him.\n\nWhat number have you been afraid to say out loud because you don't know how yet?\n\n#kevintrudeau #manifestation #moneymindset #wealthmindset #yourwishisyourcommand #mindset",
+   "posted_at": "2026-10-31T12:54"
   },
   {
    "file": "AR_DEEPSTATER2/01_INDEPENDENT-MEDIA-IS-THE-BIGGEST-LIE_109s.mp4",
