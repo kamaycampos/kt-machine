@@ -10261,6 +10261,24 @@
     "The 5 friends",
     "setting your income"
    ]
+  },
+  "ep_v6jjx1s_r2/PRISON-FOR-5-DAYS-LATE": {
+   "plan": "ep_v6jjx1s_r2",
+   "source": "v6jjx1s.mp4",
+   "brand": "KT_MINDSETR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_PRISON-FOR-5-DAYS-LATE_97s.mp4` - opens mid-sentence on \"guy there who\""
+   ],
+   "slug": "PRISON-FOR-5-DAYS-LATE",
+   "in": 113.08,
+   "out": 208.24,
+   "start_words": "There was one guy there",
+   "end_words": "can't change and embrace it",
+   "hook": [
+    "5 days late",
+    "Year in prison"
+   ]
   }
  },
  "attempts": {
