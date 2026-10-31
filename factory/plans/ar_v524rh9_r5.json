@@ -1,0 +1,21 @@
+{
+  "source": "v524rh9.mp4",
+  "brand": "AR_FREQUENCYR5",
+  "test": false,
+  "note": "31 Oct 2026 - re-cut of 'Your Wish Is Your Command' (Rumble v524rh9). Second chance: HENRY-FORD-BURIED-THE-REAL-SECRET failed 'sentence starts with no stop' around the Napoleon Hill/Henry Ford passage. Start moved two sentences earlier ('a missing ingredient. What's that?') to re-time the crop; end unchanged on the clean payoff line. Awakened Rise weekly agent.",
+  "clips": [
+    {
+      "slug": "HENRY-FORD-BURIED-THE-REAL-SECRET",
+      "in": 1478.42,
+      "out": 1524.14,
+      "start_words": "a missing ingredient",
+      "end_words": "was think and grow rich",
+      "retry_of": "ar_v524rh9/HENRY-FORD-BURIED-THE-REAL-SECRET",
+      "hook": [
+        "Henry Ford buried",
+        "the real secret."
+      ],
+      "caption": "Andrew Carnegie, once the richest man alive, hired a researcher named Napoleon Hill to study the truly wealthy — Henry Ford, Thomas Edison, J.P. Morgan — and write down exactly what they knew that nobody else did.\n\nHill published it in 1926. Henry Ford saw the finished book and killed it — \"we don't want people to know the truth\" — and had it pulled from the market. What came back years later was a watered-down version. What came back after that, even more watered down, was Think and Grow Rich. Millions have read it. Almost none got the actual secret.\n\nComment RISE and I'll send you what got cut.\n\n#disclosure #secretsocieties #manifestation #awakening #history #kevintrudeau"
+    }
+  ]
+}
