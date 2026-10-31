@@ -12704,11 +12704,24 @@
    "hook": "What your YouTube feed reveals",
    "bytes": 39069184,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-10-31T16:36",
    "cta_keyword": "MONEY",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfLCNLSDdvp/",
+    "youtube": "https://youtube.com/shorts/nac2pwQeH1w"
+   },
+   "caption_at_post": "Kevin Trudeau says if everyone around you earns $50,000 to $70,000, that's your ceiling too - but surround yourself with people making two or three times that, and the energy itself starts to shift what you believe is possible.\n\nDon't believe him? He has a test. Pull up your own phone right now. Open YouTube, Instagram or X and look at what the algorithm is actually recommending to you.\n\nThat feed isn't random. It's been trained by everything you've clicked on, and it's showing you exactly how you're really thinking - broke thoughts or wealthy thoughts.\n\nYou can't hide from your own feed.\n\nGo check it. What is it telling you?\n\n#kevintrudeau #wealthmindset #millionairemindset #successhabits #moneymindset #businessmotivation",
+   "posted_at": "2026-10-31T16:41"
   },
   {
    "file": "KT_LIFTR2/01_DROP-THE-SANDBAGS_41s.mp4",
