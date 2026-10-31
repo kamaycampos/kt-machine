@@ -1,0 +1,30 @@
+{
+  "source": "v7dfhw8.mp4",
+  "brand": "KT_CIRCLER3R2",
+  "test": false,
+  "note": "31 Oct 2026 - 'Your Friends Are Keeping You Broke' (Rumble v7dfhw8). Weekly agent, second chance.",
+  "clips": [
+    {
+      "slug": "FIVE-FRIENDS-SET-YOUR-INCOME",
+      "in": 110.72,
+      "out": 207.6,
+      "start_words": "Your income is going",
+      "end_words": "health, wealth and happiness",
+      "hook": ["The 5 friends", "setting your income"],
+      "caption": "Kevin Trudeau says your income is still the average of the five people you spend the most time watching and listening to - it's just that today, those five people live in your feed.\n\nBack in the day it was literally the five friends standing in front of you. Now it's whoever you follow on YouTube, Instagram and TikTok.\n\nWatch broke people complain all day and you start thinking broke. Watch people who are actually wealthy and your energy, your thinking, even your dreams start to expand.\n\nThat shift in thinking is what pulls health, wealth and happiness into your life - not luck.\n\nWho's actually in your five right now?\n\n#kevintrudeau #wealthmindset #millionairemindset #successhabits #moneymindset #businessmotivation",
+      "opener": "group friends silhouette sunset",
+      "retry_of": "ep_v7dfhw8/FIVE-FRIENDS-SET-YOUR-INCOME"
+    },
+    {
+      "slug": "YOUR-FEED-REVEALS-YOUR-FUTURE",
+      "in": 351.04,
+      "out": 412.48,
+      "start_words": "If you hang around",
+      "end_words": "you what you're thinking",
+      "hook": ["What your YouTube", "feed reveals"],
+      "caption": "Kevin Trudeau says if everyone around you earns $50,000 to $70,000, that's your ceiling too - but surround yourself with people making two or three times that, and the energy itself starts to shift what you believe is possible.\n\nDon't believe him? He has a test. Pull up your own phone right now. Open YouTube, Instagram or X and look at what the algorithm is actually recommending to you.\n\nThat feed isn't random. It's been trained by everything you've clicked on, and it's showing you exactly how you're really thinking - broke thoughts or wealthy thoughts.\n\nYou can't hide from your own feed.\n\nGo check it. What is it telling you?\n\n#kevintrudeau #wealthmindset #millionairemindset #successhabits #moneymindset #businessmotivation",
+      "opener": "smartphone screen scrolling glow",
+      "retry_of": "ep_v7dfhw8/YOUR-FEED-REVEALS-YOUR-FUTURE"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "source": "v73obcq.mp4",
+  "brand": "KT_LIFTR2",
+  "test": false,
+  "note": "31 Oct 2026 - 'Why You're Not Lifting (New Year Wake-Up)' (Rumble v73obcq). Weekly agent, second chance.",
+  "clips": [
+    {
+      "slug": "DROP-THE-SANDBAGS",
+      "in": 321.28,
+      "out": 362.56,
+      "start_words": "No matter how much",
+      "end_words": "the counter intention",
+      "hook": ["The sandbags holding", "your balloon down"],
+      "caption": "Kevin Trudeau says most people are like a hot air balloon pilot cranking the heat, confused why they're still not lifting off.\n\nNo matter how much heat you add, if the basket is still tied to the ground, you're not moving. You have to untie what's holding you down.\n\nEven then, the balloon rises slowly, because there are still sandbags weighing it down - the counter-intentions, the beliefs that quietly sabotage the goal you say you want.\n\nYou need both: the heat of taking action and dropping the sandbags that are blocking you, or you're not going anywhere.\n\n#kevintrudeau #manifestation #wealthmindset #yourwishisyourcommand #successmindset #businessmotivation",
+      "cta_kind": "offer",
+      "opener": "hot air balloon sky",
+      "retry_of": "ep_v73obcq/DROP-THE-SANDBAGS"
+    },
+    {
+      "slug": "SNAKE-IN-THE-DARK-WAS-A-ROPE",
+      "in": 389.12,
+      "out": 430.0,
+      "start_words": "You walk into a",
+      "end_words": "this is what enlightenment is",
+      "hook": ["Why your fear", "is a rope"],
+      "caption": "Kevin Trudeau says fear is almost always false evidence appearing real.\n\nWalk into a dark basement and see something coiled in the corner, and your mind screams snake. Turn the light on, and it's just a rope. Nothing ever changed except what you could see.\n\nThat's what he means by enlightenment - not something mystical, just turning the light on so you can finally see what was always there.\n\nMost of what you're afraid of right now is a rope you haven't turned the light on yet.\n\n#kevintrudeau #mindsetmatters #fearless #wealthmindset #successmindset #businessmotivation",
+      "opener": "dark basement light switch",
+      "retry_of": "ep_v73obcq/SNAKE-IN-THE-DARK-WAS-A-ROPE"
+    }
+  ]
+}
