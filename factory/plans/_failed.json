@@ -10279,6 +10279,24 @@
     "5 days late",
     "Year in prison"
    ]
+  },
+  "ep_v66j311_r2/GLASS-BRIDGE-OVER-THE-CANYON": {
+   "plan": "ep_v66j311_r2",
+   "source": "v66j311.mp4",
+   "brand": "KT_FIREBIRDR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_GLASS-BRIDGE-OVER-THE-CANYON_78s.mp4` - ends mid-thought on \"of thin air\"; sentence starts with no stop: \"awesome He\"; sentence starts with no stop: \"glass And\""
+   ],
+   "slug": "GLASS-BRIDGE-OVER-THE-CANYON",
+   "in": 3980.96,
+   "out": 4067.98,
+   "start_words": "Good friend of mine in",
+   "end_words": "out of thin air",
+   "hook": [
+    "How 90 days made",
+    "$4 million"
+   ]
   }
  },
  "attempts": {
@@ -10324,6 +10342,7 @@
   "ep_v66j311_p2": 2,
   "ar_v50s5f8_r3": 2,
   "ar_v524rh9_r4": 2,
-  "ar_v6pwfg0_r3": 2
+  "ar_v6pwfg0_r3": 2,
+  "ep_v66j311_r3": 1
  }
 }
