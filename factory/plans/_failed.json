@@ -10189,6 +10189,24 @@
     "Happiness needs a reason.",
     "You don't."
    ]
+  },
+  "ar_v524rh9_r5/HENRY-FORD-BURIED-THE-REAL-SECRET": {
+   "plan": "ar_v524rh9_r5",
+   "source": "v524rh9.mp4",
+   "brand": "AR_FREQUENCYR5",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_HENRY-FORD-BURIED-THE-REAL-SECRET_46s.mp4` - opens mid-sentence on \"missing ingredient.\""
+   ],
+   "slug": "HENRY-FORD-BURIED-THE-REAL-SECRET",
+   "in": 1478.42,
+   "out": 1524.14,
+   "start_words": "a missing ingredient",
+   "end_words": "was think and grow rich",
+   "hook": [
+    "Henry Ford buried",
+    "the real secret."
+   ]
   }
  },
  "attempts": {
