@@ -12728,7 +12728,11 @@
    "hook": "Why he chose to love prison",
    "bytes": 28832903,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-01T07:36",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
