@@ -1,15 +1,15 @@
 {
- "at": "2026-10-31T10:30",
+ "at": "2026-10-31T13:02",
  "profile": {
-  "likes_count": 5872,
   "video_count": 166,
   "follower_count": 409,
-  "following_count": 8
+  "following_count": 8,
+  "likes_count": 5872
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
    "id": "7694313777382182157",
-   "view_count": 14,
+   "view_count": 15,
    "like_count": 4,
    "comment_count": 0,
    "share_count": 0,
@@ -109,7 +109,7 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 211,
+   "view_count": 212,
    "like_count": 4,
    "comment_count": 0,
    "share_count": 0,
@@ -529,7 +529,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3724,
+   "view_count": 3725,
    "like_count": 152,
    "comment_count": 7,
    "share_count": 16,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38205,
+   "view_count": 38206,
    "like_count": 787,
    "comment_count": 27,
    "share_count": 171,
@@ -769,7 +769,7 @@
   },
   "KT_HOME/02_02_WHY-RICH-HOMES-ARE-FULL-OF-OLD-THINGS_85s.mp4": {
    "id": "7685065417743797518",
-   "view_count": 3483,
+   "view_count": 3484,
    "like_count": 270,
    "comment_count": 6,
    "share_count": 43,
