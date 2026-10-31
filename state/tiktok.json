@@ -1,15 +1,15 @@
 {
- "at": "2026-10-31T16:10",
+ "at": "2026-10-31T21:50",
  "profile": {
+  "follower_count": 410,
   "following_count": 8,
   "likes_count": 5873,
-  "video_count": 166,
-  "follower_count": 410
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
    "id": "7694313777382182157",
-   "view_count": 16,
+   "view_count": 17,
    "like_count": 4,
    "comment_count": 0,
    "share_count": 0,
@@ -109,7 +109,7 @@
   },
   "KT_LUCK/02_FORGOT-150000-IN-A-SLOT-MACHINE_149s.mp4": {
    "id": "7692247488756976909",
-   "view_count": 212,
+   "view_count": 213,
    "like_count": 4,
    "comment_count": 0,
    "share_count": 0,
@@ -139,7 +139,7 @@
   },
   "KT_SHARK/01_WHY-YOUR-FRIENDS-KEEP-YOU-BROKE_148s.mp4": {
    "id": "7691404629271137550",
-   "view_count": 5,
+   "view_count": 6,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -149,7 +149,7 @@
   },
   "KT_LEDGER/01_THREE-IDEAS-THEY-CALLED-INSANE_60s.mp4": {
    "id": "7691319700512345358",
-   "view_count": 4,
+   "view_count": 6,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -429,7 +429,7 @@
   },
   "KT_FREEDOM/02_WHY-GETTING-RICH-IS-EASIER-NOW_43s.mp4": {
    "id": "7688886212551118094",
-   "view_count": 307,
+   "view_count": 308,
    "like_count": 20,
    "comment_count": 1,
    "share_count": 2,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38206,
+   "view_count": 38207,
    "like_count": 787,
    "comment_count": 27,
    "share_count": 171,
