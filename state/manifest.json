@@ -12464,11 +12464,24 @@
    "hook": "A $35 stamp cost him millions",
    "bytes": 35760739,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_keyword": "BRAIN",
    "cta_variant": 5,
    "cta_kind": "question",
-   "scheduled_at": "2026-10-31T08:18"
+   "scheduled_at": "2026-10-31T08:18",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfKKTrsk4nP/",
+    "youtube": "https://youtube.com/shorts/3npdtNmoXVM"
+   },
+   "caption_at_post": "A $35 difference in postage may have cost a man millions.\n\nKevin Trudeau had two separate strangers, on the exact same Saturday, independently tell him he should sell his memory course on TV. Both sent contracts: his friend Ed Beckley by Federal Express, for $35. Bobby Singer by regular mail.\n\nEd's contract landed first. Kevin signed with him - then had to call Bobby Singer to say he'd already been beaten to it. Bobby's words: \"That $35 may have cost me millions.\"\n\nKevin went with Ed Beckley instead. They sold $450 million worth of courses on television.\n\nHow much is speed costing you right now?\n\n#kevintrudeau #success #wealthmindset #moneymindset #businessowner #entrepreneur",
+   "posted_at": "2026-10-31T08:33"
   },
   {
    "file": "KT_GOALPOSTR2/01_THE-2-NUMBERS-YOU-NEED_80s.mp4",
