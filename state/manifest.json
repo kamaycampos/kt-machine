@@ -12779,11 +12779,24 @@
    "hook": "Why rich cards can't carry debt",
    "bytes": 39665074,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-01T11:46",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfNNg_YiLWa/",
+    "youtube": "https://youtube.com/shorts/o2UY9zmUCqo"
+   },
+   "caption_at_post": "A charge card and a credit card sound like the same plastic. Kevin Trudeau says the difference is why rich people stay rich.\n\nA charge card - the kind Mark Cuban carries - bills you monthly and must be paid in full. No minimum, no interest.\n\nA credit card lets you pay the minimum and carry a $140,000 balance for months while interest piles on.\n\nWealthy people choose the card that forces them to pay it off. Everyone else gets the one that keeps them in debt.\n\nWhich one is actually sitting in your wallet right now?\n\n#kevintrudeau #creditcarddebt #moneymindset #wealthmindset #financialliteracy #richhabits",
+   "posted_at": "2026-11-01T11:59"
   },
   {
    "file": "KT_LANTERNR2/02_THE-HEIRLOOM-KEEPING-YOU-POOR_35s.mp4",
@@ -12890,12 +12903,26 @@
    "caption": "No wealthy family. No college. No connections \u2014 just a welder's son who flunked out of high school.\n\nAt fifteen, that changed. He was taken in by an organization called The Brotherhood, and they taught him how the brain actually works as a transmitter and receiver of frequency \u2014 not as theory, as something you use.\n\nHe made millions before he turned eighteen. Not from talent he was born with. From a formula somebody finally handed him.\n\nComment RISE and I'll send you the formula.\n\n#brotherhood #lawofattraction #frequency #manifestation #awakening #kevintrudeau",
    "hook": "Millions by eighteen. The Brotherhood's doing.",
    "bytes": 22878282,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-01T11:41",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2774602142936514/",
+    "instagram": "https://www.instagram.com/reel/DfNNJpfDfKf/",
+    "youtube": "https://youtube.com/shorts/Dg0yq_L12CU"
+   },
+   "caption_at_post": "No wealthy family. No college. No connections \u2014 just a welder's son who flunked out of high school.\n\nAt fifteen, that changed. He was taken in by an organization called The Brotherhood, and they taught him how the brain actually works as a transmitter and receiver of frequency \u2014 not as theory, as something you use.\n\nHe made millions before he turned eighteen. Not from talent he was born with. From a formula somebody finally handed him.\n\nComment RISE and I'll send you the formula.\n\n#brotherhood #lawofattraction #frequency #manifestation #awakening #kevintrudeau",
+   "posted_at": "2026-11-01T11:55"
   },
   {
    "file": "AR_FREQUENCYR6/02_HENRY-FORD-BURIED-THE-REAL-SECRET_47s.mp4",
