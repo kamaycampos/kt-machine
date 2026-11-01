@@ -184,6 +184,21 @@ def main():
                 for side in glob.glob(os.path.splitext(mp4)[0] + "*"):
                     shutil.move(side, os.path.join(FAILED, os.path.basename(side)))
                 continue
+            plan_c = slugs[m.group(1)]
+            seen = speaker_in_frame(mp4, opener=bool(plan_c.get("opener")))
+            if seen and not seen[0]:
+                cxs = source_face_cx(os.path.join(SRC_DIR, p["source"]), float(plan_c["in"]), float(plan_c["out"]))
+                if cxs is not None:
+                    log(f"  REAIM {f}: {seen[1]} - crop moved to the speaker at x={cxs:.2f}, rendering once more")
+                    renv = dict(os.environ, CROP_CX=f"{cxs:.3f}") | ({"CAPTION_SHIFT": shift} if shift else {})
+                    subprocess.run([sys.executable, os.path.join(HOME, "kt_render.py"), key, "--apply",
+                                    "--only", m.group(1)], capture_output=True, text=True, cwd=HOME, env=renv)
+                    seen = speaker_in_frame(mp4, opener=bool(plan_c.get("opener")))
+            if seen and not seen[0]:
+                log(f"  FAIL {f}: speaker not in the posted frame ({seen[1]})")
+                for side in glob.glob(os.path.splitext(mp4)[0] + "*"):
+                    shutil.move(side, os.path.join(FAILED, os.path.basename(side)))
+                continue
             v = subprocess.run([sys.executable, os.path.join(HOME, "kt_verify_render.py"), mp4],
                                capture_output=True, text=True, cwd=HOME).stdout
             why = opens_wrong(os.path.join(SRC_DIR, p["source"]), float(slugs[m.group(1)]["in"]), v,
@@ -231,6 +246,78 @@ def main():
         log("pushed")
     return finish()
 
+
+
+# THE SPEAKER IS IN THE POSTED FRAME (1 Nov 2026). Kamay, on WB "Why your grocery bag
+# outlasts you": "there is no kt". The face gate (run_plans) looked at the WIDE source, where
+# Kevin sat on the left; the 9:16 crop took the middle - a curtain and his shoulder - and
+# nothing looked at what was actually posted. Now the finished clip is checked: a face in
+# the opening second and in most of the clip. Missing: the crop is re-aimed at the face the
+# SOURCE shows (CROP_CX) and rendered once more; still missing: refused.
+_YN = []
+
+
+def _faces(path, t):
+    """[(x centre as a fraction of width, face width fraction)] at t, or None without a detector."""
+    try:
+        import cv2
+    except Exception:
+        return None
+    if not _YN:
+        model = os.path.join(HOME, "bin", "yunet.onnx")
+        if not (os.path.exists(model) and hasattr(cv2, "FaceDetectorYN_create")):
+            return None
+        _YN.append(cv2.FaceDetectorYN_create(model, "", (320, 320), 0.6, 0.3, 5000))
+    q = f"/tmp/_frame_{os.getpid()}.jpg"
+    subprocess.run([os.path.join(HOME, "bin", "ffmpeg") if os.path.exists(os.path.join(HOME, "bin", "ffmpeg")) else "ffmpeg",
+                    "-y", "-loglevel", "error", "-ss", f"{t:.2f}", "-i", path, "-frames:v", "1",
+                    "-vf", "scale=640:-2", "-q:v", "3", q], capture_output=True)
+    img = cv2.imread(q)
+    if img is None:
+        return None
+    h, w = img.shape[:2]
+    _YN[0].setInputSize((w, h))
+    _, found = _YN[0].detect(img)
+    return [((f[0] + f[2] / 2) / w, f[2] / w) for f in (found if found is not None else []) if f[2] / w >= 0.04]
+
+
+def _length(path):
+    """Seconds, read from ffmpeg's own header line (ffprobe is not on every machine)."""
+    ff = os.path.join(HOME, "bin", "ffmpeg")
+    try:
+        r = subprocess.run([ff if os.path.exists(ff) else "ffmpeg", "-i", path], capture_output=True, text=True)
+    except OSError:
+        return 0.0
+    m = re.search(r"Duration: (\d+):(\d+):([\d.]+)", r.stderr)
+    return int(m[1]) * 3600 + int(m[2]) * 60 + float(m[3]) if m else 0.0
+
+
+def speaker_in_frame(mp4, opener=False):
+    """None = cannot tell (no detector). Else (ok, why)."""
+    d = _length(mp4)
+    if d <= 2:
+        return None
+    first = [] if opener else [0.5, 1.5]                 # an opener is B-roll by design
+    body = [d * x for x in (0.3, 0.5, 0.7, 0.9)]
+    seen = {t: _faces(mp4, t) for t in first + body}
+    if all(v is None for v in seen.values()):
+        return None
+    hit = {t: bool(v) for t, v in seen.items()}
+    if first and not any(hit[t] for t in first):
+        return False, "no face in the opening second of the posted frame"
+    if sum(hit[t] for t in body) < 3:
+        return False, f"face in only {sum(hit[t] for t in body)} of 4 moments of the posted frame"
+    return True, ""
+
+
+def source_face_cx(src, a, b):
+    """Where the speaker sits across the clip in the SOURCE (median x centre), or None."""
+    xs = []
+    for k in range(6):
+        f = _faces(src, a + (b - a) * (k + 0.5) / 6)
+        if f:
+            xs.append(max(f, key=lambda z: z[1])[0])
+    return sorted(xs)[len(xs) // 2] if len(xs) >= 3 else None
 
 
 def constant_offset(sync_out):

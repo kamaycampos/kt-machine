@@ -1792,6 +1792,11 @@ def run_series(key, spec, apply, only):
                 op = kt_opener.pick(str(c["opener"]))
             except Exception as e:
                 sys.stderr.write(f"      opener skipped: {type(e).__name__}: {e}\n")
+        # RE-AIMED CROP (1 Nov 2026, kt_batch_build REAIM): the posted frame missed the speaker,
+        # so this one render crops a fixed window centred on where the source shows the face.
+        if os.environ.get("CROP_CX"):
+            cx, shots, track, lgeo = float(os.environ["CROP_CX"]), None, [], None
+            print(f"      crop re-aimed at x={cx:.2f}")
         bursts = render(src, dest, c["in"], c["out"], c["hook"], cues,
                         cx, apply, zoom, c.get("hook_yt"), yt_win,
                         c["slug"], c.get("fix"), shots, track,
