@@ -10423,6 +10423,24 @@
     "Your thoughts move matter.",
     "It's proven."
    ]
+  },
+  "ep_v5hsmvp/TWO-STRANGERS-SAME-WEEK": {
+   "plan": "ep_v5hsmvp",
+   "source": "v5hsmvp.mp4",
+   "brand": "KT_UNIVERSE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_TWO-STRANGERS-SAME-WEEK_158s.mp4` - ends mid-thought on \"this this gig\"; phrase scrambled around \"answering machine remember answering\"; phrase scrambled around \"more probably probably more\""
+   ],
+   "slug": "TWO-STRANGERS-SAME-WEEK",
+   "in": 1711.7,
+   "out": 1869.56,
+   "start_words": "I said, I wanna make",
+   "end_words": "offer me this gig",
+   "hook": [
+    "How he manifested",
+    "$50,000 a week"
+   ]
   }
  },
  "attempts": {
@@ -10469,6 +10487,7 @@
   "ar_v50s5f8_r3": 2,
   "ar_v524rh9_r4": 2,
   "ar_v6pwfg0_r3": 2,
-  "ep_v66j311_r3": 2
+  "ep_v66j311_r3": 2,
+  "ep_v4zs6lu": 1
  }
 }

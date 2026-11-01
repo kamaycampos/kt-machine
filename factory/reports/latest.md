@@ -1,90 +1,48 @@
-## ar_v4n9vuz_r2: 4 of 4 clip(s) passed every gate
+## ep_v4zs6lu: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-01 13:02
-  note AR_DARKSIDER2/NOT-YOUR-TEETH-ITS-YOUR-ETHER: ending kept on the planner's words 'manipulate and control' (cuts mid-sentence)
-  note AR_DARKSIDER2/WASHED-DISHES-BECAME-A-GLOBAL-STAR: ending kept on the planner's words 'Green Hornet TV series' (cuts mid-sentence)
-ar_v4n9vuz_r2__s1 (AR_DARKSIDER2): 2 of 2 passed pre-render gates
+## 2026-11-01 19:22
+  note KT_UNDERDOG/THE-ROCKY-GAMBLE: ending kept on the planner's words 'why he became so rich' (introduces, does not claim)
+ep_v4zs6lu__s0 (KT_UNDERDOG): 1 of 1 passed pre-render gates
 
-RENDER ar_v4n9vuz_r2__s1
-  WARP 01_NOT-YOUR-TEETH-ITS-YOUR-ETHER_52s.mp4:      26 captions vs the sound (word-referenced: no clear pauses)  median +0.35s  worst-10% 1.27s  | words captioned 102% - re-timing each caption once
-  PASS 01_NOT-YOUR-TEETH-ITS-YOUR-ETHER_52s.mp4  01_NOT-YOUR-TEETH-ITS-YOUR-ETHER_52s.mp4               24 captions vs the sound (word-refe
-       FIRST 5s : There's a whole series of steps being taken to keep you into a mental | LAST  8s : It is a suggestion so you are easier to manipulate and control.
-  PASS 02_WASHED-DISHES-BECAME-A-GLOBAL-STAR_59s.mp4  02_WASHED-DISHES-BECAME-A-GLOBAL-STAR_59s.mp4          10 captions vs the sound  median +0
-       FIRST 5s : Because there are specific techniques to achieve success. Bruce Lee is probably the most notable because | LAST  8s : Anywhere in the world, and then a Hollywood star as well. And he also starred in the Green Hornet TV series.
-TEST MODE - passing clips NOT uploaded or queued: AR_DARKSIDER2
+RENDER ep_v4zs6lu__s0
+  FAIL 01_THE-ROCKY-GAMBLE_174s.mp4: [FAIL] 01_THE-ROCKY-GAMBLE_174s.mp4                           12 captions vs the sound  median +0.20s  worst-10% 0.66s  | words captioned 100%  UNCAPTIONED SPEECH [(100.3, 101.9)]
 
 
-
-## 2026-11-01 13:10
-  note AR_DARKSIDER2/POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT: ending kept on the planner's words 'Think about that' (ends on 'that')
-  note AR_DARKSIDER2/NOT-A-DEMOCRACY-ONLY-LANDOWNERS-VOTED: ending kept on the planner's words 'a different race no' (cuts mid-sentence)
-ar_v4n9vuz_r2__s0 (AR_DARKSIDER2): 2 of 2 passed pre-render gates
-
-RENDER ar_v4n9vuz_r2__s0
-  PASS 01_NOT-A-DEMOCRACY-ONLY-LANDOWNERS-VOTED_70s.mp4  01_NOT-A-DEMOCRACY-ONLY-LANDOWNERS-VOTED_70s.mp4       7 captions vs the sound  median +0.
-       FIRST 5s : Hey, come on, man. Wake up. | LAST  8s : The rich white men voted, and that was it. If you were a different race, no.
-  WARP 02_POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT_84s.mp4: -DONT-RUN-ANYTHING-ITS-DIRT_84s.mp4      9 captions vs the sound  median +0.10s  worst-10% 1.04s  | words captioned 100% - re-timing each caption once
-  PASS 02_POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT_84s.mp4  02_POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT_84s.mp4      9 captions vs the sound  median -0.
-       FIRST 5s : So what do we do? So this is when the shadow governments took over. | LAST  8s : They are running the show. They are not running the show. They are puppets on a string. Think about that.
-TEST MODE - passing clips NOT uploaded or queued: AR_DARKSIDER2
+## ep_v53gz1i: 1 of 1 clip(s) passed every gate
 
 
-- **NOT QUEUED** `01_NOT-YOUR-TEETH-ITS-YOUR-ETHER_52s.mp4` - ends mid-thought on "And by"; sentence starts with no stop: "control And"
+## 2026-11-01 19:30
+ep_v53gz1i__s0 (KT_SERVICE): 1 of 1 passed pre-render gates
 
-- **NOT QUEUED** `02_POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT_84s.mp4` - phrase scrambled around "just make— we'll just"; phrase scrambled around "we'll just make— we'll"
-
-## ar_v524rh9_r6: 2 of 3 clip(s) passed every gate
-
-
-## 2026-11-01 12:42
-  drop AR_FREQUENCYR6/YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER: hook - 790px wide at 44px - over the 780px safe zone, will be cut off on a phone
-ar_v524rh9_r6__s1 (AR_FREQUENCYR6): 0 of 1 passed pre-render gates
-nothing to build
+RENDER ep_v53gz1i__s0
+  PASS 01_THE-SEMINAR-THAT-CHANGED-HIS-FOCUS_162s.mp4  01_THE-SEMINAR-THAT-CHANGED-HIS-FOCUS_162s.mp4         12 captions vs the sound  median -0
+       FIRST 5s : Okay, when I was in the memory training business, way back in the 80s, I got an | LAST  8s : I mean, money flowed like lava. You couldn't stop it.
+TEST MODE - passing clips NOT uploaded or queued: KT_SERVICE
 
 
-
-## 2026-11-01 13:04
-  note AR_FREQUENCYR6/MADE-MILLIONS-BEFORE-18: ending kept on the planner's words 'before I was 18' (cuts mid-sentence)
-ar_v524rh9_r6__s0 (AR_FREQUENCYR6): 2 of 2 passed pre-render gates
-
-RENDER ar_v524rh9_r6__s0
-  WARP 01_MADE-MILLIONS-BEFORE-18_46s.mp4: NS-BEFORE-18_46s.mp4                     9 captions vs the sound  median +0.11s  worst-10% 0.73s  | words captioned 100% - re-timing each caption once
-  PASS 01_MADE-MILLIONS-BEFORE-18_46s.mp4  01_MADE-MILLIONS-BEFORE-18_46s.mp4                     9 captions vs the sound  median +0.
-       FIRST 5s : I didn't go to Harvard. It wasn't a Trump. They didn't have the background, the money. | LAST  8s : It is not too good to be true. Still looks good. But I did that and I made millions of dollars before I was 18.
-  PASS 02_HENRY-FORD-BURIED-THE-REAL-SECRET_47s.mp4  02_HENRY-FORD-BURIED-THE-REAL-SECRET_47s.mp4           8 captions vs the sound  median +0.
-       FIRST 5s : But the fact is, there is a missing ingredient. What's that? Well, if you go back to where this started, | LAST  8s : And now the watered-down version came out. And then the even more watered-down version was think and grow rich.
-TEST MODE - passing clips NOT uploaded or queued: AR_FREQUENCYR6
+## ep_v5hsmvp: 1 of 1 clip(s) passed every gate
 
 
-## ar_v6sfb21_r7: 1 of 1 clip(s) passed every gate
+## 2026-11-01 19:45
+  note KT_UNIVERSE/TWO-STRANGERS-SAME-WEEK: ending kept on the planner's words 'offer me this gig' (ends inside a quote)
+ep_v5hsmvp__s0 (KT_UNIVERSE): 1 of 1 passed pre-render gates
+
+RENDER ep_v5hsmvp__s0
+  WARP 01_TWO-STRANGERS-SAME-WEEK_158s.mp4: RS-SAME-WEEK_158s.mp4                    17 captions vs the sound  median -0.01s  worst-10% 0.80s  | words captioned 98% - re-timing each caption once
+  PASS 01_TWO-STRANGERS-SAME-WEEK_158s.mp4  01_TWO-STRANGERS-SAME-WEEK_158s.mp4                    16 captions vs the sound  median -0
+       FIRST 5s : I said, "I want to make $50,000 a week." Now, that's in the 80s. | LAST  8s : I go, "Well, he said the same thing today." So I have two people in the same day, out of nowhere, offer me this gig.
+TEST MODE - passing clips NOT uploaded or queued: KT_UNIVERSE
 
 
-## 2026-11-01 12:50
-ar_v6sfb21_r7__s0 (AR_SAMSKARAR7): 1 of 1 passed pre-render gates
-
-RENDER ar_v6sfb21_r7__s0
-  PASS 01_EVEN-SEX-BECOMES-MEDITATION_67s.mp4  01_EVEN-SEX-BECOMES-MEDITATION_67s.mp4                 14 captions vs the sound  median +0
-       FIRST 5s : I would meditate virtually all day long. So eight hours a day, I was... | LAST  8s : It transcends a specific meditation technique into a way of life.
-TEST MODE - passing clips NOT uploaded or queued: AR_SAMSKARAR7
-
+- **NOT QUEUED** `01_TWO-STRANGERS-SAME-WEEK_158s.mp4` - ends mid-thought on "this this gig"; phrase scrambled around "answering machine remember answering"; phrase scrambled around "more probably probably more"
 
 ## UPLOAD
-5 clip(s) to add:
-   AR_DARKSIDER2/01_NOT-A-DEMOCRACY-ONLY-LANDOWNERS-VOTED_70s.mp4  (53 MB)
-   AR_DARKSIDER2/02_WASHED-DISHES-BECAME-A-GLOBAL-STAR_59s.mp4  (44 MB)
-   AR_FREQUENCYR6/01_MADE-MILLIONS-BEFORE-18_46s.mp4  (23 MB)
-   AR_FREQUENCYR6/02_HENRY-FORD-BURIED-THE-REAL-SECRET_47s.mp4  (28 MB)
-   AR_SAMSKARAR7/01_EVEN-SEX-BECOMES-MEDITATION_67s.mp4  (39 MB)
-      + 01_NOT-A-DEMOCRACY-ONLY-LANDOWNERS-VOTED_70s__story.mp4
-      + 01_NOT-A-DEMOCRACY-ONLY-LANDOWNERS-VOTED_70s__yt59.mp4
-   added AR_DARKSIDER2/01_NOT-A-DEMOCRACY-ONLY-LANDOWNERS-VOTED_70s.mp4
-   added AR_DARKSIDER2/02_WASHED-DISHES-BECAME-A-GLOBAL-STAR_59s.mp4
-   added AR_FREQUENCYR6/01_MADE-MILLIONS-BEFORE-18_46s.mp4
-   added AR_FREQUENCYR6/02_HENRY-FORD-BURIED-THE-REAL-SECRET_47s.mp4
-      + 01_EVEN-SEX-BECOMES-MEDITATION_67s__story.mp4
-      + 01_EVEN-SEX-BECOMES-MEDITATION_67s__yt59.mp4
-   added AR_SAMSKARAR7/01_EVEN-SEX-BECOMES-MEDITATION_67s.mp4
+1 clip(s) to add:
+   KT_SERVICE/01_THE-SEMINAR-THAT-CHANGED-HIS-FOCUS_162s.mp4  (115 MB)
+      + 01_THE-SEMINAR-THAT-CHANGED-HIS-FOCUS_162s__story.mp4
+      + 01_THE-SEMINAR-THAT-CHANGED-HIS-FOCUS_162s__yt59.mp4
+   added KT_SERVICE/01_THE-SEMINAR-THAT-CHANGED-HIS-FOCUS_162s.mp4
 
-manifest now holds 523 clips
+manifest now holds 524 clips
 commit and push state/manifest.json to let the machine see them
