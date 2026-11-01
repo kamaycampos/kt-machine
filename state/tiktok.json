@@ -1,10 +1,10 @@
 {
- "at": "2026-11-01T18:05",
+ "at": "2026-11-01T22:23",
  "profile": {
-  "likes_count": 5873,
-  "video_count": 166,
   "follower_count": 410,
-  "following_count": 8
+  "following_count": 8,
+  "likes_count": 5873,
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -579,7 +579,7 @@
   },
   "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4": {
    "id": "7686887912297843981",
-   "view_count": 2339,
+   "view_count": 2342,
    "like_count": 79,
    "comment_count": 5,
    "share_count": 12,
@@ -609,7 +609,7 @@
   },
   "KT_LIES/04_CUT-YOUR-BILL-IN-HALF_85s.mp4": {
    "id": "7686570832281341197",
-   "view_count": 23,
+   "view_count": 24,
    "like_count": 3,
    "comment_count": 0,
    "share_count": 0,
@@ -649,7 +649,7 @@
   },
   "KT_LIES/01_LIVE-WITHIN-YOUR-MEANS-IS-THE-LIE_99s.mp4": {
    "id": "7686255138599636237",
-   "view_count": 451,
+   "view_count": 453,
    "like_count": 32,
    "comment_count": 0,
    "share_count": 1,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38213,
+   "view_count": 38215,
    "like_count": 787,
    "comment_count": 27,
    "share_count": 171,
