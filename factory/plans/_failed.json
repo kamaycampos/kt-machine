@@ -10369,6 +10369,60 @@
     "How one photo won",
     "the business"
    ]
+  },
+  "ar_v4n9vuz_r2/POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT": {
+   "plan": "ar_v4n9vuz_r2",
+   "source": "v4n9vuz.mp4",
+   "brand": "AR_DARKSIDER2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT_84s.mp4` - phrase scrambled around \"just make— we'll just\"; phrase scrambled around \"we'll just make— we'll\""
+   ],
+   "slug": "POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT",
+   "in": 1567.7,
+   "out": 1648.3,
+   "start_words": "So what do we do",
+   "end_words": "Think about that",
+   "hook": [
+    "Dirt gives them",
+    "all the power."
+   ]
+  },
+  "ar_v4n9vuz_r2/NOT-YOUR-TEETH-ITS-YOUR-ETHER": {
+   "plan": "ar_v4n9vuz_r2",
+   "source": "v4n9vuz.mp4",
+   "brand": "AR_DARKSIDER2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_NOT-YOUR-TEETH-ITS-YOUR-ETHER_52s.mp4` - ends mid-thought on \"And by\"; sentence starts with no stop: \"control And\""
+   ],
+   "slug": "NOT-YOUR-TEETH-ITS-YOUR-ETHER",
+   "in": 1872.68,
+   "out": 1925.5,
+   "start_words": "there's a whole series",
+   "end_words": "manipulate and control",
+   "hook": [
+    "They don't want you",
+    "sharp."
+   ]
+  },
+  "ar_v524rh9_r6/YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER": {
+   "plan": "ar_v524rh9_r6",
+   "source": "v524rh9.mp4",
+   "brand": "AR_FREQUENCYR6",
+   "tries": 3,
+   "why": [
+    "drop AR_FREQUENCYR6/YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER: hook - 790px wide at 44px - over the 780px safe zone, will be cut off on a phone"
+   ],
+   "slug": "YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER",
+   "in": 2575.34,
+   "out": 2653.0,
+   "start_words": "Now Kevin some critics say",
+   "end_words": "It is scientifically proven",
+   "hook": [
+    "Your thoughts move matter.",
+    "It's proven."
+   ]
   }
  },
  "attempts": {
