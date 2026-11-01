@@ -1,0 +1,21 @@
+{
+ "source": "v6sfb21.mp4",
+ "brand": "AR_SAMSKARAR7",
+ "test": false,
+ "note": "1 Nov 2026 - second chances for 'Meditate More To Manifest More!' (Rumble v6sfb21). Awakened Rise weekly agent, re-cut per AR_PLANNING.md 2c. EVEN-SEX-BECOMES-MEDITATION (tries 2, last chance) failed generic captions-vs-sound drift (28 captions, no clear pauses) over the rapid 'as you're X you are meditating' list - moved both edges per 2c: start now opens one sentence earlier on 'I would meditate virtually all day long' (the cave intensity line) and the end runs one sentence further, onto 'a way of life' instead of stopping bare on 'meditating', which is also a stronger payoff. RAGE-ISNT-ANGER-ITS-A-BUTTON (tries 2, last chance) skipped: work/v6sfb21.srt has no punctuation at all across this whole span (741-816s, a different transcription pass than the rest of the file), so every internal boundary in it is a 'no stop' risk, not just the two named ('buttons That', 'response And') - there is no edge inside an unpunctuated run that reliably clears the checker, and the third flagged repeat ('not yet not') doesn't appear anywhere in this file's text of the span to even locate. SAMSKARAS-BLOCKING-YOUR-LIFE (tries 2, last chance) skipped: its scrambled phrase sits in 'we call that an engram. The medical field calls it an engram. It's an energetic imprint' - defining what a samskara/engram actually IS, the clip's whole purpose, so cutting around it guts the teaching; this is the same 'engram... It's an' pattern already judged deliberate Kevin phrasing and unfixable on a different episode (ar_v6vwu4e_r3 note). The second named repeat ('meditating is meditating') also doesn't appear in this file's text near the clip.",
+ "clips": [
+  {
+   "slug": "EVEN-SEX-BECOMES-MEDITATION",
+   "in": 412.1,
+   "out": 478.2,
+   "start_words": "I would meditate virtually all day long",
+   "end_words": "a way of life",
+   "retry_of": "ar_v6sfb21_r4/EVEN-SEX-BECOMES-MEDITATION",
+   "hook": [
+    "Even sex",
+    "becomes meditation."
+   ],
+   "caption": "He once meditated virtually all day, every day, for seven months straight, living in a cave in the Himalayas. That's not the point where most people stop listening - it's the point where the real teaching starts.\n\nBecause once enough is cleared, meditation stops being a session you sit down for. Eating becomes meditation. Driving becomes meditation. Exercising becomes meditation. Watching a movie becomes meditation. Even having sex becomes meditation.\n\nIt stops being a technique you practice and becomes a way you live.\n\nComment RISE and I'll send you how to get there.\n\n#meditation #manifestation #consciousness #awakening #mindfulness #kevintrudeau"
+  }
+ ]
+}
