@@ -32,7 +32,12 @@ jobs:
           curl -sL -o /tmp/fonts/sans.ttf "https://github.com/google/fonts/raw/main/ofl/inter/Inter%5Bopsz,wght%5D.ttf"
           ls -la /tmp/fonts
       - name: Render the looks
-        run: python factory/style_preview.py "${{ inputs.vid }}" "${{ inputs.t_in }}" "${{ inputs.t_out }}" "${{ inputs.label }}"
+        env:   # through env, never inline: "$35" in a label was eaten by the shell as $3 + "5"
+          VID: ${{ inputs.vid }}
+          T_IN: ${{ inputs.t_in }}
+          T_OUT: ${{ inputs.t_out }}
+          LABEL: ${{ inputs.label }}
+        run: python factory/style_preview.py "$VID" "$T_IN" "$T_OUT" "$LABEL"
       - name: Publish to the previews release
         run: |
           gh release view previews >/dev/null 2>&1 || gh release create previews --title "Style previews" --notes "Looks for Kamay to choose. Not posted."
