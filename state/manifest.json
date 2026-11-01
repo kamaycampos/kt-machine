@@ -12827,7 +12827,11 @@
    "hook": "Only rich landowners could vote.",
    "bytes": 53130146,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-02T08:20",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_DARKSIDER2/02_WASHED-DISHES-BECAME-A-GLOBAL-STAR_59s.mp4",
@@ -12835,7 +12839,11 @@
    "hook": "Poor, washing dishes. Then global stardom.",
    "bytes": 44439778,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-01T10:44",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_FREQUENCYR6/01_MADE-MILLIONS-BEFORE-18_46s.mp4",
@@ -12843,7 +12851,11 @@
    "hook": "Millions by eighteen. The Brotherhood's doing.",
    "bytes": 22878282,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-01T11:30",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_FREQUENCYR6/02_HENRY-FORD-BURIED-THE-REAL-SECRET_47s.mp4",
@@ -12851,7 +12863,11 @@
    "hook": "Henry Ford buried the real secret.",
    "bytes": 27974426,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-01T20:17",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_SAMSKARAR7/01_EVEN-SEX-BECOMES-MEDITATION_67s.mp4",
@@ -12859,7 +12875,11 @@
    "hook": "Even sex becomes meditation.",
    "bytes": 38974608,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-01T17:32",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   }
  ]
 }
