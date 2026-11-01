@@ -12729,11 +12729,24 @@
    "hook": "The sandbags holding your balloon down",
    "bytes": 26335863,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-31T20:18",
    "cta_keyword": "BRAIN",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfLc3GSDrqN/",
+    "youtube": "https://youtube.com/shorts/0jkmu4UlhmQ"
+   },
+   "caption_at_post": "Kevin Trudeau says most people are like a hot air balloon pilot cranking the heat, confused why they're still not lifting off.\n\nNo matter how much heat you add, if the basket is still tied to the ground, you're not moving. You have to untie what's holding you down.\n\nEven then, the balloon rises slowly, because there are still sandbags weighing it down - the counter-intentions, the beliefs that quietly sabotage the goal you say you want.\n\nYou need both: the heat of taking action and dropping the sandbags that are blocking you, or you're not going anywhere.\n\n#kevintrudeau #manifestation #wealthmindset #yourwishisyourcommand #successmindset #businessmotivation",
+   "posted_at": "2026-10-31T20:34"
   },
   {
    "file": "KT_MINDSETR2/02_HE-CHOSE-TO-LOVE-PRISON_45s.mp4",
