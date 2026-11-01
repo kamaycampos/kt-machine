@@ -10333,6 +10333,42 @@
     "Why the rich",
     "hide the formula"
    ]
+  },
+  "ep_v5hfvrp_r2/25M-HOUSE-BREAKS-FENG-SHUI": {
+   "plan": "ep_v5hfvrp_r2",
+   "source": "v5hfvrp.mp4",
+   "brand": "KT_LANTERNR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_25M-HOUSE-BREAKS-FENG-SHUI_105s.mp4` - phrase scrambled around \"creme de la creme,\""
+   ],
+   "slug": "25M-HOUSE-BREAKS-FENG-SHUI",
+   "in": 164.32,
+   "out": 274.16,
+   "start_words": "One thing I know about feng shui",
+   "end_words": "before I bought the house",
+   "hook": [
+    "His $25M house",
+    "defies feng shui"
+   ]
+  },
+  "ep_v5ratln_r2/THE-MARLIN-PHOTO-ON-THE-WALL": {
+   "plan": "ep_v5ratln_r2",
+   "source": "v5ratln.mp4",
+   "brand": "KT_MAGICWORDSR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_THE-MARLIN-PHOTO-ON-THE-WALL_141s.mp4: [FAIL] 01_THE-MARLIN-PHOTO-ON-THE-WALL_141s.mp4               13 captions vs the sound  median -0.02s  worst-10% 0.72s  | words captioned 101%"
+   ],
+   "slug": "THE-MARLIN-PHOTO-ON-THE-WALL",
+   "in": 2961.0,
+   "out": 3103.0,
+   "start_words": "There was a guy who",
+   "end_words": "he's a big client",
+   "hook": [
+    "How one photo won",
+    "the business"
+   ]
   }
  },
  "attempts": {
