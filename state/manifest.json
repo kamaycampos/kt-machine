@@ -12854,11 +12854,24 @@
    "hook": "Why silence makes you unforgettable",
    "bytes": 106292174,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-01T17:06",
    "cta_keyword": "BRAIN",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfNxyAqDXnV/",
+    "youtube": "https://youtube.com/shorts/Py87e5I6UE4"
+   },
+   "caption_at_post": "Dale Carnegie was invited to a glamorous New York party, introduced to the room as 'the world's greatest conversationalist.'\n\nThe hostess rushed over and asked about his recent trip to Africa. Carnegie asked a question. She answered. He asked another. She talked. He leaned in, nodded, listened.\n\nThat was it. He barely said a word all night.\n\nThe next day she wrote in her society column that she'd spoken with the world's greatest conversationalist for twenty minutes, and it was true.\n\nHe never talked. He just made her feel like the only person in the room.\n\nWho's the best listener you know?\n\n#kevintrudeau #communication #socialskills #dalecarnegie #mindsetmatters #peopleskills",
+   "posted_at": "2026-11-01T17:17"
   },
   {
    "file": "AR_DARKSIDER2/01_NOT-A-DEMOCRACY-ONLY-LANDOWNERS-VOTED_70s.mp4",
