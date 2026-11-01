@@ -170,6 +170,20 @@ for path in sys.argv[1:]:
         if not re.fullmatch(r"[A-Z0-9]+(-[A-Z0-9]+)*", s): errs.append(f"{s}: slug must be UPPER-DASHED")
         if not MIN_LEN <= d <= MAX_LEN: errs.append(f"{s}: length {d:.0f}s outside {MIN_LEN:.0f}-{MAX_LEN:.0f}")
         for e in lint(c.get("hook") or [], b): errs.append(f"{s}: hook - {e}")
+        th = c.get("trial_hooks")
+        if th is not None:
+            if not isinstance(th, list) or not 3 <= len(th) <= 7:
+                errs.append(f"{s}: trial_hooks must be a list of 3-7 hooks")
+            else:
+                for k, alt in enumerate(th, 1):
+                    alt = alt if isinstance(alt, list) else [alt]
+                    for e in lint(alt, b):
+                        # the opening-word rule is exactly what trials test (1 Nov 2026): a trial
+                        # hook may open on a name, a sum or a command; length and the rest still hold
+                        if "not a direct promise" not in e:
+                            errs.append(f"{s}: trial hook {k} - {e}")
+                if sum(1 for q in p.get("clips", []) if q.get("trial_hooks")) > 1:
+                    errs.append("trial_hooks on more than one clip: one experiment a day")
         ns = no_stakes(c.get("hook") or [], b)
         if ns and (STAKES_WARN or fam == "AR"): print(f"   ~ {s}: hook - {ns}")
         elif ns: errs.append(f"{s}: hook - {ns}")

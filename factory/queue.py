@@ -148,6 +148,34 @@ if brands:
             c["cta_kind"] = kinds[c["file"]]
     json.dump(man, open(man_p, "w"), indent=1)
     subprocess.run([sys.executable, "make_thumbs.py"], cwd=MACHINE, capture_output=True)
+# TRIAL REEL VARIANTS (1 Nov 2026, build_shard.py): upload each to the media release and list
+# the experiment in state/variants.json; run_once.py posts them once the clip has posted.
+_vp = os.path.join(MACHINE, "state", "variants.json")
+try:
+    _var = json.load(open(_vp))
+except (OSError, ValueError):
+    _var = {}
+_man = [c["file"] for c in json.load(open(os.path.join(MACHINE, "state", "manifest.json")))["clips"]]
+for r in results:
+    for slug, vs in (r.get("variants") or {}).items():
+        clip = next((f for f in _man if f.startswith(r["brand"] + "/") and f"_{slug}_" in f), None)
+        if not clip or f"{r['brand']}__{slug}" in _var:
+            continue
+        arms = []
+        for v in vs:
+            src = os.path.join(root, f"shard-{r['plan']}-{r['shard']}", v["file"])
+            asset = "_VARIANTS--" + v["file"]
+            tmp = os.path.join("/tmp", asset)
+            shutil.copy(src, tmp)
+            up = subprocess.run(["gh", "release", "upload", "media", tmp, "--clobber",
+                                 "-R", os.environ.get("GITHUB_REPOSITORY", "kamaycampos/kt-machine")],
+                                capture_output=True, text=True)
+            if up.returncode == 0:
+                arms.append({"rel": "_VARIANTS/" + v["file"], "hook": v["hook"]})
+        if arms:
+            _var[f"{r['brand']}__{slug}"] = {"clip": clip, "arms": arms, "posted": None}
+            report.append(f"## TRIAL: {len(arms)} hook variant(s) of {clip} ready for Instagram Trial Reels")
+json.dump(_var, open(_vp, "w"), indent=1, ensure_ascii=False)
 os.makedirs(os.path.join(HERE, "reports"), exist_ok=True)
 open(os.path.join(HERE, "reports", "latest.md"), "w").write("\n\n".join(report))
 print("\n\n".join(report)[-4000:])

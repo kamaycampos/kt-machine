@@ -709,6 +709,9 @@ def _ig_permalink(media_id, tok):
     return None
 
 
+LAST_MEDIA_ID = None
+
+
 def instagram(path, caption, public_url, clip=None, trial=False):
     """Publish a Reel. `trial=True` makes it a TRIAL REEL.
 
@@ -802,6 +805,8 @@ def instagram(path, caption, public_url, clip=None, trial=False):
     mid = d.get("id")
     if not mid:
         return f"publish failed {p.status_code}: {str(d)[:200]}"
+    global LAST_MEDIA_ID
+    LAST_MEDIA_ID = mid                    # trials.py scores each trial reel by its id
     link = _ig_permalink(mid, tok)
     if not link:
         # THE 24 AUG BUG, caught instead of reported as success.

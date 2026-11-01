@@ -103,6 +103,9 @@ def posted_log_add(rel, when):
         log(f"  COULD NOT WRITE THE POSTED LOG: {r.stderr.strip()[-160:]}")
 
 
+_CTX = []
+
+
 def main():
     # BEFORE the import, not after. engine/main.py reads KT_DATA at module level
     # and creates the directory as it loads, so setting the attribute afterwards
@@ -129,6 +132,7 @@ def main():
         return (f"https://github.com/{owner}/releases/download/{tag}/"
                 + rel.replace("/", "--"))
     engine.media_url = media_url
+    _CTX[:] = [engine, poster, media_url]           # trials.py runs after the posting pass
 
     # DRY RUN. Railway is still live during the changeover, and two schedulers
     # both seeing a clip as due would publish it twice - the duplicate-post
@@ -308,4 +312,12 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    rc = main()
+    # TRIAL REELS (trials.py, 1 Nov 2026) - after the real posts, never instead of them.
+    if _CTX and os.environ.get("DRY_RUN") != "1":
+        try:
+            import trials
+            trials.step(*_CTX, log=log)
+        except Exception as e:
+            log(f"trial step skipped: {type(e).__name__}: {e}")
+    sys.exit(rc)

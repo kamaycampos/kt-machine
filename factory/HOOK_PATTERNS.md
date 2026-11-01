@@ -4,6 +4,27 @@ Adapted for Kamay from the master content prompt he was taught (Daniel's worksho
 plus what this account's own numbers have proven. Our hook is **two short lines, six words total**,
 burned on the clip for the first 3 seconds, so every pattern below is compressed to that size.
 
+## READ FIRST: what 259 KT clips say (1 Nov 2026, Instagram views, latest sample per clip)
+Kamay on 1 Nov: "our hooks and quality still are not as high as I want... something is missing."
+The numbers agree. Median 344 views. The winners are BOLD, CONTRARIAN MONEY CLAIMS with stakes:
+`$5,000 became $5 billion` 12,930 · `Why a mortgage is a scam` 8,543 · `Why your house is keeping
+you broke` 7,494 · `How winners earn their scars` 3,828 · `Why land rich means cash poor` 3,660 ·
+`How he won $250,000 at blackjack` 3,091. October drifted into a safe template and it died:
+`Why Charlie Munger never loses control` 95 · `Why winners act without being told` 85 ·
+`What Michael Jordan missed the most` 65 · `How your mind beats 20-degree cold` 65.
+**So, from now on:**
+1. **Say the boldest TRUE thing in the clip, the way Kevin would say it.** A villain (the bank, the
+   mortgage, school, your house), a big number, or a reversal ($5,000 -> $5 billion). Not a summary.
+2. **Never the `Why <famous person> never/always <verb>` template.** A famous name only with a sum or
+   an outcome next to it (`What Rockefeller said about getting rich` worked; `Why Edison never went to
+   bed` was luck).
+3. **Picture + stakes for the VIEWER**: your house, your money, your kids, you broke. "Self-help
+   abstracts" (control, mindset, warrior, winners act) fail every time.
+4. **Six words, two lines, and the first line alone must already stop the thumb.**
+5. **Trial Reels decide the words** (PLANNING.md "TRIAL HOOKS"): every day one clip is posted with 7
+   hooks to non-followers; `state/variants.json` records the winner. Read the last winners before
+   writing hooks, and use the winning SHAPES.
+
 ## What the numbers said on 23 Sept 2026 (n=62, see MASTERY.md)
 - On TikTok, `What...` openers beat `Why...` beat `How...` by a wide margin. On Instagram "How" still works. YouTube ignores the hook entirely - it is capped by retention.
 - Saying **rich / wealthy** (when Kevin really is talking about them) is the single strongest word we have measured.

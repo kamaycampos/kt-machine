@@ -1562,7 +1562,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
         # it is the only way to see that; the numbers look identical either way.
         # So there is now a manual escape hatch for the cases a human has read
         # and disagrees with, rather than retuning detection for one clip.
-        win = yt_win or yt_window(kt_snap.silences(src), t_in, t_out)
+        win = None if os.environ.get("NO_SIDE_CUTS") else (yt_win or yt_window(kt_snap.silences(src), t_in, t_out))
         if win:
             ys, ye = win
             # RE-TIME, do not just re-seek. drawtext timings are relative to the
@@ -1625,7 +1625,8 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
 
     # AND A STORY FOR EVERY CLIP, not only the ones a YouTube window fitted.
     try:
-        make_story(dest)
+        if not os.environ.get("NO_SIDE_CUTS"):      # a trial variant needs no story or YouTube cut
+            make_story(dest)
     except SystemExit:
         raise
     except Exception as e:
@@ -1797,12 +1798,14 @@ def run_series(key, spec, apply, only):
         if os.environ.get("CROP_CX"):
             cx, shots, track, lgeo = float(os.environ["CROP_CX"]), None, [], None
             print(f"      crop re-aimed at x={cx:.2f}")
-        bursts = render(src, dest, c["in"], c["out"], c["hook"], cues,
+        # TRIAL VARIANT (1 Nov 2026): the same clip with only the hook changed (build_shard).
+        hook = os.environ["HOOK_OVERRIDE"].split("|") if os.environ.get("HOOK_OVERRIDE") else c["hook"]
+        bursts = render(src, dest, c["in"], c["out"], hook, cues,
                         cx, apply, zoom, c.get("hook_yt"), yt_win,
                         c["slug"], c.get("fix"), shots, track,
                         (frames or {}).get("cuts"), opener=op, geo=lgeo)
         print(f"  {'rendered' if apply else 'plan'} {brand}/{name}  "
-              f"{bursts} bursts  hook={' / '.join(c['hook'][:2])}")
+              f"{bursts} bursts  hook={' / '.join(hook[:2])}")
         n += 1
     return n
 
