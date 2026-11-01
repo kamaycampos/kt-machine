@@ -1,0 +1,47 @@
+{
+ "source": "v524rh9.mp4",
+ "brand": "AR_FREQUENCYR6",
+ "test": false,
+ "note": "1 Nov 2026 - second chances for 'Your Wish Is Your Command' (Rumble v524rh9). Awakened Rise weekly agent, re-cut per AR_PLANNING.md 2c. HENRY-FORD-BURIED-THE-REAL-SECRET (tries 2, last chance): r5 moved the start to 'a missing ingredient' but that is itself mid-sentence - the real sentence is 'But the fact is, there's a missing ingredient.' (work/v524rh9.srt ~24:33). Moved start_words back onto that sentence's real opening; end unchanged, it was never flagged. MADE-MILLIONS-BEFORE-18 and YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER (tries 2, last chance) both failed generic captions-vs-sound drift with no damaged word named - per 2c, moved both edges to different sentence boundaries rather than re-measure the same ones: MADE-MILLIONS now opens one sentence earlier on 'I didn't have the background, the money, the financing' and closes right on 'before I was 18' (the actual slug payoff, trimmed before the empire/book tangent that followed); YOUR-THOUGHTS now opens on the interviewer's challenge ('Now Kevin, some critics say...') instead of mid-answer, and closes one sentence later on 'It is scientifically proven' instead of landing on the quantum-level clause. ROYALTY-TEACHES-KIDS-THIS-IN-SECRET (tries 1) skipped again, same finding as the r2 note: the scrambled 'I don't know if you know that' sits ~13s into the clip: ending before it leaves under 16s (below the 40s floor), and running past it drifts into the mother's-lineage/DNA material that POVERTY-IS-GENETIC already covers. No edge clears it without going too short or re-using another clip's minutes.",
+ "clips": [
+  {
+   "slug": "HENRY-FORD-BURIED-THE-REAL-SECRET",
+   "in": 1476.0,
+   "out": 1524.14,
+   "start_words": "But the fact is there's a missing ingredient",
+   "end_words": "was think and grow rich",
+   "retry_of": "ar_v524rh9_r5/HENRY-FORD-BURIED-THE-REAL-SECRET",
+   "hook": [
+    "Henry Ford buried",
+    "the real secret."
+   ],
+   "caption": "Andrew Carnegie, once the richest man alive, hired a researcher named Napoleon Hill to study the truly wealthy — Henry Ford, Thomas Edison, J.P. Morgan — and write down exactly what they knew that nobody else did.\n\nHill published it in 1926. Henry Ford saw the finished book and killed it — \"we don't want people to know the truth\" — and had it pulled from the market. What came back years later was a watered-down version. What came back after that, even more watered down, was Think and Grow Rich. Millions have read it. Almost none got the actual secret.\n\nComment RISE and I'll send you what got cut.\n\n#disclosure #secretsocieties #manifestation #awakening #history #kevintrudeau"
+  },
+  {
+   "slug": "MADE-MILLIONS-BEFORE-18",
+   "in": 1295.0,
+   "out": 1337.5,
+   "start_words": "I didn't have the background",
+   "end_words": "before I was 18",
+   "retry_of": "ar_v524rh9_r2/MADE-MILLIONS-BEFORE-18",
+   "hook": [
+    "Millions by eighteen.",
+    "The Brotherhood's doing."
+   ],
+   "caption": "No wealthy family. No college. No connections — just a welder's son who flunked out of high school.\n\nAt fifteen, that changed. He was taken in by an organization called The Brotherhood, and they taught him how the brain actually works as a transmitter and receiver of frequency — not as theory, as something you use.\n\nHe made millions before he turned eighteen. Not from talent he was born with. From a formula somebody finally handed him.\n\nComment RISE and I'll send you the formula.\n\n#brotherhood #lawofattraction #frequency #manifestation #awakening #kevintrudeau"
+  },
+  {
+   "slug": "YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER",
+   "in": 2575.34,
+   "out": 2653.0,
+   "start_words": "Now Kevin some critics say",
+   "end_words": "It is scientifically proven",
+   "retry_of": "ar_v524rh9_r2/YOUR-THOUGHTS-MOVE-PHYSICAL-MATTER",
+   "hook": [
+    "Your thoughts move matter.",
+    "It's proven."
+   ],
+   "caption": "Skeptics call it anecdotal. It isn't.\n\nThere are motorized devices paraplegics control just by thought — no hands, no buttons, just a signal from the brain. There's a keypad with no keys: think \"cat,\" and CAT appears on the screen. A small machine that moves a ball left, right, forward, back, by thought alone.\n\nIf a thought can move a wheelchair or a ball, it can move the rest of your life. The brain transmits and receives frequency, and those frequencies affect physical matter at the quantum level. That part isn't belief anymore. It's measured.\n\nComment RISE and I'll send you the research.\n\n#manifestation #lawofattraction #frequency #consciousness #awakening #kevintrudeau"
+  }
+ ]
+}
