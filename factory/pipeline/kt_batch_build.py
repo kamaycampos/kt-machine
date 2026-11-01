@@ -305,7 +305,7 @@ def speaker_in_frame(mp4, opener=False):
     hit = {t: bool(v) for t, v in seen.items()}
     if first and not any(hit[t] for t in first):
         return False, "no face in the opening second of the posted frame"
-    if sum(hit[t] for t in body) < 3:
+    if sum(hit[t] for t in body) < 2:      # a very tight face (forehead cropped) can be missed; 2 of 4 is enough
         return False, f"face in only {sum(hit[t] for t in body)} of 4 moments of the posted frame"
     return True, ""
 
