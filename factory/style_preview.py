@@ -123,4 +123,4 @@ for name, vf in looks.items():
            "-vf", vf, "-af", f"afade=t=out:st={dur - 0.5:.2f}:d=0.5", "-c:v", "libx264", "-preset", "medium",
            "-crf", "18", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", dst)
     print(name, "OK" if r.returncode == 0 and os.path.exists(dst) else "FAILED")
-json.dump({"vid": vid, "in": a, "out": b, "label": label, "cx": cx}, open(os.path.join(OUT, "info.json"), "w"))
+json.dump({"vid": vid, "in": a, "out": b, "label": label, "cx": float(cx)}, open(os.path.join(OUT, "info.json"), "w"))
