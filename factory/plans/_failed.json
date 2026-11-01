@@ -10297,6 +10297,42 @@
     "How 90 days made",
     "$4 million"
    ]
+  },
+  "ep_v66j311_r3/A-DELI-SANDWICH-LED-TO-450-MILLION": {
+   "plan": "ep_v66j311_r3",
+   "source": "v66j311.mp4",
+   "brand": "KT_DANNYROSER2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_A-DELI-SANDWICH-LED-TO-450-MILLION_175s.mp4: ends off the planned words: plan ends 'and I got royalties', clip ends 'to do 450 million in sales'"
+   ],
+   "slug": "A-DELI-SANDWICH-LED-TO-450-MILLION",
+   "in": 893.4,
+   "out": 1070.62,
+   "start_words": "You look familiar. You're Bobby Singer,",
+   "end_words": "and I got royalties",
+   "hook": [
+    "A deli sandwich",
+    "led to $450M"
+   ]
+  },
+  "ep_v66j311_r3/WHY-THE-RICH-HIDE-THE-REAL-FORMULA": {
+   "plan": "ep_v66j311_r3",
+   "source": "v66j311.mp4",
+   "brand": "KT_DANNYROSER2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_WHY-THE-RICH-HIDE-THE-REAL-FORMULA_75s.mp4: [FAIL] 02_WHY-THE-RICH-HIDE-THE-REAL-FORMULA_75s.mp4          15 captions vs the sound  median -0.00s  worst-10% 0.75s  | words captioned 101%"
+   ],
+   "slug": "WHY-THE-RICH-HIDE-THE-REAL-FORMULA",
+   "in": 1294.0,
+   "out": 1370.24,
+   "start_words": "Henry Ford said",
+   "end_words": "going to work in my factories",
+   "hook": [
+    "Why the rich",
+    "hide the formula"
+   ]
   }
  },
  "attempts": {
@@ -10343,6 +10379,6 @@
   "ar_v50s5f8_r3": 2,
   "ar_v524rh9_r4": 2,
   "ar_v6pwfg0_r3": 2,
-  "ep_v66j311_r3": 1
+  "ep_v66j311_r3": 2
  }
 }
