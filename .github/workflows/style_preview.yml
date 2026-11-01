@@ -1,0 +1,39 @@
+# STYLE PREVIEW (1 Nov 2026): one clip rendered in several looks for Kamay to choose.
+# Manual only. Never touches the queue; files go to the 'previews' release.
+name: style-preview
+on:
+  workflow_dispatch:
+    inputs:
+      vid: {required: true}
+      t_in: {required: true}
+      t_out: {required: true}
+      label: {required: true}
+permissions:
+  contents: write
+env:
+  FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+  TRANSCRIPT_KEY: ${{ secrets.TRANSCRIPT_KEY }}
+  GH_TOKEN: ${{ github.token }}
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/cache@v4
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v2-portable }
+      - run: bash factory/setup.sh
+      - name: Fonts (Google Fonts, open licence)
+        run: |
+          mkdir -p /tmp/fonts
+          curl -sL -o /tmp/fonts/serif.ttf "https://github.com/google/fonts/raw/main/ofl/playfairdisplay/PlayfairDisplay%5Bwght%5D.ttf"
+          curl -sL -o /tmp/fonts/sans.ttf "https://github.com/google/fonts/raw/main/ofl/inter/Inter%5Bopsz,wght%5D.ttf"
+          ls -la /tmp/fonts
+      - name: Render the looks
+        run: python factory/style_preview.py "${{ inputs.vid }}" "${{ inputs.t_in }}" "${{ inputs.t_out }}" "${{ inputs.label }}"
+      - name: Publish to the previews release
+        run: |
+          gh release view previews >/dev/null 2>&1 || gh release create previews --title "Style previews" --notes "Looks for Kamay to choose. Not posted."
+          gh release upload previews /tmp/previews/* --clobber
