@@ -12791,11 +12791,24 @@
    "hook": "The heirloom keeping you poor",
    "bytes": 18518636,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-01T09:19",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfM9GjSCbtM/",
+    "youtube": "https://youtube.com/shorts/k3yVKHAxy5c"
+   },
+   "caption_at_post": "Kevin Trudeau says to find one thing in your house that belonged to your parents or grandparents. A ring, a photo, a piece of furniture.\n\nThen ask what you actually know about their relationship with money. Were they rich, or struggling?\n\nHis claim: an object passed down from someone who struggled financially carries that struggle into your home. Wealthy families pass down the opposite.\n\nYou don't need to buy the energy explanation to take the question seriously.\n\nWhat's one money belief in your house that's actually someone else's?\n\n#kevintrudeau #moneymindset #wealthmindset #manifestation #generationalwealth #lawofattraction",
+   "posted_at": "2026-11-01T09:34"
   },
   {
    "file": "KT_MAGICWORDSR2/01_250K-BAIL-NO-STRINGS-ATTACHED_132s.mp4",
