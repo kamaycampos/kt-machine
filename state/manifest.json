@@ -12816,11 +12816,24 @@
    "hook": "How $250,000 bought a friend's freedom",
    "bytes": 77101629,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-01T10:50",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfNGvqTiDtZ/",
+    "youtube": "https://youtube.com/shorts/QHMxtYA4AiQ"
+   },
+   "caption_at_post": "A friend's wife called Kevin Trudeau in a panic. Her husband, a real estate investor, had been arrested and held on $250,000 cash bail - no bonds accepted, cash only.\n\nThey didn't have it. Kevin did. He called his pilots, flew down that night, and posted the full $250,000 himself.\n\nHis friend walked out in tears and said everyone he thought was a friend had vanished the moment he was arrested.\n\nKevin told him: pay me back whenever you can, or don't worry about it at all. He wasn't expecting the money back. He figured he was planting a seed and it would work out somehow.\n\nWhen was the last time you helped someone with zero expectation of anything in return?\n\n#kevintrudeau #givingback #karma #mindsetmatters #successmindset #generosity",
+   "posted_at": "2026-11-01T11:01"
   },
   {
    "file": "KT_MAGICWORDSR2/02_THE-WORLDS-GREATEST-CONVERSATIONALIST_171s.mp4",
@@ -12851,12 +12864,26 @@
    "caption": "Bruce Lee wrote a letter, in his own handwriting, using a specific manifesting technique taught in a book most people have never heard of. Right after he wrote it, he was washing dishes in San Francisco.\n\nHe was also facing real prejudice - Chinese in an industry and a country that didn't want him there. None of that stopped the technique from working. He went from washing dishes to the biggest martial arts star in Asia, then globally, then a Hollywood star in the Green Hornet.\n\nThe letter still exists. The technique still works the same way.\n\nComment RISE and I'll send you what was in it.\n\n#manifestation #lawofattraction #disclosure #awakening #history #kevintrudeau",
    "hook": "Poor, washing dishes. Then global stardom.",
    "bytes": 44439778,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-01T10:44",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1802024117678761/",
+    "instagram": "https://www.instagram.com/reel/DfNGYrogdIk/",
+    "youtube": "https://youtube.com/shorts/yUYQXg3x6O0"
+   },
+   "caption_at_post": "Bruce Lee wrote a letter, in his own handwriting, using a specific manifesting technique taught in a book most people have never heard of. Right after he wrote it, he was washing dishes in San Francisco.\n\nHe was also facing real prejudice - Chinese in an industry and a country that didn't want him there. None of that stopped the technique from working. He went from washing dishes to the biggest martial arts star in Asia, then globally, then a Hollywood star in the Green Hornet.\n\nThe letter still exists. The technique still works the same way.\n\nComment RISE and I'll send you what was in it.\n\n#manifestation #lawofattraction #disclosure #awakening #history #kevintrudeau",
+   "posted_at": "2026-11-01T10:56"
   },
   {
    "file": "AR_FREQUENCYR6/01_MADE-MILLIONS-BEFORE-18_46s.mp4",
