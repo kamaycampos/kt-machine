@@ -127,6 +127,71 @@ if STYLE:
 HOOK_START = float(STYLE.get("hook_size", 92))
 ACCENT_CAPTIONS = bool(STYLE.get("accent_captions", True))
 
+# --- THE CINEMA LOOK, 1 Nov 2026 ------------------------------------------------------
+# Kamay, comparing us with kevintrudeau_insights and kevins_apprentice (220K-401K views):
+# "they feel much more exclusive, professional... ours feels AI, superficial, no soul." He
+# picked look B of four rendered from the same 4K clip (work/style_preview): the picture
+# graded like film, the hook a quiet serif label with no box, captions small and calm in
+# sentence case low in the frame. KT_LOOK=cinema (repo variable) or "look": "cinema" in
+# style.json turns it on; anything else is the classic look, byte for byte.
+LOOK = (os.environ.get("KT_LOOK") or STYLE.get("look") or "classic").lower()
+CINEMA = LOOK == "cinema"
+_ASSETS = os.path.join(HOME, "bin")
+CINEMA_SERIF = os.path.join(_ASSETS, "cinema_serif_semibold.ttf")
+CINEMA_SANS = os.path.join(_ASSETS, "cinema_sans_medium.ttf")
+CINEMA_GRADE = ("eq=contrast=1.07:saturation=0.88:brightness=-0.015,"
+                "colorbalance=rs=0.03:gs=0.0:bs=-0.04,vignette=PI/5,noise=alls=3:allf=t")
+CINEMA_LABEL_Y = 250          # the label sits high, over the background, never on the mouth
+CINEMA_CAP_Y = 1500           # captions in the lower third, clear of the face
+CINEMA_CAP_SIZE = 50
+
+
+def cinema_label(lines, path):
+    """The hook as a quiet label: serif capitals, white, a soft shadow, no box. A
+    transparent PNG so it composites exactly where the old card did (and covers use it)."""
+    from PIL import Image, ImageDraw, ImageFilter, ImageFont
+    text = [l.strip().upper() for l in lines if l.strip()][:3]
+    size = 66
+    fo = ImageFont.truetype(CINEMA_SERIF, size)
+    while size > 40 and max(fo.getlength(t) for t in text) > W - 160:
+        size -= 2
+        fo = ImageFont.truetype(CINEMA_SERIF, size)
+    step = int(size * 1.28)
+    hgt = step * len(text) + 40
+    img = Image.new("RGBA", (W, hgt), (0, 0, 0, 0))
+    sh = Image.new("RGBA", (W, hgt), (0, 0, 0, 0))
+    ds, d = ImageDraw.Draw(sh), ImageDraw.Draw(img)
+    for i, t in enumerate(text):
+        x = (W - fo.getlength(t)) / 2
+        ds.text((x, 20 + i * step + 3), t, font=fo, fill=(0, 0, 0, 170))
+        d.text((x, 20 + i * step), t, font=fo, fill=(255, 255, 255, 255))
+    sh = sh.filter(ImageFilter.GaussianBlur(6))
+    out = Image.alpha_composite(sh, img)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    out.save(path)
+    return path, W, hgt
+
+
+def cinema_caption_chain(ps, y=CINEMA_CAP_Y):
+    """Spoken bursts, same timing as ever, set small and calm: sentence case, one colour."""
+    f = font_arg(CINEMA_SANS)
+    out = []
+    for a, b, text in ps:
+        out.append(
+            f"drawtext=fontfile={f}:text='{esc(text)}':fontsize={CINEMA_CAP_SIZE}"
+            f":fontcolor=white:shadowx=0:shadowy=3:shadowcolor=black@0.65:borderw=0"
+            f":x=(w-tw)/2:y={y}:enable='gte(t,{a:.2f})*lt(t,{b:.2f})'")
+    return out
+
+
+def cinema_label_draw(hook):
+    """The YouTube cut keeps its label for the whole video (a cover from any frame)."""
+    f = font_arg(CINEMA_SERIF)
+    lines = [l.strip().upper() for l in hook if l.strip()][:3]
+    return [f"drawtext=fontfile={f}:text='{esc(l)}':fontsize=60:fontcolor=white"
+            f":shadowx=0:shadowy=3:shadowcolor=black@0.6:x=(w-tw)/2:y={CINEMA_LABEL_Y + i * 78}"
+            for i, l in enumerate(lines)]
+
 
 def _rgb(key, default):
     """A hex colour from style.json ("#0F3D2E"), else the house colour. 14 Oct 2026:
@@ -1463,7 +1528,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     # geo: an explicit crop for a layout the face tracker cannot read (a podcast
     # screen with the speaker in a side panel). None = the usual tracked crop.
     geo = geo or fill_crop(src, cx, zoom, shots)
-    caps = caption_chain(ps)
+    caps = cinema_caption_chain(ps) if CINEMA else caption_chain(ps)
     # THE HOOK IS A CARD, COMPOSITED - see hook_card(). persist=True (the
     # YouTube cut) still uses drawtext, because a card that never leaves would
     # cover a third of the frame for the whole video.
@@ -1476,7 +1541,10 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     # cant see it." The transparency was there to spare his face, and the
     # placement above already does that job. A hook that cannot be read at
     # thumbnail size is not a hook.
-    if fit:                        # shrink it into the gap under his chin
+    if CINEMA:                     # the quiet serif label, high, no box (1 Nov 2026)
+        card, _cw, _ch = cinema_label(hlines, cpath)
+        cy_px = CINEMA_LABEL_Y
+    elif fit:                      # shrink it into the gap under his chin
         card, _cw, _ch = hook_card(hlines, cpath, max_h=fit)
     else:
         card = cpath
@@ -1490,7 +1558,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     # between an edit and an accident.
     dur = t_out - t_in
     fs = min(FADE_OUT, max(0.35, dur * 0.12))
-    pre = ",".join([geo] + caps)
+    pre = ",".join([geo] + ([CINEMA_GRADE] if CINEMA else []) + caps)
     # THE CINEMATIC OPENER (kt_opener.py, 17 Oct 2026): a 4K shot of the hook's
     # subject for the first seconds, Kevin's voice under it, a low hit, then a
     # crossfade into Kevin. Captions and the hook card ride on top. Off unless the
@@ -1586,7 +1654,8 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
             # our burned captions, three layers of text at once, and said it
             # "looks like we didnt care". He is right. It clears at 3s like the
             # rest.
-            ydraws = hook_chain(hook_y or hook) + caption_chain(yps)
+            ydraws = (([CINEMA_GRADE] + cinema_label_draw(hook_y or hook) + cinema_caption_chain(yps)) if CINEMA
+                      else (hook_chain(hook_y or hook) + caption_chain(yps)))
             yvf = (["-vf", ",".join([ygeo] + ydraws)] if zoom >= 0.999
                    else ["-filter_complex", ygeo + "," + ",".join(ydraws)])
             yfs = min(FADE_OUT, max(0.35, (ye - ys) * 0.12))
