@@ -1,0 +1,47 @@
+{
+ "source": "v5ky88y.mp4",
+ "brand": "AR_DISCOVERYR2",
+ "test": false,
+ "note": "2 Nov 2026 - 'Guru's Prison Writings Changing Lives | TKTS Clips' (Rumble v5ky88y). Awakened Rise weekly agent. SECOND CHANCE re-cut (gate failures, tries=1) per AR_PLANNING.md 2c. DNA-WASNT-INVENTED-IT-WAS-FOUND: hook lint flagged the opener as a vague riddle ('Nobody invented DNA.') - rewrote the hook, kept the cut. EINSTEIN-NEVER-SAID-HE-INVENTED: moved the start to the next full-stop sentence boundary ('Many people are explaining the same things...') - the old start sat inside a run-on clause with no internal stop, so this re-times every caption in the clip. YOU-BROADCAST-24-HOURS-7-DAYS: moved both edges - start to the sentence after 'and thus completely transformed.' (the old start was mid-triad, 'the more... the more... the more you will be filled up', with no internal stop to anchor on), and the end pulled back from the run-on close ('your world will change') to the clean sentence stop 'You are love.' three sentences earlier.",
+ "clips": [
+  {
+   "slug": "DNA-WASNT-INVENTED-IT-WAS-FOUND",
+   "in": 99.0,
+   "out": 147.0,
+   "start_words": "When it comes to",
+   "end_words": "it was discovered, as was quantum physics",
+   "hook": [
+    "Not invented.",
+    "Just like your mind."
+   ],
+   "caption": "No scientist invented DNA. They discovered it, it was already there before anyone knew its name.\n\nThe same is true for the mind. Nobody invented how it works, how it holds a picture, how a belief can sit buried for decades and quietly run your life. Every teacher who tells you they created a new method for releasing that is only describing something they found, the way an astronomer finds a planet that was already orbiting out there in the dark.\n\nComment RISE and I'll send you the rest of this.\n\n#consciousness #awakening #subconscious #manifestation #esoteric #kevintrudeau",
+   "retry_of": "ar_v5ky88y/DNA-WASNT-INVENTED-IT-WAS-FOUND"
+  },
+  {
+   "slug": "EINSTEIN-NEVER-SAID-HE-INVENTED",
+   "in": 459.0,
+   "out": 503.0,
+   "start_words": "Many people are explaining",
+   "end_words": "they said they discovered",
+   "hook": [
+    "Einstein never said",
+    "he invented anything."
+   ],
+   "caption": "Edison called himself a discoverer, not an inventor, even with more patents than almost anyone in history.\n\nFord said it. Tesla said it. Einstein said it. So did Buddha, Yogananda, and Osho, all landing on the same humility: nobody creates truth, they just notice it before everyone else does. If the people who changed the world never claimed to invent anything, that should tell you something about anyone who insists they did.\n\nComment RISE and I'll send you the rest of this teaching.\n\n#awakening #consciousness #ego #spirituality #mindset #kevintrudeau",
+   "retry_of": "ar_v5ky88y/EINSTEIN-NEVER-SAID-HE-INVENTED"
+  },
+  {
+   "slug": "YOU-BROADCAST-24-HOURS-7-DAYS",
+   "in": 1368.0,
+   "out": 1419.0,
+   "start_words": "And what that means",
+   "end_words": "You are love",
+   "hook": [
+    "You broadcast",
+    "24 hours, 7 days."
+   ],
+   "caption": "Your vibrational frequency doesn't clock out. It runs 24 hours a day, 7 days a week, whether you're paying attention or not.\n\nThat frequency is what's actually deciding what shows up in your life, not luck, not effort alone, but what you're broadcasting while you sleep, while you worry, while you scroll. Shift it, and you become what this teaching calls a success magnet: the things you want start finding you instead of the other way around.\n\nComment RISE and I'll send you how to start.\n\n#manifestation #awakening #consciousness #lawofattraction #spirituality #kevintrudeau",
+   "retry_of": "ar_v5ky88y/YOU-BROADCAST-24-HOURS-7-DAYS"
+  }
+ ]
+}
