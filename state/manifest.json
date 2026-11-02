@@ -13020,7 +13020,11 @@
    "hook": "Not invented. Just like your mind.",
    "bytes": 33243487,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-02T08:53",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
