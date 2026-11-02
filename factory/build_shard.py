@@ -15,10 +15,17 @@ sys.path.insert(0, os.path.expanduser("~/Kamay"))
 import run_plans as R  # noqa: E402
 from shard import SIZE  # noqa: E402
 
-plan, shard = sys.argv[1], int(sys.argv[2])
+plan, shard = sys.argv[1], sys.argv[2]
 p = json.load(open(os.path.join(R.PLANS, f"{plan}.json")))
 key = f"{plan}__s{shard}"
-sub = dict(p, clips=p["clips"][shard * SIZE:(shard + 1) * SIZE])
+# "v<clip>_<first>" = a TRIAL VARIANT shard (shard.py): VSIZE hook variants of one clip, nothing else.
+vshard = shard.startswith("v")
+if vshard:
+    vclip, vfirst = (int(x) for x in shard[1:].split("_"))
+    sub = dict(p, clips=p["clips"][vclip:vclip + 1])
+else:
+    shard = int(shard)
+    sub = dict(p, clips=p["clips"][shard * SIZE:(shard + 1) * SIZE])
 json.dump(sub, open(os.path.join(R.PLANS, f"{key}.json"), "w"), indent=1, ensure_ascii=False)
 
 vid = p["source"][:-4]
@@ -40,7 +47,7 @@ h = R.height(mp4)
 out = "/tmp/shard_out"
 os.makedirs(out, exist_ok=True)
 result = {"plan": plan, "shard": shard, "brand": p["brand"], "source": p["source"],
-          "test": bool(p.get("test")), "height": h, "clips": [], "files": []}
+          "test": bool(p.get("test")), "height": h, "clips": [], "files": [], "variant_shard": vshard}
 if p.get("test"):
     os.environ["OPENER_PREVIEW"] = "1"          # a preview build shows the opener before it goes live
 if h < 1080:
@@ -61,9 +68,10 @@ else:
         R.fix_edges(key)
     edge_drops = [l.strip() for l in buf.getvalue().splitlines() if "dropped" in l]
     fixed = json.load(open(os.path.join(R.PLANS, f"{key}.json")))["clips"]
-    R.batch([key], test=True)                       # render + check, never queue here
+    if not vshard:
+        R.batch([key], test=True)                   # render + check, never queue here
     bdir = os.path.join(R.K, "POST_TODAY", p["brand"])
-    for c in fixed:
+    for c in ([] if vshard else fixed):
         hits = [f for f in glob.glob(os.path.join(bdir, f"*_{c['slug']}_*s.mp4")) if "__" not in os.path.basename(f)]
         if not hits:
             continue                                # failed a gate (moved to _failed) or dropped
@@ -76,10 +84,20 @@ else:
 # Trial Reels (non-followers only). The planner gives ONE strong clip a day "trial_hooks"; each is
 # rendered here with HOOK_OVERRIDE into its own folder, no story or YouTube cut, and queue.py
 # uploads them; run_once.py posts them once the clip itself has posted, then scores them.
-if h >= 1080 and not p.get("test"):
+# 2 Nov 2026: only a variant shard renders them (see shard.py); queue.py drops variants whose
+# clip did not pass.
+if h >= 1080 and not p.get("test") and vshard:
     import subprocess as _sp
-    for c in result["clips"]:
-        for i, hk in enumerate((c.get("trial_hooks") or [])[:7], 1):
+    from shard import VSIZE
+    # kt_render reads the clip from kt_series.json; kt_batch_build fills it on a clip shard
+    _sp_path = os.path.join(R.K, "kt_series.json")
+    _series = json.load(open(_sp_path))
+    _series[key] = {"source": p["source"], "brand": p["brand"], "note": p.get("note", ""),
+                    "clips": [{k: c[k] for k in ("slug", "in", "out", "hook", "caption") if k in c} for c in fixed]}
+    json.dump(_series, open(_sp_path, "w"), indent=1)
+    for c in fixed:
+        hooks = (c.get("trial_hooks") or [])[:7]
+        for i, hk in list(enumerate(hooks, 1))[vfirst:vfirst + VSIZE]:
             hk = hk if isinstance(hk, list) else [hk]
             vdir = f"/tmp/variants/{c['slug']}/V{i}"
             os.makedirs(vdir, exist_ok=True)
@@ -95,7 +113,7 @@ if h >= 1080 and not p.get("test"):
 rep = os.path.join(R.K, "work", "proposals", "BATCH_REPORT.md")
 if os.path.exists(rep):
     shutil.copy(rep, os.path.join(out, "report.md"))
-if h >= 1080 and edge_drops:                      # last, so queue.py's tail always holds them
+if h >= 1080 and edge_drops and not vshard:                      # last, so queue.py's tail always holds them
     with open(os.path.join(out, "report.md"), "a") as fh:
         fh.write("\n" + "\n".join(f"  drop {p['brand']}/{l}" for l in edge_drops) + "\n")
 json.dump(result, open(os.path.join(out, "result.json"), "w"), indent=1, ensure_ascii=False)

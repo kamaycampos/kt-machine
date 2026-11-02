@@ -172,6 +172,34 @@ def cinema_label(lines, path):
     return path, W, hgt
 
 
+def cinema_label_y(src, t_in, label_h):
+    """Where the serif label sits so it never crosses his face (2 Nov 2026). The first real
+    cinema clip (AR 'Say cancel, cancel') was a tight close-up: his head filled the top of the
+    frame and the label at 250 ran across his forehead. High over the background when that is
+    clear of his face, else above his hair, else under his chin, else the spot covering the
+    least of eyes-to-mouth."""
+    band = face_band(src, t_in)
+    if not band:
+        return CINEMA_LABEL_Y
+    top, bot = band
+    core_t, core_b = top + (bot - top) * 0.22, top + (bot - top) * 0.78
+    lo, hi = 90, CINEMA_CAP_Y - 40 - label_h
+    if CINEMA_LABEL_Y + label_h <= core_t or CINEMA_LABEL_Y >= bot:
+        return CINEMA_LABEL_Y
+    if top - label_h - 10 >= lo:
+        return int(top - label_h - 10)
+    if bot + 20 <= hi:
+        return int(bot + 20)
+    best, worst = CINEMA_LABEL_Y, None
+    for y in range(lo, max(lo + 1, hi), 10):
+        y2 = y + label_h
+        core = max(0, min(y2, core_b) - max(y, core_t))
+        cost = core * 3 + max(0, min(y2, bot) - max(y, top)) - core
+        if worst is None or cost < worst:
+            best, worst = y, cost
+    return best
+
+
 def cinema_caption_chain(ps, y=CINEMA_CAP_Y):
     """Spoken bursts, same timing as ever, set small and calm: sentence case, one colour."""
     f = font_arg(CINEMA_SANS)
@@ -184,12 +212,12 @@ def cinema_caption_chain(ps, y=CINEMA_CAP_Y):
     return out
 
 
-def cinema_label_draw(hook):
+def cinema_label_draw(hook, y=CINEMA_LABEL_Y):
     """The YouTube cut keeps its label for the whole video (a cover from any frame)."""
     f = font_arg(CINEMA_SERIF)
     lines = [l.strip().upper() for l in hook if l.strip()][:3]
     return [f"drawtext=fontfile={f}:text='{esc(l)}':fontsize=60:fontcolor=white"
-            f":shadowx=0:shadowy=3:shadowcolor=black@0.6:x=(w-tw)/2:y={CINEMA_LABEL_Y + i * 78}"
+            f":shadowx=0:shadowy=3:shadowcolor=black@0.6:x=(w-tw)/2:y={y + i * 78}"
             for i, l in enumerate(lines)]
 
 
@@ -533,7 +561,7 @@ def card_y(src, t_in, card_h):
     top, bot = band
     TOP_LIMIT, BOT_LIMIT = 210, CAP_Y - 70
     if bot <= mid or top >= mid + card_h:
-        return mid, False
+        return mid, False, None
     below = int(bot) + 20
     if below + card_h <= BOT_LIMIT:
         return below, False, None
@@ -1543,7 +1571,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     # thumbnail size is not a hook.
     if CINEMA:                     # the quiet serif label, high, no box (1 Nov 2026)
         card, _cw, _ch = cinema_label(hlines, cpath)
-        cy_px = CINEMA_LABEL_Y
+        cy_px = cinema_label_y(src, t_in, _ch)
     elif fit:                      # shrink it into the gap under his chin
         card, _cw, _ch = hook_card(hlines, cpath, max_h=fit)
     else:
@@ -1654,7 +1682,9 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
             # our burned captions, three layers of text at once, and said it
             # "looks like we didnt care". He is right. It clears at 3s like the
             # rest.
-            ydraws = (([CINEMA_GRADE] + cinema_label_draw(hook_y or hook) + cinema_caption_chain(yps)) if CINEMA
+            _yl = [l for l in (hook_y or hook) if l.strip()][:3]
+            ydraws = (([CINEMA_GRADE] + cinema_label_draw(hook_y or hook, cinema_label_y(src, ys, 78 * len(_yl) + 10))
+                       + cinema_caption_chain(yps)) if CINEMA
                       else (hook_chain(hook_y or hook) + caption_chain(yps)))
             yvf = (["-vf", ",".join([ygeo] + ydraws)] if zoom >= 0.999
                    else ["-filter_complex", ygeo + "," + ",".join(ydraws)])

@@ -19,7 +19,8 @@ root = sys.argv[1]
 results = [json.load(open(f)) for f in glob.glob(os.path.join(root, "*", "result.json"))]
 by_plan = {}
 for r in results:
-    by_plan.setdefault(r["plan"], []).append(r)
+    if not r.get("variant_shard"):                 # trial variants only (shard.py), no clips
+        by_plan.setdefault(r["plan"], []).append(r)
 sys.path.insert(0, K)
 import kt_lock  # noqa: E402  (mark published clips before anything re-renders)
 print("locked now published:", kt_lock.sync())
@@ -156,12 +157,16 @@ try:
 except (OSError, ValueError):
     _var = {}
 _man = [c["file"] for c in json.load(open(os.path.join(MACHINE, "state", "manifest.json")))["clips"]]
-for r in results:
+for r in sorted(results, key=lambda r: str(r["shard"])):
     for slug, vs in (r.get("variants") or {}).items():
         clip = next((f for f in _man if f.startswith(r["brand"] + "/") and f"_{slug}_" in f), None)
-        if not clip or f"{r['brand']}__{slug}" in _var:
+        old = _var.get(f"{r['brand']}__{slug}")
+        if not clip or (old and old.get("posted")):
             continue
-        arms = []
+        # several variant shards add arms to ONE experiment (2 Nov 2026)
+        arms = [a for a in (old or {}).get("arms", [])]
+        have = {a["rel"] for a in arms}
+        vs = [v for v in vs if "_VARIANTS/" + v["file"] not in have]
         for v in vs:
             src = os.path.join(root, f"shard-{r['plan']}-{r['shard']}", v["file"])
             asset = "_VARIANTS--" + v["file"]
@@ -172,7 +177,8 @@ for r in results:
                                 capture_output=True, text=True)
             if up.returncode == 0:
                 arms.append({"rel": "_VARIANTS/" + v["file"], "hook": v["hook"]})
-        if arms:
+        if arms and vs:
+            arms.sort(key=lambda a: a["rel"])
             _var[f"{r['brand']}__{slug}"] = {"clip": clip, "arms": arms, "posted": None}
             report.append(f"## TRIAL: {len(arms)} hook variant(s) of {clip} ready for Instagram Trial Reels")
 json.dump(_var, open(_vp, "w"), indent=1, ensure_ascii=False)
