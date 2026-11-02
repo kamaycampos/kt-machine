@@ -17,6 +17,11 @@ from shard import SIZE  # noqa: E402
 
 plan, shard = sys.argv[1], sys.argv[2]
 p = json.load(open(os.path.join(R.PLANS, f"{plan}.json")))
+# AWAKENED RISE KEEPS HER OWN LOOK (2 Nov 2026, Kamay: "put ar back"). KT_LOOK is a repo
+# variable, so Kamay's cinema look reached Yaren's brand on 2 Nov; nobody chose it for her.
+# Every render below is a subprocess, so this reaches the clip, YouTube cut and variants.
+if p["brand"].startswith("AR_"):
+    os.environ["KT_LOOK"] = "classic"
 key = f"{plan}__s{shard}"
 # "v<clip>_<first>" = a TRIAL VARIANT shard (shard.py): VSIZE hook variants of one clip, nothing else.
 vshard = shard.startswith("v")
