@@ -143,6 +143,52 @@ ready = [v for v in order if v in idx and idx[v].get("transcript") and f'"{v}.mp
 # was not on the month list. Any upload from the last 14 days, transcribed and never
 # planned, goes to the top of Kamay's reading. Yaren's lane keeps her own list, and a
 # source on her list is never offered here (kt_fence: one source, one person).
+PLAYBOOK = "AR_PLANNING.md" if AR else "PLANNING.md"
+
+
+def _second_pass(_theirs):
+    # SECOND PASS (16 Oct 2026). An episode was "done" once planned, after 6-9 clips. KT's
+    # 37 planned episodes run 1,295 minutes and their plans touch 302 of them; a full read
+    # of two long interviews found 8 and 10 new arcs in the unused minutes, as strong as
+    # the first pick. So once new episodes run short, go back to an HD episode for arcs no
+    # clip has used. check_plan.py refuses any clip that re-uses another clip's minutes.
+    # Never while a clip of that source is still waiting to post or to be built: a new
+    # folder of the same video must not stack a third post on its day (RULES #21).
+    if len(ready) < MAX:
+        _named = {f[:-5]: json.load(open(os.path.join(HERE, "plans", f))) for f in os.listdir(os.path.join(HERE, "plans"))
+                  if f.endswith(".json") and not f.startswith("_")}
+        try:
+            _built = set(json.load(open(os.path.join(HERE, "plans", "_done.json"))))
+        except (OSError, ValueError):
+            _built = set()
+        _src = {q["brand"]: q["source"][:-4] for q in _named.values()}
+        _busy = ({_src.get(c["file"].split("/")[0]) for c in queue} | set(again)
+                 | {q["source"][:-4] for k, q in _named.items() if k not in _built})
+        _fenced = {q["source"][:-4] for k, q in _named.items() if k.startswith(THEIRS)} | _theirs
+        _used = {}
+        for k, q in _named.items():
+            if k.startswith(MINE):
+                _used.setdefault(q["source"][:-4], []).extend((float(c["in"]), float(c["out"]), c["slug"]) for c in q["clips"])
+        def _free(v):
+            t, end = 0.0, 60.0                     # the first minute is the intro
+            for a, b, _s in sorted(_used[v]):
+                t += max(0.0, a - end); end = max(end, b)
+            return t + max(0.0, idx[v].get("duration", 0) - 60 - end)
+        _cand = sorted(((_free(v), v) for v in _used
+                        if v in idx and idx[v].get("transcript") and idx[v].get("height", 0) >= 1080
+                        and idx[v].get("duration", 0) >= SECOND_MIN_EP * 60
+                        and v not in _busy and v not in _fenced and v not in ready), reverse=True)
+        _cand = [(t, v) for t, v in _cand if t >= SECOND_FREE * 60]
+        if _cand:
+            print(f"SECOND PASS - {len(_cand)} HD episode(s) already cut hold {sum(t for t, _ in _cand) / 3600:.1f} h "
+                  f"no clip has used. Plan NEW arcs from these after the new episodes ({PLAYBOOK} 'SECOND PASS'):")
+        for t, v in _cand[:MAX - len(ready)]:
+            second[v] = sorted(_used[v])
+            print(f"  {v} '{idx[v]['title'][:50]}' {idx[v]['duration'] / 60:.0f} min, {t / 60:.0f} min unused, "
+                  f"{len(second[v])} clips already cut - write factory/plans/{MINE}{v}_p2.json (_p3 if taken)")
+        ready.extend(second)                     # list.extend in place: ready is the module's list
+
+
 if not AR:
     _theirs = set()
     try:
@@ -193,46 +239,7 @@ if not AR:
         if _spare:    # WB was handed 62 money episodes here, ignored them, and never reached its second pass)
             print(f"MONTH LIST USED UP - also ready (stocked, transcribed, never planned): {len(_spare)}")
         ready += _spare[:MAX - len(ready)]
-    # SECOND PASS (16 Oct 2026). An episode was "done" once planned, after 6-9 clips. KT's
-    # 37 planned episodes run 1,295 minutes and their plans touch 302 of them; a full read
-    # of two long interviews found 8 and 10 new arcs in the unused minutes, as strong as
-    # the first pick. So once new episodes run short, go back to an HD episode for arcs no
-    # clip has used. check_plan.py refuses any clip that re-uses another clip's minutes.
-    # Never while a clip of that source is still waiting to post or to be built: a new
-    # folder of the same video must not stack a third post on its day (RULES #21).
-    if len(ready) < MAX:
-        _named = {f[:-5]: json.load(open(os.path.join(HERE, "plans", f))) for f in os.listdir(os.path.join(HERE, "plans"))
-                  if f.endswith(".json") and not f.startswith("_")}
-        try:
-            _built = set(json.load(open(os.path.join(HERE, "plans", "_done.json"))))
-        except (OSError, ValueError):
-            _built = set()
-        _src = {q["brand"]: q["source"][:-4] for q in _named.values()}
-        _busy = ({_src.get(c["file"].split("/")[0]) for c in queue} | set(again)
-                 | {q["source"][:-4] for k, q in _named.items() if k not in _built})
-        _fenced = {q["source"][:-4] for k, q in _named.items() if k.startswith(THEIRS)} | _theirs
-        _used = {}
-        for k, q in _named.items():
-            if k.startswith(MINE):
-                _used.setdefault(q["source"][:-4], []).extend((float(c["in"]), float(c["out"]), c["slug"]) for c in q["clips"])
-        def _free(v):
-            t, end = 0.0, 60.0                     # the first minute is the intro
-            for a, b, _s in sorted(_used[v]):
-                t += max(0.0, a - end); end = max(end, b)
-            return t + max(0.0, idx[v].get("duration", 0) - 60 - end)
-        _cand = sorted(((_free(v), v) for v in _used
-                        if v in idx and idx[v].get("transcript") and idx[v].get("height", 0) >= 1080
-                        and idx[v].get("duration", 0) >= SECOND_MIN_EP * 60
-                        and v not in _busy and v not in _fenced and v not in ready), reverse=True)
-        _cand = [(t, v) for t, v in _cand if t >= SECOND_FREE * 60]
-        if _cand:
-            print(f"SECOND PASS - {len(_cand)} HD episode(s) already cut hold {sum(t for t, _ in _cand) / 3600:.1f} h "
-                  f"no clip has used. Plan NEW arcs from these after the new episodes (PLANNING.md 'SECOND PASS'):")
-        for t, v in _cand[:MAX - len(ready)]:
-            second[v] = sorted(_used[v])
-            print(f"  {v} '{idx[v]['title'][:50]}' {idx[v]['duration'] / 60:.0f} min, {t / 60:.0f} min unused, "
-                  f"{len(second[v])} clips already cut - write factory/plans/ep_{v}_p2.json (_p3 if taken)")
-        ready += list(second)
+    _second_pass(_theirs)
     # HEALTH INSIDE KEVIN'S OTHER EPISODES (29 Oct 2026, Kamay: "there are maaaany moments in
     # maaany videos of kt talking about health"). Only ~13 of his HD episodes are titled health,
     # and WB had cut them all. His money and mindset episodes are HD and already stocked here;
@@ -270,6 +277,15 @@ if not AR:
             focus[v] = dense
             print(f"  {v} '{idx[v]['title'][:50]}' {idx[v].get('duration', 0) / 60:.0f} min, ~{n / 2:.0f} min of health talk")
             ready.append(v)
+# HER SECOND PASS (2 Nov 2026, Kamay: "all fixes and upgrades to AR"). The block above is
+# KT's alone, so her prep never offered one: her planner re-cut the same refusals (one
+# episode on its 7th try) while 54 of her episodes held 28-120 minutes no clip had used and
+# her queue fell to 1. Her own episodes only; his list and his folders stay fenced.
+if AR:
+    try:
+        _second_pass({e["id"] for e in json.load(open(os.path.join(HERE, "source_plan.json")))["episodes"]})
+    except (OSError, ValueError, KeyError) as _e:
+        print(f"second pass skipped: {_e}")
 print(f"READY TO PLAN: {len(ready)} episode(s); preparing {min(MAX, len(ready))}")
 # the second-chance episodes' cues come too, after the new ones (they need only work/<id>.srt)
 for v in ready[:MAX] + [v for v in again if v not in ready[:MAX] and v in idx and idx[v].get("transcript")]:
@@ -311,6 +327,21 @@ print(f"MONTH LIST: {len(order)} episodes, {len(waiting)} not transcribed yet")
 # never warned - but all 7 were dead (5 fetch_failed x3, 2 rejected at 480p). Her planner
 # only re-cut old refusals for days and her queue hit zero. Count only what can be planned.
 _dead = {v for v, e in idx.items() if e.get("status") in ("fetch_failed", "rejected")}
+# CUT BEFORE THE FACTORY EXISTED (2 Nov 2026). Four episodes on her list (AR_SOUND, AR_MIND,
+# AR_RITUAL, AR_KNOW - cut on the Mac in Sept) are never fetched: rumble_stock skips a title
+# kt_series already used, prints "fetching 11" and fetches none. Counted as stock, they hid
+# that her list was running out. Hers only for now; KT's list holds 5 the same way.
+if AR:
+    _norm = lambda s: re.sub(r"[^a-z0-9]", "", s.lower())[:40]
+    _usedt = {_norm(os.path.splitext(s.get("source", ""))[0])
+              for s in json.load(open(os.path.join(HERE, "kt_series.json"))).values()}
+    _titles = {(re.search(r"/(v[a-z0-9]+)-", u) or [None, ""])[1]: e.get("title", "")
+               for u, e in json.load(open(os.path.join(HERE, "rumble_catalog.json"))).items()}
+    _old = [v for v in order if v not in idx and _norm(_titles.get(v, "")) in _usedt and _titles.get(v)]
+    if _old:
+        print("CUT BEFORE THE FACTORY (on the Mac, Sept) - the stocker never fetches these; not stock: "
+              + ", ".join(_old))
+    _dead |= set(_old)
 _left = [v for v in order if f'"{v}.mp4"' not in plans_txt and v not in _dead]
 if [v for v in order if v in _dead and f'"{v}.mp4"' not in plans_txt]:
     print("DEAD ON THE MONTH LIST (never downloaded / below 1080p, cannot be planned): "

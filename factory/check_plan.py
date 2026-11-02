@@ -149,8 +149,9 @@ for path in sys.argv[1:]:
     # touch 302 of them. A SECOND PASS (PLANNING.md) goes back for new arcs, and this is
     # what keeps it honest: no clip may re-use another clip's minutes. A re-cut of the
     # same arc (same slug, or the slug its retry_of names) is the one exception; a shared
-    # sentence at a border (up to OVERLAP_MAX) is not a repeat. Kamay's lane only.
-    if fam == "KT":
+    # sentence at a border (up to OVERLAP_MAX) is not a repeat. Kamay's lane, and her second
+    # pass (ar_<id>_p2.json, 2 Nov 2026): her first passes and re-cuts are judged as before.
+    if fam == "KT" or re.search(r"_p\d+\.json$", name):
         for c in p.get("clips", []):
             a, z = float(c["in"]), float(c["out"])
             same = {c.get("slug"), str(c.get("retry_of") or "").split("/")[-1]}

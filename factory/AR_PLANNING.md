@@ -22,7 +22,7 @@ cut off still keeps the plans it finished.
    next unplanned episodes from her list, and writes 30-second reading blocks.
    - Queue over 50 clips: plan nothing, report, stop. 30-50: plan 2. Under 30: plan 4.
 2b. If the prep printed **TAKEN DOWN BY TIKTOK**, plan a replacement for each from the same episode - same lesson, different moment, different hook - and say so in your report.
-2c. If the prep printed **SECOND CHANCES**, re-cut those clips FIRST - before any new episode. The teaching was already judged worth posting and the episode is transcribed; only a gate stopped it. For each episode listed:
+2c. **NEW EPISODES COME FIRST (2 Nov 2026; Kamay's account has run this way since 16 Oct).** Plan the episodes the prep offers under READY TO PLAN before any re-cut: when her queue is under 30, at least 2 new episodes with 6-9 clips each. Until 2 Nov this step said re-cuts first: her planner re-cut the same refusals day after day (one episode on its 7th try) while 6 HD, transcribed episodes on her list sat unplanned and her queue fell to 0. Then, if the prep printed **SECOND CHANCES**, re-cut those clips - after the new episodes. The teaching was already judged worth posting and the episode is transcribed; only a gate stopped it. For each episode listed:
    - Write `factory/plans/ar_<id>_r2.json` (`_r3` if `_r2` exists) with the same `source`, brand = the old brand + `R2` (e.g. `AR_CANVAS` -> `AR_CANVASR2`), and every clip carrying `"retry_of": "<the key printed, e.g. ar_v6v9urd/WALL-STREET-500-RIVALS>"`.
    - Fix what the **WHY** line says, in `work/<id>.srt`:
      - hook lint ("not a direct promise", "opens on a riddle", "no stakes") -> rewrite the hook; keep the cut.
@@ -39,6 +39,12 @@ cut off still keeps the plans it finished.
    queue hit zero on 12 Oct 2026 and stayed there. The factory stocks and transcribes them overnight,
    and the next run plans them. If READY TO PLAN is 0, the second chances are the only clips you can
    make today - say so in the report.
+2e. If the prep printed **SECOND PASS**, those episodes are hers, already cut once, and most of their minutes were never used (2 Nov 2026: 24 of her HD episodes hold 21 hours no clip has touched). Plan them after the new episodes and the second chances, the same way, with these differences:
+   - Write `factory/plans/ar_<id>_p2.json` (`_p3` if `_p2` exists), with the same `source` and a **new** brand (`AR_` + one word, unused by any plan).
+   - In `work/<id>_blocks.txt` every stretch a clip already uses is one line, `=== USED by <SLUG> (in-out s) ===`. Never cut inside it: `check_plan.py` refuses a clip that re-uses more than 10 seconds of another clip's minutes.
+   - New teachings only: read the USED slugs, and skip a moment that repeats the lesson of a clip already cut, even from different minutes.
+   - Her lane and her bar, exactly as for a first pass. If the unused minutes hold only 2 clips worth posting, plan 2.
+2f. **CUT BEFORE THE FACTORY** in the prep names list entries cut on the Mac in September: the stocker never fetches them, so they are not stock. They count as dead; the month list needs real episodes in their place.
 3. Read `factory/HOOK_PATTERNS.md` for the story and caption craft - then **invert the hook rule**
    (see below). Read each episode's `work/<id>_blocks.txt` in full. Choose 6-9 clips.
 4. Write `factory/plans/ar_<id>.json` (same shape as his, brand `AR_<ONEWORD>`).
