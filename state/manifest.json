@@ -13087,7 +13087,7 @@
    "bytes": 47439634,
    "done": false,
    "status": {},
-   "scheduled_at": "2026-11-02T11:46",
+   "scheduled_at": "2026-11-02T12:01",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
    "cta_kind": "question"
@@ -13098,11 +13098,24 @@
    "hook": "How he sold 50 million books",
    "bytes": 50673252,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-02T11:44",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfPyJedCTwO/",
+    "youtube": "https://youtube.com/shorts/L27u4mny9fw"
+   },
+   "caption_at_post": "Kevin Trudeau's own team told him it was impossible. Nobody sells a book through a TV infomercial, they said. Not enough margin. Too cheap a product to ever work.\n\nHe wrote it anyway: Natural Cures They Don't Want You To Know About, with no guarantee a single copy would sell.\n\nIt became the number one best-selling book in America that year, number one on the New York Times list for 26 straight weeks, and sold almost 50 million copies in hardcover.\n\nWhat 'impossible' idea have you been talking yourself out of?\n\n#kevintrudeau #success #mindset #bestseller #adversity #wealth",
+   "posted_at": "2026-11-02T11:57"
   },
   {
    "file": "KT_ADVERSITYR2R2/02_HE-OWED-37-MILLION-THEN-THIS_120s.mp4",
