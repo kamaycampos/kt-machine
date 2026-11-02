@@ -13033,12 +13033,26 @@
    "caption": "No scientist invented DNA. They discovered it, it was already there before anyone knew its name.\n\nThe same is true for the mind. Nobody invented how it works, how it holds a picture, how a belief can sit buried for decades and quietly run your life. Every teacher who tells you they created a new method for releasing that is only describing something they found, the way an astronomer finds a planet that was already orbiting out there in the dark.\n\nComment RISE and I'll send you the rest of this.\n\n#consciousness #awakening #subconscious #manifestation #esoteric #kevintrudeau",
    "hook": "Not invented. Just like your mind.",
    "bytes": 33243487,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611021435283CBC2BC41F84B90DFDE5'}}"
+   },
    "scheduled_at": "2026-11-02T09:23",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1459753836091169/",
+    "instagram": "https://www.instagram.com/reel/DfPiFOalHkE/",
+    "youtube": "https://youtube.com/shorts/KJ2yoqPLank"
+   },
+   "caption_at_post": "No scientist invented DNA. They discovered it, it was already there before anyone knew its name.\n\nThe same is true for the mind. Nobody invented how it works, how it holds a picture, how a belief can sit buried for decades and quietly run your life. Every teacher who tells you they created a new method for releasing that is only describing something they found, the way an astronomer finds a planet that was already orbiting out there in the dark.\n\nComment RISE and I'll send you the rest of this.\n\n#consciousness #awakening #subconscious #manifestation #esoteric #kevintrudeau",
+   "posted_at": "2026-11-02T09:35"
   },
   {
    "file": "AR_AUTOPILOTR2/01_WRONG-HOUSE-ON-AUTOPILOT_48s.mp4",
