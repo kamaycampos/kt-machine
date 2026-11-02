@@ -12878,12 +12878,26 @@
    "caption": "America was never founded as a democracy. It was a republic, and the founders never called it anything else.\n\nWho could actually vote under the \"wonderful founding fathers\"? Landowners - and to legally own land, you had to be white, and you had to be a man. That's it. That was the entire voting population at the start.\n\nIf you were a different race, you had no vote at all. None of that was an accident, and none of it is taught plainly.\n\nComment RISE and I'll send you the rest of the list.\n\n#disclosure #history #deepstate #awakening #truth #kevintrudeau",
    "hook": "Only rich landowners could vote.",
    "bytes": 53130146,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-02T08:20",
    "cta_keyword": "LUCKY",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2158952368025915/",
+    "instagram": "https://www.instagram.com/reel/DfPbNwgCVPq/",
+    "youtube": "https://youtube.com/shorts/PxDwQy-H2bI"
+   },
+   "caption_at_post": "America was never founded as a democracy. It was a republic, and the founders never called it anything else.\n\nWho could actually vote under the \"wonderful founding fathers\"? Landowners - and to legally own land, you had to be white, and you had to be a man. That's it. That was the entire voting population at the start.\n\nIf you were a different race, you had no vote at all. None of that was an accident, and none of it is taught plainly.\n\nComment RISE and I'll send you the rest of the list.\n\n#disclosure #history #deepstate #awakening #truth #kevintrudeau",
+   "posted_at": "2026-11-02T08:38"
   },
   {
    "file": "AR_DARKSIDER2/02_WASHED-DISHES-BECAME-A-GLOBAL-STAR_59s.mp4",
@@ -13032,7 +13046,11 @@
    "hook": "You'd drive home. Wrong home.",
    "bytes": 35239531,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-02T11:03",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_AUTOPILOTR2/02_SAY-CANCEL-CANCEL-THATS-THE-FIX_67s.mp4",
@@ -13040,7 +13058,11 @@
    "hook": "Say cancel, cancel. Fix your habit.",
    "bytes": 47439634,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-02T11:46",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   }
  ]
 }
