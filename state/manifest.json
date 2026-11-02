@@ -13149,7 +13149,11 @@
    "hook": "How attitude creates your money",
    "bytes": 72906353,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-03T09:34",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_ATTITUDER2/01_NOT-A-MONEY-PROBLEM_92s.mp4",
@@ -13157,7 +13161,11 @@
    "hook": "Why it's not a money problem",
    "bytes": 71115166,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-03T08:08",
+   "cta_keyword": "MONEY",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_ATTITUDER2/02_ONE-NOTCH-OFF-COURSE_77s.mp4",
@@ -13165,7 +13173,11 @@
    "hook": "One notch off course costs you",
    "bytes": 57473088,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-02T19:32",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
