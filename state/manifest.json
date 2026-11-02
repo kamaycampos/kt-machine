@@ -13084,7 +13084,11 @@
    "hook": "How he sold 50 million books",
    "bytes": 50673252,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-02T11:44",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_ADVERSITYR2R2/02_HE-OWED-37-MILLION-THEN-THIS_120s.mp4",
@@ -13092,7 +13096,11 @@
    "hook": "He owed $37 million. Then this",
    "bytes": 97754221,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-02T17:04",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
