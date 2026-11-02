@@ -10459,6 +10459,42 @@
     "How one demand",
     "made Stallone rich"
    ]
+  },
+  "ar_v5ky88y_r2/EINSTEIN-NEVER-SAID-HE-INVENTED": {
+   "plan": "ar_v5ky88y_r2",
+   "source": "v5ky88y.mp4",
+   "brand": "AR_DISCOVERYR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_EINSTEIN-NEVER-SAID-HE-INVENTED_44s.mp4: ends off the planned words: plan ends 'they said they discovered', clip ends 'what is money'"
+   ],
+   "slug": "EINSTEIN-NEVER-SAID-HE-INVENTED",
+   "in": 459.0,
+   "out": 503.0,
+   "start_words": "Many people are explaining",
+   "end_words": "they said they discovered",
+   "hook": [
+    "Einstein never said",
+    "he invented anything."
+   ]
+  },
+  "ar_v5ky88y_r2/YOU-BROADCAST-24-HOURS-7-DAYS": {
+   "plan": "ar_v5ky88y_r2",
+   "source": "v5ky88y.mp4",
+   "brand": "AR_DISCOVERYR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_YOU-BROADCAST-24-HOURS-7-DAYS_51s.mp4` - ends mid-thought on \"Just because\"; phrase scrambled around \"your vibrational frequency your\"; sentence starts with no stop: \"aspect You\""
+   ],
+   "slug": "YOU-BROADCAST-24-HOURS-7-DAYS",
+   "in": 1368.0,
+   "out": 1419.0,
+   "start_words": "And what that means",
+   "end_words": "You are love",
+   "hook": [
+    "You broadcast",
+    "24 hours, 7 days."
+   ]
   }
  },
  "attempts": {
