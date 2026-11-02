@@ -13137,11 +13137,24 @@
    "hook": "He owed $37 million. Then this",
    "bytes": 97754221,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-02T17:04",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfQWyenk5V3/",
+    "youtube": "https://youtube.com/shorts/z3XaZAYlj8I"
+   },
+   "caption_at_post": "Kevin Trudeau was hit with a $37 million judgment from the government. His own lawyers told him a receiver would take everything: the houses, the furniture, even his toothbrush.\n\nInstead of folding, he asked a different question. What if he started something the government could never touch? A brand-new foundation, with nothing in it to seize.\n\nThat foundation became the Global Information Network, the club he calls the greatest success club in the world.\n\nWhat would you build if losing everything stopped being the worst option?\n\n#kevintrudeau #adversity #success #mindset #wealth #resilience",
+   "posted_at": "2026-11-02T17:18"
   },
   {
    "file": "KT_ATTITUDER2/01_ATTITUDE-GETS-YOU-THE-MONEY_104s.mp4",
