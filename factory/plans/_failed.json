@@ -10495,6 +10495,24 @@
     "You broadcast",
     "24 hours, 7 days."
    ]
+  },
+  "ep_v6oq1ll_r8/HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN": {
+   "plan": "ep_v6oq1ll_r8",
+   "source": "v6oq1ll.mp4",
+   "brand": "KT_COMPASSR2R2R2R2R2R2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN_156s.mp4: [FAIL] 01_HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN_156s.mp4        8 captions vs the sound  median -0.01s  worst-10% 0.85s  | words captioned 100%"
+   ],
+   "slug": "HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN",
+   "in": 447.06,
+   "out": 601.5,
+   "start_words": "We had a Boy Scout",
+   "end_words": "You can change your luck",
+   "hook": [
+    "How he predicted",
+    "his raffle win"
+   ]
   }
  },
  "attempts": {
@@ -10543,6 +10561,6 @@
   "ar_v6pwfg0_r3": 2,
   "ep_v66j311_r3": 2,
   "ep_v4zs6lu": 2,
-  "ep_v6oq1ll_r8": 1
+  "ep_v6oq1ll_r8": 2
  }
 }

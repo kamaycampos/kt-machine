@@ -1,22 +1,23 @@
-## ar_v7fvnxm_r2: 2 of 2 clip(s) passed every gate
+## ep_v6j5tha_r3: 2 of 2 clip(s) passed every gate
 
 
-## 2026-11-02 12:00
-  note AR_AUTOPILOTR2/WRONG-HOUSE-ON-AUTOPILOT: ending kept on the planner's words 'I'm driving the wrong way' (cuts mid-sentence)
-ar_v7fvnxm_r2__s0 (AR_AUTOPILOTR2): 2 of 2 passed pre-render gates
+## 2026-11-02 14:38
+  note KT_ADVERSITYR2R2/THE-BOOK-THAT-SOLD-50-MILLION-COPIES: ending kept on the planner's words '50 million copies in hardcover' (cuts mid-sentence)
+  note KT_ADVERSITYR2R2/HE-OWED-37-MILLION-THEN-THIS: ending kept on the planner's words 'that is transforming lives' (cuts mid-sentence)
+ep_v6j5tha_r3__s0 (KT_ADVERSITYR2R2): 2 of 2 passed pre-render gates
 
-RENDER ar_v7fvnxm_r2__s0
-  PASS 01_WRONG-HOUSE-ON-AUTOPILOT_48s.mp4  01_WRONG-HOUSE-ON-AUTOPILOT_48s.mp4                    36 captions vs the sound (word-refe
-       FIRST 5s : When I lived with this buddy, I used to go downtown Chicago two or three times a week to have some | LAST  8s : I started driving home. Halfway home, I caught myself. I said, "I'm driving the wrong way."
-  PASS 02_SAY-CANCEL-CANCEL-THATS-THE-FIX_67s.mp4  02_SAY-CANCEL-CANCEL-THATS-THE-FIX_67s.mp4             12 captions vs the sound  median +0
-       FIRST 5s : So the actual way that you break failure habits is this. | LAST  8s : And you'll start being able to catch yourself way before you start taking action. And you'll start doing things with deliberate intent.
-TEST MODE - passing clips NOT uploaded or queued: AR_AUTOPILOTR2
+RENDER ep_v6j5tha_r3__s0
+  PASS 01_THE-BOOK-THAT-SOLD-50-MILLION-COPIES_62s.mp4  01_THE-BOOK-THAT-SOLD-50-MILLION-COPIES_62s.mp4        8 captions vs the sound  median +0.
+       FIRST 5s : I looked for and found the gold. I looked for the prize. I looked for the | LAST  8s : There are prolific authors in American history. The book sold almost 50 million copies in hardcover.
+  PASS 02_HE-OWED-37-MILLION-THEN-THIS_120s.mp4  02_HE-OWED-37-MILLION-THEN-THIS_120s.mp4               22 captions vs the sound  median +0
+       FIRST 5s : Two years later, I got sued again by the government. | LAST  8s : We never have existed. That club, the greatest success club anywhere in the world, that is transforming lives.
+TEST MODE - passing clips NOT uploaded or queued: KT_ADVERSITYR2R2
 
 
 ## ep_v6oq1ll_r8: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-02 12:17
+## 2026-11-02 14:41
   note KT_COMPASSR2R2R2R2R2R2R2/HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN: ending kept on the planner's words 'You can change your luck' (cuts mid-sentence)
 ep_v6oq1ll_r8__s0 (KT_COMPASSR2R2R2R2R2R2R2): 1 of 1 passed pre-render gates
 
@@ -25,14 +26,27 @@ RENDER ep_v6oq1ll_r8__s0
   FAIL 01_HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN_156s.mp4: [FAIL] 01_HOW-HE-PREDICTED-HIS-OWN-RAFFLE-WIN_156s.mp4        8 captions vs the sound  median -0.01s  worst-10% 0.85s  | words captioned 100%
 
 
+- **RETIRED** after 2 runs with nothing passing; its clips go back to the planner (factory/plans/_failed.json)
+
 ## UPLOAD
 2 clip(s) to add:
-   AR_AUTOPILOTR2/01_WRONG-HOUSE-ON-AUTOPILOT_48s.mp4  (35 MB)
-   AR_AUTOPILOTR2/02_SAY-CANCEL-CANCEL-THATS-THE-FIX_67s.mp4  (47 MB)
-   added AR_AUTOPILOTR2/01_WRONG-HOUSE-ON-AUTOPILOT_48s.mp4
-      + 02_SAY-CANCEL-CANCEL-THATS-THE-FIX_67s__story.mp4
-      + 02_SAY-CANCEL-CANCEL-THATS-THE-FIX_67s__yt59.mp4
-   added AR_AUTOPILOTR2/02_SAY-CANCEL-CANCEL-THATS-THE-FIX_67s.mp4
+   KT_ADVERSITYR2R2/01_THE-BOOK-THAT-SOLD-50-MILLION-COPIES_62s.mp4  (51 MB)
+   KT_ADVERSITYR2R2/02_HE-OWED-37-MILLION-THEN-THIS_120s.mp4  (98 MB)
+      + 01_THE-BOOK-THAT-SOLD-50-MILLION-COPIES_62s__story.mp4
+      + 01_THE-BOOK-THAT-SOLD-50-MILLION-COPIES_62s__yt59.mp4
+   added KT_ADVERSITYR2R2/01_THE-BOOK-THAT-SOLD-50-MILLION-COPIES_62s.mp4
+      + 02_HE-OWED-37-MILLION-THEN-THIS_120s__story.mp4
+      + 02_HE-OWED-37-MILLION-THEN-THIS_120s__yt59.mp4
+   added KT_ADVERSITYR2R2/02_HE-OWED-37-MILLION-THEN-THIS_120s.mp4
 
-manifest now holds 527 clips
+manifest now holds 529 clips
 commit and push state/manifest.json to let the machine see them
+
+
+## TRIAL: 2 hook variant(s) of KT_ADVERSITYR2R2/02_HE-OWED-37-MILLION-THEN-THIS_120s.mp4 ready for Instagram Trial Reels
+
+## TRIAL: 4 hook variant(s) of KT_ADVERSITYR2R2/02_HE-OWED-37-MILLION-THEN-THIS_120s.mp4 ready for Instagram Trial Reels
+
+## TRIAL: 6 hook variant(s) of KT_ADVERSITYR2R2/02_HE-OWED-37-MILLION-THEN-THIS_120s.mp4 ready for Instagram Trial Reels
+
+## TRIAL: 7 hook variant(s) of KT_ADVERSITYR2R2/02_HE-OWED-37-MILLION-THEN-THIS_120s.mp4 ready for Instagram Trial Reels

@@ -1,1 +1,57 @@
-{}
+{
+ "KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS": {
+  "clip": "KT_ADVERSITYR2R2/02_HE-OWED-37-MILLION-THEN-THIS_120s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V1.mp4",
+    "hook": [
+     "$37 million judgment.",
+     "He fought back"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V2.mp4",
+    "hook": [
+     "The government tried",
+     "to bankrupt him"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V3.mp4",
+    "hook": [
+     "Lost $37 million",
+     "Built something bigger"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V4.mp4",
+    "hook": [
+     "Why losing everything",
+     "set him free"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V5.mp4",
+    "hook": [
+     "Kevin Trudeau's $37",
+     "million turnaround story"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V6.mp4",
+    "hook": [
+     "$37 million wipeout:",
+     "that's Kevin Trudeau"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V7.mp4",
+    "hook": [
+     "What $37 million",
+     "couldn't destroy him"
+    ]
+   }
+  ],
+  "posted": null
+ }
+}
