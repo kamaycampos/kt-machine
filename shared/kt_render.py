@@ -183,8 +183,10 @@ def cinema_label_y(src, t_in, label_h):
         return CINEMA_LABEL_Y
     top, bot = band
     core_t, core_b = top + (bot - top) * 0.22, top + (bot - top) * 0.78
+    brow = top + (bot - top) * 0.32          # face_band pads hair at 0.55 of 1.73 face heights
     lo, hi = 90, CINEMA_CAP_Y - 40 - label_h
-    if CINEMA_LABEL_Y + label_h <= core_t or CINEMA_LABEL_Y >= bot:
+    # over his hair is fine (WB, 2 Nov: reads well); over forehead skin or eyes is not
+    if CINEMA_LABEL_Y + label_h - 20 <= brow or CINEMA_LABEL_Y >= bot:
         return CINEMA_LABEL_Y
     if top - label_h - 10 >= lo:
         return int(top - label_h - 10)
