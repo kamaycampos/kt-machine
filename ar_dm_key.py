@@ -7,11 +7,16 @@
 was made without instagram_manage_messages / instagram_manage_comments, so the DM bot
 (dm/dm_reply.py, DM_BRAND=AR_) is refused. Same fix as Kevin's D7 on 14 Oct.
 
-Paste a LONG-LIVED user token (Graph API Explorer -> Generate Access Token with her Page
-ticked -> the blue "i" -> Open in Access Token Tool -> Extend Access Token -> copy).
+3 Nov 2026, Yaren: everything under HER OWN Meta account, not Kamay's. The key now comes
+from her app "Awakened Rise Replies" (1199712782379494, her Awakened Rise business,
+published) and replaces BOTH AR_FB_ACCESS_TOKEN and AR_IG_ACCESS_TOKEN, so her posting,
+stats and DMs all run on her app.
+
+Paste a LONG-LIVED user token (Graph API Explorer on her app -> Generate Access Token with
+her Page ticked -> the blue "i" -> Open in Access Token Tool -> Extend Access Token -> copy).
 The script picks her Page, refuses unless the Page key keeps EVERY permission her posting
-already uses plus the two DM ones and never expires, then stores it as AR_FB_ACCESS_TOKEN.
-Prints only the Page name and the end of its id - never a key.
+already uses plus the DM, comment, Facebook-message and stats ones, never expires and is
+linked to her Instagram, then stores it. Prints only names and id endings - never a key.
 """
 import getpass, json, os, re, subprocess, sys, urllib.parse, urllib.request
 
@@ -24,7 +29,10 @@ G = "https://graph.facebook.com/v21.0"
 PAGE_ENDS = "4857"                       # AR_FB_PAGE_ID ends with this (read 2 Nov 2026)
 # what her posting key already had (2 Nov) + what the DM bot needs
 NEED = {"instagram_basic", "instagram_content_publish", "pages_manage_posts", "pages_read_engagement",
-        "pages_show_list", "instagram_manage_messages", "instagram_manage_comments"}
+        "pages_show_list", "instagram_manage_messages", "instagram_manage_comments",
+        "instagram_manage_insights", "pages_messaging", "pages_read_user_content",
+        "pages_manage_engagement"}
+APP = "1199712782379494"                 # Awakened Rise Replies - hers
 
 
 def get(path, **q):
@@ -50,6 +58,14 @@ if missing:
     sys.exit(f"  Nothing saved. The key is missing: {', '.join(sorted(missing))}. Add them in Explorer and Generate again.")
 if d.get("expires_at"):
     sys.exit("  Nothing saved. This key would expire. Click Extend Access Token first, then run this again.")
-subprocess.run([GH, "secret", "set", "AR_FB_ACCESS_TOKEN", "-R", REPO], input=p["access_token"].encode(), check=True)
-print(f"\n  SAVED for {p['name']} (...{p['id'][-4:]}): never expires, can send DMs and reply to comments.")
+if str(d.get("app_id")) != APP:
+    sys.exit("  Nothing saved. This key was made on a different app - pick Awakened Rise Replies in Explorer.")
+ig = get(p["id"], fields="instagram_business_account{username}", access_token=p["access_token"]).get(
+    "instagram_business_account") or {}
+if not ig.get("id"):
+    sys.exit("  Nothing saved. This Page has no Instagram account linked to it.")
+for k in ("AR_FB_ACCESS_TOKEN", "AR_IG_ACCESS_TOKEN"):
+    subprocess.run([GH, "secret", "set", k, "-R", REPO], input=p["access_token"].encode(), check=True)
+print(f"\n  SAVED for {p['name']} (...{p['id'][-4:]}) and Instagram @{ig.get('username')} (...{ig['id'][-4:]}):")
+print("  your own app, never expires, posts, reads stats, replies to comments and sends DMs.")
 print("  You can close this tab. Claude takes it from here.\n")
