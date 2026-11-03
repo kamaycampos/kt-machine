@@ -13211,7 +13211,11 @@
    "hook": "Your religion is just geography.",
    "bytes": 45206571,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-03T09:20",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_ILLUSION/01_NEVER-AN-ACCIDENT_60s.mp4",
@@ -13219,7 +13223,11 @@
    "hook": "It's never an accident.",
    "bytes": 35206080,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-03T11:50",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_WITHIN/01_YOU-TRADED-FREEDOM-FOR-SAFETY_51s.mp4",
@@ -13227,7 +13235,11 @@
    "hook": "You traded freedom for safety.",
    "bytes": 29120711,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-04T08:04",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_WITHIN/02_A-ROLLS-ROYCE-CAN-BE-SPIRITUAL_46s.mp4",
@@ -13235,7 +13247,11 @@
    "hook": "A Rolls Royce can be spiritual.",
    "bytes": 23500235,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-03T10:44",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_WITHIN/02_YOUR-POWER-LIES-WITHIN_41s.mp4",
@@ -13243,7 +13259,11 @@
    "hook": "Your power lies within, not outside.",
    "bytes": 17872676,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-03T07:49",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
