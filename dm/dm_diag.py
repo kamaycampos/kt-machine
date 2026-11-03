@@ -15,6 +15,16 @@ if P:
     os.environ["KT_CTA_KEYWORDS"] = os.environ.get(P + "CTA_KEYWORDS", "")
 kws, d, now = dm.keywords(), dm.load(), datetime.now(timezone.utc)
 print("keywords:", kws)
+for name in ("FB_ACCESS_TOKEN", "IG_ACCESS_TOKEN"):
+    t = os.environ.get(P + name, "")
+    if t:
+        try:
+            dt = dm._get(f"{dm.G}/debug_token", {"input_token": t, "access_token": t}).get("data", {})
+            print(f"{P}{name}: type {dt.get('type')} valid {dt.get('is_valid')} expires {dt.get('expires_at')}"
+                  f" profile {dt.get('profile_id')} scopes {sorted(dt.get('scopes', []))}")
+        except Exception as e:
+            print(f"{P}{name}: debug_token failed - {e}")
+print("page id matches:", os.environ.get(P + "FB_PAGE_ID", "")[-4:])
 url, params, posts = f"{dm.G}/{ig}/media", {"fields": "id,timestamp,comments_count,media_product_type",
                                              "limit": 50, "access_token": tok}, []
 while url and len(posts) < 150:
