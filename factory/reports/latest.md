@@ -1,61 +1,100 @@
-## ep_v625tet_r2: 1 of 2 clip(s) passed every gate
+## ar_v5e9fal: 4 of 4 clip(s) passed every gate
 
 
-## 2026-11-02 20:08
-  note KT_MAYBACHR2/HE-SKIPPED-A-430K-MAYBACH: ending kept on the planner's words 'fund this homeless shelter' (next line completes it)
-ep_v625tet_r2__s0 (KT_MAYBACHR2): 2 of 2 passed pre-render gates
+## 2026-11-03 11:21
+  note AR_WITHIN/YOU-TRADED-FREEDOM-FOR-SAFETY: ending kept on the planner's words 'for all this BS' (next line completes it)
+ar_v5e9fal__s1 (AR_WITHIN): 2 of 2 passed pre-render gates
 
-RENDER ep_v625tet_r2__s0
-  PASS 01_THE-ONE-BOOK-EVERY-BILLIONAIRE-READ_128s.mp4  01_THE-ONE-BOOK-EVERY-BILLIONAIRE-READ_128s.mp4        14 captions vs the sound  median +0
-       FIRST 5s : The combined net worth was well over one trillion U.S. dollars. | LAST  8s : And unless you can connect with people, unless you have people opening up to you, unless you have affinity with people, nothing is going to work.
-  FAIL 02_HE-SKIPPED-A-430K-MAYBACH_178s.mp4: [FAIL] 02_HE-SKIPPED-A-430K-MAYBACH_178s.mp4                  15 captions vs the sound  median +1.00s  worst-10% 1.31s  | words captioned 101%  UNCAPTIONED SPEECH [(48.3, 49.8), (97.1, 99.2)]
-TEST MODE - passing clips NOT uploaded or queued: KT_MAYBACHR2
-
-
-- **NOT QUEUED** `01_THE-ONE-BOOK-EVERY-BILLIONAIRE-READ_128s.mp4` - stray full stop: "U.S. dollars"
-
-## ep_v7fk1y0_r2: 3 of 3 clip(s) passed every gate
-
-
-## 2026-11-02 20:06
-  note KT_ATTITUDER2/ATTITUDE-GETS-YOU-THE-MONEY: ending kept on the planner's words 'the mentality of a loser' (cuts mid-sentence)
-  note KT_ATTITUDER2/ONE-NOTCH-OFF-COURSE: ending kept on the planner's words 'change outcomes radically' (ends inside a quote)
-ep_v7fk1y0_r2__s0 (KT_ATTITUDER2): 2 of 2 passed pre-render gates
-
-RENDER ep_v7fk1y0_r2__s0
-  WARP 01_ATTITUDE-GETS-YOU-THE-MONEY_104s.mp4: S-YOU-THE-MONEY_104s.mp4                12 captions vs the sound  median +0.26s  worst-10% 0.75s  | words captioned 100% - re-timing each caption once
-  PASS 01_ATTITUDE-GETS-YOU-THE-MONEY_104s.mp4  01_ATTITUDE-GETS-YOU-THE-MONEY_104s.mp4                12 captions vs the sound  median -0
-       FIRST 5s : When it comes to making money or getting rich, you don't have a money problem, you have an attitude problem. | LAST  8s : Do you ever think that attaining something is going to change your emotional state or your attitude? That's the mentality of a loser.
-  PASS 02_ONE-NOTCH-OFF-COURSE_77s.mp4  02_ONE-NOTCH-OFF-COURSE_77s.mp4                        20 captions vs the sound  median +0
-       FIRST 5s : I'll meet with Billy Carson or some of the other people, my friends down there. And we're on the plane, and I'm talking | LAST  8s : Not right now. That's completely different and will change outcomes radically.
-TEST MODE - passing clips NOT uploaded or queued: KT_ATTITUDER2
+RENDER ar_v5e9fal__s1
+  PASS 01_YOU-TRADED-FREEDOM-FOR-SAFETY_51s.mp4  01_YOU-TRADED-FREEDOM-FOR-SAFETY_51s.mp4               5 captions vs the sound  median +0.
+       FIRST 5s : The government wants you to rely on the government. | LAST  8s : For different reasons, for safety, for security, for all this BS.
+  PASS 02_YOUR-POWER-LIES-WITHIN_41s.mp4  02_YOUR-POWER-LIES-WITHIN_41s.mp4                      6 captions vs the sound  median +0.
+       FIRST 5s : You can be, do, and have anything and everything you deserve. | LAST  8s : The small man in others. Always look within. That's where your power lies.
+TEST MODE - passing clips NOT uploaded or queued: AR_WITHIN
 
 
 
-## 2026-11-02 19:31
-  note KT_ATTITUDER2/NOT-A-MONEY-PROBLEM: ending kept on the planner's words 'you have an attitude problem' (cuts mid-sentence)
-ep_v7fk1y0_r2__s1 (KT_ATTITUDER2): 1 of 1 passed pre-render gates
+## 2026-11-03 11:37
+  note AR_WITHIN/GOD-GAVE-YOU-POWER-NOT-WEALTH: ending kept on the planner's words 'create and manifest your life' (introduces, does not claim)
+  note AR_WITHIN/A-ROLLS-ROYCE-CAN-BE-SPIRITUAL: ending kept on the planner's words 'levels and dimensions' (next line completes it)
+ar_v5e9fal__s0 (AR_WITHIN): 2 of 2 passed pre-render gates
 
-RENDER ep_v7fk1y0_r2__s1
-  PASS 01_NOT-A-MONEY-PROBLEM_92s.mp4  01_NOT-A-MONEY-PROBLEM_92s.mp4                         25 captions vs the sound  median +0
-       FIRST 5s : At the end of the day, manifesting and law of attraction really should be | LAST  8s : So doing exactly the same activity. The difference is the attitude. You don't have a money problem, you have an attitude problem.
-TEST MODE - passing clips NOT uploaded or queued: KT_ATTITUDER2
+RENDER ar_v5e9fal__s0
+  PASS 01_GOD-GAVE-YOU-POWER-NOT-WEALTH_66s.mp4  01_GOD-GAVE-YOU-POWER-NOT-WEALTH_66s.mp4               14 captions vs the sound  median +0
+       FIRST 5s : There's a scriptural principle which people don't understand. The Bible doesn't say that God will | LAST  8s : Or energy. This is what, if you allow it to flow through you, you then have the power to create and manifest your life.
+  PASS 02_A-ROLLS-ROYCE-CAN-BE-SPIRITUAL_46s.mp4  02_A-ROLLS-ROYCE-CAN-BE-SPIRITUAL_46s.mp4              6 captions vs the sound  median -0.
+       FIRST 5s : Spiritual materialism is going to rock. | LAST  8s : You can have all the material things you want, and you can be completely enlightened and completely spiritually free on all levels and dimensions.
+TEST MODE - passing clips NOT uploaded or queued: AR_WITHIN
 
+
+- **NOT QUEUED** `01_GOD-GAVE-YOU-POWER-NOT-WEALTH_66s.mp4` - ends mid-thought on "manifest your life"; sentence starts with no stop: "bible It"; sentence starts with no stop: "energy This"
+
+## ar_v5h647u: 2 of 2 clip(s) passed every gate
+
+
+## 2026-11-03 11:37
+  note AR_ILLUSION/NEVER-AN-ACCIDENT: ending kept on the planner's words 'the right perfect time' (cuts mid-sentence)
+  note AR_ILLUSION/THE-BROTHERHOOD-BENDS-REALITY: ending kept on the planner's words 'is absolutely true' (cuts mid-sentence)
+ar_v5h647u__s0 (AR_ILLUSION): 2 of 2 passed pre-render gates
+
+RENDER ar_v5h647u__s0
+  PASS 01_NEVER-AN-ACCIDENT_60s.mp4  01_NEVER-AN-ACCIDENT_60s.mp4                           7 captions vs the sound  median +0.
+       FIRST 5s : You just gotta believe. | LAST  8s : Just perfect. At the right, perfect time.
+  PASS 02_THE-BROTHERHOOD-BENDS-REALITY_72s.mp4  02_THE-BROTHERHOOD-BENDS-REALITY_72s.mp4               8 captions vs the sound  median +0.
+       FIRST 5s : When you go through the science of personal mastery courses, | LAST  8s : So they're seeing time travel right in front of their eyes. And it basically proves that what I've said is absolutely true.
+TEST MODE - passing clips NOT uploaded or queued: AR_ILLUSION
+
+
+- **NOT QUEUED** `02_THE-BROTHERHOOD-BENDS-REALITY_72s.mp4` - phrase scrambled around "they're saying effectively they're"; word repeated after one: "time because time"
+
+## ar_v5in731: 1 of 2 clip(s) passed every gate
+
+
+## 2026-11-03 11:36
+  note AR_FEED/YOUR-RELIGION-IS-JUST-GEOGRAPHY: ending kept on the planner's words 'controls the world' (introduces, does not claim)
+  drop AR_FEED/THE-CIA-ANSWERS-TO-THE-BROTHERHOOD: hook - 833px wide at 44px - over the 780px safe zone, will be cut off on a phone
+ar_v5in731__s0 (AR_FEED): 1 of 2 passed pre-render gates
+
+RENDER ar_v5in731__s0
+  WARP 01_YOUR-RELIGION-IS-JUST-GEOGRAPHY_93s.mp4: ON-IS-JUST-GEOGRAPHY_93s.mp4             8 captions vs the sound  median +0.08s  worst-10% 1.07s  | words captioned 100% - re-timing each caption once
+  PASS 01_YOUR-RELIGION-IS-JUST-GEOGRAPHY_93s.mp4  01_YOUR-RELIGION-IS-JUST-GEOGRAPHY_93s.mp4             8 captions vs the sound  median -0.
+       FIRST 5s : It's what you're being fed. If you lived in the | LAST  8s : The information that you're given, the control of that information flow is what controls the world.
+TEST MODE - passing clips NOT uploaded or queued: AR_FEED
+
+
+## ep_v5lvgyl_r2: 1 of 2 clip(s) passed every gate
+
+
+## 2026-11-03 11:37
+  note KT_ROLLSROYCER2/THE-1000-DOLLAR-GUIDED-MEDITATION-SCAM: ending kept on the planner's words 'picture yourself in a safe space' (ends inside a quote)
+ep_v5lvgyl_r2__s0 (KT_ROLLSROYCER2): 2 of 2 passed pre-render gates
+
+RENDER ep_v5lvgyl_r2__s0
+  RETIME 01_WHY-98-PERCENT-OF-WINNERS-GO-BROKE_94s.mp4: captions +0.44s off throughout - re-rendering once
+  FAIL 01_WHY-98-PERCENT-OF-WINNERS-GO-BROKE_94s.mp4: ends off the planned words: plan ends 'lottery winners go bankrupt', clip ends 'clearing out whats on the inside'
+  PASS 02_THE-1000-DOLLAR-GUIDED-MEDITATION-SCAM_50s.mp4  02_THE-1000-DOLLAR-GUIDED-MEDITATION-SCAM_50s.mp4      25 captions vs the sound (word-refe
+       FIRST 5s : Close your eyes. Hi, I'm Guru Josel. | LAST  8s : Count the 10 backwards. That's hypnosis. Or they'll say, picture yourself in a safe space.
+TEST MODE - passing clips NOT uploaded or queued: KT_ROLLSROYCER2
+
+
+- **NOT QUEUED** `02_THE-1000-DOLLAR-GUIDED-MEDITATION-SCAM_50s.mp4` - ends mid-thought on "safe space it's"
 
 ## UPLOAD
-3 clip(s) to add:
-   KT_ATTITUDER2/01_ATTITUDE-GETS-YOU-THE-MONEY_104s.mp4  (73 MB)
-   KT_ATTITUDER2/01_NOT-A-MONEY-PROBLEM_92s.mp4  (71 MB)
-   KT_ATTITUDER2/02_ONE-NOTCH-OFF-COURSE_77s.mp4  (57 MB)
-      + 01_ATTITUDE-GETS-YOU-THE-MONEY_104s__story.mp4
-      + 01_ATTITUDE-GETS-YOU-THE-MONEY_104s__yt59.mp4
-   added KT_ATTITUDER2/01_ATTITUDE-GETS-YOU-THE-MONEY_104s.mp4
-      + 01_NOT-A-MONEY-PROBLEM_92s__story.mp4
-      + 01_NOT-A-MONEY-PROBLEM_92s__yt59.mp4
-   added KT_ATTITUDER2/01_NOT-A-MONEY-PROBLEM_92s.mp4
-      + 02_ONE-NOTCH-OFF-COURSE_77s__story.mp4
-      + 02_ONE-NOTCH-OFF-COURSE_77s__yt59.mp4
-   added KT_ATTITUDER2/02_ONE-NOTCH-OFF-COURSE_77s.mp4
+5 clip(s) to add:
+   AR_FEED/01_YOUR-RELIGION-IS-JUST-GEOGRAPHY_93s.mp4  (45 MB)
+   AR_ILLUSION/01_NEVER-AN-ACCIDENT_60s.mp4  (35 MB)
+   AR_WITHIN/01_YOU-TRADED-FREEDOM-FOR-SAFETY_51s.mp4  (29 MB)
+   AR_WITHIN/02_A-ROLLS-ROYCE-CAN-BE-SPIRITUAL_46s.mp4  (24 MB)
+   AR_WITHIN/02_YOUR-POWER-LIES-WITHIN_41s.mp4  (18 MB)
+      + 01_YOUR-RELIGION-IS-JUST-GEOGRAPHY_93s__story.mp4
+      + 01_YOUR-RELIGION-IS-JUST-GEOGRAPHY_93s__yt59.mp4
+   added AR_FEED/01_YOUR-RELIGION-IS-JUST-GEOGRAPHY_93s.mp4
+      + 01_NEVER-AN-ACCIDENT_60s__story.mp4
+      + 01_NEVER-AN-ACCIDENT_60s__yt59.mp4
+   added AR_ILLUSION/01_NEVER-AN-ACCIDENT_60s.mp4
+   added AR_WITHIN/01_YOU-TRADED-FREEDOM-FOR-SAFETY_51s.mp4
+   added AR_WITHIN/02_A-ROLLS-ROYCE-CAN-BE-SPIRITUAL_46s.mp4
+   added AR_WITHIN/02_YOUR-POWER-LIES-WITHIN_41s.mp4
 
-manifest now holds 532 clips
+manifest now holds 537 clips
 commit and push state/manifest.json to let the machine see them

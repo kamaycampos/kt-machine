@@ -10549,6 +10549,96 @@
     "He skipped a $430K",
     "Maybach"
    ]
+  },
+  "ar_v5e9fal/GOD-GAVE-YOU-POWER-NOT-WEALTH": {
+   "plan": "ar_v5e9fal",
+   "source": "v5e9fal.mp4",
+   "brand": "AR_WITHIN",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_GOD-GAVE-YOU-POWER-NOT-WEALTH_66s.mp4` - ends mid-thought on \"manifest your life\"; sentence starts with no stop: \"bible It\"; sentence starts with no stop: \"energy This\""
+   ],
+   "slug": "GOD-GAVE-YOU-POWER-NOT-WEALTH",
+   "in": 1247.0,
+   "out": 1313.0,
+   "start_words": "There's a scriptural principle",
+   "end_words": "create and manifest your life",
+   "hook": [
+    "God gave you power.",
+    "Not wealth."
+   ]
+  },
+  "ar_v5h647u/THE-BROTHERHOOD-BENDS-REALITY": {
+   "plan": "ar_v5h647u",
+   "source": "v5h647u.mp4",
+   "brand": "AR_ILLUSION",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_THE-BROTHERHOOD-BENDS-REALITY_72s.mp4` - phrase scrambled around \"they're saying effectively they're\"; word repeated after one: \"time because time\""
+   ],
+   "slug": "THE-BROTHERHOOD-BENDS-REALITY",
+   "in": 2592.08,
+   "out": 2663.48,
+   "start_words": "When you go through",
+   "end_words": "is absolutely true",
+   "hook": [
+    "The Brotherhood",
+    "bends reality."
+   ]
+  },
+  "ar_v5in731/THE-CIA-ANSWERS-TO-THE-BROTHERHOOD": {
+   "plan": "ar_v5in731",
+   "source": "v5in731.mp4",
+   "brand": "AR_FEED",
+   "tries": 1,
+   "why": [
+    "drop AR_FEED/THE-CIA-ANSWERS-TO-THE-BROTHERHOOD: hook - 833px wide at 44px - over the 780px safe zone, will be cut off on a phone"
+   ],
+   "slug": "THE-CIA-ANSWERS-TO-THE-BROTHERHOOD",
+   "in": 814.0,
+   "out": 920.0,
+   "start_words": "Finally, enough whistleblowers came",
+   "end_words": "That's how it works",
+   "hook": [
+    "The CIA",
+    "answers to the Brotherhood."
+   ]
+  },
+  "ep_v5lvgyl_r2/WHY-98-PERCENT-OF-WINNERS-GO-BROKE": {
+   "plan": "ep_v5lvgyl_r2",
+   "source": "v5lvgyl.mp4",
+   "brand": "KT_ROLLSROYCER2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_WHY-98-PERCENT-OF-WINNERS-GO-BROKE_94s.mp4: ends off the planned words: plan ends 'lottery winners go bankrupt', clip ends 'clearing out whats on the inside'"
+   ],
+   "slug": "WHY-98-PERCENT-OF-WINNERS-GO-BROKE",
+   "in": 1212.88,
+   "out": 1298.4,
+   "start_words": "I met a guy",
+   "end_words": "lottery winners go bankrupt",
+   "hook": [
+    "Why 98% of winners",
+    "go broke"
+   ]
+  },
+  "ep_v5lvgyl_r2/THE-1000-DOLLAR-GUIDED-MEDITATION-SCAM": {
+   "plan": "ep_v5lvgyl_r2",
+   "source": "v5lvgyl.mp4",
+   "brand": "KT_ROLLSROYCER2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_THE-1000-DOLLAR-GUIDED-MEDITATION-SCAM_50s.mp4` - ends mid-thought on \"safe space it's\""
+   ],
+   "slug": "THE-1000-DOLLAR-GUIDED-MEDITATION-SCAM",
+   "in": 3333.4,
+   "out": 3385.0,
+   "start_words": "Close your eyes Hi",
+   "end_words": "picture yourself in a safe space",
+   "hook": [
+    "The $1,000 guided",
+    "meditation scam"
+   ]
   }
  },
  "attempts": {
