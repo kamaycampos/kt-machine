@@ -1,10 +1,10 @@
 {
- "at": "2026-11-03T07:13",
+ "at": "2026-11-03T09:31",
  "profile": {
+  "video_count": 166,
   "follower_count": 409,
   "following_count": 8,
-  "likes_count": 5874,
-  "video_count": 166
+  "likes_count": 5874
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -89,7 +89,7 @@
   },
   "KT_LEDGER/02_LOST-27-MILLION-STILL-WON_160s.mp4": {
    "id": "7692503921260088590",
-   "view_count": 25,
+   "view_count": 26,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -759,7 +759,7 @@
   },
   "KT_POS/03_03_THE-INGREDIENT-NOBODY-TEACHES_102s.mp4": {
    "id": "7685133057686326542",
-   "view_count": 1784,
+   "view_count": 1786,
    "like_count": 230,
    "comment_count": 22,
    "share_count": 42,
