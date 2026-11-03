@@ -33,6 +33,28 @@ def _load():
         return {}
 
 
+TRIES = 3          # runs an arm may fail in before it is given up
+RESERVE = 25       # API posts a day kept free for the real clips and their stories
+
+
+def _room(poster, clip):
+    """Posts this brand's Instagram can still take today, or None when unknown.
+
+    Meta caps API-published posts per account per 24 h (content_publishing_limit).
+    Seven trials per clip on every clip reaches it on a busy day, and the real clips
+    must never be the ones refused."""
+    try:
+        (ig, tok), missing = poster._cfg("IG_USER_ID", "IG_ACCESS_TOKEN", brand=poster.brand_of(clip))
+        if missing:
+            return None
+        d = json.load(urllib.request.urlopen(
+            f"{G}/{ig}/content_publishing_limit?fields=quota_usage,config&access_token={tok}", timeout=30))
+        row = (d.get("data") or [{}])[0]
+        return int((row.get("config") or {}).get("quota_total", 50)) - int(row.get("quota_usage", 0)) - RESERVE
+    except Exception:
+        return None
+
+
 def step(engine, poster, media_url, log=print):
     var = _load()
     if not var:
@@ -46,8 +68,14 @@ def step(engine, poster, media_url, log=print):
         clip = next((c for c in man["clips"] if c["file"] == e["clip"]), None)
         if not clip or not clip.get("posted_at"):
             continue
-        log(f"TRIAL {key}: posting {len(e['arms'])} hook variant(s) as Trial Reels")
-        for arm in e["arms"]:
+        todo = [a for a in e["arms"] if not a.get("id") and a.get("tries", 0) < TRIES]
+        room = _room(poster, clip)
+        if room is not None and room < len(todo):
+            log(f"TRIAL {key}: waiting - Instagram can take {max(room, 0)} more API post(s) today "
+                f"after the {RESERVE} kept for real clips")
+            break
+        log(f"TRIAL {key}: posting {len(todo)} hook variant(s) as Trial Reels")
+        for arm in todo:
             path = os.path.join(engine.MEDIA, arm["rel"])
             try:
                 if not os.path.exists(path):
@@ -60,15 +88,26 @@ def step(engine, poster, media_url, log=print):
             ok = isinstance(res, tuple)
             arm["status"] = str(res[0] if ok else res)[:160]
             arm["id"] = poster.LAST_MEDIA_ID if ok else None
+            if not ok:
+                arm["tries"] = arm.get("tries", 0) + 1
             log(f"  {' / '.join(arm['hook'])}: {arm['status']}")
-            if not ok or arm["status"].startswith("PUBLISHED BUT NOT A TRIAL"):
+            # ONLY A NON-TRIAL STOPS THE REST (3 Nov 2026). The first experiment (2 Nov,
+            # HE-OWED-37-MILLION) died on arm 1: Instagram answered 500 "is_transient", the
+            # loop stopped as if a reel had gone to his followers, and the experiment was
+            # marked posted - 0 of 7 trials ever ran. A refused post put nothing anywhere;
+            # it is tried again next run (TRIES). Only a reel that published as an ordinary
+            # reel stops everything, because that one cannot be undone.
+            if ok and arm["status"].startswith("PUBLISHED BUT NOT A TRIAL"):
+                e["stopped"] = arm["status"]
                 log("  STOPPED: that one did not publish as a trial; the rest were NOT posted.")
                 break
-        e["posted"] = now.strftime("%Y-%m-%dT%H:%M")
+        if e.get("stopped") or all(a.get("id") or a.get("tries", 0) >= TRIES for a in e["arms"]):
+            e["posted"] = now.strftime("%Y-%m-%dT%H:%M")
         changed = True
         break
-    tok = os.environ.get("IG_ACCESS_TOKEN", "")
     for key, e in var.items():
+        # each brand's reels are read with that brand's token (Yaren's live on her account)
+        (tok,), _miss = poster._cfg("IG_ACCESS_TOKEN", brand=poster.brand_of({"file": e["clip"]}))
         if not e.get("posted") or e.get("scored") or not tok:
             continue
         if now - dt.datetime.fromisoformat(e["posted"]) < dt.timedelta(hours=48):

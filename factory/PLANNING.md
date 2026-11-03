@@ -36,16 +36,17 @@ comes before everything else, in every run, morning or afternoon, whatever the q
 A first plan of a NEWEST UPLOADS episode is 6-9 clips, never 2. Fewer only when you name in the
 report why each skipped stretch cannot stand alone.
 
-## TRIAL HOOKS: 7 HOOKS, 1 CLIP, EVERY DAY (1 Nov 2026, Kamay: "the test of posting 7 clips a day in IG never got delivered")
-In the MORNING run (before 15:00 UTC) only, pick the ONE strongest clip you plan (the newest
-episode's best when there is one) and add `"trial_hooks"`: exactly 7 alternatives to its hook, each
+## TRIAL HOOKS: 7 HOOKS ON EVERY CLIP (3 Nov 2026, Kamay: "so it runs automatically for all clips the 7 different style hooks clips so we identify the best ones")
+Give EVERY clip you plan `"trial_hooks"`: exactly 7 alternatives to its hook, each
 `["line one", "line two"]`, six words in all, each a DIFFERENT lever and all true to the clip:
 (1) the biggest number or sum, (2) a villain named ("the bank", "your mortgage"), (3) a reversal
 ("$5,000 became $5 billion"), (4) the viewer's loss ("why you stay broke"), (5) a named person + outcome,
 (6) Kevin Trudeau by name, (7) your wildest true one. The factory renders all 7 (only the hook card
 changes) and posts them as Instagram Trial Reels (non-followers only) once the clip has posted;
 48 h later `state/variants.json` holds each one's views and the winner. Read the last winners there
-before you write any hook. `check_plan.py` lints every trial hook like a normal hook.
+before you write any hook - a lever that keeps winning goes on the clip's own hook next time.
+Until one experiment has posted all 7 arms, `check_plan.py` allows trial hooks on ONE clip a plan
+(put them on the strongest); after that, on every clip. Every trial hook is linted like a normal hook.
 
 ## READ factory/STRATEGY.md FIRST (17 Oct 2026)
 The growth strategist rewrites it daily from the real numbers (skip rate, views, DMs, money). Its

@@ -9,6 +9,17 @@ from lengths import MIN_LEN, MAX_LEN  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "pipeline"))
+
+def trials_proven():
+    """True once any experiment in state/variants.json posted every arm as a trial."""
+    try:
+        v = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                                        "state", "variants.json")))
+    except (OSError, ValueError):
+        return False
+    return any(e.get("arms") and not e.get("stopped") and all(a.get("id") for a in e["arms"])
+               for e in v.values())
+
 def _core(h, b):
     """The fallback. It enforces ONLY the hard rule - six words - and nothing
     else. 23 Sept 2026: a stricter fallback ("must open Why/How/What") threw out
@@ -183,8 +194,14 @@ for path in sys.argv[1:]:
                         # hook may open on a name, a sum or a command; length and the rest still hold
                         if "not a direct promise" not in e:
                             errs.append(f"{s}: trial hook {k} - {e}")
-                if sum(1 for q in p.get("clips", []) if q.get("trial_hooks")) > 1:
-                    errs.append("trial_hooks on more than one clip: one experiment a day")
+                # EVERY CLIP, ONCE THE MECHANISM IS PROVEN (3 Nov 2026, Kamay: "so it runs
+                # automatically for all clips the 7 different style hooks"). Until one
+                # experiment has posted all 7 arms as verified Trial Reels, one clip a plan:
+                # 0 of 7 had ever posted, and a mechanism that has never worked once is not
+                # multiplied by 35 a day.
+                if sum(1 for q in p.get("clips", []) if q.get("trial_hooks")) > 1 and not trials_proven():
+                    errs.append("trial_hooks on more than one clip: until one experiment has posted "
+                                "all its arms as Trial Reels (state/variants.json), one clip a plan")
         ns = no_stakes(c.get("hook") or [], b)
         if ns and (STAKES_WARN or fam == "AR"): print(f"   ~ {s}: hook - {ns}")
         elif ns: errs.append(f"{s}: hook - {ns}")

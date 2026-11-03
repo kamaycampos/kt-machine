@@ -81,6 +81,17 @@ His account opens with a direct promise (Why / How / What). **Hers does not, and
 
 - `check_plan.py` runs her rule automatically - it reads the folder name, so `AR_` gets her lint.
 
+## Her trial hooks: 7 on every clip (3 Nov 2026, Kamay: "go ahead for Yaren and me")
+Every clip also gets `"trial_hooks"`: exactly 7 alternatives to its hook, each `["line one", "line two"]`,
+six words in all, ALL in her stab rule (no Why / How / What, no question first), each a different lever,
+all true to the clip: (1) the number or the age ("2,000 years ago"), (2) the hidden hand named ("the
+Brotherhood", "your programming"), (3) a reversal ("Luck is not luck."), (4) what the viewer loses by not
+knowing it, (5) a named person or text + what they knew, (6) a command ("Stop praying for it."), (7) the
+wildest true line in the clip. The factory renders all 7 (only the hook card changes) and posts them on
+HER Instagram as Trial Reels (non-followers only, never on her grid) once the clip has posted; 48 h later
+`state/variants.json` names the winning words. Read her last winners there first. Until one experiment
+has posted all 7 arms, `check_plan.py` allows trial hooks on ONE clip a plan (the strongest).
+
 ## Her captions
 - Same craft as his (first line stands alone, one idea per paragraph, one call to action), in her
   voice: quieter, second person, unhurried. She is not selling; she is letting someone in.
