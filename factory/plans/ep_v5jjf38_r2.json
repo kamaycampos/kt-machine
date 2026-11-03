@@ -1,0 +1,34 @@
+{
+ "source": "v5jjf38.mp4",
+ "brand": "KT_VERDICTR2",
+ "test": false,
+ "note": "3 Nov 2026 - second chances for 'Real People Share Their Shocking Success Stories! | The Kevin Trudeau Show | Ep. 58' (Rumble v5jjf38). Weekly agent, re-cut per PLANNING.md 2c. PRISON-FOR-THE-TRUTH: extended the end past the dangling 'and' that spilled into the next sentence, onto the next sentence's own clean cue boundary ('...under the First Amendment.'). THE-JUDGE-DODGED-PRISON: corrected the start to the exact cue holding the quoted line, and moved the end off the 'he's smart, he's fair, he's honest, he's ethical' run (the repeated 'he's' that scrambled the captions) onto 'Everything shifted' two sentences earlier, which is also a clean payoff on its own; caption trimmed to match. Skipped PRISON-FOR-A-SECRET: the uncaptioned gap sits inside the one sentence quoting the government's court statement, which the story needs in full - no edge choice removes it without cutting the setup.",
+ "clips": [
+  {
+   "slug": "PRISON-FOR-THE-TRUTH",
+   "in": 218.88,
+   "out": 314.4,
+   "start_words": "I got the longest sentence",
+   "end_words": "right to say it under the First Amendment",
+   "hook": [
+    "How a lie",
+    "became the truth"
+   ],
+   "caption": "Kevin Trudeau wrote that talcum powder, the kind in Johnson's baby powder, was linked to cancer and hormone problems.\n\nThe government called it a lie. They said he was making false claims and scaring people for nothing.\n\nHe went to prison anyway, for exercising his First Amendment right to say what he believed was true.\n\nTwenty years later, the science caught up. Talcum powder has since been tied to hormonal imbalances and proven to cause cancer, just like he said.\n\nHe served time for a truth the world wasn't ready to hear yet.\n\nWould you risk prison to say what you believe?\n\n#kevintrudeau #naturalcures #freespeech #truthteller #talcumpowder #mindset",
+   "retry_of": "ep_v5jjf38/PRISON-FOR-THE-TRUTH"
+  },
+  {
+   "slug": "THE-JUDGE-DODGED-PRISON",
+   "in": 1917.54,
+   "out": 1962.96,
+   "start_words": "you're probably going back",
+   "end_words": "Everything shifted",
+   "hook": [
+    "How he dodged prison",
+    "and won"
+   ],
+   "caption": "Kevin Trudeau's own lawyer warned him: you're probably going back to prison.\n\nKevin says he looked inward instead of panicking, and told his lawyer something good was about to happen.\n\nMinutes later the judge walked in and said something nobody expected: I am biased against Mr. Trudeau, and I am recusing myself from this case. Then he left.\n\nThe FTC was stunned. His own lawyer was stunned. Kevin says he wasn't, because he'd already felt it coming.\n\nHe calls it miracle number one. Everything shifted from that moment.\n\nDo you trust your gut before the outcome even shows up?\n\n#kevintrudeau #manifesting #mindset #yourwishisyourcommand #law #belief",
+   "retry_of": "ep_v5jjf38/THE-JUDGE-DODGED-PRISON"
+  }
+ ]
+}
