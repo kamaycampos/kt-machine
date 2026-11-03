@@ -12,7 +12,13 @@ from her app "Awakened Rise Replies" (1199712782379494, her Awakened Rise busine
 published) and replaces BOTH AR_FB_ACCESS_TOKEN and AR_IG_ACCESS_TOKEN, so her posting,
 stats and DMs all run on her app.
 
-Paste a LONG-LIVED user token (Graph API Explorer on her app -> Generate Access Token with
+PERMANENT (3 Nov 2026): a user token carries Meta's data-access date (90 days), so the DMs
+would stop on 1 Feb 2027. A SYSTEM USER key from her business portfolio has none. Business
+settings -> System users -> her bot user -> Generate token -> Awakened Rise Replies ->
+expiry Never -> tick the permissions -> copy, and paste it here. Same checks, plus it must
+have no data-access date; it then says PERMANENT.
+
+Or paste a LONG-LIVED user token (Graph API Explorer on her app -> Generate Access Token with
 her Page ticked -> the blue "i" -> Open in Access Token Tool -> Extend Access Token -> copy).
 The script picks her Page, refuses unless the Page key keeps EVERY permission her posting
 already uses plus the DM, comment, Facebook-message and stats ones, never expires and is
@@ -46,6 +52,7 @@ print("\n  PASTE THE EXTENDED TOKEN (Access Token Tool -> Extend Access Token ->
 USER = getpass.getpass("  (nothing shows) > ").strip()
 if len(USER) < 50:
     sys.exit("  That was empty. Run this again.")
+ud = get("debug_token", input_token=USER, access_token=USER).get("data", {})
 pages = get("me/accounts", fields="name,id,access_token", access_token=USER).get("data", [])
 pick = [p for p in pages if p.get("access_token") and p["id"].endswith(PAGE_ENDS)]
 if len(pick) != 1:
@@ -68,9 +75,11 @@ for k in ("AR_FB_ACCESS_TOKEN", "AR_IG_ACCESS_TOKEN"):
     subprocess.run([GH, "secret", "set", k, "-R", REPO], input=p["access_token"].encode(), check=True)
 print(f"\n  SAVED for {p['name']} (...{p['id'][-4:]}) and Instagram @{ig.get('username')} (...{ig['id'][-4:]}):")
 print("  your own app, never expires, posts, reads stats, replies to comments and sends DMs.")
-dax = d.get("data_access_expires_at")
+dax = d.get("data_access_expires_at") or ud.get("data_access_expires_at")
 if dax:
     import datetime
     print("  Meta's data-access date on this key:",
           datetime.datetime.utcfromtimestamp(dax).strftime("%d %b %Y"), "(Claude checks this)")
+else:
+    print("  PERMANENT: no expiry and no data-access date (key type: " + str(ud.get("type")) + ").")
 print("  You can close this tab. Claude takes it from here.\n")
