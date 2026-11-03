@@ -37,6 +37,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # on her AR_* keys with her own link and its own state file - never Kevin's text or link.
 BRAND = os.environ.get("DM_BRAND", "")
 STATE = os.path.join(ROOT, "state", "dms_ar.json" if BRAND == "AR_" else "dms.json")
+# ANSWERED BY HAND BEFORE THE BOT COULD (3 Nov 2026, Yaren: "i already manually sent
+# messages to the people who commented"). A DM sent by hand leaves no public reply, so the
+# bot cannot see it: everything older than this is hers, never DMed a second time.
+SINCE = os.environ.get("DM_SINCE") or {"AR_": "2026-11-03T03:30:00"}.get(BRAND, "")
 G = "https://graph.facebook.com/v21.0"
 T = 30
 WINDOW = timedelta(days=7)           # Meta's private-reply window
@@ -214,6 +218,8 @@ def run(dry=False):
                 tally["already answered"] += matched(body, kws) is not None
                 continue
             d["seen"][cid] = now.isoformat()
+            if SINCE and when[:19] < SINCE:
+                continue
             kw = matched(body, kws)
             if not kw:
                 continue

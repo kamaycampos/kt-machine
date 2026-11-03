@@ -85,6 +85,7 @@ def ar_post(url, params=None, json=None, timeout=None):
 
 
 m.requests.post = ar_post
+m.SINCE = ""
 m.BRAND, m.STATE = "AR_", os.path.join(tempfile.mkdtemp(), "dms_ar.json")
 os.environ.update(AR_OFFER_URL="https://example.com/her", AR_CTA_KEYWORDS="MONEY",
                   AR_IG_USER_ID="IG", AR_IG_ACCESS_TOKEN="it", AR_FB_PAGE_ID="PG", AR_FB_ACCESS_TOKEN="ft")
@@ -98,6 +99,12 @@ refuse[0] = False
 m.run()
 assert sorted(c for c, _ in sent) == ["c4", "f1"], sent      # MONEY only - BRAIN is Kevin's word
 assert all(t == "Hey! Thanks for commenting. Here it is: https://example.com/her" for _, t in sent), sent
+# comments from before the cutoff were answered by hand: never a second DM
+sent.clear()
+m.SINCE = (now + timedelta(minutes=1)).strftime("%Y-%m-%dT%H:%M:%S")
+m.STATE = os.path.join(tempfile.mkdtemp(), "dms_ar.json")
+m.run()
+assert sent == [], sent
 os.environ["AR_CTA_KEYWORDS"] = ""
 assert m.keywords() == [], "her account must never fall back to Kevin's words"
 print("comment -> DM: all checks pass")
