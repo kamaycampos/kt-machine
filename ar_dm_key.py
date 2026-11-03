@@ -68,4 +68,9 @@ for k in ("AR_FB_ACCESS_TOKEN", "AR_IG_ACCESS_TOKEN"):
     subprocess.run([GH, "secret", "set", k, "-R", REPO], input=p["access_token"].encode(), check=True)
 print(f"\n  SAVED for {p['name']} (...{p['id'][-4:]}) and Instagram @{ig.get('username')} (...{ig['id'][-4:]}):")
 print("  your own app, never expires, posts, reads stats, replies to comments and sends DMs.")
+dax = d.get("data_access_expires_at")
+if dax:
+    import datetime
+    print("  Meta's data-access date on this key:",
+          datetime.datetime.utcfromtimestamp(dax).strftime("%d %b %Y"), "(Claude checks this)")
 print("  You can close this tab. Claude takes it from here.\n")
