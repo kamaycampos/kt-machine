@@ -13162,11 +13162,24 @@
    "hook": "How attitude creates your money",
    "bytes": 72906353,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-03T09:34",
    "cta_keyword": "BRAIN",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfSH-t4lHAA/",
+    "youtube": "https://youtube.com/shorts/Rae5XStdb3g"
+   },
+   "caption_at_post": "A body shop mechanic became a multi-millionaire - and he said the money had nothing to do with it.\n\nKevin Trudeau met him at a seminar in 1979. Over breakfast, Kevin joked: 'When I have your money, I'll have your attitude too.' The man stopped him: 'No. The attitude gets you the money.'\n\nHe meant it as instruction, not comfort. Walk into a room like you already own it. Feel like a millionaire while you're behind on rent. The feeling comes first, every time.\n\nMost people wait for the bank account to change before they act differently. That's the mentality of someone who stays stuck.\n\nWhat would you do differently today if the money was already on its way?\n\n#kevintrudeau #richmindset #moneymindset #wealthhabits #selfimage #successmindset",
+   "posted_at": "2026-11-03T09:47"
   },
   {
    "file": "KT_ATTITUDER2/01_NOT-A-MONEY-PROBLEM_92s.mp4",
