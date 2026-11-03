@@ -1,0 +1,21 @@
+{
+    "source": "v625tet.mp4",
+    "brand": "KT_MAYBACHR2R2",
+    "test": false,
+    "note": "3 Nov 2026 - second chances (round 3) for 'The Missing Secret For Manifesting Success | Ep. 76' (Rumble v625tet). Weekly agent, same-day refill run. THE-ONE-BOOK-EVERY-BILLIONAIRE-READ: r2 still failed on a stray full stop around 'US dollars' - the abbreviation sits 5 seconds into the clip, right where a fresh transcription pass has the least prior context to anchor on. Moved the start back about 7 seconds, onto the previous full sentence ('When I was there, there were 40 of us...'), so the render has real lead-in before it reaches that phrase. WHY-ROCKEFELLER-GAVE-AWAY-30-PERCENT stays skipped - rechecked the transcript and confirm r2's finding: 'his first paycheck, his first income, he made $1.50 for the week' sits on the only path between naming Rockefeller and the 30% payoff, and it is genuinely repeated speech, not something an edge can route around. HE-SKIPPED-A-430K-MAYBACH (tries 2, last chance) is also being retired: the caption drift and the uncaptioned 'then' both sit inside '$430 something thousand dollars back then,' which is the number the whole hook depends on, so no start/end choice removes it. Flagging separately: the HE-SKIPPED-A-430K-MAYBACH caption on file (both ep_v625tet.json and ep_v625tet_r2.json) describes Kevin funding the shelter with 'coats, boots, socks, food' and says 'weeks later he'd pass men on the street wearing his coats' - none of that is in work/v625tet.srt; the transcript stops at him walking back in to ask what the shelter needs. Worth a look since it's not being retried now, but it's a fabricated caption sitting in two already-pushed plan files.",
+    "clips": [
+        {
+            "slug": "THE-ONE-BOOK-EVERY-BILLIONAIRE-READ",
+            "in": 214.4,
+            "out": 355.0,
+            "start_words": "When I was there there",
+            "end_words": "nothing's going to work",
+            "hook": [
+                "The one book every",
+                "billionaire read"
+            ],
+            "caption": "Forty of Kevin Trudeau's friends sat in a room with a combined net worth of over $1 trillion. One of them personally controls a $750 billion hedge fund.\n\nKevin asked them all the same question: how many of you have read Think and Grow Rich, or studied the law of attraction? Almost none of them had.\n\nThe one book nearly every one of them had actually read was How to Win Friends and Influence People. Most had taken the full Dale Carnegie course - some companies required it for executives.\n\nNot manifesting. Not visualization. People skills.\n\nEverything works through people. Unless you can connect with someone, nothing else you've learned matters.\n\n#kevintrudeau #richmindset #moneymindset #networking #successhabits #wealthhabits",
+            "retry_of": "ep_v625tet_r2/THE-ONE-BOOK-EVERY-BILLIONAIRE-READ"
+        }
+    ]
+}
