@@ -1,0 +1,17 @@
+# READ-ONLY diagnostic for the comment -> DM bot (2 Nov 2026). Sends nothing.
+name: dm-diag
+on: workflow_dispatch
+jobs:
+  diag:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      KT_CTA_KEYWORDS: ${{ secrets.KT_CTA_KEYWORDS }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install requests && python dm/dm_diag.py
