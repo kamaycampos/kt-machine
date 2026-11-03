@@ -13186,11 +13186,24 @@
    "hook": "One notch off course costs you",
    "bytes": 57473088,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-02T19:32",
    "cta_keyword": "BRAIN",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfQm1ZeDFz6/",
+    "youtube": "https://youtube.com/shorts/KVJfIV1EBYc"
+   },
+   "caption_at_post": "One tiny notch on autopilot put Kevin Trudeau's plane 500 miles off course - and that's exactly how most people lose years of their life.\n\nHe asked his pilots what would happen if they nudged the dial just slightly off target. 'You're going to be 500 miles over there,' they told him. The plane barely seemed to move. The destination changed completely.\n\nStruggling people ignore the small shifts - a phrase, a belief, a daily habit - because they look too tiny to matter. Successful people obsess over exactly those details.\n\nA one-degree change today becomes a completely different life years from now.\n\nWhat small shift have you been putting off?\n\n#kevintrudeau #mindset #richmindset #moneymindset #successhabits #wealthhabits",
+   "posted_at": "2026-11-02T19:37"
   }
  ]
 }
