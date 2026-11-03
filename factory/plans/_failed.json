@@ -10711,6 +10711,42 @@
     "How he dodged prison",
     "and won"
    ]
+  },
+  "ep_v5lvgyl_r3/WHY-98-PERCENT-OF-WINNERS-GO-BROKE": {
+   "plan": "ep_v5lvgyl_r3",
+   "source": "v5lvgyl.mp4",
+   "brand": "KT_ROLLSROYCER2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_WHY-98-PERCENT-OF-WINNERS-GO-BROKE_75s.mp4: ends off the planned words: plan ends 'lottery winners go bankrupt', clip ends 'have the right attitude what happens'"
+   ],
+   "slug": "WHY-98-PERCENT-OF-WINNERS-GO-BROKE",
+   "in": 1212.88,
+   "out": 1288.4,
+   "start_words": "I met a guy",
+   "end_words": "lottery winners go bankrupt",
+   "hook": [
+    "Why 98% of winners",
+    "go broke"
+   ]
+  },
+  "ep_v5lvgyl_r3/THE-1000-DOLLAR-GUIDED-MEDITATION-SCAM": {
+   "plan": "ep_v5lvgyl_r3",
+   "source": "v5lvgyl.mp4",
+   "brand": "KT_ROLLSROYCER2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `02_THE-1000-DOLLAR-GUIDED-MEDITATION-SCAM_46s.mp4` - ends mid-thought on \"that's hypnosis or\""
+   ],
+   "slug": "THE-1000-DOLLAR-GUIDED-MEDITATION-SCAM",
+   "in": 3333.4,
+   "out": 3385.0,
+   "start_words": "Close your eyes Hi",
+   "end_words": "That's hypnosis",
+   "hook": [
+    "The $1,000 guided",
+    "meditation scam"
+   ]
   }
  },
  "attempts": {
