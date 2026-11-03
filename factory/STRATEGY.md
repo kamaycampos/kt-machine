@@ -8,34 +8,34 @@ The strategist rewrites this file daily from `state/metrics.json`, `state/tiktok
 
 **Score: $11.70 earned of $1,777,000** (portfolio as of 30 Sept; nobody has read it since).
 
-## 2 Nov 2026 (strategist; KT Instagram numbers, AR_ ignored; 7d = posted 26 Oct-1 Nov n=29, 24 scored (24h+) vs 19-25 Oct n=42, 41 scored; wins/losses and splits use 19 Oct-1 Nov, n=65 scored)
+## 3 Nov 2026 (strategist; KT Instagram, AR_ ignored; 7d = posted 27 Oct-2 Nov n=28, 25 scored (24h+) vs 20-26 Oct n=39 scored; wins/losses and splits use 20 Oct-2 Nov, n=64 scored)
 
 ### What the numbers say
-- **Pace:** 29 posts in 7 days = 4.1/day (target 4-6). Days: 26 Oct 4, 27 Oct 2, 28 Oct 3, 29 Oct 3, 30 Oct 5, 31 Oct 6, **1 Nov 6**. Two days in a row on target. The manifest holds nothing scheduled for 2 Nov.
-- **Skip is falling:** median skip **47.0%** (n=24) vs 51.0% (n=41), target under 40. Views 224 vs 240 (flat); YouTube median 627 vs 347; avg watch 18.4s vs 17.3s. Shares+saves per 1k **16.4 vs 13.9**, still low.
-- **DMs:** 6 sent in total, 1 in the last 7 days (29 Oct, WISH); none since. 5 API errors this week (26-27 Oct). Score unchanged at $11.70.
-- **Winners (19 Oct-1 Nov):** "How he won $250,000 at blackjack" 3,095 views, skip **30.4** (17h, 81s, MONEY); "What Rockefeller said about getting rich" 2,820, skip 51.3 (08h, 98 shares+saves); "Why Edison never went to bed" 2,772, skip 49.0 (15h, 42s). Best skip: "How $300 million was never real" **23.7** (20h, 90s); "He lost $65M Then this" 24.0; "Gave $250,000, never asked back" 26.6. New, under 24h: "Why rich cards can't carry debt" 2,101 views, skip **26.6** (1 Nov 11h). Pattern: a named person or a big sum inside a story.
-- **Losers:** "How your mind beats 20-degree cold" 65 views (182s, 07h), "How to save $150 a month" 85 (skip 60.9, 07h), "Why winners act without being told" 85 (174s). Worst skip: "He wanted $200K without knowing how" **80.7** (690 views, 12h), "Why suffering is your choice" 71.0, "How Blaine failed, then started" 68.9. Abstract advice, small tips, every clip over 170s.
-- **Hook word:** How n=18 skip **44.3**; Why n=19 45.8; The n=15 49.0; What n=4 55.3 (LOW). A digit or sum in the hook n=22 skip 48.0 vs none n=43 49.1: no edge.
-- **CTA:** offer n=51 skip 49.7 vs question n=14 skip **40.3**, views 231 vs 260. Offer MONEY n=28 skip 47.2; offer BRAIN n=20 51.1; offer WISH n=3 52.0 (LOW). Question+MONEY n=6 40.2 (LOW), question+BRAIN n=8 42.9.
-- **Length:** 76-120s n=20 skip **45.2**, median 328 views (best); 46-75s n=32 50.4; over 120s n=10 48.6; under 45s n=3 (LOW).
-- **Hour (NY):** 12h n=9 skip **37.8**, 533 views; 08h n=6 40.3, 455 views; 10h n=6 44.6; 20h n=6 46.0. Worst: 07h n=5 skip 53.7, 110 views; 14h n=5 52.8; 09h n=8 52.3, 265 views; 13h n=3 62.3 (LOW). Weekend skip 51.0 (n=19) vs weekday 48.5 (n=46).
-- **Source (mostly LOW):** KT_NUGGET n=4 skip **39.0**, 1,976 views; KT_FOGLIGHT n=4 39.5; KT_VERDICT n=3 37.6; KT_HARVEST n=2 40.3. Worst: KT_MINDSET n=2 65.0, KT_BIGDREAM n=2 64.0, KT_DIVIDENDR2 n=3 53.3.
-- **Cinematic opener:** not measurable: 0 `opener` entries in kt_series.json, n=0 vs 65. I did not check the media release (no access from this run).
+- **Pace:** 28 posts in 7 days = 4.0/day (target 4-6). Days: 27 Oct 2, 28 Oct 3, 29 Oct 3, 30 Oct 5, 31 Oct 6, 1 Nov 6, **2 Nov 3**. Yesterday fell under 4 and only 2 clips are scheduled for today (3 Nov).
+- **Skip got worse:** median skip **49.0%** (n=25) vs 45.8% (n=39), target under 40. Views 227 vs 240 (flat); YouTube median 713 vs 292; avg watch 18.4s vs 18.8s. Shares+saves per 1k 14.7 vs 10.8.
+- **DMs:** 6 sent in total, 1 in the last 7 days (29 Oct). None since. Score unchanged at $11.70.
+- **Winners:** "How he won $250,000 at blackjack" 3,117 views, skip **30.4** (17h, 81s, MONEY offer); "What Rockefeller said about getting rich" 2,825, skip 51.4, 99 shares+saves (08h, NUGGET); "The secret that cost six figures" 2,468, skip 35.3, 98 shares+saves (12h, 110s, question CTA, NUGGET). Best skip: "How $300 million was never real" **23.7** (20h), "He lost $65M Then this" 24.0, "Gave $250,000, never asked back" 27.0. Pattern: a named person or a big sum inside a story.
+- **Losers:** "How your mind beats 20-degree cold" 65 views (182s, 07h), "Why winners act without being told" 85 (174s, 13h), "How to save $150 a month" 86 (skip 60, 07h). Worst skip: "He wanted $200K without knowing how" **80.3** (12h, KT_LODESTAR), "How Blaine failed, then started" 68.5, "Why you say things you regret" 66.9. Abstract advice, small tips, clips over 170s.
+- **CTA, now clear:** question n=13 skip **37.8**, 275 views vs offer n=51 skip 49.6, 234 views. Question+MONEY n=7 37.8; question+BRAIN n=6 37.3; offer MONEY n=27 48.6; offer BRAIN n=21 50.8; WISH n=3 (LOW). Trade-off: DMs need an offer keyword, and offers earn more comments (MASTERY 19), but only 1 DM in 7 days.
+- **Hook word:** How n=20 skip **44.6**; Why n=17 45.5; The n=16 49.0; the rest n<5 (LOW). A digit or sum in the hook n=22 skip 48.2 vs none n=42 48.8: no edge.
+- **Length:** 76-120s n=20 skip **45.2**, median 334 views (best); under 46s n=5 43.2 (LOW); 46-75s n=27 49.1; over 120s n=12 skip 52.2.
+- **Hour (NY):** 12h n=9 skip **37.4**, 535 views; 08h n=5 39.0, 543 views (LOW edge); 10h n=6 45.0; 20h n=7 45.5; 17h n=9 49.0. Worst: 07h n=5 skip 53.7, 110 views; 09h n=8 52.5; 14h n=5 52.8. Weekend skip 49.9 (n=24) vs weekday 46.9 (n=40).
+- **Source (all LOW, n<5):** KT_NUGGET n=4 skip **39.0**, 1,979 views; KT_VERDICT n=3 37.8; KT_FOGLIGHT n=4 40.1. Worst: KT_BIGDREAM n=2 64.0; KT_DIVIDENDR2 n=3 52.8.
+- **Cinematic opener:** n=0 vs 64: no non-AR clip carries an `opener` entry in kt_series.json, so it cannot be scored. I did not check the media release (no access from this run).
 
 ### Orders for the planner
-1. **Fill every day first.** Nothing is scheduled for 2 Nov: stock and schedule 5-6 slots a day from today, best clip first. A weak clip never fills a slot.
-2. **Hook shape:** a named person or big sum plus a story in line one ("won $250,000 at blackjack", "lost $65M", "rich cards can't carry debt"). Prefer How (44.3, n=18) and Why (45.8, n=19). Few What-openers. No abstract "your choice / act without being told" lines, no small tips ("save $150 a month").
-3. **Offers: 2 a day, MONEY first** (offer MONEY 47.2, n=28). BRAIN offer only on a mind or self-image story (51.1, n=20). The other 3-4 clips use the question CTA (40.3, n=14) with the keyword in the first two caption lines. Keep 1 WISH offer a day on a manifesting story (it made the last DM, LOW).
-4. **Topics:** how the wealthy and famous win, lose and recover (Rockefeller, Edison, blackjack, big sums, credit and debt stories). Property stays the franchise (MASTERY 18). Skip KT_MINDSET, KT_BIGDREAM and plain-advice moments (LOW).
-5. **Length:** 76-120s story clips first (45.2, n=20; 328 views). 46-75s only with a method and a number. Nothing over 150s.
-6. **Source mix:** max 2 clips a day from one episode. More moments from KT_NUGGET, KT_VERDICT, KT_HARVEST, KT_FOGLIGHT (LOW).
+1. **Fill every day first.** 2 Nov ended at 3 and 3 Nov holds 2: stock and schedule 5-6 slots a day from today, best clip first. A weak clip never fills a slot.
+2. **Hook shape:** a named person or big sum plus a story in line one ("won $250,000 at blackjack", "lost $65M", "$300 million was never real"). Prefer How (44.6, n=20) and Why (45.5, n=17). No abstract "regret / act without being told" lines, no small tips ("save $150 a month"), no "Why you say..." self-judgement lines.
+3. **Offers: 2 a day, MONEY first** (needed for DMs). The other 3-4 clips use the **question CTA** with the keyword in the first two caption lines (37.8, n=13 vs 49.6, n=51). BRAIN offer only on a mind or self-image story; WISH on a manifesting story (LOW).
+4. **Topics:** how the wealthy and famous win, lose and recover (Rockefeller, blackjack, big sums, debt stories). Property stays the franchise (MASTERY 18). Skip KT_BIGDREAM, KT_LODESTAR and plain-advice moments (LOW).
+5. **Length:** 76-120s story clips first (45.2, n=20; 334 views). 46-75s only with a method and a number. Nothing over 150s.
+6. **Source mix:** max 2 clips a day from one episode. More moments from KT_NUGGET, KT_VERDICT, KT_FOGLIGHT, KT_HARVEST (LOW).
 7. **Openers:** only luxury, growth or craft shots, never gloomy; none when the source opens on Kevin's face. Write `opener` into kt_series.json on every clip that gets one so it can be scored at n>=5 a side.
-8. **Posting hours (NY):** 12:00 first (n=9, skip 37.8), then 08:00, 10:00, 17:00, 20:00. Drop 07:00, 09:00, 13:00, 14:00.
+8. **Posting hours (NY):** 12:00 first (n=9, skip 37.4), then 08:00, 10:00, 17:00, 20:00. Drop 07:00, 09:00, 14:00.
 
 ### Watch list
-- Pace: queue is empty for 2 Nov (a Monday). A person should look if today ends under 4.
-- Unscored under 24h (1 Nov): "Why rich cards can't carry debt" 2,101 views skip 26.6; "The heirloom keeping you poor" 275, skip 47.2; "How serving customers grew his business" 115 (162s, 20h). Re-read at 48h.
-- Shares+saves per 1k 16.4 vs 13.9: still well under the 29 of a month ago; end captions on a shareable line.
-- DMs: nothing since 29 Oct. 11 clips are held or retired in the manifest; none shows a takedown.
+- Pace: 3 on 2 Nov, 2 queued for 3 Nov. A person should look if today ends under 4.
+- Under 24h: "He owed $37 million. Then this" 193 views skip 32.0 (17h); "How he sold 50 million books" 164, skip 59; "One notch off course costs you" 63, skip 39.5. Re-read at 48h.
+- Skip median moved 45.8 to 49.0 while question-CTA clips sit at 37.8: check the question share next week.
+- DMs: nothing since 29 Oct. 11 clips are held or retired in the manifest; no takedown seen in this run.
 - TikTok (new account) and Facebook are hand-posted and not scored here.
