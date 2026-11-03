@@ -70,4 +70,34 @@ assert first == ["c1", "c4", "f1"], first
 assert len(sent) == 3, "a second run must send nothing"
 assert all("#ad" not in t and "https://example.com/me" in t for _, t in sent)
 assert set(json.load(open(m.STATE))["sent"]) == {"c1", "c4", "f1"}
+
+# AWAKENED RISE (2 Nov 2026): her own keys, words and link; a key without DM permission
+# leaves every keyword comment waiting, so the first pass with the right key answers them.
+sent.clear()
+real_post = post
+refuse = [True]
+
+
+def ar_post(url, params=None, json=None, timeout=None):
+    if refuse[0] and not url.endswith("/replies"):
+        return R({"error": {"message": "(#230) Requires instagram_manage_messages permission to manage the object"}})
+    return real_post(url, params, json, timeout)
+
+
+m.requests.post = ar_post
+m.BRAND, m.STATE = "AR_", os.path.join(tempfile.mkdtemp(), "dms_ar.json")
+os.environ.update(AR_OFFER_URL="https://example.com/her", AR_CTA_KEYWORDS="MONEY",
+                  AR_IG_USER_ID="IG", AR_IG_ACCESS_TOKEN="it", AR_FB_PAGE_ID="PG", AR_FB_ACCESS_TOKEN="ft")
+for _ in range(4):                       # more passes than the 3-try limit
+    m.run()
+assert sent == [], sent
+d = json.load(open(m.STATE))
+assert not d["sent"] and "c4" not in d["seen"] and "f1" not in d["seen"], d["seen"]
+assert len(d["errors"]) <= 2, "one permission error per platform, not one per pass"
+refuse[0] = False
+m.run()
+assert sorted(c for c, _ in sent) == ["c4", "f1"], sent      # MONEY only - BRAIN is Kevin's word
+assert all(t == "Hey! Thanks for commenting. Here it is: https://example.com/her" for _, t in sent), sent
+os.environ["AR_CTA_KEYWORDS"] = ""
+assert m.keywords() == [], "her account must never fall back to Kevin's words"
 print("comment -> DM: all checks pass")

@@ -45,6 +45,14 @@ jobs:
       FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
       FB_POST_PAGE_ID: ${{ secrets.FB_POST_PAGE_ID }}
       FB_POST_ACCESS_TOKEN: ${{ secrets.FB_POST_ACCESS_TOKEN }}
+      # Awakened Rise (2 Nov 2026): the same bot on her keys, her words, her link.
+      AR_DM_TEXT: ${{ vars.AR_DM_TEXT }}
+      AR_OFFER_URL: ${{ secrets.AR_OFFER_URL }}
+      AR_CTA_KEYWORDS: ${{ secrets.AR_CTA_KEYWORDS }}
+      AR_IG_USER_ID: ${{ secrets.AR_IG_USER_ID }}
+      AR_IG_ACCESS_TOKEN: ${{ secrets.AR_IG_ACCESS_TOKEN }}
+      AR_FB_PAGE_ID: ${{ secrets.AR_FB_PAGE_ID }}
+      AR_FB_ACCESS_TOKEN: ${{ secrets.AR_FB_ACCESS_TOKEN }}
     steps:
       - uses: actions/checkout@v4
         with: { ref: main }
@@ -59,7 +67,9 @@ jobs:
           dm_pass() {   # $1 = how many recent posts to read
             git pull -q --rebase --autostash || git rebase --abort 2>/dev/null || true
             DM_RECENT_POSTS=$1 timeout 120 python dm/dm_reply.py || echo "DM pass failed - next in 150 s"
+            DM_BRAND=AR_ DM_RECENT_POSTS=$1 timeout 120 python dm/dm_reply.py || echo "AR DM pass failed - next in 150 s"
             git add state/dms.json 2>/dev/null || true
+            git add state/dms_ar.json 2>/dev/null || true
             git diff --staged --quiet && return 0
             git commit -q -m "dms: $(date -u +%FT%TZ)"
             for i in 1 2 3; do

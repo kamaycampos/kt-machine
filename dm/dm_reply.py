@@ -21,6 +21,7 @@ variable DM_AUTO = on, which the member's Claude sets during `post`.
 
     python3 dm/dm_reply.py            # one pass
     python3 dm/dm_reply.py --dry      # show what it would send, send nothing
+    DM_BRAND=AR_ python3 dm/dm_reply.py   # Awakened Rise: AR_* keys, state/dms_ar.json
 """
 import json
 import os
@@ -31,7 +32,11 @@ from datetime import datetime, timedelta, timezone
 import requests
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STATE = os.path.join(ROOT, "state", "dms.json")
+# AWAKENED RISE TOO (2 Nov 2026). Her captions ask for RISE/LUCKY and Meta's own rule
+# answered none of them: 7 keyword comments, 0 replies. DM_BRAND=AR_ runs this same bot
+# on her AR_* keys with her own link and its own state file - never Kevin's text or link.
+BRAND = os.environ.get("DM_BRAND", "")
+STATE = os.path.join(ROOT, "state", "dms_ar.json" if BRAND == "AR_" else "dms.json")
 G = "https://graph.facebook.com/v21.0"
 T = 30
 WINDOW = timedelta(days=7)           # Meta's private-reply window
@@ -44,8 +49,15 @@ MAX_PER_RUN = 60                     # stay far under Meta's messaging limits
 DEFAULT_TEXT = "Here it is: {link}"
 
 
+def env(name):
+    return os.environ.get(BRAND + name, "")
+
+
 def keywords():
-    raw = os.environ.get("KT_CTA_KEYWORDS", "") or "WISH,KT,FREE,YES"
+    if BRAND:                            # fail closed: never answer Kevin's words on her account
+        raw = env("CTA_KEYWORDS")
+    else:
+        raw = os.environ.get("KT_CTA_KEYWORDS", "") or "WISH,KT,FREE,YES"
     return [k.strip().upper() for k in raw.split(",") if k.strip()]
 
 
@@ -144,14 +156,19 @@ def run(dry=False):
     if os.environ.get("DM_AUTO", "").lower() != "on" and not dry:
         print("comment -> DM is off (repository variable DM_AUTO is not 'on')")
         return 0
-    link = os.environ.get("OFFER_URL", "").strip()
+    link = env("OFFER_URL").strip()
     if not link.startswith("https://"):
         print("comment -> DM needs your link: set the OFFER_URL secret")
         return 0
-    text = (os.environ.get("DM_TEXT") or DEFAULT_TEXT).format(link=link, disclosure="").strip()
+    # DM_TEXT is Kevin's (his links are written into it); a brand uses its own or the plain line
+    text = (env("DM_TEXT") or (BRAND and "Hey! Thanks for commenting. Here it is: {link}")
+            or DEFAULT_TEXT).format(link=link, disclosure="").strip()
     kws, d, now = keywords(), load(), datetime.now(timezone.utc)
-    page, ftok = os.environ.get("FB_PAGE_ID", ""), os.environ.get("FB_ACCESS_TOKEN", "")
-    ig, itok = os.environ.get("IG_USER_ID", ""), os.environ.get("IG_ACCESS_TOKEN", "")
+    if not kws:
+        print(f"comment -> DM ({BRAND or 'KT'}): no keywords set ({BRAND}CTA_KEYWORDS)")
+        return 0
+    page, ftok = env("FB_PAGE_ID"), env("FB_ACCESS_TOKEN")
+    ig, itok = env("IG_USER_ID"), env("IG_ACCESS_TOKEN")
     me = {page, ig}
     if ig and itok:                      # their own replies never DM themselves
         try:
@@ -170,8 +187,10 @@ def run(dry=False):
         print("comment -> DM needs Instagram/Facebook connected (type `post` in Claude)")
         return 0
     sent = 0
-    tally = {"keyword comments": 0, "already answered": 0, "outside 7 days": 0, "failed": 0}
+    tally = {"keyword comments": 0, "already answered": 0, "outside 7 days": 0, "failed": 0,
+             "waiting for permission": 0}
     for platform, fetch, tok in sources:
+        blocked = False
         try:
             comments = fetch()
         except Exception as e:
@@ -179,6 +198,11 @@ def run(dry=False):
             print(f"{platform}: could not read comments - {e}")
             continue
         for cid, body, when, post, author, repliers in comments:
+            if blocked:
+                if (matched(body, kws) and cid not in d["sent"] and cid not in d["seen"]
+                        and author not in me and not repliers & me):
+                    tally["waiting for permission"] += 1
+                continue
             if cid in d["sent"] or cid in d["seen"] or author in me:
                 continue
             # ALREADY ANSWERED BY THE ACCOUNT ITSELF (14 Oct 2026). Meta's own comment
@@ -222,8 +246,19 @@ def run(dry=False):
                     except Exception as e:
                         rec["public_reply"] = f"error: {type(e).__name__}"
             except Exception as e:
+                d["errors"] = [x for x in d["errors"] if x.get("error") != str(e) or x.get("platform") != platform]
                 d["errors"].append({"at": now.isoformat(), "platform": platform,
                                     "comment": cid, "error": str(e)})
+                # THE KEY CANNOT SEND AT ALL (2 Nov 2026: Awakened Rise's key had no
+                # instagram_manage_messages). That is not this viewer's failure: spending
+                # their 3 tries would drop them before the key is fixed. Leave every keyword
+                # comment unanswered-and-unseen, so the first pass with the right key sends.
+                if "permission" in str(e).lower() or "(#230)" in str(e) or "(#10)" in str(e):
+                    d["seen"].pop(cid, None)
+                    tally["waiting for permission"] += 1
+                    blocked = True
+                    print(f"{platform}: the key cannot send DMs - {e}")
+                    continue
                 tally["failed"] += 1
                 # A FAILED SEND IS NOT A HANDLED COMMENT (14 Oct 2026). It stayed "seen",
                 # so when the missing permission was granted, the viewer who asked
@@ -235,7 +270,7 @@ def run(dry=False):
                     d["seen"].pop(cid, None)
     if not dry:
         save(d)
-    print(f"comment -> DM: {sent} sent this run, {len(d['sent'])} total | "
+    print(f"comment -> DM{' (' + BRAND.strip('_') + ')' if BRAND else ''}: {sent} sent this run, {len(d['sent'])} total | "
           + ", ".join(f"{k} {v}" for k, v in tally.items()))
     return 0
 
