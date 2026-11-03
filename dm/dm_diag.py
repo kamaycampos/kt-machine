@@ -9,7 +9,10 @@ from datetime import datetime, timezone
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import dm_reply as dm
 
-ig, tok = os.environ["IG_USER_ID"], os.environ.get("FB_ACCESS_TOKEN") or os.environ["IG_ACCESS_TOKEN"]
+P = os.environ.get("DIAG_PREFIX", "")          # "AR_" = Awakened Rise
+ig, tok = os.environ[P + "IG_USER_ID"], os.environ.get(P + "FB_ACCESS_TOKEN") or os.environ[P + "IG_ACCESS_TOKEN"]
+if P:
+    os.environ["KT_CTA_KEYWORDS"] = os.environ.get(P + "CTA_KEYWORDS", "")
 kws, d, now = dm.keywords(), dm.load(), datetime.now(timezone.utc)
 print("keywords:", kws)
 url, params, posts = f"{dm.G}/{ig}/media", {"fields": "id,timestamp,comments_count,media_product_type",
