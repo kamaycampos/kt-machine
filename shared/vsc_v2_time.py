@@ -274,8 +274,6 @@ def retime(name, src, a, b, report=True):
     subprocess.run([FF, "-y", "-loglevel", "error", "-ss", f"{a:.3f}", "-to", f"{b:.3f}", "-i", src,
                     "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", wav], check=True)
     ons = onsets(envelope(src, a, b))
-    # break_ties: VSC only for now (3 Nov 2026) - KT's renderer reaches anchor_by_identity
-    # through anchor_words, and Kamay asked for KT and WB to stay exactly as they are.
     pts = anchor_by_identity(wav, words, ons, break_ties=True)
     errs = [words[i][0] - t for i, t in pts]
     words2 = warp_by_index(words, pts)
@@ -671,7 +669,9 @@ def anchor_words(src, a, b, words, quiet=False):
     try:
         db = envelope(src, a, b)
         ons = onsets(db)
-        pts = anchor_by_identity(wav, [tuple(w) for w in words], ons, db=db)
+        # break_ties for every renderer now (3 Nov 2026): KT's fast list on AN-ALIEN-ON-TV ran 1.9s
+        # late through this path too - "people aren't going to..." pinned one line early.
+        pts = anchor_by_identity(wav, [tuple(w) for w in words], ons, db=db, break_ties=True)
         if len(pts) < 2:
             if not quiet:
                 print(f"      caption timing: only {len(pts)} anchor(s), left as transcribed")

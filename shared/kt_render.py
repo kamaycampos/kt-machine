@@ -136,6 +136,7 @@ ACCENT_CAPTIONS = bool(STYLE.get("accent_captions", True))
 # style.json turns it on; anything else is the classic look, byte for byte.
 LOOK = (os.environ.get("KT_LOOK") or STYLE.get("look") or "classic").lower()
 CINEMA = LOOK == "cinema"
+WORD = LOOK == "word"           # look E, 3 Nov 2026 - see word_ass()
 _ASSETS = os.path.join(HOME, "bin")
 CINEMA_SERIF = os.path.join(_ASSETS, "cinema_serif_semibold.ttf")
 CINEMA_SANS = os.path.join(_ASSETS, "cinema_sans_medium.ttf")
@@ -146,12 +147,12 @@ CINEMA_CAP_Y = 1500           # captions in the lower third, clear of the face
 CINEMA_CAP_SIZE = 50
 
 
-def cinema_label(lines, path):
+def cinema_label(lines, path, upper=True, size=66):
     """The hook as a quiet label: serif capitals, white, a soft shadow, no box. A
-    transparent PNG so it composites exactly where the old card did (and covers use it)."""
+    transparent PNG so it composites exactly where the old card did (and covers use it).
+    Look "word" (3 Nov 2026) keeps the hook as written, bigger: upper=False, size=88."""
     from PIL import Image, ImageDraw, ImageFilter, ImageFont
-    text = [l.strip().upper() for l in lines if l.strip()][:3]
-    size = 66
+    text = [(l.strip().upper() if upper else l.strip()) for l in lines if l.strip()][:3]
     fo = ImageFont.truetype(CINEMA_SERIF, size)
     while size > 40 and max(fo.getlength(t) for t in text) > W - 160:
         size -= 2
@@ -214,13 +215,126 @@ def cinema_caption_chain(ps, y=CINEMA_CAP_Y):
     return out
 
 
-def cinema_label_draw(hook, y=CINEMA_LABEL_Y):
+def cinema_label_draw(hook, y=CINEMA_LABEL_Y, upper=True, size=60):
     """The YouTube cut keeps its label for the whole video (a cover from any frame)."""
     f = font_arg(CINEMA_SERIF)
-    lines = [l.strip().upper() for l in hook if l.strip()][:3]
-    return [f"drawtext=fontfile={f}:text='{esc(l)}':fontsize=60:fontcolor=white"
+    lines = [(l.strip().upper() if upper else l.strip()) for l in hook if l.strip()][:3]
+    return [f"drawtext=fontfile={f}:text='{esc(l)}':fontsize={size}:fontcolor=white"
             f":shadowx=0:shadowy=3:shadowcolor=black@0.6:x=(w-tw)/2:y={y + i * 78}"
             for i, l in enumerate(lines)]
+
+
+
+# --- LOOK "word" (E), 3 Nov 2026 ---------------------------------------------------------
+# Kamay chose it from five samples rendered on one Kevin moment (work/style_preview_nov3):
+# the hook a bigger serif line in his own words, fading out like the cinema label - "the
+# slam ... scares me" ruled out a hook that jumps at you - and the captions 2-3 words at a
+# time in heavy capitals, the word being said in yellow, the word he LEANS on in gold and
+# bigger. It only works if every word lands on its sound (kt_align): "IT NEEEEEDS TO BE THE
+# EXACCCTTTT MOMENT". Captions run from his first word; the hook never owns the opening
+# (the first sample did, and the first 3 seconds had no captions at all).
+WORD_GRADE = "eq=contrast=1.10:saturation=1.12,unsharp=5:5:0.5"
+WORD_CAP_Y = 1560
+WORD_HOOK_SIZE = 88
+_YEL, _GOLD = "&H003BE7FF&", "&H0042C5F5&"
+_FUNC = set("the a an and or but so to of in on at for is are was were be been it it's that this these "
+            "those i i'm i've you you're your he she we they them their there aren't isn't don't "
+            "didn't going have has had oh just like with from by as if then than not no yes".split())
+
+
+def word_groups(words):
+    """Captions of 2-3 words, broken at punctuation: lists of word indices."""
+    out, cur = [], []
+    for i, (_a, _b, w) in enumerate(words):
+        cur.append(i)
+        if (len(cur) >= 3 or len(" ".join(words[j][2] for j in cur)) >= 16
+                or w.endswith((".", ",", "?", "!", ":", ";"))):
+            out.append(cur); cur = []
+    if cur:
+        out.append(cur)
+    return out
+
+
+def word_emphasis(words, groups, src, t_in, t_out):
+    """The words he LEANS on: louder than his own last and next few words, and worth leaning on
+    (no 'the', no 'going'). At most one a caption, so gold still means something."""
+    try:
+        import numpy as np
+        import vsc_v2_time
+        db = vsc_v2_time.envelope(src, t_in, t_out)
+        hop = vsc_v2_time.HOP
+    except Exception:
+        return set()
+    def loud(a, b):
+        seg = db[int(a / hop):max(int(b / hop), int(a / hop) + 1)]
+        return float(np.max(seg)) if len(seg) else -90.0
+    L = [loud(a, b) for a, b, _ in words]
+    pick = set()
+    for g in groups:
+        best, gain = None, 0.0
+        for i in g:
+            key = re.sub(r"[^a-z0-9']", "", words[i][2].lower())
+            if key in _FUNC or (len(key) < 3 and not key.isdigit()):
+                continue
+            nb = [L[j] for j in range(max(0, i - 6), min(len(words), i + 7)) if j != i]
+            if not nb:
+                continue
+            g_ = L[i] - float(np.median(nb)) + (1.5 if re.search(r"[\d$%]", words[i][2]) else 0.0)
+            if g_ >= 2.0 and g_ > gain:
+                best, gain = i, g_
+        if best is not None:
+            pick.add(best)
+    return pick
+
+
+def _ts(t):
+    t = max(0.0, t)
+    return f"{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}"
+
+
+def word_ass(words, path, src=None, t_in=0.0, t_out=None, dur=None):
+    """Write the ASS captions for look "word"; return (subtitles filter, [(a, b, text)] shown)."""
+    groups = word_groups(words)
+    emph = word_emphasis(words, groups, src, t_in, t_out) if src else set()
+    end_all = dur if dur is not None else (words[-1][1] + 0.6 if words else 0.0)
+    ev, shown, lit = [], [], []
+    for k, g in enumerate(groups):
+        nxt = words[groups[k + 1][0]][0] if k + 1 < len(groups) else None
+        g_end = nxt if nxt is not None and nxt - words[g[-1]][1] < 1.0 else min(words[g[-1]][1] + 0.4, end_all)
+        shown.append((round(words[g[0]][0], 3), round(g_end, 3), " ".join(words[j][2] for j in g)))
+        for gi, j in enumerate(g):
+            a = words[j][0]
+            b = words[g[gi + 1]][0] if gi + 1 < len(g) else g_end
+            if b <= a:
+                continue
+            parts = []
+            for jj in g:
+                w = re.sub(r"[{}\\]", "", words[jj][2]).upper()
+                if jj == j and jj in emph:
+                    parts.append(r"{\c" + _GOLD + r"\fscx135\fscy135\t(0,150,\fscx118\fscy118)}" + w + r"{\r}")
+                elif jj in emph and words[jj][0] < a:
+                    parts.append(r"{\c" + _GOLD + r"\fscx118\fscy118}" + w + r"{\r}")
+                elif jj == j:
+                    parts.append(r"{\c" + _YEL + "}" + w + r"{\r}")
+                else:
+                    parts.append(w)
+            lit.append((a, b))
+            ev.append(f"Dialogue: 0,{_ts(a)},{_ts(b)},Big,,0,0,0,,{{\\an5\\pos(540,{WORD_CAP_Y})}}" + " ".join(parts))
+    head = ("[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nWrapStyle: 2\n\n"
+            "[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, "
+            "BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, "
+            "Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\n"
+            "Style: Big,Montserrat Black,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,"
+            "1,7,3,5,70,70,0,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, "
+            "Effect, Text\n")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    open(path, "w").write(head + "\n".join(ev) + "\n")
+    # THE CHECK THAT WOULD HAVE CAUGHT THE FIRST SAMPLE: every word is on screen, lit, from
+    # the frame its sound starts (sample E's first 3 seconds had no captions at all).
+    miss = sum(1 for (a, _b, _w) in words if not any(x - 0.005 <= a < y for x, y in lit))
+    if miss:
+        print(f"      word captions: {miss} of {len(words)} words not lit when said")
+    return f"subtitles=filename={path}:fontsdir={_ASSETS}", shown
 
 
 def _rgb(key, default):
@@ -1518,6 +1632,15 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
             words = vsc_v2_time.anchor_words(src, t_in, t_out, words)
         except Exception as e:                       # never let timing polish lose a clip
             sys.stderr.write(f"      caption anchoring skipped: {type(e).__name__}: {e}\n")
+    # THEN EVERY WORD ON ITS OWN SOUND (kt_align, 3 Nov 2026). Anchoring fixes the words after
+    # a pause; between pauses whisper's guesses ran up to 0.68s late in fast speech. Forced
+    # alignment places each known word where it sounds, refereed by the level track.
+    if words and os.environ.get("CAPTION_ANCHOR", "1") != "0":
+        try:
+            import kt_align
+            words = kt_align.align(src, t_in, t_out, words)
+        except Exception as e:                       # never let timing polish lose a clip
+            sys.stderr.write(f"      caption alignment skipped: {type(e).__name__}: {e}\n")
     # A MEASURED CORRECTION, NEVER A GUESS. 6 Oct 2026: clips failed the sync check
     # with every caption late by the SAME amount (median +0.64s, worst +0.69s) - a
     # constant offset, not drift. kt_batch_build re-renders such a clip once with
@@ -1544,6 +1667,10 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
         except Exception as e:                       # never let framing polish lose a clip
             sys.stderr.write(f"      speaker turns skipped: {type(e).__name__}: {e}\n")
     ps = phrases_from_words(words) if words else burn.phrases(cues, t_in, t_out)
+    word_caps = None
+    if WORD and words:            # look E: what is burned is the 2-3 word captions, so that is the record
+        word_caps, ps = word_ass(words, os.path.join(CARDS, (slug or "clip").replace("/", "_") + ".ass"),
+                                 src, t_in, t_out, t_out - t_in)
     # KEEP A RECORD OF WHAT WAS BURNED. 16 Sept 2026: captions drifted up to
     # 9.5s ahead of the speech on seven clips, and nothing could see it - the
     # audio checks listen to the edges and a still frame cannot show timing.
@@ -1558,7 +1685,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     # geo: an explicit crop for a layout the face tracker cannot read (a podcast
     # screen with the speaker in a side panel). None = the usual tracked crop.
     geo = geo or fill_crop(src, cx, zoom, shots)
-    caps = cinema_caption_chain(ps) if CINEMA else caption_chain(ps)
+    caps = [word_caps] if word_caps else (cinema_caption_chain(ps) if CINEMA else caption_chain(ps))
     # THE HOOK IS A CARD, COMPOSITED - see hook_card(). persist=True (the
     # YouTube cut) still uses drawtext, because a card that never leaves would
     # cover a third of the frame for the whole video.
@@ -1571,8 +1698,8 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     # cant see it." The transparency was there to spare his face, and the
     # placement above already does that job. A hook that cannot be read at
     # thumbnail size is not a hook.
-    if CINEMA:                     # the quiet serif label, high, no box (1 Nov 2026)
-        card, _cw, _ch = cinema_label(hlines, cpath)
+    if CINEMA or WORD:             # the quiet serif label, high, no box (1 Nov 2026); bigger, as written, for E
+        card, _cw, _ch = cinema_label(hlines, cpath, upper=not WORD, size=WORD_HOOK_SIZE if WORD else 66)
         cy_px = cinema_label_y(src, t_in, _ch)
     elif fit:                      # shrink it into the gap under his chin
         card, _cw, _ch = hook_card(hlines, cpath, max_h=fit)
@@ -1588,7 +1715,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     # between an edit and an accident.
     dur = t_out - t_in
     fs = min(FADE_OUT, max(0.35, dur * 0.12))
-    pre = ",".join([geo] + ([CINEMA_GRADE] if CINEMA else []) + caps)
+    pre = ",".join([geo] + ([CINEMA_GRADE] if CINEMA else [WORD_GRADE] if WORD else []) + caps)
     # THE CINEMATIC OPENER (kt_opener.py, 17 Oct 2026): a 4K shot of the hook's
     # subject for the first seconds, Kevin's voice under it, a low hit, then a
     # crossfade into Kevin. Captions and the hook card ride on top. Off unless the
@@ -1687,6 +1814,10 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
             _yl = [l for l in (hook_y or hook) if l.strip()][:3]
             ydraws = (([CINEMA_GRADE] + cinema_label_draw(hook_y or hook, cinema_label_y(src, ys, 78 * len(_yl) + 10))
                        + cinema_caption_chain(yps)) if CINEMA
+                      else ([WORD_GRADE] + cinema_label_draw(hook_y or hook, cinema_label_y(src, ys, 100 * len(_yl) + 10),
+                                                             upper=False, size=76)
+                            + [word_ass(ywords, os.path.join(CARDS, (slug or "clip").replace("/", "_") + "_yt.ass"),
+                                        src, ys, ye, ye - ys)[0]]) if WORD and ywords
                       else (hook_chain(hook_y or hook) + caption_chain(yps)))
             yvf = (["-vf", ",".join([ygeo] + ydraws)] if zoom >= 0.999
                    else ["-filter_complex", ygeo + "," + ",".join(ydraws)])

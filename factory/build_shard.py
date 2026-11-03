@@ -20,6 +20,9 @@ p = json.load(open(os.path.join(R.PLANS, f"{plan}.json")))
 # AWAKENED RISE KEEPS HER OWN LOOK (2 Nov 2026, Kamay: "put ar back"). KT_LOOK is a repo
 # variable, so Kamay's cinema look reached Yaren's brand on 2 Nov; nobody chose it for her.
 # Every render below is a subprocess, so this reaches the clip, YouTube cut and variants.
+# A TEST PLAN MAY PREVIEW A LOOK before the repo switches to it ("look": "word", 3 Nov 2026).
+if p.get("look") and p.get("test"):
+    os.environ["KT_LOOK"] = p["look"]
 if p["brand"].startswith("AR_"):
     os.environ["KT_LOOK"] = "classic"
 key = f"{plan}__s{shard}"

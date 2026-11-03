@@ -132,6 +132,16 @@ jobs:
       - uses: actions/cache@v4
         with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v2-portable }
       - run: bash factory/setup.sh
+      # EXACT CAPTION TIMING (kt_align, 3 Nov 2026): a speech model pins every word to its sound.
+      # Pinned to 2.8 - torchaudio 2.9 drops forced_align. If this fails the clip still renders,
+      # on the anchored times, and the build log says "aligner not installed".
+      - uses: actions/cache@v4
+        with: { path: "~/.cache/torch\n~/.cache/pip", key: align-torch-2.8.0-w2v2-base-960h }
+      - name: Caption aligner
+        run: |
+          timeout 600 pip install -q torch==2.8.0 torchaudio==2.8.0 soundfile --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple \
+            && python -c "import torchaudio; torchaudio.pipelines.WAV2VEC2_ASR_BASE_960H.get_model()" \
+            && echo "setup: caption aligner ready" || echo "setup: caption aligner NOT installed - anchored times"
       - name: Render and check this shard
         run: python factory/build_shard.py "${{ matrix.plan }}" "${{ matrix.shard }}"
       - uses: actions/upload-artifact@v4
