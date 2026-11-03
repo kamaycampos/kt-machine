@@ -13271,7 +13271,11 @@
    "hook": "I'm awake. You're asleep.",
    "bytes": 24233842,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-03T20:16",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_THRESHOLD/01_MEDIUMS-TALK-TO-YOUR-DEAD-ANCESTORS_64s.mp4",
@@ -13279,7 +13283,11 @@
    "hook": "Mediums talk to your dead ancestors.",
    "bytes": 48701135,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-04T09:08",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_THRESHOLD/02_PSYCHIC-GIFTS-CAN-BE-TAUGHT_46s.mp4",
@@ -13287,7 +13295,11 @@
    "hook": "Psychic gifts can be taught.",
    "bytes": 23791899,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-03T16:44",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
