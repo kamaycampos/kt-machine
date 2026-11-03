@@ -15,7 +15,16 @@
     "became the truth"
    ],
    "caption": "Kevin Trudeau wrote that talcum powder, the kind in Johnson's baby powder, was linked to cancer and hormone problems.\n\nThe government called it a lie. They said he was making false claims and scaring people for nothing.\n\nHe went to prison anyway, for exercising his First Amendment right to say what he believed was true.\n\nTwenty years later, the science caught up. Talcum powder has since been tied to hormonal imbalances and proven to cause cancer, just like he said.\n\nHe served time for a truth the world wasn't ready to hear yet.\n\nWould you risk prison to say what you believe?\n\n#kevintrudeau #naturalcures #freespeech #truthteller #talcumpowder #mindset",
-   "retry_of": "ep_v5jjf38/PRISON-FOR-THE-TRUTH"
+   "retry_of": "ep_v5jjf38/PRISON-FOR-THE-TRUTH",
+   "trial_hooks": [
+    ["20 years later", "he was right"],
+    ["The government called", "it a lie"],
+    ["Called a lie", "then proven right"],
+    ["What they silenced", "could affect you"],
+    ["Kevin Trudeau's prison", "for telling truth"],
+    ["Kevin Trudeau's warning", "came true later"],
+    ["Trudeau got prison", "for being right"]
+   ]
   },
   {
    "slug": "THE-JUDGE-DODGED-PRISON",
