@@ -127,6 +127,15 @@ Pixabay (free, commercial use) and builds it. Add to that clip:
 - Double-check the ending by reading the next two lines of the transcript: if the next line is the payoff ("They gave me a gift."), your clip isn't finished yet.
 
 ## Hooks (two short lines)
+- **THE HOOK TEST (3 Nov 2026, Kamay: "the hooks should be perfect and so shocking and emotional
+  impacting and also truth and call for attention and curiosity").** Write 5 hooks for every clip, score
+  each on 4 tests, keep the best - never the first draft. **STOP:** line 1 alone stops a thumb (a
+  number with stakes, a named person or villain, a forbidden fact). **GAP:** it opens a question only
+  this clip answers. **FEEL:** it hits one emotion hard - fear, anger at being lied to, shame, longing,
+  hope; name it to yourself first. **TRUE:** the clip says it plainly. Weak ones from our own feed:
+  `One notch off / course costs you`, `How attitude creates / your money` (abstract, no picture);
+  `The one book every / billionaire read` (line 1 broken mid-phrase - `check_plan.py` refuses a line 1
+  ending on THE / YOUR / OF / TO / EVERY...). Never the same opening shape twice in one plan.
 - **Read `factory/HOOK_PATTERNS.md` before writing hooks.** It holds the pattern bank (result, time, effort, callout, contrarian, pain, mechanism, transformation, curiosity, controversy), the story arc that decides where a clip starts and ends, and the caption discipline. Use a different pattern for every clip in an episode.
 - **The hook must carry the clip's STRONGEST fact, not an incidental one.** 24 Sept 2026: a clip that
   contains "he changed one word", "over a million dollars before he turned 18", "$180 million in 18

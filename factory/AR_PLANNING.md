@@ -72,6 +72,14 @@ His account opens with a direct promise (Why / How / What). **Hers does not, and
   `They knew this 2,000 years ago` · `Your words are building a cage` · `Nobody is coming to save you`
 - Never open with Why / How / What. Never a question as the first line.
 - Six words total, two short lines, and the clip must pay what the line implies.
+- **THE HOOK TEST (3 Nov 2026, Kamay: "the hooks should be perfect and so shocking and emotional
+  impacting and also truth and call for attention and curiosity").** Write 5 stabs for every clip, keep
+  the one that passes all 4: **STOP** (line 1 alone lands - a hidden hand named, an age, a forbidden
+  fact), **GAP** (only this clip answers it), **FEEL** (one emotion hard: unease, awe, being lied to,
+  longing), **TRUE** (Kevin says it). Weak ones from her own feed: `It's never / an accident.` and `Not
+  invented. / Just like your mind.` (no picture, nothing to fear or want); `Mediums talk to / your dead
+  ancestors.` (line 1 broken mid-phrase - `check_plan.py` refuses a line 1 ending on TO / THE / YOUR...).
+  Strong: `Your religion / is just geography.` - a stab, a picture, a gap.
 - **Same for her: the hook must carry the clip's STRONGEST fact, not an incidental one.** 24 Sept 2026: a clip that
   contains "he changed one word", "over a million dollars before he turned 18", "$180 million in 18
   months" and "a $250,000 first royalty cheque" went out hooked `What a stranger told him` - the one

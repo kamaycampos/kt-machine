@@ -10,6 +10,10 @@ from lengths import MIN_LEN, MAX_LEN  # noqa: E402
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "pipeline"))
 
+WEAK_END = {"the", "a", "an", "your", "my", "his", "her", "our", "their", "its", "this", "that",
+            "these", "those", "of", "to", "in", "on", "at", "for", "with", "from", "by", "into",
+            "and", "or", "but", "so", "as", "than", "every", "each", "no", "any", "some"}
+
 def trials_proven():
     """True once any experiment in state/variants.json posted every arm as a trial."""
     try:
@@ -182,6 +186,11 @@ for path in sys.argv[1:]:
         if not re.fullmatch(r"[A-Z0-9]+(-[A-Z0-9]+)*", s): errs.append(f"{s}: slug must be UPPER-DASHED")
         if not MIN_LEN <= d <= MAX_LEN: errs.append(f"{s}: length {d:.0f}s outside {MIN_LEN:.0f}-{MAX_LEN:.0f}")
         for e in lint(c.get("hook") or [], b): errs.append(f"{s}: hook - {e}")
+        # A LINE BREAK INSIDE A PHRASE (3 Nov 2026, Kamay: "the hooks are so bad"): line 1 is
+        # read alone first, so "The one book every / billionaire read" reads as half a thought.
+        _h0 = str((c.get("hook") or [""])[0]).split()
+        if _h0 and not _h0[-1].endswith((".", "!", "?", ":", ",")) and re.sub(r"[^a-z']", "", _h0[-1].lower()) in WEAK_END:
+            errs.append(f"{s}: hook line 1 ends on '{_h0[-1]}' - break where a phrase ends")
         th = c.get("trial_hooks")
         if th is not None:
             if not isinstance(th, list) or not 3 <= len(th) <= 7:
