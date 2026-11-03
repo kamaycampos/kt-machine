@@ -1,22 +1,20 @@
 #!/usr/bin/env python3
-"""READ-ONLY: what the DM bot sees on a brand's Facebook Page. Sends nothing; no names printed."""
+"""READ-ONLY: are a brand's Facebook reels actually published? Sends nothing; no names printed."""
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import dm_reply as dm
 page, tok = dm.env("FB_PAGE_ID"), dm.env("FB_ACCESS_TOKEN")
-kws = dm.keywords()
-print("keywords:", kws)
-for edge in ("video_reels", "posts", "videos"):
+items = dm._get(f"{dm.G}/{page}/video_reels", {"fields": "id", "limit": 40, "access_token": tok}).get("data", [])
+print("reels listed:", len(items))
+for v in items:
     try:
-        items = dm._get(f"{dm.G}/{page}/{edge}", {"fields": "id,created_time,updated_time", "limit": 6, "access_token": tok}).get("data", [])
+        j = dm._get(f"{dm.G}/{v['id']}", {"fields": "created_time,published,status,permalink_url,is_instagram_eligible,privacy",
+                                          "access_token": tok})
     except Exception as e:
-        print(edge, "ERROR", e); continue
-    print(f"{edge}: {len(items)}")
-    for v in items:
-        try:
-            cs = dm._get(f"{dm.G}/{v['id']}/comments", {"fields": "id,message,created_time,from", "limit": 50,
-                                                      "filter": "stream", "access_token": tok}).get("data", [])
-        except Exception as e:
-            print("   ", v["id"][-5:], "comments ERROR", e); continue
-        print("   ", v["id"][-5:], (v.get("created_time") or v.get("updated_time") or "")[:16], "comments", len(cs),
-              [(c["created_time"][:16], dm.matched(c.get("message", ""), kws), bool(c.get("from"))) for c in cs[:5]])
+        print("  ", v["id"][-5:], "ERROR", e); continue
+    st = j.get("status") or {}
+    print("  ", v["id"][-5:], (j.get("created_time") or "")[:16], "published", j.get("published"),
+          "video", st.get("video_status"), "| publish", (st.get("publishing_phase") or {}).get("status"),
+          "| upload", (st.get("uploading_phase") or {}).get("status"),
+          "| processing", (st.get("processing_phase") or {}).get("status"),
+          "| privacy", (j.get("privacy") or {}).get("value"), "|", "permalink" if j.get("permalink_url") else "no link")
