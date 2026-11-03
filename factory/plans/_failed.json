@@ -10639,6 +10639,78 @@
     "The $1,000 guided",
     "meditation scam"
    ]
+  },
+  "ep_v4xs1cn/DUPLICATE-THE-GRIND-NOT-THE-CRUISE": {
+   "plan": "ep_v4xs1cn",
+   "source": "v4xs1cn.mp4",
+   "brand": "KT_THROTTLE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_DUPLICATE-THE-GRIND-NOT-THE-CRUISE_122s.mp4: ends off the planned words: plan ends 'first started and first taking off', clip ends 'they first started and first t'"
+   ],
+   "slug": "DUPLICATE-THE-GRIND-NOT-THE-CRUISE",
+   "in": 341.44,
+   "out": 464.68,
+   "start_words": "If you find somebody",
+   "end_words": "first started and first taking off",
+   "hook": [
+    "14-hour days",
+    "built every fortune"
+   ]
+  },
+  "ep_v4xs1cn/WHAT-ONASSIS-DID-WHEN-BROKE": {
+   "plan": "ep_v4xs1cn",
+   "source": "v4xs1cn.mp4",
+   "brand": "KT_THROTTLE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_WHAT-ONASSIS-DID-WHEN-BROKE_65s.mp4` - word repeated after one: \"Success breeds success.\"; word repeated after one: \"winners creates winners.\""
+   ],
+   "slug": "WHAT-ONASSIS-DID-WHEN-BROKE",
+   "in": 3916.92,
+   "out": 3984.84,
+   "start_words": "When you're in a room",
+   "end_words": "Success breeds success",
+   "hook": [
+    "What Onassis did",
+    "before his fortune"
+   ]
+  },
+  "ep_v5jjf38_r2/PRISON-FOR-THE-TRUTH": {
+   "plan": "ep_v5jjf38_r2",
+   "source": "v5jjf38.mp4",
+   "brand": "KT_VERDICTR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_PRISON-FOR-THE-TRUTH_96s.mp4` - ends mid-thought on \"So my\"; sentence starts with no stop: \"amendment So\"; sentence starts with no stop: \"and And\""
+   ],
+   "slug": "PRISON-FOR-THE-TRUTH",
+   "in": 218.88,
+   "out": 314.4,
+   "start_words": "I got the longest sentence",
+   "end_words": "right to say it under the First Amendment",
+   "hook": [
+    "How a lie",
+    "became the truth"
+   ]
+  },
+  "ep_v5jjf38_r2/THE-JUDGE-DODGED-PRISON": {
+   "plan": "ep_v5jjf38_r2",
+   "source": "v5jjf38.mp4",
+   "brand": "KT_VERDICTR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_THE-JUDGE-DODGED-PRISON_46s.mp4` - opens mid-sentence on \"you're probably going\""
+   ],
+   "slug": "THE-JUDGE-DODGED-PRISON",
+   "in": 1917.54,
+   "out": 1962.96,
+   "start_words": "you're probably going back",
+   "end_words": "Everything shifted",
+   "hook": [
+    "How he dodged prison",
+    "and won"
+   ]
   }
  },
  "attempts": {

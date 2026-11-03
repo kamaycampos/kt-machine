@@ -8941,5 +8941,54 @@
   "brand": "KT_ROLLSROYCER2",
   "note": "3 Nov 2026 - second chances for 'The Greatest Kept Secret for Making Money | The Kevin Trudeau Show | Ep. 62' (Rumble v5lvgyl). Weekly agent, re-cut per PLANNING.md 2c. WHY-98-PERCENT-OF-WINNERS-GO-BROKE: fixed the off-by-one cue start and moved the end off 'Think about that' (the trailing clause that pulled the render past the payoff) onto the stat itself. THE-1000-DOLLAR-GUIDED-MEDITATION-SCAM: extended end_words to the true end of its cue ('picture yourself in a safe space') instead of stopping mid-cue on 'hypnosis', which is what let the render spill one word into the next sentence. Skipped WHAT-KEVIN-TAUGHT-INMATES-IN-PRISON: the 'we call them a shot... a shot' phrasing that scrambled the captions sits in the middle of the only passage that explains the disciplinary-report metric the story's payoff depends on; no edge choice keeps the payoff and drops that line.",
   "clips": []
+ },
+ "ar_v53wjvq": {
+  "source": "v53wjvq.mp4",
+  "brand": "AR_THRESHOLD",
+  "note": "3 Nov 2026 - 'Kevin Takes Calls With Special Guest Gary Spivey | The Kevin Trudeau Show | Ep. 25' (Rumble v53wjvq). Awakened Rise weekly agent. This 69-minute show is a live interview with psychic Gary Spivey: long bio/photo-tour segments, several live caller energy-readings that double as advertising for Gary's paid one-on-one sessions, and one caller exchange about race/gender representation - all skipped as off her lane, a paid-program pitch, or too charged for her voice. Three clean teachings survive: Kevin's own definitions of medium/clairvoyant/psychic, his Muktananda shaktipat/Kundalini awakening story, and his aside about training through 'the Brotherhood,' each trimmed to its own clean sentence boundaries and clear of the booking-a-reading pitches around them.",
+  "clips": [
+   {
+    "slug": "MEDIUMS-TALK-TO-YOUR-DEAD-ANCESTORS",
+    "in": 359.22,
+    "out": 423.68,
+    "hook": [
+     "Mediums talk to",
+     "your dead ancestors."
+    ],
+    "caption": "A medium talks to the dead who haven't come back yet. A clairvoyant reads your memory, your bank, the pictures sitting in your own mind. A psychic does both and more — past, present, and the direction your life is already compressing toward.\n\nNone of it is the same thing, and most people use all three words interchangeably. Reading someone's aura, it turns out, is the smallest part of what's actually possible. The real reading goes into the memory, even into what's carried in your ancestors' DNA.\n\nComment RISE and I'll send you what the difference actually means for you.\n\n#psychic #ancestors #consciousness #disclosure #awakening #kevintrudeau"
+   },
+   {
+    "slug": "PSYCHIC-GIFTS-CAN-BE-TAUGHT",
+    "in": 3580.6,
+    "out": 3626.59,
+    "hook": [
+     "Psychic gifts",
+     "can be taught."
+    ],
+    "caption": "Some of it, he says, is a gift you're born with. The rest of it is a formula you can actually be trained in — the same training he went through himself, inside what he calls the Brotherhood.\n\nThat's the part people miss. They hear \"psychic\" and assume it's magic, something you either have or you don't. It isn't. It's a system, learned the same way any other skill gets learned, repetition and structure, just aimed at something most people never point their attention at.\n\nComment RISE and I'll send you the formula.\n\n#brotherhood #psychic #consciousness #manifestation #awakening #kevintrudeau"
+   },
+   {
+    "slug": "IM-AWAKE-YOURE-ASLEEP",
+    "in": 3646.22,
+    "out": 3704.97,
+    "hook": [
+     "I'm awake.",
+     "You're asleep."
+    ],
+    "caption": "His guru didn't speak English, so what came through the interpreter was five words: I'm awake, you're asleep.\n\nThen he put his hand on the back of his head, and something let go. The energy came up the spine. Everything blended into one — guru and student, for a moment, were the same thing.\n\nHe still isn't fully sure if what happened was the touch or the shock of it. He is sure the awakening was real.\n\nComment RISE and I'll send you what that state actually feels like.\n\n#kundalini #awakening #consciousness #shaktipat #spirituality #kevintrudeau"
+   }
+  ]
+ },
+ "ep_v4xs1cn": {
+  "source": "v4xs1cn.mp4",
+  "brand": "KT_THROTTLE",
+  "note": "3 Nov 2026 - 'The Brainwave Secrets That Attract Millions | The Kevin Trudeau Show | Ep. 16' (Rumble v4xs1cn). Weekly agent. Money/manifesting lane. Skipped almost all of this episode: it is mostly a sales pitch for the Global Information Network and $3,000-$32,000 'money processes' (explicit skip), the fluoride/pineal-gland/Nazi-water-supply conspiracy material, and movie-clip inserts (Dr. Strangelove, The Godfather) used to argue that conspiracy, none of which are Kevin's own story. Took the two segments that stand alone as a method with a payoff and no sales pitch, health claim or politics attached.",
+  "clips": []
+ },
+ "ep_v5jjf38_r2": {
+  "source": "v5jjf38.mp4",
+  "brand": "KT_VERDICTR2",
+  "note": "3 Nov 2026 - second chances for 'Real People Share Their Shocking Success Stories! | The Kevin Trudeau Show | Ep. 58' (Rumble v5jjf38). Weekly agent, re-cut per PLANNING.md 2c. PRISON-FOR-THE-TRUTH: extended the end past the dangling 'and' that spilled into the next sentence, onto the next sentence's own clean cue boundary ('...under the First Amendment.'). THE-JUDGE-DODGED-PRISON: corrected the start to the exact cue holding the quoted line, and moved the end off the 'he's smart, he's fair, he's honest, he's ethical' run (the repeated 'he's' that scrambled the captions) onto 'Everything shifted' two sentences earlier, which is also a clean payoff on its own; caption trimmed to match. Skipped PRISON-FOR-A-SECRET: the uncaptioned gap sits inside the one sentence quoting the government's court statement, which the story needs in full - no edge choice removes it without cutting the setup.",
+  "clips": []
  }
 }
