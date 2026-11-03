@@ -1,15 +1,15 @@
 {
- "at": "2026-11-03T09:31",
+ "at": "2026-11-03T11:03",
  "profile": {
-  "video_count": 166,
   "follower_count": 409,
   "following_count": 8,
-  "likes_count": 5874
+  "likes_count": 5875,
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
    "id": "7694313777382182157",
-   "view_count": 21,
+   "view_count": 22,
    "like_count": 4,
    "comment_count": 0,
    "share_count": 0,
@@ -759,10 +759,10 @@
   },
   "KT_POS/03_03_THE-INGREDIENT-NOBODY-TEACHES_102s.mp4": {
    "id": "7685133057686326542",
-   "view_count": 1786,
-   "like_count": 230,
+   "view_count": 1787,
+   "like_count": 231,
    "comment_count": 22,
-   "share_count": 42,
+   "share_count": 43,
    "share_url": "https://www.tiktok.com/@kt_student/video/7685133057686326542?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 102,
    "posted": "2026-09-13T21:21"
@@ -919,7 +919,7 @@
   },
   "KT_DEBT/04_HOW-THEY-GOT-YOU_175s.mp4": {
    "id": "7683520059968359693",
-   "view_count": 287,
+   "view_count": 288,
    "like_count": 35,
    "comment_count": 3,
    "share_count": 4,
