@@ -9,49 +9,68 @@
      "He fought back"
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
-    "id": null
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V2.mp4",
     "hook": [
      "The government tried",
      "to bankrupt him"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V3.mp4",
     "hook": [
      "Lost $37 million",
      "Built something bigger"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V4.mp4",
     "hook": [
      "Why losing everything",
      "set him free"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V5.mp4",
     "hook": [
      "Kevin Trudeau's $37",
      "million turnaround story"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V6.mp4",
     "hook": [
      "$37 million wipeout:",
      "that's Kevin Trudeau"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V7.mp4",
     "hook": [
      "What $37 million",
      "couldn't destroy him"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    }
   ]
  }
