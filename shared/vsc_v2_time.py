@@ -274,7 +274,9 @@ def retime(name, src, a, b, report=True):
     subprocess.run([FF, "-y", "-loglevel", "error", "-ss", f"{a:.3f}", "-to", f"{b:.3f}", "-i", src,
                     "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", wav], check=True)
     ons = onsets(envelope(src, a, b))
-    pts = anchor_by_identity(wav, words, ons)
+    # break_ties: VSC only for now (3 Nov 2026) - KT's renderer reaches anchor_by_identity
+    # through anchor_words, and Kamay asked for KT and WB to stay exactly as they are.
+    pts = anchor_by_identity(wav, words, ons, break_ties=True)
     errs = [words[i][0] - t for i, t in pts]
     words2 = warp_by_index(words, pts)
     d["anchors"], d["unmatched_onsets"] = len(pts), len(ons) - len(pts)
@@ -411,7 +413,31 @@ def _same(a, b):
     return difflib.SequenceMatcher(a=a, b=b).ratio() >= 0.8
 
 
-def anchor_by_identity(wav, words, ons, last_free=25, log=None, db=None):
+TIE_CLEAR = 0.30    # a tie the text cannot settle goes to the nearest word only by this margin
+
+
+def _tie_break(heard, on, tied, starts, t):
+    """The one position among `tied` that the WHOLE read agrees with best, or None.
+
+    Matched as a sequence, not word by word: "gonna" is two of our words ("going
+    to"), and a position-by-position test lost the read's alignment at it and scored
+    every repetition the same.
+
+    If the text still cannot tell them apart ("dozens, dozens, dozens" read back as
+    "dozens dozens", EVERY-CULTURE-SAW-THEM), the clock may - but only when one word
+    is clearly the nearest: the old first-wins pick was right there, 0.10s off."""
+    def sc(i):
+        m = difflib.SequenceMatcher(a=heard[:8], b=on[i:i + 10], autojunk=False)
+        return sum(b.size for b in m.get_matching_blocks())
+    s = {i: sc(i) for i in tied}
+    top = max(s.values())
+    win = sorted((i for i in tied if s[i] == top), key=lambda i: abs(starts[i] - t))
+    if len(win) == 1:
+        return win[0]
+    return win[0] if abs(starts[win[1]] - t) - abs(starts[win[0]] - t) >= TIE_CLEAR else None
+
+
+def anchor_by_identity(wav, words, ons, last_free=25, log=None, db=None, break_ties=False):
     """[(index, true_time)] - anchored by WHICH WORD is heard at each onset.
 
     Nearest-in-time pairing assumes our clock is already within 0.40s of the
@@ -455,6 +481,19 @@ def anchor_by_identity(wav, words, ons, last_free=25, log=None, db=None):
             elif sc > second:
                 second = sc
         hit = best[1] if best[0] >= 2 else None
+        if break_ties and hit is not None and second == best[0]:
+            # A TIE IS NOT A MATCH (3 Nov 2026, VSC AN-ALIEN-ON-TV). Kevin's list "people
+            # aren't going to jump ... start crying ... stop going to church ... start
+            # rioting" opens every line with the same four words, so the read scored 4
+            # at every repetition ahead and the first one won: each line was pinned one
+            # line early in OUR list - the captions ran 1.9s late for 14 seconds, the
+            # defect a measured-times fix had to cover by hand. The rest of the read
+            # ("start crying", "stop going") says which line it is; if even that cannot
+            # tell them apart, no anchor beats a wrong one.
+            hit = _tie_break(heard, on, [i for i in range(at, min(len(on), at + last_free))
+                                         if sum(1 for k, w in enumerate(want)
+                                                if i + k < len(on) and _same(on[i + k], w)) == best[0]],
+                             [w[0] for w in words], t)
         if hit is None and len(want) == 1 and len(want[0]) >= 4 and want[0] not in COMMON:
             # one word only, and a distinctive one. NEVER on "and", "the", "so":
             # 23 Sept an onset where Kevin says "and they would sit and meditate"
