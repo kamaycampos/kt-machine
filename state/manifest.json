@@ -13174,11 +13174,24 @@
    "hook": "Why it's not a money problem",
    "bytes": 71115166,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-03T08:08",
    "cta_keyword": "MONEY",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfR-1TbE8y7/",
+    "youtube": "https://youtube.com/shorts/Ce5jgXZelXk"
+   },
+   "caption_at_post": "Kevin Trudeau replaced his own employee at the computer - same ads, same two weeks - and the results jumped overnight.\n\nNothing changed except who was in the chair. 'That's like magic,' people said. It wasn't magic, it was attitude. A book called Karmic Management studied two people doing the identical activity: one got results, one didn't.\n\nManifesting without action is fantasy. But action without the right attitude produces nothing either.\n\nKevin's real point: you don't have a money problem. You have an attitude problem. Fix your thinking, and the strategy finds you.\n\nWhere is your attitude actually at today?\n\n#kevintrudeau #moneymindset #richmindset #mindset #wealthhabits #selfimage",
+   "posted_at": "2026-11-03T08:27"
   },
   {
    "file": "KT_ATTITUDER2/02_ONE-NOTCH-OFF-COURSE_77s.mp4",
