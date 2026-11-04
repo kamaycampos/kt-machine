@@ -1,0 +1,51 @@
+{
+ "source": "v66j311.mp4",
+ "brand": "KT_DANNYROSER2R2",
+ "test": false,
+ "note": "4 Nov 2026 - second chances for 'Your Wish Is Your Command: How To Manifest Your Desires | Ep. 80' (Rumble v66j311). Weekly agent, re-cut per PLANNING.md 2c, last chance (tries 2) on all three. GLASS-BRIDGE-OVER-THE-CANYON: both prior endings ('It's awesome' at 4058.76, 'out of thin air' at 4067.98) either failed on captions-vs-sound or landed mid-sentence - 'out of thin air' is the middle of 'He manifested that out of thin air using the techniques... because he's brilliant.', not its end. Moved the end on to the next complete, independent sentence, 'He knows how to use his mind to manifest goals, dreams, and desires.', clear of the sales pitch that follows it ('The best part, folks...'). A-DELI-SANDWICH-LED-TO-450-MILLION: 'and I got royalties' is the true end of its sentence but the renderer kept landing on 'to do 450 million in sales' instead (word-match trouble on that exact phrase twice now) - ran on to the next sentence instead, Kevin's first royalty check number, a stronger and unambiguous payoff anyway. WHY-THE-RICH-HIDE-THE-REAL-FORMULA: captions-vs-sound failed twice on the same start/end pair; the clip as cut also contained 'who's going to work in my factories' TWICE (Kevin says the line once himself, then again quoting Ford) which likely confused word-level matching. Moved the start to the second telling only (Ford's own confession to Kevin that he deliberately misled Napoleon Hill), so the phrase now appears once, and re-timed the whole clip.",
+ "clips": [
+  {
+   "slug": "GLASS-BRIDGE-OVER-THE-CANYON",
+   "in": 3980.96,
+   "out": 4073.0,
+   "start_words": "Good friend of mine in",
+   "end_words": "manifest goals, dreams, and desires",
+   "hook": [
+    "How 90 days made",
+    "$4 million"
+   ],
+   "send": "A friend who calls their own big idea impossible gets sent this - a glass bridge over a canyon got built anyway; the awe of watching impossible happen.",
+   "caption": "Kevin Trudeau handed a friend in Henderson, Nevada his Your Wish Is Your Command program. He listened to the whole thing in one night.\n\nEighteen months later: $4 million net, from 90 days of work, under 10 hours a week. Then he stopped, and the money kept coming.\n\nThat same friend built something bigger: a glass bridge out over the Grand Canyon. Engineers and the government said it couldn't be built.\n\nHe built it anyway. You can walk out and look straight down. He manifested it the same way, using his mind for goals most people never let themselves want.\n\nWhat's the 'impossible' idea you've been told to drop?\n\n#kevintrudeau #yourwishisyourcommand #manifestation #lawofattraction #mindsetmatters #success",
+   "opener": "glass bridge over canyon",
+   "retry_of": "ep_v66j311_r2/GLASS-BRIDGE-OVER-THE-CANYON"
+  },
+  {
+   "slug": "A-DELI-SANDWICH-LED-TO-450-MILLION",
+   "in": 893.4,
+   "out": 1077.0,
+   "start_words": "You look familiar. You're Bobby Singer,",
+   "end_words": "$268,000 for the week",
+   "hook": [
+    "A deli sandwich",
+    "led to $450M"
+   ],
+   "send": "A friend chasing one big goal gets sent this - he asked the universe for $100k a week and a stranger's sandwich conversation built a $450 million company; awe.",
+   "caption": "Kevin Trudeau says he once sat down and told the universe exactly what he wanted: $100,000 a week, for life, from his memory training business.\n\nOne week later, at the Carnegie Deli in New York, he recognized the stranger next to him - a TV infomercial guy. They talked about his memory course. The guy said, \"Put this on TV.\"\n\nThe same day, a different old friend called with the exact same pitch, a second infomercial expert offering the same deal.\n\nHe signed with the first one. Mega Memory went on to do $450 million in sales. His first royalty check was $268,000, for one week.\n\nWhat are you asking the universe for, specifically?\n\n#kevintrudeau #manifesting #megamemory #yourwishisyourcommand #success #wealthmindset",
+   "retry_of": "ep_v66j311_r3/A-DELI-SANDWICH-LED-TO-450-MILLION"
+  },
+  {
+   "slug": "WHY-THE-RICH-HIDE-THE-REAL-FORMULA",
+   "in": 1316.0,
+   "out": 1369.8,
+   "start_words": "Someone says, well, wait a minute",
+   "end_words": "going to work in my factories",
+   "hook": [
+    "What Ford told",
+    "about Napoleon Hill"
+   ],
+   "send": "Someone grinding through a 'proven' success book sends this to a friend - even Napoleon Hill got the watered-down version; anger at being handed the fake formula.",
+   "caption": "Why don't wealthy people teach the real way they made their money? Kevin Trudeau says it's not an accident.\n\nNapoleon Hill interviewed Henry Ford, Edison, Carnegie and Rockefeller for Think and Grow Rich. He even lived with some of them to study what they did.\n\nHe still didn't get the real information. Ford told Kevin directly: I didn't tell Napoleon Hill what I really do. I tried to send him off track.\n\nWhy? Because if people learned the real formula, Ford said, who's going to work in my factories?\n\nThat's why the famous success books always feel like something is missing. Because it is.\n\nHave you ever followed advice that just didn't add up?\n\n#kevintrudeau #henryford #wealthmindset #success #moneymindset #richmindset",
+   "retry_of": "ep_v66j311_r3/WHY-THE-RICH-HIDE-THE-REAL-FORMULA"
+  }
+ ]
+}
