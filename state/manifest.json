@@ -13442,7 +13442,11 @@
    "hook": "Your brain broadcasts a poverty wave.",
    "bytes": 63656531,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-04T10:26",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
