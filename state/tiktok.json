@@ -1,10 +1,10 @@
 {
- "at": "2026-11-04T20:00",
+ "at": "2026-11-04T21:05",
  "profile": {
-  "following_count": 8,
-  "likes_count": 5877,
+  "likes_count": 5878,
   "video_count": 166,
-  "follower_count": 409
+  "follower_count": 409,
+  "following_count": 8
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -559,7 +559,7 @@
   },
   "KT_MIND/05_THE-TRASH-TEST_84s.mp4": {
    "id": "7687564395848731917",
-   "view_count": 1030,
+   "view_count": 1031,
    "like_count": 70,
    "comment_count": 2,
    "share_count": 9,
@@ -669,8 +669,8 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14164,
-   "like_count": 868,
+   "view_count": 14165,
+   "like_count": 869,
    "comment_count": 59,
    "share_count": 196,
    "share_url": "https://www.tiktok.com/@kt_student/video/7685930943705566477?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
