@@ -312,13 +312,23 @@ def word_ass(words, path, src=None, t_in=0.0, t_out=None, dur=None):
     emph = word_emphasis(words, groups, src, t_in, t_out) if src else set()
     end_all = dur if dur is not None else (words[-1][1] + 0.6 if words else 0.0)
     ev, shown, lit = [], [], []
+    # A HAIR AHEAD OF THE VOICE (3 Nov 2026, Kamay: "find out the way metas captions maker and other
+    # well known apps do the captions"). YouTube's own word timings sit ~0.1s before each word is
+    # said (MERLOT Reserve, arXiv 2201.02639), and text seen just before speech is heard more
+    # clearly (Sohoglu et al.): the eye has to land before the ear. Exact alignment puts each word
+    # ON its sound; the caption turns over LEAD before it and the lit word moves LEAD_LIT before,
+    # so the eye arrives as he says it. kt_sync_check has always graded with a 0.1s lead-in.
+    LEAD, LEAD_LIT = 0.10, 0.05
+    starts = [max(0.0, words[g[0]][0] - LEAD) for g in groups]
     for k, g in enumerate(groups):
-        nxt = words[groups[k + 1][0]][0] if k + 1 < len(groups) else None
+        nxt = starts[k + 1] if k + 1 < len(groups) else None
+        # no blink between captions: a short gap is closed by holding the last one (Netflix: gaps
+        # are 2 frames or half a second and more - closed by extending the previous caption)
         g_end = nxt if nxt is not None and nxt - words[g[-1]][1] < 1.0 else min(words[g[-1]][1] + 0.4, end_all)
-        shown.append((round(words[g[0]][0], 3), round(g_end, 3), " ".join(words[j][2] for j in g)))
+        shown.append((round(starts[k], 3), round(g_end, 3), " ".join(words[j][2] for j in g)))
         for gi, j in enumerate(g):
-            a = words[j][0]
-            b = words[g[gi + 1]][0] if gi + 1 < len(g) else g_end
+            a = starts[k] if gi == 0 else max(starts[k], words[j][0] - LEAD_LIT)
+            b = max(starts[k], words[g[gi + 1]][0] - LEAD_LIT) if gi + 1 < len(g) else g_end
             if b <= a:
                 continue
             parts = []
@@ -345,7 +355,7 @@ def word_ass(words, path, src=None, t_in=0.0, t_out=None, dur=None):
     open(path, "w").write(head + "\n".join(ev) + "\n")
     # THE CHECK THAT WOULD HAVE CAUGHT THE FIRST SAMPLE: every word is on screen, lit, from
     # the frame its sound starts (sample E's first 3 seconds had no captions at all).
-    miss = sum(1 for (a, _b, _w) in words if not any(x - 0.005 <= a < y for x, y in lit))
+    miss = sum(1 for (a, _b, _w) in words if not any(x - LEAD - 0.005 <= a < y + LEAD for x, y in lit))
     if miss:
         print(f"      word captions: {miss} of {len(words)} words not lit when said")
     return f"subtitles=filename={path}:fontsdir={_ASSETS}", shown
