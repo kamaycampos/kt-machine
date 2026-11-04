@@ -10,8 +10,11 @@ jobs:
       AR_CTA_KEYWORDS: ${{ secrets.AR_CTA_KEYWORDS }}
       AR_FB_PAGE_ID: ${{ secrets.AR_FB_PAGE_ID }}
       AR_FB_ACCESS_TOKEN: ${{ secrets.AR_FB_ACCESS_TOKEN }}
+      AR_IG_USER_ID: ${{ secrets.AR_IG_USER_ID }}
+      AR_IG_ACCESS_TOKEN: ${{ secrets.AR_IG_ACCESS_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
       - run: pip install requests && python dm/fb_diag.py 29014605581515205 1059657373628249
+      - run: python dm/ig_diag.py
