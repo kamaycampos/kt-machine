@@ -197,7 +197,8 @@
     ]
    }
   ],
-  "posted": null
+  "posted": null,
+  "stopped": "held 4 Nov 2026: Kevin's own wide on-screen text is cut off by the vertical crop"
  },
  "KT_BOOKSHELF__HALF-A-MILLION-A-WEEK": {
   "clip": "KT_BOOKSHELF/01_HALF-A-MILLION-A-WEEK_98s.mp4",
@@ -252,7 +253,8 @@
     ]
    }
   ],
-  "posted": null
+  "posted": null,
+  "stopped": "held 4 Nov 2026: Kevin's own wide on-screen text is cut off by the vertical crop"
  },
  "KT_BOOKSHELF__LIBERACES-SECRET-BOOK": {
   "clip": "KT_BOOKSHELF/01_LIBERACES-SECRET-BOOK_42s.mp4",
@@ -328,7 +330,8 @@
     "tries": 2
    }
   ],
-  "posted": null
+  "posted": null,
+  "stopped": "held 4 Nov 2026: Kevin's own wide on-screen text is cut off by the vertical crop"
  },
  "KT_BOOKSHELF__KNOWING-IT-ISNT-DOING-IT": {
   "clip": "KT_BOOKSHELF/02_KNOWING-IT-ISNT-DOING-IT_125s.mp4",
@@ -383,6 +386,7 @@
     ]
    }
   ],
-  "posted": null
+  "posted": null,
+  "stopped": "held 4 Nov 2026: Kevin's own wide on-screen text is cut off by the vertical crop"
  }
 }
