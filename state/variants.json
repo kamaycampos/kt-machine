@@ -262,49 +262,70 @@
     "hook": [
      "One book made",
      "broke stars rich"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V2.mp4",
     "hook": [
      "Being broke couldn't",
      "stop Liberace's rise"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V3.mp4",
     "hook": [
      "Broke performer becomes",
      "Hollywood legend Liberace"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V4.mp4",
     "hook": [
      "Why you're still",
      "broke, unlike Liberace"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V5.mp4",
     "hook": [
      "Phyllis Diller: broke,",
      "then this book"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V6.mp4",
     "hook": [
      "Kevin Trudeau's favorite",
      "Hollywood secret book"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V7.mp4",
     "hook": [
      "Your mind creates",
      "your own reality"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    }
   ],
   "posted": null
