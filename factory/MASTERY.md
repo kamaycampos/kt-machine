@@ -9,6 +9,13 @@ A **hook** is the text burned into the video; a **caption** is the text posted b
 measured from different places and a caption finding never transfers to a hook. Hooks live in
 `state/manifest.json` (field `hook`, written when the clip is made, never edited).
 
+## The score is SENDS PER REACH (3 Nov 2026, VIRALITY.md)
+Rank clips, hooks, topics and trial arms by **shares / reach** first (state/metrics.json has both),
+then watch time and skip rate; likes last. Instagram ranks non-follower reach chiefly by sends
+(Mosseri, Jan 2025). Measured 3 Nov: KT 96% / AR 99% / WB 100% of reach is non-followers (not capped
+by the April 2026 originality rule); KT's fall from 103K to 19K per 14 days came with shares per reel
+falling 9.4 -> ~3. `state/reach.json` (weekly reach_audit) holds the follower / non-follower split.
+
 ## Patterns
 
 | # | Pattern | Confidence | n |

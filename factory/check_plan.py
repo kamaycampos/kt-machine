@@ -186,6 +186,10 @@ for path in sys.argv[1:]:
         if not re.fullmatch(r"[A-Z0-9]+(-[A-Z0-9]+)*", s): errs.append(f"{s}: slug must be UPPER-DASHED")
         if not MIN_LEN <= d <= MAX_LEN: errs.append(f"{s}: length {d:.0f}s outside {MIN_LEN:.0f}-{MAX_LEN:.0f}")
         for e in lint(c.get("hook") or [], b): errs.append(f"{s}: hook - {e}")
+        # EVERY CLIP IS ONE PEOPLE SEND (3 Nov 2026, VIRALITY.md): who sends it to whom, and why.
+        if len(str(c.get("send") or "").split()) < 6:
+            errs.append(f"{s}: missing \"send\" - one line: who sends this to whom, why, and its "
+                        "emotion (awe / anger / anxiety). See VIRALITY IS THE JOB in PLANNING.md")
         # A LINE BREAK INSIDE A PHRASE (3 Nov 2026, Kamay: "the hooks are so bad"): line 1 is
         # read alone first, so "The one book every / billionaire read" reads as half a thought.
         _h0 = str((c.get("hook") or [""])[0]).split()

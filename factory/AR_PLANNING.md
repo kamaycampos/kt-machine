@@ -100,6 +100,11 @@ HER Instagram as Trial Reels (non-followers only, never on her grid) once the cl
 `state/variants.json` names the winning words. Read her last winners there first. Until one experiment
 has posted all 7 arms, `check_plan.py` allows trial hooks on ONE clip a plan (the strongest).
 
+## Her clips are ones people SEND (3 Nov 2026)
+Same rule as his (PLANNING.md, VIRALITY IS THE JOB): every clip carries `"send"` - who sends it to
+whom and why ("a friend who keeps saying it's luck"), and its high-arousal emotion: awe, unease at
+what is hidden, or anger at being kept asleep. In her voice; `check_plan.py` refuses a clip without it.
+
 ## Her captions
 - Same craft as his (first line stands alone, one idea per paragraph, one call to action), in her
   voice: quieter, second person, unhurried. She is not selling; she is letting someone in.

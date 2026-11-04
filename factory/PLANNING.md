@@ -48,6 +48,15 @@ before you write any hook - a lever that keeps winning goes on the clip's own ho
 Until one experiment has posted all 7 arms, `check_plan.py` allows trial hooks on ONE clip a plan
 (put them on the strongest); after that, on every clip. Every trial hook is linted like a normal hook.
 
+## VIRALITY IS THE JOB: EVERY CLIP IS ONE PEOPLE SEND (3 Nov 2026, Kamay: "make it a rule")
+Read `factory/VIRALITY.md`. Instagram's strongest signal with strangers is **sends per reach** (Mosseri),
+and KT's reach fell 103K -> 19K per 14 days while shares per reel fell 9.4 -> ~3 (skip rate flat). Every
+clip carries `"send"`: one line - who sends it to whom, and why ("a dad sends it to his son: proof
+that saving early beats a big salary"), and the HIGH-AROUSAL emotion it rides: awe, anger (at being
+lied to) or anxiety (losing money / time) - never a calm lesson alone. Prefer the clip with the clearer
+send. `check_plan.py` refuses a clip without it. The trial reels now crown the hook with the most
+sends per reach, not the most views - read the winners in `state/variants.json`.
+
 ## READ factory/STRATEGY.md FIRST (17 Oct 2026)
 The growth strategist rewrites it daily from the real numbers (skip rate, views, DMs, money). Its
 orders on topic priority, hook shape, offer clips and what to skip come before your own taste. It

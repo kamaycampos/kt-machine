@@ -1,8 +1,11 @@
 # Is Instagram showing us to strangers? Read-only, by hand (3 Nov 2026, VIRALITY.md).
 name: reach-audit
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 13 * * 1"        # Mondays, 08:17 DC
 permissions:
-  contents: read
+  contents: write
 jobs:
   audit:
     runs-on: ubuntu-24.04
@@ -15,4 +18,7 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           AR_IG_USER_ID: ${{ secrets.AR_IG_USER_ID }}
           AR_IG_ACCESS_TOKEN: ${{ secrets.AR_IG_ACCESS_TOKEN }}
-        run: python factory/reach_audit.py
+        run: |
+          python factory/reach_audit.py --save
+          git config user.name "kt-machine"; git config user.email "kt-machine@users.noreply.github.com"
+          git add state/reach.json && (git diff --cached --quiet || git commit -q -m "state: reach audit") && bash factory/save_state.sh

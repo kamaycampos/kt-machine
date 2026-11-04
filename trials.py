@@ -117,17 +117,25 @@ def step(engine, poster, media_url, log=print):
                 continue
             try:
                 d = json.load(urllib.request.urlopen(
-                    f"{G}/{arm['id']}/insights?metric=views,reach&access_token={tok}", timeout=30))
+                    f"{G}/{arm['id']}/insights?metric=views,reach,shares,saved&access_token={tok}", timeout=30))
                 for m in d.get("data", []):
                     arm[m["name"]] = (m.get("values") or [{}])[0].get("value")
             except Exception as x:
                 arm["insights_error"] = str(x)[:120]
         scored = [a for a in e["arms"] if isinstance(a.get("views"), int)]
         if scored:
-            best = max(scored, key=lambda a: a["views"])
-            e["winner"] = {"hook": best["hook"], "views": best["views"],
-                           "others": sorted((a["views"] for a in scored if a is not best), reverse=True)}
-            log(f"TRIAL {key}: winner '{' / '.join(best['hook'])}' {best['views']} views")
+            # THE HOOK PEOPLE SEND WINS (3 Nov 2026, VIRALITY.md): sends per reach is Instagram's
+            # strongest signal with strangers - and trial reels only ever reach strangers. Views
+            # break a tie (and decide when nobody shared).
+            def score(a):
+                return ((a.get("shares") or 0) / max(1, a.get("reach") or 0), a["views"])
+            best = max(scored, key=score)
+            e["winner"] = {"hook": best["hook"], "views": best["views"], "shares": best.get("shares"),
+                           "reach": best.get("reach"),
+                           "others": sorted(((a.get("shares") or 0, a["views"]) for a in scored if a is not best),
+                                            reverse=True)}
+            log(f"TRIAL {key}: winner '{' / '.join(best['hook'])}' {best.get('shares') or 0} sends, "
+                f"{best['views']} views")
         e["scored"] = now.strftime("%Y-%m-%dT%H:%M")
         changed = True
     if changed:

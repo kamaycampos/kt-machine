@@ -28,12 +28,17 @@ def get(path, **params):
             return {"error": {"message": str(e)}}
 
 
+SAVE = {}
+
+
 def audit(name, ig, tok):
     print(f"\n== {name}")
+    rec = SAVE.setdefault(name, {"windows": []})
     me = get(ig, fields="username,followers_count,media_count", access_token=tok)
     if me.get("error"):
         print("  account:", me["error"].get("message", "")[:160]); return
     print(f"  @{me.get('username')}  followers {me.get('followers_count')}  posts {me.get('media_count')}")
+    rec.update(username=me.get("username"), followers=me.get("followers_count"), posts=me.get("media_count"))
     today = dt.date.today()
     print("  window                    reach   followers  non-followers  non-follower share")
     for k in range(6, 0, -1):
@@ -52,6 +57,8 @@ def audit(name, ig, tok):
         fo, nf = split.get("FOLLOWER", 0), split.get("NON_FOLLOWER", 0)
         share = f"{nf / (fo + nf):.0%}" if fo + nf else "-"
         print(f"  {a} - {b}  {tot:7}  {fo:9}  {nf:13}  {share:>8}")
+        rec["windows"].append({"from": a.isoformat(), "to": b.isoformat(), "reach": tot,
+                               "followers": fo, "non_followers": nf})
 
 
 if __name__ == "__main__":
@@ -61,3 +68,8 @@ if __name__ == "__main__":
             audit(name, ig, tok)
         else:
             print(f"\n== {name}: not configured")
+    if "--save" in os.sys.argv:              # the strategist reads it (MASTERY.md: the score is sends)
+        SAVE["measured"] = dt.datetime.utcnow().strftime("%Y-%m-%dT%H:%M")
+        p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "state", "reach.json")
+        json.dump(SAVE, open(p, "w"), indent=1)
+        print("saved", p)
