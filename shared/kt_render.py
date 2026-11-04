@@ -1700,6 +1700,13 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     if words:
         words = edge_words(words, cues, t_in, t_out)
         words = drop_stutters(words)
+        # A FULL STOP STARTS A SENTENCE (4 Nov 2026, WB Doritos: "can't stop eating it. and they" -
+        # kt_qc "stray full stop"). The stop came from the better listener (kt_align), the word after
+        # it from the timing pass, which writes almost no capitals.
+        words = [(a, b, w[:1].upper() + w[1:]) if k and w[:1].islower()
+                 and words[k - 1][2].rstrip("\"'\u2019\u201d)").endswith((".", "!", "?"))
+                 and not words[k - 1][2].endswith("...") else (a, b, w)
+                 for k, (a, b, w) in enumerate(words)]
     # TWO PEOPLE IN ONE SHOT: FRAME WHOEVER IS TALKING. See vsc_frame.speaker_turns.
     # It needs the final word times, because a switch may only land on the first
     # word of a sentence.
