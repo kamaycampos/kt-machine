@@ -1,0 +1,18 @@
+# Is Instagram showing us to strangers? Read-only, by hand (3 Nov 2026, VIRALITY.md).
+name: reach-audit
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Followers vs non-followers, per account
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          AR_IG_USER_ID: ${{ secrets.AR_IG_USER_ID }}
+          AR_IG_ACCESS_TOKEN: ${{ secrets.AR_IG_ACCESS_TOKEN }}
+        run: python factory/reach_audit.py
