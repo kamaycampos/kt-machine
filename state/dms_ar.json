@@ -50,6 +50,11 @@
    "platform": "instagram",
    "comment": "18138168214658790",
    "error": "(#230) Requires instagram_manage_messages permission to manage the object"
+  },
+  {
+   "at": "2026-11-04T03:24:20.707064+00:00",
+   "platform": "instagram",
+   "error": "An unexpected error has occurred. Please retry your request later."
   }
  ]
 }
