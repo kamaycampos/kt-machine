@@ -13352,12 +13352,26 @@
    "caption": "His guru didn't speak English, so what came through the interpreter was five words: I'm awake, you're asleep.\n\nThen he put his hand on the back of his head, and something let go. The energy came up the spine. Everything blended into one \u2014 guru and student, for a moment, were the same thing.\n\nHe still isn't fully sure if what happened was the touch or the shock of it. He is sure the awakening was real.\n\nComment RISE and I'll send you what that state actually feels like.\n\n#kundalini #awakening #consciousness #shaktipat #spirituality #kevintrudeau",
    "hook": "I'm awake. You're asleep.",
    "bytes": 24233842,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261104012615BA05960F900E9416896B'}}"
+   },
    "scheduled_at": "2026-11-03T20:16",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1635158468073294/",
+    "instagram": "https://www.instagram.com/reel/DfTRS4RgUK_/",
+    "youtube": "https://youtube.com/shorts/bL6DhrlKJHo"
+   },
+   "caption_at_post": "His guru didn't speak English, so what came through the interpreter was five words: I'm awake, you're asleep.\n\nThen he put his hand on the back of his head, and something let go. The energy came up the spine. Everything blended into one \u2014 guru and student, for a moment, were the same thing.\n\nHe still isn't fully sure if what happened was the touch or the shock of it. He is sure the awakening was real.\n\nComment RISE and I'll send you what that state actually feels like.\n\n#kundalini #awakening #consciousness #shaktipat #spirituality #kevintrudeau",
+   "posted_at": "2026-11-03T20:26"
   },
   {
    "file": "AR_THRESHOLD/01_MEDIUMS-TALK-TO-YOUR-DEAD-ANCESTORS_64s.mp4",
