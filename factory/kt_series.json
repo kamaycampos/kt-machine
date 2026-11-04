@@ -9072,5 +9072,52 @@
   "brand": "KT_DANNYROSER2R2",
   "note": "4 Nov 2026 - REBUILD of ep_v66j311_r4: its passing clips were refused by kt_qc because look E's missed-word fill dropped a full stop ('awesome He'); fixed in kt_align. Same clips, same edges. 4 Nov 2026 - second chances for 'Your Wish Is Your Command: How To Manifest Your Desires | Ep. 80' (Rumble v66j311). Weekly agent, re-cut per PLANNING.md 2c, last chance (tries 2) on all three. GLASS-BRIDGE-OVER-THE-CANYON: both prior endings ('It's awesome' at 4058.76, 'out of thin air' at 4067.98)",
   "clips": []
+ },
+ "ep_v7htumc": {
+  "source": "v7htumc.mp4",
+  "brand": "KT_BOOKSHELF",
+  "note": "4 Nov 2026 - 'Want to Get Rich? Read These 10 Books First' (Rumble v7htumc). Same-day run, Kevin's newest upload, mined thoroughly per Kamay's note in source_plan.json.",
+  "clips": [
+   {
+    "slug": "ELON-MUSKS-READING-HABIT",
+    "in": 0.0,
+    "out": 90.39,
+    "hook": [
+     "The 1-hour rule",
+     "of every billionaire"
+    ],
+    "caption": "Elon Musk reads for one hour a day, five days a week. He says it's the most important thing he does — more important than any meeting, any deal.\n\nKevin Trudeau asked him how he learned to build rockets. His answer: I read.\n\nThe richest man alive makes time to read every day. Most people say they're too busy for fifteen minutes.\n\nLeaders are always readers. If you're not learning, you're already behind the people who are.\n\nWhat's the last book that actually changed how you think?\n\n#kevintrudeau #richhabits #readmorebooks #elonmusk #selfdevelopment #moneymindset"
+   },
+   {
+    "slug": "HALF-A-MILLION-A-WEEK",
+    "in": 450.46,
+    "out": 548.53,
+    "hook": [
+     "He spends $500K",
+     "a week easily"
+    ],
+    "caption": "Kevin Trudeau once sat with multi-millionaires in the Billionaire Boys Club. One member handed out a list of over a thousand books he'd read in five years, ranked by how much he liked them.\n\nEveryone in that room was worth over a hundred million dollars, and every one of them read constantly.\n\nMeanwhile someone bragged about making half a million a year. Kevin's reply: he couldn't go back to living on half a million a week.\n\nThe top don't read occasionally — they read like it's their job, because it built their job.\n\nHow many books have you finished this year?\n\n#kevintrudeau #billionairemindset #readtogetrich #wealthhabits #richpeoplethink #successbooks"
+   },
+   {
+    "slug": "LIBERACES-SECRET-BOOK",
+    "in": 750.2,
+    "out": 792.23,
+    "hook": [
+     "How this book",
+     "made Liberace rich"
+    ],
+    "caption": "Liberace was broke. So was Phyllis Diller. So were a whole list of Hollywood performers scraping by, barely getting booked, before they found one book.\n\nIt was called The Magic of Believing. Kevin Trudeau says it's the book these broke performers credit with teaching them to use their mind to create their own reality — right before they became stars.\n\nNot a lucky break, not a connection. One book changed how they saw themselves.\n\nYour mind creates what you expect long before it creates what you have. What have you been expecting lately?\n\n#kevintrudeau #magicofbelieving #mindsetshift #lawofattraction #believeit #selfimage"
+   },
+   {
+    "slug": "KNOWING-IT-ISNT-DOING-IT",
+    "in": 871.7,
+    "out": 996.95,
+    "hook": [
+     "Why reading won't",
+     "make you rich"
+    ],
+    "caption": "Nobody knows how to talk to people anymore — everyone's on a phone, texting instead of connecting. That's why Kevin Trudeau says interpersonal skills are the most underrated superpower you can have.\n\nThe two books: How to Win Friends and Influence People by Dale Carnegie, and Napoleon Hill's Think and Grow Rich, the manuscript Kevin says helped him make hundreds of millions.\n\nHere's the catch: read either one years ago and never applied it, and you don't actually know it. To know and not to do is not to know.\n\nHave you read a book that changed your thinking, or just your bookshelf?\n\n#kevintrudeau #thinkandgrowrich #dalecarnegie #applywhatyoulearn #selfdevelopment #successhabits"
+   }
+  ]
  }
 }

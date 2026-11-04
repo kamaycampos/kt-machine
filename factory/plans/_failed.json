@@ -10981,6 +10981,96 @@
     "What Ford told",
     "about Napoleon Hill"
    ]
+  },
+  "ep_v7htumc/STOP-MAKING-EXCUSES": {
+   "plan": "ep_v7htumc",
+   "source": "v7htumc.mp4",
+   "brand": "KT_BOOKSHELF",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_STOP-MAKING-EXCUSES_76s.mp4` - word repeated: \"You're you're\""
+   ],
+   "slug": "STOP-MAKING-EXCUSES",
+   "in": 304.4,
+   "out": 380.08,
+   "start_words": "You say you want",
+   "end_words": "Stop making excuses",
+   "hook": [
+    "Why excuses keep",
+    "you poor forever"
+   ]
+  },
+  "ep_v7htumc/NASA-SCIENTISTS-MANIFESTING-PROOF": {
+   "plan": "ep_v7htumc",
+   "source": "v7htumc.mp4",
+   "brand": "KT_BOOKSHELF",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_NASA-SCIENTISTS-MANIFESTING-PROOF_73s.mp4` - opens mid-sentence on \"works.\""
+   ],
+   "slug": "NASA-SCIENTISTS-MANIFESTING-PROOF",
+   "in": 620.56,
+   "out": 692.16,
+   "start_words": "Here's a great book",
+   "end_words": "could blow your mind",
+   "hook": [
+    "What NASA's scientist",
+    "proved about manifesting"
+   ]
+  },
+  "ep_v7htumc/ROCKEFELLER-GETTYS-ONE-RULE": {
+   "plan": "ep_v7htumc",
+   "source": "v7htumc.mp4",
+   "brand": "KT_BOOKSHELF",
+   "tries": 1,
+   "why": [
+    "FAIL 01_ROCKEFELLER-GETTYS-ONE-RULE_75s.mp4: ends off the planned words: plan ends 'and you control your life', clip ends 'it is important'"
+   ],
+   "slug": "ROCKEFELLER-GETTYS-ONE-RULE",
+   "in": 1054.32,
+   "out": 1128.48,
+   "start_words": "Little phrases where you",
+   "end_words": "and you control your life",
+   "hook": [
+    "What Rockefeller believed",
+    "about getting rich"
+   ]
+  },
+  "ep_v7htumc/ELONS-LOCKED-DOOR-RITUAL": {
+   "plan": "ep_v7htumc",
+   "source": "v7htumc.mp4",
+   "brand": "KT_BOOKSHELF",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_ELONS-LOCKED-DOOR-RITUAL_53s.mp4` - ends mid-thought on \"books\"; word repeated: \"reading reading\""
+   ],
+   "slug": "ELONS-LOCKED-DOOR-RITUAL",
+   "in": 1180.88,
+   "out": 1231.36,
+   "start_words": "Elon Musk, the richest",
+   "end_words": "through reading books",
+   "hook": [
+    "How Elon Musk",
+    "shuts off distractions"
+   ]
+  },
+  "ep_v7htumc/TEN-MINUTES-TO-THE-TOP": {
+   "plan": "ep_v7htumc",
+   "source": "v7htumc.mp4",
+   "brand": "KT_BOOKSHELF",
+   "tries": 1,
+   "why": [
+    "drop KT_BOOKSHELF/TEN-MINUTES-TO-THE-TOP: runs into the channel outro at 1353s - dropped"
+   ],
+   "slug": "TEN-MINUTES-TO-THE-TOP",
+   "in": 1233.2,
+   "out": 1353.04,
+   "start_words": "My encouragement to you",
+   "end_words": "see you at the top",
+   "hook": [
+    "Why 10 minutes",
+    "builds your wealth"
+   ]
   }
  },
  "attempts": {
