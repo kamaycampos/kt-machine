@@ -13560,7 +13560,11 @@
    "hook": "How he dodged prison and won",
    "bytes": 33604932,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-04T20:16",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }

@@ -267,7 +267,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 2
+    "tries": 3
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V2.mp4",
@@ -277,7 +277,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 2
+    "tries": 3
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V3.mp4",
@@ -287,7 +287,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 2
+    "tries": 3
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V4.mp4",
@@ -297,7 +297,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 2
+    "tries": 3
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V5.mp4",
@@ -307,7 +307,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 2
+    "tries": 3
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V6.mp4",
@@ -317,7 +317,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 2
+    "tries": 3
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V7.mp4",
@@ -325,12 +325,12 @@
      "Your mind creates",
      "your own reality"
     ],
-    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 2
+    "tries": 3
    }
   ],
-  "posted": null,
+  "posted": "2026-11-04T23:05",
   "stopped": "held 4 Nov 2026: Kevin's own wide on-screen text is cut off by the vertical crop"
  },
  "KT_BOOKSHELF__KNOWING-IT-ISNT-DOING-IT": {
