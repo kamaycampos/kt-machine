@@ -191,7 +191,7 @@ def _chunks(words):
     return chunks
 
 
-def align(src, t_in, t_out, words, quiet=False):
+def align(src, t_in, t_out, words, quiet=False, fill=True):
     """[(start, end, text)] clip-relative in, the same with every start on its sound out."""
     if not words or os.environ.get("CAPTION_ALIGN", "1") == "0":
         return words
@@ -209,7 +209,9 @@ def align(src, t_in, t_out, words, quiet=False):
     dur = len(x) / SR
     words = [tuple(w) for w in words]
     added = set()
-    if os.environ.get("CAPTION_FILL", "1") != "0" and os.path.exists(WH):
+    # fill=False: VSC's text is read and corrected word for word before timing (capread), so
+    # there only the clock moves - never the words.
+    if fill and os.environ.get("CAPTION_FILL", "1") != "0" and os.path.exists(WH):
         try:
             words, added = fill_missing(x, words)
         except Exception as e:                       # a missed word is better than a lost clip

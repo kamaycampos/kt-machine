@@ -277,6 +277,15 @@ def retime(name, src, a, b, report=True):
     pts = anchor_by_identity(wav, words, ons, break_ties=True)
     errs = [words[i][0] - t for i, t in pts]
     words2 = warp_by_index(words, pts)
+    # THEN EVERY WORD ON ITS OWN SOUND (kt_align, 3 Nov 2026): anchors fix the words after a
+    # pause; between pauses whisper's guesses drift (0.68s late in a fast list). Forced alignment
+    # places each word where it sounds, refereed by the level track; refused or not installed ->
+    # the anchored times stand, exactly as before.
+    try:
+        import kt_align
+        words2 = [tuple(w) for w in kt_align.align(src, a, b, words2, fill=False)]
+    except Exception as e:                       # never let timing polish lose a clip
+        print(f"      caption alignment skipped: {type(e).__name__}: {e}", flush=True)
     d["anchors"], d["unmatched_onsets"] = len(pts), len(ons) - len(pts)
     bursts = split_early(kt_render.phrases_from_words(words2), words2)
     # EVERY CAPTION ENDS WHERE THE NEXT ONE BEGINS. 23 Sept, Kamay: "this new
