@@ -74,5 +74,60 @@
    }
   ],
   "posted": "2026-11-03T21:24"
+ },
+ "AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE": {
+  "clip": "AR_POVERTYWAVE/01_YOUR-BRAIN-HAS-A-POVERTY-WAVE_88s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE__V1.mp4",
+    "hook": [
+     "Two brain waves",
+     "decide your income."
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE__V2.mp4",
+    "hook": [
+     "Your subconscious chose",
+     "the poverty wave."
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE__V3.mp4",
+    "hook": [
+     "Wanting traps you.",
+     "Needing frees you."
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE__V4.mp4",
+    "hook": [
+     "Want it wrong,",
+     "lose it forever."
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE__V5.mp4",
+    "hook": [
+     "Kevin Trudeau learned",
+     "this exact wave."
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE__V6.mp4",
+    "hook": [
+     "Stop wanting it.",
+     "Need it instead."
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE__V7.mp4",
+    "hook": [
+     "Your brain has",
+     "a poverty switch."
+    ]
+   }
+  ],
+  "posted": null
  }
 }

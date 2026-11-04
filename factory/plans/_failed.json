@@ -10747,6 +10747,60 @@
     "The $1,000 guided",
     "meditation scam"
    ]
+  },
+  "ar_v4rcljt/YOUVE-BEEN-MISLED-YOUR-WHOLE-LIFE": {
+   "plan": "ar_v4rcljt",
+   "source": "v4rcljt.mp4",
+   "brand": "AR_MISLED",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_YOUVE-BEEN-MISLED-YOUR-WHOLE-LIFE_50s.mp4` - ends mid-thought on \"life It's\"; sentence starts with no stop: \"experience You\"; sentence starts with no stop: \"power You\""
+   ],
+   "slug": "YOUVE-BEEN-MISLED-YOUR-WHOLE-LIFE",
+   "in": 48.0,
+   "out": 98.0,
+   "start_words": "I talked about how",
+   "end_words": "misled for your whole life",
+   "hook": [
+    "You've been misled,",
+    "your whole life."
+   ]
+  },
+  "ar_v4rcljt/YOUVE-BEEN-HYPNOTIZED-WITHOUT-KNOWING-IT": {
+   "plan": "ar_v4rcljt",
+   "source": "v4rcljt.mp4",
+   "brand": "AR_MISLED",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_YOUVE-BEEN-HYPNOTIZED-WITHOUT-KNOWING-IT_48s.mp4` - opens mid-sentence on \"special.\""
+   ],
+   "slug": "YOUVE-BEEN-HYPNOTIZED-WITHOUT-KNOWING-IT",
+   "in": 2096.0,
+   "out": 2143.0,
+   "start_words": "chapter one the self-image",
+   "end_words": "virtually have been hypnotized",
+   "hook": [
+    "You've been hypnotized",
+    "without knowing it."
+   ]
+  },
+  "ar_v4rcljt/HE-LIED-ABOUT-AREA-51-TOO": {
+   "plan": "ar_v4rcljt",
+   "source": "v4rcljt.mp4",
+   "brand": "AR_MISLED",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_HE-LIED-ABOUT-AREA-51-TOO_58s.mp4` - ends mid-thought on \"with that's misinformation\"; word repeated: \"misinformation Misinformation\""
+   ],
+   "slug": "HE-LIED-ABOUT-AREA-51-TOO",
+   "in": 238.0,
+   "out": 295.0,
+   "start_words": "I talked about last",
+   "end_words": "that's misinformation",
+   "hook": [
+    "They lied",
+    "to keep you asleep."
+   ]
   }
  },
  "attempts": {
