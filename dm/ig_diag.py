@@ -36,3 +36,16 @@ for p in media:
                 print(f"   blank ...{c['id'][-5:]} {f}: {r}")
             except Exception as e:
                 print(f"   blank ...{c['id'][-5:]} {f}: ERR {e}")
+
+# 4 Nov 2026: Yaren sees "message not sent" in her inbox. What do the newest conversations hold?
+page = m.env("FB_PAGE_ID")
+try:
+    cv = m._get(f"{m.G}/{page}/conversations", {"platform": "instagram", "limit": 6, "access_token": tok,
+                "fields": "updated_time,message_count,messages.limit(4){message,created_time,from{id}}"}).get("data", [])
+    for c in cv:
+        print(f"convo updated {c.get('updated_time','')[:16]} count={c.get('message_count')}")
+        for msg in (c.get("messages") or {}).get("data", []):
+            who = "PAGE/IG" if (msg.get("from") or {}).get("id") in me else "them"
+            print(f"   {msg.get('created_time','')[:16]} {who}: {(msg.get('message') or '')[:70]!r}")
+except Exception as e:
+    print("conversations ERR", e)
