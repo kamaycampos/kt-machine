@@ -49,3 +49,19 @@ try:
             print(f"   {msg.get('created_time','')[:16]} {who}: {(msg.get('message') or '')[:70]!r}")
 except Exception as e:
     print("conversations ERR", e)
+
+# 4 Nov 2026: her app shows Debra's thread EMPTY. Does the sent message reach Debra's account?
+d2 = json.load(open(m.STATE))
+for cid in ("18069268760785345", "18091163465303677"):
+    rec = d2["sent"].get(cid) or {}
+    try:
+        who = m._get(f"{m.G}/{cid}", {"fields": "from{id,username}", "access_token": tok}).get("from") or {}
+        msg = m._get(f"{m.G}/{rec.get('message')}", {"fields": "created_time,to,from,is_unsupported", "access_token": tok})
+        to_ids = {x.get("id") for x in (msg.get("to") or {}).get("data", [])}
+        to_names = {x.get("username") for x in (msg.get("to") or {}).get("data", [])}
+        print(f"msg for ...{cid[-5:]}: created {msg.get('created_time')} to_commenter_id={who.get('id') in to_ids}"
+              f" to_commenter_name={who.get('username') in to_names} unsupported={msg.get('is_unsupported')}")
+        r = m._get(f"{m.G}/{cid}/replies", {"fields": "id,text,hidden", "access_token": tok}).get("data", [])
+        print(f"   public replies under it: {[(x.get('text') or '')[:30] + (' HIDDEN' if x.get('hidden') else '') for x in r]}")
+    except Exception as e:
+        print(f"msg for ...{cid[-5:]} ERR {e}")
