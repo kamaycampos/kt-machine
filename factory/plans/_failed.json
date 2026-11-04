@@ -10801,6 +10801,96 @@
     "They lied",
     "to keep you asleep."
    ]
+  },
+  "ep_v5jjf38_r3/PRISON-FOR-THE-TRUTH": {
+   "plan": "ep_v5jjf38_r3",
+   "source": "v5jjf38.mp4",
+   "brand": "KT_VERDICTR2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_PRISON-FOR-THE-TRUTH_179s.mp4: ends off the planned words: plan ends 'I was right all along', clip ends 'and i was right all over'"
+   ],
+   "slug": "PRISON-FOR-THE-TRUTH",
+   "in": 218.88,
+   "out": 397.68,
+   "start_words": "I got the longest sentence",
+   "end_words": "I was right all along",
+   "hook": [
+    "How a lie",
+    "became the truth"
+   ]
+  },
+  "ep_v5jjf38_r3/THE-JUDGE-DODGED-PRISON": {
+   "plan": "ep_v5jjf38_r3",
+   "source": "v5jjf38.mp4",
+   "brand": "KT_VERDICTR2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `02_THE-JUDGE-DODGED-PRISON_51s.mp4` - sentence starts with no stop: \"said Well,\"; sentence starts with no stop: \"watch The\""
+   ],
+   "slug": "THE-JUDGE-DODGED-PRISON",
+   "in": 1912.6,
+   "out": 1962.96,
+   "start_words": "We didn't know what",
+   "end_words": "Everything shifted",
+   "hook": [
+    "How he dodged prison",
+    "and won"
+   ]
+  },
+  "ep_v66j311_r4/GLASS-BRIDGE-OVER-THE-CANYON": {
+   "plan": "ep_v66j311_r4",
+   "source": "v66j311.mp4",
+   "brand": "KT_DANNYROSER2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `02_GLASS-BRIDGE-OVER-THE-CANYON_89s.mp4` - sentence starts with no stop: \"awesome He\"; sentence starts with no stop: \"brilliant He\"; sentence starts with no stop: \"command Because\""
+   ],
+   "slug": "GLASS-BRIDGE-OVER-THE-CANYON",
+   "in": 3980.96,
+   "out": 4073.0,
+   "start_words": "Good friend of mine in",
+   "end_words": "manifest goals, dreams, and desires",
+   "hook": [
+    "How 90 days made",
+    "$4 million"
+   ]
+  },
+  "ep_v66j311_r4/A-DELI-SANDWICH-LED-TO-450-MILLION": {
+   "plan": "ep_v66j311_r4",
+   "source": "v66j311.mp4",
+   "brand": "KT_DANNYROSER2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_A-DELI-SANDWICH-LED-TO-450-MILLION_180s.mp4: [FAIL] 01_A-DELI-SANDWICH-LED-TO-450-MILLION_180s.mp4         41 captions vs the sound  median +0.12s  worst-10% 0.80s  | words captioned 100%  UNCAPTIONED SPEECH [(51.6, 52.8)]"
+   ],
+   "slug": "A-DELI-SANDWICH-LED-TO-450-MILLION",
+   "in": 893.4,
+   "out": 1077.0,
+   "start_words": "You look familiar. You're Bobby Singer,",
+   "end_words": "$268,000 for the week",
+   "hook": [
+    "A deli sandwich",
+    "led to $450M"
+   ]
+  },
+  "ep_v66j311_r4/WHY-THE-RICH-HIDE-THE-REAL-FORMULA": {
+   "plan": "ep_v66j311_r4",
+   "source": "v66j311.mp4",
+   "brand": "KT_DANNYROSER2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_WHY-THE-RICH-HIDE-THE-REAL-FORMULA_54s.mp4` - opens mid-sentence on \"people have never\"; ends mid-thought on \"factories\""
+   ],
+   "slug": "WHY-THE-RICH-HIDE-THE-REAL-FORMULA",
+   "in": 1316.0,
+   "out": 1369.8,
+   "start_words": "Someone says, well, wait a minute",
+   "end_words": "going to work in my factories",
+   "hook": [
+    "What Ford told",
+    "about Napoleon Hill"
+   ]
   }
  },
  "attempts": {
