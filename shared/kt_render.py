@@ -1632,7 +1632,7 @@ def edge_words(words, cues, t_in, t_out):
 
 def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
            hook_y=None, yt_win=None, slug=None, fix=None, shots=None,
-           track=None, cuts=None, opener=None, geo=None):
+           track=None, cuts=None, opener=None, geo=None, label=None):
     burn.MAX_CHARS = CAP_MAX          # short bursts, not subtitle lines
     # Real word timings when we have them; the old estimate only as a fallback.
     import kt_words
@@ -1712,6 +1712,34 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     # screen with the speaker in a side panel). None = the usual tracked crop.
     geo = geo or fill_crop(src, cx, zoom, shots)
     caps = [word_caps] if word_caps else (cinema_caption_chain(ps) if CINEMA else caption_chain(ps))
+    # SHOW THE LABEL (kt_label, 4 Nov 2026): the product's real ingredient list, the ingredient
+    # circled on the word he says it. No field, no card: this graph is byte-for-byte the old one.
+    lab = None
+    if label and words and apply:
+        try:
+            import kt_label
+            info, why = kt_label.check(label)
+            lt = kt_label.times(label, words, t_out - t_in) if info else None
+            if not info:
+                print(f"      label refused: {why}")
+            elif not lt:
+                print(f"      label skipped: \"{label.get('circle_on') or label['circle']}\" is not said in this clip")
+            elif not (CINEMA or WORD):
+                print("      label skipped: only the cinema and word looks leave room for it")
+            else:
+                pat, lh = kt_label.frames(info, label, lt, os.path.join(CARDS, (slug or "clip").replace("/", "_") + "_label"))
+                cap_top = CINEMA_CAP_Y if CINEMA else WORD_CAP_Y - 50
+                lab = {"pattern": pat, "t": lt, "y": kt_label.place_y(lh, cap_top)}
+                print(f"      label: {info['code']} \"{label['circle']}\" on screen {lt[0]:.1f}-{lt[3]:.1f}s, "
+                      f"circled at {lt[1]:.1f}s")
+                try:
+                    json.dump({"label": label, "source": info, "times": lt},
+                              open(os.path.splitext(dest)[0] + "__label.json", "w"), indent=1)
+                except OSError:
+                    pass
+        except Exception as e:                       # a label never costs a clip
+            sys.stderr.write(f"      label skipped: {type(e).__name__}: {e}\n")
+            lab = None
     # THE HOOK IS A CARD, COMPOSITED - see hook_card(). persist=True (the
     # YouTube cut) still uses drawtext, because a card that never leaves would
     # cover a third of the frame for the whole video.
@@ -1764,14 +1792,17 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
           f"[1:v]format=rgba,"
           f"fade=out:st={HOOK_SECS - 0.3:.2f}:d=0.3:alpha=1[hk];"
           f"[bg][hk]overlay=x=(W-w)/2:y={cy_px}:"
-          f"enable='lt(t,{HOOK_SECS})'[vv];"
-          f"[vv]fade=t=out:st={dur - fs:.2f}:d={fs:.2f}[v];"
+          f"enable='lt(t,{HOOK_SECS})'[vv];" +
+          (f"[{4 if opener else 2}:v]setpts=PTS-STARTPTS+{lab['t'][0]:.3f}/TB[lb];"
+           f"[vv][lb]overlay=x=(W-w)/2:y={lab['y']}:eof_action=pass[vl];[vl]" if lab else "[vv]") +
+          f"fade=t=out:st={dur - fs:.2f}:d={fs:.2f}[v];"
           f"{ain}{asrc}afade=t=out:st={dur - fs:.2f}:d={fs:.2f}[a]")
     vf = ["-filter_complex", fc, "-map", "[v]", "-map", "[a]"]
     cmd = [FFMPEG, "-y", "-loglevel", "error", "-ss", f"{t_in:.2f}",
            "-t", f"{t_out - t_in:.2f}", "-i", src,
            "-loop", "1", "-framerate", "30", "-t", f"{HOOK_SECS:.2f}",
            "-i", card, *extra,
+           *(["-framerate", "30", "-i", lab["pattern"]] if lab else []),
            *vf, "-c:v", "libx264", "-preset", "medium", "-crf", "19",
            "-maxrate", "9000k", "-bufsize", "18000k",
            "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k",
@@ -1857,6 +1888,21 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
            "-maxrate", "9000k", "-bufsize", "18000k",
                     "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k",
                     "-movflags", "+faststart", yt_path(dest)]
+            # THE LABEL RIDES ALONG when its whole moment is inside this window (kt_label).
+            if lab and not opener and ys - t_in <= lab["t"][0] and lab["t"][3] <= ye - t_in:
+                yd = ye - ys
+                yfc = (f"[0:v]{ygeo},{','.join(ydraws)}[yb];"
+                       f"[1:v]setpts=PTS-STARTPTS+{lab['t'][0] - (ys - t_in):.3f}/TB[lb];"
+                       f"[yb][lb]overlay=x=(W-w)/2:y={lab['y']}:eof_action=pass,"
+                       f"fade=t=out:st={yd - yfs:.2f}:d={yfs:.2f}[v]")
+                ycmd = [FFMPEG, "-y", "-loglevel", "error", "-ss", f"{ys:.2f}",
+                        "-t", f"{yd:.2f}", "-i", src, "-framerate", "30", "-i", lab["pattern"],
+                        "-filter_complex", yfc, "-map", "[v]", "-map", "0:a",
+                        "-af", f"afade=t=out:st={yd - yfs:.2f}:d={yfs:.2f}",
+                        "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                        "-maxrate", "9000k", "-bufsize", "18000k",
+                        "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "128k",
+                        "-movflags", "+faststart", yt_path(dest)]
             if opener:
                 # THE YOUTUBE CUT OPENS THE SAME WAY (17 Oct 2026, Kamay: "YouTube and
                 # story cuts get it too"). The story is cut from the finished clip, so
@@ -2061,7 +2107,7 @@ def run_series(key, spec, apply, only):
         bursts = render(src, dest, c["in"], c["out"], hook, cues,
                         cx, apply, zoom, c.get("hook_yt"), yt_win,
                         c["slug"], c.get("fix"), shots, track,
-                        (frames or {}).get("cuts"), opener=op, geo=lgeo)
+                        (frames or {}).get("cuts"), opener=op, geo=lgeo, label=c.get("label"))
         print(f"  {'rendered' if apply else 'plan'} {brand}/{name}  "
               f"{bursts} bursts  hook={' / '.join(hook[:2])}")
         n += 1
