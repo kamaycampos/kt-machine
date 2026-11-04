@@ -119,6 +119,78 @@ def _align_chunk(x, words, t0):
     return [(got[k][0], got[k][1], got[k][2] / got[k][3]) if k in got else None for k in range(len(words))]
 
 
+WH = os.path.expanduser("~/Kamay/whisper.cpp/build/bin/whisper-cli")
+WM = os.path.expanduser("~/Kamay/whisper.cpp/models/ggml-small.en.bin")
+
+
+def _norm(w):
+    return re.sub(r"[^a-z0-9']", "", w.lower())
+
+
+def fill_missing(x, words):
+    """Add the words the timing pass never heard. ([words], {indices added})
+
+    3 Nov 2026, HE-SKIPPED-A-430K-MAYBACH: the factory refused it for "UNCAPTIONED SPEECH
+    97.0-99.3" - Kevin says "And I drive..." and the one-word-per-line pass that supplies our
+    words (whisper -ml 1) had dropped it, along with "back then", "the car off", "didn't
+    happen". That pass is kept for its clock; it is the worse listener. A normal-mode pass over
+    the clip (windows cut in the middle of his pauses, so no word is split) hears them; the two
+    are compared ONCE over the whole clip, and only what it adds BETWEEN words we already have
+    is taken (a pure insertion) - never a rewrite of words we have. The aligner then places the
+    new words on their sound, and one it cannot find in the audio is dropped again (align)."""
+    import difflib
+    import tempfile
+    import wave
+    dur = len(x) / SR
+    cuts, last = [0.0], 0.0
+    for k in range(1, len(words)):
+        gap = words[k][0] - words[k - 1][1]
+        mid = (words[k - 1][1] + words[k][0]) / 2
+        if (gap >= 0.3 and mid - last > 15) or mid - last > 28:
+            cuts.append(mid); last = mid
+    cuts.append(dur)
+    heard = []
+    tmp = os.path.join(tempfile.gettempdir(), f"kt_fill_{os.getpid()}.wav")
+    for a, b in zip(cuts, cuts[1:]):
+        if b - a < 0.4:
+            continue
+        seg = (x[int(a * SR):int(b * SR)] * 32767).astype("int16")
+        with wave.open(tmp, "wb") as f:
+            f.setnchannels(1); f.setsampwidth(2); f.setframerate(SR); f.writeframes(seg.tobytes())
+        r = subprocess.run([WH, "-m", WM, "-f", tmp, "-bs", "5", "-nt"], capture_output=True, text=True)
+        heard += [h for h in re.sub(r"\[.*?\]|\(.*?\)", " ", r.stdout).split() if _norm(h)]
+    try:
+        os.remove(tmp)
+    except OSError:
+        pass
+    sm = difflib.SequenceMatcher(a=[_norm(w[2]) for w in words], b=[_norm(h) for h in heard], autojunk=False)
+    ins = {i1: heard[j1:j2] for tag, i1, _i2, j1, j2 in sm.get_opcodes()
+           if tag == "insert" and 0 < i1 < len(words) and j2 - j1 <= 6}
+    out, added = [], set()
+    for i, w in enumerate(words):
+        if i in ins:
+            lo, hi = words[i - 1][1], w[0]
+            step = max(hi - lo, 0.06 * len(ins[i])) / (len(ins[i]) + 1)
+            for n, h in enumerate(ins[i], 1):
+                added.add(len(out))
+                out.append((round(lo + n * step, 3), round(lo + n * step + 0.05, 3), h))
+        out.append(w)
+    return out, added
+
+
+def _chunks(words):
+    """Whole words, cut where he pauses, about CHUNK seconds each."""
+    chunks, cur = [], []
+    for k, w in enumerate(words):
+        if cur and (w[0] - words[cur[0]][0] > CHUNK and w[0] - words[k - 1][1] > 0.12
+                    or w[0] - words[cur[0]][0] > CHUNK + 8):
+            chunks.append(cur); cur = []
+        cur.append(k)
+    if cur:
+        chunks.append(cur)
+    return chunks
+
+
 def align(src, t_in, t_out, words, quiet=False):
     """[(start, end, text)] clip-relative in, the same with every start on its sound out."""
     if not words or os.environ.get("CAPTION_ALIGN", "1") == "0":
@@ -136,15 +208,13 @@ def align(src, t_in, t_out, words, quiet=False):
     x = np.frombuffer(raw, np.int16).astype(np.float32) / 32768.0
     dur = len(x) / SR
     words = [tuple(w) for w in words]
-    # chunks of whole words, cut where he pauses
-    chunks, cur = [], []
-    for k, w in enumerate(words):
-        if cur and (w[0] - words[cur[0]][0] > CHUNK and w[0] - words[k - 1][1] > 0.12
-                    or w[0] - words[cur[0]][0] > CHUNK + 8):
-            chunks.append(cur); cur = []
-        cur.append(k)
-    if cur:
-        chunks.append(cur)
+    added = set()
+    if os.environ.get("CAPTION_FILL", "1") != "0" and os.path.exists(WH):
+        try:
+            words, added = fill_missing(x, words)
+        except Exception as e:                       # a missed word is better than a lost clip
+            sys.stderr.write(f"      caption fill skipped: {type(e).__name__}: {e}\n")
+    chunks = _chunks(words)
     out = [None] * len(words)
     for ch in chunks:
         a = max(0.0, words[ch[0]][0] - PAD)
@@ -169,6 +239,17 @@ def align(src, t_in, t_out, words, quiet=False):
             e = out[hi][0] if hi is not None else s + 0.3
             e = max(e, s + 0.06)
         res.append((round(s, 3), round(e, 3), w[2]))
+    # AN ADDED WORD THE SOUND DOES NOT CARRY IS DROPPED: the model crushes it to nothing (or onto
+    # its neighbour) when it is not there - a normal-mode hallucination, not something he said.
+    if added:
+        keep = [k for k in range(len(res)) if k not in added or (
+            out[k] and res[k][1] - res[k][0] >= 0.06 and out[k][2] >= 0.30
+            and (k == 0 or abs(res[k][0] - res[k - 1][0]) >= 0.03))]
+        if not quiet:
+            print(f"      caption timing: {len(added)} word(s) the timing pass missed, "
+                  f"{sum(1 for k in keep if k in added)} confirmed by the sound and captioned")
+        res = [res[k] for k in keep]
+        words = [words[k] for k in keep]
     for k in range(1, len(res)):                       # never out of order
         if res[k][0] < res[k - 1][0]:
             res[k] = (res[k - 1][0], max(res[k][1], res[k - 1][0] + 0.06), res[k][2])

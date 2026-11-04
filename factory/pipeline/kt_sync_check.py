@@ -100,12 +100,27 @@ def check(mp4):
             idx = [n for n, x in enumerate(heard) if t - 0.6 <= x[0] <= t + 0.6]
             if not idx:
                 continue
-            hi = min(idx, key=lambda n: abs(heard[n][0] - t))
-            ci = h2c.get(hi)
-            if ci is None or cap_words[ci][1] is None:
-                continue                 # the word at this pause does not open a caption
-            out.append((cap_words[ci][1] + LEAD_IN) - t)
-            pairs.append((cap_words[ci][1], (cap_words[ci][1] + LEAD_IN) - t))
+            # WHISPER'S CLOCK MAY NAME THE NEIGHBOUR (3 Nov 2026). The word whisper puts nearest
+            # the pause is often one word off - it is reliable about words, not milliseconds - so
+            # this graded HE-SKIPPED-A-430K-MAYBACH +0.64s late while every caption sat within
+            # 0.02s of its sound (forced alignment, checked onset by onset): at 41.15s the
+            # caption "and..." starts at 41.16 and the check graded the NEXT caption instead.
+            # With phrase captions the neighbour rarely opened a caption and was skipped; with
+            # 2-3 word captions it nearly always does. So every word heard near the pause that
+            # opens a caption is a candidate, and the caption is graded by the closest. Real
+            # drift (seconds) still fails: no candidate comes near.
+            cands = [cap_words[h2c[n]][1] for n in idx
+                     if h2c.get(n) is not None and cap_words[h2c[n]][1] is not None]
+            # ...and where the two transcripts disagree around the pause, the order map has no
+            # pair at all: a caption that opens within 0.6s of the pause on a word whisper
+            # heard there is the same word.
+            near = {norm(heard[n][2]) for n in idx}
+            cands += [a for w, a in cap_words if a is not None and abs(a - t) <= 0.6 and w in near]
+            if not cands:
+                continue                 # no word at this pause opens a caption
+            a0 = min(cands, key=lambda a: abs(a + LEAD_IN - t))
+            out.append((a0 + LEAD_IN) - t)
+            pairs.append((a0, (a0 + LEAD_IN) - t))
         return out
     pairs = []
     err, how, med_max, p90_max = graded(onsets), "", MEDIAN_MAX, P90_MAX

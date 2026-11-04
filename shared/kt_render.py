@@ -158,15 +158,23 @@ def cinema_label(lines, path, upper=True, size=66):
         size -= 2
         fo = ImageFont.truetype(CINEMA_SERIF, size)
     step = int(size * 1.28)
-    hgt = step * len(text) + 40
+    pad = 0 if upper else 50                 # room for the glow below
+    hgt = step * len(text) + 40 + 2 * pad
     img = Image.new("RGBA", (W, hgt), (0, 0, 0, 0))
     sh = Image.new("RGBA", (W, hgt), (0, 0, 0, 0))
     ds, d = ImageDraw.Draw(sh), ImageDraw.Draw(img)
+    if not upper:
+        # A SOFT DARK GLOW BEHIND THE WORDS (3 Nov 2026). The first factory clip in look E put the
+        # hook over Kevin's pale blue shirt: white serif on white-ish cloth, hard to read. No box
+        # (the slam card "scares me"); a blurred shadow wide enough to carry the line anywhere.
+        tw = max(fo.getlength(t) for t in text)
+        ds.rounded_rectangle(((W - tw) / 2 - 40, pad + 10, (W + tw) / 2 + 40, pad + 30 + step * len(text)),
+                             radius=60, fill=(0, 0, 0, 135))
     for i, t in enumerate(text):
         x = (W - fo.getlength(t)) / 2
-        ds.text((x, 20 + i * step + 3), t, font=fo, fill=(0, 0, 0, 170))
-        d.text((x, 20 + i * step), t, font=fo, fill=(255, 255, 255, 255))
-    sh = sh.filter(ImageFilter.GaussianBlur(6))
+        ds.text((x, pad + 20 + i * step + 3), t, font=fo, fill=(0, 0, 0, 170))
+        d.text((x, pad + 20 + i * step), t, font=fo, fill=(255, 255, 255, 255))
+    sh = sh.filter(ImageFilter.GaussianBlur(6 if upper else 42))
     out = Image.alpha_composite(sh, img)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     out.save(path)
@@ -243,9 +251,15 @@ _FUNC = set("the a an and or but so to of in on at for is are was were be been i
 
 
 def word_groups(words):
-    """Captions of 2-3 words, broken at punctuation: lists of word indices."""
+    """Captions of 2-3 words, broken at punctuation AND where he pauses: lists of word indices.
+
+    A pause is where a new caption belongs: he stops, the screen turns over on the word he starts
+    again with. Grouping by count alone put that word mid-caption (MAYBACH, 3 Nov 2026), so the
+    line he resumed with appeared before he said it and the sync check graded the wrong caption."""
     out, cur = [], []
     for i, (_a, _b, w) in enumerate(words):
+        if cur and words[i][0] - words[i - 1][1] >= 0.25:
+            out.append(cur); cur = []
         cur.append(i)
         if (len(cur) >= 3 or len(" ".join(words[j][2] for j in cur)) >= 16
                 or w.endswith((".", ",", "?", "!", ":", ";"))):
