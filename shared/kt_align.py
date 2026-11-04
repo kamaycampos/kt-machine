@@ -166,6 +166,16 @@ def fill_missing(x, words):
     sm = difflib.SequenceMatcher(a=[_norm(w[2]) for w in words], b=[_norm(h) for h in heard], autojunk=False)
     ins = {i1: heard[j1:j2] for tag, i1, _i2, j1, j2 in sm.get_opcodes()
            if tag == "insert" and 0 < i1 < len(words) and j2 - j1 <= 6}
+    # THE FULL STOP COMES WITH THE WORD (4 Nov 2026). The first factory day of look E queued
+    # nothing on KT: kt_qc refused GLASS-BRIDGE for 'sentence starts with no stop: "awesome He"'
+    # - the normal-mode pass heard "awesome. He", the fill took "He" with its capital and left the
+    # stop behind. Where an insertion opens a sentence, the word before it ends one.
+    stop = {}
+    for tag, i1, _i2, j1, j2 in sm.get_opcodes():
+        if tag == "insert" and i1 in ins and j1 > 0 and heard[j1 - 1].endswith((".", "!", "?")):
+            stop[i1 - 1] = heard[j1 - 1][-1]
+    words = [(a, b, w + stop[k]) if k in stop and not w.endswith((".", "!", "?", ",")) else (a, b, w)
+             for k, (a, b, w) in enumerate(words)]
     out, added = [], set()
     for i, w in enumerate(words):
         if i in ins:
