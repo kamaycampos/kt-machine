@@ -324,7 +324,9 @@ def word_ass(words, path, src=None, t_in=0.0, t_out=None, dur=None):
         nxt = starts[k + 1] if k + 1 < len(groups) else None
         # no blink between captions: a short gap is closed by holding the last one (Netflix: gaps
         # are 2 frames or half a second and more - closed by extending the previous caption)
-        g_end = nxt if nxt is not None and nxt - words[g[-1]][1] < 1.0 else min(words[g[-1]][1] + 0.4, end_all)
+        # held through a pause of up to 1.5s like every caption we burn (phrases_from_words): WB's
+        # first look E day lost clips to "UNCAPTIONED SPEECH" in 1.2-1.5s pauses cleared at 1.0s
+        g_end = nxt if nxt is not None and nxt - words[g[-1]][1] < 1.5 else min(words[g[-1]][1] + 0.4, end_all)
         shown.append((round(starts[k], 3), round(g_end, 3), " ".join(words[j][2] for j in g)))
         for gi, j in enumerate(g):
             a = starts[k] if gi == 0 else max(starts[k], words[j][0] - LEAD_LIT)
