@@ -11071,6 +11071,78 @@
     "Why 10 minutes",
     "builds your wealth"
    ]
+  },
+  "ep_v5jjf38_r3c/PRISON-FOR-THE-TRUTH": {
+   "plan": "ep_v5jjf38_r3c",
+   "source": "v5jjf38.mp4",
+   "brand": "KT_VERDICTR2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_PRISON-FOR-THE-TRUTH_179s.mp4: [FAIL] 01_PRISON-FOR-THE-TRUTH_179s.mp4                       40 captions vs the sound  median +0.03s  worst-10% 0.36s  | words captioned 100%  UNCAPTIONED SPEECH [(21.6, 24.0)]"
+   ],
+   "slug": "PRISON-FOR-THE-TRUTH",
+   "in": 218.88,
+   "out": 397.68,
+   "start_words": "I got the longest sentence",
+   "end_words": "I was right all along",
+   "hook": [
+    "How a lie",
+    "became the truth"
+   ]
+  },
+  "ep_v66j311_r4c/GLASS-BRIDGE-OVER-THE-CANYON": {
+   "plan": "ep_v66j311_r4c",
+   "source": "v66j311.mp4",
+   "brand": "KT_DANNYROSER2R2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `02_GLASS-BRIDGE-OVER-THE-CANYON_89s.mp4` - word repeated: \"It's It's\"; word repeated: \"couldn't couldn't\"; word repeated: \"the the\""
+   ],
+   "slug": "GLASS-BRIDGE-OVER-THE-CANYON",
+   "in": 3980.96,
+   "out": 4073.0,
+   "start_words": "Good friend of mine in",
+   "end_words": "manifest goals, dreams, and desires",
+   "hook": [
+    "How 90 days made",
+    "$4 million"
+   ]
+  },
+  "ep_v66j311_r4c/A-DELI-SANDWICH-LED-TO-450-MILLION": {
+   "plan": "ep_v66j311_r4c",
+   "source": "v66j311.mp4",
+   "brand": "KT_DANNYROSER2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_A-DELI-SANDWICH-LED-TO-450-MILLION_180s.mp4: [FAIL] 01_A-DELI-SANDWICH-LED-TO-450-MILLION_180s.mp4         33 captions vs the sound  median +0.12s  worst-10% 0.81s  | words captioned 100%  UNCAPTIONED SPEECH [(42.1, 43.8)]"
+   ],
+   "slug": "A-DELI-SANDWICH-LED-TO-450-MILLION",
+   "in": 893.4,
+   "out": 1077.0,
+   "start_words": "You look familiar. You're Bobby Singer,",
+   "end_words": "$268,000 for the week",
+   "hook": [
+    "A deli sandwich",
+    "led to $450M"
+   ]
+  },
+  "ep_v66j311_r4c/WHY-THE-RICH-HIDE-THE-REAL-FORMULA": {
+   "plan": "ep_v66j311_r4c",
+   "source": "v66j311.mp4",
+   "brand": "KT_DANNYROSER2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_WHY-THE-RICH-HIDE-THE-REAL-FORMULA_54s.mp4: [FAIL] 01_WHY-THE-RICH-HIDE-THE-REAL-FORMULA_54s.mp4          11 captions vs the sound  median -0.00s  worst-10% 0.54s  | words captioned 100%  UNCAPTIONED SPEECH [(26.2, 28.6)]"
+   ],
+   "slug": "WHY-THE-RICH-HIDE-THE-REAL-FORMULA",
+   "in": 1316.0,
+   "out": 1369.8,
+   "start_words": "Someone says, well, wait a minute",
+   "end_words": "going to work in my factories",
+   "hook": [
+    "What Ford told",
+    "about Napoleon Hill"
+   ]
   }
  },
  "attempts": {
