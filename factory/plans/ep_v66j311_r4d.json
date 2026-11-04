@@ -1,0 +1,23 @@
+{
+ "source": "v66j311.mp4",
+ "brand": "KT_DANNYROSER2R2",
+ "test": false,
+ "note": "4 Nov 2026 - REBUILD: stutters ('It's it's', 'the the') now dropped from captions.",
+ "clips": [
+  {
+   "slug": "GLASS-BRIDGE-OVER-THE-CANYON",
+   "in": 3980.96,
+   "out": 4073.0,
+   "start_words": "Good friend of mine in",
+   "end_words": "manifest goals, dreams, and desires",
+   "hook": [
+    "How 90 days made",
+    "$4 million"
+   ],
+   "send": "A friend who calls their own big idea impossible gets sent this - a glass bridge over a canyon got built anyway; the awe of watching impossible happen.",
+   "caption": "Kevin Trudeau handed a friend in Henderson, Nevada his Your Wish Is Your Command program. He listened to the whole thing in one night.\n\nEighteen months later: $4 million net, from 90 days of work, under 10 hours a week. Then he stopped, and the money kept coming.\n\nThat same friend built something bigger: a glass bridge out over the Grand Canyon. Engineers and the government said it couldn't be built.\n\nHe built it anyway. You can walk out and look straight down. He manifested it the same way, using his mind for goals most people never let themselves want.\n\nWhat's the 'impossible' idea you've been told to drop?\n\n#kevintrudeau #yourwishisyourcommand #manifestation #lawofattraction #mindsetmatters #success",
+   "opener": "glass bridge over canyon",
+   "retry_of": "ep_v66j311_r2/GLASS-BRIDGE-OVER-THE-CANYON"
+  }
+ ]
+}

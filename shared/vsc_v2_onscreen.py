@@ -52,11 +52,14 @@ def check(mp4, n=SAMPLES, seed=7):
         on = [c for c in caps if c[0] <= t < c[1]]
         if not on:
             continue
-        # the word may straddle the change, so the neighbours count too
-        i = caps.index(on[0])
+        # the word may straddle the change, so the neighbours count too - by TIME, not by caption
+        # count (4 Nov 2026): one caption either side was ~15 words for 5-word captions and ~7 for
+        # look E's 2-3 word ones, so a correctly timed look E clip failed (5 of 8). What was on
+        # screen from 1.0s before to 1.4s after the moment (the 1.2s read) is the same for any look.
         shown = set()
-        for c in caps[max(0, i - 1):i + 2]:
-            shown |= {nm(w) for w in c[2].split()}
+        for c in caps:
+            if c[1] > t - 1.0 and c[0] < t + 1.4:
+                shown |= {nm(w) for w in c[2].split()}
         if heard[0] in shown or (len(heard) > 1 and heard[1] in shown):
             hit += 1
         else:

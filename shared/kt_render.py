@@ -1630,6 +1630,27 @@ def edge_words(words, cues, t_in, t_out):
     return words
 
 
+def drop_stutters(words):
+    """A word said twice in a row is captioned once (4 Nov 2026): "It's it's made of glass",
+    "said couldn't couldn't happen", "the the sky bridge". Kevin does stutter; a caption that shows
+    it reads as damage, and kt_qc refuses it. Clean-verbatim captioning, as broadcasters do: the
+    repeat is dropped and the kept word holds until the repeat ends. Never across punctuation
+    ("I published it. It became") and never "that that" / "had had" / "very very" / "no no", which
+    kt_qc accepts as English."""
+    keep = {"that", "had", "very", "no"}
+    out = []
+    for a, b, w in words:
+        if out:
+            pa, pb, pw = out[-1]
+            n0 = re.sub(r"[^a-z0-9']", "", pw.lower())
+            if (n0 and n0 == re.sub(r"[^a-z0-9']", "", w.lower()) and n0 not in keep
+                    and not pw.rstrip("\"'\u2019\u201d").endswith((".", ",", "!", "?", ";", ":", "-"))):
+                out[-1] = (pa, max(pb, b), pw)
+                continue
+        out.append((a, b, w))
+    return out
+
+
 def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
            hook_y=None, yt_win=None, slug=None, fix=None, shots=None,
            track=None, cuts=None, opener=None, geo=None, label=None):
@@ -1678,6 +1699,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     words = warp_words(words, os.environ.get("CAPTION_WARP"))
     if words:
         words = edge_words(words, cues, t_in, t_out)
+        words = drop_stutters(words)
     # TWO PEOPLE IN ONE SHOT: FRAME WHOEVER IS TALKING. See vsc_frame.speaker_turns.
     # It needs the final word times, because a switch may only land on the first
     # word of a sentence.
@@ -1710,7 +1732,31 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
             pass
     # geo: an explicit crop for a layout the face tracker cannot read (a podcast
     # screen with the speaker in a side panel). None = the usual tracked crop.
+    ext_geo = bool(geo)
     geo = geo or fill_crop(src, cx, zoom, shots)
+    base_geo = geo
+    # KEVIN'S OWN WORDS ON SCREEN ARE NEVER CUT IN HALF (kt_textsafe, 4 Nov 2026): where the source
+    # shows a row of overlay letters the crop would slice, those seconds show the whole picture.
+    tspans = []
+    if apply and not ext_geo and not opener and os.environ.get("TEXT_SAFE", "1") != "0":
+        try:
+            import kt_textsafe
+            sw_, sh_ = source_size(src)
+            cwn = min(sh_ * 9 / 16, sw_) / zoom / sw_
+            def crop_at(t, _shots=shots):
+                c_ = cx
+                if _shots:
+                    c_ = next((sh["cx"] for sh in _shots if t < sh["end"]), _shots[-1]["cx"])
+                x0 = max(0.0, min(c_ - cwn / 2, 1.0 - cwn))
+                return x0, x0 + cwn
+            tspans = kt_textsafe.cut_text_spans(src, t_in, t_out, crop_at)
+            if tspans:
+                geo = kt_textsafe.with_fit(geo, tspans)
+                print("      source text kept whole (full picture): "
+                      + ", ".join(f"{a:.1f}-{b:.1f}s" for a, b in tspans))
+        except Exception as e:                       # framing polish never costs a clip
+            sys.stderr.write(f"      text-safe framing skipped: {type(e).__name__}: {e}\n")
+            tspans = []
     caps = [word_caps] if word_caps else (cinema_caption_chain(ps) if CINEMA else caption_chain(ps))
     # SHOW THE LABEL (kt_label, 4 Nov 2026): the product's real ingredient list, the ingredient
     # circled on the word he says it. No field, no card: this graph is byte-for-byte the old one.
@@ -1855,7 +1901,13 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
                       and b <= ye - t_in] if words else []
             ywords = [(a - (ys - t_in), b - (ys - t_in), w) for a, b, w in ywords]
             yps = phrases_from_words(ywords) if ywords else burn.phrases(cues, ys, ye)
-            ygeo = geo or fill_crop(src, cx, zoom)
+            ygeo = base_geo
+            if tspans:                               # the same seconds, on this window's clock
+                import kt_textsafe
+                off = ys - t_in
+                ysp = [(max(0.0, a - off), min(ye - ys, b - off)) for a, b in tspans
+                       if b - off > 0 and a - off < ye - ys]
+                ygeo = kt_textsafe.with_fit(ygeo, [x for x in ysp if x[1] - x[0] > 0.2])
             # The window is often a DIFFERENT teaching from the full clip, so
             # the full clip's hook can promise something this cut never
             # delivers. hook_yt in kt_series.json overrides it where they differ.
