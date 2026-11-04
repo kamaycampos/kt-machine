@@ -136,8 +136,9 @@ def fill_missing(x, words):
     happen". That pass is kept for its clock; it is the worse listener. A normal-mode pass over
     the clip (windows cut in the middle of his pauses, so no word is split) hears them; the two
     are compared ONCE over the whole clip, and only what it adds BETWEEN words we already have
-    is taken (a pure insertion) - never a rewrite of words we have. The aligner then places the
-    new words on their sound, and one it cannot find in the audio is dropped again (align)."""
+    is taken (a pure insertion) - never a rewrite of words we have (only their punctuation and
+    sentence capitals, see merge_heard). The aligner then places the new words on their sound,
+    and one it cannot find in the audio is dropped again (align)."""
     import difflib
     import tempfile
     import wave
@@ -149,7 +150,7 @@ def fill_missing(x, words):
         if (gap >= 0.3 and mid - last > 15) or mid - last > 28:
             cuts.append(mid); last = mid
     cuts.append(dur)
-    heard = []
+    heard, edge = [], set()          # edge: heard indices at the cut between two windows
     tmp = os.path.join(tempfile.gettempdir(), f"kt_fill_{os.getpid()}.wav")
     for a, b in zip(cuts, cuts[1:]):
         if b - a < 0.4:
@@ -158,25 +159,110 @@ def fill_missing(x, words):
         with wave.open(tmp, "wb") as f:
             f.setnchannels(1); f.setsampwidth(2); f.setframerate(SR); f.writeframes(seg.tobytes())
         r = subprocess.run([WH, "-m", WM, "-f", tmp, "-bs", "5", "-nt"], capture_output=True, text=True)
-        heard += [h for h in re.sub(r"\[.*?\]|\(.*?\)", " ", r.stdout).split() if _norm(h)]
+        got = [h for h in re.sub(r"\[.*?\]|\(.*?\)", " ", r.stdout).split() if _norm(h)]
+        if got:
+            if heard:
+                edge.update((len(heard) - 1, len(heard)))
+            heard += got
     try:
         os.remove(tmp)
     except OSError:
         pass
-    sm = difflib.SequenceMatcher(a=[_norm(w[2]) for w in words], b=[_norm(h) for h in heard], autojunk=False)
-    ins = {i1: heard[j1:j2] for tag, i1, _i2, j1, j2 in sm.get_opcodes()
-           if tag == "insert" and 0 < i1 < len(words) and j2 - j1 <= 6}
-    # THE FULL STOP COMES WITH THE WORD (4 Nov 2026). The first factory day of look E queued
-    # nothing on KT: kt_qc refused GLASS-BRIDGE for 'sentence starts with no stop: "awesome He"'
-    # - the normal-mode pass heard "awesome. He", the fill took "He" with its capital and left the
-    # stop behind. Where an insertion opens a sentence, the word before it ends one.
-    stop = {}
-    for tag, i1, _i2, j1, j2 in sm.get_opcodes():
-        if tag == "insert" and i1 in ins and j1 > 0 and heard[j1 - 1].endswith((".", "!", "?")):
-            stop[i1 - 1] = heard[j1 - 1][-1]
-    words = [(a, b, w + stop[k]) if k in stop and not w.endswith((".", "!", "?", ",")) else (a, b, w)
-             for k, (a, b, w) in enumerate(words)]
-    out, added = [], set()
+    return merge_heard(words, heard, edge)
+
+
+_END = (".", "!", "?")
+_PUNCT = (".", "!", "?", ",", ";", ":")
+_PROPER = {"i", "i'm", "i've", "i'll", "i'd", "god", "kevin", "trudeau", "america", "american"}
+try:
+    from kt_qc import STARTERS as _STARTERS          # the words kt_qc reads as a sentence start
+except Exception:
+    _STARTERS = {"the", "this", "that", "these", "we", "you", "they", "he", "she", "it", "and", "but",
+                 "so", "guess", "now", "what", "if", "because", "there", "well", "look", "every", "most",
+                 "without", "when", "successful", "people"}
+
+
+def _tail(w):
+    m = re.search(r"[.!?,;:]+$", w.rstrip("\"'’”"))
+    return m.group(0) if m else ""
+
+
+def merge_heard(words, heard, edge=()):
+    """The timing pass's words, with the normal-mode pass's added words AND its sentences.
+
+    4 Nov 2026, why KT queued nothing for a day [Certain, GLASS-BRIDGE's caption record]: our
+    words come from the one-word-per-line pass (whisper -ml 1), which keeps time but writes almost
+    no full stops and almost no capitals ("close your eyes hi I'm guru joe so and I am gonna"). The
+    old looks passed kt_qc only because nothing was capitalised, so the missing stops were
+    invisible. The missed-word fill takes words from the normal-mode pass, which writes "He",
+    "The", "Because" with a capital - next to a word that never got its stop: "It's awesome He",
+    "happen The", "now He"; and a stutter it heard ("It's it's", "the the") came in as a repeat.
+    Twelve kt_qc faults on one clip, in cinema as much as in look E.
+
+    So the normal-mode pass, the better listener, also lends its SENTENCES: where it matches our
+    word, its trailing punctuation and its sentence-start capital are carried across (times
+    never). Except at the cut between two of its windows: whisper ends every window with a stop
+    and opens the next with a capital, true or not. A stutter is never added. And a capital still
+    standing with no stop before it is a casing slip, not a sentence: lower case, as the old
+    captions always were. Returns ([words], {indices added})."""
+    import difflib
+    words = [tuple(w) for w in words]
+    hn = [_norm(h) for h in heard]
+    sm = difflib.SequenceMatcher(a=[_norm(w[2]) for w in words], b=hn, autojunk=False)
+    ops = sm.get_opcodes()
+
+    def sent_start(j):                 # heard[j] opens a sentence in the normal-mode text
+        return j > 0 and j not in edge and j - 1 not in edge and heard[j - 1].endswith(_END)
+
+    def lend(w, j, last=False):
+        """Our word w, with heard[j]'s punctuation and sentence-start casing."""
+        h = heard[j]
+        t = _tail(h)
+        # a stop at a window's edge is whisper closing the window, not him ending a sentence -
+        # except the very end of the clip, which IS where he finishes
+        if t and not _tail(w) and (j not in edge or t[0] not in _END or last):
+            w = w + t
+        core = re.sub(r"[^A-Za-z']", "", w)
+        if core and sent_start(j) and h[:1].isupper() and w[:1].islower():
+            w = w[:1].upper() + w[1:]
+        elif core and w[:1].isupper() and h[:1].islower() and _norm(w) not in _PROPER:
+            w = w[:1].lower() + w[1:]
+        return w
+
+    words = list(words)
+    before = [w[2] for w in words]
+    for tag, i1, i2, j1, j2 in ops:
+        if tag == "equal":
+            for i, j in zip(range(i1, i2), range(j1, j2)):
+                a, b, w = words[i]
+                words[i] = (a, b, lend(w, j, last=(j == len(heard) - 1)))
+    ins = {}
+    for tag, i1, _i2, j1, j2 in ops:
+        if tag != "insert" or not (0 < i1 < len(words)) or j2 - j1 > 6:
+            continue
+        new = []
+        for j in range(j1, j2):
+            h = heard[j]
+            prev = hn[j - 1] if j > j1 else _norm(words[i1 - 1][2])
+            nxt = hn[j + 1] if j + 1 < j2 else _norm(words[i1][2])
+            # A STUTTER IS NOT A MISSED WORD: "it's, it's" / "the the" read as damage on screen and
+            # kt_qc refuses it. Only a word the timing pass truly lost is worth adding.
+            if hn[j] in (prev, nxt):
+                continue
+            if h[:1].isupper() and not sent_start(j) and hn[j] not in _PROPER and h[1:2].islower():
+                h = h[:1].lower() + h[1:]
+            new.append(h)
+        if not new:
+            continue
+        ins[i1] = new
+        # THE FULL STOP COMES WITH THE WORD (4 Nov 2026): where an insertion opens a sentence, the
+        # word before it ends one ("awesome. He").
+        if j1 > 0 and j1 - 1 not in edge and heard[j1 - 1].endswith(_END):
+            a, b, w = words[i1 - 1]
+            if not _tail(w):
+                words[i1 - 1] = (a, b, w + heard[j1 - 1][-1])
+    stopped = {i for i, w in enumerate(words) if w[2].endswith(_END) and not _tail(before[i])}
+    out, added, stop_at = [], set(), set()
     for i, w in enumerate(words):
         if i in ins:
             lo, hi = words[i - 1][1], w[0]
@@ -184,7 +270,24 @@ def fill_missing(x, words):
             for n, h in enumerate(ins[i], 1):
                 added.add(len(out))
                 out.append((round(lo + n * step, 3), round(lo + n * step + 0.05, 3), h))
+        if i in stopped:
+            stop_at.add(len(out))
         out.append(w)
+    # a stop we carried ends a sentence, so the next word opens one (never "the number. one")
+    # ...and so does a word the fill adds right after a stop the timing pass already had
+    stop_at |= {k - 1 for k in added if k > 0 and out[k - 1][2].rstrip("\"'\u2019\u201d").endswith(_END)
+                and not out[k - 1][2].endswith("...")}
+    for k in sorted(stop_at):
+        if k + 1 < len(out) and out[k + 1][2][:1].islower():
+            a, b, w = out[k + 1]
+            out[k + 1] = (a, b, w[:1].upper() + w[1:])
+    # A CAPITAL WITH NO STOP BEFORE IT IS A CASING SLIP ("gonna Build this", "and Then I"): neither
+    # pass put a sentence there, so it reads the way every caption before 3 Nov did - lower case.
+    for k in range(1, len(out)):
+        a, b, w = out[k]
+        if (w[:1].isupper() and w[1:2].islower() and _norm(w) in _STARTERS
+                and not out[k - 1][2].rstrip("\"'’”").endswith(_PUNCT + ("-",))):
+            out[k] = (a, b, w[:1].lower() + w[1:])
     return out, added
 
 

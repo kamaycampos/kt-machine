@@ -84,6 +84,19 @@ for plan, rs in sorted(by_plan.items()):
             note_failures(plan, p, set(), "\n".join(report))
             report.append(f"- **RETIRED** after {n} runs with nothing passing; its clips go back "
                           f"to the planner (factory/plans/_failed.json)")
+    # A TEST MEETS THE LAST GATE TOO (4 Nov 2026). Look E's two cloud tests "passed every gate" and
+    # its first real day queued nothing: a test plan skipped kt_qc, the one gate that refused it
+    # ("awesome He"). A test is still never queued - it is only told what the queue would say.
+    if p.get("test") and passed:
+        import kt_qc
+        for r in rs:
+            d = os.path.join(root, f"shard-{plan}-{r['shard']}")
+            for f in r["files"]:
+                if f.endswith(".mp4") and "__" not in f:
+                    v, why = kt_qc.check(os.path.join(d, f))
+                    line = f"TEST last gate (kt_qc) {v.upper()} {f}" + (f": {'; '.join(why[:4])}" if why else "")
+                    report.append(f"- {line}")
+                    print(f"  {line}", flush=True)
     if p.get("test") or not passed:
         continue
     spec = series.setdefault(plan, {"source": p["source"], "brand": p["brand"],
