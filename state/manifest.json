@@ -13496,7 +13496,11 @@
    "hook": "The 1-hour rule of every billionaire",
    "bytes": 61005858,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-05T08:00",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_BOOKSHELF/01_HALF-A-MILLION-A-WEEK_98s.mp4",
@@ -13504,7 +13508,11 @@
    "hook": "He spends $500K a week easily",
    "bytes": 64393977,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-05T09:00",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_BOOKSHELF/01_LIBERACES-SECRET-BOOK_42s.mp4",
@@ -13512,7 +13520,11 @@
    "hook": "How this book made Liberace rich",
    "bytes": 28880019,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-04T20:16",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_BOOKSHELF/02_KNOWING-IT-ISNT-DOING-IT_125s.mp4",
@@ -13520,7 +13532,11 @@
    "hook": "Why reading won't make you rich",
    "bytes": 83499077,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-05T10:04",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   }
  ]
 }
