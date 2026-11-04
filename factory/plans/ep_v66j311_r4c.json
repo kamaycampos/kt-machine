@@ -1,0 +1,51 @@
+{
+ "source": "v66j311.mp4",
+ "brand": "KT_DANNYROSER2R2",
+ "test": false,
+ "note": "4 Nov 2026 - REBUILD in the cinema look: look E's caption text failed kt_qc ('awesome He'), KT queued nothing for a day. 4 Nov 2026 - REBUILD of ep_v66j311_r4: its passing clips were refused by kt_qc because look E's missed-word fill dropped a full stop ('awesome He'); fixed in kt_align. Same clips, same edges. 4 Nov 20",
+ "clips": [
+  {
+   "slug": "GLASS-BRIDGE-OVER-THE-CANYON",
+   "in": 3980.96,
+   "out": 4073.0,
+   "start_words": "Good friend of mine in",
+   "end_words": "manifest goals, dreams, and desires",
+   "hook": [
+    "How 90 days made",
+    "$4 million"
+   ],
+   "send": "A friend who calls their own big idea impossible gets sent this - a glass bridge over a canyon got built anyway; the awe of watching impossible happen.",
+   "caption": "Kevin Trudeau handed a friend in Henderson, Nevada his Your Wish Is Your Command program. He listened to the whole thing in one night.\n\nEighteen months later: $4 million net, from 90 days of work, under 10 hours a week. Then he stopped, and the money kept coming.\n\nThat same friend built something bigger: a glass bridge out over the Grand Canyon. Engineers and the government said it couldn't be built.\n\nHe built it anyway. You can walk out and look straight down. He manifested it the same way, using his mind for goals most people never let themselves want.\n\nWhat's the 'impossible' idea you've been told to drop?\n\n#kevintrudeau #yourwishisyourcommand #manifestation #lawofattraction #mindsetmatters #success",
+   "opener": "glass bridge over canyon",
+   "retry_of": "ep_v66j311_r2/GLASS-BRIDGE-OVER-THE-CANYON"
+  },
+  {
+   "slug": "A-DELI-SANDWICH-LED-TO-450-MILLION",
+   "in": 893.4,
+   "out": 1077.0,
+   "start_words": "You look familiar. You're Bobby Singer,",
+   "end_words": "$268,000 for the week",
+   "hook": [
+    "A deli sandwich",
+    "led to $450M"
+   ],
+   "send": "A friend chasing one big goal gets sent this - he asked the universe for $100k a week and a stranger's sandwich conversation built a $450 million company; awe.",
+   "caption": "Kevin Trudeau says he once sat down and told the universe exactly what he wanted: $100,000 a week, for life, from his memory training business.\n\nOne week later, at the Carnegie Deli in New York, he recognized the stranger next to him - a TV infomercial guy. They talked about his memory course. The guy said, \"Put this on TV.\"\n\nThe same day, a different old friend called with the exact same pitch, a second infomercial expert offering the same deal.\n\nHe signed with the first one. Mega Memory went on to do $450 million in sales. His first royalty check was $268,000, for one week.\n\nWhat are you asking the universe for, specifically?\n\n#kevintrudeau #manifesting #megamemory #yourwishisyourcommand #success #wealthmindset",
+   "retry_of": "ep_v66j311_r3/A-DELI-SANDWICH-LED-TO-450-MILLION"
+  },
+  {
+   "slug": "WHY-THE-RICH-HIDE-THE-REAL-FORMULA",
+   "in": 1316.0,
+   "out": 1369.8,
+   "start_words": "Someone says, well, wait a minute",
+   "end_words": "going to work in my factories",
+   "hook": [
+    "What Ford told",
+    "about Napoleon Hill"
+   ],
+   "send": "Someone grinding through a 'proven' success book sends this to a friend - even Napoleon Hill got the watered-down version; anger at being handed the fake formula.",
+   "caption": "Why don't wealthy people teach the real way they made their money? Kevin Trudeau says it's not an accident.\n\nNapoleon Hill interviewed Henry Ford, Edison, Carnegie and Rockefeller for Think and Grow Rich. He even lived with some of them to study what they did.\n\nHe still didn't get the real information. Ford told Kevin directly: I didn't tell Napoleon Hill what I really do. I tried to send him off track.\n\nWhy? Because if people learned the real formula, Ford said, who's going to work in my factories?\n\nThat's why the famous success books always feel like something is missing. Because it is.\n\nHave you ever followed advice that just didn't add up?\n\n#kevintrudeau #henryford #wealthmindset #success #moneymindset #richmindset",
+   "retry_of": "ep_v66j311_r3/WHY-THE-RICH-HIDE-THE-REAL-FORMULA"
+  }
+ ]
+}

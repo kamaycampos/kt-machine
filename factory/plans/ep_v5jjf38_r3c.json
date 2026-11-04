@@ -1,0 +1,66 @@
+{
+ "source": "v5jjf38.mp4",
+ "brand": "KT_VERDICTR2R2",
+ "test": false,
+ "note": "4 Nov 2026 - REBUILD in the cinema look: look E's caption text failed kt_qc ('awesome He'), KT queued nothing for a day. 4 Nov 2026 - REBUILD of ep_v5jjf38_r3: its passing clips were refused by kt_qc because look E's missed-word fill dropped a full stop ('awesome He'); fixed in kt_align. Same clips, same edges. 4 Nov 20",
+ "clips": [
+  {
+   "slug": "PRISON-FOR-THE-TRUTH",
+   "in": 218.88,
+   "out": 397.68,
+   "start_words": "I got the longest sentence",
+   "end_words": "I was right all along",
+   "hook": [
+    "How a lie",
+    "became the truth"
+   ],
+   "send": "A mom who still uses baby powder sends this to her sister - he was branded a liar on national TV and the science proved him right; anger at being deceived.",
+   "caption": "Kevin Trudeau wrote that talcum powder, the kind in Johnson's baby powder, was linked to cancer and hormone problems.\n\nThe government called it a lie. He went on The Today Show, The O'Reilly Factor, CNN and Howard Stern, and the press ran front-page stories calling him a scammer who was lying to people.\n\nHe went to prison anyway, for exercising his First Amendment right to say what he believed was true.\n\nTwenty years later, the science caught up. Talcum powder has since been tied to hormonal imbalances and proven to cause cancer, just like he said.\n\nAnd he was right all along.\n\nWould you risk prison to say what you believe?\n\n#kevintrudeau #naturalcures #freespeech #truthteller #talcumpowder #mindset",
+   "retry_of": "ep_v5jjf38_r2/PRISON-FOR-THE-TRUTH",
+   "trial_hooks": [
+    [
+     "20 years later,",
+     "he was right"
+    ],
+    [
+     "The FTC called",
+     "it a lie"
+    ],
+    [
+     "Called a liar",
+     "Proven right"
+    ],
+    [
+     "What they banned",
+     "could affect you"
+    ],
+    [
+     "Kevin Trudeau's warning",
+     "came true later"
+    ],
+    [
+     "Kevin Trudeau's crime:",
+     "telling the truth"
+    ],
+    [
+     "Talcum powder",
+     "really does cause cancer"
+    ]
+   ]
+  },
+  {
+   "slug": "THE-JUDGE-DODGED-PRISON",
+   "in": 1912.6,
+   "out": 1962.96,
+   "start_words": "We didn't know what",
+   "end_words": "Everything shifted",
+   "hook": [
+    "How he dodged prison",
+    "and won"
+   ],
+   "send": "A friend facing a scary court date or diagnosis gets sent this - trust your gut before the outcome shows up; the awe of a long shot turning around.",
+   "caption": "Kevin Trudeau's own lawyer warned him: you're probably going back to prison.\n\nKevin says he looked inward instead of panicking, and told his lawyer something good was about to happen.\n\nMinutes later the judge walked in and said something nobody expected: I am biased against Mr. Trudeau, and I am recusing myself from this case. Then he left.\n\nThe FTC was stunned. His own lawyer was stunned. Kevin says he wasn't, because he'd already felt it coming.\n\nHe calls it the first sign everything was about to turn. Everything shifted from that moment.\n\nDo you trust your gut before the outcome even shows up?\n\n#kevintrudeau #manifesting #mindset #yourwishisyourcommand #law #belief",
+   "retry_of": "ep_v5jjf38_r2/THE-JUDGE-DODGED-PRISON"
+  }
+ ]
+}
