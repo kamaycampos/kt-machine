@@ -33,7 +33,14 @@ def get(url, params=None, timeout=None):
     if url.endswith("/IG"):
         return R({"username": "me_myself"})
     if url.endswith("/IG/media"):
-        return R({"data": [{"id": "M1", "timestamp": iso(timedelta(days=1))}]})
+        return R({"data": [{"id": "M1", "timestamp": iso(timedelta(days=1))},
+                           {"id": "M2", "timestamp": iso(timedelta(days=1)), "caption": "Comment MONEY and I’ll send it"},
+                           {"id": "M3", "timestamp": iso(timedelta(days=1)), "caption": "No ask here. MONEY talk."}]})
+    # 4 Nov 2026: Instagram withheld the text of a real "RISE" - blank on an asking post counts
+    if url.endswith("/M2/comments"):
+        return R({"data": [{"id": "c7", "timestamp": iso(timedelta(hours=1)), "username": "eve"}]})
+    if url.endswith("/M3/comments"):
+        return R({"data": [{"id": "c8", "text": "", "timestamp": iso(timedelta(hours=1)), "username": "fay"}]})
     if url.endswith("/M1/comments"):
         return R({"data": [
             {"id": "c1", "text": "Brain!", "timestamp": iso(timedelta(hours=2)), "username": "ann"},
@@ -66,10 +73,10 @@ os.environ.update(DM_AUTO="on", OFFER_URL="https://example.com/me", KT_CTA_KEYWO
 m.run()
 first = sorted(c for c, _ in sent)
 m.run()
-assert first == ["c1", "c4", "f1"], first
-assert len(sent) == 3, "a second run must send nothing"
+assert first == ["c1", "c4", "c7", "f1"], first
+assert len(sent) == 4, "a second run must send nothing"
 assert all("#ad" not in t and "https://example.com/me" in t for _, t in sent)
-assert set(json.load(open(m.STATE))["sent"]) == {"c1", "c4", "f1"}
+assert set(json.load(open(m.STATE))["sent"]) == {"c1", "c4", "c7", "f1"}
 
 # AWAKENED RISE (2 Nov 2026): her own keys, words and link; a key without DM permission
 # leaves every keyword comment waiting, so the first pass with the right key answers them.
@@ -97,7 +104,7 @@ assert not d["sent"] and "c4" not in d["seen"] and "f1" not in d["seen"], d["see
 assert len(d["errors"]) <= 2, "one permission error per platform, not one per pass"
 refuse[0] = False
 m.run()
-assert sorted(c for c, _ in sent) == ["c4", "f1"], sent      # MONEY only - BRAIN is Kevin's word
+assert sorted(c for c, _ in sent) == ["c4", "c7", "f1"], sent      # MONEY only - BRAIN is Kevin's word
 assert all(t == "Hey! Thanks for commenting. Here it is: https://example.com/her" for _, t in sent), sent
 # comments from before the cutoff were answered by hand: never a second DM
 sent.clear()

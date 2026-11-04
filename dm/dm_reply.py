@@ -95,6 +95,15 @@ def save(d):
     json.dump(d, open(STATE, "w"), indent=1)
 
 
+def asked(caption, kws):
+    """The keyword a caption asks for ('Comment RISE and I'll send you...'), or None."""
+    up = (caption or "").upper()
+    for k in kws:
+        if re.search(r"COMMENT\s+[\"'\u201c]?" + re.escape(k) + r"(?![A-Z0-9])", up):
+            return k
+    return None
+
+
 def _get(url, params):
     r = requests.get(url, params=params, timeout=T)
     j = r.json() if r.content else {}
@@ -109,7 +118,7 @@ def _ts(t):
 
 def instagram_comments(ig, tok):
     """(comment_id, text, when, media_id, author) on the newest posts."""
-    media = _get(f"{G}/{ig}/media", {"fields": "id,timestamp,comments_count", "limit": RECENT_POSTS,
+    media = _get(f"{G}/{ig}/media", {"fields": "id,timestamp,comments_count,caption", "limit": RECENT_POSTS,
                                        "access_token": tok}).get("data", [])
     diag = os.environ.get("DM_DIAG") == "1"
     out = []
@@ -123,7 +132,12 @@ def instagram_comments(ig, tok):
         if diag:
             print(f"  post {m['timestamp'][:16]}: says {m.get('comments_count')} comments, API gave {len(cs)}"
                   f" {[(c.get('text') or '')[:12] for c in cs]}")
-        out += [(c["id"], c.get("text", ""), c["timestamp"], m["id"], c.get("username", ""),
+        # TEXT WITHHELD (4 Nov 2026): a stranger's real "RISE" came back with NO text, in the
+        # list and when asked for directly - Instagram hides the words of some accounts' comments
+        # from the API. A blank comment on a post whose caption asks "Comment RISE" is that ask.
+        ask = asked(m.get("caption"), keywords())
+        out += [(c["id"], c.get("text") if (c.get("text") or "").strip() or not ask else ask,
+                 c["timestamp"], m["id"], c.get("username", ""),
                  {r.get("username", "") for r in (c.get("replies") or {}).get("data", [])})
                 for c in cs]
     return out
