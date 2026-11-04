@@ -1,18 +1,30 @@
 {
  "source": "v71ktjy.mp4",
- "brand": "AR_BANNEDR2R2",
+ "brand": "AR_BANNEDR3",
  "test": false,
- "note": "13 Oct 2026 - 'Kevin Trudeau: Banned, Censored, Still Speaking Truth.' (Rumble v71ktjy). Awakened Rise weekly agent. SECOND CHANCE re-cut (12 Oct 2026 gate failures, 2nd round) - edges moved to different sentence boundaries per AR_PLANNING.md 2c. SAME-SCRIPT-DIFFERENT-RESULT: out pulled back from 1927.9 to 1927.5 - the r2 cut still spilled into the first syllable of the next sentence ('Their energy wasn't...'), rendering as the mid-word fragment 'There-'; ending earlier clears it. DIVISION-CHAOS-YOUR-FIX skipped: two rounds of different edges (688.6-747.0, then 702.4-746.6) both failed the same 'no clear pauses' caption-sync check on this rapid interview cross-talk passage, and no silence gap exists anywhere in work/v71ktjy.srt across the whole span to anchor a third attempt. MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE skipped: two different out-points (3491.9, then 3492.6, 0.7s apart) both rendered truncated at the identical words ('...is probably the'), which points to an alignment problem in the source audio around 'highest level' rather than a timestamp a third guess could fix. RECRUITED-AT-SIX stays skipped per the prior round's note (the flagged break sits on the clip's own subject, 'called the Brotherhood').",
+ "note": "4 Nov 2026 - third-chance re-cut for 'Kevin Trudeau: Banned, Censored, Still Speaking Truth.' (Rumble v71ktjy). Awakened Rise weekly agent, per AR_PLANNING.md 2c (new episodes planned first, see ar_v5183x3.json and ar_v4rcljt.json). DIVISION-CHAOS-YOUR-FIX failed captions-vs-sound again at _r2's boundaries (702.4-746.6); moved the start edge to a different sentence eight seconds earlier ('People just go crazy when you say it.', work/v71ktjy.srt ~00:11:34) and lengthened the end anchor to the full clause so the re-timed captions land on a longer, less ambiguous phrase. MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE's 'ends off the planned words' was a short-phrase ambiguity, not a content problem: 'probably the highest level' sits right after 'the as me is probably the' (work/v71ktjy.srt 00:58:08-00:58:13), so the build's end search was landing on the wrong occurrence of 'the'; lengthened end_words to the unique 7-word run 'me is probably the highest level' so the match can't mis-fire. RECRUITED-AT-SIX (tries 1, original plan) stays skipped per ar_v71ktjy_r2.json's note: the flagged break sits on the Brotherhood's own name, the only mention of it in the clip, with no boundary that moves past it without losing the teaching. FOUR-PEOPLE-EVERY-RELATIONSHIP, THREE-FINGERS-POINT-BACK and NOT-WORTHLESS-TOO-VALUABLE (v6rv5w3) and ZIG-ZIGLAR-CALLED-IT-SNIOP, MY-ENERGY-FIELD-IS-BIG-ENOUGH and SOMEBODY-PUTTING-RATS-IN-YOUR-HEAD (v6mce7x) are also their last chance and also stay skipped, per the detailed per-clip reasoning already written into ar_v6rv5w3_r2.json and ar_v6mce7x_r2.json - each flagged scramble/gap sits inside content the clip cannot lose without gutting its own teaching, and re-deriving the same conclusion again would not change it.",
  "clips": [
   {
-   "slug": "SAME-SCRIPT-DIFFERENT-RESULT",
-   "in": 1854.4,
-   "out": 1927.5,
-   "start_words": "They came to me",
-   "end_words": "did produced results",
-   "hook": ["They copied him", "exactly. It failed."],
-   "caption": "A multi-billion dollar infomercial company built an exact copy of his show — same script, a look-alike actor, an identical set, a decoy interviewer.\n\nSide by side, you couldn't tell which was real. It still didn't sell. They wore wristbands that said \"what would Kevin do?\" because they couldn't figure out what was missing.\n\nThe answer was never in the words — he believed in the product and used it himself. They only wanted the money. Same script, different energy, different result.\n\nComment RISE for the rest of the teaching.\n\n#mindset #energy #manifestation #awakening #subconscious #kevintrudeau",
-   "retry_of": "ar_v71ktjy_r2/SAME-SCRIPT-DIFFERENT-RESULT"
+   "slug": "DIVISION-CHAOS-YOUR-FIX",
+   "in": 691.0,
+   "out": 747.0,
+   "start_words": "people just go crazy",
+   "end_words": "same thing they wanted from the beginning",
+   "hook": ["Division. Chaos.", "Then your fix."],
+   "send": "Sends this to a friend doomscrolling the news - naming the three-step playbook out loud takes the charge out of the next headline cycle (recognition, relief).",
+   "caption": "There's a three-step playbook behind almost every headline cycle, running for hundreds of years.\n\nStep one: division — keep you picking a side. Step two: chaos — headlines built to inflame, not inform. Step three: once everyone's exhausted and scared, they hand you the fix you were steered toward from the start — the thing they wanted all along.\n\nName the three steps while they're happening, and they stop working on you.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#psyops #awakening #disclosure #consciousness #mindcontrol #kevintrudeau",
+   "retry_of": "ar_v71ktjy_r2/DIVISION-CHAOS-YOUR-FIX"
+  },
+  {
+   "slug": "MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE",
+   "in": 3430.5,
+   "out": 3492.6,
+   "start_words": "I learned another concept",
+   "end_words": "me is probably the highest level",
+   "hook": ["Most people never", "leave level one."],
+   "send": "Sends this to a friend stuck blaming everyone else for their week - it names the exact level of consciousness they're stuck on without saying it meanly (recognition).",
+   "caption": "There are four levels of consciousness, and almost everyone lives on the first without realizing it.\n\nLevel one is \"to me\" — the victim level. The water spills and it's always happening TO you, everyone's against you, nothing is ever your fault. Level two is \"by me\" — you take action. Level three is \"through me\" — there was a reason for it. The rare fourth is \"as me,\" where you stop separating yourself from what's happening.\n\nMost people never leave level one in their entire life.\n\nComment RISE for the rest of the teaching.\n\n#consciousness #awakening #subconscious #spirituality #mindset #kevintrudeau",
+   "retry_of": "ar_v71ktjy_r2/MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE"
   }
  ]
 }
