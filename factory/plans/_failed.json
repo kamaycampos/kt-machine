@@ -11179,6 +11179,60 @@
     "What Rockefeller believed",
     "about getting rich"
    ]
+  },
+  "ar_v4lw3gr_p2/BUSH-KERRY-NIXON-SAME-SECRET-ISLAND": {
+   "plan": "ar_v4lw3gr_p2",
+   "source": "v4lw3gr.mp4",
+   "brand": "AR_BILDERBERG",
+   "tries": 1,
+   "why": [
+    "FAIL 01_BUSH-KERRY-NIXON-SAME-SECRET-ISLAND_71s.mp4: [FAIL] 01_BUSH-KERRY-NIXON-SAME-SECRET-ISLAND_71s.mp4         17 captions vs the sound  median -0.00s  worst-10% 0.54s  | words captioned 101%  UNCAPTIONED SPEECH [(21.4, 23.2)]"
+   ],
+   "slug": "BUSH-KERRY-NIXON-SAME-SECRET-ISLAND",
+   "in": 1298.5,
+   "out": 1372.0,
+   "start_words": "If you've actually",
+   "end_words": "and at Bilderberg",
+   "hook": [
+    "Bush. Kerry. Nixon.",
+    "Same secret island."
+   ]
+  },
+  "ar_v4lw3gr_p2/WORK-DEBT-KIDS-THEN-YOU-DIE": {
+   "plan": "ar_v4lw3gr_p2",
+   "source": "v4lw3gr.mp4",
+   "brand": "AR_BILDERBERG",
+   "tries": 1,
+   "why": [
+    "FAIL 01_WORK-DEBT-KIDS-THEN-YOU-DIE_117s.mp4: [FAIL] 01_WORK-DEBT-KIDS-THEN-YOU-DIE_117s.mp4                31 captions vs the sound  median +0.08s  worst-10% 1.18s  | words captioned 100%  UNCAPTIONED SPEECH [(13.0, 15.0)]"
+   ],
+   "slug": "WORK-DEBT-KIDS-THEN-YOU-DIE",
+   "in": 2652.0,
+   "out": 2773.5,
+   "start_words": "The globalists today",
+   "end_words": "and then die",
+   "hook": [
+    "Work. Debt. Kids.",
+    "Then you die."
+   ]
+  },
+  "ar_v4lw3gr_p2/KEVIN-LEFT-THE-BROTHERHOOD-ONE-DISAGREEMENT": {
+   "plan": "ar_v4lw3gr_p2",
+   "source": "v4lw3gr.mp4",
+   "brand": "AR_BILDERBERG",
+   "tries": 1,
+   "why": [
+    "drop AR_BILDERBERG/KEVIN-LEFT-THE-BROTHERHOOD-ONE-DISAGREEMENT: hook - 784px wide at 44px - over the 780px safe zone, will be cut off on a phone"
+   ],
+   "slug": "KEVIN-LEFT-THE-BROTHERHOOD-ONE-DISAGREEMENT",
+   "in": 1578.0,
+   "out": 1626.0,
+   "start_words": "this is why",
+   "end_words": "every single night",
+   "hook": [
+    "Kevin left the Brotherhood.",
+    "One disagreement."
+   ]
   }
  },
  "attempts": {
