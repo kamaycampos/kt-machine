@@ -13941,11 +13941,24 @@
    "hook": "A chicken trick trains your mind",
    "bytes": 82027533,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261105212819D8D0B794441AA807D69D'}}"
+   },
    "scheduled_at": "2026-11-05T16:22",
    "cta_keyword": "BRAIN",
    "cta_variant": 11,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfX_owzkw0d/",
+    "youtube": "https://youtube.com/shorts/eWuZfCWJmNI"
+   },
+   "caption_at_post": "Kevin Trudeau once paused his own show to prove a point: a guy trained chickens, in just a couple of days, to jump, spin on command and even try to fly.\n\nHis point wasn't about the chickens. Train an animal that small this precisely, and you can train something far more powerful \u2014 your own mind.\n\nMost people let their thoughts run the show: the chatter, the self-sabotage, the doubt that talks them out of everything before they start.\n\nKevin says quieting that chatterbox is the first real step to success. Your mind should work for you, not the other way around.\n\nWhat's one thought you need to retrain today?\n\n#kevintrudeau #mindsetmatters #selfmastery #controlyourmind #successhabits #mindovermatter",
+   "posted_at": "2026-11-05T16:28"
   },
   {
    "file": "KT_SPIRITUALR2/01_PAIN-AND-SUFFERING-ARENT-THE-SAME_83s.mp4",

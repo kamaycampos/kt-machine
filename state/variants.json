@@ -73,7 +73,8 @@
     "tries": 3
    }
   ],
-  "posted": "2026-11-03T21:24"
+  "posted": "2026-11-03T21:24",
+  "scored": "2026-11-05T21:28"
  },
  "AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE": {
   "clip": "AR_POVERTYWAVE/01_YOUR-BRAIN-HAS-A-POVERTY-WAVE_88s.mp4",
@@ -466,49 +467,70 @@
     "hook": [
      "Just 2 days",
      "gave you control"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V2.mp4",
     "hook": [
      "Your own mind",
      "is sabotaging you"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V3.mp4",
     "hook": [
      "A chicken learned",
      "what you haven't"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V4.mp4",
     "hook": [
      "Ignore this trick,",
      "stay broke forever"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V5.mp4",
     "hook": [
      "Kevin Trudeau trained",
      "a chicken's mind"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V6.mp4",
     "hook": [
      "Kevin Trudeau proves",
      "anyone can self-train"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V7.mp4",
     "hook": [
      "A chicken beat",
      "you at self-control"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    }
   ],
   "posted": null
