@@ -13633,7 +13633,11 @@
    "hook": "The 1-hour rule of every billionaire",
    "bytes": 63853917,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-06T07:57",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_BOOKSHELF/02_LIVING-ON-HALF-A-MILLION-A-WEEK_98s.mp4",
@@ -13641,7 +13645,11 @@
    "hook": "He spends $500K a week easily",
    "bytes": 67947823,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-06T09:32",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
