@@ -13610,11 +13610,24 @@
    "hook": "Why reading won't make you rich",
    "bytes": 85759178,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-05T12:37",
    "cta_keyword": "BRAIN",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfXmcM_gvij/",
+    "youtube": "https://youtube.com/shorts/a_QPOevJKFA"
+   },
+   "caption_at_post": "Nobody knows how to talk to people anymore \u2014 everyone's on a phone, texting instead of connecting. That's why Kevin Trudeau says interpersonal skills are the most underrated superpower you can have.\n\nThe two books: How to Win Friends and Influence People by Dale Carnegie, and Napoleon Hill's Think and Grow Rich, the manuscript Kevin says helped him make hundreds of millions.\n\nHere's the catch: read either one years ago and never applied it, and you don't actually know it. To know and not to do is not to know.\n\nHave you read a book that changed your thinking, or just your bookshelf?\n\n#kevintrudeau #thinkandgrowrich #dalecarnegie #applywhatyoulearn #selfdevelopment #successhabits",
+   "posted_at": "2026-11-05T12:49"
   },
   {
    "file": "KT_BOOKSHELF/02_STOP-MAKING-EXCUSES_76s.mp4",
