@@ -13585,11 +13585,24 @@
    "hook": "How Elon Musk shuts off distractions",
    "bytes": 38761956,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-05T08:00",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfXGVy0lWLO/",
+    "youtube": "https://youtube.com/shorts/MnM4ypMnDCw"
+   },
+   "caption_at_post": "Elon Musk locks the door. He shuts his phone off completely \u2014 no pings, no notifications. Then he reads one hour, five days a week, with zero interruptions.\n\nKevin Trudeau points out Warren Buffett said almost the same thing: rich people invest time and energy, especially early in their career, into personal development. Not luxury, not relaxation \u2014 learning.\n\nTwo of the richest men who ever lived both protected one uninterrupted hour to make themselves smarter. Most people can't put their phone down for ten minutes.\n\nWhat would you learn with one undistracted hour today?\n\n#kevintrudeau #elonmusk #warrenbuffett #deepwork #personaldevelopment #richhabits",
+   "posted_at": "2026-11-05T08:08"
   },
   {
    "file": "KT_BOOKSHELF/01_KNOWING-IT-ISNT-DOING-IT_125s.mp4",
@@ -13680,12 +13693,26 @@
    "caption": "Thirty years ago, he was brought into a room and given an offer: a Swiss bank account, ten million dollars in cash, and one condition - never write another book, never let them hear his name again, and disappear quietly for the rest of his life.\n\nIn today's money, that offer was worth close to a hundred million dollars. No fine print. No catch. Just: go away, and live well.\n\nHe said no.\n\nMost people never get offered the price of their own silence. He did, and he still turned it down - because some things are worth more than ten million dollars sitting quietly in Switzerland.\n\nComment RISE and I'll send you what happened after he refused.\n\n#disclosure #secretsocieties #awakening #truth #consciousness #kevintrudeau",
    "hook": "Ten million dollars. To disappear forever.",
    "bytes": 24736683,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-05T08:01",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1172246441897449/",
+    "instagram": "https://www.instagram.com/reel/DfXGvTQj18z/",
+    "youtube": "https://youtube.com/shorts/llaDZCaXHto"
+   },
+   "caption_at_post": "Thirty years ago, he was brought into a room and given an offer: a Swiss bank account, ten million dollars in cash, and one condition - never write another book, never let them hear his name again, and disappear quietly for the rest of his life.\n\nIn today's money, that offer was worth close to a hundred million dollars. No fine print. No catch. Just: go away, and live well.\n\nHe said no.\n\nMost people never get offered the price of their own silence. He did, and he still turned it down - because some things are worth more than ten million dollars sitting quietly in Switzerland.\n\nComment RISE and I'll send you what happened after he refused.\n\n#disclosure #secretsocieties #awakening #truth #consciousness #kevintrudeau",
+   "posted_at": "2026-11-05T08:11"
   }
  ]
 }
