@@ -13634,11 +13634,22 @@
    "hook": "How 90 days made $4 million",
    "bytes": 63298348,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "could not fetch the video: Error: Media upload has failed with error code 2207077",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-05T09:00",
    "cta_keyword": "WISH",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "youtube": "https://youtube.com/shorts/GPxW3Unzvd4"
+   },
+   "caption_at_post": "Kevin Trudeau handed a friend in Henderson, Nevada his Your Wish Is Your Command program. He listened to the whole thing in one night.\n\nEighteen months later: $4 million net, from 90 days of work, under 10 hours a week. Then he stopped, and the money kept coming.\n\nThat same friend built something bigger: a glass bridge out over the Grand Canyon. Engineers and the government said it couldn't be built.\n\nHe built it anyway. You can walk out and look straight down. He manifested it the same way, using his mind for goals most people never let themselves want.\n\nWhat's the 'impossible' idea you've been told to drop?\n\n#kevintrudeau #yourwishisyourcommand #manifestation #lawofattraction #mindsetmatters #success",
+   "posted_at": "2026-11-05T09:08"
   },
   {
    "file": "KT_BOOKSHELF/01_ELONS-ONE-HOUR-READING-RULE_90s.mp4",
@@ -13720,7 +13731,11 @@
    "hook": "They hate when you speak freely.",
    "bytes": 54489349,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-06T20:02",
+   "cta_keyword": "YES",
+   "cta_variant": 8,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_CENSORED/01_YOU-NEVER-VOTED-FOR-THESE-RULERS_47s.mp4",
@@ -13728,7 +13743,11 @@
    "hook": "You never voted for these rulers.",
    "bytes": 36721464,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-05T17:39",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_CENSORED/02_THE-BUSHES-PROFIT-FROM-EVERY-WAR_50s.mp4",
@@ -13736,7 +13755,11 @@
    "hook": "The Bushes profit from every war.",
    "bytes": 43089160,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-06T10:08",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "AR_DECEPTION/02_A-FAKE-ARMY-FOOLED-HITLER-COMPLETELY_79s.mp4",
@@ -13744,7 +13767,11 @@
    "hook": "A fake army fooled Hitler completely.",
    "bytes": 41706828,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-07T09:18",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 10,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_DECEPTION/02_THE-CIA-ADMITS-CONTROL-IS-POWER_40s.mp4",
@@ -13752,7 +13779,11 @@
    "hook": "The CIA admits: control is power.",
    "bytes": 20821274,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-06T07:45",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_DECEPTION/02_YOU-ASSUMED-THATS-HOW-THEY-WIN_51s.mp4",
@@ -13760,7 +13791,11 @@
    "hook": "You assumed. That's how they win.",
    "bytes": 27747279,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-06T11:25",
+   "cta_keyword": "RISE",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_ROCKETFUEL/01_A-SECRET-SOCIETY-TAUGHT-HIM-THIS_47s.mp4",
@@ -13768,7 +13803,11 @@
    "hook": "A secret society taught him this.",
    "bytes": 20287572,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-06T09:00",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_ROCKETFUEL/01_DREAM-BIG-NEVER-LIVE-IN-IT_44s.mp4",
@@ -13776,7 +13815,11 @@
    "hook": "Dream big. Never live in it.",
    "bytes": 16075791,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-05T11:24",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_ROCKETFUEL/02_HE-GOT-RICHER-NOT-ANY-HAPPIER_46s.mp4",
@@ -13784,7 +13827,11 @@
    "hook": "He got richer. Not any happier.",
    "bytes": 17975835,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-05T19:48",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_ROCKETFUEL/02_MAKE-THE-DECISION-YOUR-UNIVERSE-MOVES_95s.mp4",
@@ -13792,7 +13839,11 @@
    "hook": "Make the decision. Your universe moves.",
    "bytes": 36947985,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-07T07:39",
+   "cta_keyword": "RISE",
+   "cta_variant": 9,
+   "cta_kind": "question"
   },
   {
    "file": "AR_ROCKETFUEL/02_YOUR-RAGE-IS-ROCKET-FUEL-NOW_79s.mp4",
@@ -13800,7 +13851,11 @@
    "hook": "Your rage is rocket fuel now.",
    "bytes": 32049266,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-06T17:31",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 7,
+   "cta_kind": "question"
   },
   {
    "file": "KT_BOOKSHELFR2/01_ROCKEFELLER-GETTYS-ONE-RULE_66s.mp4",
@@ -13808,7 +13863,11 @@
    "hook": "What Rockefeller believed about getting rich",
    "bytes": 42663298,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-06T10:52",
+   "cta_keyword": "MONEY",
+   "cta_variant": 12,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_COOP/01_THE-CHICKEN-MIND-TRICK_138s.mp4",
@@ -13816,7 +13875,11 @@
    "hook": "A chicken trick trains your mind",
    "bytes": 82027533,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-05T16:22",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 11,
+   "cta_kind": "question"
   }
  ]
 }
