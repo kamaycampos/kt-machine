@@ -185,7 +185,9 @@ def _layout(info, label, body=28, lh=37):
     lines, cur = [], ""
     for t in toks:
         trial = (cur + " " + t).strip()
-        if f.getlength(trial.replace(" ", " ")) > W_CARD - 2 * PAD and cur:
+        # the circle reaches ~22px past the word: the circled word never ends at the card's edge
+        room = 26 if " " in t else 0
+        if f.getlength(trial.replace(" ", " ")) + room > W_CARD - 2 * PAD and cur:
             lines.append(cur)
             cur = t
         else:
