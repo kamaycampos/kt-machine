@@ -139,6 +139,7 @@
  "ep_v5jjf38_r3c",
  "ep_v5jjf38_r3q",
  "ep_v5jjf38_wordfix",
+ "ep_v5jjf38_wordfix2",
  "ep_v5kg9ip",
  "ep_v5ky1ig",
  "ep_v5lvgyl",
@@ -160,8 +161,10 @@
  "ep_v66j311_r3",
  "ep_v66j311_r4",
  "ep_v66j311_r4c",
+ "ep_v66j311_r4d",
  "ep_v66j311_r4q",
  "ep_v66j311_wordfix",
+ "ep_v66j311_wordfix2",
  "ep_v67ions",
  "ep_v69n40y",
  "ep_v6bge5y",
@@ -287,5 +290,6 @@
  "ep_v7hhpme_r2",
  "ep_v7hhpme_r3",
  "ep_v7hhpme_r4",
- "ep_v7htumc"
+ "ep_v7htumc",
+ "ep_v7htumc_r2"
 ]

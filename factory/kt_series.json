@@ -9143,5 +9143,79 @@
   "brand": "KT_DANNYROSER2R2",
   "note": "4 Nov 2026 - REBUILD in the cinema look: look E's caption text failed kt_qc ('awesome He'), KT queued nothing for a day. 4 Nov 2026 - REBUILD of ep_v66j311_r4: its passing clips were refused by kt_qc because look E's missed-word fill dropped a full stop ('awesome He'); fixed in kt_align. Same clips, same edges. 4 Nov 20",
   "clips": []
+ },
+ "ep_v66j311_r4d": {
+  "source": "v66j311.mp4",
+  "brand": "KT_DANNYROSER2R2",
+  "note": "4 Nov 2026 - REBUILD: stutters ('It's it's', 'the the') now dropped from captions.",
+  "clips": [
+   {
+    "slug": "GLASS-BRIDGE-OVER-THE-CANYON",
+    "in": 3985.1,
+    "out": 4073.86,
+    "hook": [
+     "How 90 days made",
+     "$4 million"
+    ],
+    "caption": "Kevin Trudeau handed a friend in Henderson, Nevada his Your Wish Is Your Command program. He listened to the whole thing in one night.\n\nEighteen months later: $4 million net, from 90 days of work, under 10 hours a week. Then he stopped, and the money kept coming.\n\nThat same friend built something bigger: a glass bridge out over the Grand Canyon. Engineers and the government said it couldn't be built.\n\nHe built it anyway. You can walk out and look straight down. He manifested it the same way, using his mind for goals most people never let themselves want.\n\nWhat's the 'impossible' idea you've been told to drop?\n\n#kevintrudeau #yourwishisyourcommand #manifestation #lawofattraction #mindsetmatters #success"
+   }
+  ]
+ },
+ "ep_v7htumc_r2": {
+  "source": "v7htumc.mp4",
+  "brand": "KT_BOOKSHELF",
+  "note": "4 Nov 2026 - REBUILD of the 10 Books episode: Kevin's own wide on-screen words were cut by the 9:16 crop (Kamay: 'does not look professional'); kt_textsafe now shows the whole picture on black for those seconds. Stutters dropped from captions. No trial hooks this time (speed: KT posted once today).",
+  "clips": [
+   {
+    "slug": "ELON-MUSKS-READING-HABIT",
+    "in": 0.0,
+    "out": 90.39,
+    "hook": [
+     "The 1-hour rule",
+     "of every billionaire"
+    ],
+    "caption": "Elon Musk reads for one hour a day, five days a week. He says it's the most important thing he does — more important than any meeting, any deal.\n\nKevin Trudeau asked him how he learned to build rockets. His answer: I read.\n\nThe richest man alive makes time to read every day. Most people say they're too busy for fifteen minutes.\n\nLeaders are always readers. If you're not learning, you're already behind the people who are.\n\nWhat's the last book that actually changed how you think?\n\n#kevintrudeau #richhabits #readmorebooks #elonmusk #selfdevelopment #moneymindset"
+   },
+   {
+    "slug": "STOP-MAKING-EXCUSES",
+    "in": 304.46,
+    "out": 380.24,
+    "hook": [
+     "Why excuses keep",
+     "you poor forever"
+    ],
+    "caption": "You say you want to be rich. You say you want a better life. But are you willing to do what it takes?\n\nKevin Trudeau doesn't sugarcoat it: if you won't make time to learn, you're lying to yourself about wanting more.\n\nFailures are good at one thing — making excuses. Successful people do what the rest are still talking about.\n\nStop blaming the economy, your boss, your bad luck. The gap between broke and rich is usually just discipline.\n\nWhich excuse have you been hiding behind the longest?\n\n#kevintrudeau #stopmakingexcuses #successmindset #discipline #richmindset #selfimprovement"
+   },
+   {
+    "slug": "HALF-A-MILLION-A-WEEK",
+    "in": 450.46,
+    "out": 548.53,
+    "hook": [
+     "He spends $500K",
+     "a week easily"
+    ],
+    "caption": "Kevin Trudeau once sat with multi-millionaires in the Billionaire Boys Club. One member handed out a list of over a thousand books he'd read in five years, ranked by how much he liked them.\n\nEveryone in that room was worth over a hundred million dollars, and every one of them read constantly.\n\nMeanwhile someone bragged about making half a million a year. Kevin's reply: he couldn't go back to living on half a million a week.\n\nThe top don't read occasionally — they read like it's their job, because it built their job.\n\nHow many books have you finished this year?\n\n#kevintrudeau #billionairemindset #readtogetrich #wealthhabits #richpeoplethink #successbooks"
+   },
+   {
+    "slug": "KNOWING-IT-ISNT-DOING-IT",
+    "in": 871.7,
+    "out": 996.95,
+    "hook": [
+     "Why reading won't",
+     "make you rich"
+    ],
+    "caption": "Nobody knows how to talk to people anymore — everyone's on a phone, texting instead of connecting. That's why Kevin Trudeau says interpersonal skills are the most underrated superpower you can have.\n\nThe two books: How to Win Friends and Influence People by Dale Carnegie, and Napoleon Hill's Think and Grow Rich, the manuscript Kevin says helped him make hundreds of millions.\n\nHere's the catch: read either one years ago and never applied it, and you don't actually know it. To know and not to do is not to know.\n\nHave you read a book that changed your thinking, or just your bookshelf?\n\n#kevintrudeau #thinkandgrowrich #dalecarnegie #applywhatyoulearn #selfdevelopment #successhabits"
+   },
+   {
+    "slug": "ELONS-LOCKED-DOOR-RITUAL",
+    "in": 1180.21,
+    "out": 1233.11,
+    "hook": [
+     "How Elon Musk",
+     "shuts off distractions"
+    ],
+    "caption": "Elon Musk locks the door. He shuts his phone off completely — no pings, no notifications. Then he reads one hour, five days a week, with zero interruptions.\n\nKevin Trudeau points out Warren Buffett said almost the same thing: rich people invest time and energy, especially early in their career, into personal development. Not luxury, not relaxation — learning.\n\nTwo of the richest men who ever lived both protected one uninterrupted hour to make themselves smarter. Most people can't put their phone down for ten minutes.\n\nWhat would you learn with one undistracted hour today?\n\n#kevintrudeau #elonmusk #warrenbuffett #deepwork #personaldevelopment #richhabits"
+   }
+  ]
  }
 }

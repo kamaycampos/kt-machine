@@ -11143,6 +11143,42 @@
     "What Ford told",
     "about Napoleon Hill"
    ]
+  },
+  "ep_v7htumc_r2/NASA-SCIENTISTS-MANIFESTING-PROOF": {
+   "plan": "ep_v7htumc_r2",
+   "source": "v7htumc.mp4",
+   "brand": "KT_BOOKSHELF",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_NASA-SCIENTISTS-MANIFESTING-PROOF_73s.mp4` - opens mid-sentence on \"works.\""
+   ],
+   "slug": "NASA-SCIENTISTS-MANIFESTING-PROOF",
+   "in": 620.56,
+   "out": 692.16,
+   "start_words": "Here's a great book",
+   "end_words": "could blow your mind",
+   "hook": [
+    "What NASA's scientist",
+    "proved about manifesting"
+   ]
+  },
+  "ep_v7htumc_r2/ROCKEFELLER-GETTYS-ONE-RULE": {
+   "plan": "ep_v7htumc_r2",
+   "source": "v7htumc.mp4",
+   "brand": "KT_BOOKSHELF",
+   "tries": 2,
+   "why": [
+    "FAIL 02_ROCKEFELLER-GETTYS-ONE-RULE_75s.mp4: ends off the planned words: plan ends 'and you control your life', clip ends 'it is important'"
+   ],
+   "slug": "ROCKEFELLER-GETTYS-ONE-RULE",
+   "in": 1054.32,
+   "out": 1128.48,
+   "start_words": "Little phrases where you",
+   "end_words": "and you control your life",
+   "hook": [
+    "What Rockefeller believed",
+    "about getting rich"
+   ]
   }
  },
  "attempts": {
