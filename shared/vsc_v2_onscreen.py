@@ -19,6 +19,8 @@ FF = os.path.expanduser("~/Kamay/bin/ffmpeg")
 WH = os.path.expanduser("~/Kamay/whisper.cpp/build/bin/whisper-cli")
 MD = os.path.expanduser("~/Kamay/whisper.cpp/models/ggml-small.en.bin")
 SAMPLES = 12
+HALLUCINATED = {"thank you", "thank you very much", "thanks for watching", "thank you for watching",
+                "you", "bye", "thank you so much", "thanks"}
 
 
 def nm(w):
@@ -48,6 +50,11 @@ def check(mp4, n=SAMPLES, seed=7):
                            capture_output=True, text=True).stdout
         heard = [nm(w) for w in re.sub(r"\[.*?\]|\(.*?\)", " ", r).split() if nm(w)]
         if not heard:
+            continue
+        # WHISPER INVENTS WORDS IN A PAUSE (4 Nov 2026, THE-JUDGE-DODGED-PRISON in look E): a 1.2s
+        # read of the quiet after "Watch." came back "thank you very much" - its best-known
+        # hallucination - and marked a correct caption wrong. Such a read says nothing.
+        if " ".join(heard) in HALLUCINATED:
             continue
         on = [c for c in caps if c[0] <= t < c[1]]
         if not on:
