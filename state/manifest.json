@@ -13657,7 +13657,11 @@
    "hook": "Your blood was ranked to obey.",
    "bytes": 43857266,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-05T09:26",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_BILDERBERG/02_NO-CAMERAS-NEVER-ON-THE-NEWS_89s.mp4",
@@ -13665,7 +13669,11 @@
    "hook": "No cameras. Never on the news.",
    "bytes": 55883808,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-05T10:43",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_BILDERBERG/02_TEN-MILLION-TO-DISAPPEAR_43s.mp4",
@@ -13673,7 +13681,11 @@
    "hook": "Ten million dollars. To disappear forever.",
    "bytes": 24736683,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-05T08:01",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
