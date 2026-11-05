@@ -11395,6 +11395,132 @@
     "What NASA's scientist",
     "proved about manifesting"
    ]
+  },
+  "ep_v5d9snl/BUYS-A-HOUSE-NOT-A-HOME": {
+   "plan": "ep_v5d9snl",
+   "source": "v5d9snl.mp4",
+   "brand": "KT_UPLIFT",
+   "tries": 1,
+   "why": [
+    "FAIL 02_BUYS-A-HOUSE-NOT-A-HOME_58s.mp4: ends off the planned words: plan ends 'me a piece of mine', clip ends 'buy me a piece of money'"
+   ],
+   "slug": "BUYS-A-HOUSE-NOT-A-HOME",
+   "in": 4068.48,
+   "out": 4134.24,
+   "start_words": "I believe that success is",
+   "end_words": "me a piece of mine",
+   "hook": [
+    "What money truly",
+    "can't buy you"
+   ]
+  },
+  "ep_v5d9snl/WHY-LOTTERY-WINNERS-GO-BROKE": {
+   "plan": "ep_v5d9snl",
+   "source": "v5d9snl.mp4",
+   "brand": "KT_UPLIFT",
+   "tries": 1,
+   "why": [
+    "FAIL 01_WHY-LOTTERY-WINNERS-GO-BROKE_70s.mp4: RY-WINNERS-GO-BROKE_70s.mp4                44 captions vs the sound (word-referenced: no clear pauses)  median +0.18s  worst-10% 1.03s  | words captioned 99%  UNCAPTIONED SPEECH [(28.9, 31.7), (36.2, 38.0), (45.9, 47.5)]"
+   ],
+   "slug": "WHY-LOTTERY-WINNERS-GO-BROKE",
+   "in": 3359.7,
+   "out": 3433.68,
+   "start_words": "Here's the big challenge of life",
+   "end_words": "back in the same pockets",
+   "hook": [
+    "Why lottery winners",
+    "go broke again"
+   ]
+  },
+  "ep_v5d9snl/AIM-TOO-LOW-STILL-FAIL": {
+   "plan": "ep_v5d9snl",
+   "source": "v5d9snl.mp4",
+   "brand": "KT_UPLIFT",
+   "tries": 1,
+   "why": [
+    "FAIL 02_AIM-TOO-LOW-STILL-FAIL_87s.mp4: ends off the planned words: plan ends 'aim too low and hit', clip ends 'they aim too low and hip'"
+   ],
+   "slug": "AIM-TOO-LOW-STILL-FAIL",
+   "in": 3901.0,
+   "out": 3992.04,
+   "start_words": "I like to ask whether",
+   "end_words": "aim too low and hit",
+   "hook": [
+    "The real reason",
+    "most people fail"
+   ]
+  },
+  "ep_v5d9snl/THE-TOMBSTONE-QUESTION": {
+   "plan": "ep_v5d9snl",
+   "source": "v5d9snl.mp4",
+   "brand": "KT_UPLIFT",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THE-TOMBSTONE-QUESTION_40s.mp4: [FAIL] 01_THE-TOMBSTONE-QUESTION_40s.mp4                      7 captions vs the sound  median +0.16s  worst-10% 0.49s  | words captioned 101%  UNCAPTIONED SPEECH [(31.6, 33.4)]"
+   ],
+   "slug": "THE-TOMBSTONE-QUESTION",
+   "in": 3037.72,
+   "out": 3080.04,
+   "start_words": "About 31 of us",
+   "end_words": "let God live it in you",
+   "hook": [
+    "How you answer",
+    "the tombstone question"
+   ]
+  },
+  "ep_v5d9snl/HOWARD-HUGHES-WILL-EXECUTOR": {
+   "plan": "ep_v5d9snl",
+   "source": "v5d9snl.mp4",
+   "brand": "KT_UPLIFT",
+   "tries": 1,
+   "why": [
+    "FAIL 02_HOWARD-HUGHES-WILL-EXECUTOR_55s.mp4: [FAIL] 02_HOWARD-HUGHES-WILL-EXECUTOR_55s.mp4                 6 captions vs the sound  median +0.24s  worst-10% 0.52s  | words captioned 99%  UNCAPTIONED SPEECH [(26.8, 31.7)]"
+   ],
+   "slug": "HOWARD-HUGHES-WILL-EXECUTOR",
+   "in": 2483.76,
+   "out": 2545.16,
+   "start_words": "I wanted you people know",
+   "end_words": "every aspect of your life",
+   "hook": [
+    "A Reagan ghostwriter.",
+    "Howard Hughes's executor"
+   ]
+  },
+  "ep_v6mpcxl_r2/50-PERCENT-BECAME-52-PERCENT": {
+   "plan": "ep_v6mpcxl_r2",
+   "source": "v6mpcxl.mp4",
+   "brand": "KT_LUCKR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_50-PERCENT-BECAME-52-PERCENT_177s.mp4: [FAIL] 01_50-PERCENT-BECAME-52-PERCENT_177s.mp4               46 captions vs the sound  median +0.00s  worst-10% 0.90s  | words captioned 102%  UNCAPTIONED SPEECH [(32.5, 34.1)]"
+   ],
+   "slug": "50-PERCENT-BECAME-52-PERCENT",
+   "in": 116.24,
+   "out": 296.08,
+   "start_words": "The most significant test",
+   "end_words": "a complete anomaly",
+   "hook": [
+    "50% became 52%",
+    "just by thinking"
+   ]
+  },
+  "ep_v6mpcxl_r2/50X-MORE-MONEY-BY-A-NOSE": {
+   "plan": "ep_v6mpcxl_r2",
+   "source": "v6mpcxl.mp4",
+   "brand": "KT_LUCKR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_50X-MORE-MONEY-BY-A-NOSE_41s.mp4` - opens mid-sentence on \"two horses\""
+   ],
+   "slug": "50X-MORE-MONEY-BY-A-NOSE",
+   "in": 1366.48,
+   "out": 1411.04,
+   "start_words": "Two horses coming down",
+   "end_words": "will actually increase your luck",
+   "hook": [
+    "50x more money",
+    "by a nose"
+   ]
   }
  },
  "attempts": {
