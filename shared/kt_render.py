@@ -1774,11 +1774,11 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
             info, why = kt_label.check(label)
             lt = kt_label.times(label, words, t_out - t_in) if info else None
             if not info:
-                print(f"      label refused: {why}")
+                sys.stderr.write(f"      LABEL REFUSED {slug}: {why}\n")
             elif not lt:
-                print(f"      label skipped: \"{label.get('circle_on') or label['circle']}\" is not said in this clip")
+                sys.stderr.write(f"      LABEL SKIPPED {slug}: \"{label.get('circle_on') or label['circle']}\" is not said in this clip\n")
             elif not (CINEMA or WORD):
-                print("      label skipped: only the cinema and word looks leave room for it")
+                sys.stderr.write(f"      LABEL SKIPPED {slug}: only the cinema and word looks leave room for it\n")
             else:
                 pat, lh = kt_label.frames(info, label, lt, os.path.join(CARDS, (slug or "clip").replace("/", "_") + "_label"))
                 cap_top = CINEMA_CAP_Y if CINEMA else WORD_CAP_Y - 50
@@ -1791,7 +1791,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
                 except OSError:
                     pass
         except Exception as e:                       # a label never costs a clip
-            sys.stderr.write(f"      label skipped: {type(e).__name__}: {e}\n")
+            sys.stderr.write(f"      LABEL SKIPPED {slug}: {type(e).__name__}: {e}\n")
             lab = None
     # THE HOOK IS A CARD, COMPOSITED - see hook_card(). persist=True (the
     # YouTube cut) still uses drawtext, because a card that never leaves would

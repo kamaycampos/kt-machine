@@ -44,17 +44,26 @@ def _norm(t):
     return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9%]+", " ", str(t).lower())).strip()
 
 
-def fetch(code):
-    """{"code", "name", "ingredients"} from Open Food Facts, cached; None when it has no list."""
+# THE VERIFIED LABEL TRAVELS WITH THE PLAN (4 Nov 2026): the first cloud build of the Doritos clip
+# came out with no card - the factory server could not read Open Food Facts, and said so nowhere.
+# check_plan saves what it verified in the repo's factory/labels/, and the build reads it from there.
+REPO_LABELS = [os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "factory", "labels")),
+               os.path.join(HOME, "kt-machine", "factory", "labels")]
+
+
+def fetch(code, save_to_repo=False):
+    """{"code", "name", "ingredients"} from the repo's verified copy or Open Food Facts; None = no list."""
     code = re.sub(r"\D", "", str(code))
     if not code:
         return None
+    for d in REPO_LABELS + [CACHE]:
+        path = os.path.join(d, f"{code}.json")
+        if os.path.exists(path):          # a copy check_plan verified and the planner committed
+            try:
+                return json.load(open(path))
+            except ValueError:
+                pass
     path = os.path.join(CACHE, f"{code}.json")
-    if os.path.exists(path):
-        try:
-            return json.load(open(path))
-        except ValueError:
-            pass
     d = _get(f"https://world.openfoodfacts.org/api/v2/product/{code}.json"
              "?fields=product_name,brands,ingredients_text_en,ingredients_text")
     p = d.get("product") or {}
@@ -65,15 +74,18 @@ def fetch(code):
            "brands": (p.get("brands") or "").strip(), "ingredients": ing}
     os.makedirs(CACHE, exist_ok=True)
     json.dump(out, open(path, "w"), indent=1)
+    if save_to_repo and os.path.isdir(os.path.dirname(REPO_LABELS[0])):
+        os.makedirs(REPO_LABELS[0], exist_ok=True)
+        json.dump(out, open(os.path.join(REPO_LABELS[0], f"{code}.json"), "w"), indent=1)
     return out
 
 
-def check(label):
+def check(label, save_to_repo=False):
     """(info, why). info is None when the label must not be shown - why says what is wrong."""
     if not isinstance(label, dict) or not label.get("code") or not label.get("circle"):
         return None, 'label needs "code" (Open Food Facts barcode) and "circle" (the ingredient)'
     try:
-        info = fetch(label["code"])
+        info = fetch(label["code"], save_to_repo)
     except Exception as e:
         return None, f"label {label['code']}: could not read Open Food Facts ({type(e).__name__})"
     if not info:
