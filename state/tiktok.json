@@ -1,10 +1,10 @@
 {
- "at": "2026-11-05T19:46",
+ "at": "2026-11-05T20:15",
  "profile": {
-  "likes_count": 5878,
-  "video_count": 166,
   "follower_count": 409,
-  "following_count": 8
+  "following_count": 8,
+  "likes_count": 5878,
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -729,7 +729,7 @@
   },
   "KT_POS/04_04_THE-BOW-AND-ARROW_77s.mp4": {
    "id": "7684776913436511501",
-   "view_count": 289,
+   "view_count": 291,
    "like_count": 26,
    "comment_count": 2,
    "share_count": 0,
