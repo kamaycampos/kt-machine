@@ -457,5 +457,115 @@
    }
   ],
   "posted": "2026-11-05T13:11"
+ },
+ "KT_COOP__THE-CHICKEN-MIND-TRICK": {
+  "clip": "KT_COOP/01_THE-CHICKEN-MIND-TRICK_138s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V1.mp4",
+    "hook": [
+     "Just 2 days",
+     "gave you control"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V2.mp4",
+    "hook": [
+     "Your own mind",
+     "is sabotaging you"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V3.mp4",
+    "hook": [
+     "A chicken learned",
+     "what you haven't"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V4.mp4",
+    "hook": [
+     "Ignore this trick,",
+     "stay broke forever"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V5.mp4",
+    "hook": [
+     "Kevin Trudeau trained",
+     "a chicken's mind"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V6.mp4",
+    "hook": [
+     "Kevin Trudeau proves",
+     "anyone can self-train"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V7.mp4",
+    "hook": [
+     "A chicken beat",
+     "you at self-control"
+    ]
+   }
+  ],
+  "posted": null
+ },
+ "KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE": {
+  "clip": "KT_BOOKSHELFR2/01_ROCKEFELLER-GETTYS-ONE-RULE_66s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V1.mp4",
+    "hook": [
+     "One word built",
+     "two billion-dollar fortunes"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V2.mp4",
+    "hook": [
+     "Quitting costs you",
+     "everything Rockefeller built"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V3.mp4",
+    "hook": [
+     "Failure made him",
+     "two billion dollars"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V4.mp4",
+    "hook": [
+     "Give up once,",
+     "lose it forever"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V5.mp4",
+    "hook": [
+     "What made Rockefeller",
+     "rich? One phrase"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V6.mp4",
+    "hook": [
+     "Kevin Trudeau reveals",
+     "the billionaire's rule"
+    ]
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V7.mp4",
+    "hook": [
+     "The one word",
+     "worth real money"
+    ]
+   }
+  ],
+  "posted": null
  }
 }

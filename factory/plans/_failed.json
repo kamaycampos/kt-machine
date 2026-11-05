@@ -11233,6 +11233,168 @@
     "Kevin left the Brotherhood.",
     "One disagreement."
    ]
+  },
+  "ar_v4n9vuz_p2/SKULL-AND-BONES-HE-SAT-INSIDE": {
+   "plan": "ar_v4n9vuz_p2",
+   "source": "v4n9vuz.mp4",
+   "brand": "AR_CENSORED",
+   "tries": 1,
+   "why": [
+    "FAIL 01_SKULL-AND-BONES-HE-SAT-INSIDE_39s.mp4: [FAIL] 01_SKULL-AND-BONES-HE-SAT-INSIDE_39s.mp4               10 captions vs the sound  median -0.01s  worst-10% 0.75s  | words captioned 100%  UNCAPTIONED SPEECH [(6.6, 8.1)]"
+   ],
+   "slug": "SKULL-AND-BONES-HE-SAT-INSIDE",
+   "in": 402.9,
+   "out": 446.5,
+   "start_words": "These things are discussed",
+   "end_words": "we have people living",
+   "hook": [
+    "Skull & Bones.",
+    "He sat inside."
+   ]
+  },
+  "ar_v4n9vuz_p2/BEING-THIS-TIRED-KEEPS-YOU-CONTROLLED": {
+   "plan": "ar_v4n9vuz_p2",
+   "source": "v4n9vuz.mp4",
+   "brand": "AR_CENSORED",
+   "tries": 1,
+   "why": [
+    "FAIL 02_BEING-THIS-TIRED-KEEPS-YOU-CONTROLLED_77s.mp4: [FAIL] 02_BEING-THIS-TIRED-KEEPS-YOU-CONTROLLED_77s.mp4       18 captions vs the sound  median +0.04s  worst-10% 0.29s  | words captioned 100%  UNCAPTIONED SPEECH [(15.2, 16.9)]"
+   ],
+   "slug": "BEING-THIS-TIRED-KEEPS-YOU-CONTROLLED",
+   "in": 2064.1,
+   "out": 2142.4,
+   "start_words": "the globalists want",
+   "end_words": "words are power",
+   "hook": [
+    "Being this tired",
+    "keeps you controlled."
+   ]
+  },
+  "ar_v4n9vuz_p2/THEY-DECIDE-IF-YOU-ARE-LYING": {
+   "plan": "ar_v4n9vuz_p2",
+   "source": "v4n9vuz.mp4",
+   "brand": "AR_CENSORED",
+   "tries": 1,
+   "why": [
+    "FAIL 02_THEY-DECIDE-IF-YOU-ARE-LYING_69s.mp4: [FAIL] 02_THEY-DECIDE-IF-YOU-ARE-LYING_69s.mp4                10 captions vs the sound  median +0.03s  worst-10% 0.61s  | words captioned 100%  UNCAPTIONED SPEECH [(18.9, 21.4)]"
+   ],
+   "slug": "THEY-DECIDE-IF-YOU-ARE-LYING",
+   "in": 293.2,
+   "out": 371.2,
+   "start_words": "The government's definition",
+   "end_words": "we had fact checkers",
+   "hook": [
+    "They decide",
+    "if you are lying."
+   ]
+  },
+  "ar_v4rcljt_p2/A-SECRET-AGENDA-KEPT-WOMEN-DOWN": {
+   "plan": "ar_v4rcljt_p2",
+   "source": "v4rcljt.mp4",
+   "brand": "AR_DECEPTION",
+   "tries": 1,
+   "why": [
+    "FAIL 01_A-SECRET-AGENDA-KEPT-WOMEN-DOWN_66s.mp4:  01_A-SECRET-AGENDA-KEPT-WOMEN-DOWN_66s.mp4             36 captions vs the sound (word-referenced: no clear pauses)  median +0.56s  worst-10% 1.26s  | words captioned 100%  UNCAPTIONED SPEECH [(18.6, 20.5), (57.9, 60.0)]"
+   ],
+   "slug": "A-SECRET-AGENDA-KEPT-WOMEN-DOWN",
+   "in": 818.0,
+   "out": 877.0,
+   "start_words": "Now there's another",
+   "end_words": "wives actually cooked",
+   "hook": [
+    "A secret agenda.",
+    "Kept women down."
+   ]
+  },
+  "ar_v4rcljt_p2/COCA-COLA-HAD-COCAINE-RIGHT-ON-PURPOSE": {
+   "plan": "ar_v4rcljt_p2",
+   "source": "v4rcljt.mp4",
+   "brand": "AR_DECEPTION",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_COCA-COLA-HAD-COCAINE-RIGHT-ON-PURPOSE_49s.mp4` - the spoken word was on screen in only 6 of 10 moments"
+   ],
+   "slug": "COCA-COLA-HAD-COCAINE-RIGHT-ON-PURPOSE",
+   "in": 1237.0,
+   "out": 1284.0,
+   "start_words": "Are you kidding",
+   "end_words": "boosts your personality",
+   "hook": [
+    "Coca-Cola had cocaine.",
+    "Right on purpose."
+   ]
+  },
+  "ar_v4rcljt_p2/ALL-NATURAL-MEANS-NOTHING-AT-ALL": {
+   "plan": "ar_v4rcljt_p2",
+   "source": "v4rcljt.mp4",
+   "brand": "AR_DECEPTION",
+   "tries": 1,
+   "why": [
+    "FAIL 01_ALL-NATURAL-MEANS-NOTHING-AT-ALL_88s.mp4: ends off the planned words: plan ends 'it all natural', clip ends 'the product and still call it'"
+   ],
+   "slug": "ALL-NATURAL-MEANS-NOTHING-AT-ALL",
+   "in": 344.0,
+   "out": 435.0,
+   "start_words": "I have been",
+   "end_words": "it all natural",
+   "hook": [
+    "All natural",
+    "means nothing at all."
+   ]
+  },
+  "ar_v50s5f8_p2/WROTE-TWENTY-THINGS-ALL-CAME-TRUE": {
+   "plan": "ar_v50s5f8_p2",
+   "source": "v50s5f8.mp4",
+   "brand": "AR_ROCKETFUEL",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_WROTE-TWENTY-THINGS-ALL-CAME-TRUE_39s.mp4` - phrase scrambled around \"all these guys all\""
+   ],
+   "slug": "WROTE-TWENTY-THINGS-ALL-CAME-TRUE",
+   "in": 2253.2,
+   "out": 2294.7,
+   "start_words": "all these guys",
+   "end_words": "manifested in my life",
+   "hook": [
+    "Wrote twenty things.",
+    "All came true."
+   ]
+  },
+  "ep_v7htumc_r4/TEN-MINUTES-TO-THE-TOP": {
+   "plan": "ep_v7htumc_r4",
+   "source": "v7htumc.mp4",
+   "brand": "KT_BOOKSHELFR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_TEN-MINUTES-TO-THE-TOP_104s.mp4: [FAIL] 02_TEN-MINUTES-TO-THE-TOP_104s.mp4                     25 captions vs the sound  median +0.11s  worst-10% 0.43s  | words captioned 100%  UNCAPTIONED SPEECH [(15.7, 17.4)]"
+   ],
+   "slug": "TEN-MINUTES-TO-THE-TOP",
+   "in": 1233.2,
+   "out": 1338.08,
+   "start_words": "My encouragement to you",
+   "end_words": "no distractions no disruptions",
+   "hook": [
+    "Why 10 minutes",
+    "builds your wealth"
+   ]
+  },
+  "ep_v7htumc_r4/NASA-SCIENTISTS-MANIFESTING-PROOF": {
+   "plan": "ep_v7htumc_r4",
+   "source": "v7htumc.mp4",
+   "brand": "KT_BOOKSHELFR2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_NASA-SCIENTISTS-MANIFESTING-PROOF_73s.mp4` - opens mid-sentence on \"works.\""
+   ],
+   "slug": "NASA-SCIENTISTS-MANIFESTING-PROOF",
+   "in": 621.6,
+   "out": 692.16,
+   "start_words": "Here's a great book",
+   "end_words": "could blow your mind",
+   "hook": [
+    "What NASA's scientist",
+    "proved about manifesting"
+   ]
   }
  },
  "attempts": {
