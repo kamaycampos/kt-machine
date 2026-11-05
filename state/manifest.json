@@ -13953,7 +13953,11 @@
    "hook": "The difference between pain and suffering",
    "bytes": 66544768,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-05T20:08",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_UPLIFT/01_VANISHED-BEHIND-THE-IRON-CURTAIN_118s.mp4",
@@ -13961,7 +13965,11 @@
    "hook": "Two winners vanished behind Iron Curtain",
    "bytes": 73994357,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-06T12:35",
+   "cta_keyword": "MONEY",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
