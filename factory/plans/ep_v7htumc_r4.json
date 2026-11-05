@@ -1,0 +1,140 @@
+{
+ "source": "v7htumc.mp4",
+ "brand": "KT_BOOKSHELFR2",
+ "test": false,
+ "note": "5 Nov 2026 - 'Want to Get Rich? Read These 10 Books First' (Rumble v7htumc). Second chances, weekly agent: TEN-MINUTES-TO-THE-TOP re-cut to end before the channel outro; ROCKEFELLER-GETTYS-ONE-RULE re-cut to end on the Getty/Rockefeller quote (the planned end words did not match the spoken audio); NASA-SCIENTISTS-MANIFESTING-PROOF start nudged later to clear the tail of the previous sentence.",
+ "clips": [
+  {
+   "slug": "TEN-MINUTES-TO-THE-TOP",
+   "in": 1233.2,
+   "out": 1338.08,
+   "start_words": "My encouragement to you",
+   "end_words": "no distractions no disruptions",
+   "hook": [
+    "Why 10 minutes",
+    "builds your wealth"
+   ],
+   "trial_hooks": [
+    [
+     "10 minutes weekly",
+     "builds a fortune"
+    ],
+    [
+     "Zero effort keeps",
+     "you broke forever"
+    ],
+    [
+     "10 minutes grows",
+     "into real wealth"
+    ],
+    [
+     "Why you'll never",
+     "reach the top"
+    ],
+    [
+     "Kevin Trudeau's own",
+     "10 minute start"
+    ],
+    [
+     "Kevin Trudeau says",
+     "you'll reach top"
+    ],
+    [
+     "He'll see you",
+     "at the top"
+    ]
+   ],
+   "send": "Someone sends this to a friend who keeps saying I'll start Monday - a nudge mixed with hope that ten minutes is enough to begin.",
+   "caption": "Kevin Trudeau's encouragement is simple: if you're serious about making more money and building the life you want, it starts with feeding your mind — starting now, not someday.\n\nYou don't have to jump from zero to Elon Musk's one hour, five days a week. Start with one day a week for ten minutes. Lock the door. No phone. Just read.\n\nThen build — two days, then three, then thirty minutes, then an hour. Consistency beats intensity every time.\n\nNo pings, no notifications, no distractions, no disruptions. That's the whole system.\n\nWhat day this week will you lock the door for ten minutes?\n\n#kevintrudeau #startsmall #consistencywins #selfdevelopment #richmindset #10minutehabit",
+   "retry_of": "ep_v7htumc/TEN-MINUTES-TO-THE-TOP"
+  },
+  {
+   "slug": "ROCKEFELLER-GETTYS-ONE-RULE",
+   "in": 1054.32,
+   "out": 1119.28,
+   "start_words": "Little phrases where you",
+   "end_words": "alone are omnipotent",
+   "hook": [
+    "What Rockefeller believed",
+    "about getting rich"
+   ],
+   "trial_hooks": [
+    [
+     "One word built",
+     "two billion-dollar fortunes"
+    ],
+    [
+     "Quitting costs you",
+     "everything Rockefeller built"
+    ],
+    [
+     "Failure made him",
+     "two billion dollars"
+    ],
+    [
+     "Give up once,",
+     "lose it forever"
+    ],
+    [
+     "What made Rockefeller",
+     "rich? One phrase"
+    ],
+    [
+     "Kevin Trudeau reveals",
+     "the billionaire's rule"
+    ],
+    [
+     "The one word",
+     "worth real money"
+    ]
+   ],
+   "send": "A friend shares this with someone who needs a morning mindset reset - awe at how one line from a billionaire sticks.",
+   "caption": "Yesterday is history. Tomorrow is a mystery. Today is a gift — that's why it's called the present. One phrase, Kevin Trudeau says, can contain a whole book, like a seed contains a tree.\n\nThat's the idea behind his own book, Nuggets of Gold — one-line lessons you read in five minutes that stay with you all day.\n\nLesson 174 is just one word: persistence. Kevin Trudeau says J. Paul Getty and John D. Rockefeller both built their fortunes on the same line: persistence and determination alone are omnipotent.\n\nTwo of the richest men who ever lived agreed on one rule long before they had the money to prove it.\n\nWhich phrase would you want to read every morning?\n\n#kevintrudeau #nuggetsofgold #rockefeller #persistence #selfmastery #dailywisdom",
+   "retry_of": "ep_v7htumc_r2/ROCKEFELLER-GETTYS-ONE-RULE"
+  },
+  {
+   "slug": "NASA-SCIENTISTS-MANIFESTING-PROOF",
+   "in": 621.6,
+   "out": 692.16,
+   "start_words": "Here's a great book",
+   "end_words": "could blow your mind",
+   "hook": [
+    "What NASA's scientist",
+    "proved about manifesting"
+   ],
+   "trial_hooks": [
+    [
+     "One NASA scientist",
+     "proved manifesting real"
+    ],
+    [
+     "Science hid this",
+     "secret from you"
+    ],
+    [
+     "NASA studied aliens,",
+     "then manifesting works"
+    ],
+    [
+     "Ignore this proof,",
+     "stay broke forever"
+    ],
+    [
+     "Travis Taylor's book",
+     "blew Kevin's mind"
+    ],
+    [
+     "Kevin Trudeau found",
+     "NASA's manifesting proof"
+    ],
+    [
+     "A NASA scientist",
+     "believes in manifesting"
+    ]
+   ],
+   "send": "A skeptic's friend sends this to someone who mocks manifesting - proof a NASA physicist took it seriously, sparking curiosity and awe.",
+   "caption": "Kevin Trudeau calls this book hard to find: The Science Behind the Secret, by Travis Taylor, a PhD physicist from Skinwalker Ranch who worked with NASA on classified aerial research.\n\nThe book lays out the actual physics behind manifesting and the law of attraction — written before quantum computers, before AI even existed.\n\nOnce you start reading it, Kevin says, you realize the science was describing reality decades before we had the tech to prove it.\n\nIf a NASA physicist takes manifesting seriously, maybe it's worth five minutes of yours.\n\n#kevintrudeau #lawofattraction #manifestation #nasascientist #scienceofmanifesting #mindsetbooks",
+   "retry_of": "ep_v7htumc_r2/NASA-SCIENTISTS-MANIFESTING-PROOF"
+  }
+ ]
+}
