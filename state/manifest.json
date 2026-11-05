@@ -13560,11 +13560,24 @@
    "hook": "How he dodged prison and won",
    "bytes": 33604932,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-04T20:16",
    "cta_keyword": "BRAIN",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfV2K_2jCVR/",
+    "youtube": "https://youtube.com/shorts/JznvxSrSdSE"
+   },
+   "caption_at_post": "Kevin Trudeau's own lawyer warned him: you're probably going back to prison.\n\nKevin says he looked inward instead of panicking, and told his lawyer something good was about to happen.\n\nMinutes later the judge walked in and said something nobody expected: I am biased against Mr. Trudeau, and I am recusing myself from this case. Then he left.\n\nThe FTC was stunned. His own lawyer was stunned. Kevin says he wasn't, because he'd already felt it coming.\n\nHe calls it the first sign everything was about to turn. Everything shifted from that moment.\n\nDo you trust your gut before the outcome even shows up?\n\n#kevintrudeau #manifesting #mindset #yourwishisyourcommand #law #belief",
+   "posted_at": "2026-11-04T20:28"
   },
   {
    "file": "KT_BOOKSHELF/01_ELONS-LOCKED-DOOR-RITUAL_53s.mp4",
@@ -13572,7 +13585,11 @@
    "hook": "How Elon Musk shuts off distractions",
    "bytes": 38761956,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-05T08:00",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_BOOKSHELF/01_KNOWING-IT-ISNT-DOING-IT_125s.mp4",
@@ -13580,7 +13597,11 @@
    "hook": "Why reading won't make you rich",
    "bytes": 85759178,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-05T12:37",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_BOOKSHELF/02_STOP-MAKING-EXCUSES_76s.mp4",
@@ -13588,7 +13609,11 @@
    "hook": "Why excuses keep you poor forever",
    "bytes": 54782883,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-05T10:04",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_DANNYROSER2R2/01_GLASS-BRIDGE-OVER-THE-CANYON_89s.mp4",
@@ -13596,7 +13621,11 @@
    "hook": "How 90 days made $4 million",
    "bytes": 63298348,
    "done": false,
-   "status": {}
+   "status": {},
+   "scheduled_at": "2026-11-05T09:00",
+   "cta_keyword": "WISH",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
