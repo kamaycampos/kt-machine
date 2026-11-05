@@ -1,0 +1,36 @@
+{
+ "source": "v7htumc.mp4",
+ "brand": "KT_BOOKSHELF",
+ "test": false,
+ "note": "4 Nov 2026 - REBUILD under new names: the fixed renders of ELON-MUSKS-READING-HABIT and HALF-A-MILLION-A-WEEK were not queued because their file names matched the held (cut-text) versions.",
+ "clips": [
+  {
+   "slug": "ELONS-ONE-HOUR-READING-RULE",
+   "in": 0.0,
+   "out": 90.16,
+   "start_words": "Elon must know something",
+   "end_words": "Leaders are always readers",
+   "hook": [
+    "The 1-hour rule",
+    "of every billionaire"
+   ],
+   "send": "A dad sends this to his teenage son who says he's too busy for homework - awe that the richest man alive still finds the hour.",
+   "caption": "Elon Musk reads for one hour a day, five days a week. He says it's the most important thing he does — more important than any meeting, any deal.\n\nKevin Trudeau asked him how he learned to build rockets. His answer: I read.\n\nThe richest man alive makes time to read every day. Most people say they're too busy for fifteen minutes.\n\nLeaders are always readers. If you're not learning, you're already behind the people who are.\n\nWhat's the last book that actually changed how you think?\n\n#kevintrudeau #richhabits #readmorebooks #elonmusk #selfdevelopment #moneymindset",
+   "retry_of": "ep_v7htumc_r2/ELON-MUSKS-READING-HABIT"
+  },
+  {
+   "slug": "LIVING-ON-HALF-A-MILLION-A-WEEK",
+   "in": 450.4,
+   "out": 547.76,
+   "start_words": "I was with a",
+   "end_words": "million dollars a week",
+   "hook": [
+    "He spends $500K",
+    "a week easily"
+   ],
+   "send": "Someone forwards this to a friend bragging about their salary - awe and a little shade, since Kevin spends more than that in a week.",
+   "caption": "Kevin Trudeau once sat with multi-millionaires in the Billionaire Boys Club. One member handed out a list of over a thousand books he'd read in five years, ranked by how much he liked them.\n\nEveryone in that room was worth over a hundred million dollars, and every one of them read constantly.\n\nMeanwhile someone bragged about making half a million a year. Kevin's reply: he couldn't go back to living on half a million a week.\n\nThe top don't read occasionally — they read like it's their job, because it built their job.\n\nHow many books have you finished this year?\n\n#kevintrudeau #billionairemindset #readtogetrich #wealthhabits #richpeoplethink #successbooks",
+   "retry_of": "ep_v7htumc_r2/HALF-A-MILLION-A-WEEK"
+  }
+ ]
+}
