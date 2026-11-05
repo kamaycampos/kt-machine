@@ -470,7 +470,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 1
+    "tries": 2
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V2.mp4",
@@ -480,7 +480,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 1
+    "tries": 2
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V3.mp4",
@@ -490,7 +490,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 1
+    "tries": 2
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V4.mp4",
@@ -500,7 +500,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 1
+    "tries": 2
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V5.mp4",
@@ -510,7 +510,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 1
+    "tries": 2
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V6.mp4",
@@ -520,7 +520,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 1
+    "tries": 2
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V7.mp4",
@@ -530,7 +530,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 1
+    "tries": 2
    }
   ],
   "posted": null
