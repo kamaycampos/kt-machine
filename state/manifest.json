@@ -13681,11 +13681,23 @@
    "hook": "Your blood was ranked to obey.",
    "bytes": 43857266,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "instagram": "could not fetch the video: Error: Media upload has failed with error code 2207077",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-05T09:26",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1438372487847663/",
+    "youtube": "https://youtube.com/shorts/5iR7QoYXFsk"
+   },
+   "caption_at_post": "There's a reason the invitation to these rooms was never about merit.\n\nThe men behind Bilderberg don't let just anyone into the circle - Skull & Bones at Yale, Bohemian Grove in California, and the quieter societies tied to them around the world. The one requirement nobody says out loud is bloodline.\n\nNot what you built. Not what you earned. Just who you were born to.\n\nThat belief is older than any of us - that some blood was made to lead, and the rest was made to follow and never ask why.\n\nComment RISE and I'll send you how to tell if you're still living by someone else's ranking.\n\n#awakening #secretsocieties #subconscious #disclosure #consciousness #kevintrudeau",
+   "posted_at": "2026-11-05T09:28"
   },
   {
    "file": "AR_BILDERBERG/02_NO-CAMERAS-NEVER-ON-THE-NEWS_89s.mp4",
