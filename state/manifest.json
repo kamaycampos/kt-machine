@@ -13622,11 +13622,24 @@
    "hook": "Why excuses keep you poor forever",
    "bytes": 54782883,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-05T10:04",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfXUPTvjlyO/",
+    "youtube": "https://youtube.com/shorts/g2jffIFPNCY"
+   },
+   "caption_at_post": "You say you want to be rich. You say you want a better life. But are you willing to do what it takes?\n\nKevin Trudeau doesn't sugarcoat it: if you won't make time to learn, you're lying to yourself about wanting more.\n\nFailures are good at one thing \u2014 making excuses. Successful people do what the rest are still talking about.\n\nStop blaming the economy, your boss, your bad luck. The gap between broke and rich is usually just discipline.\n\nWhich excuse have you been hiding behind the longest?\n\n#kevintrudeau #stopmakingexcuses #successmindset #discipline #richmindset #selfimprovement",
+   "posted_at": "2026-11-05T10:10"
   },
   {
    "file": "KT_DANNYROSER2R2/01_GLASS-BRIDGE-OVER-THE-CANYON_89s.mp4",
