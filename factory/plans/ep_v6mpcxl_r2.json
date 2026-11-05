@@ -1,0 +1,23 @@
+{"source": "v6mpcxl.mp4", "brand": "KT_LUCKR2", "test": false,
+ "note": "2026-11-05 - 'The Science of Luck' (Rumble v6mpcxl). Weekly agent second chance. 50-PERCENT-BECAME-52-PERCENT re-cut: moved both edges to new sentence boundaries (start a little earlier, end a little earlier, skipping past the dense binary-digit list in the middle of the old window) since the gate's only complaint was general caption drift with no single named gap. 50X-MORE-MONEY-BY-A-NOSE re-cut: the gate flagged UNCAPTIONED SPEECH at 18.1-20.4s into the old clip, inside the '51% of the time... no, you have to be right once' exchange; moved the start past that whole exchange to begin at the horse-race line instead, and extended the end slightly to clear the 40s minimum.",
+ "clips": [
+  {"slug": "50-PERCENT-BECAME-52-PERCENT",
+   "in": 116.24, "out": 296.08,
+   "start_words": "The most significant test",
+   "end_words": "a complete anomaly",
+   "retry_of": "ep_v6mpcxl/50-PERCENT-BECAME-52-PERCENT",
+   "hook": ["50% became 52%", "just by thinking"],
+   "send": "Someone sends it to a skeptical friend who thinks manifesting is nonsense: real lab proof that focused thought shifted a random machine - pure awe.",
+   "caption": "A machine spits out random 1s and 0s - literally a coin flip, coded. Left alone, run it a billion times and it lands right around 49.9% to 50.1%. Never quite 50/50, but close.\n\nResearchers sat someone in front of it and told them to just think '1' more than '0.'\n\nThe next run wasn't 50.1%. It was 51%, 52% - far enough outside the normal range that researchers called it a complete anomaly.\n\nKevin Trudeau calls this empirical evidence that a quiet, focused thought can shift a random outcome.\n\nIf thought can move a random number generator, what else has it been moving in your life?\n\n#kevintrudeau #manifestation #lawofattraction #mindset #scienceofluck #personalgrowth"
+  },
+  {"slug": "50X-MORE-MONEY-BY-A-NOSE",
+   "in": 1366.48, "out": 1411.04,
+   "start_words": "Two horses coming down",
+   "end_words": "will actually increase your luck",
+   "retry_of": "ep_v6mpcxl/50X-MORE-MONEY-BY-A-NOSE",
+   "hook": ["50x more money", "by a nose"],
+   "send": "A friend sends it to someone grinding for one huge breakthrough: proof a tiny edge, not a giant one, is what actually pays 50x - awe and envy.",
+   "caption": "Two horses cross the finish line. One wins by a nose - an inch, maybe a centimeter.\n\nThe winner doesn't get paid double for that tiny edge. Kevin Trudeau points out he gets paid 50 times more than the horse that came in second, even though he didn't run 50 times faster.\n\nThat's the whole point about luck: it was never about being better by a mile. It's about shifting the outcome just enough, right at the moment it counts.\n\nThere's an older book, Kevin says, that dozens of Hollywood stars credit with that exact edge.\n\nWhat's the one small edge you've been ignoring?\n\n#kevintrudeau #wealthmindset #mindset #scienceofluck #successhabits #investing"
+  }
+ ]
+}
