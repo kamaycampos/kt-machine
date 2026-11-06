@@ -14113,11 +14113,24 @@
    "hook": "Two winners vanished behind Iron Curtain",
    "bytes": 73994357,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-06T12:35",
    "cta_keyword": "MONEY",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfaLT85GeFM/",
+    "youtube": "https://youtube.com/shorts/ub1a6Z9tT1E"
+   },
+   "caption_at_post": "Chuck Barris produced The Dating Game, The Newlywed Game and The Gong Show. America just knew him as a goofy game show host.\n\nKevin Trudeau points out something strange: almost every time two people won the Dating Game, the prize sent them behind the Iron Curtain, to places like Bucharest or Belarus, instead of somewhere normal like San Francisco.\n\nThe reason, Barris later claimed, is that he was a CIA assassin, using the show as cover to slip into Eastern Europe and back out fast.\n\nBarris always denied it afterward, laughing it off. Kevin says that's exactly what you'd expect him to say.\n\nDo you think a game show really hid a government assassin?\n\n#kevintrudeau #ciasecrets #conspiracy #hollywood #truestory #hiddenhistory",
+   "posted_at": "2026-11-06T12:50"
   }
  ]
 }
