@@ -11521,6 +11521,60 @@
     "50x more money",
     "by a nose"
    ]
+  },
+  "ar_v5xlxz8/YOUR-FEAR-ISNT-FROM-THIS-LIFETIME": {
+   "plan": "ar_v5xlxz8",
+   "source": "v5xlxz8.mp4",
+   "brand": "AR_FIELD",
+   "tries": 1,
+   "why": [
+    "FAIL 02_YOUR-FEAR-ISNT-FROM-THIS-LIFETIME_85s.mp4: [FAIL] 02_YOUR-FEAR-ISNT-FROM-THIS-LIFETIME_85s.mp4           9 captions vs the sound  median +0.00s  worst-10% 0.93s  | words captioned 100%  UNCAPTIONED SPEECH [(49.5, 51.0)]"
+   ],
+   "slug": "YOUR-FEAR-ISNT-FROM-THIS-LIFETIME",
+   "in": 804.32,
+   "out": 887.87,
+   "start_words": "So let's talk about",
+   "end_words": "It never comes back",
+   "hook": [
+    "Your fear isn't",
+    "from this lifetime."
+   ]
+  },
+  "ar_v5xlxz8/THREE-DAYS-DRIVE-ONE-HIDDEN-FEAR": {
+   "plan": "ar_v5xlxz8",
+   "source": "v5xlxz8.mp4",
+   "brand": "AR_FIELD",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THREE-DAYS-DRIVE-ONE-HIDDEN-FEAR_142s.mp4: [FAIL] 01_THREE-DAYS-DRIVE-ONE-HIDDEN-FEAR_142s.mp4           39 captions vs the sound  median +0.02s  worst-10% 0.41s  | words captioned 99%  UNCAPTIONED SPEECH [(62.3, 64.3)]"
+   ],
+   "slug": "THREE-DAYS-DRIVE-ONE-HIDDEN-FEAR",
+   "in": 1315.0,
+   "out": 1448.97,
+   "start_words": "I don't realize he",
+   "end_words": "came back 100% cured",
+   "hook": [
+    "Three days' drive.",
+    "One hidden fear."
+   ]
+  },
+  "ar_v5xlxz8/HER-CRAVING-HIT-ZERO-IN-SECONDS": {
+   "plan": "ar_v5xlxz8",
+   "source": "v5xlxz8.mp4",
+   "brand": "AR_FIELD",
+   "tries": 1,
+   "why": [
+    "FAIL 02_HER-CRAVING-HIT-ZERO-IN-SECONDS_90s.mp4: [FAIL] 02_HER-CRAVING-HIT-ZERO-IN-SECONDS_90s.mp4             22 captions vs the sound  median +0.07s  worst-10% 0.20s  | words captioned 100%  UNCAPTIONED SPEECH [(61.5, 63.8)]"
+   ],
+   "slug": "HER-CRAVING-HIT-ZERO-IN-SECONDS",
+   "in": 1700.32,
+   "out": 1786.83,
+   "start_words": "how bad do you",
+   "end_words": "cured me of the addiction",
+   "hook": [
+    "Her craving hit",
+    "zero in seconds."
+   ]
   }
  },
  "attempts": {
