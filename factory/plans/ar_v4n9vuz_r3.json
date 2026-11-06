@@ -1,0 +1,19 @@
+{
+  "source": "v4n9vuz.mp4",
+  "brand": "AR_DARKSIDER2R2",
+  "test": false,
+  "note": "6 Nov 2026 - last chance (tries 2) on two clips from ar_v4n9vuz_r2 (AR_DARKSIDER2). NOT-YOUR-TEETH-ITS-YOUR-ETHER: the planned end_words ('manipulate and control') landed one sentence short of the clip's actual payoff - the next sentence ('And by doing this, it also limits your ability to tap into the ether...') is the whole point of the slug, and the build ran into it as an uncut, unplanned sentence, which is what 'ends mid-thought' and the internal 'no stop' flag were both catching at that seam. Extended end_words to the real close. Skipped POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT: the 'phrase scrambled' flag is Kevin genuinely stumbling over his own words live ('we'll just make, we'll just let...') sitting in the middle of the one sentence that carries the clip's teaching - no edge moves it outside the clip, so per AR_PLANNING.md this one is skipped for good.",
+  "clips": [
+    {
+      "slug": "NOT-YOUR-TEETH-ITS-YOUR-ETHER",
+      "retry_of": "ar_v4n9vuz_r2/NOT-YOUR-TEETH-ITS-YOUR-ETHER",
+      "in": 1872.68,
+      "out": 1943.4,
+      "start_words": "there's a whole series",
+      "end_words": "and have knowingness",
+      "hook": ["They don't want you", "sharp."],
+      "send": "Sends this to a friend who can't figure out why they feel foggy all the time - unease at how many small, separate things are doing it on purpose.",
+      "caption": "There's a whole series of steps built to keep you in a mental fog, and none of them need a conspiracy meeting to work.\n\nPromote recreational drug use - mental fog. Promote pharmaceutical overuse - mental fog. Fluoride in the water - mental fog. Certain additives in the food - mental fog. Each one on its own looks harmless. Stacked together, they make you a little less sharp, a little more suggestible.\n\nAnd a population that's easier to suggest things to is easier to manipulate and control - which, he says, is also exactly what limits your ability to tap into anything higher.\n\nComment RISE and I'll send you what to cut out first.\n\n#disclosure #awakening #mindcontrol #consciousness #truth #kevintrudeau"
+    }
+  ]
+}

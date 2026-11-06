@@ -1,0 +1,30 @@
+{
+  "source": "v4rcljt.mp4",
+  "brand": "AR_MISLEDR2",
+  "test": false,
+  "note": "6 Nov 2026 - second chances on AR_MISLED (v4rcljt, 'The Devious Tactics of Misleading Advertising'). YOUVE-BEEN-HYPNOTIZED-WITHOUT-KNOWING-IT opened mid-sentence on the tail of the PRIOR sentence ('special.') instead of the one it was planned to open on; moved the start back to that prior sentence's own beginning so the clip opens on a real sentence start either way. HE-LIED-ABOUT-AREA-51-TOO ran into a second, near-duplicate 'misinformation' sentence right after its planned end (flagged as a repeated word) and overran into it; moved the end back to the first, cleaner sentence that already lands the point, and rewrote the caption's last paragraph to match. Skipped YOUVE-BEEN-MISLED-YOUR-WHOLE-LIFE (tries 1): its edges already match clean sentence boundaries in this transcript pass, so the 'no stop' failures look like a disagreement between the two whisper passes on punctuation inside the clip, not an edge problem I can fix from the text.",
+  "clips": [
+    {
+      "slug": "YOUVE-BEEN-HYPNOTIZED-WITHOUT-KNOWING-IT",
+      "retry_of": "ar_v4rcljt/YOUVE-BEEN-HYPNOTIZED-WITHOUT-KNOWING-IT",
+      "in": 2091.0,
+      "out": 2143.0,
+      "start_words": "So this book is",
+      "end_words": "virtually have been hypnotized",
+      "hook": ["You've been hypnotized", "without knowing it."],
+      "send": "Sends this to a friend stuck in the same self-image loop they can't explain - it names the trance instead of just the symptom (unease, then recognition).",
+      "caption": "How you see yourself isn't a small detail. It's the compass that decides which direction your whole life ends up going.\n\nMost people never examine it, because most people never installed it on purpose. It went in early - from people and places you trusted, long before you had any say in the matter. Which is a polite way of saying you were programmed, then put into something close to a trance about it, and never told.\n\nWaking up from that doesn't start with fixing your results. It starts with noticing the belief sitting underneath them - the one you never chose and never once questioned.\n\nComment RISE and I'll send you how to find yours.\n\n#subconscious #selfimage #awakening #mindset #consciousness #kevintrudeau"
+    },
+    {
+      "slug": "HE-LIED-ABOUT-AREA-51-TOO",
+      "retry_of": "ar_v4rcljt/HE-LIED-ABOUT-AREA-51-TOO",
+      "in": 238.0,
+      "out": 286.0,
+      "start_words": "I talked about last",
+      "end_words": "use the word misinformation",
+      "hook": ["They lied", "to keep you asleep."],
+      "send": "Sends this to a friend who thinks government secrecy is just a conspiracy-theory thing - it's a direct, on-record admission, not a theory (unease, vindication).",
+      "caption": "Bill Clinton once said there's nothing at Groom Lake. No installation at Area 51. He says he had to say that - because it was classified, not because it was true.\n\nThat's the part that rarely gets said out loud: being made to lie, by design, so the official answer and the real answer can both exist pointed at the same question. Kevin ties it to today - the same machine that controlled that answer now runs social media too, deciding who gets banned and whose posts even reach you.\n\nThere's a word for the whole operation now. They call it misinformation.\n\nComment RISE and I'll send you what else never got an honest answer.\n\n#disclosure #classified #hiddentruth #awakening #thetruth #kevintrudeau"
+    }
+  ]
+}

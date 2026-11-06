@@ -1,0 +1,19 @@
+{
+  "source": "v4rcljt.mp4",
+  "brand": "AR_DECEPTIONR2",
+  "test": false,
+  "note": "6 Nov 2026 - second chance on AR_DECEPTION (v4rcljt second pass). ALL-NATURAL-MEANS-NOTHING-AT-ALL's planned end words ('it all natural') are a phrase this transcript repeats twice within a few seconds of each other (00:07:04 and 00:07:15), and the build landed on the earlier, truncated occurrence ('...and still call it'), cutting off before the payoff. Moved the end to the next sentence's own clean close ('It means nothing.'), which doesn't repeat anywhere nearby. Skipped A-SECRET-AGENDA-KEPT-WOMEN-DOWN and COCA-COLA-HAD-COCAINE-RIGHT-ON-PURPOSE (tries 1): both failures are caption-vs-sound timing / uncaptioned-speech gaps, which need the actual audio pauses to re-time correctly and aren't visible in the transcript text.",
+  "clips": [
+    {
+      "slug": "ALL-NATURAL-MEANS-NOTHING-AT-ALL",
+      "retry_of": "ar_v4rcljt_p2/ALL-NATURAL-MEANS-NOTHING-AT-ALL",
+      "in": 344.0,
+      "out": 456.0,
+      "start_words": "I have been",
+      "end_words": "It means nothing",
+      "hook": ["All natural", "means nothing at all."],
+      "send": "Send this to someone who always reaches for the \"all natural\" label at the store - unease at what that word actually guarantees.",
+      "caption": "He sat in the marketing meetings where this was decided, so he can tell you exactly how it works.\n\nA product is loaded with chemicals, hydrogenated oil, ingredients that cause real harm - and the question in the room isn't \"how do we make this healthy,\" it's \"how do we convince people it's healthy.\" The answer: pay lobbyists to help define \"all natural\" so loosely that almost anything qualifies - even fifteen thousand different chemicals.\n\nThe word was never describing the product. It was describing you - what you'd believe if they just picked the right word.\n\nComment RISE and I'll send you the other words that mean nothing on a label.\n\n#disclosure #subconscious #programming #awakening #consciousness #kevintrudeau"
+    }
+  ]
+}

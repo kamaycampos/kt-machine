@@ -1,0 +1,19 @@
+{
+  "source": "v4lw3gr.mp4",
+  "brand": "AR_BILDERBERGR2",
+  "test": false,
+  "note": "6 Nov 2026 - second chance on AR_BILDERBERG (v4lw3gr second pass). KEVIN-LEFT-THE-BROTHERHOOD-ONE-DISAGREEMENT's only failure was the rendered hook running 4px over the phone-safe width at 'Kevin left the Brotherhood. / One disagreement.' - dropped the redundant name so the line is shorter with real margin to spare. Everything else (edges, caption) is unchanged. Skipped 68-SECONDS-THATS-ALL-IT-TAKES and MAKE-ME-AN-INSTRUMENT-OF-PEACE (AR_SOWLOVE, tries 1), and BUSH-KERRY-NIXON-SAME-SECRET-ISLAND and WORK-DEBT-KIDS-THEN-YOU-DIE (AR_BILDERBERG, tries 1): all four are caption-vs-sound timing or uncaptioned-speech gaps, which need the actual audio pauses to re-time and aren't visible in the transcript text.",
+  "clips": [
+    {
+      "slug": "KEVIN-LEFT-THE-BROTHERHOOD-ONE-DISAGREEMENT",
+      "retry_of": "ar_v4lw3gr_p2/KEVIN-LEFT-THE-BROTHERHOOD-ONE-DISAGREEMENT",
+      "in": 1578.0,
+      "out": 1626.0,
+      "start_words": "this is why",
+      "end_words": "every single night",
+      "hook": ["Left the Brotherhood.", "One disagreement."],
+      "send": "Send this to someone who thinks you can only leave a secret society in disgrace - awe at a line actually being drawn.",
+      "caption": "He agreed with their goal. He left anyway.\n\nInside the group he once belonged to, the stated purpose wasn't secret or shocking - end hunger, end starvation, end poverty across the planet. Something almost anyone would sign onto.\n\nWhat he couldn't accept was the method they planned to use to get there. He's never said he disagreed with where they wanted to go. Only with how they intended to force everyone else to arrive.\n\nThat's the part nobody talks about when they imagine a secret society: sometimes the goal sounds good. It's the methodology that should scare you.\n\nComment RISE and I'll send you the part of the plan he actually walked away from.\n\n#secretsocieties #disclosure #awakening #subconscious #consciousness #kevintrudeau"
+    }
+  ]
+}
