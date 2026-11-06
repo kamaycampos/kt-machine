@@ -1,10 +1,10 @@
 {
- "at": "2026-11-05T20:15",
+ "at": "2026-11-06T01:26",
  "profile": {
+  "video_count": 166,
   "follower_count": 409,
   "following_count": 8,
-  "likes_count": 5878,
-  "video_count": 166
+  "likes_count": 5878
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -339,7 +339,7 @@
   },
   "KT_FREEDOM/01_HOW-A-SNOWSTORM-MADE-ME-MONEY_84s.mp4": {
    "id": "7689851916838292749",
-   "view_count": 5,
+   "view_count": 7,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -469,7 +469,7 @@
   },
   "KT_RICH/01_WHAT-A-MILLION-REALLY-MEANS_109s.mp4": {
    "id": "7688387138974387469",
-   "view_count": 421,
+   "view_count": 422,
    "like_count": 22,
    "comment_count": 0,
    "share_count": 1,
@@ -529,7 +529,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3741,
+   "view_count": 3742,
    "like_count": 153,
    "comment_count": 7,
    "share_count": 16,
@@ -649,7 +649,7 @@
   },
   "KT_LIES/01_LIVE-WITHIN-YOUR-MEANS-IS-THE-LIE_99s.mp4": {
    "id": "7686255138599636237",
-   "view_count": 454,
+   "view_count": 455,
    "like_count": 32,
    "comment_count": 0,
    "share_count": 1,
@@ -669,7 +669,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14169,
+   "view_count": 14172,
    "like_count": 869,
    "comment_count": 59,
    "share_count": 196,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38239,
+   "view_count": 38240,
    "like_count": 789,
    "comment_count": 27,
    "share_count": 171,
