@@ -1,12 +1,8 @@
-## ar_v4lw3gr_p2_r2: 0 of 1 clip(s) passed every gate
+## ep_v5d9snl_r3: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-06 15:35
-ar_v4lw3gr_p2_r2__s0 (AR_BILDERBERGR2): 1 of 1 passed pre-render gates
+## 2026-11-06 19:15
+ep_v5d9snl_r3__s0 (KT_UPLIFTR2R2): 1 of 1 passed pre-render gates
 
-RENDER ar_v4lw3gr_p2_r2__s0
-  WARP 01_KEVIN-LEFT-THE-BROTHERHOOD-ONE-DISAGREEMENT_44s.mp4: HE-BROTHERHOOD-ONE-DISAGREEMENT_44s.m   13 captions vs the sound  median +0.13s  worst-10% 0.86s  | words captioned 100% - re-timing each caption once
-  FAIL 01_KEVIN-LEFT-THE-BROTHERHOOD-ONE-DISAGREEMENT_44s.mp4: [FAIL] 01_KEVIN-LEFT-THE-BROTHERHOOD-ONE-DISAGREEMENT_44s.m   11 captions vs the sound  median -0.01s  worst-10% 0.31s  | words captioned 100%  UNCAPTIONED SPEECH [(17.6, 19.4)]
-
-
-- **RETIRED** after 2 runs with nothing passing; its clips go back to the planner (factory/plans/_failed.json)
+RENDER ep_v5d9snl_r3__s0
+  FAIL 01_WHY-LOTTERY-WINNERS-GO-BROKE_39s.mp4: TERY-WINNERS-GO-BROKE_39s.mp4                25 captions vs the sound (word-referenced: no clear pauses)  median +0.33s  worst-10% 0.64s  | words captioned 98%  UNCAPTIONED SPEECH [(5.0, 6.8), (14.7, 16.3), (25.4, 27.2)]
