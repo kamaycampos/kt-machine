@@ -11683,6 +11683,24 @@
     "What money truly",
     "can't buy you"
    ]
+  },
+  "ar_v4lw3gr_p2_r2/KEVIN-LEFT-THE-BROTHERHOOD-ONE-DISAGREEMENT": {
+   "plan": "ar_v4lw3gr_p2_r2",
+   "source": "v4lw3gr.mp4",
+   "brand": "AR_BILDERBERGR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_KEVIN-LEFT-THE-BROTHERHOOD-ONE-DISAGREEMENT_44s.mp4: [FAIL] 01_KEVIN-LEFT-THE-BROTHERHOOD-ONE-DISAGREEMENT_44s.m   11 captions vs the sound  median -0.01s  worst-10% 0.31s  | words captioned 100%  UNCAPTIONED SPEECH [(17.6, 19.4)]"
+   ],
+   "slug": "KEVIN-LEFT-THE-BROTHERHOOD-ONE-DISAGREEMENT",
+   "in": 1578.0,
+   "out": 1626.0,
+   "start_words": "this is why",
+   "end_words": "every single night",
+   "hook": [
+    "Left the Brotherhood.",
+    "One disagreement."
+   ]
   }
  },
  "attempts": {
@@ -11732,6 +11750,6 @@
   "ep_v66j311_r3": 2,
   "ep_v4zs6lu": 2,
   "ep_v6oq1ll_r8": 2,
-  "ar_v4lw3gr_p2_r2": 1
+  "ar_v4lw3gr_p2_r2": 2
  }
 }
