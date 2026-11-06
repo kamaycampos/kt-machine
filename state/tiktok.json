@@ -1,10 +1,10 @@
 {
- "at": "2026-11-06T07:22",
+ "at": "2026-11-06T12:46",
  "profile": {
-  "following_count": 8,
-  "likes_count": 5878,
   "video_count": 166,
-  "follower_count": 409
+  "follower_count": 409,
+  "following_count": 8,
+  "likes_count": 5878
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -579,7 +579,7 @@
   },
   "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4": {
    "id": "7686887912297843981",
-   "view_count": 2346,
+   "view_count": 2348,
    "like_count": 79,
    "comment_count": 5,
    "share_count": 12,
@@ -669,7 +669,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14172,
+   "view_count": 14173,
    "like_count": 869,
    "comment_count": 59,
    "share_count": 196,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38240,
+   "view_count": 38241,
    "like_count": 789,
    "comment_count": 27,
    "share_count": 171,
@@ -749,7 +749,7 @@
   },
   "KT_HOME/05_05_THE-SINGLE-MOST-POWERFUL-OBJECT_86s.mp4": {
    "id": "7685101409963871501",
-   "view_count": 1382,
+   "view_count": 1383,
    "like_count": 103,
    "comment_count": 4,
    "share_count": 9,
@@ -979,7 +979,7 @@
   },
   "KT_MED/07_IT-REDUCES-CORTISOL_132s.mp4": {
    "id": "7682414527195008270",
-   "view_count": 346,
+   "view_count": 347,
    "like_count": 22,
    "comment_count": 4,
    "share_count": 1,
