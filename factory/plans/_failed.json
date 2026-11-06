@@ -11575,6 +11575,114 @@
     "Her craving hit",
     "zero in seconds."
    ]
+  },
+  "ar_v4rcljt_p2_r2/ALL-NATURAL-MEANS-NOTHING-AT-ALL": {
+   "plan": "ar_v4rcljt_p2_r2",
+   "source": "v4rcljt.mp4",
+   "brand": "AR_DECEPTIONR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_ALL-NATURAL-MEANS-NOTHING-AT-ALL_111s.mp4` - opens mid-sentence on \"natural.\""
+   ],
+   "slug": "ALL-NATURAL-MEANS-NOTHING-AT-ALL",
+   "in": 344.0,
+   "out": 456.0,
+   "start_words": "I have been",
+   "end_words": "It means nothing",
+   "hook": [
+    "All natural",
+    "means nothing at all."
+   ]
+  },
+  "ar_v4rcljt_r2/YOUVE-BEEN-HYPNOTIZED-WITHOUT-KNOWING-IT": {
+   "plan": "ar_v4rcljt_r2",
+   "source": "v4rcljt.mp4",
+   "brand": "AR_MISLEDR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_YOUVE-BEEN-HYPNOTIZED-WITHOUT-KNOWING-IT_52s.mp4` - the spoken word was on screen in only 8 of 11 moments"
+   ],
+   "slug": "YOUVE-BEEN-HYPNOTIZED-WITHOUT-KNOWING-IT",
+   "in": 2091.0,
+   "out": 2143.0,
+   "start_words": "So this book is",
+   "end_words": "virtually have been hypnotized",
+   "hook": [
+    "You've been hypnotized",
+    "without knowing it."
+   ]
+  },
+  "ar_v4rcljt_r2/HE-LIED-ABOUT-AREA-51-TOO": {
+   "plan": "ar_v4rcljt_r2",
+   "source": "v4rcljt.mp4",
+   "brand": "AR_MISLEDR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_HE-LIED-ABOUT-AREA-51-TOO_45s.mp4` - ends mid-thought on \"use the word\"; the spoken word was on screen in only 8 of 12 moments"
+   ],
+   "slug": "HE-LIED-ABOUT-AREA-51-TOO",
+   "in": 238.0,
+   "out": 286.0,
+   "start_words": "I talked about last",
+   "end_words": "use the word misinformation",
+   "hook": [
+    "They lied",
+    "to keep you asleep."
+   ]
+  },
+  "ar_v52j7tj/SKULL-AND-BONES-TRAINS-THIS-TOO": {
+   "plan": "ar_v52j7tj",
+   "source": "v52j7tj.mp4",
+   "brand": "AR_EARTHGOD",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_SKULL-AND-BONES-TRAINS-THIS-TOO_107s.mp4` - word repeated after one: \"Success breeds success.\""
+   ],
+   "slug": "SKULL-AND-BONES-TRAINS-THIS-TOO",
+   "in": 2881.3,
+   "out": 2989.45,
+   "start_words": "You feel like there's",
+   "end_words": "Rockefellers and so forth",
+   "hook": [
+    "Skull and Bones",
+    "trains this too."
+   ]
+  },
+  "ar_v52j7tj/GOLD-USED-TO-GET-PEOPLE-KILLED": {
+   "plan": "ar_v52j7tj",
+   "source": "v52j7tj.mp4",
+   "brand": "AR_EARTHGOD",
+   "tries": 1,
+   "why": [
+    "FAIL 02_GOLD-USED-TO-GET-PEOPLE-KILLED_103s.mp4: ends off the planned words: plan ends 'This is in your DNA', clip ends 'you are living in just poverty'"
+   ],
+   "slug": "GOLD-USED-TO-GET-PEOPLE-KILLED",
+   "in": 3268.93,
+   "out": 3370.88,
+   "start_words": "If I said I'm",
+   "end_words": "This is in your DNA",
+   "hook": [
+    "Gold used to get",
+    "people killed."
+   ]
+  },
+  "ep_v5d9snl_r2/BUYS-A-HOUSE-NOT-A-HOME": {
+   "plan": "ep_v5d9snl_r2",
+   "source": "v5d9snl.mp4",
+   "brand": "KT_UPLIFTR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_BUYS-A-HOUSE-NOT-A-HOME_67s.mp4: [FAIL] 02_BUYS-A-HOUSE-NOT-A-HOME_67s.mp4                     6 captions vs the sound (pauses at -35 dB)  median -0.05s  worst-10% 0.41s  | words captioned 107%  UNCAPTIONED SPEECH [(61.6, 64.0)]"
+   ],
+   "slug": "BUYS-A-HOUSE-NOT-A-HOME",
+   "in": 4068.48,
+   "out": 4134.24,
+   "start_words": "I believe that success is",
+   "end_words": "me a piece of mind",
+   "hook": [
+    "What money truly",
+    "can't buy you"
+   ]
   }
  },
  "attempts": {
@@ -11623,6 +11731,7 @@
   "ar_v6pwfg0_r3": 2,
   "ep_v66j311_r3": 2,
   "ep_v4zs6lu": 2,
-  "ep_v6oq1ll_r8": 2
+  "ep_v6oq1ll_r8": 2,
+  "ar_v4lw3gr_p2_r2": 1
  }
 }
