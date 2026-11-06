@@ -14025,11 +14025,23 @@
    "hook": "What Rockefeller believed about getting rich",
    "bytes": 42663298,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "token refresh failed 503: {'error': {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}}",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-06T10:52",
    "cta_keyword": "MONEY",
    "cta_variant": 12,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfZ_2oGDQ_y/"
+   },
+   "caption_at_post": "Yesterday is history. Tomorrow is a mystery. Today is a gift \u2014 that's why it's called the present. One phrase, Kevin Trudeau says, can contain a whole book, like a seed contains a tree.\n\nThat's the idea behind his own book, Nuggets of Gold \u2014 one-line lessons you read in five minutes that stay with you all day.\n\nLesson 174 is just one word: persistence. Kevin Trudeau says J. Paul Getty and John D. Rockefeller both built their fortunes on the same line: persistence and determination alone are omnipotent.\n\nTwo of the richest men who ever lived agreed on one rule long before they had the money to prove it.\n\nWhich phrase would you want to read every morning?\n\n#kevintrudeau #nuggetsofgold #rockefeller #persistence #selfmastery #dailywisdom",
+   "posted_at": "2026-11-06T11:10"
   },
   {
    "file": "KT_COOP/01_THE-CHICKEN-MIND-TRICK_138s.mp4",

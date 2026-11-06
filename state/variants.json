@@ -86,7 +86,11 @@
      "decide your income."
     ],
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "17953554534051049"
+    "id": "17953554534051049",
+    "views": 151,
+    "reach": 127,
+    "shares": 2,
+    "saved": 2
    },
    {
     "rel": "_VARIANTS/VAR__AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE__V2.mp4",
@@ -95,7 +99,11 @@
      "the poverty wave."
     ],
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18132155866817065"
+    "id": "18132155866817065",
+    "views": 153,
+    "reach": 136,
+    "shares": 0,
+    "saved": 1
    },
    {
     "rel": "_VARIANTS/VAR__AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE__V3.mp4",
@@ -104,7 +112,11 @@
      "Needing frees you."
     ],
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18021965390949709"
+    "id": "18021965390949709",
+    "views": 1551,
+    "reach": 1237,
+    "shares": 21,
+    "saved": 43
    },
    {
     "rel": "_VARIANTS/VAR__AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE__V4.mp4",
@@ -113,7 +125,11 @@
      "lose it forever."
     ],
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18383775250233433"
+    "id": "18383775250233433",
+    "views": 154,
+    "reach": 135,
+    "shares": 1,
+    "saved": 1
    },
    {
     "rel": "_VARIANTS/VAR__AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE__V5.mp4",
@@ -122,7 +138,11 @@
      "this exact wave."
     ],
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18011229995778930"
+    "id": "18011229995778930",
+    "views": 124,
+    "reach": 105,
+    "shares": 0,
+    "saved": 1
    },
    {
     "rel": "_VARIANTS/VAR__AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE__V6.mp4",
@@ -131,7 +151,11 @@
      "Need it instead."
     ],
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18078210752773320"
+    "id": "18078210752773320",
+    "views": 148,
+    "reach": 125,
+    "shares": 1,
+    "saved": 4
    },
    {
     "rel": "_VARIANTS/VAR__AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE__V7.mp4",
@@ -140,10 +164,50 @@
      "a poverty switch."
     ],
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18375138688210070"
+    "id": "18375138688210070",
+    "views": 134,
+    "reach": 118,
+    "shares": 0,
+    "saved": 2
    }
   ],
-  "posted": "2026-11-04T15:47"
+  "posted": "2026-11-04T15:47",
+  "winner": {
+   "hook": [
+    "Wanting traps you.",
+    "Needing frees you."
+   ],
+   "views": 1551,
+   "shares": 21,
+   "reach": 1237,
+   "others": [
+    [
+     2,
+     151
+    ],
+    [
+     1,
+     154
+    ],
+    [
+     1,
+     148
+    ],
+    [
+     0,
+     153
+    ],
+    [
+     0,
+     134
+    ],
+    [
+     0,
+     124
+    ]
+   ]
+  },
+  "scored": "2026-11-06T16:10"
  },
  "KT_BOOKSHELF__ELON-MUSKS-READING-HABIT": {
   "clip": "KT_BOOKSHELF/01_ELON-MUSKS-READING-HABIT_90s.mp4",
@@ -543,49 +607,70 @@
     "hook": [
      "One word built",
      "two billion-dollar fortunes"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V2.mp4",
     "hook": [
      "Quitting costs you",
      "everything Rockefeller built"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V3.mp4",
     "hook": [
      "Failure made him",
      "two billion dollars"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V4.mp4",
     "hook": [
      "Give up once,",
      "lose it forever"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V5.mp4",
     "hook": [
      "What made Rockefeller",
      "rich? One phrase"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V6.mp4",
     "hook": [
      "Kevin Trudeau reveals",
      "the billionaire's rule"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V7.mp4",
     "hook": [
      "The one word",
      "worth real money"
-    ]
+    ],
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    }
   ],
   "posted": null
