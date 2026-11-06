@@ -13844,12 +13844,26 @@
    "caption": "Governments don't fear misinformation. They fear losing control of it.\n\nThe CIA understands mind control. The KGB understood it too. Controlling the flow of information - and the flow of disinformation - has always been the actual source of power, not a side effect of it.\n\nThe internet broke that monopoly for the first time in history. That's the real reason platforms where people actually speak freely keep getting investigated, regulated, or quietly throttled - not because of the lies, but because the control slipped.\n\nComment RISE and I'll send you how that control gets taken back.\n\n#disclosure #subconscious #awakening #consciousness #secretsocieties #kevintrudeau",
    "hook": "The CIA admits: control is power.",
    "bytes": 20821274,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611061248536927F16475B0A006382F'}}"
+   },
    "scheduled_at": "2026-11-06T07:45",
    "cta_keyword": "RISE",
    "cta_variant": 3,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1871267857197839/",
+    "instagram": "https://www.instagram.com/reel/DfZo_2rjhJv/",
+    "youtube": "https://youtube.com/shorts/gTd8t9dDfT4"
+   },
+   "caption_at_post": "Governments don't fear misinformation. They fear losing control of it.\n\nThe CIA understands mind control. The KGB understood it too. Controlling the flow of information - and the flow of disinformation - has always been the actual source of power, not a side effect of it.\n\nThe internet broke that monopoly for the first time in history. That's the real reason platforms where people actually speak freely keep getting investigated, regulated, or quietly throttled - not because of the lies, but because the control slipped.\n\nComment RISE and I'll send you how that control gets taken back.\n\n#disclosure #subconscious #awakening #consciousness #secretsocieties #kevintrudeau",
+   "posted_at": "2026-11-06T07:48"
   },
   {
    "file": "AR_DECEPTION/02_YOU-ASSUMED-THATS-HOW-THEY-WIN_51s.mp4",
