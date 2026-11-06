@@ -13708,11 +13708,24 @@
    "hook": "He spends $500K a week easily",
    "bytes": 67947823,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "scheduled_at": "2026-11-06T09:32",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfZ2tDYCKqU/",
+    "youtube": "https://youtube.com/shorts/9dziUOg67Rw"
+   },
+   "caption_at_post": "Kevin Trudeau once sat with multi-millionaires in the Billionaire Boys Club. One member handed out a list of over a thousand books he'd read in five years, ranked by how much he liked them.\n\nEveryone in that room was worth over a hundred million dollars, and every one of them read constantly.\n\nMeanwhile someone bragged about making half a million a year. Kevin's reply: he couldn't go back to living on half a million a week.\n\nThe top don't read occasionally \u2014 they read like it's their job, because it built their job.\n\nHow many books have you finished this year?\n\n#kevintrudeau #billionairemindset #readtogetrich #wealthhabits #richpeoplethink #successbooks",
+   "posted_at": "2026-11-06T09:50"
   },
   {
    "file": "AR_BILDERBERG/01_BLOODLINES-RANKED-TO-OBEY_71s.mp4",
