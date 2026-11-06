@@ -610,7 +610,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 2
+    "tries": 3
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V2.mp4",
@@ -618,9 +618,9 @@
      "Quitting costs you",
      "everything Rockefeller built"
     ],
-    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 2
+    "tries": 3
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V3.mp4",
@@ -628,9 +628,9 @@
      "Failure made him",
      "two billion dollars"
     ],
-    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 2
+    "tries": 3
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V4.mp4",
@@ -638,9 +638,9 @@
      "Give up once,",
      "lose it forever"
     ],
-    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 2
+    "tries": 3
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V5.mp4",
@@ -648,9 +648,9 @@
      "What made Rockefeller",
      "rich? One phrase"
     ],
-    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 2
+    "tries": 3
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V6.mp4",
@@ -658,9 +658,9 @@
      "Kevin Trudeau reveals",
      "the billionaire's rule"
     ],
-    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 2
+    "tries": 3
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V7.mp4",
@@ -668,11 +668,11 @@
      "The one word",
      "worth real money"
     ],
-    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 2
+    "tries": 3
    }
   ],
-  "posted": null
+  "posted": "2026-11-06T16:46"
  }
 }
