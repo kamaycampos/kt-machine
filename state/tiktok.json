@@ -1,10 +1,10 @@
 {
- "at": "2026-11-06T18:27",
+ "at": "2026-11-06T19:40",
  "profile": {
+  "follower_count": 410,
   "following_count": 8,
   "likes_count": 5878,
-  "video_count": 166,
-  "follower_count": 410
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -469,7 +469,7 @@
   },
   "KT_RICH/01_WHAT-A-MILLION-REALLY-MEANS_109s.mp4": {
    "id": "7688387138974387469",
-   "view_count": 423,
+   "view_count": 425,
    "like_count": 22,
    "comment_count": 0,
    "share_count": 1,
@@ -569,7 +569,7 @@
   },
   "KT_RICH/05_WHAT-IS-KEEPING-YOU-POOR_58s.mp4": {
    "id": "7687048596029541645",
-   "view_count": 28,
+   "view_count": 29,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -709,7 +709,7 @@
   },
   "KT_POS/05_05_TWO-GROUPS-WHO-THINK-THEYRE-POSITIVE_166s.mp4": {
    "id": "7685558760319880462",
-   "view_count": 679,
+   "view_count": 680,
    "like_count": 78,
    "comment_count": 2,
    "share_count": 10,
