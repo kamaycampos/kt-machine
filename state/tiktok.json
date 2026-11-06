@@ -1,15 +1,15 @@
 {
- "at": "2026-11-06T01:26",
+ "at": "2026-11-06T07:06",
  "profile": {
-  "video_count": 166,
   "follower_count": 409,
   "following_count": 8,
-  "likes_count": 5878
+  "likes_count": 5878,
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
    "id": "7694313777382182157",
-   "view_count": 23,
+   "view_count": 24,
    "like_count": 4,
    "comment_count": 0,
    "share_count": 0,
@@ -469,7 +469,7 @@
   },
   "KT_RICH/01_WHAT-A-MILLION-REALLY-MEANS_109s.mp4": {
    "id": "7688387138974387469",
-   "view_count": 422,
+   "view_count": 423,
    "like_count": 22,
    "comment_count": 0,
    "share_count": 1,
@@ -629,7 +629,7 @@
   },
   "KT_DEBT/02_THE-ECONOMY-WAS-SLUGGISH_119s.mp4": {
    "id": "7686471838095969550",
-   "view_count": 237,
+   "view_count": 238,
    "like_count": 10,
    "comment_count": 2,
    "share_count": 0,
