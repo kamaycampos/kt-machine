@@ -11989,6 +11989,42 @@
     "Tour a $20",
     "million dollar yacht"
    ]
+  },
+  "ar_v5i1vo4/YOUR-OWN-WORDS-PROGRAM-YOUR-REALITY": {
+   "plan": "ar_v5i1vo4",
+   "source": "v5i1vo4.mp4",
+   "brand": "AR_VIBRATION",
+   "tries": 1,
+   "why": [
+    "FAIL 01_YOUR-OWN-WORDS-PROGRAM-YOUR-REALITY_43s.mp4: ends off the planned words: plan ends 'control you', clip ends 'this is how the globalists want'"
+   ],
+   "slug": "YOUR-OWN-WORDS-PROGRAM-YOUR-REALITY",
+   "in": 2609.54,
+   "out": 2652.11,
+   "start_words": "Let's keep you uneducated",
+   "end_words": "control you",
+   "hook": [
+    "Your own words",
+    "program your reality."
+   ]
+  },
+  "ep_v5d9snl_r4/HOWARD-HUGHES-WILL-EXECUTOR": {
+   "plan": "ep_v5d9snl_r4",
+   "source": "v5d9snl.mp4",
+   "brand": "KT_UPLIFTR2R2R2",
+   "tries": 2,
+   "why": [
+    "drop KT_UPLIFTR2R2R2/HOWARD-HUGHES-WILL-EXECUTOR: hook - 788px wide at 44px - over the 780px safe zone, will be cut off on a phone"
+   ],
+   "slug": "HOWARD-HUGHES-WILL-EXECUTOR",
+   "in": 2454.4,
+   "out": 2518.12,
+   "start_words": "Everybody loves a beautiful introduction",
+   "end_words": "and the Ecumenical Council",
+   "hook": [
+    "The ghostwriter for Reagan",
+    "and more"
+   ]
   }
  },
  "attempts": {
@@ -12041,7 +12077,7 @@
   "ar_v4lw3gr_p2_r2": 2,
   "ep_v5d9snl_r3": 2,
   "ep_v5a1yc5": 2,
-  "ar_v5i1vo4": 1,
-  "ep_v5d9snl_r4": 1
+  "ar_v5i1vo4": 2,
+  "ep_v5d9snl_r4": 2
  }
 }
