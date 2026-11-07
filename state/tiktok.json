@@ -1,10 +1,10 @@
 {
- "at": "2026-11-07T11:27",
+ "at": "2026-11-07T13:31",
  "profile": {
-  "video_count": 166,
   "follower_count": 407,
   "following_count": 8,
-  "likes_count": 5879
+  "likes_count": 5879,
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -159,7 +159,7 @@
   },
   "KT_TAXHACK/01_SAVE-A-THOUSAND-MAKE-A-THOUSAND_80s.mp4": {
    "id": "7690982519507832077",
-   "view_count": 6,
+   "view_count": 8,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
