@@ -465,7 +465,11 @@
      "Just to disappear."
     ],
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18014264978971902"
+    "id": "18014264978971902",
+    "views": 28,
+    "reach": 24,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_BILDERBERG__TEN-MILLION-TO-DISAPPEAR__V2.mp4",
@@ -474,7 +478,11 @@
      "to vanish."
     ],
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "17996961354102434"
+    "id": "17996961354102434",
+    "views": 40,
+    "reach": 35,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_BILDERBERG__TEN-MILLION-TO-DISAPPEAR__V3.mp4",
@@ -483,7 +491,11 @@
      "to $10 million."
     ],
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18344044726250919"
+    "id": "18344044726250919",
+    "views": 66,
+    "reach": 52,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_BILDERBERG__TEN-MILLION-TO-DISAPPEAR__V4.mp4",
@@ -492,7 +504,11 @@
      "would have taken it."
     ],
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18120036346978364"
+    "id": "18120036346978364",
+    "views": 120,
+    "reach": 107,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_BILDERBERG__TEN-MILLION-TO-DISAPPEAR__V5.mp4",
@@ -501,7 +517,11 @@
      "$10 million."
     ],
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18076864766734567"
+    "id": "18076864766734567",
+    "views": 133,
+    "reach": 109,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_BILDERBERG__TEN-MILLION-TO-DISAPPEAR__V6.mp4",
@@ -510,7 +530,11 @@
      "Always the test."
     ],
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18137319772641134"
+    "id": "18137319772641134",
+    "views": 133,
+    "reach": 107,
+    "shares": 0,
+    "saved": 1
    },
    {
     "rel": "_VARIANTS/VAR__AR_BILDERBERG__TEN-MILLION-TO-DISAPPEAR__V7.mp4",
@@ -519,10 +543,50 @@
      "a hundred million."
     ],
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18138747754633004"
+    "id": "18138747754633004",
+    "views": 50,
+    "reach": 41,
+    "shares": 0,
+    "saved": 0
    }
   ],
-  "posted": "2026-11-05T13:11"
+  "posted": "2026-11-05T13:11",
+  "winner": {
+   "hook": [
+    "Kevin Trudeau turned down",
+    "$10 million."
+   ],
+   "views": 133,
+   "shares": 0,
+   "reach": 109,
+   "others": [
+    [
+     0,
+     133
+    ],
+    [
+     0,
+     120
+    ],
+    [
+     0,
+     66
+    ],
+    [
+     0,
+     50
+    ],
+    [
+     0,
+     40
+    ],
+    [
+     0,
+     28
+    ]
+   ]
+  },
+  "scored": "2026-11-07T13:27"
  },
  "KT_COOP__THE-CHICKEN-MIND-TRICK": {
   "clip": "KT_COOP/01_THE-CHICKEN-MIND-TRICK_138s.mp4",
