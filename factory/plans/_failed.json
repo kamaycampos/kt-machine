@@ -12061,6 +12061,24 @@
     "An invisible block cost",
     "him thousands"
    ]
+  },
+  "ep_v5d9snl_r5/HOWARD-HUGHES-WILL-EXECUTOR": {
+   "plan": "ep_v5d9snl_r5",
+   "source": "v5d9snl.mp4",
+   "brand": "KT_UPLIFTR2R2R2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_HOWARD-HUGHES-WILL-EXECUTOR_54s.mp4: [FAIL] 01_HOWARD-HUGHES-WILL-EXECUTOR_54s.mp4                 33 captions vs the sound (word-referenced: no clear pauses)  median -0.07s  worst-10% 0.18s  | words captioned 101%  UNCAPTIONED SPEECH [(17.6, 19.2)]"
+   ],
+   "slug": "HOWARD-HUGHES-WILL-EXECUTOR",
+   "in": 2454.4,
+   "out": 2518.12,
+   "start_words": "Everybody loves a beautiful introduction",
+   "end_words": "and the Ecumenical Council",
+   "hook": [
+    "Why Reagan's ghostwriter",
+    "ran Hughes' will"
+   ]
   }
  },
  "attempts": {
@@ -12115,6 +12133,6 @@
   "ep_v5a1yc5": 2,
   "ar_v5i1vo4": 2,
   "ep_v5d9snl_r4": 2,
-  "ep_v5d9snl_r5": 1
+  "ep_v5d9snl_r5": 2
  }
 }
