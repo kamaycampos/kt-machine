@@ -12025,6 +12025,42 @@
     "The ghostwriter for Reagan",
     "and more"
    ]
+  },
+  "ep_v4oml32_r2/DONT-THINK-OF-A-CAT": {
+   "plan": "ep_v4oml32_r2",
+   "source": "v4oml32.mp4",
+   "brand": "KT_UNDERTOWR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_DONT-THINK-OF-A-CAT_64s.mp4: [FAIL] 02_DONT-THINK-OF-A-CAT_64s.mp4                         18 captions vs the sound  median -0.00s  worst-10% 0.95s  | words captioned 106%"
+   ],
+   "slug": "DONT-THINK-OF-A-CAT",
+   "in": 2656.28,
+   "out": 2724.84,
+   "start_words": "Don't think of a cat",
+   "end_words": "has a living room couch",
+   "hook": [
+    "One command proves",
+    "you can manifest"
+   ]
+  },
+  "ep_v4oml32_r2/INVISIBLE-MONEY-BLOCK": {
+   "plan": "ep_v4oml32_r2",
+   "source": "v4oml32.mp4",
+   "brand": "KT_UNDERTOWR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_INVISIBLE-MONEY-BLOCK_150s.mp4: [FAIL] 01_INVISIBLE-MONEY-BLOCK_150s.mp4                      24 captions vs the sound  median +0.07s  worst-10% 0.55s  | words captioned 100%  UNCAPTIONED SPEECH [(121.8, 123.5)]"
+   ],
+   "slug": "INVISIBLE-MONEY-BLOCK",
+   "in": 3672.16,
+   "out": 3823.6,
+   "start_words": "I feel like I'm swimming upstream",
+   "end_words": "swimming downstream instead of upstream",
+   "hook": [
+    "An invisible block cost",
+    "him thousands"
+   ]
   }
  },
  "attempts": {
@@ -12078,6 +12114,7 @@
   "ep_v5d9snl_r3": 2,
   "ep_v5a1yc5": 2,
   "ar_v5i1vo4": 2,
-  "ep_v5d9snl_r4": 2
+  "ep_v5d9snl_r4": 2,
+  "ep_v5d9snl_r5": 1
  }
 }

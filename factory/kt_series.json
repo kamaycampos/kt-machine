@@ -9359,7 +9359,8 @@
      "A fake army",
      "fooled Hitler completely."
     ],
-    "caption": "Before D-Day, the Allies built an entire army that didn't exist.\n\nInflatable tanks. Fake radio chatter. A real general, Patton, publicly attached to a force with no troops, no equipment, nothing real at all - aimed at the wrong beach on purpose. Hitler's high command believed every bit of it, right up until the real invasion landed at Normandy instead.\n\nAs he puts it, controlling the flow of information and disinformation has always been the actual key to power - every intelligence service in history has known it.\n\nComment RISE and I'll send you where that same tactic is being used right now.\n\n#disclosure #awakening #consciousness #subconscious #secretsocieties #kevintrudeau"
+    "caption": "Before D-Day, the Allies built an entire army that didn't exist.\n\nInflatable tanks. Fake radio chatter. A real general, Patton, publicly attached to a force with no troops, no equipment, nothing real at all - aimed at the wrong beach on purpose. Hitler's high command believed every bit of it, right up until the real invasion landed at Normandy instead.\n\nAs he puts it, controlling the flow of information and disinformation has always been the actual key to power - every intelligence service in history has known it.\n\nComment RISE and I'll send you where that same tactic is being used right now.\n\n#disclosure #awakening #consciousness #subconscious #secretsocieties #kevintrudeau",
+    "locked": true
    },
    {
     "slug": "YOU-ASSUMED-THATS-HOW-THEY-WIN",
@@ -9855,5 +9856,22 @@
   "brand": "KT_NEUROR2R2",
   "note": "7 Nov 2026 - second-chance re-cut of 'NEURO WEALTH - The Forbidden Science Behind Manifestation & Success' (Rumble v6rjcpv). Weekly agent. WHY (prep): captions vs the sound (median +0.41s, worst-10% 0.44s) on the old cut, which ended at 'stimulates the hippocampus' (2573.96s). Fix: kept the same start (the only clean sentence boundary available going into the dream-building list) and moved the end to a different, later sentence boundary - the clip now runs through the full thought to the next 'it stimulates the hippocampus' callback at 2593.4s, re-timing every caption in it.",
   "clips": []
+ },
+ "ep_v4oml32_r2": {
+  "source": "v4oml32.mp4",
+  "brand": "KT_UNDERTOWR2",
+  "note": "7 Nov 2026 - second-chance re-cut of 'Remove Losers from Your Life, Gives Success Tips & Another Pandemic? | The Kevin Trudeau Show | 008' (Rumble v4oml32). Weekly agent (afternoon/refill run). Each clip's WHY (prep) and fix: FIVE-FRIENDS-YOUR-INCOME - a repeated-word artifact sits inside the old final 2 words ('Success breeds success'); end one sentence earlier, on 'and you become like them' (same cue, same out). DONT-THINK-OF-A-CAT - the flagged uncaptioned-speech gap is someone else talking (a quoted QVC-caller aside right after the couch demo); PLANNING.md's rule for that case is to cut so it falls outside the clip, so the clip now ends right at the demo's own punchline, before the aside. INVISIBLE-MONEY-BLOCK - the flagged gap sits deep inside a stretch of essential story (the $50,000 price of the process) that cannot be excised without gutting the teaching; moved the end instead to a cleaner, stronger payoff ('swimming downstream instead of upstream') that also pays off the clip's own opening line, re-timing the whole back half. LIBERACE-WORST-PIANIST-RICHEST is not re-cut this run even though its WHY (an early uncaptioned-speech blip, far from either edge and un-reachable without gutting the clip) has no clean fix: STRATEGY.md (7 Nov) flags this exact shape - a book-recap hook - as a proven loser ('How this book made Liberace rich', 55 views, skip 66.7%) and tells the planner to avoid book recaps; contradicts re-planning it, noted per PLANNING.md step 7 rather than editing MASTERY/STRATEGY.",
+  "clips": [
+   {
+    "slug": "FIVE-FRIENDS-YOUR-INCOME",
+    "in": 1128.78,
+    "out": 1293.65,
+    "hook": [
+     "Five friends decide",
+     "your whole income"
+    ],
+    "caption": "Kevin Trudeau says your income is going to be the average of your five best friends. Not your effort alone - theirs too.\n\nYour attitude works the same way. It mimics the people you spend the most time with.\n\nAristotle Onassis, once one of the richest men on Earth, said the single biggest key to his success was who he associated with. Every person puts out a frequency, and you absorb it whether you notice or not.\n\nWho are your five best friends, and what's their average income?\n\n#kevintrudeau #wealthmindset #success #mindset #money #motivation"
+   }
+  ]
  }
 }
