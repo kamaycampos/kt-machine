@@ -11719,6 +11719,276 @@
     "Why lottery winners",
     "go broke again"
    ]
+  },
+  "ar_v54wxgv/BROTHERHOOD-TAUGHT-HIM-TO-CLEAR-YOUR-DNA": {
+   "plan": "ar_v54wxgv",
+   "source": "v54wxgv.mp4",
+   "brand": "AR_INHERITANCE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_BROTHERHOOD-TAUGHT-HIM-TO-CLEAR-YOUR-DNA_152s.mp4` - opens mid-sentence on \"talk about is\"; phrase scrambled around \"your DNA from your\""
+   ],
+   "slug": "BROTHERHOOD-TAUGHT-HIM-TO-CLEAR-YOUR-DNA",
+   "in": 232.52,
+   "out": 384.52,
+   "start_words": "one of the things we",
+   "end_words": "energetic blockages, it's minor",
+   "hook": [
+    "He learned this.",
+    "Inside the Brotherhood."
+   ]
+  },
+  "ar_v5axknm/YOUR-DOCTORS-ORDERS-ARE-A-PRIESTHOOD": {
+   "plan": "ar_v5axknm",
+   "source": "v5axknm.mp4",
+   "brand": "AR_PRIESTHOOD",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_YOUR-DOCTORS-ORDERS-ARE-A-PRIESTHOOD_94s.mp4` - opens mid-sentence on \"cause an example\"; ends mid-thought on \"giving me orders\"; word repeated after one: \"high blood high\""
+   ],
+   "slug": "YOUR-DOCTORS-ORDERS-ARE-A-PRIESTHOOD",
+   "in": 2077.2,
+   "out": 2167.3,
+   "start_words": "Here's how it works",
+   "end_words": "he's not giving me orders",
+   "hook": [
+    "Your doctor's orders",
+    "are a priesthood."
+   ]
+  },
+  "ar_v5axknm/PRIESTS-RULED-BECAUSE-YOU-COULDNT-READ": {
+   "plan": "ar_v5axknm",
+   "source": "v5axknm.mp4",
+   "brand": "AR_PRIESTHOOD",
+   "tries": 1,
+   "why": [
+    "FAIL 01_PRIESTS-RULED-BECAUSE-YOU-COULDNT-READ_97s.mp4: [FAIL] 01_PRIESTS-RULED-BECAUSE-YOU-COULDNT-READ_97s.mp4      21 captions vs the sound  median -0.00s  worst-10% 0.92s  | words captioned 100%  UNCAPTIONED SPEECH [(17.1, 19.4)]"
+   ],
+   "slug": "PRIESTS-RULED-BECAUSE-YOU-COULDNT-READ",
+   "in": 146,
+   "out": 242,
+   "start_words": "This is what throughout history",
+   "end_words": "threatened those in power",
+   "hook": [
+    "Priests ruled",
+    "because you couldn't read."
+   ]
+  },
+  "ar_v5axknm/THEY-OWN-POLITICS-NOT-YOUR-MIND": {
+   "plan": "ar_v5axknm",
+   "source": "v5axknm.mp4",
+   "brand": "AR_PRIESTHOOD",
+   "tries": 1,
+   "why": [
+    "drop AR_PRIESTHOOD/THEY-OWN-POLITICS-NOT-YOUR-MIND: runs into the channel outro at 3386s - dropped"
+   ],
+   "slug": "THEY-OWN-POLITICS-NOT-YOUR-MIND",
+   "in": 3333.0,
+   "out": 3384.6,
+   "start_words": "How the structure works",
+   "end_words": "you'll be free",
+   "hook": [
+    "They own politics.",
+    "Not your mind."
+   ]
+  },
+  "ar_v5axknm/NOT-MEDICINE-ITS-TRAINING": {
+   "plan": "ar_v5axknm",
+   "source": "v5axknm.mp4",
+   "brand": "AR_PRIESTHOOD",
+   "tries": 1,
+   "why": [
+    "FAIL 01_NOT-MEDICINE-ITS-TRAINING_48s.mp4: [FAIL] 01_NOT-MEDICINE-ITS-TRAINING_48s.mp4                   34 captions vs the sound (word-referenced: no clear pauses)  median +0.03s  worst-10% 0.49s  | words captioned 102%  UNCAPTIONED SPEECH [(16.4, 19.1)]"
+   ],
+   "slug": "NOT-MEDICINE-ITS-TRAINING",
+   "in": 2167.95,
+   "out": 2216.48,
+   "start_words": "it's even come out now",
+   "end_words": "just follow blindly",
+   "hook": [
+    "Not medicine.",
+    "It trains your mind."
+   ]
+  },
+  "ar_v5g15o5/SAY-MONEY-IS-GOOD-FEEL-WHAT-HAPPENS": {
+   "plan": "ar_v5g15o5",
+   "source": "v5g15o5.mp4",
+   "brand": "AR_RESONANCE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_SAY-MONEY-IS-GOOD-FEEL-WHAT-HAPPENS_181s.mp4: [FAIL] 02_SAY-MONEY-IS-GOOD-FEEL-WHAT-HAPPENS_181s.mp4        40 captions vs the sound  median +0.04s  worst-10% 0.18s  | words captioned 99%  UNCAPTIONED SPEECH [(52.3, 54.2)]"
+   ],
+   "slug": "SAY-MONEY-IS-GOOD-FEEL-WHAT-HAPPENS",
+   "in": 2799.56,
+   "out": 2979.66,
+   "start_words": "So I'm gonna work on this",
+   "end_words": "going to start changing",
+   "hook": [
+    "Your own body",
+    "doesn't believe you."
+   ]
+  },
+  "ep_v4oml32/LIBERACE-WORST-PIANIST-RICHEST": {
+   "plan": "ep_v4oml32",
+   "source": "v4oml32.mp4",
+   "brand": "KT_UNDERTOW",
+   "tries": 1,
+   "why": [
+    "FAIL 01_LIBERACE-WORST-PIANIST-RICHEST_87s.mp4: [FAIL] 01_LIBERACE-WORST-PIANIST-RICHEST_87s.mp4              11 captions vs the sound  median +0.33s  worst-10% 0.86s  | words captioned 101%  UNCAPTIONED SPEECH [(17.0, 18.6)]"
+   ],
+   "slug": "LIBERACE-WORST-PIANIST-RICHEST",
+   "in": 228.04,
+   "out": 314.2,
+   "start_words": "His name was Liberace",
+   "end_words": "the magic of believing",
+   "hook": [
+    "The worst piano player",
+    "became richest"
+   ]
+  },
+  "ep_v4oml32/FIVE-FRIENDS-YOUR-INCOME": {
+   "plan": "ep_v4oml32",
+   "source": "v4oml32.mp4",
+   "brand": "KT_UNDERTOW",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_FIVE-FRIENDS-YOUR-INCOME_170s.mp4` - word repeated after one: \"Success breeds success.\""
+   ],
+   "slug": "FIVE-FRIENDS-YOUR-INCOME",
+   "in": 1127.48,
+   "out": 1298.0,
+   "start_words": "Your income is going to be",
+   "end_words": "Success breeds success",
+   "hook": [
+    "Five friends decide",
+    "your whole income"
+   ]
+  },
+  "ep_v4oml32/DONT-THINK-OF-A-CAT": {
+   "plan": "ep_v4oml32",
+   "source": "v4oml32.mp4",
+   "brand": "KT_UNDERTOW",
+   "tries": 1,
+   "why": [
+    "FAIL 02_DONT-THINK-OF-A-CAT_110s.mp4: [FAIL] 02_DONT-THINK-OF-A-CAT_110s.mp4                        28 captions vs the sound  median +0.01s  worst-10% 0.87s  | words captioned 100%  UNCAPTIONED SPEECH [(73.9, 77.4)]"
+   ],
+   "slug": "DONT-THINK-OF-A-CAT",
+   "in": 2656.28,
+   "out": 2768.8,
+   "start_words": "Don't think of a cat",
+   "end_words": "describe their living room couch",
+   "hook": [
+    "One command proves",
+    "you can manifest"
+   ]
+  },
+  "ep_v4oml32/INVISIBLE-MONEY-BLOCK": {
+   "plan": "ep_v4oml32",
+   "source": "v4oml32.mp4",
+   "brand": "KT_UNDERTOW",
+   "tries": 1,
+   "why": [
+    "FAIL 01_INVISIBLE-MONEY-BLOCK_187s.mp4: [FAIL] 01_INVISIBLE-MONEY-BLOCK_187s.mp4                      30 captions vs the sound  median +0.07s  worst-10% 0.59s  | words captioned 100%  UNCAPTIONED SPEECH [(121.8, 123.5)]"
+   ],
+   "slug": "INVISIBLE-MONEY-BLOCK",
+   "in": 3672.16,
+   "out": 3862.16,
+   "start_words": "I feel like I'm swimming upstream",
+   "end_words": "for the money process",
+   "hook": [
+    "An invisible block cost",
+    "him thousands"
+   ]
+  },
+  "ep_v4sow6o/GO-GETTER-BLUE-VASE-STORY": {
+   "plan": "ep_v4sow6o",
+   "source": "v4sow6o.mp4",
+   "brand": "KT_IGNITE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_GO-GETTER-BLUE-VASE-STORY_108s.mp4: ends off the planned words: plan ends 'how to overcome their problems', clip ends 'have learned how to overcome their'"
+   ],
+   "slug": "GO-GETTER-BLUE-VASE-STORY",
+   "in": 2590.7,
+   "out": 2704.86,
+   "start_words": "It's a story about a kid",
+   "end_words": "how to overcome their problems",
+   "hook": [
+    "One impossible task,",
+    "you'd have quit"
+   ]
+  },
+  "ep_v57ytlx/ARISTOTLE-ONASSIS-SUITCASE": {
+   "plan": "ep_v57ytlx",
+   "source": "v57ytlx.mp4",
+   "brand": "KT_MAGNET",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_ARISTOTLE-ONASSIS-SUITCASE_56s.mp4` - the spoken word was on screen in only 7 of 10 moments"
+   ],
+   "slug": "ARISTOTLE-ONASSIS-SUITCASE",
+   "in": 3233.3,
+   "out": 3290.36,
+   "start_words": "Aristotle Onassis was one of",
+   "end_words": "wealthiest men in the world",
+   "hook": [
+    "One suitcase. Then",
+    "Onassis got rich"
+   ]
+  },
+  "ep_v5a1yc5/DEEPAK-CHOPRA-MIRROR-LAW": {
+   "plan": "ep_v5a1yc5",
+   "source": "v5a1yc5.mp4",
+   "brand": "KT_LOOKGLASS",
+   "tries": 1,
+   "why": [
+    "FAIL 01_DEEPAK-CHOPRA-MIRROR-LAW_64s.mp4: [FAIL] 01_DEEPAK-CHOPRA-MIRROR-LAW_64s.mp4                    14 captions vs the sound  median +0.00s  worst-10% 0.47s  | words captioned 100%  UNCAPTIONED SPEECH [(25.1, 26.9)]"
+   ],
+   "slug": "DEEPAK-CHOPRA-MIRROR-LAW",
+   "in": 130.76,
+   "out": 205.24,
+   "start_words": "Your son made a documentary about you",
+   "end_words": "it's a reflection of you",
+   "hook": [
+    "What you hate",
+    "is really you"
+   ]
+  },
+  "ep_v5a1yc5/WESTMINSTER-ABBEY-DEATHBED": {
+   "plan": "ep_v5a1yc5",
+   "source": "v5a1yc5.mp4",
+   "brand": "KT_LOOKGLASS",
+   "tries": 1,
+   "why": [
+    "FAIL 02_WESTMINSTER-ABBEY-DEATHBED_81s.mp4: [FAIL] 02_WESTMINSTER-ABBEY-DEATHBED_81s.mp4                  25 captions vs the sound  median +0.05s  worst-10% 0.41s  | words captioned 100%  UNCAPTIONED SPEECH [(66.4, 71.3)]"
+   ],
+   "slug": "WESTMINSTER-ABBEY-DEATHBED",
+   "in": 277.06,
+   "out": 354.04,
+   "start_words": "When I was young and free",
+   "end_words": "even change the world",
+   "hook": [
+    "A 900-year-old tomb's",
+    "warning for you"
+   ]
+  },
+  "ep_v6rjcpv_r3/TOUR-A-20-MILLION-YACHT": {
+   "plan": "ep_v6rjcpv_r3",
+   "source": "v6rjcpv.mp4",
+   "brand": "KT_NEUROR2R2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_TOUR-A-20-MILLION-YACHT_60s.mp4` - opens mid-sentence on \"building is going\""
+   ],
+   "slug": "TOUR-A-20-MILLION-YACHT",
+   "in": 2527.64,
+   "out": 2593.4,
+   "start_words": "Dream building is going to",
+   "end_words": "it stimulates the hippocampus",
+   "hook": [
+    "Tour a $20",
+    "million dollar yacht"
+   ]
   }
  },
  "attempts": {
@@ -11770,6 +12040,8 @@
   "ep_v6oq1ll_r8": 2,
   "ar_v4lw3gr_p2_r2": 2,
   "ep_v5d9snl_r3": 2,
-  "ep_v5a1yc5": 1
+  "ep_v5a1yc5": 2,
+  "ar_v5i1vo4": 1,
+  "ep_v5d9snl_r4": 1
  }
 }
