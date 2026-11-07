@@ -11701,6 +11701,24 @@
     "Left the Brotherhood.",
     "One disagreement."
    ]
+  },
+  "ep_v5d9snl_r3/WHY-LOTTERY-WINNERS-GO-BROKE": {
+   "plan": "ep_v5d9snl_r3",
+   "source": "v5d9snl.mp4",
+   "brand": "KT_UPLIFTR2R2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_WHY-LOTTERY-WINNERS-GO-BROKE_39s.mp4: TERY-WINNERS-GO-BROKE_39s.mp4                25 captions vs the sound (word-referenced: no clear pauses)  median +0.33s  worst-10% 0.64s  | words captioned 98%  UNCAPTIONED SPEECH [(5.0, 6.8), (14.7, 16.3), (25.4, 27.2)]"
+   ],
+   "slug": "WHY-LOTTERY-WINNERS-GO-BROKE",
+   "in": 3381.8,
+   "out": 3433.68,
+   "start_words": "I have found in my experience",
+   "end_words": "back in the same pockets",
+   "hook": [
+    "Why lottery winners",
+    "go broke again"
+   ]
   }
  },
  "attempts": {
@@ -11751,6 +11769,6 @@
   "ep_v4zs6lu": 2,
   "ep_v6oq1ll_r8": 2,
   "ar_v4lw3gr_p2_r2": 2,
-  "ep_v5d9snl_r3": 1
+  "ep_v5d9snl_r3": 2
  }
 }
