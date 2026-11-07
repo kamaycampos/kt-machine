@@ -1,0 +1,11 @@
+{"source": "v5d9snl.mp4", "brand": "KT_UPLIFTR2R2R2", "test": false,
+ "note": "7 Nov 2026 - second-chance re-cut of 'Success Habits: How To Feel Hopeful | The Kevin Trudeau Show | Ep. 44' (Rumble v5d9snl). Weekly agent. WHY (prep): captions vs the sound + UNCAPTIONED SPEECH at 26.8-31.7s into the old cut - that gap is audience reaction right after the 'Ecumenical Council' punchline, inside the old clip's middle. Fix: end the clip right at that punchline, before the gap, and move the start earlier (into Cavett Robert's own joke about his self-written introduction) so the clip is long enough and never touches the uncaptioned stretch. AIM-TOO-LOW-STILL-FAIL (also tries 1) is skipped: its WHY is an ASR mishearing of 'hit' as 'hip' at the exact punchline word, which no choice of start/end words can fix.",
+ "clips": [
+  {"slug": "HOWARD-HUGHES-WILL-EXECUTOR", "in": 2454.4, "out": 2518.12,
+   "retry_of": "ep_v5d9snl/HOWARD-HUGHES-WILL-EXECUTOR",
+   "start_words": "Everybody loves a beautiful introduction",
+   "end_words": "and the Ecumenical Council",
+   "hook": ["The ghostwriter for Reagan", "and more"],
+   "send": "A friend forwards this to someone who loves a wild Hollywood name-drop - the funniest fake resume ever read out loud, real awe.",
+   "caption": "Cavett Robert, the legendary motivational speaker, introduced himself to a packed room with a bio he wrote himself - and he openly admits it.\n\nGhost writer for Ronald Reagan. Gag writer for Bob Hope. Romantic advisor to Elizabeth Taylor. The only authentic executor of Howard Hughes's will. Sometimes, spiritual consultant for both the Pope and the Ecumenical Council.\n\nKevin Trudeau says the room loved him before he said a single serious word, because he was in on the joke about his own hype.\n\nWhat would your own ridiculous, over-the-top introduction say if you actually wrote it yourself?\n\n#kevintrudeau #success #motivation #publicspeaking #mindset #selfimprovement"}
+ ]}
