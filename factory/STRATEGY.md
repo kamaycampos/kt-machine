@@ -8,34 +8,34 @@ The strategist rewrites this file daily from `state/metrics.json`, `state/tiktok
 
 **Score: $11.70 earned of $1,777,000** (portfolio as of 30 Sept; nobody has read it since).
 
-## 7 Nov 2026 (strategist; KT Instagram, AR_ ignored; 7d = posted 30 Oct-5 Nov n=30 scored (24h+) vs 23-29 Oct n=29; wins/losses and splits use 23 Oct-5 Nov, n=59 scored)
+## 8 Nov 2026 (strategist; KT Instagram, AR_ ignored; 7d = posted 31 Oct-6 Nov n=29 scored (24h+) vs 24-30 Oct n=29; wins/losses and splits use 24 Oct-6 Nov, n=58 scored)
 
 ### What the numbers say
-- **Pace:** 31 Oct 6, 1 Nov 6, 2 Nov 3, 3 Nov 3, 4 Nov 2, 5 Nov 6, 6 Nov 4 = 30 in 7 days, 4.3 a day (target 4-6). Three days under 4 in the week; 6 Nov made 4.
-- **7d vs prior 7d:** median views 199 vs 237; skip **49.0%** vs 46.3% (target under 40, still worse); shares+saves per 1k 17.2 vs 16.1; YouTube median 697 vs 350 (better). DMs: 0 in the last 7 days (6 in all, last 29 Oct).
-- **Winners:** "How he won $250,000 at blackjack" 3,150 views, skip 30.5 (17h, offer); "What Rockefeller said about getting rich" 2,833, skip 51.3, YouTube 942 (08h); "The secret that cost six figures" 2,468, skip 35.4 (12h, question CTA). A named person or big sum inside a story.
-- **Losers:** "How this book made Liberace rich" 55 views, skip 66.7 (17h, KT_BOOKSHELF); "Why excuses keep you poor forever" 26, skip 77.3 (10h, question CTA); "The difference between pain and suffering" 26, skip 72.7 (20h, KT_SPIRITUALR2). Book recaps and abstract lines; both KT_BOOKSHELF and KT_SPIRITUALR2 sit at the bottom.
-- **CTA:** question n=12 skip **39.1** (MONEY n=5 38.5, BRAIN n=7 39.7) vs offer n=47 skip 49.4 (MONEY n=25 48.7, BRAIN n=20 50.0, WISH n=2 LOW). Views are the same (230 vs 224), so the question side is about 10 points better on skip at equal reach. Fifth read in a row.
-- **Digit or $ in the hook:** n=17 skip **41.8**, median 275 views vs none n=42 skip 49.1, 207. Shares+saves per 1k is lower on the digit side in the last read; watch it.
-- **Hook word:** He n=3 skip 39.9, median 711 views (LOW); How n=19 46.5; Why n=14 47.5, YouTube 784; The n=14 49.7. No word is clearly bad.
-- **Length is flat:** <46s n=6 46.1 (LOW); 46-75s n=22 49.7; 76-120s n=19 49.0; >120s n=12 49.5 but YouTube median **1,476** vs 341 for 46-75s.
-- **Hour (NY):** 12h n=8 skip **38.0**, median 495 views; 11h n=3 38.8 (LOW); 08h n=7 42.7, YouTube 942; 17h n=9 49.0; 20h n=6 46.2. Worst: 09h n=7 53.0; 14h n=3 56.7 (LOW).
-- **Source (mostly n<5, LOW):** KT_NUGGET n=3 median 2,468 views; KT_LANTERNR2 n=2 1,366 views; KT_HARVEST n=2 1,027; KT_FOGLIGHT n=4 skip 40.8; KT_VERDICT n=3 38.5. Worst: KT_BOOKSHELF n=4 skip 63.8 (104 views).
-- **Cinematic opener:** n=0 vs 59. No clip has `opener` in kt_series.json, so it cannot be scored.
+- **Pace is down:** 1 Nov 6, 2 Nov 3, 3 Nov 3, 4 Nov 2, 5 Nov 6, 6 Nov 4, **7 Nov 0** (nothing in the manifest or metrics). 24 in the last 7 days = 3.4 a day (target 4-6). Check why the poster stopped on 7 Nov.
+- **7d vs prior 7d:** median views 197 vs 241; skip **51.2%** vs 48.9% (worse, target under 40); shares+saves per 1k 15.3 vs 11.4; YouTube median 616 vs 487. DMs: 0 in the last 7 days (6 in all, last 29 Oct).
+- **Winners:** "How he won $250,000 at blackjack" 3,157 views, skip 30.5 (17h, offer); "Why rich cards can't carry debt" 2,425, skip 28.1, YouTube 1,066 (11h, question CTA, KT_LANTERNR2); "He lost $65M Then this" 1,836, skip 24.3 (17h, offer). A named person or big sum inside a story.
+- **Losers:** "The difference between pain and suffering" 31 views, skip 76.9 (20h, KT_SPIRITUALR2); "Why excuses keep you poor forever" 27, skip 78.3 (10h, question CTA, KT_BOOKSHELF); "Two winners vanished behind Iron Curtain" 20, skip 57.9 (12h, KT_UPLIFT). Abstract lines and book/history recaps.
+- **CTA:** question n=11 skip **39.4** (MONEY n=5 38.5, BRAIN n=6 42.1) vs offer n=47 skip 50.3 (MONEY n=26 50.9, BRAIN n=19 49.4, WISH n=2 LOW). Views are the same (226 vs 208). Sixth read in a row: question is about 11 points better on skip.
+- **Digit or $ in the hook:** n=18 skip **41.1**, median 269 views vs none n=40 skip 49.9, 201. Holds for a second week.
+- **Hook word:** He n=4 skip 39.2, median 494 views (LOW); How n=18 48.6; Why n=13 49.1 (YouTube 787); The n=13 50.6. No word is bad; the story inside matters more.
+- **Length:** <46s n=4 45.9 (LOW); 46-75s n=23 50.3; 76-120s n=19 49.1; >120s n=12 49.5 with YouTube median **1,482** vs 349 for 46-75s.
+- **Hour (NY):** 08h n=7 skip **42.7**; 11h n=4 45.2 (LOW); 20h n=6 46.4; 12h n=8 49.0 (median views 270); 17h n=8 49.6; 09h n=8 52.4 (worst with enough clips). Rest n<5.
+- **Source (n>=3):** KT_FOGLIGHT n=4 skip 41.1; KT_VERDICT n=3 38.5; KT_ATTITUDER2 n=3 YouTube 1,744; worst KT_BOOKSHELF n=6 skip 56.9, 175 views.
+- **Cinematic opener:** n=0 vs 58. No clip has `opener` in kt_series.json, so it cannot be scored.
 
 ### Orders for the planner
-1. **Keep 5-6 slots a day filled**, best clip first; a weak clip never fills a slot. 2-4 Nov were the thin days.
-2. **Hooks:** a named person or big sum plus a story in line one ("won $250,000 at blackjack", "Rockefeller said"). Use a digit or $ when it is true (41.8 vs 49.1). Avoid book recaps ("this book made Liberace rich"), abstract lines ("pain and suffering", "excuses keep you poor") and small tips.
-3. **Offers: 2 a day, MONEY first** (DMs need a keyword). The other 3-4 clips use the **question CTA** with the keyword in the first two caption lines (39.1 n=12 vs 49.4 n=47). BRAIN offer only on a mind or self-image story; WISH only on manifesting (LOW).
-4. **Topics:** how the wealthy and famous win, lose and recover (Rockefeller, blackjack, big sums, debt). Property stays the franchise (MASTERY 18). Skip plain-advice and book-recap moments.
-5. **Length:** 60-120s story clips first. 120s+ at most 1 a day, only with a big payoff (YouTube 1,476, n=12; Instagram skip the same as the rest).
-6. **Sources:** max 2 clips a day from one episode. More moments from KT_NUGGET, KT_LANTERNR2, KT_HARVEST, KT_FOGLIGHT, KT_VERDICT (LOW). Hold KT_BOOKSHELF and KT_SPIRITUALR2 until a new moment passes 150 views.
+1. **Fill 5-6 slots every day, including today**, best clip first; 7 Nov had none. Never let the queue go dry; a weak clip still never fills a slot.
+2. **Hooks:** a named person or a big sum plus a story in line one ("won $250,000 at blackjack", "lost $65M. Then this"). Use a digit or $ when it is true (41.1 vs 49.9, n=18 vs 40). Avoid abstract lines ("pain and suffering", "excuses keep you poor") and history recaps with no money in them.
+3. **Offers: 2 a day, MONEY first** (DMs need a keyword). The other 3-4 clips use the **question CTA** with the keyword in the first two caption lines (39.4 n=11 vs 50.3 n=47). BRAIN offer only on a mind or self-image story; WISH only on manifesting (LOW).
+4. **Topics:** how the wealthy and famous win, lose and recover (blackjack, a lost $65M, debt). Property stays the franchise (MASTERY 18). Skip plain-advice, book-recap and spiritual-concept moments.
+5. **Length:** 60-120s story clips first. 120s+ at most 1 a day with a big payoff (YouTube 1,482 n=12; Instagram skip the same).
+6. **Sources:** max 2 clips a day from one episode. More moments from KT_LANTERNR2, KT_FOGLIGHT, KT_VERDICT, KT_ATTITUDER2 (LOW). Hold KT_BOOKSHELF and KT_SPIRITUALR2 until a new moment passes 150 views.
 7. **Openers:** luxury, growth or craft shots only, never gloomy; none when the source opens on Kevin's face. Write `opener` into kt_series.json on every clip that gets one so it can be scored at n>=5 a side.
-8. **Posting hours (NY):** 12:00 first (n=8, 38.0), then 08:00 (42.7), 11:00 and 20:00. Drop 09:00 (53.0) and 14:00. Keep 17:00 for one good clip only (49.0, n=9).
+8. **Posting hours (NY):** 08:00 first (42.7), then 11:00 and 20:00, 12:00 for a strong clip (270 median views). Drop 09:00 (52.4) and 14:00 (60.5, n=2 LOW). Keep 17:00 for one good clip only.
 
 ### Watch list
-- Pace: 7 Nov must reach 4; three thin days last week.
-- Skip median 49.0 (up from 46.3) while question clips hold 39.1: check the question share (aim 3-4 of 5 a day).
-- DMs: none since 29 Oct; offer clips earn comments, not DMs. Score still $11.70.
-- Clips posted 6 Nov (under 24h) are not scored yet: re-read at 48h.
+- Pace: confirm posting resumed on 8 Nov (0 on 7 Nov).
+- Skip median 51.2 is above the 50 line while question clips hold 39.4: push the question share to 3-4 of 5 a day.
+- DMs: none since 29 Oct; score still $11.70.
+- Clips posted 7 Nov (none) and 6 Nov (under 48h) are not fully scored: re-read tomorrow.
 - No takedown seen. TikTok (new) and Facebook are hand-posted and not scored here.
