@@ -14442,7 +14442,11 @@
    "bytes": 34108878,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-09T11:41",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_TRANCE/01_YOUR-MIND-IS-AN-UNTRAINED-DOG_92s.mp4",
@@ -14451,7 +14455,11 @@
    "bytes": 54837160,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-09T16:24",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   }
  ]
 }
