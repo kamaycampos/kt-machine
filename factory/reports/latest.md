@@ -1,76 +1,65 @@
-## ar_v5cg1y5: 1 of 3 clip(s) passed every gate
+## ar_v4rcljt_p2_r3: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-08 12:08
-  note AR_MEGALITH/NO-LASER-MATCHES-WHAT-THEY-BUILT: ending kept on the planner's words 'But the aliens did' (ends on 'did')
-ar_v5cg1y5__s0 (AR_MEGALITH): 2 of 2 passed pre-render gates
+## 2026-11-08 12:38
+  note AR_DECEPTIONR3/ALL-NATURAL-MEANS-NOTHING-AT-ALL: ending kept on the planner's words 'It means nothing' (cuts mid-sentence)
+ar_v4rcljt_p2_r3__s0 (AR_DECEPTIONR3): 1 of 1 passed pre-render gates
 
-RENDER ar_v5cg1y5__s0
-  WARP 01_NO-LASER-MATCHES-WHAT-THEY-BUILT_186s.mp4: CHES-WHAT-THEY-BUILT_186s.mp4           43 captions vs the sound  median +0.06s  worst-10% 0.91s  | words captioned 100% - re-timing each caption once
-  FAIL 01_NO-LASER-MATCHES-WHAT-THEY-BUILT_186s.mp4: [FAIL] 01_NO-LASER-MATCHES-WHAT-THEY-BUILT_186s.mp4           45 captions vs the sound  median +0.00s  worst-10% 0.84s  | words captioned 100%  UNCAPTIONED SPEECH [(26.1, 28.4), (138.5, 140.6)]
-  FAIL 02_A-STRUCTURE-OLDER-THAN-HUMANITY_114s.mp4: ends off the planned words: plan ends 'the other person's doing', clip ends 'what the other person is doing'
+RENDER ar_v4rcljt_p2_r3__s0
+  FAIL 01_ALL-NATURAL-MEANS-NOTHING-AT-ALL_94s.mp4: [FAIL] 01_ALL-NATURAL-MEANS-NOTHING-AT-ALL_94s.mp4            14 captions vs the sound  median +0.22s  worst-10% 1.35s  | words captioned 99%  UNCAPTIONED SPEECH [(63.2, 65.5), (85.1, 86.8)]
 
 
-
-## 2026-11-08 11:13
-  note AR_MEGALITH/YOU-ARE-NOT-SEPARATE-FROM-GOD: ending kept on the planner's words 'and so does God' (cuts mid-sentence)
-ar_v5cg1y5__s1 (AR_MEGALITH): 1 of 1 passed pre-render gates
-
-RENDER ar_v5cg1y5__s1
-  PASS 01_YOU-ARE-NOT-SEPARATE-FROM-GOD_53s.mp4  01_YOU-ARE-NOT-SEPARATE-FROM-GOD_53s.mp4               14 captions vs the sound  median +0
-       FIRST 5s : And remember, it always comes from within. Don't judge or criticize. | LAST  8s : God is love. And it's true. I love you and so does God.
-TEST MODE - passing clips NOT uploaded or queued: AR_MEGALITH
+## ar_v50s5f8_p2_r2: 1 of 1 clip(s) passed every gate
 
 
-## ar_v5mgatn: 3 of 4 clip(s) passed every gate
+## 2026-11-08 12:27
+  note AR_ROCKETFUELR2/WROTE-TWENTY-THINGS-ALL-CAME-TRUE: ending kept on the planner's words 'writing something down' (introduces, does not claim, next line completes it)
+ar_v50s5f8_p2_r2__s0 (AR_ROCKETFUELR2): 1 of 1 passed pre-render gates
+
+RENDER ar_v50s5f8_p2_r2__s0
+  PASS 01_WROTE-TWENTY-THINGS-ALL-CAME-TRUE_52s.mp4  01_WROTE-TWENTY-THINGS-ALL-CAME-TRUE_52s.mp4           13 captions vs the sound  median +0
+       FIRST 5s : I was just talking to a guy the other day, we were doing a one-on-one session, and he said, | LAST  8s : Anyway, this is powerful. There is power in writing something down.
+TEST MODE - passing clips NOT uploaded or queued: AR_ROCKETFUELR2
 
 
-## 2026-11-08 11:47
-  note AR_TRANCE/YOUR-MIND-IS-AN-UNTRAINED-DOG: ending kept on the planner's words 'amazing things in your life' (next line completes it)
-  note AR_TRANCE/ACKNOWLEDGE-DONT-DENY-ACCEPT-DONT-RESIST: ending kept on the planner's words 'that's where your focus' (ends on 'is', ends inside a quote)
-ar_v5mgatn__s1 (AR_TRANCE): 2 of 2 passed pre-render gates
-
-RENDER ar_v5mgatn__s1
-  PASS 01_YOUR-MIND-IS-AN-UNTRAINED-DOG_92s.mp4  01_YOUR-MIND-IS-AN-UNTRAINED-DOG_92s.mp4               18 captions vs the sound  median +0
-       FIRST 5s : It's all about being able to train and control the mind. | LAST  8s : And when you learn how to train the mind and control the mind, then you can do amazing things in your life.
-  PASS 02_ACKNOWLEDGE-DONT-DENY-ACCEPT-DONT-RESIST_121s.mp4  02_ACKNOWLEDGE-DONT-DENY-ACCEPT-DONT-RESIST_121s.mp4   37 captions vs the sound  median +0
-       FIRST 5s : You have to know what the issue is. You have to acknowledge | LAST  8s : To radically increase my prosperity and abundance, happiness, and joy. That's where your focus is.
-TEST MODE - passing clips NOT uploaded or queued: AR_TRANCE
+## ep_v4oml32_r3: 0 of 1 clip(s) passed every gate
 
 
+## 2026-11-08 12:41
+  note KT_UNDERTOWR2R2/LIBERACE-WORST-PIANIST-RICHEST: ending kept on the planner's words 'the magic of believing' (cuts mid-sentence)
+ep_v4oml32_r3__s0 (KT_UNDERTOWR2R2): 1 of 1 passed pre-render gates
 
-## 2026-11-08 11:39
-  note AR_TRANCE/ANCIENT-CHINA-MAPPED-YOUR-POWER: ending kept on the planner's words 'amazing amounts of power' (cuts mid-sentence)
-ar_v5mgatn__s0 (AR_TRANCE): 2 of 2 passed pre-render gates
-
-RENDER ar_v5mgatn__s0
-  PASS 01_YOUR-TRANCE-HAS-AN-OFF-SWITCH_53s.mp4  01_YOUR-TRANCE-HAS-AN-OFF-SWITCH_53s.mp4               17 captions vs the sound  median +0
-       FIRST 5s : Today, about how you are being manipulated and lying | LAST  8s : It doesn't matter. You can create the life you want and live happily.
-  FAIL 02_ANCIENT-CHINA-MAPPED-YOUR-POWER_135s.mp4: ends off the planned words: plan ends 'amazing amounts of power', clip ends 'about it in a few minutes'
-TEST MODE - passing clips NOT uploaded or queued: AR_TRANCE
+RENDER ep_v4oml32_r3__s0
+  WARP 01_LIBERACE-WORST-PIANIST-RICHEST_53s.mp4: ST-PIANIST-RICHEST_53s.mp4              10 captions vs the sound  median +0.02s  worst-10% 1.01s  | words captioned 100% - re-timing each caption once
+  FAIL 01_LIBERACE-WORST-PIANIST-RICHEST_53s.mp4: [FAIL] 01_LIBERACE-WORST-PIANIST-RICHEST_53s.mp4              11 captions vs the sound  median -0.00s  worst-10% 0.16s  | words captioned 100%  UNCAPTIONED SPEECH [(27.9, 30.1)]
 
 
-- **NOT QUEUED** `02_ACKNOWLEDGE-DONT-DENY-ACCEPT-DONT-RESIST_121s.mp4` - word repeated after one: "number one number"
+## ep_v56da5e: 0 of 1 clip(s) passed every gate
 
-- **NOT QUEUED** `01_YOUR-TRANCE-HAS-AN-OFF-SWITCH_53s.mp4` - opens mid-sentence on "about how"; ends mid-thought on "got, we got,"
+
+## 2026-11-08 12:54
+  note KT_SKYLINE/NEED-IT-NOT-WANT-IT: ending kept on the planner's words 'the windows of heaven open' (cuts mid-sentence)
+ep_v56da5e__s0 (KT_SKYLINE): 1 of 1 passed pre-render gates
+
+RENDER ep_v56da5e__s0
+  WARP 01_NEED-IT-NOT-WANT-IT_86s.mp4: WANT-IT_86s.mp4                         25 captions vs the sound  median +0.02s  worst-10% 0.73s  | words captioned 103% - re-timing each caption once
+  FAIL 01_NEED-IT-NOT-WANT-IT_86s.mp4: ends off the planned words: plan ends 'the windows of heaven open', clip ends 'if you did actually have it'
+
+
+## ep_v5d9snl_r6: 0 of 1 clip(s) passed every gate
+
+
+## 2026-11-08 12:56
+ep_v5d9snl_r6__s0 (KT_UPLIFTR2R2R2R2R2): 1 of 1 passed pre-render gates
+
+RENDER ep_v5d9snl_r6__s0
+  FAIL 01_AIM-TOO-LOW-STILL-FAIL_88s.mp4: ends off the planned words: plan ends 'aim too low and hit', clip ends 'they aim too low and hip'
+
 
 ## UPLOAD
-2 clip(s) to add:
-   AR_MEGALITH/01_YOU-ARE-NOT-SEPARATE-FROM-GOD_53s.mp4  (34 MB)
-   AR_TRANCE/01_YOUR-MIND-IS-AN-UNTRAINED-DOG_92s.mp4  (55 MB)
-   added AR_MEGALITH/01_YOU-ARE-NOT-SEPARATE-FROM-GOD_53s.mp4  (release media2)
-      + 01_YOUR-MIND-IS-AN-UNTRAINED-DOG_92s__story.mp4
-      + 01_YOUR-MIND-IS-AN-UNTRAINED-DOG_92s__yt59.mp4
-   added AR_TRANCE/01_YOUR-MIND-IS-AN-UNTRAINED-DOG_92s.mp4  (release media2)
+1 clip(s) to add:
+   AR_ROCKETFUELR2/01_WROTE-TWENTY-THINGS-ALL-CAME-TRUE_52s.mp4  (19 MB)
+   added AR_ROCKETFUELR2/01_WROTE-TWENTY-THINGS-ALL-CAME-TRUE_52s.mp4  (release media2)
 
-manifest now holds 592 clips
+manifest now holds 593 clips
 commit and push state/manifest.json to let the machine see them
-
-
-## TRIAL: 2 hook variant(s) of AR_TRANCE/01_YOUR-MIND-IS-AN-UNTRAINED-DOG_92s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 4 hook variant(s) of AR_TRANCE/01_YOUR-MIND-IS-AN-UNTRAINED-DOG_92s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 6 hook variant(s) of AR_TRANCE/01_YOUR-MIND-IS-AN-UNTRAINED-DOG_92s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 7 hook variant(s) of AR_TRANCE/01_YOUR-MIND-IS-AN-UNTRAINED-DOG_92s.mp4 ready for Instagram Trial Reels
