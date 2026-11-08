@@ -1,10 +1,10 @@
 {
- "at": "2026-11-08T06:41",
+ "at": "2026-11-08T10:08",
  "profile": {
-  "follower_count": 407,
   "following_count": 8,
-  "likes_count": 5879,
-  "video_count": 166
+  "likes_count": 5880,
+  "video_count": 166,
+  "follower_count": 408
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -579,7 +579,7 @@
   },
   "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4": {
    "id": "7686887912297843981",
-   "view_count": 2357,
+   "view_count": 2358,
    "like_count": 79,
    "comment_count": 5,
    "share_count": 12,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38251,
+   "view_count": 38253,
    "like_count": 789,
    "comment_count": 27,
    "share_count": 171,
@@ -999,8 +999,8 @@
   },
   "KT_LIES/01_HALF-AN-HOUR-FIVE-HUNDRED_138s.mp4": {
    "id": "7682548909163531533",
-   "view_count": 204,
-   "like_count": 7,
+   "view_count": 205,
+   "like_count": 8,
    "comment_count": 1,
    "share_count": 1,
    "share_url": "https://www.tiktok.com/@kt_student/video/7682548909163531533?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
