@@ -55,9 +55,10 @@ def main():
     owner = os.environ["GH_REPO"]
     tag = os.environ.get("MEDIA_TAG", "media")
 
-    def media_url(rel):
-        return (f"https://github.com/{owner}/releases/download/{tag}/"
-                + rel.replace("/", "--"))
+    import media_store                                         # noqa: E402
+
+    def media_url(rel):                                    # media_store.py, 7 Nov 2026
+        return media_store.url(owner, media_store.tag_for(rel) if tag == "media" else tag, rel)
 
     # The variants live in the release beside every other clip. The index is
     # committed by kt_variants.py at render time, because a release has no

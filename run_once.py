@@ -128,9 +128,12 @@ def main():
     owner = os.environ["GH_REPO"]                # e.g. kamaycampos/kt-machine
     tag = os.environ.get("MEDIA_TAG", "media")
 
+    # A clip's release comes from its manifest entry (media_store.py, 7 Nov 2026:
+    # `media` filled at 1000 files; newer clips live in media2, media3...).
+    import media_store                                      # noqa: E402
+
     def media_url(rel):
-        return (f"https://github.com/{owner}/releases/download/{tag}/"
-                + rel.replace("/", "--"))
+        return media_store.url(owner, media_store.tag_for(rel) if tag == "media" else tag, rel)
     engine.media_url = media_url
     _CTX[:] = [engine, poster, media_url]           # trials.py runs after the posting pass
 

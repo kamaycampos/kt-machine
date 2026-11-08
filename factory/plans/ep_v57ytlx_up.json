@@ -1,0 +1,108 @@
+{
+ "source": "v57ytlx.mp4",
+ "brand": "KT_MAGNET",
+ "test": false,
+ "note": "7 Nov 2026 UPLOAD RECOVERY of ep_v57ytlx: these clips PASSED every gate but were lost at upload (release `media` full at 1000 files, see media_store.py). Same cut, same names. 7 Nov 2026 - 'Crypto Secrets, Sniper Skills & What Makes You Mad As Hell? | The Kevin Trudeau Show | Ep. 32' (Rumble v57ytlx). Weekly agent. The Trump-shooting/Sandy Hook/voting-rights segment and the GIN/crypto-newsletter sales pitches are skipped (politics and paid programs).",
+ "clips": [
+  {
+   "slug": "BITCOIN-20K-TO-67K",
+   "in": 329.36,
+   "out": 434.44,
+   "start_words": "Bitcoin was selling around $20,000",
+   "end_words": "this is how people get rich",
+   "hook": [
+    "Bitcoin at $20,000",
+    "Now it's $67,000"
+   ],
+   "trial_hooks": [
+    [
+     "Bitcoin hit $67,000",
+     "in twelve months"
+    ],
+    [
+     "The sidelines cost",
+     "you $47,000"
+    ],
+    [
+     "$20,000 became",
+     "$67,000 in a year"
+    ],
+    [
+     "$47,000 gain missed",
+     "while you waited"
+    ],
+    [
+     "Kevin's $67,000 call",
+     "already happened"
+    ],
+    [
+     "Kevin Trudeau's $67,000",
+     "bitcoin call"
+    ],
+    [
+     "A year ago",
+     "$20K became $67K"
+    ]
+   ],
+   "send": "A friend forwards this to someone who talks about investing but never acts - the exact proof, pure awe.",
+   "caption": "A year ago, Kevin Trudeau told his private channel Bitcoin had a strong shot at breaking $60,000 within twelve months.\n\nHe wasn't guaranteeing anything - just sharing what his insider contacts in Dubai and the Cayman Islands were seeing.\n\nBitcoin just hit $67,000. Put $20,000 in back then and you'd have $67,000 today - a three times return in a single year.\n\nThe people who heard it and did nothing are still waiting. What's the one call you keep putting off?\n\n#kevintrudeau #bitcoin #crypto #investing #wealthmindset #money",
+   "opener": "stacks of gold coins"
+  },
+  {
+   "slug": "STUDIO-APARTMENT-TO-RICH",
+   "in": 434.44,
+   "out": 570.76,
+   "start_words": "I was sitting there in",
+   "end_words": "the average person doesn't pull the trigger",
+   "hook": [
+    "Earned $3,000 a month",
+    "Then this"
+   ],
+   "send": "Someone forwards this to a friend stuck living paycheck to paycheck - proof that income isn't the real lever, pure awe.",
+   "caption": "Kevin Trudeau met a man in Beverly Hills worth a couple hundred million dollars and asked how he started.\n\nA 650-square-foot studio apartment. A job earning $3,000 a month, plus nights and weekends on a side business.\n\nThe real secret wasn't the income - it was what he refused to do. He never raised his overhead as the money grew. He invested the difference and stayed near people already living where he wanted to go.\n\nHundreds of thousands became millions, then tens of millions. Most people never get there, because they raise their spending the moment they raise their income.\n\n#kevintrudeau #wealthmindset #personalfinance #success #investing #money",
+   "opener": "tiny studio apartment window"
+  },
+  {
+   "slug": "SIX-TIMES-HIS-MONEY",
+   "in": 702.76,
+   "out": 854.7,
+   "start_words": "I remember I bought a stock",
+   "end_words": "mental training that you need to have",
+   "hook": [
+    "He turned $100,000",
+    "into $600,000 fast"
+   ],
+   "send": "A trader sends this to a friend who panics after selling too early - the exact mental fix, real relief from anxiety.",
+   "caption": "Kevin Trudeau once bought a stock at $2.50 a share. It shot up to $12 - six times his money - and he sold, thrilled with the win.\n\nThen it kept climbing. $13, $14, $18, $19. He called a billionaire friend to vent about selling too soon.\n\nHis friend's answer: \"Shut up. You made six times your money. Someone else bought your shares at $12 and now has a stock worth $19 - aren't you happy for him too?\" The lesson: once you sell, stop watching the price.\n\nWhere in your life are you still watching a price you already cashed out of?\n\n#kevintrudeau #investing #stockmarket #mindset #wealthmindset #money",
+   "opener": "green stock chart rising"
+  },
+  {
+   "slug": "PRISON-TO-HUNDREDS-OF-MILLIONS",
+   "in": 3053.72,
+   "out": 3102.36,
+   "start_words": "I was with Donnie French",
+   "end_words": "where you have to start",
+   "hook": [
+    "9 years in prison",
+    "Millions now"
+   ],
+   "send": "A friend sends this to someone stuck blaming their past - the exact proof it isn't a life sentence, real awe.",
+   "caption": "Kevin Trudeau spent nearly a decade in prison with a man named Donnie French, who came out flat broke and owing a huge restitution.\n\nA few years later, Donnie was worth hundreds of millions of dollars.\n\nAt a conference, someone who'd studied the law of attraction for twenty years asked how a guy starting from zero got there so fast while they had nothing to show for two decades of trying.\n\nKevin Trudeau says the answer is simple: Donnie was mad as hell about where he was, and he refused to stay there.\n\n#kevintrudeau #success #mindset #wealthmindset #motivation #money",
+   "opener": "empty prison cell corridor"
+  },
+  {
+   "slug": "MANIFESTING-STARTS-WITH-RAGE",
+   "in": 2725.36,
+   "out": 2767.56,
+   "start_words": "No, that's not the first step",
+   "end_words": "you gotta still start there",
+   "hook": [
+    "The first step:",
+    "manifesting takes rage"
+   ],
+   "send": "Someone sends this to a friend who's been manifesting for years with nothing to show for it - real anger, a wake-up call.",
+   "caption": "Kevin Trudeau interviewed manifestation expert Peter Sage, who said the first step to getting what you want is knowing exactly what you want.\n\nKevin disagreed on camera: \"No, that's not the first step.\"\n\nHe says the real first step is getting disgusted with where you are - building what he calls contracted energy - before you can clearly define what you actually want. Most people skip that step and wonder why nothing moves.\n\nHave you skipped straight to wishing without ever getting mad enough to change anything?\n\n#kevintrudeau #manifestation #mindset #lawofattraction #motivation #success",
+   "opener": "clenched fist close up"
+  }
+ ]
+}

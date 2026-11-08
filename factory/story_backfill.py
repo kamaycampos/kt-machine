@@ -25,7 +25,10 @@ DRY = "--dry" in sys.argv
 sys.path.insert(0, os.path.expanduser("~/Kamay"))
 import kt_render as R                                             # noqa: E402
 
-url_for = lambda rel: f"https://github.com/{REPO}/releases/download/{TAG}/" + rel.replace("/", "--")
+sys.path.insert(0, ROOT)
+import media_store                                                # noqa: E402
+# the clip's own release (media_store.py, 7 Nov 2026); its story cut goes beside it
+url_for = lambda rel: media_store.url(REPO, media_store.tag_for(rel), rel)
 
 
 def have(rel, tries=1):
@@ -81,7 +84,7 @@ def main():
         asset = rel.replace("/", "--").replace(".mp4", "__story.mp4")
         tmp = os.path.join("/tmp", asset)
         os.replace(out, tmp)
-        r = subprocess.run(["gh", "release", "upload", TAG, tmp, "--clobber", "-R", REPO],
+        r = subprocess.run(["gh", "release", "upload", media_store.tag_for(rel), tmp, "--clobber", "-R", REPO],
                            capture_output=True, text=True)
         os.remove(tmp)
         os.remove(work)

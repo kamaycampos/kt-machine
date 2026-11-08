@@ -170,6 +170,10 @@ try:
 except (OSError, ValueError):
     _var = {}
 _man = [c["file"] for c in json.load(open(os.path.join(MACHINE, "state", "manifest.json")))["clips"]]
+# variants roll over with the clips (media_store.py, 7 Nov 2026: `media` hit 1000 files)
+sys.path.insert(0, MACHINE)
+import media_store                                                 # noqa: E402
+_store = media_store.Store("gh", os.environ.get("GITHUB_REPOSITORY", "kamaycampos/kt-machine"))
 for r in sorted(results, key=lambda r: str(r["shard"])):
     for slug, vs in (r.get("variants") or {}).items():
         clip = next((f for f in _man if f.startswith(r["brand"] + "/") and f"_{slug}_" in f), None)
@@ -185,11 +189,19 @@ for r in sorted(results, key=lambda r: str(r["shard"])):
             asset = "_VARIANTS--" + v["file"]
             tmp = os.path.join("/tmp", asset)
             shutil.copy(src, tmp)
-            up = subprocess.run(["gh", "release", "upload", "media", tmp, "--clobber",
+            try:
+                _tag = _store.room(1)
+            except RuntimeError as x:
+                report.append(f"   VARIANT UPLOAD FAILED {v['file']}: {x}")
+                continue
+            up = subprocess.run(["gh", "release", "upload", _tag, tmp, "--clobber",
                                  "-R", os.environ.get("GITHUB_REPOSITORY", "kamaycampos/kt-machine")],
                                 capture_output=True, text=True)
             if up.returncode == 0:
-                arms.append({"rel": "_VARIANTS/" + v["file"], "hook": v["hook"]})
+                _store.used()
+                arms.append({"rel": "_VARIANTS/" + v["file"], "hook": v["hook"], "media_tag": _tag})
+            else:
+                report.append(f"   VARIANT UPLOAD FAILED {v['file']}: {up.stderr[-160:]}")
         if arms and vs:
             arms.sort(key=lambda a: a["rel"])
             _var[f"{r['brand']}__{slug}"] = {"clip": clip, "arms": arms, "posted": None}

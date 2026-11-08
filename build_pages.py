@@ -34,7 +34,9 @@ def video_url(c):
     """The clip's own file, to save and post by hand (15 Oct 2026, Kamay posts Facebook
     himself for two weeks). Every published clip sits in its repo's public 'media' release."""
     repo = EXTRA.get(c.get("_who"), "kamaycampos/kt-machine")
-    return f"https://github.com/{repo}/releases/download/media/" + c["file"].replace("/", "--")
+    # c["media_tag"]: the release the clip went into once `media` was full (7 Nov 2026)
+    return (f"https://github.com/{repo}/releases/download/{c.get('media_tag') or 'media'}/"
+            + c["file"].replace("/", "--"))
 
 
 def owner(c):

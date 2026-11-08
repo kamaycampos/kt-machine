@@ -33,6 +33,9 @@ import re
 import subprocess
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import media_store                                              # noqa: E402
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 HOME = os.path.expanduser("~/Kamay")
 POST = os.path.join(HOME, "POST_TODAY")
@@ -166,8 +169,18 @@ def main():
     if dry:
         return 0
 
+    # RELEASES ROLL OVER (7 Nov 2026, media_store.py): `media` hit GitHub's 1000-file cap
+    # and every upload failed for 34 hours. Each clip goes, with its sidecars, into the
+    # newest release with room, and the manifest records which one.
+    store = media_store.Store(GH, REPO)
     for rel, path, cap, hook in found:
         asset = rel.replace("/", "--")
+        sides = sorted(glob.glob(os.path.splitext(path)[0] + "__*.mp4"))
+        try:
+            TAG = store.room(1 + len(sides))
+        except RuntimeError as x:
+            print(f"   UPLOAD FAILED {rel}: {x}")
+            continue
         tmp = os.path.join("/tmp", asset)
         subprocess.run(["cp", path, tmp], check=True)
         r = subprocess.run([GH, "release", "upload", TAG, tmp, "--clobber",
@@ -179,6 +192,7 @@ def main():
         # READ IT BACK. An upload that returns 0 and a URL that 404s is the
         # exact shape of failure this project keeps paying for, and here it
         # would mean a scheduled clip whose media cannot be fetched.
+        store.used()
         url = f"https://github.com/{REPO}/releases/download/{TAG}/{asset}"
         chk = subprocess.run(["curl", "-sIL", "-o", "/dev/null",
                               "-w", "%{http_code}", url],
@@ -190,7 +204,7 @@ def main():
         # cutting a 59s version for months and NOTHING EVER UPLOADED IT - which
         # is why 91 stories were refused for length while the file that would
         # have fitted sat on a disk. Anything named <clip>__*.mp4 goes up too.
-        for side in sorted(glob.glob(os.path.splitext(path)[0] + "__*.mp4")):
+        for side in sides:
             sname = os.path.basename(side).replace("/", "--")
             sasset = rel.rsplit("/", 1)[0] + "--" + sname
             stmp = os.path.join("/tmp", sasset)
@@ -198,12 +212,13 @@ def main():
             sr = subprocess.run([GH, "release", "upload", TAG, stmp, "--clobber",
                                  "-R", REPO], capture_output=True, text=True)
             os.remove(stmp)
+            store.used(0 if sr.returncode else 1)
             print(f"      {'+' if not sr.returncode else 'FAILED'} {sname}")
 
         man["clips"].append({"file": rel, "caption": cap, "hook": hook,
                              "bytes": os.path.getsize(path),
-                             "done": False, "status": {}})
-        print(f"   added {rel}")
+                             "done": False, "status": {}, "media_tag": TAG})
+        print(f"   added {rel}  (release {TAG})")
     json.dump(man, open(STATE, "w"), indent=1)
     print(f"\nmanifest now holds {len(man['clips'])} clips")
     print("commit and push state/manifest.json to let the machine see them")
