@@ -14195,7 +14195,11 @@
    "bytes": 79228815,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-09T09:55",
+   "cta_keyword": "YES",
+   "cta_variant": 8,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_EARTHGOD/01_THEY-NAMED-IT-THE-SLAVE-FREQUENCY_44s.mp4",
@@ -14204,7 +14208,11 @@
    "bytes": 27598133,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-08T07:48",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_EARTHGOD/02_MONEY-WORSHIP-IS-ACTUAL-SATAN-WORSHIP_87s.mp4",
@@ -14213,7 +14221,11 @@
    "bytes": 56447576,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-09T08:28",
+   "cta_keyword": "RISE",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_EARTHGOD/02_THATS-NOT-WHAT-THE-BIBLE-SAID_65s.mp4",
@@ -14222,7 +14234,11 @@
    "bytes": 44021406,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-08T10:37",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_FIELD/01_ONE-EYE-POINT-REACHES-YOUR-STOMACH_55s.mp4",
@@ -14231,7 +14247,11 @@
    "bytes": 36490934,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-08T17:05",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_GROOMLAKE/01_THEY-LIED-FOR-THIRTY-YEARS-STRAIGHT_173s.mp4",
@@ -14240,7 +14260,11 @@
    "bytes": 90666500,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-09T09:29",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 7,
+   "cta_kind": "question"
   },
   {
    "file": "AR_RESONANCE/01_THEY-TESTED-YOUR-HEARTBEAT-FIRST_100s.mp4",
@@ -14249,7 +14273,11 @@
    "bytes": 51784656,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-08T11:38",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_UNATTACHED/01_DEMONS-ARE-REAL-HE-CLEARS-THEM_45s.mp4",
@@ -14258,7 +14286,11 @@
    "bytes": 22817448,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-08T08:30",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_UNATTACHED/02_HE-FORGOT-TO-BATHE-THATS-ENLIGHTENMENT_52s.mp4",
@@ -14267,7 +14299,11 @@
    "bytes": 21810551,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-08T20:26",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "KT_IGNITE/01_TWO-EARS-ONE-MOUTH_92s.mp4",
@@ -14276,7 +14312,11 @@
    "bytes": 62768272,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-08T16:55",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 13,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_IGNITE/02_BRUCE-LEE-18-MONTHS_38s.mp4",
@@ -14285,7 +14325,11 @@
    "bytes": 25097705,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-08T08:36",
+   "cta_keyword": "MONEY",
+   "cta_variant": 10,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_MAGNET/01_BITCOIN-20K-TO-67K_99s.mp4",
@@ -14294,7 +14338,11 @@
    "bytes": 77610549,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-09T07:28",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 15,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_MAGNET/01_MANIFESTING-STARTS-WITH-RAGE_40s.mp4",
@@ -14303,7 +14351,11 @@
    "bytes": 33390510,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-08T07:36",
+   "cta_keyword": "WISH",
+   "cta_variant": 9,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_MAGNET/01_SIX-TIMES-HIS-MONEY_149s.mp4",
@@ -14312,7 +14364,11 @@
    "bytes": 117549375,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-09T11:37",
+   "cta_keyword": "MONEY",
+   "cta_variant": 18,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_MAGNET/02_PRISON-TO-HUNDREDS-OF-MILLIONS_48s.mp4",
@@ -14321,7 +14377,11 @@
    "bytes": 37785347,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-08T10:54",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 11,
+   "cta_kind": "question"
   },
   {
    "file": "KT_MAGNET/02_STUDIO-APARTMENT-TO-RICH_139s.mp4",
@@ -14330,7 +14390,11 @@
    "bytes": 110556407,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-09T11:02",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 17,
+   "cta_kind": "question"
   },
   {
    "file": "KT_UNDERTOW/01_TOXIC-WORK-ENVIRONMENT-WEAK_40s.mp4",
@@ -14339,7 +14403,11 @@
    "bytes": 29038191,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-08T20:36",
+   "cta_keyword": "MONEY",
+   "cta_variant": 14,
+   "cta_kind": "question"
   },
   {
    "file": "KT_UNDERTOWR2/01_FIVE-FRIENDS-YOUR-INCOME_165s.mp4",
@@ -14348,7 +14416,11 @@
    "bytes": 115212684,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-08T12:10",
+   "cta_keyword": "MONEY",
+   "cta_variant": 12,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_UPLIFTR2/01_THE-TOMBSTONE-QUESTION_33s.mp4",
@@ -14357,7 +14429,11 @@
    "bytes": 16713197,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-09T08:29",
+   "cta_keyword": "MONEY",
+   "cta_variant": 16,
+   "cta_kind": "offer"
   }
  ]
 }
