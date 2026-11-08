@@ -467,10 +467,13 @@ def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
         if not kw:
             pass
         elif cred_prefix(brand) == "AR":
-            if platform in ("instagram", "facebook"):      # Facebook too since 7 Nov
-                extra = ar_ask("\n".join(body), kw, url, platform, variant)
-                if extra:
-                    cta = f"{cta}\n\n{extra}"
+            # HER QUESTION POSTS CARRY NO ASK AT ALL (Yaren, 8 Nov 2026): "i only want
+            # call to action in the description once every other post for both instagram
+            # and facebook, not in every single post as it can trigger the algorithm".
+            # The 16 Sept "value clip never leaves the offer out" line was Kamay's and had
+            # been adding a keyword ask to her question posts too, so every post asked.
+            # plan() alternates offer/question for AR_*; the offer posts carry the ask.
+            pass
         elif platform == "tiktok" or (
                 platform in ("instagram", "facebook")
                 and (platform == "instagram") == (v % 2 == 0)):

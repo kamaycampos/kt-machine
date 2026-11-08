@@ -286,7 +286,11 @@ def main():
     engine.save(man)
 
     for i in idxs:
-        clip = dict(engine.load()["clips"][i])
+        m1 = engine.load()
+        if engine.ar_turn(m1, i):         # Yaren, 8 Nov: the ask on every other post only
+            engine.save(m1)
+            log(f"  every-other-post: {m1['clips'][i]['file']} is now a {m1['clips'][i]['cta_kind']} post")
+        clip = dict(m1["clips"][i])
         path = os.path.join(engine.MEDIA, clip["file"])
         if not os.path.exists(path):
             # The bytes live in the release, not the repository. Fetch just the

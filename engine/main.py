@@ -581,6 +581,35 @@ def audit(man):
     return bad
 
 
+def ar_turn(man, i):
+    """AWAKENED RISE ASKS ON EVERY OTHER POST, STRICTLY (Yaren, 8 Nov 2026): "i only want
+    call to action in the description once every other post for both instagram and
+    facebook, not in every single post as it can trigger the algorithm".
+
+    plan() alternated in planning order, but her planner presets cta_kind per clip and
+    clips move between slots, so what actually went out ran offer, offer, offer on 2 and
+    4 Nov. The only order that matters is the order posts reach her accounts, so this is
+    decided at the door: the opposite of the last AR clip that really posted. A clip
+    that already posted somewhere (a retry) keeps its kind, so its legs never disagree.
+    Returns True if it changed the clip."""
+    c = man["clips"][i]
+    if poster.cred_prefix(brand_of(c)) != "AR":
+        return False
+    if any(v == "posted" for v in (c.get("status") or {}).values()):
+        return False
+    done = [x for x in man["clips"]
+            if x is not c and poster.cred_prefix(brand_of(x)) == "AR" and x.get("posted_at")
+            and any((x.get("status") or {}).get(p) == "posted" for p in ("instagram", "facebook"))]
+    if not done:
+        return False
+    last = max(done, key=lambda x: str(x["posted_at"]))
+    want = "question" if last.get("cta_kind") == "offer" else "offer"
+    if c.get("cta_kind") == want:
+        return False
+    c["cta_kind"] = want
+    return True
+
+
 def record(man, i, result, links):
     """One place where the outcome of an attempt is written down."""
     c = man["clips"][i]
@@ -662,7 +691,10 @@ def scheduler_loop():
                     sys.stderr.write(f"autoplan: scheduled {changed} clip(s)\n")
             for i in idxs:
                 with LOCK:
-                    clip = dict(load()["clips"][i])
+                    man = load()
+                    if ar_turn(man, i):            # Yaren: the ask on every other post
+                        save(man)
+                    clip = dict(man["clips"][i])
                 result, links = poster.publish(
                     clip, os.path.join(MEDIA, clip["file"]), media_url(clip["file"]),
                     only=clip.get("retry_only"))
