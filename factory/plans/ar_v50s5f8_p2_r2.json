@@ -1,0 +1,19 @@
+{
+  "source": "v50s5f8.mp4",
+  "brand": "AR_ROCKETFUELR2",
+  "test": false,
+  "note": "8 Nov 2026 - second chance (tries 1) on AR_ROCKETFUEL (v50s5f8 second pass). WROTE-TWENTY-THINGS-ALL-CAME-TRUE opened on 'all these guys' - the tail half of a sentence that straddles a cue break ('Wayne Dyer, all these guys / all say the same thing'), with 'all' repeated right next to the cut, which matches the 'phrase scrambled' failure exactly. Moved the start past the stutter ('the must, the must...') onto the next clean sentence ('I was just talking to a guy the other day') and extended the end slightly to a cleaner button line, since the original span was also under 40s once the bad opening was removed.",
+  "clips": [
+    {
+      "slug": "WROTE-TWENTY-THINGS-ALL-CAME-TRUE",
+      "retry_of": "ar_v50s5f8_p2/WROTE-TWENTY-THINGS-ALL-CAME-TRUE",
+      "in": 2261.28,
+      "out": 2313.0,
+      "start_words": "I was just",
+      "end_words": "writing something down",
+      "hook": ["Wrote twenty things.", "All came true."],
+      "send": "Send this to someone who keeps a vision board they never look at again - awe at that being the whole point.",
+      "caption": "A guy told Kevin a story that still gets him excited to repeat it.\n\nYears ago, he grabbed a piece of paper and wrote down about twenty things he wanted. Then he put it away and completely forgot about it - moved apartments, moved on with life, never looked at it again.\n\nFour years later, going through old boxes, he found the paper. Every single thing on that list had manifested. He hadn't been chasing any of it. He'd just written it down once and let it go.\n\nThere's something in that letting go that the wanting itself actually blocks.\n\nComment RISE and I'll send you the exact method for writing your own list.\n\n#manifestation #subconscious #awakening #universe #consciousness #kevintrudeau"
+    }
+  ]
+}

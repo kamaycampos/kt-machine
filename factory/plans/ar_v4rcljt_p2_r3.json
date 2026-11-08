@@ -1,0 +1,19 @@
+{
+  "source": "v4rcljt.mp4",
+  "brand": "AR_DECEPTIONR3",
+  "test": false,
+  "note": "8 Nov 2026 - second chance (tries 2, last) on AR_DECEPTIONR2 (v4rcljt second pass). ALL-NATURAL-MEANS-NOTHING-AT-ALL still opened mid-sentence on 'natural.' even after the prior retry only moved the END - the word 'all natural' repeats at least five times between 344s and 445s (344, 398, 405, 424, 435, 445), and the start_words 'I have been' sat right next to that cluster, which is almost certainly what the matcher was tripping on. Moved the start past the whole cluster's first half, onto its own clean sentence ('So what we want to do...') that doesn't contain the word 'natural' at all, well clear of any repeat. Kept the same proven end ('It means nothing').",
+  "clips": [
+    {
+      "slug": "ALL-NATURAL-MEANS-NOTHING-AT-ALL",
+      "retry_of": "ar_v4rcljt_p2_r2/ALL-NATURAL-MEANS-NOTHING-AT-ALL",
+      "in": 363.0,
+      "out": 456.0,
+      "start_words": "So what we want",
+      "end_words": "It means nothing",
+      "hook": ["All natural", "means nothing at all."],
+      "send": "Send this to someone who always reaches for the \"all natural\" label at the store - unease at what that word actually guarantees.",
+      "caption": "He sat in the marketing meetings where this was decided, so he can tell you exactly how it works.\n\nThe question in the room was never \"how do we make this healthy.\" It was \"how do we convince the consumer it's healthy\" - on a product already loaded with chemicals, hydrogenated oil, ingredients that cause real harm. The answer: pay lobbyists to help define \"all natural\" so loosely that almost anything qualifies, up to fifteen thousand different chemicals.\n\nThe word was never describing the product. It was describing you - what you'd believe if they just picked the right word.\n\nComment RISE and I'll send you the other words that mean nothing on a label.\n\n#disclosure #subconscious #programming #awakening #consciousness #kevintrudeau"
+    }
+  ]
+}
