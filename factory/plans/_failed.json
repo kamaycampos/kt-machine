@@ -12079,6 +12079,96 @@
     "Why Reagan's ghostwriter",
     "ran Hughes' will"
    ]
+  },
+  "ar_v5cg1y5/NO-LASER-MATCHES-WHAT-THEY-BUILT": {
+   "plan": "ar_v5cg1y5",
+   "source": "v5cg1y5.mp4",
+   "brand": "AR_MEGALITH",
+   "tries": 1,
+   "why": [
+    "FAIL 01_NO-LASER-MATCHES-WHAT-THEY-BUILT_186s.mp4: [FAIL] 01_NO-LASER-MATCHES-WHAT-THEY-BUILT_186s.mp4           45 captions vs the sound  median +0.00s  worst-10% 0.84s  | words captioned 100%  UNCAPTIONED SPEECH [(26.1, 28.4), (138.5, 140.6)]"
+   ],
+   "slug": "NO-LASER-MATCHES-WHAT-THEY-BUILT",
+   "in": 4406.0,
+   "out": 4594.0,
+   "start_words": "Here is the absolute",
+   "end_words": "But the aliens did",
+   "hook": [
+    "Science still can't",
+    "explain this secret."
+   ]
+  },
+  "ar_v5cg1y5/A-STRUCTURE-OLDER-THAN-HUMANITY": {
+   "plan": "ar_v5cg1y5",
+   "source": "v5cg1y5.mp4",
+   "brand": "AR_MEGALITH",
+   "tries": 1,
+   "why": [
+    "FAIL 02_A-STRUCTURE-OLDER-THAN-HUMANITY_114s.mp4: ends off the planned words: plan ends 'the other person's doing', clip ends 'what the other person is doing'"
+   ],
+   "slug": "A-STRUCTURE-OLDER-THAN-HUMANITY",
+   "in": 4597.0,
+   "out": 4712.0,
+   "start_words": "Scientists discover structure",
+   "end_words": "the other person's doing",
+   "hook": [
+    "A structure just",
+    "broke the timeline."
+   ]
+  },
+  "ar_v5mgatn/YOUR-TRANCE-HAS-AN-OFF-SWITCH": {
+   "plan": "ar_v5mgatn",
+   "source": "v5mgatn.mp4",
+   "brand": "AR_TRANCE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_YOUR-TRANCE-HAS-AN-OFF-SWITCH_53s.mp4` - opens mid-sentence on \"about how\"; ends mid-thought on \"got, we got,\""
+   ],
+   "slug": "YOUR-TRANCE-HAS-AN-OFF-SWITCH",
+   "in": 56.0,
+   "out": 112.0,
+   "start_words": "bit today about how",
+   "end_words": "want and live happily",
+   "hook": [
+    "Your trance has",
+    "an off switch."
+   ]
+  },
+  "ar_v5mgatn/ANCIENT-CHINA-MAPPED-YOUR-POWER": {
+   "plan": "ar_v5mgatn",
+   "source": "v5mgatn.mp4",
+   "brand": "AR_TRANCE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_ANCIENT-CHINA-MAPPED-YOUR-POWER_135s.mp4: ends off the planned words: plan ends 'amazing amounts of power', clip ends 'about it in a few minutes'"
+   ],
+   "slug": "ANCIENT-CHINA-MAPPED-YOUR-POWER",
+   "in": 307.76,
+   "out": 444.96,
+   "start_words": "It really is chi",
+   "end_words": "amazing amounts of power",
+   "hook": [
+    "Ancient China mapped",
+    "your invisible power."
+   ]
+  },
+  "ar_v5mgatn/ACKNOWLEDGE-DONT-DENY-ACCEPT-DONT-RESIST": {
+   "plan": "ar_v5mgatn",
+   "source": "v5mgatn.mp4",
+   "brand": "AR_TRANCE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_ACKNOWLEDGE-DONT-DENY-ACCEPT-DONT-RESIST_121s.mp4` - word repeated after one: \"number one number\""
+   ],
+   "slug": "ACKNOWLEDGE-DONT-DENY-ACCEPT-DONT-RESIST",
+   "in": 3749.2,
+   "out": 3872.0,
+   "start_words": "you have to know",
+   "end_words": "that's where your focus",
+   "hook": [
+    "Fighting it only",
+    "makes you weaker."
+   ]
   }
  },
  "attempts": {

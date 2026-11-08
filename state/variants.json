@@ -864,5 +864,67 @@
    }
   ],
   "posted": null
+ },
+ "AR_TRANCE__YOUR-MIND-IS-AN-UNTRAINED-DOG": {
+  "clip": "AR_TRANCE/01_YOUR-MIND-IS-AN-UNTRAINED-DOG_92s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__AR_TRANCE__YOUR-MIND-IS-AN-UNTRAINED-DOG__V1.mp4",
+    "hook": [
+     "One skill most",
+     "people never learn."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_TRANCE__YOUR-MIND-IS-AN-UNTRAINED-DOG__V2.mp4",
+    "hook": [
+     "Your programming never",
+     "taught you this."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_TRANCE__YOUR-MIND-IS-AN-UNTRAINED-DOG__V3.mp4",
+    "hook": [
+     "You don't own",
+     "your mind yet."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_TRANCE__YOUR-MIND-IS-AN-UNTRAINED-DOG__V4.mp4",
+    "hook": [
+     "Untrained, your mind",
+     "runs your life."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_TRANCE__YOUR-MIND-IS-AN-UNTRAINED-DOG__V5.mp4",
+    "hook": [
+     "He trained a",
+     "chicken on command."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_TRANCE__YOUR-MIND-IS-AN-UNTRAINED-DOG__V6.mp4",
+    "hook": [
+     "Stop letting your",
+     "mind walk you."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_TRANCE__YOUR-MIND-IS-AN-UNTRAINED-DOG__V7.mp4",
+    "hook": [
+     "Every success guru",
+     "skips this part."
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }
