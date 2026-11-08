@@ -14444,12 +14444,25 @@
    "hook": "9 years in prison Millions now",
    "bytes": 37785347,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "scheduled_at": "2026-11-08T10:54",
    "cta_keyword": "BRAIN",
    "cta_variant": 11,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DffJuxHD0RY/",
+    "youtube": "https://youtube.com/shorts/JNQSxHz7uE8"
+   },
+   "caption_at_post": "Kevin Trudeau spent nearly a decade in prison with a man named Donnie French, who came out flat broke and owing a huge restitution.\n\nA few years later, Donnie was worth hundreds of millions of dollars.\n\nAt a conference, someone who'd studied the law of attraction for twenty years asked how a guy starting from zero got there so fast while they had nothing to show for two decades of trying.\n\nKevin Trudeau says the answer is simple: Donnie was mad as hell about where he was, and he refused to stay there.\n\n#kevintrudeau #success #mindset #wealthmindset #motivation #money",
+   "posted_at": "2026-11-08T11:11"
   },
   {
    "file": "KT_MAGNET/02_STUDIO-APARTMENT-TO-RICH_139s.mp4",
