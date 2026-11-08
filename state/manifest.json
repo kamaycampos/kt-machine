@@ -14495,7 +14495,11 @@
    "bytes": 19108571,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-09T19:48",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
