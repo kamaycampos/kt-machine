@@ -305,6 +305,19 @@ def ar_ask(body_text, kw, url, platform, variant=None):
     # question, which earns comments without putting a link anywhere.
     #
     # AR_ASK_LINK is deliberately no longer reachable. Do not wire it back in.
+    #
+    # FACEBOOK ASKS TOO, SINCE 7 NOV 2026. Yaren: "in none of the videos on facebook it
+    # says comment RISE ... how are people supposed to receive my link". The 9 Sept rule
+    # above was true then (CreatorFlow watched Instagram only). Since 3 Nov her own bot
+    # (dm/dm_reply.py, DM_BRAND=AR_) reads her Facebook reel comments and DMs the link
+    # through Messenger - it had already answered 3 people who wrote YES unprompted.
+    # Comment-only on Facebook ("link in my bio" means nothing on a Page), and the
+    # wording is shifted one step from Instagram's so the same clip never carries the
+    # same caption on both - the duplicate-caption pattern that gets accounts flagged.
+    if platform == "facebook":
+        if not kw:
+            return ASK_LINES[1]
+        return AR_ASK_COMMENT[(h + 1) % len(AR_ASK_COMMENT)].format(kw=kw)
     if platform != "instagram":
         return ASK_LINES[1]
     if platform == "instagram":
@@ -454,7 +467,7 @@ def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
         if not kw:
             pass
         elif cred_prefix(brand) == "AR":
-            if platform == "instagram":
+            if platform in ("instagram", "facebook"):      # Facebook too since 7 Nov
                 extra = ar_ask("\n".join(body), kw, url, platform, variant)
                 if extra:
                     cta = f"{cta}\n\n{extra}"
@@ -536,7 +549,7 @@ def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
         body = [soften(l) for l in body]
     if not (cta or "").strip():
         out = list(body)
-    elif (cred_prefix(brand) == "AR" and platform == "instagram"
+    elif (cred_prefix(brand) == "AR" and platform in ("instagram", "facebook")
           and ask != "question" and cta not in ASK_LINES):
         # ONLY THE COMMENT ASK LEADS. A closing question at the top is nonsense
         # ("what did you take from this?" before they have seen it), and on

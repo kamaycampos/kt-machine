@@ -18,3 +18,4 @@ jobs:
         with: { python-version: "3.11" }
       - run: pip install requests && python dm/fb_diag.py 1635158468073294 1541616031107560 3670434626442860 1477592460902949 1439795808126414 1059657373628249
       - run: python dm/blank_diag.py
+      - run: python dm/fb_inbox_diag.py
