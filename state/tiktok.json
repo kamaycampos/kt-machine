@@ -1,10 +1,10 @@
 {
- "at": "2026-11-08T10:08",
+ "at": "2026-11-08T13:52",
  "profile": {
+  "follower_count": 408,
   "following_count": 8,
   "likes_count": 5880,
-  "video_count": 166,
-  "follower_count": 408
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -89,7 +89,7 @@
   },
   "KT_LEDGER/02_LOST-27-MILLION-STILL-WON_160s.mp4": {
    "id": "7692503921260088590",
-   "view_count": 26,
+   "view_count": 27,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -419,7 +419,7 @@
   },
   "KT_YWIYC/01_WHY-MOST-MONEY-GURUS-ARENT-RICH_59s.mp4": {
    "id": "7688839555197226254",
-   "view_count": 258,
+   "view_count": 260,
    "like_count": 14,
    "comment_count": 0,
    "share_count": 4,
@@ -719,7 +719,7 @@
   },
   "KT_HOME/01_01_WHAT-EVERY-BILLIONAIRE-HOME-HAS_141s.mp4": {
    "id": "7685518951098453262",
-   "view_count": 38253,
+   "view_count": 38254,
    "like_count": 789,
    "comment_count": 27,
    "share_count": 171,
@@ -869,7 +869,7 @@
   },
   "unmatched/7683715768181132558": {
    "id": "7683715768181132558",
-   "view_count": 647,
+   "view_count": 648,
    "like_count": 43,
    "comment_count": 4,
    "share_count": 4,
@@ -1059,7 +1059,7 @@
   },
   "KT_MED/04_WHEN-TO-SIT_138s.mp4": {
    "id": "7680951493838654734",
-   "view_count": 353,
+   "view_count": 355,
    "like_count": 26,
    "comment_count": 1,
    "share_count": 4,
