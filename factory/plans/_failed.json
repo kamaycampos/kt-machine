@@ -12169,6 +12169,78 @@
     "Fighting it only",
     "makes you weaker."
    ]
+  },
+  "ar_v4rcljt_p2_r3/ALL-NATURAL-MEANS-NOTHING-AT-ALL": {
+   "plan": "ar_v4rcljt_p2_r3",
+   "source": "v4rcljt.mp4",
+   "brand": "AR_DECEPTIONR3",
+   "tries": 3,
+   "why": [
+    "FAIL 01_ALL-NATURAL-MEANS-NOTHING-AT-ALL_94s.mp4: [FAIL] 01_ALL-NATURAL-MEANS-NOTHING-AT-ALL_94s.mp4            14 captions vs the sound  median +0.22s  worst-10% 1.35s  | words captioned 99%  UNCAPTIONED SPEECH [(63.2, 65.5), (85.1, 86.8)]"
+   ],
+   "slug": "ALL-NATURAL-MEANS-NOTHING-AT-ALL",
+   "in": 363.0,
+   "out": 456.0,
+   "start_words": "So what we want",
+   "end_words": "It means nothing",
+   "hook": [
+    "All natural",
+    "means nothing at all."
+   ]
+  },
+  "ep_v4oml32_r3/LIBERACE-WORST-PIANIST-RICHEST": {
+   "plan": "ep_v4oml32_r3",
+   "source": "v4oml32.mp4",
+   "brand": "KT_UNDERTOWR2R2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_LIBERACE-WORST-PIANIST-RICHEST_53s.mp4: [FAIL] 01_LIBERACE-WORST-PIANIST-RICHEST_53s.mp4              11 captions vs the sound  median -0.00s  worst-10% 0.16s  | words captioned 100%  UNCAPTIONED SPEECH [(27.9, 30.1)]"
+   ],
+   "slug": "LIBERACE-WORST-PIANIST-RICHEST",
+   "in": 261.0,
+   "out": 314.0,
+   "start_words": "They asked Liberace, you're a",
+   "end_words": "the magic of believing",
+   "hook": [
+    "The worst piano player",
+    "became richest"
+   ]
+  },
+  "ep_v56da5e/NEED-IT-NOT-WANT-IT": {
+   "plan": "ep_v56da5e",
+   "source": "v56da5e.mp4",
+   "brand": "KT_SKYLINE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_NEED-IT-NOT-WANT-IT_86s.mp4: ends off the planned words: plan ends 'the windows of heaven open', clip ends 'if you did actually have it'"
+   ],
+   "slug": "NEED-IT-NOT-WANT-IT",
+   "in": 2650.0,
+   "out": 2739.0,
+   "start_words": "In order to manifest something",
+   "end_words": "the windows of heaven open",
+   "hook": [
+    "Why wanting it",
+    "keeps you broke"
+   ]
+  },
+  "ep_v5d9snl_r6/AIM-TOO-LOW-STILL-FAIL": {
+   "plan": "ep_v5d9snl_r6",
+   "source": "v5d9snl.mp4",
+   "brand": "KT_UPLIFTR2R2R2R2R2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_AIM-TOO-LOW-STILL-FAIL_88s.mp4: ends off the planned words: plan ends 'aim too low and hit', clip ends 'they aim too low and hip'"
+   ],
+   "slug": "AIM-TOO-LOW-STILL-FAIL",
+   "in": 3901.0,
+   "out": 3993.0,
+   "start_words": "I like to ask whether",
+   "end_words": "aim too low and hit",
+   "hook": [
+    "The real reason",
+    "most people fail"
+   ]
   }
  },
  "attempts": {
@@ -12224,9 +12296,9 @@
   "ar_v5i1vo4": 2,
   "ep_v5d9snl_r4": 2,
   "ep_v5d9snl_r5": 2,
-  "ar_v4rcljt_p2_r3": 1,
-  "ep_v4oml32_r3": 1,
-  "ep_v56da5e": 1,
-  "ep_v5d9snl_r6": 1
+  "ar_v4rcljt_p2_r3": 2,
+  "ep_v4oml32_r3": 2,
+  "ep_v56da5e": 2,
+  "ep_v5d9snl_r6": 2
  }
 }
