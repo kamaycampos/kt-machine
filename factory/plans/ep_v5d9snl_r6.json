@@ -1,0 +1,20 @@
+{"source": "v5d9snl.mp4", "brand": "KT_UPLIFTR2R2R2R2R2", "test": false,
+ "note": "8 Nov 2026 - second chance recut of AIM-TOO-LOW-STILL-FAIL (Rumble v5d9snl). Weekly agent.",
+ "clips": [
+  {"slug": "AIM-TOO-LOW-STILL-FAIL", "in": 3901.0, "out": 3993.0,
+   "retry_of": "ep_v5d9snl/AIM-TOO-LOW-STILL-FAIL",
+   "start_words": "I like to ask whether",
+   "end_words": "aim too low and hit",
+   "hook": ["The real reason", "most people fail"],
+   "send": "A friend sends it to someone settling for a small, safe goal: proof that aiming low still ends in failure - anxiety about wasted potential.",
+   "caption": "Les Brown asked a room full of people one question: if you had your life to live over, could you do more than you've done so far? Almost every hand went up.\n\nThen he said the line that stuck: most people don't fail because they aim too high and miss. They fail because they aim too low - and hit.\n\nA small goal hit perfectly is still a small life.\n\nKevin Trudeau's take: the fix isn't trying harder at the goal you already set. It's setting a bigger one.\n\nWhat goal have you kept small just so you wouldn't miss it?\n\n#kevintrudeau #lesbrown #goalsetting #mindsetshift #successhabits #motivation",
+   "trial_hooks": [
+    ["Most people fail", "by aiming low"],
+    ["Small goals are", "the real failure"],
+    ["Hit the target,", "still lost big"],
+    ["Why safe goals", "ruin your life"],
+    ["Les Brown's warning", "about small dreams"],
+    ["Kevin Trudeau on", "why aim bigger"],
+    ["You can hit", "and still lose"]
+   ]}
+ ]}
