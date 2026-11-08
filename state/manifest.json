@@ -14510,12 +14510,25 @@
    "hook": "Five friends decide your whole income",
    "bytes": 115212684,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "scheduled_at": "2026-11-08T12:10",
    "cta_keyword": "MONEY",
    "cta_variant": 12,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DffS02Uj3uf/",
+    "youtube": "https://youtube.com/shorts/cme2UHLIHXs"
+   },
+   "caption_at_post": "Kevin Trudeau says your income is going to be the average of your five best friends. Not your effort alone - theirs too.\n\nYour attitude works the same way. It mimics the people you spend the most time with.\n\nAristotle Onassis, once one of the richest men on Earth, said the single biggest key to his success was who he associated with. Every person puts out a frequency, and you absorb it whether you notice or not.\n\nWho are your five best friends, and what's their average income?\n\n#kevintrudeau #wealthmindset #success #mindset #money #motivation",
+   "posted_at": "2026-11-08T12:33"
   },
   {
    "file": "KT_UPLIFTR2/01_THE-TOMBSTONE-QUESTION_33s.mp4",
