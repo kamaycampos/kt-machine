@@ -14764,7 +14764,11 @@
    "bytes": 35035449,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-09T17:34",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
