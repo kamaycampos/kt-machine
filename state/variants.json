@@ -969,5 +969,67 @@
    }
   ],
   "posted": null
+ },
+ "KT_TENPERCENT__ROCKEFELLERS-DOLLAR-FIFTY-SECRET": {
+  "clip": "KT_TENPERCENT/01_ROCKEFELLERS-DOLLAR-FIFTY-SECRET_49s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_TENPERCENT__ROCKEFELLERS-DOLLAR-FIFTY-SECRET__V1.mp4",
+    "hook": [
+     "Rockefeller gave away $300",
+     "billion total"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_TENPERCENT__ROCKEFELLERS-DOLLAR-FIFTY-SECRET__V2.mp4",
+    "hook": [
+     "Why attachment makes you",
+     "poor forever"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_TENPERCENT__ROCKEFELLERS-DOLLAR-FIFTY-SECRET__V3.mp4",
+    "hook": [
+     "A dollar fifty became",
+     "$300 billion"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_TENPERCENT__ROCKEFELLERS-DOLLAR-FIFTY-SECRET__V4.mp4",
+    "hook": [
+     "Why not giving costs",
+     "you wealth"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_TENPERCENT__ROCKEFELLERS-DOLLAR-FIFTY-SECRET__V5.mp4",
+    "hook": [
+     "Rockefeller's $1.50 job",
+     "became $300 billion"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_TENPERCENT__ROCKEFELLERS-DOLLAR-FIFTY-SECRET__V6.mp4",
+    "hook": [
+     "Kevin Trudeau explains Rockefeller's",
+     "$300B habit"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_TENPERCENT__ROCKEFELLERS-DOLLAR-FIFTY-SECRET__V7.mp4",
+    "hook": [
+     "Every paycheck 10%",
+     "became $300 billion"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }
