@@ -14543,7 +14543,7 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "scheduled_at": "2026-11-09T11:37",
+   "scheduled_at": "2026-11-09T11:58",
    "cta_keyword": "MONEY",
    "cta_variant": 18,
    "cta_kind": "offer"
@@ -14683,13 +14683,27 @@
    "caption": "You've been taught to look up. The teaching says look in.\n\nAn old proverb puts it simply: the wise man looks inward, the small man looks at everyone else. Not as a location above the clouds, but as the thing animating you right now. Not a reward you earn later. Not something that abandoned you. The same love, in you, as you.\n\nIf that's true, the search was never about finding God out there. It was about remembering you never left.\n\nComment RISE and I'll send you more of this teaching.\n\n#spirituality #awakening #oneness #consciousness #innerpeace #kevintrudeau",
    "hook": "You are not separate from God.",
    "bytes": 34108878,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "scheduled_at": "2026-11-09T11:41",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1125623363211844/",
+    "instagram": "https://www.instagram.com/reel/DfhzLdDAFJj/",
+    "youtube": "https://youtube.com/shorts/0HV9tlTK3Ok"
+   },
+   "caption_at_post": "You've been taught to look up. The teaching says look in.\n\nAn old proverb puts it simply: the wise man looks inward, the small man looks at everyone else. Not as a location above the clouds, but as the thing animating you right now. Not a reward you earn later. Not something that abandoned you. The same love, in you, as you.\n\nIf that's true, the search was never about finding God out there. It was about remembering you never left.\n\nComment RISE and I'll send you more of this teaching.\n\n#spirituality #awakening #oneness #consciousness #innerpeace #kevintrudeau",
+   "posted_at": "2026-11-09T11:52"
   },
   {
    "file": "AR_TRANCE/01_YOUR-MIND-IS-AN-UNTRAINED-DOG_92s.mp4",
