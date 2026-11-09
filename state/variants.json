@@ -993,7 +993,10 @@
      "Rockefeller gave away $300",
      "billion total"
     ],
-    "media_tag": "media2"
+    "media_tag": "media2",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_TENPERCENT__ROCKEFELLERS-DOLLAR-FIFTY-SECRET__V2.mp4",
@@ -1001,7 +1004,10 @@
      "Why attachment makes you",
      "poor forever"
     ],
-    "media_tag": "media2"
+    "media_tag": "media2",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_TENPERCENT__ROCKEFELLERS-DOLLAR-FIFTY-SECRET__V3.mp4",
@@ -1009,7 +1015,10 @@
      "A dollar fifty became",
      "$300 billion"
     ],
-    "media_tag": "media2"
+    "media_tag": "media2",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_TENPERCENT__ROCKEFELLERS-DOLLAR-FIFTY-SECRET__V4.mp4",
@@ -1017,7 +1026,10 @@
      "Why not giving costs",
      "you wealth"
     ],
-    "media_tag": "media2"
+    "media_tag": "media2",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_TENPERCENT__ROCKEFELLERS-DOLLAR-FIFTY-SECRET__V5.mp4",
@@ -1025,7 +1037,10 @@
      "Rockefeller's $1.50 job",
      "became $300 billion"
     ],
-    "media_tag": "media2"
+    "media_tag": "media2",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_TENPERCENT__ROCKEFELLERS-DOLLAR-FIFTY-SECRET__V6.mp4",
@@ -1033,7 +1048,10 @@
      "Kevin Trudeau explains Rockefeller's",
      "$300B habit"
     ],
-    "media_tag": "media2"
+    "media_tag": "media2",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_TENPERCENT__ROCKEFELLERS-DOLLAR-FIFTY-SECRET__V7.mp4",
@@ -1041,7 +1059,10 @@
      "Every paycheck 10%",
      "became $300 billion"
     ],
-    "media_tag": "media2"
+    "media_tag": "media2",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    }
   ],
   "posted": null

@@ -14777,12 +14777,25 @@
    "hook": "$1.50 a week became $300 billion",
    "bytes": 35035449,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261109225221F4AE8455DB235A26B249'}}"
+   },
    "media_tag": "media2",
    "scheduled_at": "2026-11-09T17:34",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DficdoYAJ00/",
+    "youtube": "https://youtube.com/shorts/5lglNUBCsXo"
+   },
+   "caption_at_post": "J.D. Rockefeller started his career on $1.50 a week - and gave 10% of it away immediately.\n\nHe kept that habit on every paycheck for the rest of his life, no matter how much he had.\n\nKevin Trudeau tells the story because Rockefeller said that single habit, not any deal he ever made, was the real secret to his fortune.\n\nHe died having given away the equivalent of $300 billion in today's money.\n\nWhat's stopping you from giving away 10% starting with your next paycheck?\n\n#kevintrudeau #jdrockefeller #wealthmindset #moneymindset #richmindset #givingback",
+   "posted_at": "2026-11-09T17:52"
   }
  ]
 }
