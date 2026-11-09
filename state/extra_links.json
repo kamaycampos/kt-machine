@@ -1,0 +1,20 @@
+{
+ "_why": "9 Nov 2026, Kamay: push Kevin's YouTube link, the free Herpes Cure ebook and Nuggets of Gold in clips and posts. Links from the affiliate portal, pages checked open 9 Nov. Only platforms where a link CLICKS (YouTube description, Facebook post). The Herpes Cure stays off Meta captions (Dustin, 24 Sep + 15 Oct: Meta may read 'cure' as a drug) and off TikTok (takedowns) - it lives in the bio and on YouTube. AR_ clips never get these (Yaren's). Edit lines here, not in code.",
+ "links": {
+  "show": "https://tv.kevintrudeau.com/?ref=a43c8j",
+  "nuggets": "https://book.nuggetsofgold.com/?ref=a43c8j",
+  "freewish": "https://freeyourwish.kevintrudeau.com/?ref=a43c8j",
+  "herpes": "https://herpescurebook.com/?ref=a43c8j"
+ },
+ "youtube": {
+  "always": ["Watch Kevin Trudeau's full shows free: {show}"],
+  "rotate": ["Kevin's new hardcover, Nuggets of Gold: {nuggets}",
+             "Free download, Your Wish Is Your Command: {freewish}",
+             "Free ebook by Kevin Trudeau, The Herpes Cure: {herpes}"]
+ },
+ "facebook": {
+  "always": ["Watch Kevin Trudeau's full shows free: {show}"],
+  "rotate": ["Kevin's new hardcover, Nuggets of Gold: {nuggets}",
+             "Free download, Your Wish Is Your Command: {freewish}"]
+ }
+}
