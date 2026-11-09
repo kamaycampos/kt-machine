@@ -14538,12 +14538,25 @@
    "hook": "Why you're weak in that office",
    "bytes": 29038191,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "scheduled_at": "2026-11-08T20:36",
    "cta_keyword": "MONEY",
    "cta_variant": 14,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfgMDdjj7sM/",
+    "youtube": "https://youtube.com/shorts/Lc7HFuHIAgc"
+   },
+   "caption_at_post": "A caller told Kevin Trudeau he was stuck in a toxic work environment and felt powerless to change it.\n\nKevin's answer was blunt: that means you're susceptible to other people's negativity. That means you're weak. Get strong enough that you change the environment, instead of letting it change you.\n\nHe says winners are at cause over their environment. Losers are at effect, always blaming the boss, the room, the other person.\n\nAre you running your environment, or is it running you?\n\n#kevintrudeau #mindset #success #wealthmindset #motivation #selfimprovement",
+   "posted_at": "2026-11-08T20:50"
   },
   {
    "file": "KT_UNDERTOWR2/01_FIVE-FRIENDS-YOUR-INCOME_165s.mp4",
