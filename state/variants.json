@@ -10,7 +10,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V2.mp4",
@@ -20,7 +20,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V3.mp4",
@@ -30,7 +30,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V4.mp4",
@@ -40,7 +40,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V5.mp4",
@@ -50,7 +50,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V6.mp4",
@@ -60,7 +60,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V7.mp4",
@@ -70,10 +70,9 @@
     ],
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    }
   ],
-  "posted": "2026-11-03T21:24",
   "scored": "2026-11-05T21:28"
  },
  "AR_POVERTYWAVE__YOUR-BRAIN-HAS-A-POVERTY-WAVE": {
@@ -332,7 +331,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V2.mp4",
@@ -342,7 +341,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V3.mp4",
@@ -352,7 +351,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V4.mp4",
@@ -362,7 +361,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V5.mp4",
@@ -372,7 +371,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V6.mp4",
@@ -382,7 +381,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELF__LIBERACES-SECRET-BOOK__V7.mp4",
@@ -392,7 +391,7 @@
     ],
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    }
   ],
   "posted": "2026-11-04T23:05",
@@ -599,7 +598,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V2.mp4",
@@ -609,7 +608,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V3.mp4",
@@ -619,7 +618,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V4.mp4",
@@ -629,7 +628,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V5.mp4",
@@ -639,7 +638,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V6.mp4",
@@ -649,7 +648,7 @@
     ],
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_COOP__THE-CHICKEN-MIND-TRICK__V7.mp4",
@@ -659,10 +658,9 @@
     ],
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    }
   ],
-  "posted": "2026-11-05T22:06",
   "scored": "2026-11-07T22:07"
  },
  "KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE": {
@@ -676,7 +674,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V2.mp4",
@@ -686,7 +684,7 @@
     ],
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V3.mp4",
@@ -696,7 +694,7 @@
     ],
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V4.mp4",
@@ -706,7 +704,7 @@
     ],
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V5.mp4",
@@ -716,7 +714,7 @@
     ],
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V6.mp4",
@@ -726,7 +724,7 @@
     ],
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_BOOKSHELFR2__ROCKEFELLER-GETTYS-ONE-RULE__V7.mp4",
@@ -736,10 +734,9 @@
     ],
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    }
   ],
-  "posted": "2026-11-06T16:46",
   "scored": "2026-11-08T16:52"
  },
  "KT_MAGNET__BITCOIN-20K-TO-67K": {
@@ -754,7 +751,7 @@
     "media_tag": "media2",
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V2.mp4",
@@ -765,7 +762,7 @@
     "media_tag": "media2",
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V3.mp4",
@@ -776,7 +773,7 @@
     "media_tag": "media2",
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V4.mp4",
@@ -787,7 +784,7 @@
     "media_tag": "media2",
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V5.mp4",
@@ -798,7 +795,7 @@
     "media_tag": "media2",
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V6.mp4",
@@ -809,7 +806,7 @@
     "media_tag": "media2",
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V7.mp4",
@@ -820,10 +817,9 @@
     "media_tag": "media2",
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    }
-  ],
-  "posted": "2026-11-09T13:09"
+  ]
  },
  "KT_UNDERTOWR2__FIVE-FRIENDS-YOUR-INCOME": {
   "clip": "KT_UNDERTOWR2/01_FIVE-FRIENDS-YOUR-INCOME_165s.mp4",
@@ -837,7 +833,7 @@
     "media_tag": "media2",
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_UNDERTOWR2__FIVE-FRIENDS-YOUR-INCOME__V2.mp4",
@@ -848,7 +844,7 @@
     "media_tag": "media2",
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_UNDERTOWR2__FIVE-FRIENDS-YOUR-INCOME__V3.mp4",
@@ -859,7 +855,7 @@
     "media_tag": "media2",
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_UNDERTOWR2__FIVE-FRIENDS-YOUR-INCOME__V4.mp4",
@@ -870,7 +866,7 @@
     "media_tag": "media2",
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_UNDERTOWR2__FIVE-FRIENDS-YOUR-INCOME__V5.mp4",
@@ -881,7 +877,7 @@
     "media_tag": "media2",
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_UNDERTOWR2__FIVE-FRIENDS-YOUR-INCOME__V6.mp4",
@@ -892,7 +888,7 @@
     "media_tag": "media2",
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 3
+    "tries": 0
    },
    {
     "rel": "_VARIANTS/VAR__KT_UNDERTOWR2__FIVE-FRIENDS-YOUR-INCOME__V7.mp4",
@@ -903,10 +899,9 @@
     "media_tag": "media2",
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
-    "tries": 3
+    "tries": 0
    }
-  ],
-  "posted": "2026-11-08T18:08"
+  ]
  },
  "AR_TRANCE__YOUR-MIND-IS-AN-UNTRAINED-DOG": {
   "clip": "AR_TRANCE/01_YOUR-MIND-IS-AN-UNTRAINED-DOG_92s.mp4",

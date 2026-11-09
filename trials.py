@@ -34,6 +34,18 @@ def _load():
 
 
 TRIES = 3          # runs an arm may fail in before it is given up
+# ONE ARM PER RUN (9 Nov 2026). Posting all 7 arms in one burst got 23 of 91 refused
+# "User is performing too many actions" (code 9) and 26 with a transient 500: Instagram
+# reads 7 reels in a minute as a bot. The post job runs every ~20 min, so one arm a run
+# spreads an experiment over 2-3 hours like a person. A refusal that is Instagram's
+# throttle or its own transient error is not the arm's fault: it waits, it costs no try.
+ARMS_PER_RUN = 1
+WAITS = 40         # throttled runs an arm may sit out before it is given up
+
+
+def _throttled(status):
+    s = str(status)
+    return "too many actions" in s or "'is_transient': True" in s or "is_transient\": true" in s
 RESERVE = 25       # API posts a day kept free for the real clips and their stories
 
 
@@ -74,8 +86,8 @@ def step(engine, poster, media_url, log=print):
             log(f"TRIAL {key}: waiting - Instagram can take {max(room, 0)} more API post(s) today "
                 f"after the {RESERVE} kept for real clips")
             break
-        log(f"TRIAL {key}: posting {len(todo)} hook variant(s) as Trial Reels")
-        for arm in todo:
+        log(f"TRIAL {key}: posting {min(len(todo), ARMS_PER_RUN)} of {len(todo)} hook variant(s) left as Trial Reels")
+        for arm in todo[:ARMS_PER_RUN]:
             path = os.path.join(engine.MEDIA, arm["rel"])
             try:
                 if not os.path.exists(path):
@@ -88,6 +100,11 @@ def step(engine, poster, media_url, log=print):
             ok = isinstance(res, tuple)
             arm["status"] = str(res[0] if ok else res)[:160]
             arm["id"] = poster.LAST_MEDIA_ID if ok else None
+            if not ok and _throttled(res) and arm.get("waits", 0) < WAITS:
+                arm["waits"] = arm.get("waits", 0) + 1
+                log(f"  {' / '.join(arm['hook'])}: Instagram throttled - waiting for the next run")
+                changed = True
+                break
             if not ok:
                 arm["tries"] = arm.get("tries", 0) + 1
             log(f"  {' / '.join(arm['hook'])}: {arm['status']}")
