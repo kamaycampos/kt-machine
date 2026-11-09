@@ -1,0 +1,53 @@
+{
+ "source": "v4oml32.mp4",
+ "brand": "KT_UNDERTOWR2R2R2",
+ "test": false,
+ "note": "9 Nov 2026 SYNC-RULE RETEST: refused only for UNCAPTIONED SPEECH with every word captioned (kt_sync_check now ignores a word captioned in the neighbouring caption). 9 Nov 2026 - second chance recut of LIBERACE-WORST-PIANIST-RICHEST (Rumble v4oml32). Weekly agent (same-day refill run): the _r3 cut failed on an uncaptioned-speech gap around 'he said, it was because [pause] of a book' - that pause can't be cut around without losing the reveal, so this try instead moves the END a few sentences later (through Kevin's own correction and the book's era) to re-time every caption in the clip, per PLANNING.md 2c.",
+ "clips": [
+  {
+   "slug": "LIBERACE-WORST-PIANIST-RICHEST",
+   "in": 261.0,
+   "out": 324.76,
+   "retry_of": "ep_v4oml32_r4/LIBERACE-WORST-PIANIST-RICHEST",
+   "start_words": "They asked Liberace, you're a",
+   "end_words": "I believe in the fifties",
+   "hook": [
+    "The worst piano player",
+    "became richest"
+   ],
+   "send": "A friend sends this to someone chasing raw talent instead of the right book - real awe, the surprising proof.",
+   "caption": "Liberace wasn't the best piano player of his generation. He said so himself.\n\nBut he became the wealthiest - a Las Vegas superstar, an international name, more successful than players with ten times his technical skill.\n\nKevin Trudeau says Liberace credited one single book for the difference: The Magic of Believing, which Kevin says was written sometime in the 1950s. Not more practice. Not more talent. One book, read and applied.\n\nWhat's the one resource you've been putting off that could actually change the outcome?\n\n#kevintrudeau #success #mindset #wealthmindset #motivation #books",
+   "opener": "vintage piano candelabra glow",
+   "trial_hooks": [
+    [
+     "Not the best,",
+     "still the richest"
+    ],
+    [
+     "Bad pianist became",
+     "a Vegas superstar"
+    ],
+    [
+     "Worst piano player,",
+     "biggest Vegas star"
+    ],
+    [
+     "Why talent never",
+     "made anyone rich"
+    ],
+    [
+     "Liberace wasn't best,",
+     "he was richest"
+    ],
+    [
+     "Kevin Trudeau's story",
+     "about Liberace's secret"
+    ],
+    [
+     "One book made",
+     "him the richest"
+    ]
+   ]
+  }
+ ]
+}

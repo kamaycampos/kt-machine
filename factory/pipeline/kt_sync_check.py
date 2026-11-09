@@ -187,11 +187,24 @@ def check(mp4):
     def said(w):
         n = norm(w)
         return bool(n) and not re.match(r"^\s*[\[\(\*]", w) and not re.fullmatch(r"(ha)+h?|(he){2,}h?", n)
+    # A WORD IN THE GAP THAT IS CAPTIONED NEXT DOOR IS NOT UNCAPTIONED (9 Nov 2026).
+    # 41 of 65 refusals in 10 days were this rule, many at "words captioned 100%"
+    # (LIBERACE: 100%, timing worst-10% 0.65s, failed for a 2.2s gap). Whisper's
+    # timestamp for a word sat in the gap while the very same word is on screen in
+    # the caption just before or after it - a timing nuance the timing grade above
+    # already judges. A hole now needs a heard word with NO caption word aligned to
+    # it in the two captions around the gap: deleted captions (YWIYC) and a dropped
+    # "So I..." still fail exactly as before.
+    burst_of = [bi for bi, (_a, _b, text) in enumerate(bursts) for _w in text.split()]
+    def captioned_near(hi, k):
+        ci = h2c.get(hi)
+        return ci is not None and ci < len(burst_of) and burst_of[ci] in (k, k + 1)
     holes = []
     for k in range(len(bursts) - 1):
         a, b = bursts[k][1], bursts[k + 1][0]
         if (b - a > 1.2 and speaking((a + b) / 2)
-                and any(a + 0.1 <= hs < b - 0.1 and said(w) for hs, _he, w in heard)):
+                and any(a + 0.1 <= hs < b - 0.1 and said(w) and not captioned_near(hi, k)
+                        for hi, (hs, _he, w) in enumerate(heard))):
             holes.append((round(a, 1), round(b, 1)))
     cw = sum(len(t.split()) for _a, _b, t in bursts)
     cover = cw / max(1, len(heard))

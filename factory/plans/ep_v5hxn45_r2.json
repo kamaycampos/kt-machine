@@ -1,0 +1,96 @@
+{
+ "source": "v5hxn45.mp4",
+ "brand": "KT_DELI",
+ "test": false,
+ "note": "9 Nov 2026 SYNC-RULE RETEST: refused only for UNCAPTIONED SPEECH with every word captioned (kt_sync_check now ignores a word captioned in the neighbouring caption). TWO-STRANGERS ended one word early ('offer me this' without 'gig'): out +0.45s. 9 Nov 2026 - 'How I Manifested $50K A Week! | TKTS Clips' (Rumble v5hxn45). Weekly agent (same-day refill run). Money/manifesting lane - the origin story of the Mega Memory infomercial deal, not the memory-technique demos already cut from v6v9urd (different angle, no overlap). Split into two arcs: the wish and the same-day double coincidence, then the contract race and the payoff. Skipped the career-history preamble (no story, just résumé) and the closing Transcendental Meditation chat (personal practice, not a money story).",
+ "clips": [
+  {
+   "slug": "TWO-STRANGERS-SAME-DAY",
+   "in": 121.76,
+   "out": 293.49,
+   "start_words": "I knew how to manifest",
+   "end_words": "offer me this gig.",
+   "hook": [
+    "$50,000 a week.",
+    "Two strangers appeared"
+   ],
+   "trial_hooks": [
+    [
+     "$50,000 a week,",
+     "no job required"
+    ],
+    [
+     "Why working hard",
+     "almost blocked this"
+    ],
+    [
+     "$50,000 wish became",
+     "two real offers"
+    ],
+    [
+     "Why you're still working",
+     "for $50,000"
+    ],
+    [
+     "Kevin Trudeau wished $50,000",
+     "Strangers delivered"
+    ],
+    [
+     "Kevin Trudeau manifested $50,000",
+     "a week"
+    ],
+    [
+     "A month later, two",
+     "strangers appeared"
+    ]
+   ],
+   "send": "A friend forwards this to someone grinding at a 9-to-5: proof that two total strangers handed Kevin Trudeau a payday the same day he wished for it - pure awe.",
+   "caption": "Kevin Trudeau once decided exactly what he wanted: $50,000 a week, no job, nothing to do but travel.\n\nA month later he's eating at a shared table in a New York deli, and the stranger next to him turns out to be a TV infomercial guy who tells him to put his memory course on television.\n\nThat same day, a voicemail is waiting back at his hotel - from a completely different friend who also wants to put him on TV.\n\nTwo unrelated people, the same offer, the same day, out of nowhere.\n\nWould you call that a coincidence?\n\n#kevintrudeau #manifestation #wealthmindset #successstory #lawofattraction #moneymindset",
+   "retry_of": "ep_v5hxn45/TWO-STRANGERS-SAME-DAY"
+  },
+  {
+   "slug": "THE-CONTRACT-RACE-256K-WEEK",
+   "in": 310.4,
+   "out": 388.32,
+   "start_words": "Ed sends me the contract",
+   "end_words": "just got a check automatically.",
+   "hook": [
+    "First check $52,000",
+    "Never worked again"
+   ],
+   "trial_hooks": [
+    [
+     "$450 million total sales",
+     "one deal"
+    ],
+    [
+     "Why the weekly grind",
+     "stopped mattering"
+    ],
+    [
+     "One deal became $256,000",
+     "a week"
+    ],
+    [
+     "Why you work weekly",
+     "for less"
+    ],
+    [
+     "Kevin Trudeau's check hit",
+     "$256,000 once"
+    ],
+    [
+     "Kevin Trudeau never worked",
+     "again, ever"
+    ],
+    [
+     "$180M in 18 months",
+     "then nothing"
+    ]
+   ],
+   "send": "A friend sends this to a coworker venting about payday: proof someone once collected $256,000 in a single week for doing nothing at all - pure awe.",
+   "caption": "Two infomercial guys raced to sign Kevin Trudeau first - whoever's contract arrived fastest got the deal.\n\nEd Beckley won by Federal Express, back when that still meant something. They shot the show in Fairfield, Iowa and put the memory course on TV.\n\nThe result: $450 million in sales, $180 million in the first 18 months, and a weekly check that hit $256,000 at its peak.\n\nHe never worked again after that. The checks just kept coming in the mail.\n\nWhat would you do with a check like that every week?\n\n#kevintrudeau #megamemory #passiveincome #wealthmindset #successstory #moneymindset",
+   "retry_of": "ep_v5hxn45/THE-CONTRACT-RACE-256K-WEEK"
+  }
+ ]
+}
