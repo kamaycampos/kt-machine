@@ -1,0 +1,101 @@
+{
+ "KT (Kamay)": {
+  "windows": [
+   {
+    "from": "2026-08-17",
+    "to": "2026-08-31",
+    "reach": 2749,
+    "followers": 47,
+    "non_followers": 2700
+   },
+   {
+    "from": "2026-08-31",
+    "to": "2026-09-14",
+    "reach": 146973,
+    "followers": 2170,
+    "non_followers": 145218
+   },
+   {
+    "from": "2026-09-14",
+    "to": "2026-09-28",
+    "reach": 41711,
+    "followers": 1855,
+    "non_followers": 40338
+   },
+   {
+    "from": "2026-09-28",
+    "to": "2026-10-12",
+    "reach": 23447,
+    "followers": 1026,
+    "non_followers": 22599
+   },
+   {
+    "from": "2026-10-12",
+    "to": "2026-10-26",
+    "reach": 22151,
+    "followers": 895,
+    "non_followers": 21278
+   },
+   {
+    "from": "2026-10-26",
+    "to": "2026-11-09",
+    "reach": 9923,
+    "followers": 731,
+    "non_followers": 9176
+   }
+  ],
+  "username": "kevin_trudeau_student",
+  "followers": 4589,
+  "posts": 381
+ },
+ "AR (Yaren)": {
+  "windows": [
+   {
+    "from": "2026-08-17",
+    "to": "2026-08-31",
+    "reach": 3461,
+    "followers": 22,
+    "non_followers": 3434
+   },
+   {
+    "from": "2026-08-31",
+    "to": "2026-09-14",
+    "reach": 2552,
+    "followers": 35,
+    "non_followers": 2521
+   },
+   {
+    "from": "2026-09-14",
+    "to": "2026-09-28",
+    "reach": 4655,
+    "followers": 49,
+    "non_followers": 4626
+   },
+   {
+    "from": "2026-09-28",
+    "to": "2026-10-12",
+    "reach": 5547,
+    "followers": 83,
+    "non_followers": 5507
+   },
+   {
+    "from": "2026-10-12",
+    "to": "2026-10-26",
+    "reach": 6883,
+    "followers": 107,
+    "non_followers": 6813
+   },
+   {
+    "from": "2026-10-26",
+    "to": "2026-11-09",
+    "reach": 10292,
+    "followers": 99,
+    "non_followers": 10222
+   }
+  ],
+  "username": "theawakenedrise",
+  "followers": 244,
+  "posts": 309
+ },
+ "measured": "2026-11-09T23:01"
+}
