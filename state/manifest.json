@@ -14447,12 +14447,25 @@
    "hook": "Bitcoin at $20,000 Now it's $67,000",
    "bytes": 77610549,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "scheduled_at": "2026-11-09T07:28",
    "cta_keyword": "BRAIN",
    "cta_variant": 15,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfhVWTGjiq6/",
+    "youtube": "https://youtube.com/shorts/SsNwA4B_Hww"
+   },
+   "caption_at_post": "A year ago, Kevin Trudeau told his private channel Bitcoin had a strong shot at breaking $60,000 within twelve months.\n\nHe wasn't guaranteeing anything - just sharing what his insider contacts in Dubai and the Cayman Islands were seeing.\n\nBitcoin just hit $67,000. Put $20,000 in back then and you'd have $67,000 today - a three times return in a single year.\n\nThe people who heard it and did nothing are still waiting. What's the one call you keep putting off?\n\n#kevintrudeau #bitcoin #crypto #investing #wealthmindset #money",
+   "posted_at": "2026-11-09T07:32"
   },
   {
    "file": "KT_MAGNET/01_MANIFESTING-STARTS-WITH-RAGE_40s.mp4",

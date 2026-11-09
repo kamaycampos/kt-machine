@@ -751,7 +751,10 @@
      "Bitcoin hit $67,000",
      "in twelve months"
     ],
-    "media_tag": "media2"
+    "media_tag": "media2",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V2.mp4",
@@ -759,7 +762,10 @@
      "The sidelines cost",
      "you $47,000"
     ],
-    "media_tag": "media2"
+    "media_tag": "media2",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V3.mp4",
@@ -767,7 +773,10 @@
      "$20,000 became",
      "$67,000 in a year"
     ],
-    "media_tag": "media2"
+    "media_tag": "media2",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V4.mp4",
@@ -775,7 +784,10 @@
      "$47,000 gain missed",
      "while you waited"
     ],
-    "media_tag": "media2"
+    "media_tag": "media2",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V5.mp4",
@@ -783,7 +795,10 @@
      "Kevin's $67,000 call",
      "already happened"
     ],
-    "media_tag": "media2"
+    "media_tag": "media2",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V6.mp4",
@@ -791,7 +806,10 @@
      "Kevin Trudeau's $67,000",
      "bitcoin call"
     ],
-    "media_tag": "media2"
+    "media_tag": "media2",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V7.mp4",
@@ -799,7 +817,10 @@
      "A year ago",
      "$20K became $67K"
     ],
-    "media_tag": "media2"
+    "media_tag": "media2",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "id": null,
+    "tries": 1
    }
   ],
   "posted": null
