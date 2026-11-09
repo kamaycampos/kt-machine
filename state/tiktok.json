@@ -1,10 +1,10 @@
 {
- "at": "2026-11-08T22:27",
+ "at": "2026-11-09T03:09",
  "profile": {
+  "video_count": 166,
   "follower_count": 408,
   "following_count": 8,
-  "likes_count": 5880,
-  "video_count": 166
+  "likes_count": 5880
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -49,7 +49,7 @@
   },
   "KT_SPIRITUAL/02_WHY-LOSING-IT-ALL-DIDNT-HURT_70s.mp4": {
    "id": "7692625004940250381",
-   "view_count": 7,
+   "view_count": 8,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -489,7 +489,7 @@
   },
   "KT_RICH/02_BALANCE-IS-A-MYTH_73s.mp4": {
    "id": "7688148098480098573",
-   "view_count": 519,
+   "view_count": 520,
    "like_count": 40,
    "comment_count": 2,
    "share_count": 6,
@@ -579,7 +579,7 @@
   },
   "KT_RICH/02_WHAT-RICH-PEOPLE-BUY_54s.mp4": {
    "id": "7686887912297843981",
-   "view_count": 2358,
+   "view_count": 2359,
    "like_count": 79,
    "comment_count": 5,
    "share_count": 12,
@@ -669,7 +669,7 @@
   },
   "KT_LIES/02_WEALTHY-PEOPLE-LIVE-BELOW_68s.mp4": {
    "id": "7685930943705566477",
-   "view_count": 14174,
+   "view_count": 14176,
    "like_count": 869,
    "comment_count": 59,
    "share_count": 196,
@@ -769,7 +769,7 @@
   },
   "KT_HOME/02_02_WHY-RICH-HOMES-ARE-FULL-OF-OLD-THINGS_85s.mp4": {
    "id": "7685065417743797518",
-   "view_count": 3490,
+   "view_count": 3491,
    "like_count": 270,
    "comment_count": 6,
    "share_count": 43,
