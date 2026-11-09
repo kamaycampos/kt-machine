@@ -14580,12 +14580,25 @@
    "hook": "Earned $3,000 a month Then this",
    "bytes": 110556407,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "scheduled_at": "2026-11-09T11:02",
    "cta_keyword": "BRAIN",
    "cta_variant": 17,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Dfhuj8kE0xS/",
+    "youtube": "https://youtube.com/shorts/1YU8R5PMuiI"
+   },
+   "caption_at_post": "Kevin Trudeau met a man in Beverly Hills worth a couple hundred million dollars and asked how he started.\n\nA 650-square-foot studio apartment. A job earning $3,000 a month, plus nights and weekends on a side business.\n\nThe real secret wasn't the income - it was what he refused to do. He never raised his overhead as the money grew. He invested the difference and stayed near people already living where he wanted to go.\n\nHundreds of thousands became millions, then tens of millions. Most people never get there, because they raise their spending the moment they raise their income.\n\n#kevintrudeau #wealthmindset #personalfinance #success #investing #money",
+   "posted_at": "2026-11-09T11:13"
   },
   {
    "file": "KT_UNDERTOW/01_TOXIC-WORK-ENVIRONMENT-WEAK_40s.mp4",
