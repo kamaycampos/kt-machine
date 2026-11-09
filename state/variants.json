@@ -754,7 +754,7 @@
     "media_tag": "media2",
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 1
+    "tries": 2
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V2.mp4",
@@ -765,7 +765,7 @@
     "media_tag": "media2",
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 1
+    "tries": 2
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V3.mp4",
@@ -776,7 +776,7 @@
     "media_tag": "media2",
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 1
+    "tries": 2
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V4.mp4",
@@ -787,7 +787,7 @@
     "media_tag": "media2",
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 1
+    "tries": 2
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V5.mp4",
@@ -798,7 +798,7 @@
     "media_tag": "media2",
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 1
+    "tries": 2
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V6.mp4",
@@ -809,7 +809,7 @@
     "media_tag": "media2",
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 1
+    "tries": 2
    },
    {
     "rel": "_VARIANTS/VAR__KT_MAGNET__BITCOIN-20K-TO-67K__V7.mp4",
@@ -820,7 +820,7 @@
     "media_tag": "media2",
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
     "id": null,
-    "tries": 1
+    "tries": 2
    }
   ],
   "posted": null
