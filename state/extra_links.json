@@ -7,14 +7,23 @@
   "herpes": "https://herpescurebook.com/?ref=a43c8j"
  },
  "youtube": {
-  "always": ["Watch Kevin Trudeau's full shows free: {show}"],
-  "rotate": ["Kevin's new hardcover, Nuggets of Gold: {nuggets}",
-             "Free download, Your Wish Is Your Command: {freewish}",
-             "Free ebook by Kevin Trudeau, The Herpes Cure: {herpes}"]
+  "always": [
+   "Watch Kevin Trudeau's full shows free: {show}"
+  ],
+  "rotate": [
+   "Kevin's new hardcover, Nuggets of Gold: {nuggets}",
+   "Free download, Your Wish Is Your Command: {freewish}",
+   "Free ebook by Kevin Trudeau, The Herpes Cure: {herpes}"
+  ]
  },
  "facebook": {
-  "always": ["Watch Kevin Trudeau's full shows free: {show}"],
-  "rotate": ["Kevin's new hardcover, Nuggets of Gold: {nuggets}",
-             "Free download, Your Wish Is Your Command: {freewish}"]
- }
+  "always": [
+   "Watch Kevin Trudeau's full shows free: {show}"
+  ],
+  "rotate": [
+   "Kevin's new hardcover, Nuggets of Gold: {nuggets}",
+   "Free download, Your Wish Is Your Command: {freewish}"
+  ]
+ },
+ "tiktok_follow": "Follow for the next money rule the rich don't teach."
 }

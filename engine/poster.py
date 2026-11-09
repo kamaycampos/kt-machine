@@ -567,6 +567,16 @@ def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
     # question post used to leave it out there.
     if platform == "youtube" and url and url not in (cta or "") and cred_prefix(brand) != "AR":
         cta = ((cta or "") + f"\n\nGet access here: {url}").strip()
+    # TIKTOK SHOP NEEDS 1,000 FOLLOWERS (9 Nov 2026). One KT clip reached 107,500 views on
+    # TikTok and brought 76 followers: nothing asked them to follow. Every TikTok caption
+    # of Kamay's brands now ends on a follow line (state/extra_links.json "tiktok_follow").
+    if platform == "tiktok" and cred_prefix(brand) != "AR":
+        try:
+            _fl = json.load(open(_EXTRA)).get("tiktok_follow", "")
+        except (OSError, ValueError):
+            _fl = ""
+        if _fl and _fl not in (cta or ""):
+            cta = ((cta or "") + "\n" + _fl).strip()
     if platform in ("youtube", "facebook") and cred_prefix(brand) != "AR":
         more = [l for l in extra_link_lines(platform, cap) if l not in (cta or "")]
         if more:

@@ -1,5 +1,34 @@
 # Hooks and story - the patterns the planner works from
 
+## THE HOOK RULE - READ BEFORE ANYTHING ELSE (9 Nov 2026, every brand of Kamay's)
+Kamay, 9 Nov: "the hooks are still very weak... come up with a rule that ALWAYS gives the best,
+most efficient hooks." What 258 KT clips with real Instagram numbers say (posted before 7 Nov):
+
+1. **THE TOPIC IS THE HOOK'S FUEL. Pick the moment for it.** Clips about something the viewer
+   OWNS or lives with every day - their mortgage, house, credit card, car, debt, bank, taxes,
+   paycheck (WB: their food, their cholesterol, their skin, their water) - got a median **727
+   views vs 302** for everything else (n=17, LOW but the biggest effect we have; the all-time
+   tops are all this: mortgage 8,545 · your house 7,497 · rich cards can't carry debt 2,460 IG +
+   **107,500 TikTok**). Abstract self-help (pain, suffering, excuses, habits, mindset, manifesting
+   steps, "two ears one mouth") median 273. **Every day, at least 2 of KT's clips are
+   owned-money-object moments when the episodes have them; say so in the plan note when they do not.**
+2. **The hook names THEIR thing and says the opposite of what they believe**, or a specific sum
+   with a twist: `Why your house is keeping you broke` · `Why a mortgage is a scam` · `He lost
+   $65M. Then this` (skip 24%, best hold) · `How $300 million was never real`.
+3. **Never a famous name without stakes for the viewer** (`How this book made Liberace rich` 57,
+   `What Michael Jordan missed the most` 66). A name only next to a sum or an outcome.
+4. **Words are judged by Trial Reels, not by us.** Word rules separate weakly: the strictest
+   word gate we tested would have blocked 14 of the top 30 clips; "you/your" makes no difference
+   (306 vs 327). So every day one clip goes out with 7 hooks to non-followers (fixed 9 Nov: the
+   7-in-a-burst posting was being refused by Instagram) and `state/variants.json` keeps the
+   winners. **Before writing hooks, read the last scored winners and copy their SHAPE.** The growth
+   strategist rewrites this section's examples from those winners - the rule updates itself.
+5. **Per platform:** TikTok and Instagram reward the hook; YouTube is capped by retention (the
+   hook barely matters there). Never judge a hook by one platform's numbers.
+
+This applies to KT and WB (Kamay's). Yaren's AR and VSC follow it only after her yes.
+
+
 Adapted for Kamay from the master content prompt he was taught (Daniel's workshop, Sept 2026),
 plus what this account's own numbers have proven. Our hook is **two short lines, six words total**,
 burned on the clip for the first 3 seconds, so every pattern below is compressed to that size.
