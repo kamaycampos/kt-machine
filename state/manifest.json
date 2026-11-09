@@ -14541,12 +14541,25 @@
    "hook": "He turned $100,000 into $600,000 fast",
    "bytes": 117549375,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "scheduled_at": "2026-11-09T11:58",
    "cta_keyword": "MONEY",
    "cta_variant": 18,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Dfh1b0sCs_J/",
+    "youtube": "https://youtube.com/shorts/EBqHCg3CgXE"
+   },
+   "caption_at_post": "Kevin Trudeau once bought a stock at $2.50 a share. It shot up to $12 - six times his money - and he sold, thrilled with the win.\n\nThen it kept climbing. $13, $14, $18, $19. He called a billionaire friend to vent about selling too soon.\n\nHis friend's answer: \"Shut up. You made six times your money. Someone else bought your shares at $12 and now has a stock worth $19 - aren't you happy for him too?\" The lesson: once you sell, stop watching the price.\n\nWhere in your life are you still watching a price you already cashed out of?\n\n#kevintrudeau #investing #stockmarket #mindset #wealthmindset #money",
+   "posted_at": "2026-11-09T12:13"
   },
   {
    "file": "KT_MAGNET/02_PRISON-TO-HUNDREDS-OF-MILLIONS_48s.mp4",
