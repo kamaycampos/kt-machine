@@ -353,8 +353,14 @@ def closes_wrong(verify_out, named):
     # returns it clipped ("career perspe" for "career perspective"). 23 Sept
     # 2026: that threw away a perfectly cut clip. Match the final word by
     # prefix, in either direction.
+    # 8 Nov 2026: whisper heard 'aim too low and hip' for '...and hit' and a
+    # clean cut was thrown away. The word before must already match exactly,
+    # so a one-letter slip past the first two letters is the same word.
     def same(a, b):
-        return a == b or a.startswith(b) or b.startswith(a)
+        if a == b or a.startswith(b) or b.startswith(a):
+            return True
+        return (len(a) == len(b) >= 3 and a[:2] == b[:2]
+                and sum(x != y for x, y in zip(a, b)) == 1)
     for i in range(len(got) - len(want) + 1):
         pair = got[i:i + len(want)]
         if len(pair) == len(want) and pair[0] == want[0] and same(pair[-1], want[-1]):
