@@ -1,52 +1,26 @@
-## ar_v4rcljt_p2_r3: 0 of 1 clip(s) passed every gate
+## ar_v71ktjy_p2: 2 of 2 clip(s) passed every gate
 
 
-## 2026-11-08 14:40
-  note AR_DECEPTIONR3/ALL-NATURAL-MEANS-NOTHING-AT-ALL: ending kept on the planner's words 'It means nothing' (cuts mid-sentence)
-ar_v4rcljt_p2_r3__s0 (AR_DECEPTIONR3): 1 of 1 passed pre-render gates
+## 2026-11-09 11:42
+  note AR_PROGRAMMED/YOUR-RAGE-HAS-A-HIDDEN-SWITCH: ending kept on the planner's words 'this world lost that' (cuts mid-sentence)
+ar_v71ktjy_p2__s0 (AR_PROGRAMMED): 2 of 2 passed pre-render gates
 
-RENDER ar_v4rcljt_p2_r3__s0
-  FAIL 01_ALL-NATURAL-MEANS-NOTHING-AT-ALL_94s.mp4: [FAIL] 01_ALL-NATURAL-MEANS-NOTHING-AT-ALL_94s.mp4            14 captions vs the sound  median +0.22s  worst-10% 1.35s  | words captioned 99%  UNCAPTIONED SPEECH [(63.2, 65.5), (85.1, 86.8)]
-
-
-- **RETIRED** after 2 runs with nothing passing; its clips go back to the planner (factory/plans/_failed.json)
-
-## ep_v4oml32_r3: 0 of 1 clip(s) passed every gate
-
-
-## 2026-11-08 14:40
-  note KT_UNDERTOWR2R2/LIBERACE-WORST-PIANIST-RICHEST: ending kept on the planner's words 'the magic of believing' (cuts mid-sentence)
-ep_v4oml32_r3__s0 (KT_UNDERTOWR2R2): 1 of 1 passed pre-render gates
-
-RENDER ep_v4oml32_r3__s0
-  WARP 01_LIBERACE-WORST-PIANIST-RICHEST_53s.mp4: ST-PIANIST-RICHEST_53s.mp4              10 captions vs the sound  median +0.02s  worst-10% 1.01s  | words captioned 100% - re-timing each caption once
-  FAIL 01_LIBERACE-WORST-PIANIST-RICHEST_53s.mp4: [FAIL] 01_LIBERACE-WORST-PIANIST-RICHEST_53s.mp4              11 captions vs the sound  median -0.00s  worst-10% 0.16s  | words captioned 100%  UNCAPTIONED SPEECH [(27.9, 30.1)]
+RENDER ar_v71ktjy_p2__s0
+  PASS 01_YOUR-RAGE-HAS-A-HIDDEN-SWITCH_138s.mp4  01_YOUR-RAGE-HAS-A-HIDDEN-SWITCH_138s.mp4              23 captions vs the sound  median +0
+       FIRST 5s : He pushed your buttons. Yeah. He pushed your button. He really pushed. | LAST  8s : Hug and off you go. That's beautiful. Yeah, I think it's actually really beautiful. I mean, this world lost that.
+  PASS 02_YOU-DONT-KNOW-YOU-DONT-KNOW_109s.mp4  02_YOU-DONT-KNOW-YOU-DONT-KNOW_109s.mp4                31 captions vs the sound  median +0
+       FIRST 5s : You get in your car, and you're thinking about 10 things, and then you pull into your driveway. | LAST  8s : Unconsciously competent for a period of time before it becomes a habit. Then you are unconsciously competent. Then you just do it automatically.
+TEST MODE - passing clips NOT uploaded or queued: AR_PROGRAMMED
 
 
-- **RETIRED** after 2 runs with nothing passing; its clips go back to the planner (factory/plans/_failed.json)
+- **NOT QUEUED** `01_YOUR-RAGE-HAS-A-HIDDEN-SWITCH_138s.mp4` - sentence starts with no stop: "really He"; word repeated after one: "really He really"
 
-## ep_v56da5e: 0 of 1 clip(s) passed every gate
+## UPLOAD
+1 clip(s) to add:
+   AR_PROGRAMMED/02_YOU-DONT-KNOW-YOU-DONT-KNOW_109s.mp4  (53 MB)
+      + 02_YOU-DONT-KNOW-YOU-DONT-KNOW_109s__story.mp4
+      + 02_YOU-DONT-KNOW-YOU-DONT-KNOW_109s__yt59.mp4
+   added AR_PROGRAMMED/02_YOU-DONT-KNOW-YOU-DONT-KNOW_109s.mp4  (release media2)
 
-
-## 2026-11-08 14:45
-  note KT_SKYLINE/NEED-IT-NOT-WANT-IT: ending kept on the planner's words 'the windows of heaven open' (cuts mid-sentence)
-ep_v56da5e__s0 (KT_SKYLINE): 1 of 1 passed pre-render gates
-
-RENDER ep_v56da5e__s0
-  WARP 01_NEED-IT-NOT-WANT-IT_86s.mp4: WANT-IT_86s.mp4                         25 captions vs the sound  median +0.02s  worst-10% 0.73s  | words captioned 103% - re-timing each caption once
-  FAIL 01_NEED-IT-NOT-WANT-IT_86s.mp4: ends off the planned words: plan ends 'the windows of heaven open', clip ends 'if you did actually have it'
-
-
-- **RETIRED** after 2 runs with nothing passing; its clips go back to the planner (factory/plans/_failed.json)
-
-## ep_v5d9snl_r6: 0 of 1 clip(s) passed every gate
-
-
-## 2026-11-08 14:56
-ep_v5d9snl_r6__s0 (KT_UPLIFTR2R2R2R2R2): 1 of 1 passed pre-render gates
-
-RENDER ep_v5d9snl_r6__s0
-  FAIL 01_AIM-TOO-LOW-STILL-FAIL_88s.mp4: ends off the planned words: plan ends 'aim too low and hit', clip ends 'they aim too low and hip'
-
-
-- **RETIRED** after 2 runs with nothing passing; its clips go back to the planner (factory/plans/_failed.json)
+manifest now holds 594 clips
+commit and push state/manifest.json to let the machine see them

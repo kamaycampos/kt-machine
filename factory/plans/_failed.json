@@ -12241,6 +12241,24 @@
     "The real reason",
     "most people fail"
    ]
+  },
+  "ar_v71ktjy_p2/YOUR-RAGE-HAS-A-HIDDEN-SWITCH": {
+   "plan": "ar_v71ktjy_p2",
+   "source": "v71ktjy.mp4",
+   "brand": "AR_PROGRAMMED",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_YOUR-RAGE-HAS-A-HIDDEN-SWITCH_138s.mp4` - sentence starts with no stop: \"really He\"; word repeated after one: \"really He really\""
+   ],
+   "slug": "YOUR-RAGE-HAS-A-HIDDEN-SWITCH",
+   "in": 2614.48,
+   "out": 2752.56,
+   "start_words": "he pushed your buttons",
+   "end_words": "this world lost that",
+   "hook": [
+    "Your rage has",
+    "a hidden switch."
+   ]
   }
  },
  "attempts": {
