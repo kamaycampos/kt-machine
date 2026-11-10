@@ -10277,5 +10277,40 @@
     "caption": "Two infomercial guys raced to sign Kevin Trudeau first - whoever's contract arrived fastest got the deal.\n\nEd Beckley won by Federal Express, back when that still meant something. They shot the show in Fairfield, Iowa and put the memory course on TV.\n\nThe result: $450 million in sales, $180 million in the first 18 months, and a weekly check that hit $256,000 at its peak.\n\nHe never worked again after that. The checks just kept coming in the mail.\n\nWhat would you do with a check like that every week?\n\n#kevintrudeau #megamemory #passiveincome #wealthmindset #successstory #moneymindset"
    }
   ]
+ },
+ "ep_v4oml32_r6": {
+  "source": "v4oml32.mp4",
+  "brand": "KT_UNDERTOWR2R2R2",
+  "note": "9 Nov 2026 END-SNAP PROOF: ends were refused one word early ('gig' starts 60 ms after the planned out); kt_batch_build now snaps the out to the named last words. Same cut otherwise. 9 Nov 2026 SYNC-RULE RETEST: refused only for UNCAPTIONED SPEECH with every word captioned (kt_sync_check now ignores a word captioned in the neighbouring caption). 9 Nov 2026 - second chance recut of LIBERACE-WORST-PIANIST-RICHEST (Rumble v4oml32). Weekly agent (same-day refill run): the _r3 cut failed on an uncaptioned-speech gap around 'he said, it was because [pause] of a book' - that pause can't be cut around without losing the reveal, so this try instead moves the END a few sentences later (through Kevin's own correction and the book's era) to re-time every caption in the clip, per PLANNING.md 2c.",
+  "clips": [
+   {
+    "slug": "LIBERACE-WORST-PIANIST-RICHEST",
+    "in": 261.9,
+    "out": 326.35,
+    "hook": [
+     "The worst piano player",
+     "became richest"
+    ],
+    "caption": "Liberace wasn't the best piano player of his generation. He said so himself.\n\nBut he became the wealthiest - a Las Vegas superstar, an international name, more successful than players with ten times his technical skill.\n\nKevin Trudeau says Liberace credited one single book for the difference: The Magic of Believing, which Kevin says was written sometime in the 1950s. Not more practice. Not more talent. One book, read and applied.\n\nWhat's the one resource you've been putting off that could actually change the outcome?\n\n#kevintrudeau #success #mindset #wealthmindset #motivation #books"
+   }
+  ]
+ },
+ "ep_v4oml32_r7": {
+  "source": "v4oml32.mp4",
+  "brand": "KT_UNDERTOWR2R2R2",
+  "note": "10 Nov proof: ending cut in the first real pause after the named words (kt_payoff.first_pause).",
+  "clips": []
+ },
+ "ep_v5hxn45_r3": {
+  "source": "v5hxn45.mp4",
+  "brand": "KT_DELI",
+  "note": "9 Nov 2026 END-SNAP PROOF: ends were refused one word early ('gig' starts 60 ms after the planned out); kt_batch_build now snaps the out to the named last words. Same cut otherwise. 9 Nov 2026 SYNC-RULE RETEST: refused only for UNCAPTIONED SPEECH with every word captioned (kt_sync_check now ignores a word captioned in the neighbouring caption). TWO-STRANGERS ended one word early ('offer me this' without 'gig'): out +0.45s. 9 Nov 2026 - 'How I Manifested $50K A Week! | TKTS Clips' (Rumble v5hxn45). Weekly agent (same-day refill run). Money/manifesting lane - the origin story of the Mega Memory infomercial deal, not the memory-technique demos already cut from v6v9urd (different angle, no overlap). Split into two arcs: the wish and the same-day double coincidence, then the contract race and the payoff. Skipped the career-history preamble (no story, just résumé) and the closing Transcendental Meditation chat (personal practice, not a money story).",
+  "clips": []
+ },
+ "ep_v5hxn45_r4": {
+  "source": "v5hxn45.mp4",
+  "brand": "KT_DELI",
+  "note": "10 Nov proof: ending cut in the first real pause after the named words (kt_payoff.first_pause).",
+  "clips": []
  }
 }

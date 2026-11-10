@@ -1124,5 +1124,67 @@
    }
   ],
   "posted": null
+ },
+ "KT_UNDERTOWR2R2R2__LIBERACE-WORST-PIANIST-RICHEST": {
+  "clip": "KT_UNDERTOWR2R2R2/01_LIBERACE-WORST-PIANIST-RICHEST_64s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_UNDERTOWR2R2R2__LIBERACE-WORST-PIANIST-RICHEST__V1.mp4",
+    "hook": [
+     "Not the best,",
+     "still the richest"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_UNDERTOWR2R2R2__LIBERACE-WORST-PIANIST-RICHEST__V2.mp4",
+    "hook": [
+     "Bad pianist became",
+     "a Vegas superstar"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_UNDERTOWR2R2R2__LIBERACE-WORST-PIANIST-RICHEST__V3.mp4",
+    "hook": [
+     "Worst piano player,",
+     "biggest Vegas star"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_UNDERTOWR2R2R2__LIBERACE-WORST-PIANIST-RICHEST__V4.mp4",
+    "hook": [
+     "Why talent never",
+     "made anyone rich"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_UNDERTOWR2R2R2__LIBERACE-WORST-PIANIST-RICHEST__V5.mp4",
+    "hook": [
+     "Liberace wasn't best,",
+     "he was richest"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_UNDERTOWR2R2R2__LIBERACE-WORST-PIANIST-RICHEST__V6.mp4",
+    "hook": [
+     "Kevin Trudeau's story",
+     "about Liberace's secret"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_UNDERTOWR2R2R2__LIBERACE-WORST-PIANIST-RICHEST__V7.mp4",
+    "hook": [
+     "One book made",
+     "him the richest"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }
