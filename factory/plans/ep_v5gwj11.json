@@ -1,0 +1,27 @@
+{
+  "source": "v5gwj11.mp4",
+  "brand": "KT_SCORECARD",
+  "test": false,
+  "note": "10 Nov 2026 - 'Tips & Tricks to Improve the Quality of Your Life | The Kevin Trudeau Show | Ep. 52' (Rumble v5gwj11). Weekly agent (afternoon/refill run). Most of this episode is the FTC legal update and fan-club donation pitch (skip: sales pitch), plus a stretch - feng shui house, the AI-written manifesting book, self-image, the heirloom, Mark Cuban's charge card - that is a word-for-word repeat of ep_v5hfvrp (already planned as KT_LANTERN/KT_LANTERNR2): skipped as a duplicate topic/recording. Only the credit-bureau reporting-date trick (not in v5hfvrp's plan) is new. One clip only; the rest of the episode has no new teaching worth posting.",
+  "clips": [
+    {
+      "slug": "CREDIT-SCORE-5-DAY-TRICK",
+      "in": 2911.0,
+      "out": 3004.0,
+      "start_words": "Your credit report looks at your credit cards",
+      "end_words": "or refinance a home",
+      "hook": ["Add 15 points", "before you apply"],
+      "trial_hooks": [
+        ["A $1,000 balance", "costs 15 points"],
+        ["Your bank hides points", "on purpose"],
+        ["Zero balance still", "costs you 15"],
+        ["Why your credit score", "stays low"],
+        ["Homebuyers lose 15 points", "for nothing"],
+        ["Kevin Trudeau's secret", "credit trick"],
+        ["Your bank lies about", "your balance"]
+      ],
+      "send": "A homebuyer sends this to a friend about to refinance, anxious that an old balance is quietly costing them a better rate.",
+      "caption": "Kevin Trudeau says almost nobody knows this about their credit score.\n\nYour card doesn't report your balance the day you pay the bill. It reports to the bureau 5 to 10 days before your statement cycle closes - while you're still carrying whatever you charged that month.\n\nPut $1,000 on a $10,000 limit and pay it off later in full, and the bureau can still show that $1,000 sitting there, dragging your score down.\n\nPay the balance before your reporting date instead, and your score can jump 15 points almost overnight - the difference between a good mortgage rate and a declined application.\n\nWhen did you last check your card's reporting date?\n\n#kevintrudeau #creditscore #moneytips #financialliteracy #creditcards #wealthmindset"
+    }
+  ]
+}
