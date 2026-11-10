@@ -1,0 +1,28 @@
+{
+  "source": "v5d9snl.mp4",
+  "brand": "KT_UPLIFTR2R2R2R2R2R2",
+  "test": false,
+  "note": "10 Nov 2026 - second-chance re-cut of 'Success Habits: How To Feel Hopeful | The Kevin Trudeau Show | Ep. 44' (Rumble v5d9snl). Weekly agent (afternoon/refill run). BUYS-A-HOUSE-NOT-A-HOME (tries 2): both prior tries (original, r2) ended on the clip's 4th 'money will buy me X but not Y' line ('...a piece of mind'); the WHY each time flagged that exact spot (try 1: the re-transcription read it as 'buy me a piece of money'; r2: an uncaptioned-speech gap at 61.6-64.0s of the 65.76s clip, which lands right on that same final line) - this specific utterance is the recurring problem, not the edge choice. Fix: end one beat earlier, on the 3rd parallel line ('...a good night's sleep'), which sits at 56.5s, safely before the flagged 61.6s gap, and is itself a complete, strong payoff. WHY-LOTTERY-WINNERS-GO-BROKE and AIM-TOO-LOW-STILL-FAIL (both tries 2) are not re-cut this run: lottery-winners failed twice with different start points on 'no clear pauses' (word-referenced) caption drift scattered through the whole segment, which reads as the fast, pause-less delivery itself rather than a fixable edge; aim-too-low failed twice with the IDENTICAL edges both times, each time the rendered re-transcription hearing 'hit' as 'hip' - the same word mismatches the same way with no new edit to try with confidence, so both are left for a future run with fresh eyes rather than spent on a guess.",
+  "clips": [
+    {
+      "slug": "BUYS-A-HOUSE-NOT-A-HOME",
+      "in": 4068.48,
+      "out": 4125.0,
+      "retry_of": "ep_v5d9snl_r2/BUYS-A-HOUSE-NOT-A-HOME",
+      "start_words": "I believe that success is",
+      "end_words": "me a good night's sleep",
+      "hook": ["What money truly", "can't buy you"],
+      "trial_hooks": [
+        ["3 things money", "can't buy you"],
+        ["Money lies about", "what it buys"],
+        ["Rich people still", "can't buy sleep"],
+        ["Money won't buy", "your sleep back"],
+        ["Zig Ziglar's three", "money truths revealed"],
+        ["Kevin Trudeau shares", "Ziglar's money truth"],
+        ["Money buys everything.", "Except what matters"]
+      ],
+      "send": "A hardworking spouse sends it to their partner chasing overtime: proof money won't buy back a good night's sleep - anxiety at what the grind actually costs.",
+      "caption": "Zig Ziglar made real money long before he ever gave a motivational speech.\n\nThen he listed exactly what that money bought him, and what it never could: a house, not a home. A companion, not a friend. A bed, not a good night's sleep.\n\nHe wasn't against money. He loved nice things. He just never confused having it with being whole.\n\nKevin Trudeau plays this clip because it's the line most people chasing a bigger paycheck need to hear.\n\nWhat has money bought you that still left something missing?\n\n#kevintrudeau #ziglar #moneymindset #wealthmindset #successhabits #mindsetshift"
+    }
+  ]
+}
