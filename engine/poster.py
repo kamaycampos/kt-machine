@@ -401,6 +401,19 @@ def extra_link_lines(platform, seed="", lead=False):
         # free herpes ebook first, supplements second)
         return [l.format(**links) for l in cfg.get("first", [])]
     out = [l.format(**links) for l in cfg.get("always", [])]
+    # DATED LINES (10 Nov 2026, Kamay): a line that only runs inside its window - the free
+    # call from 14 days before it (Dustin: share it 1-2 weeks out, for urgency), GIN's
+    # "dues go up in January" until 31 Dec. No "until" = parked, never shown.
+    import datetime
+    try:
+        from zoneinfo import ZoneInfo
+        today = datetime.datetime.now(ZoneInfo("America/New_York")).date().isoformat()
+    except Exception:
+        today = datetime.date.today().isoformat()
+    for item in d.get("dated") or []:
+        if (platform in item.get("platforms", []) and item.get("until")
+                and (item.get("from") or "") <= today <= item["until"]):
+            out.insert(0, item["line"].format(**links, **item))
     rot = cfg.get("rotate") or []
     if rot:
         out.append(rot[sum(map(ord, seed or "")) % len(rot)].format(**links))

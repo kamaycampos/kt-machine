@@ -10,25 +10,47 @@
  },
  "youtube": {
   "always": [
-   "Want the full episode this clip comes from? Watch Kevin Trudeau's shows free: {show}"
+   "Kevin Trudeau's full shows are free to watch right now. Most people only ever see the clips: {show}"
   ],
   "rotate": [
    "Free download, Your Wish Is Your Command: {freewish}",
    "Kevin's new hardcover, Nuggets of Gold: {nuggets}",
-   "FREE ebook: what Kevin Trudeau found in his research on herpes: {herpes}",
-   "Kevin's free live training - get on the list for the next one: {freecall}",
-   "Kevin Trudeau's Global Information Network (GIN): {gin}"
+   "FREE ebook: what Kevin Trudeau found in his research on herpes: {herpes}"
   ]
  },
  "facebook": {
   "always": [
-   "Want the full episode this clip comes from? Watch Kevin Trudeau's shows free: {show}"
+   "Kevin Trudeau's full shows are free to watch right now. Most people only ever see the clips: {show}"
   ],
   "rotate": [
    "Free download, Your Wish Is Your Command: {freewish}",
-   "Kevin's new hardcover, Nuggets of Gold: {nuggets}",
-   "Kevin's free live training - get on the list for the next one: {freecall}"
+   "Kevin's new hardcover, Nuggets of Gold: {nuggets}"
   ]
  },
- "tiktok_follow": "Follow for the next money rule the rich don't teach."
+ "tiktok_follow": "Follow for the next money rule the rich don't teach.",
+ "dated": [
+  {
+   "name": "free_call",
+   "platforms": [
+    "youtube",
+    "facebook"
+   ],
+   "from": null,
+   "until": null,
+   "when": "",
+   "line": "FREE live training with Kevin Trudeau, {when}. Free seats are limited - save yours: {freecall}",
+   "_note": "Parked until freecallwithkevin.com posts a date. Then: when = e.g. 'Saturday, Dec 12, 11 AM Central', from = 14 days before, until = the call day. The daily strategist sets it."
+  },
+  {
+   "name": "gin_january",
+   "platforms": [
+    "youtube",
+    "facebook"
+   ],
+   "from": "2026-11-09",
+   "until": "2026-12-31",
+   "line": "Kevin Trudeau's Global Information Network: the initiation dues go up in January. Join before they do: {gin}",
+   "_note": "Kamay 10 Nov 2026: 'its certain, 100% sure'. His source, no amount or date given - so the line names neither."
+  }
+ ]
 }
