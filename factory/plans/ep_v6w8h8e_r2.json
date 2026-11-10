@@ -1,0 +1,48 @@
+{
+ "source": "v6w8h8e.mp4",
+ "brand": "KT_UNSTUCKR2",
+ "test": false,
+ "note": "10 Nov 2026 second chances - 'Why Most Men Stay Stuck and Fail (And How to Fix it)' (Rumble v6w8h8e). Weekly agent.",
+ "clips": [
+  {
+   "slug": "ONE-RULE-THE-RICHEST-MAN-ALIVE",
+   "in": 389.92,
+   "out": 497.92,
+   "retry_of": "ep_v6w8h8e/ONE-RULE-THE-RICHEST-MAN-ALIVE",
+   "start_words": "Aristotle Onassis said the",
+   "end_words": "success breeds success",
+   "hook": ["One rule", "The richest man alive"],
+   "send": "Someone forwards it to a friend who still hangs around people dragging them down - shame they can't ignore, now that the pattern's obvious.",
+   "caption": "One rule. The richest man alive, at the time, said it mattered more than anything else.\n\nAristotle Onassis - the Greek shipping magnate who later married Jackie Kennedy - said the single most important factor in success is who you associate with. Associate with losers, you become a loser. Associate with winners, it rubs off.\n\nKevin Trudeau says his own mother used to get furious at him as a kid for listening to motivational tapes by self-made millionaires. \"Keep listening to those people,\" she'd warn, \"and you're going to turn out just like them.\"\n\nHis response: that's the point.\n\nWho have you been letting rub off on you?\n\n#kevintrudeau #successhabits #wealthmindset #mindset #entrepreneur #motivation",
+   "trial_hooks": [
+    ["The world's richest", "man said this"],
+    ["Your broke friends", "are holding you"],
+    ["His mother's warning", "became his proof"],
+    ["Wrong friends are", "costing you everything"],
+    ["Aristotle Onassis's one", "rule for riches"],
+    ["Kevin Trudeau's mother", "warned him wrongly"],
+    ["His mom's anger", "proved him right"]
+   ]
+  },
+  {
+   "slug": "THE-DOG-ON-THE-NAIL",
+   "in": 1565.76,
+   "out": 1657.52,
+   "retry_of": "ep_v6w8h8e/THE-DOG-ON-THE-NAIL",
+   "start_words": "I was with a",
+   "end_words": "buy a new car",
+   "hook": ["Why you're still", "on the nail"],
+   "send": "A friend sends it to someone who keeps complaining about the same problem for years without fixing it - shame they can't shake.",
+   "caption": "Kevin Trudeau was sitting on a porch in Macon, Georgia, sipping iced tea, when an old hound dog lying nearby kept letting out a little howl, putting its head back down, then howling again a few minutes later.\n\n\"What's wrong with your dog?\" he asked. \"Oh,\" his friend said, \"he's sleeping on a nail.\" \"Why doesn't he move, then?\" Kevin asked.\n\n\"It doesn't hurt him that much.\"\n\nThat's most people's entire relationship with the thing holding them back. Not painful enough to actually get up and move - just painful enough to howl about it every few minutes, for years.\n\nWhat nail are you still lying on?\n\n#kevintrudeau #mindset #successhabits #motivation #personalgrowth #selfimprovement",
+   "trial_hooks": [
+    ["Four years on", "the same nail"],
+    ["The nail isn't", "the real problem"],
+    ["Not painful enough", "to move him"],
+    ["You're lying on", "your own nail"],
+    ["An old dog's", "lesson on pain"],
+    ["Kevin Trudeau heard", "a dog's warning"],
+    ["A howling dog", "explains your life"]
+   ]
+  }
+ ]
+}
