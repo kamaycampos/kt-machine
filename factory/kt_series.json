@@ -10302,19 +10302,52 @@
   "source": "v4oml32.mp4",
   "brand": "KT_UNDERTOWR2R2R2",
   "note": "10 Nov proof: ending cut in the first real pause after the named words (kt_payoff.first_pause).",
-  "clips": []
+  "clips": [
+   {
+    "slug": "LIBERACE-WORST-PIANIST-RICHEST",
+    "in": 261.9,
+    "out": 337.87,
+    "hook": [
+     "The worst piano player",
+     "became richest"
+    ],
+    "caption": "Liberace wasn't the best piano player of his generation. He said so himself.\n\nBut he became the wealthiest - a Las Vegas superstar, an international name, more successful than players with ten times his technical skill.\n\nKevin Trudeau says Liberace credited one single book for the difference: The Magic of Believing, which Kevin says was written sometime in the 1950s. Not more practice. Not more talent. One book, read and applied.\n\nWhat's the one resource you've been putting off that could actually change the outcome?\n\n#kevintrudeau #success #mindset #wealthmindset #motivation #books"
+   }
+  ]
  },
  "ep_v5hxn45_r3": {
   "source": "v5hxn45.mp4",
   "brand": "KT_DELI",
   "note": "9 Nov 2026 END-SNAP PROOF: ends were refused one word early ('gig' starts 60 ms after the planned out); kt_batch_build now snaps the out to the named last words. Same cut otherwise. 9 Nov 2026 SYNC-RULE RETEST: refused only for UNCAPTIONED SPEECH with every word captioned (kt_sync_check now ignores a word captioned in the neighbouring caption). TWO-STRANGERS ended one word early ('offer me this' without 'gig'): out +0.45s. 9 Nov 2026 - 'How I Manifested $50K A Week! | TKTS Clips' (Rumble v5hxn45). Weekly agent (same-day refill run). Money/manifesting lane - the origin story of the Mega Memory infomercial deal, not the memory-technique demos already cut from v6v9urd (different angle, no overlap). Split into two arcs: the wish and the same-day double coincidence, then the contract race and the payoff. Skipped the career-history preamble (no story, just résumé) and the closing Transcendental Meditation chat (personal practice, not a money story).",
-  "clips": []
+  "clips": [
+   {
+    "slug": "TWO-STRANGERS-SAME-DAY",
+    "in": 123.58,
+    "out": 292.89,
+    "hook": [
+     "$50,000 a week.",
+     "Two strangers appeared"
+    ],
+    "caption": "Kevin Trudeau once decided exactly what he wanted: $50,000 a week, no job, nothing to do but travel.\n\nA month later he's eating at a shared table in a New York deli, and the stranger next to him turns out to be a TV infomercial guy who tells him to put his memory course on television.\n\nThat same day, a voicemail is waiting back at his hotel - from a completely different friend who also wants to put him on TV.\n\nTwo unrelated people, the same offer, the same day, out of nowhere.\n\nWould you call that a coincidence?\n\n#kevintrudeau #manifestation #wealthmindset #successstory #lawofattraction #moneymindset"
+   }
+  ]
  },
  "ep_v5hxn45_r4": {
   "source": "v5hxn45.mp4",
   "brand": "KT_DELI",
   "note": "10 Nov proof: ending cut in the first real pause after the named words (kt_payoff.first_pause).",
-  "clips": []
+  "clips": [
+   {
+    "slug": "TWO-STRANGERS-SAME-DAY",
+    "in": 123.58,
+    "out": 292.89,
+    "hook": [
+     "$50,000 a week.",
+     "Two strangers appeared"
+    ],
+    "caption": "Kevin Trudeau once decided exactly what he wanted: $50,000 a week, no job, nothing to do but travel.\n\nA month later he's eating at a shared table in a New York deli, and the stranger next to him turns out to be a TV infomercial guy who tells him to put his memory course on television.\n\nThat same day, a voicemail is waiting back at his hotel - from a completely different friend who also wants to put him on TV.\n\nTwo unrelated people, the same offer, the same day, out of nowhere.\n\nWould you call that a coincidence?\n\n#kevintrudeau #manifestation #wealthmindset #successstory #lawofattraction #moneymindset"
+   }
+  ]
  },
  "ep_v6w8h8e_r2": {
   "source": "v6w8h8e.mp4",
@@ -10335,7 +10368,8 @@
      "68 seconds is",
      "all you need."
     ],
-    "caption": "There's an actual number attached to this, and it's smaller than you'd think.\n\nSee yourself already in possession of what you want. Feel what that feels like — not someday, now — for sixty-eight seconds. Then let go of the outcome completely: \"and if I never get it, it's perfectly okay.\" That line is the part everyone skips, and it's the one that stops you from broadcasting lack instead of the thing you actually want.\n\nComment RISE and I'll send you the rest of the steps.\n\n#manifestation #lawofattraction #awakening #universe #mindset #kevintrudeau"
+    "caption": "There's an actual number attached to this, and it's smaller than you'd think.\n\nSee yourself already in possession of what you want. Feel what that feels like — not someday, now — for sixty-eight seconds. Then let go of the outcome completely: \"and if I never get it, it's perfectly okay.\" That line is the part everyone skips, and it's the one that stops you from broadcasting lack instead of the thing you actually want.\n\nComment RISE and I'll send you the rest of the steps.\n\n#manifestation #lawofattraction #awakening #universe #mindset #kevintrudeau",
+    "locked": true
    },
    {
     "slug": "MAKE-ME-AN-INSTRUMENT-OF-PEACE",

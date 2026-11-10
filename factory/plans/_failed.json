@@ -12350,61 +12350,6 @@
     "Two strangers appeared"
    ]
   },
-  "ep_v4oml32_r7/LIBERACE-WORST-PIANIST-RICHEST": {
-   "plan": "ep_v4oml32_r7",
-   "source": "v4oml32.mp4",
-   "brand": "KT_UNDERTOWR2R2R2",
-   "tries": 5,
-   "why": [
-    "NOT QUEUED** `01_LIBERACE-WORST-PIANIST-RICHEST_76s.mp4` - the spoken word was on screen in only 8 of 12 moments"
-   ],
-   "slug": "LIBERACE-WORST-PIANIST-RICHEST",
-   "in": 261.0,
-   "out": 337.7,
-   "start_words": "They asked Liberace, you're a",
-   "end_words": "Book was written in 1948.",
-   "hook": [
-    "The worst piano player",
-    "became richest"
-   ]
-  },
-  "ep_v5hxn45_r3/TWO-STRANGERS-SAME-DAY": {
-   "plan": "ep_v5hxn45_r3",
-   "source": "v5hxn45.mp4",
-   "brand": "KT_DELI",
-   "tries": 3,
-   "why": [
-    "NOT QUEUED** `01_TWO-STRANGERS-SAME-DAY_170s.mp4` - word repeated after one: \"it's what it's\""
-   ],
-   "slug": "TWO-STRANGERS-SAME-DAY",
-   "in": 121.76,
-   "out": 293.04,
-   "start_words": "I knew how to manifest",
-   "end_words": "offer me this gig.",
-   "hook": [
-    "$50,000 a week.",
-    "Two strangers appeared"
-   ]
-  },
-  "ep_v5hxn45_r4/TWO-STRANGERS-SAME-DAY": {
-   "plan": "ep_v5hxn45_r4",
-   "source": "v5hxn45.mp4",
-   "brand": "KT_DELI",
-   "tries": 3,
-   "why": [
-    "NOT QUEUED** `01_TWO-STRANGERS-SAME-DAY_170s.mp4` - word repeated after one: \"it's what it's\"",
-    "NOT QUEUED** `01_TWO-STRANGERS-SAME-DAY_170s.mp4` - word repeated after one: \"it's what it's\""
-   ],
-   "slug": "TWO-STRANGERS-SAME-DAY",
-   "in": 121.76,
-   "out": 293.04,
-   "start_words": "I knew how to manifest",
-   "end_words": "offer me this gig.",
-   "hook": [
-    "$50,000 a week.",
-    "Two strangers appeared"
-   ]
-  },
   "ep_v6w8h8e_r2/ONE-RULE-THE-RICHEST-MAN-ALIVE": {
    "plan": "ep_v6w8h8e_r2",
    "source": "v6w8h8e.mp4",

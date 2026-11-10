@@ -1249,5 +1249,67 @@
    }
   ],
   "posted": null
+ },
+ "KT_DELI__TWO-STRANGERS-SAME-DAY": {
+  "clip": "KT_DELI/01_TWO-STRANGERS-SAME-DAY_170s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_DELI__TWO-STRANGERS-SAME-DAY__V1.mp4",
+    "hook": [
+     "$50,000 a week,",
+     "no job required"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DELI__TWO-STRANGERS-SAME-DAY__V2.mp4",
+    "hook": [
+     "Why working hard",
+     "almost blocked this"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DELI__TWO-STRANGERS-SAME-DAY__V3.mp4",
+    "hook": [
+     "$50,000 wish became",
+     "two real offers"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DELI__TWO-STRANGERS-SAME-DAY__V4.mp4",
+    "hook": [
+     "Why you're still working",
+     "for $50,000"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DELI__TWO-STRANGERS-SAME-DAY__V5.mp4",
+    "hook": [
+     "Kevin Trudeau wished $50,000",
+     "Strangers delivered"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DELI__TWO-STRANGERS-SAME-DAY__V6.mp4",
+    "hook": [
+     "Kevin Trudeau manifested $50,000",
+     "a week"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DELI__TWO-STRANGERS-SAME-DAY__V7.mp4",
+    "hook": [
+     "A month later, two",
+     "strangers appeared"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }
