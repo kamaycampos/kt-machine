@@ -1,0 +1,30 @@
+{
+ "source": "v4rcljt.mp4",
+ "brand": "AR_MISLEDR3",
+ "test": false,
+ "note": "10 Nov 2026 - re-cut, Awakened Rise weekly agent. YOUVE-BEEN-MISLED-YOUR-WHOLE-LIFE failed on sentence-boundary problems (ends mid-thought, two sentence starts with no stop): moved the open back to a clean sentence boundary ('You are being lied to by the government...') and pulled the close in 0.6s so it lands on 'life.' without bleeding into the next sentence's first word. HE-LIED-ABOUT-AREA-51-TOO (tries 2, last chance) ended mid-thought on 'use the word' - the cut landed 1s too early and sliced off 'misinformation' itself; pushed the close out to let the word finish. Skipped YOUVE-BEEN-HYPNOTIZED-WITHOUT-KNOWING-IT (tries 2): its likely cause is the staccato run of short book-chapter-title cues in its middle (Chapter one/two/three, each 2-4s) - the only way to cut around that section either drops the clip under the 40s floor or runs into a paid-program mention two sentences later ('the Success Master Course... Science of Personal Master Course'), so there is no safe re-cut; leaving it.",
+ "clips": [
+  {
+   "slug": "YOUVE-BEEN-MISLED-YOUR-WHOLE-LIFE",
+   "retry_of": "ar_v4rcljt/YOUVE-BEEN-MISLED-YOUR-WHOLE-LIFE",
+   "in": 39.5,
+   "out": 97.4,
+   "start_words": "You are being lied",
+   "end_words": "misled for your whole life",
+   "hook": ["You've been misled,", "your whole life."],
+   "send": "Send this to someone who trusts whatever the news tells them - it's the line that makes them go quiet and start asking why (anger at being kept asleep).",
+   "caption": "He sat across from Gorbachev and Schwarzkopf. Not reading about it later - in the room for it.\n\nWhat he says he took from those rooms is simple and uncomfortable: whoever controls the flow of information holds the real power, and misinformation is just the other half of the same tool. Call something misinformation and you don't have to disprove it - you only have to make people stop looking at it.\n\nThat's not a one-time trick played on the news. It's the water you've been swimming in since before you could question it.\n\nComment RISE and I'll send you what he says they still don't want surfacing.\n\n#disclosure #awakening #consciousness #subconscious #hiddentruth #kevintrudeau"
+  },
+  {
+   "slug": "HE-LIED-ABOUT-AREA-51-TOO",
+   "retry_of": "ar_v4rcljt_r2/HE-LIED-ABOUT-AREA-51-TOO",
+   "in": 238.0,
+   "out": 287.0,
+   "start_words": "I talked about last",
+   "end_words": "use the word misinformation",
+   "hook": ["They lied", "to keep you asleep."],
+   "send": "Sends this to a friend who thinks government secrecy is just a conspiracy-theory thing - it's a direct, on-record admission, not a theory (unease, vindication).",
+   "caption": "Bill Clinton once said there's nothing at Groom Lake. No installation at Area 51. He says he had to say that - because it was classified, not because it was true.\n\nThat's the part that rarely gets said out loud: being made to lie, by design, so the official answer and the real answer can both exist pointed at the same question. Kevin ties it to today - the same machine that controlled that answer now runs social media too, deciding who gets banned and whose posts even reach you.\n\nThere's a word for the whole operation now. They call it misinformation.\n\nComment RISE and I'll send you what else never got an honest answer.\n\n#disclosure #classified #hiddentruth #awakening #thetruth #kevintrudeau"
+  }
+ ]
+}
