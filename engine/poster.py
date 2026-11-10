@@ -594,7 +594,9 @@ def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
             _fl = ""
         if _fl and _fl not in (cta or ""):
             cta = ((cta or "") + "\n" + _fl).strip()
-    if platform in ("youtube", "facebook") and cred_prefix(brand) != "AR":
+    # Instagram too (10 Nov 2026): its links do not click, so its lines NAME what waits in the
+    # bio, matching the bio Kamay set (state/extra_links.json "instagram").
+    if platform in ("youtube", "facebook", "instagram") and cred_prefix(brand) != "AR":
         more = [l for l in extra_link_lines(platform, cap) if l not in (cta or "")]
         if more:
             cta = ((cta or "") + "\n\n" + "\n".join(more)).strip()
