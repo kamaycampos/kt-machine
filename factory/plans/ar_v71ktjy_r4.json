@@ -1,0 +1,30 @@
+{
+ "source": "v71ktjy.mp4",
+ "brand": "AR_BANNEDR3",
+ "test": false,
+ "note": "10 Nov 2026 - re-cut, Awakened Rise weekly agent. RECRUITED-AT-SIX failed on a sentence-boundary flag ('called The' with no preceding stop) - this is an unscripted interview with run-on, comma-spliced answers, so a clean grammatical stop right at the edge is hard to find; moved the open to the nearest real question-mark boundary a beat earlier ('You know, back in 1969...'). MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE (tries 2, last chance) had its close land mid-word - the independent re-transcription's last words were 'the as me is probably the', meaning the cut landed before 'highest level' finished; pushed the close out 1.4s to let the full phrase land. Skipped DIVISION-CHAOS-YOUR-FIX (tries 2): a generic captions-vs-sound drift with no concrete sentence/word anomaly visible in the transcript to fix with confidence.",
+ "clips": [
+  {
+   "slug": "RECRUITED-AT-SIX",
+   "retry_of": "ar_v71ktjy/RECRUITED-AT-SIX",
+   "in": 882.5,
+   "out": 996.0,
+   "start_words": "You know back",
+   "end_words": "to ever leave the group",
+   "hook": ["Six years old,", "into a secret."],
+   "send": "Send this to someone who thinks secret societies are just internet conspiracy talk - awe at hearing it from someone who says he was actually inside one.",
+   "caption": "In 1969, at six years old, he was brought into a secret society he calls the Brotherhood — one that trains people with real psychic ability and puts them to use.\n\nHe rose to the top ranks, completed the training, and did something almost nobody inside ever does: he walked away, the only person to ever leave the group.\n\nThe only reason he's still alive, he says, is a fail-safe set up globally before he left — if anything happened to him, everything comes out.\n\nComment RISE for the rest of the teaching.\n\n#brotherhood #secretsociety #disclosure #awakening #esoteric #kevintrudeau"
+  },
+  {
+   "slug": "MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE",
+   "retry_of": "ar_v71ktjy_r2/MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE",
+   "in": 3430.5,
+   "out": 3494.0,
+   "start_words": "I learned another concept",
+   "end_words": "probably the highest level",
+   "hook": ["Most people never", "leave level one."],
+   "send": "Send this to someone who always says things just happen to them - a little sting of recognition, then curiosity about the levels above it.",
+   "caption": "There are four levels of consciousness, and almost everyone lives on the first without realizing it.\n\nLevel one is \"to me\" — the victim level. The water spills and it's always happening TO you, everyone's against you, nothing is ever your fault. Level two is \"by me\" — you take action. Level three is \"through me\" — there was a reason for it. The rare fourth is \"as me,\" where you stop separating yourself from what's happening.\n\nMost people never leave level one in their entire life.\n\nComment RISE for the rest of the teaching.\n\n#consciousness #awakening #subconscious #spirituality #mindset #kevintrudeau"
+  }
+ ]
+}

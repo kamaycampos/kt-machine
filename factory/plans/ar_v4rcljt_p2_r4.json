@@ -1,0 +1,30 @@
+{
+ "source": "v4rcljt.mp4",
+ "brand": "AR_DECEPTIONR4",
+ "test": false,
+ "note": "10 Nov 2026 - re-cut, Awakened Rise weekly agent. Both clips had the same bug: end_words named a line that is spoken AFTER the plan's out timestamp, so the clip's audio ended before the words its captions were built on were ever said. A-SECRET-AGENDA-KEPT-WOMEN-DOWN's out (877.0) was the START of the cue holding 'wives actually cooked' - the payoff line was never inside the clip at all; moved out to 884.0, the cue's actual end, where 'cooked.' lands. COCA-COLA-HAD-COCAINE-RIGHT-ON-PURPOSE's out (1284.0) cut off right before 'In other words, it boosts your personality' begins; moved out to 1287.0 so the line finishes inside the clip.",
+ "clips": [
+  {
+   "slug": "A-SECRET-AGENDA-KEPT-WOMEN-DOWN",
+   "retry_of": "ar_v4rcljt_p2/A-SECRET-AGENDA-KEPT-WOMEN-DOWN",
+   "in": 818.0,
+   "out": 884.0,
+   "start_words": "Now there's another",
+   "end_words": "wives actually cooked",
+   "hook": ["A secret agenda.", "Kept women down."],
+   "send": "Send this to someone who thinks old-fashioned gender roles just happened naturally - anger at seeing it was manufactured on purpose.",
+   "caption": "Look at advertising from a few decades ago and you'll see something that wasn't an accident.\n\n\"The chef does everything but cook. That's what wives are for.\" A real ad, run everywhere, completely normal at the time. He calls it what it actually was: propaganda, coming from agencies, designed on purpose to keep women in a specific role - and he says people close to him in the Brotherhood were involved in exactly that kind of work.\n\nIt wasn't persuasion. It was programming, repeated until it looked like culture instead of a campaign.\n\nComment RISE and I'll send you how to spot the version of this still running today.\n\n#programming #subconscious #disclosure #awakening #consciousness #kevintrudeau"
+  },
+  {
+   "slug": "COCA-COLA-HAD-COCAINE-RIGHT-ON-PURPOSE",
+   "retry_of": "ar_v4rcljt_p2/COCA-COLA-HAD-COCAINE-RIGHT-ON-PURPOSE",
+   "in": 1237.0,
+   "out": 1287.0,
+   "start_words": "Are you kidding",
+   "end_words": "boosts your personality",
+   "hook": ["Coca-Cola had cocaine.", "Right on purpose."],
+   "send": "Send this to someone who thinks old advertising was just corny, not actually dangerous - awe at what they got away with.",
+   "caption": "\"Boost your personality\" was the actual slogan. The personality boost was cocaine.\n\nEarly Coca-Cola had cocaine from the coca leaf, caffeine from the cola nut, and sugar - a genuinely physically addictive combination, marketed as a lift for your mood. They knew exactly what they'd put in the bottle.\n\nPeople trusted the big corporation, trusted the magazine that ran the ad, trusted the government that allowed it. Nobody was lying to themselves. They were being lied to, by people who knew better.\n\nComment RISE and I'll send you more of what used to be legal to sell you.\n\n#disclosure #subconscious #programming #awakening #consciousness #kevintrudeau"
+  }
+ ]
+}
