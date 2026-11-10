@@ -417,6 +417,47 @@ def verdict(src, t_in, t_out):
     return ", ".join(why)
 
 
+def _snap(words, t_out, end_words, reach=3.0):
+    """The pure part of snap_end: words = [(start, end, text)] in source seconds."""
+    norm = lambda w: re.sub(r"[^a-z0-9']", "", (w or "").lower()).replace("'", "")
+    want = [norm(w) for w in (end_words or "").split() if norm(w)][-2:]
+    ws = [(a, b, norm(w)) for a, b, w in words if norm(w)]
+    if not want or len(ws) < len(want):
+        return None
+    best = None
+    for i in range(len(ws) - len(want) + 1):
+        if [x[2] for x in ws[i:i + len(want)]] != want:
+            continue
+        end = ws[i + len(want) - 1][1]
+        if abs(end - t_out) > reach:
+            continue
+        nxt = ws[i + len(want)][0] if i + len(want) < len(ws) else end + 1.0
+        if best is None or abs(end - t_out) < abs(best[0] - t_out):
+            best = (end, nxt)
+    if not best:
+        return None
+    end, nxt = best
+    return round(min(end + 0.35, max(end + 0.05, nxt - 0.08)), 2)
+
+
+def snap_end(src, t_out, end_words, reach=3.0):
+    """Move a clip's OUT to just after the planner's named last words (9 Nov 2026).
+
+    The planner names the last words AND guesses a time. A guess a few frames early loses the
+    final word: TWO-STRANGERS-SAME-DAY was planned to end 293.04s, "gig." starts at 293.10s, so
+    every render ended "offer me this" and closes_wrong refused it - 3 builds, moving the guess
+    by hand did not help. 20 of 65 refusals in 10 days were "ends off the planned words". The
+    word times are already here (same grid and cache as sentences()); this lands the cut 0.35s
+    after the last named word, never into the next one. None = words not found within reach,
+    the planner's time stands."""
+    import kt_words
+    GRID = 60.0
+    t0 = max(0.0, (int(t_out // GRID) - 1) * GRID)
+    t1 = (int(t_out // GRID) + 2) * GRID
+    ws = kt_words.words_punct(src, t0, t1, f"PAYOFF/{os.path.basename(src)}")
+    return _snap([(t0 + a, t0 + b, w) for a, b, w in ws], t_out, end_words, reach)
+
+
 def payoff_end(src, t_in, t_out, look=LOOK):
     """The nearest honest ending, or None when the current one is already fine.
 

@@ -92,6 +92,15 @@ def main():
             if errs:
                 log(f"  drop {p['brand']}/{c.get('slug')}: hook - {'; '.join(errs)}")
                 continue
+            if c.get("end_words"):
+                try:
+                    new_out = kt_payoff.snap_end(src, float(c["out"]), c["end_words"])
+                except Exception as x:                  # never let the snap stop a build
+                    new_out, _ = None, log(f"  note {c.get('slug')}: end snap skipped ({type(x).__name__})")
+                if new_out and abs(new_out - float(c["out"])) >= 0.05:
+                    log(f"  note {p['brand']}/{c.get('slug')}: end snapped {float(c['out']):.2f} -> {new_out:.2f}s "
+                        f"(after '{c['end_words']}')")
+                    c["out"] = new_out
             v = kt_payoff.verdict(src, float(c["in"]), float(c["out"]))
             # 22 Sept 2026: a planner that NAMED its last words has already chosen
             # the ending by meaning (factory/PLANNING.md); only an advert or
