@@ -12440,6 +12440,24 @@
     "Why you're still",
     "on the nail"
    ]
+  },
+  "ar_v4rcljt_r3/YOUVE-BEEN-MISLED-YOUR-WHOLE-LIFE": {
+   "plan": "ar_v4rcljt_r3",
+   "source": "v4rcljt.mp4",
+   "brand": "AR_MISLEDR3",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_YOUVE-BEEN-MISLED-YOUR-WHOLE-LIFE_57s.mp4` - opens mid-sentence on \"are being lied\""
+   ],
+   "slug": "YOUVE-BEEN-MISLED-YOUR-WHOLE-LIFE",
+   "in": 39.5,
+   "out": 97.4,
+   "start_words": "You are being lied",
+   "end_words": "misled for your whole life",
+   "hook": [
+    "You've been misled,",
+    "your whole life."
+   ]
   }
  },
  "attempts": {
@@ -12504,6 +12522,7 @@
   "ep_v4oml32_r5": 2,
   "ep_v5hxn45_r2": 1,
   "ep_v4oml32_r6": 1,
-  "ep_v5hxn45_r3": 1
+  "ep_v5hxn45_r3": 1,
+  "ar_v4lw3gr_p2_r3": 1
  }
 }

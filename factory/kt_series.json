@@ -10318,5 +10318,120 @@
   "brand": "KT_UNSTUCKR2",
   "note": "10 Nov 2026 second chances - 'Why Most Men Stay Stuck and Fail (And How to Fix it)' (Rumble v6w8h8e). Weekly agent.",
   "clips": []
+ },
+ "ar_v4lw3gr_r2": {
+  "source": "v4lw3gr.mp4",
+  "brand": "AR_SOWLOVER2",
+  "note": "10 Nov 2026 - re-cut, Awakened Rise weekly agent. Two clips from ar_v4lw3gr.json failed the captions-vs-sound gate (AR_PLANNING.md step 2c). Moved both edges to different sentence boundaries per the WHY lines: 68-SECONDS now opens on 'See yourself in possession of what you want' (dropping the 'First, what's my current situation' framing, which was adding an extra clause before the sentence the clip is actually built on) and keeps the same clean ending. MAKE-ME-AN-INSTRUMENT-OF-PEACE now opens on the prayer's own address ('Lord, make me an instrument of your peace'), dropping the 'love people without condition... there's a prayer here' preamble, and closes at the same payoff line.",
+  "clips": [
+   {
+    "slug": "68-SECONDS-THATS-ALL-IT-TAKES",
+    "in": 6255.46,
+    "out": 6316.11,
+    "hook": [
+     "68 seconds is",
+     "all you need."
+    ],
+    "caption": "There's an actual number attached to this, and it's smaller than you'd think.\n\nSee yourself already in possession of what you want. Feel what that feels like — not someday, now — for sixty-eight seconds. Then let go of the outcome completely: \"and if I never get it, it's perfectly okay.\" That line is the part everyone skips, and it's the one that stops you from broadcasting lack instead of the thing you actually want.\n\nComment RISE and I'll send you the rest of the steps.\n\n#manifestation #lawofattraction #awakening #universe #mindset #kevintrudeau"
+   },
+   {
+    "slug": "MAKE-ME-AN-INSTRUMENT-OF-PEACE",
+    "in": 7329.5,
+    "out": 7415.91,
+    "hook": [
+     "Make me an instrument",
+     "of peace."
+    ],
+    "caption": "Some say Saint Francis wrote it 800 years ago. Some say he never did. It doesn't matter who — only what it actually says.\n\n\"Where there is hatred, let me sow love. Where there is despair, let me sow hope.\" Not a request for comfort. A request for the harder job: to give before you receive, to understand before you're understood, to love before you're loved — because somehow, that's the order it actually works in. You are love and light already. The prayer is just a reminder to act like it.\n\nComment RISE and I'll send you the rest of this prayer.\n\n#prayer #awakening #consciousness #faith #spirituality #kevintrudeau"
+   }
+  ]
+ },
+ "ar_v4rcljt_p2_r4": {
+  "source": "v4rcljt.mp4",
+  "brand": "AR_DECEPTIONR4",
+  "note": "10 Nov 2026 - re-cut, Awakened Rise weekly agent. Both clips had the same bug: end_words named a line that is spoken AFTER the plan's out timestamp, so the clip's audio ended before the words its captions were built on were ever said. A-SECRET-AGENDA-KEPT-WOMEN-DOWN's out (877.0) was the START of the cue holding 'wives actually cooked' - the payoff line was never inside the clip at all; moved out to 884.0, the cue's actual end, where 'cooked.' lands. COCA-COLA-HAD-COCAINE-RIGHT-ON-PURPOSE's out (1284.0) cut off right before 'In other words, it boosts your personality' begins; moved out to 1287.0 so the line finishes inside the clip.",
+  "clips": [
+   {
+    "slug": "A-SECRET-AGENDA-KEPT-WOMEN-DOWN",
+    "in": 819.08,
+    "out": 885.39,
+    "hook": [
+     "A secret agenda.",
+     "Kept women down."
+    ],
+    "caption": "Look at advertising from a few decades ago and you'll see something that wasn't an accident.\n\n\"The chef does everything but cook. That's what wives are for.\" A real ad, run everywhere, completely normal at the time. He calls it what it actually was: propaganda, coming from agencies, designed on purpose to keep women in a specific role - and he says people close to him in the Brotherhood were involved in exactly that kind of work.\n\nIt wasn't persuasion. It was programming, repeated until it looked like culture instead of a campaign.\n\nComment RISE and I'll send you how to spot the version of this still running today.\n\n#programming #subconscious #disclosure #awakening #consciousness #kevintrudeau"
+   },
+   {
+    "slug": "COCA-COLA-HAD-COCAINE-RIGHT-ON-PURPOSE",
+    "in": 1238.5,
+    "out": 1287.69,
+    "hook": [
+     "Coca-Cola had cocaine.",
+     "Right on purpose."
+    ],
+    "caption": "\"Boost your personality\" was the actual slogan. The personality boost was cocaine.\n\nEarly Coca-Cola had cocaine from the coca leaf, caffeine from the cola nut, and sugar - a genuinely physically addictive combination, marketed as a lift for your mood. They knew exactly what they'd put in the bottle.\n\nPeople trusted the big corporation, trusted the magazine that ran the ad, trusted the government that allowed it. Nobody was lying to themselves. They were being lied to, by people who knew better.\n\nComment RISE and I'll send you more of what used to be legal to sell you.\n\n#disclosure #subconscious #programming #awakening #consciousness #kevintrudeau"
+   }
+  ]
+ },
+ "ar_v4rcljt_r3": {
+  "source": "v4rcljt.mp4",
+  "brand": "AR_MISLEDR3",
+  "note": "10 Nov 2026 - re-cut, Awakened Rise weekly agent. YOUVE-BEEN-MISLED-YOUR-WHOLE-LIFE failed on sentence-boundary problems (ends mid-thought, two sentence starts with no stop): moved the open back to a clean sentence boundary ('You are being lied to by the government...') and pulled the close in 0.6s so it lands on 'life.' without bleeding into the next sentence's first word. HE-LIED-ABOUT-AREA-51-TOO (tries 2, last chance) ended mid-thought on 'use the word' - the cut landed 1s too early and sliced off 'misinformation' itself; pushed the close out to let the word finish. Skipped YOUVE-BEEN-HYPNOTIZED-WITHOUT-KNOWING-IT (tries 2): its likely cause is the staccato run of short book-chapter-title cues in its middle (Chapter one/two/three, each 2-4s) - the only way to cut around that section either drops the clip under the 40s floor or runs into a paid-program mention two sentences later ('the Success Master Course... Science of Personal Master Course'), so there is no safe re-cut; leaving it.",
+  "clips": [
+   {
+    "slug": "HE-LIED-ABOUT-AREA-51-TOO",
+    "in": 237.38,
+    "out": 282.87,
+    "hook": [
+     "They lied",
+     "to keep you asleep."
+    ],
+    "caption": "Bill Clinton once said there's nothing at Groom Lake. No installation at Area 51. He says he had to say that - because it was classified, not because it was true.\n\nThat's the part that rarely gets said out loud: being made to lie, by design, so the official answer and the real answer can both exist pointed at the same question. Kevin ties it to today - the same machine that controlled that answer now runs social media too, deciding who gets banned and whose posts even reach you.\n\nThere's a word for the whole operation now. They call it misinformation.\n\nComment RISE and I'll send you what else never got an honest answer.\n\n#disclosure #classified #hiddentruth #awakening #thetruth #kevintrudeau"
+   }
+  ]
+ },
+ "ar_v71ktjy_p2_r2": {
+  "source": "v71ktjy.mp4",
+  "brand": "AR_PROGRAMMEDR2",
+  "note": "10 Nov 2026 - re-cut, Awakened Rise weekly agent. YOUR-RAGE-HAS-A-HIDDEN-SWITCH opened on 'He pushed your buttons. He pushed your button. He really pushes my buttons.' - Kevin restating the same line three times in a row, which is exactly the word-repeat/phrase-scramble pattern AR_PLANNING.md step 2c calls out. Moved the open past the two repeats to the third, clean restatement ('He really pushes my buttons.').",
+  "clips": [
+   {
+    "slug": "YOUR-RAGE-HAS-A-HIDDEN-SWITCH",
+    "in": 2618.58,
+    "out": 2752.87,
+    "hook": [
+     "Your rage has",
+     "a hidden switch."
+    ],
+    "caption": "Ever snap over something that was not even a big deal?\n\nKevin calls it a button - an old emotional imprint (the Sanskrit word is Samskara) sitting in memory, waiting to be pushed. Whoever writes the headlines knows where yours is. Feed you enough conflict and fear, and the button fires - for a few minutes you are not driving your own reactions.\n\nHe has watched two friends with opposite politics argue, then go watch football together - because neither one had a button left to push.\n\nComment RISE and I will send you how to find yours.\n\n#subconscious #programming #awakening #consciousness #selfmastery #kevintrudeau"
+   }
+  ]
+ },
+ "ar_v71ktjy_r4": {
+  "source": "v71ktjy.mp4",
+  "brand": "AR_BANNEDR3",
+  "note": "10 Nov 2026 - re-cut, Awakened Rise weekly agent. RECRUITED-AT-SIX failed on a sentence-boundary flag ('called The' with no preceding stop) - this is an unscripted interview with run-on, comma-spliced answers, so a clean grammatical stop right at the edge is hard to find; moved the open to the nearest real question-mark boundary a beat earlier ('You know, back in 1969...'). MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE (tries 2, last chance) had its close land mid-word - the independent re-transcription's last words were 'the as me is probably the', meaning the cut landed before 'highest level' finished; pushed the close out 1.4s to let the full phrase land. Skipped DIVISION-CHAOS-YOUR-FIX (tries 2): a generic captions-vs-sound drift with no concrete sentence/word anomaly visible in the transcript to fix with confidence.",
+  "clips": [
+   {
+    "slug": "RECRUITED-AT-SIX",
+    "in": 882.78,
+    "out": 997.07,
+    "hook": [
+     "Six years old,",
+     "into a secret."
+    ],
+    "caption": "In 1969, at six years old, he was brought into a secret society he calls the Brotherhood — one that trains people with real psychic ability and puts them to use.\n\nHe rose to the top ranks, completed the training, and did something almost nobody inside ever does: he walked away, the only person to ever leave the group.\n\nThe only reason he's still alive, he says, is a fail-safe set up globally before he left — if anything happened to him, everything comes out.\n\nComment RISE for the rest of the teaching.\n\n#brotherhood #secretsociety #disclosure #awakening #esoteric #kevintrudeau"
+   },
+   {
+    "slug": "MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE",
+    "in": 3430.78,
+    "out": 3492.19,
+    "hook": [
+     "Most people never",
+     "leave level one."
+    ],
+    "caption": "There are four levels of consciousness, and almost everyone lives on the first without realizing it.\n\nLevel one is \"to me\" — the victim level. The water spills and it's always happening TO you, everyone's against you, nothing is ever your fault. Level two is \"by me\" — you take action. Level three is \"through me\" — there was a reason for it. The rare fourth is \"as me,\" where you stop separating yourself from what's happening.\n\nMost people never leave level one in their entire life.\n\nComment RISE for the rest of the teaching.\n\n#consciousness #awakening #subconscious #spirituality #mindset #kevintrudeau"
+   }
+  ]
  }
 }
