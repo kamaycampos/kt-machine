@@ -14857,12 +14857,25 @@
    "hook": "The worst piano player became richest",
    "bytes": 43742851,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "scheduled_at": "2026-11-10T08:54",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfkFuXvoUpz/",
+    "youtube": "https://youtube.com/shorts/HWtC1dqVRAg"
+   },
+   "caption_at_post": "Liberace wasn't the best piano player of his generation. He said so himself.\n\nBut he became the wealthiest - a Las Vegas superstar, an international name, more successful than players with ten times his technical skill.\n\nKevin Trudeau says Liberace credited one single book for the difference: The Magic of Believing, which Kevin says was written sometime in the 1950s. Not more practice. Not more talent. One book, read and applied.\n\nWhat's the one resource you've been putting off that could actually change the outcome?\n\n#kevintrudeau #success #mindset #wealthmindset #motivation #books",
+   "posted_at": "2026-11-10T09:13"
   },
   {
    "file": "AR_BANNEDR3/01_RECRUITED-AT-SIX_114s.mp4",
