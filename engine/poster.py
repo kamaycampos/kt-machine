@@ -390,12 +390,16 @@ DEFAULT_OFFER = "https://links.fans/wealthfrequency"
 _EXTRA = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "state", "extra_links.json")
 
 
-def extra_link_lines(platform, seed=""):
+def extra_link_lines(platform, seed="", lead=False):
     try:
         d = json.load(open(_EXTRA))
     except (OSError, ValueError):
         return []
     cfg, links = d.get(platform) or {}, d.get("links") or {}
+    if lead:
+        # "first": the line that goes ABOVE the product ask (10 Nov 2026, Kamay: WB pushes the
+        # free herpes ebook first, supplements second)
+        return [l.format(**links) for l in cfg.get("first", [])]
     out = [l.format(**links) for l in cfg.get("always", [])]
     rot = cfg.get("rotate") or []
     if rot:
@@ -581,6 +585,9 @@ def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
         more = [l for l in extra_link_lines(platform, cap) if l not in (cta or "")]
         if more:
             cta = ((cta or "") + "\n\n" + "\n".join(more)).strip()
+        top = [l for l in extra_link_lines(platform, cap, lead=True) if l not in (cta or "")]
+        if top:
+            cta = ("\n".join(top) + "\n\n" + (cta or "")).strip()
     if mine_only:
         body = [soften(l) for l in body]
     if not (cta or "").strip():
