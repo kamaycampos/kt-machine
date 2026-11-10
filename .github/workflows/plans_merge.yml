@@ -44,6 +44,24 @@ jobs:
           if git diff --name-only main...origin/$BR | grep -qx factory/STRATEGY.md; then
             git show "origin/$BR:factory/STRATEGY.md" > factory/STRATEGY.md && OK="$OK factory/STRATEGY.md"
           fi
+          # THE FREE CALL DATE (10 Nov 2026). The strategist reads freecallwithkevin.com daily and
+          # dates the 'free_call' line. Only that one item is taken; every other link line stays main's.
+          if git diff --name-only main...origin/$BR | grep -qx state/extra_links.json; then
+            git show "origin/$BR:state/extra_links.json" > /tmp/el.json
+            if python - <<'PY'
+          import json, re, sys
+          new = json.load(open("/tmp/el.json")); cur = json.load(open("state/extra_links.json"))
+          item = next((i for i in new.get("dated", []) if i.get("name") == "free_call"), None)
+          ok = lambda d: d is None or re.fullmatch(r"\d{4}-\d{2}-\d{2}", d)
+          if not item or not ok(item.get("from")) or not ok(item.get("until")) or len(item.get("when") or "") > 60:
+              sys.exit(1)
+          for i in cur.get("dated", []):
+              if i.get("name") == "free_call":
+                  i.update({k: item.get(k) for k in ("when", "from", "until")})
+          json.dump(cur, open("state/extra_links.json", "w"), indent=1, ensure_ascii=False)
+          PY
+            then OK="$OK state/extra_links.json"; else echo "REJECTED free_call date"; fi
+          fi
           for SP in factory/source_plan.json factory/ar_source_plan.json; do
             git diff --name-only main...origin/$BR | grep -qx "$SP" || continue
             git show "origin/$BR:$SP" > /tmp/sp.json
