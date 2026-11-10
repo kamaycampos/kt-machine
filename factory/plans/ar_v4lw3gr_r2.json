@@ -1,0 +1,30 @@
+{
+ "source": "v4lw3gr.mp4",
+ "brand": "AR_SOWLOVER2",
+ "test": false,
+ "note": "10 Nov 2026 - re-cut, Awakened Rise weekly agent. Two clips from ar_v4lw3gr.json failed the captions-vs-sound gate (AR_PLANNING.md step 2c). Moved both edges to different sentence boundaries per the WHY lines: 68-SECONDS now opens on 'See yourself in possession of what you want' (dropping the 'First, what's my current situation' framing, which was adding an extra clause before the sentence the clip is actually built on) and keeps the same clean ending. MAKE-ME-AN-INSTRUMENT-OF-PEACE now opens on the prayer's own address ('Lord, make me an instrument of your peace'), dropping the 'love people without condition... there's a prayer here' preamble, and closes at the same payoff line.",
+ "clips": [
+  {
+   "slug": "68-SECONDS-THATS-ALL-IT-TAKES",
+   "retry_of": "ar_v4lw3gr/68-SECONDS-THATS-ALL-IT-TAKES",
+   "in": 6252.46,
+   "out": 6311.74,
+   "start_words": "See yourself in possession",
+   "end_words": "from producing lack",
+   "hook": ["68 seconds is", "all you need."],
+   "send": "Send this to a friend who says they've tried manifesting and it didn't work - curiosity about the one step they probably skipped.",
+   "caption": "There's an actual number attached to this, and it's smaller than you'd think.\n\nSee yourself already in possession of what you want. Feel what that feels like — not someday, now — for sixty-eight seconds. Then let go of the outcome completely: \"and if I never get it, it's perfectly okay.\" That line is the part everyone skips, and it's the one that stops you from broadcasting lack instead of the thing you actually want.\n\nComment RISE and I'll send you the rest of the steps.\n\n#manifestation #lawofattraction #awakening #universe #mindset #kevintrudeau"
+  },
+  {
+   "slug": "MAKE-ME-AN-INSTRUMENT-OF-PEACE",
+   "retry_of": "ar_v4lw3gr/MAKE-ME-AN-INSTRUMENT-OF-PEACE",
+   "in": 7324.64,
+   "out": 7413.0,
+   "start_words": "Lord, make me an",
+   "end_words": "light so are you",
+   "hook": ["Make me an instrument", "of peace."],
+   "send": "Send this to someone who's going through a hard week - the kind of thing you send without a caption, just because it's needed.",
+   "caption": "Some say Saint Francis wrote it 800 years ago. Some say he never did. It doesn't matter who — only what it actually says.\n\n\"Where there is hatred, let me sow love. Where there is despair, let me sow hope.\" Not a request for comfort. A request for the harder job: to give before you receive, to understand before you're understood, to love before you're loved — because somehow, that's the order it actually works in. You are love and light already. The prayer is just a reminder to act like it.\n\nComment RISE and I'll send you the rest of this prayer.\n\n#prayer #awakening #consciousness #faith #spirituality #kevintrudeau"
+  }
+ ]
+}

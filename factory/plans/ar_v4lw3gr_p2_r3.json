@@ -1,0 +1,30 @@
+{
+ "source": "v4lw3gr.mp4",
+ "brand": "AR_BILDERBERGR3",
+ "test": false,
+ "note": "10 Nov 2026 - re-cut, Awakened Rise weekly agent. Two clips from ar_v4lw3gr_p2.json failed the captions-vs-sound gate (AR_PLANNING.md step 2c). BUSH-KERRY-NIXON-SAME-SECRET-ISLAND now opens on 'So if you're at a secret society meeting' and closes a sentence later on 'the globalist plan' instead of cutting off mid-list at 'and at Bilderberg'. WORK-DEBT-KIDS-THEN-YOU-DIE now opens exactly on a cue boundary ('So throughout history, we have had classes') and closes on the sentence's actual last word, 'No problem.', instead of stopping one word early.",
+ "clips": [
+  {
+   "slug": "BUSH-KERRY-NIXON-SAME-SECRET-ISLAND",
+   "retry_of": "ar_v4lw3gr_p2/BUSH-KERRY-NIXON-SAME-SECRET-ISLAND",
+   "in": 1286.28,
+   "out": 1372.49,
+   "start_words": "So if you're at",
+   "end_words": "the globalist plan",
+   "hook": ["Bush. Kerry. Nixon.", "Same secret island."],
+   "send": "Send this to someone who thinks the two political parties are actually on opposite sides - awe at how small the real circle is.",
+   "caption": "There's an island where the members of one society meet, away from everyone else. Only a handful of outsiders have ever been let onto it.\n\nThe people invited inside aren't random - a former president, a former secretary of state, Supreme Court judges, all tied to the same society they joined decades earlier at the same university.\n\nA few miles away, a different grove held the same kind of gathering - presidents from opposing parties and a former Soviet leader, in the same room.\n\nIt was never two sides. It was one circle, wearing two faces for the cameras.\n\nComment RISE and I'll send you how to spot that circle operating today.\n\n#secretsocieties #disclosure #awakening #consciousness #subconscious #kevintrudeau"
+  },
+  {
+   "slug": "WORK-DEBT-KIDS-THEN-YOU-DIE",
+   "retry_of": "ar_v4lw3gr_p2/WORK-DEBT-KIDS-THEN-YOU-DIE",
+   "in": 2646.72,
+   "out": 2773.36,
+   "start_words": "So throughout history",
+   "end_words": "No problem",
+   "hook": ["Work. Debt. Kids.", "Then you die."],
+   "send": "Send this to a friend grinding at a job they hate to afford more stuff - unease at seeing the script written out loud.",
+   "caption": "There's a class of people the people at the top have a name for: the followers. Not slaves - just a decent apartment, running water, a few nice things, and a job you show up to.\n\nThe quiet part is what makes it work - keep them comfortable enough to never revolt, and in debt enough to never leave. Work. Buy stuff. Have a couple of kids. Go further into debt. Then die.\n\nNo poverty, no visible chains - which is why almost no one sees the cage.\n\nYou weren't born into this life by accident. You were sorted into it, and the sorting was built so you'd never notice.\n\nComment RISE and I'll send you how to tell which class you were actually built to stay in.\n\n#subconscious #awakening #disclosure #consciousness #programming #kevintrudeau"
+  }
+ ]
+}
