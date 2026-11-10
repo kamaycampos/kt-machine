@@ -1,0 +1,28 @@
+{
+ "source": "v71ktjy.mp4",
+ "brand": "AR_PROGRAMMEDR2",
+ "test": false,
+ "note": "10 Nov 2026 - re-cut, Awakened Rise weekly agent. YOUR-RAGE-HAS-A-HIDDEN-SWITCH opened on 'He pushed your buttons. He pushed your button. He really pushes my buttons.' - Kevin restating the same line three times in a row, which is exactly the word-repeat/phrase-scramble pattern AR_PLANNING.md step 2c calls out. Moved the open past the two repeats to the third, clean restatement ('He really pushes my buttons.').",
+ "clips": [
+  {
+   "slug": "YOUR-RAGE-HAS-A-HIDDEN-SWITCH",
+   "retry_of": "ar_v71ktjy_p2/YOUR-RAGE-HAS-A-HIDDEN-SWITCH",
+   "in": 2618.22,
+   "out": 2752.56,
+   "start_words": "He really pushes",
+   "end_words": "this world lost that",
+   "hook": ["Your rage has", "a hidden switch."],
+   "send": "Send to a friend who can't explain why certain headlines send them into a rage - the switch they didn't know was there, a jolt of unease.",
+   "caption": "Ever snap over something that was not even a big deal?\n\nKevin calls it a button - an old emotional imprint (the Sanskrit word is Samskara) sitting in memory, waiting to be pushed. Whoever writes the headlines knows where yours is. Feed you enough conflict and fear, and the button fires - for a few minutes you are not driving your own reactions.\n\nHe has watched two friends with opposite politics argue, then go watch football together - because neither one had a button left to push.\n\nComment RISE and I will send you how to find yours.\n\n#subconscious #programming #awakening #consciousness #selfmastery #kevintrudeau",
+   "trial_hooks": [
+    ["The elites built", "you a button."],
+    ["Fear and conflict", "pull your trigger."],
+    ["That rage isn't", "yours. It's installed."],
+    ["Stay unaware, stay", "easy to control."],
+    ["Yogis named it", "Samskara, long ago."],
+    ["Stop reacting. Start", "watching your buttons."],
+    ["Two rivals had", "dinner. No rage."]
+   ]
+  }
+ ]
+}
