@@ -26,7 +26,7 @@ import kt_lock  # noqa: E402  (mark published clips before anything re-renders)
 print("locked now published:", kt_lock.sync())
 series = json.load(open(SERIES))
 done = json.load(open(os.path.join(HERE, "plans", "_done.json")))
-brands, kinds, report = set(), {}, []
+brands, kinds, report, looks = set(), {}, [], {}
 # SECOND CHANCES. 6 Oct 2026: 205 clips planned, 103 queued - and every clip that
 # failed a gate was simply gone, because a plan that yields one clip is "built".
 # Both accounts ran dry. A failed clip is now written here with why it failed,
@@ -137,6 +137,8 @@ for plan, rs in sorted(by_plan.items()):
             if any(f.startswith(b[:-4]) for b in blocked):
                 continue                       # the clip and its sidecar both stay behind
             shutil.copy(os.path.join(root, f"shard-{plan}-{r['shard']}", f), bdir)
+            if f.endswith(".mp4") and "__" not in f and r.get("look"):
+                looks[f"{p['brand']}/{f}"] = r["look"]          # the look test (build_shard.py)
             if f.endswith(".mp4") and "__" not in f and "cta_kind" in str(passed):
                 slug = next((c for c in passed if f"_{c['slug']}_" in f), {})
                 if slug.get("cta_kind"):
@@ -160,6 +162,8 @@ if brands:
     for c in man["clips"]:
         if kinds.get(c["file"]) and not c.get("posted_at") and not c.get("cta_kind"):
             c["cta_kind"] = kinds[c["file"]]
+        if looks.get(c["file"]) and not c.get("look"):
+            c["look"] = looks[c["file"]]
     json.dump(man, open(man_p, "w"), indent=1)
     subprocess.run([sys.executable, "make_thumbs.py"], cwd=MACHINE, capture_output=True)
 # TRIAL REEL VARIANTS (1 Nov 2026, build_shard.py): upload each to the media release and list

@@ -25,6 +25,17 @@ if p.get("look") and p.get("test"):
     os.environ["KT_LOOK"] = p["look"]
 if p["brand"].startswith("AR_"):
     os.environ["KT_LOOK"] = "classic"
+# THE LOOK TEST (10 Nov 2026, Kamay: "test both first"). KT Instagram views fell from ~1 Nov
+# (median 207-979 -> 67-189, skip 45-52% -> 53-61%), the week the cinema look went live. Repo
+# variable LOOK_TEST="classic,cinema" splits new plans between the looks by a stable hash of
+# the plan name, so the same plan always gets the same look; queue.py stamps "look" on each
+# clip in the manifest and the daily strategist compares them. Never AR_, never a test plan.
+elif os.environ.get("LOOK_TEST") and not p.get("test"):
+    import hashlib
+    _looks = [x.strip() for x in os.environ["LOOK_TEST"].split(",") if x.strip()]
+    if _looks:
+        os.environ["KT_LOOK"] = _looks[int(hashlib.md5(plan.encode()).hexdigest(), 16) % len(_looks)]
+print("look:", os.environ.get("KT_LOOK") or "classic")
 key = f"{plan}__s{shard}"
 # "v<clip>_<first>" = a TRIAL VARIANT shard (shard.py): VSIZE hook variants of one clip, nothing else.
 vshard = shard.startswith("v")
@@ -55,7 +66,8 @@ h = R.height(mp4)
 out = "/tmp/shard_out"
 os.makedirs(out, exist_ok=True)
 result = {"plan": plan, "shard": shard, "brand": p["brand"], "source": p["source"],
-          "test": bool(p.get("test")), "height": h, "clips": [], "files": [], "variant_shard": vshard}
+          "test": bool(p.get("test")), "height": h, "clips": [], "files": [], "variant_shard": vshard,
+          "look": os.environ.get("KT_LOOK") or "classic"}
 if p.get("test"):
     os.environ["OPENER_PREVIEW"] = "1"          # a preview build shows the opener before it goes live
 if h < 1080:

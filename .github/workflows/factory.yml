@@ -27,6 +27,7 @@ env:
   PIXABAY_KEY: ${{ secrets.PIXABAY_KEY }}          # cinematic openers (kt_opener.py)
   OPENER_LIVE: ${{ vars.OPENER_LIVE }}             # "on" after Kamay approves the first automatic one
   KT_LOOK: ${{ vars.KT_LOOK }}                     # 'cinema' = Kamay's look B (1 Nov 2026)
+  LOOK_TEST: ${{ vars.LOOK_TEST }}                 # 'classic,cinema' = the 10 Nov look test (build_shard.py)
   GH_TOKEN: ${{ github.token }}
 jobs:
   stock:
