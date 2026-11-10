@@ -417,27 +417,112 @@ def verdict(src, t_in, t_out):
     return ", ".join(why)
 
 
+_DECADES = {w: f"{n}0s" for n, w in enumerate(
+    ["", "", "twenties", "thirties", "forties", "fifties", "sixties", "seventies", "eighties", "nineties"]) if w}
+_NUMS = {w: str(n) for n, w in enumerate(
+    "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen "
+    "sixteen seventeen eighteen nineteen twenty".split())}
+
+
+def word_key(w):
+    """One spelling per word for matching the planner's words against whisper's (10 Nov 2026).
+    LIBERACE: the planner wrote "in the fifties", whisper wrote "in the 50s" - not found, so the
+    ending was moved and the clip refused. Lower case, no punctuation, numbers as digits."""
+    w = re.sub(r"[^a-z0-9']", "", (w or "").lower()).replace("'", "")
+    return _DECADES.get(w) or _NUMS.get(w) or w
+
+
+def heard_words(src, t0, t1):
+    """[(start, end, word)] in SOURCE seconds, from whisper on just t0..t1 (10 Nov 2026).
+
+    The 3-minute word pass (kt_words, PAYOFF cache) drifts: on TWO-STRANGERS it put "gig." ending
+    ~292.7s while a 16s listen - and the finished-file check - hear it at 293.10-293.90s. A short
+    window keeps whisper's clock honest, the same way kt_verify_render listens. [] on any failure."""
+    import subprocess
+    import tempfile
+    home = os.path.expanduser("~/Kamay")
+    ff = os.path.join(home, "bin", "ffmpeg")
+    ff = ff if os.path.exists(ff) else "ffmpeg"
+    wcli = os.path.join(home, "whisper.cpp/build/bin/whisper-cli")
+    model = os.path.join(home, "whisper.cpp/models/ggml-small.en.bin")
+    t0 = max(0.0, t0)
+    with tempfile.TemporaryDirectory() as d:
+        wav = os.path.join(d, "w.wav")
+        subprocess.run([ff, "-y", "-loglevel", "error", "-ss", f"{t0:.2f}", "-t", f"{t1 - t0:.2f}",
+                        "-i", src, "-vn", "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", wav],
+                       capture_output=True)
+        if not os.path.exists(wav):
+            return []
+        r = subprocess.run([wcli, "-m", model, "-f", wav, "-ml", "1", "-sow"],
+                           capture_output=True, text=True)
+    out = []
+    for m in re.finditer(r"\[(\d+):(\d+):([\d.]+) --> (\d+):(\d+):([\d.]+)\]\s*(\S.*)", r.stdout):
+        a = int(m[1]) * 3600 + int(m[2]) * 60 + float(m[3])
+        b = int(m[4]) * 3600 + int(m[5]) * 60 + float(m[6])
+        out.append((round(t0 + a, 3), round(t0 + b, 3), m[7].strip()))
+    return out
+
+
 def _snap(words, t_out, end_words, reach=3.0):
     """The pure part of snap_end: words = [(start, end, text)] in source seconds."""
-    norm = lambda w: re.sub(r"[^a-z0-9']", "", (w or "").lower()).replace("'", "")
+    norm = word_key
     want = [norm(w) for w in (end_words or "").split() if norm(w)][-2:]
     ws = [(a, b, norm(w)) for a, b, w in words if norm(w)]
     if not want or len(ws) < len(want):
         return None
+    best = _match(ws, want, t_out, reach)
+    if not best:
+        return None
+    _start, end, nxt = best
+    return round(min(end + 0.35, max(end + 0.05, nxt - 0.08)), 2)
+
+
+def _match(ws, want, t_out, reach):
+    """(start of the last named word, its end, start of the word after) nearest t_out, or None."""
     best = None
     for i in range(len(ws) - len(want) + 1):
         if [x[2] for x in ws[i:i + len(want)]] != want:
             continue
-        end = ws[i + len(want) - 1][1]
+        start, end = ws[i + len(want) - 1][0], ws[i + len(want) - 1][1]
         if abs(end - t_out) > reach:
             continue
         nxt = ws[i + len(want)][0] if i + len(want) < len(ws) else end + 1.0
-        if best is None or abs(end - t_out) < abs(best[0] - t_out):
-            best = (end, nxt)
-    if not best:
+        if best is None or abs(end - t_out) < abs(best[1] - t_out):
+            best = (start, end, nxt)
+    return best
+
+
+def first_pause(src, t0, t1, min_len=0.30, step=0.05):
+    """Start of the first stretch of near-silence >= min_len between t0 and t1, or None.
+
+    10 Nov 2026. Whisper's word times wander +-0.5s (two listens put "gig." at 292.43-292.93 and
+    293.10-293.90); the sound does not: "gig" is loud 292.70-293.15, silent 293.15-293.85. Quiet =
+    under 10% of the loud end of this stretch. 0.30s is longer than the gap between two words
+    ("this .. gig" was 0.25s) and shorter than the breath after a sentence."""
+    import subprocess
+    import struct
+    ff = os.path.join(os.path.expanduser("~/Kamay"), "bin", "ffmpeg")
+    ff = ff if os.path.exists(ff) else "ffmpeg"
+    t0 = max(0.0, t0)
+    raw = subprocess.run([ff, "-loglevel", "error", "-ss", f"{t0:.2f}", "-t", f"{t1 - t0 + min_len:.2f}",
+                          "-i", src, "-vn", "-ar", "16000", "-ac", "1", "-f", "s16le", "-"],
+                         capture_output=True).stdout
+    n = len(raw) // 2
+    if n < 16000 * step * 4:
         return None
-    end, nxt = best
-    return round(min(end + 0.35, max(end + 0.05, nxt - 0.08)), 2)
+    x = struct.unpack(f"<{n}h", raw[:n * 2])
+    f = int(16000 * step)
+    rms = [(sum(v * v for v in x[i:i + f]) / f) ** 0.5 for i in range(0, n - f + 1, f)]
+    loud = sorted(rms)[int(len(rms) * 0.9)]
+    quiet = max(loud * 0.10, 30.0)
+    need = int(round(min_len / step))
+    run = 0
+    for k, r in enumerate(rms):
+        run = run + 1 if r < quiet else 0
+        if run >= need:
+            start = t0 + (k - need + 1) * step
+            return round(start, 2) if start <= t1 else None
+    return None
 
 
 def snap_end(src, t_out, end_words, reach=3.0):
@@ -450,12 +535,18 @@ def snap_end(src, t_out, end_words, reach=3.0):
     word times are already here (same grid and cache as sentences()); this lands the cut 0.35s
     after the last named word, never into the next one. None = words not found within reach,
     the planner's time stands."""
-    import kt_words
-    GRID = 60.0
-    t0 = max(0.0, (int(t_out // GRID) - 1) * GRID)
-    t1 = (int(t_out // GRID) + 2) * GRID
-    ws = kt_words.words_punct(src, t0, t1, f"PAYOFF/{os.path.basename(src)}")
-    return _snap([(t0 + a, t0 + b, w) for a, b, w in ws], t_out, end_words, reach)
+    # 10 Nov 2026: find the words on a short listen (not the drifting 3-minute pass), then cut in
+    # the first real pause after the last one - the sound decides, whisper only says where to look.
+    ws = [(a, b, word_key(w)) for a, b, w in heard_words(src, t_out - 8.0, t_out + 4.0) if word_key(w)]
+    want = [word_key(w) for w in (end_words or "").split() if word_key(w)][-2:]
+    hit = _match(ws, want, t_out, reach) if want else None
+    if not hit:
+        return None
+    start, end, nxt = hit
+    gap = first_pause(src, start + 0.10, max(end, nxt) + 0.60)
+    if gap is not None:
+        return round(gap + 0.15, 2)
+    return round(min(end + 0.35, max(end + 0.05, nxt - 0.08)), 2)
 
 
 def payoff_end(src, t_in, t_out, look=LOOK):

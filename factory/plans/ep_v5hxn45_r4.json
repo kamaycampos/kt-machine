@@ -1,0 +1,52 @@
+{
+ "source": "v5hxn45.mp4",
+ "brand": "KT_DELI",
+ "test": false,
+ "note": "10 Nov proof: ending cut in the first real pause after the named words (kt_payoff.first_pause).",
+ "clips": [
+  {
+   "slug": "TWO-STRANGERS-SAME-DAY",
+   "in": 121.76,
+   "out": 293.04,
+   "start_words": "I knew how to manifest",
+   "end_words": "offer me this gig.",
+   "hook": [
+    "$50,000 a week.",
+    "Two strangers appeared"
+   ],
+   "trial_hooks": [
+    [
+     "$50,000 a week,",
+     "no job required"
+    ],
+    [
+     "Why working hard",
+     "almost blocked this"
+    ],
+    [
+     "$50,000 wish became",
+     "two real offers"
+    ],
+    [
+     "Why you're still working",
+     "for $50,000"
+    ],
+    [
+     "Kevin Trudeau wished $50,000",
+     "Strangers delivered"
+    ],
+    [
+     "Kevin Trudeau manifested $50,000",
+     "a week"
+    ],
+    [
+     "A month later, two",
+     "strangers appeared"
+    ]
+   ],
+   "send": "A friend forwards this to someone grinding at a 9-to-5: proof that two total strangers handed Kevin Trudeau a payday the same day he wished for it - pure awe.",
+   "caption": "Kevin Trudeau once decided exactly what he wanted: $50,000 a week, no job, nothing to do but travel.\n\nA month later he's eating at a shared table in a New York deli, and the stranger next to him turns out to be a TV infomercial guy who tells him to put his memory course on television.\n\nThat same day, a voicemail is waiting back at his hotel - from a completely different friend who also wants to put him on TV.\n\nTwo unrelated people, the same offer, the same day, out of nowhere.\n\nWould you call that a coincidence?\n\n#kevintrudeau #manifestation #wealthmindset #successstory #lawofattraction #moneymindset",
+   "retry_of": "ep_v5hxn45_r2/TWO-STRANGERS-SAME-DAY"
+  }
+ ]
+}

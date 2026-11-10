@@ -356,7 +356,9 @@ def closes_wrong(verify_out, named):
     m = re.search(r"LAST\s+\d+s\s*:\s*(.+?)(?:\||$)", verify_out)
     if not m:
         return ""
-    clean = lambda t: [w.replace("'", "") for w in re.sub(r"[^a-z0-9' ]", " ", t.lower()).split()]
+    import kt_payoff
+    # numbers spelled either way: "fifties" == "50s" (10 Nov 2026)
+    clean = lambda t: [kt_payoff.word_key(w) for w in re.sub(r"[^a-z0-9' ]", " ", t.lower()).split()]
     got, want = clean(m.group(1))[-6:], clean(named)[-2:]
     # The LAST word is heard at the very edge of the file, so whisper often
     # returns it clipped ("career perspe" for "career perspective"). 23 Sept
@@ -393,7 +395,9 @@ def opens_wrong(src, t_in, verify_out, named=None):
     m = re.search(r"FIRST 5s\s*:\s*(.+?)(?:\||$)", verify_out)
     if not m:
         return ""
-    clean = lambda t: [w.replace("'", "") for w in re.sub(r"[^a-z0-9' ]", " ", t.lower()).split()]
+    import kt_payoff
+    # numbers spelled either way: "fifties" == "50s" (10 Nov 2026)
+    clean = lambda t: [kt_payoff.word_key(w) for w in re.sub(r"[^a-z0-9' ]", " ", t.lower()).split()]
     got = clean(m.group(1))
     if named:                                  # the planner named its first words
         exp = clean(named)

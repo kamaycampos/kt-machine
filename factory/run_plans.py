@@ -39,7 +39,8 @@ def _find_words(src, phrase, near, last):
     if not phrase:
         return None
     import kt_words
-    norm = lambda w: re.sub(r"[^a-z0-9']", "", w.lower())
+    import kt_payoff
+    norm = kt_payoff.word_key           # "fifties" == "50s" (10 Nov 2026, LIBERACE)
     toks = [norm(w) for w in phrase.split() if norm(w)]
     G = 60.0
     t0 = max(0.0, (int(near // G) - 1) * G)
@@ -151,6 +152,14 @@ def fix_edges(key):
         # missed the full stop the planner could plainly read.
         sa = _find_words(src, c.get("start_words"), a, last=False)
         sb = _find_words(src, c.get("end_words"), b, last=True)
+        if sb is None and c.get("end_words"):
+            # 10 Nov 2026: the 3-minute word pass missed them - listen to a short window instead
+            try:
+                sn = kt_payoff.snap_end(src, b, c["end_words"])
+            except Exception:
+                sn = None
+            if sn is not None:
+                sb = sn - 0.15
         if sa is not None or sb is not None:
             a = round(max(0.0, sa - 0.10), 2) if sa is not None else a
             b = round(sb + 0.15, 2) if sb is not None else b
@@ -185,6 +194,11 @@ def fix_edges(key):
                 continue
             print(f"  {c['slug']}: ending {b} -> {fixed:.2f}")
             b = round(fixed, 2)
+            if c.get("end_words"):
+                # the clip no longer ends on the named words, so the finished-file check must not
+                # demand them (LIBERACE 9 Nov: moved 10s on, then refused for not ending on them)
+                print(f"  {c['slug']}: end words '{c['end_words']}' dropped - ending moved off them")
+                c["end_words"] = None
         a = _face_gate(src, c, a, b)
         if a is None:
             continue
