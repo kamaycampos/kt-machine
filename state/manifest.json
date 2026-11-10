@@ -14777,13 +14777,27 @@
    "caption": "There is a stage before waking up where you do not know you are asleep.\n\nKevin names four stages, and most people are stuck in the first without knowing it: you do not know that you do not know. Something cracks it open and you hit stage two - now you know what you have been missing, and it stings. Stage three, you are applying it, clumsy and aware of every step. Stage four, it is just who you are.\n\nMost people never clear stage one.\n\nComment RISE and I will send you how to tell which stage you are in.\n\n#subconscious #awakening #mindset #consciousness #selfmastery #kevintrudeau",
    "hook": "You don't know you don't know.",
    "bytes": 52781100,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "scheduled_at": "2026-11-10T08:20",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1670521491446434/",
+    "instagram": "https://www.instagram.com/reel/DfkBLnnIHbL/",
+    "youtube": "https://youtube.com/shorts/yCY18DYt8m0"
+   },
+   "caption_at_post": "There is a stage before waking up where you do not know you are asleep.\n\nKevin names four stages, and most people are stuck in the first without knowing it: you do not know that you do not know. Something cracks it open and you hit stage two - now you know what you have been missing, and it stings. Stage three, you are applying it, clumsy and aware of every step. Stage four, it is just who you are.\n\nMost people never clear stage one.\n\nComment RISE and I will send you how to tell which stage you are in.\n\n#subconscious #awakening #mindset #consciousness #selfmastery #kevintrudeau",
+   "posted_at": "2026-11-10T08:34"
   },
   {
    "file": "KT_TENPERCENT/01_ROCKEFELLERS-DOLLAR-FIFTY-SECRET_49s.mp4",
@@ -14857,7 +14871,11 @@
    "bytes": 56067805,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-11T09:58",
+   "cta_keyword": "RISE",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_BANNEDR3/02_MOST-PEOPLE-NEVER-LEAVE-LEVEL-ONE_62s.mp4",
@@ -14866,7 +14884,11 @@
    "bytes": 32370416,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-10T10:18",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_DECEPTIONR4/01_A-SECRET-AGENDA-KEPT-WOMEN-DOWN_66s.mp4",
@@ -14875,7 +14897,11 @@
    "bytes": 34442307,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-11T09:38",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "AR_DECEPTIONR4/02_COCA-COLA-HAD-COCAINE-RIGHT-ON-PURPOSE_48s.mp4",
@@ -14884,7 +14910,11 @@
    "bytes": 4420330,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-10T16:26",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_MISLEDR3/02_HE-LIED-ABOUT-AREA-51-TOO_46s.mp4",
@@ -14893,7 +14923,11 @@
    "bytes": 26329575,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-11T12:15",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 7,
+   "cta_kind": "question"
   },
   {
    "file": "AR_PROGRAMMEDR2/01_YOUR-RAGE-HAS-A-HIDDEN-SWITCH_134s.mp4",
@@ -14902,7 +14936,11 @@
    "bytes": 71254298,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-11T08:00",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_SOWLOVER2/01_68-SECONDS-THATS-ALL-IT-TAKES_59s.mp4",
@@ -14911,7 +14949,11 @@
    "bytes": 32407178,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-10T11:41",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_SOWLOVER2/02_MAKE-ME-AN-INSTRUMENT-OF-PEACE_87s.mp4",
@@ -14920,7 +14962,11 @@
    "bytes": 40162154,
    "done": false,
    "status": {},
-   "media_tag": "media2"
+   "media_tag": "media2",
+   "scheduled_at": "2026-11-10T19:53",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   }
  ]
 }
