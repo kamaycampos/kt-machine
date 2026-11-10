@@ -12404,6 +12404,42 @@
     "$50,000 a week.",
     "Two strangers appeared"
    ]
+  },
+  "ep_v6w8h8e_r2/ONE-RULE-THE-RICHEST-MAN-ALIVE": {
+   "plan": "ep_v6w8h8e_r2",
+   "source": "v6w8h8e.mp4",
+   "brand": "KT_UNSTUCKR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_ONE-RULE-THE-RICHEST-MAN-ALIVE_100s.mp4` - phrase scrambled around \"these multi millionaires these\"; word repeated after one: \"Success breeds success.\""
+   ],
+   "slug": "ONE-RULE-THE-RICHEST-MAN-ALIVE",
+   "in": 389.92,
+   "out": 497.92,
+   "start_words": "Aristotle Onassis said the",
+   "end_words": "success breeds success",
+   "hook": [
+    "One rule",
+    "The richest man alive"
+   ]
+  },
+  "ep_v6w8h8e_r2/THE-DOG-ON-THE-NAIL": {
+   "plan": "ep_v6w8h8e_r2",
+   "source": "v6w8h8e.mp4",
+   "brand": "KT_UNSTUCKR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_THE-DOG-ON-THE-NAIL_89s.mp4: [FAIL] 02_THE-DOG-ON-THE-NAIL_89s.mp4                         16 captions vs the sound  median +0.13s  worst-10% 0.60s  | words captioned 101%  UNCAPTIONED SPEECH [(30.8, 33.5)]"
+   ],
+   "slug": "THE-DOG-ON-THE-NAIL",
+   "in": 1565.76,
+   "out": 1657.52,
+   "start_words": "I was with a",
+   "end_words": "buy a new car",
+   "hook": [
+    "Why you're still",
+    "on the nail"
+   ]
   }
  },
  "attempts": {
