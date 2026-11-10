@@ -11,6 +11,12 @@ on the second-chance backlog, hit the account's usage limit, and pushed nothing.
 each plan passes `check_plan.py`**, to the same branch - the merge job takes each push - so a run that is
 cut off still keeps the plans it finished.
 
+## KEVIN IS THE CLIP - NEVER A GUEST (10 Nov 2026, Kamay: "lots of last clips its just a man looking at the camera, not even KT. it just sucks")
+Five of 60 posts were a guest telling his own story (TKTS Clips: TWO-STRANGERS, CONTRACT-RACE, ROCKEFELLERS-DOLLAR-FIFTY, INVESTOR-CALM, HE-LOST-65-MILLION) and they sank the account. Rules, no exceptions:
+- Cut ONLY moments where Kevin is the one talking AND on camera. A guest's story, a guest's answer, an interviewer's question, an archive clip of someone else: skip.
+- An episode that is mostly a guest (most TKTS Clips shorts, interviews where Kevin only asks) yields nothing. Write zero clips and say so - zero is a correct answer.
+- The factory now checks the finished file against Kevin's face (kt_batch_build.kevin_share) and refuses any clip where his face is not the main one in 60% of it. Do not waste a plan on it.
+
 ## SAME-DAY RUN (any run that starts at 15:00 UTC or later - check with `date -u`)
 Since 16 Oct 2026 this routine also fires every afternoon, so Kevin's new upload is cut the day
 it appears (`kevin_watch.yml` spots it within the hour and the factory transcribes it first).
