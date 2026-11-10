@@ -22,7 +22,7 @@
     "status": "publish failed 400: {'error': {'message': 'User is performing too many actions', 'type': 'OAuthException', 'is_transient': False, 'code': 9, 'error_subcode': 22",
     "id": null,
     "tries": 0,
-    "waits": 6
+    "waits": 7
    },
    {
     "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V3.mp4",
