@@ -27,6 +27,8 @@ ln -sf /usr/bin/ffmpeg  "$K/bin/ffmpeg"
 ln -sf /usr/bin/ffprobe "$K/bin/ffprobe"
 ln -sf "$(command -v gh)" "$K/bin/gh"
 cp factory/assets/mont_black.ttf factory/assets/yunet.onnx factory/assets/voice_encoder.npz "$K/bin/"
+# WHO is on screen (10 Nov 2026): OpenCV SFace + Kevin's face references - KT clips must be Kevin.
+cp factory/assets/sface.onnx factory/assets/kevin_face_refs.npy "$K/bin/" 2>/dev/null || true
 cp factory/assets/cinema_*.ttf "$K/bin/" 2>/dev/null || true   # the cinema look (kt_render, 1 Nov 2026)
 # Liberation Sans is metrically identical to Arial and free to ship; Apple's
 # Arial file is not ours to publish in a public repository.

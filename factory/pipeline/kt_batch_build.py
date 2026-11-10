@@ -208,6 +208,12 @@ def main():
                 for side in glob.glob(os.path.splitext(mp4)[0] + "*"):
                     shutil.move(side, os.path.join(FAILED, os.path.basename(side)))
                 continue
+            kv = None if p["brand"].startswith("AR_") else kevin_share(mp4)
+            if kv and kv[1] >= 3 and kv[0] < KEVIN_SHARE:
+                log(f"  FAIL {f}: not Kevin - his face in only {round(kv[0] * kv[1])} of {kv[1]} frames with a face")
+                for side in glob.glob(os.path.splitext(mp4)[0] + "*"):
+                    shutil.move(side, os.path.join(FAILED, os.path.basename(side)))
+                continue
             v = subprocess.run([sys.executable, os.path.join(HOME, "kt_verify_render.py"), mp4],
                                capture_output=True, text=True, cwd=HOME).stdout
             why = opens_wrong(os.path.join(SRC_DIR, p["source"]), float(slugs[m.group(1)]["in"]), v,
@@ -299,6 +305,59 @@ def _length(path):
         return 0.0
     m = re.search(r"Duration: (\d+):(\d+):([\d.]+)", r.stderr)
     return int(m[1]) * 3600 + int(m[2]) * 60 + float(m[3]) if m else 0.0
+
+
+# IT MUST BE KEVIN (10 Nov 2026). Kamay: "lots of last clips its just a man looking at the camera,
+# not even KT". Five of the last 60 KT posts were a guest telling his own story (TKTS Clips
+# shorts: TWO-STRANGERS, CONTRACT-RACE, ROCKEFELLERS-DOLLAR-FIFTY...). The face gate only
+# asked whether SOMEONE was on screen. Now OpenCV's SFace compares the posted frame with
+# Kevin's own face (bin/kevin_face_refs.npy): on those 60 posts Kevin scored 0.33-0.88, the
+# guests -0.02 to 0.05. A KT clip ships only when the face on screen is Kevin's in most of it.
+# Active only where the references exist (kt-machine), and never for AR_ (Yaren's brand).
+KEVIN_MIN, KEVIN_SHARE = 0.25, 0.6
+_REC = []
+
+
+def kevin_share(mp4, n=8):
+    """(share of sampled frames whose main face is Kevin, frames with a face) or None."""
+    try:
+        import cv2
+        import numpy as np
+    except Exception:
+        return None
+    refs_p, model = os.path.join(HOME, "bin", "kevin_face_refs.npy"), os.path.join(HOME, "bin", "sface.onnx")
+    if not (os.path.exists(refs_p) and os.path.exists(model) and hasattr(cv2, "FaceRecognizerSF_create")):
+        return None
+    if not _REC:
+        refs = np.load(refs_p)
+        refs = refs / np.linalg.norm(refs, axis=1, keepdims=True)
+        cen = refs.mean(0)
+        _REC.append((cv2.FaceRecognizerSF_create(model, ""), cen / np.linalg.norm(cen),
+                     cv2.FaceDetectorYN_create(os.path.join(HOME, "bin", "yunet.onnx"), "", (320, 320), 0.6, 0.3, 5000)))
+    rec, cen, det = _REC[0]
+    L = _length(mp4)
+    if L < 2:
+        return None
+    hits = faces = 0
+    for k in range(n):
+        t = 1.0 + (L - 2.0) * k / max(1, n - 1)
+        q = f"/tmp/_kv_{os.getpid()}.jpg"
+        subprocess.run([os.path.join(HOME, "bin", "ffmpeg") if os.path.exists(os.path.join(HOME, "bin", "ffmpeg")) else "ffmpeg",
+                        "-y", "-loglevel", "error", "-ss", f"{t:.2f}", "-i", mp4, "-frames:v", "1",
+                        "-vf", "scale=540:-2", "-q:v", "3", q], capture_output=True)
+        img = cv2.imread(q)
+        if img is None:
+            continue
+        h, w = img.shape[:2]
+        det.setInputSize((w, h))
+        _, found = det.detect(img)
+        if found is None or not len(found):
+            continue
+        f = max(found, key=lambda r: r[2] * r[3])
+        v = rec.feature(rec.alignCrop(img, f)).flatten()
+        faces += 1
+        hits += float(v @ cen / (np.linalg.norm(v) + 1e-9)) >= KEVIN_MIN
+    return (hits / faces, faces) if faces else None
 
 
 def speaker_in_frame(mp4, opener=False):
