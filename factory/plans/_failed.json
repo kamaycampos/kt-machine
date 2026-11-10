@@ -12458,6 +12458,42 @@
     "You've been misled,",
     "your whole life."
    ]
+  },
+  "ar_v4lw3gr_p2_r3/BUSH-KERRY-NIXON-SAME-SECRET-ISLAND": {
+   "plan": "ar_v4lw3gr_p2_r3",
+   "source": "v4lw3gr.mp4",
+   "brand": "AR_BILDERBERGR3",
+   "tries": 2,
+   "why": [
+    "FAIL 01_BUSH-KERRY-NIXON-SAME-SECRET-ISLAND_85s.mp4: [FAIL] 01_BUSH-KERRY-NIXON-SAME-SECRET-ISLAND_85s.mp4         20 captions vs the sound  median +0.04s  worst-10% 1.11s  | words captioned 100%"
+   ],
+   "slug": "BUSH-KERRY-NIXON-SAME-SECRET-ISLAND",
+   "in": 1286.28,
+   "out": 1372.49,
+   "start_words": "So if you're at",
+   "end_words": "the globalist plan",
+   "hook": [
+    "Bush. Kerry. Nixon.",
+    "Same secret island."
+   ]
+  },
+  "ar_v4lw3gr_p2_r3/WORK-DEBT-KIDS-THEN-YOU-DIE": {
+   "plan": "ar_v4lw3gr_p2_r3",
+   "source": "v4lw3gr.mp4",
+   "brand": "AR_BILDERBERGR3",
+   "tries": 2,
+   "why": [
+    "FAIL 02_WORK-DEBT-KIDS-THEN-YOU-DIE_127s.mp4: [FAIL] 02_WORK-DEBT-KIDS-THEN-YOU-DIE_127s.mp4                37 captions vs the sound  median +0.02s  worst-10% 1.46s  | words captioned 100%  UNCAPTIONED SPEECH [(21.3, 23.4)]"
+   ],
+   "slug": "WORK-DEBT-KIDS-THEN-YOU-DIE",
+   "in": 2646.72,
+   "out": 2773.36,
+   "start_words": "So throughout history",
+   "end_words": "No problem",
+   "hook": [
+    "Work. Debt. Kids.",
+    "Then you die."
+   ]
   }
  },
  "attempts": {
@@ -12523,6 +12559,6 @@
   "ep_v5hxn45_r2": 1,
   "ep_v4oml32_r6": 1,
   "ep_v5hxn45_r3": 1,
-  "ar_v4lw3gr_p2_r3": 1
+  "ar_v4lw3gr_p2_r3": 2
  }
 }
