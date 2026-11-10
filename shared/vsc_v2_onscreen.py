@@ -27,6 +27,14 @@ def nm(w):
     return re.sub(r"[^a-z0-9']", "", w.lower())
 
 
+def _near(w, shown):
+    """A heard word matches what was on screen, allowing for a word clipped at the read's edge."""
+    for s in shown:
+        if w == s or (len(s) > 2 and (w in s or s in w)) or (len(w) > 3 and len(s) > 3 and w[:3] == s[:3]):
+            return True
+    return False
+
+
 def check(mp4, n=SAMPLES, seed=7):
     # A clip can exist WITHOUT its caption sidecar: REPLACE-THE-HABIT was rendered
     # and the run was stopped before the sidecar was written. Say so instead of
@@ -67,7 +75,13 @@ def check(mp4, n=SAMPLES, seed=7):
         for c in caps:
             if c[1] > t - 1.0 and c[0] < t + 1.4:
                 shown |= {nm(w) for w in c[2].split()}
-        if heard[0] in shown or (len(heard) > 1 and heard[1] in shown):
+        # A 1.2s read cuts words at its edges (10 Nov 2026, LIBERACE held at 8 of 12 for a correct
+        # caption): "1940" for "1948.", "national" for "international", a lone "a". A clipped word is
+        # still the word: match by containment (3+ letters) or a shared 3-character start, over
+        # the first three heard words; a read of only one- or two-letter words says nothing.
+        if not [w for w in heard if len(w) > 2]:
+            continue
+        if any(_near(w, shown) for w in heard[:3] if len(w) > 2):
             hit += 1
         else:
             miss += 1

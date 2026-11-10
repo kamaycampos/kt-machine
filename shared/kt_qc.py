@@ -207,6 +207,39 @@ def trim_tail(mp4, why):
     return True
 
 
+def repeat_is_spoken(mp4, caps, fault):
+    """True when the audio under the caption holds the same three words (10 Nov 2026).
+
+    'word repeated after one' was written for caption DAMAGE ("It's not It's not"), but speakers
+    restart: Kevin says "because it's, what, it's like shared tables" (TWO-STRANGERS-SAME-DAY) and
+    the caption is right. 39 of 256 holds were this. Listen to that caption's seconds through 8
+    slightly different windows; the same three words heard in any one = speech."""
+    m = re.search(r'"(.+?)"', fault)
+    if not m:
+        return False
+    key = lambda t: [re.sub(r"[^a-z0-9']", "", w.lower()) for w in t.split() if re.sub(r"[^a-z0-9']", "", w.lower())]
+    want = key(m.group(1))
+    # the caption that holds the three words, or the pair of neighbours they straddle
+    spans = [(caps[i][0], caps[i][1], caps[i][2]) for i in range(len(caps))]
+    spans += [(caps[i][0], caps[i + 1][1], caps[i][2] + " " + caps[i + 1][2]) for i in range(len(caps) - 1)]
+    for a, b, text in spans:
+        if " ".join(want) not in " ".join(key(text)):
+            continue
+        wh = os.path.expanduser("~/Kamay/whisper.cpp/build/bin/whisper-cli")
+        md = os.path.expanduser("~/Kamay/whisper.cpp/models/ggml-small.en.bin")
+        # whisper smooths a restart away on most reads: on TWO-STRANGERS 3 of 10 windows heard
+        # "it's what it's", the rest "it's like". So several windows; any one hearing it is enough.
+        for pad, dur in [(p, d) for p in (0.3, 0.2, 0.1, 0.0) for d in (max(1.6, b - a + 0.2), b - a + 0.6)]:
+            wav = f"/tmp/kt_qc_rep_{os.getpid()}.wav"
+            sh(FF, "-y", "-loglevel", "error", "-ss", f"{max(0.0, a - pad):.2f}", "-t", f"{dur:.2f}",
+               "-i", mp4, "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", wav)
+            r = subprocess.run([wh, "-m", md, "-f", wav, "-bs", "5", "-nt"], capture_output=True, text=True).stdout
+            if " ".join(want) in " ".join(key(re.sub(r"\[.*?\]|\(.*?\)", " ", r))):
+                return True
+        return False
+    return False
+
+
 def check(mp4, samples=12):
     """(verdict, reasons) - verdict is 'pass', 'look' or 'fail'."""
     name = re.sub(r"_\d+s$", "", os.path.basename(mp4)[:-4])
@@ -238,7 +271,10 @@ def check(mp4, samples=12):
         hard.append(f'ends mid-thought on "{" ".join(last.split()[-3:])}"')
 
     for f in text_faults(caps):
-        hard.append(f)
+        if f.startswith("word repeated after one") and repeat_is_spoken(mp4, caps, f):
+            soft.append(f + " - and the speaker says it (heard in the audio)")
+        else:
+            hard.append(f)
 
     # is the spoken word on screen? the only check that reads the real audio
     try:
