@@ -88,6 +88,11 @@ def main():
     for _f in ("source_plan.json", "ar_source_plan.json"):
         if os.path.exists(os.path.join(HERE, _f)):
             _lists |= {x["id"] for x in json.load(open(os.path.join(HERE, _f)))["episodes"]}
+    # A listed episode refused only for its resolution gets another try (10 Nov 2026: four of
+    # Kevin's 720p shows were downloaded, then thrown away by the old 1080p gate).
+    for _v in [v for v, e in idx.items() if e.get("status") == "rejected" and v in _lists
+               and (e.get("height") or 0) >= 360]:
+        del idx[_v]
     waiting = [v for v, e in idx.items() if e.get("status") == "stocked" and not e.get("test")
                and v not in planned and v in _lists]
     missing = [v for v in _lists if v not in idx or retry(idx[v])]
@@ -215,8 +220,8 @@ def main():
                 time.sleep(20 * (attempt + 1))
             if h < want:
                 print(f"    NOTE: kept {h}p, Rumble lists {want}p - the stream refused a better copy")
-        if h < 1080:
-            print(f"    REFUSED: {h}p - under the 1080p gate")
+        if h < (360 if vid in listed else 1080):       # a LISTED episode only needs to be watchable
+            print(f"    REFUSED: {h}p - under the {'360' if vid in listed else '1080'}p gate")
             idx[vid] = {"title": e["title"], "rumble": url, "status": "rejected", "height": h}
             continue
         # OVER 2 GiB GOES UP IN PARTS (5 Oct 2026). GitHub refuses any release asset of
