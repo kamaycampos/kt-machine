@@ -12259,6 +12259,60 @@
     "Your rage has",
     "a hidden switch."
    ]
+  },
+  "ep_v4oml32_r4/LIBERACE-WORST-PIANIST-RICHEST": {
+   "plan": "ep_v4oml32_r4",
+   "source": "v4oml32.mp4",
+   "brand": "KT_UNDERTOWR2R2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_LIBERACE-WORST-PIANIST-RICHEST_72s.mp4: ends off the planned words: plan ends 'I believe in the fifties', clip ends 'book was written in 1948 1948'"
+   ],
+   "slug": "LIBERACE-WORST-PIANIST-RICHEST",
+   "in": 261.0,
+   "out": 324.76,
+   "start_words": "They asked Liberace, you're a",
+   "end_words": "I believe in the fifties",
+   "hook": [
+    "The worst piano player",
+    "became richest"
+   ]
+  },
+  "ep_v5hxn45/TWO-STRANGERS-SAME-DAY": {
+   "plan": "ep_v5hxn45",
+   "source": "v5hxn45.mp4",
+   "brand": "KT_DELI",
+   "tries": 1,
+   "why": [
+    "FAIL 01_TWO-STRANGERS-SAME-DAY_169s.mp4: ends off the planned words: plan ends 'offer me this gig.', clip ends 'out of nowhere offer me this'"
+   ],
+   "slug": "TWO-STRANGERS-SAME-DAY",
+   "in": 121.76,
+   "out": 293.04,
+   "start_words": "I knew how to manifest",
+   "end_words": "offer me this gig.",
+   "hook": [
+    "$50,000 a week.",
+    "Two strangers appeared"
+   ]
+  },
+  "ep_v5hxn45/THE-CONTRACT-RACE-256K-WEEK": {
+   "plan": "ep_v5hxn45",
+   "source": "v5hxn45.mp4",
+   "brand": "KT_DELI",
+   "tries": 1,
+   "why": [
+    "FAIL 02_THE-CONTRACT-RACE-256K-WEEK_78s.mp4: [FAIL] 02_THE-CONTRACT-RACE-256K-WEEK_78s.mp4                 21 captions vs the sound  median +0.04s  worst-10% 0.31s  | words captioned 95%  UNCAPTIONED SPEECH [(59.6, 62.2)]"
+   ],
+   "slug": "THE-CONTRACT-RACE-256K-WEEK",
+   "in": 310.4,
+   "out": 388.32,
+   "start_words": "Ed sends me the contract",
+   "end_words": "just got a check automatically.",
+   "hook": [
+    "First check $52,000",
+    "Never worked again"
+   ]
   }
  },
  "attempts": {
@@ -12318,7 +12372,9 @@
   "ep_v4oml32_r3": 2,
   "ep_v56da5e": 2,
   "ep_v5d9snl_r6": 2,
-  "ep_v4oml32_r4": 1,
-  "ep_v5hxn45": 1
+  "ep_v4oml32_r4": 2,
+  "ep_v5hxn45": 2,
+  "ep_v4oml32_r5": 1,
+  "ep_v5hxn45_r2": 1
  }
 }
