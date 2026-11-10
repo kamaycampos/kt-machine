@@ -12313,6 +12313,42 @@
     "First check $52,000",
     "Never worked again"
    ]
+  },
+  "ep_v4oml32_r5/LIBERACE-WORST-PIANIST-RICHEST": {
+   "plan": "ep_v4oml32_r5",
+   "source": "v4oml32.mp4",
+   "brand": "KT_UNDERTOWR2R2R2",
+   "tries": 4,
+   "why": [
+    "FAIL 01_LIBERACE-WORST-PIANIST-RICHEST_72s.mp4: ends off the planned words: plan ends 'I believe in the fifties', clip ends 'book was written in 1948 1948'"
+   ],
+   "slug": "LIBERACE-WORST-PIANIST-RICHEST",
+   "in": 261.0,
+   "out": 324.76,
+   "start_words": "They asked Liberace, you're a",
+   "end_words": "I believe in the fifties",
+   "hook": [
+    "The worst piano player",
+    "became richest"
+   ]
+  },
+  "ep_v5hxn45_r2/TWO-STRANGERS-SAME-DAY": {
+   "plan": "ep_v5hxn45_r2",
+   "source": "v5hxn45.mp4",
+   "brand": "KT_DELI",
+   "tries": 2,
+   "why": [
+    "FAIL 01_TWO-STRANGERS-SAME-DAY_169s.mp4: ends off the planned words: plan ends 'offer me this gig.', clip ends 'out of nowhere offer me this'"
+   ],
+   "slug": "TWO-STRANGERS-SAME-DAY",
+   "in": 121.76,
+   "out": 293.49,
+   "start_words": "I knew how to manifest",
+   "end_words": "offer me this gig.",
+   "hook": [
+    "$50,000 a week.",
+    "Two strangers appeared"
+   ]
   }
  },
  "attempts": {
@@ -12374,7 +12410,9 @@
   "ep_v5d9snl_r6": 2,
   "ep_v4oml32_r4": 2,
   "ep_v5hxn45": 2,
-  "ep_v4oml32_r5": 1,
-  "ep_v5hxn45_r2": 1
+  "ep_v4oml32_r5": 2,
+  "ep_v5hxn45_r2": 1,
+  "ep_v4oml32_r6": 1,
+  "ep_v5hxn45_r3": 1
  }
 }

@@ -1062,5 +1062,67 @@
    }
   ],
   "posted": "2026-11-09T23:29"
+ },
+ "KT_DELI__THE-CONTRACT-RACE-256K-WEEK": {
+  "clip": "KT_DELI/02_THE-CONTRACT-RACE-256K-WEEK_78s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_DELI__THE-CONTRACT-RACE-256K-WEEK__V1.mp4",
+    "hook": [
+     "$450 million total sales",
+     "one deal"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DELI__THE-CONTRACT-RACE-256K-WEEK__V2.mp4",
+    "hook": [
+     "Why the weekly grind",
+     "stopped mattering"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DELI__THE-CONTRACT-RACE-256K-WEEK__V3.mp4",
+    "hook": [
+     "One deal became $256,000",
+     "a week"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DELI__THE-CONTRACT-RACE-256K-WEEK__V4.mp4",
+    "hook": [
+     "Why you work weekly",
+     "for less"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DELI__THE-CONTRACT-RACE-256K-WEEK__V5.mp4",
+    "hook": [
+     "Kevin Trudeau's check hit",
+     "$256,000 once"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DELI__THE-CONTRACT-RACE-256K-WEEK__V6.mp4",
+    "hook": [
+     "Kevin Trudeau never worked",
+     "again, ever"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DELI__THE-CONTRACT-RACE-256K-WEEK__V7.mp4",
+    "hook": [
+     "$180M in 18 months",
+     "then nothing"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }
