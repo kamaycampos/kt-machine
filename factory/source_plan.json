@@ -1,5 +1,5 @@
 {
- "note": "22 Sept 2026 - the month's episodes, chosen with Kamay: ~70% money, ~30% manifesting/YWIYC. Stocked in this order. | 30 Sept: extended from Kamay's YouTube playlist 'Potential Viral Content'.",
+ "note": "22 Sept 2026 - the month's episodes, chosen with Kamay: ~70% money, ~30% manifesting/YWIYC. Stocked in this order. | 30 Sept: extended from Kamay's YouTube playlist 'Potential Viral Content'. | 10 Nov 2026 (supply audit): removed 5 entries the 7-9 Nov refill runs re-listed although the same episodes were cut in Sept-Oct under their title filenames (kt_series 'luck', 'positive_broke', 'kroc', 'wealth_attractor'...); the stocker skipped them as already used, so the list looked full while nothing new arrived.",
  "episodes": [
   {
    "id": "v7htumc",
@@ -72,16 +72,6 @@
    "lane": "manifest"
   },
   {
-   "id": "v768cno",
-   "title": "The Lost Science Of Luck: It’s Not Random",
-   "why": "Kamay's YouTube playlist: Potential Viral Content"
-  },
-  {
-   "id": "v6s6277",
-   "title": "The Meditation Myth: EXPOSED",
-   "why": "Kamay's YouTube playlist: Potential Viral Content"
-  },
-  {
    "id": "v759ffq",
    "title": "Why Manifesting Fails [The Ancient Missing Key]",
    "why": "Kamay's YouTube playlist: Potential Viral Content"
@@ -94,11 +84,6 @@
   {
    "id": "v79gchk",
    "title": "If You Want To Get Rich, Tell Absolutely No One (The Law Of Anonymous Wealth)",
-   "why": "Kamay's YouTube playlist: Potential Viral Content"
-  },
-  {
-   "id": "v7cfoiq",
-   "title": "Positive Thinking Will Keep You Broke — Here's What Actually Works",
    "why": "Kamay's YouTube playlist: Potential Viral Content"
   },
   {
@@ -119,16 +104,6 @@
   {
    "id": "v6epqd7",
    "title": "Spiritual and Rich: You Can Have It All! | Ep. 86",
-   "why": "Kamay's YouTube playlist: Potential Viral Content"
-  },
-  {
-   "id": "v7bqmls",
-   "title": "The #1 Wealth Attractor In Every Billionaire’s Home (You’re Missing This)",
-   "why": "Kamay's YouTube playlist: Potential Viral Content"
-  },
-  {
-   "id": "v6qunfi",
-   "title": "From Broke To BILLIONS (Ray Kroc's Secret Sauce Revealed!)",
    "why": "Kamay's YouTube playlist: Potential Viral Content"
   },
   {
@@ -433,6 +408,48 @@
    "title": "How I Manifested $50K A Week! | TKTS Clips",
    "lane": "money",
    "why": "9 Nov 2026 (weekly agent, refill run): same reason as v5ib5vv - the only other genuinely money-lane episode found unclaimed in the full catalog scan (not just the printed top 15). 8-minute TKTS Clips short, dated 2024-10-08, likely holds 1 clip. The catalog otherwise has no fresh money/wealth source material right now - flagged in this run's report."
+  },
+  {
+   "id": "v5gwj11",
+   "title": "Tips & Tricks to Improve the Quality of Your Life | The Kevin Trudeau Show | Ep. 52",
+   "lane": "mindset",
+   "why": "10 Nov 2026 (supply audit): Kevin's own full shows never planned or cut by KT or WB (checked by id, plans and title). Success habits, better life, speech, meditation & money-making secrets, happiness; two classic 2011/2013 shows. Money/success moments only; skip health segments (WB's lane)."
+  },
+  {
+   "id": "v55bpjb",
+   "title": "Tips & Tricks To Living A Better Life! | The Kevin Trudeau Show | Ep. 27",
+   "lane": "mindset",
+   "why": "10 Nov 2026 (supply audit): Kevin's own full shows never planned or cut by KT or WB (checked by id, plans and title). Success habits, better life, speech, meditation & money-making secrets, happiness; two classic 2011/2013 shows. Money/success moments only; skip health segments (WB's lane)."
+  },
+  {
+   "id": "v5fewet",
+   "title": "How to Have A Better Life Through Speech w. Guest Roger Love |The Kevin Trudeau Show | Ep. 49",
+   "lane": "mindset",
+   "why": "10 Nov 2026 (supply audit): Kevin's own full shows never planned or cut by KT or WB (checked by id, plans and title). Success habits, better life, speech, meditation & money-making secrets, happiness; two classic 2011/2013 shows. Money/success moments only; skip health segments (WB's lane)."
+  },
+  {
+   "id": "v4tz80x",
+   "title": "Why You Should Meditate & Money Making Secrets |The Kevin Trudeau Show | Ep. 12",
+   "lane": "mindset",
+   "why": "10 Nov 2026 (supply audit): Kevin's own full shows never planned or cut by KT or WB (checked by id, plans and title). Success habits, better life, speech, meditation & money-making secrets, happiness; two classic 2011/2013 shows. Money/success moments only; skip health segments (WB's lane)."
+  },
+  {
+   "id": "v4vdcy0",
+   "title": "The Secrets of Happiness & Joy | The Kevin Trudeau Show | Ep. 13",
+   "lane": "mindset",
+   "why": "10 Nov 2026 (supply audit): Kevin's own full shows never planned or cut by KT or WB (checked by id, plans and title). Success habits, better life, speech, meditation & money-making secrets, happiness; two classic 2011/2013 shows. Money/success moments only; skip health segments (WB's lane)."
+  },
+  {
+   "id": "v4k3z5r",
+   "title": "The Kevin Trudeau Show_ 8-1-11 LIVE From Chicago HD",
+   "lane": "mindset",
+   "why": "10 Nov 2026 (supply audit): Kevin's own full shows never planned or cut by KT or WB (checked by id, plans and title). Success habits, better life, speech, meditation & money-making secrets, happiness; two classic 2011/2013 shows. Money/success moments only; skip health segments (WB's lane)."
+  },
+  {
+   "id": "v4khdir",
+   "title": "The Kevin Trudeau Show_ 6-6-13",
+   "lane": "mindset",
+   "why": "10 Nov 2026 (supply audit): Kevin's own full shows never planned or cut by KT or WB (checked by id, plans and title). Success habits, better life, speech, meditation & money-making secrets, happiness; two classic 2011/2013 shows. Money/success moments only; skip health segments (WB's lane)."
   }
  ]
 }

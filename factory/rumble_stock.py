@@ -131,8 +131,14 @@ def main():
             listed |= {x["id"] for x in json.load(open(fp))["episodes"]}
     vid_of = lambda u: (re.search(r"/(v[a-z0-9]+)-", u) or [None, ""])[1]
     floor = lambda u, e: 180 if vid_of(u) in listed or vid_of(u) in fresh else 1200
+    # A LISTED EPISODE IS NEVER FILTERED OUT BY RESOLUTION EITHER (10 Nov 2026). The 1080p
+    # floor keeps the AUTOMATIC pick at the best quality, but it silently refused every
+    # deliberate 720p/360p choice: WB's 360p test episode (v4ka7rn) and KT's 720p money
+    # shows were never downloaded, and both queues ran low. The factory's gates judge the
+    # finished clip; a listed episode only needs to be watchable.
+    hfloor = lambda u: 360 if vid_of(u) in listed else 1080
     pick = [(u, e) for u, e in sorted(cat.items(), key=lambda x: x[1]["date"], reverse=True)
-            if not e["short"] and e["dur"] >= floor(u, e) and e["height"] >= 1080
+            if not e["short"] and e["dur"] >= floor(u, e) and e["height"] >= hfloor(u)
             and u not in have and norm(e["title"])[:40] not in used]
     # THE MONTH'S LISTS COME FIRST - both of them, alternating, so neither
     # account waits behind the other: Kamay's money lane (source_plan.json) and
