@@ -1,0 +1,48 @@
+{
+  "source": "v4khhot.mp4",
+  "brand": "KT_GRANITE",
+  "test": false,
+  "note": "11 Nov 2026 - 'Relaunch of The New Show, Censorship, Adversity & How to be More Likable | The Kevin Trudeau Show - Episode 001' (Rumble v4khhot). Weekly agent. Only 3 clips: this 125-minute episode is mostly the show's relaunch pitch (fan club, cruise, supplements, salad dressing) plus health claims (talc, gluten, vitamins) and his own censorship/legal grievance - all skip territory per PLANNING.md. Mined the few Kevin-solo, non-health, non-sales moments that carry a real concrete fact.",
+  "clips": [
+    {
+      "slug": "ROWLING-DISNEY-REJECTIONS",
+      "in": 6635.0,
+      "out": 6681.0,
+      "start_words": "J.K. Rowling was famously",
+      "end_words": "to try to get financing",
+      "hook": ["Rejected 302 times", "Built Disneyland anyway"],
+      "send": "A student who just got rejected sends this to a friend chasing a dream everyone doubts - awe that a 'no' counts for nothing once you're on the other side of it.",
+      "caption": "J.K. Rowling sent Harry Potter to 12 publishers. All 12 said no.\n\nWalt Disney pitched his theme park for financing. Legend says he heard no 302 times before one person finally said yes.\n\nKevin Trudeau tells both stories back to back for a reason: the rejection never stops before the breakthrough, it just stops mattering once you're standing on the other side of it.\n\nNeither of them knew which \"no\" would be the last one. They just kept going until there wasn't one left to hear.\n\nWhat's the one \"no\" you let stop you too soon?\n\n#kevintrudeau #success #neverquit #mindset #entrepreneur #motivation"
+    },
+    {
+      "slug": "VAN-GOGH-142-MILLION",
+      "in": 6756.0,
+      "out": 6845.0,
+      "start_words": "Vincent van Gogh only sold",
+      "end_words": "discarded is another step forward",
+      "hook": ["$142 million now", "Sold for nothing"],
+      "trial_hooks": [
+        ["How $142 million", "came from nothing"],
+        ["The critics missed", "$142 million now"],
+        ["One sale ever", "Now worth millions"],
+        ["Why you're broke", "fearing their opinion"],
+        ["One painting only", "Van Gogh's $142M"],
+        ["Why failure pays", "per Kevin Trudeau"],
+        ["What $142M buys", "one old painting"]
+      ],
+      "send": "An artist who can't sell a single piece sends this to another artist about to quit - awe that being early looks exactly like being wrong.",
+      "caption": "Vincent van Gogh sold exactly one painting in his entire life. A friend bought it out of pity.\n\nHe kept painting anyway. Over 800 pieces, almost none sold while he was alive.\n\nToday, one of those paintings is worth $142 million.\n\nKevin Trudeau pairs that with Thomas Edison's line about failed experiments: every attempt you throw away isn't wasted, it's one more step closer to the one that works.\n\nThe market didn't change. Van Gogh was right the whole time, the world just hadn't caught up.\n\nWhat are you still doing that nobody's paying you for yet?\n\n#kevintrudeau #vangogh #success #mindset #neverquit #wealthmindset",
+      "opener": "antique oil painting frame"
+    },
+    {
+      "slug": "SHOES-LAST-400-YEARS",
+      "in": 5373.0,
+      "out": 5439.0,
+      "start_words": "Guess how old the suit",
+      "end_words": "20, 30 years ago",
+      "hook": ["400 years", "your shoes could last"],
+      "send": "A dad sends this to his son who just rebought the same cheap shoes again - anger at himself for buying twice what once would have done.",
+      "caption": "Kevin Trudeau came out of prison with a couple of suitcases and the clothes on his back. The government had taken the rest.\n\nThose clothes still fit him. The suit is 30 years old. The shoes are Aldens, built to last 400 years.\n\nHe didn't keep buying more, cheaper stuff and replacing it every year. He bought the best version once, decades ago, and it's still working today.\n\nMost people spend more over ten years buying cheap than they'd have spent once buying it right.\n\nWhat's one cheap thing you've already replaced three times?\n\n#kevintrudeau #richhabits #qualityoverquantity #moneymindset #buyonce #wealthmindset"
+    }
+  ]
+}
