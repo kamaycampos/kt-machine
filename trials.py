@@ -75,6 +75,7 @@ def _room(poster, clip):
 # clips keep posting.
 PAUSE = os.path.join(HERE, "state", "trials_pause.json")
 PAUSE_H = 72
+FOLLOW_D = 7
 LAST = os.path.join(HERE, "state", "trials_last.json")
 GAP_H = 2
 
@@ -94,7 +95,11 @@ def step(engine, poster, media_url, log=print):
     now = dt.datetime.utcnow()
     held = _paused(now)
     if held:
-        log(f"TRIALS PAUSED until {held} UTC - Instagram action block (code 9); real clips unaffected")
+        try:
+            why = json.load(open(PAUSE)).get("why", "")[:120]
+        except (OSError, ValueError):
+            why = ""
+        log(f"TRIALS PAUSED until {held} UTC - {why or 'Instagram action block'}; real clips unaffected")
 
     man = engine.load()
     changed = False
@@ -142,6 +147,18 @@ def step(engine, poster, media_url, log=print):
                 json.dump({"until": until, "why": str(res)[:160]}, open(PAUSE, "w"), indent=1)
                 arm["status"] = "waiting - Instagram action block, trials paused 72h"
                 log(f"  {' / '.join(arm['hook'])}: Instagram action block - ALL trials paused until {until} UTC")
+                changed = True
+                break
+            # TOO FEW FOLLOWERS (11 Nov 2026). Code 10 subcode 2207081 is Instagram's minimum-
+            # followers rule for trial reels - not a missing app permission, nothing to grant. WB
+            # (22 followers) got it 70 times. Pause a week, then one try tells if the account
+            # crossed the line; it resumes by itself the day it does.
+            if not ok and ("2207081" in str(res) or "does not have permission" in str(res)):
+                until = (now + dt.timedelta(days=FOLLOW_D)).strftime("%Y-%m-%dT%H:%M")
+                json.dump({"until": until, "why": "too few followers for Instagram trial reels "
+                           "(code 10/2207081) - rechecks by itself weekly"}, open(PAUSE, "w"), indent=1)
+                arm["status"] = "waiting - account below Instagram's trial-reel follower minimum"
+                log(f"  trials need more followers - paused until {until} UTC, then one recheck")
                 changed = True
                 break
             if not ok and _throttled(res) and arm.get("waits", 0) < WAITS:

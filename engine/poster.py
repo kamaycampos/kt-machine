@@ -856,7 +856,13 @@ def instagram(path, caption, public_url, clip=None, trial=False):
                       data=body)
     d = _j(r)
     if not d.get("id"):
-        return f"container failed {r.status_code}: {str(d)[:200]}"
+        # Meta's REAL reason sits in error_subcode / error_user_title, past the 200 characters
+        # kept below: 11 Nov 2026 the WB trials read "does not have permission" for weeks while the
+        # cut-off subcode 2207081 said "not enough followers for trial reels". Kept up front now.
+        er = d.get("error") or {}
+        why = (f" [subcode {er.get('error_subcode')}: {er.get('error_user_title', '')}]"
+               if er.get("error_subcode") else "")
+        return f"container failed {r.status_code}:{why} {str(d)[:200]}"
     cid = d["id"]
     # Instagram downloads the file itself; publishing early returns a 400.
     for _ in range(36):
