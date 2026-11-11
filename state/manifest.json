@@ -15149,13 +15149,26 @@
    "hook": "$87,500 a day just showed up",
    "bytes": 32983057,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-11T09:14",
    "cta_keyword": "MONEY",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfmtAyWExIh/",
+    "youtube": "https://youtube.com/shorts/D_LLl6Uby6o"
+   },
+   "caption_at_post": "Kevin Trudeau describes what financial freedom actually felt like day to day.\n\nNo banking app back then. He'd call his banker from wherever he was in the world and ask one question: how much came in today?\n\nOne day it was $87,500. The next, $24,000. Didn't matter where he was, Bellagio, Italy included - American Express could hand him cash on the spot.\n\nThat's the picture behind the phrase \"money working for you\": it shows up whether or not you're paying attention to it.\n\nWhat would you do with a day if a deposit like that was already on its way?\n\n#kevintrudeau #financialfreedom #wealthmindset #moneymindset #richhabits #millionaire",
+   "posted_at": "2026-11-11T09:35"
   },
   {
    "file": "KT_TIMBER/01_ATTITUDE-BEFORE-THE-MONEY_75s.mp4",
