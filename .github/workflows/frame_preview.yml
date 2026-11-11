@@ -37,6 +37,13 @@ jobs:
           curl -sfL -o /tmp/fonts/cormorant600i.ttf $B/cormorant-garamond@latest/latin-600-italic.ttf
           curl -sfL -o /tmp/fonts/montserrat600.ttf $B/montserrat@latest/latin-600-normal.ttf
           ls -la /tmp/fonts
+      - uses: actions/cache@v4
+        with: { path: "~/.cache/torch\n~/.cache/pip", key: align-torch-2.8.0-w2v2-base-960h }
+      - name: Caption aligner (same as the factory)
+        run: |
+          timeout 600 pip install -q torch==2.8.0 torchaudio==2.8.0 soundfile --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple \
+            && python -c "import torchaudio; torchaudio.pipelines.WAV2VEC2_ASR_BASE_960H.get_model()" \
+            && echo "setup: caption aligner ready" || echo "setup: caption aligner NOT installed - anchored times"
       - name: Render the looks
         env:   # through env, never inline: "$87,500" in a hook would be eaten by the shell
           VID: ${{ inputs.vid }}

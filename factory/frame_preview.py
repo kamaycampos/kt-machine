@@ -145,12 +145,14 @@ med = lambda v: sorted(v)[len(v) // 2]
 fx, fy, fh = (med([f[0] for f in faces]), med([f[1] for f in faces]), med([f[2] for f in faces])) if faces else (0.5, 0.4, 0.3)
 # his face about a third of the picture's height; the window never smaller than 960 source
 # pixels tall (so it is never scaled up) and never taller than the source.
-ch = max(min(shh, 960), min(shh, fh * shh / 0.34))
+# a wide desk shot may come in a little (never more than x1.35 up), so he is not a small figure
+ch = max(min(shh, 960 / 1.35), min(shh, fh * shh / 0.34))
 cw = min(sw, ch * 9 / 8)
 ch = cw * 8 / 9
 x0 = max(0, min(sw - cw, fx * sw - cw / 2))
 y0 = max(0, min(shh - ch, fy * shh - ch * 0.42))
 crop = f"crop={int(cw) // 2 * 2}:{int(ch) // 2 * 2}:{int(x0)}:{int(y0)},scale={W}:{PIC_H}:flags=lanczos"
+PIC_A = 440                    # the Archive look: picture 440-1400, captions on their own black line under it
 print(f"source {sw}x{shh}, face at x={fx:.2f} y={fy:.2f} h={fh:.2f} ({len(faces)} frames); "
       f"window {int(cw)}x{int(ch)} -> scale x{PIC_H / ch:.2f}")
 
@@ -175,7 +177,7 @@ def tracked(d, xy_center, text, font, fill, track):
     return wid
 
 
-def overlay_files(path):
+def overlay_files(path, PIC_Y=PIC_Y):
     from PIL import Image, ImageDraw, ImageFilter
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -191,7 +193,7 @@ def overlay_files(path):
     return path
 
 
-def overlay_archive(path):
+def overlay_archive(path, PIC_Y=PIC_A):
     from PIL import Image, ImageDraw, ImageFont
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
@@ -204,7 +206,7 @@ def overlay_archive(path):
         f_ = fi if last else fo
         d.text(((W - f_.getlength(t)) / 2, top + i * step), t, font=f_, fill=(GOLD if last else IVORY) + (255,))
     # the slug above the headline: tracked gold capitals between two short rules
-    fs = ImageFont.truetype(F_MONT, 21)
+    fs = ImageFont.truetype(F_MONT, 23)
     sy = top - 58
     wid = tracked(d, (W / 2, sy), "THE HIDDEN KNOWLEDGE ARCHIVE", fs, GOLD + (235,), 7)
     for sx in (W / 2 - wid / 2 - 96, W / 2 + wid / 2 + 26):
@@ -212,8 +214,8 @@ def overlay_archive(path):
     # hairlines hugging the picture, and the real source under it
     for yy in (PIC_Y - 1, PIC_Y + PIC_H):
         d.line((0, yy, W, yy), fill=GOLD + (120,), width=2)
-    fc = ImageFont.truetype(F_MONT, 20)
-    tracked(d, (W / 2, PIC_Y + PIC_H + 30), credit.upper(), fc, IVORY + (120,), 5)
+    fc = ImageFont.truetype(F_MONT, 19)
+    tracked(d, (W / 2, PIC_Y + PIC_H + 112), credit.upper(), fc, IVORY + (105,), 5)
     img.save(path)
     return path
 
@@ -224,11 +226,12 @@ def tf(name, text):
     return p
 
 
-def caps(items, font, size, y, color, prefix, shadow="black@0.75"):
+def caps(items, font, size, y, color, prefix, shadow="black@0.75", border=0):
     out = []
     for n, (x0_, x1_, t) in enumerate(items):
         out.append(f"drawtext=fontfile={font}:textfile={tf(f'{prefix}{n}', t)}:fontsize={size}:fontcolor={color}:"
-                   f"shadowcolor={shadow}:shadowx=0:shadowy=3:x=(w-text_w)/2:y={y}-text_h/2:"
+                   f"shadowcolor={shadow}:shadowx=0:shadowy=3:borderw={border}:bordercolor=black@0.55:"
+                   f"x=(w-text_w)/2:y={y}-text_h/2:"
                    f"enable='between(t,{max(0, x0_):.2f},{x1_:.2f})'")
     return out
 
@@ -241,20 +244,23 @@ CAP_F1 = int(max(PIC_Y + PIC_H // 2 + 60, min(chin + 70, PIC_Y + PIC_H - 90)))
 GRADE = "eq=contrast=1.06:saturation=0.9:brightness=-0.01,colorbalance=rs=0.025:bs=-0.035"
 looks = {
     "F1_FILES": {
-        "pic": crop, "canvas": "black", "post": [],
+        "pic": crop, "canvas": "black", "post": [], "y": PIC_Y,
         "overlay": overlay_files(os.path.join(TMP, "ov_files.png")),
-        "caps": caps(bursts(words), F_JOSEFIN, 44, CAP_F1, "white@0.95", "f"),
+        "caps": caps(bursts(words), F_JOSEFIN, 46, CAP_F1, "white", "f", border=3),
     },
     "F2_ARCHIVE": {
-        "pic": f"{crop},{GRADE}", "canvas": "0x0D0D0F", "post": ["noise=alls=5:allf=t"],
+        "pic": f"{crop},{GRADE}", "canvas": "0x0D0D0F", "post": ["noise=alls=5:allf=t"], "y": PIC_A,
         "overlay": overlay_archive(os.path.join(TMP, "ov_archive.png")),
-        "caps": caps(phrases(words), F_MONT, 46, PIC_Y + PIC_H - 96, "0xF3ECDD", "a"),
+        "caps": caps(phrases(words), F_MONT, 48, PIC_A + PIC_H + 54, "0xF3ECDD", "a"),
     },
 }
+for k_, t_ in enumerate((0.25, 0.5, 0.75)):
+    sh(FF, "-y", "-loglevel", "error", "-ss", f"{a + dur * t_:.2f}", "-i", src, "-frames:v", "1", "-q:v", "2",
+       os.path.join(OUT, f"{slug}_still{k_}.jpg"))
 made = []
 for name, L in looks.items():
     dst = os.path.join(OUT, f"{slug}_{name}.mp4")
-    graph = (f"[0:v]{L['pic']},pad={W}:{H}:0:{PIC_Y}:color={L['canvas']}"
+    graph = (f"[0:v]{L['pic']},pad={W}:{H}:0:{L['y']}:color={L['canvas']}"
              + "".join("," + p for p in L["post"]) + "[bg];[bg][1:v]overlay=0:0"
              + "".join("," + c for c in L["caps"])
              + f",fade=t=in:st=0:d=0.25,fade=t=out:st={dur - 0.6:.2f}:d=0.6,format=yuv420p[v]")
