@@ -6487,5 +6487,15 @@
   "page": 1,
   "hls": "https://rumble.com/hls-vod/CxRLl1ypns4/playlist.m3u8",
   "embed": "v7fnhou"
+ },
+ "https://rumble.com/v7i67gw-why-some-get-rich-and-others-stay-stuck-the-hidden-difference.html": {
+  "title": "Why Some Get Rich & Others Stay Stuck: The Hidden Difference",
+  "dur": 967,
+  "date": "2026-11-11",
+  "height": 1080,
+  "short": false,
+  "page": 0,
+  "embed": "v7fzuje",
+  "hls": "https://rumble.com/hls-vod/QpAgM5E-COQ/playlist.m3u8"
  }
 }
