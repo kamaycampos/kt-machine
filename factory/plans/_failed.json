@@ -12763,6 +12763,258 @@
     "Dalai Lama,",
     "3am, three hours."
    ]
+  },
+  "ar_v4khs1x/I-TRAINED-POLITICIANS-TO-BE-CONTROLLED": {
+   "plan": "ar_v4khs1x",
+   "source": "v4khs1x.mp4",
+   "brand": "AR_CLUBHOUSE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "I-TRAINED-POLITICIANS-TO-BE-CONTROLLED",
+   "in": 475.5,
+   "out": 532.5,
+   "start_words": "One of the things",
+   "end_words": "you're being controlled",
+   "hook": [
+    "I trained politicians",
+    "to be controlled."
+   ]
+  },
+  "ar_v4khs1x/I-KNOCKED-ON-THE-ROTHSCHILDS-DOOR": {
+   "plan": "ar_v4khs1x",
+   "source": "v4khs1x.mp4",
+   "brand": "AR_CLUBHOUSE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "I-KNOCKED-ON-THE-ROTHSCHILDS-DOOR",
+   "in": 2117.5,
+   "out": 2241.5,
+   "start_words": "Right across the street",
+   "end_words": "where this is going",
+   "hook": [
+    "I knocked",
+    "on the Rothschilds' door."
+   ]
+  },
+  "ar_v4khs1x/YOUR-ENERGY-MOVES-THE-FIELD": {
+   "plan": "ar_v4khs1x",
+   "source": "v4khs1x.mp4",
+   "brand": "AR_CLUBHOUSE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "YOUR-ENERGY-MOVES-THE-FIELD",
+   "in": 4286.5,
+   "out": 4427.5,
+   "start_words": "Gandhi, I think, said",
+   "end_words": "everything else around you",
+   "hook": [
+    "Your energy",
+    "moves the universal field."
+   ]
+  },
+  "ar_v4khxuu/I-WAS-PART-OF-MK-ULTRA": {
+   "plan": "ar_v4khxuu",
+   "source": "v4khxuu.mp4",
+   "brand": "AR_THIRDEYE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "I-WAS-PART-OF-MK-ULTRA",
+   "in": 414.12,
+   "out": 491.32,
+   "start_words": "Later, they had a",
+   "end_words": "emotions, and his actions",
+   "hook": [
+    "I was part",
+    "of MK Ultra."
+   ]
+  },
+  "ar_v4khxuu/ONE-MEETING-RUNS-THE-WHOLE-PLANET": {
+   "plan": "ar_v4khxuu",
+   "source": "v4khxuu.mp4",
+   "brand": "AR_THIRDEYE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "ONE-MEETING-RUNS-THE-WHOLE-PLANET",
+   "in": 186.96,
+   "out": 266.96,
+   "start_words": "I've been at the",
+   "end_words": "global agenda for the planet",
+   "hook": [
+    "One meeting runs",
+    "the whole planet."
+   ]
+  },
+  "ar_v4khxuu/YOUR-EYES-MISS-MOST-OF-REALITY": {
+   "plan": "ar_v4khxuu",
+   "source": "v4khxuu.mp4",
+   "brand": "AR_THIRDEYE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "YOUR-EYES-MISS-MOST-OF-REALITY",
+   "in": 4635.68,
+   "out": 4787.6,
+   "start_words": "So our physical eyes",
+   "end_words": "anything that's beyond itself",
+   "hook": [
+    "Your eyes",
+    "miss most of reality."
+   ]
+  },
+  "ar_v4khxuu/THE-CIA-CONTROLS-YOUR-MEDIA-TOO": {
+   "plan": "ar_v4khxuu",
+   "source": "v4khxuu.mp4",
+   "brand": "AR_THIRDEYE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "THE-CIA-CONTROLS-YOUR-MEDIA-TOO",
+   "in": 624.5,
+   "out": 672.87,
+   "start_words": "So I was talking",
+   "end_words": "living in fantasy land",
+   "hook": [
+    "The CIA controls",
+    "your media too."
+   ]
+  },
+  "ar_v4n9vuz_p2_r2/SKULL-AND-BONES-HE-SAT-INSIDE": {
+   "plan": "ar_v4n9vuz_p2_r2",
+   "source": "v4n9vuz.mp4",
+   "brand": "AR_CENSOREDR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_SKULL-AND-BONES-HE-SAT-INSIDE_65s.mp4: ends off the planned words: plan ends 'no access to health care', clip ends 'running water no access to health'"
+   ],
+   "slug": "SKULL-AND-BONES-HE-SAT-INSIDE",
+   "in": 380.84,
+   "out": 446.56,
+   "start_words": "And again, hold on.",
+   "end_words": "no access to health care",
+   "hook": [
+    "Skull & Bones.",
+    "He sat inside."
+   ]
+  },
+  "ar_v4n9vuz_r4/POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT": {
+   "plan": "ar_v4n9vuz_r4",
+   "source": "v4n9vuz.mp4",
+   "brand": "AR_DARKSIDER3",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT_74s.mp4` - opens mid-sentence on \"we'll just make\""
+   ],
+   "slug": "POLITICIANS-DONT-RUN-ANYTHING-ITS-DIRT",
+   "in": 1577.74,
+   "out": 1647.75,
+   "start_words": "we'll just let every",
+   "end_words": "Think about that",
+   "hook": [
+    "Dirt gives them",
+    "all the power."
+   ]
+  },
+  "ar_v5axknm_r2/NOT-MEDICINE-ITS-TRAINING": {
+   "plan": "ar_v5axknm_r2",
+   "source": "v5axknm.mp4",
+   "brand": "AR_PRIESTHOODR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_NOT-MEDICINE-ITS-TRAINING_43s.mp4: [FAIL] 01_NOT-MEDICINE-ITS-TRAINING_43s.mp4                   32 captions vs the sound (word-referenced: no clear pauses)  median -0.02s  worst-10% 0.86s  | words captioned 101%  UNCAPTIONED SPEECH [(12.3, 14.1)]"
+   ],
+   "slug": "NOT-MEDICINE-ITS-TRAINING",
+   "in": 2173.27,
+   "out": 2216.48,
+   "start_words": "I explain that my",
+   "end_words": "just follow blindly",
+   "hook": [
+    "Not medicine.",
+    "It trains your mind."
+   ]
+  },
+  "ar_v5axknm_r2/THEY-OWN-POLITICS-NOT-YOUR-MIND": {
+   "plan": "ar_v5axknm_r2",
+   "source": "v5axknm.mp4",
+   "brand": "AR_PRIESTHOODR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_THEY-OWN-POLITICS-NOT-YOUR-MIND_46s.mp4` - opens mid-sentence on \"how the structure\""
+   ],
+   "slug": "THEY-OWN-POLITICS-NOT-YOUR-MIND",
+   "in": 3333.0,
+   "out": 3379.52,
+   "start_words": "How the structure works",
+   "end_words": "if you don't let them",
+   "hook": [
+    "They own politics.",
+    "Not your mind."
+   ]
+  },
+  "ep_v4khhot_r2/ROWLING-DISNEY-REJECTIONS": {
+   "plan": "ep_v4khhot_r2",
+   "source": "v4khhot.mp4",
+   "brand": "KT_GRANITER2",
+   "tries": 2,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "ROWLING-DISNEY-REJECTIONS",
+   "in": 6635.0,
+   "out": 6692.0,
+   "start_words": "J.K. Rowling was famously",
+   "end_words": "steal his dream",
+   "hook": [
+    "302 rejections",
+    "Then he built Disneyland"
+   ]
+  },
+  "ep_v4khhot_r2/VAN-GOGH-142-MILLION": {
+   "plan": "ep_v4khhot_r2",
+   "source": "v4khhot.mp4",
+   "brand": "KT_GRANITER2",
+   "tries": 2,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "VAN-GOGH-142-MILLION",
+   "in": 6753.0,
+   "out": 6794.0,
+   "start_words": "Oh, here's a loser.",
+   "end_words": "valued at $142 million",
+   "hook": [
+    "One painting sold",
+    "Now $142 million"
+   ]
+  },
+  "ep_v4khhot_r2/SHOES-LAST-400-YEARS": {
+   "plan": "ep_v4khhot_r2",
+   "source": "v4khhot.mp4",
+   "brand": "KT_GRANITER2",
+   "tries": 2,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "SHOES-LAST-400-YEARS",
+   "in": 5373.0,
+   "out": 5437.0,
+   "start_words": "Guess how old the suit",
+   "end_words": "last 400 years",
+   "hook": [
+    "His 400-year shoes",
+    "outlasted going broke"
+   ]
   }
  },
  "attempts": {
@@ -12835,8 +13087,8 @@
   "ep_v4vdcy0": 1,
   "ar_v4ki1z0": 2,
   "ar_v4ki6sz": 2,
-  "ar_v4khs1x": 1,
-  "ar_v4khxuu": 1,
-  "ep_v4khhot_r2": 1
+  "ar_v4khs1x": 2,
+  "ar_v4khxuu": 2,
+  "ep_v4khhot_r2": 2
  }
 }
