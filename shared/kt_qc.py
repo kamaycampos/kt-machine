@@ -271,7 +271,9 @@ def check(mp4, samples=12):
         hard.append(f'ends mid-thought on "{" ".join(last.split()[-3:])}"')
 
     for f in text_faults(caps):
-        if f.startswith("word repeated after one") and repeat_is_spoken(mp4, caps, f):
+        # 11 Nov 2026: all three text rules ask the audio. CREDIT-SCORE-5-DAY-TRICK was held for
+        # "phrase scrambled around 'make sure you make'" - plain English Kevin really says.
+        if f.startswith(("word repeated", "phrase scrambled")) and repeat_is_spoken(mp4, caps, f):
             soft.append(f + " - and the speaker says it (heard in the audio)")
         else:
             hard.append(f)
