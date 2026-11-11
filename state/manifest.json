@@ -15108,13 +15108,26 @@
    "hook": "10 years prison Still chose happy",
    "bytes": 24130398,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-11T08:20",
    "cta_keyword": "BRAIN",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfmmDgyjme3/",
+    "youtube": "https://youtube.com/shorts/G3ROnLWar6E"
+   },
+   "caption_at_post": "Kevin Trudeau spent eight and a half years in federal prison. One day, walking the yard, the warden stopped him.\n\nThe warden told him he'd run that prison for 35 years and seen tens of thousands of inmates - and never once seen a man who was actually happy to be there.\n\nKevin's answer: \"I'm here. I have a choice. I can either be happy or miserable. I choose to be happy. Because if I'm miserable, I'm still here.\"\n\nNothing about his situation changed in that moment. Only the choice did.\n\nWhat's the one thing you're waiting to be different before you let yourself be happy?\n\n#kevintrudeau #mindset #resilience #richhabits #wealthmindset #motivation",
+   "posted_at": "2026-11-11T08:34"
   },
   {
    "file": "KT_SUMMIT/01_WORTHLESS-BOTTLE-CAPS-PANIC_121s.mp4",
