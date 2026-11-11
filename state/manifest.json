@@ -15096,7 +15096,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-11T08:20",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_SUMMIT/01_WORTHLESS-BOTTLE-CAPS-PANIC_121s.mp4",
@@ -15106,7 +15110,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-11T10:55",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_TIMBER/01_87500-IN-ONE-DAY_52s.mp4",
@@ -15116,7 +15124,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-11T09:14",
+   "cta_keyword": "MONEY",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_TIMBER/01_ATTITUDE-BEFORE-THE-MONEY_75s.mp4",
@@ -15126,7 +15138,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-11T12:27",
+   "cta_keyword": "MONEY",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   }
  ]
 }
