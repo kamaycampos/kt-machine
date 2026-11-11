@@ -12475,6 +12475,24 @@
     "Add 15 points",
     "before you apply"
    ]
+  },
+  "ep_v5d9snl_r7/BUYS-A-HOUSE-NOT-A-HOME": {
+   "plan": "ep_v5d9snl_r7",
+   "source": "v5d9snl.mp4",
+   "brand": "KT_UPLIFTR2R2R2R2R2R2",
+   "tries": 3,
+   "why": [
+    "FAIL 01_BUYS-A-HOUSE-NOT-A-HOME_54s.mp4: not Kevin - his face in only 1 of 8 frames with a face"
+   ],
+   "slug": "BUYS-A-HOUSE-NOT-A-HOME",
+   "in": 4068.48,
+   "out": 4125.0,
+   "start_words": "I believe that success is",
+   "end_words": "me a good night's sleep",
+   "hook": [
+    "What money truly",
+    "can't buy you"
+   ]
   }
  },
  "attempts": {
@@ -12541,6 +12559,9 @@
   "ep_v4oml32_r6": 1,
   "ep_v5hxn45_r3": 1,
   "ar_v4lw3gr_p2_r3": 2,
-  "ep_v5d9snl_r7": 1
+  "ep_v5d9snl_r7": 2,
+  "ep_v4khhot": 1,
+  "ep_v4tz80x": 1,
+  "ep_v4vdcy0": 1
  }
 }
