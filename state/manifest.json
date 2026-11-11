@@ -15258,13 +15258,26 @@
    "hook": "Add 15 points before you apply",
    "bytes": 62127147,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "cinema",
    "scheduled_at": "2026-11-11T16:41",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfnfTszD0Q1/",
+    "youtube": "https://youtube.com/shorts/Q_ptWbagOjY"
+   },
+   "caption_at_post": "Kevin Trudeau says almost nobody knows this about their credit score.\n\nYour card doesn't report your balance the day you pay the bill. It reports to the bureau 5 to 10 days before your statement cycle closes - while you're still carrying whatever you charged that month.\n\nPut $1,000 on a $10,000 limit and pay it off later in full, and the bureau can still show that $1,000 sitting there, dragging your score down.\n\nPay the balance before your reporting date instead, and your score can jump 15 points almost overnight - the difference between a good mortgage rate and a declined application.\n\nWhen did you last check your card's reporting date?\n\n#kevintrudeau #creditscore #moneytips #financialliteracy #creditcards #wealthmindset",
+   "posted_at": "2026-11-11T16:55"
   },
   {
    "file": "KT_MISSINGR2R2R2/01_WE-NEVER-RETREAT-WE-REGROUP_42s.mp4",
