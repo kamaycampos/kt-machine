@@ -15180,7 +15180,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-12T09:38",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_CENSOREDR2/02_BEING-THIS-TIRED-KEEPS-YOU-CONTROLLED_45s.mp4",
@@ -15190,7 +15194,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-11T17:23",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_LIMBICR3/01_THREE-FINGERS-POINT-BACK_46s.mp4",
@@ -15200,7 +15208,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-12T10:03",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_LIMBICR3/02_NOT-WORTHLESS-TOO-VALUABLE_44s.mp4",
@@ -15210,7 +15222,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-12T08:09",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_PRIESTHOODR2/01_PRIESTS-RULED-BECAUSE-YOU-COULDNT-READ_69s.mp4",
@@ -15220,7 +15236,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-12T12:25",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "AR_PRIESTHOODR2/02_YOUR-DOCTORS-ORDERS-ARE-A-PRIESTHOOD_49s.mp4",
@@ -15230,7 +15250,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-11T20:33",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   }
  ]
 }
