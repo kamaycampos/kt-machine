@@ -1,0 +1,52 @@
+# FRAME PREVIEW (11 Nov 2026): one clip in the "frame" layouts (picture in the middle of the
+# phone, headline above it) for Kamay to choose. Manual only. Never touches the queue; files
+# go to the 'previews' release.
+name: frame-preview
+on:
+  workflow_dispatch:
+    inputs:
+      vid: {required: true}
+      t_in: {required: true}
+      t_out: {required: true}
+      hook: {required: true, description: "line 1|line 2"}
+      credit: {required: true}
+      slug: {required: true}
+permissions:
+  contents: write
+env:
+  FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+  TRANSCRIPT_KEY: ${{ secrets.TRANSCRIPT_KEY }}
+  GH_TOKEN: ${{ github.token }}
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/cache@v4
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v2-portable }
+      - run: bash factory/setup.sh
+      - name: Fonts (open licence, static weights)
+        run: |
+          mkdir -p /tmp/fonts
+          B=https://cdn.jsdelivr.net/fontsource/fonts
+          curl -sfL -o /tmp/fonts/josefin600.ttf    $B/josefin-sans@latest/latin-600-normal.ttf
+          curl -sfL -o /tmp/fonts/cormorant600.ttf  $B/cormorant-garamond@latest/latin-600-normal.ttf
+          curl -sfL -o /tmp/fonts/cormorant600i.ttf $B/cormorant-garamond@latest/latin-600-italic.ttf
+          curl -sfL -o /tmp/fonts/montserrat600.ttf $B/montserrat@latest/latin-600-normal.ttf
+          ls -la /tmp/fonts
+      - name: Render the looks
+        env:   # through env, never inline: "$87,500" in a hook would be eaten by the shell
+          VID: ${{ inputs.vid }}
+          T_IN: ${{ inputs.t_in }}
+          T_OUT: ${{ inputs.t_out }}
+          HOOK: ${{ inputs.hook }}
+          CREDIT: ${{ inputs.credit }}
+          SLUG: ${{ inputs.slug }}
+        run: python factory/frame_preview.py "$VID" "$T_IN" "$T_OUT" "$HOOK" "$CREDIT" "$SLUG"
+      - name: Publish to the previews release
+        run: |
+          gh release view previews >/dev/null 2>&1 || gh release create previews --title "Style previews" --notes "Looks for Kamay to choose. Not posted."
+          gh release upload previews /tmp/previews/* --clobber
