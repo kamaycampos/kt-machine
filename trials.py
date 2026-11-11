@@ -67,14 +67,38 @@ def _room(poster, clip):
         return None
 
 
+# A BLOCK PAUSES EVERY TRIAL FOR 72 HOURS (10 Nov 2026). "User is performing too many actions"
+# (code 9, is_transient False) is Instagram's action block on the ACCOUNT. The 9 Nov fix made a
+# blocked arm wait one run (~20 min) and try again: 26 refusals in a row, each one another flagged
+# action against the account whose real reels were losing reach (KT IG median 207-979 -> 67-189
+# since trials began ~1 Nov). One block now stops trials for that account for 72 h; the real
+# clips keep posting.
+PAUSE = os.path.join(HERE, "state", "trials_pause.json")
+PAUSE_H = 72
+
+
+def _paused(now):
+    try:
+        until = json.load(open(PAUSE)).get("until", "")
+    except (OSError, ValueError):
+        return ""
+    return until if until and now.strftime("%Y-%m-%dT%H:%M") < until else ""
+
+
 def step(engine, poster, media_url, log=print):
     var = _load()
     if not var:
         return
     now = dt.datetime.utcnow()
+    held = _paused(now)
+    if held:
+        log(f"TRIALS PAUSED until {held} UTC - Instagram action block (code 9); real clips unaffected")
+
     man = engine.load()
     changed = False
     for key, e in var.items():
+        if held:
+            break                                   # nothing posts while paused; scoring below still runs
         if e.get("posted"):
             continue
         clip = next((c for c in man["clips"] if c["file"] == e["clip"]), None)
@@ -100,6 +124,13 @@ def step(engine, poster, media_url, log=print):
             ok = isinstance(res, tuple)
             arm["status"] = str(res[0] if ok else res)[:160]
             arm["id"] = poster.LAST_MEDIA_ID if ok else None
+            if not ok and "too many actions" in str(res):
+                until = (now + dt.timedelta(hours=PAUSE_H)).strftime("%Y-%m-%dT%H:%M")
+                json.dump({"until": until, "why": str(res)[:160]}, open(PAUSE, "w"), indent=1)
+                arm["status"] = "waiting - Instagram action block, trials paused 72h"
+                log(f"  {' / '.join(arm['hook'])}: Instagram action block - ALL trials paused until {until} UTC")
+                changed = True
+                break
             if not ok and _throttled(res) and arm.get("waits", 0) < WAITS:
                 arm["waits"] = arm.get("waits", 0) + 1
                 log(f"  {' / '.join(arm['hook'])}: Instagram throttled - waiting for the next run")
