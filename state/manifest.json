@@ -15166,7 +15166,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "cinema"
+   "look": "cinema",
+   "scheduled_at": "2026-11-11T19:58",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
