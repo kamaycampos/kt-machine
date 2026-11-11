@@ -26,6 +26,16 @@ PROP = os.path.join(K, "work", "proposals")
 OUT = "/tmp/factory_out"
 
 
+
+def _listed_ids():
+    out = set()
+    for f in ("source_plan.json", "ar_source_plan.json"):
+        try:
+            out |= {x["id"] for x in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), f)))["episodes"]}
+        except (OSError, ValueError, KeyError):
+            pass
+    return out
+
 def height(path):
     m = re.search(r"Video:.*?(\d{3,4})x(\d{3,4})", sh("ffmpeg", "-i", path).stderr)
     return int(m[2]) if m else 0
@@ -258,8 +268,9 @@ def main():
         vid = p["source"][:-4]
         mp4 = fetch_source(vid)
         h = height(mp4)
-        if h < 1080:
-            print(f"  {k}: REFUSED - source is {h}p, the gate is 1080p")
+        _gate = 720 if vid in _listed_ids() else 1080          # see build_shard.py (11 Nov 2026)
+        if h < _gate:
+            print(f"  {k}: REFUSED - source is {h}p, the gate is {_gate}p")
             continue
         fix_edges(k)
         ready[bool(p.get("test"))].append(k)

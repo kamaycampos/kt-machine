@@ -70,8 +70,18 @@ result = {"plan": plan, "shard": shard, "brand": p["brand"], "source": p["source
           "look": os.environ.get("KT_LOOK") or "classic"}
 if p.get("test"):
     os.environ["OPENER_PREVIEW"] = "1"          # a preview build shows the opener before it goes live
-if h < 1080:
-    print(f"REFUSED: source is {h}p, the gate is 1080p")
+# 720p FOR A LISTED EPISODE (11 Nov 2026). Kevin's fresh 1080p money shows are used up; his
+# listed 720p shows were stocked, planned (6 clips) and then refused here. 720p is the floor for
+# an episode on a month list - never 360p/480p, which is what went out blurry on 18 Sept.
+_listed = set()
+for _f in ("source_plan.json", "ar_source_plan.json"):
+    try:
+        _listed |= {x["id"] for x in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), _f)))["episodes"]}
+    except (OSError, ValueError, KeyError):
+        pass
+GATE = 720 if p["source"][:-4] in _listed else 1080
+if h < GATE:
+    print(f"REFUSED: source is {h}p, the gate is {GATE}p")
 else:
     # A CLIP DROPPED HERE MUST SAY WHY (20 Oct 2026). fix_edges drops a clip that runs
     # into the next topic, has no clean ending near, or opens on B-roll with no face -
@@ -106,7 +116,7 @@ else:
 # uploads them; run_once.py posts them once the clip itself has posted, then scores them.
 # 2 Nov 2026: only a variant shard renders them (see shard.py); queue.py drops variants whose
 # clip did not pass.
-if h >= 1080 and not p.get("test") and vshard:
+if h >= GATE and not p.get("test") and vshard:
     import subprocess as _sp
     from shard import VSIZE
     # kt_render reads the clip from kt_series.json; kt_batch_build fills it on a clip shard
@@ -133,7 +143,7 @@ if h >= 1080 and not p.get("test") and vshard:
 rep = os.path.join(R.K, "work", "proposals", "BATCH_REPORT.md")
 if os.path.exists(rep):
     shutil.copy(rep, os.path.join(out, "report.md"))
-if h >= 1080 and edge_drops and not vshard:                      # last, so queue.py's tail always holds them
+if h >= GATE and edge_drops and not vshard:                      # last, so queue.py's tail always holds them
     with open(os.path.join(out, "report.md"), "a") as fh:
         fh.write("\n" + "\n".join(f"  drop {p['brand']}/{l}" for l in edge_drops) + "\n")
 json.dump(result, open(os.path.join(out, "result.json"), "w"), indent=1, ensure_ascii=False)
