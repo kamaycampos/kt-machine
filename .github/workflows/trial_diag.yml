@@ -1,0 +1,41 @@
+# TRIAL DIAG (11 Nov 2026). Why does Meta refuse trial reels (code 10)? Prints the app,
+# token type, granted permissions and Meta's full answer to a trial container that
+# points at a fake video (so nothing can ever be posted). Never prints a key.
+name: trial_diag
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diag:
+    runs-on: ubuntu-24.04
+    env:
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+    steps:
+      - name: Ask Meta
+        shell: python
+        run: |
+          import json, os, urllib.parse, urllib.request
+          e = os.environ; tok = e["IG_ACCESS_TOKEN"]; ig = e["IG_USER_ID"]
+          def call(url, data=None):
+              try:
+                  return json.load(urllib.request.urlopen(urllib.request.Request(url, data=data)))
+              except urllib.error.HTTPError as x:
+                  return json.load(x)
+          def clean(o): return json.dumps(o, indent=1).replace(tok, "***")
+          for v in ("v21.0", "v24.0"):
+              G = f"https://graph.facebook.com/{v}"
+              print("==", v)
+              d = call(f"{G}/debug_token?input_token={tok}&access_token={tok}").get("data", {})
+              print("app:", d.get("application"), d.get("app_id"), "type:", d.get("type"),
+                    "valid:", d.get("is_valid"), "expires:", d.get("expires_at"))
+              print("scopes:", sorted(d.get("scopes") or []))
+              print("ig:", clean(call(f"{G}/{ig}?fields=username,followers_count,media_count&access_token={tok}")))
+              q = call(f"{G}/{ig}/content_publishing_limit?fields=quota_usage,config&access_token={tok}")
+              print("quota:", clean(q))
+              for label, extra in (("PLAIN reel", {}), ("TRIAL reel", {"trial_params": json.dumps({"graduation_strategy": "MANUAL"})})):
+                  body = {"media_type": "REELS", "video_url": "https://example.com/not-a-video.mp4",
+                          "caption": "diag", "access_token": tok, **extra}
+                  r = call(f"{G}/{ig}/media", urllib.parse.urlencode(body).encode())
+                  print(label, "->", clean(r))
