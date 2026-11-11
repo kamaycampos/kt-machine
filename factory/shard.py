@@ -13,6 +13,19 @@ PLANS = os.path.join(HERE, "plans")
 SIZE = 2
 VSIZE = 2              # trial hook variants per server
 
+# NO VARIANT RENDERS WHILE TRIALS ARE PAUSED (10 Nov 2026). Each clip's 7 trial hooks are 4 extra
+# servers of ~15 min; with Instagram blocking trials (state/trials_pause.json) they were rendered
+# for nothing and the real clips waited behind them while KT's queue sat at one clip.
+def _trials_paused():
+    import datetime as _dt
+    try:
+        until = json.load(open(os.path.join(os.path.dirname(HERE), "state", "trials_pause.json"))).get("until", "")
+    except (OSError, ValueError):
+        return False
+    return bool(until) and _dt.datetime.utcnow().strftime("%Y-%m-%dT%H:%M") < until
+
+
+PAUSED = _trials_paused()
 done = json.load(open(os.path.join(PLANS, "_done.json"))) if os.path.exists(os.path.join(PLANS, "_done.json")) else []
 shards = []
 for f in sorted(os.listdir(PLANS)):
@@ -25,7 +38,7 @@ for f in sorted(os.listdir(PLANS)):
     # job, 2 clips + 7 variants (~15 min each) hit the 2-hour limit twice and lost the shard,
     # real clips included. Shard "v<clip>_<first>" renders VSIZE variants of one clip.
     for ci, c in enumerate(clips):
-        k = min(len(c.get("trial_hooks") or []), 7)
+        k = 0 if PAUSED else min(len(c.get("trial_hooks") or []), 7)
         shards += [{"plan": f[:-5], "shard": f"v{ci}_{j}"} for j in range(0, k, VSIZE)]
 print(f"{len(shards)} shard(s): {shards}")
 with open(os.environ.get("GITHUB_OUTPUT", "/dev/null"), "a") as fh:
