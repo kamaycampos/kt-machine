@@ -15231,13 +15231,26 @@
    "hook": "98% of lottery winners go broke",
    "bytes": 52611222,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-11T12:27",
    "cta_keyword": "MONEY",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfnBjehgLAY/",
+    "youtube": "https://youtube.com/shorts/FUHOkI3I4nw"
+   },
+   "caption_at_post": "Kevin Trudeau tells a story from 1979: a wealthy man in a Rolls Royce, handmade suit, Rolex on his wrist. Kevin half-joked, \"If I had your money, I'd have your attitude too.\"\n\nThe man almost snapped at him - out of love, because he knew that attitude would keep Kevin broke.\n\nHis answer: the money doesn't give you the attitude. The attitude gives you the money. You hold it while you're flat broke, for weeks or years, before the money shows up.\n\nThat's also why 98% of lottery winners go bankrupt - they got the money without the attitude, and it didn't stick.\n\nWhich one are you building first: the attitude, or waiting on the money?\n\n#kevintrudeau #moneymindset #richhabits #wealthmindset #attitude #financialfreedom",
+   "posted_at": "2026-11-11T12:35"
   },
   {
    "file": "KT_SCORECARD/01_CREDIT-SCORE-5-DAY-TRICK_93s.mp4",
