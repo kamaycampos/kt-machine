@@ -75,6 +75,8 @@ def _room(poster, clip):
 # clips keep posting.
 PAUSE = os.path.join(HERE, "state", "trials_pause.json")
 PAUSE_H = 72
+LAST = os.path.join(HERE, "state", "trials_last.json")
+GAP_H = 2
 
 
 def _paused(now):
@@ -110,6 +112,15 @@ def step(engine, poster, media_url, log=print):
             log(f"TRIAL {key}: waiting - Instagram can take {max(room, 0)} more API post(s) today "
                 f"after the {RESERVE} kept for real clips")
             break
+        # ONE TRIAL EVERY 2 HOURS (11 Nov 2026). One arm per ~20-min run was still 3 reels an hour on
+        # top of the real clips, and Instagram answered with an action block. Spaced like a person.
+        try:
+            last = json.load(open(LAST)).get("at", "")
+        except (OSError, ValueError):
+            last = ""
+        if last and now - dt.datetime.fromisoformat(last) < dt.timedelta(hours=GAP_H):
+            log(f"TRIAL {key}: next trial after {(dt.datetime.fromisoformat(last) + dt.timedelta(hours=GAP_H)):%H:%M} UTC (one every {GAP_H}h)")
+            break
         log(f"TRIAL {key}: posting {min(len(todo), ARMS_PER_RUN)} of {len(todo)} hook variant(s) left as Trial Reels")
         for arm in todo[:ARMS_PER_RUN]:
             path = os.path.join(engine.MEDIA, arm["rel"])
@@ -122,6 +133,8 @@ def step(engine, poster, media_url, log=print):
             except Exception as x:                       # one arm failing never stops posting
                 res = f"error: {type(x).__name__}: {x}"
             ok = isinstance(res, tuple)
+            if ok:
+                json.dump({"at": now.strftime("%Y-%m-%dT%H:%M")}, open(LAST, "w"))
             arm["status"] = str(res[0] if ok else res)[:160]
             arm["id"] = poster.LAST_MEDIA_ID if ok else None
             if not ok and "too many actions" in str(res):
