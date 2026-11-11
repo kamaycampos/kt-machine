@@ -12493,6 +12493,96 @@
     "What money truly",
     "can't buy you"
    ]
+  },
+  "ep_v4khhot/ROWLING-DISNEY-REJECTIONS": {
+   "plan": "ep_v4khhot",
+   "source": "v4khhot.mp4",
+   "brand": "KT_GRANITE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "ROWLING-DISNEY-REJECTIONS",
+   "in": 6635.0,
+   "out": 6681.0,
+   "start_words": "J.K. Rowling was famously",
+   "end_words": "to try to get financing",
+   "hook": [
+    "Rejected 302 times",
+    "Built Disneyland anyway"
+   ]
+  },
+  "ep_v4khhot/VAN-GOGH-142-MILLION": {
+   "plan": "ep_v4khhot",
+   "source": "v4khhot.mp4",
+   "brand": "KT_GRANITE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "VAN-GOGH-142-MILLION",
+   "in": 6756.0,
+   "out": 6845.0,
+   "start_words": "Vincent van Gogh only sold",
+   "end_words": "discarded is another step forward",
+   "hook": [
+    "$142 million now",
+    "Sold for nothing"
+   ]
+  },
+  "ep_v4khhot/SHOES-LAST-400-YEARS": {
+   "plan": "ep_v4khhot",
+   "source": "v4khhot.mp4",
+   "brand": "KT_GRANITE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "SHOES-LAST-400-YEARS",
+   "in": 5373.0,
+   "out": 5439.0,
+   "start_words": "Guess how old the suit",
+   "end_words": "20, 30 years ago",
+   "hook": [
+    "400 years",
+    "your shoes could last"
+   ]
+  },
+  "ep_v4tz80x/A-1910-MILLIONAIRE": {
+   "plan": "ep_v4tz80x",
+   "source": "v4tz80x.mp4",
+   "brand": "KT_TIMBER",
+   "tries": 1,
+   "why": [
+    "FAIL 02_A-1910-MILLIONAIRE_106s.mp4: [FAIL] 02_A-1910-MILLIONAIRE_106s.mp4                         30 captions vs the sound  median +0.01s  worst-10% 0.74s  | words captioned 103%"
+   ],
+   "slug": "A-1910-MILLIONAIRE",
+   "in": 4434.0,
+   "out": 4551.72,
+   "start_words": "If you have a million dollars",
+   "end_words": "for the rest of your life",
+   "hook": [
+    "A 1910 millionaire",
+    "equals $100M today"
+   ]
+  },
+  "ep_v4vdcy0/ROCKEFELLER-GAVE-FIRST": {
+   "plan": "ep_v4vdcy0",
+   "source": "v4vdcy0.mp4",
+   "brand": "KT_SUMMIT",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_ROCKEFELLER-GAVE-FIRST_49s.mp4` - opens mid-sentence on \"recommending it.\"; ends mid-thought on \"first when you\""
+   ],
+   "slug": "ROCKEFELLER-GAVE-FIRST",
+   "in": 4494.68,
+   "out": 4541.58,
+   "start_words": "J. D. Rockefeller, the richest",
+   "end_words": "you have to give first",
+   "hook": [
+    "Worth $650 billion",
+    "still gave 10%"
+   ]
   }
  },
  "attempts": {
@@ -12560,7 +12650,7 @@
   "ep_v5hxn45_r3": 1,
   "ar_v4lw3gr_p2_r3": 2,
   "ep_v5d9snl_r7": 2,
-  "ep_v4khhot": 1,
+  "ep_v4khhot": 2,
   "ep_v4tz80x": 1,
   "ep_v4vdcy0": 1
  }
