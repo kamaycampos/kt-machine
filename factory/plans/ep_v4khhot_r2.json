@@ -1,0 +1,80 @@
+{
+ "source": "v4khhot.mp4",
+ "brand": "KT_GRANITER2",
+ "test": false,
+ "note": "11 Nov 2026 - 'Relaunch of The New Show, Censorship, Adversity & How to be More Likable | The Kevin Trudeau Show - Episode 001' (Rumble v4khhot). Weekly agent. SECOND CHANCE re-cut (tries 1, all three failed with only 'no clip came out of the render' recorded, which names no content problem per PLANNING.md - checked build_shard.py: that message papers over a dropped clip whose real cause (runs into the next topic / no clean ending near / opens on B-roll) is only printed to the build log, not kept). ROWLING-DISNEY-REJECTIONS: extended the end past the original 6681s stop (a real sentence end, but 'But Disney had a dream' runs on right after it with no pause) to the next hard topic change, 'anyone steal his dream' (6692s), right before 'Albert Einstein' starts a new example - a cleaner break. VAN-GOGH-142-MILLION: the original 6756-6845s span ran together three separate examples (Van Gogh, Edison's bio, Edison's quote) with no clean stop between them; narrowed it to just the Van Gogh story, now opening on the tease 'Oh, here's a loser' and closing on the $142 million reveal (6753-6794s), well clear of the Edison material that follows. SHOES-LAST-400-YEARS: moved the end off the vague trailing recap ('So I bought good stuff 20, 30 years ago') onto the actual punchline two sentences earlier, 'They'll last 400 years' (5437s) - a sharper stop and a different edge, per the retry rule.",
+ "clips": [
+  {
+   "slug": "ROWLING-DISNEY-REJECTIONS",
+   "in": 6635.0,
+   "out": 6692.0,
+   "start_words": "J.K. Rowling was famously",
+   "end_words": "steal his dream",
+   "hook": [
+    "302 rejections",
+    "Then he built Disneyland"
+   ],
+   "send": "A friend forwards this to someone about to quit after one no, since 302 nos built Disneyland; awe.",
+   "caption": "J.K. Rowling was rejected by 12 publishers before Harry Potter sold a single copy.\n\nWalt Disney heard no 302 times trying to get financing for Disneyland. People told him it was a bonehead idea, that nobody would ever come.\n\nHe didn't listen. He had confidence in the dream, and he wasn't going to let anyone talk him out of it.\n\nKevin Trudeau says rejection was never proof they were wrong - it was just the toll on the way to something nobody else could see yet.\n\nComment MONEY and I'll send you Kevin's free audios.\n\n#kevintrudeau #waltdisney #rejection #successmindset #neverquit #entrepreneur",
+   "retry_of": "ep_v4khhot/ROWLING-DISNEY-REJECTIONS"
+  },
+  {
+   "slug": "VAN-GOGH-142-MILLION",
+   "in": 6753.0,
+   "out": 6794.0,
+   "start_words": "Oh, here's a loser.",
+   "end_words": "valued at $142 million",
+   "hook": [
+    "One painting sold",
+    "Now $142 million"
+   ],
+   "trial_hooks": [
+    [
+     "One painting sold",
+     "$142 million now"
+    ],
+    [
+     "Called worthless once",
+     "$142 million now"
+    ],
+    [
+     "Sold for nothing",
+     "Worth $142 million"
+    ],
+    [
+     "Quit too soon?",
+     "$142 million later"
+    ],
+    [
+     "Van Gogh sold one",
+     "$142M now"
+    ],
+    [
+     "Kevin Trudeau's favorite story",
+     "$142 million"
+    ],
+    [
+     "Only sold one painting",
+     "Priceless today"
+    ]
+   ],
+   "send": "Someone sends this to a friend whose art or side hustle gets ignored, as proof the world catches up late; awe.",
+   "caption": "Vincent van Gogh sold exactly one painting in his entire lifetime, to a friend who only bought it to be nice.\n\nHe kept painting anyway. No gallery, no buyers, just the work. By the time he died he'd finished over 800 pieces.\n\nToday his most expensive painting is valued at $142 million.\n\nKevin Trudeau tells this story to make one point: the market can be wrong about you for your whole life and still be wrong.\n\nWhat's the one thing you quit on too early? Tell me below.\n\n#kevintrudeau #vangogh #art #nevergiveup #millionaire #mindset",
+   "retry_of": "ep_v4khhot/VAN-GOGH-142-MILLION"
+  },
+  {
+   "slug": "SHOES-LAST-400-YEARS",
+   "in": 5373.0,
+   "out": 5437.0,
+   "start_words": "Guess how old the suit",
+   "end_words": "last 400 years",
+   "hook": [
+    "His 400-year shoes",
+    "outlasted going broke"
+   ],
+   "send": "Someone sends this to a friend who buys cheap things on repeat, as a nudge to buy once and stop; anxiety.",
+   "caption": "Kevin Trudeau came out of prison with no money. The government had taken every penny he had.\n\nBut the clothes he'd bought 20 and 30 years earlier still fit, still buttoned, still looked sharp. The suit was 30 years old. The shoes were Aldens.\n\n\"They'll last 400 years,\" he says.\n\nThat's the whole lesson on quality: cheap stuff needs replacing forever, so you keep paying for it forever. Good stuff you buy once.\n\nComment MONEY and I'll send you Kevin's free audios.\n\n#kevintrudeau #qualityoverquantity #buyonce #frugal #prison #mindset",
+   "retry_of": "ep_v4khhot/SHOES-LAST-400-YEARS"
+  }
+ ]
+}
