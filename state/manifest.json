@@ -15163,13 +15163,26 @@
    "hook": "Worth $0 exactly still caused panic",
    "bytes": 68074544,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-11T10:55",
    "cta_keyword": "BRAIN",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Dfm4X9Kj-bI/",
+    "youtube": "https://youtube.com/shorts/CTkYZlLZ5qw"
+   },
+   "caption_at_post": "Kevin Trudeau brings up the show Hoarders to make a point about money and happiness.\n\nA producer tries to get one man to throw away the least valuable thing in his house - a little jar of old, rusted bottle caps. Worth nothing. Not a single dollar for the whole jar.\n\nThe man has a panic attack at the idea of losing them. He'd put his essence into objects that were worth zero.\n\nKevin's point: attachment to stuff, any stuff, works the same way whether it's bottle caps or a mansion full of things you don't use.\n\nWhat's your version of the bottle caps?\n\n#kevintrudeau #richhabits #moneymindset #minimalism #wealthmindset #declutter",
+   "posted_at": "2026-11-11T11:15"
   },
   {
    "file": "KT_TIMBER/01_87500-IN-ONE-DAY_52s.mp4",
