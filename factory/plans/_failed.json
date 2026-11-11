@@ -12444,7 +12444,7 @@
    "plan": "ep_v55bpjb",
    "source": "v55bpjb.mp4",
    "brand": "KT_ORDER",
-   "tries": 1,
+   "tries": 2,
    "why": [
     "NOT QUEUED** `01_WHY-VAGUE-WISHES-BACKFIRE_183s.mp4` - word repeated after one: \"what you what\""
    ],
@@ -12458,29 +12458,11 @@
     "backfires if vague"
    ]
   },
-  "ep_v5gwj11/CREDIT-SCORE-5-DAY-TRICK": {
-   "plan": "ep_v5gwj11",
-   "source": "v5gwj11.mp4",
-   "brand": "KT_SCORECARD",
-   "tries": 1,
-   "why": [
-    "NOT QUEUED** `01_CREDIT-SCORE-5-DAY-TRICK_93s.mp4` - phrase scrambled around \"make sure you make\""
-   ],
-   "slug": "CREDIT-SCORE-5-DAY-TRICK",
-   "in": 2911.0,
-   "out": 3004.0,
-   "start_words": "Your credit report looks at your credit cards",
-   "end_words": "or refinance a home",
-   "hook": [
-    "Add 15 points",
-    "before you apply"
-   ]
-  },
   "ep_v5d9snl_r7/BUYS-A-HOUSE-NOT-A-HOME": {
    "plan": "ep_v5d9snl_r7",
    "source": "v5d9snl.mp4",
    "brand": "KT_UPLIFTR2R2R2R2R2R2",
-   "tries": 3,
+   "tries": 4,
    "why": [
     "FAIL 01_BUYS-A-HOUSE-NOT-A-HOME_54s.mp4: not Kevin - his face in only 1 of 8 frames with a face"
    ],
@@ -12649,7 +12631,7 @@
   "ep_v4oml32_r6": 1,
   "ep_v5hxn45_r3": 1,
   "ar_v4lw3gr_p2_r3": 2,
-  "ep_v5d9snl_r7": 2,
+  "ep_v5d9snl_r7": 3,
   "ep_v4khhot": 2,
   "ep_v4tz80x": 1,
   "ep_v4vdcy0": 1

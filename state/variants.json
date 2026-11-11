@@ -1311,5 +1311,67 @@
    }
   ],
   "posted": null
+ },
+ "KT_SCORECARD__CREDIT-SCORE-5-DAY-TRICK": {
+  "clip": "KT_SCORECARD/01_CREDIT-SCORE-5-DAY-TRICK_93s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_SCORECARD__CREDIT-SCORE-5-DAY-TRICK__V1.mp4",
+    "hook": [
+     "A $1,000 balance",
+     "costs 15 points"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SCORECARD__CREDIT-SCORE-5-DAY-TRICK__V2.mp4",
+    "hook": [
+     "Your bank hides points",
+     "on purpose"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SCORECARD__CREDIT-SCORE-5-DAY-TRICK__V3.mp4",
+    "hook": [
+     "Zero balance still",
+     "costs you 15"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SCORECARD__CREDIT-SCORE-5-DAY-TRICK__V4.mp4",
+    "hook": [
+     "Why your credit score",
+     "stays low"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SCORECARD__CREDIT-SCORE-5-DAY-TRICK__V5.mp4",
+    "hook": [
+     "Homebuyers lose 15 points",
+     "for nothing"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SCORECARD__CREDIT-SCORE-5-DAY-TRICK__V6.mp4",
+    "hook": [
+     "Kevin Trudeau's secret",
+     "credit trick"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SCORECARD__CREDIT-SCORE-5-DAY-TRICK__V7.mp4",
+    "hook": [
+     "Your bank lies about",
+     "your balance"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }
