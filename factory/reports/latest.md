@@ -1,79 +1,43 @@
-## ep_v4oml32_r6: 1 of 1 clip(s) passed every gate
+## ep_v55bpjb: 1 of 1 clip(s) passed every gate
 
 
-## 2026-11-10 04:31
-  note KT_UNDERTOWR2R2R2/LIBERACE-WORST-PIANIST-RICHEST: end snapped 326.35 -> 325.98s (after 'I believe in the fifties')
-ep_v4oml32_r6__s0 (KT_UNDERTOWR2R2R2): 1 of 1 passed pre-render gates
+## 2026-11-11 00:50
+  note KT_ORDER/WHY-VAGUE-WISHES-BACKFIRE: end snapped 3249.59 -> 3249.80s (after 'to be a little clearer')
+ep_v55bpjb__s0 (KT_ORDER): 1 of 1 passed pre-render gates
 
-RENDER ep_v4oml32_r6__s0
-  WARP 01_LIBERACE-WORST-PIANIST-RICHEST_64s.mp4: ST-PIANIST-RICHEST_64s.mp4              10 captions vs the sound  median +0.02s  worst-10% 1.01s  | words captioned 100% - re-timing each caption once
-  PASS 01_LIBERACE-WORST-PIANIST-RICHEST_64s.mp4  01_LIBERACE-WORST-PIANIST-RICHEST_64s.mp4              11 captions vs the sound  median -0
-       FIRST 5s : They asked Liberace, "You're a piano player." | LAST  8s : Bring me off, man. The Magic of Believing. The Magic of Believing was a book that was written, I believe, in the '50s.
-TEST MODE - passing clips NOT uploaded or queued: KT_UNDERTOWR2R2R2
-
-
-## ep_v4oml32_r7: 1 of 1 clip(s) passed every gate
+RENDER ep_v55bpjb__s0
+  PASS 01_WHY-VAGUE-WISHES-BACKFIRE_183s.mp4  01_WHY-VAGUE-WISHES-BACKFIRE_183s.mp4                  55 captions vs the sound  median +0
+       FIRST 5s : The only thing that's important, everyone, is what do you want? What's your idea? | LAST  8s : Not woman, but it's-- Exactly. Yeah. You got what you asked for. You got to be a little clearer.
+TEST MODE - passing clips NOT uploaded or queued: KT_ORDER
 
 
-## 2026-11-10 04:38
-  note KT_UNDERTOWR2R2R2/LIBERACE-WORST-PIANIST-RICHEST: end snapped 337.87 -> 337.74s (after 'Book was written in 1948.')
-ep_v4oml32_r7__s0 (KT_UNDERTOWR2R2R2): 1 of 1 passed pre-render gates
+- **NOT QUEUED** `01_WHY-VAGUE-WISHES-BACKFIRE_183s.mp4` - word repeated after one: "what you what"
 
-RENDER ep_v4oml32_r7__s0
-  PASS 01_LIBERACE-WORST-PIANIST-RICHEST_76s.mp4  01_LIBERACE-WORST-PIANIST-RICHEST_76s.mp4              11 captions vs the sound  median +0
-       FIRST 5s : They asked Liberace, "You're a piano player." | LAST  8s : 1948. 1948. That's why Liberace in the '50s had a chance to read it. The book was written in 1948.
-TEST MODE - passing clips NOT uploaded or queued: KT_UNDERTOWR2R2R2
+## ep_v5d9snl_r7: 0 of 1 clip(s) passed every gate
 
 
-## ep_v5hxn45_r3: 1 of 1 clip(s) passed every gate
+## 2026-11-11 00:40
+ep_v5d9snl_r7__s0 (KT_UPLIFTR2R2R2R2R2R2): 1 of 1 passed pre-render gates
+
+RENDER ep_v5d9snl_r7__s0
+  FAIL 01_BUYS-A-HOUSE-NOT-A-HOME_54s.mp4: not Kevin - his face in only 1 of 8 frames with a face
 
 
-## 2026-11-10 05:18
-  note KT_DELI/TWO-STRANGERS-SAME-DAY: end snapped 292.89 -> 294.02s (after 'offer me this gig.')
-  note KT_DELI/TWO-STRANGERS-SAME-DAY: ending kept on the planner's words 'offer me this gig.' (cuts mid-sentence)
-ep_v5hxn45_r3__s0 (KT_DELI): 1 of 1 passed pre-render gates
-
-RENDER ep_v5hxn45_r3__s0
-  REAIM 01_TWO-STRANGERS-SAME-DAY_170s.mp4: face in only 1 of 4 moments of the posted frame - crop moved to the speaker at x=0.41, rendering once more
-  PASS 01_TWO-STRANGERS-SAME-DAY_170s.mp4  01_TWO-STRANGERS-SAME-DAY_170s.mp4                     59 captions vs the sound  median +0
-       FIRST 5s : I knew how to manifest things with my mind. So I said, what would be my ideal thing to do? | LAST  8s : I go, "Well, he said the same thing today." So I have two people in the same day, out of nowhere, offer me this gig.
-TEST MODE - passing clips NOT uploaded or queued: KT_DELI
+## ep_v5gwj11: 1 of 1 clip(s) passed every gate
 
 
-## ep_v5hxn45_r4: 1 of 1 clip(s) passed every gate
+## 2026-11-11 00:54
+  note KT_SCORECARD/CREDIT-SCORE-5-DAY-TRICK: end snapped 3005.63 -> 3005.28s (after 'or refinance a home')
+  note KT_SCORECARD/CREDIT-SCORE-5-DAY-TRICK: ending kept on the planner's words 'or refinance a home' (cuts mid-sentence)
+ep_v5gwj11__s0 (KT_SCORECARD): 1 of 1 passed pre-render gates
+
+RENDER ep_v5gwj11__s0
+  PASS 01_CREDIT-SCORE-5-DAY-TRICK_93s.mp4  01_CREDIT-SCORE-5-DAY-TRICK_93s.mp4                    33 captions vs the sound  median +0
+       FIRST 5s : Your credit report looks at your credit cards, and it says, | LAST  8s : And that can be huge, huge, when you are looking to finance a home or refinance a home.
+TEST MODE - passing clips NOT uploaded or queued: KT_SCORECARD
 
 
-## 2026-11-10 05:26
-  note KT_DELI/TWO-STRANGERS-SAME-DAY: end snapped 292.89 -> 294.02s (after 'offer me this gig.')
-  note KT_DELI/TWO-STRANGERS-SAME-DAY: ending kept on the planner's words 'offer me this gig.' (cuts mid-sentence)
-ep_v5hxn45_r4__s0 (KT_DELI): 1 of 1 passed pre-render gates
-
-RENDER ep_v5hxn45_r4__s0
-  REAIM 01_TWO-STRANGERS-SAME-DAY_170s.mp4: face in only 1 of 4 moments of the posted frame - crop moved to the speaker at x=0.41, rendering once more
-  PASS 01_TWO-STRANGERS-SAME-DAY_170s.mp4  01_TWO-STRANGERS-SAME-DAY_170s.mp4                     59 captions vs the sound  median +0
-       FIRST 5s : I knew how to manifest things with my mind. So I said, what would be my ideal thing to do? | LAST  8s : I go, "Well, he said the same thing today." So I have two people in the same day, out of nowhere, offer me this gig.
-TEST MODE - passing clips NOT uploaded or queued: KT_DELI
-
+- **NOT QUEUED** `01_CREDIT-SCORE-5-DAY-TRICK_93s.mp4` - phrase scrambled around "make sure you make"
 
 ## UPLOAD
-2 clip(s) to add:
-   KT_DELI/01_TWO-STRANGERS-SAME-DAY_170s.mp4  (112 MB)
-   KT_UNDERTOWR2R2R2/01_LIBERACE-WORST-PIANIST-RICHEST_76s.mp4  (51 MB)
-      + 01_TWO-STRANGERS-SAME-DAY_170s__story.mp4
-      + 01_TWO-STRANGERS-SAME-DAY_170s__yt59.mp4
-   added KT_DELI/01_TWO-STRANGERS-SAME-DAY_170s.mp4  (release media2)
-      + 01_LIBERACE-WORST-PIANIST-RICHEST_76s__story.mp4
-      + 01_LIBERACE-WORST-PIANIST-RICHEST_76s__yt59.mp4
-   added KT_UNDERTOWR2R2R2/01_LIBERACE-WORST-PIANIST-RICHEST_76s.mp4  (release media2)
-
-manifest now holds 607 clips
-commit and push state/manifest.json to let the machine see them
-
-
-## TRIAL: 2 hook variant(s) of KT_DELI/01_TWO-STRANGERS-SAME-DAY_170s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 4 hook variant(s) of KT_DELI/01_TWO-STRANGERS-SAME-DAY_170s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 6 hook variant(s) of KT_DELI/01_TWO-STRANGERS-SAME-DAY_170s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 7 hook variant(s) of KT_DELI/01_TWO-STRANGERS-SAME-DAY_170s.mp4 ready for Instagram Trial Reels
+nothing new to add

@@ -12439,6 +12439,42 @@
     "Work. Debt. Kids.",
     "Then you die."
    ]
+  },
+  "ep_v55bpjb/WHY-VAGUE-WISHES-BACKFIRE": {
+   "plan": "ep_v55bpjb",
+   "source": "v55bpjb.mp4",
+   "brand": "KT_ORDER",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_WHY-VAGUE-WISHES-BACKFIRE_183s.mp4` - word repeated after one: \"what you what\""
+   ],
+   "slug": "WHY-VAGUE-WISHES-BACKFIRE",
+   "in": 3065.0,
+   "out": 3248.0,
+   "start_words": "The only thing that's important",
+   "end_words": "to be a little clearer",
+   "hook": [
+    "Why your wish",
+    "backfires if vague"
+   ]
+  },
+  "ep_v5gwj11/CREDIT-SCORE-5-DAY-TRICK": {
+   "plan": "ep_v5gwj11",
+   "source": "v5gwj11.mp4",
+   "brand": "KT_SCORECARD",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_CREDIT-SCORE-5-DAY-TRICK_93s.mp4` - phrase scrambled around \"make sure you make\""
+   ],
+   "slug": "CREDIT-SCORE-5-DAY-TRICK",
+   "in": 2911.0,
+   "out": 3004.0,
+   "start_words": "Your credit report looks at your credit cards",
+   "end_words": "or refinance a home",
+   "hook": [
+    "Add 15 points",
+    "before you apply"
+   ]
   }
  },
  "attempts": {
@@ -12504,6 +12540,7 @@
   "ep_v5hxn45_r2": 1,
   "ep_v4oml32_r6": 1,
   "ep_v5hxn45_r3": 1,
-  "ar_v4lw3gr_p2_r3": 2
+  "ar_v4lw3gr_p2_r3": 2,
+  "ep_v5d9snl_r7": 1
  }
 }
