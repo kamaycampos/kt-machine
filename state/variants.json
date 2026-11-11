@@ -916,7 +916,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "17943746511099303"
+    "id": "17943746511099303",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_TRANCE__YOUR-MIND-IS-AN-UNTRAINED-DOG__V2.mp4",
@@ -926,7 +930,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18502014250097503"
+    "id": "18502014250097503",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_TRANCE__YOUR-MIND-IS-AN-UNTRAINED-DOG__V3.mp4",
@@ -936,7 +944,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18110194798946561"
+    "id": "18110194798946561",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_TRANCE__YOUR-MIND-IS-AN-UNTRAINED-DOG__V4.mp4",
@@ -946,7 +958,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "17980618932150645"
+    "id": "17980618932150645",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_TRANCE__YOUR-MIND-IS-AN-UNTRAINED-DOG__V5.mp4",
@@ -956,7 +972,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "17957487600278644"
+    "id": "17957487600278644",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_TRANCE__YOUR-MIND-IS-AN-UNTRAINED-DOG__V6.mp4",
@@ -966,7 +986,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18180421828380178"
+    "id": "18180421828380178",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_TRANCE__YOUR-MIND-IS-AN-UNTRAINED-DOG__V7.mp4",
@@ -976,10 +1000,50 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18648129973042891"
+    "id": "18648129973042891",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    }
   ],
-  "posted": "2026-11-09T21:33"
+  "posted": "2026-11-09T21:33",
+  "winner": {
+   "hook": [
+    "One skill most",
+    "people never learn."
+   ],
+   "views": 0,
+   "shares": 0,
+   "reach": 0,
+   "others": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ]
+  },
+  "scored": "2026-11-11T21:33"
  },
  "KT_TENPERCENT__ROCKEFELLERS-DOLLAR-FIFTY-SECRET": {
   "clip": "KT_TENPERCENT/01_ROCKEFELLERS-DOLLAR-FIFTY-SECRET_49s.mp4",
