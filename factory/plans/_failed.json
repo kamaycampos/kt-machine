@@ -13015,6 +13015,42 @@
     "His 400-year shoes",
     "outlasted going broke"
    ]
+  },
+  "ep_v7i67gw/SAME-RECESSION-ONE-BANKRUPT-ONE-RICH": {
+   "plan": "ep_v7i67gw",
+   "source": "v7i67gw.mp4",
+   "brand": "KT_FORGE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_SAME-RECESSION-ONE-BANKRUPT-ONE-RICH_127s.mp4: ends off the planned words: plan ends 'either way you're right', clip ends 'if you think you cant either'"
+   ],
+   "slug": "SAME-RECESSION-ONE-BANKRUPT-ONE-RICH",
+   "in": 653.0,
+   "out": 779.0,
+   "start_words": "Zig Ziglar tells a",
+   "end_words": "either way you're right",
+   "hook": [
+    "One recession",
+    "one bankrupt, one rich"
+   ]
+  },
+  "ep_v7i67gw/TRILLION-DOLLAR-FRIENDS-DREAM-BIG": {
+   "plan": "ep_v7i67gw",
+   "source": "v7i67gw.mp4",
+   "brand": "KT_FORGE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_TRILLION-DOLLAR-FRIENDS-DREAM-BIG_112s.mp4` - opens mid-sentence on \"talking with you\""
+   ],
+   "slug": "TRILLION-DOLLAR-FRIENDS-DREAM-BIG",
+   "in": 788.0,
+   "out": 900.0,
+   "start_words": "You start talking with",
+   "end_words": "magic in thinking big",
+   "hook": [
+    "A trillion dollars",
+    "one friend controls"
+   ]
   }
  },
  "attempts": {
