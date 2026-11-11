@@ -1,10 +1,10 @@
 {
- "at": "2026-11-11T00:31",
+ "at": "2026-11-11T06:11",
  "profile": {
-  "video_count": 166,
   "follower_count": 408,
   "following_count": 8,
-  "likes_count": 5883
+  "likes_count": 5883,
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -219,7 +219,7 @@
   },
   "KT_WEALTH/01_POSITIVE-THINKING-NOT-ENOUGH_158s.mp4": {
    "id": "7690640962304937229",
-   "view_count": 2,
+   "view_count": 4,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
@@ -259,10 +259,10 @@
   },
   "KT_HUSTLE/01_WHAT-BILL-GATES-REALLY-SAID_144s.mp4": {
    "id": "7690316450594032910",
-   "view_count": 5,
+   "view_count": 6,
    "like_count": 0,
    "comment_count": 0,
-   "share_count": 0,
+   "share_count": 1,
    "share_url": "https://www.tiktok.com/@kt_student/video/7690316450594032910?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 144,
    "posted": "2026-09-27T20:35"
@@ -409,7 +409,7 @@
   },
   "KT_FREEDOM/01_WHY-HAVING-IT-WONT-FIX-YOU_67s.mp4": {
    "id": "7689098540093541645",
-   "view_count": 331,
+   "view_count": 332,
    "like_count": 31,
    "comment_count": 0,
    "share_count": 2,
