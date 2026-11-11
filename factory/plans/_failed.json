@@ -12673,6 +12673,96 @@
     "In the room.",
     "They weren't."
    ]
+  },
+  "ar_v4ki6sz/YOURE-HYPNOTIZED-EVERY-SINGLE-DAY": {
+   "plan": "ar_v4ki6sz",
+   "source": "v4ki6sz.mp4",
+   "brand": "AR_IMMUNITY",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "YOURE-HYPNOTIZED-EVERY-SINGLE-DAY",
+   "in": 936.6,
+   "out": 1042.75,
+   "start_words": "All of you are",
+   "end_words": "giving you the antidote",
+   "hook": [
+    "You're hypnotized",
+    "every single day."
+   ]
+  },
+  "ar_v4ki6sz/A-HIDDEN-TUNNEL-UNDER-THE-MOUNTAIN": {
+   "plan": "ar_v4ki6sz",
+   "source": "v4ki6sz.mp4",
+   "brand": "AR_IMMUNITY",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "A-HIDDEN-TUNNEL-UNDER-THE-MOUNTAIN",
+   "in": 1635.32,
+   "out": 1676.21,
+   "start_words": "Technology at home? No",
+   "end_words": "was no technology there",
+   "hook": [
+    "A hidden tunnel",
+    "under the mountain."
+   ]
+  },
+  "ar_v4ki6sz/ITS-A-SECRET-WAKE-UP": {
+   "plan": "ar_v4ki6sz",
+   "source": "v4ki6sz.mp4",
+   "brand": "AR_IMMUNITY",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "ITS-A-SECRET-WAKE-UP",
+   "in": 1802.28,
+   "out": 1900.96,
+   "start_words": "There's dozens of them",
+   "end_words": "step out of your trance",
+   "hook": [
+    "It's a secret.",
+    "Wake up."
+   ]
+  },
+  "ar_v4ki6sz/YOUR-TEACHER-IS-CALLED-YOUR-UNCLE": {
+   "plan": "ar_v4ki6sz",
+   "source": "v4ki6sz.mp4",
+   "brand": "AR_IMMUNITY",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "YOUR-TEACHER-IS-CALLED-YOUR-UNCLE",
+   "in": 5341.4,
+   "out": 5411.0,
+   "start_words": "When I was in",
+   "end_words": "as well as thoughts",
+   "hook": [
+    "Your teacher is called",
+    "your uncle."
+   ]
+  },
+  "ar_v4ki6sz/DALAI-LAMA-3AM-THREE-HOURS": {
+   "plan": "ar_v4ki6sz",
+   "source": "v4ki6sz.mp4",
+   "brand": "AR_IMMUNITY",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "DALAI-LAMA-3AM-THREE-HOURS",
+   "in": 5540.2,
+   "out": 5638.94,
+   "start_words": "And I'll tell you",
+   "end_words": "within you as you",
+   "hook": [
+    "Dalai Lama,",
+    "3am, three hours."
+   ]
   }
  },
  "attempts": {
@@ -12744,6 +12834,9 @@
   "ep_v4tz80x": 1,
   "ep_v4vdcy0": 1,
   "ar_v4ki1z0": 2,
-  "ar_v4ki6sz": 1
+  "ar_v4ki6sz": 2,
+  "ar_v4khs1x": 1,
+  "ar_v4khxuu": 1,
+  "ep_v4khhot_r2": 1
  }
 }
