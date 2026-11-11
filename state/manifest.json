@@ -15372,7 +15372,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "cinema"
+   "look": "cinema",
+   "scheduled_at": "2026-11-12T10:17",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_FORGE/01_ZERO-TO-65-MILLION-MANSION_89s.mp4",
@@ -15382,7 +15386,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "cinema"
+   "look": "cinema",
+   "scheduled_at": "2026-11-12T08:35",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_FORGE/02_HENRY-FORD-DIDNT-INVENT-CARS_94s.mp4",
@@ -15392,7 +15400,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "cinema"
+   "look": "cinema",
+   "scheduled_at": "2026-11-12T09:21",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_FORGE/02_JORDAN-FAKED-RIVALS-TO-WIN_113s.mp4",
@@ -15402,7 +15414,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "cinema"
+   "look": "cinema",
+   "scheduled_at": "2026-11-12T11:55",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   }
  ]
 }
