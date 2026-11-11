@@ -15152,7 +15152,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "cinema"
+   "look": "cinema",
+   "scheduled_at": "2026-11-11T16:41",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
