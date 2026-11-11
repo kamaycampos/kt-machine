@@ -12565,6 +12565,114 @@
     "Worth $650 billion",
     "still gave 10%"
    ]
+  },
+  "ar_v4ki1z0/THE-BROTHERHOOD-RUNS-THE-WORLD": {
+   "plan": "ar_v4ki1z0",
+   "source": "v4ki1z0.mp4",
+   "brand": "AR_FIRSTHAND",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "THE-BROTHERHOOD-RUNS-THE-WORLD",
+   "in": 133.3,
+   "out": 243.0,
+   "start_words": "I was in a society",
+   "end_words": "you just don't know",
+   "hook": [
+    "The Brotherhood runs",
+    "the world."
+   ]
+  },
+  "ar_v4ki1z0/ROCKEFELLERS-GIVING-FORMULA": {
+   "plan": "ar_v4ki1z0",
+   "source": "v4ki1z0.mp4",
+   "brand": "AR_FIRSTHAND",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "ROCKEFELLERS-GIVING-FORMULA",
+   "in": 4325.1,
+   "out": 4497.9,
+   "start_words": "Rockefeller said that",
+   "end_words": "a hundred fold back",
+   "hook": [
+    "Rockefeller's secret:",
+    "give it away."
+   ]
+  },
+  "ar_v4ki1z0/NO-NAME-ON-THE-BOOK-THAT-WORKS": {
+   "plan": "ar_v4ki1z0",
+   "source": "v4ki1z0.mp4",
+   "brand": "AR_FIRSTHAND",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "NO-NAME-ON-THE-BOOK-THAT-WORKS",
+   "in": 1950.12,
+   "out": 2075.58,
+   "start_words": "Nobody knows the author",
+   "end_words": "whatever you desire",
+   "hook": [
+    "You're tuned",
+    "to the wrong frequency."
+   ]
+  },
+  "ar_v4ki1z0/I-READ-A-BILLIONAIRE-OVER-THE-PHONE": {
+   "plan": "ar_v4ki1z0",
+   "source": "v4ki1z0.mp4",
+   "brand": "AR_FIRSTHAND",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "I-READ-A-BILLIONAIRE-OVER-THE-PHONE",
+   "in": 2249.36,
+   "out": 2372.68,
+   "start_words": "The phone rings and",
+   "end_words": "for taking my call",
+   "hook": [
+    "I read minds",
+    "for the ultra-rich."
+   ]
+  },
+  "ar_v4ki1z0/YOURE-A-PUPPET-SO-IS-EVERYONE": {
+   "plan": "ar_v4ki1z0",
+   "source": "v4ki1z0.mp4",
+   "brand": "AR_FIRSTHAND",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "YOURE-A-PUPPET-SO-IS-EVERYONE",
+   "in": 5020.2,
+   "out": 5086.53,
+   "start_words": "Let me give you",
+   "end_words": "extension of the one",
+   "hook": [
+    "You're a puppet.",
+    "So is everyone."
+   ]
+  },
+  "ar_v4ki1z0/IN-THE-ROOM-THEY-WERENT": {
+   "plan": "ar_v4ki1z0",
+   "source": "v4ki1z0.mp4",
+   "brand": "AR_FIRSTHAND",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "IN-THE-ROOM-THEY-WERENT",
+   "in": 377.36,
+   "out": 429.23,
+   "start_words": "You're not going to",
+   "end_words": "going to say anything",
+   "hook": [
+    "In the room.",
+    "They weren't."
+   ]
   }
  },
  "attempts": {
@@ -12635,6 +12743,7 @@
   "ep_v4khhot": 2,
   "ep_v4tz80x": 1,
   "ep_v4vdcy0": 1,
-  "ar_v4ki1z0": 1
+  "ar_v4ki1z0": 2,
+  "ar_v4ki6sz": 1
  }
 }
