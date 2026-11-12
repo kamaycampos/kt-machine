@@ -1,1 +1,377 @@
-{"slug": "ep5_study", "vid": "v66j311", "t_in": 176.0, "t_out": 270.0}
+{
+ "slug": "ep5_study",
+ "vid": "v66j311",
+ "t_in": 176.0,
+ "t_out": 270.0,
+ "keeps": [
+  [
+   16,
+   62
+  ],
+  [
+   66,
+   76
+  ],
+  [
+   84,
+   93
+  ],
+  [
+   166,
+   196
+  ],
+  [
+   197,
+   201
+  ],
+  [
+   202,
+   211
+  ]
+ ],
+ "scenes": [
+  {
+   "src": "a_ballroom.jpg",
+   "from": 16,
+   "to": 28,
+   "move": "in"
+  },
+  {
+   "src": "b_brain.jpg",
+   "from": 29,
+   "to": 36,
+   "move": "in"
+  },
+  {
+   "src": "c_mentor.jpg",
+   "from": 39,
+   "to": 42,
+   "move": "in"
+  },
+  {
+   "src": "d_book.jpg",
+   "from": 43,
+   "to": 48,
+   "move": "right"
+  },
+  {
+   "src": "e_office.jpg",
+   "from": 57,
+   "to": 68,
+   "move": "in"
+  },
+  {
+   "src": {
+    "pixabay": 191588,
+    "q": "formal garden palace"
+   },
+   "from": 69,
+   "to": 86,
+   "start": 2.0
+  },
+  {
+   "src": {
+    "pixabay": 231166,
+    "q": "skyline office window"
+   },
+   "from": 171,
+   "to": 173,
+   "start": 1.0
+  },
+  {
+   "src": {
+    "pixabay": 365403,
+    "q": "boardroom meeting"
+   },
+   "from": 181,
+   "to": 182,
+   "start": 1.0
+  },
+  {
+   "src": {
+    "pixabay": 358513,
+    "q": "boardroom meeting"
+   },
+   "from": 183,
+   "to": 187,
+   "start": 1.0
+  }
+ ],
+ "voices": {
+  "16": "S",
+  "17": "S",
+  "20": "F",
+  "25": "F",
+  "26": "F",
+  "35": "B",
+  "40": "B",
+  "44": "F",
+  "53": "B",
+  "59": "B",
+  "66": "IB",
+  "75": "F",
+  "76": "F",
+  "85": "I",
+  "87": "IC",
+  "88": "I",
+  "90": "I",
+  "91": "I",
+  "92": "I",
+  "93": "I",
+  "169": "B",
+  "170": "T",
+  "173": "S",
+  "176": "X",
+  "180": "B",
+  "182": "flag:AU",
+  "185": "flag:US",
+  "187": "flag:CA",
+  "188": "flag:ZA",
+  "189": "flag:ZA",
+  "191": "flag:UK",
+  "196": "flag:EU",
+  "198": "XI",
+  "206": "XI"
+ },
+ "fix": {
+  "57": "Hundreds",
+  "66": "Billions",
+  "75": "Royal",
+  "76": "Families",
+  "185": "US",
+  "191": "UK"
+ },
+ "drop": [
+  18,
+  46,
+  60,
+  67,
+  181,
+  186,
+  190
+ ],
+ "join": [
+  [
+   16,
+   17
+  ],
+  [
+   19,
+   20
+  ],
+  [
+   24,
+   26
+  ],
+  [
+   43,
+   44
+  ],
+  [
+   75,
+   76
+  ],
+  [
+   84,
+   85
+  ],
+  [
+   86,
+   87
+  ],
+  [
+   88,
+   90
+  ],
+  [
+   91,
+   93
+  ],
+  [
+   169,
+   170
+  ],
+  [
+   177,
+   178
+  ],
+  [
+   179,
+   180
+  ],
+  [
+   188,
+   189
+  ],
+  [
+   199,
+   200
+  ],
+  [
+   206,
+   207
+  ]
+ ],
+ "big_from": 197,
+ "states": [
+  {
+   "from": 29,
+   "to": 29,
+   "show": [
+    [
+     "L",
+     [
+      [
+       "HOW",
+       "S"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "from": 30,
+   "to": 30,
+   "show": [
+    [
+     "L",
+     [
+      [
+       "HOW",
+       "S"
+      ]
+     ]
+    ],
+    [
+     "R",
+     [
+      [
+       "TO",
+       "S"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "from": 31,
+   "to": 33,
+   "show": [
+    [
+     "L",
+     [
+      [
+       "HOW",
+       "S"
+      ]
+     ]
+    ],
+    [
+     "R",
+     [
+      [
+       "TO",
+       "S"
+      ]
+     ]
+    ],
+    [
+     "B",
+     [
+      [
+       "use your",
+       "s"
+      ],
+      [
+       "MIND",
+       "IC"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "from": 34,
+   "to": 34,
+   "show": [
+    [
+     "R",
+     [
+      [
+       "to",
+       "s"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "from": 35,
+   "to": 35,
+   "show": [
+    [
+     "L",
+     [
+      [
+       "manipulate",
+       "B"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "from": 36,
+   "to": 36,
+   "show": [
+    [
+     "L",
+     [
+      [
+       "manipulate",
+       "B"
+      ]
+     ]
+    ],
+    [
+     "R",
+     [
+      [
+       "energy",
+       "s"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "from": 37,
+   "to": 38,
+   "show": [
+    [
+     "C-",
+     [
+      [
+       "and",
+       "s"
+      ]
+     ]
+    ],
+    [
+     "C+",
+     [
+      [
+       "matter",
+       "s"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "end_card": "book_endcard.png",
+ "end_secs": 1.1,
+ "post": {
+  "note": "STUDY ONLY - never posted. A remake of kevins_apprentice Episode 5 from our own source and our own scenes."
+ }
+}

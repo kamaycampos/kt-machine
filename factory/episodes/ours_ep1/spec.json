@@ -1,1 +1,369 @@
-{"slug": "ours_ep1", "vid": "v6z25lm", "t_in": 55.0, "t_out": 216.0}
+{
+ "slug": "ours_ep1",
+ "vid": "v6z25lm",
+ "t_in": 55.0,
+ "t_out": 216.0,
+ "keeps": [
+  [
+   15,
+   66
+  ],
+  [
+   74,
+   96
+  ],
+  [
+   114,
+   133
+  ],
+  [
+   285,
+   292
+  ],
+  [
+   415,
+   480
+  ]
+ ],
+ "scenes": [
+  {
+   "src": "a_ballroom.jpg",
+   "from": 15,
+   "to": 25,
+   "move": "in"
+  },
+  {
+   "src": "c_mentor.jpg",
+   "from": 43,
+   "to": 51,
+   "move": "in"
+  },
+  {
+   "src": {
+    "pixabay": 18088,
+    "q": "gothic university"
+   },
+   "from": 55,
+   "to": 62,
+   "start": 1.0
+  },
+  {
+   "src": "d_book.jpg",
+   "from": 65,
+   "to": 66,
+   "move": "right"
+  },
+  {
+   "src": {
+    "pixabay": 191588,
+    "q": "formal garden palace"
+   },
+   "from": 74,
+   "to": 81,
+   "start": 2.0
+  },
+  {
+   "src": "b_brain.jpg",
+   "from": 82,
+   "to": 96,
+   "move": "in"
+  },
+  {
+   "src": {
+    "pixabay": 231166,
+    "q": "skyline office window"
+   },
+   "from": 423,
+   "to": 428,
+   "start": 1.0
+  },
+  {
+   "src": {
+    "pixabay": 376591,
+    "q": "welder sparks"
+   },
+   "from": 435,
+   "to": 439,
+   "start": 1.0
+  },
+  {
+   "src": "e_office.jpg",
+   "from": 440,
+   "to": 444,
+   "move": "in"
+  },
+  {
+   "src": {
+    "pixabay": 129936,
+    "q": "galaxy stars universe"
+   },
+   "from": 462,
+   "to": 470,
+   "start": 1.0
+  }
+ ],
+ "voices": {
+  "16": "I",
+  "17": "I",
+  "18": "I",
+  "19": "I",
+  "32": "B",
+  "38": "I",
+  "39": "I",
+  "41": "I",
+  "42": "I",
+  "45": "B",
+  "51": "F",
+  "53": "F",
+  "57": "IC",
+  "58": "IC",
+  "59": "IC",
+  "61": "I",
+  "62": "I",
+  "65": "F",
+  "66": "F",
+  "79": "I",
+  "80": "I",
+  "81": "I",
+  "117": "F",
+  "129": "B",
+  "133": "F",
+  "289": "F",
+  "290": "IC",
+  "292": "F",
+  "418": "IC",
+  "424": "X",
+  "428": "B",
+  "433": "I",
+  "434": "I",
+  "439": "IB",
+  "444": "IC",
+  "449": "X",
+  "455": "B",
+  "461": "IC",
+  "464": "IC",
+  "466": "B",
+  "470": "X"
+ },
+ "fix": {
+  "17": "Wish Is",
+  "58": "&"
+ },
+ "drop": [
+  63,
+  64,
+  118,
+  119,
+  120
+ ],
+ "join": [
+  [
+   16,
+   19
+  ],
+  [
+   38,
+   39
+  ],
+  [
+   41,
+   42
+  ],
+  [
+   50,
+   51
+  ],
+  [
+   52,
+   53
+  ],
+  [
+   57,
+   59
+  ],
+  [
+   61,
+   62
+  ],
+  [
+   65,
+   66
+  ],
+  [
+   79,
+   81
+  ],
+  [
+   116,
+   117
+  ],
+  [
+   132,
+   133
+  ],
+  [
+   288,
+   289
+  ],
+  [
+   291,
+   292
+  ],
+  [
+   425,
+   426
+  ],
+  [
+   427,
+   428
+  ],
+  [
+   433,
+   434
+  ],
+  [
+   476,
+   477
+  ],
+  [
+   479,
+   480
+  ]
+ ],
+ "big_from": 471,
+ "states": [
+  {
+   "from": 82,
+   "to": 84,
+   "show": [
+    [
+     "B",
+     [
+      [
+       "that are",
+       "s"
+      ],
+      [
+       "taught",
+       "B"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "from": 85,
+   "to": 86,
+   "show": [
+    [
+     "L",
+     [
+      [
+       "HOW",
+       "S"
+      ]
+     ]
+    ],
+    [
+     "R",
+     [
+      [
+       "TO",
+       "S"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "from": 87,
+   "to": 89,
+   "show": [
+    [
+     "L",
+     [
+      [
+       "HOW",
+       "S"
+      ]
+     ]
+    ],
+    [
+     "R",
+     [
+      [
+       "TO",
+       "S"
+      ]
+     ]
+    ],
+    [
+     "B",
+     [
+      [
+       "use their",
+       "s"
+      ],
+      [
+       "MIND",
+       "IC"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "from": 90,
+   "to": 91,
+   "show": [
+    [
+     "L",
+     [
+      [
+       "to",
+       "s"
+      ]
+     ]
+    ],
+    [
+     "R",
+     [
+      [
+       "manifest",
+       "B"
+      ]
+     ]
+    ]
+   ]
+  },
+  {
+   "from": 92,
+   "to": 96,
+   "show": [
+    [
+     "B",
+     [
+      [
+       "what they",
+       "s"
+      ],
+      [
+       "WANT",
+       "IC"
+      ],
+      [
+       "in life",
+       "s"
+      ]
+     ]
+    ]
+   ]
+  }
+ ],
+ "end_card": "book_endcard.png",
+ "end_secs": 1.1,
+ "post": {
+  "title": "Episode 1 (The Secret Behind The Secret)",
+  "caption": "Episode 1 (The Secret Behind The Secret)\n\nKevin Trudeau says he did not invent Your Wish Is Your Command. It was taught to him. In the late '60s he was inducted into a private society he calls the Brotherhood, where people were trained to use the mind to manifest what they want in life. No college education. His dad was a welder. No connections and no money to start. He says what he learned there is how he created billions of dollars in sales.\n\nComment \"WISH\" and we'll DM you the free Your Wish Is Your Command audio."
+ }
+}

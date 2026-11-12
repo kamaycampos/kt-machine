@@ -292,7 +292,7 @@ while i < n:
                    and grp[-1] + 1 not in in_state and grp[-1] + 1 not in joins and voice(grp[-1] + 1) == "s"
                    and words[grp[-1] + 1][0] - words[grp[-1]][1] < 0.3
                    and seg_end(grp[-1]) == seg_end(grp[-1] + 1)
-                   and len(" ".join(txt(j) for j in grp + [grp[-1] + 1])) <= 14
+                   and len(" ".join(txt(j) for j in grp + [grp[-1] + 1])) <= 16
                    and not words[grp[-1]][2].rstrip("\"'").endswith((".", "!", "?", ","))):
                 grp.append(grp[-1] + 1)
     pieces = []
