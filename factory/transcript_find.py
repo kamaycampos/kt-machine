@@ -6,6 +6,17 @@ best windows (episode, title, time, the words). By hand, from the transcript-fin
 """
 import json, os, re, subprocess, sys, urllib.request
 BASE = "https://github.com/" + os.environ.get("GITHUB_REPOSITORY", "kamaycampos/kt-machine") + "/releases/download/sources/"
+if sys.argv[1].startswith("@"):            # "@v66j311@120@600": print that episode's cues between two seconds
+    _, v, t0, t1 = sys.argv[1].split("@")
+    BASE2 = "https://github.com/" + os.environ.get("GITHUB_REPOSITORY", "kamaycampos/kt-machine") + "/releases/download/sources/"
+    open(f"/tmp/{v}.srt.enc", "wb").write(urllib.request.urlopen(BASE2 + f"{v}.srt.enc", timeout=120).read())
+    txt = subprocess.run(["openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-pass", "env:TRANSCRIPT_KEY",
+                          "-in", f"/tmp/{v}.srt.enc"], capture_output=True).stdout.decode("utf-8", "ignore")
+    for h, m, sec, ms, x in re.findall(r"(\d+):(\d+):(\d+)[,.](\d+) --> [^\n]+\n(.+?)(?:\n\n|\Z)", txt, re.S):
+        t = int(h) * 3600 + int(m) * 60 + int(sec) + int(ms) / 1000
+        if float(t0) <= t <= float(t1):
+            print(f"{t:8.2f}  " + x.replace("\n", " ").strip())
+    sys.exit(0)
 keys = [k.strip().lower() for k in sys.argv[1].split("|") if k.strip()]
 need = int(sys.argv[2]) if len(sys.argv) > 2 else max(2, len(keys) // 2)
 span = int(sys.argv[3]) if len(sys.argv) > 3 else 10
