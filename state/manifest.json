@@ -15285,13 +15285,26 @@
    "hook": "Why winners never retreat just regroup",
    "bytes": 28277170,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "cinema",
    "scheduled_at": "2026-11-11T19:58",
    "cta_keyword": "BRAIN",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Dfn2NquHDin/",
+    "youtube": "https://youtube.com/shorts/0in2KIjWSVI"
+   },
+   "caption_at_post": "Kevin Trudeau once traveled with General Norman Schwartzkopf, the four-star general who led the invasion of Iraq.\n\nHe asked him: what happens when your army retreats? The general stopped him cold - we never retreat, he said, we regroup.\n\nSame move, same soldiers, same battlefield. All that changed was the word. A retreat feels like losing. A regroup feels like a plan.\n\nThat's the whole difference between a poor mindset and a rich one - not the setback, the sentence you tell yourself about it.\n\nComment BRAIN and I'll send you Kevin's free audios.\n\n#kevintrudeau #mindset #millionairemindset #reframe #resilience #success",
+   "posted_at": "2026-11-11T20:14"
   },
   {
    "file": "AR_CENSOREDR2/01_THEY-DECIDE-IF-YOU-ARE-LYING_71s.mp4",
