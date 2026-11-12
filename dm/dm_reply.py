@@ -48,6 +48,21 @@ WINDOW = timedelta(days=7)           # Meta's private-reply window
 # newest few to stay far under Meta's rate limits; the 20-minute sweep reads 25.
 RECENT_POSTS = int(os.environ.get("DM_RECENT_POSTS") or 25)
 MAX_PER_RUN = 60                     # stay far under Meta's messaging limits
+# THE FAST PASS (12 Nov 2026, Kamay: "it needs to be instantly"). A reply waited up to 2.5 min on
+# the newest 6 posts and up to 20 min on any older clip. DM_FAST=1 is a pass cheap enough to run
+# every 15 seconds on the newest 25 posts: ONE call lists them with their comment counts, and a
+# post's comments are read only when its count moved since the last pass (kept in /tmp, the
+# heartbeat's own disk). Instagram only; Facebook and anything a fast pass failed on are still
+# caught by the ordinary pass every 2.5 minutes.
+FAST = os.environ.get("DM_FAST") == "1"
+COUNTS = f"/tmp/dm_counts_{BRAND or 'KT'}.json"
+
+
+def _counts():
+    try:
+        return json.load(open(COUNTS))
+    except (OSError, ValueError):
+        return {}
 # 14 Oct 2026, Kamay: the "#ad - I earn a commission" line is gone from the DM.
 # {disclosure} stays accepted (empty) so an older DM_TEXT never breaks the send.
 DEFAULT_TEXT = "Here it is: {link}"
@@ -113,11 +128,14 @@ def instagram_comments(ig, tok):
                                        "access_token": tok}).get("data", [])
     diag = os.environ.get("DM_DIAG") == "1"
     out = []
+    seen_counts = _counts()
     for m in media:
         if _ts(m["timestamp"]) < datetime.now(timezone.utc) - WINDOW - timedelta(days=30):
             continue
         if m.get("comments_count") == 0 and not diag:
             continue                     # nothing to read: save the call
+        if FAST and seen_counts.get(m["id"]) == m.get("comments_count"):
+            continue                     # nobody commented since the last look
         cs = _get(f"{G}/{m['id']}/comments", {"fields": "id,text,timestamp,username,replies{username}",
                                                "limit": 50, "access_token": tok}).get("data", [])
         if diag:
@@ -131,6 +149,11 @@ def instagram_comments(ig, tok):
         out += [(c["id"], c.get("text") or "", c["timestamp"], m["id"], c.get("username", ""),
                  {r.get("username", "") for r in (c.get("replies") or {}).get("data", [])})
                 for c in cs]
+        seen_counts[m["id"]] = m.get("comments_count")
+    try:
+        json.dump(seen_counts, open(COUNTS, "w"))
+    except OSError:
+        pass
     return out
 
 
@@ -180,17 +203,23 @@ def run(dry=False):
     ig, itok = env("IG_USER_ID"), env("IG_ACCESS_TOKEN")
     me = {page, ig}
     if ig and itok:                      # their own replies never DM themselves
-        try:
-            me.add(_get(f"{G}/{ig}", {"fields": "username", "access_token": itok}).get("username", ""))
-        except Exception:
-            pass
+        name = _counts().get("_me") if FAST else None
+        if not name:
+            try:
+                name = _get(f"{G}/{ig}", {"fields": "username", "access_token": itok}).get("username", "")
+                c_ = _counts()
+                c_["_me"] = name
+                json.dump(c_, open(COUNTS, "w"))
+            except Exception:
+                name = ""
+        me.add(name or "")
     sources = []
     if ig and itok and page:
         # Read with the Page token when there is one: it carries instagram_manage_comments.
         # 14 Oct 2026: the Instagram token saw 5 comments in a week and missed a real
         # "Money" - it was never granted comment access.
         sources.append(("instagram", lambda: instagram_comments(ig, ftok or itok), ftok or itok))
-    if page and ftok:
+    if page and ftok and not FAST:
         sources.append(("facebook", lambda: facebook_comments(page, ftok), ftok))
     if not sources:
         print("comment -> DM needs Instagram/Facebook connected (type `post` in Claude)")

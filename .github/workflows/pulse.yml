@@ -60,7 +60,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
-      - name: Start post.yml every 20 minutes, answer keyword comments every 2.5
+      - name: Start post.yml every 20 minutes, answer keyword comments every 15 seconds
         run: |
           git config user.name  "kt-machine"
           git config user.email "noreply@github.com"
@@ -78,6 +78,21 @@ jobs:
             done
             echo "::warning::dms.json push failed - sent DMs are still marked by the public reply"
           }
+          dm_fast() {   # the newest 25 posts every 15 s: one call unless a comment count moved (dm_reply DM_FAST)
+            DM_FAST=1 DM_RECENT_POSTS=25 timeout 60 python dm/dm_reply.py > /tmp/dmf.log 2>&1 || true
+            DM_BRAND=AR_ DM_FAST=1 DM_RECENT_POSTS=25 timeout 60 python dm/dm_reply.py >> /tmp/dmf.log 2>&1 || true
+            git diff --quiet -- state/dms.json state/dms_ar.json && return 0
+            cat /tmp/dmf.log
+            git add state/dms.json 2>/dev/null || true
+            git add state/dms_ar.json 2>/dev/null || true
+            git diff --staged --quiet && return 0
+            git commit -q -m "dms: $(date -u +%FT%TZ)"
+            for k in 1 2 3; do
+              git pull -q --rebase --autostash && git push -q && return 0
+              git rebase --abort 2>/dev/null || true; sleep 3
+            done
+            echo "::warning::dms.json push failed - sent DMs are still marked by the public reply"
+          }
           for i in $(seq 1 17); do
             start=$SECONDS
             gh workflow run post.yml -f dry_run=false || echo "dispatch $i failed - next one in 20 min"
@@ -90,9 +105,13 @@ jobs:
             # Wednesday episode could wait past the afternoon planner. The heartbeat starts it hourly.
             if [ $((i % 3)) -eq 1 ]; then gh workflow run kevin_watch.yml || echo "kevin-watch dispatch failed"; fi
             dm_pass 25                              # the full sweep, once per 20 min
+            n=0
             while [ $((SECONDS - start)) -lt 1050 ]; do
-              sleep 150
-              dm_pass 6                             # the newest posts, every 2.5 min
+              sleep 15
+              n=$((n + 1))
+              # 12 Nov 2026, Kamay: "it needs to be instantly". A fast look every 15 s; the ordinary
+              # pass (fresh checkout, Facebook, anything a fast look failed on) every 2.5 min.
+              if [ $((n % 10)) -eq 0 ]; then dm_pass 6; else dm_fast; fi
             done
             left=$((1200 - (SECONDS - start)))
             if [ $left -gt 0 ]; then sleep $left; fi   # never a failing last line under bash -e
