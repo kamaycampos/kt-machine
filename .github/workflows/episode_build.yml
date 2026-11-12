@@ -1,0 +1,52 @@
+# EPISODE BUILD (12 Nov 2026): one story clip in the Episode pattern (factory/EPISODE_PATTERN.md).
+# By hand. Never touches the queue; files go to the 'previews' release.
+name: episode-build
+on:
+  workflow_dispatch:
+    inputs:
+      spec: {required: true, description: "factory/episodes/<slug>/spec.json"}
+      mode: {required: false, default: "", description: "'list' prints the timed words; empty builds"}
+permissions:
+  contents: write
+env:
+  FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+  TRANSCRIPT_KEY: ${{ secrets.TRANSCRIPT_KEY }}
+  PIXABAY_KEY: ${{ secrets.PIXABAY_KEY }}
+  GH_TOKEN: ${{ github.token }}
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/cache@v4
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v2-portable }
+      - run: bash factory/setup.sh
+      - name: Fonts (open licence, static weights)
+        run: |
+          mkdir -p /tmp/fonts
+          B=https://cdn.jsdelivr.net/fontsource/fonts
+          for w in 700-normal:montserrat700 800-normal:montserrat800 800-italic:montserrat800i 900-italic:montserrat900i; do
+            curl -sfL -o /tmp/fonts/${w#*:}.ttf $B/montserrat@latest/latin-${w%%:*}.ttf
+          done
+          curl -sfL -o /tmp/fonts/greatvibes400.ttf $B/great-vibes@latest/latin-400-normal.ttf
+          curl -sfL -o /tmp/fonts/yellowtail400.ttf $B/yellowtail@latest/latin-400-normal.ttf
+          ls -la /tmp/fonts
+      - uses: actions/cache@v4
+        with: { path: "~/.cache/torch\n~/.cache/pip", key: align-torch-2.8.0-w2v2-base-960h }
+      - name: Caption aligner (same as the factory)
+        run: |
+          timeout 600 pip install -q torch==2.8.0 torchaudio==2.8.0 soundfile --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple \
+            && python -c "import torchaudio; torchaudio.pipelines.WAV2VEC2_ASR_BASE_960H.get_model()" \
+            && echo "setup: caption aligner ready" || echo "setup: caption aligner NOT installed - anchored times"
+      - name: Build
+        env:
+          SPEC: ${{ inputs.spec }}
+          MODE: ${{ inputs.mode }}
+        run: python factory/episode_build.py "$SPEC" $MODE
+      - name: Publish to the previews release
+        run: |
+          gh release view previews >/dev/null 2>&1 || gh release create previews --title "Style previews" --notes "Looks for Kamay to choose. Not posted."
+          find /tmp/previews -maxdepth 1 -type f | xargs -r gh release upload previews --clobber
