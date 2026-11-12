@@ -13051,6 +13051,78 @@
     "A trillion dollars",
     "one friend controls"
    ]
+  },
+  "ar_v4wsipz/HIS-PUNCH-NEVER-TOUCHED-THE-FLAME": {
+   "plan": "ar_v4wsipz",
+   "source": "v4wsipz.mp4",
+   "brand": "AR_BREATHCODE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_HIS-PUNCH-NEVER-TOUCHED-THE-FLAME_123s.mp4: [FAIL] 01_HIS-PUNCH-NEVER-TOUCHED-THE-FLAME_123s.mp4          24 captions vs the sound  median -0.01s  worst-10% 0.74s  | words captioned 101%  UNCAPTIONED SPEECH [(118.2, 121.0)]"
+   ],
+   "slug": "HIS-PUNCH-NEVER-TOUCHED-THE-FLAME",
+   "in": 832,
+   "out": 956,
+   "start_words": "He said he really wanted",
+   "end_words": "Think about that",
+   "hook": [
+    "His punch",
+    "never touched the flame."
+   ]
+  },
+  "ar_v4wsipz/250000-DOLLAR-ROLEX-HE-LET-GO": {
+   "plan": "ar_v4wsipz",
+   "source": "v4wsipz.mp4",
+   "brand": "AR_BREATHCODE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_250000-DOLLAR-ROLEX-HE-LET-GO_175s.mp4` - ends mid-thought on \"to release it\"; phrase scrambled around \"around it cost around\""
+   ],
+   "slug": "250000-DOLLAR-ROLEX-HE-LET-GO",
+   "in": 5396,
+   "out": 5571,
+   "start_words": "I had a gold diamond",
+   "end_words": "I had to release it",
+   "hook": [
+    "$250,000 Rolex.",
+    "He chose losing it."
+   ]
+  },
+  "ar_v58xdrp/MY-EYES-CHANGED-THE-MASK-LIFTED": {
+   "plan": "ar_v58xdrp",
+   "source": "v58xdrp.mp4",
+   "brand": "AR_UNMASKED",
+   "tries": 1,
+   "why": [
+    "FAIL 02_MY-EYES-CHANGED-THE-MASK-LIFTED_79s.mp4: ends off the planned words: plan ends 'the spiritual awakening within', clip ends 'life which is the spiritual awakening'"
+   ],
+   "slug": "MY-EYES-CHANGED-THE-MASK-LIFTED",
+   "in": 971,
+   "out": 1052,
+   "start_words": "Kevin, we've noticed that",
+   "end_words": "the spiritual awakening within",
+   "hook": [
+    "My eyes changed.",
+    "The mask lifted."
+   ]
+  },
+  "ar_v5ejap5/BROTHERHOOD-TRAINED-TO-CONNECT": {
+   "plan": "ar_v5ejap5",
+   "source": "v5ejap5.mp4",
+   "brand": "AR_INNERCIRCLE",
+   "tries": 1,
+   "why": [
+    "drop AR_INNERCIRCLE/BROTHERHOOD-TRAINED-TO-CONNECT: hook - 940px wide at 44px - over the 780px safe zone, will be cut off on a phone"
+   ],
+   "slug": "BROTHERHOOD-TRAINED-TO-CONNECT",
+   "in": 1169,
+   "out": 1268,
+   "start_words": "In addition, I was empowering",
+   "end_words": "to the powers that be",
+   "hook": [
+    "Brotherhood-trained to connect.",
+    "Now, a threat."
+   ]
   }
  },
  "attempts": {
@@ -13125,6 +13197,9 @@
   "ar_v4ki6sz": 2,
   "ar_v4khs1x": 2,
   "ar_v4khxuu": 2,
-  "ep_v4khhot_r2": 2
+  "ep_v4khhot_r2": 2,
+  "ar_v4khxuu_r2": 1,
+  "ar_v4ki1z0_r2": 1,
+  "ar_v4ki6sz_r2": 1
  }
 }

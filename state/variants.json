@@ -1500,5 +1500,59 @@
    }
   ],
   "posted": null
+ },
+ "AR_BREATHCODE__HEAVEN-ISNT-UP-ITS-INSIDE-YOU": {
+  "clip": "AR_BREATHCODE/01_HEAVEN-ISNT-UP-ITS-INSIDE-YOU_152s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__AR_BREATHCODE__HEAVEN-ISNT-UP-ITS-INSIDE-YOU__V1.mp4",
+    "hook": [
+     "300 years denied.",
+     "Now proven true."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_BREATHCODE__HEAVEN-ISNT-UP-ITS-INSIDE-YOU__V2.mp4",
+    "hook": [
+     "He learned this",
+     "inside the Brotherhood."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_BREATHCODE__HEAVEN-ISNT-UP-ITS-INSIDE-YOU__V3.mp4",
+    "hook": [
+     "Dreams aren't random.",
+     "Your spirit leaves."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_BREATHCODE__HEAVEN-ISNT-UP-ITS-INSIDE-YOU__V4.mp4",
+    "hook": [
+     "Miss this,",
+     "and you stay asleep."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_BREATHCODE__HEAVEN-ISNT-UP-ITS-INSIDE-YOU__V5.mp4",
+    "hook": [
+     "The Bible says within.",
+     "Not up."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_BREATHCODE__HEAVEN-ISNT-UP-ITS-INSIDE-YOU__V6.mp4",
+    "hook": [
+     "Stop looking up.",
+     "Look within instead."
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }
