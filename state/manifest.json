@@ -15482,7 +15482,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-13T10:20",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_FORGER2/02_TRILLION-DOLLAR-FRIENDS-DREAM-BIG_121s.mp4",
@@ -15492,7 +15496,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-13T08:34",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_MASONRY/01_RICH-TOWN-ONLY-HAD-BUSINESS-OWNERS_87s.mp4",
@@ -15502,7 +15510,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-13T08:44",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
