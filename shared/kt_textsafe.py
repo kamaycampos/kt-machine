@@ -32,8 +32,10 @@ def _frames(src, t_in, t_out):
     return np.frombuffer(raw[:n * SW * SH * 3], np.uint8).reshape(n, SH, SW, 3)
 
 
-def text_rows(img):
-    """[(x0, x1, y0, y1)] in 0..1 - rows of big overlay letters in one frame."""
+def text_rows(img, min_h=0.045):
+    """[(x0, x1, y0, y1)] in 0..1 - rows of big overlay letters in one frame. min_h = the smallest
+    letter counted, as a share of the picture's height (the archive look shows a wider window, so
+    it meets his lower-third name graphic, whose capitals are ~4.4%)."""
     import cv2
     import numpy as np
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
@@ -44,7 +46,7 @@ def text_rows(img):
     blobs = []
     for i in range(1, n):
         x, y, w, hh, a = st[i]
-        if not (0.045 * SH <= hh <= 0.32 * SH):
+        if not (min_h * SH <= hh <= 0.32 * SH):
             continue
         if not (0.08 <= w / hh <= 1.6):               # letter-shaped, not a bar or a lamp
             continue
@@ -76,7 +78,7 @@ def text_rows(img):
     return rows
 
 
-def cut_text_spans(src, t_in, t_out, crop_at, pad=0.35, min_len=0.5):
+def cut_text_spans(src, t_in, t_out, crop_at, pad=0.35, min_len=0.5, min_h=0.045):
     """[(a, b)] clip seconds where a row of overlay letters crosses the crop's left or right edge."""
     fr = _frames(src, t_in, t_out)
     hits = []
@@ -84,7 +86,7 @@ def cut_text_spans(src, t_in, t_out, crop_at, pad=0.35, min_len=0.5):
         t = k / FPS
         x0, x1 = crop_at(t)
         m = 0.012                                     # a letter must really be sliced, not just touch
-        if any((r[0] < x0 - m < r[1]) or (r[0] < x1 + m < r[1]) for r in text_rows(img)):
+        if any((r[0] < x0 - m < r[1]) or (r[0] < x1 + m < r[1]) for r in text_rows(img, min_h)):
             hits.append(t)
     spans = []
     for t in hits:

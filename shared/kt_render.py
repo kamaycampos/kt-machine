@@ -1927,7 +1927,8 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
                     c_ = next((sh["cx"] for sh in _shots if t < sh["end"]), _shots[-1]["cx"])
                 x0 = max(0.0, min(c_ - cwn / 2, 1.0 - cwn))
                 return x0, x0 + cwn
-            tspans = kt_textsafe.cut_text_spans(src, t_in, t_out, arch["crop_at"] if arch else crop_at)
+            tspans = (kt_textsafe.cut_text_spans(src, t_in, t_out, arch["crop_at"], min_h=0.034) if arch
+                      else kt_textsafe.cut_text_spans(src, t_in, t_out, crop_at))
             if tspans:
                 geo = archive_fit(geo, tspans) if arch else kt_textsafe.with_fit(geo, tspans)
                 print("      source text kept whole (full picture): "
