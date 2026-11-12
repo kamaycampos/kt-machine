@@ -15551,7 +15551,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-13T10:06",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_BREATHCODE/01_THIS-BOOK-BREAKS-YOUR-TRANCE_127s.mp4",
@@ -15561,7 +15565,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-13T08:27",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_BREATHCODE/02_BREATHING-WRONG-IS-KEEPING-YOU-BROKE_163s.mp4",
@@ -15571,7 +15579,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-14T07:21",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 7,
+   "cta_kind": "question"
   },
   {
    "file": "AR_BREATHCODE/02_MONEY-IS-BLOCKED-ON-33-LEVELS_44s.mp4",
@@ -15581,7 +15593,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-12T17:27",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_INNERCIRCLE/01_HE-REFUSED-PAYMENT-PENICILLIN-REPAID-IT_135s.mp4",
@@ -15591,7 +15607,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-13T17:00",
+   "cta_keyword": "RISE",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_INNERCIRCLE/01_I-WAS-WITH-KINGS-AND-QUEENS_63s.mp4",
@@ -15601,7 +15621,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-12T19:20",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_INNERVOICE/01_OUT-OF-GAS-A-STRANGER-APPEARED_110s.mp4",
@@ -15611,7 +15635,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-13T11:57",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "AR_UNMASKED/01_BAD-MAYBE-NOT-THE-HORSE-KNEW_175s.mp4",
@@ -15621,7 +15649,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-13T08:20",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   }
  ]
 }
