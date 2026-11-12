@@ -23,6 +23,17 @@ Two looks of the same clip, word timing from the production engine (kt_words + a
               picture at tie height (under his chin, on his chest), a soft shade behind them so
               ivory reads on a white shirt. The picture returns to the middle (480-1440).
 
+  F4_APPRENTICE  Kamay, 12 Nov, showing instagram.com/kevins_apprentice ("100% duplicate that
+              guy's clips, but with our KT clips ... hooks, CC, all of the effects, the other
+              videos going along with KT"). Measured on their three breakout reels (45K-232K
+              views): the WHOLE 16:9 picture in the middle of the phone on black, no headline,
+              captions one or two words at a time in the centre of the picture - small white
+              for ordinary words, BIG heavy capitals for the money and power words, italic
+              serif for names and places - and other footage laid over his voice where he
+              tells the story (the jet, the old book). PREVIEW_SCENES gives those shots:
+              "0|4|vintage telephone;@Bellagio|3.5|lake como italy" = start (seconds, or
+              @the-word-he-says) | seconds | what to look for on Pixabay.
+
 PREVIEW_LOOKS=F3_ARCHIVE_TIE renders only the looks named (comma separated); default all.
 
     python factory/frame_preview.py <vid> <in> <out> "<line 1|line 2>" "<SOURCE CREDIT>" <slug>
@@ -306,6 +317,110 @@ for name, L in looks.items():
         # the cover: the frame Instagram and YouTube would show, taken while he is mid-thought
         sh(FF, "-y", "-loglevel", "error", "-ss", f"{min(1.2, dur / 2):.2f}", "-i", dst, "-frames:v", "1",
            os.path.join(OUT, f"{slug}_{name}_cover.jpg"))
+if "F4_APPRENTICE" in only:
+    import re
+    PH4 = 608
+    PY4 = (H - PH4) // 2
+    CY4 = PY4 + PH4 // 2
+    F_BLACK = os.path.join(K, "bin", "mont_black.ttf")
+    POWER = set("money rich richest wealth wealthy millionaire billionaire millions billions million billion "
+                "cash free freedom secret secrets never always nothing everything broke bankrupt".split())
+    I_WORDS = {"i", "i'd", "i'm", "i'll", "i've"}
+
+    def tier(k):
+        w = words[k][2]
+        core = w.strip(".,!?\"'()").lower()
+        if re.search(r"\d", w) or core in POWER:
+            return "big"
+        prev = words[k - 1][2] if k else "."
+        if (w[:1].isupper() and core not in I_WORDS and core != "mr"
+                and not prev.rstrip("\"')").endswith((".", "!", "?"))):
+            return "ital"
+        return "small"
+
+    groups, cur = [], []                 # (tier, [word indexes])
+    for k, w in enumerate(words):
+        t_ = tier(k)
+        if t_ != "small":
+            if cur:
+                groups.append(("small", cur)); cur = []
+            if groups and groups[-1][0] == t_ == "ital" and w[0] - words[groups[-1][1][-1]][1] < 0.25:
+                groups[-1][1].append(k)                 # "American Express", "Royal Families"
+            else:
+                groups.append((t_, [k]))
+            continue
+        if cur and (len(cur) >= 2 or w[0] - words[cur[-1]][1] > 0.28
+                    or len(" ".join(words[j][2] for j in cur) + " " + w[2]) > 12
+                    or words[cur[-1]][2][-1:] in ".!?,"):
+            groups.append(("small", cur)); cur = []
+        cur.append(k)
+    if cur:
+        groups.append(("small", cur))
+    style = {"small": (F_MONT, 46, "white"), "big": (F_BLACK, 104, "white"), "ital": (F_SERIF_I, 76, "white")}
+    cap4 = []
+    for n, (t_, idx) in enumerate(groups):
+        st = words[idx[0]][0]
+        en = words[idx[-1]][1]
+        if n + 1 < len(groups):
+            en = min(max(en, st + 0.16), words[groups[n + 1][1][0]][0])
+        txt = " ".join(words[j][2] for j in idx).strip(",.\"").strip()
+        if t_ == "big":
+            txt = txt.upper().rstrip("!?")
+        if not txt:
+            continue
+        font, size, col = style[t_]
+        cap4.append(f"drawtext=fontfile={font}:textfile={tf(f'p{n}', txt)}:expansion=none:fontsize={size}:fontcolor={col}:"
+                    f"shadowcolor=black@0.8:shadowx=0:shadowy=3:borderw=2:bordercolor=black@0.45:"
+                    f"x=(w-text_w)/2:y={CY4}-text_h/2:enable='between(t,{max(0, st):.2f},{en:.2f})'")
+    # the other footage, laid over his voice
+    scenes, extra_in = [], []
+    for spec in [x for x in os.environ.get("PREVIEW_SCENES", "").split(";") if x.strip()]:
+        try:
+            at, secs, query = [x.strip() for x in spec.split("|")]
+            secs = float(secs)
+            if at.startswith("@"):
+                hit = next((w for w in words if w[2].strip(".,!?\"'").lower().startswith(at[1:].lower())), None)
+                if not hit:
+                    print(f"scene skipped: he never says '{at[1:]}'")
+                    continue
+                t0 = max(0.0, hit[0] - 0.15)
+            else:
+                t0 = float(at)
+            import kt_opener as OP
+            shot = OP.pick(query, secs)
+            if not shot:
+                print(f"scene skipped: no shot for '{query}'")
+                continue
+            scenes.append((t0, min(secs, dur - t0 - 0.7), shot))
+        except Exception as e:
+            print("scene skipped:", spec, type(e).__name__, e)
+    graph = (f"[0:v]scale={W}:{PH4}:flags=lanczos,eq=contrast=1.04:saturation=1.05,"
+             f"pad={W}:{H}:0:{PY4}:color=black,setsar=1,fps=30[b0];")
+    last = "b0"
+    for i, (t0, d_, shot) in enumerate(scenes):
+        extra_in += ["-ss", f"{float(shot.get('start', 0)):.2f}", "-t", f"{d_:.2f}", "-i", shot["path"]]
+        graph += (f"[{i + 1}:v]scale={W}:{PH4}:force_original_aspect_ratio=increase,crop={W}:{PH4},setsar=1,fps=30,"
+                  f"eq=contrast=1.05:saturation=0.95,format=yuva420p,"
+                  f"fade=t=in:st=0:d=0.3:alpha=1,fade=t=out:st={d_ - 0.3:.2f}:d=0.3:alpha=1,"
+                  f"setpts=PTS-STARTPTS+{t0:.2f}/TB[s{i}];"
+                  f"[{last}][s{i}]overlay=0:{PY4}:eof_action=pass:enable='between(t,{t0:.2f},{t0 + d_:.2f})'[b{i + 1}];")
+        last = f"b{i + 1}"
+    graph += (f"[{last}]" + ",".join(cap4 + [f"fade=t=out:st={dur - 0.6:.2f}:d=0.6", "format=yuv420p"]) + "[v]")
+    gp = os.path.join(TMP, "F4.graph")
+    open(gp, "w").write(graph)
+    dst = os.path.join(OUT, f"{slug}_F4_APPRENTICE.mp4")
+    r = sh(FF, "-y", "-loglevel", "error", "-ss", f"{a:.2f}", "-t", f"{dur:.2f}", "-i", src, *extra_in,
+           "-filter_complex_script", gp, "-map", "[v]", "-map", "0:a?",
+           "-af", f"afade=t=in:st=0:d=0.05,afade=t=out:st={dur - 0.6:.2f}:d=0.6",
+           "-r", "30", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-maxrate", "9000k", "-bufsize", "18000k",
+           "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", "-t", f"{dur:.2f}", dst)
+    ok = r.returncode == 0 and os.path.exists(dst)
+    print("F4_APPRENTICE", "OK" if ok else "FAILED", f"- {len(groups)} caption pieces, {len(scenes)} scene(s): "
+          + ", ".join(f"{t0:.1f}s '{sh_['query']}'" for t0, _d, sh_ in scenes))
+    if ok:
+        made.append(dst)
+        json.dump([[round(words[i[0]][0], 2), t_, " ".join(words[j][2] for j in i)] for t_, i in groups],
+                  open(os.path.join(OUT, f"{slug}_F4_caps.json"), "w"))
 json.dump({"vid": vid, "in": a, "out": b, "hook": hook, "credit": credit, "slug": slug,
            "source": [sw, shh], "window": [int(cw), int(ch)], "scale": round(PIC_H / ch, 3),
            "words": len(words)}, open(os.path.join(OUT, f"{slug}_info.json"), "w"))

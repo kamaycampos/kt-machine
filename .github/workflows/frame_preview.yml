@@ -11,7 +11,8 @@ on:
       hook: {required: true, description: "line 1|line 2"}
       credit: {required: true}
       slug: {required: true}
-      looks: {required: false, default: "F3_ARCHIVE_TIE", description: "F1_FILES,F2_ARCHIVE,F3_ARCHIVE_TIE"}
+      looks: {required: false, default: "F3_ARCHIVE_TIE", description: "F1_FILES,F2_ARCHIVE,F3_ARCHIVE_TIE,F4_APPRENTICE"}
+      scenes: {required: false, default: "", description: "F4 only: start|seconds|pixabay query;... (start = seconds or @word)"}
 permissions:
   contents: write
 env:
@@ -54,6 +55,8 @@ jobs:
           CREDIT: ${{ inputs.credit }}
           SLUG: ${{ inputs.slug }}
           PREVIEW_LOOKS: ${{ inputs.looks }}
+          PREVIEW_SCENES: ${{ inputs.scenes }}
+          PIXABAY_KEY: ${{ secrets.PIXABAY_KEY }}
         run: python factory/frame_preview.py "$VID" "$T_IN" "$T_OUT" "$HOOK" "$CREDIT" "$SLUG"
       - name: Publish to the previews release
         run: |
