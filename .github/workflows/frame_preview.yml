@@ -11,6 +11,7 @@ on:
       hook: {required: true, description: "line 1|line 2"}
       credit: {required: true}
       slug: {required: true}
+      looks: {required: false, default: "F3_ARCHIVE_TIE", description: "F1_FILES,F2_ARCHIVE,F3_ARCHIVE_TIE"}
 permissions:
   contents: write
 env:
@@ -52,6 +53,7 @@ jobs:
           HOOK: ${{ inputs.hook }}
           CREDIT: ${{ inputs.credit }}
           SLUG: ${{ inputs.slug }}
+          PREVIEW_LOOKS: ${{ inputs.looks }}
         run: python factory/frame_preview.py "$VID" "$T_IN" "$T_OUT" "$HOOK" "$CREDIT" "$SLUG"
       - name: Publish to the previews release
         run: |

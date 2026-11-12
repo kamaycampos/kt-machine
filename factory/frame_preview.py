@@ -18,6 +18,12 @@ Two looks of the same clip, word timing from the production engine (kt_words + a
   F2_ARCHIVE  the same layout in Kamay's "Hidden Knowledge Archive" brief: charcoal + film grain,
               Cormorant Garamond headline in ivory with the last line in aged gold, a tracked
               gold slug above, a real source credit under the picture, calm sentence captions.
+  F3_ARCHIVE_TIE  Kamay, 11 Nov, on seeing F2: "Archive look but I do not want the CC under, I
+              want them where the tie was." The Archive look with the captions back INSIDE the
+              picture at tie height (under his chin, on his chest), a soft shade behind them so
+              ivory reads on a white shirt. The picture returns to the middle (480-1440).
+
+PREVIEW_LOOKS=F3_ARCHIVE_TIE renders only the looks named (comma separated); default all.
 
     python factory/frame_preview.py <vid> <in> <out> "<line 1|line 2>" "<SOURCE CREDIT>" <slug>
 """
@@ -25,8 +31,12 @@ import json, os, subprocess, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 K = os.path.expanduser("~/Kamay")
-sys.path.insert(0, HERE)
+# factory/ holds a queue.py. Python puts the script's own folder FIRST, so "import queue"
+# inside torch found ours, torch failed to import and every preview said "aligner not
+# installed". Our folder goes LAST: transcribe is still found, the standard library wins.
+sys.path = [p_ for p_ in sys.path if os.path.abspath(p_ or ".") != HERE]
 sys.path.insert(0, K)
+sys.path.append(HERE)
 
 vid, a, b = sys.argv[1], float(sys.argv[2]), float(sys.argv[3])
 hook = [x.strip() for x in sys.argv[4].split("|") if x.strip()]
@@ -193,10 +203,14 @@ def overlay_files(path, PIC_Y=PIC_Y):
     return path
 
 
-def overlay_archive(path, PIC_Y=PIC_A):
+def overlay_archive(path, PIC_Y=PIC_A, credit_dy=112, shade_y=None):
     from PIL import Image, ImageDraw, ImageFont
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
+    if shade_y:                # captions inside the picture: a soft shade, strongest on their line
+        for yy in range(max(PIC_Y, shade_y - 130), min(PIC_Y + PIC_H, shade_y + 130)):
+            k = 1 - abs(yy - shade_y) / 130
+            d.line((0, yy, W, yy), fill=(8, 8, 10, int(118 * k * k * (3 - 2 * k))))
     fo, size = fit(F_SERIF, hook, 84, W - 120, floor=52)
     fi = ImageFont.truetype(F_SERIF_I, size)
     step = int(size * 1.08)
@@ -215,7 +229,7 @@ def overlay_archive(path, PIC_Y=PIC_A):
     for yy in (PIC_Y - 1, PIC_Y + PIC_H):
         d.line((0, yy, W, yy), fill=GOLD + (120,), width=2)
     fc = ImageFont.truetype(F_MONT, 19)
-    tracked(d, (W / 2, PIC_Y + PIC_H + 112), credit.upper(), fc, IVORY + (105,), 5)
+    tracked(d, (W / 2, PIC_Y + PIC_H + credit_dy), credit.upper(), fc, IVORY + (105,), 5)
     img.save(path)
     return path
 
@@ -241,6 +255,11 @@ def caps(items, font, size, y, color, prefix, shadow="black@0.75", border=0):
 # a close-up).
 chin = PIC_Y + ((fy + fh * 0.5) * shh - y0) / ch * PIC_H
 CAP_F1 = int(max(PIC_Y + PIC_H // 2 + 60, min(chin + 70, PIC_Y + PIC_H - 90)))
+# "where the tie was": about half a face below his chin, never nearer than 70 px to the chin
+# and never in the bottom edge of the picture.
+face_px = fh * shh / ch * PIC_H
+CAP_TIE = int(max(chin + 70, min(chin + 0.45 * face_px, PIC_Y + PIC_H - 120)))
+print(f"chin at y={chin:.0f}, face {face_px:.0f}px tall, tie captions at y={CAP_TIE}")
 GRADE = "eq=contrast=1.06:saturation=0.9:brightness=-0.01,colorbalance=rs=0.025:bs=-0.035"
 looks = {
     "F1_FILES": {
@@ -253,7 +272,15 @@ looks = {
         "overlay": overlay_archive(os.path.join(TMP, "ov_archive.png")),
         "caps": caps(phrases(words), F_MONT, 48, PIC_A + PIC_H + 54, "0xF3ECDD", "a"),
     },
+    "F3_ARCHIVE_TIE": {
+        "pic": f"{crop},{GRADE}", "canvas": "0x0D0D0F", "post": ["noise=alls=5:allf=t"], "y": PIC_Y,
+        "overlay": overlay_archive(os.path.join(TMP, "ov_archive_tie.png"), PIC_Y, 58, CAP_TIE),
+        "caps": caps(phrases(words), F_MONT, 50, CAP_TIE, "0xF3ECDD", "t", shadow="black@0.85", border=3),
+    },
 }
+only = [x.strip() for x in os.environ.get("PREVIEW_LOOKS", "").split(",") if x.strip()]
+if only:
+    looks = {k_: v_ for k_, v_ in looks.items() if k_ in only}
 for k_, t_ in enumerate((0.25, 0.5, 0.75)):
     sh(FF, "-y", "-loglevel", "error", "-ss", f"{a + dur * t_:.2f}", "-i", src, "-frames:v", "1", "-q:v", "2",
        os.path.join(OUT, f"{slug}_still{k_}.jpg"))
