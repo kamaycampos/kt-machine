@@ -15452,13 +15452,26 @@
    "hook": "A $65M mansion built from zero",
    "bytes": 66790986,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "cinema",
    "scheduled_at": "2026-11-12T08:35",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfpNWQAmbCn/",
+    "youtube": "https://youtube.com/shorts/dqq2LyxcMkg"
+   },
+   "caption_at_post": "Kevin Trudeau says making money has never been easier.\n\nGrowing up, every rich person in his town owned a business, and the only way in was years of apprenticeship with no guarantee of a payoff. Today you can learn how to do a heart transplant free on YouTube.\n\nHe's seen the proof: guys starting with under $100, and two brothers he knows who went from zero to a $65 million mansion in Beverly Hills, built entirely online.\n\nComment MONEY and I'll send you Kevin's free audios.\n\n#kevintrudeau #makemoneyonline #wealthmindset #entrepreneur #financialfreedom #moneytips",
+   "posted_at": "2026-11-12T08:56"
   },
   {
    "file": "KT_FORGE/02_HENRY-FORD-DIDNT-INVENT-CARS_94s.mp4",
