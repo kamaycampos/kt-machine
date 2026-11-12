@@ -183,6 +183,10 @@ jobs:
           git config user.email "noreply@github.com"
           git add state/manifest.json state/metrics.json docs; git add state/variants.json 2>/dev/null || true
           git add state/dms.json 2>/dev/null || true
+          # THE TRIAL CLOCK IS STATE TOO (11 Nov 2026). trials.py wrote its pause and its 2-hour gap
+          # on the runner and nothing saved them, so every run started with no memory: a refused
+          # trial was retried every 20 minutes and an automatic pause never held.
+          git add state/trials_pause.json state/trials_last.json 2>/dev/null || true
           # Nothing due is the normal case; an empty commit would be noise.
           git diff --staged --quiet || git commit -m "state: $(date -u +%FT%TZ)"
           # 22 Sept 2026: a plain push lost a race and a clip was published
