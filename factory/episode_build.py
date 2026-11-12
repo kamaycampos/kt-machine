@@ -335,10 +335,12 @@ print(f"{len(events)} caption cards")
 
 # --- the scenes ----------------------------------------------------------------------------------
 inputs, graph, last = [], "", "base"
+_kc = SP.get("kevin_crop")               # [width share, height share, left share, top share] of Kevin's own picture
+KCROP = f"crop=iw*{_kc[0]}:ih*{_kc[1]}:iw*{_kc[2]}:ih*{_kc[3]}," if _kc else ""
 # the cut itself
 parts = []
 for k_, (s0, e0, o, i0, i1) in enumerate(segs):
-    graph += (f"[0:v]trim=start={s0:.3f}:end={e0:.3f},setpts=PTS-STARTPTS,scale={W}:{H}:flags=lanczos,setsar=1,fps=30[v{k_}];"
+    graph += (f"[0:v]trim=start={s0:.3f}:end={e0:.3f},setpts=PTS-STARTPTS,{KCROP}scale={W}:{H}:flags=lanczos,setsar=1,fps=30[v{k_}];"
               f"[0:a]atrim=start={s0:.3f}:end={e0:.3f},asetpts=PTS-STARTPTS,"
               f"afade=t=in:st=0:d=0.02,afade=t=out:st={max(0, e0 - s0 - 0.03):.3f}:d=0.03[a{k_}];")
     parts.append(f"[v{k_}][a{k_}]")
@@ -371,6 +373,11 @@ for k_, sc in enumerate(SP.get("scenes") or []):
             print("scene skipped (stock):", type(e).__name__, e)
             continue
         inputs += ["-ss", f"{float(sc.get('start', 1.0)):.2f}", "-t", f"{d_ + 0.2:.2f}", "-i", path]
+        chain = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps=30,"
+                 f"eq=contrast=1.05:saturation=0.92")
+    elif s_.lower().endswith(".mp4"):          # a stock clip kept beside the spec (its licence in stock_licences.json)
+        path = os.path.join(EDIR, s_)
+        inputs += ["-ss", f"{float(sc.get('start', 0.0)):.2f}", "-t", f"{d_ + 0.2:.2f}", "-i", path]
         chain = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps=30,"
                  f"eq=contrast=1.05:saturation=0.92")
     else:

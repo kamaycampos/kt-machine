@@ -61,40 +61,28 @@
    "move": "in"
   },
   {
-   "src": {
-    "pixabay": 191588,
-    "q": "formal garden palace"
-   },
+   "src": "s_palace.mp4",
    "from": 69,
    "to": 86,
-   "start": 2.0
+   "start": 0.5
   },
   {
-   "src": {
-    "pixabay": 231166,
-    "q": "skyline office window"
-   },
+   "src": "s_towers.mp4",
    "from": 171,
    "to": 173,
-   "start": 1.0
+   "start": 0.5
   },
   {
-   "src": {
-    "pixabay": 365403,
-    "q": "boardroom meeting"
-   },
+   "src": "s_boardroom.mp4",
    "from": 181,
    "to": 182,
-   "start": 1.0
+   "start": 0.5
   },
   {
-   "src": {
-    "pixabay": 358513,
-    "q": "boardroom meeting"
-   },
+   "src": "s_meeting.mp4",
    "from": 183,
    "to": 187,
-   "start": 1.0
+   "start": 0.5
   }
  ],
  "voices": {

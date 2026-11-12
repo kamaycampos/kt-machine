@@ -39,13 +39,10 @@
    "move": "in"
   },
   {
-   "src": {
-    "pixabay": 18088,
-    "q": "gothic university"
-   },
+   "src": "s_college.mp4",
    "from": 55,
    "to": 62,
-   "start": 1.0
+   "start": 0.5
   },
   {
    "src": "d_book.jpg",
@@ -54,13 +51,10 @@
    "move": "right"
   },
   {
-   "src": {
-    "pixabay": 191588,
-    "q": "formal garden palace"
-   },
+   "src": "s_palace.mp4",
    "from": 74,
    "to": 81,
-   "start": 2.0
+   "start": 0.5
   },
   {
    "src": "b_brain.jpg",
@@ -69,22 +63,16 @@
    "move": "in"
   },
   {
-   "src": {
-    "pixabay": 231166,
-    "q": "skyline office window"
-   },
+   "src": "s_towers.mp4",
    "from": 423,
    "to": 428,
-   "start": 1.0
+   "start": 0.5
   },
   {
-   "src": {
-    "pixabay": 376591,
-    "q": "welder sparks"
-   },
+   "src": "s_welder.mp4",
    "from": 435,
    "to": 439,
-   "start": 1.0
+   "start": 0.5
   },
   {
    "src": "e_office.jpg",
@@ -93,13 +81,10 @@
    "move": "in"
   },
   {
-   "src": {
-    "pixabay": 129936,
-    "q": "galaxy stars universe"
-   },
+   "src": "s_universe.mp4",
    "from": 462,
    "to": 470,
-   "start": 1.0
+   "start": 0.5
   }
  ],
  "voices": {
@@ -158,7 +143,7 @@
  ],
  "join": [
   [
-   16,
+   15,
    19
   ],
   [
@@ -365,5 +350,11 @@
  "post": {
   "title": "Episode 1 (The Secret Behind The Secret)",
   "caption": "Episode 1 (The Secret Behind The Secret)\n\nKevin Trudeau says he did not invent Your Wish Is Your Command. It was taught to him. In the late '60s he was inducted into a private society he calls the Brotherhood, where people were trained to use the mind to manifest what they want in life. No college education. His dad was a welder. No connections and no money to start. He says what he learned there is how he created billions of dollars in sales.\n\nComment \"WISH\" and we'll DM you the free Your Wish Is Your Command audio."
- }
+ },
+ "kevin_crop": [
+  0.78,
+  0.78,
+  0.11,
+  0.0
+ ]
 }
