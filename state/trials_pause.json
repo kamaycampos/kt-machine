@@ -1,4 +1,4 @@
 {
- "until": "2026-11-14T00:03",
- "why": "10 Nov 2026: 26 'User is performing too many actions' (code 9) refusals in a row - Instagram action block on the KT account; real clips keep posting"
+ "until": "2026-11-12T03:18",
+ "why": "lifted by Kamay 11 Nov 2026 ('Resume now'): the 72h cool-off after the 10 Nov action block ended early; trial_diag on 11 Nov showed Instagram accepting a KT trial container. One trial every 2h; a new 'too many actions' pauses 72h again by itself."
 }
