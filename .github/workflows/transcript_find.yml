@@ -1,0 +1,22 @@
+# TRANSCRIPT FIND (12 Nov 2026): which stocked episode has Kevin saying these words, and when.
+# By hand. Reads only; prints the matching lines.
+name: transcript-find
+on:
+  workflow_dispatch:
+    inputs:
+      phrases: {required: true, description: "phrase 1|phrase 2|..."}
+      need: {required: false, default: "3"}
+      span: {required: false, default: "10"}
+env:
+  TRANSCRIPT_KEY: ${{ secrets.TRANSCRIPT_KEY }}
+jobs:
+  find:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          PHRASES: ${{ inputs.phrases }}
+          NEED: ${{ inputs.need }}
+          SPAN: ${{ inputs.span }}
+        run: python3 factory/transcript_find.py "$PHRASES" "$NEED" "$SPAN"
