@@ -60,7 +60,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
-      - name: Start post.yml every 20 minutes, answer keyword comments every 15 seconds
+      - name: Start post.yml every 20 minutes, answer keyword comments every 5 seconds
         run: |
           git config user.name  "kt-machine"
           git config user.email "noreply@github.com"
@@ -107,11 +107,13 @@ jobs:
             dm_pass 25                              # the full sweep, once per 20 min
             n=0
             while [ $((SECONDS - start)) -lt 1050 ]; do
-              sleep 15
+              sleep 5
               n=$((n + 1))
-              # 12 Nov 2026, Kamay: "it needs to be instantly". A fast look every 15 s; the ordinary
-              # pass (fresh checkout, Facebook, anything a fast look failed on) every 2.5 min.
-              if [ $((n % 10)) -eq 0 ]; then dm_pass 6; else dm_fast; fi
+              # 12 Nov 2026, Kamay: "it needs to be instantly ... even 15 seconds is delayed". A fast
+              # look every 5 s (one cheap call each); the ordinary pass (fresh checkout, Facebook,
+              # anything a fast look failed on) about every 2.5 min. WB is instant because Meta's
+              # own comment rule answers there; this is as close as a bot that has to look can get.
+              if [ $((n % 25)) -eq 0 ]; then dm_pass 6; else dm_fast; fi
             done
             left=$((1200 - (SECONDS - start)))
             if [ $left -gt 0 ]; then sleep $left; fi   # never a failing last line under bash -e
