@@ -15547,13 +15547,26 @@
    "hook": "What Michael Jordan faked to win",
    "bytes": 84742067,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "cinema",
    "scheduled_at": "2026-11-12T11:55",
    "cta_keyword": "BRAIN",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfpkK60lBnu/",
+    "youtube": "https://youtube.com/shorts/sRqCvBwfMUM"
+   },
+   "caption_at_post": "Michael Jordan admitted something wild in The Last Dance - a lot of his motivation wasn't even real.\n\nKevin Trudeau explains the trick: Jordan would convince himself someone disrespected him, even when it never happened, just so he had a reason to destroy them on the court. Tom Brady did the same thing chasing ring after ring.\n\nIt's called creating a game in your mind, and it works in any job - there's even a book called The Game of Work about it.\n\nWhat game could you invent to get through tomorrow?\n\n#kevintrudeau #michaeljordan #mindset #motivation #thelastdance #mentalgame",
+   "posted_at": "2026-11-12T12:16"
   },
   {
    "file": "KT_FORGER2/01_SAME-RECESSION-ONE-BANKRUPT-ONE-RICH_127s.mp4",
