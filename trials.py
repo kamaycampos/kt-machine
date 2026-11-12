@@ -138,8 +138,10 @@ def step(engine, poster, media_url, log=print):
             except Exception as x:                       # one arm failing never stops posting
                 res = f"error: {type(x).__name__}: {x}"
             ok = isinstance(res, tuple)
-            if ok:
-                json.dump({"at": now.strftime("%Y-%m-%dT%H:%M")}, open(LAST, "w"))
+            # EVERY ATTEMPT COUNTS, NOT ONLY A SUCCESS (11 Nov 2026). The 2-hour gap was written only
+            # after a trial posted, so a refused one ("unexpected error, retry later") was retried
+            # every 20 minutes - 3 knocks an hour, the very pattern Instagram blocked on 10 Nov.
+            json.dump({"at": now.strftime("%Y-%m-%dT%H:%M"), "ok": ok}, open(LAST, "w"))
             arm["status"] = str(res[0] if ok else res)[:160]
             arm["id"] = poster.LAST_MEDIA_ID if ok else None
             if not ok and "too many actions" in str(res):
