@@ -1,4 +1,4 @@
-# The frame look ("The Hidden Knowledge Archive") - LOOK PICKED 11 Nov (F3), not in the machine yet
+# The archive look (KT_LOOK=archive) - picked 11 Nov, built into kt_render 11 Nov
 
 11 Nov 2026. Kamay showed instagram.com/trudeau_files ("the way his clips are placed in the space
 of the phone... comfortable to watch and very calling") and three creative briefs (clips,
@@ -21,7 +21,36 @@ Prototype tool: `factory/frame_preview.py` + workflow `frame-preview` (files lan
   1,451; 1,966 followers. NOT evidence that the layout wins - our late-October median was
   207-979 with a full-bleed crop. The layout is a taste + sharpness choice until we test it.
 
-## Kamay's pick: F3 = Archive, captions on the tie
+## In the machine (kt_render, 11 Nov, kt `0e817473`)
+`KT_LOOK=archive`, or a share of the plans through `LOOK_TEST=classic,cinema,archive`.
+Kamay's second round, on seeing F3: "delete the hidden knowledge archive line, it's too much",
+keep the small line under the picture ("I like the size, it's discreet") and use it for the book
+("to program people ... through spaced repetition") or link lines.
+
+- **No slug.** The brand name is not on the clips.
+- **The line under the picture** = `ARCH_LINE`, default `KEVIN TRUDEAU  ·  YOUR WISH IS YOUR COMMAND`
+  (Montserrat 600 19 px, ivory 51%, 58 px under the picture). Change it with repo variable
+  `KT_ARCHIVE_LINE` or `"archive_line"` in a member's style.json.
+  **RULE: the line is burned into ONE file that goes to every platform, so it may only say what
+  is true on all of them.** "Link below" is not: TikTok gives no bio link under 1,000 followers
+  and links in Instagram/Shorts captions do not click. Link lines stay in the caption text,
+  per platform (`state/extra_links.json`). The book title is true everywhere.
+- Window: one SIZE per clip (ffmpeg cannot resize a crop mid-stream) from the clip's usual face
+  size; its x AND y follow every camera shot (`archive_plan`).
+- Kevin's own on-screen words: `kt_textsafe` still finds the seconds the window would slice
+  them; for those seconds the whole wide picture sits in the window (`archive_fit`).
+- Headline: the plan's hook as written (sentence case), max 850 px wide (a tall phone crops ~10%
+  off each side), last line italic gold. On screen the whole clip, so it is on any cover frame.
+- Captions: `CAP_MAX` 26 in this look; y from the clip's usual shot, never nearer than 70 px to
+  the chin of any shot of 2 s or more.
+- YouTube cut (>59 s): same look, shots re-timed to the window's own clock. Story: cut from the
+  finished clip, its tail card moved under the picture.
+- Cover: frame scored on the window, no card pasted (the headline is already in the frame).
+- NOT in this look yet: the stock opener (skipped, logged), the label card (WB), a hand-made
+  `geo` layout is shown whole and upright inside the window.
+- Test plans: `ep_v6z25lm_archivetest`, `ep_v4tz80x_archivetest` (test: true, never queued).
+
+## Kamay's first pick: F3 = Archive, captions on the tie
 11 Nov, on seeing F2: "Archive look but I do not want the CC under, I want them where the tie was."
 - Everything from F2 (canvas, grade, headline, slug, hairlines), picture back in the middle (y 480-1440).
 - Captions INSIDE the picture at tie height: y = chin + 0.45 x face height, never nearer than 70 px
@@ -65,9 +94,9 @@ height, never scaled up more than x1.35 (a 1080p medium shot is scaled DOWN).
 ## Decided / open
 - DECIDED (Kamay, 11 Nov): Archive look, captions on the tie (F3). Thumbnails: the RED ACCENT
   style (B) if one must be chosen.
-- Open (Kamay): whether the brand name appears on clips; where his own face goes.
-- Next build: F3 into kt_render as a third LOOK_TEST arm (classic,cinema,archive) - the running
-  test has no verdict yet, so the new look is measured against both, not switched on blind.
+- DECIDED (Kamay, 11 Nov): no brand name on clips; the line under the picture carries the book.
+- His face: `~/Kamay/FACE_PLAN.md` (he confirmed the affiliate program allows it beside Kevin's).
+- Third LOOK_TEST arm (classic,cinema,archive): measured against both, not switched on blind.
 - Thumbnails with Kamay (`~/Kamay/work/frame_look/thumbnails/`): K1 him + the book, K2 Kevin + him
   (two separate pictures, a red line between), K3 pinned 9:16 cover. Built from his event photo
   holding YWIYC (the sharpest of his six; cut out on the Mac, nothing uploaded). Advice given:
