@@ -1,10 +1,10 @@
 {
- "at": "2026-11-12T20:24",
+ "at": "2026-11-12T21:53",
  "profile": {
+  "follower_count": 408,
   "following_count": 8,
   "likes_count": 5884,
-  "video_count": 166,
-  "follower_count": 408
+  "video_count": 166
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -319,7 +319,7 @@
   },
   "KT_BASEMENT/01_HOW-LONG-BEFORE-BUSINESS-GETS-EASY_77s.mp4": {
    "id": "7689615616877137182",
-   "view_count": 8,
+   "view_count": 10,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -479,7 +479,7 @@
   },
   "KT_SECRET/03_SIXTY-AND-BROKE_44s.mp4": {
    "id": "7688344513672170765",
-   "view_count": 489,
+   "view_count": 490,
    "like_count": 35,
    "comment_count": 0,
    "share_count": 3,
@@ -769,7 +769,7 @@
   },
   "KT_HOME/02_02_WHY-RICH-HOMES-ARE-FULL-OF-OLD-THINGS_85s.mp4": {
    "id": "7685065417743797518",
-   "view_count": 3494,
+   "view_count": 3496,
    "like_count": 270,
    "comment_count": 6,
    "share_count": 43,
