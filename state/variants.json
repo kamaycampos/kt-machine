@@ -1438,5 +1438,67 @@
    }
   ],
   "posted": null
+ },
+ "KT_FORGER2__SAME-RECESSION-ONE-BANKRUPT-ONE-RICH": {
+  "clip": "KT_FORGER2/01_SAME-RECESSION-ONE-BANKRUPT-ONE-RICH_127s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_FORGER2__SAME-RECESSION-ONE-BANKRUPT-ONE-RICH__V1.mp4",
+    "hook": [
+     "85% weren't working",
+     "she got richer"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_FORGER2__SAME-RECESSION-ONE-BANKRUPT-ONE-RICH__V2.mp4",
+    "hook": [
+     "The recession lied",
+     "she got rich"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_FORGER2__SAME-RECESSION-ONE-BANKRUPT-ONE-RICH__V3.mp4",
+    "hook": [
+     "Why he failed",
+     "she got rich"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_FORGER2__SAME-RECESSION-ONE-BANKRUPT-ONE-RICH__V4.mp4",
+    "hook": [
+     "Why blaming economy",
+     "keeps you broke"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_FORGER2__SAME-RECESSION-ONE-BANKRUPT-ONE-RICH__V5.mp4",
+    "hook": [
+     "What Ziglar saw:",
+     "two different endings"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_FORGER2__SAME-RECESSION-ONE-BANKRUPT-ONE-RICH__V6.mp4",
+    "hook": [
+     "Why Kevin Trudeau",
+     "tells this story"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_FORGER2__SAME-RECESSION-ONE-BANKRUPT-ONE-RICH__V7.mp4",
+    "hook": [
+     "Two Detroit realtors,",
+     "opposite fortunes exactly"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }
