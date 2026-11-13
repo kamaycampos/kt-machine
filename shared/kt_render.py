@@ -252,7 +252,14 @@ ARCHIVE = LOOK == "archive"
 ARCH_SERIF = os.path.join(_ASSETS, "cinema_archive_serif.ttf")           # Cormorant Garamond 600
 ARCH_SERIF_I = os.path.join(_ASSETS, "cinema_archive_serif_italic.ttf")
 ARCH_SANS = os.path.join(_ASSETS, "cinema_archive_sans.ttf")             # Montserrat 600
-ARCH_PIC_Y, ARCH_PIC_H = 480, 960
+# THE WHOLE WIDE PICTURE (13 Nov 2026). Kamay, with screenshots from his own feed: the Jordan
+# view is "the ideal view, you want to see what is in the back of kt, ywiyc book"; the tight
+# crop is "too close, uncomfortable"; and where the wide picture sat in the old 960-tall window
+# the headline and the small line floated far from it ("why is there a separation"). So the
+# window IS the 16:9 picture now, the headline sits right on top of it and the line right
+# under it - one compact block in the middle of the phone, like kevintrudeau_insights in the feed.
+ARCH_PIC_H = 608
+ARCH_PIC_Y = (1920 - ARCH_PIC_H) // 2
 ARCH_CANVAS = "0x0D0D0F"
 ARCH_IVORY, ARCH_GOLD = (243, 236, 221), (185, 151, 91)
 ARCH_GRADE = "eq=contrast=1.06:saturation=0.9:brightness=-0.01,colorbalance=rs=0.025:bs=-0.035"
@@ -298,18 +305,16 @@ def archive_plan(src, t_in, cx, shots=None, off=0.0):
         if acc >= sum(x[0] for x in faces) / 2:
             fmed = f[3]
             break
-    ch = max(min(sh, ARCH_PIC_H / 1.35), min(sh, fmed / 0.34))
-    cw = min(sw, ch * 9 / 8)
-    cw = int(cw) // 2 * 2
-    ch = min(sh, int(cw * 8 / 9) // 2 * 2)
-    xs = [max(0, min(int(round(sw * f[1] - cw / 2)), sw - cw)) for f in faces]
-    ys = [max(0, min(int(round(sh * f[2] - ch * 0.42)), sh - ch)) for f in faces]
+    ch = sh // 2 * 2                      # the whole picture, every shot (13 Nov 2026)
+    cw = min(sw, int(ch * W / ARCH_PIC_H) // 2 * 2)
+    xs = [max(0, (sw - cw) // 2) for f in faces]
+    ys = [0 for f in faces]
     k = ARCH_PIC_H / ch
     chins = [ARCH_PIC_Y + (f[2] * sh + f[3] / 2 - y) * k for f, y in zip(faces, ys)]
     mid = min(range(len(faces)), key=lambda i: abs(faces[i][3] - fmed))
     long_ = [c for f, c in zip(faces, chins) if f[0] >= 2.0] or chins
-    cap_y = max(chins[mid] + 0.45 * fmed * k, max(long_) + 70, ARCH_PIC_Y + 330)
-    cap_y = int(min(cap_y, ARCH_PIC_Y + ARCH_PIC_H - 120))
+    cap_y = max(chins[mid] + 0.45 * fmed * k, max(long_) + 50, ARCH_PIC_Y + int(ARCH_PIC_H * 0.62))
+    cap_y = int(min(cap_y, ARCH_PIC_Y + ARCH_PIC_H - 70))
     if tracked and len(faces) > 1:
         xe, ye = _shot_expr(xs, shots, off), _shot_expr(ys, shots, off)
     else:
@@ -343,8 +348,8 @@ def archive_overlay(lines, path, cap_y, line=None):
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     top_, bot_ = ARCH_PIC_Y, ARCH_PIC_Y + ARCH_PIC_H
-    for yy in range(max(top_, cap_y - 130), min(bot_, cap_y + 130)):
-        k = 1 - abs(yy - cap_y) / 130
+    for yy in range(max(top_, cap_y - 90), min(bot_, cap_y + 90)):
+        k = 1 - abs(yy - cap_y) / 90
         d.line((0, yy, W, yy), fill=(8, 8, 10, int(118 * k * k * (3 - 2 * k))))
     if text:
         size = 84 if len(text) < 3 else 72
@@ -356,7 +361,7 @@ def archive_overlay(lines, path, cap_y, line=None):
             size -= 2
             fs = fonts(size)
         step = int(size * 1.08)
-        y0 = top_ - 44 - step * len(text)
+        y0 = top_ - 34 - step * len(text)
         for i, (f, t) in enumerate(zip(fs, text)):
             gold = i == len(text) - 1 and len(text) > 1
             d.text(((W - f.getlength(t)) / 2, y0 + i * step), t, font=f,
@@ -364,7 +369,7 @@ def archive_overlay(lines, path, cap_y, line=None):
     for yy in (top_ - 1, bot_):
         d.line((0, yy, W, yy), fill=ARCH_GOLD + (120,), width=2)
     if line:
-        size, track = 19, 5.0
+        size, track = 22, 5.0
         fo = ImageFont.truetype(ARCH_SANS, size)
         wid = lambda: sum(fo.getlength(c) for c in line) + track * (len(line) - 1)
         while wid() > ARCH_SAFE_W and track > 1:
@@ -374,7 +379,7 @@ def archive_overlay(lines, path, cap_y, line=None):
             fo = ImageFont.truetype(ARCH_SANS, size)
         x = (W - wid()) / 2
         for c in line:
-            d.text((x, bot_ + 58), c, font=fo, fill=ARCH_IVORY + (130,))
+            d.text((x, bot_ + 30), c, font=fo, fill=ARCH_IVORY + (150,))
             x += fo.getlength(c) + track
     os.makedirs(os.path.dirname(path), exist_ok=True)
     img.save(path)
@@ -1141,7 +1146,7 @@ def thumb(video, prefer=None, card=None):
     # so the window reaches to 4.0s, and a frame with a face is preferred above
     # all else. No face anywhere in the window = the old choice, and a note.
     LATE = [2.6 + 0.2 * i for i in range(8) if 2.6 + 0.2 * i <= min(4.0, HOOK_SECS - 0.4)]
-    LOOK = "crop=iw*0.7:ih*0.30:iw*0.15:ih*0.26" if ARCHIVE else "crop=iw*0.7:ih*0.34:iw*0.15:ih*0.02"
+    LOOK = "crop=iw*0.5:ih*0.15:iw*0.25:ih*0.355" if ARCHIVE else "crop=iw*0.7:ih*0.34:iw*0.15:ih*0.02"
 
     def _gray(t, tag):
         q = dest + f".{tag}.png"
@@ -1337,7 +1342,7 @@ def make_story(dest):
     size = fit_size([STORY_TAIL], 58)
     draw = (f"drawtext=fontfile={f}:text='{esc(STORY_TAIL)}':fontsize={size}"
             f":fontcolor=white{SHADOW}:box=1:boxcolor=black@0.55:boxborderw=26"
-            f":x=(w-tw)/2:y={'1590' if ARCHIVE else 'h*0.72'}:enable='between(t,{card_from:.2f},{end:.2f})'")
+            f":x=(w-tw)/2:y={'1440' if ARCHIVE else 'h*0.72'}:enable='between(t,{card_from:.2f},{end:.2f})'")
     out = story_path(dest)
     r = subprocess.run([FFMPEG, "-y", "-loglevel", "error", "-t", f"{end:.2f}",
                         "-i", dest, "-vf", draw,

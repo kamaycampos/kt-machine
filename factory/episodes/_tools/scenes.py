@@ -67,8 +67,8 @@ def depth_scene(name, secs=8.0, bg_z=(1.02, 1.07), fg_z=(1.02, 1.13), pan=(0, 0)
 def brain(secs=8.0):
     src = cv2.resize(cv2.imread(f"{D}/b_brain.jpg"), (W, H), interpolation=cv2.INTER_LANCZOS4).astype(np.float32)
     canvas = np.zeros_like(src)
-    sm = cv2.resize(src, (int(W * 0.86), int(H * 0.86)), interpolation=cv2.INTER_AREA)
-    y0, x0 = (H - sm.shape[0]) // 2 - 40, (W - sm.shape[1]) // 2
+    sm = cv2.resize(src, (int(W * 0.96), int(H * 0.96)), interpolation=cv2.INTER_AREA)
+    y0, x0 = max(0, (H - sm.shape[0]) // 2 - 20), (W - sm.shape[1]) // 2
     canvas[y0:y0 + sm.shape[0], x0:x0 + sm.shape[1]] = sm
     lum = canvas.max(axis=2) / 255.0
     noise = cv2.GaussianBlur(rng.uniform(0, 1, (H, W)).astype(np.float32), (0, 0), 0.8)
@@ -90,6 +90,8 @@ def brain(secs=8.0):
 if len(sys.argv) > 3:                 # only the named stills: name[:pan_x]  (13 Nov 2026)
     for _a in sys.argv[3:]:
         _n, _, _p = _a.partition(":")
+        if _n == "brain":
+            brain(); continue
         depth_scene(_n, fg_z=(1.02, 1.12), bg_z=(1.02, 1.06), pan=(float(_p or 0), 0))
     sys.exit(0)
 depth_scene("a_ballroom", fg_z=(1.02, 1.14), bg_z=(1.02, 1.07))
