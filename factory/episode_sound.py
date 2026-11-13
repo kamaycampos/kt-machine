@@ -130,18 +130,50 @@ def _add(buf, x, at, gain, peak_frac=0.0):
         buf[a:b] += x[a - i:b - i] * gain
 
 
-def make(dur, cuts, hits, path, rise_at=None, seed=7, bed_db=-27.0, fx_db=-19.0):
+def _music(path, dur, ffmpeg="ffmpeg", skip=None):
+    """A real track, decoded to 48 kHz stereo, starting where it first gets going."""
+    import subprocess
+    raw = subprocess.run([ffmpeg, "-v", "error", "-i", path, "-ac", "2", "-ar", str(SR), "-f", "f32le", "-"],
+                         capture_output=True).stdout
+    a = np.frombuffer(raw, np.float32).reshape(-1, 2).astype(np.float64)
+    if len(a) < SR * 5:
+        raise RuntimeError("music file unreadable or too short")
+    if skip is None:                                   # past a quiet intro: the first second at half the track's level
+        win = SR
+        rms = np.sqrt((a[:len(a) // win * win].reshape(-1, win, 2) ** 2).mean((1, 2)))
+        skip = float(np.argmax(rms > 0.5 * np.median(rms)))
+    a = a[int(skip * SR):]
+    n = int(dur * SR)
+    while len(a) < n:                                  # a short track plays again
+        a = np.concatenate([a, a])
+    a = a[:n]
+    t = np.arange(n) / SR
+    fade = np.clip(t / 0.5, 0, 1) * np.clip((dur - t) / 1.6, 0, 1)
+    return a[:, 0] * fade, a[:, 1] * fade
+
+
+def make(dur, cuts, hits, path, rise_at=None, seed=7, bed_db=-27.0, fx_db=-19.0, music=None, ffmpeg="ffmpeg"):
     """dur seconds; cuts = picture changes (a whoosh peaks on each); hits = the loud words.
 
     bed_db: the music's level against full scale (his voice is mixed near -16; the reference
     reels keep music about 8-14 dB under him). fx_db: the peak of a whoosh; hits sit 3 dB over.
     """
     rng = np.random.default_rng(seed)
-    L, R = _bed(dur, rng, rise_at)
-    rms = np.sqrt(((L ** 2 + R ** 2) / 2).mean()) + 1e-9
-    g = _db(bed_db) / rms
-    L, R = L * g, R * g
-    n = len(L)
+    # THE BED IS A REAL TRACK OR NOTHING (13 Nov 2026). Kamay on the pad this file used to
+    # synthesise: "a horrible background noise like an old radio, constant". It was. A bed is
+    # now a recorded piece of music from factory/music/ (see LICENCES.md); with no track there
+    # is no bed, only the effects.
+    n = int(dur * SR)
+    L, R = np.zeros(n), np.zeros(n)
+    if music:
+        L, R = _music(music, dur, ffmpeg)
+        rms = np.sqrt(((L ** 2 + R ** 2) / 2).mean()) + 1e-9
+        g = _db(bed_db) / rms
+        L, R = L * g, R * g
+        if rise_at is not None and rise_at < dur:      # the music lifts with the payoff
+            t = np.arange(n) / SR
+            up = 1.0 + 0.4 * np.clip((t - rise_at) / 2.5, 0, 1)
+            L, R = L * up, R * up
     fxl, fxr = np.zeros(n), np.zeros(n)
     w, h = _whoosh(rng), _hit()
     last = -9.0

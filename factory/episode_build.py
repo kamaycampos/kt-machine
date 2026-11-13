@@ -104,9 +104,15 @@ for (i0, i1) in keeps:
     s0 = words[i0][0] - (0.14 if _tight else 0.07)
     if i0 > 0:
         s0 = max(s0, words[i0 - 1][1] + 0.01)
-    e0 = words[i1][1] + 0.18
+    _last = (i0, i1) == tuple(keeps[-1])
+    # THE LAST WORD GETS ITS BREATH (13 Nov 2026, Kamay: "the end just gets a little cut off
+    # from kt voice, its not comfortable ending"). The timing pass ends a word early; the final
+    # piece now runs 0.5 s past it (never into his next word) and fades over 0.25 s.
+    e0 = words[i1][1] + (0.5 if _last else 0.18)
     if i1 + 1 < len(words):
         e0 = min(e0, words[i1 + 1][0] - 0.01)
+        if _last:
+            e0 = max(e0, min(words[i1][1] + 0.32, words[i1 + 1][0] + 0.12))
     s0, e0 = max(0.0, s0), max(s0 + 0.2, e0)
     segs.append((s0, e0, off, i0, i1))
     off += e0 - s0
@@ -379,7 +385,8 @@ parts = []
 for k_, (s0, e0, o, i0, i1) in enumerate(segs):
     graph += (f"[0:v]trim=start={s0:.3f}:end={e0:.3f},setpts=PTS-STARTPTS,{KCROP}scale={W}:{H}:flags=lanczos,setsar=1,fps=30[v{k_}];"
               f"[0:a]atrim=start={s0:.3f}:end={e0:.3f},asetpts=PTS-STARTPTS,"
-              f"afade=t=in:st=0:d=0.02,afade=t=out:st={max(0, e0 - s0 - 0.03):.3f}:d=0.03[a{k_}];")
+              f"afade=t=in:st=0:d=0.02,afade=t=out:st={max(0, e0 - s0 - (0.25 if k_ == len(segs) - 1 else 0.03)):.3f}"
+              f":d={0.25 if k_ == len(segs) - 1 else 0.03}[a{k_}];")
     parts.append(f"[v{k_}][a{k_}]")
 graph += "".join(parts) + f"concat=n={len(segs)}:v=1:a=1[base][abase];"
 n_in = 1
@@ -451,39 +458,44 @@ for k_, sc in enumerate(SP.get("scenes") or []):
 inputs += ["-f", "concat", "-safe", "0", "-i", cl]
 graph += f"[{n_in}:v]fps=30,format=rgba[cap];[{last}][cap]overlay=0:0:eof_action=pass,format=yuv420p[vmain];"
 n_in += 1
-# THE SOUND (13 Nov 2026): music under his voice, a whoosh on each picture change, a low hit on
-# the loud words, a rise into the payoff. Made by factory/episode_sound.py, nothing downloaded.
-# "sound": false in the spec switches it off; "music_db" / "fx_db" set the levels.
-ABASE = "abase"
-if SP.get("sound", True):
-    try:
-        import episode_sound
-        _hits = [at(int(k))[0] for k, v in (SP.get("voices") or {}).items() if v in ("X", "XI") and at(int(k))]
-        _rise = at(int(SP["big_from"]))[0] if SP.get("big_from") is not None and at(int(SP["big_from"])) else None
-        _wav = episode_sound.make(DUR, CUTS, _hits, os.path.join(TMP, "sound.wav"), rise_at=_rise,
-                                  bed_db=float(SP.get("music_db", -21)), fx_db=float(SP.get("fx_db", -14)))
-        inputs += ["-i", _wav]
-        # AS LOUD AS THEIRS. Measured: their reel sits at a median of -13 dB with peaks at -6;
-        # our first mix sat at -21 / -13, so next to theirs it sounded small. His voice is
-        # lifted ("voice_db", default +7) and the whole mix held under a soft ceiling.
-        graph += (f"[abase]aresample=48000,aformat=channel_layouts=stereo,volume={float(SP.get('voice_db', 7))}dB[avo];"
-                  f"[{n_in}:a]aresample=48000[asn];"
-                  f"[avo][asn]amix=inputs=2:normalize=0:duration=first,alimiter=limit=0.6:attack=4:release=60:level=disabled[amixed];")
-        n_in += 1
-        ABASE = "amixed"
-        print(f"sound: {len(CUTS)} picture changes, {len(_hits)} hits, rise at {_rise}")
-    except Exception as _e:
-        print("sound skipped:", type(_e).__name__, _e)
 # the end card
 end_secs = float(SP.get("end_secs", 0))
 if SP.get("end_card") and end_secs > 0:
     inputs += ["-loop", "1", "-framerate", "30", "-t", f"{end_secs:.2f}", "-i", os.path.join(EDIR, SP["end_card"]),
                "-f", "lavfi", "-t", f"{end_secs:.2f}", "-i", "anullsrc=r=48000:cl=stereo"]
     graph += (f"[{n_in}:v]scale={W}:{H},setsar=1,fps=30,format=yuv420p[ev];"
-              f"[{ABASE}]aresample=48000,aformat=channel_layouts=stereo[am];"
-              f"[vmain][am][ev][{n_in + 1}:a]concat=n=2:v=1:a=1[v][aout]")
+              f"[abase]aresample=48000,aformat=channel_layouts=stereo[am];"
+              f"[vmain][am][ev][{n_in + 1}:a]concat=n=2:v=1:a=1[v][avoice];")
+    n_in += 2
 else:
-    graph += f"[vmain]null[v];[{ABASE}]anull[aout]"
+    end_secs = 0.0
+    graph += "[vmain]null[v];[abase]aresample=48000,aformat=channel_layouts=stereo[avoice];"
+# THE SOUND (13 Nov 2026): real music under his voice (spec "music": a file in factory/music/),
+# a whoosh on each picture change, a low hit on the loud words, a rise into the payoff. It runs
+# THROUGH the end card, so the film never drops into silence. "sound": false switches it off;
+# "music_db" / "fx_db" / "voice_db" set the levels (defaults match the reference reels).
+AOUT = "avoice"
+if SP.get("sound", True):
+    try:
+        import episode_sound
+        _hits = [at(int(k))[0] for k, v in (SP.get("voices") or {}).items() if v in ("X", "XI") and at(int(k))]
+        _rise = at(int(SP["big_from"]))[0] if SP.get("big_from") is not None and at(int(SP["big_from"])) else None
+        _mus = os.path.join(HERE, "music", SP["music"]) if SP.get("music") else None
+        if _mus and not os.path.exists(_mus):
+            print("music file missing:", _mus); _mus = None
+        _wav = episode_sound.make(DUR + end_secs, CUTS + ([DUR] if end_secs else []), _hits, os.path.join(TMP, "sound.wav"),
+                                  rise_at=_rise, bed_db=float(SP.get("music_db", -21)), fx_db=float(SP.get("fx_db", -16)),
+                                  music=_mus, ffmpeg=FF)
+        inputs += ["-i", _wav]
+        graph += (f"[avoice]volume={float(SP.get('voice_db', 7))}dB[avo];[{n_in}:a]aresample=48000[asn];"
+                  f"[avo][asn]amix=inputs=2:normalize=0:duration=first,alimiter=limit=0.6:attack=4:release=60:level=disabled[aout]")
+        n_in += 1
+        AOUT = "aout"
+        print(f"sound: music {os.path.basename(_mus) if _mus else 'none'}, {len(CUTS)} picture changes, {len(_hits)} hits, rise at {_rise}")
+    except Exception as _e:
+        print("sound skipped:", type(_e).__name__, _e)
+if AOUT == "avoice":
+    graph += "[avoice]anull[aout]"
 gp = os.path.join(TMP, "graph.txt")
 open(gp, "w").write(graph)
 dst = os.path.join(OUT, f"{slug}.mp4")
