@@ -399,7 +399,20 @@ for k_, sc in enumerate(SP.get("scenes") or []):
         print("scene skipped (too short):", sc)
         continue
     s_ = sc["src"]
-    if isinstance(s_, dict):
+    if isinstance(s_, dict) and s_.get("gen"):
+        # A SCENE FROM A SENTENCE (13 Nov 2026, factory/scene_gen.py): {"gen": "what the picture
+        # shows", "move": "what moves"}. Generated in the cloud, kept beside the spec as
+        # g_<hash>.mp4 so it is made once. No scene = the clip simply shows Kevin there.
+        import hashlib
+        import scene_gen
+        path = os.path.join(EDIR, "g_" + hashlib.md5((s_["gen"] + "|" + s_.get("move", "")).encode()).hexdigest()[:10] + ".mp4")
+        if not scene_gen.make(s_["gen"], path, s_.get("move")):
+            print("scene skipped (no generator answered):", s_["gen"][:60])
+            continue
+        inputs += ["-ss", f"{float(sc.get('start', 0.1)):.2f}", "-t", f"{d_ + 0.2:.2f}", "-i", path]
+        chain = f"scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{H},minterpolate=fps=30:mi_mode=blend,unsharp=5:5:0.6"
+        s_ = os.path.basename(path)
+    elif isinstance(s_, dict):
         try:
             import kt_opener as OP
             hit = next((h for h in OP.search(s_["q"], n=60) if h["id"] == s_["pixabay"]), None)
@@ -433,7 +446,7 @@ for k_, sc in enumerate(SP.get("scenes") or []):
     last = f"b{k_}"
     n_in += 1
     CUTS += [t0, t1]
-    print(f"  scene {s_ if not isinstance(s_, dict) else s_['pixabay']}: {t0:.2f}-{t1:.2f}s")
+    print(f"  scene {s_ if not isinstance(s_, dict) else s_.get('pixabay')}: {t0:.2f}-{t1:.2f}s")
 # captions on top
 inputs += ["-f", "concat", "-safe", "0", "-i", cl]
 graph += f"[{n_in}:v]fps=30,format=rgba[cap];[{last}][cap]overlay=0:0:eof_action=pass,format=yuv420p[vmain];"

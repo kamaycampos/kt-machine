@@ -13,6 +13,7 @@ env:
   TRANSCRIPT_KEY: ${{ secrets.TRANSCRIPT_KEY }}
   PIXABAY_KEY: ${{ secrets.PIXABAY_KEY }}
   GH_TOKEN: ${{ github.token }}
+  HF_TOKEN: ${{ secrets.HF_TOKEN }}        # optional: a free Hugging Face token raises the scene generator's daily quota
 jobs:
   build:
     runs-on: ubuntu-24.04
@@ -50,6 +51,11 @@ jobs:
           SPEC: ${{ inputs.spec }}
           MODE: ${{ inputs.mode }}
         run: python factory/episode_build.py "$SPEC" $MODE
+      - name: Keep generated scenes beside the spec (made once, never twice)
+        run: |
+          git config user.name kt-machine; git config user.email kt-machine@users.noreply.github.com
+          git add factory/episodes/*/g_*.mp4 2>/dev/null || true
+          git diff --cached --quiet || { git commit -qm "generated scenes"; git pull -q --rebase; git push -q; }
       - name: Publish to the previews release
         run: |
           gh release view previews >/dev/null 2>&1 || gh release create previews --title "Style previews" --notes "Looks for Kamay to choose. Not posted."
