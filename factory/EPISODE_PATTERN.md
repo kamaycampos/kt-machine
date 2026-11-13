@@ -106,6 +106,33 @@ Special marks:
   the end card (ours is flattened from Kamay's own photo); the Episode pattern is not in the
   daily posting machine - each Episode is a hand-made spec.
 
+## 6b. Second pass (12 Nov, ~20:00 DC) - Kamay: "not the same ... their captions have even more effects ... more quality moving scenes"
+Re-measured their clip at SINGLE-FRAME steps. What the first pass had wrong, now in the builder:
+- **Typefaces.** Big words = a Futura-style heavy face (we use Jost 900, italic for APPLIED / IT);
+  "Billions" = heavy italic (Jost 800 italic); "of $dollars" = a LIGHT face (Jost 300), with the
+  dollar sign; small joining words = round bold sans (Poppins 700 / 800 italic / 900 caps);
+  flag words = a chunky display face in their own case - Australia, US, CANADA, South Africa, UK,
+  EUROPE (Titan One, flag-filled).
+- **Every word is shown**, also "IN" ("I WAS" / "IN" / "the Brotherhood").
+- **A new line fades in over 2-3 frames**; a line that stays (HOW while TO arrives) does not blink.
+- **Pace.** They cut his pauses: 44 s against our 46. `"tighten": 0.5` splits a kept piece at
+  every pause longer than half a second.
+- **Scenes.** Theirs are generated VIDEO (hands move, people walk). Ours, free: `tools/scenes.py`
+  (scratchpad; copy kept in the notes below) cuts the subject out with macOS Vision, fills the
+  room behind it, and moves room and subject at different speeds (depth), with breathing light,
+  drifting dust, a hand-held sway and a vignette. The brain FORMS out of points of light in the
+  first second, then pulses. Rendered here to `m_*.mp4` and kept beside the spec ("raw": true).
+- **Export.** x264 slow, CRF 14 (upright copy CRF 15) - master quality, about 3x the first files.
+- Still not theirs: people do not walk or gesture inside our scenes; four scenes are stock.
+
+## HOW TO RESUME THIS WORK IN A NEW CHAT
+Say: "Read ~/Kamay/MASTER.md (top entries of 12 Nov) and kt-machine/factory/EPISODE_PATTERN.md,
+then continue the Episode work." Everything needed is in the repo: the builder
+(`factory/episode_build.py`), the workflow (`episode-build`), both edit sheets
+(`factory/episodes/ep5_study/spec.json`, `ours_ep1/spec.json`) with every scene file beside them,
+and `transcript-find` to locate any line Kevin says. Finished files: `~/Kamay/work/episodes/` and
+the Desktop folder "KT Episodes HD".
+
 ## 7. Next Episodes
 - **The $1,500 Firebird** (v66j311, 351-523 s) - the best story found, but stock has no 1967
   Firebird convertible and the wrong car is worse than none. It waits for generated scenes.
