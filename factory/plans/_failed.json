@@ -13393,6 +13393,24 @@
     "Dalai Lama,",
     "3am, three hours."
    ]
+  },
+  "ep_v4vdcy0_p2/CRIED-FIVE-DAYS-THEN-LET-GO": {
+   "plan": "ep_v4vdcy0_p2",
+   "source": "v4vdcy0.mp4",
+   "brand": "KT_EMPIRE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_CRIED-FIVE-DAYS-THEN-LET-GO_121s.mp4: [FAIL] 01_CRIED-FIVE-DAYS-THEN-LET-GO_121s.mp4                28 captions vs the sound  median -0.00s  worst-10% 0.77s  | words captioned 101%"
+   ],
+   "slug": "CRIED-FIVE-DAYS-THEN-LET-GO",
+   "in": 1004.92,
+   "out": 1130.92,
+   "start_words": "I work in the Empire State Building",
+   "end_words": "He let it go",
+   "hook": [
+    "A 92-year-old lawyer",
+    "lost his wife"
+   ]
   }
  },
  "attempts": {
@@ -13471,6 +13489,6 @@
   "ar_v4khxuu_r2": 2,
   "ar_v4ki1z0_r2": 2,
   "ar_v4ki6sz_r2": 2,
-  "ep_v4vdcy0_p2": 1
+  "ep_v4vdcy0_p2": 2
  }
 }
