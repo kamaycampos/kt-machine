@@ -144,6 +144,32 @@ Grok (grok.com, signed in) made only a still from a typed prompt; its video path
 Text-only video on Meta AI works too but invents a different man each time: always start from
 our own Gemini picture.
 
+## 6d. FIVE MORE REFERENCES, MEASURED (13 Nov 2026, files in ~/Kamay/work/refs/)
+Kamay: "captions and hooks and video movies images effects and colors and also music, it ALL
+reflects and is in congruence with each word and movement Kevin makes."
+| Reel | What it teaches |
+|---|---|
+| kevins_apprentice `DbxZBEUNhTQ` "Private Jet" (232K) | 9:16 file, the 16:9 picture in the middle, NO headline. First 6 s = real footage of each jet as he names it, the name on screen in that jet's colour (Challenger red, Gulfstream blue). Then Kevin, whole wide picture. Captions: tiny plain words, then a BIG white "NO", "GET THE MONEY" in colour, script "Dream Building", and three words STACKED around his head as he lists them (loser / failure / habit). |
+| kevins_apprentice `DfetPiYhvWj` "Swiss Alps" | Opens on a generated movie (conference room in the Alps, a stand-in speaker). Title words in colour ("Swiss Alps"), 3D numbers ("$50,000"), a hand writing on paper, "5 YEARS" huge BEHIND Kevin's head (the letters pass behind him: needs a cut-out of Kevin), yachts for "$1 Million". Last 5 s = a FULL-SCREEN end card: Kevin holding the book, "GET YOUR COPY" + arrow, 'Comment "Success"'. |
+| `DbO0Ar9hrlt` (Spanish, brain waves) | No speaker at all: one full-screen glowing energy picture per sentence (brain, lightning, chains of light, rings). The way to show an ABSTRACT idea (frequency, energy, the mind). |
+| `DSkhjLwEoSO` "Different Types Of Secret Societies" | A fixed headline with ONE word in red; when he names a thing, its picture replaces him for 1-2 s (a book cover, an old black-and-white photo). |
+| `DceTUY4zz5N` (monk) | Huge glossy chrome words, one or two at a time, weight and italics changing word by word, each landing with a sound. |
+**Sound, measured:** in every one the quietest moment is -22 to -29 dB (bare speech: about -50):
+music runs under the voice from the first frame to the last, about 8-14 dB under him.
+**How they are made [Likely]:** a phone/desktop editor with keyframed text (CapCut class), an
+AI video generator for the scenes, a licensed music bed, a sound-effects pack. Nothing in them
+needs a tool we cannot reach: scenes = 6c; text = our caption engine; sound = `episode_sound.py`.
+
+## 6e. WHAT THE BUILDER HAS NOW / WHAT IS STILL MISSING (13 Nov 2026)
+- HAS: jump cuts, five caption voices, flags, generated MOVING scenes, **sound** (`factory/episode_sound.py`:
+  a D-minor pad made in code, a whoosh on each picture change, a low hit on X/XI words, a rise at
+  `big_from`; spec keys `sound`, `music_db`, `fx_db`). Kamay has NOT yet judged the music by ear.
+- HAS: movie-poster covers from a scene (`kt_cover.from_image`).
+- MISSING: words behind Kevin's head (cut-out); stacked words placed around his head by the
+  face box; coloured / 3D / chrome word styles; the full-screen end card with a call to action;
+  real footage of a named thing (a jet, a book cover); abstract "energy" pictures per sentence;
+  all of this in the DAILY clips (kt_render), not only Episodes.
+
 ## HOW TO RESUME THIS WORK IN A NEW CHAT
 Say: "Read ~/Kamay/MASTER.md (top entries of 12 Nov) and kt-machine/factory/EPISODE_PATTERN.md,
 then continue the Episode work." Everything needed is in the repo: the builder
