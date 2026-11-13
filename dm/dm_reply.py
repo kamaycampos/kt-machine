@@ -81,11 +81,16 @@ def keywords():
 
 
 def matched(text, kws):
-    """The keyword the comment says, as a whole word, any case. 'brain!' counts,
-    'brainstorm' does not."""
+    """The keyword the comment says, as a whole word, any case - and the ways people really type
+    it (12 Nov 2026, Kamay: "a wide range of words like MONEY Money money"): stretched letters
+    ("moneyyy"), a plural or possessive ("brains", "wishes"), letters spaced or dotted out
+    ("m o n e y", "m.o.n.e.y"), with any emoji or punctuation around it. 'brainstorm' and
+    'harmony' still do not count."""
     up = (text or "").upper()
     for k in kws:
-        if re.search(r"(?<![A-Z0-9])" + re.escape(k) + r"(?![A-Z0-9])", up):
+        gap = r"[\W_]{0,2}" if len(k) >= 4 else ""
+        body = gap.join(re.escape(ch) + "+" for ch in k)
+        if re.search(r"(?<![A-Z0-9])" + body + r"(?:'?S|ES)?(?![A-Z0-9])", up):
             return k
     return None
 
