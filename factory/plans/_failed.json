@@ -13411,6 +13411,42 @@
     "A 92-year-old lawyer",
     "lost his wife"
    ]
+  },
+  "ep_v4sow6o_p2/FILE-CLERK-ZERO-TO-MILLIONS": {
+   "plan": "ep_v4sow6o_p2",
+   "source": "v4sow6o.mp4",
+   "brand": "KT_ESTATE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_FILE-CLERK-ZERO-TO-MILLIONS_34s.mp4: ends off the planned words: plan ends 'work if you work them', clip ends 'millions and millions starting from 0'"
+   ],
+   "slug": "FILE-CLERK-ZERO-TO-MILLIONS",
+   "in": 4249.66,
+   "out": 4290.14,
+   "start_words": "There was another gal there",
+   "end_words": "work if you work them",
+   "hook": [
+    "$0 to millions.",
+    "Real estate empire"
+   ]
+  },
+  "ep_v72tj4g_p2/HENRY-FORD-EITHER-WAY-RIGHT": {
+   "plan": "ep_v72tj4g_p2",
+   "source": "v72tj4g.mp4",
+   "brand": "KT_VAULT",
+   "tries": 1,
+   "why": [
+    "drop KT_VAULT/HENRY-FORD-EITHER-WAY-RIGHT: hook - 788px wide at 44px - over the 780px safe zone, will be cut off on a phone"
+   ],
+   "slug": "HENRY-FORD-EITHER-WAY-RIGHT",
+   "in": 2954.24,
+   "out": 3023.44,
+   "start_words": "When you were a kid",
+   "end_words": "going to succeed",
+   "hook": [
+    "What Henry Ford said about",
+    "self-doubt"
+   ]
   }
  },
  "attempts": {
