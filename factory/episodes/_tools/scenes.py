@@ -87,6 +87,11 @@ def brain(secs=8.0):
         w.stdin.write(out.tobytes())
     w.stdin.close(); w.wait(); print("scene brain")
 
+if len(sys.argv) > 3:                 # only the named stills: name[:pan_x]  (13 Nov 2026)
+    for _a in sys.argv[3:]:
+        _n, _, _p = _a.partition(":")
+        depth_scene(_n, fg_z=(1.02, 1.12), bg_z=(1.02, 1.06), pan=(float(_p or 0), 0))
+    sys.exit(0)
 depth_scene("a_ballroom", fg_z=(1.02, 1.14), bg_z=(1.02, 1.07))
 depth_scene("c_mentor", fg_z=(1.03, 1.13), bg_z=(1.02, 1.06), pan=(-26, 0))
 depth_scene("d_book", fg_z=(1.04, 1.12), bg_z=(1.03, 1.08), pan=(30, 0))
