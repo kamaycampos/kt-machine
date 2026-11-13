@@ -115,10 +115,10 @@ Re-measured their clip at SINGLE-FRAME steps. What the first pass had wrong, now
   EUROPE (Titan One, flag-filled).
 - **Every word is shown**, also "IN" ("I WAS" / "IN" / "the Brotherhood").
 - **A new line fades in over 2-3 frames**; a line that stays (HOW while TO arrives) does not blink.
-- **Pace.** They cut his pauses: 44 s against our 46. `"tighten": 0.5` splits a kept piece at
-  every pause longer than half a second.
-- **Scenes.** Theirs are generated VIDEO (hands move, people walk). Ours, free: `tools/scenes.py`
-  (scratchpad; copy kept in the notes below) cuts the subject out with macOS Vision, fills the
+- **Pace.** They cut his pauses: 44 s against our 46. `"tighten": 1.0` cuts only pauses longer than a
+  second down to about a third of one (0.5 was tried: 38 s, too choppy).
+- **Scenes.** Theirs are generated VIDEO (hands move, people walk). Ours, free: `factory/episodes/_tools/scenes.py`
+  (run on the Mac, with `cutout.swift`) cuts the subject out with macOS Vision, fills the
   room behind it, and moves room and subject at different speeds (depth), with breathing light,
   drifting dust, a hand-held sway and a vignette. The brain FORMS out of points of light in the
   first second, then pulses. Rendered here to `m_*.mp4` and kept beside the spec ("raw": true).

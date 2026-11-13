@@ -101,10 +101,10 @@ if _tight:                                # split a piece wherever he pauses lon
     keeps = cut
 segs, off = [], 0.0                      # (source start, source end, offset on the new clock, a, b)
 for (i0, i1) in keeps:
-    s0 = words[i0][0] - 0.07
+    s0 = words[i0][0] - (0.14 if _tight else 0.07)
     if i0 > 0:
         s0 = max(s0, words[i0 - 1][1] + 0.01)
-    e0 = words[i1][1] + (0.10 if _tight else 0.16)
+    e0 = words[i1][1] + 0.18
     if i1 + 1 < len(words):
         e0 = min(e0, words[i1 + 1][0] - 0.01)
     s0, e0 = max(0.0, s0), max(s0 + 0.2, e0)
