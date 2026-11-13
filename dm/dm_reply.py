@@ -45,12 +45,12 @@ G = "https://graph.facebook.com/v21.0"
 T = 30
 WINDOW = timedelta(days=7)           # Meta's private-reply window
 # comments arrive on the newest posts. The 2-3 minute pass (pulse.yml) reads only the
-# newest few to stay far under Meta's rate limits; the 20-minute sweep reads 25.
+# newest few to stay far under Meta's rate limits; the 20-minute sweep reads 100.
 RECENT_POSTS = int(os.environ.get("DM_RECENT_POSTS") or 25)
 MAX_PER_RUN = 60                     # stay far under Meta's messaging limits
 # THE FAST PASS (12 Nov 2026, Kamay: "it needs to be instantly"). A reply waited up to 2.5 min on
 # the newest 6 posts and up to 20 min on any older clip. DM_FAST=1 is a pass cheap enough to run
-# every 15 seconds on the newest 25 posts: ONE call lists them with their comment counts, and a
+# every 15 seconds on the newest 100 posts: ONE call lists them with their comment counts, and a
 # post's comments are read only when its count moved since the last pass (kept in /tmp, the
 # heartbeat's own disk). Instagram only; Facebook and anything a fast pass failed on are still
 # caught by the ordinary pass every 2.5 minutes.
@@ -129,8 +129,17 @@ def _ts(t):
 
 def instagram_comments(ig, tok):
     """(comment_id, text, when, media_id, author) on the newest posts."""
-    media = _get(f"{G}/{ig}/media", {"fields": "id,timestamp,comments_count", "limit": RECENT_POSTS,
-                                       "access_token": tok}).get("data", [])
+    # THE POST WINDOW MUST COVER THE REPLY WINDOW (13 Nov 2026). A real "Lucky" on a 5-day-old
+    # reel was never read: the account posts ~7 reels a day, so the newest 25 posts were 3 days,
+    # while Meta lets a comment be answered for 7 - and people comment on older reels. The sweep
+    # and the fast pass now ask for 100 (pulse.yml), paged because one page may hold fewer.
+    media, url, params = [], f"{G}/{ig}/media", {"fields": "id,timestamp,comments_count",
+                                                 "limit": min(RECENT_POSTS, 100), "access_token": tok}
+    while url and len(media) < RECENT_POSTS:
+        j = _get(url, params)
+        media += j.get("data", [])
+        url, params = (j.get("paging") or {}).get("next"), {}
+    media = media[:RECENT_POSTS]
     diag = os.environ.get("DM_DIAG") == "1"
     out = []
     seen_counts = _counts()
@@ -163,7 +172,8 @@ def instagram_comments(ig, tok):
 
 
 def facebook_comments(page, tok):
-    reels = _get(f"{G}/{page}/video_reels", {"fields": "id", "limit": RECENT_POSTS,
+    # one call per reel here (no comment count to skip on), so Facebook stops at 50 reels
+    reels = _get(f"{G}/{page}/video_reels", {"fields": "id", "limit": min(RECENT_POSTS, 50),
                                              "access_token": tok}).get("data", [])
     out = []
     for v in reels:

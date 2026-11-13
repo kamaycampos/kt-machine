@@ -66,8 +66,8 @@ jobs:
           git config user.email "noreply@github.com"
           dm_pass() {   # $1 = how many recent posts to read
             git pull -q --rebase --autostash || git rebase --abort 2>/dev/null || true
-            DM_RECENT_POSTS=$1 timeout 120 python dm/dm_reply.py || echo "DM pass failed - next in 150 s"
-            DM_BRAND=AR_ DM_RECENT_POSTS=$1 timeout 120 python dm/dm_reply.py || echo "AR DM pass failed - next in 150 s"
+            DM_RECENT_POSTS=$1 timeout 240 python dm/dm_reply.py || echo "DM pass failed - next in 150 s"
+            DM_BRAND=AR_ DM_RECENT_POSTS=$1 timeout 240 python dm/dm_reply.py || echo "AR DM pass failed - next in 150 s"
             git add state/dms.json 2>/dev/null || true
             git add state/dms_ar.json 2>/dev/null || true
             git diff --staged --quiet && return 0
@@ -78,9 +78,9 @@ jobs:
             done
             echo "::warning::dms.json push failed - sent DMs are still marked by the public reply"
           }
-          dm_fast() {   # the newest 25 posts every 15 s: one call unless a comment count moved (dm_reply DM_FAST)
-            DM_FAST=1 DM_RECENT_POSTS=25 timeout 60 python dm/dm_reply.py > /tmp/dmf.log 2>&1 || true
-            DM_BRAND=AR_ DM_FAST=1 DM_RECENT_POSTS=25 timeout 60 python dm/dm_reply.py >> /tmp/dmf.log 2>&1 || true
+          dm_fast() {   # the newest 100 posts every 15 s: one call unless a comment count moved (dm_reply DM_FAST)
+            DM_FAST=1 DM_RECENT_POSTS=100 timeout 60 python dm/dm_reply.py > /tmp/dmf.log 2>&1 || true
+            DM_BRAND=AR_ DM_FAST=1 DM_RECENT_POSTS=100 timeout 60 python dm/dm_reply.py >> /tmp/dmf.log 2>&1 || true
             git diff --quiet -- state/dms.json state/dms_ar.json && return 0
             cat /tmp/dmf.log
             git add state/dms.json 2>/dev/null || true
@@ -104,7 +104,7 @@ jobs:
             # Kevin's new upload (29 Oct 2026): kevin_watch's hourly cron ran 3 times in 48 h, so a
             # Wednesday episode could wait past the afternoon planner. The heartbeat starts it hourly.
             if [ $((i % 3)) -eq 1 ]; then gh workflow run kevin_watch.yml || echo "kevin-watch dispatch failed"; fi
-            dm_pass 25                              # the full sweep, once per 20 min
+            dm_pass 100                             # the full sweep, once per 20 min (7 days of posts)
             n=0
             while [ $((SECONDS - start)) -lt 1050 ]; do
               sleep 5
