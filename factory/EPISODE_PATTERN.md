@@ -83,22 +83,30 @@ Special marks:
 - No hashtags. Cover = the first frame (the ballroom).
 - Series: "Episode N (two-word title)". Episode 2 "Private Jet" has 232K views.
 
-## 6. Where the build stands (12 Nov, evening)
-- DONE: this map; the source found; five of their nine scenes matched with our own generated
-  pictures (`~/Kamay/work/episode5_study/scenes_theirs_vs_ours.jpg`; Canva media ids
-  MAHavtxo7Cg ballroom, MAHavvTuHX4 brain, MAHavvz-H9M mentor, MAHavjmpjUc book, MAHavnxAL3c office).
-- BLOCKED: Kamay's Canva account ran out of AI credits after those five pictures, and its
-  video generator answers "not available with your current plan". Their scenes MOVE (hands,
-  walking); pictures that do not move will be noticed. The tool also returns only a 200-pixel
-  preview; full size needs a saved Canva design and an export.
-- NOT BUILT YET: the caption engine with the five voices and the flag fills, the jump-cut
-  builder, the book end card (needs a clean cover file), both finished clips.
-- Stock search is not a substitute: it returned a woman on a smartphone for "rotary telephone".
+## 6. Where the build stands (12 Nov, 19:20 DC) - BUILT
+- **The builder:** `factory/episode_build.py` + workflow `episode-build`. One `spec.json` per
+  Episode in `factory/episodes/<slug>/`: the kept pieces, the scenes and the caption voices, all
+  by WORD INDEX from a `list` run (never a guessed second). Output: the 16:9 film, the same film
+  upright for TikTok and Shorts, the cover (first frame), in the `previews` release.
+- **Two finished clips** in `~/Kamay/work/episodes/`:
+  1. `1_REMAKE_of_their_Episode_5_study_only.mp4` (47 s) - their Episode 5 from OUR source with
+     OUR scenes; `0_PROOF_theirs_vs_remake.jpg` puts 16 moments side by side. STUDY ONLY.
+  2. `2_OURS_Episode_1_wide.mp4` (55 s) + upright + cover + post text - "Episode 1 (The Secret
+     Behind The Secret)", v6z25lm (the YWIYC interview) 58-215 s in five pieces.
+- **Scenes without spending:** five pictures generated in Canva before its credits ran out
+  (ballroom, brain, mentor, old page, office - exported at full size through a scratch design)
+  and seven stock clips picked BY EYE from Pixabay contact sheets (never the first search hit;
+  licences in each folder's `stock_licences.json`). Stills get a slow push or slide; they do
+  not have people moving. That is the one place a trained eye can tell ours from theirs.
+- **Source hygiene:** the interview has a web address burned along the bottom and a name bar;
+  `"kevin_crop": [0.78, 0.78, 0.11, 0.0]` crops Kevin's picture clear of both.
+- **The stock site refuses the cloud runner** (429) - stock clips are trimmed here and kept
+  beside the spec.
+- NOT DONE: moving generated scenes (needs a video generator); a clean official book cover for
+  the end card (ours is flattened from Kamay's own photo); the Episode pattern is not in the
+  daily posting machine - each Episode is a hand-made spec.
 
-## 7. Our own first Episode (chosen, same show, right after their clip)
-**The $1,500 Firebird** - v66j311, 351-523 s. Kevin's first car: he wanted a '67 Camaro
-convertible, found a 1967 Firebird convertible, midnight blue, 1,500 original miles, for $1,500;
-under a dusty cover in a garage; the owner's son bought it in 1967, was drafted to Vietnam and
-never came home. Ends: "I manifested that with my mind." Keeps: 353-368, 382-402, 468-496, 507-523
-(about 75 s). Scenes: the boy and the dream car, the classified ad, the dusty cover, the reveal,
-the mother at the door, the soldier's photograph.
+## 7. Next Episodes
+- **The $1,500 Firebird** (v66j311, 351-523 s) - the best story found, but stock has no 1967
+  Firebird convertible and the wrong car is worse than none. It waits for generated scenes.
+- The pool of five pictures fits any "Brotherhood / taught by the wealthy / the old book" story.
