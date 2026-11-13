@@ -1,6 +1,11 @@
 # READ-ONLY (3 Nov 2026): what the DM bot sees on Awakened Rise's Facebook Page. Sends nothing.
 name: fb-diag
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      who_sha:
+        description: sha256 of a lowercase username to look for (who_diag.py)
+        default: ""
 jobs:
   diag:
     runs-on: ubuntu-24.04
@@ -19,3 +24,6 @@ jobs:
       - run: pip install requests && python dm/fb_diag.py 1635158468073294 1541616031107560 3670434626442860 1477592460902949 1439795808126414 1059657373628249
       - run: python dm/blank_diag.py
       - run: python dm/fb_inbox_diag.py
+      - run: python dm/who_diag.py
+        env:
+          WHO_SHA: ${{ inputs.who_sha }}
