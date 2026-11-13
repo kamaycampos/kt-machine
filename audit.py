@@ -98,7 +98,8 @@ unplanned = [v for v in order if f'"{v}.mp4"' not in txt]
 print(f"\nPLANS       {len(plans)} written, {len(done)} built; month list has {len(unplanned)} episodes left to plan")
 if len(unplanned) < 4:
     bad.append("the month's episode list is nearly used up - extend source_plan.json")
-waiting = [p for p in plans if p not in done]
+waiting = [p for p in plans if p not in done      # a 0-clip plan is a "nothing here" note, not work waiting
+           and (load(f"factory/plans/{p}.json") or {}).get("clips")]
 if waiting:
     print(f"            waiting to build: {', '.join(waiting)}")
 

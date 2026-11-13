@@ -89,7 +89,7 @@ MAX_TRIES = 3
 # KT, 29 clips for AR - fanned out 21 agents and hit the account's usage limit with
 # nothing pushed. The rest wait for the next daily run.
 AGAIN = int(sys.argv[sys.argv.index("--again") + 1]) if "--again" in sys.argv else 3
-SECOND_MIN_EP, SECOND_FREE = 30, 15     # second pass: episodes of 30+ min with 15+ unused min
+SECOND_MIN_EP, SECOND_FREE = 12, 5      # second pass: episodes of 12+ min with 5+ unused min (was 30/15 until 13 Nov 2026: KT ran dry while 10-25 min shows held unused arcs)
 # A brand with its own lane (WB: health only) has few HD episodes, mostly 7-20 minute clips
 # shows; its second pass takes any 10+ minute episode with 4+ unused minutes (29 Oct 2026).
 if LANE:
@@ -175,7 +175,7 @@ def _second_pass(_theirs):
                 t += max(0.0, a - end); end = max(end, b)
             return t + max(0.0, idx[v].get("duration", 0) - 60 - end)
         _cand = sorted(((_free(v), v) for v in _used
-                        if v in idx and idx[v].get("transcript") and idx[v].get("height", 0) >= 1080
+                        if v in idx and idx[v].get("transcript") and idx[v].get("height", 0) >= 720
                         and idx[v].get("duration", 0) >= SECOND_MIN_EP * 60
                         and v not in _busy and v not in _fenced and v not in ready), reverse=True)
         _cand = [(t, v) for t, v in _cand if t >= SECOND_FREE * 60]
@@ -236,6 +236,15 @@ if not AR:
         if LANE:      # a lane brand only tops up from episodes whose title is on its lane (29 Oct 2026:
             _tw = set(json.load(open(os.path.join(ROOT, "my_brand", "lane.json"))).get("topic_words", []))
             _spare = [v for v in _spare if _tw & set(re.findall(r"[a-z]+", idx[v].get("title", "").lower()))]
+        else:         # KT'S OWN LANE TOO (13 Nov 2026). The shared stock holds WB's health episodes and
+            # Kevin's relationship / politics shows. With the month list used up, five of those filled
+            # every run's reading, the planner (rightly) refused them all, and because the reading
+            # looked full the SECOND PASS below was never offered: queue 0, nothing planned, two days.
+            # Off-lane titles no longer take a reading slot; the second pass gets them.
+            _kt = re.compile(r"money|rich|wealth|million|billion|success|manifest|wish|goal|secret|brotherhood|"
+                             r"attraction|mind|dream|desire|business|debt|credit|invest|estate|income|broke|"
+                             r"abundan|prosper|vibrat|frequen|subconscious|belie|habit|entrepreneur|luck|happ", re.I)
+            _spare = [v for v in _spare if _kt.search(idx[v].get("title", ""))]
         if _spare:    # WB was handed 62 money episodes here, ignored them, and never reached its second pass)
             print(f"MONTH LIST USED UP - also ready (stocked, transcribed, never planned): {len(_spare)}")
         ready += _spare[:MAX - len(ready)]
