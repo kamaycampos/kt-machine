@@ -87,12 +87,24 @@ if LIST:
 
 # --- the cut: which pieces stay, and where every word lands on the new clock ------------------
 keeps = SP.get("keeps") or [[0, len(words) - 1]]
+_tight = float(SP.get("tighten") or 0)
+if _tight:                                # split a piece wherever he pauses longer than this
+    cut = []
+    for i0_, i1_ in keeps:
+        st = i0_
+        for j in range(i0_, i1_):
+            if words[j + 1][0] - words[j][1] > _tight:
+                cut.append([st, j])
+                st = j + 1
+        cut.append([st, i1_])
+    print(f"tightened: {len(keeps)} piece(s) -> {len(cut)}")
+    keeps = cut
 segs, off = [], 0.0                      # (source start, source end, offset on the new clock, a, b)
 for (i0, i1) in keeps:
     s0 = words[i0][0] - 0.07
     if i0 > 0:
         s0 = max(s0, words[i0 - 1][1] + 0.01)
-    e0 = words[i1][1] + 0.16
+    e0 = words[i1][1] + (0.10 if _tight else 0.16)
     if i1 + 1 < len(words):
         e0 = min(e0, words[i1 + 1][0] - 0.01)
     s0, e0 = max(0.0, s0), max(s0 + 0.2, e0)
@@ -130,17 +142,21 @@ def F(name):
     raise SystemExit(f"font missing: {name}")
 
 
-VOICE = {            # font file, size, look, capitals
-    "s": ("montserrat700.ttf", 78, "plain", False),
-    "S": ("montserrat800.ttf", 84, "plain", True),
+VOICE = {            # font file, size, look, capitals. Re-measured frame by frame, 12 Nov evening:
+    # their big words are a Futura-style heavy face (Jost is its open twin), "of $dollars" a light
+    # one, the small joining words a round bold sans, the flag words a chunky display face.
+    "s": ("poppins700.ttf", 74, "plain", False),
+    "S": ("poppins900.ttf", 84, "plain", True),
+    "l": ("jost300.ttf", 92, "plain", False),
     "F": ("greatvibes400.ttf", 132, "glow", False),
     "B": ("yellowtail400.ttf", 112, "glow", False),
-    "I": ("montserrat800i.ttf", 104, "plain", False),
-    "IC": ("montserrat800i.ttf", 104, "plain", True),
-    "IB": ("montserrat900i.ttf", 150, "plain", False),
-    "X": ("mont_black.ttf", 158, "plain", True),
-    "XI": ("montserrat900i.ttf", 158, "plain", True),
-    "T": ("montserrat800.ttf", 96, "teal", False),
+    "I": ("poppins800i.ttf", 100, "plain", False),
+    "IC": ("poppins800i.ttf", 100, "plain", True),
+    "IB": ("jost800i.ttf", 168, "plain", False),
+    "X": ("jost900.ttf", 176, "plain", True),
+    "XI": ("jost900i.ttf", 176, "plain", True),
+    "T": ("poppins900.ttf", 96, "teal", False),
+    "FL": ("titanone400.ttf", 150, "plain", False),
 }
 POS = {"C": (W // 2, 560), "L": (330, 560), "R": (1590, 560), "B": (W // 2, 870), "T": (W // 2, 250),
        "C-": (W // 2, 470), "C+": (W // 2, 640)}
@@ -148,7 +164,7 @@ _fonts = {}
 
 
 def font(v):
-    base = "X" if v.startswith("flag") else v
+    base = "FL" if v.startswith("flag") else v
     f, size, look, caps = VOICE[base]
     if (f, size) not in _fonts:
         _fonts[(f, size)] = ImageFont.truetype(F(f), size)
@@ -200,7 +216,19 @@ def flag(code, w, h):
     return im
 
 
-def draw_state(els, path):
+def draw_state(els, path, fresh=None, k=1.0):
+    """fresh = the elements that are new in this card; k = how far their fade-in has come."""
+    if fresh is not None and k < 1.0:
+        old = [e for e in els if json.dumps(e) not in fresh]
+        new = [e for e in els if json.dumps(e) in fresh]
+        a_p, b_p = path + ".a.png", path + ".b.png"
+        draw_state(old, a_p)
+        draw_state(new, b_p)
+        A, B = Image.open(a_p), Image.open(b_p)
+        B.putalpha(B.getchannel("A").point(lambda v: int(v * k)))
+        Image.alpha_composite(A, B).save(path)
+        os.remove(a_p); os.remove(b_p)
+        return
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     shadow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -319,7 +347,16 @@ for k_, (s0, e0, els) in enumerate(events):
         caps.append((blank, s0 - t_prev))
     p = os.path.join(TMP, f"cap{k_:03d}.png")
     draw_state(els, p)
-    caps.append((p, end - max(s0, t_prev)))
+    span = end - max(s0, t_prev)
+    prev_els = {json.dumps(e) for e in events[k_ - 1][2]} if k_ and abs(events[k_ - 1][0] - s0) < 6 and caps and caps[-1][0] != blank else set()
+    fresh = {json.dumps(e) for e in els} - prev_els
+    if fresh and span > 0.2:                 # two soft frames, then the full line
+        for n_, kk in enumerate((0.38, 0.74)):
+            pf = os.path.join(TMP, f"cap{k_:03d}_f{n_}.png")
+            draw_state(els, pf, fresh, kk)
+            caps.append((pf, 1 / 30))
+        span -= 2 / 30
+    caps.append((p, span))
     t_prev = max(end, t_prev)
     if nxt - t_prev > 0.02 and k_ + 1 < len(events) and end < nxt:
         caps.append((blank, nxt - end))
@@ -378,8 +415,8 @@ for k_, sc in enumerate(SP.get("scenes") or []):
     elif s_.lower().endswith(".mp4"):          # a stock clip kept beside the spec (its licence in stock_licences.json)
         path = os.path.join(EDIR, s_)
         inputs += ["-ss", f"{float(sc.get('start', 0.0)):.2f}", "-t", f"{d_ + 0.2:.2f}", "-i", path]
-        chain = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps=30,"
-                 f"eq=contrast=1.05:saturation=0.92")
+        chain = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps=30"
+                 + ("" if sc.get("raw") else ",eq=contrast=1.05:saturation=0.92"))
     else:
         path = os.path.join(EDIR, s_)
         N = int(d_ * 30) + 8
@@ -414,7 +451,7 @@ open(gp, "w").write(graph)
 dst = os.path.join(OUT, f"{slug}.mp4")
 r = sh(FF, "-y", "-loglevel", "error", "-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", src, *inputs,
        "-filter_complex_script", gp, "-map", "[v]", "-map", "[aout]",
-       "-r", "30", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-maxrate", "12000k", "-bufsize", "24000k",
+       "-r", "30", "-c:v", "libx264", "-preset", "slow", "-crf", "14", "-maxrate", "24000k", "-bufsize", "48000k",
        "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", dst)
 ok = r.returncode == 0 and os.path.exists(dst)
 print("EPISODE", slug, "OK" if ok else "FAILED", f"{DUR + end_secs:.1f}s")
@@ -423,7 +460,7 @@ if not ok:
 # the cover = the first frame, as theirs; and the same film upright for TikTok and Shorts
 sh(FF, "-y", "-loglevel", "error", "-ss", "0.10", "-i", dst, "-frames:v", "1", "-q:v", "2", os.path.join(OUT, f"{slug}_cover.jpg"))
 sh(FF, "-y", "-loglevel", "error", "-i", dst, "-vf", "scale=1080:-2:flags=lanczos,pad=1080:1920:0:(oh-ih)/2:black",
-   "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart",
+   "-c:v", "libx264", "-preset", "slow", "-crf", "15", "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart",
    os.path.join(OUT, f"{slug}_9x16.mp4"))
 json.dump({"slug": slug, "seconds": round(DUR + end_secs, 2), "pieces": [[round(s0, 2), round(e0, 2)] for s0, e0, *_ in segs],
            "cards": len(events)}, open(os.path.join(OUT, f"{slug}_info.json"), "w"))

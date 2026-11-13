@@ -31,34 +31,39 @@
  ],
  "scenes": [
   {
-   "src": "a_ballroom.jpg",
+   "src": "m_a_ballroom.mp4",
    "from": 16,
    "to": 28,
-   "move": "in"
+   "raw": true,
+   "start": 0.0
   },
   {
-   "src": "b_brain.jpg",
+   "src": "m_b_brain.mp4",
    "from": 29,
    "to": 36,
-   "move": "in"
+   "raw": true,
+   "start": 0.0
   },
   {
-   "src": "c_mentor.jpg",
+   "src": "m_c_mentor.mp4",
    "from": 39,
    "to": 42,
-   "move": "in"
+   "raw": true,
+   "start": 0.0
   },
   {
-   "src": "d_book.jpg",
+   "src": "m_d_book.mp4",
    "from": 43,
    "to": 48,
-   "move": "right"
+   "raw": true,
+   "start": 0.0
   },
   {
-   "src": "e_office.jpg",
+   "src": "m_e_office.mp4",
    "from": 57,
    "to": 68,
-   "move": "in"
+   "raw": true,
+   "start": 0.0
   },
   {
    "src": "s_palace.mp4",
@@ -119,7 +124,10 @@
   "191": "flag:UK",
   "196": "flag:EU",
   "198": "XI",
-  "206": "XI"
+  "206": "XI",
+  "18": "S",
+  "177": "l",
+  "178": "l"
  },
  "fix": {
   "57": "Hundreds",
@@ -127,10 +135,13 @@
   "75": "Royal",
   "76": "Families",
   "185": "US",
-  "191": "UK"
+  "191": "UK",
+  "178": "$dollars",
+  "182": "Australia",
+  "187": "CANADA",
+  "196": "EUROPE"
  },
  "drop": [
-  18,
   46,
   60,
   67,
@@ -361,5 +372,6 @@
  "end_secs": 1.1,
  "post": {
   "note": "STUDY ONLY - never posted. A remake of kevins_apprentice Episode 5 from our own source and our own scenes."
- }
+ },
+ "tighten": 0.5
 }

@@ -27,16 +27,18 @@
  ],
  "scenes": [
   {
-   "src": "a_ballroom.jpg",
+   "src": "m_a_ballroom.mp4",
    "from": 15,
    "to": 25,
-   "move": "in"
+   "raw": true,
+   "start": 0.0
   },
   {
-   "src": "c_mentor.jpg",
+   "src": "m_c_mentor.mp4",
    "from": 43,
    "to": 51,
-   "move": "in"
+   "raw": true,
+   "start": 0.0
   },
   {
    "src": "s_college.mp4",
@@ -45,10 +47,11 @@
    "start": 0.5
   },
   {
-   "src": "d_book.jpg",
+   "src": "m_d_book.mp4",
    "from": 65,
    "to": 66,
-   "move": "right"
+   "raw": true,
+   "start": 0.0
   },
   {
    "src": "s_palace.mp4",
@@ -57,10 +60,11 @@
    "start": 0.5
   },
   {
-   "src": "b_brain.jpg",
+   "src": "m_b_brain.mp4",
    "from": 82,
    "to": 96,
-   "move": "in"
+   "raw": true,
+   "start": 0.0
   },
   {
    "src": "s_towers.mp4",
@@ -75,10 +79,11 @@
    "start": 0.5
   },
   {
-   "src": "e_office.jpg",
+   "src": "m_e_office.mp4",
    "from": 440,
    "to": 444,
-   "move": "in"
+   "raw": true,
+   "start": 0.0
   },
   {
    "src": "s_universe.mp4",
@@ -356,5 +361,6 @@
   0.78,
   0.11,
   0.0
- ]
+ ],
+ "tighten": 0.5
 }
