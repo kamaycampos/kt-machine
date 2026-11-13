@@ -15591,7 +15591,7 @@
    "status": {},
    "media_tag": "media2",
    "look": "archive",
-   "scheduled_at": "2026-11-13T10:20",
+   "scheduled_at": "2026-11-13T10:34",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
    "cta_kind": "question"
@@ -15655,14 +15655,28 @@
    "caption": "Scripture never said the kingdom of heaven is up there. It says it's within you - and he means that literally. Everything physical is just consciousness compacted; go inward, not upward, and that's where it's always been.\n\nHe learned his brain works like a transmitter and receiver back in the sixties, training inside the Brotherhood - decades before science would admit brainwaves carry a signal at all. Now the equipment exists to prove it.\n\nThat's also why dreams matter: your spiritual essence actually leaves the body at night.\n\nComment RISE and I'll send you what else that training taught him.\n\n#consciousness #awakening #disclosure #brotherhood #manifestation #kevintrudeau",
    "hook": "Heaven isn't up. It's inside you.",
    "bytes": 85385735,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-13T10:13",
    "cta_keyword": "LUCKY",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1415309070367448/",
+    "instagram": "https://www.instagram.com/reel/Dfr8zGRFAMU/",
+    "youtube": "https://youtube.com/shorts/hMk5tEeVss8"
+   },
+   "caption_at_post": "Scripture never said the kingdom of heaven is up there. It says it's within you - and he means that literally. Everything physical is just consciousness compacted; go inward, not upward, and that's where it's always been.\n\nHe learned his brain works like a transmitter and receiver back in the sixties, training inside the Brotherhood - decades before science would admit brainwaves carry a signal at all. Now the equipment exists to prove it.\n\nThat's also why dreams matter: your spiritual essence actually leaves the body at night.\n\nComment RISE and I'll send you what else that training taught him.\n\n#consciousness #awakening #disclosure #brotherhood #manifestation #kevintrudeau",
+   "posted_at": "2026-11-13T10:31"
   },
   {
    "file": "AR_BREATHCODE/01_THIS-BOOK-BREAKS-YOUR-TRANCE_127s.mp4",
