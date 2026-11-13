@@ -11,7 +11,7 @@ os.environ["DM_BRAND"] = "AR_"
 import dm_reply as m
 
 WHO = (os.environ.get("WHO_SHA") or "").strip().lower()
-DAYS = int(os.environ.get("WHO_DAYS") or 4)
+DAYS = int(os.environ.get("WHO_DAYS") or 0)
 d = json.load(open(m.STATE))
 kws = m.keywords()
 ig, tok = m.env("IG_USER_ID"), m.env("FB_ACCESS_TOKEN")
@@ -33,7 +33,7 @@ def state(cid):
 
 print(f"keywords {kws} | bot skips comments before {m.SINCE} | now {datetime.now(timezone.utc).isoformat()[:16]}")
 media = m._get(f"{m.G}/{ig}/media", {"fields": "id,timestamp,comments_count,caption,media_product_type",
-                                     "limit": 50, "access_token": tok}).get("data", [])
+                                     "limit": 100, "access_token": tok}).get("data", [])
 found = 0
 for n, p in enumerate(media, 1):
     if not p.get("comments_count"):
