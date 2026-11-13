@@ -125,6 +125,25 @@ Re-measured their clip at SINGLE-FRAME steps. What the first pass had wrong, now
 - **Export.** x264 slow, CRF 14 (upright copy CRF 15) - master quality, about 3x the first files.
 - Still not theirs: people do not walk or gesture inside our scenes; four scenes are stock.
 
+## 6c. MOVING SCENES AT $0 - THE METHOD (13 Nov 2026)
+Kamay: a still with a camera push is NOT a movie - "the characters, animals, wind, plants, water,
+sun, books are actually moving". This is how every scene is made now, free, in his Chrome:
+1. **The picture: Gemini** (gemini.google.com, his account, free). One chat per Episode so the
+   stand-in stays the same person ("New image, same young man (same face, navy suit, red tie) ...
+   16:9 widescreen photorealistic film still ... no text"). Download with each image's
+   "Download full size image" button (1376x768). Save beside the spec as `<letter>_<name>.jpg`.
+2. **The movement: Meta AI** (meta.ai, signed in as kamay_herranen, free). Attach the picture
+   (the hidden file input next to "Anadir archivo adjunto"), prompt: "Animate this exact image
+   into a video, keep the same framing, people and colours: <who does what>. Very slow camera
+   push in. No dialogue, no text." ~60 s later: a 10 s, 1280x720, 24 fps clip. "Ver video" ->
+   the download button top right. Save as `v_<letter>_<name>.mp4`, in the spec with
+   `"raw": true` and a `start` of 0.2-1.5 s. No watermark seen on 9 of 9.
+3. The first 2-4 seconds stay closest to the picture; later the camera wanders. Scenes are on
+   screen 1-4 s, so that is enough.
+Grok (grok.com, signed in) made only a still from a typed prompt; its video path is untested.
+Text-only video on Meta AI works too but invents a different man each time: always start from
+our own Gemini picture.
+
 ## HOW TO RESUME THIS WORK IN A NEW CHAT
 Say: "Read ~/Kamay/MASTER.md (top entries of 12 Nov) and kt-machine/factory/EPISODE_PATTERN.md,
 then continue the Episode work." Everything needed is in the repo: the builder
