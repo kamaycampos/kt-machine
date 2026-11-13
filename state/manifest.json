@@ -15896,7 +15896,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-14T12:35",
+   "cta_keyword": "MONEY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_ESTATE/01_READ-THIS-BOOK-30-DAYS_35s.mp4",
@@ -15907,7 +15911,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-14T08:27",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_MIRAGE/01_MANIFEST-A-FERRARI-WITH-A-PHOTO_47s.mp4",
@@ -15918,7 +15926,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-14T10:49",
+   "cta_keyword": "WISH",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_VAULT/01_TEN-YEARS-PRISON-GOT-IT-ALL-BACK_55s.mp4",
@@ -15929,7 +15941,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-13T19:45",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_VAULT/01_THE-FORBES-400-LIST-LIES_70s.mp4",
@@ -15940,7 +15956,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-14T09:03",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   }
  ]
 }
