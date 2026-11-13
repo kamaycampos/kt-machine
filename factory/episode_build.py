@@ -383,6 +383,7 @@ for k_, (s0, e0, o, i0, i1) in enumerate(segs):
     parts.append(f"[v{k_}][a{k_}]")
 graph += "".join(parts) + f"concat=n={len(segs)}:v=1:a=1[base][abase];"
 n_in = 1
+CUTS = []                                # every picture change, for the sound (episode_sound.py)
 for k_, sc in enumerate(SP.get("scenes") or []):
     f0 = at(sc["from"])
     f1 = at(sc["to"])
@@ -431,21 +432,41 @@ for k_, sc in enumerate(SP.get("scenes") or []):
               f"[{last}][s{k_}]overlay=0:0:eof_action=pass:enable='between(t,{t0:.3f},{t1:.3f})'[b{k_}];")
     last = f"b{k_}"
     n_in += 1
+    CUTS += [t0, t1]
     print(f"  scene {s_ if not isinstance(s_, dict) else s_['pixabay']}: {t0:.2f}-{t1:.2f}s")
 # captions on top
 inputs += ["-f", "concat", "-safe", "0", "-i", cl]
 graph += f"[{n_in}:v]fps=30,format=rgba[cap];[{last}][cap]overlay=0:0:eof_action=pass,format=yuv420p[vmain];"
 n_in += 1
+# THE SOUND (13 Nov 2026): music under his voice, a whoosh on each picture change, a low hit on
+# the loud words, a rise into the payoff. Made by factory/episode_sound.py, nothing downloaded.
+# "sound": false in the spec switches it off; "music_db" / "fx_db" set the levels.
+ABASE = "abase"
+if SP.get("sound", True):
+    try:
+        import episode_sound
+        _hits = [at(int(k))[0] for k, v in (SP.get("voices") or {}).items() if v in ("X", "XI") and at(int(k))]
+        _rise = at(int(SP["big_from"]))[0] if SP.get("big_from") is not None and at(int(SP["big_from"])) else None
+        _wav = episode_sound.make(DUR, CUTS, _hits, os.path.join(TMP, "sound.wav"), rise_at=_rise,
+                                  bed_db=float(SP.get("music_db", -27)), fx_db=float(SP.get("fx_db", -19)))
+        inputs += ["-i", _wav]
+        graph += (f"[abase]aresample=48000,aformat=channel_layouts=stereo[avo];[{n_in}:a]aresample=48000[asn];"
+                  f"[avo][asn]amix=inputs=2:normalize=0:duration=first[amixed];")
+        n_in += 1
+        ABASE = "amixed"
+        print(f"sound: {len(CUTS)} picture changes, {len(_hits)} hits, rise at {_rise}")
+    except Exception as _e:
+        print("sound skipped:", type(_e).__name__, _e)
 # the end card
 end_secs = float(SP.get("end_secs", 0))
 if SP.get("end_card") and end_secs > 0:
     inputs += ["-loop", "1", "-framerate", "30", "-t", f"{end_secs:.2f}", "-i", os.path.join(EDIR, SP["end_card"]),
                "-f", "lavfi", "-t", f"{end_secs:.2f}", "-i", "anullsrc=r=48000:cl=stereo"]
     graph += (f"[{n_in}:v]scale={W}:{H},setsar=1,fps=30,format=yuv420p[ev];"
-              f"[abase]aresample=48000,aformat=channel_layouts=stereo[am];"
+              f"[{ABASE}]aresample=48000,aformat=channel_layouts=stereo[am];"
               f"[vmain][am][ev][{n_in + 1}:a]concat=n=2:v=1:a=1[v][aout]")
 else:
-    graph += "[vmain]null[v];[abase]anull[aout]"
+    graph += f"[vmain]null[v];[{ABASE}]anull[aout]"
 gp = os.path.join(TMP, "graph.txt")
 open(gp, "w").write(graph)
 dst = os.path.join(OUT, f"{slug}.mp4")
