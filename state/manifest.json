@@ -15588,13 +15588,26 @@
    "hook": "One recession one bankrupt, one rich",
    "bytes": 68424471,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "archive",
    "scheduled_at": "2026-11-13T10:34",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Dfr_DNNITUD/",
+    "youtube": "https://youtube.com/shorts/Y-NG4RzcYN0"
+   },
+   "caption_at_post": "Zig Ziglar told this story about a strike at Detroit's Big Three automakers, and Kevin Trudeau calls it the best proof of mindset he's ever heard.\n\nOne real estate agent panicked - 85% of the town wasn't working, and he said another six weeks of the strike would bankrupt him.\n\nThe woman next to him, same city, same business, was thriving - laid-off couples finally had time to shop for their dream home, and she hoped the strike lasted so she'd get rich.\n\nSame recession, same product, same customers. One went bankrupt. One got rich.\n\nWhich one are you being right now?\n\n#kevintrudeau #zigziglar #mindset #recession #realestate #successmindset",
+   "posted_at": "2026-11-13T10:49"
   },
   {
    "file": "KT_FORGER2/02_TRILLION-DOLLAR-FRIENDS-DREAM-BIG_121s.mp4",
