@@ -448,10 +448,14 @@ if SP.get("sound", True):
         _hits = [at(int(k))[0] for k, v in (SP.get("voices") or {}).items() if v in ("X", "XI") and at(int(k))]
         _rise = at(int(SP["big_from"]))[0] if SP.get("big_from") is not None and at(int(SP["big_from"])) else None
         _wav = episode_sound.make(DUR, CUTS, _hits, os.path.join(TMP, "sound.wav"), rise_at=_rise,
-                                  bed_db=float(SP.get("music_db", -27)), fx_db=float(SP.get("fx_db", -19)))
+                                  bed_db=float(SP.get("music_db", -21)), fx_db=float(SP.get("fx_db", -14)))
         inputs += ["-i", _wav]
-        graph += (f"[abase]aresample=48000,aformat=channel_layouts=stereo[avo];[{n_in}:a]aresample=48000[asn];"
-                  f"[avo][asn]amix=inputs=2:normalize=0:duration=first[amixed];")
+        # AS LOUD AS THEIRS. Measured: their reel sits at a median of -13 dB with peaks at -6;
+        # our first mix sat at -21 / -13, so next to theirs it sounded small. His voice is
+        # lifted ("voice_db", default +7) and the whole mix held under a soft ceiling.
+        graph += (f"[abase]aresample=48000,aformat=channel_layouts=stereo,volume={float(SP.get('voice_db', 7))}dB[avo];"
+                  f"[{n_in}:a]aresample=48000[asn];"
+                  f"[avo][asn]amix=inputs=2:normalize=0:duration=first,alimiter=limit=0.6:attack=4:release=60:level=disabled[amixed];")
         n_in += 1
         ABASE = "amixed"
         print(f"sound: {len(CUTS)} picture changes, {len(_hits)} hits, rise at {_rise}")
