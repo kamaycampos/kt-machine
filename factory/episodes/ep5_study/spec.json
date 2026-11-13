@@ -31,11 +31,11 @@
  ],
  "scenes": [
   {
-   "src": "m_a_ballroom.mp4",
+   "src": "v_a_ballroom.mp4",
    "from": 16,
    "to": 28,
    "raw": true,
-   "start": 0.0
+   "start": 0.4
   },
   {
    "src": "m_b_brain.mp4",
@@ -45,25 +45,25 @@
    "start": 0.0
   },
   {
-   "src": "m_c_mentor.mp4",
+   "src": "v_c_mentor.mp4",
    "from": 39,
    "to": 42,
    "raw": true,
-   "start": 0.0
+   "start": 0.6
   },
   {
-   "src": "m_d_book.mp4",
+   "src": "v_d_book.mp4",
    "from": 43,
    "to": 48,
    "raw": true,
-   "start": 0.0
+   "start": 0.4
   },
   {
-   "src": "m_e_office.mp4",
+   "src": "v_e_office.mp4",
    "from": 57,
    "to": 68,
    "raw": true,
-   "start": 0.0
+   "start": 0.2
   },
   {
    "src": "v_f_garden.mp4",
@@ -73,24 +73,24 @@
    "raw": true
   },
   {
-   "src": "m_g_tower.mp4",
+   "src": "v_g_tower.mp4",
    "from": 171,
    "to": 173,
-   "start": 0.0,
+   "start": 0.3,
    "raw": true
   },
   {
-   "src": "m_h_board.mp4",
+   "src": "v_h_board.mp4",
    "from": 181,
    "to": 182,
-   "start": 0.0,
+   "start": 0.3,
    "raw": true
   },
   {
-   "src": "m_i_woman.mp4",
+   "src": "v_i_woman.mp4",
    "from": 183,
    "to": 187,
-   "start": 0.0,
+   "start": 0.5,
    "raw": true
   }
  ],
