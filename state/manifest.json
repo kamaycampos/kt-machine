@@ -15629,13 +15629,26 @@
    "hook": "Why rich towns have zero workers",
    "bytes": 59320886,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-13T09:31",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Dfr4LT0ky11/",
+    "youtube": "https://youtube.com/shorts/7PJqcdmTMAE"
+   },
+   "caption_at_post": "Kevin Trudeau grew up in a 1,200-square-foot house with one bathroom. His dad was a welder. Every neighbor was a tradesman - electrician, bricklayer, mason, carpenter, butcher.\n\nThen he drove through the rich part of town and asked his father what those people did. Nobody was a worker. Every single one owned a business - the dry cleaner, the glass company, the car dealership, the restaurant chain.\n\nBack then the only way in was years as an apprentice, learning someone else's business with no guarantee you'd ever go out on your own.\n\nThat's the price people used to pay to stop trading hours for a paycheck.\n\nWhat's stopping you from paying it today?\n\n#kevintrudeau #businessowner #wealthmindset #entrepreneur #financialfreedom #moneytips",
+   "posted_at": "2026-11-13T09:49"
   },
   {
    "file": "AR_BREATHCODE/01_HEAVEN-ISNT-UP-ITS-INSIDE-YOU_152s.mp4",
