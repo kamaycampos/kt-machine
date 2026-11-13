@@ -15602,13 +15602,26 @@
    "hook": "A trillion dollars one friend controls",
    "bytes": 62528229,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "archive",
    "scheduled_at": "2026-11-13T08:34",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfrxWXaFbKk/",
+    "youtube": "https://youtube.com/shorts/3AY0xIINpTs"
+   },
+   "caption_at_post": "Kevin Trudeau says there's a difference between knowing about success and actually living it - and that difference showed up the day he sat with people running trillion-dollar hedge funds and sovereign wealth funds like Norway's.\n\nThe trick he took from that room: dream absurdly big first - $100 million, even a billion - then come back to reality and set your real goal, like $100,000 a year. Suddenly it feels easy, almost like a joke.\n\nHe compares it to coach Dick Vermeel, who drilled his players so hard that game day felt like a cakewalk.\n\nStretch your mind first. Everything smaller becomes simple.\n\nComment BRAIN and I'll send you Kevin's free audios.\n\n#kevintrudeau #mindset #thinkbig #goalsetting #wealthmindset #successhabits",
+   "posted_at": "2026-11-13T08:50"
   },
   {
    "file": "KT_MASONRY/01_RICH-TOWN-ONLY-HAD-BUSINESS-OWNERS_87s.mp4",
@@ -15619,7 +15632,7 @@
    "status": {},
    "media_tag": "media2",
    "look": "classic",
-   "scheduled_at": "2026-11-13T08:44",
+   "scheduled_at": "2026-11-13T09:31",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "offer"
@@ -15647,7 +15660,7 @@
    "status": {},
    "media_tag": "media2",
    "look": "classic",
-   "scheduled_at": "2026-11-13T08:27",
+   "scheduled_at": "2026-11-13T09:17",
    "cta_keyword": "YES",
    "cta_variant": 2,
    "cta_kind": "offer"
