@@ -316,14 +316,28 @@ for v in ready[:MAX] + [v for v in again if v not in ready[:MAX] and v in idx an
                 blk.setdefault(x // 30 * 30, []).append(f"=== USED by {cut[2]} ({cut[0]:.0f}-{cut[1]:.0f}s): taken, never cut inside ===")
             continue
         blk.setdefault(x // 30 * 30, []).append(" ".join(t.split()))
+    # KT'S SECOND PASS READS THE MONEY STRETCHES ONLY (13 Nov 2026). Handed five 80-130 minute
+    # shows in full, the planner read ONE in its whole run and wrote one clip (queue stayed 0).
+    # These old shows are mostly news, guests and pitches; the money and success stories are a
+    # few minutes each. A 30 s block with 2+ money words is a money block; the reading keeps
+    # those +-90 s and marks the rest, so all five episodes fit one run.
+    if not LANE and not AR and v in second and v not in focus:
+        _mw = re.compile(r"\b(money|rich|wealth\w*|million\w*|billion\w*|dollars?|success\w*|business\w*|"
+                         r"invest\w*|broke|poor|debt|sold|sell\w*|profit\w*|income|goals?|dreams?|"
+                         r"manifest\w*|mindset|bank\w*|fortune|entrepreneur\w*)\b", re.I)
+        _dense = [k for k in blk if len(_mw.findall(" ".join(blk[k]))) >= 2 and "=== USED" not in " ".join(blk[k])]
+        if len(_dense) >= 6:
+            focus[v] = _dense
+            print(f"  {v}: ~{len(_dense) / 2:.0f} min of money/success talk kept for reading")
     if v in focus:              # health stretches only, +-60 s; the rest is one marker line per gap
-        near = lambda k: any(abs(k - d) <= 60 for d in focus[v])
+        _pad = 60 if LANE else 90
+        near = lambda k: any(abs(k - d) <= _pad for d in focus[v])
         out, gap = [], False
         for k in sorted(blk):
             if near(k):
                 out.append(f"{k} {' '.join(blk[k])}"); gap = False
             elif not gap:
-                out.append(f"{k} === not health: skipped ==="); gap = True
+                out.append(f"{k} === not {'health' if LANE else 'money or success talk'}: skipped ==="); gap = True
         open(os.path.join(WORK, f"{v}_blocks.txt"), "w").write("\n".join(out))
     else:
         open(os.path.join(WORK, f"{v}_blocks.txt"), "w").write("\n".join(f"{k} {' '.join(blk[k])}" for k in sorted(blk)))

@@ -104,6 +104,7 @@ Pixabay (free, commercial use) and builds it. Add to that clip:
    - In `work/<id>_blocks.txt` every stretch a clip already uses is one line, `=== USED by <SLUG> (in-out s) ===`. Never cut inside it: `check_plan.py` refuses a clip that re-uses more than 10 seconds of another clip's minutes.
    - New teachings only: read the USED slugs, and skip a moment that repeats the lesson of a clip already cut, even from different minutes.
    - The same bar as a first pass: value first, the sharpest opening line, one arc = one clip. If the unused minutes hold only 2 clips worth posting, plan 2. Fewer good clips beat more weak ones.
+   - **Read EVERY second-pass episode the prep prepared, not only the first (13 Nov 2026: a run read one of five and wrote one clip while the queue was 0).** Their `work/<id>_blocks.txt` hold only the money and success stretches (`=== not money or success talk: skipped ===` marks the rest), so all of them fit one run. When the prep printed `QUEUE` under 12, this run's job is at least 8 clips across them; say plainly in the report if the footage does not hold that many.
 3. Read `factory/MASTERY.md` (what is proven to work, with its confidence) and `factory/HOOK_PATTERNS.md`, then read each episode's `work/<id>_blocks.txt` in full. Choose 6-9 clips per episode.
 4. Write `factory/plans/ep_<id>.json` (format below). Get exact start and end times from the cues in `work/<id>.srt`.
 5. `python factory/check_plan.py factory/plans/ep_<id>.json` for every plan. Fix everything it reports.
