@@ -710,6 +710,18 @@ def youtube(path, caption, public_url, clip=None):
     if os.path.exists(yt):
         path = yt
     cover = os.path.splitext(path)[0] + "__thumb.jpg"
+    # THE DESIGNED COVER LIVES BESIDE THE CLIP IN THE RELEASE (13 Nov 2026). The cloud run only
+    # ever downloaded the clip, so `cover` never existed here and YouTube chose its own frame.
+    if (clip or {}).get("cover") and str(public_url).startswith("https://"):
+        try:
+            _cu = re.sub(r"__yt59(?=\.mp4$)", "", str(public_url))[:-4] + "__thumb.jpg"
+            _cr = requests.get(_cu, timeout=T)
+            if _cr.status_code == 200 and len(_cr.content) > 5000:
+                cover = os.path.join("/tmp", "kt_cover_" + os.path.basename(_cu))
+                with open(cover, "wb") as _fh:
+                    _fh.write(_cr.content)
+        except Exception:
+            pass                   # a cover is a nice-to-have, never a failure
     (cid, secret, refresh), missing = _cfg(
         "YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN",
         brand=brand_of(clip))
@@ -846,6 +858,17 @@ def instagram(path, caption, public_url, clip=None, trial=False):
                                                HOOK_FULL_MS))
     except Exception:
         pass                       # a cover is a nice-to-have, never a failure
+    # THE DESIGNED COVER (13 Nov 2026, shared/kt_cover.py): Kevin from the clip, the hook as a
+    # headline. Instagram takes it as cover_url and then ignores thumb_offset. Only when the
+    # file is really there - a missing cover must never cost the post.
+    if (clip or {}).get("cover") and str(public_url).endswith(".mp4"):
+        try:
+            _cu = str(public_url)[:-4] + "__cover.jpg"
+            if requests.head(_cu, timeout=T, allow_redirects=True).status_code == 200:
+                body["cover_url"] = _cu
+                body.pop("thumb_offset", None)
+        except Exception:
+            pass
     if trial:
         # share_to_feed is meaningless for a trial - it has no followers to
         # share to - and sending both is how you get a container that is

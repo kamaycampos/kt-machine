@@ -2069,6 +2069,19 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     # its own frame - which is the exact problem covers exist to solve. Yaren's
     # 50-second clip was the one that exposed it.
     thumb(dest, prefer=main_person(shots), card=None if arch else (card, cy_px))
+    # THE DESIGNED COVER (13 Nov 2026, Kamay: "the thumbnails going out posting are with the
+    # background black ... make a profesional thumbnails" from Kevin as he looks in the clip).
+    # Built from the clean SOURCE frame by kt_cover; it replaces __thumb.jpg (YouTube) and adds
+    # __cover.jpg (Instagram's cover_url). Kamay's brands only: a visible change on Yaren's AR
+    # waits for her yes. Never a reason to lose a clip.
+    _brand = os.path.basename(os.path.dirname(dest))
+    if os.environ.get("KT_COVER", "on") != "off" and _brand.startswith(("KT_", "MINDSET_")):
+        try:
+            import kt_cover
+            _c = kt_cover.make(src, t_in, t_out, [l for l in hook if l.strip()], os.path.splitext(dest)[0])
+            print(f"      cover: {os.path.basename(_c[0]) if _c and _c[0] else 'none (no frame)'}")
+        except Exception as _e:
+            print(f"      cover skipped: {type(_e).__name__}: {_e}")
 
     # The YouTube cut, only when the full clip would break the 60s rule.
     if t_out - t_in > YT_MAX:

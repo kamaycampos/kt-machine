@@ -176,6 +176,12 @@ def main():
     for rel, path, cap, hook in found:
         asset = rel.replace("/", "--")
         sides = sorted(glob.glob(os.path.splitext(path)[0] + "__*.mp4"))
+        # THE COVERS TRAVEL TOO (13 Nov 2026). __thumb.jpg and __cover_ms.txt were written beside
+        # every clip since September and never uploaded, so in the cloud Instagram and YouTube
+        # always picked their own frame. The designed covers (shared/kt_cover.py) go up here.
+        covers = [f for f in (os.path.splitext(path)[0] + "__cover.jpg", os.path.splitext(path)[0] + "__thumb.jpg")
+                  if os.path.exists(f)] if os.path.exists(os.path.splitext(path)[0] + "__cover.jpg") else []
+        sides += covers
         try:
             TAG = store.room(1 + len(sides))
         except RuntimeError as x:
@@ -217,7 +223,8 @@ def main():
 
         man["clips"].append({"file": rel, "caption": cap, "hook": hook,
                              "bytes": os.path.getsize(path),
-                             "done": False, "status": {}, "media_tag": TAG})
+                             "done": False, "status": {}, "media_tag": TAG,
+                             **({"cover": True} if covers else {})})
         print(f"   added {rel}  (release {TAG})")
     json.dump(man, open(STATE, "w"), indent=1)
     print(f"\nmanifest now holds {len(man['clips'])} clips")
