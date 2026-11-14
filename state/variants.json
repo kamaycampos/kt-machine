@@ -2172,5 +2172,129 @@
    }
   ],
   "posted": null
+ },
+ "KT_SENTINEL__THE-GENERALS-SPEECH-BEFORE-D-DAY": {
+  "clip": "KT_SENTINEL/02_THE-GENERALS-SPEECH-BEFORE-D-DAY_107s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_SENTINEL__THE-GENERALS-SPEECH-BEFORE-D-DAY__V1.mp4",
+    "hook": [
+     "Patton's 3rd army",
+     "heard this speech"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SENTINEL__THE-GENERALS-SPEECH-BEFORE-D-DAY__V2.mp4",
+    "hook": [
+     "His army froze",
+     "Patton fixed it"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SENTINEL__THE-GENERALS-SPEECH-BEFORE-D-DAY__V3.mp4",
+    "hook": [
+     "Stuck in mud, he",
+     "took command"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SENTINEL__THE-GENERALS-SPEECH-BEFORE-D-DAY__V4.mp4",
+    "hook": [
+     "Why you freeze",
+     "under pressure"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SENTINEL__THE-GENERALS-SPEECH-BEFORE-D-DAY__V5.mp4",
+    "hook": [
+     "General Patton's secret",
+     "to taking command"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SENTINEL__THE-GENERALS-SPEECH-BEFORE-D-DAY__V6.mp4",
+    "hook": [
+     "Kevin Trudeau's favorite",
+     "leadership movie scene"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SENTINEL__THE-GENERALS-SPEECH-BEFORE-D-DAY__V7.mp4",
+    "hook": [
+     "This speech was real",
+     "before D-Day"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
+ },
+ "KT_VORTEX__WHY-YOUR-SUCCESS-COACH-IS-BROKE": {
+  "clip": "KT_VORTEX/02_WHY-YOUR-SUCCESS-COACH-IS-BROKE_34s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_VORTEX__WHY-YOUR-SUCCESS-COACH-IS-BROKE__V1.mp4",
+    "hook": [
+     "80 pounds overweight,",
+     "still coaching you"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VORTEX__WHY-YOUR-SUCCESS-COACH-IS-BROKE__V2.mp4",
+    "hook": [
+     "Fake success coaches",
+     "are the problem"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VORTEX__WHY-YOUR-SUCCESS-COACH-IS-BROKE__V3.mp4",
+    "hook": [
+     "Broke coaches teach",
+     "rich lessons"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VORTEX__WHY-YOUR-SUCCESS-COACH-IS-BROKE__V4.mp4",
+    "hook": [
+     "Why you stay broke",
+     "trusting coaches"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VORTEX__WHY-YOUR-SUCCESS-COACH-IS-BROKE__V5.mp4",
+    "hook": [
+     "Your coach lives",
+     "in his basement"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VORTEX__WHY-YOUR-SUCCESS-COACH-IS-BROKE__V6.mp4",
+    "hook": [
+     "Kevin Trudeau's warning:",
+     "most coaches broke"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VORTEX__WHY-YOUR-SUCCESS-COACH-IS-BROKE__V7.mp4",
+    "hook": [
+     "Can't teach what",
+     "you don't have"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }

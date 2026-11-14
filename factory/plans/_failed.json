@@ -13753,6 +13753,116 @@
     "A breakup hurts",
     "worse than broke"
    ]
+  },
+  "ep_v4y99ab_r2/WHY-SUCCESSFUL-PEOPLE-NEED-A-PARTNER": {
+   "plan": "ep_v4y99ab_r2",
+   "source": "v4y99ab.mp4",
+   "brand": "KT_PLAYBACKR2",
+   "tries": 2,
+   "why": [
+    "drop KT_PLAYBACKR2/WHY-SUCCESSFUL-PEOPLE-NEED-A-PARTNER: hook - 812px wide at 44px - over the 780px safe zone, will be cut off on a phone"
+   ],
+   "slug": "WHY-SUCCESSFUL-PEOPLE-NEED-A-PARTNER",
+   "in": 1537.84,
+   "out": 1580.28,
+   "start_words": "Without relationships, nothing works",
+   "end_words": "a great romantic partner",
+   "hook": [
+    "Why successful people never",
+    "work alone"
+   ]
+  },
+  "ep_v4y99ab_r2/HOW-TO-PROGRAM-YOUR-MIND-DAILY": {
+   "plan": "ep_v4y99ab_r2",
+   "source": "v4y99ab.mp4",
+   "brand": "KT_PLAYBACKR2",
+   "tries": 2,
+   "why": [
+    "drop KT_PLAYBACKR2/HOW-TO-PROGRAM-YOUR-MIND-DAILY: end words 'That was a six tape drive' dropped - ending moved off them",
+    "NOT QUEUED** `01_HOW-TO-PROGRAM-YOUR-MIND-DAILY_93s.mp4` - word repeated: \"over over\""
+   ],
+   "slug": "HOW-TO-PROGRAM-YOUR-MIND-DAILY",
+   "in": 1920.52,
+   "out": 2001.54,
+   "start_words": "I'd take the cassette player",
+   "end_words": "That was a six tape drive",
+   "hook": [
+    "Six tape drive,",
+    "to New York"
+   ]
+  },
+  "ep_v53gz1i_p2/THE-2-95-BOOK-THAT-BUILDS-WEALTH": {
+   "plan": "ep_v53gz1i_p2",
+   "source": "v53gz1i.mp4",
+   "brand": "KT_SENTINEL",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THE-2-95-BOOK-THAT-BUILDS-WEALTH_108s.mp4: ends off the planned words: plan ends 'one simple principle, powerful', clip ends 'give you that 1 simple principle'"
+   ],
+   "slug": "THE-2-95-BOOK-THAT-BUILDS-WEALTH",
+   "in": 611.5,
+   "out": 725.2,
+   "start_words": "Today, the book I'm",
+   "end_words": "one simple principle, powerful",
+   "hook": [
+    "Why this $2.95 book",
+    "builds wealth"
+   ]
+  },
+  "ep_v5lvgyl_p3/PROOF-BEFORE-TEACHING": {
+   "plan": "ep_v5lvgyl_p3",
+   "source": "v5lvgyl.mp4",
+   "brand": "KT_VORTEX",
+   "tries": 1,
+   "why": [
+    "FAIL 01_PROOF-BEFORE-TEACHING_49s.mp4: [FAIL] 01_PROOF-BEFORE-TEACHING_49s.mp4                       9 captions vs the sound  median -0.00s  worst-10% 0.75s  | words captioned 100%"
+   ],
+   "slug": "PROOF-BEFORE-TEACHING",
+   "in": 3539.8,
+   "out": 3599.12,
+   "start_words": "I never taught a",
+   "end_words": "it's known to man",
+   "hook": [
+    "$15 million before one",
+    "lesson taught"
+   ]
+  },
+  "ep_v5lvgyl_p3/SECRET-SOCIETIES-OF-THE-RICH": {
+   "plan": "ep_v5lvgyl_p3",
+   "source": "v5lvgyl.mp4",
+   "brand": "KT_VORTEX",
+   "tries": 1,
+   "why": [
+    "FAIL 02_SECRET-SOCIETIES-OF-THE-RICH_81s.mp4: [FAIL] 02_SECRET-SOCIETIES-OF-THE-RICH_81s.mp4                19 captions vs the sound  median +0.00s  worst-10% 0.72s  | words captioned 100%",
+    "drop KT_VORTEX/SECRET-SOCIETIES-OF-THE-RICH: end words 'exponential effect of power' dropped - ending moved off them"
+   ],
+   "slug": "SECRET-SOCIETIES-OF-THE-RICH",
+   "in": 4874.0,
+   "out": 4948.88,
+   "start_words": "they're all a member",
+   "end_words": "exponential effect of power",
+   "hook": [
+    "Why the rich join",
+    "secret societies"
+   ]
+  },
+  "ep_v72tj4g_r5/THE-FORBES-400-LIST-LIES": {
+   "plan": "ep_v72tj4g_r5",
+   "source": "v72tj4g.mp4",
+   "brand": "KT_VAULTWIDER2R2",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THE-FORBES-400-LIST-LIES_69s.mp4: ends off the planned words: plan ends 'Nobody knows that person's name', clip ends 'it is important isnt it'"
+   ],
+   "slug": "THE-FORBES-400-LIST-LIES",
+   "in": 1106.24,
+   "out": 1174.72,
+   "start_words": "Two people were just arrested",
+   "end_words": "Nobody knows that person's name",
+   "hook": [
+    "Rich hide $50 billion",
+    "from you"
+   ]
   }
  },
  "attempts": {
@@ -13835,6 +13945,6 @@
   "ar_v4ki1z0_r3": 2,
   "ar_v4khxuu_r3": 2,
   "ar_v4ki6sz_r3": 2,
-  "ep_v72tj4g_r5": 1
+  "ep_v72tj4g_r5": 2
  }
 }
