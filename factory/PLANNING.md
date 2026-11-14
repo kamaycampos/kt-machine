@@ -111,6 +111,14 @@ Pixabay (free, commercial use) and builds it. Add to that clip:
 6. Commit only the new plan files (plus `source_plan.json` if you extended it; only ever append to it) with the message `weekly plans: <episode titles>`, and push them to a new branch named `claude/plans-<YYYY-MM-DD>`. A GitHub job checks them again, merges only the plan files into main and starts the factory, which builds, checks and queues the clips. Never push to main, and never edit anything outside `factory/plans/` and `factory/source_plan.json`.
 7. End with a short report: the episodes planned, the clip titles, and anything you skipped and why. If something you saw contradicts `factory/MASTERY.md`, say so in the report - do not edit that file.
 
+## INTERVIEWS: KEVIN ON SCREEN (14 Nov 2026, Kamay, on the mercury clip)
+"If it is an interview it should look like that for the whole clip [both people side by side] ... instead it shows more the other guy, we dont want that."
+The clip shows the whole wide picture, so it shows whatever the episode shows. Measured on that clip: the episode cut to the guest alone for 48 of its 50 seconds. Our renderer cannot put Kevin back in a picture he is not in. So on an interview episode:
+- Plan the stretches where **Kevin is the one talking**, or where the exchange goes back and forth (the episode then shows both).
+- A long guest-only answer is not a clip, however good the words: at most a few seconds of the guest alone, then back to Kevin or to both.
+- Kevin alone talking = Kevin alone on screen; that is right.
+NOT enforced by code yet (no check counts who is on screen). The planner holds this rule.
+
 ## What makes a clip worth posting (Kamay's taste, learned from real numbers)
 - **Value is the foundation.** Every clip must teach, reveal or move. Controversy, intrigue and a sharp hook multiply value; they never replace it.
 - **THE FIRST 3 SECONDS DECIDE EVERYTHING. Read `shared/FIRST_3_SECONDS.md` before you choose a
