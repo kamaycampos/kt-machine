@@ -143,3 +143,29 @@ def panel_geo(src, t_in, t_out):
     sharpen = ",unsharp=5:5:0.5" if up > 1.5 else ""
     geo = (f"crop={cw}:{ch}:{x}:{y},scale={W}:{H}:flags=lanczos{sharpen},setsar=1,fps=30")
     return geo, f"{why}; crop {cw}x{ch} at {x},{y} (x{up:.1f})"
+
+
+def panel_geo_wide(src, t_in, t_out, ow, oh):
+    """The WIDE crop from inside the speaker's panel, scaled to ow x oh (the archive look's
+    picture window). 13 Nov 2026: the first clip posted in the whole-wide-picture look was a
+    podcast screen; panel_geo's 9:16 cut of Kevin's panel stood in the wide window as a narrow
+    strip with black on both sides (Kamay: "why is it like this? it looks so off"). Here the cut
+    has the window's own shape: as wide as his panel allows, his face about 38% from the top."""
+    box, why = panel_box(src, t_in, t_out)
+    if not box:
+        return None, why
+    x0, y0, x1, y1, (fx, fy, fw, fh) = box
+    x0, y0, x1, y1 = x0 + 3, y0 + 3, x1 - 3, y1 - 3
+    pw, ph = x1 - x0, y1 - y0
+    cw = pw // 2 * 2
+    ch = int(cw * oh / ow) // 2 * 2
+    if ch > ph:
+        ch = ph // 2 * 2
+        cw = int(ch * ow / oh) // 2 * 2
+    x = int(min(max(fx + fw / 2 - cw / 2, x0), x1 - cw))
+    y = int(min(max(fy + fh / 2 - ch * 0.38, y0), y1 - ch))
+    up = ow / float(cw)
+    sharpen = ",unsharp=5:5:0.5" if up > 1.5 else ""
+    geo = f"crop={cw}:{ch}:{x}:{y},scale={ow}:{oh}:flags=lanczos{sharpen},setsar=1,fps=30"
+    return geo, f"{why}; wide crop {cw}x{ch} at {x},{y} (x{up:.1f})"
+

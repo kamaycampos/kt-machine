@@ -1909,7 +1909,9 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     arch = None
     if ARCHIVE:
         arch = archive_plan(src, t_in, cx, shots)
-        if ext_geo:                # a hand-made 9:16 layout: the whole of it, upright, in the window
+        if ext_geo and f"scale={W}:{ARCH_PIC_H}:" in geo:      # a podcast panel, already cut to the window's shape
+            geo = f"{geo},{ARCH_GRADE},{ARCH_TAIL}"
+        elif ext_geo:              # a hand-made 9:16 layout: the whole of it, upright, in the window
             geo = (f"{geo},scale=-2:{ARCH_PIC_H}:flags=lanczos,{ARCH_GRADE},"
                    f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:color={ARCH_CANVAS},noise=alls=5:allf=t,setsar=1,fps=30")
         else:
@@ -2361,7 +2363,8 @@ def run_series(key, spec, apply, only):
         if not c.get("no_layout"):
             try:
                 import kt_layout
-                lgeo, lwhy = kt_layout.panel_geo(src, float(c["in"]), float(c["out"]))
+                lgeo, lwhy = (kt_layout.panel_geo_wide(src, float(c["in"]), float(c["out"]), W, ARCH_PIC_H) if ARCHIVE
+                              else kt_layout.panel_geo(src, float(c["in"]), float(c["out"])))
                 if lgeo:
                     print(f"      {lwhy}")
             except Exception as e:               # a measurement never costs a clip
