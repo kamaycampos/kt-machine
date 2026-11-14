@@ -397,7 +397,7 @@ def archive_overlay(lines, path, cap_y, line=None):
 _PLAY_BIG = re.compile(r"[$%]|\d|^(million|billion|trillion|thousand|hundred|money|rich|wealth|wealthy|broke|poor|"
                        r"never|always|nothing|everything|secret|free|power|success|fail|failure|win|lose|lost|"
                        r"truth|lie|lies|rule|law|mind|dream|dreams|god|universe|energy|love|fear|death|life|"
-                       r"millionaire|billionaire|debt|cash|gold|bank|banks|no|yes|stop|now|why|how|you)s?$", re.I)
+                       r"millionaire|billionaire|debt|cash|gold|bank|banks|no|yes|stop)s?$", re.I)
 
 
 def play_ass(words, path, arch, src=None, t_in=0.0, t_out=None, dur=None):
