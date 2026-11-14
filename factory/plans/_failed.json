@@ -13447,6 +13447,24 @@
     "What Henry Ford said about",
     "self-doubt"
    ]
+  },
+  "ep_v72tj4g_p2w/FORBES-400-LIST-LIES-WIDE": {
+   "plan": "ep_v72tj4g_p2w",
+   "source": "v72tj4g.mp4",
+   "brand": "KT_VAULTWIDE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_FORBES-400-LIST-LIES-WIDE_70s.mp4` - sentence starts with no stop: \"$2 He\""
+   ],
+   "slug": "FORBES-400-LIST-LIES-WIDE",
+   "in": 1097.84,
+   "out": 1168.32,
+   "start_words": "You look at the",
+   "end_words": "control the world via money",
+   "hook": [
+    "The Forbes 400 list",
+    "lies"
+   ]
   }
  },
  "attempts": {

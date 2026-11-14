@@ -10982,5 +10982,11 @@
     "locked": true
    }
   ]
+ },
+ "ep_v72tj4g_p2w": {
+  "source": "v72tj4g.mp4",
+  "brand": "KT_VAULTWIDE",
+  "note": "13 Nov 2026 - rebuild of the Forbes clip: the podcast panel now fills the wide window (panel_geo_wide).",
+  "clips": []
  }
 }
