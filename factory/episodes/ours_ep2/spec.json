@@ -107,10 +107,6 @@
  "big_from": 463,
  "end_card": "end_kamay.png",
  "end_secs": 4.0,
- "kevin_crop": [
-  0.78,
-  0.78
- ],
  "tighten": 0.85,
  "music": "deep_soft_ambient_cue_samuelfjohanns.mp3",
  "music_db": -27,
