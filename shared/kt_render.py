@@ -461,13 +461,19 @@ def play_ass(words, path, arch, src=None, t_in=0.0, t_out=None, dur=None):
             room = W - 120
             small = 54
             big_sz = fit(text[b_], room * (1.0 if len(g) == 1 else 0.62), 124)
+            # EVERY WORD LANDS WHEN HE SAYS IT (14 Nov 2026). Kamay on the first playful clips:
+            # "when a big word comes its not accurate, it feels off". Measured on the posted clip:
+            # captions start within 0.01 s of his voice, but the gold word was already on screen
+            # from the caption's first frame, up to a second before he said it. Now a word after
+            # the first is invisible (its room kept) until its own sound.
             parts = []
             for i, t_ in enumerate(text):
+                t0 = int(max(0, (words[g[i]][0] - 0.04 - a)) * 1000)
+                hide = f"\\alpha&HFF&\\t({t0},{t0 + 1},\\alpha&H00&)" if i and t0 > 60 else ""
                 if i == b_:
-                    t0 = int(max(0, (words[g[i]][0] - LEAD - a)) * 1000)
-                    parts.append(f"{{\\fs{big_sz}\\c{gold}\\fscx118\\fscy118\\t({t0},{t0 + 140},\\fscx100\\fscy100)}}{t_.upper()}{{\\r\\fs{small}}}")
+                    parts.append(f"{{\\fs{big_sz}\\c{gold}{hide}\\fscx118\\fscy118\\t({t0},{t0 + 140},\\fscx100\\fscy100)}}{t_.upper()}{{\\r\\fs{small}}}")
                 else:
-                    parts.append(t_)
+                    parts.append((f"{{{hide}}}{t_}{{\\r\\fs{small}}}") if hide else t_)
             ev.append(f"Dialogue: 0,{_ts(a)},{_ts(g_end)},Play,,0,0,0,,{{\\an5\\pos({W // 2},{cap_y})\\fs{small}{fad}}}" + " ".join(parts))
             continue
         ev.append(f"Dialogue: 0,{_ts(a)},{_ts(g_end)},Play,,0,0,0,,{{\\an5\\pos({W // 2},{cap_y})\\fs62{fad}}}" + " ".join(text))
