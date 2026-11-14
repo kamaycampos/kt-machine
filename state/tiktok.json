@@ -1,10 +1,10 @@
 {
- "at": "2026-11-14T22:07",
+ "at": "2026-11-14T22:43",
  "profile": {
-  "follower_count": 409,
   "following_count": 8,
   "likes_count": 5886,
-  "video_count": 166
+  "video_count": 166,
+  "follower_count": 409
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -449,7 +449,7 @@
   },
   "KT_SECRET/01_THE-SAME-RECORDS_150s.mp4": {
    "id": "7688541338953862413",
-   "view_count": 421,
+   "view_count": 422,
    "like_count": 40,
    "comment_count": 2,
    "share_count": 1,
