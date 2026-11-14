@@ -144,6 +144,14 @@ Grok (grok.com, signed in) made only a still from a typed prompt; its video path
 Text-only video on Meta AI works too but invents a different man each time: always start from
 our own Gemini picture.
 
+**THE SCENE MUST BE WHAT KEVIN SAYS (Kamay, 13 Nov, on the first automatic scenes):** "the scene
+where kt is talking about new york meeting bobie singer is with his girlfriend, and it is a long
+shared table with a bunch of people seating, so the clip you made of an old man with a boy
+eating is not accurate, neither the welder scene." A scene description is written FROM THE
+TRANSCRIPT of that exact moment (who is there, where, what they are doing, the year), never from
+memory or a guess at the story. If the words do not say it, the scene does not show it. Every
+generated scene is looked at (frames) before it goes into a clip.
+
 ## 6d. FIVE MORE REFERENCES, MEASURED (13 Nov 2026, files in ~/Kamay/work/refs/)
 Kamay: "captions and hooks and video movies images effects and colors and also music, it ALL
 reflects and is in congruence with each word and movement Kevin makes."
