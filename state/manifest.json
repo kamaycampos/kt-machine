@@ -16054,7 +16054,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-14T12:02",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_CEILING/02_HE-WAS-SENT-TO-BUY-NOTHING_82s.mp4",
@@ -16064,7 +16068,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-14T20:14",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_SIXTHSENSE/01_BRUCE-LEE-WROTE-HIMSELF-FAMOUS_109s.mp4",
@@ -16074,7 +16082,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-14T17:27",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "KT_CLUBROOM/01_RICH-PEOPLES-SECRET-CLUB_68s.mp4",
@@ -16085,7 +16097,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-15T10:28",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 7,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_DEPOSIT/01_CARE-LESS-GET-MORE_89s.mp4",
@@ -16096,7 +16112,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-14T20:17",
+   "cta_keyword": "WISH",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_HIPPOCAMPUS/01_NATURE-SOUNDS-GROW-YOUR-BRAIN_68s.mp4",
@@ -16107,7 +16127,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-14T17:20",
+   "cta_keyword": "MONEY",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_HIPPOCAMPUS/02_LEADERS-READ-LOSERS-DONT_85s.mp4",
@@ -16118,7 +16142,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-15T09:03",
+   "cta_keyword": "MONEY",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_MODELER/01_WINNERS-WORDS-AFTER-FAILURE_105s.mp4",
@@ -16129,7 +16157,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-15T07:54",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 5,
+   "cta_kind": "question"
   }
  ]
 }
