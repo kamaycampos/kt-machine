@@ -1,10 +1,10 @@
 {
- "at": "2026-11-13T23:26",
+ "at": "2026-11-14T05:06",
  "profile": {
+  "video_count": 166,
   "follower_count": 409,
   "following_count": 8,
-  "likes_count": 5886,
-  "video_count": 166
+  "likes_count": 5886
  },
  "videos": {
   "KT_LETGO/01_HER-400-MILLION-DOLLAR-CASTLE-BURNED_76s.mp4": {
@@ -149,7 +149,7 @@
   },
   "KT_LEDGER/01_THREE-IDEAS-THEY-CALLED-INSANE_60s.mp4": {
    "id": "7691319700512345358",
-   "view_count": 8,
+   "view_count": 9,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -529,7 +529,7 @@
   },
   "KT_RICH/07_YOUR-VOICE-ON-A-RECORDING_104s.mp4": {
    "id": "7687831766358428941",
-   "view_count": 3744,
+   "view_count": 3746,
    "like_count": 153,
    "comment_count": 7,
    "share_count": 16,
@@ -629,7 +629,7 @@
   },
   "KT_DEBT/02_THE-ECONOMY-WAS-SLUGGISH_119s.mp4": {
    "id": "7686471838095969550",
-   "view_count": 238,
+   "view_count": 239,
    "like_count": 10,
    "comment_count": 2,
    "share_count": 0,
@@ -1359,7 +1359,7 @@
   },
   "unmatched/7678377303180643615": {
    "id": "7678377303180643615",
-   "view_count": 368,
+   "view_count": 370,
    "like_count": 30,
    "comment_count": 0,
    "share_count": 1,
