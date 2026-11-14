@@ -16199,7 +16199,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-15T20:15",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_SENTINEL/02_THE-GENERALS-SPEECH-BEFORE-D-DAY_107s.mp4",
@@ -16210,7 +16214,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-15T16:55",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_VORTEX/01_MEGA-MEMORY-450-MILLION-ONE-TAKE_36s.mp4",
@@ -16221,7 +16229,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-16T07:52",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_VORTEX/02_WHY-YOUR-SUCCESS-COACH-IS-BROKE_34s.mp4",
@@ -16232,7 +16244,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-15T11:26",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
