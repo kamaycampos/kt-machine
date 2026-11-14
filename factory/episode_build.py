@@ -484,7 +484,7 @@ if SP.get("sound", True):
         if _mus and not os.path.exists(_mus):
             print("music file missing:", _mus); _mus = None
         _wav = episode_sound.make(DUR + end_secs, CUTS + ([DUR] if end_secs else []), _hits, os.path.join(TMP, "sound.wav"),
-                                  rise_at=_rise, bed_db=float(SP.get("music_db", -21)), fx_db=float(SP.get("fx_db", -16)),
+                                  rise_at=_rise, bed_db=float(SP.get("music_db", -27)), fx_db=float(SP.get("fx_db", -16)),
                                   music=_mus, ffmpeg=FF)
         inputs += ["-i", _wav]
         graph += (f"[avoice]volume={float(SP.get('voice_db', 7))}dB[avo];[{n_in}:a]aresample=48000[asn];"
