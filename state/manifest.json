@@ -15921,14 +15921,27 @@
    "hook": "A real millionaire needs $100 million",
    "bytes": 44085149,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-14T12:35",
    "cta_keyword": "MONEY",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfuxvzOgisR/",
+    "youtube": "https://youtube.com/shorts/JGIf51w3L8A"
+   },
+   "caption_at_post": "Kevin Trudeau says the word millionaire does not mean what you think it means anymore.\n\nBack in 1910, a millionaire's money was worth what $100 million is worth today, in cash. At 8-10% interest, that is roughly a million dollars landing in the bank every single month, for life.\n\nThat is the real bar for never working again. Not a million in your retirement account. A hundred million in assets, throwing off cash.\n\nBy that math, most people who call themselves a millionaire today are not even close.\n\nWhere would your number need to land before you felt truly free?\n\n#kevintrudeau #millionairemindset #financialfreedom #wealthbuilding #moneymindset #richmindset",
+   "posted_at": "2026-11-14T12:51"
   },
   {
    "file": "KT_ESTATE/01_READ-THIS-BOOK-30-DAYS_35s.mp4",
