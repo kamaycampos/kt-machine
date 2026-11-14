@@ -15952,14 +15952,27 @@
    "hook": "How to manifest a Ferrari",
    "bytes": 19303666,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-14T10:49",
    "cta_keyword": "WISH",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfulzfgjKre/",
+    "youtube": "https://youtube.com/shorts/8PcrsJOUyeo"
+   },
+   "caption_at_post": "Kevin Trudeau's manifesting rule is simple: you have to see yourself already in possession of what you want.\n\nMost people try to do this purely in their mind, and give up because they cannot picture things. His fix: stop trying to imagine it. Go get a photo instead.\n\nWant a Ferrari? Go sit in one. Have someone take your picture. Put it where you will see it every single day.\n\nThe point is not the car. It is training your brain to see yourself already living the life you are chasing, before it happens.\n\nWhat is the one photo you would need to take this week?\n\n#kevintrudeau #manifestation #visionboard #lawofattraction #successmindset #goalsetting",
+   "posted_at": "2026-11-14T11:05"
   },
   {
    "file": "KT_VAULT/01_TEN-YEARS-PRISON-GOT-IT-ALL-BACK_55s.mp4",
