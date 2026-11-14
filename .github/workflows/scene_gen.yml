@@ -1,0 +1,34 @@
+# SCENE GEN (13 Nov 2026): one moving scene from a sentence, made in the cloud (factory/scene_gen.py).
+# By hand, to prove or preview a scene. The file goes to the 'previews' release as scene_<name>.mp4.
+name: scene-gen
+on:
+  workflow_dispatch:
+    inputs:
+      name: {required: true, description: "short file name, e.g. carnegie_deli"}
+      picture: {required: true, description: "what the picture shows"}
+      move: {required: false, default: "", description: "what moves"}
+permissions:
+  contents: write
+env:
+  GH_TOKEN: ${{ github.token }}
+  HF_TOKEN: ${{ secrets.HF_TOKEN }}
+jobs:
+  make:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate
+        env:
+          NAME: ${{ inputs.name }}
+          PICTURE: ${{ inputs.picture }}
+          MOVE: ${{ inputs.move }}
+        run: |
+          mkdir -p /tmp/previews
+          python3 factory/scene_gen.py "$PICTURE" "/tmp/previews/scene_${NAME}.mp4" "$MOVE"
+          ls -la /tmp/previews
+          test -s "/tmp/previews/scene_${NAME}.mp4"
+      - name: Publish to the previews release
+        run: |
+          gh release view previews >/dev/null 2>&1 || gh release create previews --title "Style previews" --notes "Looks for Kamay to choose. Not posted."
+          find /tmp/previews -maxdepth 1 -type f -name "*.mp4" | xargs -r gh release upload previews --clobber
