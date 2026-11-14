@@ -417,7 +417,15 @@ def closes_wrong(verify_out, named):
         return ""
     import kt_payoff
     # numbers spelled either way: "fifties" == "50s" (10 Nov 2026)
-    clean = lambda t: [kt_payoff.word_key(w) for w in re.sub(r"[^a-z0-9' ]", " ", t.lower()).split()]
+    # "the body's designed" IS "the body is designed" (14 Nov 2026: a clean WB cut was refused
+    # for exactly that). Contractions are opened and the small verbs they hide are dropped on
+    # both sides, so only the words that carry the ending are compared.
+    _aux = {"is", "are", "am", "not", "have", "has", "had", "will", "would", "s", "re", "ve", "ll", "d", "m", "t"}
+
+    def clean(t):
+        t = re.sub(r"n't\b", " not", t.lower().replace("\u2019", "'"))
+        t = re.sub(r"'(s|re|ve|ll|d|m)\b", r" \1", t)
+        return [kt_payoff.word_key(w) for w in re.sub(r"[^a-z0-9' ]", " ", t).split() if w not in _aux]
     got, want = clean(m.group(1))[-6:], clean(named)[-2:]
     # The LAST word is heard at the very edge of the file, so whisper often
     # returns it clipped ("career perspe" for "career perspective"). 23 Sept
