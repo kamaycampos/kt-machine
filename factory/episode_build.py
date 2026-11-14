@@ -483,8 +483,17 @@ if SP.get("sound", True):
         _mus = os.path.join(HERE, "music", SP["music"]) if SP.get("music") else None
         if _mus and not os.path.exists(_mus):
             print("music file missing:", _mus); _mus = None
-        _wav = episode_sound.make(DUR + end_secs, CUTS + ([DUR] if end_secs else []), _hits, os.path.join(TMP, "sound.wav"),
-                                  rise_at=_rise, bed_db=float(SP.get("music_db", -27)), fx_db=float(SP.get("fx_db", -16)),
+        # NO EFFECT ON PICTURE CHANGES (14 Nov 2026). Kamay: "the sound effect every time a new
+        # scene comes in is too uncomfortable, harsh ... slaps on the face every couple seconds
+        # ... make your rules from real facts". Measured on the reference reel (their Episode 5),
+        # 14 picture changes: the sound at a change is NO louder than anywhere else (overall
+        # +4.6 dB against +4.1 at random moments; bass +2.6). Ours had +9.8 dB of bass on every
+        # change. They use none; the music carries it. Effects are OFF unless a spec asks
+        # ("fx": true), and the payoff lift is the music's alone.
+        _fx = bool(SP.get("fx", False))
+        _wav = episode_sound.make(DUR + end_secs, (CUTS + ([DUR] if end_secs else [])) if _fx else [], _hits if _fx else [],
+                                  os.path.join(TMP, "sound.wav"),
+                                  rise_at=_rise if _fx else None, bed_db=float(SP.get("music_db", -27)), fx_db=float(SP.get("fx_db", -16)),
                                   music=_mus, ffmpeg=FF)
         inputs += ["-i", _wav]
         graph += (f"[avoice]volume={float(SP.get('voice_db', 7))}dB[avo];[{n_in}:a]aresample=48000[asn];"
