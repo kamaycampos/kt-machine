@@ -57,6 +57,7 @@ def wait_for_renders():
 
 
 def main():
+    TEST_KEEP = []
     plan_only = "--plan" in sys.argv
     os.makedirs(FAILED, exist_ok=True)
     done = json.load(open(DONE)) if os.path.exists(DONE) else []
@@ -227,6 +228,7 @@ def main():
             log(f"  PASS {f}  {s.stdout.strip().split('] ',1)[-1][:90]}")
             log("       " + " | ".join(l.strip() for l in v.splitlines() if "FIRST" in l or "LAST" in l)[:420])
             passed_brands.add(p["brand"])
+            TEST_KEEP.append(mp4)
             kinds[f"{p['brand']}/{f}"] = slugs[m.group(1)].get("cta_kind")
         done.append(key)
         json.dump(done, open(DONE, "w"), indent=1)
@@ -234,6 +236,18 @@ def main():
     # CLOUD TEST MODE: render and check, never upload or queue (factory --test).
     if passed_brands and os.environ.get("KT_FACTORY_NOQUEUE"):
         log("TEST MODE - passing clips NOT uploaded or queued: " + ", ".join(sorted(passed_brands)))
+        # ...but kept where they can be LOOKED at (14 Nov 2026: a test nobody can watch proves
+        # nothing; Kamay: "show me the samples"). The 'previews' release never feeds a queue.
+        repo = os.environ.get("GITHUB_REPOSITORY")
+        if repo:
+            subprocess.run(["gh", "release", "create", "previews", "-R", repo, "-n", "test renders, never posted"],
+                           capture_output=True)
+            for f_ in TEST_KEEP:
+                nm = "/tmp/TEST_" + os.path.basename(os.path.dirname(f_)) + "--" + os.path.basename(f_)
+                shutil.copy(f_, nm)
+                r_ = subprocess.run(["gh", "release", "upload", "previews", nm, "--clobber", "-R", repo],
+                                    capture_output=True, text=True)
+                log("  test clip kept in previews: " + os.path.basename(nm) + ("" if r_.returncode == 0 else " FAILED " + r_.stderr[-120:]))
         passed_brands = set()
     if passed_brands:
         subprocess.run(["git", "pull", "-q", "--rebase"], cwd=MACHINE)
