@@ -162,6 +162,13 @@ def panel_geo_wide(src, t_in, t_out, ow, oh):
     if ch > ph:
         ch = ph // 2 * 2
         cw = int(ch * ow / oh) // 2 * 2
+    # NEVER A CLOSE-UP (14 Nov 2026). His panel on this podcast is a tall phone-shaped picture; a
+    # wide cut of it was his face from eyebrows to chin, the captions over his mouth - the very
+    # "too close, uncomfortable" framing the wide look exists to end. When his face would fill
+    # more than 45% of the cut's height, there is no good wide cut inside the panel: return None
+    # and the clip shows the whole screen as it was broadcast.
+    if fh > 0.45 * ch:
+        return None, f"{why}; panel too narrow for a wide cut (face {fh / ch:.0%} of it) - whole screen"
     x = int(min(max(fx + fw / 2 - cw / 2, x0), x1 - cw))
     y = int(min(max(fy + fh / 2 - ch * 0.38, y0), y1 - ch))
     up = ow / float(cw)
