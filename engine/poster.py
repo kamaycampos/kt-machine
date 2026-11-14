@@ -1558,6 +1558,16 @@ def publish(clip, path, public_url, only=None):
                               clip.get("cta_keyword", ""),
                               clip.get("cta_kind", ""),
                               clip.get("cta_variant"))
+            # A CAPTION WRITTEN TO BE READ AS IT IS (14 Nov 2026). Kamay on the movie clips:
+            # "people need to see first thing the call to action". caption_for moves every ask
+            # to the END and drops an opening one. A clip carrying "caption_exact" posts its
+            # caption word for word; YouTube and Facebook, where a link clicks, get the real
+            # link on the line after the opening ask ("caption_link").
+            if clip.get("caption_exact"):
+                cap = clip.get("caption", "")
+                if name in ("youtube", "facebook") and clip.get("caption_link"):
+                    head, _sep, rest = cap.partition("\n\n")
+                    cap = f"{head}\n{clip['caption_link']}\n\n{rest}"
             res = fn(path, cap, public_url, clip)
         except Exception as e:
             res = f"{type(e).__name__}: {e}"

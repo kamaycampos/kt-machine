@@ -16264,7 +16264,9 @@
    "scheduled_at": "2026-11-15T12:30",
    "cta_keyword": "WISH",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "caption_exact": true,
+   "caption_link": "Or get them here now, free: https://freeyourwish.kevintrudeau.com/?ref=a43c8j"
   }
  ]
 }
