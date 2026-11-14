@@ -1,0 +1,22 @@
+{
+ "source": "v72tj4g.mp4",
+ "brand": "KT_VAULTWIDE",
+ "test": false,
+ "note": "13 Nov 2026 - rebuild of the Forbes clip: the podcast panel now fills the wide window (panel_geo_wide).",
+ "clips": [
+  {
+   "slug": "FORBES-400-LIST-LIES-WIDE",
+   "in": 1097.84,
+   "out": 1168.32,
+   "start_words": "You look at the",
+   "end_words": "control the world via money",
+   "hook": [
+    "The Forbes 400 list",
+    "lies"
+   ],
+   "send": "A trader sends this to a friend who trusts the Forbes list, pure anger at being lied to about who really runs the money.",
+   "caption": "Kevin Trudeau says the Forbes 400 list is not what it claims to be.\n\nTwo people arrested in Asia this year had crypto wallets worth $17 billion and $50 billion in cash, more than most names on that list. Neither of them made the cut.\n\nAs he puts it, quoting J. Paul Getty: it is not how much money you have, it is how much money you control. Norway's sovereign wealth fund alone holds $2 trillion. Saudi Arabia's holds $1.7 trillion. Almost nobody can name who actually controls either one.\n\nThe richest list you have ever seen might be missing its richest people.\n\n#kevintrudeau #forbes400 #hiddenwealth #moneyexposed #wealthsecrets #richpeople",
+   "retry_of": "ep_v72tj4g_p2/THE-FORBES-400-LIST-LIES"
+  }
+ ]
+}
