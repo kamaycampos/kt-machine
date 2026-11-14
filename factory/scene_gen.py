@@ -37,9 +37,13 @@ I2V_SPACES = ["https://saravutw-wan2-2-i2v-lightning-4-8step-custom.hf.space"]
 T2V_SPACES = ["https://lightricks-ltx-video-distilled.hf.space"]
 
 
+ANON = [False]     # True once the account's daily GPU allowance is spent: the runner's own
+                   # address has a fresh anonymous allowance on every cloud machine (14 Nov 2026)
+
+
 def _hdr(extra=None):
     h = dict(extra or {})
-    if os.environ.get("HF_TOKEN"):
+    if os.environ.get("HF_TOKEN") and not ANON[0]:
         h["Authorization"] = "Bearer " + os.environ["HF_TOKEN"]
     return h
 
@@ -87,6 +91,10 @@ def _try(fn, what, tries=2, wait=20, log=print):
             log(f"    {what}: {type(e).__name__}: {str(e)[:160]}" + ("" if i == tries - 1 else f" - again in {wait}s"))
             if i < tries - 1:
                 time.sleep(wait)
+    if os.environ.get("HF_TOKEN") and not ANON[0]:
+        ANON[0] = True
+        log(f"    {what}: the account's allowance looks spent - trying without the key")
+        return _try(fn, what, tries=1, wait=wait, log=log)
     return None
 
 
