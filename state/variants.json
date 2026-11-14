@@ -1862,5 +1862,315 @@
    }
   ],
   "posted": null
+ },
+ "KT_CLUBROOM__RICH-PEOPLES-SECRET-CLUB": {
+  "clip": "KT_CLUBROOM/01_RICH-PEOPLES-SECRET-CLUB_68s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_CLUBROOM__RICH-PEOPLES-SECRET-CLUB__V1.mp4",
+    "hook": [
+     "Just one thing separates",
+     "the ultra-rich"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_CLUBROOM__RICH-PEOPLES-SECRET-CLUB__V2.mp4",
+    "hook": [
+     "Outside the club,",
+     "you stay broke"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_CLUBROOM__RICH-PEOPLES-SECRET-CLUB__V3.mp4",
+    "hook": [
+     "Join their club,",
+     "change your life"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_CLUBROOM__RICH-PEOPLES-SECRET-CLUB__V4.mp4",
+    "hook": [
+     "Why staying solo",
+     "costs you money"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_CLUBROOM__RICH-PEOPLES-SECRET-CLUB__V5.mp4",
+    "hook": [
+     "Skull and Bones",
+     "makes billionaires"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_CLUBROOM__RICH-PEOPLES-SECRET-CLUB__V6.mp4",
+    "hook": [
+     "Kevin Trudeau exposes",
+     "their secret club"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_CLUBROOM__RICH-PEOPLES-SECRET-CLUB__V7.mp4",
+    "hook": [
+     "Harvard's secret alumni",
+     "club breeds billionaires"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
+ },
+ "KT_DEPOSIT__CARE-LESS-GET-MORE": {
+  "clip": "KT_DEPOSIT/01_CARE-LESS-GET-MORE_89s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_DEPOSIT__CARE-LESS-GET-MORE__V1.mp4",
+    "hook": [
+     "Step 5 of manifesting:",
+     "stop caring"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DEPOSIT__CARE-LESS-GET-MORE__V2.mp4",
+    "hook": [
+     "Wanting too much",
+     "sabotages your dreams"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DEPOSIT__CARE-LESS-GET-MORE__V3.mp4",
+    "hook": [
+     "Want it less,",
+     "get it faster"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DEPOSIT__CARE-LESS-GET-MORE__V4.mp4",
+    "hook": [
+     "Why neediness is",
+     "blocking your dreams"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DEPOSIT__CARE-LESS-GET-MORE__V5.mp4",
+    "hook": [
+     "Herb Cohen's trick",
+     "manifests your dreams"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DEPOSIT__CARE-LESS-GET-MORE__V6.mp4",
+    "hook": [
+     "Kevin Trudeau's manifesting",
+     "secret: care less"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_DEPOSIT__CARE-LESS-GET-MORE__V7.mp4",
+    "hook": [
+     "Stop caring. Watch",
+     "heaven's windows open"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
+ },
+ "KT_MODELER__WINNERS-WORDS-AFTER-FAILURE": {
+  "clip": "KT_MODELER/01_WINNERS-WORDS-AFTER-FAILURE_105s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_MODELER__WINNERS-WORDS-AFTER-FAILURE__V1.mp4",
+    "hook": [
+     "One sentence separates",
+     "winners from losers"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_MODELER__WINNERS-WORDS-AFTER-FAILURE__V2.mp4",
+    "hook": [
+     "Your own excuses",
+     "are the villain"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_MODELER__WINNERS-WORDS-AFTER-FAILURE__V3.mp4",
+    "hook": [
+     "Same failure, different words,",
+     "different life"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_MODELER__WINNERS-WORDS-AFTER-FAILURE__V4.mp4",
+    "hook": [
+     "Why you stay stuck",
+     "after failing"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_MODELER__WINNERS-WORDS-AFTER-FAILURE__V5.mp4",
+    "hook": [
+     "The exact words",
+     "millionaires actually use"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_MODELER__WINNERS-WORDS-AFTER-FAILURE__V6.mp4",
+    "hook": [
+     "Kevin Trudeau's trick spots",
+     "future millionaires"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_MODELER__WINNERS-WORDS-AFTER-FAILURE__V7.mp4",
+    "hook": [
+     "Same failure rate.",
+     "Totally different vocabulary"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
+ },
+ "KT_HIPPOCAMPUS__LEADERS-READ-LOSERS-DONT": {
+  "clip": "KT_HIPPOCAMPUS/02_LEADERS-READ-LOSERS-DONT_85s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_HIPPOCAMPUS__LEADERS-READ-LOSERS-DONT__V1.mp4",
+    "hook": [
+     "One habit separates",
+     "leaders from losers"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_HIPPOCAMPUS__LEADERS-READ-LOSERS-DONT__V2.mp4",
+    "hook": [
+     "The elite wanted",
+     "you illiterate"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_HIPPOCAMPUS__LEADERS-READ-LOSERS-DONT__V3.mp4",
+    "hook": [
+     "Readers become leaders.",
+     "Non-readers stay losers"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_HIPPOCAMPUS__LEADERS-READ-LOSERS-DONT__V4.mp4",
+    "hook": [
+     "Why not reading",
+     "costs you millions"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_HIPPOCAMPUS__LEADERS-READ-LOSERS-DONT__V5.mp4",
+    "hook": [
+     "History's wealthiest families",
+     "all did this"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_HIPPOCAMPUS__LEADERS-READ-LOSERS-DONT__V6.mp4",
+    "hook": [
+     "Kevin Trudeau's verdict",
+     "on non-readers"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_HIPPOCAMPUS__LEADERS-READ-LOSERS-DONT__V7.mp4",
+    "hook": [
+     "Leaders always read.",
+     "Losers scroll instead"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
+ },
+ "KT_HIPPOCAMPUS__NATURE-SOUNDS-GROW-YOUR-BRAIN": {
+  "clip": "KT_HIPPOCAMPUS/01_NATURE-SOUNDS-GROW-YOUR-BRAIN_68s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_HIPPOCAMPUS__NATURE-SOUNDS-GROW-YOUR-BRAIN__V1.mp4",
+    "hook": [
+     "Three nature sounds",
+     "boost brain power"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_HIPPOCAMPUS__NATURE-SOUNDS-GROW-YOUR-BRAIN__V2.mp4",
+    "hook": [
+     "Concrete and traffic",
+     "shrink your brain"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_HIPPOCAMPUS__NATURE-SOUNDS-GROW-YOUR-BRAIN__V3.mp4",
+    "hook": [
+     "Noise shrinks it.",
+     "Nature grows it"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_HIPPOCAMPUS__NATURE-SOUNDS-GROW-YOUR-BRAIN__V4.mp4",
+    "hook": [
+     "Why staying indoors",
+     "blocks your wealth"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_HIPPOCAMPUS__NATURE-SOUNDS-GROW-YOUR-BRAIN__V5.mp4",
+    "hook": [
+     "Wealthy families always",
+     "walked in nature"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_HIPPOCAMPUS__NATURE-SOUNDS-GROW-YOUR-BRAIN__V6.mp4",
+    "hook": [
+     "Kevin Trudeau's nature",
+     "trick for manifesting"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_HIPPOCAMPUS__NATURE-SOUNDS-GROW-YOUR-BRAIN__V7.mp4",
+    "hook": [
+     "Crickets and creeks",
+     "rewire your brain"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }

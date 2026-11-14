@@ -13573,6 +13573,186 @@
     "What Henry Ford said",
     "about self-doubt"
    ]
+  },
+  "ar_v4khxuu_r3/I-WAS-PART-OF-MK-ULTRA": {
+   "plan": "ar_v4khxuu_r3",
+   "source": "v4khxuu.mp4",
+   "brand": "AR_THIRDEYER2R2",
+   "tries": 3,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "I-WAS-PART-OF-MK-ULTRA",
+   "in": 407.1,
+   "out": 495.6,
+   "start_words": "Before the CIA was",
+   "end_words": "type of science fiction stuff",
+   "hook": [
+    "I was part",
+    "of MK Ultra."
+   ]
+  },
+  "ar_v4khxuu_r3/YOUR-EYES-MISS-MOST-OF-REALITY": {
+   "plan": "ar_v4khxuu_r3",
+   "source": "v4khxuu.mp4",
+   "brand": "AR_THIRDEYER2R2",
+   "tries": 3,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "YOUR-EYES-MISS-MOST-OF-REALITY",
+   "in": 4636.7,
+   "out": 4789.3,
+   "start_words": "So our physical eyes",
+   "end_words": "anything that's beyond itself",
+   "hook": [
+    "Your phone proves",
+    "you're mostly blind."
+   ]
+  },
+  "ar_v4khxuu_r3/THE-CIA-CONTROLS-YOUR-MEDIA-TOO": {
+   "plan": "ar_v4khxuu_r3",
+   "source": "v4khxuu.mp4",
+   "brand": "AR_THIRDEYER2R2",
+   "tries": 3,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "THE-CIA-CONTROLS-YOUR-MEDIA-TOO",
+   "in": 624.3,
+   "out": 684.1,
+   "start_words": "So I was talking",
+   "end_words": "what really goes on",
+   "hook": [
+    "Gorbachev named who",
+    "controls your media."
+   ]
+  },
+  "ar_v4ki6sz_r3/YOURE-HYPNOTIZED-EVERY-SINGLE-DAY": {
+   "plan": "ar_v4ki6sz_r3",
+   "source": "v4ki6sz.mp4",
+   "brand": "AR_IMMUNITYR2R2",
+   "tries": 3,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "YOURE-HYPNOTIZED-EVERY-SINGLE-DAY",
+   "in": 933.8,
+   "out": 1043.0,
+   "start_words": "All of you can be",
+   "end_words": "giving you, the antidote",
+   "hook": [
+    "You're hypnotized.",
+    "Every single day."
+   ]
+  },
+  "ar_v4ki6sz_r3/A-HIDDEN-TUNNEL-UNDER-THE-MOUNTAIN": {
+   "plan": "ar_v4ki6sz_r3",
+   "source": "v4ki6sz.mp4",
+   "brand": "AR_IMMUNITYR2R2",
+   "tries": 3,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "A-HIDDEN-TUNNEL-UNDER-THE-MOUNTAIN",
+   "in": 1639.2,
+   "out": 1682.0,
+   "start_words": "Excuse me, Bubba. Did",
+   "end_words": "there was no technology there",
+   "hook": [
+    "A tunnel hides",
+    "inside that mountain."
+   ]
+  },
+  "ar_v4ki6sz_r3/YOUR-TEACHER-IS-CALLED-YOUR-UNCLE": {
+   "plan": "ar_v4ki6sz_r3",
+   "source": "v4ki6sz.mp4",
+   "brand": "AR_IMMUNITYR2R2",
+   "tries": 3,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "YOUR-TEACHER-IS-CALLED-YOUR-UNCLE",
+   "in": 5341.4,
+   "out": 5425.2,
+   "start_words": "When I was in",
+   "end_words": "anywhere in the world",
+   "hook": [
+    "Inside, they call",
+    "him your uncle."
+   ]
+  },
+  "ar_v4ki6sz_r3/DALAI-LAMA-3AM-THREE-HOURS": {
+   "plan": "ar_v4ki6sz_r3",
+   "source": "v4ki6sz.mp4",
+   "brand": "AR_IMMUNITYR2R2",
+   "tries": 3,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "DALAI-LAMA-3AM-THREE-HOURS",
+   "in": 5530.0,
+   "out": 5635.7,
+   "start_words": "How is that possible",
+   "end_words": "Look within",
+   "hook": [
+    "Dalai Lama wakes",
+    "at three a.m."
+   ]
+  },
+  "ep_v4vdcy0_p3/SILENT-BLESSING-PAYS-1000-FOLD": {
+   "plan": "ep_v4vdcy0_p3",
+   "source": "v4vdcy0.mp4",
+   "brand": "KT_DEPOSIT",
+   "tries": 1,
+   "why": [
+    "FAIL 02_SILENT-BLESSING-PAYS-1000-FOLD_68s.mp4: ends off the planned words: plan ends 'field times 100 or 1,000', clip ends 'so wish happiness silently toward others'"
+   ],
+   "slug": "SILENT-BLESSING-PAYS-1000-FOLD",
+   "in": 2628.72,
+   "out": 2701.98,
+   "start_words": "If you greet everyone",
+   "end_words": "field times 100 or 1,000",
+   "hook": [
+    "What happens when",
+    "you bless strangers"
+   ]
+  },
+  "ep_v4xs1cn_p2/100-MILLION-DOLLAR-BRAIN": {
+   "plan": "ep_v4xs1cn_p2",
+   "source": "v4xs1cn.mp4",
+   "brand": "KT_HIPPOCAMPUS",
+   "tries": 1,
+   "why": [
+    "FAIL 01_100-MILLION-DOLLAR-BRAIN_60s.mp4: [FAIL] 01_100-MILLION-DOLLAR-BRAIN_60s.mp4                    14 captions vs the sound  median +0.16s  worst-10% 0.61s  | words captioned 100%  UNCAPTIONED SPEECH [(57.3, 58.7)]"
+   ],
+   "slug": "100-MILLION-DOLLAR-BRAIN",
+   "in": 1044.0,
+   "out": 1106.12,
+   "start_words": "Let's look at the brains",
+   "end_words": "the average person's brain",
+   "hook": [
+    "Why millionaires' brains",
+    "are 100% bigger"
+   ]
+  },
+  "ep_v4y99ab_p2/A-BREAKUP-HURTS-WORSE-THAN-BROKE": {
+   "plan": "ep_v4y99ab_p2",
+   "source": "v4y99ab.mp4",
+   "brand": "KT_HEARTBREAK",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_A-BREAKUP-HURTS-WORSE-THAN-BROKE_144s.mp4` - sentence starts with no stop: \"feeling And\""
+   ],
+   "slug": "A-BREAKUP-HURTS-WORSE-THAN-BROKE",
+   "in": 177.3,
+   "out": 321.04,
+   "start_words": "Relationships give us more emotional pain",
+   "end_words": "almost like suicidal",
+   "hook": [
+    "A breakup hurts",
+    "worse than broke"
+   ]
   }
  },
  "attempts": {
@@ -13653,7 +13833,7 @@
   "ar_v4ki6sz_r2": 2,
   "ep_v4vdcy0_p2": 2,
   "ar_v4ki1z0_r3": 2,
-  "ar_v4khxuu_r3": 1,
-  "ar_v4ki6sz_r3": 1
+  "ar_v4khxuu_r3": 2,
+  "ar_v4ki6sz_r3": 2
  }
 }
