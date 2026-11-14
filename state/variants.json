@@ -1800,5 +1800,67 @@
    }
   ],
   "posted": null
+ },
+ "KT_VAULTWIDER2__FORBES-400-LIST-LIES-WIDE": {
+  "clip": "KT_VAULTWIDER2/01_FORBES-400-LIST-LIES-WIDE_62s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_VAULTWIDER2__FORBES-400-LIST-LIES-WIDE__V1.mp4",
+    "hook": [
+     "$50 billion missing",
+     "from Forbes 400"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VAULTWIDER2__FORBES-400-LIST-LIES-WIDE__V2.mp4",
+    "hook": [
+     "The Brotherhood controls",
+     "the real money"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VAULTWIDER2__FORBES-400-LIST-LIES-WIDE__V3.mp4",
+    "hook": [
+     "Having money means",
+     "nothing without control"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VAULTWIDER2__FORBES-400-LIST-LIES-WIDE__V4.mp4",
+    "hook": [
+     "Why you'll never",
+     "see this list"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VAULTWIDER2__FORBES-400-LIST-LIES-WIDE__V5.mp4",
+    "hook": [
+     "J. Paul Getty's",
+     "money rule explained"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VAULTWIDER2__FORBES-400-LIST-LIES-WIDE__V6.mp4",
+    "hook": [
+     "Kevin Trudeau exposes",
+     "the Forbes 400"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VAULTWIDER2__FORBES-400-LIST-LIES-WIDE__V7.mp4",
+    "hook": [
+     "$2 trillion, zero",
+     "public name attached"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }

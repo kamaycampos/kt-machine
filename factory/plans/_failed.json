@@ -13465,6 +13465,114 @@
     "The Forbes 400 list",
     "lies"
    ]
+  },
+  "ar_v4ki1z0_r3/THE-BROTHERHOOD-RUNS-THE-WORLD": {
+   "plan": "ar_v4ki1z0_r3",
+   "source": "v4ki1z0.mp4",
+   "brand": "AR_FIRSTHANDR2R2",
+   "tries": 3,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "THE-BROTHERHOOD-RUNS-THE-WORLD",
+   "in": 133.3,
+   "out": 263.3,
+   "start_words": "I was in a society",
+   "end_words": "is called the brotherhood",
+   "hook": [
+    "One order runs",
+    "every government alive."
+   ]
+  },
+  "ar_v4ki1z0_r3/ROCKEFELLERS-GIVING-FORMULA": {
+   "plan": "ar_v4ki1z0_r3",
+   "source": "v4ki1z0.mp4",
+   "brand": "AR_FIRSTHANDR2R2",
+   "tries": 3,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "ROCKEFELLERS-GIVING-FORMULA",
+   "in": 4325.0,
+   "out": 4422.3,
+   "start_words": "Rockefeller said that",
+   "end_words": "You gave it away",
+   "hook": [
+    "The richest man",
+    "still gave first."
+   ]
+  },
+  "ar_v4ki1z0_r3/I-READ-A-BILLIONAIRE-OVER-THE-PHONE": {
+   "plan": "ar_v4ki1z0_r3",
+   "source": "v4ki1z0.mp4",
+   "brand": "AR_FIRSTHANDR2R2",
+   "tries": 3,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "I-READ-A-BILLIONAIRE-OVER-THE-PHONE",
+   "in": 2249.5,
+   "out": 2385.0,
+   "start_words": "The phone rings and",
+   "end_words": "Cannot believe what she's hearing",
+   "hook": [
+    "Never met him.",
+    "Described him anyway."
+   ]
+  },
+  "ar_v4ki1z0_r3/YOURE-A-PUPPET-SO-IS-EVERYONE": {
+   "plan": "ar_v4ki1z0_r3",
+   "source": "v4ki1z0.mp4",
+   "brand": "AR_FIRSTHANDR2R2",
+   "tries": 3,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "YOURE-A-PUPPET-SO-IS-EVERYONE",
+   "in": 5020.5,
+   "out": 5094.3,
+   "start_words": "Let me give you",
+   "end_words": "we are all the same self",
+   "hook": [
+    "You're the puppet.",
+    "So is everyone."
+   ]
+  },
+  "ar_v4ki1z0_r3/IN-THE-ROOM-THEY-WERENT": {
+   "plan": "ar_v4ki1z0_r3",
+   "source": "v4ki1z0.mp4",
+   "brand": "AR_FIRSTHANDR2R2",
+   "tries": 3,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "IN-THE-ROOM-THEY-WERENT",
+   "in": 385.3,
+   "out": 430.0,
+   "start_words": "But you're not going to",
+   "end_words": "going to say anything",
+   "hook": [
+    "He was inside.",
+    "They won't say."
+   ]
+  },
+  "ep_v72tj4g_r3/HENRY-FORD-EITHER-WAY-RIGHT": {
+   "plan": "ep_v72tj4g_r3",
+   "source": "v72tj4g.mp4",
+   "brand": "KT_VAULTR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_HENRY-FORD-EITHER-WAY-RIGHT_69s.mp4` - two subjects together: \"I you\""
+   ],
+   "slug": "HENRY-FORD-EITHER-WAY-RIGHT",
+   "in": 2954.24,
+   "out": 3023.44,
+   "start_words": "When you were a kid",
+   "end_words": "going to succeed",
+   "hook": [
+    "What Henry Ford said",
+    "about self-doubt"
+   ]
   }
  },
  "attempts": {
@@ -13544,6 +13652,8 @@
   "ar_v4ki1z0_r2": 2,
   "ar_v4ki6sz_r2": 2,
   "ep_v4vdcy0_p2": 2,
-  "ar_v4ki1z0_r3": 1
+  "ar_v4ki1z0_r3": 2,
+  "ar_v4khxuu_r3": 1,
+  "ar_v4ki6sz_r3": 1
  }
 }
