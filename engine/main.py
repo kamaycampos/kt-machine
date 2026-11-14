@@ -213,6 +213,38 @@ def due_clips(man):
                 continue
             out.append(i)
 
+    # A MOVIE CLIP GETS THE STAGE TO ITSELF (14 Nov 2026, Kamay: "whenever we post those movies
+    # clips ... so it does not compete with other clips"). What the evidence says: Instagram's
+    # head has said a new post should not hurt one that is taking off "particularly if it's not
+    # right immediately afterwards"; on our own 304 KT reels a clip with 3 h+ clear on both
+    # sides did 328-399 median views against 241-288 with less. So a clip marked "solo" keeps
+    # SOLO_BEFORE hours clear before it and SOLO_AFTER after it for the same person: an ordinary
+    # clip that comes due inside that window is moved to its end, never dropped.
+    SOLO_BEFORE, SOLO_AFTER = 6 * 3600, 10 * 3600
+    solos = []
+    for c in man["clips"]:
+        if not c.get("solo") or c.get("done") and not c.get("posted_at"):
+            continue
+        ts = c.get("posted_at") or c.get("scheduled_at")
+        try:
+            solos.append((_person(c), datetime.strptime(ts[:16], "%Y-%m-%dT%H:%M")))
+        except (TypeError, ValueError):
+            continue
+    if solos:
+        still = []
+        for i in out:
+            c = man["clips"][i]
+            hit = None if c.get("solo") else next(
+                (t for who, t in solos if who == _person(c)
+                 and -SOLO_BEFORE <= (now - t).total_seconds() <= SOLO_AFTER), None)
+            if hit is None:
+                still.append(i)
+            else:
+                c["scheduled_at"] = (hit + timedelta(seconds=SOLO_AFTER)).strftime("%Y-%m-%dT%H:%M")
+                c.pop("stale", None)
+                moved += 1
+        out = still
+
     # Space them. Earliest slot wins the tick; the rest are pushed past the gap.
     keep, seen = [], {}
     for i in sorted(out, key=lambda j: man["clips"][j].get("scheduled_at") or ""):
