@@ -30,10 +30,10 @@
      "Lost $37 million",
      "Built something bigger"
     ],
-    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, ",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'code': 2, 'type': 'OAuthException', 'is_transie",
     "id": null,
     "tries": 0,
-    "waits": 18
+    "waits": 19
    },
    {
     "rel": "_VARIANTS/VAR__KT_ADVERSITYR2R2__HE-OWED-37-MILLION-THEN-THIS__V4.mp4",
