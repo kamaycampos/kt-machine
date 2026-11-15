@@ -1,8 +1,18 @@
 {
- "next_episode": 3,
- "built": {},
+ "next_episode": 4,
+ "built": {
+  "mv_v6v9urd_too_good_for_the_casino": {
+   "file": "KT_EPISODE/03_TOO-GOOD-FOR-THE-CASINO_94s.mp4",
+   "episode": 3,
+   "posts": "2026-11-16T12:30",
+   "music": "mystical_place_liecio.mp3",
+   "scenes": 4
+  }
+ },
  "tries": {
   "mv_v6v9urd_too_good_for_the_casino": 0
  },
- "music": []
+ "music": [
+  "mystical_place_liecio.mp3"
+ ]
 }
