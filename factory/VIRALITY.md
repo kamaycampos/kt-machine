@@ -72,3 +72,33 @@ SENDS, Mosseri's strongest signal with non-followers. [Likely] The next lever is
 4. **Transformation:** prototype a format with our own commentary (voice or on-screen lesson),
    shown to Kamay first, for the originality rule.
 5. **Loops:** end on a line that sends the viewer back to the hook.
+
+## 6. CAPTION STYLES ON SCREEN - the study (14 Nov 2026; Kamay: "study viral caption styles across platforms and keep adding them")
+**How strong the evidence is: weak.** No independent 2026 study isolates one caption style and
+measures retention. What exists is caption-tool sellers' own analyses (they sell the styles) and
+our own measurements. Treat every percentage below as a seller's number.
+| Claim | Source | Weight |
+|---|---|---|
+| 80.2% of "viral-tier" clips carry burned-in captions; 78.6% of those are animated (13.5M clips, Jan-Mar 2026) | OpusClip (sells captions) | correlation, vendor |
+| Word-by-word / 2-3 word bursts, the word being said marked, beat a static sentence | several vendor guides, all agreeing | [Likely], not controlled |
+| Fast content: pop / flash. Teaching and stories: karaoke or BUILD (the line fills in with the voice) | vendor guides | [Guessing] |
+| One accent colour, never five; heavy typeface (Montserrat Black / Bebas); a small scale-up on the key word | vendor guides | [Likely] |
+| Time-synchronised word highlighting improves comprehension | 2023 arXiv paper (language learning) | indirect |
+| The five reels Kamay sent (EPISODE_PATTERN.md 6d): tiny plain words, ONE big word, colour on the money line, words stacked around the head in a list, words behind the head | measured by us, frame by frame | [Certain] they do it; not proof it is why they went viral |
+
+**What our clips already do** (`play_ass`): 2-3 word bursts; the leaned-on word big, gold, popping in
+on its own sound; two-word captions split left / right of his face.
+**Added 14 Nov:** PLAIN captions are BUILT word by word - the line is readable ahead, each word turns
+full when he says it (`KT_PLAY_BUILD=0` switches it off). It is the one style every source agrees on
+and it is his own rule ("land on the exact second").
+**Next, in order, each proven on a real-words test clip before it goes live:**
+1. STACK - when he lists three things, the three words stack beside his head, each on its sound (his "Private Jet" reference).
+2. COLOUR ON THE MONEY LINE - a whole sum ("$250,000") in one colour, large, alone on screen.
+3. BEHIND THE HEAD - one huge word passing behind him (needs a cut-out of Kevin; Episodes first).
+**How we will know:** the daily strategist already ranks by skip rate and watch time; clips built
+from 15 Nov carry the build. Compare the 20 standard clips after it with the 20 before (same look).
+Not a look test: one look, one change at a time.
+
+Sources: opus.pro/blog/why-viral-tiktoks-use-captions · blitzcutai.com/blog/video-caption-styles-ranked ·
+blitzcutai.com/blog/word-by-word-captions-vs-full-sentence-captions · clipspeed.ai/blog/11-caption-styles-ranked-viral-performance-2026.html ·
+captions.ai/help/guides/engagement/caption-styles-by-platform · bytecap.io/blog/science-of-silent-viewing-short-form-video-retention
