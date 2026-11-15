@@ -74,10 +74,6 @@
  "voices": {
   "78": "I",
   "79": "I",
-  "536": "I",
-  "537": "I",
-  "335": "X",
-  "348": "X",
   "619": "X",
   "620": "X",
   "621": "X",
@@ -85,7 +81,16 @@
   "637": "X",
   "638": "X",
   "639": "X",
-  "640": "X"
+  "640": "X",
+  "335": "G@T",
+  "348": "G",
+  "117": "N:red",
+  "118": "N:red",
+  "119": "N:red",
+  "536": "N:gold",
+  "537": "N:gold",
+  "37": "N:violet",
+  "38": "N:violet"
  },
  "join": [
   [
@@ -93,8 +98,16 @@
    79
   ],
   [
+   117,
+   119
+  ],
+  [
    536,
    537
+  ],
+  [
+   37,
+   38
   ]
  ],
  "fix": {},
@@ -108,6 +121,10 @@
  "post": {
   "title": "Too Good For The Casino"
  },
+ "title_top": {
+  "tag": "EPISODE 3",
+  "line": "Too Good For The Casino"
+ },
  "big_from": 634,
- "music": "mystical_place_liecio.mp3"
+ "music": "floating_spades_turning_pages.mp3"
 }
