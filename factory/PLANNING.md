@@ -60,11 +60,9 @@ there. Not health (that is WB's lane). One story = one movie.
   `title` is written on the cover and above the film in gold script: 2-5 words, the thing or
   the turn ("The $1,500 Firebird", "Too Good For The Casino"), never a sentence.
 - `fix`: {"word as the transcript heard it": "as it should read"} for a mis-heard name or number.
-- `mood`: 1-3 of: casino, noir, suspense, tension, heist, nostalgic, americana, warm, emotional,
-  tender, sad, mysterious, secret, night, inspiring, documentary, storytelling, hopeful, wonder,
-  mystical. The factory scores every track against the story's own words AND these
-  (`factory/music_pick.py`) and prints the score sheet; meditation music only fits a story about
-  the mind or the universe. If your story is a kind none of these names, say so in the report.
+- `mood`: 1-3 words for the feeling (suspense, warm, nostalgic, inspiring, wonder ...). Music goes
+  under a movie clip ONLY when a track Kamay has approved by ear fits it (`music/tracks.json`
+  "approved"); otherwise the clip goes out with his voice alone. Never name a track yourself.
 - `hook`: [line one, line two] - the cover's headline, true to the story.
 - `caption`: opens with `Comment "WISH" and I'll send you ...` (WISH sends the 14 Your Wish Is
   Your Command audios + the ebook, free - promise nothing else), then the story in "Kevin

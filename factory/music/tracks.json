@@ -16,7 +16,8 @@
   "bpm": 78,
   "level_db": -14.9,
   "swing_db": 18.6,
-  "note": "Kamay 15 Nov: 'THE MUSIC IS A NO NO' (jazz under the blackjack clip)"
+  "note": "Kamay 15 Nov: 'THE MUSIC IS A NO NO' (jazz under the blackjack clip)",
+  "approved": false
  },
  "noir_jazz_detective_alex_morgan.mp3": {
   "title": "Noir Jazz Detective Midnight Mystery - alex-morgan",
@@ -35,7 +36,8 @@
   "bpm": 66,
   "level_db": -11.7,
   "swing_db": 12.5,
-  "note": "same family as the rejected jazz - not offered until he hears it"
+  "note": "same family as the rejected jazz - not offered until he hears it",
+  "approved": false
  },
  "country_blues_instrumental_alanajordan.mp3": {
   "title": "Country Blues Instrumental 01 - alanajordan",
@@ -53,7 +55,8 @@
   "bpm": 161,
   "level_db": -18.7,
   "swing_db": 11.7,
-  "note": "Kamay 15 Nov: 'THE MUSIC IS A NO NO' (guitar under the Firebird)"
+  "note": "Kamay 15 Nov: 'THE MUSIC IS A NO NO' (guitar under the Firebird)",
+  "approved": false
  },
  "documentary_atlasaudio.mp3": {
   "title": "Documentary - AtlasAudio",
@@ -70,7 +73,8 @@
   "bpm": 68,
   "level_db": -17.1,
   "swing_db": 5.6,
-  "note": "library underscore, not the modern-beat family - not offered until he hears it"
+  "note": "library underscore, not the modern-beat family - not offered until he hears it",
+  "approved": false
  },
  "the_heist_yemacakee.mp3": {
   "title": "The Heist - Yemacakee",
@@ -86,7 +90,8 @@
   "bpm": 129,
   "level_db": -23.5,
   "swing_db": 12.8,
-  "note": "not offered until he hears it"
+  "note": "not offered until he hears it",
+  "approved": false
  },
  "movie_ambient_piano_thesilentthunder.mp3": {
   "title": "Movie Ambient Piano - TheSilentThunder",
@@ -102,7 +107,9 @@
   "use": true,
   "bpm": 103,
   "level_db": -15.7,
-  "swing_db": 13.5
+  "swing_db": 13.5,
+  "approved": true,
+  "note": "Kamay approved it by ear on 14 Nov for Episode 1 and the study remake ONLY; his rule: a different track each clip"
  },
  "deep_soft_ambient_cue_samuelfjohanns.mp3": {
   "title": "Deep soft ambient cue - SamuelFJohanns",
@@ -118,7 +125,8 @@
   "bpm": 92,
   "level_db": -28.9,
   "swing_db": 13.5,
-  "note": "Kamay 14 Nov: meditation-like"
+  "note": "Kamay 14 Nov: meditation-like",
+  "approved": false
  },
  "mystical_place_liecio.mp3": {
   "title": "Mystical Place - Liecio",
@@ -132,7 +140,8 @@
   "note": "Kamay 14 Nov: meditation music, 'so off'",
   "bpm": 72,
   "level_db": -21.1,
-  "swing_db": 4.3
+  "swing_db": 4.3,
+  "approved": false
  },
  "inspiring_background_kulakovka.mp3": {
   "tags": [
@@ -143,7 +152,8 @@
   "note": "Kamay 13 Nov: too upbeat and fast",
   "bpm": 81,
   "level_db": -17.7,
-  "swing_db": 13.3
+  "swing_db": 13.3,
+  "approved": false
  },
  "motivational_epic_atlasaudio.mp3": {
   "tags": [
@@ -154,7 +164,8 @@
   "note": "Kamay 13 Nov: too upbeat and fast",
   "bpm": 112,
   "level_db": -18.5,
-  "swing_db": 7.8
+  "swing_db": 7.8,
+  "approved": false
  },
  "emotional_piano_atlasaudio.mp3": {
   "tags": [
@@ -165,7 +176,8 @@
   "note": "Kamay 13 Nov: too upbeat and fast",
   "bpm": 59,
   "level_db": -17.5,
-  "swing_db": 5.4
+  "swing_db": 5.4,
+  "approved": false
  },
  "phonk_aura_drift_alex_morgan.mp3": {
   "title": "Phonk Aura Drift Night Ride - alex-morgan",
@@ -180,10 +192,12 @@
    "casino"
   ],
   "intensity": 3,
-  "use": true,
+  "use": false,
   "bpm": 68,
   "level_db": -12.4,
-  "swing_db": 8.2
+  "swing_db": 8.2,
+  "approved": false,
+  "note": "never heard by Kamay"
  },
  "brazilian_phonk_sub_clair.mp3": {
   "title": "Brazilian Phonk - Sub_Clair",
@@ -196,10 +210,12 @@
    "drive"
   ],
   "intensity": 3,
-  "use": true,
+  "use": false,
   "bpm": 129,
   "level_db": -11.8,
-  "swing_db": 8.3
+  "swing_db": 8.3,
+  "approved": false,
+  "note": "never heard by Kamay"
  },
  "festa_no_ritmo_slowed_drmaxwave.mp3": {
   "title": "Festa no Ritmo (Slowed) - DRMaxWave",
@@ -214,7 +230,8 @@
   "note": "may carry voice chops - not offered until he hears it",
   "bpm": 152,
   "level_db": -10.2,
-  "swing_db": 12.0
+  "swing_db": 12.0,
+  "approved": false
  },
  "luxury_life_house_kulakovka.mp3": {
   "title": "Luxury Life (house) - Kulakovka",
@@ -228,10 +245,12 @@
    "storytelling"
   ],
   "intensity": 2,
-  "use": true,
+  "use": false,
   "bpm": 62,
   "level_db": -15.9,
-  "swing_db": 11.0
+  "swing_db": 11.0,
+  "approved": false,
+  "note": "never heard by Kamay"
  },
  "luxury_life_deep_kulakovka.mp3": {
   "title": "Luxury Life (deep) - Kulakovka",
@@ -245,10 +264,12 @@
    "chill"
   ],
   "intensity": 2,
-  "use": true,
+  "use": false,
   "bpm": 60,
   "level_db": -11.8,
-  "swing_db": 12.4
+  "swing_db": 12.4,
+  "approved": false,
+  "note": "never heard by Kamay"
  },
  "afro_house_vibes_watermel0n.mp3": {
   "title": "Afro House Vibes - WATERMEL0N",
@@ -263,10 +284,12 @@
    "hopeful"
   ],
   "intensity": 2,
-  "use": true,
+  "use": false,
   "bpm": 60,
   "level_db": -13.5,
-  "swing_db": 25.2
+  "swing_db": 25.2,
+  "approved": false,
+  "note": "never heard by Kamay"
  },
  "afro_instrumental_rediskasound.mp3": {
   "title": "Afro Instrumental Music - rediskasound",
@@ -279,9 +302,11 @@
    "emotional"
   ],
   "intensity": 2,
-  "use": true,
+  "use": false,
   "bpm": 108,
   "level_db": -10.2,
-  "swing_db": 17.8
+  "swing_db": 17.8,
+  "approved": false,
+  "note": "never heard by Kamay"
  }
 }

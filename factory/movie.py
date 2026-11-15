@@ -441,8 +441,7 @@ def gate(path):
         shown = info.get("scenes", 0)
         if shown < MIN_SHOWN:
             bad.append(f"only {shown} generated scene(s) on screen: under {MIN_SHOWN} it is not a movie clip")
-        if not info.get("music") and str(p.get("music", "")).lower() != "none":
-            bad.append("no music under it")
+        # no music is allowed (15 Nov 2026): only a track Kamay approved by ear may be under a clip
         if not info.get("end_card"):
             bad.append("no end card")
     d["tries"][slug] = d["tries"].get(slug, 0) + (1 if bad else 0)

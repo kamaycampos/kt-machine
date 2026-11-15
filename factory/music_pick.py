@@ -85,7 +85,7 @@ def story_needs(text, mood=()):
 
 
 def pick(text, mood=(), used=(), log=print):
-    tr = {f: t for f, t in tracks().items() if t.get("use", True) and os.path.exists(os.path.join(MUSIC, f))}
+    tr = {f: t for f, t in tracks().items() if t.get("use") and t.get("approved") and os.path.exists(os.path.join(MUSIC, f))}
     need, inten = story_needs(text, mood)
     used = list(used or [])
     rows = []
@@ -101,10 +101,15 @@ def pick(text, mood=(), used=(), log=print):
         f" (intensity {inten})")
     for score, fit, f, hit in rows[:4]:
         log(f"      {score:5.1f}  {f}  [{', '.join(hit)}]")
-    if not rows:
+    # HIS VOICE ALONE UNLESS A TRACK HAS HIS EAR'S YES (15 Nov 2026). Three rounds of tracks chosen
+    # by tags and numbers were all wrong to his ear ("meditating music", then "A NO NO"), and
+    # offering him versions to choose from was "basically guessing ... just deliver". So: only a
+    # track marked "approved" in tracks.json (he heard it and said yes) can be picked, never the
+    # one the last clip used, and only when it truly fits. Otherwise the clip has no music - his
+    # second option, and the one that never waits.
+    if not rows or rows[0][0] < MIN_FIT:
+        log("    music: none - no approved track fits this story; the clip goes out with his voice alone")
         return None
-    if rows[0][1] < MIN_FIT:
-        log(f"    music: NOTHING FITS WELL (best {rows[0][1]:.1f}) - the library needs a track for this kind of story")
     return rows[0][2]
 
 
