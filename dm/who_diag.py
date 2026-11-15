@@ -7,7 +7,7 @@ key sees it, marks the person's own as TARGET, and says what the DM bot's state 
 import hashlib, json, os, sys
 from datetime import datetime, timedelta, timezone
 sys.path.insert(0, os.path.dirname(__file__))
-os.environ["DM_BRAND"] = "AR_"
+os.environ.setdefault("DM_BRAND", "AR_")      # fb-diag runs it for AR; dm-diag for KT (DM_BRAND empty)
 import dm_reply as m
 
 WHO = (os.environ.get("WHO_SHA") or "").strip().lower()

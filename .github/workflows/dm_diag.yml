@@ -1,0 +1,28 @@
+# READ-ONLY (15 Nov 2026): "this person commented WISH on a KT post and got no message" - why?
+# Prints every comment and reply of the last day as the DM bot's key sees it. Names are never
+# printed (only US / other / TARGET). Sends nothing.
+name: dm-diag
+on:
+  workflow_dispatch:
+    inputs:
+      who_sha: {description: "sha256 of a lowercase username to mark as TARGET (optional)", default: ""}
+      days: {description: "how many days back", default: "1"}
+jobs:
+  diag:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    env:
+      DM_BRAND: ""
+      KT_CTA_KEYWORDS: ${{ secrets.KT_CTA_KEYWORDS }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+      FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+      WHO_SHA: ${{ inputs.who_sha }}
+      WHO_DAYS: ${{ inputs.days }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -q requests && python dm/who_diag.py
