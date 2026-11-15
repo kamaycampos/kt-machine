@@ -13863,6 +13863,132 @@
     "Rich hide $50 billion",
     "from you"
    ]
+  },
+  "ar_v4kacob/YOU-CANT-RECREATE-THEIR-ANCIENT-CUT": {
+   "plan": "ar_v4kacob",
+   "source": "v4kacob.mp4",
+   "brand": "AR_STARPEOPLE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "YOU-CANT-RECREATE-THEIR-ANCIENT-CUT",
+   "in": 594.0,
+   "out": 674.0,
+   "start_words": "But at Puma-punku, there",
+   "end_words": "only next to a diamond",
+   "hook": [
+    "You can't recreate",
+    "their ancient cut."
+   ]
+  },
+  "ar_v4kacob/SCIENTISTS-CALLED-IT-IMPOSSIBLE-TO-MAKE": {
+   "plan": "ar_v4kacob",
+   "source": "v4kacob.mp4",
+   "brand": "AR_STARPEOPLE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "SCIENTISTS-CALLED-IT-IMPOSSIBLE-TO-MAKE",
+   "in": 1106.0,
+   "out": 1202.0,
+   "start_words": "And I'm sure that",
+   "end_words": "to me is very fascinating",
+   "hook": [
+    "You can't copy",
+    "this ancient skull."
+   ]
+  },
+  "ar_v4kacob/EVERY-CULTURE-CARVED-THE-SAME-HELMET": {
+   "plan": "ar_v4kacob",
+   "source": "v4kacob.mp4",
+   "brand": "AR_STARPEOPLE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "EVERY-CULTURE-CARVED-THE-SAME-HELMET",
+   "in": 1268.0,
+   "out": 1325.0,
+   "start_words": "There are people that",
+   "end_words": "culture all around the world",
+   "hook": [
+    "Your textbooks missed",
+    "this ancient helmet."
+   ]
+  },
+  "ar_v4kacob/GOLD-TOYS-STILL-FLY-LIKE-JETS": {
+   "plan": "ar_v4kacob",
+   "source": "v4kacob.mp4",
+   "brand": "AR_STARPEOPLE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "GOLD-TOYS-STILL-FLY-LIKE-JETS",
+   "in": 1731.0,
+   "out": 1823.0,
+   "start_words": "So in Colombia, we",
+   "end_words": "knew something about aerodynamics",
+   "hook": [
+    "Gold toys still",
+    "fly like jets."
+   ]
+  },
+  "ar_v4kacob/ANUNNAKI-MEANS-BEINGS-FROM-THE-HEAVENS": {
+   "plan": "ar_v4kacob",
+   "source": "v4kacob.mp4",
+   "brand": "AR_STARPEOPLE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "ANUNNAKI-MEANS-BEINGS-FROM-THE-HEAVENS",
+   "in": 2648.0,
+   "out": 2701.0,
+   "start_words": "That a long, long",
+   "end_words": "bizarre looking beings with wings",
+   "hook": [
+    "Anunnaki means beings",
+    "from the heavens."
+   ]
+  },
+  "ar_v4kacob/THEY-WORSHIPPED-SOLDIERS-AS-LITERAL-GODS": {
+   "plan": "ar_v4kacob",
+   "source": "v4kacob.mp4",
+   "brand": "AR_STARPEOPLE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "THEY-WORSHIPPED-SOLDIERS-AS-LITERAL-GODS",
+   "in": 2861.0,
+   "out": 3014.0,
+   "start_words": "And ten years later",
+   "end_words": "it's highly fascinating",
+   "hook": [
+    "They worshipped soldiers",
+    "as literal gods."
+   ]
+  },
+  "ep_v5lvgyl_r4/SECRET-SOCIETIES-OF-THE-RICH": {
+   "plan": "ep_v5lvgyl_r4",
+   "source": "v5lvgyl.mp4",
+   "brand": "KT_ROLLSROYCER2R2R2",
+   "tries": 2,
+   "why": [
+    "drop KT_ROLLSROYCER2R2R2/SECRET-SOCIETIES-OF-THE-RICH: hook - 794px wide at 44px - over the 780px safe zone, will be cut off on a phone"
+   ],
+   "slug": "SECRET-SOCIETIES-OF-THE-RICH",
+   "in": 4874.0,
+   "out": 4957.64,
+   "start_words": "they're all a member",
+   "end_words": "exponential effect of power",
+   "hook": [
+    "What every billionaire joins",
+    "in secret"
+   ]
   }
  },
  "attempts": {
@@ -13946,6 +14072,6 @@
   "ar_v4khxuu_r3": 2,
   "ar_v4ki6sz_r3": 2,
   "ep_v72tj4g_r5": 2,
-  "ar_v4kacob": 1
+  "ar_v4kacob": 2
  }
 }
