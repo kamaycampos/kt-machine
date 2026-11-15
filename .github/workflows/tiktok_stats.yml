@@ -15,6 +15,7 @@ jobs:
         env:
           TT_CLIENT_KEY: ${{ secrets.TT_CLIENT_KEY }}
           TT_CLIENT_SECRET: ${{ secrets.TT_CLIENT_SECRET }}
+          TT_REFRESH_TOKEN: ${{ secrets.TT_REFRESH_TOKEN }}   # the posting key = the account the clips go to
           FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
           GH_TOKEN: ${{ github.token }}
           KT_DATA: state
@@ -22,6 +23,6 @@ jobs:
       - name: Save
         run: |
           git config user.name "kt-machine"; git config user.email "kt-machine@users.noreply.github.com"
-          git add state/tiktok.json
+          git add state/tiktok.json state/tiktok_history*.json
           git diff --staged --quiet || git commit -q -m "tiktok stats $(date -u +%FT%TZ)"
           bash factory/save_state.sh

@@ -51,11 +51,28 @@ def main():
     if not (os.environ.get("TT_CLIENT_KEY") and os.environ.get("TT_CLIENT_SECRET")):
         print("::notice::TikTok is not connected - no numbers to read.")
         return
-    if "tt_stats_token.enc" not in sh("gh", "release", "view", "sources", "-R", R, "--json", "assets",
-                                      "-q", ".assets[].name").stdout:
-        print("::notice::No TikTok stats token saved yet - run the tiktok_token workflow once.")
-        return
-    tok = token()
+    # THE ACCOUNT THE CLIPS GO TO (15 Nov 2026). This read a token saved on 22 Sept for the OLD
+    # account (@kt_student, flagged, last video 8 Oct), so for five weeks every number here
+    # described an account nothing is sent to, and 54 clips sent to the new one matched nothing.
+    # The posting key (TT_REFRESH_TOKEN, the secret the poster uses for the inbox) belongs to
+    # the account the clips really go to. It is used first; the saved token is only the fallback.
+    tok = None
+    if os.environ.get("TT_REFRESH_TOKEN"):
+        try:
+            r = post("https://open.tiktokapis.com/v2/oauth/token/", {
+                "client_key": os.environ["TT_CLIENT_KEY"], "client_secret": os.environ["TT_CLIENT_SECRET"],
+                "grant_type": "refresh_token", "refresh_token": os.environ["TT_REFRESH_TOKEN"]})
+            tok = r.get("access_token")
+            print("posting key:", ("ok, scopes " + str(r.get("scope"))) if tok else f"refused ({r.get('error')})")
+        except Exception as e:
+            print("posting key failed:", type(e).__name__, str(e)[:120])
+    if not tok:
+        if "tt_stats_token.enc" not in sh("gh", "release", "view", "sources", "-R", R, "--json", "assets",
+                                          "-q", ".assets[].name").stdout:
+            print("::notice::No TikTok token that can read numbers.")
+            return
+        print("::warning::reading with the OLD saved stats token - this may be the old account")
+        tok = token()
     fields = "id,create_time,duration,view_count,like_count,comment_count,share_count,video_description,share_url"
     vids, cursor = [], None
     for _ in range(10):
@@ -70,6 +87,19 @@ def main():
         "https://open.tiktokapis.com/v2/user/info/?fields=follower_count,following_count,likes_count,video_count",
         headers={"Authorization": f"Bearer {tok}"}), timeout=30).read())
     prof = (u.get("data") or {}).get("user") or {}
+    try:                                   # WHICH account this is, by name (needs user.info.profile)
+        u2 = json.loads(urllib.request.urlopen(urllib.request.Request(
+            "https://open.tiktokapis.com/v2/user/info/?fields=open_id,display_name,username",
+            headers={"Authorization": f"Bearer {tok}"}), timeout=30).read())
+        who = (u2.get("data") or {}).get("user") or {}
+    except Exception:
+        who = {}
+    account = who.get("username") or who.get("display_name") or who.get("open_id") or "unknown"
+    _err = (r.get("error") or {}) if isinstance(r, dict) else {}
+    if not vids and _err.get("code") not in (None, "ok"):
+        print(f"::error::TikTok would not list videos for {account}: {_err.get('code')} - {_err.get('message')}")
+        raise SystemExit(1)
+    print("ACCOUNT:", account)
 
     man = json.load(open(os.path.join(STATE, "manifest.json")))["clips"]
     ours = [c for c in man if not c["file"].startswith("AR_") and c.get("posted_at")]
@@ -88,7 +118,7 @@ def main():
         key = best[1] if best else f"unmatched/{v['id']}"
         matched[key] = {k: v.get(k) for k in ("id", "view_count", "like_count", "comment_count", "share_count", "share_url", "duration")}
         matched[key]["posted"] = vt.strftime("%Y-%m-%dT%H:%M")
-    out = {"at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M"), "profile": prof, "videos": matched}
+    out = {"at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M"), "account": account, "profile": prof, "videos": matched}
     json.dump(out, open(os.path.join(STATE, "tiktok.json"), "w"), indent=1)
 
     # THE BAN RECORD. 23 Sept 2026, Kamay: "the clips in tiktok i posted 3 of
@@ -107,6 +137,13 @@ def main():
         hist = json.load(open(hpath))
     except Exception:
         hist = {"seen": {}, "gone": []}
+    # A DIFFERENT ACCOUNT IS A NEW RECORD: the old account's clips are not "taken down", they are
+    # on another account. Its history is kept aside and this one starts clean.
+    if hist.get("account") not in (None, account) or (hist.get("account") is None and hist.get("seen") and account != "unknown"
+                                                      and not any(k in matched for k in hist["seen"])):
+        json.dump(hist, open(os.path.join(STATE, f"tiktok_history_before_{account}.json"), "w"), indent=1)
+        hist = {"seen": {}, "gone": []}
+    hist["account"] = account
     now = out["at"]
     for k, v in matched.items():
         if k.startswith("unmatched"):
