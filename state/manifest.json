@@ -16310,7 +16310,13 @@
    "hook": "The secret behind The Secret",
    "bytes": 27495550,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "episode",
@@ -16320,7 +16326,14 @@
    "cta_variant": 0,
    "cta_kind": "offer",
    "caption_exact": true,
-   "caption_link": "Or get them here now, free: https://freeyourwish.kevintrudeau.com/?ref=a43c8j"
+   "caption_link": "Or get them here now, free: https://freeyourwish.kevintrudeau.com/?ref=a43c8j",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfxWsjIl5YN/",
+    "youtube": "https://youtube.com/shorts/oR2DOBOBdes"
+   },
+   "caption_at_post": "Comment \"WISH\" and I'll send you the 14 audios. Free.\n\nThey were recorded live at a private, invitation-only event in the Alps. The people in that room paid $50,000 to be there. Kevin Trudeau taught them what he says a secret society taught him: how to use your mind to get what you want in life.\n\nThose 14 audios became Your Wish Is Your Command. They later sold for $10,000, then $5,000.\n\nIn this clip he tells you where it really came from. He says he did not invent it. It was taught to him. No college education. His dad was a welder. No money and no connections to start. And he says what he learned in that society is how he went on to create billions of dollars in sales.\n\nEpisode 1: The Secret Behind The Secret.\n\nMost people will watch this and scroll on. A few will comment \"WISH\" and start listening tonight.\n\n#kevintrudeau #yourwishisyourcommand #manifestation #lawofattraction #mindset #secretsociety",
+   "posted_at": "2026-11-15T12:52"
   },
   {
    "file": "KT_EPISODE/03_TOO-GOOD-FOR-THE-CASINO_94s.mp4",
