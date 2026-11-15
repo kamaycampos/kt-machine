@@ -1,0 +1,43 @@
+{"movie": true,
+ "source": "v5d9snl",
+ "title": "He Spotted The Brainwashing",
+ "why_movie": "A real first-person Kevin story with a place, people and a turn: a famous speaker's stage in Aspen, Colorado, the swearing and the crowd turning on itself, and Kevin recognizing the exact crowd-breakdown technique he learned in the Brotherhood. Not used for a clip or a movie before.",
+ "in": 4186.0,
+ "out": 4258.0,
+ "keep": [
+   ["I was in a room in Aspen, Colorado", "I was with a couple colleagues and this guy"],
+   ["was swearing from the stage", "it was disgusting me"],
+   ["and then you have people come up and talk", "they started cursing back"],
+   ["I know what they're doing here", "I don't want to say cultish"]
+ ],
+ "scenes": [
+   {
+    "on": "I was in a room in Aspen, Colorado",
+    "gen": "A conference room in a snowy mountain town, tall windows showing snow outside, a man in a dark suit seated among a few colleagues in folding chairs, facing a stage",
+    "move": "the seated men glance toward the stage as the room quiets"
+   },
+   {
+    "on": "was swearing from the stage",
+    "gen": "A motivational speaker on a stage gripping a microphone, mouth wide open mid-shout, a conference room of seated people below, large screens on either side of the stage",
+    "move": "the speaker on stage pounds the podium and shouts into the microphone"
+   },
+   {
+    "on": "they started cursing back",
+    "gen": "A conference room full of seated people in rows, several leaning forward with mouths open shouting toward a stage, a tense crowded room",
+    "move": "several people in the crowd rise halfway from their chairs and shout back toward the stage"
+   },
+   {
+    "on": "I know what they're doing here",
+    "gen": "A man in a dark suit sitting calm and still in a folding chair, a blurred shouting crowd around him in a conference room, soft light",
+    "move": "the seated man slowly shakes his head while the blurred crowd behind him keeps shouting"
+   }
+ ],
+ "big": ["I've been in the Brotherhood", "I know I know brainwashing"],
+ "names": [{"say": "the Brotherhood", "color": "violet"}],
+ "payoff": "I know what they're doing here",
+ "mood": ["tension", "suspense", "documentary"],
+ "hook": ["THE BRAINWASHING TRICK", "on a motivational stage"],
+ "cta_keyword": "WISH",
+ "caption": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says he was once in a packed room in Aspen, Colorado, watching one of the country's best-known motivational speakers work a crowd.\n\nThe guy wouldn't stop swearing from the stage. Then he turned it on the audience, needling them until they started cursing back at him, louder and louder.\n\nKevin sat there and recognized it instantly. He'd learned the real version of it inside the Brotherhood years before: break someone down first, then they'll follow you anywhere.\n\n{episode}\n\nThe 14 audios are Kevin teaching the mind techniques that actually move you forward, no shouting required. Recorded live at a private event in the Alps.\n\nComment \"WISH\" if you want them.\n\n#kevintrudeau #mindset #personaldevelopment #brainwashing #selfimprovement #yourwishisyourcommand",
+ "send": "Someone burned by a hype-speaker sends it to a friend chasing motivation seminars, in anger at being played."
+}
