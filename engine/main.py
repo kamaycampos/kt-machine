@@ -227,7 +227,12 @@ def due_clips(man):
             continue
         ts = c.get("posted_at") or c.get("scheduled_at")
         try:
-            solos.append((_person(c), datetime.strptime(ts[:16], "%Y-%m-%dT%H:%M")))
+            # A DAILY movie clip keeps a shorter stage (14 Nov 2026): with one every day, 6 h + 10 h
+            # would leave the ordinary 4-6 clips only the night. Our own 304 reels put the gain at
+            # 3 h clear on both sides (328-399 median views against 241-288), so the automatic
+            # movie clip carries "solo_hours": [3, 3]; a hand-made Episode keeps 6 and 10.
+            _b, _a = (c.get("solo_hours") or [SOLO_BEFORE / 3600, SOLO_AFTER / 3600])[:2]
+            solos.append((_person(c), datetime.strptime(ts[:16], "%Y-%m-%dT%H:%M"), _b * 3600, _a * 3600))
         except (TypeError, ValueError):
             continue
     if solos:
@@ -235,12 +240,12 @@ def due_clips(man):
         for i in out:
             c = man["clips"][i]
             hit = None if c.get("solo") else next(
-                (t for who, t in solos if who == _person(c)
-                 and -SOLO_BEFORE <= (now - t).total_seconds() <= SOLO_AFTER), None)
+                ((t, _a) for who, t, _b, _a in solos if who == _person(c)
+                 and -_b <= (now - t).total_seconds() <= _a), None)
             if hit is None:
                 still.append(i)
             else:
-                c["scheduled_at"] = (hit + timedelta(seconds=SOLO_AFTER)).strftime("%Y-%m-%dT%H:%M")
+                c["scheduled_at"] = (hit[0] + timedelta(seconds=hit[1])).strftime("%Y-%m-%dT%H:%M")
                 c.pop("stale", None)
                 moved += 1
         out = still

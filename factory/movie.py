@@ -489,7 +489,7 @@ def queue(path):
     json.dump({"slug": slug, "episode": n, "scenes": info.get("scenes"), "entry": {
         "file": rel, "caption": p["caption"].replace("{episode}", f"Episode {n}: {p['title']}."),
         "hook": " ".join(p["hook"]), "bytes": os.path.getsize(stem + ".mp4"), "done": False, "status": {},
-        "media_tag": tag, **({"cover": True} if len(covers) == 2 else {}), "look": "movie", "solo": True,
+        "media_tag": tag, **({"cover": True} if len(covers) == 2 else {}), "look": "movie", "solo": True, "solo_hours": [3, 3],
         "cta_keyword": key, "cta_variant": 0, "cta_kind": "offer",
         "caption_exact": True, "caption_link": OFFERS[key], "movie": slug, "music": info.get("music")}},
         open(os.path.join(OUT, f"{slug}_entry.json"), "w"), indent=1)
@@ -517,7 +517,7 @@ def enter(path):
     d["music"] = (d.get("music", []) + [entry.get("music")])[-40:]
     d["next_episode"] = max(int(d["next_episode"]), e["episode"] + 1)
     json.dump(d, open(DONE, "w"), indent=1)
-    print(f"MOVIE QUEUED {entry['file']}: posts {entry['scheduled_at']} New York, alone (6 h clear before, 10 h after)")
+    print(f"MOVIE QUEUED {entry['file']}: posts {entry['scheduled_at']} New York, alone (3 h clear before and after)")
     return 0
 
 
