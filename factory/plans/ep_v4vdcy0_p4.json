@@ -1,0 +1,9 @@
+{"source": "v4vdcy0.mp4", "brand": "KT_SEEDFAITH", "test": false,
+ "note": "15 Nov 2026 - second pass for 'The Secrets of Happiness & Joy' (Rumble v4vdcy0). Weekly agent, new arc per PLANNING.md 2d; _p2 and _p3 are already taken so this is _p4. Most of the unused minutes are Global Information Network / fan-club testimonials and recruitment (a guest's own story on camera, or a straight membership pitch - skip-lane). The '92-year-old, wife hit by a bus, let it go in 5 days' story looked fresh from the blocks.txt reading, but check_plan.py caught that it was already cut as CRIED-FIVE-DAYS-THEN-LET-GO in ep_v4vdcy0_p2.json (1005-1131s) - the blocks.txt USED markers hadn't caught up, so it is dropped rather than repeating a lesson from different minutes. This pass is one clean, unused Kevin-only moment instead: his own giving habit.",
+ "clips": [
+   {"slug": "GAVE-AWAY-80-PERCENT-OF-HIS-PAY", "in": 4693.08, "out": 4746.72,
+    "start_words": "In my life, I've given", "end_words": "You can't out-give the universe",
+    "hook": ["80% of his income", "given away"],
+    "caption": "Kevin Trudeau says he used to give away as much as 80% of every paycheck.\n\nBack in the 1980s, when a check came in, he covered rent, groceries and gas first. Whatever was left, sometimes most of it, went straight to a church or a homeless shelter, in cash, handed over anonymously.\n\nHe calls it seed faith: give money away expecting nothing back, and the universe gives back more than you handed over.\n\nYou can't out-give the universe, he says.\n\nCould you give away 80% of your next paycheck?\n\n#kevintrudeau #givingback #seedfaith #manifestation #generosity #wealthmindset",
+    "send": "Someone stuck fearing there's never enough sends it to a friend who hoards every dollar, awe at giving away what he couldn't spare."}
+ ]}
