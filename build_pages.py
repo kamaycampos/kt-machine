@@ -310,6 +310,51 @@ def board(cs):
     # description." This is the page he already posts TikTok from, so it sits at the very top:
     # the video, the description, the hour until which Instagram waits for him (engine/main.py,
     # IG_HAND) - after that the machine posts it there by itself, voice only.
+    # WHEN, WHAT, WHERE (15 Nov 2026, Kamay: "how do I know when what where?"). The movie clips'
+    # own timetable, first thing on the page: the last ones that went out, the ones coming with
+    # their day and hour, and the stories still being made.
+    import glob as _glob
+    import re as _re
+    eps = [c for c in cs if c["file"].startswith("KT_EPISODE/") and not c.get("_who")]
+    eps.sort(key=lambda c: c.get("posted_at") or c.get("scheduled_at") or "")
+    rows = []
+
+    def _day(t):
+        try:
+            return datetime.strptime(t[:16], "%Y-%m-%dT%H:%M").strftime("%a %d %b, %I:%M %p").replace(" 0", " ")
+        except (ValueError, TypeError):
+            return "day not set"
+
+    for c in eps[-6:]:
+        m_ = _re.search(r"Episode (\d+): ([^\n]+?)\.?\s*(?:\n|$)", c.get("caption") or "")
+        name = f"Episode {m_[1]} - {m_[2]}" if m_ else c["file"].split("/")[-1][:-4]
+        st = c.get("status") or {}
+        if c.get("posted_at"):
+            on = [n for n, k in (("Instagram", "instagram"), ("YouTube", "youtube"), ("Facebook", "facebook")) if st.get(k) == "posted"]
+            where = "POSTED on " + (" + ".join(on) or "nothing yet")
+            if "inbox" in str(st.get("tiktok")):
+                where += "; TikTok: in your inbox, tap post"
+            if c.get("ig_hand") and not c.get("ig_hand_done"):
+                where += f"; INSTAGRAM WAITS FOR YOU until {(c.get('ig_hand_due') or '')[11:] or '21:00'}, then posts by itself"
+            rows.append((_day(c["posted_at"]), name, where, "#7bd88f"))
+        else:
+            where = "comes out by itself on YouTube + your TikTok inbox"
+            where += ("; Instagram waits for you until 9 pm, then posts by itself" if c.get("ig_hand") else " + Instagram")
+            rows.append((_day(c.get("scheduled_at")), name, where, "#f5c542"))
+    try:
+        _built = json.load(open(os.path.join(HERE, "factory", "movies", "_done.json")))["built"]
+        for pf in sorted(_glob.glob(os.path.join(HERE, "factory", "movies", "mv_*.json"))):
+            if os.path.basename(pf)[:-5] not in _built:
+                rows.append(("next free day, 12:30 PM", json.load(open(pf)).get("title", "a new story"),
+                             "being made by the machine - it gets its day when it is finished", "#9aa0a6"))
+    except (OSError, ValueError, KeyError):
+        pass
+    if rows:
+        p += ["<div class='c' data-who='KAMAY' style='border:1px solid #f5c542'>"
+              "<div class=w style='color:#f5c542;font-weight:700'>MOVIE CLIPS &middot; WHEN, WHAT, WHERE (one a day, 12:30 pm Washington time)</div>"
+              + "".join(f"<div class=fn style='margin-top:8px'><b style='color:{col}'>{html.escape(d)}</b> &middot; "
+                        f"<b>{html.escape(n)}</b><br>{html.escape(w)}</div>" for d, n, w, col in rows)
+              + "</div>"]
     hand = [c for c in cs if c.get("ig_hand") and not c.get("ig_hand_done") and not c.get("_who")
             and not c.get("done")]
     hand.sort(key=lambda c: c.get("posted_at") or c.get("scheduled_at") or "")
