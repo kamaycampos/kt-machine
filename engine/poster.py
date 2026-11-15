@@ -823,6 +823,19 @@ def instagram(path, caption, public_url, clip=None, trial=False):
         return clash
     if not public_url:
         return "no public URL available (KT_BASE_URL unset)"
+    # INSTAGRAM GETS THE WIDE FILM (15 Nov 2026). Kamay, comparing Episode 1 with the competitor's:
+    # "ours is way lower, it looks pixeled, his looks neat, perfect". Measured on the two live
+    # reels: Instagram serves ours at 720x1279 with Kevin's picture a 405-pixel band inside it;
+    # theirs IS the wide film, 1916x1078 - about seven times the pixels. A clip marked "wide"
+    # has that film beside it (<clip>__wide.mp4, 1920x1080) and Instagram is given it; the
+    # upright file stays for YouTube Shorts and TikTok, which need upright.
+    if (clip or {}).get("wide") and not trial and str(public_url).endswith(".mp4"):
+        try:
+            _wu = str(public_url)[:-4] + "__wide.mp4"
+            if requests.head(_wu, timeout=T, allow_redirects=True).status_code == 200:
+                _cover_base, public_url = str(public_url), _wu
+        except Exception:
+            pass
     body = {"media_type": "REELS", "video_url": public_url,
             "caption": caption[:2100],
             "share_to_feed": "true", "access_token": tok}
@@ -863,7 +876,7 @@ def instagram(path, caption, public_url, clip=None, trial=False):
     # file is really there - a missing cover must never cost the post.
     if (clip or {}).get("cover") and str(public_url).endswith(".mp4"):
         try:
-            _cu = str(public_url)[:-4] + "__cover.jpg"
+            _cu = str(public_url)[:-4].replace("__wide", "") + "__cover.jpg"
             if requests.head(_cu, timeout=T, allow_redirects=True).status_code == 200:
                 body["cover_url"] = _cu
                 body.pop("thumb_offset", None)

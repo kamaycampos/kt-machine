@@ -506,11 +506,14 @@ def queue(path):
     import media_store
     gh = shutil.which("gh") or os.path.join(K, "bin", "gh")
     store = media_store.Store(gh, REPO)
-    tag = store.room(1 + len(covers))
+    tag = store.room(2 + len(covers))
     if was:                                    # the replacement goes where the old film is
         _m = json.load(open(os.path.join(ROOT, "state", "manifest.json")))["clips"]
         tag = next((c.get("media_tag", "media") for c in _m if c["file"] == rel), tag)
-    for f in [stem + ".mp4"] + covers:
+    # the WIDE film travels with the clip: Instagram is given it (poster.instagram, "wide")
+    wide = stem + "__wide.mp4"
+    shutil.copy(os.path.join(OUT, f"{slug}.mp4"), wide)
+    for f in [stem + ".mp4", wide] + covers:
         r = subprocess.run([gh, "release", "upload", tag, f, "--clobber", "-R", REPO], capture_output=True, text=True)
         if r.returncode:
             raise SystemExit(f"UPLOAD FAILED {os.path.basename(f)}: {r.stderr[-200:]}")
@@ -523,7 +526,7 @@ def queue(path):
     json.dump({"slug": slug, "episode": n, "scenes": info.get("scenes"), "entry": {
         "file": rel, "caption": p["caption"].replace("{episode}", f"Episode {n}: {p['title']}."),
         "hook": " ".join(p["hook"]), "bytes": os.path.getsize(stem + ".mp4"), "done": False, "status": {},
-        "media_tag": tag, **({"cover": True} if len(covers) == 2 else {}), "look": "movie", "solo": True, "solo_hours": [3, 3],
+        "media_tag": tag, **({"cover": True} if len(covers) == 2 else {}), "look": "movie", "solo": True, "solo_hours": [3, 3], "wide": True,
         "cta_keyword": key, "cta_variant": 0, "cta_kind": "offer",
         "caption_exact": True, "caption_link": OFFERS[key], "movie": slug, "music": info.get("music"),
         # no music in the film = Instagram waits for Kamay until the evening (engine/main.py, IG_HAND):
@@ -548,7 +551,7 @@ def enter(path):
         if old.get("posted_at") or old.get("done"):
             print(entry["file"], "has already posted - nothing changed")
             return 0
-        for k_ in ("bytes", "music", "caption", "hook", "cover", "media_tag", "solo_hours", "ig_hand"):
+        for k_ in ("bytes", "music", "caption", "hook", "cover", "media_tag", "solo_hours", "ig_hand", "wide"):
             if k_ in entry:
                 old[k_] = entry[k_]
         json.dump(man, open(mp, "w"), indent=1)

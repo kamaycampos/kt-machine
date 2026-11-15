@@ -16362,7 +16362,8 @@
    "movie": "mv_v6v9urd_too_good_for_the_casino",
    "music": null,
    "scheduled_at": "2026-11-17T12:30",
-   "ig_hand": true
+   "ig_hand": true,
+   "wide": true
   },
   {
    "file": "AR_BIRTHRIGHT/01_ONE-CLASS-YOU-CAN-NEVER-JOIN_45s.mp4",
@@ -16573,7 +16574,8 @@
    "caption_link": "Or get them here now, free: https://freeyourwish.kevintrudeau.com/?ref=a43c8j",
    "movie": "ours_ep2",
    "music": null,
-   "ig_hand": true
+   "ig_hand": true,
+   "wide": true
   }
  ]
 }
