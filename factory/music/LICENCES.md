@@ -24,3 +24,15 @@ All Pixabay Content License; each page read on 15 Nov 2026 and it did NOT say "C
 | documentary_atlasaudio.mp3 | "Documentary" by AtlasAudio | pixabay.com/music/orchestral-documentary-630777/ |
 | the_heist_yemacakee.mp3 | "The Heist" by Yemacakee (intense: only for a chase) | pixabay.com/music/crime-scene-the-heist-600706/ |
 Nobody has LISTENED to these five yet: Kamay judges by ear.
+
+## Added 15 Nov 2026, second round: the modern-beat family (see the note at the top of `factory/music_pick.py`)
+All Pixabay Content License; each page read 15 Nov 2026 and did NOT say "Content ID Registered". None heard by anyone yet.
+| File | Track | Page |
+|---|---|---|
+| phonk_aura_drift_alex_morgan.mp3 | "Phonk Aura Drift Night Ride" by alex-morgan | pixabay.com/music/phonk-phonk-aura-drift-night-ride-587401/ |
+| brazilian_phonk_sub_clair.mp3 | "Brazilian Phonk" by Sub_Clair | pixabay.com/music/phonk-brazilian-phonk-571897/ |
+| festa_no_ritmo_slowed_drmaxwave.mp3 | "Festa no Ritmo (Slowed)" by DRMaxWave (may carry voice chops: off) | pixabay.com/music/upbeat-festa-no-ritmo-slowed-dr-maxwave-429383/ |
+| luxury_life_house_kulakovka.mp3 | "Luxury Life" by Kulakovka (house) | pixabay.com/music/house-luxury-life-618587/ |
+| luxury_life_deep_kulakovka.mp3 | "Luxury Life" by Kulakovka (deep) | pixabay.com/music/house-luxury-life-620531/ |
+| afro_house_vibes_watermel0n.mp3 | "Afro House Vibes" by -WATERMEL0N- | pixabay.com/music/afrobeat-afro-house-vibes-550506/ |
+| afro_instrumental_rediskasound.mp3 | "Afro Instrumental Music" by rediskasound | pixabay.com/music/afrobeat-afro-instrumental-music-565682/ |

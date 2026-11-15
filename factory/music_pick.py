@@ -35,22 +35,30 @@ K = os.path.expanduser("~/Kamay")
 FF = os.path.join(K, "bin", "ffmpeg") if os.path.exists(os.path.join(K, "bin", "ffmpeg")) else "ffmpeg"
 MIN_FIT = 2.0
 
+# THE FAMILY (15 Nov 2026). Kamay on jazz under the blackjack story and guitar under the car
+# story: "THE MUSIC IS A NO NO". Looked up what the reels we are measured against really use:
+# their 233K "Private Jet" Episode carries the Instagram track "Kobe Mane - VIOLENTO" (420,000
+# reels use it; phonk), their Alps Episode "Da Real Emkay - Casablanca (Addictive Mix)" (a deep
+# house producer). Not library underscore, not jazz, not ambient: MODERN BEATS. Instagram's own
+# tracks cannot be attached through the posting API, so the library now holds royalty-free
+# tracks of that family (phonk / deep house / afro house) and the themes below point INTO it.
+# A track outside the family is "use": false until Kamay has heard it.
 # what Kevin's words are about -> what the music should be. (theme, intensity, words)
 LEXICON = [
-    (["casino", "noir", "suspense", "jazz"], 2,
+    (["phonk", "dark", "casino", "suspense"], 2,
      r"casino|blackjack|black jack|dealer|poker|roulette|\bcards?\b|\bbet\b|gambl|chips|vegas|reno|\bdeck\b"),
-    (["suspense", "tension", "noir"], 2,
+    (["phonk", "dark", "tension"], 2,
      r"police|arrest|fbi|prison|jail|judge|court|guards?|gorillas|cheat|caught|escape|chase|threat|mafia|godfather"),
-    (["nostalgic", "americana", "warm"], 2,
+    (["warm", "chill", "nostalgic", "afro"], 2,
      r"my dad|my father|my mother|my mom|grandfather|grandmother|when i was (a kid|young|\d+)|first car|19[3-8]\d|"
      r"garage|newspaper|high school|grew up|childhood|small town|convertible|camaro|firebird|cadillac"),
-    (["emotional", "tender", "sad"], 1,
+    (["warm", "chill", "emotional"], 2,
      r"never came home|died|passed away|funeral|vietnam|\bwar\b|cried|tears|lost (his|her|my)|goodbye|broke my heart"),
-    (["mysterious", "secret", "night"], 2,
+    (["dark", "phonk", "night"], 2,
      r"secret societ|brotherhood|skull and bones|hidden|classified|nobody knows|they don't want|initiat|the lodge|freemason"),
-    (["inspiring", "documentary", "storytelling"], 2,
+    (["luxury", "house", "inspiring"], 2,
      r"million|billion|company|business|\bdeal\b|sold|investor|private jet|yacht|rolls|mansion|wall street|built"),
-    (["wonder", "mystical", "ambient"], 1,
+    (["chill", "house", "wonder"], 2,
      r"universe|energy|frequenc|vibration|manifest|subconscious|consciousness|meditat|alien|quantum|the mind|brain wave"),
 ]
 

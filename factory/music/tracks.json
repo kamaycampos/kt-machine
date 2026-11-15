@@ -12,10 +12,11 @@
    "storytelling"
   ],
   "intensity": 2,
-  "use": true,
+  "use": false,
   "bpm": 78,
   "level_db": -14.9,
-  "swing_db": 18.6
+  "swing_db": 18.6,
+  "note": "Kamay 15 Nov: 'THE MUSIC IS A NO NO' (jazz under the blackjack clip)"
  },
  "noir_jazz_detective_alex_morgan.mp3": {
   "title": "Noir Jazz Detective Midnight Mystery - alex-morgan",
@@ -30,10 +31,11 @@
    "secret"
   ],
   "intensity": 2,
-  "use": true,
+  "use": false,
   "bpm": 66,
   "level_db": -11.7,
-  "swing_db": 12.5
+  "swing_db": 12.5,
+  "note": "same family as the rejected jazz - not offered until he hears it"
  },
  "country_blues_instrumental_alanajordan.mp3": {
   "title": "Country Blues Instrumental 01 - alanajordan",
@@ -47,10 +49,11 @@
    "guitar"
   ],
   "intensity": 2,
-  "use": true,
+  "use": false,
   "bpm": 161,
   "level_db": -18.7,
-  "swing_db": 11.7
+  "swing_db": 11.7,
+  "note": "Kamay 15 Nov: 'THE MUSIC IS A NO NO' (guitar under the Firebird)"
  },
  "documentary_atlasaudio.mp3": {
   "title": "Documentary - AtlasAudio",
@@ -63,10 +66,11 @@
    "hopeful"
   ],
   "intensity": 2,
-  "use": true,
+  "use": false,
   "bpm": 68,
   "level_db": -17.1,
-  "swing_db": 5.6
+  "swing_db": 5.6,
+  "note": "library underscore, not the modern-beat family - not offered until he hears it"
  },
  "the_heist_yemacakee.mp3": {
   "title": "The Heist - Yemacakee",
@@ -78,10 +82,11 @@
    "chase"
   ],
   "intensity": 3,
-  "use": true,
+  "use": false,
   "bpm": 129,
   "level_db": -23.5,
-  "swing_db": 12.8
+  "swing_db": 12.8,
+  "note": "not offered until he hears it"
  },
  "movie_ambient_piano_thesilentthunder.mp3": {
   "title": "Movie Ambient Piano - TheSilentThunder",
@@ -109,10 +114,11 @@
    "ambient"
   ],
   "intensity": 1,
-  "use": true,
+  "use": false,
   "bpm": 92,
   "level_db": -28.9,
-  "swing_db": 13.5
+  "swing_db": 13.5,
+  "note": "Kamay 14 Nov: meditation-like"
  },
  "mystical_place_liecio.mp3": {
   "title": "Mystical Place - Liecio",
@@ -122,8 +128,8 @@
    "ambient"
   ],
   "intensity": 1,
-  "use": true,
-  "note": "meditation music: only for universe / mind / energy stories (Kamay, 15 Nov: 'so off' on the blackjack story)",
+  "use": false,
+  "note": "Kamay 14 Nov: meditation music, 'so off'",
   "bpm": 72,
   "level_db": -21.1,
   "swing_db": 4.3
@@ -160,5 +166,122 @@
   "bpm": 59,
   "level_db": -17.5,
   "swing_db": 5.4
+ },
+ "phonk_aura_drift_alex_morgan.mp3": {
+  "title": "Phonk Aura Drift Night Ride - alex-morgan",
+  "page": "pixabay.com/music/phonk-phonk-aura-drift-night-ride-587401/",
+  "tags": [
+   "beat",
+   "phonk",
+   "dark",
+   "suspense",
+   "tension",
+   "night",
+   "casino"
+  ],
+  "intensity": 3,
+  "use": true,
+  "bpm": 68,
+  "level_db": -12.4,
+  "swing_db": 8.2
+ },
+ "brazilian_phonk_sub_clair.mp3": {
+  "title": "Brazilian Phonk - Sub_Clair",
+  "page": "pixabay.com/music/phonk-brazilian-phonk-571897/",
+  "tags": [
+   "beat",
+   "phonk",
+   "dark",
+   "tension",
+   "drive"
+  ],
+  "intensity": 3,
+  "use": true,
+  "bpm": 129,
+  "level_db": -11.8,
+  "swing_db": 8.3
+ },
+ "festa_no_ritmo_slowed_drmaxwave.mp3": {
+  "title": "Festa no Ritmo (Slowed) - DRMaxWave",
+  "page": "pixabay.com/music/upbeat-festa-no-ritmo-slowed-dr-maxwave-429383/",
+  "tags": [
+   "beat",
+   "phonk",
+   "slowed"
+  ],
+  "intensity": 2,
+  "use": false,
+  "note": "may carry voice chops - not offered until he hears it",
+  "bpm": 152,
+  "level_db": -10.2,
+  "swing_db": 12.0
+ },
+ "luxury_life_house_kulakovka.mp3": {
+  "title": "Luxury Life (house) - Kulakovka",
+  "page": "pixabay.com/music/house-luxury-life-618587/",
+  "tags": [
+   "beat",
+   "house",
+   "luxury",
+   "inspiring",
+   "documentary",
+   "storytelling"
+  ],
+  "intensity": 2,
+  "use": true,
+  "bpm": 62,
+  "level_db": -15.9,
+  "swing_db": 11.0
+ },
+ "luxury_life_deep_kulakovka.mp3": {
+  "title": "Luxury Life (deep) - Kulakovka",
+  "page": "pixabay.com/music/house-luxury-life-620531/",
+  "tags": [
+   "beat",
+   "house",
+   "luxury",
+   "inspiring",
+   "warm",
+   "chill"
+  ],
+  "intensity": 2,
+  "use": true,
+  "bpm": 60,
+  "level_db": -11.8,
+  "swing_db": 12.4
+ },
+ "afro_house_vibes_watermel0n.mp3": {
+  "title": "Afro House Vibes - WATERMEL0N",
+  "page": "pixabay.com/music/afrobeat-afro-house-vibes-550506/",
+  "tags": [
+   "beat",
+   "afro",
+   "house",
+   "warm",
+   "chill",
+   "nostalgic",
+   "hopeful"
+  ],
+  "intensity": 2,
+  "use": true,
+  "bpm": 60,
+  "level_db": -13.5,
+  "swing_db": 25.2
+ },
+ "afro_instrumental_rediskasound.mp3": {
+  "title": "Afro Instrumental Music - rediskasound",
+  "page": "pixabay.com/music/afrobeat-afro-instrumental-music-565682/",
+  "tags": [
+   "beat",
+   "afro",
+   "warm",
+   "hopeful",
+   "emotional"
+  ],
+  "intensity": 2,
+  "use": true,
+  "bpm": 108,
+  "level_db": -10.2,
+  "swing_db": 17.8
  }
 }
