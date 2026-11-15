@@ -378,7 +378,7 @@ def spec(path):
             if w == norm(heard) and inside(i):
                 fix[str(i)] = shown
     out = dict(stub, keeps=keeps, scenes=scenes, voices=voices, join=joins, fix=fix, tighten=0.85,
-               end_card="end_kamay.png", end_secs=4.0, music_db=-27, fx=True, fx_db=-31,
+               cap_y=800, end_card="end_kamay.png", end_secs=4.0, music_db=-27, fx=True, fx_db=-31,
                post={"title": p["title"]})
     if p.get("payoff"):
         hit = find(wn, p["payoff"], lo=keeps[-1][0], hi=keeps[-1][1] + 1, last=True)

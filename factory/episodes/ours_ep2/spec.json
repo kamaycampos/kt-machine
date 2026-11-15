@@ -52,17 +52,42 @@
  "scenes": [
   {
    "src": "v_a_ad.mp4",
-   "from": 84,
+   "from": 104,
    "to": 113,
    "raw": true,
-   "start": 0.2
+   "start": 0.1,
+   "slow": 1.7
+  },
+  {
+   "src": "v_b_door.mp4",
+   "from": 213,
+   "to": 224,
+   "raw": true,
+   "start": 0.1
   },
   {
    "src": "v_c_garage.mp4",
    "from": 269,
-   "to": 284,
+   "to": 290,
    "raw": true,
-   "start": 0.2
+   "start": 0.1,
+   "slow": 1.4
+  },
+  {
+   "src": "v_d_reveal.mp4",
+   "from": 331,
+   "to": 352,
+   "raw": true,
+   "start": 0.1,
+   "slow": 1.35
+  },
+  {
+   "src": "v_e_son.mp4",
+   "from": 373,
+   "to": 386,
+   "raw": true,
+   "start": 0.1,
+   "slow": 1.3
   }
  ],
  "fix": {
@@ -114,5 +139,6 @@
  "fx_db": -31,
  "post": {
   "title": "Episode 2 (The $1,500 Firebird)"
- }
+ },
+ "cap_y": 800
 }

@@ -21,6 +21,7 @@ spec.json (every number is a WORD INDEX from the "list" run, never a guessed sec
   states [{from, to, show: [[pos, [[text, voice], ..]], ..]}]   a hand-placed layout for a stretch
                        (pos: C centre, L left, R right, B below, T above)
   end_card, end_secs   the still that closes it
+  cap_y                the height of the caption line (560 = the centre; 800 = under Kevin's chin)
 """
 import json, os, re, subprocess, sys
 
@@ -164,8 +165,12 @@ VOICE = {            # font file, size, look, capitals. Re-measured frame by fra
     "T": ("poppins900.ttf", 96, "teal", False),
     "FL": ("titanone400.ttf", 150, "plain", False),
 }
-POS = {"C": (W // 2, 560), "L": (330, 560), "R": (1590, 560), "B": (W // 2, 870), "T": (W // 2, 250),
-       "C-": (W // 2, 470), "C+": (W // 2, 640)}
+# WHERE THE WORDS SIT (14 Nov 2026, Kamay on the Episode 2 draft: captions "off Kevin's face").
+# In the centre (560) a line lies across his chin and mouth whenever he fills the picture.
+# "cap_y" moves the centre line; 800 is his chest in every framing measured so far.
+_CY = int(SP.get("cap_y", 560))
+POS = {"C": (W // 2, _CY), "L": (330, 560), "R": (1590, 560), "B": (W // 2, 870), "T": (W // 2, 250),
+       "C-": (W // 2, _CY - 90), "C+": (W // 2, _CY + 80)}
 _fonts = {}
 
 
@@ -436,8 +441,12 @@ for k_, sc in enumerate(SP.get("scenes") or []):
                  f"eq=contrast=1.05:saturation=0.92")
     elif s_.lower().endswith(".mp4"):          # a stock clip kept beside the spec (its licence in stock_licences.json)
         path = os.path.join(EDIR, s_)
-        inputs += ["-ss", f"{float(sc.get('start', 0.0)):.2f}", "-t", f"{d_ + 0.2:.2f}", "-i", path]
-        chain = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps=30"
+        # "slow": 1.5 plays a short generated clip one and a half times as long (in-between
+        # frames blended), so a 5 s scene can stay up for the whole sentence it belongs to.
+        _slow = float(sc.get("slow", 1.0))
+        inputs += ["-ss", f"{float(sc.get('start', 0.0)):.2f}", "-t", f"{(d_ + 0.2) / _slow:.2f}", "-i", path]
+        chain = ((f"setpts={_slow}*PTS,minterpolate=fps=30:mi_mode=blend," if _slow != 1.0 else "")
+                 + f"scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{H},fps=30"
                  + ("" if sc.get("raw") else ",eq=contrast=1.05:saturation=0.92"))
     else:
         path = os.path.join(EDIR, s_)
