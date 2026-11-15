@@ -16354,7 +16354,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-15T08:30",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_BIRTHRIGHT/01_THE-EU-ANSWERS-TO-NO-VOTER_51s.mp4",
@@ -16364,7 +16368,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-15T10:01",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_BIRTHRIGHT/02_YOUR-FOUNDING-FATHERS-BANNED-THE-POOR_45s.mp4",
@@ -16374,7 +16382,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-15T09:04",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "KT_ROLLSROYCER2R2R2/01_PROOF-BEFORE-TEACHING_72s.mp4",
@@ -16385,7 +16397,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-16T08:30",
+   "cta_keyword": "MONEY",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   }
  ]
 }
