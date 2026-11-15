@@ -116,7 +116,7 @@
  "end_card": "end_kamay.png",
  "end_secs": 4.0,
  "music_db": -27,
- "fx": true,
+ "fx": false,
  "fx_db": -31,
  "post": {
   "title": "Too Good For The Casino"
@@ -125,6 +125,5 @@
   "tag": "EPISODE 3",
   "line": "Too Good For The Casino"
  },
- "big_from": 634,
- "music": "floating_spades_turning_pages.mp3"
+ "big_from": 634
 }
