@@ -500,7 +500,12 @@ def queue(path):
         c, t = poster.make(still, f"EPISODE {n}", p["title"], stem)
         covers = [f for f in (c, t) if f and os.path.exists(f)]
     except Exception as e:
-        print("cover skipped:", type(e).__name__, e)
+        print("cover failed:", type(e).__name__, e)
+    # NO MOVIE CLIP WITHOUT ITS COVER (15 Nov 2026, Kamay: "make sure all movie clips get their
+    # cover"). The poster is what the grid shows and what he adds by hand; a clip whose cover
+    # could not be made is not queued - the next run tries again.
+    if len(covers) < 2:
+        raise SystemExit("MOVIE NOT QUEUED: its cover could not be made")
     if os.environ.get("MOVIE_TEST"):
         print(f"TEST BUILD: {rel} stays in the previews release, nothing queued")
         return 0
