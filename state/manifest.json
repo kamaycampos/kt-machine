@@ -16265,14 +16265,27 @@
    "hook": "A general's real speech before death",
    "bytes": 46369137,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-15T16:55",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Dfx0fSlDgeJ/",
+    "youtube": "https://youtube.com/shorts/5JWGveAYpX4"
+   },
+   "caption_at_post": "Kevin Trudeau says one scene in the movie Patton is a masterclass in leadership.\n\nGeneral Patton's convoy is stuck in the mud, chaos everywhere, tempers flaring. He gets out, stops, looks around, assesses the situation, then calmly says, \"We're going to get this done right now.\" Not I. We. Then he starts directing people and motivating them until the job gets done.\n\nThe speech at the start of that movie isn't fiction either. It's the real speech Patton gave his army before they went into Normandy, men who knew they could die the next day.\n\nWhat would your team do if you led like that?\n\n#kevintrudeau #leadership #success #mindset #business #history",
+   "posted_at": "2026-11-15T17:13"
   },
   {
    "file": "KT_VORTEX/01_MEGA-MEMORY-450-MILLION-ONE-TAKE_36s.mp4",
