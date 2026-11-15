@@ -48,6 +48,16 @@ WINDOW = timedelta(days=7)           # Meta's private-reply window
 # newest few to stay far under Meta's rate limits; the 20-minute sweep reads 100.
 RECENT_POSTS = int(os.environ.get("DM_RECENT_POSTS") or 25)
 MAX_PER_RUN = 60                     # stay far under Meta's messaging limits
+PAGE_CAP = int(os.environ.get("DM_PAGE_CAP") or 40)      # pages of 50 comments read per post per pass
+WITHHELD = {}                        # media id -> what Instagram counted but did not hand over (or None)
+
+
+def _known_ids():
+    try:
+        d_ = json.load(open(STATE))
+        return set(d_.get("sent", {})) | set(d_.get("seen", {}))
+    except (OSError, ValueError):
+        return set()
 # THE FAST PASS (12 Nov 2026, Kamay: "it needs to be instantly"). A reply waited up to 2.5 min on
 # the newest 6 posts and up to 20 min on any older clip. DM_FAST=1 is a pass cheap enough to run
 # every 15 seconds on the newest 100 posts: ONE call lists them with their comment counts, and a
@@ -133,7 +143,7 @@ def instagram_comments(ig, tok):
     # reel was never read: the account posts ~7 reels a day, so the newest 25 posts were 3 days,
     # while Meta lets a comment be answered for 7 - and people comment on older reels. The sweep
     # and the fast pass now ask for 100 (pulse.yml), paged because one page may hold fewer.
-    media, url, params = [], f"{G}/{ig}/media", {"fields": "id,timestamp,comments_count",
+    media, url, params = [], f"{G}/{ig}/media", {"fields": "id,timestamp,comments_count,permalink",
                                                  "limit": min(RECENT_POSTS, 100), "access_token": tok}
     while url and len(media) < RECENT_POSTS:
         j = _get(url, params)
@@ -150,8 +160,36 @@ def instagram_comments(ig, tok):
             continue                     # nothing to read: save the call
         if FAST and seen_counts.get(m["id"]) == m.get("comments_count"):
             continue                     # nobody commented since the last look
-        cs = _get(f"{G}/{m['id']}/comments", {"fields": "id,text,timestamp,username,replies{username}",
-                                               "limit": 50, "access_token": tok}).get("data", [])
+        # EVERY COMMENT, HOWEVER MANY (15 Nov 2026, Kamay: "what if our clip goes viral to 200k right
+        # now and thousands of comments commenting wish?"). This read ONE page of 50 and stopped:
+        # on a post with more than 50 comments everyone past the first page would never have
+        # been answered. Now it follows the pages. When Instagram lists newest first, it stops
+        # at the first page that holds nothing new (cheap on a huge post); when it lists oldest
+        # first, it reads to the end. PAGE_CAP pages of 50 is the ceiling per post per pass.
+        cs, url_, params_, pages = [], f"{G}/{m['id']}/comments", {
+            "fields": "id,text,timestamp,username,replies{username}", "limit": 50, "access_token": tok}, 0
+        known = _known_ids()
+        while url_ and pages < PAGE_CAP:
+            j_ = _get(url_, params_)
+            page = j_.get("data", [])
+            cs += page
+            pages += 1
+            url_, params_ = (j_.get("paging") or {}).get("next"), {}
+            newest_first = len(page) > 1 and page[0]["timestamp"] >= page[-1]["timestamp"]
+            if newest_first and page and all(c["id"] in known for c in page):
+                break
+        # WHAT INSTAGRAM COUNTS BUT DOES NOT HAND OVER (15 Nov 2026). On Episode 1 it said 3
+        # comments and gave both our keys 2: one person's "WISH" was never shown to us, so
+        # nothing could answer it. When every page was read and the numbers still differ, the
+        # difference is written down (state: "withheld") and shown on the captions board, so a
+        # person answers those by hand.
+        if not url_ and m.get("comments_count") is not None:
+            got = len(cs) + sum(len((c.get("replies") or {}).get("data", [])) for c in cs)
+            if m["comments_count"] > got:
+                WITHHELD[m["id"]] = {"hidden": m["comments_count"] - got, "counts": m["comments_count"],
+                                     "link": m.get("permalink", ""), "posted": m.get("timestamp", "")[:16]}
+            else:
+                WITHHELD[m["id"]] = None
         if diag:
             print(f"  post {m['timestamp'][:16]}: says {m.get('comments_count')} comments, API gave {len(cs)}"
                   f" {[(c.get('text') or '')[:12] for c in cs]}")
@@ -308,6 +346,18 @@ def run(dry=False):
                 # instagram_manage_messages). That is not this viewer's failure: spending
                 # their 3 tries would drop them before the key is fixed. Leave every keyword
                 # comment unanswered-and-unseen, so the first pass with the right key sends.
+                # META SAYS "TOO MANY, SLOW DOWN" (15 Nov 2026). On a viral post the hourly ceiling
+                # for these messages can be reached. That is not this viewer's failure either: the
+                # pass stops, every waiting comment stays unanswered-and-unseen, and the next pass
+                # (15 s later) carries on. Nobody is dropped for asking at a busy moment.
+                _es = str(e).lower()
+                if any(k in _es for k in ("rate limit", "too many", "limit reached", "(#4)", "(#17)", "(#32)", "(#613)",
+                                          "80002", "80006", "reduce the amount")):
+                    d["seen"].pop(cid, None)
+                    tally["waiting for Meta's limit"] = tally.get("waiting for Meta's limit", 0) + 1
+                    blocked = True
+                    print(f"{platform}: Meta's sending limit reached - waiting ({e})")
+                    continue
                 if "permission" in str(e).lower() or "(#230)" in str(e) or "(#10)" in str(e):
                     d["seen"].pop(cid, None)
                     tally["waiting for permission"] += 1
@@ -323,6 +373,15 @@ def run(dry=False):
                 tries[cid] = tries.get(cid, 0) + 1
                 if tries[cid] < 3:
                     d["seen"].pop(cid, None)
+    if WITHHELD:
+        w = d.setdefault("withheld", {})
+        for mid, v in WITHHELD.items():
+            if v:
+                if w.get(mid, {}).get("hidden") != v["hidden"]:
+                    print(f"instagram: {v['hidden']} comment(s) counted but NOT handed to us on {v['link'] or mid}")
+                w[mid] = dict(v, noticed=w.get(mid, {}).get("noticed") or now.isoformat()[:16])
+            else:
+                w.pop(mid, None)
     if not dry:
         save(d)
     print(f"comment -> DM{' (' + BRAND.strip('_') + ')' if BRAND else ''}: {sent} sent this run, {len(d['sent'])} total | "
