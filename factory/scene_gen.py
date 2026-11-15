@@ -154,4 +154,8 @@ def make(prompt, dest, motion=None, log=print):
 
 if __name__ == "__main__":
     a = sys.argv
+    if a[1] == "--animate":          # our OWN picture set moving: --animate picture out.mp4 "what moves" [seconds]
+        r = animate(a[2], a[4] + ". Smooth, cinematic.", a[3], seconds=float(a[5]) if len(a) > 5 else 3.5)
+        print(r)
+        sys.exit(0 if r else 1)
     print(make(a[1], a[2], a[3] if len(a) > 3 else None))

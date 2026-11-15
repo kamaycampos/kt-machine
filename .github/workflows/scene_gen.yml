@@ -7,6 +7,8 @@ on:
       name: {required: true, description: "short file name, e.g. carnegie_deli"}
       picture: {required: true, description: "what the picture shows"}
       move: {required: false, default: "", description: "what moves"}
+      image: {required: false, default: "", description: "a picture in the repo to set moving (then 'picture' is ignored)"}
+      seconds: {required: false, default: "3.5", description: "length when 'image' is given"}
 permissions:
   contents: write
 env:
@@ -23,9 +25,12 @@ jobs:
           NAME: ${{ inputs.name }}
           PICTURE: ${{ inputs.picture }}
           MOVE: ${{ inputs.move }}
+          IMAGE: ${{ inputs.image }}
+          SECS: ${{ inputs.seconds }}
         run: |
           mkdir -p /tmp/previews
-          python3 factory/scene_gen.py "$PICTURE" "/tmp/previews/scene_${NAME}.mp4" "$MOVE"
+          if [ -n "$IMAGE" ]; then python3 factory/scene_gen.py --animate "$IMAGE" "/tmp/previews/scene_${NAME}.mp4" "$MOVE" "$SECS"
+          else python3 factory/scene_gen.py "$PICTURE" "/tmp/previews/scene_${NAME}.mp4" "$MOVE"; fi
           ls -la /tmp/previews
           test -s "/tmp/previews/scene_${NAME}.mp4"
       - name: Publish to the previews release
