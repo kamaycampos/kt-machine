@@ -891,6 +891,11 @@ def instagram(path, caption, public_url, clip=None, trial=False):
     r = requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T,
                       data=body)
     d = _j(r)
+    if not d.get("id") and str(body.get("video_url", "")).endswith("__wide.mp4"):
+        # the wide film was refused: the upright clip goes instead - a post, never a gap
+        body["video_url"] = str(body["video_url"]).replace("__wide.mp4", ".mp4")
+        r = requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T, data=body)
+        d = _j(r)
     if not d.get("id"):
         # Meta's REAL reason sits in error_subcode / error_user_title, past the 200 characters
         # kept below: 11 Nov 2026 the WB trials read "does not have permission" for weeks while the
