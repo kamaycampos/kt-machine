@@ -220,7 +220,10 @@ def due_clips(man):
     # sides did 328-399 median views against 241-288 with less. So a clip marked "solo" keeps
     # SOLO_BEFORE hours clear before it and SOLO_AFTER after it for the same person: an ordinary
     # clip that comes due inside that window is moved to its end, never dropped.
-    SOLO_BEFORE, SOLO_AFTER = 6 * 3600, 10 * 3600
+    # 3 h each side for EVERY movie clip (15 Nov 2026). Episode 1 ran with 6 h + 10 h: six ordinary
+    # clips were pushed to 10:30 pm - 1 am, where nobody is watching. Our own 304 reels put the
+    # gain at 3 h clear on both sides; more than that only costs the other clips their hours.
+    SOLO_BEFORE, SOLO_AFTER = 3 * 3600, 3 * 3600
     solos = []
     for c in man["clips"]:
         if not c.get("solo") or c.get("done") and not c.get("posted_at"):
