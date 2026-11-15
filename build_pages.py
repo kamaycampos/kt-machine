@@ -303,25 +303,13 @@ def board(cs):
          "<button class='pick' onclick=\"pick('AR',this)\">Awakened Rise</button>"
          "<button class='pick' onclick=\"pick('WB',this)\">WB Organics</button></div>",
          "<div><a href='descriptions.html' style='color:#f5c542'>"
-         "All descriptions &rarr;</a></div>",
+         "All descriptions &rarr;</a> &nbsp; <a href='notes.html' style='color:#9aa0a6'>Machine notes &rarr;</a></div>",
          ]
     # THE MOVIE CLIP HE CAN POST ON INSTAGRAM HIMSELF, WITH INSTAGRAM'S MUSIC (15 Nov 2026).
     # Kamay: "I work all day, so if I post I need to have the clip on my phone ... and the
     # description." This is the page he already posts TikTok from, so it sits at the very top:
     # the video, the description, the hour until which Instagram waits for him (engine/main.py,
     # IG_HAND) - after that the machine posts it there by itself, voice only.
-    # COMMENTS INSTAGRAM HIDES FROM THE BOT (15 Nov 2026, dm_reply "withheld"): it counts them on
-    # the post but hands them to no key, so nothing automatic can answer. A person can.
-    try:
-        _wh = json.load(open(os.path.join(HERE, "state", "dms.json"))).get("withheld") or {}
-    except (OSError, ValueError):
-        _wh = {}
-    for _mid, _v in sorted(_wh.items(), key=lambda kv: kv[1].get("noticed", ""), reverse=True)[:4]:
-        p += ["<div class='c ready' data-who='KAMAY' style='border:2px solid #e5534b'>"
-              f"<div class=w style='color:#e5534b;font-weight:700'>{_v.get('hidden')} COMMENT(S) INSTAGRAM IS HIDING FROM THE BOT</div>"
-              f"<div class=fn>Instagram counts {_v.get('counts')} comments on this post but will not show {_v.get('hidden')} of them to the bot, "
-              "so that person got no message. Open the post, find the comment with no reply under it, and send them the link yourself.</div>"
-              f"<p><a class=dl href='{html.escape(_v.get('link') or '#')}'>Open the post</a></p></div>"]
     # WHEN, WHAT, WHERE (15 Nov 2026, Kamay: "how do I know when what where?"). The movie clips'
     # own timetable, first thing on the page: the last ones that went out, the ones coming with
     # their day and hour, and the stories still being made.
@@ -385,12 +373,13 @@ def board(cs):
               f"<div class=hk>&ldquo;{html.escape(c.get('hook') or '')}&rdquo;</div>"
               f"<div class=fn>{html.escape(line)}</div>"
               f"<p><a class=dl href='{video_url(c)[:-4] + ('__wide.mp4' if c.get('wide') else '.mp4')}' download>&#11015; 1. Save the video"
-              f"{' (the wide film: sharpest on Instagram)' if c.get('wide') else ''}</a> "
-              f"<a class=dl href='{cover}' download>&#11015; cover</a></p>"
+              f"{' (the wide film: sharpest on Instagram)' if c.get('wide') else ''}</a></p>"
+              f"<p><a class=dl href='{cover}' download>&#11015; 2. Save the cover</a></p>"
               f"<pre id='{cid}'>{html.escape(c.get('caption') or '')}</pre>"
-              f"<button onclick=\"cp('{cid}',this)\">2. Copy the description</button>"
-              "<div class=fn>3. Instagram &rarr; + &rarr; Reel &rarr; choose the video &rarr; the music note: pick a track, "
-              "turn the track down so his voice is on top &rarr; paste the description &rarr; Share. "
+              f"<button onclick=\"cp('{cid}',this)\">3. Copy the description</button>"
+              "<div class=fn>4. Instagram &rarr; + &rarr; Reel &rarr; choose the video &rarr; the music note: pick a track, "
+              "turn the track down so his voice is on top &rarr; Next &rarr; Edit cover &rarr; Add from camera roll &rarr; the cover "
+              "you saved &rarr; paste the description &rarr; Share. "
               "Nothing else to do: the machine sees your post and does not post it again.</div></div>"]
     p += [f"<h2>READY TO POST ON TIKTOK &middot; {len(todo)}</h2>"]
     mine = [c for c in todo if owner(c) == "KAMAY"]
@@ -488,6 +477,32 @@ def archive(cs):
     return "\n".join(out)
 
 
+def notes():
+    """MACHINE NOTES - its own page (15 Nov 2026, Kamay on the red cards among the descriptions:
+    "I do not want those messages in the dashboard ... too annoying, put it in another section,
+    not together with the descriptions"). Things the machine noticed that are not a clip to post."""
+    try:
+        wh = json.load(open(os.path.join(HERE, "state", "dms.json"))).get("withheld") or {}
+    except (OSError, ValueError):
+        wh = {}
+    p = ["<meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Machine notes</title>",
+         "<style>body{background:#0f1115;color:#e8e8e8;font:16px -apple-system,Segoe UI,sans-serif;margin:18px;max-width:760px}"
+         "a{color:#f5c542}.c{border:1px solid #2a2f3a;border-radius:10px;padding:12px;margin:12px 0}.s{color:#9aa0a6;font-size:14px}</style>",
+         "<p><a href='index.html'>&larr; Captions</a></p><h1>Machine notes</h1>",
+         "<h2>Comments Instagram counted but did not give the bot</h2>",
+         "<p class=s>Instagram shows these comments on the post but does not hand them to any app, so no automatic message went out. "
+         "On 15 Nov all four were repeated test comments from our own accounts; a stranger who comments once has always been delivered. "
+         "If one of these is a real person, open the post and message them.</p>"]
+    rows = sorted(wh.items(), key=lambda kv: kv[1].get("noticed", ""), reverse=True)
+    if not rows:
+        p += ["<div class=c>Nothing held back right now.</div>"]
+    for _mid, v in rows[:20]:
+        p += [f"<div class=c><b>{v.get('hidden')}</b> of {v.get('counts')} comment(s) not given to the bot "
+              f"<span class=s>(post of {html.escape(str(v.get('posted', '')))[:10]}, noticed {html.escape(str(v.get('noticed', '')))[:16].replace('T', ' ')} UTC)</span><br>"
+              f"<a href='{html.escape(v.get('link') or '#')}'>Open the post</a></div>"]
+    return "\n".join(p)
+
+
 def main():
     os.makedirs(DOCS, exist_ok=True)
     cs = clips()
@@ -495,6 +510,7 @@ def main():
     open(os.path.join(DOCS, "calendar.ics"), "w").write(calendar_ics([c for c in cs if not c.get("_who")]))
     open(os.path.join(DOCS, "index.html"), "w").write(board(cs))
     open(os.path.join(DOCS, "descriptions.html"), "w").write(archive(cs))
+    open(os.path.join(DOCS, "notes.html"), "w").write(notes())
     print(f"pages built from {len(cs)} clips")
 
 
