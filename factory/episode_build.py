@@ -390,6 +390,7 @@ for k_, (s0, e0, o, i0, i1) in enumerate(segs):
     parts.append(f"[v{k_}][a{k_}]")
 graph += "".join(parts) + f"concat=n={len(segs)}:v=1:a=1[base][abase];"
 n_in = 1
+N_SCENES = 0
 CUTS = []                                # every picture change, for the sound (episode_sound.py)
 for k_, sc in enumerate(SP.get("scenes") or []):
     f0 = at(sc["from"])
@@ -452,6 +453,7 @@ for k_, sc in enumerate(SP.get("scenes") or []):
               f"[{last}][s{k_}]overlay=0:0:eof_action=pass:enable='between(t,{t0:.3f},{t1:.3f})'[b{k_}];")
     last = f"b{k_}"
     n_in += 1
+    N_SCENES += 1
     CUTS += [t0, t1]
     print(f"  scene {s_ if not isinstance(s_, dict) else s_.get('pixabay')}: {t0:.2f}-{t1:.2f}s")
 # captions on top
@@ -522,6 +524,7 @@ sh(FF, "-y", "-loglevel", "error", "-i", dst, "-vf", "scale=1080:-2:flags=lanczo
    "-c:v", "libx264", "-preset", "slow", "-crf", "15", "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart",
    os.path.join(OUT, f"{slug}_9x16.mp4"))
 json.dump({"slug": slug, "seconds": round(DUR + end_secs, 2), "pieces": [[round(s0, 2), round(e0, 2)] for s0, e0, *_ in segs],
-           "cards": len(events)}, open(os.path.join(OUT, f"{slug}_info.json"), "w"))
+           "cards": len(events), "scenes": N_SCENES, "music": SP.get("music") if AOUT == "aout" else None,
+           "end_card": bool(end_secs)}, open(os.path.join(OUT, f"{slug}_info.json"), "w"))
 import shutil
 shutil.rmtree(TMP, ignore_errors=True)

@@ -1,0 +1,157 @@
+# THE DAILY MOVIE CLIP (14 Nov 2026, factory/movie.py). Kamay: about one movie clip a day - scenes
+# made from Kevin's exact words, its own calm music, gentle effects, his end card - and it posts
+# by itself. The planner writes factory/movies/mv_*.json; this builds the next one and queues it
+# as a solo post at 12:30 pm New York on the next free day.
+#   pick   - which plan is next, which of its scenes still have to be made
+#   scenes - ONE SERVER PER SCENE. The free generator allows about 4 scenes a day with our key
+#            and about 1 a day per address without it (measured 14 Nov). Every server has its
+#            own address, so each scene gets the key's allowance AND its own anonymous one.
+#   build  - time his words, build, check it IS a movie, cover, upload, queue.
+name: movie
+on:
+  workflow_dispatch:
+    inputs:
+      slug: {required: false, default: "", description: "one plan by name (mv_...); empty = the next one"}
+      test: {required: false, default: "", description: "'1' = build to the previews release only, never queued"}
+  push:
+    branches: [main]
+    paths: ["factory/movies/mv_*.json"]
+  schedule:
+    - cron: "23 9 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: movie
+  cancel-in-progress: false
+env:
+  FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+  TRANSCRIPT_KEY: ${{ secrets.TRANSCRIPT_KEY }}
+  PIXABAY_KEY: ${{ secrets.PIXABAY_KEY }}
+  GH_TOKEN: ${{ github.token }}
+  HF_TOKEN: ${{ secrets.HF_TOKEN }}
+jobs:
+  pick:
+    runs-on: ubuntu-24.04
+    outputs:
+      slug: ${{ steps.p.outputs.slug }}
+      count: ${{ steps.p.outputs.count }}
+      nscenes: ${{ steps.p.outputs.nscenes }}
+      matrix: ${{ steps.p.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - id: p
+        env: { SLUG: "${{ inputs.slug }}" }
+        run: python3 factory/movie.py pick "$SLUG"
+      - name: Save a refusal (a plan that can never build is not tried forever)
+        run: |
+          git config user.name kt-machine; git config user.email kt-machine@users.noreply.github.com
+          git add factory/movies/_done.json 2>/dev/null || true
+          git diff --cached --quiet || { git commit -qm "movie: plan refused"; bash factory/save_state.sh; }
+
+  scenes:
+    needs: pick
+    if: needs.pick.outputs.nscenes != '0'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJSON(needs.pick.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - name: One scene from his words
+        env:
+          NAME: ${{ matrix.name }}
+          GEN: ${{ matrix.gen }}
+          MOVE: ${{ matrix.move }}
+        run: |
+          mkdir -p /tmp/sc
+          python3 factory/scene_gen.py "$GEN" "/tmp/sc/$NAME" "$MOVE"
+          ls -la /tmp/sc
+          test -s "/tmp/sc/$NAME"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: scene-${{ matrix.n }}
+          path: /tmp/sc/
+          include-hidden-files: true
+
+  build:
+    needs: [pick, scenes]
+    if: ${{ !cancelled() && needs.pick.outputs.count != '0' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 75
+    env:
+      SLUG: ${{ needs.pick.outputs.slug }}
+      MOVIE_TEST: ${{ inputs.test }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/cache@v4
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v2-portable }
+      - run: bash factory/setup.sh
+      - name: Fonts (open licence, static weights)
+        run: |
+          mkdir -p /tmp/fonts
+          B=https://cdn.jsdelivr.net/fontsource/fonts
+          curl -sfL -o /tmp/fonts/greatvibes400.ttf $B/great-vibes@latest/latin-400-normal.ttf
+          curl -sfL -o /tmp/fonts/yellowtail400.ttf $B/yellowtail@latest/latin-400-normal.ttf
+          for w in jost:900-normal:jost900 jost:900-italic:jost900i jost:800-italic:jost800i jost:300-normal:jost300 poppins:700-normal:poppins700 poppins:800-italic:poppins800i poppins:900-normal:poppins900 titan-one:400-normal:titanone400; do
+            IFS=: read fam wt name <<< "$w"
+            curl -sfL -o /tmp/fonts/$name.ttf $B/$fam@latest/latin-$wt.ttf
+          done
+          ls -la /tmp/fonts
+      - uses: actions/cache@v4
+        with: { path: "~/.cache/torch\n~/.cache/pip", key: align-torch-2.8.0-w2v2-base-960h }
+      - name: Caption aligner (same as the factory)
+        run: |
+          timeout 600 pip install -q torch==2.8.0 torchaudio==2.8.0 soundfile --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple \
+            && python -c "import torchaudio; torchaudio.pipelines.WAV2VEC2_ASR_BASE_960H.get_model()" \
+            && echo "setup: caption aligner ready" || echo "setup: caption aligner NOT installed - anchored times"
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          pattern: scene-*
+          merge-multiple: true
+          path: /tmp/sc
+      - name: Build, check, upload
+        id: b
+        run: |
+          mkdir -p "factory/episodes/$SLUG" /tmp/sc /tmp/previews
+          cp -n /tmp/sc/g_* "factory/episodes/$SLUG/" 2>/dev/null || true
+          ls -la "factory/episodes/$SLUG"
+          P="factory/movies/$SLUG.json"; G=0
+          python factory/movie.py spec "$P" && python factory/episode_build.py "factory/episodes/$SLUG/spec.json" || G=1
+          python factory/movie.py gate "$P" || G=1
+          if [ "$G" = 0 ]; then python factory/movie.py queue "$P" || G=1; fi
+          echo "g=$G" >> "$GITHUB_OUTPUT"
+      - name: Keep the scenes and the spec (made once, never twice)
+        run: |
+          git config user.name kt-machine; git config user.email kt-machine@users.noreply.github.com
+          git add "factory/episodes/$SLUG" factory/movies/_done.json
+          git diff --cached --quiet || { git commit -qm "movie $SLUG: scenes and spec"; bash factory/save_state.sh; }
+      - name: Into the posting queue (on main as it is now; tried again if the poster got there first)
+        if: steps.b.outputs.g == '0' && inputs.test == ''
+        run: |
+          for i in 1 2 3 4 5 6; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python factory/movie.py enter "factory/movies/$SLUG.json"
+            git add state/manifest.json factory/movies/_done.json
+            git diff --cached --quiet && { echo "nothing to save"; exit 0; }
+            git commit -qm "movie $SLUG: queued"
+            git push -q && { echo "queued and saved"; exit 0; }
+            sleep $((i * 7))
+          done
+          echo "SAVE FAILED: the movie clip is uploaded but not in the queue"; exit 1
+      - name: Publish to the previews release (the finished files, to look at)
+        if: ${{ !cancelled() }}
+        run: |
+          gh release view previews >/dev/null 2>&1 || gh release create previews --title "Style previews" --notes "Looks for Kamay to choose. Not posted."
+          find /tmp/previews -maxdepth 1 -type f | xargs -r gh release upload previews --clobber
+      - name: The verdict
+        if: steps.b.outputs.g != '0'
+        run: echo "movie clip not queued (see the build step)"; exit 1

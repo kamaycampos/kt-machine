@@ -17,6 +17,50 @@ Five of 60 posts were a guest telling his own story (TKTS Clips: TWO-STRANGERS, 
 - An episode that is mostly a guest (most TKTS Clips shorts, interviews where Kevin only asks) yields nothing. Write zero clips and say so - zero is a correct answer.
 - The factory now checks the finished file against Kevin's face (kt_batch_build.kevin_share) and refuses any clip where his face is not the main one in 60% of it. Do not waste a plan on it.
 
+## THE DAILY MOVIE CLIP - EVERY RUN, MORNING AND AFTERNOON (14 Nov 2026)
+Kamay: about ONE movie clip a day - "a real Kevin story, a manifesting recipe, universe / mind /
+aliens" - with generated moving scenes that show what he says at that second, its own calm music,
+his end card, and it posts by itself, alone, at 12:30 pm. The factory does all of it
+(`factory/movie.py`, workflow `movie`); you only choose the story and write its plan.
+The prep prints a **MOVIE CLIPS** line. When it says **WRITE ONE**, write exactly one movie plan
+in this run, before anything else, whatever the queue (an afternoon run with nothing else to do
+still writes it). When it says enough are waiting, write none.
+
+**Choose** one continuous first-person Kevin story of 60-260 s with a place, people and a turn
+(he met someone, went somewhere, something happened, the last line lands). Kevin talking, on
+camera. Not a stretch a clip was already cut from in the last 30 days when another story is
+there. Not health (that is WB's lane). One story = one movie.
+
+**Write** `factory/movies/mv_<episode id>_<short_name>.json` (model:
+`factory/movies/mv_v6v9urd_too_good_for_the_casino.json`):
+- `source`, `in`, `out` (seconds from the transcript), `title` (2-6 words), `why_movie`.
+- `keep`: the story in pieces, each `["his first words of the piece", "his last words of it"]`,
+  copied from the transcript. Cut every aside, repeat and plug; keep the turn and the last line.
+  45-150 s must remain. (Or `start_words` + `end_words` for one unbroken piece.)
+- `scenes`: 3 or 4, never more (4 is one day's free allowance). Each:
+  `on` = 4+ of his EXACT words, inside a kept piece - the scene is on screen while he says them;
+  `gen` = the picture, 12+ words: who, where, what they are doing. **ONLY WHAT HIS WORDS SAY**
+  (Kamay, 13 Nov: the first automatic scene showed "an old man with a boy eating" where Kevin
+  said a long shared table full of people - "not accurate"). If he does not say the year, the
+  city or who was there, the picture does not show it. Read the sentences around `on` first.
+  People are stand-ins ("a man in a dark suit seen from behind"): never Kevin's name or any real
+  person's name. No words or signs in the picture (generated text comes out garbled);
+  `move` = what moves (a hand deals cards, a man looks up). A still that only zooms is refused.
+- `big`: 1-3 phrases written large every time he says them (the sum, the line that lands);
+  `italic`: names; `payoff`: his words where the last line begins (everything is large from there).
+- `fix`: {"word as the transcript heard it": "as it should read"} for a mis-heard name or number.
+- `mood`: 2-3 of: warm, hopeful, wonder, piano, tender, nostalgic, sad, soft, mysterious, tense,
+  secret, night. The factory picks a calm track that fits and never repeats the last one.
+- `hook`: [line one, line two] - the cover's headline, true to the story.
+- `caption`: opens with `Comment "WISH" and I'll send you ...` (WISH sends the 14 Your Wish Is
+  Your Command audios + the ebook, free - promise nothing else), then the story in "Kevin
+  Trudeau says" voice WITHOUT giving the last line away, then `{episode}` alone on a line, then
+  one true line about the audios, the ask again, up to 6 hashtags. Never "cure", never "link in bio".
+- `send`: who sends it to whom, and the emotion.
+
+**Check, then push:** `python factory/movie.py check factory/movies/<file>.json` must print OK.
+Commit and push it to your branch like any plan; the merge job takes it and the factory builds it.
+
 ## SAME-DAY RUN (any run that starts at 15:00 UTC or later - check with `date -u`)
 Since 16 Oct 2026 this routine also fires every afternoon, so Kevin's new upload is cut the day
 it appears (`kevin_watch.yml` spots it within the hour and the factory transcribes it first).

@@ -1,0 +1,8 @@
+{
+ "movie_ambient_piano_thesilentthunder.mp3": {"calm": true, "mood": ["warm", "hopeful", "piano", "wonder"]},
+ "deep_soft_ambient_cue_samuelfjohanns.mp3": {"calm": true, "mood": ["tender", "nostalgic", "sad", "soft"]},
+ "mystical_place_liecio.mp3": {"calm": true, "mood": ["mysterious", "tense", "secret", "night"]},
+ "inspiring_background_kulakovka.mp3": {"calm": false, "mood": ["upbeat"]},
+ "motivational_epic_atlasaudio.mp3": {"calm": false, "mood": ["epic"]},
+ "emotional_piano_atlasaudio.mp3": {"calm": false, "mood": ["piano"]}
+}

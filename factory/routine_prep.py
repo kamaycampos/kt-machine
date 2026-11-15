@@ -26,6 +26,25 @@ queue = [c for c in man if not c.get("done") and not c.get("posted_at")
          and c["file"].startswith("AR_") == AR]
 print(f"QUEUE: {len(queue)} clips waiting (~{len(queue) / 6:.1f} days at 6/day)")
 
+if not AR and not LANE:                 # THE DAILY MOVIE CLIP (14 Nov 2026, factory/movie.py, PLANNING.md)
+    try:
+        _md = json.load(open(os.path.join(HERE, "movies", "_done.json")))
+    except (OSError, ValueError):
+        _md = {"built": {}, "tries": {}}
+    _mp = [f[:-5] for f in os.listdir(os.path.join(HERE, "movies")) if f.startswith("mv_") and f.endswith(".json")] \
+        if os.path.isdir(os.path.join(HERE, "movies")) else []
+    _mwait = [m for m in _mp if m not in _md["built"] and _md["tries"].get(m, 0) < 3]
+    _msolo = [c for c in queue if c.get("solo")]
+    _have = len(_mwait) + len(_msolo)
+    print(f"MOVIE CLIPS: {len(_msolo)} waiting to post, {len(_mwait)} plan(s) waiting to build - "
+          + ("WRITE ONE movie plan this run (PLANNING.md, THE DAILY MOVIE CLIP)" if _have < 3 else "enough, write none"))
+    _used = sorted({m.split("_")[1] for m in _mp})
+    if _used:
+        print("  episodes a movie plan already used (pick another story): " + ", ".join(_used))
+    for m in _mp:
+        if _md["tries"].get(m, 0) >= 3 and m not in _md["built"]:
+            print(f"  RETIRED after 3 tries (scenes could not be made or the plan was refused): {m}")
+
 try:                                   # what TikTok took down, so it gets replaced
     _h = json.load(open(os.path.join(ROOT, "state", "tiktok_history.json")))
     _gone = [g for g in _h.get("gone", []) if g["file"].startswith("AR_") == AR]

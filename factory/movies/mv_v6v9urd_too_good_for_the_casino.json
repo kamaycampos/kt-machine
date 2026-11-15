@@ -1,0 +1,47 @@
+{
+ "movie": true,
+ "source": "v6v9urd",
+ "title": "Too Good For The Casino",
+ "why_movie": "A real first-person Kevin story with a place, people and a twist: the casino, the two big men, the owner eating spaghetti.",
+ "in": 1729.0,
+ "out": 1934.0,
+ "keep": [
+  ["Let me tell you an interesting story about cards", "I was in Reno, Nevada"],
+  ["I met a guy named Bobby Singer", "I just remembered all the cards"],
+  ["I proceeded to play for about an hour", "and I made $250,000"],
+  ["After I make $250,000", "you need to come with us"],
+  ["I'm thinking, Okay, I've seen this", "I've seen this in the movies"],
+  ["The owner and the president wants to meet you", "wants to meet you"],
+  ["We go into the restaurant", "because you're just too good for us"]
+ ],
+ "scenes": [
+  {
+   "on": "I went to the casino. They had single deck blackjack",
+   "gen": "A casino floor at night, one green felt blackjack table, a man in a dark suit seen from behind sitting alone opposite a dealer in a white shirt and black vest, a single deck of cards on the felt, warm lamps, slot machines glowing far behind",
+   "move": "the dealer deals cards one at a time onto the felt, the slot machine lights blink in the background"
+  },
+  {
+   "on": "and I made $250,000",
+   "gen": "Close view of a green felt blackjack table in a casino, tall stacks of casino chips in many colours piled in front of a player's hands in dark suit sleeves, playing cards beside them, warm low light",
+   "move": "the dealer's hand pushes one more tall stack of chips across the felt toward the player"
+  },
+  {
+   "on": "two gorillas on both sides of me. They tap me on the shoulder",
+   "gen": "A casino blackjack table seen from behind the player: a seated man in a dark suit, and two very large security men in black suits standing close on his left and on his right, casino lights behind them",
+   "move": "one of the large men lifts his hand and taps the seated man on the shoulder, the seated man turns his head"
+  },
+  {
+   "on": "big Italian guy in the back with his back there eating a plate of spaghetti",
+   "gen": "A dim old-style casino restaurant with red leather booths, at the table in the far back a big heavy-set Italian man in a dark suit sitting alone eating a plate of spaghetti, white tablecloth, warm lamp light",
+   "move": "the big man twirls spaghetti on his fork and slowly looks up"
+  }
+ ],
+ "big": ["$250,000", "too good for us"],
+ "italic": ["Bobby Singer", "the godfather"],
+ "payoff": "because you're just too good for us",
+ "mood": ["tense", "mysterious", "night"],
+ "hook": ["TOO GOOD", "for the casino"],
+ "cta_keyword": "WISH",
+ "caption": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says he sat down at a single-deck blackjack table in Reno, one on one with the dealer, and remembered every card. About an hour later, he says, he had made $250,000.\n\nThen two very large men tapped him on the shoulder.\n\nHe expected the back room. They walked him to the restaurant instead, where the owner sat eating a plate of spaghetti. What the owner told him is the part nobody guesses.\n\n{episode}\n\nThe 14 audios are Kevin teaching how to use your mind to get what you want in life. They were recorded live at a private event in the Alps.\n\nMost people will watch this and scroll on. A few will comment \"WISH\" and start listening tonight.\n\n#kevintrudeau #megamemory #blackjack #memory #mindset #yourwishisyourcommand",
+ "send": "A man who plays cards sends it to his friend: awe - the casino let him keep $250,000 and banned him for being too good."
+}
