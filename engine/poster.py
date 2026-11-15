@@ -1136,7 +1136,72 @@ def facebook(path, caption, public_url, clip=None):
 
 
 # ---------------------------------------------------------------------- TikTok
+def _ffmpeg():
+    """An ffmpeg this machine has: the Mac's own, the system's, or the one pip brings."""
+    import shutil
+    for c in (os.path.expanduser("~/Kamay/bin/ffmpeg"), shutil.which("ffmpeg")):
+        if c and os.path.exists(c):
+            return c
+    try:
+        import imageio_ffmpeg
+        return imageio_ffmpeg.get_ffmpeg_exe()
+    except Exception:
+        return None
+
+
+def tiktok_cover_first(path, public_url, clip):
+    """THE TIKTOK COPY OPENS ON THE COVER (15 Nov 2026, Kamay: "same way as in IG they have
+    thumbnails for all other clips, how can we do it for tiktok ... yes, build it").
+
+    Instagram takes a cover with the post. TikTok does not take one for a draft sent to the
+    inbox: it uses the clip's FIRST FRAME unless he picks another by hand. So the copy that
+    goes to TikTok - and only that copy - starts with the designed cover for two frames
+    (1/15 of a second, with the same length of silence so his voice stays in step), then the
+    clip exactly as it is everywhere else. Only for a clip that has a designed cover
+    ("cover": true). Anything going wrong returns the clip untouched: a draft with the wrong
+    cover is better than no draft."""
+    if not (clip or {}).get("cover") or os.environ.get("TIKTOK_COVER_FIRST", "on") == "off":
+        return path
+    ff = _ffmpeg()
+    if not ff or not str(public_url).startswith("https://"):
+        return path
+    try:
+        import subprocess
+        cu = re.sub(r"__yt59(?=\.mp4$)", "", str(public_url))[:-4] + "__cover.jpg"
+        cr = requests.get(cu, timeout=T)
+        if cr.status_code != 200 or len(cr.content) < 5000:
+            return path
+        cover = os.path.join("/tmp", "tt_cover_" + os.path.basename(cu))
+        with open(cover, "wb") as fh:
+            fh.write(cr.content)
+        out = os.path.join("/tmp", "tt_" + os.path.basename(path))
+        n = 2 / 30.0
+        # the cover is a JPEG (full-range colour); the clip is video-range. Converted here, or the
+        # whole file gets flagged full-range and the clip's colours shift on the phone.
+        graph = (f"[1:v]scale=1080:1920:force_original_aspect_ratio=decrease:in_range=pc:out_range=tv,"
+                 f"pad=1080:1920:(ow-iw)/2:(oh-ih)/2:black,"
+                 f"setsar=1,fps=30,format=yuv420p,trim=duration={n:.4f},setpts=PTS-STARTPTS[c];"
+                 f"[0:v]scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:black,"
+                 f"setsar=1,fps=30,format=yuv420p,setpts=PTS-STARTPTS[v0];"
+                 f"[2:a]atrim=duration={n:.4f},asetpts=PTS-STARTPTS[s];"
+                 f"[0:a]aresample=48000,aformat=channel_layouts=stereo,asetpts=PTS-STARTPTS[a0];"
+                 f"[c][s][v0][a0]concat=n=2:v=1:a=1[v][a]")
+        r = subprocess.run([ff, "-y", "-loglevel", "error", "-i", path, "-loop", "1", "-framerate", "30", "-t", "0.2", "-i", cover,
+                            "-f", "lavfi", "-t", "0.2", "-i", "anullsrc=r=48000:cl=stereo",
+                            "-filter_complex", graph, "-map", "[v]", "-map", "[a]", "-r", "30",
+                            "-c:v", "libx264", "-preset", "veryfast", "-crf", "17", "-pix_fmt", "yuv420p",
+                            "-color_range", "tv", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709",
+                            "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", out],
+                           capture_output=True, text=True, timeout=900)
+        if r.returncode or not os.path.exists(out) or os.path.getsize(out) < 0.2 * os.path.getsize(path):
+            return path
+        return out
+    except Exception:
+        return path
+
+
 def tiktok(path, caption, public_url, clip=None):
+    path = tiktok_cover_first(path, public_url, clip)
     (key, secret, refresh), missing = _cfg(
         "TT_CLIENT_KEY", "TT_CLIENT_SECRET", "TT_REFRESH_TOKEN",
         brand=brand_of(clip))

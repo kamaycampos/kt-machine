@@ -1,1 +1,2 @@
 requests>=2.31
+imageio-ffmpeg>=0.5   # an ffmpeg for the posting job: the TikTok copy that opens on the cover (poster.tiktok_cover_first)
