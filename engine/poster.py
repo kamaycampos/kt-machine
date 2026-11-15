@@ -1343,7 +1343,7 @@ def recent_instagram(tok, ig, want=150):
     return out
 
 
-def hand_posted(clip, since_utc, known_text=""):
+def hand_posted(clip, since_utc, known_text="", known_caps=()):
     """Did Kamay post this clip on Instagram HIMSELF since `since_utc`? (15 Nov 2026)
 
     A movie clip can wait for him: he posts it from his phone with one of Instagram's own
@@ -1355,13 +1355,27 @@ def hand_posted(clip, since_utc, known_text=""):
     if missing:
         return None
     ours = set(re.findall(r"instagram\.com/(?:reels?|p)/([A-Za-z0-9_-]+)", known_text or ""))
+    # THE MACHINE'S OWN HOOK-TEST REELS ARE NOT HIS POST (15 Nov 2026). trials.py posts a trial
+    # reel on this account about every two hours and records only its media id (variants.json),
+    # never its address - so the first version of this check would have taken one for his
+    # hand-post and skipped Instagram for the movie clip. Our ids are matched too, and a reel
+    # only counts as his when its description is NOT one of ours: a trial reel carries the
+    # description of the clip it tests, which is in the manifest.
+    our_ids = set(re.findall(r"\b(1[78]\d{15})\b", known_text or ""))
     try:
-        for m in recent_instagram(tok, ig, want=40):
+        url = (f"https://graph.facebook.com/v21.0/{ig}/media"
+               f"?fields=id,caption,permalink,timestamp,media_product_type&limit=40&access_token={tok}")
+        for m in _j(requests.get(url, timeout=T)).get("data", []):
             if (m.get("timestamp") or "")[:19] < since_utc[:19]:
                 continue
             code = re.search(r"/(?:reels?|p)/([A-Za-z0-9_-]+)", m.get("permalink") or "")
-            if code and code[1] in ours:
+            if (code and code[1] in ours) or str(m.get("id")) in our_ids:
                 continue
+            cap = (m.get("caption") or "").strip()
+            mine = (clip.get("caption") or "").strip()
+            first = lambda t: re.sub(r"\s+", " ", t)[:60].lower()
+            if cap and known_caps and first(cap) in known_caps and first(cap) != first(mine):
+                continue                     # the description of ANOTHER clip of ours: a trial reel
             return m.get("permalink") or "posted by hand"
     except Exception:
         return None

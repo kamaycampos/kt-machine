@@ -692,7 +692,9 @@ def settle_ig_hand(man):
             known += open(os.path.join(os.path.dirname(MANIFEST), "variants.json")).read()
         except OSError:
             pass
-        hit = poster.hand_posted(c, c["ig_hand_from"], known)
+        import re as _re
+        caps = {_re.sub(r"\s+", " ", (x.get("caption") or "").strip())[:60].lower() for x in man["clips"] if x.get("caption")}
+        hit = poster.hand_posted(c, c["ig_hand_from"], known, caps)
         if hit is None and (now - due).total_seconds() < 2 * 3600:
             continue                                     # could not ask Instagram: try again next run
         c["ig_hand_done"] = True
