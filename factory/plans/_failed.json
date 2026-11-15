@@ -13989,6 +13989,24 @@
     "What every billionaire joins",
     "in secret"
    ]
+  },
+  "ar_v5mvcu5_r2/HARVARD-HEART-SURGEONS": {
+   "plan": "ar_v5mvcu5_r2",
+   "source": "v5mvcu5.mp4",
+   "brand": "AR_INNERSTATER2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_HARVARD-HEART-SURGEONS_43s.mp4: ends off the planned words: plan ends 'stroke without drugs', clip ends 'having a heart attack or stroke'"
+   ],
+   "slug": "HARVARD-HEART-SURGEONS",
+   "in": 252.2,
+   "out": 299.5,
+   "start_words": "Now let's talk about",
+   "end_words": "stroke without drugs",
+   "hook": [
+    "Harvard heart surgeons",
+    "are prescribing this."
+   ]
   }
  },
  "attempts": {
@@ -14072,6 +14090,8 @@
   "ar_v4khxuu_r3": 2,
   "ar_v4ki6sz_r3": 2,
   "ep_v72tj4g_r5": 2,
-  "ar_v4kacob": 2
+  "ar_v4kacob": 2,
+  "ep_v4oml32_p3": 1,
+  "ep_v4vdcy0_p4": 1
  }
 }
