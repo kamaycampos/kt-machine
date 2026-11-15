@@ -16411,7 +16411,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-15T11:54",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_INNERSTATER2/02_THE-KNIGHTS-TEMPLAR-WERE-MEDITATORS_64s.mp4",
@@ -16421,7 +16425,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-15T17:14",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "KT_GAVEL/01_RIGGED-LIKE-10-MMA-FIGHTERS_92s.mp4",
@@ -16432,7 +16440,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-16T16:34",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_GAVEL/02_THE-EXACT-WORDS-FOR-LOVE_77s.mp4",
@@ -16444,7 +16456,10 @@
    "media_tag": "media2",
    "cover": true,
    "cta_kind": "offer",
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-16T10:21",
+   "cta_keyword": "WISH",
+   "cta_variant": 2
   },
   {
    "file": "KT_REFUND/01_ZERO-COMPLAINTS-MILLIONS-SOLD_65s.mp4",
@@ -16455,7 +16470,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-16T11:43",
+   "cta_keyword": "MONEY",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   }
  ]
 }
