@@ -1,8 +1,164 @@
 {
- "movie_ambient_piano_thesilentthunder.mp3": {"calm": true, "mood": ["warm", "hopeful", "piano", "wonder"]},
- "deep_soft_ambient_cue_samuelfjohanns.mp3": {"calm": true, "mood": ["tender", "nostalgic", "sad", "soft"]},
- "mystical_place_liecio.mp3": {"calm": true, "mood": ["mysterious", "tense", "secret", "night"]},
- "inspiring_background_kulakovka.mp3": {"calm": false, "mood": ["upbeat"]},
- "motivational_epic_atlasaudio.mp3": {"calm": false, "mood": ["epic"]},
- "emotional_piano_atlasaudio.mp3": {"calm": false, "mood": ["piano"]}
+ "floating_spades_turning_pages.mp3": {
+  "title": "Floating Spades - Turning_Pages",
+  "page": "pixabay.com/music/horror-scene-floating-spades-595916/",
+  "tags": [
+   "casino",
+   "noir",
+   "jazz",
+   "suspense",
+   "mysterious",
+   "night",
+   "storytelling"
+  ],
+  "intensity": 2,
+  "use": true,
+  "bpm": 78,
+  "level_db": -14.9,
+  "swing_db": 18.6
+ },
+ "noir_jazz_detective_alex_morgan.mp3": {
+  "title": "Noir Jazz Detective Midnight Mystery - alex-morgan",
+  "page": "pixabay.com/music/crime-scene-noir-jazz-detective-midnight-mystery-587403/",
+  "tags": [
+   "noir",
+   "jazz",
+   "suspense",
+   "tension",
+   "mysterious",
+   "night",
+   "secret"
+  ],
+  "intensity": 2,
+  "use": true,
+  "bpm": 66,
+  "level_db": -11.7,
+  "swing_db": 12.5
+ },
+ "country_blues_instrumental_alanajordan.mp3": {
+  "title": "Country Blues Instrumental 01 - alanajordan",
+  "page": "pixabay.com/music/modern-country-country-blues-instrumental-01-424049/",
+  "tags": [
+   "americana",
+   "nostalgic",
+   "warm",
+   "emotional",
+   "storytelling",
+   "guitar"
+  ],
+  "intensity": 2,
+  "use": true,
+  "bpm": 161,
+  "level_db": -18.7,
+  "swing_db": 11.7
+ },
+ "documentary_atlasaudio.mp3": {
+  "title": "Documentary - AtlasAudio",
+  "page": "pixabay.com/music/orchestral-documentary-630777/",
+  "tags": [
+   "documentary",
+   "inspiring",
+   "storytelling",
+   "emotional",
+   "hopeful"
+  ],
+  "intensity": 2,
+  "use": true,
+  "bpm": 68,
+  "level_db": -17.1,
+  "swing_db": 5.6
+ },
+ "the_heist_yemacakee.mp3": {
+  "title": "The Heist - Yemacakee",
+  "page": "pixabay.com/music/crime-scene-the-heist-600706/",
+  "tags": [
+   "heist",
+   "suspense",
+   "tension",
+   "chase"
+  ],
+  "intensity": 3,
+  "use": true,
+  "bpm": 129,
+  "level_db": -23.5,
+  "swing_db": 12.8
+ },
+ "movie_ambient_piano_thesilentthunder.mp3": {
+  "title": "Movie Ambient Piano - TheSilentThunder",
+  "tags": [
+   "warm",
+   "hopeful",
+   "piano",
+   "wonder",
+   "tender",
+   "inspiring"
+  ],
+  "intensity": 1,
+  "use": true,
+  "bpm": 103,
+  "level_db": -15.7,
+  "swing_db": 13.5
+ },
+ "deep_soft_ambient_cue_samuelfjohanns.mp3": {
+  "title": "Deep soft ambient cue - SamuelFJohanns",
+  "tags": [
+   "tender",
+   "sad",
+   "soft",
+   "emotional",
+   "ambient"
+  ],
+  "intensity": 1,
+  "use": true,
+  "bpm": 92,
+  "level_db": -28.9,
+  "swing_db": 13.5
+ },
+ "mystical_place_liecio.mp3": {
+  "title": "Mystical Place - Liecio",
+  "tags": [
+   "mystical",
+   "wonder",
+   "ambient"
+  ],
+  "intensity": 1,
+  "use": true,
+  "note": "meditation music: only for universe / mind / energy stories (Kamay, 15 Nov: 'so off' on the blackjack story)",
+  "bpm": 72,
+  "level_db": -21.1,
+  "swing_db": 4.3
+ },
+ "inspiring_background_kulakovka.mp3": {
+  "tags": [
+   "upbeat"
+  ],
+  "intensity": 3,
+  "use": false,
+  "note": "Kamay 13 Nov: too upbeat and fast",
+  "bpm": 81,
+  "level_db": -17.7,
+  "swing_db": 13.3
+ },
+ "motivational_epic_atlasaudio.mp3": {
+  "tags": [
+   "epic"
+  ],
+  "intensity": 3,
+  "use": false,
+  "note": "Kamay 13 Nov: too upbeat and fast",
+  "bpm": 112,
+  "level_db": -18.5,
+  "swing_db": 7.8
+ },
+ "emotional_piano_atlasaudio.mp3": {
+  "tags": [
+   "piano"
+  ],
+  "intensity": 2,
+  "use": false,
+  "note": "Kamay 13 Nov: too upbeat and fast",
+  "bpm": 59,
+  "level_db": -17.5,
+  "swing_db": 5.4
+ }
 }

@@ -165,7 +165,17 @@ def F(name):
 VOICE = {            # font file, size, look, capitals. Re-measured frame by frame, 12 Nov evening:
     # their big words are a Futura-style heavy face (Jost is its open twin), "of $dollars" a light
     # one, the small joining words a round bold sans, the flag words a chunky display face.
-    "s": ("poppins700.ttf", 74, "plain", False),
+    "s": ("poppins700.ttf", 64, "plain", False),      # smaller (15 Nov): theirs are tiny beside the big word
+    # COLOUR AND PLACE (15 Nov 2026, Kamay: "ours are more poor and less powerful than theirs").
+    # Looked at again frame by frame: the THING he names is written across the picture in a
+    # heavy italic filled with colour ("Challenger 350" red into gold, "a Gulfstream" blue,
+    # "Swiss Alps" red into violet), a sum of money sits large at the TOP of a scene
+    # ("$50,000"), and the plain words around them are small. Ours were all white, on one line.
+    #   G        a sum of money: heavy italic, gold
+    #   N:red    a named thing (also N:blue, N:gold, N:teal, N:violet)
+    #   any voice + "@T" / "@C" / "@B" / "@L" / "@R" puts that caption there (top, middle, ...)
+    "G": ("jost900i.ttf", 190, "grad:gold", False),
+    "N": ("jost900i.ttf", 170, "grad:red", False),
     "S": ("poppins900.ttf", 84, "plain", True),
     "l": ("jost300.ttf", 92, "plain", False),
     "F": ("greatvibes400.ttf", 132, "glow", False),
@@ -187,11 +197,18 @@ POS = {"C": (W // 2, _CY), "L": (330, 560), "R": (1590, 560), "B": (W // 2, 870)
 _fonts = {}
 
 
+GRAD = {"gold": ((255, 232, 150), (222, 150, 40), "v"), "red": ((170, 22, 34), (250, 176, 44), "h"),
+        "blue": ((24, 96, 214), (92, 190, 255), "h"), "teal": ((40, 170, 190), (140, 232, 222), "h"),
+        "violet": ((236, 64, 96), (128, 70, 190), "h")}
+
+
 def font(v):
-    base = "FL" if v.startswith("flag") else v
+    base = "FL" if v.startswith("flag") else "N" if v.startswith("N:") else v
     f, size, look, caps = VOICE[base]
     if (f, size) not in _fonts:
         _fonts[(f, size)] = ImageFont.truetype(F(f), size)
+    if v.startswith("N:"):
+        look = "grad:" + (v[2:] if v[2:] in GRAD else "red")
     return _fonts[(f, size)], look if not v.startswith("flag") else v, caps, size
 
 
@@ -280,7 +297,26 @@ def draw_state(els, path, fresh=None, k=1.0):
             ds.text((x, base + 5), t, font=fo, fill=(0, 0, 0, 215), anchor="ls")
             if look == "glow":
                 dg.text((x, base), t, font=fo, fill=(255, 255, 255, 150), anchor="ls")
-            if look.startswith("flag") or look == "teal":
+            if look.startswith("grad"):
+                c0, c1, way = GRAD[look[5:]]
+                mask = Image.new("L", (W, H), 0)
+                ImageDraw.Draw(mask).text((x, base), t, font=fo, fill=255, anchor="ls")
+                bb = mask.getbbox()
+                if bb:
+                    tex = Image.new("RGB", (bb[2] - bb[0], bb[3] - bb[1]))
+                    n_ = tex.height if way == "v" else tex.width
+                    for q in range(n_):
+                        kq = q / max(1, n_ - 1)
+                        col = tuple(int(c0[i_] + (c1[i_] - c0[i_]) * kq) for i_ in range(3))
+                        ImageDraw.Draw(tex).line((0, q, tex.width, q) if way == "v" else (q, 0, q, tex.height), fill=col)
+                    ol = Image.new("RGBA", (W, H), (0, 0, 0, 0))                 # a dark edge: colour must read on any picture
+                    ImageDraw.Draw(ol).text((x, base), t, font=fo, fill=(0, 0, 0, 200), anchor="ls",
+                                            stroke_width=6, stroke_fill=(0, 0, 0, 200))
+                    img.alpha_composite(ol.filter(ImageFilter.GaussianBlur(2)))
+                    full = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+                    full.paste(tex.convert("RGBA"), (bb[0], bb[1]))
+                    img.paste(full, (0, 0), mask)
+            elif look.startswith("flag") or look == "teal":
                 mask = Image.new("L", (W, H), 0)
                 ImageDraw.Draw(mask).text((x, base), t, font=fo, fill=255, anchor="ls")
                 bb = mask.getbbox()
@@ -307,7 +343,9 @@ def draw_state(els, path, fresh=None, k=1.0):
     out.save(path)
 
 
-voices = {int(k_): v for k_, v in (SP.get("voices") or {}).items()}
+_vraw = {int(k_): v for k_, v in (SP.get("voices") or {}).items()}
+voices = {k_: v.split("@")[0] for k_, v in _vraw.items()}
+vplace = {k_: v.split("@")[1] for k_, v in _vraw.items() if "@" in v}
 fix = {int(k_): v for k_, v in (SP.get("fix") or {}).items()}
 drop = set(SP.get("drop") or [])
 big_from = SP.get("big_from")
@@ -353,7 +391,7 @@ while i < n:
             pieces[-1][0] += " " + txt(j)
         else:
             pieces.append([txt(j), voice(j)])
-    events.append((at(grp[0])[0], at(grp[-1])[1], [["C", pieces]]))
+    events.append((at(grp[0])[0], at(grp[-1])[1], [[next((vplace[j] for j in grp if j in vplace), "C"), pieces]]))
     i = grp[-1] + 1
 for st in states:
     s0 = at(st["from"])[0]
@@ -509,7 +547,7 @@ AOUT = "avoice"
 if SP.get("sound", True):
     try:
         import episode_sound
-        _hits = [at(int(k))[0] for k, v in (SP.get("voices") or {}).items() if v in ("X", "XI") and at(int(k))]
+        _hits = [at(k)[0] for k, v in voices.items() if (v in ("X", "XI", "G") or v.startswith("N:")) and at(k)]
         _rise = at(int(SP["big_from"]))[0] if SP.get("big_from") is not None and at(int(SP["big_from"])) else None
         _mus = os.path.join(HERE, "music", SP["music"]) if SP.get("music") else None
         if _mus and not os.path.exists(_mus):
@@ -549,9 +587,29 @@ if not ok:
     sys.exit(1)
 # the cover = the first frame, as theirs; and the same film upright for TikTok and Shorts
 sh(FF, "-y", "-loglevel", "error", "-ss", "0.10", "-i", dst, "-frames:v", "1", "-q:v", "2", os.path.join(OUT, f"{slug}_cover.jpg"))
-sh(FF, "-y", "-loglevel", "error", "-i", dst, "-vf", "scale=1080:-2:flags=lanczos,pad=1080:1920:0:(oh-ih)/2:black",
-   "-c:v", "libx264", "-preset", "slow", "-crf", "15", "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart",
-   os.path.join(OUT, f"{slug}_9x16.mp4"))
+# THE HOOK ON THE UPRIGHT FILM (15 Nov 2026, Kamay: "where is the hooks?"). The black band above
+# the film carried nothing, so a frame of it on a feed or on YouTube's Shorts shelf (which shows
+# a frame of the clip, never the uploaded thumbnail) said nothing. "title_top": {"tag", "line"}
+# writes the Episode's title there in the poster's gold script, for the whole film except the
+# end card.
+_tt = SP.get("title_top")
+_band = None
+if _tt:
+    try:
+        import poster
+        _band = poster.band(_tt.get("tag", ""), _tt["line"], os.path.join(OUT, f"{slug}_band.png"))
+    except Exception as _e:
+        print("title band skipped:", type(_e).__name__, _e)
+if _band:
+    sh(FF, "-y", "-loglevel", "error", "-i", dst, "-loop", "1", "-i", _band, "-filter_complex",
+       f"[0:v]scale=1080:-2:flags=lanczos,pad=1080:1920:0:(oh-ih)/2:black[f];"
+       f"[1:v]format=rgba,fade=t=in:st=0:d=0.4:alpha=1[t];[f][t]overlay=0:0:shortest=1:enable='lt(t,{DUR:.2f})'[v]",
+       "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "slow", "-crf", "15", "-pix_fmt", "yuv420p",
+       "-c:a", "copy", "-movflags", "+faststart", os.path.join(OUT, f"{slug}_9x16.mp4"))
+else:
+    sh(FF, "-y", "-loglevel", "error", "-i", dst, "-vf", "scale=1080:-2:flags=lanczos,pad=1080:1920:0:(oh-ih)/2:black",
+       "-c:v", "libx264", "-preset", "slow", "-crf", "15", "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart",
+       os.path.join(OUT, f"{slug}_9x16.mp4"))
 json.dump({"slug": slug, "seconds": round(DUR + end_secs, 2), "pieces": [[round(s0, 2), round(e0, 2)] for s0, e0, *_ in segs],
            "cards": len(events), "scenes": N_SCENES, "music": SP.get("music") if AOUT == "aout" else None,
            "end_card": bool(end_secs)}, open(os.path.join(OUT, f"{slug}_info.json"), "w"))

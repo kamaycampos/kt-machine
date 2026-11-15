@@ -6,13 +6,34 @@
  "in": 1729.0,
  "out": 1934.0,
  "keep": [
-  ["Let me tell you an interesting story about cards", "I was in Reno, Nevada"],
-  ["I met a guy named Bobby Singer", "I just remembered all the cards"],
-  ["I proceeded to play for about an hour", "and I made $250,000"],
-  ["After I make $250,000", "you need to come with us"],
-  ["I'm thinking, Okay, I've seen this", "I've seen this in the movies"],
-  ["The owner and the president wants to meet you", "wants to meet you"],
-  ["We go into the restaurant", "because you're just too good for us"]
+  [
+   "Let me tell you an interesting story about cards",
+   "I was in Reno, Nevada"
+  ],
+  [
+   "I met a guy named Bobby Singer",
+   "I just remembered all the cards"
+  ],
+  [
+   "I proceeded to play for about an hour",
+   "and I made $250,000"
+  ],
+  [
+   "After I make $250,000",
+   "you need to come with us"
+  ],
+  [
+   "I'm thinking, Okay, I've seen this",
+   "I've seen this in the movies"
+  ],
+  [
+   "The owner and the president wants to meet you",
+   "wants to meet you"
+  ],
+  [
+   "We go into the restaurant",
+   "because you're just too good for us"
+  ]
  ],
  "scenes": [
   {
@@ -36,12 +57,40 @@
    "move": "the big man twirls spaghetti on his fork and slowly looks up"
   }
  ],
- "big": ["$250,000", "too good for us"],
- "italic": ["Bobby Singer", "the godfather"],
+ "big": [
+  "too good for us"
+ ],
+ "italic": [
+  "Bobby Singer"
+ ],
  "payoff": "because you're just too good for us",
- "mood": ["tense", "mysterious", "night"],
- "hook": ["TOO GOOD", "for the casino"],
+ "mood": [
+  "casino",
+  "suspense"
+ ],
+ "hook": [
+  "TOO GOOD",
+  "for the casino"
+ ],
  "cta_keyword": "WISH",
  "caption": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says he sat down at a single-deck blackjack table in Reno, one on one with the dealer, and remembered every card. About an hour later, he says, he had made $250,000.\n\nThen two very large men tapped him on the shoulder.\n\nHe expected the back room. They walked him to the restaurant instead, where the owner sat eating a plate of spaghetti. What the owner told him is the part nobody guesses.\n\n{episode}\n\nThe 14 audios are Kevin teaching how to use your mind to get what you want in life. They were recorded live at a private event in the Alps.\n\nMost people will watch this and scroll on. A few will comment \"WISH\" and start listening tonight.\n\n#kevintrudeau #megamemory #blackjack #memory #mindset #yourwishisyourcommand",
- "send": "A man who plays cards sends it to his friend: awe - the casino let him keep $250,000 and banned him for being too good."
+ "send": "A man who plays cards sends it to his friend: awe - the casino let him keep $250,000 and banned him for being too good.",
+ "money": [
+  "$250,000"
+ ],
+ "names": [
+  {
+   "say": "single deck blackjack",
+   "color": "red"
+  },
+  {
+   "say": "the godfather",
+   "color": "gold"
+  },
+  {
+   "say": "Reno, Nevada",
+   "color": "violet"
+  }
+ ],
+ "poster": 2
 }

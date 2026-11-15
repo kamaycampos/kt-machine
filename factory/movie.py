@@ -194,6 +194,8 @@ def check(path):
         phrases += [(f"keep {i}", x) for i, kp in enumerate(p.get("keep") or [], 1) for x in kp]
         phrases += [(f"scene {i} on", s.get("on")) for i, s in enumerate(sc, 1)]
         phrases += [("big", x) for x in p.get("big") or []] + [("italic", x) for x in p.get("italic") or []]
+        phrases += [("money", x) for x in p.get("money") or []]
+        phrases += [("names", x.get("say") if isinstance(x, dict) else x) for x in p.get("names") or []]
         for name, ph in phrases:
             if ph and not find(tr, ph):
                 say(f"{name}: he does not say \"{ph}\" between {a:.0f} and {b:.0f} s")
@@ -262,15 +264,15 @@ def moving(path):
 
 
 def pick_music(p, d):
-    tr = json.load(open(os.path.join(MUSIC, "tracks.json")))
-    calm = [f for f, t in tr.items() if t.get("calm") and os.path.exists(os.path.join(MUSIC, f))]
-    used = d.get("music", [])
-    if len(calm) > 1 and used:
-        calm = [f for f in calm if f != used[-1]] or calm          # never the same track two clips running
-    mood = {m.lower() for m in p.get("mood") or []}
-    age = lambda f: len(used) - 1 - max((i for i, u in enumerate(used) if u == f), default=-10 ** 6)
-    calm.sort(key=lambda f: (-min(age(f), 10 ** 5), -len(mood & set(tr[f].get("mood", []))), f))
-    return calm[0] if calm else None
+    """The track that fits THIS story (factory/music_pick.py): what Kevin's own words are about,
+    the planner's mood, never the last track used."""
+    import music_pick
+    text = " ".join(" ... ".join(k) for k in (p.get("keep") or [])) + " " + p.get("start_words", "") + " " + \
+        " ".join(s_.get("on", "") + " " + s_.get("gen", "") for s_ in p["scenes"]) + " " + p.get("title", "")
+    used = list(d.get("music", []))
+    if p["slug"] in d["built"] and used:
+        used = used[:-1]                       # a rebuild: its own earlier track is not "the last one used"
+    return music_pick.pick(text, p.get("mood") or (), used)
 
 
 def spec(path):
@@ -363,7 +365,7 @@ def spec(path):
                     break
                 for i in range(hit[0], hit[1] + 1):
                     voices[str(i)] = v
-                if hit[1] > hit[0] and hit[1] - hit[0] <= 2:
+                if hit[1] > hit[0] and hit[1] - hit[0] <= (3 if v[0] in 'GN' else 2):
                     joins.append([hit[0], hit[1]])
                 lo = hit[1] + 1
                 if not every:
@@ -371,6 +373,16 @@ def spec(path):
 
     mark(p.get("italic"), "I")
     mark(p.get("big"), "X", every=True)
+    # A SUM OF MONEY is gold; over a scene it sits at the top of the picture, as theirs does.
+    # THE THING HE NAMES is written across the picture in colour (15 Nov 2026, episode_build VOICE).
+    in_scene = lambda i: any(sc["from"] <= i <= sc["to"] for sc in scenes)
+    mark(p.get("money"), "G", every=True)
+    for k_, v_ in list(voices.items()):
+        if v_ == "G" and in_scene(int(k_)):
+            voices[k_] = "G@T"
+    for nm in p.get("names") or []:
+        say, col = (nm.get("say"), nm.get("color", "red")) if isinstance(nm, dict) else (nm, "red")
+        mark([say], "N:" + col)
     joins = [j for k, j in enumerate(joins) if not any(j[0] <= o[1] and o[0] <= j[1] for o in joins[:k])]
     fix = {}
     for heard, shown in (p.get("fix") or {}).items():
@@ -379,7 +391,9 @@ def spec(path):
                 fix[str(i)] = shown
     out = dict(stub, keeps=keeps, scenes=scenes, voices=voices, join=joins, fix=fix, tighten=0.85,
                cap_y=800, end_card="end_kamay.png", end_secs=4.0, music_db=-27, fx=True, fx_db=-31,
-               post={"title": p["title"]})
+               post={"title": p["title"]},
+               title_top={"tag": f"EPISODE {int((done()['built'].get(slug) or {}).get('episode') or done()['next_episode'])}",
+                          "line": p["title"]})
     if p.get("payoff"):
         hit = find(wn, p["payoff"], lo=keeps[-1][0], hi=keeps[-1][1] + 1, last=True)
         if hit:
@@ -449,22 +463,30 @@ def queue(path):
     d = done()
     info = json.load(open(os.path.join(OUT, f"{slug}_info.json")))
     film = os.path.join(OUT, f"{slug}_9x16.mp4")
-    n = int(d["next_episode"])
+    # A REBUILD OF A CLIP THAT IS STILL WAITING keeps its Episode number and its file name, so the
+    # new film simply takes the old one's place in the queue (15 Nov 2026).
+    was = d["built"].get(slug) or {}
+    n = int(was.get("episode") or d["next_episode"])
     name = re.sub(r"[^A-Z0-9]+", "-", p["title"].upper()).strip("-")[:48]
-    rel = f"KT_EPISODE/{n:02d}_{name}_{round(info['seconds'])}s.mp4"
+    rel = was.get("file") or f"KT_EPISODE/{n:02d}_{name}_{round(info['seconds'])}s.mp4"
     stem = os.path.join(OUT, rel.replace("/", "--")[:-4])
     shutil.copy(film, stem + ".mp4")
     # the cover: a movie poster from the first scene that is on screen
-    sys.path.insert(0, K)
+    sys.path.insert(0, HERE)
     covers = []
     try:
-        import kt_cover
-        still = next((s for s in sorted(glob.glob(os.path.join(EPISODES, slug, "g_*.mp4.src")), key=os.path.getmtime)), None)
+        import poster
+        # the picture of the THING the story is about: the scene the plan names ("poster": 2),
+        # else the first scene
+        k_ = int(p.get("poster", 1)) - 1
+        want = scene_file(slug, p["scenes"][k_ if 0 <= k_ < len(p["scenes"]) else 0]) + ".src"
+        still = want if os.path.exists(want) else next(
+            (s for s in sorted(glob.glob(os.path.join(EPISODES, slug, "g_*.mp4.src")), key=os.path.getmtime)), None)
         if not still:
             still = stem + "_frame.jpg"
             subprocess.run([FF, "-y", "-loglevel", "error", "-ss", "1.0", "-i", os.path.join(OUT, f"{slug}.mp4"),
                             "-frames:v", "1", still])
-        c, t = kt_cover.from_image(still, p["hook"], stem, tag=f"EPISODE {n}")
+        c, t = poster.make(still, f"EPISODE {n}", p["title"], stem)
         covers = [f for f in (c, t) if f and os.path.exists(f)]
     except Exception as e:
         print("cover skipped:", type(e).__name__, e)
@@ -476,6 +498,9 @@ def queue(path):
     gh = shutil.which("gh") or os.path.join(K, "bin", "gh")
     store = media_store.Store(gh, REPO)
     tag = store.room(1 + len(covers))
+    if was:                                    # the replacement goes where the old film is
+        _m = json.load(open(os.path.join(ROOT, "state", "manifest.json")))["clips"]
+        tag = next((c.get("media_tag", "media") for c in _m if c["file"] == rel), tag)
     for f in [stem + ".mp4"] + covers:
         r = subprocess.run([gh, "release", "upload", tag, f, "--clobber", "-R", REPO], capture_output=True, text=True)
         if r.returncode:
@@ -506,8 +531,20 @@ def enter(path):
     man = json.load(open(mp))
     d = done()
     entry = e["entry"]
-    if any(c["file"] == entry["file"] for c in man["clips"]):
-        print(entry["file"], "is already in the queue")
+    old = next((c for c in man["clips"] if c["file"] == entry["file"]), None)
+    if old is not None:
+        if old.get("posted_at") or old.get("done"):
+            print(entry["file"], "has already posted - nothing changed")
+            return 0
+        for k_ in ("bytes", "music", "caption", "hook", "cover", "media_tag", "solo_hours"):
+            if k_ in entry:
+                old[k_] = entry[k_]
+        json.dump(man, open(mp, "w"), indent=1)
+        d["built"][slug].update({"music": entry.get("music"), "scenes": e.get("scenes"), "rebuilt": True})
+        if d.get("music"):
+            d["music"][-1] = entry.get("music")
+        json.dump(d, open(DONE, "w"), indent=1)
+        print(f"MOVIE REPLACED {entry['file']}: the new film is in the queue, still posting {old.get('scheduled_at')}")
         return 0
     entry["scheduled_at"] = next_slot(man["clips"])
     man["clips"].append(entry)

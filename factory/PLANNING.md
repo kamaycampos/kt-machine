@@ -46,11 +46,25 @@ there. Not health (that is WB's lane). One story = one movie.
   People are stand-ins ("a man in a dark suit seen from behind"): never Kevin's name or any real
   person's name. No words or signs in the picture (generated text comes out garbled);
   `move` = what moves (a hand deals cards, a man looks up). A still that only zooms is refused.
-- `big`: 1-3 phrases written large every time he says them (the sum, the line that lands);
-  `italic`: names; `payoff`: his words where the last line begins (everything is large from there).
+- **WHEN HE NAMES A THING, SHOW THAT EXACT THING** (Kamay, 15 Nov: "when kt says camaro ... you
+  actually show the exact car kt is talking about, like our competitor was showing the exact
+  planes"). A car, a plane, a watch, a building, a book, a city: one scene is THAT thing, named
+  in `gen` by make, model and year exactly as he says it ("a 1967 Chevrolet Camaro convertible"),
+  filling the frame, on the words where he names it - and its name goes in `names`.
+- `names`: [{"say": "his exact words for the thing", "color": "red" | "blue" | "gold" | "teal" | "violet"}]
+  - written across the picture in heavy coloured italics (their "Challenger 350"). 1-4 of them.
+  `money`: every sum he says ("$250,000") - gold; over a scene it sits at the top of the picture.
+  `big`: 1-2 phrases in large white capitals (the line that lands); `italic`: people's names;
+  `payoff`: his words where the last line begins (everything is large from there).
+- `poster`: the number of the scene that IS the story (the thing itself) - it becomes the cover.
+  `title` is written on the cover and above the film in gold script: 2-5 words, the thing or
+  the turn ("The $1,500 Firebird", "Too Good For The Casino"), never a sentence.
 - `fix`: {"word as the transcript heard it": "as it should read"} for a mis-heard name or number.
-- `mood`: 2-3 of: warm, hopeful, wonder, piano, tender, nostalgic, sad, soft, mysterious, tense,
-  secret, night. The factory picks a calm track that fits and never repeats the last one.
+- `mood`: 1-3 of: casino, noir, suspense, tension, heist, nostalgic, americana, warm, emotional,
+  tender, sad, mysterious, secret, night, inspiring, documentary, storytelling, hopeful, wonder,
+  mystical. The factory scores every track against the story's own words AND these
+  (`factory/music_pick.py`) and prints the score sheet; meditation music only fits a story about
+  the mind or the universe. If your story is a kind none of these names, say so in the report.
 - `hook`: [line one, line two] - the cover's headline, true to the story.
 - `caption`: opens with `Comment "WISH" and I'll send you ...` (WISH sends the 14 Your Wish Is
   Your Command audios + the ebook, free - promise nothing else), then the story in "Kevin
