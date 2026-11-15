@@ -310,6 +310,18 @@ def board(cs):
     # description." This is the page he already posts TikTok from, so it sits at the very top:
     # the video, the description, the hour until which Instagram waits for him (engine/main.py,
     # IG_HAND) - after that the machine posts it there by itself, voice only.
+    # COMMENTS INSTAGRAM HIDES FROM THE BOT (15 Nov 2026, dm_reply "withheld"): it counts them on
+    # the post but hands them to no key, so nothing automatic can answer. A person can.
+    try:
+        _wh = json.load(open(os.path.join(HERE, "state", "dms.json"))).get("withheld") or {}
+    except (OSError, ValueError):
+        _wh = {}
+    for _mid, _v in sorted(_wh.items(), key=lambda kv: kv[1].get("noticed", ""), reverse=True)[:4]:
+        p += ["<div class='c ready' data-who='KAMAY' style='border:2px solid #e5534b'>"
+              f"<div class=w style='color:#e5534b;font-weight:700'>{_v.get('hidden')} COMMENT(S) INSTAGRAM IS HIDING FROM THE BOT</div>"
+              f"<div class=fn>Instagram counts {_v.get('counts')} comments on this post but will not show {_v.get('hidden')} of them to the bot, "
+              "so that person got no message. Open the post, find the comment with no reply under it, and send them the link yourself.</div>"
+              f"<p><a class=dl href='{html.escape(_v.get('link') or '#')}'>Open the post</a></p></div>"]
     # WHEN, WHAT, WHERE (15 Nov 2026, Kamay: "how do I know when what where?"). The movie clips'
     # own timetable, first thing on the page: the last ones that went out, the ones coming with
     # their day and hour, and the stories still being made.
