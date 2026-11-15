@@ -1,0 +1,113 @@
+{
+ "slug": "mv_v6v9urd_too_good_for_the_casino",
+ "vid": "v6v9urd",
+ "t_in": 1727.5,
+ "t_out": 1936.5,
+ "keeps": [
+  [
+   25,
+   38
+  ],
+  [
+   72,
+   137
+  ],
+  [
+   324,
+   335
+  ],
+  [
+   345,
+   378
+  ],
+  [
+   380,
+   388
+  ],
+  [
+   463,
+   471
+  ],
+  [
+   491,
+   640
+  ]
+ ],
+ "scenes": [
+  {
+   "src": {
+    "gen": "A casino floor at night, one green felt blackjack table, a man in a dark suit seen from behind sitting alone opposite a dealer in a white shirt and black vest, a single deck of cards on the felt, warm lamps, slot machines glowing far behind",
+    "move": "the dealer deals cards one at a time onto the felt, the slot machine lights blink in the background"
+   },
+   "from": 110,
+   "to": 119,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "Close view of a green felt blackjack table in a casino, tall stacks of casino chips in many colours piled in front of a player's hands in dark suit sleeves, playing cards beside them, warm low light",
+    "move": "the dealer's hand pushes one more tall stack of chips across the felt toward the player"
+   },
+   "from": 332,
+   "to": 335,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A casino blackjack table seen from behind the player: a seated man in a dark suit, and two very large security men in black suits standing close on his left and on his right, casino lights behind them",
+    "move": "one of the large men lifts his hand and taps the seated man on the shoulder, the seated man turns his head"
+   },
+   "from": 355,
+   "to": 363,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A dim old-style casino restaurant with red leather booths, at the table in the far back a big heavy-set Italian man in a dark suit sitting alone eating a plate of spaghetti, white tablecloth, warm lamp light",
+    "move": "the big man twirls spaghetti on his fork and slowly looks up"
+   },
+   "from": 507,
+   "to": 518,
+   "start": 0.1
+  }
+ ],
+ "voices": {
+  "78": "I",
+  "79": "I",
+  "536": "I",
+  "537": "I",
+  "335": "X",
+  "348": "X",
+  "619": "X",
+  "620": "X",
+  "621": "X",
+  "622": "X",
+  "637": "X",
+  "638": "X",
+  "639": "X",
+  "640": "X"
+ },
+ "join": [
+  [
+   78,
+   79
+  ],
+  [
+   536,
+   537
+  ]
+ ],
+ "fix": {},
+ "tighten": 0.85,
+ "cap_y": 800,
+ "end_card": "end_kamay.png",
+ "end_secs": 4.0,
+ "music_db": -27,
+ "fx": true,
+ "fx_db": -31,
+ "post": {
+  "title": "Too Good For The Casino"
+ },
+ "big_from": 634,
+ "music": "mystical_place_liecio.mp3"
+}
