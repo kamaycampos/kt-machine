@@ -1,0 +1,25 @@
+{"source": "v5lvgyl.mp4", "brand": "KT_ROLLSROYCER2R2R2", "test": false,
+ "note": "15 Nov 2026 - second chances for 'The Greatest Kept Secret for Making Money' (Rumble v5lvgyl). Weekly agent, re-cut per PLANNING.md 2c. PROOF-BEFORE-TEACHING failed on captions-vs-sound drift across the whole clip; moved both edges to new sentence boundaries (start one sentence later, on the $15M/$30K line; end two sentences later, on the stronger 1%-vs-40% autopsy payoff instead of the old mid-thought cutoff) to force a re-time. SECRET-SOCIETIES-OF-THE-RICH failed because out=4948.88 sat BEFORE the end words were even spoken (the payoff 'exponential effect of power' is in the NEXT cue, 4948.88-4957.64) - moved out to 4957.64, the end of that cue, which should also clear the captions-vs-sound fail that came from the truncation. WHAT-KEVIN-TAUGHT-INMATES-IN-PRISON is not re-cut: the flagged scramble ('call them we call them') sits on the one sentence that defines what a prison 'shot' is, directly before the disciplinary-actions-dropped payoff that makes the story land - no edge choice gets the payoff without passing through it, so per PLANNING.md 2c (phrase scrambled in the middle of the teaching) it is skipped, not guessed at.",
+ "clips": [
+   {"slug": "PROOF-BEFORE-TEACHING", "in": 3544.96, "out": 3618.0,
+    "start_words": "I didn't teach anything", "end_words": "That's insane",
+    "hook": ["$30,000 to prove", "his own health"],
+    "trial_hooks": [
+      ["$30,000 to prove", "his own health"],
+      ["Why modern medicine", "missed this one"],
+      ["40% was average", "his was 1%"],
+      ["Why you've never", "tested yourself"],
+      ["The tests behind", "Natural Cures"],
+      ["Why Kevin Trudeau tested", "himself first"],
+      ["An 18-year-old's arteries", "lost to his"]
+    ],
+    "caption": "Before Kevin Trudeau taught anyone anything, he tested himself first.\n\nHe didn't teach one seminar until he'd made over $15 million on his own. Then he spent $30,000 on blood work, an MRI, CAT scans, hormone panels, even a hair mineral analysis.\n\nThe results: his arteries showed about 1% calcification. Autopsies on average 18-year-olds from the Vietnam era showed 40 to 50%. His doctors called it impossible.\n\nThat's when he finally wrote Natural Cures.\n\nWould you test yourself before you taught anyone anything?\n\n#kevintrudeau #naturalcures #proofnotpromises #healthsecrets #successhabits #wealthmindset",
+    "send": "A skeptic sends it to a friend who doubts every guru, in awe that real proof exists.",
+    "retry_of": "ep_v5lvgyl_p3/PROOF-BEFORE-TEACHING"},
+   {"slug": "SECRET-SOCIETIES-OF-THE-RICH", "in": 4874.0, "out": 4957.64,
+    "start_words": "they're all a member", "end_words": "exponential effect of power",
+    "hook": ["What every billionaire joins", "in secret"],
+    "caption": "Kevin Trudeau says the truly rich never arrived alone.\n\nEvery one he's met belongs to a private group: Skull and Bones at Yale, the Harvard Alumni Club, the Freemasons, or groups like the Young Presidents' Organization.\n\nIt isn't the secrecy that matters. It's the room. A group of ambitious, positive, big-dreaming people multiplies what any one of them could do by themselves.\n\nHe calls it the exponential effect of power.\n\nWho's in your room right now?\n\n#kevintrudeau #secretsocieties #mindset #networking #successhabits #wealthmindset",
+    "send": "A striver sends it to a friend chasing success alone, the anxiety of being locked out of the real room.",
+    "retry_of": "ep_v5lvgyl_p3/SECRET-SOCIETIES-OF-THE-RICH"}
+ ]}
