@@ -61,19 +61,32 @@ else:
 
 # --- the words, each on its own sound ---------------------------------------------------
 import kt_words
-words = kt_words.words_for(src, a, b, "EPISODE/" + slug)
+_wf = os.path.join(OUT, f"{slug}_words.json")
+_wk = os.path.join(OUT, f"{slug}_words.key")
+_key = f"{SP['vid']}|{a:.3f}|{b:.3f}"
+# TIMED ONCE (14 Nov 2026): the daily movie clip lists the words, writes its spec from them and
+# builds right after - the second timing pass cost 20 minutes for the same answer.
+REUSE = (not LIST and os.path.exists(_wf) and os.path.exists(_wk) and open(_wk).read() == _key)
+words = json.load(open(_wf)) if REUSE else kt_words.words_for(src, a, b, "EPISODE/" + slug)
+if REUSE:
+    print("words: the timing made a moment ago is used again")
 try:
+    if REUSE:
+        raise RuntimeError("already anchored")
     import vsc_v2_time
     words = vsc_v2_time.anchor_words(src, a, b, words)
 except Exception as e:
     print("anchor skipped:", e)
 try:
+    if REUSE:
+        raise RuntimeError("already aligned")
     import kt_align
     words = kt_align.align(src, a, b, words)
 except Exception as e:
     print("align skipped:", e)
 words = [(float(x), float(y), str(w).strip()) for x, y, w in words if str(w).strip()]
-json.dump(words, open(os.path.join(OUT, f"{slug}_words.json"), "w"))
+json.dump(words, open(_wf, "w"))
+open(_wk, "w").write(_key)
 if LIST:
     print(f"WORDS {slug}: {len(words)}")
     line = ""
@@ -386,15 +399,22 @@ inputs, graph, last = [], "", "base"
 _kc = SP.get("kevin_crop")               # [width share, height share, left share, top share] of Kevin's own picture
 KCROP = f"crop=iw*{_kc[0]}:ih*{_kc[1]}:iw*{_kc[2]}:ih*{_kc[3]}," if _kc else ""
 # the cut itself
-parts = []
+parts, seg_inputs = [], []
 for k_, (s0, e0, o, i0, i1) in enumerate(segs):
-    graph += (f"[0:v]trim=start={s0:.3f}:end={e0:.3f},setpts=PTS-STARTPTS,{KCROP}scale={W}:{H}:flags=lanczos,setsar=1,fps=30[v{k_}];"
-              f"[0:a]atrim=start={s0:.3f}:end={e0:.3f},asetpts=PTS-STARTPTS,"
+    # ONE INPUT PER PIECE (14 Nov 2026). Every piece used to be trimmed out of ONE reading of
+    # the episode; the pieces that come later then waited in memory as full pictures (3 MB
+    # each) until the join reached them - about 9 GB for 100 s of film. Episode 2 (74 s) fitted
+    # on GitHub's 16 GB server; the first automatic movie clip (about 105 s) was killed there.
+    # Now each piece is read on its own, in turn, and nothing waits.
+    seg_inputs += ["-ss", f"{a + s0:.3f}", "-t", f"{e0 - s0:.3f}", "-i", src]
+    graph += (f"[{k_}:v]setpts=PTS-STARTPTS,{KCROP}scale={W}:{H}:flags=lanczos,setsar=1,fps=30,"
+              f"trim=duration={e0 - s0:.3f}[v{k_}];"
+              f"[{k_}:a]atrim=duration={e0 - s0:.3f},asetpts=PTS-STARTPTS,"
               f"afade=t=in:st=0:d=0.02,afade=t=out:st={max(0, e0 - s0 - (0.25 if k_ == len(segs) - 1 else 0.03)):.3f}"
               f":d={0.25 if k_ == len(segs) - 1 else 0.03}[a{k_}];")
     parts.append(f"[v{k_}][a{k_}]")
 graph += "".join(parts) + f"concat=n={len(segs)}:v=1:a=1[base][abase];"
-n_in = 1
+n_in = len(segs)
 N_SCENES = 0
 CUTS = []                                # every picture change, for the sound (episode_sound.py)
 for k_, sc in enumerate(SP.get("scenes") or []):
@@ -519,7 +539,7 @@ if AOUT == "avoice":
 gp = os.path.join(TMP, "graph.txt")
 open(gp, "w").write(graph)
 dst = os.path.join(OUT, f"{slug}.mp4")
-r = sh(FF, "-y", "-loglevel", "error", "-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", src, *inputs,
+r = sh(FF, "-y", "-loglevel", "error", *seg_inputs, *inputs,
        "-filter_complex_script", gp, "-map", "[v]", "-map", "[aout]",
        "-r", "30", "-c:v", "libx264", "-preset", "slow", "-crf", "14", "-maxrate", "24000k", "-bufsize", "48000k",
        "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", dst)
