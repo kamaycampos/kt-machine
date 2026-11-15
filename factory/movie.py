@@ -179,8 +179,10 @@ def check(path):
         say(f'the caption opens with: Comment "{key}" ...')
     if "{episode}" not in cap:
         say("the caption must hold the token {episode} on its own line (it becomes 'Episode N: Title.')")
-    if re.search(r"\bcures?\b|link (below|in bio)", cap, re.I):
-        say("caption: never 'cure', never 'link below / in bio'")
+    if re.search(r"\bcures?\b|link below", cap, re.I):
+        say("caption: never 'cure', never 'link below'")
+    if "link in my bio" not in cap:
+        say("caption: end with the safety line - 'No message within a minute? Look in your message requests, or use the link in my bio.'")
     if len(cap) > 2100 or len(re.findall(r"#\w+", cap)) > 6:
         say("caption: 2,100 characters and 6 hashtags at most")
     d = done()

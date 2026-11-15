@@ -67,7 +67,10 @@ there. Not health (that is WB's lane). One story = one movie.
 - `caption`: opens with `Comment "WISH" and I'll send you ...` (WISH sends the 14 Your Wish Is
   Your Command audios + the ebook, free - promise nothing else), then the story in "Kevin
   Trudeau says" voice WITHOUT giving the last line away, then `{episode}` alone on a line, then
-  one true line about the audios, the ask again, up to 6 hashtags. Never "cure", never "link in bio".
+  one true line about the audios, the ask again, then this line word for word: `No message within
+  a minute? Look in your message requests, or use the link in my bio.` (15 Nov: Instagram hides
+  some people's comments from the bot, so the caption must give them another way), then up to 6
+  hashtags. Never "cure".
 - `send`: who sends it to whom, and the emotion.
 
 **Check, then push:** `python factory/movie.py check factory/movies/<file>.json` must print OK.
