@@ -14007,6 +14007,42 @@
     "Harvard heart surgeons",
     "are prescribing this."
    ]
+  },
+  "ep_v4oml32_p3/THE-3-BOOKS-RUNNING-HIS-BUSINESS": {
+   "plan": "ep_v4oml32_p3",
+   "source": "v4oml32.mp4",
+   "brand": "KT_PRIORITY",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THE-3-BOOKS-RUNNING-HIS-BUSINESS_159s.mp4: [FAIL] 01_THE-3-BOOKS-RUNNING-HIS-BUSINESS_159s.mp4           21 captions vs the sound  median +0.12s  worst-10% 0.44s  | words captioned 100%  UNCAPTIONED SPEECH [(57.5, 59.0)]"
+   ],
+   "slug": "THE-3-BOOKS-RUNNING-HIS-BUSINESS",
+   "in": 3308.16,
+   "out": 3468.4,
+   "start_words": "If you're interested in managing",
+   "end_words": "help efficiency as well",
+   "hook": [
+    "The 3 books",
+    "running his business"
+   ]
+  },
+  "ep_v4vdcy0_p4/GAVE-AWAY-80-PERCENT-OF-HIS-PAY": {
+   "plan": "ep_v4vdcy0_p4",
+   "source": "v4vdcy0.mp4",
+   "brand": "KT_SEEDFAITH",
+   "tries": 1,
+   "why": [
+    "FAIL 01_GAVE-AWAY-80-PERCENT-OF-HIS-PAY_46s.mp4: [FAIL] 01_GAVE-AWAY-80-PERCENT-OF-HIS-PAY_46s.mp4             12 captions vs the sound  median -0.00s  worst-10% 0.46s  | words captioned 100%  UNCAPTIONED SPEECH [(39.6, 41.5)]"
+   ],
+   "slug": "GAVE-AWAY-80-PERCENT-OF-HIS-PAY",
+   "in": 4693.08,
+   "out": 4746.72,
+   "start_words": "In my life, I've given",
+   "end_words": "You can't out-give the universe",
+   "hook": [
+    "80% of his income",
+    "given away"
+   ]
   }
  },
  "attempts": {
@@ -14091,7 +14127,7 @@
   "ar_v4ki6sz_r3": 2,
   "ep_v72tj4g_r5": 2,
   "ar_v4kacob": 2,
-  "ep_v4oml32_p3": 1,
-  "ep_v4vdcy0_p4": 1
+  "ep_v4oml32_p3": 2,
+  "ep_v4vdcy0_p4": 2
  }
 }
