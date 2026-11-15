@@ -269,6 +269,14 @@ def pick_music(p, d):
     import music_pick
     text = " ".join(" ... ".join(k) for k in (p.get("keep") or [])) + " " + p.get("start_words", "") + " " + \
         " ".join(s_.get("on", "") + " " + s_.get("gen", "") for s_ in p["scenes"]) + " " + p.get("title", "")
+    # "music": "none" in a plan = this clip goes out with his voice alone (15 Nov 2026, Kamay on
+    # the first two tracks the matcher chose: "THE MUSIC IS A NO NO ... we either fine tune on
+    # what is the ideal music for it and you find it, or we post it without nothing").
+    # "music": "<file in factory/music/>" = that track, chosen by a person.
+    if str(p.get("music", "")).lower() == "none":
+        return None
+    if p.get("music") and os.path.exists(os.path.join(MUSIC, p["music"])):
+        return p["music"]
     used = list(d.get("music", []))
     if p["slug"] in d["built"] and used:
         used = used[:-1]                       # a rebuild: its own earlier track is not "the last one used"
@@ -404,6 +412,8 @@ def spec(path):
     track = pick_music(p, d)
     if track:
         out["music"] = track
+    else:
+        out["fx"] = False                      # no bed: no effects either, his voice alone
     shutil.copy(os.path.join(HERE, "assets", "end_kamay.png"), os.path.join(edir, "end_kamay.png"))
     json.dump(out, open(sp_path, "w"), indent=1)
     json.dump({"notes": notes, "music": track, "planned_scenes": len(p["scenes"]), "placed_scenes": len(scenes)},
@@ -431,7 +441,7 @@ def gate(path):
         shown = info.get("scenes", 0)
         if shown < MIN_SHOWN:
             bad.append(f"only {shown} generated scene(s) on screen: under {MIN_SHOWN} it is not a movie clip")
-        if not info.get("music"):
+        if not info.get("music") and str(p.get("music", "")).lower() != "none":
             bad.append("no music under it")
         if not info.get("end_card"):
             bad.append("no end card")
