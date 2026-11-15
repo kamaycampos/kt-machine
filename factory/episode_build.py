@@ -602,12 +602,12 @@ if _tt:
         print("title band skipped:", type(_e).__name__, _e)
 if _band:
     sh(FF, "-y", "-loglevel", "error", "-i", dst, "-loop", "1", "-i", _band, "-filter_complex",
-       f"[0:v]scale=1080:-2:flags=lanczos,pad=1080:1920:0:(oh-ih)/2:black[f];"
+       f"[0:v]scale=1080:608:flags=lanczos,setsar=1,pad=1080:1920:0:(oh-ih)/2:black,setsar=1[f];"
        f"[1:v]format=rgba,fade=t=in:st=0:d=0.4:alpha=1[t];[f][t]overlay=0:0:shortest=1:enable='lt(t,{DUR:.2f})'[v]",
        "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "slow", "-crf", "15", "-pix_fmt", "yuv420p",
        "-c:a", "copy", "-movflags", "+faststart", os.path.join(OUT, f"{slug}_9x16.mp4"))
 else:
-    sh(FF, "-y", "-loglevel", "error", "-i", dst, "-vf", "scale=1080:-2:flags=lanczos,pad=1080:1920:0:(oh-ih)/2:black",
+    sh(FF, "-y", "-loglevel", "error", "-i", dst, "-vf", "scale=1080:608:flags=lanczos,setsar=1,pad=1080:1920:0:(oh-ih)/2:black,setsar=1",
        "-c:v", "libx264", "-preset", "slow", "-crf", "15", "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart",
        os.path.join(OUT, f"{slug}_9x16.mp4"))
 json.dump({"slug": slug, "seconds": round(DUR + end_secs, 2), "pieces": [[round(s0, 2), round(e0, 2)] for s0, e0, *_ in segs],
