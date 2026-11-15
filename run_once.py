@@ -305,7 +305,7 @@ def main():
                 log(f"  could not fetch: {e}")
                 continue
         result, links = poster.publish(
-            clip, path, media_url(clip["file"]), only=clip.get("retry_only"))
+            clip, path, media_url(clip["file"]), only=engine.only_for(clip))
         if any(v == "posted" for v in (result or {}).values()):
             posted_log_add(clip["file"], time.strftime("%Y-%m-%dT%H:%M"))
         m2 = engine.load()

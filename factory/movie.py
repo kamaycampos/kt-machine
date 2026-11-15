@@ -525,7 +525,10 @@ def queue(path):
         "hook": " ".join(p["hook"]), "bytes": os.path.getsize(stem + ".mp4"), "done": False, "status": {},
         "media_tag": tag, **({"cover": True} if len(covers) == 2 else {}), "look": "movie", "solo": True, "solo_hours": [3, 3],
         "cta_keyword": key, "cta_variant": 0, "cta_kind": "offer",
-        "caption_exact": True, "caption_link": OFFERS[key], "movie": slug, "music": info.get("music")}},
+        "caption_exact": True, "caption_link": OFFERS[key], "movie": slug, "music": info.get("music"),
+        # no music in the film = Instagram waits for Kamay until the evening (engine/main.py, IG_HAND):
+        # he can post it there himself with one of Instagram's own tracks; if not, it posts by itself
+        **({} if info.get("music") else {"ig_hand": True})}},
         open(os.path.join(OUT, f"{slug}_entry.json"), "w"), indent=1)
     print(f"MOVIE UPLOADED {rel} (release {tag}); entering the queue next")
     return 0
@@ -545,7 +548,7 @@ def enter(path):
         if old.get("posted_at") or old.get("done"):
             print(entry["file"], "has already posted - nothing changed")
             return 0
-        for k_ in ("bytes", "music", "caption", "hook", "cover", "media_tag", "solo_hours"):
+        for k_ in ("bytes", "music", "caption", "hook", "cover", "media_tag", "solo_hours", "ig_hand"):
             if k_ in entry:
                 old[k_] = entry[k_]
         json.dump(man, open(mp, "w"), indent=1)

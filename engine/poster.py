@@ -1257,6 +1257,31 @@ def recent_instagram(tok, ig, want=150):
     return out
 
 
+def hand_posted(clip, since_utc, known_text=""):
+    """Did Kamay post this clip on Instagram HIMSELF since `since_utc`? (15 Nov 2026)
+
+    A movie clip can wait for him: he posts it from his phone with one of Instagram's own
+    tracks under it (the posting API cannot attach those). He may paste our description or
+    write his own, so the caption is not the test. The test: a reel on the account, newer than
+    the moment the clip was released to him, that this machine did not post (its address is in
+    none of our records). Returns its link, False (nothing there), or None (could not ask)."""
+    (ig, tok), missing = _cfg("IG_USER_ID", "IG_ACCESS_TOKEN", brand=brand_of(clip))
+    if missing:
+        return None
+    ours = set(re.findall(r"instagram\.com/(?:reels?|p)/([A-Za-z0-9_-]+)", known_text or ""))
+    try:
+        for m in recent_instagram(tok, ig, want=40):
+            if (m.get("timestamp") or "")[:19] < since_utc[:19]:
+                continue
+            code = re.search(r"/(?:reels?|p)/([A-Za-z0-9_-]+)", m.get("permalink") or "")
+            if code and code[1] in ours:
+                continue
+            return m.get("permalink") or "posted by hand"
+    except Exception:
+        return None
+    return False
+
+
 def audit_instagram(clips):
     """Which clips claim Instagram success but are not on their OWN account?
 

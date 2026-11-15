@@ -185,7 +185,7 @@ def due_clips(man):
     from datetime import datetime, timedelta
     now = now_local()
     out = []
-    moved = 0
+    moved = settle_ig_hand(man)
     for i, c in enumerate(man["clips"]):
         when = c.get("scheduled_at")
         # posted_at is set after ANY attempt, success or not. Without this a
@@ -647,11 +647,80 @@ def ar_turn(man, i):
     return True
 
 
+# INSTAGRAM BY HAND, FOR THE CLIPS HE WANTS MUSIC ON (15 Nov 2026). Kamay: "it is much better
+# without music, just kt voice ... the easiest best way for me to post manually only those movie
+# clips that I want music from IG; if I find [a track] at the moment of posting I choose that
+# one, if not I'll post it without it. I work all day."
+# The reels we are measured against carry Instagram's OWN tracks ("Kobe Mane - VIOLENTO", on
+# 420,000 reels), and only a post made inside Instagram can. So a clip carrying "ig_hand"
+# (every movie clip) goes out everywhere EXCEPT Instagram at its time, and waits there until
+# IG_HAND_UNTIL the same day. If by then a reel is on the account that this machine did not
+# post, that was him: the clip is finished. If not, Instagram gets it automatically, voice
+# alone. He never has to do anything; nothing is ever left unposted.
+from datetime import datetime, timedelta   # noqa: E402  (the functions below use both)
+IG_HAND_UNTIL = os.environ.get("IG_HAND_UNTIL", "21:00")
+_IG_LEGS = ("instagram", "instagram_story")
+
+
+def only_for(clip):
+    """The platforms this attempt runs: a retry's own list, or everything but Instagram for a
+    clip that is waiting for him there."""
+    if clip.get("retry_only"):
+        return clip["retry_only"]
+    if clip.get("ig_hand") and not clip.get("ig_hand_from"):
+        return [p for p in poster.ENABLED if p not in _IG_LEGS]
+    return None
+
+
+def settle_ig_hand(man):
+    """At the hour: did he post it? Then it is done. If not, Instagram runs by itself."""
+    now, changed = now_local(), 0
+    for c in man["clips"]:
+        if not c.get("ig_hand_from") or c.get("ig_hand_done"):
+            continue
+        try:
+            due = datetime.strptime(c["ig_hand_due"], "%Y-%m-%dT%H:%M")
+        except (KeyError, ValueError):
+            continue
+        if now < due:
+            continue
+        known = json.dumps([x.get("links") for x in man["clips"]])
+        try:
+            known += open(os.path.join(os.path.dirname(MANIFEST), "variants.json")).read()
+        except OSError:
+            pass
+        hit = poster.hand_posted(c, c["ig_hand_from"], known)
+        if hit is None and (now - due).total_seconds() < 2 * 3600:
+            continue                                     # could not ask Instagram: try again next run
+        c["ig_hand_done"] = True
+        changed += 1
+        if hit:
+            c.setdefault("status", {})["instagram"] = "posted"
+            c["status"]["instagram_story"] = "posted by hand - no story"
+            c.setdefault("links", {})["instagram"] = hit if str(hit).startswith("http") else ""
+            c["ig_by_hand"] = True
+            auto = [p for p in poster.ENABLED if p != "tiktok"]
+            if all(c["status"].get(p) == "posted" for p in auto):
+                c["done"] = True
+            sys.stderr.write(f"instagram by hand: {c['file']} - he posted it ({hit})\n")
+        else:
+            c["retry_only"] = ["instagram"]
+            sys.stderr.write(f"instagram by hand: {c['file']} - not posted by {IG_HAND_UNTIL}, posting it now\n")
+    return changed
+
+
 def record(man, i, result, links):
     """One place where the outcome of an attempt is written down."""
     c = man["clips"][i]
     c["status"] = result
     c["links"] = links
+    if c.get("ig_hand") and not c.get("ig_hand_from"):
+        c["ig_hand_from"] = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S")
+        c["ig_hand_due"] = now_local().strftime("%Y-%m-%dT") + IG_HAND_UNTIL
+        if now_local().strftime("%H:%M") >= IG_HAND_UNTIL:                 # released late: one hour
+            c["ig_hand_due"] = (now_local() + timedelta(hours=1)).strftime("%Y-%m-%dT%H:%M")
+        c["status"]["instagram"] = (f"yours to post with Instagram music until {c['ig_hand_due'][11:]} "
+                                    f"- after that it posts by itself, voice only")
     # The caption AS POSTED, frozen. Captions get rewritten later (hook changes,
     # reordering) and the audit used to compare a rewritten caption against a
     # post made with the old one, decide the post was missing, and publish it a
@@ -734,7 +803,7 @@ def scheduler_loop():
                     clip = dict(man["clips"][i])
                 result, links = poster.publish(
                     clip, os.path.join(MEDIA, clip["file"]), media_url(clip["file"]),
-                    only=clip.get("retry_only"))
+                    only=only_for(clip))
                 with LOCK:
                     man = load()
                     record(man, i, result, links)

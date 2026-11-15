@@ -97,6 +97,15 @@ def calendar_ics(cs):
         body = [f"{'POSTED' if live else 'scheduled'} - {f}"]
         for k, v in sorted((c.get("links") or {}).items()):
             body.append(f"{k}: {v}")
+        if c.get("ig_hand") and not c.get("ig_hand_done") and not c.get("done"):
+            # the reminder on his phone: this one can go on Instagram by hand, with music
+            out += ["BEGIN:VEVENT", "UID:ighand-" + f.replace("/", "-").replace(" ", "_") + "@kt-machine",
+                    "DTSTAMP:" + now, "DTSTART:" + start, "DTEND:" + (_utc(when, 30) or start),
+                    "SUMMARY:" + esc("MOVIE CLIP: post it on Instagram with music (optional, until 9 pm)"),
+                    "DESCRIPTION:" + esc("Video + description, top of the page: https://kamaycampos.github.io/kt-machine/\n"
+                                         "If you do nothing, Instagram gets it at 9 pm by itself, voice only."),
+                    "BEGIN:VALARM", "ACTION:DISPLAY", "DESCRIPTION:Movie clip ready for Instagram", "TRIGGER:PT0M", "END:VALARM",
+                    "END:VEVENT"]
         out += ["BEGIN:VEVENT",
                 "UID:" + f.replace("/", "-").replace(" ", "_") + "@kt-machine",
                 "DTSTAMP:" + now, "DTSTART:" + start,
@@ -295,7 +304,37 @@ def board(cs):
          "<button class='pick' onclick=\"pick('WB',this)\">WB Organics</button></div>",
          "<div><a href='descriptions.html' style='color:#f5c542'>"
          "All descriptions &rarr;</a></div>",
-         f"<h2>READY TO POST ON TIKTOK &middot; {len(todo)}</h2>"]
+         ]
+    # THE MOVIE CLIP HE CAN POST ON INSTAGRAM HIMSELF, WITH INSTAGRAM'S MUSIC (15 Nov 2026).
+    # Kamay: "I work all day, so if I post I need to have the clip on my phone ... and the
+    # description." This is the page he already posts TikTok from, so it sits at the very top:
+    # the video, the description, the hour until which Instagram waits for him (engine/main.py,
+    # IG_HAND) - after that the machine posts it there by itself, voice only.
+    hand = [c for c in cs if c.get("ig_hand") and not c.get("ig_hand_done") and not c.get("_who")
+            and not c.get("done")]
+    hand.sort(key=lambda c: c.get("posted_at") or c.get("scheduled_at") or "")
+    for c in hand[:3]:
+        cid = "m" + hashlib.sha1(c["file"].encode()).hexdigest()[:16]
+        out_now = bool(c.get("ig_hand_from"))
+        until = (c.get("ig_hand_due") or "")[11:] or "21:00"
+        line = (f"OUT NOW everywhere except Instagram. Instagram waits for you until {until} today; "
+                f"after that it posts there by itself, without music."
+                if out_now else
+                f"Comes out {(c.get('scheduled_at') or '')[:16].replace('T', ' at ')}. From then until 21:00 "
+                f"Instagram waits for you; after that it posts there by itself, without music.")
+        cover = video_url(c)[:-4] + "__cover.jpg"
+        p += ["<div class='c ready' data-who='KAMAY' style='border:2px solid #f5c542'>"
+              "<div class=w style='color:#f5c542;font-weight:700'>MOVIE CLIP &middot; POST IT ON INSTAGRAM WITH MUSIC (only if you want)</div>"
+              f"<div class=hk>&ldquo;{html.escape(c.get('hook') or '')}&rdquo;</div>"
+              f"<div class=fn>{html.escape(line)}</div>"
+              f"<p><a class=dl href='{video_url(c)}' download>&#11015; 1. Save the video</a> "
+              f"<a class=dl href='{cover}' download>&#11015; cover</a></p>"
+              f"<pre id='{cid}'>{html.escape(c.get('caption') or '')}</pre>"
+              f"<button onclick=\"cp('{cid}',this)\">2. Copy the description</button>"
+              "<div class=fn>3. Instagram &rarr; + &rarr; Reel &rarr; choose the video &rarr; the music note: pick a track, "
+              "turn the track down so his voice is on top &rarr; paste the description &rarr; Share. "
+              "Nothing else to do: the machine sees your post and does not post it again.</div></div>"]
+    p += [f"<h2>READY TO POST ON TIKTOK &middot; {len(todo)}</h2>"]
     mine = [c for c in todo if owner(c) == "KAMAY"]
     hers = [c for c in todo if owner(c) == "AR"]
     wb = [c for c in todo if owner(c) == "WB"]
