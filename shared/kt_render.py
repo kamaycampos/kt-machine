@@ -476,6 +476,18 @@ def play_ass(words, path, arch, src=None, t_in=0.0, t_out=None, dur=None):
                     parts.append((f"{{{hide}}}{t_}{{\\r\\fs{small}}}") if hide else t_)
             ev.append(f"Dialogue: 0,{_ts(a)},{_ts(g_end)},Play,,0,0,0,,{{\\an5\\pos({W // 2},{cap_y})\\fs{small}{fad}}}" + " ".join(parts))
             continue
+        # PLAIN, BUILT WORD BY WORD (14 Nov 2026, the caption-style study in factory/VIRALITY.md).
+        # The one style every 2026 source agrees on is the caption that moves WITH the voice: the
+        # line is there to be read ahead, but each word only turns full when he says it (the
+        # words still to come wait at 45%). Kamay's own rule says the same thing: a word must
+        # land on the exact second he says it. One colour, no jump, no box.
+        if len(g) > 1 and os.environ.get("KT_PLAY_BUILD", "1") != "0":
+            parts = []
+            for i, t_ in enumerate(text):
+                t0 = int(max(0, (words[g[i]][0] - 0.04 - a)) * 1000)
+                parts.append(f"{{\\alpha&H8C&\\t({t0},{t0 + 60},\\alpha&H00&)}}{t_}" if i and t0 > 60 else t_)
+            ev.append(f"Dialogue: 0,{_ts(a)},{_ts(g_end)},Play,,0,0,0,,{{\\an5\\pos({W // 2},{cap_y})\\fs62{fad}}}" + " ".join(parts))
+            continue
         ev.append(f"Dialogue: 0,{_ts(a)},{_ts(g_end)},Play,,0,0,0,,{{\\an5\\pos({W // 2},{cap_y})\\fs62{fad}}}" + " ".join(text))
     head = ("[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nWrapStyle: 2\n\n"
             "[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, "
