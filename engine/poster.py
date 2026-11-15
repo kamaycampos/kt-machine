@@ -1194,7 +1194,9 @@ def tiktok_cover_first(path, public_url, clip):
                             "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", out],
                            capture_output=True, text=True, timeout=900)
         if r.returncode or not os.path.exists(out) or os.path.getsize(out) < 0.2 * os.path.getsize(path):
+            sys.stderr.write(f"tiktok: cover-first copy NOT made ({(r.stderr or '')[-160:]}) - the clip goes as it is\n")
             return path
+        sys.stderr.write(f"tiktok: cover-first copy made for {os.path.basename(path)}\n")
         return out
     except Exception:
         return path
