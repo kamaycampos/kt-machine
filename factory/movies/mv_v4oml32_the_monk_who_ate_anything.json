@@ -1,0 +1,86 @@
+{
+ "movie": true,
+ "source": "v4oml32.mp4",
+ "title": "The Monk Who Ate Anything",
+ "why_movie": "A real first-person Kevin story with a place, people and a turn: the Shaolin monk who swears he has no dietary restriction, then only orders vegetables for a week - until Kevin calls him on it and serves him steak.",
+ "in": 4756.0,
+ "out": 5015.3,
+ "keep": [
+  [
+   "I'm with Xi Yanming, the Shaolin monk",
+   "Shaolin temple in China"
+  ],
+  [
+   "So he comes to my house",
+   "I have no dietary restriction"
+  ],
+  [
+   "So we go to the restaurant",
+   "a vegetable fried rice. So we eat"
+  ],
+  [
+   "After a week, I said, Shifu",
+   "the only thing I see you eat is vegetables"
+  ],
+  [
+   "And he looks at me and he says, I like a vegetable",
+   "I eat steak and I love it. I eat anything"
+  ],
+  [
+   "Okay. I'm serving you a steak tonight",
+   "What a beautiful way to live"
+  ]
+ ],
+ "scenes": [
+  {
+   "on": "I'm with Xi Yanming, the Shaolin monk",
+   "gen": "An elderly Asian Buddhist monk with a shaved head, wearing saffron and orange temple robes, standing in an ancient stone courtyard in China at dawn, mist drifting past red wooden pillars",
+   "move": "the monk slowly bows his head, then opens his eyes and looks up"
+  },
+  {
+   "on": "I know you're a vegetarian. So what do you eat?",
+   "gen": "A home dining room, empty plates on a wooden table, a stand-in host in a dark sweater sitting across from an Asian Buddhist monk in orange robes, warm evening lamp light",
+   "move": "the monk shakes his head and gestures with an open hand while he speaks"
+  },
+  {
+   "on": "I would like a bowl of vegetable noodle soup",
+   "gen": "A small Chinese restaurant booth lit by red lanterns, a round table crowded with a bowl of vegetable noodle soup, a plate of stir-fried vegetables and a plate of vegetable fried rice, chopsticks resting on the bowls",
+   "move": "steam rises from the bowl of noodle soup as chopsticks lift a few vegetables"
+  },
+  {
+   "on": "This guy ate the steak and asked for another piece",
+   "gen": "A dinner table at night lit by candlelight, a thick grilled steak on a white plate in front of an Asian Buddhist monk in orange robes, a fork and knife in his hands",
+   "move": "the monk lifts a forkful of steak to his mouth and smiles while chewing"
+  }
+ ],
+ "big": [
+  "I eat anything"
+ ],
+ "italic": [
+  "Xi Yanming"
+ ],
+ "payoff": "This guy ate the steak and asked for another piece",
+ "names": [
+  {
+   "say": "Shaolin Kung Fu",
+   "color": "gold"
+  },
+  {
+   "say": "Chan Buddhism",
+   "color": "teal"
+  }
+ ],
+ "mood": [
+  "warm",
+  "wonder"
+ ],
+ "hook": [
+  "THE VEGETARIAN MONK",
+  "who ate steak"
+ ],
+ "cta_keyword": "WISH",
+ "caption": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says he tracked down a real Shaolin monk and had him move into his house to learn the temple's secrets. The monk said he was vegetarian, then insisted he had no dietary restriction at all - he \"ate anything.\"\n\nFor a week, every single meal the monk ordered was vegetables. Kevin finally called him out on it.\n\nWhat the monk said next - and what happened the night Kevin served him steak - is the part people don't expect.\n\n{episode}\n\nThe 14 audios are Kevin teaching how to use your mind to get what you want in life, recorded live at a private event in the Alps.\n\nMost people will scroll past this. A few will comment \"WISH\" and start listening tonight.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #shaolin #mindset #buddhism #wisdom #yourwishisyourcommand",
+ "send": "A friend sends it to someone who diets or restricts: delight - a monk who claims no restrictions, then happily eats the steak he was 'never' supposed to touch.",
+ "poster": 4,
+ "music": "none"
+}
