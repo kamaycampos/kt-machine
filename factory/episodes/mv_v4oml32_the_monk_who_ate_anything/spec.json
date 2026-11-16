@@ -1,0 +1,138 @@
+{
+ "slug": "mv_v4oml32_the_monk_who_ate_anything",
+ "vid": "v4oml32",
+ "t_in": 4754.5,
+ "t_out": 5017.8,
+ "keeps": [
+  [
+   0,
+   18
+  ],
+  [
+   215,
+   294
+  ],
+  [
+   417,
+   458
+  ],
+  [
+   499,
+   551
+  ],
+  [
+   552,
+   603
+  ],
+  [
+   618,
+   656
+  ]
+ ],
+ "scenes": [
+  {
+   "src": {
+    "gen": "An elderly Asian Buddhist monk with a shaved head, wearing saffron and orange temple robes, standing in an ancient stone courtyard in China at dawn, mist drifting past red wooden pillars",
+    "move": "the monk slowly bows his head, then opens his eyes and looks up"
+   },
+   "from": 0,
+   "to": 5,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A home dining room, empty plates on a wooden table, a stand-in host in a dark sweater sitting across from an Asian Buddhist monk in orange robes, warm evening lamp light",
+    "move": "the monk shakes his head and gestures with an open hand while he speaks"
+   },
+   "from": 226,
+   "to": 231,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A small Chinese restaurant booth lit by red lanterns, a round table crowded with a bowl of vegetable noodle soup, a plate of stir-fried vegetables and a plate of vegetable fried rice, chopsticks resting on the bowls",
+    "move": "steam rises from the bowl of noodle soup as chopsticks lift a few vegetables"
+   },
+   "from": 436,
+   "to": 446,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A dinner table at night lit by candlelight, a thick grilled steak on a white plate in front of an Asian Buddhist monk in orange robes, a fork and knife in his hands",
+    "move": "the monk lifts a forkful of steak to his mouth and smiles while chewing"
+   },
+   "from": 625,
+   "to": 634,
+   "start": 0.1
+  }
+ ],
+ "voices": {
+  "2": "I",
+  "3": "I",
+  "4": "I",
+  "246": "X",
+  "247": "X",
+  "248": "X",
+  "280": "X",
+  "281": "X",
+  "282": "X",
+  "283": "X",
+  "284": "X",
+  "285": "X",
+  "286": "X",
+  "287": "X",
+  "288": "X",
+  "601": "X",
+  "602": "X",
+  "603": "X",
+  "263": "N:teal",
+  "264": "N:teal"
+ },
+ "join": [
+  [
+   2,
+   4
+  ],
+  [
+   246,
+   248
+  ],
+  [
+   280,
+   282
+  ],
+  [
+   283,
+   285
+  ],
+  [
+   286,
+   288
+  ],
+  [
+   601,
+   603
+  ],
+  [
+   263,
+   264
+  ]
+ ],
+ "fix": {},
+ "tighten": 0.85,
+ "cap_y": 800,
+ "end_card": "end_kamay.png",
+ "end_secs": 4.0,
+ "music_db": -27,
+ "fx": false,
+ "fx_db": -31,
+ "post": {
+  "title": "The Monk Who Ate Anything"
+ },
+ "title_top": {
+  "tag": "EPISODE 4",
+  "line": "The Monk Who Ate Anything"
+ },
+ "big_from": 625
+}
