@@ -16794,7 +16794,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-18T10:59",
+   "cta_keyword": "WISH",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_ONETAKE/01_FILMED-ONCE-SOLD-450-MILLION_46s.mp4",
@@ -16805,7 +16809,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-18T16:36",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_RUNWAY/01_REALTOR-SELLS-IN-ONE-WEEK_140s.mp4",
@@ -16816,7 +16824,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-19T08:08",
+   "cta_keyword": "MONEY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_RUNWAY/01_THE-90-SECOND-SALES-SECRET_82s.mp4",
@@ -16827,7 +16839,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-18T08:47",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_RUNWAY/02_2-BILLION-APP-NO-WIFI-OFFICE_110s.mp4",
@@ -16838,7 +16854,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-18T11:22",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   }
  ]
 }
