@@ -16507,14 +16507,27 @@
    "hook": "$30,000 to prove his own health",
    "bytes": 26865859,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-16T08:57",
    "cta_keyword": "MONEY",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfzifiEjNFH/",
+    "youtube": "https://youtube.com/shorts/iDmKQ995JAc"
+   },
+   "caption_at_post": "Before Kevin Trudeau taught anyone anything, he tested himself first.\n\nHe didn't teach one seminar until he'd made over $15 million on his own. Then he spent $30,000 on blood work, an MRI, CAT scans, hormone panels, even a hair mineral analysis.\n\nThe results: his arteries showed about 1% calcification. Autopsies on average 18-year-olds from the Vietnam era showed 40 to 50%. His doctors called it impossible.\n\nThat's when he finally wrote Natural Cures.\n\nWould you test yourself before you taught anyone anything?\n\n#kevintrudeau #naturalcures #proofnotpromises #healthsecrets #successhabits #wealthmindset",
+   "posted_at": "2026-11-16T09:13"
   },
   {
    "file": "AR_INNERSTATER2/01_ONE-MEDITATING-COMMUNITY_41s.mp4",
