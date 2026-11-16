@@ -1,18 +1,18 @@
 {
- "at": "2026-11-16T07:14",
+ "at": "2026-11-16T08:10",
  "account": "what_do_you_wan7t",
  "profile": {
-  "follower_count": 263,
-  "following_count": 2,
-  "likes_count": 6585,
-  "video_count": 83
+  "likes_count": 6618,
+  "video_count": 83,
+  "follower_count": 265,
+  "following_count": 2
  },
  "videos": {
   "KT_EPISODE/01_THE-SECRET-BEHIND-THE-SECRET_59s.mp4": {
    "id": "7708510657192201485",
-   "view_count": 224,
-   "like_count": 14,
-   "comment_count": 1,
+   "view_count": 241,
+   "like_count": 17,
+   "comment_count": 2,
    "share_count": 1,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708510657192201485?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 58,
@@ -20,7 +20,7 @@
   },
   "KT_DEPOSIT/01_CARE-LESS-GET-MORE_89s.mp4": {
    "id": "7708464790276001037",
-   "view_count": 143,
+   "view_count": 148,
    "like_count": 7,
    "comment_count": 3,
    "share_count": 0,
@@ -30,7 +30,7 @@
   },
   "KT_CLUBROOM/01_RICH-PEOPLES-SECRET-CLUB_68s.mp4": {
    "id": "7708398209940458783",
-   "view_count": 524,
+   "view_count": 530,
    "like_count": 30,
    "comment_count": 1,
    "share_count": 3,
@@ -40,8 +40,8 @@
   },
   "KT_CENTURY/01_MILLIONAIRE-NEEDS-100-MILLION_122s.mp4": {
    "id": "7708240192460606751",
-   "view_count": 2692,
-   "like_count": 195,
+   "view_count": 2738,
+   "like_count": 196,
    "comment_count": 3,
    "share_count": 27,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708240192460606751?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -50,8 +50,8 @@
   },
   "KT_MIRAGE/01_MANIFEST-A-FERRARI-WITH-A-PHOTO_47s.mp4": {
    "id": "7708198574059736351",
-   "view_count": 9227,
-   "like_count": 999,
+   "view_count": 9264,
+   "like_count": 1002,
    "comment_count": 11,
    "share_count": 40,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708198574059736351?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -60,17 +60,17 @@
   },
   "KT_VAULTWIDER2/01_FORBES-400-LIST-LIES-WIDE_62s.mp4": {
    "id": "7708152396463082765",
-   "view_count": 43239,
-   "like_count": 1644,
+   "view_count": 43809,
+   "like_count": 1668,
    "comment_count": 74,
-   "share_count": 159,
+   "share_count": 161,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708152396463082765?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 61,
    "posted": "2026-11-14T22:08"
   },
   "KT_VAULT/01_TEN-YEARS-PRISON-GOT-IT-ALL-BACK_55s.mp4": {
    "id": "7708090930695245086",
-   "view_count": 542,
+   "view_count": 545,
    "like_count": 10,
    "comment_count": 8,
    "share_count": 0,
@@ -80,7 +80,7 @@
   },
   "KT_FORGER2/01_SAME-RECESSION-ONE-BANKRUPT-ONE-RICH_127s.mp4": {
    "id": "7707989412906306846",
-   "view_count": 1680,
+   "view_count": 1684,
    "like_count": 118,
    "comment_count": 6,
    "share_count": 34,
@@ -90,7 +90,7 @@
   },
   "KT_MASONRY/01_RICH-TOWN-ONLY-HAD-BUSINESS-OWNERS_87s.mp4": {
    "id": "7707879220852149535",
-   "view_count": 3153,
+   "view_count": 3162,
    "like_count": 91,
    "comment_count": 1,
    "share_count": 5,
@@ -100,7 +100,7 @@
   },
   "KT_FORGER2/02_TRILLION-DOLLAR-FRIENDS-DREAM-BIG_121s.mp4": {
    "id": "7707767515027361054",
-   "view_count": 378,
+   "view_count": 379,
    "like_count": 24,
    "comment_count": 0,
    "share_count": 0,
@@ -110,7 +110,7 @@
   },
   "KT_FORGE/02_JORDAN-FAKED-RIVALS-TO-WIN_113s.mp4": {
    "id": "7707716447182638366",
-   "view_count": 379,
+   "view_count": 382,
    "like_count": 22,
    "comment_count": 5,
    "share_count": 0,
@@ -120,7 +120,7 @@
   },
   "KT_FORGE/01_THE-RICHEST-MAN-WAS-NEVER-INDECISIVE_98s.mp4": {
    "id": "7707494403056635167",
-   "view_count": 367,
+   "view_count": 368,
    "like_count": 30,
    "comment_count": 0,
    "share_count": 1,
@@ -130,7 +130,7 @@
   },
   "KT_FORGE/02_HENRY-FORD-DIDNT-INVENT-CARS_94s.mp4": {
    "id": "7707298482863770910",
-   "view_count": 1609,
+   "view_count": 1612,
    "like_count": 20,
    "comment_count": 0,
    "share_count": 1,
@@ -180,7 +180,7 @@
   },
   "KT_TIMBER/01_87500-IN-ONE-DAY_52s.mp4": {
    "id": "7707036868591865118",
-   "view_count": 1018,
+   "view_count": 1020,
    "like_count": 42,
    "comment_count": 0,
    "share_count": 2,
@@ -440,7 +440,7 @@
   },
   "KT_ADVERSITYR2R2/01_THE-BOOK-THAT-SOLD-50-MILLION-COPIES_62s.mp4": {
    "id": "7703549510210850079",
-   "view_count": 1883,
+   "view_count": 1885,
    "like_count": 155,
    "comment_count": 2,
    "share_count": 27,
