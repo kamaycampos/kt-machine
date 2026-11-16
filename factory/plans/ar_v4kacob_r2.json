@@ -1,0 +1,83 @@
+{
+ "source": "v4kacob.mp4",
+ "brand": "AR_STARPEOPLER2",
+ "test": false,
+ "note": "16 Nov 2026 - re-cut, Awakened Rise weekly agent. All 6 clips from AR_STARPEOPLE failed with 'no clip came out of the render' (AR_PLANNING.md 2c: almost always opens-on-B-roll/no-face or no-passing-ending). This is a two-camera interview (Kevin + Giorgio Tsoukalos) where long single-speaker answers describing a named artifact (the Puma Punku stones, the Mitchell Hedges skull, the gold funerary pieces, the Sumerian scrolls) are the likeliest spot for an inserted image/B-roll cutaway; the back-and-forth beats (a host question, a short agreement, 'right?' / 'exactly') are the safest bet for an on-camera moment, since a produced cutaway rarely lands mid-exchange. Moved every opening to the nearest such beat, keeping each original closing sentence (already a clean stop) except clip 1, whose new window closes on its own clean payoff instead. YOU-CANT-RECREATE-THEIR-ANCIENT-CUT: opened on the travelogue description of the site (lake, tourists, gate of the sun) - almost certainly B-roll of the location; moved to Giorgio's own rhetorical question 'how was it done' and closed on the chicken-bones-and-string punchline instead of the diorite line, both on-camera exchange beats. SCIENTISTS-CALLED-IT-IMPOSSIBLE-TO-MAKE: moved open back 54s to Kevin's own topic-launch question ('Crystal skulls. What do you know about them?') - a host line, always filmed on camera. EVERY-CULTURE-CARVED-THE-SAME-HELMET: moved open back 9s to Kevin's transition line ('Very interesting. Now, let's talk about that'). GOLD-TOYS-STILL-FLY-LIKE-JETS: moved open back 31s to Kevin's actual question that starts the topic ('Small models of airplanes. Tell me about this.'). ANUNNAKI-MEANS-BEINGS-FROM-THE-HEAVENS: moved open forward 11s off the narrated 'heavens opened' line onto the 'right?' / 'Oh, yes, yes, yes' exchange; caption trimmed since the teaching-disciplines line is now outside the clip. THEY-WORSHIPPED-SOLDIERS-AS-LITERAL-GODS: moved open back 29s onto the 'Exactly, exactly' agreement beat.",
+ "clips": [
+  {
+   "slug": "YOU-CANT-RECREATE-THEIR-ANCIENT-CUT",
+   "retry_of": "ar_v4kacob/YOU-CANT-RECREATE-THEIR-ANCIENT-CUT",
+   "in": 664.0,
+   "out": 708.0,
+   "start_words": "So how was it",
+   "end_words": "stuff that I'm interested in",
+   "hook": ["You can't recreate", "their ancient cut."],
+   "send": "A friend who trusts in modern tech, because this names the exact stone our best tools still can't cut like they did - awe and unease.",
+   "caption": "Puma Punku's stone blocks are cut with a precision we still can't fully explain.\n\nThe stone is diorite - the second hardest substance on the planet, just behind diamond. Mainstream archaeology's official explanation for how it was carved? Chicken bones and a length of string.\n\nThat's the actual textbook answer. Even the researchers who study this call it ridiculous.\n\nComment RISE and I'll send you what he thinks actually did it.\n\n#ancientaliens #disclosure #hiddenhistory #ancientcivilizations #lostknowledge #kevintrudeau"
+  },
+  {
+   "slug": "SCIENTISTS-CALLED-IT-IMPOSSIBLE-TO-MAKE",
+   "retry_of": "ar_v4kacob/SCIENTISTS-CALLED-IT-IMPOSSIBLE-TO-MAKE",
+   "in": 1052.0,
+   "out": 1202.0,
+   "start_words": "Let's go through a",
+   "end_words": "making of this artifact",
+   "hook": ["You can't copy", "this ancient skull."],
+   "send": "A friend who thinks crystal skulls are a movie prop, because Hewlett Packard's own scientists said this one shouldn't exist - awe and disbelief.",
+   "caption": "In the 1960s, a crystal skull landed in the labs of Hewlett Packard.\n\nTheir scientists found no tool marks on it anywhere - no sanding, no rubbing, no trace of how it was shaped. Worse: crystal grows along its own axis, and cutting against that axis should shatter the whole piece. This skull was worked straight across it and survived whole.\n\nTheir own conclusion, on record: this thing should not exist.\n\nOnly a handful of these skulls are accepted as genuinely ancient. This is the one that's been tested the hardest.\n\nComment RISE and I'll send you the rest of what they found.\n\n#crystalskull #ancientmystery #disclosure #hiddenhistory #ancientcivilizations #kevintrudeau"
+  },
+  {
+   "slug": "EVERY-CULTURE-CARVED-THE-SAME-HELMET",
+   "retry_of": "ar_v4kacob/EVERY-CULTURE-CARVED-THE-SAME-HELMET",
+   "in": 1259.0,
+   "out": 1325.0,
+   "start_words": "Very interesting Now let's",
+   "end_words": "culture all around the world",
+   "hook": ["Your textbooks missed", "this ancient helmet."],
+   "send": "A friend who thinks ancient art is just myth and decoration, because the same unexplained detail shows up on every continent, never once agreed on in advance - curiosity and awe.",
+   "caption": "Pick any ancient culture on Earth and you'll find the same carving: a figure in what looks exactly like a sealed space helmet.\n\nNot a headdress. Not feathers. A closed helmet, standing on a statue right beside others wearing ordinary animal masks from the same period - meaning the carver knew the difference and made it anyway.\n\nAfrica, South America, Asia - cultures that never met, that never traded a single idea. The same detail, without exception, in every one of them.\n\nThat isn't superstition repeating itself. That's a memory.\n\nComment RISE and I'll send you where it shows up closest to you.\n\n#ancientaliens #disclosure #hiddenhistory #ancientcivilizations #awakening #kevintrudeau"
+  },
+  {
+   "slug": "GOLD-TOYS-STILL-FLY-LIKE-JETS",
+   "retry_of": "ar_v4kacob/GOLD-TOYS-STILL-FLY-LIKE-JETS",
+   "in": 1700.0,
+   "out": 1823.0,
+   "start_words": "Now we have and",
+   "end_words": "knew something about aerodynamics",
+   "hook": ["Gold toys still", "fly like jets."],
+   "send": "A friend who says ancient people couldn't have known flight, because scientists built one of these gold objects at full size and it actually flew - pure awe.",
+   "caption": "In Colombia, archaeologists found hundreds of small gold funeral objects shaped like animals - frogs, birds, fish. A dozen of them don't match anything alive.\n\nThey carry an upright tail fin, which no bird on Earth has ever had. Their wings sit under the body instead of at the shoulder, the opposite of every flying creature in nature. Two aviation scientists in Germany built one at full scale, added a propeller, and threw it into the air.\n\nIt flew.\n\nThese were buried over a thousand years before anyone is supposed to have understood aerodynamics.\n\nComment RISE and I'll send you Egypt's matching piece.\n\n#ancientaliens #disclosure #hiddenhistory #lostknowledge #ancientcivilizations #kevintrudeau"
+  },
+  {
+   "slug": "ANUNNAKI-MEANS-BEINGS-FROM-THE-HEAVENS",
+   "retry_of": "ar_v4kacob/ANUNNAKI-MEANS-BEINGS-FROM-THE-HEAVENS",
+   "in": 2659.0,
+   "out": 2701.0,
+   "start_words": "And these are in",
+   "end_words": "bizarre looking beings with wings",
+   "hook": ["Anunnaki means beings", "from the heavens."],
+   "send": "A friend who thinks angels are only a Bible word, because the oldest texts we have used a different name for the same beings - awe and curiosity.",
+   "caption": "Long before the Torah was written, older texts were already describing beings from the sky.\n\nThe Sumerians had a name for them: the Anunnaki, which translates to \"those who from the heavens came.\" Their own scrolls don't describe them as ordinary - wings, sometimes the heads of birds, a figure riding inside a winged disk in the sky.\n\nEvery major tradition that came after borrowed the same story and gave it a different name.\n\nComment RISE and I'll send you what the oldest scrolls actually describe.\n\n#ancienttexts #disclosure #hiddenhistory #sumerian #awakening #kevintrudeau"
+  },
+  {
+   "slug": "THEY-WORSHIPPED-SOLDIERS-AS-LITERAL-GODS",
+   "retry_of": "ar_v4kacob/THEY-WORSHIPPED-SOLDIERS-AS-LITERAL-GODS",
+   "in": 2832.0,
+   "out": 3014.0,
+   "start_words": "Exactly exactly And so",
+   "end_words": "it's highly fascinating",
+   "hook": ["They worshipped soldiers", "as literal gods."],
+   "send": "A friend who thinks ancient people worshipping 'gods' is just a metaphor, because this happened in living memory, to people who still tattoo it on their shoulders - awe and unease.",
+   "caption": "During World War Two, American troops set up bases on islands where the people had never seen a plane, a radio, or even a lighter.\n\nTen years after the war ended, researchers went back and found the islanders had built planes out of straw and wood, and were holding rituals around them. Asked why, they said, \"We're worshipping our gods.\"\n\nIt's called a cargo cult, and it's still practiced today - people tattooing USA on their shoulders, decades later. Hand a culture unexplained technology and it becomes religion inside one generation.\n\nNow ask what our ancestors thought they saw, thousands of years earlier.\n\nComment RISE and I'll send you how fast it happened.\n\n#cargocult #disclosure #hiddenhistory #ancientaliens #awakening #kevintrudeau",
+   "trial_hooks": [
+    ["In 1944 natives", "began worshipping soldiers."],
+    ["The John Frum", "cult worships soldiers."],
+    ["It wasn't magic.", "It was technology."],
+    ["Skip this truth,", "lose the pattern."],
+    ["The ethnologists found", "straw-built fake planes."],
+    ["Stop confusing magic", "for real technology."],
+    ["They tattoo USA", "like it's sacred."]
+   ]
+  }
+ ]
+}
