@@ -1,0 +1,20 @@
+{"source": "v4xs1cn.mp4", "brand": "KT_IONSTORM", "test": false,
+ "note": "16 Nov 2026 - replacement for KT_HIPPOCAMPUS/01_NATURE-SOUNDS-GROW-YOUR-BRAIN_68s.mp4, posted 15 Nov and gone by TikTok takedown the next morning (factory/PLANNING.md 'TAKEN DOWN BY TIKTOK'). Same episode, same nature/hippocampus lesson, a later moment and a different angle: the old clip opened on the general habit ('wealthy people always went for a walk in nature') and closed on the pineal gland; this one opens on the specific, concrete mechanism (repeated animal sounds - crickets, cicadas, frogs, birds - and forest wind producing negative ions) and closes on 'but that's the science', never repeating the old clip's hook or wording. retry_of points at the taken-down clip only to clear the overlap fence (same footage, different cut). Weekly agent.",
+ "clips": [
+   {"slug": "NEGATIVE-IONS-GROW-YOUR-BRAIN", "in": 3624.0, "out": 3683.0,
+    "retry_of": "ep_v4xs1cn_p2/NATURE-SOUNDS-GROW-YOUR-BRAIN",
+    "start_words": "The most powerful",
+    "end_words": "but that's the science",
+    "hook": ["Why wealth chases", "crickets, not cash"],
+    "trial_hooks": [
+      ["100% free way", "grows your brain"],
+      ["City noise blocks", "your brain's growth"],
+      ["Silence doesn't help.", "Specific sounds do"],
+      ["Skipping nature walks", "costs your focus"],
+      ["Billionaires chase crickets,", "not quiet rooms"],
+      ["Kevin Trudeau's secret:", "crickets grow brains"],
+      ["Forest wind physically", "rewires your brain"]
+    ],
+    "send": "Someone who lives for the city sends this to a friend glued to their desk, proof that a walk somewhere loud with crickets is doing more for their brain than a quiet office ever will.",
+    "caption": "Kevin Trudeau says the wealthy did not stumble onto this by accident: the most powerful nature sounds - crickets, cicadas, frogs, birds - are the repeated ones, and that repetition stimulates the hippocampus, the part of the brain tied to manifesting goals.\n\nStep into a forest and there is a second mechanism. Wind moving through the trees produces negative ions, and those ions stimulate the hippocampus and the pineal gland even further.\n\nNone of it costs a membership. A loud patch of crickets or a beach with rolling waves does the same thing, he says.\n\nWhen did you last let a forest fill your ears instead of a podcast?\n\n#kevintrudeau #wealthmindset #lawofattraction #manifestation #brainscience #mindsetmatters"}
+ ]}
