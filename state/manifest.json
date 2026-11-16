@@ -16634,14 +16634,27 @@
    "hook": "The zero-complaint secret millions bought twice",
    "bytes": 26254345,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611162134258EC1CAEC0281E01B389E'}}"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-16T16:16",
    "cta_keyword": "MONEY",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df0U_S5DXq9/",
+    "youtube": "https://youtube.com/shorts/k1dUnDB6PaE"
+   },
+   "caption_at_post": "Kevin Trudeau says across five different bestselling products, he never once had to deal with an unhappy customer.\n\nNatural Cures sold millions. Mega Memory sold millions. Mega Speed Reading sold tens of millions. Mega Math and Light Your Fire sold millions more. Across all of them: no complaints, the lowest return rate in the entire direct response industry, and the highest repeat-buy rate he says he's ever seen.\n\nPeople who bought one product came back and bought another.\n\nThat's not luck. That's a product people actually need and actually use.\n\nWhat would it take for your customers to come back a second time?\n\n#kevintrudeau #customerservice #businesslessons #entrepreneurship #directresponse #wealthhabits",
+   "posted_at": "2026-11-16T16:34"
   },
   {
    "file": "KT_EPISODE/02_THE-1-500-FIREBIRD_78s.mp4",
