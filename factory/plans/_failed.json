@@ -14169,6 +14169,78 @@
     "This isn't theory.",
     "He was there."
    ]
+  },
+  "ep_v4oml32_p4/THE-1948-BOOK-GURUS-COPY": {
+   "plan": "ep_v4oml32_p4",
+   "source": "v4oml32.mp4",
+   "brand": "KT_DREAMWORLD",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_THE-1948-BOOK-GURUS-COPY_74s.mp4` - opens mid-sentence on \"at all the\""
+   ],
+   "slug": "THE-1948-BOOK-GURUS-COPY",
+   "in": 429.0,
+   "out": 502.4,
+   "start_words": "If you look at",
+   "end_words": "famous and incredibly wealthy",
+   "hook": [
+    "Why gurus steal",
+    "your 1948 secret"
+   ]
+  },
+  "ep_v4vdcy0_r3/CRIED-FIVE-DAYS-THEN-LET-GO": {
+   "plan": "ep_v4vdcy0_r3",
+   "source": "v4vdcy0.mp4",
+   "brand": "KT_EMPIRER2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_CRIED-FIVE-DAYS-THEN-LET-GO_121s.mp4: ends off the planned words: plan ends 'He let it go', clip ends 'he was tore up about it'"
+   ],
+   "slug": "CRIED-FIVE-DAYS-THEN-LET-GO",
+   "in": 1004.0,
+   "out": 1126.5,
+   "start_words": "I work in the Empire State Building",
+   "end_words": "He let it go",
+   "hook": [
+    "A 92-year-old lawyer",
+    "lost his wife"
+   ]
+  },
+  "ep_v5kg9ip_p2/FULL-THROTTLE-TO-CRUISING-ALTITUDE": {
+   "plan": "ep_v5kg9ip_p2",
+   "source": "v5kg9ip.mp4",
+   "brand": "KT_RUNWAY",
+   "tries": 1,
+   "why": [
+    "FAIL 01_FULL-THROTTLE-TO-CRUISING-ALTITUDE_80s.mp4: [FAIL] 01_FULL-THROTTLE-TO-CRUISING-ALTITUDE_80s.mp4          25 captions vs the sound  median +0.41s  worst-10% 1.07s  | words captioned 99%  UNCAPTIONED SPEECH [(15.8, 18.7)]"
+   ],
+   "slug": "FULL-THROTTLE-TO-CRUISING-ALTITUDE",
+   "in": 2229.0,
+   "out": 2310.0,
+   "start_words": "A plane. That plane is",
+   "end_words": "That's how you make money",
+   "hook": [
+    "What pilots know",
+    "about getting rich"
+   ]
+  },
+  "ep_v5kg9ip_p2/AI-REPLACES-100K-COPYWRITER": {
+   "plan": "ep_v5kg9ip_p2",
+   "source": "v5kg9ip.mp4",
+   "brand": "KT_RUNWAY",
+   "tries": 1,
+   "why": [
+    "drop KT_RUNWAY/AI-REPLACES-100K-COPYWRITER: hook - 859px wide at 44px - over the 780px safe zone, will be cut off on a phone"
+   ],
+   "slug": "AI-REPLACES-100K-COPYWRITER",
+   "in": 3342.0,
+   "out": 3387.0,
+   "start_words": "He put together an",
+   "end_words": "paying me $100,000 to do it",
+   "hook": [
+    "What AI just",
+    "replaced: $100,000 copywriters"
+   ]
   }
  },
  "attempts": {
@@ -14256,6 +14328,6 @@
   "ep_v4oml32_p3": 2,
   "ep_v4vdcy0_p4": 2,
   "ar_v4kacob_r2": 2,
-  "ep_v4vdcy0_r3": 1
+  "ep_v4vdcy0_r3": 2
  }
 }
