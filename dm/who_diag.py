@@ -11,6 +11,7 @@ os.environ.setdefault("DM_BRAND", "AR_")      # fb-diag runs it for AR; dm-diag 
 import dm_reply as m
 
 WHO = (os.environ.get("WHO_SHA") or "").strip().lower()
+WHOS = {w.strip(): i for i, w in enumerate(WHO.split(","), 1) if w.strip()}      # several people: comma-separated hashes
 DAYS = int(os.environ.get("WHO_DAYS") or 0)
 d = json.load(open(m.STATE))
 kws = m.keywords()
@@ -24,7 +25,7 @@ def tag(name):
         return "NO-NAME"
     if name == mine:
         return "US"
-    return "TARGET" if hashlib.sha256(name.lower().encode()).hexdigest() == WHO else "other"
+    return "TARGET" if hashlib.sha256(name.lower().encode()).hexdigest() in WHOS else "other"
 
 
 def state(cid):
