@@ -1,0 +1,20 @@
+{"source": "v4vdcy0.mp4", "brand": "KT_EMPIRER2", "test": false,
+ "note": "16 Nov 2026 - second chance re-cut of 'The Secrets of Happiness & Joy | The Kevin Trudeau Show | Ep. 13' (Rumble v4vdcy0). Fixing CRIED-FIVE-DAYS-THEN-LET-GO: the planned end_words 'He let it go' sat in the MIDDLE of a long cue, not its end, so the old out (the cue's end time) carried two extra unplanned sentences into the render and threw off the caption sync. Pulled 'out' back to right after 'He let it go' and nudged 'in' to the clean cue start. Same story, same words. Weekly agent.",
+ "clips": [
+   {"slug": "CRIED-FIVE-DAYS-THEN-LET-GO", "in": 1004.0, "out": 1126.5,
+    "retry_of": "ep_v4vdcy0_p2/CRIED-FIVE-DAYS-THEN-LET-GO",
+    "start_words": "I work in the Empire State Building",
+    "end_words": "He let it go",
+    "hook": ["A 92-year-old lawyer", "lost his wife"],
+    "trial_hooks": [
+      ["Married at 22", "Widowed years later"],
+      ["A bus took her", "No warning"],
+      ["5 days of grief", "Then peace"],
+      ["Lose someone this fast", "Then what"],
+      ["The wrong question", "Kevin Trudeau asked"],
+      ["Kevin's dinner story", "He asked wrong"],
+      ["The last words", "I love you"]
+    ],
+    "send": "A widow or widower forwards this to a grieving friend, as permission to grieve hard then let it go; awe at his quiet resilience, not sadness.",
+    "caption": "At a dinner table in California, Kevin Trudeau sat beside a 92-year-old lawyer who still worked part-time in the Empire State Building, the same office since the day it opened.\n\nKevin asked one question he instantly regretted: was his wife's death sudden? It was. She was hit by a bus while telling him she loved him.\n\nMarried since they were 22, together every day. He cried five days straight.\n\nThen he stopped. \"That's enough mourning. You have to move on. That's what she would have wanted.\"\n\nHe hadn't buried the grief. He had finished it.\n\nHow long are you letting a loss run your life?\n\n#kevintrudeau #resilience #grief #mindsetshift #lettinggo #manifestation"}
+ ]}

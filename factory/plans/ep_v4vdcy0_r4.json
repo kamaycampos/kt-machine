@@ -1,0 +1,20 @@
+{"source": "v4vdcy0.mp4", "brand": "KT_DEPOSITR2", "test": false,
+ "note": "16 Nov 2026 - second chance re-cut of 'The Secrets of Happiness & Joy | The Kevin Trudeau Show | Ep. 13' (Rumble v4vdcy0). Fixing SILENT-BLESSING-PAYS-1000-FOLD: the planned end_words 'field times 100 or 1,000' sat in the middle of its cue (the digit '1,000' likely didn't word-match the spoken number), so the build ran on into the NEXT sentence, 'So wish happiness silently toward others' - actually the cleaner payoff line. Kept the cut, moved 'out' to that cue's real end and renamed end_words to match exactly what is actually said there. Nudged 'in' off the cue boundary for the same reason. Weekly agent.",
+ "clips": [
+   {"slug": "SILENT-BLESSING-PAYS-1000-FOLD", "in": 2630.0, "out": 2701.0,
+    "retry_of": "ep_v4vdcy0_p3/SILENT-BLESSING-PAYS-1000-FOLD",
+    "start_words": "If you greet everyone",
+    "end_words": "wish happiness silently toward others",
+    "hook": ["What happens when", "you bless strangers"],
+    "trial_hooks": [
+      ["1,000% returns on", "silent kindness"],
+      ["Negativity is quietly", "bankrupting your life"],
+      ["Give love first,", "get rich later"],
+      ["Why staying silent", "costs you blessings"],
+      ["The universe repays", "silent love 1,000-fold"],
+      ["Kevin Trudeau's secret:", "bless strangers silently"],
+      ["Say it silently.", "Get rich loving"]
+    ],
+    "send": "Someone who just caught themselves being short with a stranger sends this to a friend having a rough week, proof that a silent kindness comes back multiplied.",
+    "caption": "Kevin Trudeau teaches a technique so simple most people dismiss it: silently say \"I love you\" to every person you pass, without ever saying it out loud.\n\nHe calls it making a deposit. Send the feeling out first, before anyone gives you a reason to, and the universe sends it back multiplied - a hundred times, even a thousand times over, he says.\n\nIt costs nothing and takes no time. You can do it waiting in line, driving to work, walking down the street.\n\nCompassion, Kevin says, is simply believing the person in front of you deserves to be happy too.\n\nWhat would change if you quietly blessed the next ten strangers you passed?\n\n#kevintrudeau #lawofattraction #manifestation #gratitude #yourwishisyourcommand #mindsetshift"}
+ ]}
