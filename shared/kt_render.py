@@ -1931,6 +1931,46 @@ def drop_stutters(words):
     return out
 
 
+# THE ROOM IN THE PAUSES (16 Nov 2026). Kamay: "the sound quality is so weird ... like it is in a
+# radio, a sound every time KT stops talking ... not all clips". Measured on 28 posted clips: it
+# follows the SOURCE episode. Clean recordings fall 46-73 dB below his voice in a pause; a handful
+# of older ones (v4tz80x, v4vdcy0, v4xs1cn, v4oml32, v4y99ab, parts of v7i67gw) only 33-38 dB -
+# a low room rumble (85-300 Hz) that comes up every time he stops. Our render and the platforms
+# add nothing (YouTube's and Instagram's stored sound measure the same as our file).
+# For those clips only: a low cut under his voice and a SOFT downward expander that turns the
+# pauses down to where a clean recording sits (measured: pause -56 -> -72, his voice unchanged to
+# 0.1 dB, word tails and the short gaps between words untouched). A clean recording is left exactly as it is. KT_ROOM=off switches it off.
+_ROOM_CACHE = {}
+
+
+def room_filter(src, t_in, t_out):
+    key = (src, round(t_in, 1), round(t_out, 1))
+    if key in _ROOM_CACHE:
+        return _ROOM_CACHE[key]
+    out = ""
+    try:
+        if os.environ.get("KT_ROOM", "on") != "off":
+            r = subprocess.run([FFMPEG, "-hide_banner", "-ss", f"{t_in:.2f}", "-t", f"{t_out - t_in:.2f}",
+                                "-i", src, "-vn", "-af",
+                                "astats=metadata=1:reset=1:length=0.2,"
+                                "ametadata=print:key=lavfi.astats.Overall.RMS_level:file=-",
+                                "-f", "null", "-"], capture_output=True, text=True, timeout=600)
+            v = sorted(float(x.split("=")[1]) for x in r.stdout.splitlines()
+                       if "RMS_level=" in x and "inf" not in x and "nan" not in x)
+            if len(v) >= 20:
+                floor, loud = v[int(len(v) * 0.05)], v[int(len(v) * 0.8)]
+                if floor > -66.0 and loud - floor < 44.0 and loud > -40.0:
+                    thr_db = min(floor + 13.0, loud - 18.0)
+                    out = (f"highpass=f=85,agate=threshold={10 ** (thr_db / 20.0):.5f}:ratio=3:range=0.06"
+                           f":attack=5:release=220:knee=8:detection=rms,")
+                sys.stderr.write(f"  sound: pauses {floor:.0f} dB, voice {loud:.0f} dB -> "
+                                 f"{'room turned down in the pauses' if out else 'left as recorded'}\n")
+    except Exception as e:
+        sys.stderr.write(f"  sound: not measured ({type(e).__name__}) - left as recorded\n")
+    _ROOM_CACHE[key] = out
+    return out
+
+
 def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
            hook_y=None, yt_win=None, slug=None, fix=None, shots=None,
            track=None, cuts=None, opener=None, geo=None, label=None):
@@ -2132,6 +2172,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
     # between an edit and an accident.
     dur = t_out - t_in
     fs = min(FADE_OUT, max(0.35, dur * 0.12))
+    room = room_filter(src, t_in, t_out) if apply else ""
     pre = ",".join([geo] + ([CINEMA_GRADE] if CINEMA else [WORD_GRADE] if WORD else []) + caps)
     # THE CINEMATIC OPENER (kt_opener.py, 17 Oct 2026): a 4K shot of the hook's
     # subject for the first seconds, Kevin's voice under it, a low hit, then a
@@ -2159,13 +2200,13 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
           (f"[{4 if opener else 2}:v]setpts=PTS-STARTPTS+{lab['t'][0]:.3f}/TB[lb];"
            f"[vv][lb]overlay=x=(W-w)/2:y={lab['y']}:eof_action=pass[vl];[vl]" if lab else "[vv]") +
           f"fade=t=out:st={dur - fs:.2f}:d={fs:.2f}[v];"
-          f"{ain}{asrc}afade=t=out:st={dur - fs:.2f}:d={fs:.2f}[a]")
+          f"{ain}{asrc}{room}afade=t=out:st={dur - fs:.2f}:d={fs:.2f}[a]")
     if arch:
         # The still layer stays for the whole clip and goes UNDER the captions (its shade is
         # what they are read against), so the order is: picture, layer, captions, fade.
         fc = (f"[0:v]{geo}[bg];[1:v]format=rgba[hk];[bg][hk]overlay=0:0,"
               + ",".join(caps + [f"fade=t=out:st={dur - fs:.2f}:d={fs:.2f}"]) + "[v];"
-              f"[0:a]afade=t=out:st={dur - fs:.2f}:d={fs:.2f}[a]")
+              f"[0:a]{room}afade=t=out:st={dur - fs:.2f}:d={fs:.2f}[a]")
     vf = ["-filter_complex", fc, "-map", "[v]", "-map", "[a]"]
     cmd = [FFMPEG, "-y", "-loglevel", "error", "-ss", f"{t_in:.2f}",
            "-t", f"{t_out - t_in:.2f}", "-i", src,
@@ -2271,7 +2312,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
                                f"d={yfs:.2f}"]) if yvf[0] == "-vf" else yvf
             ycmd = [FFMPEG, "-y", "-loglevel", "error", "-ss", f"{ys:.2f}",
                     "-t", f"{ye - ys:.2f}", "-i", src, *yvf,
-                    "-af", f"afade=t=out:st={ye - ys - yfs:.2f}:d={yfs:.2f}",
+                    "-af", f"{room}afade=t=out:st={ye - ys - yfs:.2f}:d={yfs:.2f}",
                     "-c:v", "libx264", "-preset", "medium", "-crf", "17",
            "-maxrate", "12000k", "-bufsize", "24000k",
                     "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k",
@@ -2286,7 +2327,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
                 ycmd = [FFMPEG, "-y", "-loglevel", "error", "-ss", f"{ys:.2f}",
                         "-t", f"{yd:.2f}", "-i", src, "-framerate", "30", "-i", lab["pattern"],
                         "-filter_complex", yfc, "-map", "[v]", "-map", "0:a",
-                        "-af", f"afade=t=out:st={yd - yfs:.2f}:d={yfs:.2f}",
+                        "-af", f"{room}afade=t=out:st={yd - yfs:.2f}:d={yfs:.2f}",
                         "-c:v", "libx264", "-preset", "medium", "-crf", "17",
                         "-maxrate", "12000k", "-bufsize", "24000k",
                         "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k",
@@ -2314,7 +2355,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
                         "-t", f"{yd:.2f}", "-i", src,
                         "-loop", "1", "-framerate", "30", "-t", f"{yd:.2f}", "-i", ycard,
                         "-filter_complex", yfc, "-map", "[v]", "-map", "0:a",
-                        "-af", f"afade=t=out:st={yd - yfs:.2f}:d={yfs:.2f}",
+                        "-af", f"{room}afade=t=out:st={yd - yfs:.2f}:d={yfs:.2f}",
                         "-c:v", "libx264", "-preset", "medium", "-crf", "17",
                         "-maxrate", "12000k", "-bufsize", "24000k",
                         "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k",
@@ -2327,7 +2368,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
                 yd = ye - ys
                 yfc = (OP.video_graph(ygeo, 1, opener.get("secs", OP.OPEN_SECS)) + ";[kv0]"
                        + ",".join(ydraws) + f",fade=t=out:st={yd - yfs:.2f}:d={yfs:.2f}[v];"
-                       + OP.audio_graph(2) + f";[a0]afade=t=out:st={yd - yfs:.2f}:d={yfs:.2f}[a]")
+                       + OP.audio_graph(2) + f";[a0]{room}afade=t=out:st={yd - yfs:.2f}:d={yfs:.2f}[a]")
                 ycmd = [FFMPEG, "-y", "-loglevel", "error", "-ss", f"{ys:.2f}",
                         "-t", f"{yd:.2f}", "-i", src,
                         "-ss", f"{float(opener.get('start', 0)):.2f}", "-i", opener["path"],
