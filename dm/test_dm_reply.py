@@ -112,6 +112,20 @@ m.SINCE = (now + timedelta(minutes=1)).strftime("%Y-%m-%dT%H:%M:%S")
 m.STATE = os.path.join(tempfile.mkdtemp(), "dms_ar.json")
 m.run()
 assert sent == [], sent
+# 16 Nov 2026: on her Instagram Meta's own rule answers first. A fresh keyword comment is left
+# alone (and not marked seen); once the wait is over and the account still has not replied, the
+# bot answers it. Facebook is not held back.
+sent.clear()
+m.SINCE = ""
+m.STATE = os.path.join(tempfile.mkdtemp(), "dms_ar.json")
+m.WAIT = timedelta(hours=2)              # c4 is 1 hour old: too fresh
+m.run()
+assert sorted(c for c, _ in sent) == ["f1"], sent
+assert "c4" not in json.load(open(m.STATE))["seen"]
+m.WAIT = timedelta(minutes=3)
+m.run()
+assert sorted(c for c, _ in sent) == ["c4", "f1"], sent
+m.WAIT = timedelta(0)
 os.environ["AR_CTA_KEYWORDS"] = ""
 assert m.keywords() == [], "her account must never fall back to Kevin's words"
 print("comment -> DM: all checks pass")

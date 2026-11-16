@@ -41,6 +41,12 @@ STATE = os.path.join(ROOT, "state", "dms_ar.json" if BRAND == "AR_" else "dms.js
 # messages to the people who commented"). A DM sent by hand leaves no public reply, so the
 # bot cannot see it: everything older than this is hers, never DMed a second time.
 SINCE = os.environ.get("DM_SINCE") or {"AR_": "2026-11-03T03:30:00"}.get(BRAND, "")
+# META'S OWN RULE GOES FIRST ON HER INSTAGRAM (16 Nov 2026). Instagram does not hand this bot every
+# comment: one "Comment RISE" reel showed five real "Rise" in Business Suite and listed ONE for us,
+# by every way of asking - four people got nothing. Meta's own "Comment to message" rule runs
+# inside Meta and sees them all, so it answers first; this bot waits this many minutes and then
+# answers only a keyword comment the account has still not replied to. Never two messages.
+WAIT = timedelta(minutes=float(os.environ.get(BRAND + "DM_WAIT_MIN") or {"AR_": 3}.get(BRAND, 0)))
 G = "https://graph.facebook.com/v21.0"
 T = 30
 WINDOW = timedelta(days=7)           # Meta's private-reply window
@@ -304,6 +310,9 @@ def run(dry=False):
                 d["seen"][cid] = now.isoformat()
                 tally["already answered"] += matched(body, kws) is not None
                 continue
+            if WAIT and platform == "instagram" and now - _ts(when) < WAIT and matched(body, kws):
+                tally["left to Meta's own rule for now"] = tally.get("left to Meta's own rule for now", 0) + 1
+                continue                 # not marked seen: a later pass answers it if Meta's rule did not
             d["seen"][cid] = now.isoformat()
             if SINCE and when[:19] < SINCE:
                 continue
