@@ -49,7 +49,10 @@ def get(url, params=None, timeout=None):
             {"id": "c4", "text": "money please", "timestamp": iso(timedelta(hours=1)), "username": "cy"},
             {"id": "c5", "text": "Comment BRAIN for the link", "timestamp": iso(timedelta(hours=1)), "username": "me_myself"},
             {"id": "c6", "text": "MONEY", "timestamp": iso(timedelta(hours=1)), "username": "dee",
-             "replies": {"data": [{"username": "me_myself"}]}}]})
+             "replies": {"data": [{"username": "me_myself", "text": "Just sent it to you - check your messages"}]}},
+            # 16 Nov 2026: a chatty reply by the account ("hahaha") is NOT an answer - she still gets the link
+            {"id": "c7", "text": "money pls", "timestamp": iso(timedelta(hours=1)), "username": "mel",
+             "replies": {"data": [{"username": "me_myself", "text": "@mel hahaha"}]}}]})
     if url.endswith("/PG/video_reels"):
         return R({"data": [{"id": "V1"}]})
     if url.endswith("/V1/comments"):
@@ -73,10 +76,10 @@ os.environ.update(DM_AUTO="on", OFFER_URL="https://example.com/me", KT_CTA_KEYWO
 m.run()
 first = sorted(c for c, _ in sent)
 m.run()
-assert first == ["c1", "c4", "f1"], first
-assert len(sent) == 3, "a second run must send nothing"
+assert first == ["c1", "c4", "c7", "f1"], first
+assert len(sent) == 4, "a second run must send nothing"
 assert all("#ad" not in t and "https://example.com/me" in t for _, t in sent)
-assert set(json.load(open(m.STATE))["sent"]) == {"c1", "c4", "f1"}
+assert set(json.load(open(m.STATE))["sent"]) == {"c1", "c4", "c7", "f1"}
 
 # AWAKENED RISE (2 Nov 2026): her own keys, words and link; a key without DM permission
 # leaves every keyword comment waiting, so the first pass with the right key answers them.

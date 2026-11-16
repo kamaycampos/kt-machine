@@ -49,8 +49,10 @@ SINCE = os.environ.get("DM_SINCE") or {"AR_": "2026-11-03T03:30:00"}.get(BRAND, 
 # KT TOO (16 Nov 2026, evening). Meta's KT rule was made new and fired on both of Kamay's tests - and
 # this bot, 1 and 5 seconds after the comment, sent its own message as well: two DMs each. Meta's
 # public reply is not there yet that early, so "skip what the account answered" cannot see it.
-# KT now gives Meta one minute; the 2.5-minute pass answers whatever Meta left.
-WAIT = timedelta(minutes=float(os.environ.get(BRAND + "DM_WAIT_MIN") or {"AR_": 3, "": 1}.get(BRAND, 0)))
+# CORRECTION, same evening: that reading was WRONG. DM_TEXT (ours) also opens "Hey! Thanks for
+# commenting", both public replies carried our envelope sign, and each tester got ONE message - ours.
+# Meta's new KT rule did not fire, for them or for a stranger a few minutes later. KT's wait is 0 again.
+WAIT = timedelta(minutes=float(os.environ.get(BRAND + "DM_WAIT_MIN") or {"AR_": 3}.get(BRAND, 0)))
 G = "https://graph.facebook.com/v21.0"
 T = 30
 WINDOW = timedelta(days=7)           # Meta's private-reply window
@@ -60,6 +62,19 @@ RECENT_POSTS = int(os.environ.get("DM_RECENT_POSTS") or 25)
 MAX_PER_RUN = 60                     # stay far under Meta's messaging limits
 PAGE_CAP = int(os.environ.get("DM_PAGE_CAP") or 40)      # pages of 50 comments read per post per pass
 WITHHELD = {}                        # media id -> what Instagram counted but did not hand over (or None)
+
+
+# ONLY AN AUTOMATIC ANSWER COUNTS AS "ALREADY ANSWERED" (16 Nov 2026). A new viewer commented "Wish";
+# Kamay replied "hahaha" from the account before the bot's turn, the bot took ANY reply by the
+# account for Meta's "Just sent it to you" and skipped her for good - no link. A reply now counts
+# only when it reads like the automatic one (Meta's rule or ours). Awakened Rise keeps the old
+# behaviour (any reply) until her rule's reply text is added to AR_DM_ANSWERED_RE.
+_ANSWERED_KT = r"sent it|check your (messages|dm|inbox)|te envi|revisa tus mensajes"
+
+
+def _is_auto_reply(text):
+    pat = os.environ.get(BRAND + "DM_ANSWERED_RE") or ("" if BRAND else _ANSWERED_KT)
+    return True if not pat else bool(re.search(pat, text or "", re.I))
 
 
 def _known_ids():
@@ -177,7 +192,7 @@ def instagram_comments(ig, tok):
         # at the first page that holds nothing new (cheap on a huge post); when it lists oldest
         # first, it reads to the end. PAGE_CAP pages of 50 is the ceiling per post per pass.
         cs, url_, params_, pages = [], f"{G}/{m['id']}/comments", {
-            "fields": "id,text,timestamp,username,replies{username}", "limit": 50, "access_token": tok}, 0
+            "fields": "id,text,timestamp,username,replies{username,text}", "limit": 50, "access_token": tok}, 0
         known = _known_ids()
         while url_ and pages < PAGE_CAP:
             j_ = _get(url_, params_)
@@ -209,7 +224,8 @@ def instagram_comments(ig, tok):
         # were DMed; Yaren: a GIF-only comment "got the link, that's not right". Instagram also
         # hid that DM from the flagged account, so answering blanks gained nothing. Only words count.
         out += [(c["id"], c.get("text") or "", c["timestamp"], m["id"], c.get("username", ""),
-                 {r.get("username", "") for r in (c.get("replies") or {}).get("data", [])})
+                 {r.get("username", "") for r in (c.get("replies") or {}).get("data", [])
+                  if _is_auto_reply(r.get("text"))})
                 for c in cs]
         seen_counts[m["id"]] = m.get("comments_count")
     try:
