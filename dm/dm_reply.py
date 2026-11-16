@@ -46,7 +46,11 @@ SINCE = os.environ.get("DM_SINCE") or {"AR_": "2026-11-03T03:30:00"}.get(BRAND, 
 # by every way of asking - four people got nothing. Meta's own "Comment to message" rule runs
 # inside Meta and sees them all, so it answers first; this bot waits this many minutes and then
 # answers only a keyword comment the account has still not replied to. Never two messages.
-WAIT = timedelta(minutes=float(os.environ.get(BRAND + "DM_WAIT_MIN") or {"AR_": 3}.get(BRAND, 0)))
+# KT TOO (16 Nov 2026, evening). Meta's KT rule was made new and fired on both of Kamay's tests - and
+# this bot, 1 and 5 seconds after the comment, sent its own message as well: two DMs each. Meta's
+# public reply is not there yet that early, so "skip what the account answered" cannot see it.
+# KT now gives Meta one minute; the 2.5-minute pass answers whatever Meta left.
+WAIT = timedelta(minutes=float(os.environ.get(BRAND + "DM_WAIT_MIN") or {"AR_": 3, "": 1}.get(BRAND, 0)))
 G = "https://graph.facebook.com/v21.0"
 T = 30
 WINDOW = timedelta(days=7)           # Meta's private-reply window
