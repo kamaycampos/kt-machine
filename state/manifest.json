@@ -16591,14 +16591,27 @@
    "hook": "$100 million to silence one man",
    "bytes": 40176748,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261116223410C503A5DD3260C02248A1'}}"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-16T17:19",
    "cta_keyword": "BRAIN",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df0bzEJlW4D/",
+    "youtube": "https://youtube.com/shorts/2-5cKzuXA9I"
+   },
+   "caption_at_post": "Kevin Trudeau says the government spent over $100 million in legal fees chasing one man, and not a single customer ever complained.\n\n30 full-time lawyers, for years, against someone who sold a book people loved.\n\nHe compares it to a fight: the government brings 10 professional MMA fighters into the ring, then lets you bring in a 70-year-old woman to defend yourself.\n\nThat's what happens when you go up against an agency with unlimited lawyers and you don't.\n\nHave you ever felt the system was never built to let you win?\n\n#kevintrudeau #ftc #rigged #smallbusiness #justicesystem #davidvsgoliath",
+   "posted_at": "2026-11-16T17:34"
   },
   {
    "file": "KT_GAVEL/02_THE-EXACT-WORDS-FOR-LOVE_77s.mp4",
