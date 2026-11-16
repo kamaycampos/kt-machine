@@ -16250,14 +16250,27 @@
    "hook": "Why breakup hurts worse than broke",
    "bytes": 15805826,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-15T20:15",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfyLY7zinBk/",
+    "youtube": "https://youtube.com/shorts/ifQ1XVrFDko"
+   },
+   "caption_at_post": "Kevin Trudeau says a breakup can hurt worse than losing money.\n\nHe had a friend, married with kids, whose marriage had gone cold. When his wife finally asked for a divorce, he still cried every single day. Kevin Trudeau says his friend was so broken up it was almost like he was suicidal.\n\nThe end of a relationship, he says, causes more pain than almost anything else in life.\n\nHave you ever felt pain like that?\n\n#kevintrudeau #relationships #heartbreak #mindset #love #success",
+   "posted_at": "2026-11-15T20:32"
   },
   {
    "file": "KT_SENTINEL/02_THE-GENERALS-SPEECH-BEFORE-D-DAY_107s.mp4",
