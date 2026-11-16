@@ -16149,14 +16149,27 @@
    "hook": "What every billionaire quietly joins",
    "bytes": 28151800,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-15T22:30",
    "cta_keyword": "BRAIN",
    "cta_variant": 7,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfybcXfgbUD/",
+    "youtube": "https://youtube.com/shorts/bthzfcNQq3w"
+   },
+   "caption_at_post": "Kevin Trudeau says there is one thing every financially independent person has in common, and it is not talent or luck.\n\nThey all belong to an exclusive group of like-minded people: Skull and Bones at Yale, the Harvard Alumni Club, the Freemasons, or YPO, the Young Presidents Organization.\n\nBillionaires sit in these rooms. Being surrounded by people who already think and act like winners changes how you think and act too.\n\nIf you were not born into that kind of room, Kevin's answer is simple: go find one, or build one.\n\nWho is in your room right now, and are they pulling you up or holding you where you are?\n\n#kevintrudeau #successhabits #networking #wealthmindset #richpeoplehabits #moneysecrets",
+   "posted_at": "2026-11-15T22:53"
   },
   {
    "file": "KT_DEPOSIT/01_CARE-LESS-GET-MORE_89s.mp4",
