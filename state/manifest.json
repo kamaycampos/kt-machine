@@ -16319,14 +16319,27 @@
    "hook": "$450 million, one take, no retakes",
    "bytes": 13457592,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-16T07:52",
    "cta_keyword": "BRAIN",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfzblYoHIxr/",
+    "youtube": "https://youtube.com/shorts/EFPC0VRUUZQ"
+   },
+   "caption_at_post": "Kevin Trudeau shot his very first infomercial in a small meditation community in Fairfield, Iowa, back in 1989.\n\nHe went in, spoke for about an hour, and that was it. No retakes, nothing. They just edited together the one take he gave them.\n\nThat single infomercial helped Mega Memory go on to sell $450 million worth of home study courses. Kevin Trudeau says the high energy of the place he filmed in had a lot to do with it.\n\nOne take, $450 million. Would you have believed it?\n\n#kevintrudeau #megamemory #success #wealthmindset #business #money",
+   "posted_at": "2026-11-16T08:12"
   },
   {
    "file": "KT_VORTEX/02_WHY-YOUR-SUCCESS-COACH-IS-BROKE_34s.mp4",
