@@ -16900,6 +16900,32 @@
    "cta_keyword": "MONEY",
    "cta_variant": 2,
    "cta_kind": "question"
+  },
+  {
+   "file": "KT_EPISODE/04_THE-MONK-WHO-ATE-ANYTHING_98s.mp4",
+   "caption": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says he tracked down a real Shaolin monk and had him move into his house to learn the temple's secrets. The monk said he was vegetarian, then insisted he had no dietary restriction at all - he \"ate anything.\"\n\nFor a week, every single meal the monk ordered was vegetables. Kevin finally called him out on it.\n\nWhat the monk said next - and what happened the night Kevin served him steak - is the part people don't expect.\n\nEpisode 4: The Monk Who Ate Anything.\n\nThe 14 audios are Kevin teaching how to use your mind to get what you want in life, recorded live at a private event in the Alps.\n\nMost people will scroll past this. A few will comment \"WISH\" and start listening tonight.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #shaolin #mindset #buddhism #wisdom #yourwishisyourcommand",
+   "hook": "THE VEGETARIAN MONK who ate steak",
+   "bytes": 35233405,
+   "done": false,
+   "status": {},
+   "media_tag": "media2",
+   "cover": true,
+   "look": "movie",
+   "solo": true,
+   "solo_hours": [
+    3,
+    3
+   ],
+   "wide": true,
+   "cta_keyword": "WISH",
+   "cta_variant": 0,
+   "cta_kind": "offer",
+   "caption_exact": true,
+   "caption_link": "Or get them here now, free: https://freeyourwish.kevintrudeau.com/?ref=a43c8j",
+   "movie": "mv_v4oml32_the_monk_who_ate_anything",
+   "music": null,
+   "ig_hand": true,
+   "scheduled_at": "2026-11-18T12:30"
   }
  ]
 }

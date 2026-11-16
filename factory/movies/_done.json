@@ -1,5 +1,5 @@
 {
- "next_episode": 4,
+ "next_episode": 5,
  "built": {
   "mv_v6v9urd_too_good_for_the_casino": {
    "file": "KT_EPISODE/03_TOO-GOOD-FOR-THE-CASINO_94s.mp4",
@@ -8,6 +8,13 @@
    "music": null,
    "scenes": 4,
    "rebuilt": true
+  },
+  "mv_v4oml32_the_monk_who_ate_anything": {
+   "file": "KT_EPISODE/04_THE-MONK-WHO-ATE-ANYTHING_98s.mp4",
+   "episode": 4,
+   "posts": "2026-11-18T12:30",
+   "music": null,
+   "scenes": 4
   }
  },
  "tries": {
@@ -15,6 +22,7 @@
   "mv_v4oml32_the_monk_who_ate_anything": 0
  },
  "music": [
+  null,
   null
  ]
 }
