@@ -31,3 +31,7 @@ jobs:
         env:
           WHO_SHA: ${{ inputs.who_sha }}
           WHO_DAYS: ${{ inputs.days }}
+      - run: python dm/ig_inbox_diag.py
+        env:
+          WHO_SHA: ${{ inputs.who_sha }}
+          WHO_DAYS: ${{ inputs.days }}
