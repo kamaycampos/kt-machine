@@ -55,7 +55,8 @@ SINCE = os.environ.get("DM_SINCE") or {"AR_": "2026-11-03T03:30:00"}.get(BRAND, 
 # 16 Nov, 18:10 DC: KT's rule was made the same as AR's working one (Instagram only, no second
 # automation). AR and WB are the brands where this bot does NOT answer first - so KT gives Meta
 # 2 minutes too, for a clean test. If Meta still answers nothing on KT, put this back to 0.
-WAIT = timedelta(minutes=float(os.environ.get(BRAND + "DM_WAIT_MIN") or {"AR_": 3, "": 2}.get(BRAND, 0)))
+# 18:20 DC: Meta answered nothing in that test either. Back to 0 - on KT this bot is the answer.
+WAIT = timedelta(minutes=float(os.environ.get(BRAND + "DM_WAIT_MIN") or {"AR_": 3}.get(BRAND, 0)))
 G = "https://graph.facebook.com/v21.0"
 T = 30
 WINDOW = timedelta(days=7)           # Meta's private-reply window
