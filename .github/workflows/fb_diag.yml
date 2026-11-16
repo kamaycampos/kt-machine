@@ -6,6 +6,9 @@ on:
       who_sha:
         description: sha256 of a lowercase username to look for (who_diag.py)
         default: ""
+      days:
+        description: also list every comment of the last N days (text only, no names)
+        default: "0"
 jobs:
   diag:
     runs-on: ubuntu-24.04
@@ -27,3 +30,4 @@ jobs:
       - run: python dm/who_diag.py
         env:
           WHO_SHA: ${{ inputs.who_sha }}
+          WHO_DAYS: ${{ inputs.days }}
