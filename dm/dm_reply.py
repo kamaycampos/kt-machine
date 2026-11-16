@@ -52,7 +52,10 @@ SINCE = os.environ.get("DM_SINCE") or {"AR_": "2026-11-03T03:30:00"}.get(BRAND, 
 # CORRECTION, same evening: that reading was WRONG. DM_TEXT (ours) also opens "Hey! Thanks for
 # commenting", both public replies carried our envelope sign, and each tester got ONE message - ours.
 # Meta's new KT rule did not fire, for them or for a stranger a few minutes later. KT's wait is 0 again.
-WAIT = timedelta(minutes=float(os.environ.get(BRAND + "DM_WAIT_MIN") or {"AR_": 3}.get(BRAND, 0)))
+# 16 Nov, 18:10 DC: KT's rule was made the same as AR's working one (Instagram only, no second
+# automation). AR and WB are the brands where this bot does NOT answer first - so KT gives Meta
+# 2 minutes too, for a clean test. If Meta still answers nothing on KT, put this back to 0.
+WAIT = timedelta(minutes=float(os.environ.get(BRAND + "DM_WAIT_MIN") or {"AR_": 3, "": 2}.get(BRAND, 0)))
 G = "https://graph.facebook.com/v21.0"
 T = 30
 WINDOW = timedelta(days=7)           # Meta's private-reply window
