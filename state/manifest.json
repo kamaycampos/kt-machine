@@ -16606,14 +16606,27 @@
    "hook": "The exact words for manifesting love",
    "bytes": 34253756,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "cta_kind": "offer",
    "look": "archive",
    "scheduled_at": "2026-11-16T15:30",
    "cta_keyword": "WISH",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df0OFtdAJ2J/",
+    "youtube": "https://youtube.com/shorts/9YYHIV7mQwI"
+   },
+   "caption_at_post": "Kevin Trudeau says most people manifest the wrong relationship by accident.\n\nIf you just ask the universe for \"a relationship,\" you might get exactly that, with someone who cheats, lies, or makes your life miserable. You got what you asked for.\n\nHis fix, straight from Your Wish Is Your Command: state the full ideal scene. Not just \"a partner,\" but exactly how safe, how loved, how good the relationship feels, and what you both enjoy together.\n\nVague wishes get vague results.\n\nWhat would your ideal scene actually sound like, said out loud?\n\n#kevintrudeau #yourwishisyourcommand #manifestation #relationshipgoals #lawofattraction #mindset",
+   "posted_at": "2026-11-16T15:34"
   },
   {
    "file": "KT_REFUND/01_ZERO-COMPLAINTS-MILLIONS-SOLD_65s.mp4",
@@ -16625,7 +16638,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-16T15:30",
+   "scheduled_at": "2026-11-16T16:16",
    "cta_keyword": "MONEY",
    "cta_variant": 3,
    "cta_kind": "offer"
