@@ -35,3 +35,4 @@ jobs:
         env:
           WHO_SHA: ${{ inputs.who_sha }}
           WHO_DAYS: ${{ inputs.days }}
+      - run: python dm/reply_audit.py
