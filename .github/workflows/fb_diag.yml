@@ -36,3 +36,4 @@ jobs:
           WHO_SHA: ${{ inputs.who_sha }}
           WHO_DAYS: ${{ inputs.days }}
       - run: python dm/reply_audit.py
+      - run: python dm/list_probe.py 18139426585637353 17914425072574344 17914025121296694 18102803570391369
