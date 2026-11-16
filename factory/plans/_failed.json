@@ -14043,6 +14043,132 @@
     "80% of his income",
     "given away"
    ]
+  },
+  "ar_v4kacob_r2/YOU-CANT-RECREATE-THEIR-ANCIENT-CUT": {
+   "plan": "ar_v4kacob_r2",
+   "source": "v4kacob.mp4",
+   "brand": "AR_STARPEOPLER2",
+   "tries": 2,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "YOU-CANT-RECREATE-THEIR-ANCIENT-CUT",
+   "in": 664.0,
+   "out": 708.0,
+   "start_words": "So how was it",
+   "end_words": "stuff that I'm interested in",
+   "hook": [
+    "You can't recreate",
+    "their ancient cut."
+   ]
+  },
+  "ar_v4kacob_r2/SCIENTISTS-CALLED-IT-IMPOSSIBLE-TO-MAKE": {
+   "plan": "ar_v4kacob_r2",
+   "source": "v4kacob.mp4",
+   "brand": "AR_STARPEOPLER2",
+   "tries": 2,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "SCIENTISTS-CALLED-IT-IMPOSSIBLE-TO-MAKE",
+   "in": 1052.0,
+   "out": 1202.0,
+   "start_words": "Let's go through a",
+   "end_words": "making of this artifact",
+   "hook": [
+    "You can't copy",
+    "this ancient skull."
+   ]
+  },
+  "ar_v4kacob_r2/EVERY-CULTURE-CARVED-THE-SAME-HELMET": {
+   "plan": "ar_v4kacob_r2",
+   "source": "v4kacob.mp4",
+   "brand": "AR_STARPEOPLER2",
+   "tries": 2,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "EVERY-CULTURE-CARVED-THE-SAME-HELMET",
+   "in": 1259.0,
+   "out": 1325.0,
+   "start_words": "Very interesting Now let's",
+   "end_words": "culture all around the world",
+   "hook": [
+    "Your textbooks missed",
+    "this ancient helmet."
+   ]
+  },
+  "ar_v4kacob_r2/GOLD-TOYS-STILL-FLY-LIKE-JETS": {
+   "plan": "ar_v4kacob_r2",
+   "source": "v4kacob.mp4",
+   "brand": "AR_STARPEOPLER2",
+   "tries": 2,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "GOLD-TOYS-STILL-FLY-LIKE-JETS",
+   "in": 1700.0,
+   "out": 1823.0,
+   "start_words": "Now we have and",
+   "end_words": "knew something about aerodynamics",
+   "hook": [
+    "Gold toys still",
+    "fly like jets."
+   ]
+  },
+  "ar_v4kacob_r2/ANUNNAKI-MEANS-BEINGS-FROM-THE-HEAVENS": {
+   "plan": "ar_v4kacob_r2",
+   "source": "v4kacob.mp4",
+   "brand": "AR_STARPEOPLER2",
+   "tries": 2,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "ANUNNAKI-MEANS-BEINGS-FROM-THE-HEAVENS",
+   "in": 2659.0,
+   "out": 2701.0,
+   "start_words": "And these are in",
+   "end_words": "bizarre looking beings with wings",
+   "hook": [
+    "Anunnaki means beings",
+    "from the heavens."
+   ]
+  },
+  "ar_v4kacob_r2/THEY-WORSHIPPED-SOLDIERS-AS-LITERAL-GODS": {
+   "plan": "ar_v4kacob_r2",
+   "source": "v4kacob.mp4",
+   "brand": "AR_STARPEOPLER2",
+   "tries": 2,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "THEY-WORSHIPPED-SOLDIERS-AS-LITERAL-GODS",
+   "in": 2832.0,
+   "out": 3014.0,
+   "start_words": "Exactly exactly And so",
+   "end_words": "it's highly fascinating",
+   "hook": [
+    "They worshipped soldiers",
+    "as literal gods."
+   ]
+  },
+  "ar_v5i1vo4_p3/THIS-ISNT-THEORY-HE-WAS-THERE": {
+   "plan": "ar_v5i1vo4_p3",
+   "source": "v5i1vo4.mp4",
+   "brand": "AR_UNDERTOW",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THIS-ISNT-THEORY-HE-WAS-THERE_79s.mp4: [FAIL] 01_THIS-ISNT-THEORY-HE-WAS-THERE_79s.mp4               20 captions vs the sound  median -0.00s  worst-10% 0.96s  | words captioned 99%"
+   ],
+   "slug": "THIS-ISNT-THEORY-HE-WAS-THERE",
+   "in": 880.0,
+   "out": 967.0,
+   "start_words": "These things are discussed",
+   "end_words": "That sounds pretty good",
+   "hook": [
+    "This isn't theory.",
+    "He was there."
+   ]
   }
  },
  "attempts": {
@@ -14129,6 +14255,7 @@
   "ar_v4kacob": 2,
   "ep_v4oml32_p3": 2,
   "ep_v4vdcy0_p4": 2,
-  "ar_v4kacob_r2": 1
+  "ar_v4kacob_r2": 2,
+  "ep_v4vdcy0_r3": 1
  }
 }
