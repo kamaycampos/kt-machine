@@ -17005,11 +17005,24 @@
    "hook": "Why wealth chases crickets, not cash",
    "bytes": 56227127,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-17T18:38"
+   "scheduled_at": "2026-11-17T18:38",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df3KDfLCZK-/",
+    "youtube": "https://youtube.com/shorts/982Clk4dc9g"
+   },
+   "caption_at_post": "Kevin Trudeau says the wealthy did not stumble onto this by accident: the most powerful nature sounds - crickets, cicadas, frogs, birds - are the repeated ones, and that repetition stimulates the hippocampus, the part of the brain tied to manifesting goals.\n\nStep into a forest and there is a second mechanism. Wind moving through the trees produces negative ions, and those ions stimulate the hippocampus and the pineal gland even further.\n\nNone of it costs a membership. A loud patch of crickets or a beach with rolling waves does the same thing, he says.\n\nWhen did you last let a forest fill your ears instead of a podcast?\n\n#kevintrudeau #wealthmindset #lawofattraction #manifestation #brainscience #mindsetmatters",
+   "posted_at": "2026-11-17T18:57"
   },
   {
    "file": "KT_SUMMITR2O/01_ROCKEFELLER-GAVE-FIRST_45s.mp4",
