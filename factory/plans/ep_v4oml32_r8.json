@@ -1,0 +1,17 @@
+{"source": "v4oml32.mp4", "brand": "KT_DREAMWORLDR2", "test": false,
+ "note": "17 Nov 2026 - second chance re-cut of 'Remove Losers from Your Life, Gives Success Tips & Another Pandemic? | The Kevin Trudeau Show | 008' (Rumble v4oml32). Fixing THE-1948-BOOK-GURUS-COPY: the WHY flagged 'opens mid-sentence on at all the' - the old start_words 'If you look at' likely couldn't be anchored precisely (a quick, run-together 'if-you-look' in the actual audio), so the word-search drifted to the next clean phrase it could find, 'at all the'. Moved the start to the previous sentence, 'There was another book written years ago. It was called The Success System That Never Fails' - a clean cue boundary, no dangling pronoun, and it still runs straight into the same 'gurus copy this' passage. Kept the same end (the WHY never flagged it). Weekly agent.",
+ "clips": [{"slug": "THE-1948-BOOK-GURUS-COPY", "in": 413.02, "out": 502.4,
+            "start_words": "There was another book", "end_words": "famous and incredibly wealthy",
+            "hook": ["The 1948 book", "made them rich"],
+            "trial_hooks": [
+              ["A dozen millionaires", "copied this book"],
+              ["Your favorite guru", "copied this book"],
+              ["A forgotten book", "made gurus rich"],
+              ["Why your guru", "never told you"],
+              ["Kevin found the", "gurus' hidden source"],
+              ["Kevin Trudeau names", "the 1948 book"],
+              ["Every top guru", "stole this secret"]
+            ],
+            "send": "A guy who just bought a $2,000 course sends this to a friend about to buy the same thing, pure anger at being sold a repackaged 1948 idea.",
+            "caption": "Kevin Trudeau says there is one book behind almost every success guru you have ever paid to learn from: The Magic of Believing, written in 1948.\n\nPull apart nearly any modern success teacher's training, he says, and you find the same foundational principles - whether that guru ever read the original or not.\n\nHe calls it one of the foundational books of success: read it, underline it, read it again, and talk about what actually worked when you tried it.\n\nHe says he can name a dozen people who became famous and genuinely wealthy and point to this one book as the reason.\n\nHow many \"new\" success systems have you paid for that were really just this, repackaged?\n\n#kevintrudeau #success #wealthmindset #selfimprovement #moneymindset #richhabits",
+            "retry_of": "ep_v4oml32_p4/THE-1948-BOOK-GURUS-COPY"}]}
