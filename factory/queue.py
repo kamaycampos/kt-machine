@@ -27,6 +27,11 @@ print("locked now published:", kt_lock.sync())
 series = json.load(open(SERIES))
 done = json.load(open(os.path.join(HERE, "plans", "_done.json")))
 brands, kinds, report, looks = set(), {}, [], {}
+# A QUEUED CLIP RE-BUILT (16 Nov 2026, same path as wb-factory): a plan with
+# "replaces": {slug: "<queued file>"} builds the clip again; when it passes every gate the new
+# file takes the old one's slot and the old entry leaves the queue. If it does not pass, nothing
+# changes. A posted or half-posted clip is never touched.
+replaces = {}
 # SECOND CHANCES. 6 Oct 2026: 205 clips planned, 103 queued - and every clip that
 # failed a gate was simply gone, because a plan that yields one clip is "built".
 # Both accounts ran dry. A failed clip is now written here with why it failed,
@@ -74,6 +79,10 @@ for plan, rs in sorted(by_plan.items()):
     # silently lost. A plan that yields nothing stays pending and is retried.
     if passed or p.get("test"):
         done.append(plan)
+    if not passed and p.get("replaces"):
+        done.append(plan)                          # the clip it would have replaced stays as it is
+        report.append("- nothing passed: the queued clip(s) stay as they were built")
+        continue
     if not passed and not p.get("test"):
         # 2 Oct - 6 Oct: ep_v733zpw failed the same four clips the same way on six
         # runs in a row. A render is deterministic; a retry of the same cut is the
@@ -131,7 +140,11 @@ for plan, rs in sorted(by_plan.items()):
                 if not any(f"_{c['slug']}_" in b for b in blocked)}
         passed = [c for c in passed if c["slug"] in keep]
         spec["clips"] = [c for c in spec["clips"] if c["slug"] in keep or c["slug"] in have]
-    note_failures(plan, p, {c["slug"] for c in passed}, "\n".join(report))
+    if not p.get("replaces"):                      # a re-build of a queued clip is not a failure to re-plan
+        note_failures(plan, p, {c["slug"] for c in passed}, "\n".join(report))
+    for c in passed:
+        if (p.get("replaces") or {}).get(c["slug"]):
+            replaces[(p["brand"], c["slug"])] = p["replaces"][c["slug"]]
     for r in rs:
         for f in r["files"]:
             if any(f.startswith(b[:-4]) for b in blocked):
@@ -164,6 +177,19 @@ if brands:
             c["cta_kind"] = kinds[c["file"]]
         if looks.get(c["file"]) and not c.get("look"):
             c["look"] = looks[c["file"]]
+    for (brand, slug), old_file in replaces.items():
+        new = next((c for c in man["clips"] if c["file"].startswith(brand + "/")
+                    and f"_{slug}_" in c["file"] and not c.get("posted_at")), None)
+        old = next((c for c in man["clips"] if c["file"] == old_file), None)
+        if not new or not old or old.get("posted_at") or old.get("posting") \
+                or any((old.get("status") or {}).values()):
+            report.append(f"- replace {old_file}: left alone ({'no new clip' if not new else 'already posting or posted'})")
+            continue
+        if old.get("scheduled_at"):
+            new["scheduled_at"] = old["scheduled_at"]
+        man["clips"].remove(old)
+        report.append(f"- REPLACED `{old_file}` with `{new['file']}` in its slot {new.get('scheduled_at')}")
+        print(f"  REPLACED {old_file} -> {new['file']}", flush=True)
     json.dump(man, open(man_p, "w"), indent=1)
     subprocess.run([sys.executable, "make_thumbs.py"], cwd=MACHINE, capture_output=True)
 # TRIAL REEL VARIANTS (1 Nov 2026, build_shard.py): upload each to the media release and list

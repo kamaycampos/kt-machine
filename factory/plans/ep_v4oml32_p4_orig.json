@@ -1,0 +1,24 @@
+{
+ "source": "v4oml32.mp4",
+ "brand": "KT_DREAMWORLDO",
+ "test": false,
+ "note": "16 Nov 2026 - re-build so the clip carries Kevin's sound exactly as recorded (the copy in the queue had its pauses cleaned; Kamay: '100% original sound'). Same words, same edges.",
+ "replaces": {
+  "GORDON-RAMSAY-DREAM-WORLD-RULE": "KT_DREAMWORLD/02_GORDON-RAMSAY-DREAM-WORLD-RULE_46s.mp4"
+ },
+ "clips": [
+  {
+   "slug": "GORDON-RAMSAY-DREAM-WORLD-RULE",
+   "in": 1862.5,
+   "out": 1909.2,
+   "start_words": "Gordon Ramsay, a stupidly",
+   "end_words": "And that says it all",
+   "hook": [
+    "Why daydreaming is",
+    "costing you now"
+   ],
+   "send": "Someone who spends every night replaying the past or planning a far-off future sends this to a friend doing the same, as a nudge that Gordon Ramsay built his wealth standing in the present, not in a daydream.",
+   "caption": "Kevin Trudeau points to Gordon Ramsay as proof of something manifesting advice skips: you need a dream, but you cannot live inside it.\n\nRamsay came from nothing and built real wealth as a chef and entrepreneur. Kevin's take on his words: have a dream, but don't live in a dream world.\n\nConfront your past so it stops running you. Picture your future. But the only place anything gets built is right now, in the present.\n\nMost people swing between replaying yesterday and daydreaming about tomorrow, and skip the one moment that counts.\n\nWhere does your mind actually live most days?\n\n#kevintrudeau #gordonramsay #mindsetshift #manifestation #successmindset #lawofattraction"
+  }
+ ]
+}

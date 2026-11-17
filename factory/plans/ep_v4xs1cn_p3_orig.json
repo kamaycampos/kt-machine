@@ -1,0 +1,24 @@
+{
+ "source": "v4xs1cn.mp4",
+ "brand": "KT_IONSTORMO",
+ "test": false,
+ "note": "16 Nov 2026 - re-build so the clip carries Kevin's sound exactly as recorded (the copy in the queue had its pauses cleaned; Kamay: '100% original sound'). Same words, same edges.",
+ "replaces": {
+  "NEGATIVE-IONS-GROW-YOUR-BRAIN": "KT_IONSTORM/01_NEGATIVE-IONS-GROW-YOUR-BRAIN_59s.mp4"
+ },
+ "clips": [
+  {
+   "slug": "NEGATIVE-IONS-GROW-YOUR-BRAIN",
+   "in": 3624.0,
+   "out": 3683.0,
+   "start_words": "The most powerful",
+   "end_words": "but that's the science",
+   "hook": [
+    "Why wealth chases",
+    "crickets, not cash"
+   ],
+   "send": "Someone who lives for the city sends this to a friend glued to their desk, proof that a walk somewhere loud with crickets is doing more for their brain than a quiet office ever will.",
+   "caption": "Kevin Trudeau says the wealthy did not stumble onto this by accident: the most powerful nature sounds - crickets, cicadas, frogs, birds - are the repeated ones, and that repetition stimulates the hippocampus, the part of the brain tied to manifesting goals.\n\nStep into a forest and there is a second mechanism. Wind moving through the trees produces negative ions, and those ions stimulate the hippocampus and the pineal gland even further.\n\nNone of it costs a membership. A loud patch of crickets or a beach with rolling waves does the same thing, he says.\n\nWhen did you last let a forest fill your ears instead of a podcast?\n\n#kevintrudeau #wealthmindset #lawofattraction #manifestation #brainscience #mindsetmatters"
+  }
+ ]
+}

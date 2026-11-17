@@ -1,0 +1,24 @@
+{
+ "source": "v5lvgyl.mp4",
+ "brand": "KT_VORTEXO",
+ "test": false,
+ "note": "16 Nov 2026 - re-build so the clip carries Kevin's sound exactly as recorded (the copy in the queue had its pauses cleaned; Kamay: '100% original sound'). Same words, same edges.",
+ "replaces": {
+  "WHY-YOUR-SUCCESS-COACH-IS-BROKE": "KT_VORTEX/02_WHY-YOUR-SUCCESS-COACH-IS-BROKE_34s.mp4"
+ },
+ "clips": [
+  {
+   "slug": "WHY-YOUR-SUCCESS-COACH-IS-BROKE",
+   "in": 3472.0,
+   "out": 3517.06,
+   "start_words": "Really? You live in",
+   "end_words": "teach what you don't have",
+   "hook": [
+    "Why your success coach",
+    "is broke"
+   ],
+   "send": "Someone who just paid for a coaching program sends this to a friend about to do the same - anger at realizing the coach selling success has none of it himself.",
+   "caption": "Kevin Trudeau has a warning about most self-help and success coaches out there.\n\nHe says look at who's teaching you. If a so-called success coach is living in his mother's basement, 80 pounds overweight, with health problems he can't fix, how is he qualified to coach you on success?\n\nKevin Trudeau's rule: you can't teach what you don't have. He refused to teach a single seminar until after he had already made millions himself.\n\nWho's actually teaching you, and what have they built?\n\n#kevintrudeau #success #mindset #selfhelp #money #wealthmindset"
+  }
+ ]
+}
