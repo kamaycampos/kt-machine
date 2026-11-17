@@ -1949,7 +1949,13 @@ def room_filter(src, t_in, t_out):
         return _ROOM_CACHE[key]
     out = ""
     try:
-        if os.environ.get("KT_ROOM", "on") != "off":
+        # OFF UNLESS ASKED FOR (16 Nov 2026, the same evening). Kamay heard the cleaned clip: the noise
+        # was gone but the pauses went dead - "an uncomfortable silence after he talks every time ...
+        # just make it 100% original sound". Checked against Kevin's own file on Rumble, lined up to
+        # the same seconds: the original has exactly these pauses (-55.9 dB there, -55.9 dB in our
+        # clip) - the room noise is in his recording, and our render passes his sound through
+        # untouched. So the sound stays his, as recorded. KT_ROOM=on brings this back.
+        if os.environ.get("KT_ROOM", "off") == "on":
             r = subprocess.run([FFMPEG, "-hide_banner", "-ss", f"{t_in:.2f}", "-t", f"{t_out - t_in:.2f}",
                                 "-i", src, "-vn", "-af",
                                 "astats=metadata=1:reset=1:length=0.2,"
