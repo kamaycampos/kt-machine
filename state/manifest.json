@@ -16664,7 +16664,8 @@
     "facebook": "off for this account",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post",
-    "instagram": "yours to post with Instagram music until 21:00 - after that it posts by itself, voice only"
+    "instagram": "posted",
+    "instagram_story": "posted by hand - no story"
    },
    "media_tag": "media2",
    "cover": true,
@@ -16686,12 +16687,15 @@
    "wide": true,
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/h0AvFNhPgHM"
+    "youtube": "https://youtube.com/shorts/h0AvFNhPgHM",
+    "instagram": "https://www.instagram.com/reel/Df0BhCwOS9R/"
    },
    "ig_hand_from": "2026-11-16T17:31:58",
    "ig_hand_due": "2026-11-16T21:00",
    "caption_at_post": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says his first car started as a wish: a 1967 or '68 Camaro convertible, like new. He says he put out what he wanted and used the techniques he teaches.\n\nThat Sunday he opened the classified ads. One line stopped him: a 1967 Firebird convertible, 1,500 original miles, midnight blue. $1,500. Around 1980. He thought it had to be a mistake.\n\nSo he called his dad and they drove over. An old woman answered the door and walked them to a garage behind the house, full of dust and cobwebs. What was under the cover, and why it had sat there since 1967, is the part you have to hear from him.\n\nEpisode 2: The $1,500 Firebird.\n\nThe 14 audios are Kevin teaching how to use your mind to get what you want in life. They were recorded live at a private event in the Alps.\n\nMost people will watch this and scroll on. A few will comment \"WISH\" and start listening tonight.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #yourwishisyourcommand #manifestation #lawofattraction #firebird #mindset",
-   "posted_at": "2026-11-16T12:31"
+   "posted_at": "2026-11-16T12:31",
+   "ig_hand_done": true,
+   "ig_by_hand": true
   },
   {
    "file": "AR_SIGNAL/01_YOUR-RAGE-WAS-ENGINEERED-ON-PURPOSE_105s.mp4",
