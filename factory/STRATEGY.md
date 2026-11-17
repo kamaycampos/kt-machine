@@ -8,48 +8,49 @@ The strategist rewrites this file daily from `state/metrics.json`, `state/tiktok
 
 **Score: $11.70 earned of $1,777,000** (portfolio as of 30 Sept; nobody has read it since).
 
-## 16 Nov 2026 (strategist; KT only, AR_ ignored; 7d = posted 9 Nov 10h to 15 Nov 10h, 24h+ scored, n=26 vs the 7 before n=26; splits use 14 days, n=52)
+## 17 Nov 2026 (strategist; KT only, AR_ ignored; 7d = posted 9 Nov 10h to 16 Nov 10h, 24h+ scored, n=32 vs the 7 before n=26; splits use 14 days, n=58)
 
-### BUSINESS MOVE OF THE DAY: Kamay reads the affiliate portal today (Monday, 3 minutes) and says "yes" to a direct-checkout line on YouTube book clips
-**Do:** (1) Kamay by hand: open the affiliate portal, read clicks / sales / commission for Free Your Wish, the book and GIN since 9 Nov, and tell me the numbers (or run `money`). (2) Kamay says "yes" and, in a normal Claude session, the machine adds ONE rotate line to YouTube in `state/extra_links.json`: "Get the book that started it: {order}" -> getyourwishbook.com/order (direct checkout, from OPPORTUNITIES.md: use it when our clip already did the selling). Only on clips where Kevin's book is the subject.
-**Why:** The score is still $11.70 while DMs finally started (6 this week, 0 before, 12 ever), so the next missing number is clicks -> sales; nobody has read it since 30 Sept. The best YouTube clip of the fortnight is a book clip ("The one book every billionaire read", 3,727 views): a viewer who already got sold has no one-click path to the book today, only the free download. Book buyers spend ~$300 in 3 months. **Expected:** first portal sale or click count we can attribute; read again Mon 23 Nov. **Who:** Kamay (portal, "yes"); machine (line, once he says yes).
-**Still open from 15 Nov:** pinned "Part 2 is on my profile" comment on the 107.5K card clip (followers 76, read 19 Nov); Dustin's 14 Nov call answers (next free-training date; does 1,000 followers count per account).
+### BUSINESS MOVE OF THE DAY: push @what_do_you_wan7t from 302 to 1,000 followers (TikTok Shop) - Kamay posts a "Part 2" of the Forbes 400 clip today
+**Do:** (1) Machine: the planner cuts 2 KT clips today as TikTok drafts in the shape of the 50K clip (a list or ranking the viewer believes, with the opposite said in six words; see HOOKS below), plus one "Part 2" of the Forbes 400 moment if the episode has a second beat. (2) Kamay by hand: post those drafts from the inbox today, 3-4 TikTok drafts a day in total, and pin a comment on the 50K clip: "Part 2 is on my profile. Follow for the next rule." No bio link until 1,000 (settled).
+**Why:** TikTok is now measured by API for this account: followers **302** (76 on 9 Nov, +226 in 8 days), best clip "The Forbes 400 list lies" **50,191 views, 1,959 likes, 194 shares** (posted 14 Nov 22h), then "How to manifest a Ferrari" 10,011. 698 to go. At ~28 a day that is about 25 days (mid-Dec); one more 50K clip would cut it to days. 1,000 opens TikTok Shop (~20% on the book, weekly pay, OPPORTUNITIES.md). **Expected:** 400+ followers by 20 Nov, read again then. **Who:** machine (clips), Kamay (posting, pinned comment).
+**Still open:** Kamay's portal read (clicks / sales / commission since 9 Nov) and the yes for a direct-checkout line on YouTube book clips (16 Nov move). Dustin's next free-training date.
 
 ### What the numbers say
-- **Pace (posted per day):** 9 Nov 5, 10 Nov 4, 11 Nov 6, 12 Nov 4, 13 Nov 4, 14 Nov 5, **15 Nov 4** (yesterday not under 4). 30 posts since 9 Nov 10h = 4.3 a day. Nothing seen posted yet today.
-- **Instagram 7d vs prior (n=26 vs 26):** median views **189 vs 170** (up 11%); skip **49.0% vs 54.3%** (better, near 50; target under 40); avg watch 20.0s vs 14.6s; shares+saves per 1k reach **18.4 vs 28.7**; comments median 0.
-- **YouTube 7d vs prior (n=26 vs 25):** median **357.5 vs 628** (down 43%). Best 14d: "The one book every billionaire read" 3,727, "Why it's not a money problem" 2,375, "A chicken trick trains your mind" 2,010. Worst: "Why Henry Ford got rich anyway" 99, "The Forbes 400 list lies" 74, "First check $52,000 Never worked again" 64.
-- **TikTok:** state/tiktok.json covers only the old @kt_student. @what_do_you_wan7t has no API: last known 76 followers, best clip 107.5K views (OPPORTUNITIES.md). Unmeasured here, not zero.
-- **DMs (sent):** 6 in the last 7 days (12 Nov 3, 13 Nov 1, 15 Nov 2), 0 the 7 days before, 12 ever. Score $11.70.
-- **Top 3 (14d, Instagram):** "The worst piano player became richest" 653 views, skip 40.2 (posted twice, 09h MONEY and 19h BRAIN, both 653; YT 620 / 339); "He owed $37 million. Then this" 291, skip 40.1 (17h, BRAIN, YT 175).
-- **Bottom 3:** "Two winners vanished behind Iron Curtain" 38 (12h, skip 57.6); "$50,000 a week. Two strangers appeared" 37, skip 71.9 (16h); "Why excuses keep you poor forever" 36, skip 76.7 (10h).
-- **Splits (14d, n in brackets):** keyword BRAIN (19) 183, skip 48.1 vs MONEY (29) 172, skip 52.1 vs WISH (4, LOW) 164, skip 55.8. CTA offer (43) 184.5, skip 53.9 vs question (9) 158, skip 50.0. Hour (NY): **09h (6) 231.5, skip 40.4 best**; 17h (6) 206.5, skip 48.7; 11h (6) 182.5; 08h (10) 176.5, skip 51.9; **12h (7) 172, skip 59.5 and 16h (3) skip 66.7 worst**; 07h/10h (2-3) ~50 (LOW). Opener: The (8) 208.5; Why (8) 196; How (8) 183, skip 57.2. Owned money object in the hook: n=1, no split possible. Source (n>=3): KT_BOOKSHELF (6) 187; KT_FORGE (4) 101.5; KT_MAGNET (5) 54.
+- **Pace (posted per day):** 9 Nov 5, 10 Nov 4, 11 Nov 6, 12 Nov 4, 13 Nov 4, 14 Nov 5, 15 Nov 4, **16 Nov 6**. Never under 4 this week. 6 more scheduled for today.
+- **Instagram 7d vs prior (n=32 vs 25):** median views **194.5 vs 170** (up 14%); skip **49.0% vs 56.8%** (better; target 40); avg watch 17.5s vs 14.6s; shares+saves per 1k reach **20.7 vs 28.6**; comments median 0.
+- **YouTube 7d vs prior (n=32 vs 25):** median **315.5 vs 631** (down 50%). Best 14d: "The one book every billionaire read" 3,738, "Why it's not a money problem" 2,386, "A chicken trick trains your mind" 2,011. Worst: "$30,000 to prove his own health" 31, "The secret behind The Secret" 64, "First check $52,000 Never worked again" 64.
+- **TikTok @what_do_you_wan7t (API, from state/tiktok.json):** 25 clips 24h+ in the last 7 days, median **446 views vs 376** (22 clips before). 79 videos, 7,195 likes. 2 clips vanished from the profile on 16 Nov (509 and 107 views when last seen: "Nature sounds grow your brain", "The $1,500 Firebird"): watch for a takedown.
+- **One clip, two verdicts:** "The Forbes 400 list lies" = 50,191 TikTok but only 74 YouTube and low Instagram. Judge by platform: TikTok rewards the list-that-lies hook, YouTube rewards "The one book / Why it's not a money problem".
+- **DMs (sent):** **5 on 16 Nov**, 6 the 7 days before (12 Nov 3, 13 Nov 1, 15 Nov 2): 11 in 7 days vs 0 the 7 days before that. 17 ever. Score $11.70 (portal unread).
+- **Top 3 (14d, Instagram):** "A general's real speech before death" 708 views, skip 42.4 (17h, BRAIN, archive, TikTok-style story); "The worst piano player became richest" 653, skip 40.2 (09h; posted again 19h, also 653); the rest sit at ~290 ("He owed $37 million. Then this").
+- **Bottom 3:** "Two winners vanished behind Iron Curtain" 39 (skip 58.8); "$50,000 a week. Two strangers appeared" 37 (skip 71.9); "Why excuses keep you poor forever" 36 (skip 76.7). All three posted before 11 Nov.
+- **Splits (14d, n in brackets):** keyword BRAIN (22) 182.5, skip 49.2 vs MONEY (31) 176, skip 51.7 vs WISH (5, LOW) 194, skip 61.3. CTA offer (48) 186, skip 54 vs question (10) 166.5, skip 50. Hour NY: **09h (8) 220, skip 40.5**; **17h (7) 213, skip 43.8**; 20h (6) 178, skip 45.1; 11h (6) 182.5; 08h (11) 170 (YouTube 591); **12h (8) skip 60.3 and 16h (3) skip 66.8 worst**. Opener: The (9) 213, Why (9) 208, How (8) 183 skip 57.2, What (4, LOW) 120. Owned money object in the hook: 3 vs 55, no split possible. Source (n>=4): KT_BOOKSHELF (6) 187; KT_FORGE (4) 103.5, skip 66.7; KT_MAGNET (5) 54, skip 64.
 
-### LOOK TEST (posted 24h+ ago, with numbers; 'movie' and 'episode' n=1-2, not shown)
+### LOOK TEST (posted 24h+ ago, latest sample per clip; 'episode' n=1 not shown)
 | look | n | IG median views | IG median skip | avg watch | shares+saves /1k reach | YT median views |
 |---|---|---|---|---|---|---|
-| classic | 5 | 203 | 39.6% | 19.4s | 6.3 | 409 |
-| cinema | 6 | 164.5 | 63.6% | 14.8s | 19.0 | 187 |
-| archive | 8 | 183.5 | 51.0% | 24.1s | 23.8 | 546.5 |
-- **No clear winner yet:** every look needs 10 posts (classic 5, cinema 6, archive 8; archive has 21 in the manifest, 13 still under 24h). Classic leads views and skip, archive leads watch time, shares+saves and YouTube (all LOW). Nothing for Kamay to decide.
+| classic | 5 | 206 | 40.1% | 19.1s | 6.2 | 409 |
+| cinema | 6 | 166.5 | 64.1% | 14.1s | 18.7 | 189 |
+| archive | 13 | 190 | 50.0% | 15.9s | 25.2 | 342 |
+- **No clear winner yet:** every look needs 10 posts (classic 5, cinema 6, archive 13). Classic leads views and skip (LOW, n=5); archive leads shares+saves; cinema is last on skip (64%) and YouTube (189), n=6. On TikTok the biggest clips are archive ("Forbes 400" 50K, "Ferrari" 10K, "$100 million" 3.7K) but TikTok is hand-posted and not part of the test. Nothing for Kamay to decide.
 
 ### HOOKS THE TRIALS PROVED
-- **No KT experiment has a winner.** Last 7 days: 7 arms (1 experiment, 11 Nov) tried, 0 posted, 7 refused (code 9 "too many actions" / 400), so more than a third refused. All earlier KT arms (49 of 49) also refused. The only scored experiments with views are Yaren's AR_ clips (ignored). The hook rule cannot learn from trials yet.
-- **Shape evidence from single clips (LOW, n=1-2):** a person with a reversal (`The worst piano player became richest` 653, skip 40.2); a stake plus turnaround (`He owed $37 million. Then this` 291, skip 40.1).
-- **Examples for tomorrow, only where the moment says it:** `The worst student became the richest` / `He lost everything. Then this` / `Why your credit score drops when you pay`.
+- **No KT experiment has a winner.** Last 7 days: 1 experiment (11 Nov, KT_TENPERCENT) with 7 arms, 0 posted, 7 refused (all 252 arms ever are unposted or refused), so more than a third refused. The only scored experiments are Yaren's AR_ clips (ignored). The hook rule cannot learn from trials yet.
+- **Shapes from single clips (LOW, n=1-2 each, by platform):** TikTok: a ranking or list the viewer trusts, then the opposite (`The Forbes 400 list lies` 50K) and a wish with a luxury object (`How to manifest a Ferrari` 10K). Instagram: a dying man's last words (`A general's real speech before death` 708) and a person with a reversal (`The worst piano player became richest` 653). YouTube: `The one book ...` and `Why it's not a ...`.
+- **Examples for tomorrow, only where the moment says it:** `The Rich List lies about the richest` / `How to manifest a mansion` / `A billionaire's last words, on record`.
 
 ### Orders for the planner
-1. **Fill 5-6 slots every day, 7 days a week** (Instagram + YouTube), best clip first, 5+ stocked. 4.3 a day lately; never under 4. Do not post the same clip twice in one day or twice in 14 days (the piano clip went out at 09h and 19h).
-2. **Topics (Instagram, YouTube):** a person with a reversal (worst-to-richest, owed-then-built), owned money objects (card, credit score, debt, mortgage, house, paycheck), books. Skip sum-only lines, "Two ..." lines and plain advice. Kevin only, no guest stories.
-3. **YouTube specifically:** "The one ..." / "Why it's not ..." on books, secrets, mind tricks (2.0-3.7K); drop name lines like "Henry Ford" and list lines like "Forbes 400" (74-99).
-4. **TikTok (hand-posted):** numbered series "Rules the rich never teach, part N", 2 drafts a day, each caption ends "Follow for part N+1". No bio link until 1,000 followers.
-5. **CTA:** 2 clips a day WISH (Free Your Wish, free download), 2 MONEY, 1 question CTA with the keyword in the first two caption lines. BRAIN on a mind or self-image story (skip 48.1 vs MONEY 52.1, n=19 vs 29). Offers only as in OPPORTUNITIES.md. GIN "dues go up in January" on YouTube/Facebook to 31 Dec.
-6. **Hooks:** a person plus a reversal, or the viewer's object plus the opposite of what they believe; a sum only with a stake. Avoid "excuses", "Iron Curtain", "Two ...", sum-only lines.
-7. **Sources:** max 2 a day per episode. More from KT_BOOKSHELF and KT_UNDERTOWR2R2R2 (piano). Hold KT_MAGNET, KT_FORGE, KT_UPLIFT, KT_DELI until a new moment passes 150.
-8. **Hours (NY):** 09:00 first (231 views, skip 40), then 11:00, 17:00, 20:00; drop 12:00 (skip 59.5), 16:00 and 07:00/10:00.
+1. **Fill 5-6 slots every day, 7 days a week** (Instagram + YouTube), best clip first, 5+ stocked. Never the same clip twice in one day or in 14 days (the piano clip went out at 09h and 19h on 10 Nov).
+2. **TikTok drafts (hand-posted, for @what_do_you_wan7t):** 3-4 a day, numbered series "Rules the rich never teach, part N", each caption ends "Follow for part N+1". Lead with the shapes of the 50K and 10K clips (a list that lies, manifest + luxury object, a general's last words). No bio link until 1,000.
+3. **Instagram topics:** a person with a reversal, a dying or last-words story, owned money objects (card, credit score, debt, mortgage, house, paycheck). Skip sum-only lines, "Two ..." lines, "excuses". Kevin only, no guest stories.
+4. **YouTube specifically:** "The one book ..." / "Why it's not a ..." on books and mind tricks (2.0-3.7K); drop list lines, name lines and income stories ("Forbes 400" 74, "First check $52,000" 64).
+5. **CTA:** 2 WISH (Free Your Wish, free download), 2 MONEY, 1 question CTA a day, keyword in the first two caption lines; BRAIN on mind or self-image stories (skip 49.2 vs 51.7). Offers only as in OPPORTUNITIES.md. GIN "dues go up in January" on YouTube/Facebook to 31 Dec.
+6. **Sources:** max 2 a day per episode. More from KT_BOOKSHELF, KT_UNDERTOWR2R2R2, KT_SENTINEL (708), KT_VAULTWIDER2 (Forbes, other moments), KT_MIRAGE. Hold KT_MAGNET, KT_FORGE, KT_UPLIFT, KT_DELI.
+7. **Hours (NY):** 09:00 first (220, skip 40.5), 17:00 (213, skip 43.8), then 11:00, 20:00, 08:00 for YouTube clips; drop 12:00 (skip 60.3), 16:00 and 07:00/10:00.
 
 ### Watch list
-- **Instagram skip 49.0%**, near 50 (target 40); YouTube median down 43% (357 vs 628).
-- **Trial Reels refused:** 7 of 7 KT arms this week failed, 0 posted; no hook rule can learn until one arm posts.
+- **YouTube median down 50%** (315.5 vs 631); Instagram skip 49.0%, target 40; shares+saves per 1k down to 20.7 from 28.6.
+- **Trial Reels refused:** 7 of 7 KT arms this week, 0 posted; no hook rule can learn.
+- **TikTok:** 2 clips disappeared from @what_do_you_wan7t on 16 Nov (509 and 107 views). Kamay: check the account's strike page; two strikes already sit on WB's TikTok.
 - **Free call page unreadable** (freecallwithkevin.com: the cloud proxy refuses the connection, status 000): Kamay, tell me the date. state/extra_links.json left unchanged.
-- Score $11.70 (portal unread since 30 Sept). @what_do_you_wan7t 76 followers, goal 1,000 (read again 19 Nov). No takedown in state. Facebook and TikTok are hand-posted, not scored here.
+- Score $11.70 (portal unread since 30 Sept). No takedown in state for IG/YouTube. Facebook is hand-posted, not scored here.
