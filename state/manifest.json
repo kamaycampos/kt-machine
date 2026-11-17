@@ -16968,11 +16968,24 @@
    "hook": "What happens when you bless strangers",
    "bytes": 73881143,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-17T16:38"
+   "scheduled_at": "2026-11-17T16:38",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df28TJbj3-y/",
+    "youtube": "https://youtube.com/shorts/p2k3MKdXeIg"
+   },
+   "caption_at_post": "Kevin Trudeau teaches a technique so simple most people dismiss it: silently say \"I love you\" to every person you pass, without ever saying it out loud.\n\nHe calls it making a deposit. Send the feeling out first, before anyone gives you a reason to, and the universe sends it back multiplied - a hundred times, even a thousand times over, he says.\n\nIt costs nothing and takes no time. You can do it waiting in line, driving to work, walking down the street.\n\nCompassion, Kevin says, is simply believing the person in front of you deserves to be happy too.\n\nWhat would change if you quietly blessed the next ten strangers you passed?\n\n#kevintrudeau #lawofattraction #manifestation #gratitude #yourwishisyourcommand #mindsetshift",
+   "posted_at": "2026-11-17T16:56"
   },
   {
    "file": "KT_DREAMWORLDO/01_GORDON-RAMSAY-DREAM-WORLD-RULE_46s.mp4",
@@ -17020,7 +17033,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-17T16:38"
+   "scheduled_at": "2026-11-17T17:38"
   },
   {
    "file": "KT_VAULTR2R2/01_HENRY-FORD-EITHER-WAY-RIGHT_43s.mp4",
