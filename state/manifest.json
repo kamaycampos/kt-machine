@@ -16233,14 +16233,27 @@
    "hook": "Why the rich kept you illiterate",
    "bytes": 35990685,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "cta_keyword": "MONEY",
    "cta_variant": 6,
    "cta_kind": "offer",
-   "scheduled_at": "2026-11-17T08:19"
+   "scheduled_at": "2026-11-17T08:19",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df2Dad5Dc5d/",
+    "youtube": "https://youtube.com/shorts/Y9UVwiSk6I8"
+   },
+   "caption_at_post": "Kevin Trudeau says there is a reason the wealthy and powerful have always kept the rest of the population from reading well: an illiterate population cannot gain knowledge, and it cannot stimulate the part of the brain reading activates.\n\nHe is not talking about homework. Novels count. Biographies count. Any story that forces your mind to build pictures works on the same part of the brain.\n\nKevin's line: leaders are always readers. Losers are not readers.\n\nIt costs nothing and takes no talent, only a decision to actually pick the book up.\n\nWhen is the last time you finished one?\n\n#kevintrudeau #readmorebooks #wealthmindset #successhabits #selfimprovement #billionairemindset",
+   "posted_at": "2026-11-17T08:40"
   },
   {
    "file": "KT_MODELER/01_WINNERS-WORDS-AFTER-FAILURE_105s.mp4",
@@ -16758,14 +16771,28 @@
    "caption": "Fluoride in the water. Food additives. Recreational drugs, pharmaceutical drugs - all of it, Kevin says, by design.\n\nNot to kill you. To fog you. A mind kept in a low-grade haze is easier to suggest things to and harder to rebel - but there's a cost most people never connect to any of it: that same fog is what keeps you from tapping into the ether, the higher realms most traditions call intuition, spirit, source.\n\nA clear mind isn't just calmer. It's dangerous to the plan.\n\nComment RISE and I'll send you how to start clearing it.\n\n#subconscious #consciousness #awakening #disclosure #spirituality #kevintrudeau",
    "hook": "Fluoride keeps you from the ether.",
    "bytes": 44981609,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-17T08:17",
    "cta_keyword": "LUCKY",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1407794638094238/",
+    "instagram": "https://www.instagram.com/reel/Df2DC1OEh_G/",
+    "youtube": "https://youtube.com/shorts/6GW17IDv1dE"
+   },
+   "caption_at_post": "Fluoride in the water. Food additives. Recreational drugs, pharmaceutical drugs - all of it, Kevin says, by design.\n\nNot to kill you. To fog you. A mind kept in a low-grade haze is easier to suggest things to and harder to rebel - but there's a cost most people never connect to any of it: that same fog is what keeps you from tapping into the ether, the higher realms most traditions call intuition, spirit, source.\n\nA clear mind isn't just calmer. It's dangerous to the plan.\n\nComment RISE and I'll send you how to start clearing it.\n\n#subconscious #consciousness #awakening #disclosure #spirituality #kevintrudeau",
+   "posted_at": "2026-11-17T08:36"
   },
   {
    "file": "AR_UNDERTOW/02_ITS-THE-DIRT-THAT-CONTROLS-THEM_50s.mp4",
@@ -16993,7 +17020,7 @@
    "status": {},
    "media_tag": "media2",
    "look": "classic",
-   "scheduled_at": "2026-11-17T08:30",
+   "scheduled_at": "2026-11-17T09:17",
    "cta_keyword": "RISE",
    "cta_variant": 0,
    "cta_kind": "offer"
