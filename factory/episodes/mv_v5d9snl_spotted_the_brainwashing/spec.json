@@ -1,0 +1,95 @@
+{
+ "slug": "mv_v5d9snl_spotted_the_brainwashing",
+ "vid": "v5d9snl",
+ "t_in": 4184.5,
+ "t_out": 4260.5,
+ "keeps": [
+  [
+   15,
+   52
+  ],
+  [
+   53,
+   81
+  ],
+  [
+   82,
+   147
+  ],
+  [
+   157,
+   199
+  ]
+ ],
+ "scenes": [
+  {
+   "src": {
+    "gen": "A conference room in a snowy mountain town, tall windows showing snow outside, a man in a dark suit seated among a few colleagues in folding chairs, facing a stage",
+    "move": "the seated men glance toward the stage as the room quiets"
+   },
+   "from": 15,
+   "to": 22,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A motivational speaker on a stage gripping a microphone, mouth wide open mid-shout, a conference room of seated people below, large screens on either side of the stage",
+    "move": "the speaker on stage pounds the podium and shouts into the microphone"
+   },
+   "from": 53,
+   "to": 58,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A conference room full of seated people in rows, several leaning forward with mouths open shouting toward a stage, a tense crowded room",
+    "move": "several people in the crowd rise halfway from their chairs and shout back toward the stage"
+   },
+   "from": 139,
+   "to": 147,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A man in a dark suit sitting calm and still in a folding chair, a blurred shouting crowd around him in a conference room, soft light",
+    "move": "the seated man slowly shakes his head while the blurred crowd behind him keeps shouting"
+   },
+   "from": 157,
+   "to": 168,
+   "start": 0.1
+  }
+ ],
+ "voices": {
+  "163": "X",
+  "164": "X",
+  "165": "X",
+  "166": "N:violet",
+  "167": "N:violet",
+  "168": "X",
+  "169": "X",
+  "170": "X",
+  "171": "X"
+ },
+ "join": [
+  [
+   166,
+   167
+  ]
+ ],
+ "fix": {},
+ "tighten": 0.85,
+ "cap_y": 800,
+ "end_card": "end_kamay.png",
+ "end_secs": 4.0,
+ "music_db": -27,
+ "fx": false,
+ "fx_db": -31,
+ "post": {
+  "title": "He Spotted The Brainwashing"
+ },
+ "title_top": {
+  "tag": "EPISODE 5",
+  "line": "He Spotted The Brainwashing"
+ },
+ "big_from": 157
+}
