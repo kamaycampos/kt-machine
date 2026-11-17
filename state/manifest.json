@@ -17009,7 +17009,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-17T17:41"
+   "scheduled_at": "2026-11-17T18:38"
   },
   {
    "file": "KT_SUMMITR2O/01_ROCKEFELLER-GAVE-FIRST_45s.mp4",
@@ -17029,11 +17029,24 @@
    "hook": "Why your success coach is broke",
    "bytes": 29771094,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-17T17:38"
+   "scheduled_at": "2026-11-17T17:38",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df3DJSRivuV/",
+    "youtube": "https://youtube.com/shorts/iD4XRsmYSqg"
+   },
+   "caption_at_post": "Kevin Trudeau has a warning about most self-help and success coaches out there.\n\nHe says look at who's teaching you. If a so-called success coach is living in his mother's basement, 80 pounds overweight, with health problems he can't fix, how is he qualified to coach you on success?\n\nKevin Trudeau's rule: you can't teach what you don't have. He refused to teach a single seminar until after he had already made millions himself.\n\nWho's actually teaching you, and what have they built?\n\n#kevintrudeau #success #mindset #selfhelp #money #wealthmindset",
+   "posted_at": "2026-11-17T17:55"
   },
   {
    "file": "KT_VAULTR2R2/01_HENRY-FORD-EITHER-WAY-RIGHT_43s.mp4",
