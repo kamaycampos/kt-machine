@@ -1,5 +1,5 @@
 {
- "next_episode": 5,
+ "next_episode": 6,
  "built": {
   "mv_v6v9urd_too_good_for_the_casino": {
    "file": "KT_EPISODE/03_TOO-GOOD-FOR-THE-CASINO_94s.mp4",
@@ -15,6 +15,13 @@
    "posts": "2026-11-18T12:30",
    "music": null,
    "scenes": 4
+  },
+  "mv_v5d9snl_spotted_the_brainwashing": {
+   "file": "KT_EPISODE/05_HE-SPOTTED-THE-BRAINWASHING_56s.mp4",
+   "episode": 5,
+   "posts": "2026-11-19T12:30",
+   "music": null,
+   "scenes": 2
   }
  },
  "tries": {
@@ -23,6 +30,7 @@
   "mv_v5d9snl_spotted_the_brainwashing": 0
  },
  "music": [
+  null,
   null,
   null
  ]
