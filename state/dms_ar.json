@@ -344,6 +344,11 @@
    "platform": "facebook",
    "comment": "122156092815385349_1862876318050588",
    "error": "This user cant reply to this activity"
+  },
+  {
+   "at": "2026-11-17T23:29:04.492133+00:00",
+   "platform": "instagram",
+   "error": "An unexpected error has occurred. Please retry your request later."
   }
  ],
  "tries": {
