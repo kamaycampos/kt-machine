@@ -1,17 +1,27 @@
 {
- "at": "2026-11-17T21:18",
+ "at": "2026-11-17T23:53",
  "account": "what_do_you_wan7t",
  "profile": {
-  "likes_count": 7314,
-  "video_count": 90,
-  "follower_count": 312,
-  "following_count": 2
+  "video_count": 91,
+  "follower_count": 314,
+  "following_count": 2,
+  "likes_count": 7348
  },
  "videos": {
+  "KT_GAVEL/02_THE-EXACT-WORDS-FOR-LOVE_77s.mp4": {
+   "id": "7708844931774795021",
+   "view_count": 272,
+   "like_count": 17,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708844931774795021?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 78,
+   "posted": "2026-11-16T18:55"
+  },
   "KT_EPISODE/03_TOO-GOOD-FOR-THE-CASINO_94s.mp4": {
    "id": "7709203717832051982",
-   "view_count": 119,
-   "like_count": 4,
+   "view_count": 153,
+   "like_count": 6,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7709203717832051982?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -20,7 +30,7 @@
   },
   "KT_ROLLSROYCER2R2R2/01_PROOF-BEFORE-TEACHING_72s.mp4": {
    "id": "7709119096335453471",
-   "view_count": 63,
+   "view_count": 75,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
@@ -40,23 +50,13 @@
   },
   "KT_REFUND/01_ZERO-COMPLAINTS-MILLIONS-SOLD_65s.mp4": {
    "id": "7708917065687534879",
-   "view_count": 111,
+   "view_count": 112,
    "like_count": 2,
    "comment_count": 0,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708917065687534879?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 67,
    "posted": "2026-11-16T23:35"
-  },
-  "KT_GAVEL/02_THE-EXACT-WORDS-FOR-LOVE_77s.mp4": {
-   "id": "7708844931774795021",
-   "view_count": 272,
-   "like_count": 17,
-   "comment_count": 0,
-   "share_count": 0,
-   "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708844931774795021?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
-   "duration": 78,
-   "posted": "2026-11-16T18:55"
   },
   "KT_SENTINEL/02_THE-GENERALS-SPEECH-BEFORE-D-DAY_107s.mp4": {
    "id": "7708747185998859550",
@@ -70,7 +70,7 @@
   },
   "KT_EPISODE/01_THE-SECRET-BEHIND-THE-SECRET_59s.mp4": {
    "id": "7708510657192201485",
-   "view_count": 328,
+   "view_count": 330,
    "like_count": 23,
    "comment_count": 6,
    "share_count": 1,
@@ -80,7 +80,7 @@
   },
   "KT_DEPOSIT/01_CARE-LESS-GET-MORE_89s.mp4": {
    "id": "7708464790276001037",
-   "view_count": 288,
+   "view_count": 294,
    "like_count": 11,
    "comment_count": 3,
    "share_count": 0,
@@ -90,7 +90,7 @@
   },
   "KT_CLUBROOM/01_RICH-PEOPLES-SECRET-CLUB_68s.mp4": {
    "id": "7708398209940458783",
-   "view_count": 574,
+   "view_count": 576,
    "like_count": 32,
    "comment_count": 1,
    "share_count": 3,
@@ -100,8 +100,8 @@
   },
   "KT_CENTURY/01_MILLIONAIRE-NEEDS-100-MILLION_122s.mp4": {
    "id": "7708240192460606751",
-   "view_count": 3968,
-   "like_count": 263,
+   "view_count": 4024,
+   "like_count": 266,
    "comment_count": 10,
    "share_count": 48,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708240192460606751?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -110,8 +110,8 @@
   },
   "KT_MIRAGE/01_MANIFEST-A-FERRARI-WITH-A-PHOTO_47s.mp4": {
    "id": "7708198574059736351",
-   "view_count": 10128,
-   "like_count": 1082,
+   "view_count": 10155,
+   "like_count": 1085,
    "comment_count": 11,
    "share_count": 43,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708198574059736351?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -120,17 +120,17 @@
   },
   "KT_VAULTWIDER2/01_FORBES-400-LIST-LIES-WIDE_62s.mp4": {
    "id": "7708152396463082765",
-   "view_count": 51051,
-   "like_count": 2002,
+   "view_count": 51254,
+   "like_count": 2014,
    "comment_count": 85,
-   "share_count": 198,
+   "share_count": 199,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708152396463082765?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 61,
    "posted": "2026-11-14T22:08"
   },
   "KT_VAULT/01_TEN-YEARS-PRISON-GOT-IT-ALL-BACK_55s.mp4": {
    "id": "7708090930695245086",
-   "view_count": 658,
+   "view_count": 659,
    "like_count": 14,
    "comment_count": 8,
    "share_count": 1,
@@ -140,17 +140,17 @@
   },
   "KT_FORGER2/01_SAME-RECESSION-ONE-BANKRUPT-ONE-RICH_127s.mp4": {
    "id": "7707989412906306846",
-   "view_count": 1893,
-   "like_count": 125,
+   "view_count": 1916,
+   "like_count": 127,
    "comment_count": 6,
-   "share_count": 43,
+   "share_count": 44,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7707989412906306846?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 126,
    "posted": "2026-11-14T11:36"
   },
   "KT_MASONRY/01_RICH-TOWN-ONLY-HAD-BUSINESS-OWNERS_87s.mp4": {
    "id": "7707879220852149535",
-   "view_count": 8243,
+   "view_count": 8304,
    "like_count": 144,
    "comment_count": 1,
    "share_count": 8,
@@ -162,7 +162,7 @@
    "id": "7707767515027361054",
    "view_count": 390,
    "like_count": 28,
-   "comment_count": 1,
+   "comment_count": 2,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7707767515027361054?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 120,
@@ -170,7 +170,7 @@
   },
   "KT_FORGE/02_JORDAN-FAKED-RIVALS-TO-WIN_113s.mp4": {
    "id": "7707716447182638366",
-   "view_count": 452,
+   "view_count": 453,
    "like_count": 26,
    "comment_count": 5,
    "share_count": 0,
@@ -180,7 +180,7 @@
   },
   "KT_FORGE/01_THE-RICHEST-MAN-WAS-NEVER-INDECISIVE_98s.mp4": {
    "id": "7707494403056635167",
-   "view_count": 378,
+   "view_count": 381,
    "like_count": 31,
    "comment_count": 0,
    "share_count": 1,
@@ -190,7 +190,7 @@
   },
   "KT_FORGE/02_HENRY-FORD-DIDNT-INVENT-CARS_94s.mp4": {
    "id": "7707298482863770910",
-   "view_count": 1827,
+   "view_count": 1844,
    "like_count": 22,
    "comment_count": 0,
    "share_count": 1,
@@ -240,7 +240,7 @@
   },
   "KT_TIMBER/01_87500-IN-ONE-DAY_52s.mp4": {
    "id": "7707036868591865118",
-   "view_count": 1185,
+   "view_count": 1202,
    "like_count": 44,
    "comment_count": 0,
    "share_count": 2,
@@ -450,7 +450,7 @@
   },
   "KT_BOOKSHELF/01_LIBERACES-SECRET-BOOK_42s.mp4": {
    "id": "7704714339520990477",
-   "view_count": 327,
+   "view_count": 328,
    "like_count": 10,
    "comment_count": 4,
    "share_count": 1,
@@ -500,10 +500,10 @@
   },
   "KT_ADVERSITYR2R2/01_THE-BOOK-THAT-SOLD-50-MILLION-COPIES_62s.mp4": {
    "id": "7703549510210850079",
-   "view_count": 2077,
-   "like_count": 173,
+   "view_count": 2105,
+   "like_count": 174,
    "comment_count": 2,
-   "share_count": 29,
+   "share_count": 30,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7703549510210850079?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 62,
    "posted": "2026-11-02T12:27"
@@ -790,7 +790,7 @@
   },
   "KT_DUTY/01_HEADLIGHTS-ON-A-DARK-ROAD_91s.mp4": {
    "id": "7694431032463969567",
-   "view_count": 27,
+   "view_count": 28,
    "like_count": 4,
    "comment_count": 0,
    "share_count": 0,
