@@ -16261,14 +16261,27 @@
    "hook": "The one phrase rich people avoid",
    "bytes": 40212046,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "cta_keyword": "BRAIN",
    "cta_variant": 5,
    "cta_kind": "question",
-   "scheduled_at": "2026-11-17T15:34"
+   "scheduled_at": "2026-11-17T15:34",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df21aH_GQAh/",
+    "youtube": "https://youtube.com/shorts/9SUXwKBh7As"
+   },
+   "caption_at_post": "Kevin Trudeau once compared the exact words of someone who never succeeds to someone who does, right after they both fail at the same thing.\n\nThe loser says it without thinking: \"Things never work out for me.\" Automatic. A reflex.\n\nThe winner, hitting the same failure, says something else entirely: \"I'm going to figure out how to make this work.\"\n\nSame setback, same odds. One sentence decides where the rest of the story goes.\n\nIt sounds small, but Kevin says you would not buy a car with no engine and still call it a car.\n\nWhich sentence comes out of your mouth next time something falls apart?\n\n#kevintrudeau #mindsetmatters #successhabits #mentalreframe #winnersmindset #personaldevelopment",
+   "posted_at": "2026-11-17T15:57"
   },
   {
    "file": "KT_PLAYBACKR2/01_A-BREAKUP-HURTS-WORSE-THAN-BROKE_39s.mp4",
@@ -16959,7 +16972,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-17T15:34"
+   "scheduled_at": "2026-11-17T16:38"
   },
   {
    "file": "KT_DREAMWORLDO/01_GORDON-RAMSAY-DREAM-WORLD-RULE_46s.mp4",
@@ -17007,7 +17020,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-17T15:34"
+   "scheduled_at": "2026-11-17T16:38"
   },
   {
    "file": "KT_VAULTR2R2/01_HENRY-FORD-EITHER-WAY-RIGHT_43s.mp4",
