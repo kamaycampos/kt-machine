@@ -16992,7 +16992,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-17T08:30",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_HIERARCHY/02_THE-PRIEST-CLASS-OUTRANKED-THE-KINGS_149s.mp4",
@@ -17002,7 +17006,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-17T12:38",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_THETAWAVE/01_THEY-KEPT-YOU-ILLITERATE-ON-PURPOSE_76s.mp4",
@@ -17012,7 +17020,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-17T10:07",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_THETAWAVE/02_YOUR-HIPPOCAMPUS-IS-SMALLER-ON-PURPOSE_154s.mp4",
@@ -17022,7 +17034,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-17T16:26",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "KT_DREAMWORLDR2/01_THE-1948-BOOK-GURUS-COPY_82s.mp4",
@@ -17033,7 +17049,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-19T10:35",
+   "cta_keyword": "MONEY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   }
  ]
 }
