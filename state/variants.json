@@ -3041,5 +3041,67 @@
    }
   ],
   "posted": null
+ },
+ "KT_VAULTR2R2__HENRY-FORD-EITHER-WAY-RIGHT": {
+  "clip": "KT_VAULTR2R2/01_HENRY-FORD-EITHER-WAY-RIGHT_43s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_VAULTR2R2__HENRY-FORD-EITHER-WAY-RIGHT__V1.mp4",
+    "hook": [
+     "His 6-word rule",
+     "makes you right"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VAULTR2R2__HENRY-FORD-EITHER-WAY-RIGHT__V2.mp4",
+    "hook": [
+     "The voice that",
+     "calls you dumb"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VAULTR2R2__HENRY-FORD-EITHER-WAY-RIGHT__V3.mp4",
+    "hook": [
+     "What you believe,",
+     "you become"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VAULTR2R2__HENRY-FORD-EITHER-WAY-RIGHT__V4.mp4",
+    "hook": [
+     "Why self-doubt keeps",
+     "you broke"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VAULTR2R2__HENRY-FORD-EITHER-WAY-RIGHT__V5.mp4",
+    "hook": [
+     "What Henry Ford",
+     "got right"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VAULTR2R2__HENRY-FORD-EITHER-WAY-RIGHT__V6.mp4",
+    "hook": [
+     "Kevin Trudeau's cure",
+     "for self-doubt"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_VAULTR2R2__HENRY-FORD-EITHER-WAY-RIGHT__V7.mp4",
+    "hook": [
+     "Your mother programmed",
+     "your bank account"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }
