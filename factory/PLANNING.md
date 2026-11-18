@@ -24,8 +24,14 @@ share your dreams" 1.1M). Ours peak at ~13K. So in every run, before any other a
 2. **One habit + why it works** - write it down (blue ink, white paper, cursive), the words you say, who you
    tell, the billion-dollar question. Something a viewer can do tonight.
 3. Then the rest of this playbook as before.
+Our own proof: KT's most-commented reel ever is "A mortgage is a racket" (57 comments, Sept), five times any other.
 The hook states the claim in plain words, the way a person says it ("The banks don't want your credit score
-up"), never a teaser. Kevin's own words, never invented. Known uncut leads (verify the whole arc in the
+up"), never a teaser; when Kevin gives a number, the hook carries it ("$100k a week", "$22 million cash").
+**Caption first line (from @abundantkevin, 78K views / 382 comments of which ~9 in 10 are the keyword):** the
+keyword line comes first and names the gift in THIS clip's own promise, then says where it lands, e.g. on a
+manifest-faster clip: 'Want this faster? Comment "WISH" and Kevin's free audios are in your messages in
+seconds.' Pick the keyword (WISH / MONEY / BRAIN) whose gift fits the clip. Never fake urgency ("before I take
+it down") - nothing is taken down. Kevin's own words, never invented. Known uncut leads (verify the whole arc in the
 transcript before planning; check_plan refuses re-used minutes):
 - v79sijs (Credit Card Debt Trap) 0:00-1:15 - "The banks don't want you to improve your credit score ... keeping you a financial slave"
 - v6q4znk (First Million) 2:20-3:35 - "a million dollars cash in the bank and not a single bill"
