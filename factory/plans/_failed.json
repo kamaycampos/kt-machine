@@ -14295,6 +14295,24 @@
     "He carried $50,000",
     "cash. Now illegal."
    ]
+  },
+  "ep_v55bpjb_p3/YOUR-DNA-IS-BLOCKING-YOUR-MONEY": {
+   "plan": "ep_v55bpjb_p3",
+   "source": "v55bpjb.mp4",
+   "brand": "KT_LINEAGE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_YOUR-DNA-IS-BLOCKING-YOUR-MONEY_127s.mp4` - phrase scrambled around \"your DNA from your\"; sentence starts with no stop: \"your We\"; word repeated after one: \"what your what\""
+   ],
+   "slug": "YOUR-DNA-IS-BLOCKING-YOUR-MONEY",
+   "in": 2167.2,
+   "out": 2295.2,
+   "start_words": "Research has now proven",
+   "end_words": "blocks on the money issue",
+   "hook": [
+    "Why your DNA blocks",
+    "your money"
+   ]
   }
  },
  "attempts": {

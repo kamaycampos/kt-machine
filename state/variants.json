@@ -3227,5 +3227,129 @@
    }
   ],
   "posted": null
+ },
+ "KT_RUNWAYR2__FULL-THROTTLE-TO-CRUISING-ALTITUDE": {
+  "clip": "KT_RUNWAYR2/01_FULL-THROTTLE-TO-CRUISING-ALTITUDE_57s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_RUNWAYR2__FULL-THROTTLE-TO-CRUISING-ALTITUDE__V1.mp4",
+    "hook": [
+     "Full throttle first,",
+     "autopilot money later"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_RUNWAYR2__FULL-THROTTLE-TO-CRUISING-ALTITUDE__V2.mp4",
+    "hook": [
+     "Your laziness is",
+     "costing you altitude"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_RUNWAYR2__FULL-THROTTLE-TO-CRUISING-ALTITUDE__V3.mp4",
+    "hook": [
+     "Work hard first,",
+     "coast rich later"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_RUNWAYR2__FULL-THROTTLE-TO-CRUISING-ALTITUDE__V4.mp4",
+    "hook": [
+     "Why most people",
+     "quit before liftoff"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_RUNWAYR2__FULL-THROTTLE-TO-CRUISING-ALTITUDE__V5.mp4",
+    "hook": [
+     "Pilots push throttle.",
+     "So do millionaires"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_RUNWAYR2__FULL-THROTTLE-TO-CRUISING-ALTITUDE__V6.mp4",
+    "hook": [
+     "Kevin Trudeau's flight",
+     "lesson on wealth"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_RUNWAYR2__FULL-THROTTLE-TO-CRUISING-ALTITUDE__V7.mp4",
+    "hook": [
+     "Planes never cruise",
+     "without full throttle"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
+ },
+ "KT_CATALYST__UNCLES-WEEKEND-TIP-CHANGED-HIM": {
+  "clip": "KT_CATALYST/01_UNCLES-WEEKEND-TIP-CHANGED-HIM_67s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_CATALYST__UNCLES-WEEKEND-TIP-CHANGED-HIM__V1.mp4",
+    "hook": [
+     "1979: one weekend,",
+     "total transformation"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_CATALYST__UNCLES-WEEKEND-TIP-CHANGED-HIM__V2.mp4",
+    "hook": [
+     "Doubt almost cost him",
+     "everything"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_CATALYST__UNCLES-WEEKEND-TIP-CHANGED-HIM__V3.mp4",
+    "hook": [
+     "Unmotivated in 1979.",
+     "Unstoppable after"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_CATALYST__UNCLES-WEEKEND-TIP-CHANGED-HIM__V4.mp4",
+    "hook": [
+     "Skipping this event",
+     "could cost you"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_CATALYST__UNCLES-WEEKEND-TIP-CHANGED-HIM__V5.mp4",
+    "hook": [
+     "Rick Setzer's Rolls Royce,",
+     "2am donuts"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_CATALYST__UNCLES-WEEKEND-TIP-CHANGED-HIM__V6.mp4",
+    "hook": [
+     "Kevin Trudeau's mentor",
+     "was a stranger"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_CATALYST__UNCLES-WEEKEND-TIP-CHANGED-HIM__V7.mp4",
+    "hook": [
+     "One weekend. Four mentors.",
+     "One empire"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }
