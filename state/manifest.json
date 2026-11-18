@@ -16886,14 +16886,27 @@
    "hook": "$450 million sold from one take",
    "bytes": 19232171,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-18T16:36",
    "cta_keyword": "BRAIN",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df5hT3nCNsw/",
+    "youtube": "https://youtube.com/shorts/NssMx04SjpU"
+   },
+   "caption_at_post": "Kevin Trudeau filmed his very first infomercial in 1989 in Fairfield, Iowa - home to one of the biggest Transcendental Meditation communities in the country.\n\nHe picked the location on purpose: he believed the energy there, the vibration of the place, mattered more than the script.\n\nHe went up, spoke for about an hour, and that was it. No retakes, no second take, no polish.\n\nThat single, unscripted recording went on to sell $450 million in Mega Memory home-study courses.\n\nWould you trust one take over twenty rehearsed ones?\n\n#kevintrudeau #megamemory #successmindset #wealthmindset #manifestation #lawofattraction",
+   "posted_at": "2026-11-18T16:58"
   },
   {
    "file": "KT_RUNWAY/01_REALTOR-SELLS-IN-ONE-WEEK_140s.mp4",
@@ -16948,7 +16961,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-18T16:38",
+   "scheduled_at": "2026-11-18T17:40",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
    "cta_kind": "question"
@@ -17027,7 +17040,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-18T16:38"
+   "scheduled_at": "2026-11-18T17:40"
   },
   {
    "file": "KT_IONSTORMO/01_NEGATIVE-IONS-GROW-YOUR-BRAIN_59s.mp4",
