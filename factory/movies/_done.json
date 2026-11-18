@@ -1,5 +1,5 @@
 {
- "next_episode": 6,
+ "next_episode": 7,
  "built": {
   "mv_v6v9urd_too_good_for_the_casino": {
    "file": "KT_EPISODE/03_TOO-GOOD-FOR-THE-CASINO_94s.mp4",
@@ -22,6 +22,13 @@
    "posts": "2026-11-19T12:30",
    "music": null,
    "scenes": 2
+  },
+  "mv_v72tj4g_the_bowling_alley_secret": {
+   "file": "KT_EPISODE/06_THE-BOWLING-ALLEY-SECRET_138s.mp4",
+   "episode": 6,
+   "posts": "2026-11-20T12:30",
+   "music": "movie_ambient_piano_thesilentthunder.mp3",
+   "scenes": 4
   }
  },
  "tries": {
@@ -33,6 +40,7 @@
  "music": [
   null,
   null,
-  null
+  null,
+  "movie_ambient_piano_thesilentthunder.mp3"
  ]
 }
