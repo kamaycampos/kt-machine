@@ -79,6 +79,9 @@ jobs:
           done
           [ -z "$OK" ] && { echo "nothing to merge"; git push -q origin --delete "$BR" || true; exit 0; }
           git add $OK
+          # a second run for the same branch (two triggers a minute apart, 18 Nov) finds the plans
+          # already on main: nothing to commit is success, not a failure
+          git diff --cached --quiet && { echo "already merged"; git push -q origin --delete "$BR" || true; exit 0; }
           git commit -q -m "weekly plans from $BR:$OK"
           bash factory/save_state.sh
           echo "$OK" | grep -q "factory/plans/" && gh workflow run factory.yml --ref main
