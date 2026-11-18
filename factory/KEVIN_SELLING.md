@@ -3,7 +3,7 @@
 Sources, all public on Rumble, transcribed on Kamay's Mac (`~/Kamay/work/kevin_marketing/`):
 v561cfx "Marketing Secrets That Will Make You Millions" (Ep. 28) · v7bf6rm "The 2-Step Formula To Influence Anyone" ·
 v4gipwi "Joe Sugarman, Pocket Calculator, Infomercials" · v4gj6so "Direct Marketing, Networking" · v6zdmb0
-"How Energy, Mindset, And Marketing Really Work" (added when its transcript finishes).
+"How Energy, Mindset, And Marketing Really Work" (rules 9-11).
 NOT a source: GIN's member course "Infomercial Secrets Revealed" - the Member Agreement (s.4) forbids recording or
 copying member material. Nothing from it goes in this repo unless GIN gives Kamay written permission.
 
@@ -54,3 +54,23 @@ copy of his show failed (rule 1).
 Kevin's "training balance scale": attitude/vibration on one side, technique on the other; "it's your attitude,
 not your aptitude, that determines your altitude."
 **For us:** mix in clips where Kevin teaches how rich people THINK, not only what they do - roughly 1 in 3.
+
+## 9. People love to buy, but hate being sold (v6zdmb0)
+Kevin on his first infomercial: everyone on TV would "look into the camera and sell, sell, sell ... So what I said
+is people love to buy, but they hate being sold." He made a show where "nobody feels like they're being sold",
+and good advertising "is genuine and authentic ... people don't feel like they're being sold."
+**For us:** Kamay's own rule in Kevin's words. No hype words ("insane", "life-changing", "you need this"), no
+countdowns, no fake scarcity. The clip teaches; the gift is offered once, plainly.
+
+## 10. Teach and sell at the same time
+At a seminar with Zig Ziglar, Brian Tracy and Charlie "Tremendous" Jones, who each taught for two hours and then
+sold for 30-45 minutes, Kevin outsold them "two to one combined": the interviewer's words, "you were teaching and
+selling simultaneously ... nobody felt like they were being sold."
+**For us:** the gift belongs INSIDE the lesson, not after it: the caption shows how the 14 audios continue
+exactly what Kevin just said in the clip ("This is lesson 3 of the 14 audios"), not a separate ad tacked on.
+
+## 11. Use every channel on the same people
+His Guru Kev book sold by email for six months; then a direct-mail piece to the SAME list sold again. "Email
+marketing is not dead and neither is Facebook."
+**For us:** a person who commented once gets the gift, and later the next useful thing (the follow-up DM / the
+link page), never silence. Same audience, more than one touch.
