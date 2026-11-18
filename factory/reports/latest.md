@@ -1,45 +1,56 @@
-## ar_v4lw3gr_p8: 2 of 4 clip(s) passed every gate
+## ar_v5i1vo4_p4: 4 of 4 clip(s) passed every gate
 
 
-## 2026-11-18 11:34
-  note AR_WITNESS/ONE-ROOM-RUNS-THE-WORLD: end snapped 1081.38 -> 1081.19s (after 'powerful meeting as well')
-  note AR_WITNESS/ONE-ROOM-RUNS-THE-WORLD: ending kept on the planner's words 'powerful meeting as well' (cuts mid-sentence)
-  drop AR_WITNESS/THEY-PREDICTED-BILLIONS-DEAD: hook - 809px wide at 44px - over the 780px safe zone, will be cut off on a phone
-ar_v4lw3gr_p8__s0 (AR_WITNESS): 1 of 2 passed pre-render gates
+## 2026-11-18 13:42
+  note AR_UNDERCURRENT/CALLING-FOOD-BAD-IS-NOW-MISINFORMATION: end snapped 854.43 -> 853.78s (after 'that's what the government does')
+  note AR_UNDERCURRENT/CALLING-FOOD-BAD-IS-NOW-MISINFORMATION: ending kept on the planner's words 'that's what the government does' (cuts mid-sentence)
+ar_v5i1vo4_p4__s0 (AR_UNDERCURRENT): 2 of 2 passed pre-render gates
 
-RENDER ar_v4lw3gr_p8__s0
-  PASS 01_ONE-ROOM-RUNS-THE-WORLD_102s.mp4  01_ONE-ROOM-RUNS-THE-WORLD_102s.mp4                    27 captions vs the sound  median +0
-       FIRST 5s : This Bilderberg group takes the most powerful influence | LAST  8s : So you hear about the G8, that's all over the news. You hear about Davos, where the elites get together. That's a very powerful meeting as well.
-TEST MODE - passing clips NOT uploaded or queued: AR_WITNESS
-  test clip kept in previews: TEST_AR_WITNESS--01_ONE-ROOM-RUNS-THE-WORLD_102s.mp4
+RENDER ar_v5i1vo4_p4__s0
+  PASS 01_CALLING-FOOD-BAD-IS-NOW-MISINFORMATION_75s.mp4  01_CALLING-FOOD-BAD-IS-NOW-MISINFORMATION_75s.mp4      19 captions vs the sound  median +0
+       FIRST 5s : The government's definition of misinformation is, "Anything | LAST  8s : Back checkers. Are you with me? That's what the government does.
+  PASS 02_YOULL-NEVER-KNOW-THEIR-REAL-NAMES_92s.mp4  02_YOULL-NEVER-KNOW-THEIR-REAL-NAMES_92s.mp4           29 captions vs the sound  median +0
+       FIRST 5s : And then I said the globalist plan is really effectively to have three classes. Number one, | LAST  8s : They and their families live like kings times a hundred.
+TEST MODE - passing clips NOT uploaded or queued: AR_UNDERCURRENT
+  test clip kept in previews: TEST_AR_UNDERCURRENT--01_CALLING-FOOD-BAD-IS-NOW-MISINFORMATION_75s.mp4
+  test clip kept in previews: TEST_AR_UNDERCURRENT--02_YOULL-NEVER-KNOW-THEIR-REAL-NAMES_92s.mp4
+
+  drop AR_UNDERCURRENT/YOULL-NEVER-KNOW-THEIR-REAL-NAMES: end words 'kings times a hundred' dropped - ending moved off them
 
 
 
-## 2026-11-18 12:04
-  note AR_WITNESS/THEY-GO-ALONG-WITH-THE-PROGRAM: end snapped 2849.55 -> 2849.83s (after 'go along with the program')
-  note AR_WITNESS/TO-THEM-YOU-ARE-LITERALLY-GOD: end snapped 1755.01 -> 1754.06s (after 'Think about that')
-  note AR_WITNESS/TO-THEM-YOU-ARE-LITERALLY-GOD: ending kept on the planner's words 'Think about that' (cuts mid-sentence)
-ar_v4lw3gr_p8__s1 (AR_WITNESS): 2 of 2 passed pre-render gates
+## 2026-11-18 13:27
+  note AR_UNDERCURRENT/THEY-DONT-KILL-THE-USELESS-EATERS: end snapped 1287.88 -> 1287.80s (after 'You don't kill them off')
+  note AR_UNDERCURRENT/HE-CARRIED-50000-CASH-NOW-ILLEGAL: end snapped 2333.27 -> 2333.14s (after 'That's their plan')
+ar_v5i1vo4_p4__s1 (AR_UNDERCURRENT): 2 of 2 passed pre-render gates
 
-RENDER ar_v4lw3gr_p8__s1
-  WARP 01_TO-THEM-YOU-ARE-LITERALLY-GOD_64s.mp4: -ARE-LITERALLY-GOD_64s.mp4               18 captions vs the sound  median +0.02s  worst-10% 0.79s  | words captioned 99% - re-timing each caption once
-  FAIL 01_TO-THEM-YOU-ARE-LITERALLY-GOD_64s.mp4: [FAIL] 01_TO-THEM-YOU-ARE-LITERALLY-GOD_64s.mp4               18 captions vs the sound  median -0.00s  worst-10% 0.78s  | words captioned 99%
-  PASS 02_THEY-GO-ALONG-WITH-THE-PROGRAM_76s.mp4  02_THEY-GO-ALONG-WITH-THE-PROGRAM_76s.mp4              18 captions vs the sound  median +0
-       FIRST 5s : The second group, the second class, is | LAST  8s : If you think on their own, they go along with the program. Think about that. They go along with the program.
-TEST MODE - passing clips NOT uploaded or queued: AR_WITNESS
-  test clip kept in previews: TEST_AR_WITNESS--02_THEY-GO-ALONG-WITH-THE-PROGRAM_76s.mp4
+RENDER ar_v5i1vo4_p4__s1
+  PASS 01_THEY-DONT-KILL-THE-USELESS-EATERS_81s.mp4  01_THEY-DONT-KILL-THE-USELESS-EATERS_81s.mp4           18 captions vs the sound  median +0
+       FIRST 5s : I'm going to reveal something that you've never heard before, but this is what has gone on. | LAST  8s : If they are earning enough money, they no longer become a useless eater. That's how you eliminate useless eaters. You don't kill them off.
+  WARP 02_HE-CARRIED-50000-CASH-NOW-ILLEGAL_144s.mp4: 0000-CASH-NOW-ILLEGAL_144s.mp4          42 captions vs the sound  median +0.03s  worst-10% 0.84s  | words captioned 101% - re-timing each caption once
+  PASS 02_HE-CARRIED-50000-CASH-NOW-ILLEGAL_144s.mp4  02_HE-CARRIED-50000-CASH-NOW-ILLEGAL_144s.mp4          41 captions vs the sound  median -0
+       FIRST 5s : In order to control the population so that we can get the objectives | LAST  8s : What deals that can't happen if there's no cash? Think about this. That's their plan.
+TEST MODE - passing clips NOT uploaded or queued: AR_UNDERCURRENT
+  test clip kept in previews: TEST_AR_UNDERCURRENT--01_THEY-DONT-KILL-THE-USELESS-EATERS_81s.mp4
+  test clip kept in previews: TEST_AR_UNDERCURRENT--02_HE-CARRIED-50000-CASH-NOW-ILLEGAL_144s.mp4
 
+
+- **NOT QUEUED** `02_HE-CARRIED-50000-CASH-NOW-ILLEGAL_144s.mp4` - word repeated after one: "didn't I didn't"
 
 ## UPLOAD
-2 clip(s) to add:
-   AR_WITNESS/01_ONE-ROOM-RUNS-THE-WORLD_102s.mp4  (81 MB)
-   AR_WITNESS/02_THEY-GO-ALONG-WITH-THE-PROGRAM_76s.mp4  (64 MB)
-      + 01_ONE-ROOM-RUNS-THE-WORLD_102s__story.mp4
-      + 01_ONE-ROOM-RUNS-THE-WORLD_102s__yt59.mp4
-   added AR_WITNESS/01_ONE-ROOM-RUNS-THE-WORLD_102s.mp4  (release media2)
-      + 02_THEY-GO-ALONG-WITH-THE-PROGRAM_76s__story.mp4
-      + 02_THEY-GO-ALONG-WITH-THE-PROGRAM_76s__yt59.mp4
-   added AR_WITNESS/02_THEY-GO-ALONG-WITH-THE-PROGRAM_76s.mp4  (release media2)
+3 clip(s) to add:
+   AR_UNDERCURRENT/01_CALLING-FOOD-BAD-IS-NOW-MISINFORMATION_75s.mp4  (51 MB)
+   AR_UNDERCURRENT/01_THEY-DONT-KILL-THE-USELESS-EATERS_81s.mp4  (57 MB)
+   AR_UNDERCURRENT/02_YOULL-NEVER-KNOW-THEIR-REAL-NAMES_92s.mp4  (68 MB)
+      + 01_CALLING-FOOD-BAD-IS-NOW-MISINFORMATION_75s__story.mp4
+      + 01_CALLING-FOOD-BAD-IS-NOW-MISINFORMATION_75s__yt59.mp4
+   added AR_UNDERCURRENT/01_CALLING-FOOD-BAD-IS-NOW-MISINFORMATION_75s.mp4  (release media2)
+      + 01_THEY-DONT-KILL-THE-USELESS-EATERS_81s__story.mp4
+      + 01_THEY-DONT-KILL-THE-USELESS-EATERS_81s__yt59.mp4
+   added AR_UNDERCURRENT/01_THEY-DONT-KILL-THE-USELESS-EATERS_81s.mp4  (release media2)
+      + 02_YOULL-NEVER-KNOW-THEIR-REAL-NAMES_92s__story.mp4
+      + 02_YOULL-NEVER-KNOW-THEIR-REAL-NAMES_92s__yt59.mp4
+   added AR_UNDERCURRENT/02_YOULL-NEVER-KNOW-THEIR-REAL-NAMES_92s.mp4  (release media2)
 
-manifest now holds 688 clips
+manifest now holds 691 clips
 commit and push state/manifest.json to let the machine see them

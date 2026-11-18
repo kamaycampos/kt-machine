@@ -14277,6 +14277,24 @@
     "To them,",
     "you are literally God."
    ]
+  },
+  "ar_v5i1vo4_p4/HE-CARRIED-50000-CASH-NOW-ILLEGAL": {
+   "plan": "ar_v5i1vo4_p4",
+   "source": "v5i1vo4.mp4",
+   "brand": "AR_UNDERCURRENT",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_HE-CARRIED-50000-CASH-NOW-ILLEGAL_144s.mp4` - word repeated after one: \"didn't I didn't\""
+   ],
+   "slug": "HE-CARRIED-50000-CASH-NOW-ILLEGAL",
+   "in": 2190.38,
+   "out": 2330.8,
+   "start_words": "Control the population so",
+   "end_words": "That's their plan",
+   "hook": [
+    "He carried $50,000",
+    "cash. Now illegal."
+   ]
   }
  },
  "attempts": {
