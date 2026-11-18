@@ -1,0 +1,27 @@
+{"source": "v5kg9ip.mp4", "brand": "KT_RUNWAYR2", "test": false,
+ "note": "18 Nov 2026 - second chance re-cut of 'How To Make $25K per Month Online! | The Kevin Trudeau Show | Ep. 60' (Rumble v5kg9ip), both from the KT_RUNWAY p2 plan. FULL-THROTTLE-TO-CRUISING-ALTITUDE: the WHY flagged UNCAPTIONED SPEECH at a 3-second gap in the source audio ('And he puts the throttle.' ... [gap] ... 'And the plane ain't moving'). Moved the start past that gap, onto the next clean sentence ('Then he takes the foot off the brake'), which also tightens the metaphor to the takeoff-to-cruising-altitude arc the hook promises. AI-REPLACES-100K-COPYWRITER: the WHY flagged the hook rendering 859px wide at 44px, over the 780px phone-safe zone - rewritten shorter and narrower, same claim, same edges. Weekly agent, same-day refill run.",
+ "clips": [
+  {"slug": "FULL-THROTTLE-TO-CRUISING-ALTITUDE", "in": 2252.0, "out": 2310.0,
+   "retry_of": "ep_v5kg9ip_p2/FULL-THROTTLE-TO-CRUISING-ALTITUDE",
+   "start_words": "Then he takes the foot",
+   "end_words": "That's how you make money",
+   "hook": ["What pilots know", "about getting rich"],
+   "trial_hooks": [
+     ["Full throttle first,", "autopilot money later"],
+     ["Your laziness is", "costing you altitude"],
+     ["Work hard first,", "coast rich later"],
+     ["Why most people", "quit before liftoff"],
+     ["Pilots push throttle.", "So do millionaires"],
+     ["Kevin Trudeau's flight", "lesson on wealth"],
+     ["Planes never cruise", "without full throttle"]
+   ],
+   "send": "Someone grinding 60-hour weeks at a new business sends this to a friend ready to quit, proof that every plane needs full throttle before it ever reaches cruising altitude.",
+   "caption": "Kevin Trudeau says making money works exactly like flying a plane.\n\nThe pilot takes his foot off the brake and the plane goes from standing still to barreling down the runway, picking up speed and speed, full throttle, flaps down, until it finally lifts off the ground.\n\nEven after liftoff he stays full throttle, climbing, climbing, climbing.\n\nOnly once he reaches cruising altitude does he pull back on the throttle and flip on autopilot.\n\nThat's the part everyone skips: wanting the autopilot stage while they're still standing at the end of the runway.\n\nAre you still building power, or are you trying to cruise before you've even taken off?\n\n#kevintrudeau #entrepreneurmindset #hustleculture #wealthmindset #successhabits #businessmindset"},
+  {"slug": "AI-REPLACES-100K-COPYWRITER", "in": 3342.0, "out": 3387.0,
+   "retry_of": "ep_v5kg9ip_p2/AI-REPLACES-100K-COPYWRITER",
+   "start_words": "He put together an",
+   "end_words": "paying me $100,000 to do it",
+   "hook": ["AI replaced the $100,000", "copywriter"],
+   "send": "A small business owner who can't afford a $100,000 copywriter sends this to a friend starting an online store, proof that an AI system can now get close to that same result for free.",
+   "caption": "Kevin Trudeau says one of his students built something that should scare every $100,000-a-project copywriter.\n\nThe guy learned copywriting from Kevin and others, then built an AI system that writes sales copy from nothing more than a few answered questions.\n\nHe ran it head to head against real, paid, professional copywriters in A/B tests. Kevin's words: it did as good, and in some cases better.\n\nKevin charges people $100,000 plus a cut of sales to write copy personally. This system gets close to that same result for free.\n\nWould you still pay six figures for copy if a few typed answers got you most of the way there?\n\n#kevintrudeau #copywriting #aitools #onlinebusiness #marketingtips #makemoneyonline"}
+ ]}
