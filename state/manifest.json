@@ -16920,7 +16920,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-18T08:47",
+   "scheduled_at": "2026-11-18T09:22",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
    "cta_kind": "offer"
@@ -17265,14 +17265,28 @@
    "caption": "Not everyone who goes along with the program is being controlled by fear. Some of them are just comfortable.\n\nKevin describes a whole class of people - the ones with the business, the nice car, the house, the status - who think on their own, who could rock the boat, and don't. Not because they're trapped. Because they like the stuff too much to risk losing it.\n\nThat's a softer leash than fear. And it works just as well.\n\nComment RISE and I'll send you how to tell if it's holding you.\n\n#programming #subconscious #awakening #hiddenagenda #disclosure #kevintrudeau",
    "hook": "They go along with the program.",
    "bytes": 64005028,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-18T08:36",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1678418260679658/",
+    "instagram": "https://www.instagram.com/reel/Df4qbrbiLwk/",
+    "youtube": "https://youtube.com/shorts/LHz7eeK7hLM"
+   },
+   "caption_at_post": "Not everyone who goes along with the program is being controlled by fear. Some of them are just comfortable.\n\nKevin describes a whole class of people - the ones with the business, the nice car, the house, the status - who think on their own, who could rock the boat, and don't. Not because they're trapped. Because they like the stuff too much to risk losing it.\n\nThat's a softer leash than fear. And it works just as well.\n\nComment RISE and I'll send you how to tell if it's holding you.\n\n#programming #subconscious #awakening #hiddenagenda #disclosure #kevintrudeau",
+   "posted_at": "2026-11-18T08:59"
   },
   {
    "file": "AR_UNDERCURRENT/01_CALLING-FOOD-BAD-IS-NOW-MISINFORMATION_75s.mp4",
@@ -17282,7 +17296,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-18T12:24",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_UNDERCURRENT/01_THEY-DONT-KILL-THE-USELESS-EATERS_81s.mp4",
@@ -17292,7 +17310,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-18T16:33",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_UNDERCURRENT/02_YOULL-NEVER-KNOW-THEIR-REAL-NAMES_92s.mp4",
@@ -17302,7 +17324,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-19T07:40",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   }
  ]
 }
