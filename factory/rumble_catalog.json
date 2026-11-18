@@ -6497,5 +6497,15 @@
   "page": 1,
   "embed": "v7fzuje",
   "hls": "https://rumble.com/hls-vod/QpAgM5E-COQ/playlist.m3u8"
+ },
+ "https://rumble.com/v7iih3a-one-person.-one-private-jet.-one-ride-changes-everything..html": {
+  "title": "One person. One private jet. One Ride Changes Everything.",
+  "dur": 62,
+  "date": "2026-11-18",
+  "height": 3404,
+  "short": false,
+  "page": 0,
+  "embed": "v7gc45s",
+  "hls": null
  }
 }
