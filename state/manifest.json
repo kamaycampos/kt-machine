@@ -16948,7 +16948,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-18T16:34",
+   "scheduled_at": "2026-11-18T16:38",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
    "cta_kind": "question"
@@ -17027,7 +17027,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-18T16:34"
+   "scheduled_at": "2026-11-18T16:38"
   },
   {
    "file": "KT_IONSTORMO/01_NEGATIVE-IONS-GROW-YOUR-BRAIN_59s.mp4",
@@ -17361,14 +17361,28 @@
    "caption": "You've heard an elite somewhere say we need to eliminate a billion useless eaters, and you've heard it read as a plan for mass death.\n\nKevin says that's not what it means, and he was in the room when it was explained: a useless eater is just someone who isn't earning and isn't spending. The actual plan isn't to kill that person off - it's to raise them out of poverty until they're earning enough to become a consumer. Elimination means economic conversion, not extermination.\n\nWhich also means the decades-old depopulation warning was never about bodies. It was about spreadsheets.\n\nComment RISE and I'll send you what that reclassification actually costs you.\n\n#disclosure #globalists #hiddenagenda #wakeup #brotherhood #kevintrudeau",
    "hook": "They don't kill the useless eaters.",
    "bytes": 57233015,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-18T16:33",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/999926052574890/",
+    "instagram": "https://www.instagram.com/reel/Df5fIN6lqB6/",
+    "youtube": "https://youtube.com/shorts/WOOte5BtdA0"
+   },
+   "caption_at_post": "You've heard an elite somewhere say we need to eliminate a billion useless eaters, and you've heard it read as a plan for mass death.\n\nKevin says that's not what it means, and he was in the room when it was explained: a useless eater is just someone who isn't earning and isn't spending. The actual plan isn't to kill that person off - it's to raise them out of poverty until they're earning enough to become a consumer. Elimination means economic conversion, not extermination.\n\nWhich also means the decades-old depopulation warning was never about bodies. It was about spreadsheets.\n\nComment RISE and I'll send you what that reclassification actually costs you.\n\n#disclosure #globalists #hiddenagenda #wakeup #brotherhood #kevintrudeau",
+   "posted_at": "2026-11-18T16:39"
   },
   {
    "file": "AR_UNDERCURRENT/02_YOULL-NEVER-KNOW-THEIR-REAL-NAMES_92s.mp4",
