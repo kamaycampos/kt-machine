@@ -16957,14 +16957,27 @@
    "hook": "How a $2 billion app happened",
    "bytes": 42878663,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-18T17:40",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df5oQwmCgZe/",
+    "youtube": "https://youtube.com/shorts/tRcsMyX7vgQ"
+   },
+   "caption_at_post": "Kevin Trudeau points to two founders most people romanticize but never actually copy.\n\nOne built a $2 billion a year super app. Before that: 18 to 20 hour days, seven days a week, unpaid, working out of a one-room office in Malaysia with no air conditioning and no Wi-Fi.\n\nThe other, Todd Graves, is now worth $9.5 billion. To raise money for his first restaurant, he worked 90-hour weeks in an oil refinery, then fished for salmon in Alaska.\n\nNeither of them started comfortable. Both of them refused to stay that way.\n\nWhat are you willing to do before it pays off?\n\n#kevintrudeau #entrepreneurmindset #successstory #wealthmindset #hustleculture #businessmindset",
+   "posted_at": "2026-11-18T18:00"
   },
   {
    "file": "KT_EPISODE/04_THE-MONK-WHO-ATE-ANYTHING_98s.mp4",
@@ -17040,7 +17053,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-18T17:40"
+   "scheduled_at": "2026-11-18T18:41"
   },
   {
    "file": "KT_IONSTORMO/01_NEGATIVE-IONS-GROW-YOUR-BRAIN_59s.mp4",
