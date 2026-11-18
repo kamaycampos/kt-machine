@@ -17241,7 +17241,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-18T10:08",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_WITNESS/02_THEY-GO-ALONG-WITH-THE-PROGRAM_76s.mp4",
@@ -17251,7 +17255,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-18T08:36",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
