@@ -11,6 +11,10 @@ on the second-chance backlog, hit the account's usage limit, and pushed nothing.
 each plan passes `check_plan.py`**, to the same branch - the merge job takes each push - so a run that is
 cut off still keeps the plans it finished.
 
+## READ factory/KEVIN_SELLING.md (18 Nov 2026)
+Kevin's own selling rules from his public shows (believe it, don't sell, facts tell / stories sell, show proof,
+ask don't tell, make yes easy). Every hook, caption and closing question follows them.
+
 ## WHAT WINS ON TIKTOK - PLAN THESE FIRST (18 Nov 2026, Kamay: "make our tiktok explode")
 Read on TikTok 18 Nov from the biggest Kevin accounts (kevintrudeau_student 449K followers, trudeaumanifesting
 344K, both free-course affiliates). Their 1M-5M clips are almost all ONE kind: **money the system hides, made
