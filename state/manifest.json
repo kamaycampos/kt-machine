@@ -16946,7 +16946,12 @@
    "hook": "THE VEGETARIAN MONK who ate steak",
    "bytes": 35233405,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "instagram": "yours to post with Instagram music until 21:00 - after that it posts by itself, voice only"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "movie",
@@ -16964,7 +16969,15 @@
    "movie": "mv_v4oml32_the_monk_who_ate_anything",
    "music": null,
    "ig_hand": true,
-   "scheduled_at": "2026-11-18T12:30"
+   "scheduled_at": "2026-11-18T12:30",
+   "posting": false,
+   "links": {
+    "youtube": "https://youtube.com/shorts/e4ZqzCvqbrU"
+   },
+   "ig_hand_from": "2026-11-18T17:41:06",
+   "ig_hand_due": "2026-11-18T21:00",
+   "caption_at_post": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says he tracked down a real Shaolin monk and had him move into his house to learn the temple's secrets. The monk said he was vegetarian, then insisted he had no dietary restriction at all - he \"ate anything.\"\n\nFor a week, every single meal the monk ordered was vegetables. Kevin finally called him out on it.\n\nWhat the monk said next - and what happened the night Kevin served him steak - is the part people don't expect.\n\nEpisode 4: The Monk Who Ate Anything.\n\nThe 14 audios are Kevin teaching how to use your mind to get what you want in life, recorded live at a private event in the Alps.\n\nMost people will scroll past this. A few will comment \"WISH\" and start listening tonight.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #shaolin #mindset #buddhism #wisdom #yourwishisyourcommand",
+   "posted_at": "2026-11-18T12:41"
   },
   {
    "file": "KT_DEPOSITR2O/01_SILENT-BLESSING-PAYS-1000-FOLD_68s.mp4",
@@ -17307,14 +17320,28 @@
    "caption": "Say a restaurant's food wasn't very good, and by one government definition, you just published misinformation.\n\nThat's not hyperbole - Kevin walks through it literally: an opinion gets reclassified as a lie the moment a fact-checker disagrees with it. McDonald's serves great food, they rule, and anyone who says otherwise is spreading misinformation. Stretch that same definition over anything you believe, and misinformation stops meaning false. It starts meaning disagreement.\n\nThat's the actual definition being used right now.\n\nComment RISE and I'll send you where else that definition has been applied.\n\n#disclosure #censorship #freespeech #hiddenagenda #wakeup #kevintrudeau",
    "hook": "Calling food bad is now misinformation.",
    "bytes": 51449623,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-18T12:24",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2232344331034772/",
+    "instagram": "https://www.instagram.com/reel/Df5DsI0gBsl/",
+    "youtube": "https://youtube.com/shorts/z69kQY6TODg"
+   },
+   "caption_at_post": "Say a restaurant's food wasn't very good, and by one government definition, you just published misinformation.\n\nThat's not hyperbole - Kevin walks through it literally: an opinion gets reclassified as a lie the moment a fact-checker disagrees with it. McDonald's serves great food, they rule, and anyone who says otherwise is spreading misinformation. Stretch that same definition over anything you believe, and misinformation stops meaning false. It starts meaning disagreement.\n\nThat's the actual definition being used right now.\n\nComment RISE and I'll send you where else that definition has been applied.\n\n#disclosure #censorship #freespeech #hiddenagenda #wakeup #kevintrudeau",
+   "posted_at": "2026-11-18T12:39"
   },
   {
    "file": "AR_UNDERCURRENT/01_THEY-DONT-KILL-THE-USELESS-EATERS_81s.mp4",
