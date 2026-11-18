@@ -1,0 +1,101 @@
+{
+ "slug": "mv_v72tj4g_the_bowling_alley_secret",
+ "vid": "v72tj4g",
+ "t_in": 223.5,
+ "t_out": 398.5,
+ "keeps": [
+  [
+   17,
+   77
+  ],
+  [
+   145,
+   229
+  ],
+  [
+   231,
+   370
+  ],
+  [
+   386,
+   545
+  ]
+ ],
+ "scenes": [
+  {
+   "src": {
+    "gen": "a wealthy man in a dark suit approaching a young boy inside a dim 1970s bowling alley lounge",
+    "move": "the man steps closer and crouches down to the boy's eye level"
+   },
+   "from": 19,
+   "to": 26,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "a dark shadowed corner of a 1970s bowling alley lounge, shapes barely visible in the low light",
+    "move": "the shadows in the corner shift and slowly sharpen into focus"
+   },
+   "from": 172,
+   "to": 181,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "a young man standing alone at the head of a long wooden boardroom table, older men seated around it",
+    "move": "the young man rises and the older men around the table turn to face him"
+   },
+   "from": 363,
+   "to": 370,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "a man walking across an airport tarmac at night toward a private jet, briefcase in hand",
+    "move": "the man climbs the jet's steps as the engines spool up behind him"
+   },
+   "from": 431,
+   "to": 435,
+   "start": 0.1
+  }
+ ],
+ "voices": {
+  "363": "X",
+  "364": "X",
+  "365": "X",
+  "366": "X",
+  "367": "X",
+  "527": "X",
+  "528": "X",
+  "529": "X",
+  "530": "X",
+  "531": "X",
+  "532": "X",
+  "533": "X",
+  "285": "N:violet",
+  "286": "N:violet"
+ },
+ "join": [
+  [
+   285,
+   286
+  ]
+ ],
+ "fix": {},
+ "tighten": 0.85,
+ "cap_y": 800,
+ "end_card": "end_kamay.png",
+ "end_secs": 4.0,
+ "music_db": -27,
+ "fx": true,
+ "fx_db": -31,
+ "post": {
+  "title": "The Bowling Alley Secret"
+ },
+ "title_top": {
+  "tag": "EPISODE 6",
+  "line": "The Bowling Alley Secret"
+ },
+ "big_from": 524,
+ "music": "movie_ambient_piano_thesilentthunder.mp3"
+}
