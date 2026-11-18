@@ -16916,14 +16916,27 @@
    "hook": "The 90-second rule behind big sales",
    "bytes": 34036018,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-18T15:41",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df5ZyzuFBHJ/",
+    "youtube": "https://youtube.com/shorts/FGmtynAt7-Y"
+   },
+   "caption_at_post": "Kevin Trudeau says there is a secret buried inside the stories he tells on air: facts tell, but stories sell.\n\nHe proved it live - six short recordings, six strangers' stories, each one landing a single point. None of them ran long.\n\nThe timing wasn't random either: 31 seconds, 50 seconds, a minute 15, a minute 20, 58 seconds, a minute 5. Never two minutes. Never longer.\n\nThat is the same window as a TV or radio ad: 30 to 90 seconds, start to finish.\n\nIf your pitch, your post or your story runs past 90 seconds, you've already lost most of the room.\n\n#kevintrudeau #copywriting #storytelling #marketingtips #salestips #businessmindset",
+   "posted_at": "2026-11-18T15:53"
   },
   {
    "file": "KT_RUNWAY/02_2-BILLION-APP-NO-WIFI-OFFICE_110s.mp4",
@@ -16935,7 +16948,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-18T15:41",
+   "scheduled_at": "2026-11-18T16:34",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
    "cta_kind": "question"
@@ -17014,7 +17027,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-18T15:41"
+   "scheduled_at": "2026-11-18T16:34"
   },
   {
    "file": "KT_IONSTORMO/01_NEGATIVE-IONS-GROW-YOUR-BRAIN_59s.mp4",
@@ -17405,7 +17418,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-20T08:48",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_CATALYST/01_UNCLES-WEEKEND-TIP-CHANGED-HIM_67s.mp4",
@@ -17416,7 +17433,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-19T16:46",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_RUNWAYR2/01_FULL-THROTTLE-TO-CRUISING-ALTITUDE_57s.mp4",
@@ -17427,7 +17448,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-20T10:55",
+   "cta_keyword": "MONEY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_RUNWAYR2/02_AI-REPLACES-100K-COPYWRITER_44s.mp4",
@@ -17438,7 +17463,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-19T12:19",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_SIDEHUSTLER2/01_SHE-MAKES-26K-A-MONTH-ON-ETSY_50s.mp4",
@@ -17449,7 +17478,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-20T08:33",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   }
  ]
 }
