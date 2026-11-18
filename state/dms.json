@@ -254,6 +254,11 @@
    "at": "2026-11-16T22:58:07.323274+00:00",
    "platform": "instagram",
    "error": "Please reduce the amount of data you're asking for, then retry your request"
+  },
+  {
+   "at": "2026-11-18T05:05:52.993204+00:00",
+   "platform": "instagram",
+   "error": "An unexpected error has occurred. Please retry your request later."
   }
  ],
  "withheld": {
