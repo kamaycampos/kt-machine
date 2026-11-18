@@ -1,97 +1,45 @@
-## ar_v4lw3gr_p7: 2 of 2 clip(s) passed every gate
+## ar_v4lw3gr_p8: 2 of 4 clip(s) passed every gate
 
 
-## 2026-11-17 12:13
-  note AR_HIERARCHY/THE-PRIEST-CLASS-OUTRANKED-THE-KINGS: end snapped 2640.77 -> 2640.57s (after 'the atheists in many cases')
-  note AR_HIERARCHY/THEIR-OUTRAGE-IS-SOMEONE-ELSES-SCRIPT: end snapped 547.43 -> 545.98s (after 'Think about that')
-  note AR_HIERARCHY/THEIR-OUTRAGE-IS-SOMEONE-ELSES-SCRIPT: ending kept on the planner's words 'Think about that' (ends on 'that', next line completes it)
-ar_v4lw3gr_p7__s0 (AR_HIERARCHY): 2 of 2 passed pre-render gates
+## 2026-11-18 11:34
+  note AR_WITNESS/ONE-ROOM-RUNS-THE-WORLD: end snapped 1081.38 -> 1081.19s (after 'powerful meeting as well')
+  note AR_WITNESS/ONE-ROOM-RUNS-THE-WORLD: ending kept on the planner's words 'powerful meeting as well' (cuts mid-sentence)
+  drop AR_WITNESS/THEY-PREDICTED-BILLIONS-DEAD: hook - 809px wide at 44px - over the 780px safe zone, will be cut off on a phone
+ar_v4lw3gr_p8__s0 (AR_WITNESS): 1 of 2 passed pre-render gates
 
-RENDER ar_v4lw3gr_p7__s0
-  WARP 01_THEIR-OUTRAGE-IS-SOMEONE-ELSES-SCRIPT_147s.mp4: E-IS-SOMEONE-ELSES-SCRIPT_147s.mp4      20 captions vs the sound  median +0.08s  worst-10% 0.99s  | words captioned 100% - re-timing each caption once
-  PASS 01_THEIR-OUTRAGE-IS-SOMEONE-ELSES-SCRIPT_147s.mp4  01_THEIR-OUTRAGE-IS-SOMEONE-ELSES-SCRIPT_147s.mp4      20 captions vs the sound  median +0
-       FIRST 5s : When you talk or listen to these people on YouTube, | LAST  8s : A person's mouth is from his own personal knowledge and his own personal experience. Think about that.
-  PASS 02_THE-PRIEST-CLASS-OUTRANKED-THE-KINGS_149s.mp4  02_THE-PRIEST-CLASS-OUTRANKED-THE-KINGS_149s.mp4       28 captions vs the sound  median +0
-       FIRST 5s : So you had the warrior class. Now, the warrior class were also | LAST  8s : The connection between the spiritual realm. Today, the intellects are the atheists in many cases.
-TEST MODE - passing clips NOT uploaded or queued: AR_HIERARCHY
-  test clip kept in previews: TEST_AR_HIERARCHY--01_THEIR-OUTRAGE-IS-SOMEONE-ELSES-SCRIPT_147s.mp4
-  test clip kept in previews: TEST_AR_HIERARCHY--02_THE-PRIEST-CLASS-OUTRANKED-THE-KINGS_149s.mp4
+RENDER ar_v4lw3gr_p8__s0
+  PASS 01_ONE-ROOM-RUNS-THE-WORLD_102s.mp4  01_ONE-ROOM-RUNS-THE-WORLD_102s.mp4                    27 captions vs the sound  median +0
+       FIRST 5s : This Bilderberg group takes the most powerful influence | LAST  8s : So you hear about the G8, that's all over the news. You hear about Davos, where the elites get together. That's a very powerful meeting as well.
+TEST MODE - passing clips NOT uploaded or queued: AR_WITNESS
+  test clip kept in previews: TEST_AR_WITNESS--01_ONE-ROOM-RUNS-THE-WORLD_102s.mp4
 
 
-## ar_v4wsipz_p2: 2 of 2 clip(s) passed every gate
 
+## 2026-11-18 12:04
+  note AR_WITNESS/THEY-GO-ALONG-WITH-THE-PROGRAM: end snapped 2849.55 -> 2849.83s (after 'go along with the program')
+  note AR_WITNESS/TO-THEM-YOU-ARE-LITERALLY-GOD: end snapped 1755.01 -> 1754.06s (after 'Think about that')
+  note AR_WITNESS/TO-THEM-YOU-ARE-LITERALLY-GOD: ending kept on the planner's words 'Think about that' (cuts mid-sentence)
+ar_v4lw3gr_p8__s1 (AR_WITNESS): 2 of 2 passed pre-render gates
 
-## 2026-11-17 12:17
-  note AR_THETAWAVE/THEY-KEPT-YOU-ILLITERATE-ON-PURPOSE: end snapped 2350.11 -> 2349.63s (after 'gathering from the books')
-  note AR_THETAWAVE/THEY-KEPT-YOU-ILLITERATE-ON-PURPOSE: ending kept on the planner's words 'gathering from the books' (next line completes it)
-ar_v4wsipz_p2__s0 (AR_THETAWAVE): 2 of 2 passed pre-render gates
-
-RENDER ar_v4wsipz_p2__s0
-  PASS 01_THEY-KEPT-YOU-ILLITERATE-ON-PURPOSE_76s.mp4  01_THEY-KEPT-YOU-ILLITERATE-ON-PURPOSE_76s.mp4         49 captions vs the sound (word-refe
-       FIRST 5s : Reading, even reading a novel, even a trashy | LAST  8s : It does, and can help you manifest goals, dreams, desires, even by reading trashy novels. Forget the information you are gathering from the books.
-  PASS 02_YOUR-HIPPOCAMPUS-IS-SMALLER-ON-PURPOSE_154s.mp4  02_YOUR-HIPPOCAMPUS-IS-SMALLER-ON-PURPOSE_154s.mp4     91 captions vs the sound (word-refe
-       FIRST 5s : Now, let's take the mega rich. Let's hook up their brainwaves, the Elon mess. | LAST  8s : Well, I'm sorry to tell you, rich people have a big one, poor people have a small one.
-TEST MODE - passing clips NOT uploaded or queued: AR_THETAWAVE
-  test clip kept in previews: TEST_AR_THETAWAVE--01_THEY-KEPT-YOU-ILLITERATE-ON-PURPOSE_76s.mp4
-  test clip kept in previews: TEST_AR_THETAWAVE--02_YOUR-HIPPOCAMPUS-IS-SMALLER-ON-PURPOSE_154s.mp4
-
-
-## ep_v4oml32_r8: 1 of 1 clip(s) passed every gate
-
-
-## 2026-11-17 11:50
-  note KT_DREAMWORLDR2/THE-1948-BOOK-GURUS-COPY: end snapped 503.23 -> 502.37s (after 'famous and incredibly wealthy')
-  note KT_DREAMWORLDR2/THE-1948-BOOK-GURUS-COPY: ending kept on the planner's words 'famous and incredibly wealthy' (cuts mid-sentence)
-ep_v4oml32_r8__s0 (KT_DREAMWORLDR2): 1 of 1 passed pre-render gates
-
-RENDER ep_v4oml32_r8__s0
-  PASS 01_THE-1948-BOOK-GURUS-COPY_82s.mp4  01_THE-1948-BOOK-GURUS-COPY_82s.mp4                    10 captions vs the sound  median +0
-       FIRST 5s : There was another book written years ago. It was called The Success System That Never Failed. | LAST  8s : The magic of believing is the reason they became famous and incredibly wealthy.
-TEST MODE - passing clips NOT uploaded or queued: KT_DREAMWORLDR2
-  test clip kept in previews: TEST_KT_DREAMWORLDR2--01_THE-1948-BOOK-GURUS-COPY_82s.mp4
+RENDER ar_v4lw3gr_p8__s1
+  WARP 01_TO-THEM-YOU-ARE-LITERALLY-GOD_64s.mp4: -ARE-LITERALLY-GOD_64s.mp4               18 captions vs the sound  median +0.02s  worst-10% 0.79s  | words captioned 99% - re-timing each caption once
+  FAIL 01_TO-THEM-YOU-ARE-LITERALLY-GOD_64s.mp4: [FAIL] 01_TO-THEM-YOU-ARE-LITERALLY-GOD_64s.mp4               18 captions vs the sound  median -0.00s  worst-10% 0.78s  | words captioned 99%
+  PASS 02_THEY-GO-ALONG-WITH-THE-PROGRAM_76s.mp4  02_THEY-GO-ALONG-WITH-THE-PROGRAM_76s.mp4              18 captions vs the sound  median +0
+       FIRST 5s : The second group, the second class, is | LAST  8s : If you think on their own, they go along with the program. Think about that. They go along with the program.
+TEST MODE - passing clips NOT uploaded or queued: AR_WITNESS
+  test clip kept in previews: TEST_AR_WITNESS--02_THEY-GO-ALONG-WITH-THE-PROGRAM_76s.mp4
 
 
 ## UPLOAD
-5 clip(s) to add:
-   AR_HIERARCHY/01_THEIR-OUTRAGE-IS-SOMEONE-ELSES-SCRIPT_147s.mp4  (113 MB)
-   AR_HIERARCHY/02_THE-PRIEST-CLASS-OUTRANKED-THE-KINGS_149s.mp4  (127 MB)
-   AR_THETAWAVE/01_THEY-KEPT-YOU-ILLITERATE-ON-PURPOSE_76s.mp4  (60 MB)
-   AR_THETAWAVE/02_YOUR-HIPPOCAMPUS-IS-SMALLER-ON-PURPOSE_154s.mp4  (102 MB)
-   KT_DREAMWORLDR2/01_THE-1948-BOOK-GURUS-COPY_82s.mp4  (74 MB)
-      + 01_THEIR-OUTRAGE-IS-SOMEONE-ELSES-SCRIPT_147s__story.mp4
-      + 01_THEIR-OUTRAGE-IS-SOMEONE-ELSES-SCRIPT_147s__yt59.mp4
-   added AR_HIERARCHY/01_THEIR-OUTRAGE-IS-SOMEONE-ELSES-SCRIPT_147s.mp4  (release media2)
-      + 02_THE-PRIEST-CLASS-OUTRANKED-THE-KINGS_149s__story.mp4
-      + 02_THE-PRIEST-CLASS-OUTRANKED-THE-KINGS_149s__yt59.mp4
-   added AR_HIERARCHY/02_THE-PRIEST-CLASS-OUTRANKED-THE-KINGS_149s.mp4  (release media2)
-      + 01_THEY-KEPT-YOU-ILLITERATE-ON-PURPOSE_76s__story.mp4
-      + 01_THEY-KEPT-YOU-ILLITERATE-ON-PURPOSE_76s__yt59.mp4
-   added AR_THETAWAVE/01_THEY-KEPT-YOU-ILLITERATE-ON-PURPOSE_76s.mp4  (release media2)
-      + 02_YOUR-HIPPOCAMPUS-IS-SMALLER-ON-PURPOSE_154s__story.mp4
-      + 02_YOUR-HIPPOCAMPUS-IS-SMALLER-ON-PURPOSE_154s__yt59.mp4
-   added AR_THETAWAVE/02_YOUR-HIPPOCAMPUS-IS-SMALLER-ON-PURPOSE_154s.mp4  (release media2)
-      + 01_THE-1948-BOOK-GURUS-COPY_82s__story.mp4
-      + 01_THE-1948-BOOK-GURUS-COPY_82s__yt59.mp4
-      + 01_THE-1948-BOOK-GURUS-COPY_82s__cover.jpg
-      + 01_THE-1948-BOOK-GURUS-COPY_82s__thumb.jpg
-   added KT_DREAMWORLDR2/01_THE-1948-BOOK-GURUS-COPY_82s.mp4  (release media2)
+2 clip(s) to add:
+   AR_WITNESS/01_ONE-ROOM-RUNS-THE-WORLD_102s.mp4  (81 MB)
+   AR_WITNESS/02_THEY-GO-ALONG-WITH-THE-PROGRAM_76s.mp4  (64 MB)
+      + 01_ONE-ROOM-RUNS-THE-WORLD_102s__story.mp4
+      + 01_ONE-ROOM-RUNS-THE-WORLD_102s__yt59.mp4
+   added AR_WITNESS/01_ONE-ROOM-RUNS-THE-WORLD_102s.mp4  (release media2)
+      + 02_THEY-GO-ALONG-WITH-THE-PROGRAM_76s__story.mp4
+      + 02_THEY-GO-ALONG-WITH-THE-PROGRAM_76s__yt59.mp4
+   added AR_WITNESS/02_THEY-GO-ALONG-WITH-THE-PROGRAM_76s.mp4  (release media2)
 
-manifest now holds 685 clips
+manifest now holds 688 clips
 commit and push state/manifest.json to let the machine see them
-
-
-## TRIAL: 2 hook variant(s) of AR_THETAWAVE/02_YOUR-HIPPOCAMPUS-IS-SMALLER-ON-PURPOSE_154s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 2 hook variant(s) of KT_DREAMWORLDR2/01_THE-1948-BOOK-GURUS-COPY_82s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 4 hook variant(s) of AR_THETAWAVE/02_YOUR-HIPPOCAMPUS-IS-SMALLER-ON-PURPOSE_154s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 4 hook variant(s) of KT_DREAMWORLDR2/01_THE-1948-BOOK-GURUS-COPY_82s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 6 hook variant(s) of KT_DREAMWORLDR2/01_THE-1948-BOOK-GURUS-COPY_82s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 6 hook variant(s) of AR_THETAWAVE/02_YOUR-HIPPOCAMPUS-IS-SMALLER-ON-PURPOSE_154s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 7 hook variant(s) of AR_THETAWAVE/02_YOUR-HIPPOCAMPUS-IS-SMALLER-ON-PURPOSE_154s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 7 hook variant(s) of KT_DREAMWORLDR2/01_THE-1948-BOOK-GURUS-COPY_82s.mp4 ready for Instagram Trial Reels

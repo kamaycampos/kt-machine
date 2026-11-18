@@ -14241,6 +14241,42 @@
     "What AI just",
     "replaced: $100,000 copywriters"
    ]
+  },
+  "ar_v4lw3gr_p8/THEY-PREDICTED-BILLIONS-DEAD": {
+   "plan": "ar_v4lw3gr_p8",
+   "source": "v4lw3gr.mp4",
+   "brand": "AR_WITNESS",
+   "tries": 1,
+   "why": [
+    "drop AR_WITNESS/THEY-PREDICTED-BILLIONS-DEAD: hook - 809px wide at 44px - over the 780px safe zone, will be cut off on a phone"
+   ],
+   "slug": "THEY-PREDICTED-BILLIONS-DEAD",
+   "in": 634.3,
+   "out": 794.0,
+   "start_words": "If you were in charge",
+   "end_words": "where is the population controlled",
+   "hook": [
+    "They predicted billions dead.",
+    "Nobody died."
+   ]
+  },
+  "ar_v4lw3gr_p8/TO-THEM-YOU-ARE-LITERALLY-GOD": {
+   "plan": "ar_v4lw3gr_p8",
+   "source": "v4lw3gr.mp4",
+   "brand": "AR_WITNESS",
+   "tries": 1,
+   "why": [
+    "FAIL 01_TO-THEM-YOU-ARE-LITERALLY-GOD_64s.mp4: [FAIL] 01_TO-THEM-YOU-ARE-LITERALLY-GOD_64s.mp4               18 captions vs the sound  median -0.00s  worst-10% 0.78s  | words captioned 99%"
+   ],
+   "slug": "TO-THEM-YOU-ARE-LITERALLY-GOD",
+   "in": 1690.5,
+   "out": 1753.7,
+   "start_words": "Why do they want",
+   "end_words": "Think about that",
+   "hook": [
+    "To them,",
+    "you are literally God."
+   ]
   }
  },
  "attempts": {
