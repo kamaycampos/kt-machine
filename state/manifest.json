@@ -16412,7 +16412,8 @@
     "facebook": "off for this account",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post",
-    "instagram": "yours to post with Instagram music until 21:00 - after that it posts by itself, voice only"
+    "instagram": "posted",
+    "instagram_story": "posted by hand - no story"
    },
    "media_tag": "media2",
    "cover": true,
@@ -16434,12 +16435,15 @@
    "wide": true,
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/ajMuWMfOe8c"
+    "youtube": "https://youtube.com/shorts/ajMuWMfOe8c",
+    "instagram": "https://www.instagram.com/reel/Df2hUI9hC_H/"
    },
    "ig_hand_from": "2026-11-17T17:34:19",
    "ig_hand_due": "2026-11-17T21:00",
    "caption_at_post": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says he sat down at a single-deck blackjack table in Reno, one on one with the dealer, and remembered every card. About an hour later, he says, he had made $250,000.\n\nThen two very large men tapped him on the shoulder.\n\nHe expected the back room. They walked him to the restaurant instead, where the owner sat eating a plate of spaghetti. What the owner told him is the part nobody guesses.\n\nEpisode 3: Too Good For The Casino.\n\nThe 14 audios are Kevin teaching how to use your mind to get what you want in life. They were recorded live at a private event in the Alps.\n\nMost people will watch this and scroll on. A few will comment \"WISH\" and start listening tonight.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #megamemory #blackjack #memory #mindset #yourwishisyourcommand",
-   "posted_at": "2026-11-17T12:34"
+   "posted_at": "2026-11-17T12:34",
+   "ig_hand_done": true,
+   "ig_by_hand": true
   },
   {
    "file": "AR_BIRTHRIGHT/01_ONE-CLASS-YOU-CAN-NEVER-JOIN_45s.mp4",
