@@ -11,6 +11,30 @@ on the second-chance backlog, hit the account's usage limit, and pushed nothing.
 each plan passes `check_plan.py`**, to the same branch - the merge job takes each push - so a run that is
 cut off still keeps the plans it finished.
 
+## WHAT WINS ON TIKTOK - PLAN THESE FIRST (18 Nov 2026, Kamay: "make our tiktok explode")
+Read on TikTok 18 Nov from the biggest Kevin accounts (kevintrudeau_student 449K followers, trudeaumanifesting
+344K, both free-course affiliates). Their 1M-5M clips are almost all ONE kind: **money the system hides, made
+practical** - "Mortgage is a scam" 5.1M (5,309 comments), "How to increase your credit score" 2.9M, "The thing
+keeping you poor" 2.1M, "The one money lie the rich don't tell you" 1.8M - plus **simple habits with a reason**
+(write goals in cursive / blue ink on white paper 1.6M + 1.7M + 967K; "the power of your words" 1.7M; "don't
+share your dreams" 1.1M). Ours peak at ~13K. So in every run, before any other arc, look for:
+1. **The system vs your wallet** - banks, credit score, credit cards, mortgage, rent, taxes, the IRS, insurance,
+   retirement - where Kevin says what they do and what you do instead. A claim people argue with in the
+   comments is GOOD (that is what lifts it); a claim that is simply false or names a living politician is not.
+2. **One habit + why it works** - write it down (blue ink, white paper, cursive), the words you say, who you
+   tell, the billion-dollar question. Something a viewer can do tonight.
+3. Then the rest of this playbook as before.
+The hook states the claim in plain words, the way a person says it ("The banks don't want your credit score
+up"), never a teaser. Kevin's own words, never invented. Known uncut leads (verify the whole arc in the
+transcript before planning; check_plan refuses re-used minutes):
+- v79sijs (Credit Card Debt Trap) 0:00-1:15 - "The banks don't want you to improve your credit score ... keeping you a financial slave"
+- v6q4znk (First Million) 2:20-3:35 - "a million dollars cash in the bank and not a single bill"
+- v7aqp6u (What's Holding You Back) 5:20-6:00 - "$100 million cash in the bank" and 11:10 "define what you want, write it down"
+- v6t23wt (3 Money Lies) 2:35-3:05 - the credit card bought for a $600 item
+- v5dm94d (Simple Steps) 0:50-1:15 - "I'll pay cash, $22 million"
+- v76l9y0 (Success Code) 28:30 - "the banks call the loan and they're out of business"
+- v5cpz6r (Elites Control Your Perspective) 50:10-51:45 - how "read my lips, no new taxes" was written to sell (NOT 10:00-13:05: it names living politicians)
+
 ## KEVIN IS THE CLIP - NEVER A GUEST (10 Nov 2026, Kamay: "lots of last clips its just a man looking at the camera, not even KT. it just sucks")
 Five of 60 posts were a guest telling his own story (TKTS Clips: TWO-STRANGERS, CONTRACT-RACE, ROCKEFELLERS-DOLLAR-FIFTY, INVESTOR-CALM, HE-LOST-65-MILLION) and they sank the account. Rules, no exceptions:
 - Cut ONLY moments where Kevin is the one talking AND on camera. A guest's story, a guest's answer, an interviewer's question, an archive clip of someone else: skip.
