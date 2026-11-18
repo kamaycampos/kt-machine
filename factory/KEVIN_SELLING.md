@@ -67,10 +67,12 @@ At a seminar with Zig Ziglar, Brian Tracy and Charlie "Tremendous" Jones, who ea
 sold for 30-45 minutes, Kevin outsold them "two to one combined": the interviewer's words, "you were teaching and
 selling simultaneously ... nobody felt like they were being sold."
 **For us:** the gift belongs INSIDE the lesson, not after it: the caption shows how the 14 audios continue
-exactly what Kevin just said in the clip ("This is lesson 3 of the 14 audios"), not a separate ad tacked on.
+the same idea Kevin just taught in the clip, not a separate ad tacked on. Only claim what the audios really
+contain (offers.json); never invent a lesson number or a link between them.
 
 ## 11. Use every channel on the same people
 His Guru Kev book sold by email for six months; then a direct-mail piece to the SAME list sold again. "Email
 marketing is not dead and neither is Facebook."
-**For us:** a person who commented once gets the gift, and later the next useful thing (the follow-up DM / the
-link page), never silence. Same audience, more than one touch.
+**For us:** a person who commented once is the warmest audience we have. Today they get the gift and nothing
+else; a second useful touch (a follow-up message, the link page) is a build for later, with Kamay's yes - never
+promised in a caption before it exists.
