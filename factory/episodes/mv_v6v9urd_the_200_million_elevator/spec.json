@@ -1,0 +1,99 @@
+{
+ "slug": "mv_v6v9urd_the_200_million_elevator",
+ "vid": "v6v9urd",
+ "t_in": 2320.5,
+ "t_out": 2448.5,
+ "keeps": [
+  [
+   22,
+   390
+  ]
+ ],
+ "scenes": [
+  {
+   "src": {
+    "gen": "A grand mansion ballroom at night, well-dressed guests in dark suits and evening gowns mingling near tall windows, a server carrying a tray of drinks, crystal chandeliers glowing overhead",
+    "move": "a server weaves through the crowd with a tray of champagne glasses while guests turn and chat in small circles"
+   },
+   "from": 202,
+   "to": 212,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "Inside a polished hotel elevator at night, three businessmen in dark suits standing together as a fourth man in a suit steps in through the sliding doors and reaches to shake hands",
+    "move": "the elevator doors slide open, the man steps inside and extends his hand toward the group"
+   },
+   "from": 230,
+   "to": 237,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "Close view inside a hotel elevator of an older wealthy businessman in a tailored suit, his eyes wide and mouth open in astonishment as he stares across at another man",
+    "move": "the astonished man slowly shakes his head in disbelief, his eyebrows raised"
+   },
+   "from": 329,
+   "to": 336,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "An elegant dinner table set for two in a grand dining room at night, tall windows behind them overlooking a harbor filled with glowing yacht lights, candles and fine china on the tablecloth",
+    "move": "a hand lifts a wine glass to toast across the table as the harbor lights glimmer through the window behind them"
+   },
+   "from": 379,
+   "to": 385,
+   "start": 0.1
+  }
+ ],
+ "voices": {
+  "55": "I",
+  "56": "I",
+  "187": "I",
+  "188": "I",
+  "333": "X",
+  "334": "X",
+  "335": "X",
+  "336": "X",
+  "337": "X",
+  "382": "G@T",
+  "383": "G@T",
+  "228": "N:violet",
+  "229": "N:violet"
+ },
+ "join": [
+  [
+   55,
+   56
+  ],
+  [
+   187,
+   188
+  ],
+  [
+   382,
+   383
+  ],
+  [
+   228,
+   229
+  ]
+ ],
+ "fix": {},
+ "tighten": 0.85,
+ "cap_y": 800,
+ "end_card": "end_kamay.png",
+ "end_secs": 4.0,
+ "music_db": -27,
+ "fx": false,
+ "fx_db": -31,
+ "post": {
+  "title": "The $200 Million Elevator"
+ },
+ "title_top": {
+  "tag": "EPISODE 7",
+  "line": "The $200 Million Elevator"
+ },
+ "big_from": 376
+}
