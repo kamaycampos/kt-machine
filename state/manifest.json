@@ -17576,7 +17576,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-19T17:09",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_LIBERATED/01_ANALYZING-YOUR-DREAM-TRAPS-THE-ENERGY_49s.mp4",
@@ -17586,7 +17590,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-19T12:11",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_VAMPIRER3/01_ZIG-ZIGLAR-CALLED-IT-SNIOP_50s.mp4",
@@ -17596,7 +17604,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-19T10:56",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_VAMPIRER3/02_MY-ENERGY-FIELD-IS-BIG-ENOUGH_65s.mp4",
@@ -17606,7 +17618,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-19T20:03",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "KT_BACKSTAGE/01_THE-GURUS-LOVE-WAS-A-LIE_64s.mp4",
@@ -17617,7 +17633,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-20T12:11",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_KNIFE/01_ONE-GINSU-AD-PAID-FOR-LIFE_162s.mp4",
@@ -17628,7 +17648,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-21T08:21",
+   "cta_keyword": "WISH",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_MIDAS/01_STUDIO-APARTMENT-TO-MILLIONAIRE_40s.mp4",
@@ -17639,7 +17663,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-20T16:28",
+   "cta_keyword": "MONEY",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "KT_THROTTLER2/01_DUPLICATE-THE-GRIND-NOT-THE-CRUISE_124s.mp4",
@@ -17650,7 +17678,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-21T09:28",
+   "cta_keyword": "MONEY",
+   "cta_variant": 7,
+   "cta_kind": "offer"
   }
  ]
 }
