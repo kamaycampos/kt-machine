@@ -1,0 +1,83 @@
+{
+ "source": "v4kacob.mp4",
+ "brand": "AR_STARPEOPLER2R2",
+ "test": false,
+ "note": "19 Nov 2026 - 'Kevin Trudeau talks to Giorgio Tsoukalos from Ancient Aliens' (Rumble v4kacob). Awakened Rise weekly agent - third try, re-cut after AR_STARPEOPLER2 failed render ('no clip came out of the render') on all 6 clips. Opened every clip on a different, clean sentence (several on Kevin's own on-camera line) and closed every one on a different, complete sentence than the failed attempt.",
+ "clips": [
+  {
+   "slug": "YOU-CANT-RECREATE-THEIR-ANCIENT-CUT",
+   "retry_of": "ar_v4kacob_r2/YOU-CANT-RECREATE-THEIR-ANCIENT-CUT",
+   "in": 761.0,
+   "out": 820.0,
+   "start_words": "Now, you've traveled all",
+   "end_words": "and some pieces of wood",
+   "hook": ["Your best tools", "couldn't match this."],
+   "trial_hooks": [
+    ["Second hardest stone", "on the planet."],
+    ["Mainstream archaeology has", "no real explanation."],
+    ["Modern tools fail.", "Ancient hands didn't."],
+    ["Miss this, you", "miss your history."],
+    ["Giorgio says lasers", "can't match it."],
+    ["Doubt the textbook.", "See the cut."],
+    ["Chicken bones. String.", "The official story."]
+   ],
+   "send": "Someone sends this to the friend who says ancient history is already fully explained - awe at a cut modern lasers still can't make.",
+   "caption": "There's a stone in the Andes called diorite - the second hardest material on the planet, harder than steel. The official story is that the people who cut it had no written language, no metal tools, nothing but sharpened bones and string.\n\nToday we have lasers. We still can't make a cut like the one sitting in that quarry.\n\nSomeone - or something - knew how to work stone in a way we haven't relearned. That's the part nobody teaches you.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#ancientaliens #disclosure #hiddenhistory #awakening #innerwork #kevintrudeau"
+  },
+  {
+   "slug": "SCIENTISTS-CALLED-IT-IMPOSSIBLE-TO-MAKE",
+   "retry_of": "ar_v4kacob_r2/SCIENTISTS-CALLED-IT-IMPOSSIBLE-TO-MAKE",
+   "in": 1053.0,
+   "out": 1225.0,
+   "start_words": "Crystal skulls.",
+   "end_words": "making of this artifact",
+   "hook": ["Scientists couldn't explain", "this to you."],
+   "send": "Someone sends this to the friend obsessed with unsolved mysteries - unease that a real lab couldn't explain it either.",
+   "caption": "In the 1960s, a crystal skull was brought into the labs at Hewlett-Packard. The scientists there expected to debunk it in an afternoon.\n\nInstead, they found it had been carved against the natural axis of the crystal - the exact way you're not supposed to work it, because the whole piece should shatter. No tool marks. No polishing residue. Nothing.\n\nTheir conclusion, on the record, was that the skull shouldn't exist. And yet it's sitting in a case somewhere right now.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#ancientaliens #hiddenhistory #disclosure #awakening #mystery #kevintrudeau"
+  },
+  {
+   "slug": "EVERY-CULTURE-CARVED-THE-SAME-HELMET",
+   "retry_of": "ar_v4kacob_r2/EVERY-CULTURE-CARVED-THE-SAME-HELMET",
+   "in": 1259.0,
+   "out": 1328.0,
+   "start_words": "Now, let's talk about",
+   "end_words": "without exception",
+   "hook": ["Your ancestors carved", "the same helmet."],
+   "send": "Someone sends this to a friend who thinks ancient cultures never crossed paths - unease that they all carved the same thing anyway.",
+   "caption": "Look at the ancient carvings from South America, Africa, Egypt, and Asia side by side. Different continents, different centuries, people who never met each other and had no way to trade ideas.\n\nAnd somehow, next to the headdresses and the animal masks, the same shape keeps showing up: a round helmet, a suit, something built, not grown.\n\nNot in one culture. In every single one, without exception. That's not a coincidence you can explain away with \"they all imagined the same thing.\"\n\nComment RISE and I'll send you the rest of the teaching.\n\n#ancientaliens #hiddenhistory #disclosure #awakening #innerwork #kevintrudeau"
+  },
+  {
+   "slug": "GOLD-TOYS-STILL-FLY-LIKE-JETS",
+   "retry_of": "ar_v4kacob_r2/GOLD-TOYS-STILL-FLY-LIKE-JETS",
+   "in": 1708.0,
+   "out": 1823.0,
+   "start_words": "Small models of airplanes.",
+   "end_words": "man knew something about aerodynamics",
+   "hook": ["Gold toys from graves", "actually flew."],
+   "send": "Someone sends this to the friend who loves a wild true story - awe that a toy from a grave was flight-tested and flew.",
+   "caption": "Pre-Columbian graves in Colombia held hundreds of small gold figures shaped like animals - meant to travel with the dead.\n\nA dozen of them don't look like any animal at all. They have a fuselage, a tail fin standing straight up, wings underneath the body instead of on top. No bird or insect is built that way.\n\nTwo aviation experts in Germany scaled one up, added a propeller, and threw it into the air. It flew like a real plane.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#ancientaliens #hiddenhistory #disclosure #awakening #mystery #kevintrudeau"
+  },
+  {
+   "slug": "ANUNNAKI-MEANS-BEINGS-FROM-THE-HEAVENS",
+   "retry_of": "ar_v4kacob_r2/ANUNNAKI-MEANS-BEINGS-FROM-THE-HEAVENS",
+   "in": 2648.0,
+   "out": 2708.0,
+   "start_words": "That a long, long",
+   "end_words": "animals and things like this",
+   "hook": ["The Anunnaki.", "Beings who came down."],
+   "send": "Someone sends this to a friend into ancient texts - awe at a name older than the Bible for beings who came from the sky.",
+   "caption": "Long before the Torah was written, the Sumerians had a word for the beings they said came down from the sky to teach mankind: Anunnaki. Translated, it means those who came from the heavens.\n\nTheir own scrolls describe them as strange - wings, sometimes the heads of birds or eagles instead of human faces. Not angels in the way you were taught. Something else entirely.\n\nThat word has been sitting in the record for thousands of years, waiting for someone to ask what it actually means.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#ancientaliens #disclosure #hiddenhistory #awakening #innerwork #kevintrudeau"
+  },
+  {
+   "slug": "THEY-WORSHIPPED-SOLDIERS-AS-LITERAL-GODS",
+   "retry_of": "ar_v4kacob_r2/THEY-WORSHIPPED-SOLDIERS-AS-LITERAL-GODS",
+   "in": 2968.0,
+   "out": 3014.0,
+   "start_words": "And so still today",
+   "end_words": "it's highly fascinating",
+   "hook": ["To them, you're", "a god too."],
+   "send": "Someone sends this to the friend who loves a strange-but-true story - unease that it's still happening, right now, today.",
+   "caption": "During World War II, American troops landed on islands where people had never seen a plane, a radio, or a gun. To them, the soldiers looked like gods.\n\nWhen the war ended and the Americans left, the islanders built planes out of straw and wood and held rituals around them. They're still doing it. The cult still exists today - and some of them still have USA tattooed on their shoulders.\n\nNow ask yourself what that would look like if it happened thousands of years ago, to people with no memory of it ever being explained.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#ancientaliens #hiddenhistory #disclosure #awakening #mystery #kevintrudeau"
+  }
+ ]
+}
