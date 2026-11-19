@@ -3537,5 +3537,67 @@
    }
   ],
   "posted": null
+ },
+ "AR_WITNESSR2__THEY-PREDICTED-BILLIONS-DEAD": {
+  "clip": "AR_WITNESSR2/01_THEY-PREDICTED-BILLIONS-DEAD_162s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__AR_WITNESSR2__THEY-PREDICTED-BILLIONS-DEAD__V1.mp4",
+    "hook": [
+     "100 years straight,",
+     "population only grew."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_WITNESSR2__THEY-PREDICTED-BILLIONS-DEAD__V2.mp4",
+    "hook": [
+     "Insiders knew this,",
+     "secret for decades."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_WITNESSR2__THEY-PREDICTED-BILLIONS-DEAD__V3.mp4",
+    "hook": [
+     "Not fewer people.",
+     "More, every year."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_WITNESSR2__THEY-PREDICTED-BILLIONS-DEAD__V4.mp4",
+    "hook": [
+     "This lie hides",
+     "the real agenda."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_WITNESSR2__THEY-PREDICTED-BILLIONS-DEAD__V5.mp4",
+    "hook": [
+     "Kevin was there,",
+     "heard it himself."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_WITNESSR2__THEY-PREDICTED-BILLIONS-DEAD__V6.mp4",
+    "hook": [
+     "Check the data",
+     "before you panic."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_WITNESSR2__THEY-PREDICTED-BILLIONS-DEAD__V7.mp4",
+    "hook": [
+     "They can't even",
+     "pull this off."
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }
