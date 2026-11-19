@@ -1,0 +1,38 @@
+{
+ "source": "v4xs1cn.mp4",
+ "brand": "KT_THROTTLER2",
+ "test": false,
+ "note": "19 Nov 2026 - second chance on 'The Brainwave Secrets That Attract Millions' (v4xs1cn). Weekly agent. DUPLICATE-THE-GRIND-NOT-THE-CRUISE: WHY said the render ended off the planned words ('first started and first taking off' cut off mid-word); moved the end to the next full sentence, 'duplicate that type of success', which is also a cleaner, more complete payoff. WHAT-ONASSIS-DID-WHEN-BROKE: WHY flagged a repeated-word pattern right at the end ('winners creates winners', 'Success breeds success'); moved the end one sentence earlier, to 'every successful person knows that', dropping the repeated flourish. Captions updated to match the new edges; both now carry 'send' (not required when this episode was first planned).",
+ "clips": [
+  {
+   "slug": "DUPLICATE-THE-GRIND-NOT-THE-CRUISE",
+   "in": 341.44,
+   "out": 470.6,
+   "start_words": "If you find somebody",
+   "end_words": "duplicate that type of success",
+   "retry_of": "ep_v4xs1cn/DUPLICATE-THE-GRIND-NOT-THE-CRUISE",
+   "hook": [
+    "14-hour days",
+    "built every fortune"
+   ],
+   "caption": "Kevin Trudeau says most people copy success backwards.\n\nThey watch a millionaire today - relaxed, unhurried, fully in control - and copy that version of them. Wrong move. That's not how the money got made.\n\nCopy how they acted when they were broke and just starting out instead: the 14, 15, 16-hour days, seven days a week, for years, before any of it got easy.\n\nA plane needs full throttle just to leave the runway. Once it's cruising, the throttle pulls back. Confuse the two and you'll spend your life copying the cruise, wondering why you never take off.\n\nAre you copying someone's grind, or just their lifestyle?\n\n#kevintrudeau #successhabits #wealthmindset #hustle #moneymindset #richmindset",
+   "send": "A side-hustler sends it to a friend chasing an easy lifestyle, in anger at copying the wrong years of someone else's life.",
+   "cta_kind": null
+  },
+  {
+   "slug": "WHAT-ONASSIS-DID-WHEN-BROKE",
+   "in": 3916.92,
+   "out": 3980.0,
+   "start_words": "When you're in a room",
+   "end_words": "every successful person knows that",
+   "retry_of": "ep_v4xs1cn/WHAT-ONASSIS-DID-WHEN-BROKE",
+   "hook": [
+    "What Onassis did",
+    "before his fortune"
+   ],
+   "caption": "Aristotle Onassis became one of the richest men who ever lived.\n\nKevin Trudeau says that before the fortune, back when Onassis was flat broke, he still spent what little money he had to eat at the restaurants where wealthy people ate.\n\nNot to pitch anyone. Not to network. Just to be in the room with them.\n\nTrudeau calls it one of the oldest money secrets there is: get physically close to winners, and some of it rubs off on you - whether you notice it happening or not.\n\nWho are the five people you spend the most time with, and what are they making of their lives?\n\n#kevintrudeau #successmindset #wealthmindset #richmindset #millionairemindset #moneymindset",
+   "send": "A broke friend sends it to another broke friend, in anger at wasted years spent around the wrong people instead of winners.",
+   "cta_kind": null
+  }
+ ]
+}
