@@ -16914,14 +16914,27 @@
    "hook": "Why your realtor takes 6 months",
    "bytes": 60994116,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-19T08:08",
    "cta_keyword": "MONEY",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df7KyNojw4F/",
+    "youtube": "https://youtube.com/shorts/OO7irW_pRCM"
+   },
+   "caption_at_post": "Kevin Trudeau tells the story of a house that sat on the market for six months with one realtor, then sold in one week with another: Josh Altman.\n\nSame house. Same buyers out there. What changed was everything the first realtor skipped.\n\nAltman takes different photos, stages the house properly, and writes the listing differently. Then, walking a buyer through, instead of \"this is the living room, this is the kitchen,\" he asks where they're from, what they do, what's bringing them to the area.\n\nHe's building a connection. The other realtor is reciting a floor plan.\n\nWhich one would make you want to buy?\n\n#kevintrudeau #realestatetips #joshaltman #realestate #sellyourhouse #realestateagent",
+   "posted_at": "2026-11-19T08:21"
   },
   {
    "file": "KT_RUNWAY/01_THE-90-SECOND-SALES-SECRET_82s.mp4",
