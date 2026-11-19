@@ -17306,14 +17306,27 @@
    "hook": "The 1948 book made them rich",
    "bytes": 74455642,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-19T16:42",
    "cta_keyword": "MONEY",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df8GdgDHC1b/",
+    "youtube": "https://youtube.com/shorts/Atb3f0-2oUY"
+   },
+   "caption_at_post": "Kevin Trudeau says there is one book behind almost every success guru you have ever paid to learn from: The Magic of Believing, written in 1948.\n\nPull apart nearly any modern success teacher's training, he says, and you find the same foundational principles - whether that guru ever read the original or not.\n\nHe calls it one of the foundational books of success: read it, underline it, read it again, and talk about what actually worked when you tried it.\n\nHe says he can name a dozen people who became famous and genuinely wealthy and point to this one book as the reason.\n\nHow many \"new\" success systems have you paid for that were really just this, repackaged?\n\n#kevintrudeau #success #wealthmindset #selfimprovement #moneymindset #richhabits",
+   "posted_at": "2026-11-19T17:02"
   },
   {
    "file": "KT_EPISODE/05_HE-SPOTTED-THE-BRAINWASHING_56s.mp4",
@@ -17544,7 +17557,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-19T16:46",
+   "scheduled_at": "2026-11-19T17:43",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "offer"
@@ -17574,7 +17587,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-19T16:42",
+   "scheduled_at": "2026-11-19T17:43",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
    "cta_kind": "offer"
