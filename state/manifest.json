@@ -17553,14 +17553,27 @@
    "hook": "The advice that made him successful",
    "bytes": 56789903,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261119230043E4B3EA0A180C4323CDAE'}}"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-19T17:43",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df8NURqEaCo/",
+    "youtube": "https://youtube.com/shorts/AJTFBid3BhE"
+   },
+   "caption_at_post": "Kevin Trudeau says one piece of advice from his uncle set off everything that came after.\n\nIn 1979, he was a professional student with no real goals - he loved his training but wasn't applying it. His uncle told him to go to one weekend event in Massachusetts called Dream Weekend.\n\nHe went, and spent the weekend around men who became lifelong friends and mentors - one of them put him in his Rolls Royce at 2am for donuts after a meeting.\n\nKevin calls that single weekend the catalyst to everything that came after.\n\nWho's the one person who pointed you toward the room that changed your life?\n\nComment BRAIN and I'll send you Kevin's free audios.\n\n#kevintrudeau #mindset #successstory #mentorship #motivation #wealthmindset",
+   "posted_at": "2026-11-19T18:00"
   },
   {
    "file": "KT_RUNWAYR2/01_FULL-THROTTLE-TO-CRUISING-ALTITUDE_57s.mp4",
@@ -17587,7 +17600,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-19T17:43",
+   "scheduled_at": "2026-11-19T18:43",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
    "cta_kind": "offer"
