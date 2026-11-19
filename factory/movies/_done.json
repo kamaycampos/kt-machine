@@ -1,5 +1,5 @@
 {
- "next_episode": 7,
+ "next_episode": 8,
  "built": {
   "mv_v6v9urd_too_good_for_the_casino": {
    "file": "KT_EPISODE/03_TOO-GOOD-FOR-THE-CASINO_94s.mp4",
@@ -29,6 +29,13 @@
    "posts": "2026-11-20T12:30",
    "music": "movie_ambient_piano_thesilentthunder.mp3",
    "scenes": 4
+  },
+  "mv_v6v9urd_the_200_million_elevator": {
+   "file": "KT_EPISODE/07_THE-200-MILLION-ELEVATOR_109s.mp4",
+   "episode": 7,
+   "posts": "2026-11-21T12:30",
+   "music": null,
+   "scenes": 4
   }
  },
  "tries": {
@@ -42,6 +49,7 @@
   null,
   null,
   null,
-  "movie_ambient_piano_thesilentthunder.mp3"
+  "movie_ambient_piano_thesilentthunder.mp3",
+  null
  ]
 }
