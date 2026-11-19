@@ -17049,11 +17049,24 @@
    "hook": "Why daydreaming is costing you now",
    "bytes": 41279969,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-18T18:41"
+   "scheduled_at": "2026-11-18T18:41",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df5vI0wDbt1/",
+    "youtube": "https://youtube.com/shorts/5ILQgH7apiE"
+   },
+   "caption_at_post": "Kevin Trudeau points to Gordon Ramsay as proof of something manifesting advice skips: you need a dream, but you cannot live inside it.\n\nRamsay came from nothing and built real wealth as a chef and entrepreneur. Kevin's take on his words: have a dream, but don't live in a dream world.\n\nConfront your past so it stops running you. Picture your future. But the only place anything gets built is right now, in the present.\n\nMost people swing between replaying yesterday and daydreaming about tomorrow, and skip the one moment that counts.\n\nWhere does your mind actually live most days?\n\n#kevintrudeau #gordonramsay #mindsetshift #manifestation #successmindset #lawofattraction",
+   "posted_at": "2026-11-18T18:59"
   },
   {
    "file": "KT_IONSTORMO/01_NEGATIVE-IONS-GROW-YOUR-BRAIN_59s.mp4",
