@@ -17733,7 +17733,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-20T09:16",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_WITNESSR2/02_TO-THEM-YOU-ARE-LITERALLY-GOD_66s.mp4",
@@ -17743,7 +17747,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-20T08:10",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
