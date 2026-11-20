@@ -17964,14 +17964,28 @@
    "caption": "Every ad on television right now is an interracial couple. He says that's not an accident.\n\nAccording to him, the same insiders who treat racial and religious conflict as the problem also see the fix: encourage migration, encourage intermarriage, blend the categories together until the lines themselves get harder to draw. Tiger Woods gets called Black. He's also half Thai. Nobody says that part out loud - which, he says, is exactly the point.\n\nA \"happier world,\" maybe. Also one nobody was asked about.\n\nComment RISE and I'll send you the rest of the plan.\n\n#brotherhood #disclosure #hiddenhand #awakening #programming #kevintrudeau",
    "hook": "This was never just an accident.",
    "bytes": 102323651,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261120170120227CE7FFC1E5BF0FE7EE'}}"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-20T11:50",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2649325485513925/",
+    "instagram": "https://www.instagram.com/reel/Df-JALFgQJX/",
+    "youtube": "https://youtube.com/shorts/jy5EHoKDlTk"
+   },
+   "caption_at_post": "Every ad on television right now is an interracial couple. He says that's not an accident.\n\nAccording to him, the same insiders who treat racial and religious conflict as the problem also see the fix: encourage migration, encourage intermarriage, blend the categories together until the lines themselves get harder to draw. Tiger Woods gets called Black. He's also half Thai. Nobody says that part out loud - which, he says, is exactly the point.\n\nA \"happier world,\" maybe. Also one nobody was asked about.\n\nComment RISE and I'll send you the rest of the plan.\n\n#brotherhood #disclosure #hiddenhand #awakening #programming #kevintrudeau",
+   "posted_at": "2026-11-20T12:01"
   }
  ]
 }
