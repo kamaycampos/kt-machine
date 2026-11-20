@@ -106,6 +106,30 @@ else:
         if not hits:
             continue                                # failed a gate (moved to _failed) or dropped
         result["clips"].append(c)
+        # YOUTUBE GETS THE FULL-SCREEN CUT (19 Nov 2026). YouTube Studio, read clip by clip: our
+        # Oct/early-Nov hits (Kevin's face filling the phone) kept 90-92% of Shorts viewers ("stayed
+        # to watch"); the wide archive look (picture band, black above and below) keeps 47-79%, and
+        # KT's median Short fell from ~300-600 to ~150 views. Instagram and TikTok keep the wide look
+        # Kamay chose on 13 Nov; YouTube is given the same clip rendered in the full-screen look as
+        # its "__yt59" file (the file poster.youtube already prefers). YT_FULL_LOOK=off stops it.
+        _yl = (os.environ.get("YT_FULL_LOOK") or "cinema").lower()
+        if (os.environ.get("KT_LOOK") or "").lower() == "archive" and _yl != "off":
+            try:
+                import subprocess as _sp2
+                _yd = f"/tmp/ytfull/{c['slug']}"
+                os.makedirs(_yd, exist_ok=True)
+                _sp2.run([sys.executable, os.path.join(R.K, "kt_render.py"), key, "--apply", "--only", c["slug"]],
+                         cwd=R.K, env=dict(os.environ, KT_LOOK=_yl, KT_OUT=_yd), timeout=3600)
+                _main = [f for f in glob.glob(os.path.join(_yd, "*.mp4")) if "__" not in os.path.basename(f)]
+                _cut = [f for f in glob.glob(os.path.join(_yd, "*__yt59.mp4"))]
+                _pick = (_cut or _main or [None])[0]
+                if _pick:
+                    shutil.copy(_pick, os.path.join(bdir, os.path.basename(hits[0])[:-4] + "__yt59.mp4"))
+                    print(f"youtube full-screen cut ({_yl}) made for {c['slug']}")
+                else:
+                    print(f"youtube full-screen cut NOT made for {c['slug']} - YouTube gets the wide clip")
+            except Exception as _e:
+                print(f"youtube full-screen cut skipped for {c['slug']}: {type(_e).__name__}: {_e}")
         for f in glob.glob(os.path.join(bdir, os.path.basename(hits[0])[:-4] + "*")):
             shutil.copy(f, out)
             result["files"].append(os.path.basename(f))
