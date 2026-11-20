@@ -28,7 +28,8 @@
    "episode": 6,
    "posts": "2026-11-20T12:30",
    "music": "movie_ambient_piano_thesilentthunder.mp3",
-   "scenes": 4
+   "scenes": 5,
+   "rebuilt": true
   },
   "mv_v6v9urd_the_200_million_elevator": {
    "file": "KT_EPISODE/07_THE-200-MILLION-ELEVATOR_109s.mp4",
@@ -50,6 +51,6 @@
   null,
   null,
   "movie_ambient_piano_thesilentthunder.mp3",
-  null
+  "movie_ambient_piano_thesilentthunder.mp3"
  ]
 }
