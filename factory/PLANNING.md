@@ -11,6 +11,13 @@ on the second-chance backlog, hit the account's usage limit, and pushed nothing.
 each plan passes `check_plan.py`**, to the same branch - the merge job takes each push - so a run that is
 cut off still keeps the plans it finished.
 
+## READ factory/reports/copy_lab.md FIRST (19 Nov 2026, the Copy Lab)
+Updated every 6 hours from what viewers actually did (comments / shares / saves per 1,000 views) by the
+shape of the hook, the caption's first line, the keyword and the length. Lean toward the shapes on top;
+when a shape has too few clips to score, try it on purpose so it gets scored. First read (19 Nov): a
+caption that OPENS with the keyword drew 16.6 comments per 1,000 views against 1.2 (4 clips - keep
+testing it); WISH 5.5 comments per 1,000 views, MONEY 0.7; a number in the hook did NOT beat a plain claim.
+
 ## READ factory/KEVIN_SELLING.md (18 Nov 2026)
 Kevin's own selling rules from his public shows (believe it, don't sell, facts tell / stories sell, show proof,
 ask don't tell, make yes easy). Every hook, caption and closing question follows them.

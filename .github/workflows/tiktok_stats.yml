@@ -20,9 +20,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           KT_DATA: state
         run: python tiktok_stats.py
+      - name: Copy Lab - which words made people act (factory/reports/copy_lab.md)
+        continue-on-error: true
+        run: python factory/copy_lab.py > /dev/null
       - name: Save
         run: |
           git config user.name "kt-machine"; git config user.email "kt-machine@users.noreply.github.com"
-          git add state/tiktok.json state/tiktok_history*.json
+          git add state/tiktok.json state/tiktok_history*.json factory/reports/copy_lab.md
           git diff --staged --quiet || git commit -q -m "tiktok stats $(date -u +%FT%TZ)"
           bash factory/save_state.sh
