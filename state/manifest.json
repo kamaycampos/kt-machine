@@ -17596,14 +17596,27 @@
    "hook": "AI replaced the $100,000 copywriter",
    "bytes": 39398847,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-19T18:43",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df8UOPWFDw7/",
+    "youtube": "https://youtube.com/shorts/Pzqc1cq2YAs"
+   },
+   "caption_at_post": "Kevin Trudeau says one of his students built something that should scare every $100,000-a-project copywriter.\n\nThe guy learned copywriting from Kevin and others, then built an AI system that writes sales copy from nothing more than a few answered questions.\n\nHe ran it head to head against real, paid, professional copywriters in A/B tests. Kevin's words: it did as good, and in some cases better.\n\nKevin charges people $100,000 plus a cut of sales to write copy personally. This system gets close to that same result for free.\n\nWould you still pay six figures for copy if a few typed answers got you most of the way there?\n\n#kevintrudeau #copywriting #aitools #onlinebusiness #marketingtips #makemoneyonline",
+   "posted_at": "2026-11-19T19:01"
   },
   {
    "file": "KT_SIDEHUSTLER2/01_SHE-MAKES-26K-A-MONTH-ON-ETSY_50s.mp4",
