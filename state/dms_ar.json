@@ -355,6 +355,11 @@
    "at": "2026-11-17T23:29:04.492133+00:00",
    "platform": "instagram",
    "error": "An unexpected error has occurred. Please retry your request later."
+  },
+  {
+   "at": "2026-11-20T11:44:49.160062+00:00",
+   "platform": "instagram",
+   "error": "Please reduce the amount of data you're asking for, then retry your request"
   }
  ],
  "tries": {
