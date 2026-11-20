@@ -17627,14 +17627,27 @@
    "hook": "How she clears $26,000 a month",
    "bytes": 45006200,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-20T08:33",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df9yKQXk9rk/",
+    "youtube": "https://youtube.com/shorts/i7ufWKJpfAw"
+   },
+   "caption_at_post": "Kevin Trudeau says this plainly: today is the easiest it has ever been in history to make real money, and you don't need startup cash or some rare skill to do it.\n\nHe points to one woman's story - she started her side hustle on her couch, watching TV, selling on Etsy.\n\nLast year: $236,000 in revenue. That's over $26,000 a month. She works about 10 hours a week now.\n\nNo office. No employees. No inventory room. Just one product idea and a platform that already has the customers.\n\nWhat's the idea you've been sitting on because you think you need more money to start?\n\n#kevintrudeau #sidehustle #etsyshop #makemoneyonline #passiveincome #onlinebusiness",
+   "posted_at": "2026-11-20T08:43"
   },
   {
    "file": "AR_BILDERBERGR4/01_WORK-DEBT-KIDS-THEN-YOU-DIE_103s.mp4",
