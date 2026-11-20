@@ -17336,9 +17336,10 @@
    "done": false,
    "status": {
     "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post",
-    "instagram": "yours to post with Instagram music until 21:00 - after that it posts by itself, voice only"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17360,12 +17361,14 @@
    "scheduled_at": "2026-11-19T12:30",
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/dMRLylXJ2Zc"
+    "youtube": "https://youtube.com/shorts/dMRLylXJ2Zc",
+    "instagram": "https://www.instagram.com/reel/Df8kRBDDLJd/"
    },
    "ig_hand_from": "2026-11-19T17:39:02",
    "ig_hand_due": "2026-11-19T21:00",
    "caption_at_post": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says he was once in a packed room in Aspen, Colorado, watching one of the country's best-known motivational speakers work a crowd.\n\nThe guy wouldn't stop swearing from the stage. Then he turned it on the audience, needling them until they started cursing back at him, louder and louder.\n\nKevin sat there and recognized it instantly. He'd learned the real version of it inside the Brotherhood years before: break someone down first, then they'll follow you anywhere.\n\nEpisode 5: He Spotted The Brainwashing.\n\nThe 14 audios are Kevin teaching the mind techniques that actually move you forward, no shouting required. Recorded live at a private event in the Alps.\n\nComment \"WISH\" if you want them.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #mindset #personaldevelopment #brainwashing #selfimprovement #yourwishisyourcommand",
-   "posted_at": "2026-11-19T12:39"
+   "posted_at": "2026-11-19T21:20",
+   "ig_hand_done": true
   },
   {
    "file": "AR_WITNESS/01_ONE-ROOM-RUNS-THE-WORLD_102s.mp4",
