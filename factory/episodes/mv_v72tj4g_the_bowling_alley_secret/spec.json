@@ -1,24 +1,28 @@
 {
  "slug": "mv_v72tj4g_the_bowling_alley_secret",
  "vid": "v72tj4g",
- "t_in": 223.5,
+ "t_in": 226.5,
  "t_out": 398.5,
  "keeps": [
   [
-   17,
-   77
+   12,
+   56
   ],
   [
-   145,
-   229
+   141,
+   223
   ],
   [
-   231,
-   370
+   350,
+   359
   ],
   [
-   386,
-   545
+   393,
+   417
+  ],
+  [
+   515,
+   530
   ]
  ],
  "scenes": [
@@ -27,8 +31,17 @@
     "gen": "a wealthy man in a dark suit approaching a young boy inside a dim 1970s bowling alley lounge",
     "move": "the man steps closer and crouches down to the boy's eye level"
    },
-   "from": 19,
-   "to": 26,
+   "from": 12,
+   "to": 19,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "a small boy in a 1970s living room staring at a faint golden glow outlining his mother as she reads under a lamp",
+    "move": "the glow around her shoulders slowly brightens and pulses"
+   },
+   "from": 48,
+   "to": 56,
    "start": 0.1
   },
   {
@@ -36,8 +49,17 @@
     "gen": "a dark shadowed corner of a 1970s bowling alley lounge, shapes barely visible in the low light",
     "move": "the shadows in the corner shift and slowly sharpen into focus"
    },
-   "from": 172,
-   "to": 181,
+   "from": 153,
+   "to": 165,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "a small boy following a man in a long dark coat down a dim wood-paneled hallway toward a heavy door with candlelight behind it",
+    "move": "the heavy door slowly swings open and warm light spills over the boy"
+   },
+   "from": 217,
+   "to": 223,
    "start": 0.1
   },
   {
@@ -45,40 +67,49 @@
     "gen": "a young man standing alone at the head of a long wooden boardroom table, older men seated around it",
     "move": "the young man rises and the older men around the table turn to face him"
    },
-   "from": 363,
-   "to": 370,
+   "from": 350,
+   "to": 359,
    "start": 0.1
   },
   {
    "src": {
-    "gen": "a man walking across an airport tarmac at night toward a private jet, briefcase in hand",
-    "move": "the man climbs the jet's steps as the engines spool up behind him"
+    "gen": "a man in a tailored suit climbing the stone steps of a guarded mansion at night while men in dark suits wait at the open doors",
+    "move": "the man reaches the top step and the doors close behind him"
    },
-   "from": 431,
-   "to": 435,
+   "from": 407,
+   "to": 417,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "a long candlelit stone hall seen from its doorway, hooded figures seated in silence around a great round table",
+    "move": "the view slowly pushes in as the hooded figures turn toward the door"
+   },
+   "from": 515,
+   "to": 524,
    "start": 0.1
   }
  ],
  "voices": {
-  "363": "X",
-  "364": "X",
-  "365": "X",
-  "366": "X",
-  "367": "X",
-  "527": "X",
-  "528": "X",
-  "529": "X",
-  "530": "X",
-  "531": "X",
-  "532": "X",
-  "533": "X",
-  "285": "N:violet",
-  "286": "N:violet"
+  "350": "X",
+  "351": "X",
+  "352": "X",
+  "353": "X",
+  "354": "X",
+  "518": "X",
+  "519": "X",
+  "520": "X",
+  "521": "X",
+  "522": "X",
+  "523": "X",
+  "524": "X",
+  "415": "N:violet",
+  "416": "N:violet"
  },
  "join": [
   [
-   285,
-   286
+   415,
+   416
   ]
  ],
  "fix": {},
@@ -96,6 +127,6 @@
   "tag": "EPISODE 6",
   "line": "The Bowling Alley Secret"
  },
- "big_from": 524,
+ "big_from": 515,
  "music": "movie_ambient_piano_thesilentthunder.mp3"
 }
