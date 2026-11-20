@@ -17810,14 +17810,27 @@
    "hook": "A studio apartment. Millionaire in months",
    "bytes": 17492897,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-20T16:28",
    "cta_keyword": "MONEY",
    "cta_variant": 5,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df-pN8agi6n/",
+    "youtube": "https://youtube.com/shorts/lT4pCQC9Dv8"
+   },
+   "caption_at_post": "Kevin Trudeau says he once had a single technique run on him - what he calls a money process - and within weeks he was making millions of dollars, calling it his Midas touch.\n\nSo he tried it on a friend without telling him. The friend was living in a studio apartment at the time and had no idea anything had changed.\n\nWithin a couple of months, that friend was a millionaire.\n\nWould you want to know if someone was quietly rooting for your biggest year yet?\n\n#kevintrudeau #manifestation #lawofattraction #mindset #success #wealth",
+   "posted_at": "2026-11-20T16:43"
   },
   {
    "file": "KT_THROTTLER2/01_DUPLICATE-THE-GRIND-NOT-THE-CRUISE_124s.mp4",
