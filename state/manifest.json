@@ -17827,14 +17827,28 @@
    "caption": "Ask why the globalists claim they want to end poverty, and Kevin gives an answer that has nothing to do with money.\n\nKrishna consciousness. Yahweh. The Atman. Infinite intelligence. Different centuries, different religions, the same one idea underneath: that you're an extension of something universal, not separate from it. If that's true for you, Kevin says, it's true for the person starving somewhere you've never been.\n\nWhether or not you believe it, that's the belief being used to justify everything that comes next.\n\nComment RISE and I'll send you what comes next.\n\n#universalconsciousness #manifestation #awakening #disclosure #spirituality #kevintrudeau",
    "hook": "To them, you are literally God.",
    "bytes": 52933444,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-20T08:10",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1120833344098381/",
+    "instagram": "https://www.instagram.com/reel/Df9wAlLjb6H/",
+    "youtube": "https://youtube.com/shorts/Y5KcnWminAE"
+   },
+   "caption_at_post": "Ask why the globalists claim they want to end poverty, and Kevin gives an answer that has nothing to do with money.\n\nKrishna consciousness. Yahweh. The Atman. Infinite intelligence. Different centuries, different religions, the same one idea underneath: that you're an extension of something universal, not separate from it. If that's true for you, Kevin says, it's true for the person starving somewhere you've never been.\n\nWhether or not you believe it, that's the belief being used to justify everything that comes next.\n\nComment RISE and I'll send you what comes next.\n\n#universalconsciousness #manifestation #awakening #disclosure #spirituality #kevintrudeau",
+   "posted_at": "2026-11-20T08:25"
   },
   {
    "file": "KT_EPISODE/07_THE-200-MILLION-ELEVATOR_109s.mp4",
@@ -17884,7 +17898,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-20T16:20",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_BLUEPRINT/01_RACE-RELIGION-BORDERS-ERASED-FOR-POWER_161s.mp4",
@@ -17894,7 +17912,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-21T08:16",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_BLUEPRINT/02_THIS-WAS-NEVER-JUST-AN-ACCIDENT_93s.mp4",
@@ -17904,7 +17926,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-20T11:39",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
