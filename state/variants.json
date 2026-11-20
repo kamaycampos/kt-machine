@@ -43,7 +43,7 @@
     ],
     "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'code': 2, 'type': 'OAuthException', 'is_transie",
     "id": null,
-    "tries": 1,
+    "tries": 2,
     "waits": 40
    },
    {
