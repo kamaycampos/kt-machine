@@ -17516,7 +17516,13 @@
    "hook": "A stranger approached him at six years old",
    "bytes": 17035236,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "movie",
@@ -17533,7 +17539,14 @@
    "caption_link": "Or get them here now, free: https://freeyourwish.kevintrudeau.com/?ref=a43c8j",
    "movie": "mv_v72tj4g_the_bowling_alley_secret",
    "music": "movie_ambient_piano_thesilentthunder.mp3",
-   "scheduled_at": "2026-11-20T12:30"
+   "scheduled_at": "2026-11-20T12:30",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df-Nqm7iTjw/",
+    "youtube": "https://youtube.com/shorts/nE-KuMvLfTc"
+   },
+   "caption_at_post": "Comment \"WISH\" and I'll send you the 14 Your Wish Is Your Command audios, free.\n\nKevin Trudeau says he could read energy before he could tie his own shoes. At six years old, at a bowling alley in his hometown, a stranger walked up and named exactly what he was seeing in a dark corner of the room.\n\nThat stranger didn't call it strange. He made an offer.\n\nWhat came after split Kevin's life in two - one half public, one half hidden - for decades, and ended with him standing in rooms most people only read about.\n\nEpisode 6: The Bowling Alley Secret.\n\nThe 14 audios are built from the same material Kevin used to build that hidden life. They're free.\n\nComment \"WISH\" and I'll send them to you now.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #secretsocieties #manifestation #yourwishisyourcommand #mindset #wisdom",
+   "posted_at": "2026-11-20T12:42"
   },
   {
    "file": "KT_BELLAGIO/01_87500-SHOWED-UP-IN-BELLAGIO_51s.mp4",
