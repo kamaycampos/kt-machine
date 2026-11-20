@@ -67,6 +67,8 @@ The prep prints a **MOVIE CLIPS** line. When it says **WRITE ONE**, write exactl
 in this run, before anything else, whatever the queue (an afternoon run with nothing else to do
 still writes it). When it says enough are waiting, write none.
 
+**Choose** only a story where Kevin himself fills the camera (20 Nov: Episode 6's source was a stream
+layout - a web page on screen with Kevin in a small window - and it looked cheap next to theirs).
 **Choose** one continuous first-person Kevin story of 60-260 s with a place, people and a turn
 (he met someone, went somewhere, something happened, the last line lands). Kevin talking, on
 camera. Not a stretch a clip was already cut from in the last 30 days when another story is

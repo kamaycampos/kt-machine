@@ -592,6 +592,16 @@ sh(FF, "-y", "-loglevel", "error", "-ss", "0.10", "-i", dst, "-frames:v", "1", "
 # a frame of the clip, never the uploaded thumbnail) said nothing. "title_top": {"tag", "line"}
 # writes the Episode's title there in the poster's gold script, for the whole film except the
 # end card.
+# NO BLACK HALF-SCREEN (20 Nov 2026). The upright film was the wide film in a 608-pixel band with
+# black above and below - 60% of a phone screen empty. YouTube Studio: our full-screen Shorts kept
+# 90-92% of viewers, the banded ones 47-79%. The empty space is now the same film, blown up and
+# blurred (the common Shorts/TikTok fill); the sharp film sits a little larger in the middle, so
+# nothing of Kevin's words or the captions is cut off. EP_FILL=black brings the old band back.
+_ph = 720
+FILL = ("[0:v]split=2[bg0][fg0];[bg0]scale=-2:1920:flags=bicubic,crop=1080:1920,boxblur=28:2,eq=brightness=-0.18,setsar=1[bg];"
+        f"[fg0]scale=1080:{_ph}:flags=lanczos,setsar=1[fg];[bg][fg]overlay=0:(H-h)/2,setsar=1")
+if os.environ.get("EP_FILL") == "black":
+    FILL = "[0:v]scale=1080:608:flags=lanczos,setsar=1,pad=1080:1920:0:(oh-ih)/2:black,setsar=1"
 _tt = SP.get("title_top")
 _band = None
 if _tt:
@@ -602,12 +612,12 @@ if _tt:
         print("title band skipped:", type(_e).__name__, _e)
 if _band:
     sh(FF, "-y", "-loglevel", "error", "-i", dst, "-loop", "1", "-i", _band, "-filter_complex",
-       f"[0:v]scale=1080:608:flags=lanczos,setsar=1,pad=1080:1920:0:(oh-ih)/2:black,setsar=1[f];"
+       f"{FILL}[f];"
        f"[1:v]format=rgba,fade=t=in:st=0:d=0.4:alpha=1[t];[f][t]overlay=0:0:shortest=1:enable='lt(t,{DUR:.2f})'[v]",
        "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "slow", "-crf", "15", "-pix_fmt", "yuv420p",
        "-c:a", "copy", "-movflags", "+faststart", os.path.join(OUT, f"{slug}_9x16.mp4"))
 else:
-    sh(FF, "-y", "-loglevel", "error", "-i", dst, "-vf", "scale=1080:608:flags=lanczos,setsar=1,pad=1080:1920:0:(oh-ih)/2:black,setsar=1",
+    sh(FF, "-y", "-loglevel", "error", "-i", dst, "-filter_complex", FILL + "[v]", "-map", "[v]", "-map", "0:a",
        "-c:v", "libx264", "-preset", "slow", "-crf", "15", "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart",
        os.path.join(OUT, f"{slug}_9x16.mp4"))
 json.dump({"slug": slug, "seconds": round(DUR + end_secs, 2), "pieces": [[round(s0, 2), round(e0, 2)] for s0, e0, *_ in segs],
