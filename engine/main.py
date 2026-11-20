@@ -248,7 +248,29 @@ def due_clips(man):
             if hit is None:
                 still.append(i)
             else:
-                c["scheduled_at"] = (hit[0] + timedelta(seconds=hit[1])).strftime("%Y-%m-%dT%H:%M")
+                # SPREAD, DON'T STACK (19 Nov 2026). Every clip the window displaced was put on
+                # its last minute, and MIN_GAP then lined them up an hour apart: from 15 Nov KT
+                # posted nothing 9:30-15:30 and four clips 15:30-19:00 every day, each fighting
+                # the next for the same viewers (YouTube median fell ~300 -> ~150). Now a moved
+                # clip takes the first time after the window that is SPREAD away from every other
+                # post or booking of the same person.
+                SPREAD = 2 * 3600
+                new = hit[0] + timedelta(seconds=hit[1])
+                who = _person(c)
+                taken = []
+                for o in man["clips"]:
+                    if o is c or _person(o) != who:
+                        continue
+                    ts = o.get("posted_at") or o.get("scheduled_at")
+                    try:
+                        taken.append(datetime.strptime(ts[:16], "%Y-%m-%dT%H:%M"))
+                    except (TypeError, ValueError):
+                        continue
+                for _ in range(24):
+                    if all(abs((t - new).total_seconds()) >= SPREAD for t in taken):
+                        break
+                    new += timedelta(minutes=30)
+                c["scheduled_at"] = new.strftime("%Y-%m-%dT%H:%M")
                 c.pop("stale", None)
                 moved += 1
         out = still
