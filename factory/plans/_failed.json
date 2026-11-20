@@ -14529,6 +14529,78 @@
     "What Onassis did",
     "before his fortune"
    ]
+  },
+  "ar_v4wsipz_p3_r2/HE-WROTE-THIS-NEXT-TO-A-MURDERER": {
+   "plan": "ar_v4wsipz_p3_r2",
+   "source": "v4wsipz.mp4",
+   "brand": "AR_LIBERATEDR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_HE-WROTE-THIS-NEXT-TO-A-MURDERER_161s.mp4: [FAIL] 02_HE-WROTE-THIS-NEXT-TO-A-MURDERER_161s.mp4           5 captions vs the sound  median +0.05s  worst-10% 0.70s  | words captioned 100%  UNCAPTIONED SPEECH [(146.0, 150.2)]"
+   ],
+   "slug": "HE-WROTE-THIS-NEXT-TO-A-MURDERER",
+   "in": 6000.0,
+   "out": 6161.0,
+   "start_words": "Imagine being supremely confident",
+   "end_words": "who had just killed his last cellmate",
+   "hook": [
+    "He wrote peace",
+    "inside a prison."
+   ]
+  },
+  "ar_v4wsipz_p3_r2/HE-LOVED-A-COAT-THEN-LOST-IT": {
+   "plan": "ar_v4wsipz_p3_r2",
+   "source": "v4wsipz.mp4",
+   "brand": "AR_LIBERATEDR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_HE-LOVED-A-COAT-THEN-LOST-IT_53s.mp4` - the spoken word was on screen in only 8 of 12 moments"
+   ],
+   "slug": "HE-LOVED-A-COAT-THEN-LOST-IT",
+   "in": 5336.2,
+   "out": 5394.0,
+   "start_words": "And I loved this coat",
+   "end_words": "had come upon me",
+   "hook": [
+    "He feared losing",
+    "it. He did."
+   ]
+  },
+  "ar_v4wsipz_r2/250000-DOLLAR-ROLEX-HE-LET-GO": {
+   "plan": "ar_v4wsipz_r2",
+   "source": "v4wsipz.mp4",
+   "brand": "AR_BREATHCODER2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_250000-DOLLAR-ROLEX-HE-LET-GO_189s.mp4` - 189s is outside 8-185s; ends mid-thought on \"like an appendage\""
+   ],
+   "slug": "250000-DOLLAR-ROLEX-HE-LET-GO",
+   "in": 5396,
+   "out": 5583.0,
+   "start_words": "I had a gold diamond",
+   "end_words": "becomes like an appendage",
+   "hook": [
+    "$250,000 Rolex.",
+    "He chose losing it."
+   ]
+  },
+  "ep_v4tz80x_p4/WHY-RICH-BRAINS-ARE-BIGGER": {
+   "plan": "ep_v4tz80x_p4",
+   "source": "v4tz80x.mp4",
+   "brand": "KT_VIBRATE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_WHY-RICH-BRAINS-ARE-BIGGER_68s.mp4: ends off the planned words: plan ends 'the hippocampus is very small', clip ends 'do to help people get results'"
+   ],
+   "slug": "WHY-RICH-BRAINS-ARE-BIGGER",
+   "in": 4785.16,
+   "out": 4857.4,
+   "start_words": "the hippocampus in the brain",
+   "end_words": "the hippocampus is very small",
+   "hook": [
+    "Why rich brains",
+    "are physically bigger"
+   ]
   }
  },
  "attempts": {
@@ -14618,6 +14690,6 @@
   "ar_v4kacob_r2": 2,
   "ep_v4vdcy0_r3": 2,
   "ar_v4kacob_r3": 2,
-  "ep_v4tz80x_p4": 1
+  "ep_v4tz80x_p4": 2
  }
 }
