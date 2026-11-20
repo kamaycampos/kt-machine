@@ -1,0 +1,30 @@
+{
+ "source": "v4wsipz.mp4",
+ "brand": "AR_BREATHCODER2",
+ "test": false,
+ "note": "20 Nov 2026 - second chance re-cuts of 'Your Breathing Is Making You Sick' (Rumble v4wsipz). Awakened Rise weekly agent, per AR_PLANNING.md 2c. HIS-PUNCH-NEVER-TOUCHED-THE-FLAME: the flagged UNCAPTIONED SPEECH sat at (118.2, 121.0) relative - right where 'Think about that' trails the punchline; ended one clause earlier, on the punchline itself ('...practiced 10,000 times'), which excludes that gap entirely. 250000-DOLLAR-ROLEX-HE-LET-GO: fixed the mid-thought ending by running past 'I had to release it' to where the actual lesson lands ('...becomes like an appendage'); kept the original start (the $250,000 Rolex detail the hook pays on) even though the flagged 'phrase scrambled around \"around it cost around\"' is natural speech (\"...diamonds all around. It cost around $250,000\") inside that same sentence - no edge excludes it without dropping the dollar figure the hook promises, so this one risk carries forward if it fails again.",
+ "clips": [
+  {
+   "slug": "HIS-PUNCH-NEVER-TOUCHED-THE-FLAME",
+   "retry_of": "ar_v4wsipz/HIS-PUNCH-NEVER-TOUCHED-THE-FLAME",
+   "in": 832,
+   "out": 949.8,
+   "start_words": "He said he really wanted",
+   "end_words": "practiced 10,000 times",
+   "hook": ["His punch", "never touched the flame."],
+   "send": "A friend who always wants the advanced technique before mastering the basics, because a monk proved one move, practiced enough, beats a thousand half-learned ones - awe.",
+   "caption": "A Shaolin monk agreed to test him before teaching him anything. The rule: throw a cutting punch and stop your fist one inch from a lit candle flame.\n\nHe did it clean. Then the monk stood up, smiled, and threw his own punch - stopping even further from the flame. It went out anyway.\n\nThe monk's lesson: he wasn't afraid of ten thousand moves practiced once each. He was afraid of the one move practiced ten thousand times.\n\nComment RISE and I'll send you the one thing he was really there to learn.\n\n#discipline #ancientwisdom #mastery #awakening #consciousness #kevintrudeau"
+  },
+  {
+   "slug": "250000-DOLLAR-ROLEX-HE-LET-GO",
+   "retry_of": "ar_v4wsipz/250000-DOLLAR-ROLEX-HE-LET-GO",
+   "in": 5396,
+   "out": 5583.0,
+   "start_words": "I had a gold diamond",
+   "end_words": "becomes like an appendage",
+   "hook": ["$250,000 Rolex.", "He chose losing it."],
+   "send": "A friend who panics every time something expensive gets scratched or lost, because losing a $250,000 watch taught him the one lesson that actually set him free - relief.",
+   "caption": "He bought a watch covered in gold and diamonds for about $250,000. He was so afraid of damaging it that it consumed his attention for months.\n\nOne afternoon at a Chicago pool hall, stressed and trying to clear his head, he took the watch off to wash the chalk from his hands - and walked out without it. No way to get it back. Pool hustlers, no witnesses, gone.\n\nHe said the real lesson wasn't the money. It was realizing he'd extended his own energy into an object until losing it felt like losing a piece of his body - and that fear was the real cost, every single day he owned it.\n\nComment RISE and I'll send you how to actually release that kind of attachment.\n\n#manifestation #subconscious #attachment #awakening #consciousness #kevintrudeau"
+  }
+ ]
+}

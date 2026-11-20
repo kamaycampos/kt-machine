@@ -1,0 +1,39 @@
+{
+ "source": "v4wsipz.mp4",
+ "brand": "AR_LIBERATEDR2",
+ "test": false,
+ "note": "20 Nov 2026 - second chance re-cuts of 'Your Breathing Is Making You Sick' (Rumble v4wsipz), second-pass plan ar_v4wsipz_p3.json. Awakened Rise weekly agent, per AR_PLANNING.md 2c. Both clips were 'no clip came out of the render' (filed before 20 Oct 2026) - per AR_PLANNING.md this is the edge step dropping the clip without saying why, almost always 'opens on B-roll, no face'. HE-WROTE-THIS-NEXT-TO-A-MURDERER: opened instead on the 'Imagine being supremely confident...' litany - a different complete sentence further into the same reading, kept the reveal ending. HE-LOVED-A-COAT-THEN-LOST-IT: opened instead on 'And I loved this coat...' - skips the opening description (handmade in Italy, $25,000, still in the caption) and starts mid-story where he is plainly talking to camera about the fear itself, kept the same payoff ending the caption pays on.",
+ "clips": [
+  {
+   "slug": "HE-WROTE-THIS-NEXT-TO-A-MURDERER",
+   "retry_of": "ar_v4wsipz_p3/HE-WROTE-THIS-NEXT-TO-A-MURDERER",
+   "in": 6000.0,
+   "out": 6161.0,
+   "start_words": "Imagine being supremely confident",
+   "end_words": "who had just killed his last cellmate",
+   "hook": ["He wrote peace", "inside a prison."],
+   "trial_hooks": [
+    ["This was written", "inside a cell."],
+    ["Prison freed him,", "not caged him."],
+    ["Enlightenment came inside", "a prison cell."],
+    ["Miss this, miss", "his peace formula."],
+    ["He titled it", "State of Consciousness."],
+    ["Read this slowly.", "Then ask why."],
+    ["He has no", "buttons left anymore."]
+   ],
+   "send": "Someone sends this to a friend who thinks peace requires good circumstances - awe at where this was actually written.",
+   "caption": "He read it out loud on the show like it was just a passage he'd found somewhere - a guru's description of what full enlightenment feels like. No fear. No need to be validated. No one able to push your buttons, because you don't have any left to push.\n\nThen he told you where it came from. He wrote it himself, in solitary confinement, in a cell they'd put a murderer in with him - a man who had just killed his last cellmate.\n\nThat's not a mantra written on a beach somewhere peaceful. That's a state of mind built in the worst room they could put him in.\n\nComment RISE and I'll send you the rest of what he wrote.\n\n#consciousness #awakening #innerwork #disclosure #subconscious #kevintrudeau"
+  },
+  {
+   "slug": "HE-LOVED-A-COAT-THEN-LOST-IT",
+   "retry_of": "ar_v4wsipz_p3/HE-LOVED-A-COAT-THEN-LOST-IT",
+   "in": 5336.2,
+   "out": 5394.0,
+   "start_words": "And I loved this coat",
+   "end_words": "had come upon me",
+   "hook": ["He feared losing", "it. He did."],
+   "send": "Someone sends this to the friend who's terrified of losing the one nice thing they own - unease at hearing the fear itself might be the problem.",
+   "caption": "He bought a leather overcoat, handmade in Italy, for about $25,000 back in the nineties. He loved it so much he was afraid to wear it - worried about a scratch, a stain, a tear every time he put it on.\n\nHe wore it to dinner anyway, hung it on the coat rack by the door, and sat down to eat. When he got up to leave, it was gone. Stolen, right out of the restaurant.\n\nHis own words: what I feared most had come upon me. Not bad luck - the exact thing his attention had been locked onto the whole time.\n\nComment RISE and I'll send you how to stop feeding a fear your full attention.\n\n#subconscious #manifestation #awakening #innerwork #consciousness #kevintrudeau"
+  }
+ ]
+}
