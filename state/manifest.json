@@ -17554,14 +17554,27 @@
    "hook": "$87,500 appeared while he did nothing",
    "bytes": 42783249,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-20T18:30",
    "cta_keyword": "BRAIN",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df-2-41kTlw/",
+    "youtube": "https://youtube.com/shorts/Kdn1CV_dXuY"
+   },
+   "caption_at_post": "Kevin Trudeau says this is what real financial freedom actually looks like.\n\nBack before banking apps, he'd call his banker every morning from wherever he was in the world. One day: $87,500 deposited. The next: $24,000. He never had to ask how - it just kept coming in.\n\nWhen he needed cash in Bellagio, Italy, he'd call American Express, and someone would have it waiting for him within the hour.\n\nThat's the real definition of financial independence - not a number in an account, but never having to work for the next deposit.\n\nWhat would you do with a morning call like that?\n\nComment MONEY and I'll send you Kevin's free audios.\n\n#kevintrudeau #financialfreedom #wealthmindset #passiveincome #richlife #moneymindset",
+   "posted_at": "2026-11-20T18:43"
   },
   {
    "file": "KT_CATALYST/01_UNCLES-WEEKEND-TIP-CHANGED-HIM_67s.mp4",
