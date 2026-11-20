@@ -13,7 +13,7 @@ Now the planner writes a small MOVIE PLAN in Kevin's own words (factory/movies/m
                              to tell the story in pieces)
   scenes [{on, gen, move}]   on = the EXACT words he says while the scene shows; gen = the picture
                              (only what those words say; stand-ins, never a real person's name);
-                             move = what moves in it. 3 or 4 scenes.
+                             move = what moves in it. 5 to 8 scenes, the first on the first words.
   big [..], italic [..]      his words written large / in italics;  payoff = where every word goes large
   fix {"heard": "Shown"}     a word the transcript mis-heard
   mood [..]                  what the music should feel like
@@ -56,9 +56,11 @@ REPO = os.environ.get("GITHUB_REPOSITORY", "kamaycampos/kt-machine")
 POST_AT = "12:30"            # New York. Our own 304 KT reels: the 12-2 pm block is the best one.
 RUNWAY = 2                   # movie clips kept waiting, at most (one posts a day)
 MAX_TRIES = 3
-MIN_SCENES, MAX_SCENES = 3, 4          # 4 = one day's free allowance, measured 14 Nov
-MIN_SHOWN = 2                # fewer generated scenes on screen than this = not a movie, not queued
-MIN_SECS, MAX_SECS = 40.0, 150.0
+MIN_SCENES, MAX_SCENES = 5, 8          # 19 Nov: was 3-4 - Episode 6 showed 14 s of story pictures in 138 s.
+                                       # Every scene is made on its own server (own free allowance), so 8 fit.
+MIN_SHOWN = 4                # fewer generated scenes on screen than this = not a movie, not queued
+MIN_SECS, MAX_SECS = 40.0, 65.0   # 19 Nov: their Episode 5 is 45 s; ours ran 56-138 s and
+                                  # YouTube only took a 59 s cut that stopped mid-story (25-200 views)
 SCENE_MIN, SCENE_MAX = 2.2, 3.2        # a generated scene is 3.5 s long
 # The words Meta's rule and our bot both answer on KT, and the line each one may promise.
 # Only what Kamay has confirmed is here (14 Nov: WISH = all 14 audios + the ebook, free).
@@ -152,12 +154,18 @@ def check(path):
         say("the file name's episode id is not the plan's source")
     a, b = float(p["in"]), float(p["out"])
     if not 60 <= b - a <= 260:
-        say(f"the stretch is {b - a:.0f}s: a movie clip reads 60-260 s of the episode (it is tightened to 45-150)")
+        say(f"the stretch is {b - a:.0f}s: a movie clip reads 60-260 s of the episode (it is tightened to 40-65)")
     if not (p.get("keep") or (p.get("start_words") and p.get("end_words"))):
         say("give start_words + end_words, or keep [[first words, last words], ..]")
     sc = p["scenes"]
     if not MIN_SCENES <= len(sc) <= MAX_SCENES:
-        say(f"{len(sc)} scenes: write {MIN_SCENES} or {MAX_SCENES} (one day's free allowance is {MAX_SCENES})")
+        say(f"{len(sc)} scenes: write {MIN_SCENES} to {MAX_SCENES} - a story picture every 6-8 seconds")
+    # THE COLD OPEN (19 Nov 2026, Kamay: "the suspense, the emotion"). Theirs opens on a scene of
+    # the story ("I WAS...", a boy in a chandelier hall); ours opened on Kevin at a desk mid-sentence.
+    _first = (p.get("keep") or [[p.get("start_words", "")]])[0][0]
+    if sc and toks(_first)[:3] and toks(sc[0].get("on", ""))[:3] != toks(_first)[:3]:
+        say("scene 1 must play on the clip's first words (open on the story, not on the desk): "
+            f"its 'on' starts with \"{_first}\"")
     for i, s in enumerate(sc, 1):
         for k in ("on", "gen", "move"):
             if not s.get(k):

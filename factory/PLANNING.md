@@ -70,8 +70,13 @@ there. Not health (that is WB's lane). One story = one movie.
 - `source`, `in`, `out` (seconds from the transcript), `title` (2-6 words), `why_movie`.
 - `keep`: the story in pieces, each `["his first words of the piece", "his last words of it"]`,
   copied from the transcript. Cut every aside, repeat and plug; keep the turn and the last line.
-  45-150 s must remain. (Or `start_words` + `end_words` for one unbroken piece.)
-- `scenes`: 3 or 4, never more (4 is one day's free allowance). Each:
+  **40-65 s must remain** (19 Nov: theirs run 45 s; ours ran 56-138 s and lost the viewer). Pick the
+  strongest 50-70 s of the story; drop the setup Kevin repeats. (Or `start_words` + `end_words`.)
+- `scenes`: **5 to 8 - a story picture every 6-8 seconds** (19 Nov, Kamay: "compare the clips, the suspense,
+  the emotion, the edits" - Episode 6 showed 14 s of pictures in 138 s; every scene is made on its own
+  server, so 8 fit). **Scene 1 plays on the clip's first words: the clip opens on the story, never on Kevin
+  at his desk** (theirs opens on a boy in a chandelier hall: "I WAS..."). `poster` = the scene that shows
+  the THING in the title (their covers: the Challenger 350 jet, the initiation hall) - never a generic stage. Each:
   `on` = 4+ of his EXACT words, inside a kept piece - the scene is on screen while he says them;
   `gen` = the picture, 12+ words: who, where, what they are doing. **ONLY WHAT HIS WORDS SAY**
   (Kamay, 13 Nov: the first automatic scene showed "an old man with a boy eating" where Kevin
