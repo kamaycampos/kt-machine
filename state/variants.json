@@ -3600,5 +3600,129 @@
    }
   ],
   "posted": null
+ },
+ "AR_RULEBOOK__ONLY-RICH-WHITE-MEN-COULD-VOTE": {
+  "clip": "AR_RULEBOOK/02_ONLY-RICH-WHITE-MEN-COULD-VOTE_112s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__AR_RULEBOOK__ONLY-RICH-WHITE-MEN-COULD-VOTE__V1.mp4",
+    "hook": [
+     "Written into law",
+     "from the start."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_RULEBOOK__ONLY-RICH-WHITE-MEN-COULD-VOTE__V2.mp4",
+    "hook": [
+     "The privileged elite",
+     "wrote the rule."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_RULEBOOK__ONLY-RICH-WHITE-MEN-COULD-VOTE__V3.mp4",
+    "hook": [
+     "Voting wasn't broken.",
+     "It was designed."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_RULEBOOK__ONLY-RICH-WHITE-MEN-COULD-VOTE__V4.mp4",
+    "hook": [
+     "Skip this,",
+     "miss the design."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_RULEBOOK__ONLY-RICH-WHITE-MEN-COULD-VOTE__V5.mp4",
+    "hook": [
+     "Kevin saw it.",
+     "The real rulebook."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_RULEBOOK__ONLY-RICH-WHITE-MEN-COULD-VOTE__V6.mp4",
+    "hook": [
+     "Don't just vote.",
+     "Watch who's unelected."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_RULEBOOK__ONLY-RICH-WHITE-MEN-COULD-VOTE__V7.mp4",
+    "hook": [
+     "Only landlords voted.",
+     "That's real history."
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
+ },
+ "AR_CASTE__NINETY-PERCENT-ARE-BUILT-TO-FOLLOW": {
+  "clip": "AR_CASTE/01_NINETY-PERCENT-ARE-BUILT-TO-FOLLOW_129s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__AR_CASTE__NINETY-PERCENT-ARE-BUILT-TO-FOLLOW__V1.mp4",
+    "hook": [
+     "90% are followers.",
+     "By design."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_CASTE__NINETY-PERCENT-ARE-BUILT-TO-FOLLOW__V2.mp4",
+    "hook": [
+     "The system wants",
+     "you suggestible."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_CASTE__NINETY-PERCENT-ARE-BUILT-TO-FOLLOW__V3.mp4",
+    "hook": [
+     "Comfort isn't freedom.",
+     "It's control."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_CASTE__NINETY-PERCENT-ARE-BUILT-TO-FOLLOW__V4.mp4",
+    "hook": [
+     "Miss this,",
+     "you stay asleep."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_CASTE__NINETY-PERCENT-ARE-BUILT-TO-FOLLOW__V5.mp4",
+    "hook": [
+     "Kevin sat there.",
+     "Inside those rooms."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_CASTE__NINETY-PERCENT-ARE-BUILT-TO-FOLLOW__V6.mp4",
+    "hook": [
+     "Refuse to be",
+     "the easy customer."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_CASTE__NINETY-PERCENT-ARE-BUILT-TO-FOLLOW__V7.mp4",
+    "hook": [
+     "You're not meant",
+     "to wake up."
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }

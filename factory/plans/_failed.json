@@ -14619,6 +14619,96 @@
     "How secret societies",
     "built their wealth"
    ]
+  },
+  "ar_v4lw3gr_p10/THE-POOR-MARRIED-POOR-ON-PURPOSE": {
+   "plan": "ar_v4lw3gr_p10",
+   "source": "v4lw3gr.mp4",
+   "brand": "AR_CASTE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THE-POOR-MARRIED-POOR-ON-PURPOSE_100s.mp4: [FAIL] 01_THE-POOR-MARRIED-POOR-ON-PURPOSE_100s.mp4           20 captions vs the sound  median +0.00s  worst-10% 0.93s  | words captioned 100%"
+   ],
+   "slug": "THE-POOR-MARRIED-POOR-ON-PURPOSE",
+   "in": 2238.2,
+   "out": 2337.6,
+   "start_words": "The globalists want three",
+   "end_words": "history lesson based on the fact",
+   "hook": [
+    "The poor married poor.",
+    "On purpose."
+   ]
+  },
+  "ar_v50s5f8_r4/CEOS-MEET-SECRETLY-AND-YOU-DONT": {
+   "plan": "ar_v50s5f8_r4",
+   "source": "v50s5f8.mp4",
+   "brand": "AR_TENSTEPSR4",
+   "tries": 2,
+   "why": [
+    "FAIL 02_CEOS-MEET-SECRETLY-AND-YOU-DONT_56s.mp4: [FAIL] 02_CEOS-MEET-SECRETLY-AND-YOU-DONT_56s.mp4             17 captions vs the sound  median +0.00s  worst-10% 0.91s  | words captioned 99%"
+   ],
+   "slug": "CEOS-MEET-SECRETLY-AND-YOU-DONT",
+   "in": 4903.73,
+   "out": 4960.3,
+   "start_words": "Every successful person is",
+   "end_words": "absolutely critical. Outstanding",
+   "hook": [
+    "CEOs meet secretly,",
+    "and you don't."
+   ]
+  },
+  "ar_v5i1vo4_p5/RELIGION-IS-FADING-ON-PURPOSE": {
+   "plan": "ar_v5i1vo4_p5",
+   "source": "v5i1vo4.mp4",
+   "brand": "AR_RULEBOOK",
+   "tries": 1,
+   "why": [
+    "FAIL 01_RELIGION-IS-FADING-ON-PURPOSE_86s.mp4: [FAIL] 01_RELIGION-IS-FADING-ON-PURPOSE_86s.mp4               22 captions vs the sound  median +0.00s  worst-10% 0.82s  | words captioned 100%"
+   ],
+   "slug": "RELIGION-IS-FADING-ON-PURPOSE",
+   "in": 1734.3,
+   "out": 1819.8,
+   "start_words": "With that same method",
+   "end_words": "those religions are going down",
+   "hook": [
+    "Your faith is fading.",
+    "On purpose."
+   ]
+  },
+  "ar_v6rbvsk_r3/TELLING-THE-TRUTH-IN-ADVANCE": {
+   "plan": "ar_v6rbvsk_r3",
+   "source": "v6rbvsk.mp4",
+   "brand": "AR_PRAYERFORMULAR3",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_TELLING-THE-TRUTH-IN-ADVANCE_42s.mp4` - opens mid-sentence on \"pray.\""
+   ],
+   "slug": "TELLING-THE-TRUTH-IN-ADVANCE",
+   "in": 246.25,
+   "out": 286.9,
+   "start_words": "What you do is",
+   "end_words": "telling the truth in advance",
+   "hook": [
+    "Thank God early.",
+    "It's not lying."
+   ]
+  },
+  "ep_v4tz80x_p5/WHY-YOUR-SUCCESS-COACH-HAS-NOTHING": {
+   "plan": "ep_v4tz80x_p5",
+   "source": "v4tz80x.mp4",
+   "brand": "KT_STILLMIND",
+   "tries": 1,
+   "why": [
+    "FAIL 01_WHY-YOUR-SUCCESS-COACH-HAS-NOTHING_94s.mp4: [FAIL] 01_WHY-YOUR-SUCCESS-COACH-HAS-NOTHING_94s.mp4          29 captions vs the sound  median +0.02s  worst-10% 1.26s  | words captioned 98%  UNCAPTIONED SPEECH [(56.3, 57.8)]"
+   ],
+   "slug": "WHY-YOUR-SUCCESS-COACH-HAS-NOTHING",
+   "in": 3252.92,
+   "out": 3350.96,
+   "start_words": "Stop trying to help others",
+   "end_words": "you can't teach what you don't have",
+   "hook": [
+    "Why your life coach",
+    "has nothing"
+   ]
   }
  },
  "attempts": {
@@ -14710,6 +14800,6 @@
   "ar_v4kacob_r3": 2,
   "ep_v4tz80x_p4": 2,
   "ep_v4y99ab_p3": 2,
-  "ep_v4tz80x_p5": 1
+  "ep_v4tz80x_p5": 2
  }
 }
