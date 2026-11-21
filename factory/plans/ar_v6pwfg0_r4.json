@@ -1,0 +1,19 @@
+{
+ "source": "v6pwfg0.mp4",
+ "brand": "AR_HAPPINESSCODER4",
+ "test": false,
+ "note": "21 Nov 2026 - 'The Happiness Algorithm' (Rumble v6pwfg0). Awakened Rise weekly agent. SECOND CHANCE re-cut per AR_PLANNING.md 2c. YOU-DONT-NEED-THE-ROLLER-COASTER (tries 2, last chance) failed on 'ends mid-thought on \"the time so\"' - checked work/v6pwfg0.srt: the planned out (476.24) sits exactly on the cue boundary into the next sentence ('So, this algorithm...'), so the real audio was bleeding a fragment of 'so' past the payoff. Moved the end past that whole run-on to its own clean full stop ('...you'll start seeing changes in your life for sure.') instead of trimming by a fraction of a second at the same boundary. BABIES-FEAR-WATER-WITH-ZERO-TRAUMA (tries 1) is skipped: its flagged phrase ('this child has this innate genetic disposition', 'the parents and the parents' parents' parents') is Kevin genuinely saying it that way - it IS the clip's own payoff explaining why a baby with zero trauma inherits the fear, not a transcription error, and no edge move removes it without removing the point. The only unused adjacent material (the shy-vs-performer-parents DNA example right after it) is either too short on its own (under the 40s floor once the glitchy 'super shy, super size, super size' line is excluded) or runs straight into the Italian-baby minutes AN-ITALIAN-BABY-RAISED-IN-JAPAN already cut, so there is no clean pivot - leaving it skipped, same dead end as ar_v6rbvsk's LIBERACE-READ-ONE-BOOK note below.",
+ "clips": [
+  {
+   "slug": "YOU-DONT-NEED-THE-ROLLER-COASTER",
+   "in": 430.52,
+   "out": 491.5,
+   "start_words": "If you have access",
+   "end_words": "your life for sure",
+   "hook": ["You don't need", "the roller coaster."],
+   "send": "A friend who's always chasing the next high then crashing sends this, feeling relief that steady doesn't have to mean boring.",
+   "caption": "Happy, sad, happy, sad, happy, sad — most people just accept that as what life is.\n\nIt isn't the only option. The driver that actually sustains happiness instead of cycling through it is connecting to source, a level of consciousness and awareness most people never tap into on purpose. Once that connection is live, the ups and downs stop running your state for you. You can feel steady on a random Tuesday with nothing good having happened at all.\n\nComment RISE and I'll send you how to connect.\n\n#consciousness #manifestation #awakening #spirituality #mindset #kevintrudeau",
+   "retry_of": "ar_v6pwfg0_r2/YOU-DONT-NEED-THE-ROLLER-COASTER"
+  }
+ ]
+}
