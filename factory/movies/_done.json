@@ -1,5 +1,5 @@
 {
- "next_episode": 8,
+ "next_episode": 9,
  "built": {
   "mv_v6v9urd_too_good_for_the_casino": {
    "file": "KT_EPISODE/03_TOO-GOOD-FOR-THE-CASINO_94s.mp4",
@@ -37,6 +37,13 @@
    "posts": "2026-11-21T12:30",
    "music": null,
    "scenes": 4
+  },
+  "mv_v4vdcy0_the_happiest_inmate": {
+   "file": "KT_EPISODE/08_THE-HAPPIEST-INMATE_41s.mp4",
+   "episode": 8,
+   "posts": "2026-11-22T12:30",
+   "music": null,
+   "scenes": 5
   }
  },
  "tries": {
@@ -52,6 +59,7 @@
   null,
   null,
   "movie_ambient_piano_thesilentthunder.mp3",
-  "movie_ambient_piano_thesilentthunder.mp3"
+  "movie_ambient_piano_thesilentthunder.mp3",
+  null
  ]
 }
