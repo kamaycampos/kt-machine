@@ -18100,7 +18100,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-21T08:31",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_CASTE/02_WARRIORS-BECAME-THE-KINGS_146s.mp4",
@@ -18110,7 +18114,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-21T20:33",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_HAPPINESSCODER4/01_YOU-DONT-NEED-THE-ROLLER-COASTER_62s.mp4",
@@ -18120,7 +18128,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-22T09:14",
+   "cta_keyword": "RISE",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_PRAYERFORMULAR3/02_GRAPEFRUIT-SIZED-TUMOR-GONE_61s.mp4",
@@ -18130,7 +18142,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-22T10:15",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 7,
+   "cta_kind": "question"
   },
   {
    "file": "AR_RULEBOOK/01_PUPPETS-ON-A-STRING_42s.mp4",
@@ -18140,7 +18156,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-21T12:40",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_RULEBOOK/02_ONLY-RICH-WHITE-MEN-COULD-VOTE_112s.mp4",
@@ -18150,7 +18170,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-22T07:25",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "AR_TENSTEPSR4/01_EVEN-POMPEO-GOT-DISGUSTED-THEN-CHANGED_58s.mp4",
@@ -18160,7 +18184,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-21T10:27",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_TENSTEPSR4/01_YOUR-ANGER-MAKES-YOU-FOCUS_62s.mp4",
@@ -18170,7 +18198,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-21T16:38",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   }
  ]
 }
