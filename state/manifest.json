@@ -17610,14 +17610,27 @@
    "hook": "What pilots know about getting rich",
    "bytes": 52977647,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-20T20:30",
    "cta_keyword": "MONEY",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df_Es1vlR_N/",
+    "youtube": "https://youtube.com/shorts/pmakFBKQRt8"
+   },
+   "caption_at_post": "Kevin Trudeau says making money works exactly like flying a plane.\n\nThe pilot takes his foot off the brake and the plane goes from standing still to barreling down the runway, picking up speed and speed, full throttle, flaps down, until it finally lifts off the ground.\n\nEven after liftoff he stays full throttle, climbing, climbing, climbing.\n\nOnly once he reaches cruising altitude does he pull back on the throttle and flip on autopilot.\n\nThat's the part everyone skips: wanting the autopilot stage while they're still standing at the end of the runway.\n\nAre you still building power, or are you trying to cruise before you've even taken off?\n\n#kevintrudeau #entrepreneurmindset #hustleculture #wealthmindset #successhabits #businessmindset",
+   "posted_at": "2026-11-20T20:44"
   },
   {
    "file": "KT_RUNWAYR2/02_AI-REPLACES-100K-COPYWRITER_44s.mp4",
