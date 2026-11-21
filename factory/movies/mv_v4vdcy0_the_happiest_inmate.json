@@ -1,0 +1,76 @@
+{
+ "movie": true,
+ "source": "v4vdcy0",
+ "title": "The Happiest Inmate",
+ "why_movie": "A real first-person Kevin story with a place (the prison compound), a person (the warden) and a turn (35 years, never seen one happy - until now). Kevin on camera the whole time. Not cut from in the last 30 days.",
+ "in": 536.0,
+ "out": 601.0,
+ "keep": [
+  [
+   "I remember when I was in prison and walking",
+   "you're actually happy you're here"
+  ],
+  [
+   "I go, well, you know, warden",
+   "that's amazing. And it's true"
+  ]
+ ],
+ "scenes": [
+  {
+   "on": "I remember when I was in prison and walking down the middle of the compound",
+   "gen": "A vast prison exercise yard at midday, dozens of men in grey uniforms scattered across an open concrete compound, tall fences and a watchtower in the distance",
+   "move": "a lone man in a grey prison uniform walks steadily down the center of the yard toward the camera"
+  },
+  {
+   "on": "there's a thousand inmates there. And the warden, who very rarely was outside of his office, was walking down the compound",
+   "gen": "An older man in a prison warden's uniform with a radio on his belt stepping out of a brick administration building into open daylight",
+   "move": "the warden steps through the doorway and begins walking across the yard, scanning the rows of inmates"
+  },
+  {
+   "on": "And he stopped me and he said, Trudeau. He says, I've been in the Bureau of Prisons for 35 years",
+   "gen": "The warden standing face to face with an inmate in the middle of the prison yard, speaking directly to him, other inmates blurred in the background",
+   "move": "the warden raises one hand and stops walking, turning to speak"
+  },
+  {
+   "on": "I've seen tens of thousands of inmates. And I've never seen a single one who's actually happy to be here",
+   "gen": "A close view of the warden's weathered face in the prison yard light, a thoughtful and slightly puzzled expression",
+   "move": "the warden slowly shakes his head side to side while he talks"
+  },
+  {
+   "on": "He goes, you're actually happy you're here",
+   "gen": "The warden looking closely at an inmate standing calmly in the prison yard, studying his face for an answer",
+   "move": "the warden tilts his head and leans in slightly, waiting"
+  },
+  {
+   "on": "I have a choice. I can either be happy or miserable. I choose to be happy",
+   "gen": "An inmate standing still and calm in the open prison yard, a shaft of sunlight breaking through clouds behind the fence line",
+   "move": "sunlight shifts across the yard as the man speaks, standing steady and relaxed"
+  },
+  {
+   "on": "And he shook his head. He goes, you know, that's amazing",
+   "gen": "The warden standing in the prison yard shaking his head slowly, a faint disbelieving smile forming on his face",
+   "move": "the warden shakes his head slowly then nods once, almost smiling"
+  }
+ ],
+ "big": [
+  "never seen a single one who's actually happy",
+  "I choose to be happy"
+ ],
+ "italic": [
+  "Trudeau"
+ ],
+ "payoff": "I have a choice",
+ "mood": [
+  "inspiring",
+  "quiet",
+  "wonder"
+ ],
+ "hook": [
+  "The warden had seen",
+  "thousands. Never one happy."
+ ],
+ "cta_keyword": "WISH",
+ "caption": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says he spent years in prison for refusing to stop talking about his own books - held in contempt, sentenced to 10 years for exercising what he believed were his constitutional rights.\n\nOne day, walking across the compound with a thousand other inmates around him, the warden stopped him. The warden said he'd run the Bureau of Prisons for 35 years and had never once seen an inmate who was actually happy to be there.\n\nKevin says he had one answer for him - and it's the part that stayed with the warden long after.\n\n{episode}\n\nThe 14 audios are Kevin teaching the mind techniques that keep you steady no matter what's happening around you. Recorded live at a private event in the Alps.\n\nComment \"WISH\" if you want them.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #mindset #happiness #prison #manifestation #yourwishisyourcommand",
+ "send": "Someone stuck in a miserable job sends this to a friend drowning in self-pity: awe that a man in actual prison chose happiness anyway, with a quiet challenge underneath - what's your excuse.",
+ "poster": 6
+}
