@@ -1,0 +1,104 @@
+{
+ "slug": "mv_v4vdcy0_the_happiest_inmate",
+ "vid": "v4vdcy0",
+ "t_in": 534.5,
+ "t_out": 603.5,
+ "keeps": [
+  [
+   12,
+   96
+  ],
+  [
+   97,
+   140
+  ]
+ ],
+ "scenes": [
+  {
+   "src": {
+    "gen": "A vast prison exercise yard at midday, dozens of men in grey uniforms scattered across an open concrete compound, tall fences and a watchtower in the distance",
+    "move": "a lone man in a grey prison uniform walks steadily down the center of the yard toward the camera"
+   },
+   "from": 12,
+   "to": 22,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "An older man in a prison warden's uniform with a radio on his belt stepping out of a brick administration building into open daylight",
+    "move": "the warden steps through the doorway and begins walking across the yard, scanning the rows of inmates"
+   },
+   "from": 27,
+   "to": 33,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "The warden standing face to face with an inmate in the middle of the prison yard, speaking directly to him, other inmates blurred in the background",
+    "move": "the warden raises one hand and stops walking, turning to speak"
+   },
+   "from": 50,
+   "to": 60,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A close view of the warden's weathered face in the prison yard light, a thoughtful and slightly puzzled expression",
+    "move": "the warden slowly shakes his head side to side while he talks"
+   },
+   "from": 70,
+   "to": 76,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "The warden looking closely at an inmate standing calmly in the prison yard, studying his face for an answer",
+    "move": "the warden tilts his head and leans in slightly, waiting"
+   },
+   "from": 90,
+   "to": 95,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "An inmate standing still and calm in the open prison yard, a shaft of sunlight breaking through clouds behind the fence line",
+    "move": "sunlight shifts across the yard as the man speaks, standing steady and relaxed"
+   },
+   "from": 105,
+   "to": 116,
+   "start": 0.1
+  }
+ ],
+ "voices": {
+  "79": "X",
+  "80": "X",
+  "81": "X",
+  "82": "X",
+  "83": "X",
+  "84": "X",
+  "85": "X",
+  "86": "X",
+  "116": "X",
+  "117": "X",
+  "118": "X",
+  "119": "X",
+  "120": "X"
+ },
+ "join": [],
+ "fix": {},
+ "tighten": 0.85,
+ "cap_y": 800,
+ "end_card": "end_kamay.png",
+ "end_secs": 4.0,
+ "music_db": -27,
+ "fx": false,
+ "fx_db": -31,
+ "post": {
+  "title": "The Happiest Inmate"
+ },
+ "title_top": {
+  "tag": "EPISODE 8",
+  "line": "The Happiest Inmate"
+ },
+ "big_from": 105
+}
