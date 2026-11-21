@@ -18306,14 +18306,27 @@
    "hook": "The 3-step habit of the wealthy",
    "bytes": 85291448,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-21T17:15",
    "cta_keyword": "BRAIN",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgBSyHAGrbG/",
+    "youtube": "https://youtube.com/shorts/jaVwjgkHVU4"
+   },
+   "caption_at_post": "Kevin Trudeau says the truly happy people he has studied, the ones who live to a hundred and the ones who are actually wealthy inside, all share one habit: they take life lightly. They let things go.\n\nHere is the three-step method he teaches. One, acknowledge how you feel - do not deny it. Two, welcome the negative feeling instead of resisting it. Three, allow it to pass through you and release it.\n\nHis reasoning: what you resist persists. Fighting a bad feeling only keeps it stuck. Letting it move through you is what actually clears it.\n\nWhat are you still resisting right now instead of just letting it pass?\n\n#kevintrudeau #mindset #letitgo #selfimprovement #manifestation #successhabits",
+   "posted_at": "2026-11-21T17:25"
   },
   {
    "file": "KT_UNLOCKED/01_THE-BLOCK-HIS-UNCLE-CLEARED_63s.mp4",
