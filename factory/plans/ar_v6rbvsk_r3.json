@@ -1,0 +1,30 @@
+{
+ "source": "v6rbvsk.mp4",
+ "brand": "AR_PRAYERFORMULAR3",
+ "test": false,
+ "note": "21 Nov 2026 - 'The 4 Keys to Answered Prayer' (Rumble v6rbvsk). Awakened Rise weekly agent. SECOND CHANCE re-cut per AR_PLANNING.md 2c. TELLING-THE-TRUTH-IN-ADVANCE (tries 2, last chance) failed on 'captions vs the sound (no clear pauses)' - checked work/v6rbvsk.srt: the old in (252.0) opened mid-cue on a long unpaused run of scripture quotation, which is exactly the kind of stretch that check flags. Moved both edges to real sentence boundaries a few seconds away: opens on 'What you do is you state the prayer as already happened' (a clean new sentence) and now closes tight on the Zig Ziglar line itself ('you're telling the truth in advance') instead of running two more sentences past it to the flatter 'this is a scriptural principle.' GRAPEFRUIT-SIZED-TUMOR-GONE (tries 2, last chance) failed on 'ends mid-thought on \"No tumor\"' even though the planned out (382.48) already sat on a period - extended the close one full sentence further, to 'but that is an occurrence,' a real stop further from the cut. LIBERACE-READ-ONE-BOOK (tries 2, last chance) is skipped: the flagged 'sentence starts with no stop: \"called The\"' is the book's own title, The Magic of Believing - title-case mid-sentence, not a transcription error - and it is the only clean lead-in to the Liberace quote; everything between 'There's a book called...' and the quote itself is one unbroken run-on, so starting after it leaves under 20s and starting on it is the same flag again. No edge move removes it without removing the point, so this is its last try spent on a real fix elsewhere instead.",
+ "clips": [
+  {
+   "slug": "TELLING-THE-TRUTH-IN-ADVANCE",
+   "in": 246.25,
+   "out": 286.9,
+   "start_words": "What you do is",
+   "end_words": "telling the truth in advance",
+   "hook": ["Thank God early.", "It's not lying."],
+   "send": "A friend manifesting something big forwards this to feel permission instead of guilt about claiming it before it's visible.",
+   "caption": "Zig Ziglar had a name for it: telling the truth in advance.\n\nMost prayers never land because they're begging from lack — please, please, I need a miracle. That's not faith, that's desperation, and desperation doesn't connect.\n\nThe scriptural principle is different: state it as already done. Thank God for the healing, the provision, the breakthrough — before it shows up anywhere. You're not lying. You're just letting your words catch up to what's already moving toward you.\n\nComment RISE and I'll send you the exact prayer formula.\n\n#prayer #manifestation #faith #awakening #subconscious #kevintrudeau",
+   "retry_of": "ar_v6rbvsk_r2/TELLING-THE-TRUTH-IN-ADVANCE"
+  },
+  {
+   "slug": "GRAPEFRUIT-SIZED-TUMOR-GONE",
+   "in": 328.08,
+   "out": 387.6,
+   "start_words": "There are documented studies",
+   "end_words": "that is an occurrence",
+   "hook": ["A tumor, gone.", "He was healed."],
+   "send": "Someone praying for a sick parent's scan results sends this for a jolt of real hope, not empty positivity.",
+   "caption": "A tumor the size of a grapefruit. Then the scan came back clean.\n\nHe's watched faith healers work — not every time, but documented, repeatable cases: someone prays as if it's already healed, thanks God before the proof exists, then walks back in for a second scan showing nothing. Rare, but real, and once is enough to change what you think is possible.\n\nThe lesson underneath it isn't about miracles on command. It's state it as done, then let the proof catch up to the prayer.\n\nComment RISE and I'll send you how the prayer actually works.\n\n#manifestation #prayer #awakening #consciousness #faith #kevintrudeau",
+   "retry_of": "ar_v6rbvsk_r2/GRAPEFRUIT-SIZED-TUMOR-GONE"
+  }
+ ]
+}
