@@ -17834,14 +17834,27 @@
    "hook": "One Ginsu ad. Paid for life",
    "bytes": 156557588,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-21T08:21",
    "cta_keyword": "WISH",
    "cta_variant": 6,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgAVq0NDAaT/",
+    "youtube": "https://youtube.com/shorts/_GybbFl16X4"
+   },
+   "caption_at_post": "Kevin Trudeau says he got tired of trading hours for a paycheck, so he set one goal: never work another day in his life. He didn't ask the universe how - he just named the result and used the technique he still teaches.\n\nOut of nowhere, a man named Arthur Schiff called. He was producing a commercial for a knife and needed someone to write it.\n\nKevin wrote the ad in a day. That knife became the Ginsu. The royalty checks started within months and kept coming for the next fifteen years - some of them, he says, still arrive today.\n\nWhat is one result you would name right now, without knowing how it happens?\n\n#kevintrudeau #manifestation #lawofattraction #yourwishisyourcommand #mindset #success",
+   "posted_at": "2026-11-21T08:35"
   },
   {
    "file": "KT_MIDAS/01_STUDIO-APARTMENT-TO-MILLIONAIRE_40s.mp4",
@@ -18029,14 +18042,28 @@
    "caption": "Three things start wars, he says: race, religion, and nations. So erase all three.\n\nReligious membership has been falling for decades while more people call themselves \"spiritual\" instead - he calls that progress, on purpose, not an accident of culture. Borders are next: dissolve the nation, and there's nothing left to fight over. Followed all the way through, it lands exactly where he says it lands - no countries.\n\nWhether that sounds like peace or like something being taken from you depends entirely on who's asking.\n\nComment RISE and I'll send you where this plan goes next.\n\n#brotherhood #disclosure #hiddenhand #awakening #consciousness #kevintrudeau",
    "hook": "Race, religion, borders. Erased for power.",
    "bytes": 181194306,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-21T08:16",
    "cta_keyword": "YES",
    "cta_variant": 2,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/3063082504042460/",
+    "instagram": "https://www.instagram.com/reel/DgAU_WgD0Ts/",
+    "youtube": "https://youtube.com/shorts/gQm00WGhvOA"
+   },
+   "caption_at_post": "Three things start wars, he says: race, religion, and nations. So erase all three.\n\nReligious membership has been falling for decades while more people call themselves \"spiritual\" instead - he calls that progress, on purpose, not an accident of culture. Borders are next: dissolve the nation, and there's nothing left to fight over. Followed all the way through, it lands exactly where he says it lands - no countries.\n\nWhether that sounds like peace or like something being taken from you depends entirely on who's asking.\n\nComment RISE and I'll send you where this plan goes next.\n\n#brotherhood #disclosure #hiddenhand #awakening #consciousness #kevintrudeau",
+   "posted_at": "2026-11-21T08:27"
   },
   {
    "file": "AR_BLUEPRINT/02_THIS-WAS-NEVER-JUST-AN-ACCIDENT_93s.mp4",
