@@ -18295,7 +18295,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-21T17:15",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_UNLOCKED/01_THE-BLOCK-HIS-UNCLE-CLEARED_63s.mp4",
@@ -18306,7 +18310,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-22T08:23",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_VAULTR2R2R2/01_THE-FORBES-400-LIST-LIES_62s.mp4",
@@ -18317,7 +18325,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-21T20:11",
+   "cta_keyword": "MONEY",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
