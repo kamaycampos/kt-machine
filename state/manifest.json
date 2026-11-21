@@ -17961,7 +17961,12 @@
    "hook": "ONE NAME turned into $200 million",
    "bytes": 38656276,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "instagram": "yours to post with Instagram music until 21:00 - after that it posts by itself, voice only"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "movie",
@@ -17979,7 +17984,15 @@
    "movie": "mv_v6v9urd_the_200_million_elevator",
    "music": null,
    "ig_hand": true,
-   "scheduled_at": "2026-11-21T12:30"
+   "scheduled_at": "2026-11-21T12:30",
+   "posting": false,
+   "links": {
+    "youtube": "https://youtube.com/shorts/acKhis9D-E0"
+   },
+   "ig_hand_from": "2026-11-21T17:43:26",
+   "ig_hand_due": "2026-11-21T21:00",
+   "caption_at_post": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says he met a wealthy businessman's circle once, briefly, at a cocktail party at the Prime Minister's house in Australia.\n\nTwo days later, in a hotel elevator, he remembered one of their names instantly.\n\nThe man was stunned: \"How did you do that?\"\n\nThat single memory led to a dinner invitation, a business deal, and over $200 million in revenue.\n\nEpisode 7: The $200 Million Elevator.\n\nThe 14 audios are Kevin teaching how to use your mind to get what you want in life. They were recorded live at a private event in the Alps.\n\nMost people will watch this and scroll on. A few will comment \"WISH\" and start listening tonight.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #megamemory #memory #mindset #success #yourwishisyourcommand",
+   "posted_at": "2026-11-21T12:43"
   },
   {
    "file": "AR_BREATHCODER2/01_HIS-PUNCH-NEVER-TOUCHED-THE-FLAME_120s.mp4",
@@ -18194,14 +18207,28 @@
    "caption": "Women eventually won the right to vote. Here's the part that gets skipped: around the same time, unelected officials started quietly running the actual decisions.\n\nIn Kevin's words, from inside those rooms: let every ordinary person think they're voting for their leader, and just control the leader. Puppets on a string. The ballot box didn't disappear - it just stopped being where the real power lives.\n\nComment RISE and I'll send you where the real decisions actually get made.\n\n#brotherhood #disclosure #subconscious #awakening #consciousness #kevintrudeau",
    "hook": "You vote. They still decide.",
    "bytes": 31058537,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-21T12:40",
    "cta_keyword": "YES",
    "cta_variant": 2,
-   "cta_kind": "offer"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1508562927830014/",
+    "instagram": "https://www.instagram.com/reel/DgAy7NnjlqV/",
+    "youtube": "https://youtube.com/shorts/KJpIrqqcuXE"
+   },
+   "caption_at_post": "Women eventually won the right to vote. Here's the part that gets skipped: around the same time, unelected officials started quietly running the actual decisions.\n\nIn Kevin's words, from inside those rooms: let every ordinary person think they're voting for their leader, and just control the leader. Puppets on a string. The ballot box didn't disappear - it just stopped being where the real power lives.\n\nComment RISE and I'll send you where the real decisions actually get made.\n\n#brotherhood #disclosure #subconscious #awakening #consciousness #kevintrudeau",
+   "posted_at": "2026-11-21T12:46"
   },
   {
    "file": "AR_RULEBOOK/02_ONLY-RICH-WHITE-MEN-COULD-VOTE_112s.mp4",
