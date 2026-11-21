@@ -17806,14 +17806,27 @@
    "hook": "The guru's love was a lie",
    "bytes": 61843670,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-20T22:30",
    "cta_keyword": "BRAIN",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Df_ScgGjNz3/",
+    "youtube": "https://youtube.com/shorts/qbwHz5-dQQY"
+   },
+   "caption_at_post": "Kevin Trudeau says he once filmed a show with a well-known spiritual guru who spent the whole segment teaching love, compassion, and understanding.\n\nThe moment the cameras stopped, that same man started screaming at his assistant because his car wasn't ready. At dinner afterward, he complained about everything on the table.\n\nTrudeau's point: a lot of people teaching peace and love on camera are not peaceful or loving in real life. You can only give what you actually have inside you.\n\nDoes the person giving you advice actually live it, or just talk about it?\n\n#kevintrudeau #authenticity #mindset #selfhelp #personaldevelopment #wisdom",
+   "posted_at": "2026-11-20T22:44"
   },
   {
    "file": "KT_KNIFE/01_ONE-GINSU-AD-PAID-FOR-LIFE_162s.mp4",
