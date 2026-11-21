@@ -14601,6 +14601,24 @@
     "Why rich brains",
     "are physically bigger"
    ]
+  },
+  "ep_v4y99ab_p3/THE-KNIGHTS-TEMPLARS-SUCCESS-TRIANGLE": {
+   "plan": "ep_v4y99ab_p3",
+   "source": "v4y99ab.mp4",
+   "brand": "KT_OVAL",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THE-KNIGHTS-TEMPLARS-SUCCESS-TRIANGLE_161s.mp4: [FAIL] 01_THE-KNIGHTS-TEMPLARS-SUCCESS-TRIANGLE_161s.mp4      26 captions vs the sound  median +0.30s  worst-10% 1.06s  | words captioned 99%  UNCAPTIONED SPEECH [(37.3, 39.6)]"
+   ],
+   "slug": "THE-KNIGHTS-TEMPLARS-SUCCESS-TRIANGLE",
+   "in": 1287.68,
+   "out": 1456.68,
+   "start_words": "I didn't invent this",
+   "end_words": "in every person there",
+   "hook": [
+    "How secret societies",
+    "built their wealth"
+   ]
   }
  },
  "attempts": {
@@ -14691,6 +14709,6 @@
   "ep_v4vdcy0_r3": 2,
   "ar_v4kacob_r3": 2,
   "ep_v4tz80x_p4": 2,
-  "ep_v4y99ab_p3": 1
+  "ep_v4y99ab_p3": 2
  }
 }
