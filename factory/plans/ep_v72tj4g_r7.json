@@ -1,0 +1,18 @@
+{"source": "v72tj4g.mp4", "brand": "KT_VAULTR2R2R2", "test": false,
+ "note": "21 Nov 2026 - second chance re-cut of 'Kevin Trudeau Exposes Secret Societies, Media Control & Human Potential' (Rumble v72tj4g). Fixing THE-FORBES-400-LIST-LIES: r5's end_words 'Nobody knows that person's name' (1174.72s) sits right after a near-identical earlier line, 'Nobody knows the guy's name' (1170.56s) - the renderer's word search landed on the wrong occurrence and the clip ran on into unrelated later material. Kept r5's fixed start ('Two people were just arrested', clear of the old 'no stop' sentence stumble) but moved the end back to the first, unambiguous payoff sentence, 'So the people that really control the world via money' (1168.32s) - a clean close that was never flagged, one sentence before the IMF/World Bank lines that caused the collision. Weekly agent.",
+ "clips": [{"slug": "THE-FORBES-400-LIST-LIES", "in": 1106.24, "out": 1168.32,
+            "retry_of": "ep_v72tj4g_p2/THE-FORBES-400-LIST-LIES",
+            "start_words": "Two people were just arrested",
+            "end_words": "control the world via money",
+            "hook": ["Rich hide $50 billion", "from you"],
+            "trial_hooks": [
+              ["$50 billion", "hidden, no name"],
+              ["The Forbes 400", "list is rigged"],
+              ["The richest list", "misses $50 billion"],
+              ["Why you'll never", "make that list"],
+              ["Two men arrested,", "richer than Forbes"],
+              ["Kevin Trudeau exposes", "the fake list"],
+              ["$2 trillion, no name", "controls it"]
+            ],
+            "send": "A guy sends this to his buddy who trusts the Forbes 400 as the real ranking of the rich - anger that the richest people on earth aren't even listed.",
+            "caption": "Kevin Trudeau says the Forbes 400 list is not what you think it is.\n\nTwo men were arrested in Asia holding a Bitcoin wallet worth over 17 billion dollars. Another had over 50 billion in cash in a crypto wallet. Neither one shows up on the Forbes list.\n\nQuoting J. Paul Getty: it is not how much money you have, it is how much money you control. Norway's sovereign wealth fund holds two trillion dollars - almost nobody outside a small circle can name who actually controls it. Same with Saudi Arabia's, 1.7 trillion.\n\nThe richest people on the planet were never meant to show up on a public list.\n\nComment MONEY and I'll send you Kevin's free audios.\n\n#kevintrudeau #money #wealth #richpeople #financialfreedom #moneysecrets"}]}
