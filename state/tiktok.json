@@ -1,18 +1,18 @@
 {
- "at": "2026-11-21T07:40",
+ "at": "2026-11-21T13:01",
  "account": "what_do_you_wan7t",
  "profile": {
-  "likes_count": 8460,
-  "video_count": 107,
-  "follower_count": 376,
-  "following_count": 2
+  "following_count": 2,
+  "likes_count": 8529,
+  "video_count": 108,
+  "follower_count": 380
  },
  "videos": {
   "KT_BELLAGIO/01_87500-SHOWED-UP-IN-BELLAGIO_51s.mp4": {
    "id": "7710451752587283743",
-   "view_count": 198,
-   "like_count": 11,
-   "comment_count": 1,
+   "view_count": 271,
+   "like_count": 23,
+   "comment_count": 2,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7710451752587283743?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 50,
@@ -20,7 +20,7 @@
   },
   "KT_RUNWAYR2/02_AI-REPLACES-100K-COPYWRITER_44s.mp4": {
    "id": "7709900772766534943",
-   "view_count": 315,
+   "view_count": 319,
    "like_count": 15,
    "comment_count": 2,
    "share_count": 0,
@@ -30,8 +30,8 @@
   },
   "KT_DREAMWORLDR2/01_THE-1948-BOOK-GURUS-COPY_82s.mp4": {
    "id": "7710368198218075406",
-   "view_count": 221,
-   "like_count": 15,
+   "view_count": 287,
+   "like_count": 21,
    "comment_count": 0,
    "share_count": 1,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7710368198218075406?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -40,7 +40,7 @@
   },
   "KT_RUNWAYR2/01_FULL-THROTTLE-TO-CRUISING-ALTITUDE_57s.mp4": {
    "id": "7710320752909716767",
-   "view_count": 33,
+   "view_count": 37,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -50,7 +50,7 @@
   },
   "KT_EPISODE/06_THE-BOWLING-ALLEY-SECRET_138s.mp4": {
    "id": "7710076296591707423",
-   "view_count": 321,
+   "view_count": 329,
    "like_count": 19,
    "comment_count": 0,
    "share_count": 1,
@@ -60,7 +60,7 @@
   },
   "KT_RUNWAY/02_2-BILLION-APP-NO-WIFI-OFFICE_110s.mp4": {
    "id": "7709963133414133023",
-   "view_count": 300,
+   "view_count": 308,
    "like_count": 16,
    "comment_count": 2,
    "share_count": 2,
@@ -70,7 +70,7 @@
   },
   "KT_RUNWAY/01_THE-90-SECOND-SALES-SECRET_82s.mp4": {
    "id": "7709695897768152351",
-   "view_count": 355,
+   "view_count": 357,
    "like_count": 21,
    "comment_count": 2,
    "share_count": 4,
@@ -90,7 +90,7 @@
   },
   "KT_IONSTORMO/01_NEGATIVE-IONS-GROW-YOUR-BRAIN_59s.mp4": {
    "id": "7709620031541316894",
-   "view_count": 2508,
+   "view_count": 2546,
    "like_count": 203,
    "comment_count": 4,
    "share_count": 16,
@@ -100,7 +100,7 @@
   },
   "KT_EPISODE/04_THE-MONK-WHO-ATE-ANYTHING_98s.mp4": {
    "id": "7709568379396295967",
-   "view_count": 53,
+   "view_count": 54,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -140,7 +140,7 @@
   },
   "KT_EPISODE/03_TOO-GOOD-FOR-THE-CASINO_94s.mp4": {
    "id": "7709203717832051982",
-   "view_count": 224,
+   "view_count": 225,
    "like_count": 9,
    "comment_count": 0,
    "share_count": 0,
@@ -220,8 +220,8 @@
   },
   "KT_CENTURY/01_MILLIONAIRE-NEEDS-100-MILLION_122s.mp4": {
    "id": "7708240192460606751",
-   "view_count": 4745,
-   "like_count": 331,
+   "view_count": 4761,
+   "like_count": 334,
    "comment_count": 13,
    "share_count": 68,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708240192460606751?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -230,27 +230,27 @@
   },
   "KT_MIRAGE/01_MANIFEST-A-FERRARI-WITH-A-PHOTO_47s.mp4": {
    "id": "7708198574059736351",
-   "view_count": 10939,
-   "like_count": 1151,
-   "comment_count": 11,
-   "share_count": 47,
+   "view_count": 11107,
+   "like_count": 1171,
+   "comment_count": 13,
+   "share_count": 49,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708198574059736351?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 46,
    "posted": "2026-11-15T01:07"
   },
   "KT_VAULTWIDER2/01_FORBES-400-LIST-LIES-WIDE_62s.mp4": {
    "id": "7708152396463082765",
-   "view_count": 56293,
-   "like_count": 2285,
+   "view_count": 56455,
+   "like_count": 2295,
    "comment_count": 87,
-   "share_count": 225,
+   "share_count": 227,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708152396463082765?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 61,
    "posted": "2026-11-14T22:08"
   },
   "KT_VAULT/01_TEN-YEARS-PRISON-GOT-IT-ALL-BACK_55s.mp4": {
    "id": "7708090930695245086",
-   "view_count": 681,
+   "view_count": 682,
    "like_count": 14,
    "comment_count": 8,
    "share_count": 1,
@@ -260,8 +260,8 @@
   },
   "KT_FORGER2/01_SAME-RECESSION-ONE-BANKRUPT-ONE-RICH_127s.mp4": {
    "id": "7707989412906306846",
-   "view_count": 2372,
-   "like_count": 152,
+   "view_count": 2413,
+   "like_count": 153,
    "comment_count": 6,
    "share_count": 55,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7707989412906306846?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -270,19 +270,19 @@
   },
   "KT_MASONRY/01_RICH-TOWN-ONLY-HAD-BUSINESS-OWNERS_87s.mp4": {
    "id": "7707879220852149535",
-   "view_count": 9016,
-   "like_count": 152,
+   "view_count": 9046,
+   "like_count": 155,
    "comment_count": 1,
-   "share_count": 9,
+   "share_count": 10,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7707879220852149535?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 87,
    "posted": "2026-11-14T04:28"
   },
   "KT_FORGER2/02_TRILLION-DOLLAR-FRIENDS-DREAM-BIG_121s.mp4": {
    "id": "7707767515027361054",
-   "view_count": 399,
+   "view_count": 402,
    "like_count": 29,
-   "comment_count": 7,
+   "comment_count": 8,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7707767515027361054?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 120,
@@ -290,7 +290,7 @@
   },
   "KT_FORGE/02_JORDAN-FAKED-RIVALS-TO-WIN_113s.mp4": {
    "id": "7707716447182638366",
-   "view_count": 460,
+   "view_count": 461,
    "like_count": 26,
    "comment_count": 5,
    "share_count": 0,
@@ -300,7 +300,7 @@
   },
   "KT_FORGE/01_THE-RICHEST-MAN-WAS-NEVER-INDECISIVE_98s.mp4": {
    "id": "7707494403056635167",
-   "view_count": 385,
+   "view_count": 386,
    "like_count": 32,
    "comment_count": 0,
    "share_count": 1,
@@ -310,7 +310,7 @@
   },
   "KT_FORGE/02_HENRY-FORD-DIDNT-INVENT-CARS_94s.mp4": {
    "id": "7707298482863770910",
-   "view_count": 2094,
+   "view_count": 2096,
    "like_count": 22,
    "comment_count": 0,
    "share_count": 1,
@@ -360,8 +360,8 @@
   },
   "KT_TIMBER/01_87500-IN-ONE-DAY_52s.mp4": {
    "id": "7707036868591865118",
-   "view_count": 1353,
-   "like_count": 49,
+   "view_count": 1363,
+   "like_count": 51,
    "comment_count": 0,
    "share_count": 2,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7707036868591865118?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -380,7 +380,7 @@
   },
   "KT_UNDERTOWR2R2R2/01_LIBERACE-WORST-PIANIST-RICHEST_64s.mp4": {
    "id": "7706884172110941454",
-   "view_count": 402,
+   "view_count": 403,
    "like_count": 22,
    "comment_count": 3,
    "share_count": 2,
@@ -470,7 +470,7 @@
   },
   "KT_IGNITE/02_BRUCE-LEE-18-MONTHS_38s.mp4": {
    "id": "7705787939963456799",
-   "view_count": 605,
+   "view_count": 606,
    "like_count": 35,
    "comment_count": 2,
    "share_count": 0,
@@ -500,7 +500,7 @@
   },
   "KT_BOOKSHELF/02_LIVING-ON-HALF-A-MILLION-A-WEEK_98s.mp4": {
    "id": "7705488201317715230",
-   "view_count": 439,
+   "view_count": 440,
    "like_count": 19,
    "comment_count": 2,
    "share_count": 1,
@@ -530,7 +530,7 @@
   },
   "KT_BOOKSHELF/01_KNOWING-IT-ISNT-DOING-IT_125s.mp4": {
    "id": "7705226690640891149",
-   "view_count": 367,
+   "view_count": 368,
    "like_count": 29,
    "comment_count": 0,
    "share_count": 1,
@@ -620,8 +620,8 @@
   },
   "KT_ADVERSITYR2R2/01_THE-BOOK-THAT-SOLD-50-MILLION-COPIES_62s.mp4": {
    "id": "7703549510210850079",
-   "view_count": 2328,
-   "like_count": 194,
+   "view_count": 2330,
+   "like_count": 195,
    "comment_count": 4,
    "share_count": 33,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7703549510210850079?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
