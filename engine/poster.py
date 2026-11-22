@@ -421,6 +421,13 @@ def extra_link_lines(platform, seed="", lead=False):
     return out
 
 
+def _fb_off(brand):
+    """True when this brand's Facebook is switched off (<ACCOUNT>_PLATFORMS_OFF holds 'facebook')."""
+    acct = cred_prefix(brand)
+    acct = "KT" if acct in FALLBACK_BRANDS or not acct else acct
+    return "facebook" in {p.strip() for p in os.environ.get(acct + "_PLATFORMS_OFF", "").split(",")}
+
+
 def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
     """The caption rewritten for ONE platform's link rules.
 
@@ -513,7 +520,8 @@ def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
             pass
         elif platform == "tiktok" or (
                 platform in ("instagram", "facebook")
-                and (platform == "instagram") == (v % 2 == 0)):
+                and ((platform == "instagram") == (v % 2 == 0)
+                     or (platform == "instagram" and _fb_off(brand)))):
             cta = f"{cta}\n\nComment {kw} to get access."
     elif cred_prefix(brand) == "AR":
         cta = ar_ask("\n".join(body), kw, url, platform, variant)
@@ -534,6 +542,13 @@ def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
         # a re-plan never flips a caption that already went out.
         v = variant if isinstance(variant, int) else 0
         mine = (platform == "instagram") == (v % 2 == 0)
+        # WHEN FACEBOOK IS OFF, INSTAGRAM NEVER GIVES ITS TURN AWAY (22 Nov 2026). KT's Facebook has
+        # been off since 29 Oct (KT_PLATFORMS_OFF), yet on every odd variant Instagram still handed
+        # the keyword ask to Facebook: read on Instagram itself, CATALYST (v1) and BELLAGIO (v3)
+        # went out as "offer" posts with no "Comment ..." line anywhere. Half of KT's offer posts
+        # asked nobody for anything.
+        if platform == "instagram" and _fb_off(brand):
+            mine = True
         if not mine:
             cta = ASK_LINES[0] if platform == "instagram" else ASK_LINES[1]
         else:
@@ -617,6 +632,26 @@ def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
         out = [cta, ""] + body
     else:
         out = body + ["", cta]
+    # THE ASK LEADS ON INSTAGRAM (22 Nov 2026, Kamay: "the PERFECT set up so people comment"). Read on
+    # Instagram: KT's ask was the LAST line, under "more", and said only "to get access". The three
+    # reels of @abundantkevin that broke out (84K / 31K / 21K views, 415 / 322 / 141 comments) all
+    # OPEN on the keyword line and name the gift; our Copy Lab: keyword first 11.3 comments per 1,000
+    # views against 1.2. Every KT keyword sends the same message (repo variable DM_TEXT: the free
+    # Your Wish audios + the ebook), so the line promises exactly that and nothing else. Four
+    # wordings turn with the clip's variant so first lines do not repeat. A caption whose own first
+    # line already asks (the planner's, an Episode's) is left as written. Not AR (Yaren's captions).
+    if (mine_only and platform == "instagram" and ask != "question" and kw
+            and cta and f"Comment {kw}" in cta and cred_prefix(brand) != "WB"):
+        _first = next((l for l in body if l.strip()), "")
+        if "comment" not in _first.lower():
+            _v = variant if isinstance(variant, int) else 0
+            _lead = (
+                f"Comment {kw} and I\u2019ll send you Kevin Trudeau\u2019s 14 Your Wish Is Your Command audios. Free.",
+                f"Want the how behind this? Comment {kw} and Kevin\u2019s 14 free audios land in your messages.",
+                f"Kevin teaches the method in 14 free audios. Comment {kw} and I\u2019ll send them to you.",
+                f"This is one piece of it. Comment {kw} for Kevin\u2019s 14 Your Wish Is Your Command audios, free.",
+            )[_v % 4]
+            out = [_lead, ""] + out
     if tags:
         out += [""] + tags
     return with_disclosure("\n".join(out).strip())
