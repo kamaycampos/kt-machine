@@ -18597,14 +18597,27 @@
    "hook": "The Realtor's photos cost you money",
    "bytes": 50832499,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-22T17:31",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgD6EO7FTym/",
+    "youtube": "https://youtube.com/shorts/SW_7hhzK7CU"
+   },
+   "caption_at_post": "Comment MONEY and I'll send you Kevin's free audios.\n\nKevin Trudeau says he scrolls Zillow and Realtor.com and sees the same mistake on almost every listing: a phone snapshot with no eye for the room, and a description nobody bothered to write well.\n\nMost people have no idea how to position a product - or a house - so it actually pulls someone in. It isn't luck. It's a skill almost nobody learns.\n\nFix just those two things, Kevin says, and the same house pulls two to three times the interest - every time.\n\nThe seller never finds out their listing was the problem. They just blame the market.\n\nWhat's one photo in your own listing that's quietly costing you money?\n\n#kevintrudeau #realestate #realtortips #sellingahouse #copywriting #moneytips",
+   "posted_at": "2026-11-22T17:47"
   }
  ]
 }
