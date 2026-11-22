@@ -198,10 +198,24 @@ def _second_pass(_theirs):
                         and idx[v].get("duration", 0) >= SECOND_MIN_EP * 60
                         and v not in _busy and v not in _fenced and v not in ready), reverse=True)
         _cand = [(t, v) for t, v in _cand if t >= SECOND_FREE * 60]
+        # LEAST-MINED FIRST, NOT LONGEST FIRST (22 Nov 2026). Ranked by raw unused minutes, the same four
+        # long shows topped every run (v4sow6o 6 plans, v4tz80x 9, v5lvgyl 8, v4vdcy0 11): what is left in
+        # them is pitches, guests and reviews, so the planner read them, wrote 0-1 clips and stopped -
+        # 1-7 clips a day planned from 17 Nov while KT posts 4-6, and the queue hit 0. 61 other HD shows
+        # with 50-60 unused minutes and ONE plan each were never offered. Rank by unused minutes per plan
+        # already written, so an episode mined five times waits behind one cut once.
+        _passes = {}
+        for k, q in _named.items():
+            if k.startswith(MINE):
+                _passes[q["source"][:-4]] = _passes.get(q["source"][:-4], 0) + 1
+        _cand.sort(key=lambda tv: -(tv[0] / (1 + _passes.get(tv[1], 0))))
         if _cand:
             print(f"SECOND PASS - {len(_cand)} HD episode(s) already cut hold {sum(t for t, _ in _cand) / 3600:.1f} h "
                   f"no clip has used. Plan NEW arcs from these after the new episodes ({PLAYBOOK} 'SECOND PASS'):")
-        for t, v in _cand[:MAX - len(ready)]:
+        # A LOW QUEUE READS MORE (22 Nov 2026): under 12 clips waiting, six second-pass episodes (their reading
+        # is the money stretches only, so six fit one run), whatever --max says.
+        _n = max(MAX, 6) if (not AR and not LANE and len(queue) < 12) else MAX
+        for t, v in _cand[:max(0, _n - len(ready))]:
             second[v] = sorted(_used[v])
             print(f"  {v} '{idx[v]['title'][:50]}' {idx[v]['duration'] / 60:.0f} min, {t / 60:.0f} min unused, "
                   f"{len(second[v])} clips already cut - write factory/plans/{MINE}{v}_p2.json (_p3 if taken)")
@@ -314,6 +328,7 @@ if AR:
         _second_pass({e["id"] for e in json.load(open(os.path.join(HERE, "source_plan.json")))["episodes"]})
     except (OSError, ValueError, KeyError) as _e:
         print(f"second pass skipped: {_e}")
+MAX = max(MAX, 6) if (not AR and not LANE and len(queue) < 12) else MAX   # 22 Nov: a low queue reads six
 print(f"READY TO PLAN: {len(ready)} episode(s); preparing {min(MAX, len(ready))}")
 # the second-chance episodes' cues come too, after the new ones (they need only work/<id>.srt)
 for v in ready[:MAX] + [v for v in again if v not in ready[:MAX] and v in idx and idx[v].get("transcript")]:
