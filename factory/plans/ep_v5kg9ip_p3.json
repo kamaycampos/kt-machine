@@ -1,0 +1,27 @@
+{
+  "source": "v5kg9ip.mp4",
+  "brand": "KT_APERTURE",
+  "test": false,
+  "note": "22 Nov 2026 - replacement for KT_RUNWAY/01_REALTOR-SELLS-IN-ONE-WEEK_140s.mp4, taken down by TikTok (posted 2026-11-20, gone by 2026-11-20). Same episode ('How To Make $25K per Month Online! | Ep. 60', v5kg9ip), a different moment and a different angle: not the Josh Altman one-week-sale story, but the stretch right before it where Kevin explains the photography/copywriting lesson in general terms (why most online listing photos fail and what fixing them is worth) - a clean, self-contained arc that does not touch the Josh Altman minutes at all. Weekly agent.",
+  "clips": [
+    {
+      "slug": "LISTING-PHOTOS-COST-3X-THE-OFFERS",
+      "in": 3427.5,
+      "out": 3482.5,
+      "start_words": "When you go online",
+      "end_words": "three times, guaranteed it",
+      "hook": ["The Realtor's photos", "cost you money"],
+      "trial_hooks": [
+        ["Bad photos cost", "you thousands"],
+        ["Realtors ruin", "their own listings"],
+        ["Same house, 3x", "the offers"],
+        ["Your listing photos", "lose you money"],
+        ["One Realtor doubled", "his commission"],
+        ["Kevin Trudeau's fix", "for bad listings"],
+        ["The $2,000 mistake", "sellers never see"]
+      ],
+      "send": "A home seller sends this to a friend about to list their house: anger at realizing their own Realtor's lazy photos may be quietly costing them thousands.",
+      "caption": "Comment MONEY and I'll send you Kevin's free audios.\n\nKevin Trudeau says he scrolls Zillow and Realtor.com and sees the same mistake on almost every listing: a phone snapshot with no eye for the room, and a description nobody bothered to write well.\n\nMost people have no idea how to position a product - or a house - so it actually pulls someone in. It isn't luck. It's a skill almost nobody learns.\n\nFix just those two things, Kevin says, and the same house pulls two to three times the interest - every time.\n\nThe seller never finds out their listing was the problem. They just blame the market.\n\nWhat's one photo in your own listing that's quietly costing you money?\n\n#kevintrudeau #realestate #realtortips #sellingahouse #copywriting #moneytips"
+    }
+  ]
+}
