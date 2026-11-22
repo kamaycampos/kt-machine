@@ -1,0 +1,138 @@
+{
+ "slug": "mv_v4tz80x_the_prison_meditation_class",
+ "vid": "v4tz80x",
+ "t_in": 876.86,
+ "t_out": 971.5,
+ "keeps": [
+  [
+   4,
+   43
+  ],
+  [
+   73,
+   94
+  ],
+  [
+   104,
+   111
+  ],
+  [
+   112,
+   159
+  ],
+  [
+   160,
+   177
+  ]
+ ],
+ "scenes": [
+  {
+   "src": {
+    "gen": "A plain prison classroom, rows of men in grey jumpsuits sitting cross-legged on a bare floor, a guard watching from the doorway, cinderblock walls, flat fluorescent light",
+    "move": "the men settle into stillness one by one as the guard crosses his arms in the doorway"
+   },
+   "from": 4,
+   "to": 9,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "The same prison classroom now crowded, more than half the cell block's men in grey jumpsuits packed onto the floor and along the walls, a guard counting heads from the door",
+    "move": "more men file in through the door and sit down as the guard's eyebrows rise while counting"
+   },
+   "from": 34,
+   "to": 40,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "Close view of a prison officer's desk, a stack of carbon-copy disciplinary report forms under a gooseneck lamp, a pen resting on top, a barred window behind showing the cell block",
+    "move": "the officer's pen taps the blank top form once, then sets down untouched"
+   },
+   "from": 87,
+   "to": 91,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "The same officer's desk, the stack of disciplinary report forms now gathering a thin layer of dust, a wall calendar nearby with many days crossed off in a row",
+    "move": "the officer glances at the dusty, untouched stack and slowly shakes his head"
+   },
+   "from": 104,
+   "to": 109,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "Inside the prison classroom, a long row of grey-jumpsuited men sitting cross-legged with eyes closed in meditation, calm and still, pale morning light through a high barred window",
+    "move": "the men breathe slowly in unison while a guard at the back slowly lowers his folded arms"
+   },
+   "from": 116,
+   "to": 121,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A wide shot of a prison yard, men in grey jumpsuits walking calmly in loose lines instead of clustering in tense groups, a guard tower in the background under pale daylight",
+    "move": "two men who once stood apart now walk side by side, calm, past the guard tower"
+   },
+   "from": 149,
+   "to": 152,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A prison officer standing in a corridor doorway, arms spread wide in disbelief, looking back over his shoulder at the meditation classroom behind him under fluorescent light",
+    "move": "the officer spreads his hands and shakes his head slowly, looking back over his shoulder in disbelief"
+   },
+   "from": 168,
+   "to": 177,
+   "start": 0.1
+  }
+ ],
+ "voices": {
+  "10": "I",
+  "11": "I",
+  "155": "X",
+  "156": "X",
+  "19": "N:gold",
+  "20": "N:gold",
+  "21": "N:gold",
+  "171": "N:violet",
+  "172": "N:violet"
+ },
+ "join": [
+  [
+   10,
+   11
+  ],
+  [
+   155,
+   156
+  ],
+  [
+   19,
+   21
+  ],
+  [
+   171,
+   172
+  ]
+ ],
+ "fix": {},
+ "tighten": 0.85,
+ "cap_y": 800,
+ "end_card": "end_kamay.png",
+ "end_secs": 4.0,
+ "music_db": -27,
+ "fx": false,
+ "fx_db": -31,
+ "post": {
+  "title": "The Prison Meditation Class"
+ },
+ "title_top": {
+  "tag": "EPISODE 9",
+  "line": "The Prison Meditation Class"
+ },
+ "big_from": 168
+}
