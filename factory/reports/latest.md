@@ -1,34 +1,9 @@
-## ep_v5kg9ip_p3: 1 of 1 clip(s) passed every gate
+## ep_v4tz80x_p6: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-22 19:19
-  note KT_APERTURE/LISTING-PHOTOS-COST-3X-THE-OFFERS: end snapped 3484.97 -> 3484.65s (after 'three times, guaranteed it')
-  note KT_APERTURE/LISTING-PHOTOS-COST-3X-THE-OFFERS: ending kept on the planner's words 'three times, guaranteed it' (cuts mid-sentence)
-ep_v5kg9ip_p3__s0 (KT_APERTURE): 1 of 1 passed pre-render gates
+## 2026-11-22 19:53
+  note KT_MANTRA/GURU-JO-SO-SELLS-HYPNOSIS: end snapped 3254.91 -> 3254.66s (after 'Help yourself first, you're a mess')
+ep_v4tz80x_p6__s0 (KT_MANTRA): 1 of 1 passed pre-render gates
 
-RENDER ep_v5kg9ip_p3__s0
-  PASS 01_LISTING-PHOTOS-COST-3X-THE-OFFERS_55s.mp4  01_LISTING-PHOTOS-COST-3X-THE-OFFERS_55s.mp4           22 captions vs the sound  median +0
-       FIRST 5s : When you go online and see websites and they have pictures of product, most people have | LAST  8s : But write some copy and how to take better pictures. They would improve their income two, three times. Guaranteed it.
-TEST MODE - passing clips NOT uploaded or queued: KT_APERTURE
-  test clip kept in previews: TEST_KT_APERTURE--01_LISTING-PHOTOS-COST-3X-THE-OFFERS_55s.mp4
-
-
-## UPLOAD
-1 clip(s) to add:
-   KT_APERTURE/01_LISTING-PHOTOS-COST-3X-THE-OFFERS_55s.mp4  (51 MB)
-      + 01_LISTING-PHOTOS-COST-3X-THE-OFFERS_55s__yt59.mp4
-      + 01_LISTING-PHOTOS-COST-3X-THE-OFFERS_55s__cover.jpg
-      + 01_LISTING-PHOTOS-COST-3X-THE-OFFERS_55s__thumb.jpg
-   added KT_APERTURE/01_LISTING-PHOTOS-COST-3X-THE-OFFERS_55s.mp4  (release media2)
-
-manifest now holds 730 clips
-commit and push state/manifest.json to let the machine see them
-
-
-## TRIAL: 2 hook variant(s) of KT_APERTURE/01_LISTING-PHOTOS-COST-3X-THE-OFFERS_55s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 4 hook variant(s) of KT_APERTURE/01_LISTING-PHOTOS-COST-3X-THE-OFFERS_55s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 6 hook variant(s) of KT_APERTURE/01_LISTING-PHOTOS-COST-3X-THE-OFFERS_55s.mp4 ready for Instagram Trial Reels
-
-## TRIAL: 7 hook variant(s) of KT_APERTURE/01_LISTING-PHOTOS-COST-3X-THE-OFFERS_55s.mp4 ready for Instagram Trial Reels
+RENDER ep_v4tz80x_p6__s0
+  FAIL 01_GURU-JO-SO-SELLS-HYPNOSIS_90s.mp4: [FAIL] 01_GURU-JO-SO-SELLS-HYPNOSIS_90s.mp4                   13 captions vs the sound  median +0.03s  worst-10% 0.42s  | words captioned 100%  UNCAPTIONED SPEECH [(70.2, 71.8)]
