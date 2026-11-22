@@ -14709,6 +14709,42 @@
     "Why your life coach",
     "has nothing"
    ]
+  },
+  "ar_v5i1vo4_p5_r2/RELIGION-IS-FADING-ON-PURPOSE": {
+   "plan": "ar_v5i1vo4_p5_r2",
+   "source": "v5i1vo4.mp4",
+   "brand": "AR_RULEBOOKR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_RELIGION-IS-FADING-ON-PURPOSE_89s.mp4` - word repeated after one: \"So really so\""
+   ],
+   "slug": "RELIGION-IS-FADING-ON-PURPOSE",
+   "in": 1731.1,
+   "out": 1822.4,
+   "start_words": "That doesn't sound too",
+   "end_words": "those religions are going down",
+   "hook": [
+    "Your faith is fading.",
+    "On purpose."
+   ]
+  },
+  "ar_v64x4f4_r4/SPIRITUAL-HIGHS-ARE-IMITATION-CRAB": {
+   "plan": "ar_v64x4f4_r4",
+   "source": "v64x4f4.mp4",
+   "brand": "AR_ONENESSR4",
+   "tries": 2,
+   "why": [
+    "FAIL 02_SPIRITUAL-HIGHS-ARE-IMITATION-CRAB_114s.mp4: [FAIL] 02_SPIRITUAL-HIGHS-ARE-IMITATION-CRAB_114s.mp4         37 captions vs the sound  median +0.00s  worst-10% 0.76s  | words captioned 100%"
+   ],
+   "slug": "SPIRITUAL-HIGHS-ARE-IMITATION-CRAB",
+   "in": 2353.9,
+   "out": 2468.6,
+   "start_words": "It's a facade",
+   "end_words": "then you know what a fraud is",
+   "hook": [
+    "Your spiritual high",
+    "is imitation crab."
+   ]
   }
  },
  "attempts": {
@@ -14800,6 +14836,8 @@
   "ar_v4kacob_r3": 2,
   "ep_v4tz80x_p4": 2,
   "ep_v4y99ab_p3": 2,
-  "ep_v4tz80x_p5": 2
+  "ep_v4tz80x_p5": 2,
+  "ar_v5i1vo4_p4_r2": 1,
+  "ar_v68yges_r3": 1
  }
 }
