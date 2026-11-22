@@ -1,0 +1,59 @@
+{
+  "movie": true,
+  "source": "v4y99ab",
+  "title": "The Six Tape Drive",
+  "why_movie": "A real first-person Kevin habit story with a place (his apartment, his car) and a turn: he measured his whole life in cassette tapes, and successful people measured a drive not in miles but in how many tapes it took.",
+  "in": 1860.0,
+  "out": 2000.0,
+  "keep": [
+    ["So at 5 a.m., it goes full blast", "right when I'm coming out of deep sleep, when I'm in alpha"],
+    ["when I get into the car, I'd take the cassette player", "when I'm driving to work, I'm listening to the tape"],
+    ["Oh yeah, I'm going to this restaurant", "That was a six tape drive"]
+  ],
+  "scenes": [
+    {
+      "on": "So at 5 a.m., it goes full blast",
+      "gen": "A worn wooden nightstand in a small 1970s apartment bedroom at dawn, a chunky analog cassette tape player wired to a plug-in wall timer, grey pre-dawn light at the window",
+      "move": "the timer's dial clicks over and the cassette player's play button pops down as it switches on"
+    },
+    {
+      "on": "right when I'm coming out of deep sleep",
+      "gen": "Close view of a young man's head on a pillow in a dim 1970s bedroom, eyes still closed, early morning light creeping through curtains, a small cassette player glowing on the nightstand beside him",
+      "move": "his eyes slowly begin to open as he stirs toward waking"
+    },
+    {
+      "on": "when I get into the car, I'd take the cassette player",
+      "gen": "A man in 1970s clothing getting into the driver's seat of an old sedan in an apartment parking lot at sunrise, carrying a bulky portable cassette player in one hand",
+      "move": "he sets the cassette player down on the passenger seat beside him and starts the engine"
+    },
+    {
+      "on": "when I'm driving to work, I'm listening to the tape",
+      "gen": "Inside an old car driving down a suburban street at sunrise, a portable cassette player sitting on the passenger seat with its reels turning, the driver's hands on the wheel",
+      "move": "the cassette player's spools turn steadily as the car moves past storefronts"
+    },
+    {
+      "on": "Oh yeah, I'm going to this restaurant",
+      "gen": "The same old car driving past a glowing neon restaurant sign at night on a city street, warm lights reflecting on the wet road",
+      "move": "the car slows and its headlights sweep across the restaurant's neon sign"
+    },
+    {
+      "on": "That was a six tape drive",
+      "gen": "A close view from the passenger seat of six cassette tapes lined up neatly in a row on the car seat, a highway stretching ahead through the windshield at dusk",
+      "move": "a hand reaches over and flips the last cassette tape over"
+    }
+  ],
+  "big": ["six tape drive"],
+  "italic": [],
+  "payoff": "That was a six tape drive",
+  "mood": ["nostalgic", "inspiring"],
+  "hook": ["THE SIX TAPE", "DRIVE TO SUCCESS"],
+  "cta_keyword": "WISH",
+  "caption": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says that before anyone had cassette decks built into a car, he built his whole day around one: a timer plugged into the wall clicked his tape player on at 5 a.m., right as he was waking up, so a motivational speech was the first thing he ever heard.\n\nThen he carried that same tape player everywhere - into the shower, onto the car seat, through a full day of work, and all the way home.\n\nSuccessful people he knew didn't measure a drive in miles. They measured it in tapes.\n\n{episode}\n\nThe 14 audios are Kevin teaching the mind techniques that actually move you forward. Recorded live at a private event in the Alps.\n\nComment \"WISH\" if you want them.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #mindset #personaldevelopment #successhabits #motivation #yourwishisyourcommand",
+  "send": "A commuter who feels like their drive time is wasted sends this to a friend: a jolt of anxiety realizing successful people turned every single minute, even a drive, into training.",
+  "money": [],
+  "names": [
+    {"say": "six tape drive", "color": "gold"}
+  ],
+  "poster": 6,
+  "music": "none"
+}
