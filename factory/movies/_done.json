@@ -1,5 +1,5 @@
 {
- "next_episode": 9,
+ "next_episode": 10,
  "built": {
   "mv_v6v9urd_too_good_for_the_casino": {
    "file": "KT_EPISODE/03_TOO-GOOD-FOR-THE-CASINO_94s.mp4",
@@ -44,6 +44,13 @@
    "posts": "2026-11-22T12:30",
    "music": null,
    "scenes": 5
+  },
+  "mv_v4tz80x_the_prison_meditation_class": {
+   "file": "KT_EPISODE/09_THE-PRISON-MEDITATION-CLASS_64s.mp4",
+   "episode": 9,
+   "posts": "2026-11-23T12:30",
+   "music": null,
+   "scenes": 7
   }
  },
  "tries": {
@@ -61,6 +68,7 @@
   null,
   "movie_ambient_piano_thesilentthunder.mp3",
   "movie_ambient_piano_thesilentthunder.mp3",
+  null,
   null
  ]
 }
