@@ -1,5 +1,5 @@
 {
- "next_episode": 10,
+ "next_episode": 11,
  "built": {
   "mv_v6v9urd_too_good_for_the_casino": {
    "file": "KT_EPISODE/03_TOO-GOOD-FOR-THE-CASINO_94s.mp4",
@@ -51,6 +51,13 @@
    "posts": "2026-11-23T12:30",
    "music": null,
    "scenes": 7
+  },
+  "mv_v4y99ab_the_six_tape_drive": {
+   "file": "KT_EPISODE/10_THE-SIX-TAPE-DRIVE_46s.mp4",
+   "episode": 10,
+   "posts": "2026-11-24T12:30",
+   "music": null,
+   "scenes": 4
   }
  },
  "tries": {
@@ -69,6 +76,7 @@
   null,
   "movie_ambient_piano_thesilentthunder.mp3",
   "movie_ambient_piano_thesilentthunder.mp3",
+  null,
   null,
   null
  ]

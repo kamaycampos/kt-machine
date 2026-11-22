@@ -18548,6 +18548,32 @@
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
    "cta_kind": "question"
+  },
+  {
+   "file": "KT_EPISODE/10_THE-SIX-TAPE-DRIVE_46s.mp4",
+   "caption": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says that before anyone had cassette decks built into a car, he built his whole day around one: a timer plugged into the wall clicked his tape player on at 5 a.m., right as he was waking up, so a motivational speech was the first thing he ever heard.\n\nThen he carried that same tape player everywhere - into the shower, onto the car seat, through a full day of work, and all the way home.\n\nSuccessful people he knew didn't measure a drive in miles. They measured it in tapes.\n\nEpisode 10: The Six Tape Drive.\n\nThe 14 audios are Kevin teaching the mind techniques that actually move you forward. Recorded live at a private event in the Alps.\n\nComment \"WISH\" if you want them.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #mindset #personaldevelopment #successhabits #motivation #yourwishisyourcommand",
+   "hook": "THE SIX TAPE DRIVE TO SUCCESS",
+   "bytes": 24622260,
+   "done": false,
+   "status": {},
+   "media_tag": "media2",
+   "cover": true,
+   "look": "movie",
+   "solo": true,
+   "solo_hours": [
+    3,
+    3
+   ],
+   "wide": true,
+   "cta_keyword": "WISH",
+   "cta_variant": 0,
+   "cta_kind": "offer",
+   "caption_exact": true,
+   "caption_link": "Or get them here now, free: https://freeyourwish.kevintrudeau.com/?ref=a43c8j",
+   "movie": "mv_v4y99ab_the_six_tape_drive",
+   "music": null,
+   "ig_hand": true,
+   "scheduled_at": "2026-11-24T12:30"
   }
  ]
 }
