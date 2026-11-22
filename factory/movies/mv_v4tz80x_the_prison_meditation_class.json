@@ -1,0 +1,64 @@
+{
+ "source": "v4tz80x",
+ "in": 878.36,
+ "out": 969.0,
+ "title": "The Prison Meditation Class",
+ "why_movie": "A real first-person Kevin story with a place (the prison), people (the inmates and the officers) and a turn: half the population showed up to meditate and the disciplinary reports collapsed, ending on an officer's own question.",
+ "keep": [
+  ["When I was in prison", "which surprised everybody"],
+  ["The effects in the prison were", "to inmates who break the rules"],
+  ["It's an incident report or", "a disciplinary action"],
+  ["After the meditation class", "It was unbelievable"],
+  ["The officers came up to me and said", "on everybody"]
+ ],
+ "scenes": [
+  {
+   "on": "When I was in prison",
+   "gen": "A plain prison classroom, rows of men in grey jumpsuits sitting cross-legged on a bare floor, a guard watching from the doorway, cinderblock walls, flat fluorescent light",
+   "move": "the men settle into stillness one by one as the guard crosses his arms in the doorway"
+  },
+  {
+   "on": "about half of the inmate population went",
+   "gen": "The same prison classroom now crowded, more than half the cell block's men in grey jumpsuits packed onto the floor and along the walls, a guard counting heads from the door",
+   "move": "more men file in through the door and sit down as the guard's eyebrows rise while counting"
+  },
+  {
+   "on": "incident reports to inmates who break the rules",
+   "gen": "Close view of a prison officer's desk, a stack of carbon-copy disciplinary report forms under a gooseneck lamp, a pen resting on top, a barred window behind showing the cell block",
+   "move": "the officer's pen taps the blank top form once, then sets down untouched"
+  },
+  {
+   "on": "It's an incident report or a disciplinary action",
+   "gen": "The same officer's desk, the stack of disciplinary report forms now gathering a thin layer of dust, a wall calendar nearby with many days crossed off in a row",
+   "move": "the officer glances at the dusty, untouched stack and slowly shakes his head"
+  },
+  {
+   "on": "the number of disciplinary actions went down",
+   "gen": "Inside the prison classroom, a long row of grey-jumpsuited men sitting cross-legged with eyes closed in meditation, calm and still, pale morning light through a high barred window",
+   "move": "the men breathe slowly in unison while a guard at the back slowly lowers his folded arms"
+  },
+  {
+   "on": "The energy in the inmate population radically changed",
+   "gen": "A wide shot of a prison yard, men in grey jumpsuits walking calmly in loose lines instead of clustering in tense groups, a guard tower in the background under pale daylight",
+   "move": "two men who once stood apart now walk side by side, calm, past the guard tower"
+  },
+  {
+   "on": "what type of hypnotic spell did you put on everybody",
+   "gen": "A prison officer standing in a corridor doorway, arms spread wide in disbelief, looking back over his shoulder at the meditation classroom behind him under fluorescent light",
+   "move": "the officer spreads his hands and shakes his head slowly, looking back over his shoulder in disbelief"
+  }
+ ],
+ "big": ["radically changed"],
+ "italic": ["Donnie French"],
+ "names": [
+  {"say": "Global Information Network", "color": "gold"},
+  {"say": "hypnotic spell", "color": "violet"}
+ ],
+ "payoff": "what type of hypnotic spell did you put on everybody",
+ "poster": 5,
+ "mood": ["calm", "surprising"],
+ "hook": ["HALF THE PRISON", "stopped breaking the rules"],
+ "cta_keyword": "WISH",
+ "caption": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says that while he was in prison, he taught a meditation class - and more than half the inmate population showed up, which surprised everyone running the place.\n\nSoon the officers' own disciplinary reports, the ones inmates call \"a shot,\" nearly stopped altogether. The whole energy of the population changed.\n\nOne officer finally pulled him aside with a question nobody expected.\n\n{episode}\n\nThe 14 audios are Kevin teaching how to use your mind to change your life from the inside out, the same way he says he changed a prison block.\n\nMost people will scroll past this. A few will comment \"WISH\" and start tonight.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #meditation #mindset #prison #yourwishisyourcommand #manifestation",
+ "send": "A parent or a corrections officer sends it to someone who thinks real change takes years: awe that half a prison changed from one new habit."
+}
