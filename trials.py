@@ -103,14 +103,46 @@ def step(engine, poster, media_url, log=print):
 
     man = engine.load()
     changed = False
-    for key, e in var.items():
+    # NEWEST FIRST, AND ONE STUCK EXPERIMENT NEVER BLOCKS THE REST (22 Nov 2026). The loop took the
+    # experiments in the order they were written and stopped at the first unfinished one. KT's very
+    # first (2 Nov, HE-OWED-37-MILLION) was refused by Instagram every time, so for 11 days the
+    # engine knocked on that one arm every 2 hours and nothing else ever ran: 59 experiments rendered
+    # (412 hook variants), 3 posted, all of them AR's, none since 9 Nov. Now: the clip posted most
+    # recently goes first; an experiment whose clip posted over 72 h ago is closed (the test is about
+    # THIS clip, while it is fresh); and a brand Instagram has refused 3 times in a row gets one try
+    # a day instead of blocking the other brand.
+    try:
+        _lastj = json.load(open(LAST))
+    except (OSError, ValueError):
+        _lastj = {}
+    bstate = _lastj.get("brands") or {}
+    by_file = {c["file"]: c for c in man["clips"]}
+    _local = engine.now_local() if hasattr(engine, "now_local") else now
+
+    def _posted(kv):
+        return str((by_file.get(kv[1].get("clip")) or {}).get("posted_at") or "")
+    for key, e in sorted(var.items(), key=_posted, reverse=True):
         if held:
             break                                   # nothing posts while paused; scoring below still runs
-        if e.get("posted"):
+        if e.get("posted") or e.get("stopped"):
             continue
-        clip = next((c for c in man["clips"] if c["file"] == e["clip"]), None)
+        clip = by_file.get(e["clip"])
         if not clip or not clip.get("posted_at"):
             continue
+        try:
+            _age = _local - dt.datetime.fromisoformat(str(clip["posted_at"])[:16])
+        except ValueError:
+            _age = dt.timedelta(0)
+        if _age > dt.timedelta(hours=72):
+            e["posted"] = now.strftime("%Y-%m-%dT%H:%M")
+            e["expired"] = "clip posted over 72 h before its trial could run"
+            changed = True
+            continue
+        brand = key.split("_", 1)[0]
+        _bs = bstate.get(brand) or {}
+        if _bs.get("fails", 0) >= 3 and _bs.get("at") and \
+                now - dt.datetime.fromisoformat(_bs["at"]) < dt.timedelta(hours=24):
+            continue                                # this brand is being refused: one try a day
         todo = [a for a in e["arms"] if not a.get("id") and a.get("tries", 0) < TRIES]
         room = _room(poster, clip)
         if room is not None and room < len(todo):
@@ -141,7 +173,9 @@ def step(engine, poster, media_url, log=print):
             # EVERY ATTEMPT COUNTS, NOT ONLY A SUCCESS (11 Nov 2026). The 2-hour gap was written only
             # after a trial posted, so a refused one ("unexpected error, retry later") was retried
             # every 20 minutes - 3 knocks an hour, the very pattern Instagram blocked on 10 Nov.
-            json.dump({"at": now.strftime("%Y-%m-%dT%H:%M"), "ok": ok}, open(LAST, "w"))
+            bstate[brand] = {"fails": 0 if ok else (bstate.get(brand) or {}).get("fails", 0) + 1,
+                             "at": now.strftime("%Y-%m-%dT%H:%M")}
+            json.dump({"at": now.strftime("%Y-%m-%dT%H:%M"), "ok": ok, "brands": bstate}, open(LAST, "w"))
             arm["status"] = str(res[0] if ok else res)[:160]
             arm["id"] = poster.LAST_MEDIA_ID if ok else None
             if not ok and "too many actions" in str(res):

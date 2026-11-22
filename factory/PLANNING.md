@@ -67,20 +67,47 @@ The prep prints a **MOVIE CLIPS** line. When it says **WRITE ONE**, write exactl
 in this run, before anything else, whatever the queue (an afternoon run with nothing else to do
 still writes it). When it says enough are waiting, write none.
 
+### WHAT AN EPISODE IS (22 Nov 2026 - Kamay: "the happiest inmate ... so horrible"; "ONE GINSU AD is the perfect example")
+Episodes 4, 8 and 9 (the monk, the happy inmate, the prison meditation class) were chosen by the old
+rule "a place, people and a turn". They have a turn and NO RESULT: nobody watching wants the method,
+so nobody comments. The purpose of an Episode is one thing: **a stranger finishes it wanting the
+method, and comments WISH to get it.** So an Episode is a **RESULT STORY**, and the model is the clip
+ONE-GINSU-AD-PAID-FOR-LIFE (v66j311 586.8-754.1; watched 52.6 s on average, the longest of any KT
+clip in November). Its five beats, in Kevin's own words, are the Episode's shape:
+1. **THE WANT** - he says what he wanted ("I want to be a trust fund kid ... never work another day").
+2. **THE METHOD, NAMED BUT NOT TAUGHT** - he used his mind / named the result without the how. The
+   audios teach the how; the Episode only shows that there is one.
+3. **THE TURN** - something he did not arrange happens (a stranger, Arthur Schiff, calls).
+4. **THE RESULT YOU CAN COUNT** - money, a deal, a named thing (one ad, written in a day, royalties
+   for 15 years).
+5. **HIS OWN LAST LINE** - he says what did it ("I manifested that using my mind").
+**Write an Episode only when all three are yes - and put the answers in `why_movie`, with these three labels (the check refuses a plan without them): `"RESULT: ... METHOD: ... WISH: ..."`**
+- RESULT: is there a sum of money, a deal or a named thing he GOT, said by him? (`money` or `names`
+  must not be empty. "He was happy", "they were amazed", "the energy changed" is not a result.)
+- METHOD: does he say it came from how he used his mind, a decision, a technique, a principle?
+- WISH: would a stranger want the 14 audios BECAUSE of this story? Say why in one line.
+**Subjects, in this order:** how Kevin made money (a deal, an ad, a company, royalties, a sale);
+something he manifested (a car, a house, a person, a sum); a creation recipe with its result.
+**Never an Episode** (an ordinary clip may still fit): prison life, a happy or calm attitude with no
+result, monks and gurus, habits with no result (the cassette tapes), conspiracy, health (WB's lane).
+Never two Episodes in a row from the same world (two prison stories ran on 22-23 Nov).
+If no story in the prepared episodes passes, WRITE NO MOVIE and say so in the report - zero is a
+correct answer; a weak Episode at 12:30 costs more than an empty slot.
+
 **Choose** only a story where Kevin himself fills the camera (20 Nov: Episode 6's source was a stream
 layout - a web page on screen with Kevin in a small window - and it looked cheap next to theirs).
-**Choose** one continuous first-person Kevin story of 60-260 s with a place, people and a turn
-(he met someone, went somewhere, something happened, the last line lands). Kevin talking, on
-camera. Not a stretch a clip was already cut from in the last 30 days when another story is
-there. Not health (that is WB's lane). One story = one movie.
+One continuous first-person Kevin story, Kevin talking, on camera. Not a stretch a clip was already
+cut from in the last 30 days when another story is there. One story = one movie.
 
 **Write** `factory/movies/mv_<episode id>_<short_name>.json` (model:
 `factory/movies/mv_v6v9urd_too_good_for_the_casino.json`):
 - `source`, `in`, `out` (seconds from the transcript), `title` (2-6 words), `why_movie`.
 - `keep`: the story in pieces, each `["his first words of the piece", "his last words of it"]`,
   copied from the transcript. Cut every aside, repeat and plug; keep the turn and the last line.
-  **40-65 s must remain** (19 Nov: theirs run 45 s; ours ran 56-138 s and lost the viewer). Pick the
-  strongest 50-70 s of the story; drop the setup Kevin repeats. (Or `start_words` + `end_words`.)
+  **All five beats must remain (the want, the method, the turn, the result, his last line): 50-110 s.**
+  (22 Nov: the 40-65 s cap of 19 Nov cut Episodes 8 and 10 to 41 and 46 s - the want and the result
+  were what got dropped. The story decides the length; cut asides, repeats and plugs, never a beat.
+  Under 90 s when the story allows: Instagram stores longer reels at 720p.) (Or `start_words` + `end_words`.)
 - `scenes`: **5 to 8 - a story picture every 6-8 seconds** (19 Nov, Kamay: "compare the clips, the suspense,
   the emotion, the edits" - Episode 6 showed 14 s of pictures in 138 s; every scene is made on its own
   server, so 8 fit). **Scene 1 plays on the clip's first words: the clip opens on the story, never on Kevin
@@ -111,7 +138,9 @@ there. Not health (that is WB's lane). One story = one movie.
 - `mood`: 1-3 words for the feeling (suspense, warm, nostalgic, inspiring, wonder ...). Music goes
   under a movie clip ONLY when a track Kamay has approved by ear fits it (`music/tracks.json`
   "approved"); otherwise the clip goes out with his voice alone. Never name a track yourself.
-- `hook`: [line one, line two] - the cover's headline, true to the story.
+- `hook`: [line one, line two] - the cover's headline, true to the story. **It carries the RESULT and
+  leaves the how open** ("One Ginsu ad." / "Paid for life"; "$87,500 showed up" / "while he did nothing").
+  Never the scene ("The warden had seen thousands"), never a label ("THE SIX TAPE DRIVE TO SUCCESS").
 - `caption`: opens with `Comment "WISH" and I'll send you ...` (WISH sends the 14 Your Wish Is
   Your Command audios + the ebook, free - promise nothing else), then the story in "Kevin
   Trudeau says" voice WITHOUT giving the last line away, then `{episode}` alone on a line, then

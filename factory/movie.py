@@ -59,8 +59,9 @@ MAX_TRIES = 3
 MIN_SCENES, MAX_SCENES = 5, 8          # 19 Nov: was 3-4 - Episode 6 showed 14 s of story pictures in 138 s.
                                        # Every scene is made on its own server (own free allowance), so 8 fit.
 MIN_SHOWN = 4                # fewer generated scenes on screen than this = not a movie, not queued
-MIN_SECS, MAX_SECS = 40.0, 65.0   # 19 Nov: their Episode 5 is 45 s; ours ran 56-138 s and
-                                  # YouTube only took a 59 s cut that stopped mid-story (25-200 views)
+MIN_SECS, MAX_SECS = 50.0, 110.0  # 22 Nov: the 40-65 s cap of 19 Nov cut Episodes 8 and 10 to 41 / 46 s and the
+                                  # want and the result were what fell out. The five beats decide (PLANNING.md
+                                  # "WHAT AN EPISODE IS"); ONE-GINSU-AD ran 162 s and was watched 52.6 s on average.
 SCENE_MIN, SCENE_MAX = 2.2, 3.2        # a generated scene is 3.5 s long
 # The words Meta's rule and our bot both answer on KT, and the line each one may promise.
 # Only what Kamay has confirmed is here (14 Nov: WISH = all 14 audios + the ebook, free).
@@ -154,7 +155,21 @@ def check(path):
         say("the file name's episode id is not the plan's source")
     a, b = float(p["in"]), float(p["out"])
     if not 60 <= b - a <= 260:
-        say(f"the stretch is {b - a:.0f}s: a movie clip reads 60-260 s of the episode (it is tightened to 40-65)")
+        say(f"the stretch is {b - a:.0f}s: a movie clip reads 60-260 s of the episode (it is tightened to {MIN_SECS:.0f}-{MAX_SECS:.0f})")
+    # AN EPISODE IS A RESULT STORY (22 Nov 2026, Kamay: "the happiest inmate ... so horrible"; ONE GINSU AD
+    # "the perfect example"). Episodes 4, 8, 9 had a place, people and a turn - and no result, so nobody
+    # watching wanted the method. The planner's check is the factory's check (RULES 27): no counted result
+    # or no answers to the three questions = not an Episode.
+    if not (p.get("money") or p.get("names")):
+        say("an Episode is a RESULT story: 'money' (a sum he says) or 'names' (the thing he got) must not be empty "
+            "- a story whose turn is a feeling (happy, amazed, calm) is an ordinary clip, not an Episode")
+    _why = str(p.get("why_movie", ""))
+    for _q in ("RESULT:", "METHOD:", "WISH:"):
+        if _q not in _why:
+            say(f"why_movie must answer {_q} (PLANNING.md 'WHAT AN EPISODE IS': the result he got, how his mind / a "
+                "decision / a technique did it, why a stranger would want the audios after this story)")
+    if re.search(r"\b(prison|inmate|warden|jail|monk|guru)\b", str(p.get("title", "")) + " " + " ".join(map(str, p.get("hook") or [])), re.I):
+        say("never an Episode: prison life, monks, gurus (22 Nov) - write it as an ordinary clip or pick a result story")
     if not (p.get("keep") or (p.get("start_words") and p.get("end_words"))):
         say("give start_words + end_words, or keep [[first words, last words], ..]")
     sc = p["scenes"]
