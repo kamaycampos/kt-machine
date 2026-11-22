@@ -121,10 +121,15 @@ else:
                 _sp2.run([sys.executable, os.path.join(R.K, "kt_render.py"), key, "--apply", "--only", c["slug"]],
                          cwd=R.K, env=dict(os.environ, KT_LOOK=_yl, KT_OUT=_yd), timeout=3600)
                 _main = [f for f in glob.glob(os.path.join(_yd, "*.mp4")) if "__" not in os.path.basename(f)]
-                _cut = [f for f in glob.glob(os.path.join(_yd, "*__yt59.mp4"))]
-                _pick = (_cut or _main or [None])[0]
+                # 22 Nov 2026: THE WHOLE CLIP, UNDER ITS OWN NAME. This copy used to be saved as
+                # "__yt59" (and cut to 59 s when the clip was longer). The cloud poster never
+                # downloaded a "__yt59" file, so every Short from 20-22 Nov still went up in the wide
+                # look (read back from YouTube's own stored frames). It is now "__ytfull": the full
+                # length (YouTube has taken our full-length clips since 13 Sept), fetched by
+                # run_once.py and preferred by poster.youtube. Stories never look at this name.
+                _pick = (_main or [None])[0]
                 if _pick:
-                    shutil.copy(_pick, os.path.join(bdir, os.path.basename(hits[0])[:-4] + "__yt59.mp4"))
+                    shutil.copy(_pick, os.path.join(bdir, os.path.basename(hits[0])[:-4] + "__ytfull.mp4"))
                     print(f"youtube full-screen cut ({_yl}) made for {c['slug']}")
                 else:
                     print(f"youtube full-screen cut NOT made for {c['slug']} - YouTube gets the wide clip")

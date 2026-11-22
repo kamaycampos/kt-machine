@@ -707,10 +707,15 @@ def youtube(path, caption, public_url, clip=None):
     blocks outright. The identical file posts fine to Instagram, Facebook and
     TikTok, so the fix belongs here and nowhere else - one platform, one rule.
     """
-    yt = os.path.splitext(path)[0] + "__yt59" + os.path.splitext(path)[1]
-    if os.path.exists(yt):
-        path = yt
-    cover = os.path.splitext(path)[0] + "__thumb.jpg"
+    _main_path = path
+    # "__ytfull" = the same clip rendered full-screen for YouTube (22 Nov 2026; run_once.py
+    # fetches it beside the clip). "__yt59" is the old local-only 59-second cut.
+    for _sfx in ("__ytfull", "__yt59"):
+        yt = os.path.splitext(_main_path)[0] + _sfx + os.path.splitext(_main_path)[1]
+        if os.path.exists(yt) and os.path.getsize(yt) > 1_000_000:
+            path = yt
+            break
+    cover = os.path.splitext(_main_path)[0] + "__thumb.jpg"
     # THE DESIGNED COVER LIVES BESIDE THE CLIP IN THE RELEASE (13 Nov 2026). The cloud run only
     # ever downloaded the clip, so `cover` never existed here and YouTube chose its own frame.
     if (clip or {}).get("cover") and str(public_url).startswith("https://"):

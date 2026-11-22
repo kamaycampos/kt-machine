@@ -304,6 +304,21 @@ def main():
             except Exception as e:
                 log(f"  could not fetch: {e}")
                 continue
+        # YOUTUBE'S FULL-SCREEN COPY (22 Nov 2026). The factory stores "<clip>__ytfull.mp4" beside a
+        # wide-look clip; poster.youtube uses it only when it is on disk, and this run only ever
+        # downloaded the clip itself - so YouTube kept getting the wide look for three days after
+        # the "fix". Fetch it here; a clip without one (404) posts exactly as before.
+        _ytf = os.path.splitext(path)[0] + "__ytfull.mp4"
+        if not os.path.exists(_ytf):
+            import urllib.request
+            try:
+                urllib.request.urlretrieve(media_url(clip["file"]).replace(".mp4", "__ytfull.mp4"), _ytf)
+                log(f"  youtube full-screen copy fetched ({os.path.getsize(_ytf) / 1e6:.0f} MB)")
+            except Exception as e:
+                if os.path.exists(_ytf):
+                    os.remove(_ytf)
+                if "404" not in str(e):
+                    log(f"  youtube full-screen copy not fetched: {e}")
         result, links = poster.publish(
             clip, path, media_url(clip["file"]), only=engine.only_for(clip))
         if any(v == "posted" for v in (result or {}).values()):
