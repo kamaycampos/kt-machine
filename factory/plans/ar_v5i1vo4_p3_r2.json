@@ -1,0 +1,22 @@
+{
+ "source": "v5i1vo4.mp4",
+ "brand": "AR_UNDERTOWR2",
+ "test": false,
+ "note": "22 Nov 2026 - second-chance re-cut: edges moved onto the actual start/end words (in 880->882.5, out 967->962.5) to fix caption drift against the sound. Awakened Rise weekly agent.",
+ "clips": [
+  {
+   "slug": "THIS-ISNT-THEORY-HE-WAS-THERE",
+   "in": 882.5,
+   "out": 962.5,
+   "start_words": "These things are discussed",
+   "end_words": "That sounds pretty good",
+   "hook": [
+    "This isn't theory.",
+    "He was there."
+   ],
+   "send": "A friend who thinks Bilderberg is just an internet conspiracy word, because this is someone who says he actually sat in the room - unease and curiosity.",
+   "caption": "Bilderberg. Bohemian Grove. Skull and Bones. The Brotherhood.\n\nKevin says the real plan isn't guessed at by a podcast host reading headlines - it's discussed inside those rooms, and he was one of the people in them. Not a theory, his words: \"this is what it is.\"\n\nAnd the plan, on the surface, sounds almost noble: end starvation, end the billion people going to bed hungry, lift the parts of the world with no electricity and no hospital nearby.\n\nThat's the pitch. What it actually requires is where it gets uncomfortable.\n\nComment RISE and I'll send you what comes next.\n\n#brotherhood #secretsocieties #disclosure #hiddenhistory #awakening #kevintrudeau",
+   "retry_of": "ar_v5i1vo4_p3/THIS-ISNT-THEORY-HE-WAS-THERE"
+  }
+ ]
+}

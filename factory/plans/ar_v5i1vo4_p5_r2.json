@@ -1,0 +1,22 @@
+{
+ "source": "v5i1vo4.mp4",
+ "brand": "AR_RULEBOOKR2",
+ "test": false,
+ "note": "22 Nov 2026 - second-chance re-cut: edges moved to different sentence boundaries to re-time the captions against the sound. Awakened Rise weekly agent.",
+ "clips": [
+  {
+   "slug": "RELIGION-IS-FADING-ON-PURPOSE",
+   "in": 1731.1,
+   "out": 1822.4,
+   "start_words": "That doesn't sound too",
+   "end_words": "those religions are going down",
+   "hook": [
+    "Your faith is fading.",
+    "On purpose."
+   ],
+   "send": "A friend who quietly left the church years ago sends this, unsettled that the drift might not be an accident.",
+   "caption": "Fewer people call themselves Catholic, Baptist, Lutheran, any specific faith, every single year. You've probably felt it in your own family.\n\nHere's the angle almost nobody raises: religion has caused wars for as long as there's been religion. If fewer people identify with one, and intermarriage keeps blending households across every line that used to divide them, a whole category of conflict just stops mattering. Kevin's point isn't that this is evil. It's that it isn't an accident - it's a documented part of the plan he sat inside.\n\nComment RISE and I'll send you the rest of what's being engineered out of you.\n\n#brotherhood #disclosure #subconscious #awakening #consciousness #kevintrudeau",
+   "retry_of": "ar_v5i1vo4_p5/RELIGION-IS-FADING-ON-PURPOSE"
+  }
+ ]
+}

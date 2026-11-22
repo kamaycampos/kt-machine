@@ -1,0 +1,22 @@
+{
+ "source": "v5i1vo4.mp4",
+ "brand": "AR_VIBRATIONR2",
+ "test": false,
+ "note": "22 Nov 2026 - second-chance re-cut: out moved from 2652.11 to 2653.9 so the clip actually ends on 'control you' instead of cutting it off mid-phrase at 'want'. Awakened Rise weekly agent.",
+ "clips": [
+  {
+   "slug": "YOUR-OWN-WORDS-PROGRAM-YOUR-REALITY",
+   "in": 2609.54,
+   "out": 2653.9,
+   "start_words": "Let's keep you uneducated",
+   "end_words": "control you",
+   "hook": [
+    "Your own words",
+    "program your reality."
+   ],
+   "send": "Send this to someone who still says 'I'm just being realistic' about their own life - curiosity about what they've actually been programming.",
+   "caption": "There's a reason some people warn you to watch your mouth, and it's not just manners.\n\nKevin's claim: words aren't neutral labels, they're activation codes. Say 'I'm always broke' or 'nothing good happens to me' enough times and you're not describing your life, you're issuing instructions to it. He traces the idea back thousands of years to India, where every letter and sound in certain languages was treated as a vibration with its own frequency - a very old way of saying what modern self-help rediscovered: your words are building the thing you live inside of.\n\nComment RISE and I'll send you how to start speaking it differently.\n\n#subconscious #manifesting #consciousness #awakening #ancientwisdom #kevintrudeau",
+   "retry_of": "ar_v5i1vo4/YOUR-OWN-WORDS-PROGRAM-YOUR-REALITY"
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "source": "v68yges.mp4",
+ "brand": "AR_DEEPSTATER3",
+ "test": false,
+ "note": "22 Nov 2026 - second-chance re-cuts: YOU-CAN-DISAPPEAR-IN-MINUTES edges moved to different sentence boundaries to re-time captions against the sound; YOU-COMMIT-FELONIES-EVERY-DAY opened a sentence earlier and now ends on the first 'free and fair justice system' instead of the second, duplicate one, to fix the same drift. Awakened Rise weekly agent.",
+ "clips": [
+  {
+   "slug": "YOU-CAN-DISAPPEAR-IN-MINUTES",
+   "in": 1083.0,
+   "out": 1143.0,
+   "start_words": "But this is exactly",
+   "end_words": "not given access to anyone",
+   "hook": [
+    "You can disappear",
+    "in minutes."
+   ],
+   "caption": "A wealthy, legitimate businessman. A golden visa. Full legal protection, on paper.\n\nThen thirty agents ask the authorities where he is, and the answer comes back: he's not in our system. Not the police. Not the Ministry of Justice. Not immigration. Nobody can reach him \u2014 not because the paperwork is slow, but because the paperwork was never going to exist in the first place. You can be a person of real means, in a first-world country, and simply stop existing in the system in a matter of minutes.\n\nComment RISE and I'll send you the rest of this story.\n\n#deepstate #disclosure #awakening #consciousness #hiddenagenda #kevintrudeau",
+   "retry_of": "ar_v68yges/YOU-CAN-DISAPPEAR-IN-MINUTES",
+   "send": "A friend who thinks diplomatic immunity and visas mean real protection - unease at how fast that status can vanish."
+  },
+  {
+   "slug": "YOU-COMMIT-FELONIES-EVERY-DAY",
+   "in": 3443.0,
+   "out": 3546.1,
+   "start_words": "This is how it",
+   "end_words": "free and fair justice system",
+   "hook": [
+    "You commit felonies",
+    "every single day."
+   ],
+   "caption": "A Soviet prosecutor under Stalin had a saying that still runs the world: \"Show me the man, and I'll show you the crime.\" Not evidence first. The target first. The crime gets found after.\n\nHere's why that still works today: the average American commits three felonies a day without knowing it. The legal code is so vast that any person, picked at random, can be charged and convicted if someone decides to look closely enough. You're not safe because you're innocent. You're safe because nobody's looking yet.\n\nComment RISE and I'll send you how to actually understand your risk.\n\n#deepstate #disclosure #awakening #consciousness #hiddensystem #kevintrudeau",
+   "retry_of": "ar_v68yges/YOU-COMMIT-FELONIES-EVERY-DAY",
+   "send": "A friend who thinks 'I haven't done anything wrong' keeps them safe - unease at how thin that protection actually is."
+  }
+ ]
+}

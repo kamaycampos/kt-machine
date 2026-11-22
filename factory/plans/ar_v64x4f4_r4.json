@@ -1,0 +1,36 @@
+{
+ "source": "v64x4f4.mp4",
+ "brand": "AR_ONENESSR4",
+ "test": false,
+ "note": "22 Nov 2026 - second-chance re-cuts: both clips' edges moved onto different sentence boundaries to re-time captions against the sound. Awakened Rise weekly agent.",
+ "clips": [
+  {
+   "slug": "SPIRITUAL-HIGHS-ARE-IMITATION-CRAB",
+   "in": 2353.9,
+   "out": 2468.6,
+   "start_words": "It's a facade",
+   "end_words": "then you know what a fraud is",
+   "hook": [
+    "Your spiritual high",
+    "is imitation crab."
+   ],
+   "caption": "A waiter once recommended the crab at the hottest restaurant in Beverly Hills. One honest question later \u2014 is it real crab or imitation? \u2014 he admitted it was fake. Nobody could tell the difference, so why not charge full price for less.\n\nMost of what people call a spiritual experience works the same way. A retreat, a ceremony, a feeling after a session with someone \u2014 it can feel real without being real, and you have nothing to compare it to until you've actually tasted the true thing. Once you have, you know exactly what a fraud feels like.\n\nComment RISE and I'll send you what the real thing actually feels like.\n\n#awakening #consciousness #spirituality #subconscious #oneness #kevintrudeau",
+   "retry_of": "ar_v64x4f4/SPIRITUAL-HIGHS-ARE-IMITATION-CRAB",
+   "send": "A friend who keeps chasing the next retreat or ceremony for another spiritual high - half excitement, half the fear it's never been the real thing."
+  },
+  {
+   "slug": "A-DOG-WHISTLE-EXPOSES-YOUR-SENSES",
+   "in": 1014.4,
+   "out": 1095.0,
+   "start_words": "Our senses aren't that",
+   "end_words": "matter, energy, space, and time",
+   "hook": [
+    "A dog whistle",
+    "exposes your senses."
+   ],
+   "caption": "Blow a dog whistle and you hear nothing. The dog hears it perfectly. A bloodhound smells a hundred things you'll never notice. An eagle sees light you don't even know exists. None of that stops being real just because your five senses can't pick it up.\n\nThat's also what's actually happening when people describe 'another dimension' or a 'spiritual realm.' It's not a separate universe \u2014 it's the same physical world, just past the narrow slice your senses were built to catch. Nothing mystical about it. Just a frequency you haven't tuned into yet.\n\nComment RISE and I'll send you how to tune in.\n\n#frequency #consciousness #awakening #subconscious #manifestation #kevintrudeau",
+   "retry_of": "ar_v64x4f4/A-DOG-WHISTLE-EXPOSES-YOUR-SENSES",
+   "send": "A friend who dismisses anything 'spiritual' as fake - curiosity, since this reframes it as physics they haven't tuned into yet, not magic."
+  }
+ ]
+}

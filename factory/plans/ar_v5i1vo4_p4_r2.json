@@ -1,0 +1,52 @@
+{
+ "source": "v5i1vo4.mp4",
+ "brand": "AR_UNDERCURRENTR2",
+ "test": false,
+ "note": "22 Nov 2026 - second-chance re-cut: dropped the Atlanta-airport lead-in (it held the repeated 'didn't I didn't' words) and opened on the Switzerland $50,000 story instead, which the hook is actually about. Awakened Rise weekly agent.",
+ "clips": [
+  {
+   "slug": "HE-CARRIED-50000-CASH-NOW-ILLEGAL",
+   "in": 2265.5,
+   "out": 2330.74,
+   "start_words": "I remember when I was",
+   "end_words": "That's their plan",
+   "hook": [
+    "He carried $50,000",
+    "cash. Now illegal."
+   ],
+   "trial_hooks": [
+    [
+     "$50,000 in cash,",
+     "now simply confiscated."
+    ],
+    [
+     "A one-world currency",
+     "watches every purchase."
+    ],
+    [
+     "Cash isn't disappearing.",
+     "It's being banned."
+    ],
+    [
+     "Miss this,",
+     "and you're trackable forever."
+    ],
+    [
+     "Kevin lived this,",
+     "cash in hand."
+    ],
+    [
+     "Check your wallet.",
+     "It's going extinct."
+    ],
+    [
+     "They can deny",
+     "any purchase, anytime."
+    ]
+   ],
+   "send": "Sends it to the friend who thinks a cashless society is just convenience - unease at what it actually trades away.",
+   "caption": "Walk into the Atlanta airport today with nothing but cash in your pocket, and you can't buy anything. Not one register in the whole airport takes it anymore.\n\nKevin tells it from personal experience: walking out of federal prison with cash in hand, unable to spend a dollar of it at the airport. In Switzerland, he once withdrew $50,000 in notes and nobody blinked. Today, carrying that much cash there can get it legally confiscated.\n\nA cashless world sounds like convenience. It's also the only way every transaction you make can be tracked, approved, or denied.\n\nComment RISE and I'll send you what they call this plan officially.\n\n#disclosure #cbdc #globalists #hiddenagenda #wakeup #kevintrudeau",
+   "retry_of": "ar_v5i1vo4_p4/HE-CARRIED-50000-CASH-NOW-ILLEGAL"
+  }
+ ]
+}
