@@ -196,16 +196,41 @@ def check(mp4):
     # it in the two captions around the gap: deleted captions (YWIYC) and a dropped
     # "So I..." still fail exactly as before.
     burst_of = [bi for bi, (_a, _b, text) in enumerate(bursts) for _w in text.split()]
+    # THE SAME WORD, SPELT ANOTHER WAY, IS CAPTIONED (22 Nov 2026). GURU-JO-SO-SELLS-HYPNOSIS failed
+    # with timing median +0.03s, worst-10% 0.42s and 100% of words captioned, for one 1.6 s "hole":
+    # the order map only pairs words spelt identically, so where the clip's second whisper pass hears
+    # "the mess" and the caption reads "a mess", or "$1,000" against "thousand", the heard word has no
+    # pair and counts as unspoken-for. A heard word now also counts as captioned when the captions
+    # just around the gap (the one before it to the two after) hold that word or one within a letter
+    # or two of it. Deleted captions (16 Sept, five whole seconds) and a dropped "So I..." still fail:
+    # those words are in no caption nearby at all.
+    import difflib as _dl
+    _near_words = {}
+    def _words_around(k):
+        if k not in _near_words:
+            _near_words[k] = {norm(w) for bi in range(max(0, k - 1), min(len(bursts), k + 3))
+                              for w in bursts[bi][2].split() if norm(w)}
+        return _near_words[k]
     def captioned_near(hi, k):
         ci = h2c.get(hi)
-        return ci is not None and ci < len(burst_of) and burst_of[ci] in (k, k + 1)
+        if ci is not None and ci < len(burst_of) and burst_of[ci] in (k, k + 1):
+            return True
+        n = norm(heard[hi][2])
+        if not n:
+            return True
+        near = _words_around(k)
+        return n in near or any(_dl.SequenceMatcher(a=n, b=w).ratio() >= 0.8 for w in near if abs(len(w) - len(n)) <= 2)
     holes = []
     for k in range(len(bursts) - 1):
         a, b = bursts[k][1], bursts[k + 1][0]
-        if (b - a > 1.2 and speaking((a + b) / 2)
-                and any(a + 0.1 <= hs < b - 0.1 and said(w) and not captioned_near(hi, k)
-                        for hi, (hs, _he, w) in enumerate(heard))):
-            holes.append((round(a, 1), round(b, 1)))
+        if b - a > 1.2 and speaking((a + b) / 2):
+            # ONE SHORT WORD IS NOT A HOLE (22 Nov 2026): a lone "the" / "a" / "uh" the second pass hears
+            # in a pause is the transcripts disagreeing, not speech left without a caption. A hole is two
+            # uncaptioned words, or one of 4+ letters (the dropped "So I..." of 3 Oct still fails).
+            miss = [norm(w) for hi, (hs, _he, w) in enumerate(heard)
+                    if a + 0.1 <= hs < b - 0.1 and said(w) and not captioned_near(hi, k)]
+            if len(miss) >= 2 or any(len(m) >= 4 for m in miss):
+                holes.append((round(a, 1), round(b, 1)))
     cw = sum(len(t.split()) for _a, _b, t in bursts)
     cover = cw / max(1, len(heard))
     if holes or cover < 0.85:
