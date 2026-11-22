@@ -3910,5 +3910,67 @@
    }
   ],
   "posted": null
+ },
+ "KT_APERTURE__LISTING-PHOTOS-COST-3X-THE-OFFERS": {
+  "clip": "KT_APERTURE/01_LISTING-PHOTOS-COST-3X-THE-OFFERS_55s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_APERTURE__LISTING-PHOTOS-COST-3X-THE-OFFERS__V1.mp4",
+    "hook": [
+     "Bad photos cost",
+     "you thousands"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_APERTURE__LISTING-PHOTOS-COST-3X-THE-OFFERS__V2.mp4",
+    "hook": [
+     "Realtors ruin",
+     "their own listings"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_APERTURE__LISTING-PHOTOS-COST-3X-THE-OFFERS__V3.mp4",
+    "hook": [
+     "Same house, 3x",
+     "the offers"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_APERTURE__LISTING-PHOTOS-COST-3X-THE-OFFERS__V4.mp4",
+    "hook": [
+     "Your listing photos",
+     "lose you money"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_APERTURE__LISTING-PHOTOS-COST-3X-THE-OFFERS__V5.mp4",
+    "hook": [
+     "One Realtor doubled",
+     "his commission"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_APERTURE__LISTING-PHOTOS-COST-3X-THE-OFFERS__V6.mp4",
+    "hook": [
+     "Kevin Trudeau's fix",
+     "for bad listings"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_APERTURE__LISTING-PHOTOS-COST-3X-THE-OFFERS__V7.mp4",
+    "hook": [
+     "The $2,000 mistake",
+     "sellers never see"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }
