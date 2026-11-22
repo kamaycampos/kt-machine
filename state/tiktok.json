@@ -1,16 +1,26 @@
 {
- "at": "2026-11-22T19:57",
+ "at": "2026-11-22T23:04",
  "account": "what_do_you_wan7t",
  "profile": {
-  "follower_count": 397,
+  "follower_count": 399,
   "following_count": 2,
-  "likes_count": 8873,
-  "video_count": 112
+  "likes_count": 8903,
+  "video_count": 113
  },
  "videos": {
+  "KT_SURRENDER/01_THE-3-STEP-WAY-TO-LET-GO_89s.mp4": {
+   "id": "7711122621420539167",
+   "view_count": 62,
+   "like_count": 2,
+   "comment_count": 1,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7711122621420539167?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 89,
+   "posted": "2026-11-22T22:14"
+  },
   "KT_EPISODE/08_THE-HAPPIEST-INMATE_41s.mp4": {
    "id": "7711041779692260639",
-   "view_count": 49,
+   "view_count": 51,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -20,9 +30,9 @@
   },
   "KT_KNIFE/01_ONE-GINSU-AD-PAID-FOR-LIFE_162s.mp4": {
    "id": "7710965856741756191",
-   "view_count": 414,
-   "like_count": 28,
-   "comment_count": 0,
+   "view_count": 444,
+   "like_count": 31,
+   "comment_count": 2,
    "share_count": 0,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7710965856741756191?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 162,
@@ -30,8 +40,8 @@
   },
   "KT_VAULTR2R2R2/01_THE-FORBES-400-LIST-LIES_62s.mp4": {
    "id": "7710815851414310158",
-   "view_count": 464,
-   "like_count": 9,
+   "view_count": 494,
+   "like_count": 10,
    "comment_count": 0,
    "share_count": 2,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7710815851414310158?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -50,7 +60,7 @@
   },
   "KT_BELLAGIO/01_87500-SHOWED-UP-IN-BELLAGIO_51s.mp4": {
    "id": "7710451752587283743",
-   "view_count": 340,
+   "view_count": 343,
    "like_count": 29,
    "comment_count": 2,
    "share_count": 0,
@@ -70,7 +80,7 @@
   },
   "KT_DREAMWORLDR2/01_THE-1948-BOOK-GURUS-COPY_82s.mp4": {
    "id": "7710368198218075406",
-   "view_count": 443,
+   "view_count": 463,
    "like_count": 43,
    "comment_count": 0,
    "share_count": 3,
@@ -80,7 +90,7 @@
   },
   "KT_EPISODE/06_THE-BOWLING-ALLEY-SECRET_138s.mp4": {
    "id": "7710076296591707423",
-   "view_count": 363,
+   "view_count": 364,
    "like_count": 21,
    "comment_count": 0,
    "share_count": 1,
@@ -90,7 +100,7 @@
   },
   "KT_RUNWAY/02_2-BILLION-APP-NO-WIFI-OFFICE_110s.mp4": {
    "id": "7709963133414133023",
-   "view_count": 317,
+   "view_count": 318,
    "like_count": 17,
    "comment_count": 2,
    "share_count": 2,
@@ -120,8 +130,8 @@
   },
   "KT_IONSTORMO/01_NEGATIVE-IONS-GROW-YOUR-BRAIN_59s.mp4": {
    "id": "7709620031541316894",
-   "view_count": 2697,
-   "like_count": 215,
+   "view_count": 2713,
+   "like_count": 218,
    "comment_count": 4,
    "share_count": 17,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7709620031541316894?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -250,8 +260,8 @@
   },
   "KT_CENTURY/01_MILLIONAIRE-NEEDS-100-MILLION_122s.mp4": {
    "id": "7708240192460606751",
-   "view_count": 5045,
-   "like_count": 360,
+   "view_count": 5092,
+   "like_count": 366,
    "comment_count": 13,
    "share_count": 70,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708240192460606751?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -260,8 +270,8 @@
   },
   "KT_MIRAGE/01_MANIFEST-A-FERRARI-WITH-A-PHOTO_47s.mp4": {
    "id": "7708198574059736351",
-   "view_count": 11777,
-   "like_count": 1242,
+   "view_count": 11814,
+   "like_count": 1246,
    "comment_count": 15,
    "share_count": 55,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708198574059736351?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -270,8 +280,8 @@
   },
   "KT_VAULTWIDER2/01_FORBES-400-LIST-LIES-WIDE_62s.mp4": {
    "id": "7708152396463082765",
-   "view_count": 57617,
-   "like_count": 2373,
+   "view_count": 57737,
+   "like_count": 2378,
    "comment_count": 87,
    "share_count": 232,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708152396463082765?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -290,7 +300,7 @@
   },
   "KT_FORGER2/01_SAME-RECESSION-ONE-BANKRUPT-ONE-RICH_127s.mp4": {
    "id": "7707989412906306846",
-   "view_count": 2823,
+   "view_count": 2851,
    "like_count": 175,
    "comment_count": 6,
    "share_count": 69,
@@ -300,7 +310,7 @@
   },
   "KT_MASONRY/01_RICH-TOWN-ONLY-HAD-BUSINESS-OWNERS_87s.mp4": {
    "id": "7707879220852149535",
-   "view_count": 9331,
+   "view_count": 9357,
    "like_count": 161,
    "comment_count": 1,
    "share_count": 10,
@@ -340,7 +350,7 @@
   },
   "KT_FORGE/02_HENRY-FORD-DIDNT-INVENT-CARS_94s.mp4": {
    "id": "7707298482863770910",
-   "view_count": 2163,
+   "view_count": 2173,
    "like_count": 22,
    "comment_count": 0,
    "share_count": 1,
@@ -390,7 +400,7 @@
   },
   "KT_TIMBER/01_87500-IN-ONE-DAY_52s.mp4": {
    "id": "7707036868591865118",
-   "view_count": 1439,
+   "view_count": 1446,
    "like_count": 55,
    "comment_count": 0,
    "share_count": 2,
@@ -410,7 +420,7 @@
   },
   "KT_UNDERTOWR2R2R2/01_LIBERACE-WORST-PIANIST-RICHEST_64s.mp4": {
    "id": "7706884172110941454",
-   "view_count": 403,
+   "view_count": 404,
    "like_count": 22,
    "comment_count": 3,
    "share_count": 2,
@@ -530,7 +540,7 @@
   },
   "KT_BOOKSHELF/02_LIVING-ON-HALF-A-MILLION-A-WEEK_98s.mp4": {
    "id": "7705488201317715230",
-   "view_count": 444,
+   "view_count": 445,
    "like_count": 19,
    "comment_count": 2,
    "share_count": 1,
@@ -650,8 +660,8 @@
   },
   "KT_ADVERSITYR2R2/01_THE-BOOK-THAT-SOLD-50-MILLION-COPIES_62s.mp4": {
    "id": "7703549510210850079",
-   "view_count": 2407,
-   "like_count": 199,
+   "view_count": 2419,
+   "like_count": 201,
    "comment_count": 4,
    "share_count": 37,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7703549510210850079?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -890,7 +900,7 @@
   },
   "unmatched/7696919107832220959": {
    "id": "7696919107832220959",
-   "view_count": 30,
+   "view_count": 31,
    "like_count": 0,
    "comment_count": 0,
    "share_count": 0,
