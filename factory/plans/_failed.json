@@ -14745,6 +14745,96 @@
     "Your spiritual high",
     "is imitation crab."
    ]
+  },
+  "ar_v4wsipz_p4/HE-TAUGHT-MANIFESTING-THEN-CANCER": {
+   "plan": "ar_v4wsipz_p4",
+   "source": "v4wsipz.mp4",
+   "brand": "AR_UNSHAKEN",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_HE-TAUGHT-MANIFESTING-THEN-CANCER_61s.mp4` - word repeated after one: \"when she when\""
+   ],
+   "slug": "HE-TAUGHT-MANIFESTING-THEN-CANCER",
+   "in": 5616.0,
+   "out": 5676.0,
+   "start_words": "Jerry and Esther Hicks",
+   "end_words": "he can't not be afraid",
+   "hook": [
+    "He taught manifesting.",
+    "Cancer won anyway."
+   ]
+  },
+  "ar_v4wsipz_p4/A-PUNCH-LANDED-HE-FELT-NOTHING": {
+   "plan": "ar_v4wsipz_p4",
+   "source": "v4wsipz.mp4",
+   "brand": "AR_UNSHAKEN",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_A-PUNCH-LANDED-HE-FELT-NOTHING_51s.mp4` - opens mid-sentence on \"ball,\""
+   ],
+   "slug": "A-PUNCH-LANDED-HE-FELT-NOTHING",
+   "in": 1315.04,
+   "out": 1367.1,
+   "start_words": "qi ball, which is",
+   "end_words": "dramatic stress reduction",
+   "hook": [
+    "Your body can",
+    "block a punch."
+   ]
+  },
+  "ar_v5i1vo4_p4_r2/HE-CARRIED-50000-CASH-NOW-ILLEGAL": {
+   "plan": "ar_v5i1vo4_p4_r2",
+   "source": "v5i1vo4.mp4",
+   "brand": "AR_UNDERCURRENTR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_HE-CARRIED-50000-CASH-NOW-ILLEGAL_66s.mp4: [FAIL] 01_HE-CARRIED-50000-CASH-NOW-ILLEGAL_66s.mp4           17 captions vs the sound  median +0.00s  worst-10% 0.86s  | words captioned 100%"
+   ],
+   "slug": "HE-CARRIED-50000-CASH-NOW-ILLEGAL",
+   "in": 2265.5,
+   "out": 2330.74,
+   "start_words": "I remember when I was",
+   "end_words": "That's their plan",
+   "hook": [
+    "He carried $50,000",
+    "cash. Now illegal."
+   ]
+  },
+  "ar_v68yges_r3/YOU-CAN-DISAPPEAR-IN-MINUTES": {
+   "plan": "ar_v68yges_r3",
+   "source": "v68yges.mp4",
+   "brand": "AR_DEEPSTATER3",
+   "tries": 2,
+   "why": [
+    "FAIL 01_YOU-CAN-DISAPPEAR-IN-MINUTES_59s.mp4: ends off the planned words: plan ends 'not given access to anyone', clip ends 'him he given access to it'"
+   ],
+   "slug": "YOU-CAN-DISAPPEAR-IN-MINUTES",
+   "in": 1083.0,
+   "out": 1143.0,
+   "start_words": "But this is exactly",
+   "end_words": "not given access to anyone",
+   "hook": [
+    "You can disappear",
+    "in minutes."
+   ]
+  },
+  "ar_v68yges_r3/YOU-COMMIT-FELONIES-EVERY-DAY": {
+   "plan": "ar_v68yges_r3",
+   "source": "v68yges.mp4",
+   "brand": "AR_DEEPSTATER3",
+   "tries": 2,
+   "why": [
+    "FAIL 02_YOU-COMMIT-FELONIES-EVERY-DAY_105s.mp4: [FAIL] 02_YOU-COMMIT-FELONIES-EVERY-DAY_105s.mp4              14 captions vs the sound  median +0.11s  worst-10% 1.29s  | words captioned 98%  UNCAPTIONED SPEECH [(4.9, 8.0)]"
+   ],
+   "slug": "YOU-COMMIT-FELONIES-EVERY-DAY",
+   "in": 3443.0,
+   "out": 3546.1,
+   "start_words": "This is how it",
+   "end_words": "free and fair justice system",
+   "hook": [
+    "You commit felonies",
+    "every single day."
+   ]
   }
  },
  "attempts": {
@@ -14837,7 +14927,7 @@
   "ep_v4tz80x_p4": 2,
   "ep_v4y99ab_p3": 2,
   "ep_v4tz80x_p5": 2,
-  "ar_v5i1vo4_p4_r2": 1,
-  "ar_v68yges_r3": 1
+  "ar_v5i1vo4_p4_r2": 2,
+  "ar_v68yges_r3": 2
  }
 }
