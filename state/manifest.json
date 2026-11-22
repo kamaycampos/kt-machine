@@ -18377,14 +18377,27 @@
    "hook": "Why he was rich at fifteen",
    "bytes": 56703370,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-22T08:23",
    "cta_keyword": "BRAIN",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgC56k5jOt7/",
+    "youtube": "https://youtube.com/shorts/S0QdJ7wlezI"
+   },
+   "caption_at_post": "Kevin Trudeau says that even as a young teenager, he already knew people pulling in huge money - and he still couldn't do it himself.\n\nHis uncle, deep inside the secretive brotherhood that trained them both, told him the problem wasn't effort. It was an energetic block. So his uncle sat him down and ran a thirty-minute process on him to clear it.\n\nWithin a couple of weeks, Kevin says hundreds of thousands of dollars started coming in. He was fifteen years old.\n\nHe didn't call it luck. He called it a block removed.\n\nWhat's blocking you right now that has nothing to do with how hard you work?\n\n#kevintrudeau #mindset #wealthmindset #manifestation #successhabits #moneymindset",
+   "posted_at": "2026-11-22T08:26"
   },
   {
    "file": "KT_VAULTR2R2R2/01_THE-FORBES-400-LIST-LIES_62s.mp4",
