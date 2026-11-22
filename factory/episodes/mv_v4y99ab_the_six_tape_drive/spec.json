@@ -1,0 +1,103 @@
+{
+ "slug": "mv_v4y99ab_the_six_tape_drive",
+ "vid": "v4y99ab",
+ "t_in": 1858.5,
+ "t_out": 2002.5,
+ "keeps": [
+  [
+   67,
+   98
+  ],
+  [
+   204,
+   245
+  ],
+  [
+   385,
+   465
+  ]
+ ],
+ "scenes": [
+  {
+   "src": {
+    "gen": "A worn wooden nightstand in a small 1970s apartment bedroom at dawn, a chunky analog cassette tape player wired to a plug-in wall timer, grey pre-dawn light at the window",
+    "move": "the timer's dial clicks over and the cassette player's play button pops down as it switches on"
+   },
+   "from": 67,
+   "to": 74,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "Close view of a young man's head on a pillow in a dim 1970s bedroom, eyes still closed, early morning light creeping through curtains, a small cassette player glowing on the nightstand beside him",
+    "move": "his eyes slowly begin to open as he stirs toward waking"
+   },
+   "from": 87,
+   "to": 94,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A man in 1970s clothing getting into the driver's seat of an old sedan in an apartment parking lot at sunrise, carrying a bulky portable cassette player in one hand",
+    "move": "he sets the cassette player down on the passenger seat beside him and starts the engine"
+   },
+   "from": 204,
+   "to": 220,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "Inside an old car driving down a suburban street at sunrise, a portable cassette player sitting on the passenger seat with its reels turning, the driver's hands on the wheel",
+    "move": "the cassette player's spools turn steadily as the car moves past storefronts"
+   },
+   "from": 235,
+   "to": 245,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "The same old car driving past a glowing neon restaurant sign at night on a city street, warm lights reflecting on the wet road",
+    "move": "the car slows and its headlights sweep across the restaurant's neon sign"
+   },
+   "from": 385,
+   "to": 396,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A close view from the passenger seat of six cassette tapes lined up neatly in a row on the car seat, a highway stretching ahead through the windshield at dusk",
+    "move": "a hand reaches over and flips the last cassette tape over"
+   },
+   "from": 458,
+   "to": 465,
+   "start": 0.1
+  }
+ ],
+ "voices": {
+  "463": "N:gold",
+  "464": "N:gold",
+  "465": "N:gold"
+ },
+ "join": [
+  [
+   463,
+   465
+  ]
+ ],
+ "fix": {},
+ "tighten": 0.85,
+ "cap_y": 800,
+ "end_card": "end_kamay.png",
+ "end_secs": 4.0,
+ "music_db": -27,
+ "fx": false,
+ "fx_db": -31,
+ "post": {
+  "title": "The Six Tape Drive"
+ },
+ "title_top": {
+  "tag": "EPISODE 10",
+  "line": "The Six Tape Drive"
+ },
+ "big_from": 460
+}
