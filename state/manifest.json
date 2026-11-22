@@ -17890,14 +17890,27 @@
    "hook": "14-hour days built every fortune",
    "bytes": 118509184,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-22T00:22",
    "cta_keyword": "MONEY",
    "cta_variant": 7,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgCC_iyEUcv/",
+    "youtube": "https://youtube.com/shorts/t3u1g3gd62o"
+   },
+   "caption_at_post": "Kevin Trudeau says most people copy success backwards.\n\nThey watch a millionaire today - relaxed, unhurried, fully in control - and copy that version of them. Wrong move. That's not how the money got made.\n\nCopy how they acted when they were broke and just starting out instead: the 14, 15, 16-hour days, seven days a week, for years, before any of it got easy.\n\nA plane needs full throttle just to leave the runway. Once it's cruising, the throttle pulls back. Confuse the two and you'll spend your life copying the cruise, wondering why you never take off.\n\nAre you copying someone's grind, or just their lifestyle?\n\n#kevintrudeau #successhabits #wealthmindset #hustle #moneymindset #richmindset",
+   "posted_at": "2026-11-22T00:28"
   },
   {
    "file": "AR_WITNESSR2/01_THEY-PREDICTED-BILLIONS-DEAD_162s.mp4",
