@@ -13,7 +13,7 @@ Per 1,000 Instagram views. A shape needs 4 clips to be scored. Read this before 
 
 | shape | clips | median views | comments | shares | saves | all actions |
 |---|---|---|---|---|---|---|
-| keyword first | 9 | 184 | 7.7 | 3.6 | 13.1 | **24.4** |
+| keyword first | 9 | 190 | 7.6 | 3.5 | 12.8 | **23.8** |
 | 'Kevin Trudeau says' first | 54 | 241 | 1.3 | 6.2 | 16.0 | **23.5** |
 | story first | 135 | 227 | 1.2 | 5.1 | 15.3 | **21.5** |
 
@@ -21,8 +21,8 @@ Per 1,000 Instagram views. A shape needs 4 clips to be scored. Read this before 
 
 | shape | clips | median views | comments | shares | saves | all actions |
 |---|---|---|---|---|---|---|
-| WISH | 19 | 231 | 5.1 | 5.2 | 21.9 | **32.2** |
-| BRAIN | 79 | 230 | 1.4 | 5.6 | 15.7 | **22.7** |
+| WISH | 19 | 231 | 5.0 | 5.2 | 21.9 | **32.2** |
+| BRAIN | 79 | 231 | 1.4 | 5.6 | 15.7 | **22.7** |
 | MONEY | 94 | 227 | 0.8 | 5.3 | 14.2 | **20.2** |
 | KT | 4 | 277 | 2.1 | 1.0 | 16.2 | **19.4** |
 | - | 5 | 173 | 0.0 | 6.0 | 12.0 | **17.9** |
