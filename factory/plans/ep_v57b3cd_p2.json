@@ -1,0 +1,25 @@
+{
+ "source": "v57b3cd.mp4",
+ "brand": "KT_PASSIVE",
+ "test": false,
+ "note": "23 Nov 2026 - second pass on 'The Secrets to Mindfulness and Making Money | The Kevin Trudeau Show | Ep. 31' (Rumble v57b3cd; first pass ep_v57b3cd.json/KT_ANCHOR cut the meditation segment, 0-32min). A new arc from the unused money segment past 32min: the rest of that stretch (past this clip's close) is the hippocampus/secret-society claim and the Global Information Network membership pitch - skipped, a sales pitch for a paid program. Only one clean arc here, not 6-9: the usable non-promotional minutes past the first pass's segment support just this one distinct lesson. Weekly agent.",
+ "clips": [
+  {"slug": "100-MILLION-IS-WHERE-IT-STARTS",
+   "in": 2108.64, "out": 2257.12,
+   "start_words": "Somebody has $100 million dollars",
+   "end_words": "without you doing anything",
+   "hook": ["A million dollars", "landed every month"],
+   "trial_hooks": [
+     ["$100 million", "is where wealth starts"],
+     ["Being a millionaire", "means nothing today"],
+     ["$87,500 one day", "$24,000 the next"],
+     ["Your hours", "his money never stopped"],
+     ["Kevin Trudeau's banker", "called with $87,500"],
+     ["Kevin Trudeau's number:", "$1,000,000 a month"],
+     ["Zero work.", "$1,000,000 landed anyway"]
+   ],
+   "caption": "Comment \"MONEY\" and I'll send you Kevin's Your Wish Is Your Command audios, free.\n\nKevin Trudeau says calling yourself a millionaire means nothing today. Real freedom starts at $100 million in assets - enough to pay roughly $1,000,000 a month without working a day.\n\nHe'd call his banker from anywhere in the world just to hear the number: $87,500 one day, $24,000 the next, landing in his account while he did nothing else.\n\nThat's the real definition of wealth - money that keeps arriving whether you show up or not.\n\nWhat would your life look like if the money never stopped?\n\n#kevintrudeau #financialfreedom #millionairemindset #passiveincome #wealthmindset #yourwishisyourcommand",
+   "send": "A friend stuck in a 9-to-5 sends this to the friend chasing a raise: proof that real wealth means the money never stops, not that the salary got bigger. Emotion: awe, with a pinch of anxiety about still trading hours for pay."
+  }
+ ]
+}
