@@ -18671,7 +18671,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-24T17:12",
+   "cta_keyword": "RISE",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_LIBERATEDR3/01_HE-LOVED-A-COAT-THEN-LOST-IT_78s.mp4",
@@ -18681,7 +18685,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-24T11:57",
+   "cta_keyword": "YES",
+   "cta_variant": 5,
+   "cta_kind": "question"
   },
   {
    "file": "AR_PURPOSER2/01_SHOW-ME-WHERE-GOD-IS-NOT_48s.mp4",
@@ -18691,7 +18699,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-23T17:04",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_PURPOSER2/02_THE-PERFECT-HAND_48s.mp4",
@@ -18701,7 +18713,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-24T08:29",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_UNELECTED/01_HE-WAS-BROTHERHOOD_53s.mp4",
@@ -18711,7 +18727,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-24T10:41",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_UNSHAKENR2/01_A-PUNCH-LANDED-HE-FELT-NOTHING_60s.mp4",
@@ -18721,7 +18741,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-24T09:31",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "AR_UNSHAKENR2/02_HE-TAUGHT-MANIFESTING-THEN-CANCER_40s.mp4",
@@ -18731,7 +18755,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-23T19:28",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "KT_FORECAST/01_28-YEARS-OLD-20-MILLION-CASH_98s.mp4",
@@ -18742,7 +18770,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-24T07:47",
+   "cta_keyword": "MONEY",
+   "cta_variant": 9,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_HORIZON/01_50000-A-WEEK-AND-ZERO-WORK_70s.mp4",
@@ -18754,7 +18786,10 @@
    "media_tag": "media2",
    "cover": true,
    "cta_kind": "offer",
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-23T19:36",
+   "cta_keyword": "WISH",
+   "cta_variant": 8
   },
   {
    "file": "KT_SIGNAL/01_MARK-CUBANS-140K-CARD-WASNT-DECLINED_155s.mp4",
@@ -18765,7 +18800,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-24T09:05",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 10,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_SIGNAL/02_70-PERCENT-OF-10-MILLION-HOMES-ARE-CASH_47s.mp4",
@@ -18776,7 +18815,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-23T16:34",
+   "cta_keyword": "MONEY",
+   "cta_variant": 7,
+   "cta_kind": "offer"
   }
  ]
 }
