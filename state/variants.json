@@ -3979,5 +3979,67 @@
    }
   ],
   "posted": null
+ },
+ "KT_MANTRA__GURU-JO-SO-SELLS-HYPNOSIS": {
+  "clip": "KT_MANTRA/01_GURU-JO-SO-SELLS-HYPNOSIS_90s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_MANTRA__GURU-JO-SO-SELLS-HYPNOSIS__V1.mp4",
+    "hook": [
+     "A $1,000 nap",
+     "he calls meditation"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_MANTRA__GURU-JO-SO-SELLS-HYPNOSIS__V2.mp4",
+    "hook": [
+     "Fake gurus sell",
+     "you hypnosis"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_MANTRA__GURU-JO-SO-SELLS-HYPNOSIS__V3.mp4",
+    "hook": [
+     "$500 or $1,000",
+     "same fake trick"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_MANTRA__GURU-JO-SO-SELLS-HYPNOSIS__V4.mp4",
+    "hook": [
+     "Your guided meditation",
+     "costs you money"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_MANTRA__GURU-JO-SO-SELLS-HYPNOSIS__V5.mp4",
+    "hook": [
+     "One guru charged",
+     "$1,000 to count"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_MANTRA__GURU-JO-SO-SELLS-HYPNOSIS__V6.mp4",
+    "hook": [
+     "Kevin Trudeau exposes",
+     "the meditation scam"
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_MANTRA__GURU-JO-SO-SELLS-HYPNOSIS__V7.mp4",
+    "hook": [
+     "Help yourself first,",
+     "you're the mess"
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }
