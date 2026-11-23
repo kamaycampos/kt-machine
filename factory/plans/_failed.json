@@ -14835,6 +14835,114 @@
     "You commit felonies",
     "every single day."
    ]
+  },
+  "ar_v4wsipz_r3/250000-DOLLAR-ROLEX-HE-LET-GO": {
+   "plan": "ar_v4wsipz_r3",
+   "source": "v4wsipz.mp4",
+   "brand": "AR_BREATHCODER3",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_250000-DOLLAR-ROLEX-HE-LET-GO_175s.mp4` - ends mid-thought on \"to release it\"; phrase scrambled around \"around it cost around\""
+   ],
+   "slug": "250000-DOLLAR-ROLEX-HE-LET-GO",
+   "in": 5394.0,
+   "out": 5570.0,
+   "start_words": "I had a gold diamond Rolex watch",
+   "end_words": "I had to release it",
+   "hook": [
+    "$250,000 Rolex.",
+    "He chose losing it."
+   ]
+  },
+  "ar_v68yges_r4/YOU-CAN-DISAPPEAR-IN-MINUTES": {
+   "plan": "ar_v68yges_r4",
+   "source": "v68yges.mp4",
+   "brand": "AR_DEEPSTATER4",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_YOU-CAN-DISAPPEAR-IN-MINUTES_57s.mp4` - the spoken word was on screen in only 6 of 11 moments"
+   ],
+   "slug": "YOU-CAN-DISAPPEAR-IN-MINUTES",
+   "in": 1083.0,
+   "out": 1140.0,
+   "start_words": "But this is exactly",
+   "end_words": "Nobody can talk to him",
+   "hook": [
+    "You can disappear",
+    "in minutes."
+   ]
+  },
+  "ar_v68yges_r4/YOU-COMMIT-FELONIES-EVERY-DAY": {
+   "plan": "ar_v68yges_r4",
+   "source": "v68yges.mp4",
+   "brand": "AR_DEEPSTATER4",
+   "tries": 3,
+   "why": [
+    "FAIL 02_YOU-COMMIT-FELONIES-EVERY-DAY_98s.mp4: [FAIL] 02_YOU-COMMIT-FELONIES-EVERY-DAY_98s.mp4               19 captions vs the sound  median +0.01s  worst-10% 1.08s  | words captioned 102%"
+   ],
+   "slug": "YOU-COMMIT-FELONIES-EVERY-DAY",
+   "in": 3451.0,
+   "out": 3546.1,
+   "start_words": "And the reason it works",
+   "end_words": "free and fair justice system",
+   "hook": [
+    "You commit felonies",
+    "every single day."
+   ]
+  },
+  "ep_v56da5e_p2/ONE-WEEK-LATE-30-MILLION-GONE": {
+   "plan": "ep_v56da5e_p2",
+   "source": "v56da5e.mp4",
+   "brand": "KT_HORIZON",
+   "tries": 1,
+   "why": [
+    "FAIL 02_ONE-WEEK-LATE-30-MILLION-GONE_189s.mp4: ends off the planned words: plan ends 'what you asked for', clip ends 'you get what you ask for'"
+   ],
+   "slug": "ONE-WEEK-LATE-30-MILLION-GONE",
+   "in": 3428.5,
+   "out": 3617.5,
+   "start_words": "Hey, Bobby, sorry, but",
+   "end_words": "what you asked for",
+   "hook": [
+    "$100,000 landed.",
+    "Then $450 million more"
+   ]
+  },
+  "ep_v57b3cd_p2/100-MILLION-IS-WHERE-IT-STARTS": {
+   "plan": "ep_v57b3cd_p2",
+   "source": "v57b3cd.mp4",
+   "brand": "KT_PASSIVE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_100-MILLION-IS-WHERE-IT-STARTS_142s.mp4` - phrase scrambled around \"don't work you don't\""
+   ],
+   "slug": "100-MILLION-IS-WHERE-IT-STARTS",
+   "in": 2108.64,
+   "out": 2257.12,
+   "start_words": "Somebody has $100 million dollars",
+   "end_words": "without you doing anything",
+   "hook": [
+    "A million dollars",
+    "landed every month"
+   ]
+  },
+  "ep_v6c74p7_p2/THE-TRASH-TEST-FOR-YOUR-MINDSET": {
+   "plan": "ep_v6c74p7_p2",
+   "source": "v6c74p7.mp4",
+   "brand": "KT_FORECAST",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_THE-TRASH-TEST-FOR-YOUR-MINDSET_95s.mp4` - phrase scrambled around \"trash overflowing the trash\""
+   ],
+   "slug": "THE-TRASH-TEST-FOR-YOUR-MINDSET",
+   "in": 1885.0,
+   "out": 1981.0,
+   "start_words": "Most people don't do",
+   "end_words": "have to be told what to do",
+   "hook": [
+    "The trash test",
+    "exposes your mindset"
+   ]
   }
  },
  "attempts": {
@@ -14929,6 +15037,7 @@
   "ep_v4tz80x_p5": 2,
   "ar_v5i1vo4_p4_r2": 2,
   "ar_v68yges_r3": 2,
-  "ep_v4tz80x_p6": 1
+  "ep_v4tz80x_p6": 1,
+  "ep_v5hsmvp_p2": 1
  }
 }
