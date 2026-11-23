@@ -18812,14 +18812,27 @@
    "hook": "70% of $10M homes paid cash",
    "bytes": 43505159,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-23T16:34",
    "cta_keyword": "MONEY",
    "cta_variant": 7,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgGYRsplFE7/",
+    "youtube": "https://youtube.com/shorts/FeoiFEuUXL8"
+   },
+   "caption_at_post": "Comment \"MONEY\" and I'll send you Kevin Trudeau's Your Wish Is Your Command audios, free.\n\nKevin Trudeau says over 70% of California's $10 million-plus homes are bought in straight cash, no mortgage. The rich who do borrow don't take a loan to buy the house - they buy it outright, then open a line of credit against the equity instead.\n\nCars work the opposite way: pay cash or lease, never finance, because a new car loses 30% of its value in year one. A house can gain value. A car never does.\n\nSame principle twice: don't go into debt for something that's losing value.\n\nWhich one are you getting backwards - the car or the house?\n\n#kevintrudeau #realestate #wealthmindset #milliondollarhouse #personalfinance #yourwishisyourcommand",
+   "posted_at": "2026-11-23T16:49"
   }
  ]
 }
