@@ -645,11 +645,15 @@ def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
         _first = next((l for l in body if l.strip()), "")
         if "comment" not in _first.lower():
             _v = variant if isinstance(variant, int) else 0
+            # NO PUBLIC FIGURE IN THE PROMOTION LINE (23 Nov 2026). KT's Account Status: a post was removed on
+            # 25 Sep for "may use a celebrity, public figure or brand to promote something without permission",
+            # and since then the profile is not recommended to non-followers (reach 165K -> 34K that fortnight).
+            # The ask line names the gift, never Kevin: a second strike of that kind would extend the limit.
             _lead = (
-                f"Comment {kw} and I\u2019ll send you Kevin Trudeau\u2019s 14 Your Wish Is Your Command audios. Free.",
-                f"Want the how behind this? Comment {kw} and Kevin\u2019s 14 free audios land in your messages.",
-                f"Kevin teaches the method in 14 free audios. Comment {kw} and I\u2019ll send them to you.",
-                f"This is one piece of it. Comment {kw} for Kevin\u2019s 14 Your Wish Is Your Command audios, free.",
+                f"Comment {kw} and I\u2019ll send you the 14 Your Wish Is Your Command audios. Free.",
+                f"Want the how behind this? Comment {kw} and 14 free audios land in your messages.",
+                f"The full method is in 14 free audios. Comment {kw} and I\u2019ll send them to you.",
+                f"This is one piece of it. Comment {kw} for the 14 Your Wish Is Your Command audios, free.",
             )[_v % 4]
             out = [_lead, ""] + out
     if tags:
