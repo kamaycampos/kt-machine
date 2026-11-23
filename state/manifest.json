@@ -18129,9 +18129,9 @@
    "done": false,
    "status": {
     "facebook": "off for this account",
+    "instagram": "posted",
     "youtube": "posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post",
-    "instagram": "yours to post with Instagram music until 21:00 - after that it posts by itself, voice only"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "media_tag": "media2",
    "cover": true,
@@ -18153,12 +18153,14 @@
    "scheduled_at": "2026-11-22T12:30",
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/w2902Fyru5c"
+    "youtube": "https://youtube.com/shorts/w2902Fyru5c",
+    "instagram": "https://www.instagram.com/reel/DgDRHCxtON_/"
    },
    "ig_hand_from": "2026-11-22T17:50:04",
    "ig_hand_due": "2026-11-22T21:00",
    "caption_at_post": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says he spent years in prison for refusing to stop talking about his own books - held in contempt, sentenced to 10 years for exercising what he believed were his constitutional rights.\n\nOne day, walking across the compound with a thousand other inmates around him, the warden stopped him. The warden said he'd run the Bureau of Prisons for 35 years and had never once seen an inmate who was actually happy to be there.\n\nKevin says he had one answer for him - and it's the part that stayed with the warden long after.\n\nEpisode 8: The Happiest Inmate.\n\nThe 14 audios are Kevin teaching the mind techniques that keep you steady no matter what's happening around you. Recorded live at a private event in the Alps.\n\nComment \"WISH\" if you want them.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #mindset #happiness #prison #manifestation #yourwishisyourcommand",
-   "posted_at": "2026-11-22T12:50"
+   "posted_at": "2026-11-22T21:04",
+   "ig_hand_done": true
   },
   {
    "file": "AR_CASTE/01_NINETY-PERCENT-ARE-BUILT-TO-FOLLOW_129s.mp4",
