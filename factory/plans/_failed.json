@@ -14943,6 +14943,60 @@
     "The trash test",
     "exposes your mindset"
    ]
+  },
+  "ep_v5hsmvp_p2/YOUR-5-FRIENDS-SET-YOUR-INCOME": {
+   "plan": "ep_v5hsmvp_p2",
+   "source": "v5hsmvp.mp4",
+   "brand": "KT_RELAY",
+   "tries": 1,
+   "why": [
+    "FAIL 01_YOUR-5-FRIENDS-SET-YOUR-INCOME_160s.mp4: not Kevin - his face in only 0 of 8 frames with a face"
+   ],
+   "slug": "YOUR-5-FRIENDS-SET-YOUR-INCOME",
+   "in": 1364.2,
+   "out": 1525.0,
+   "start_words": "Aristotle Onassis was arguably",
+   "end_words": "the key is association",
+   "hook": [
+    "Your 5 friends",
+    "decide your income"
+   ]
+  },
+  "ep_v5hsmvp_p2/1-50-A-WEEK-300-BILLION-GIVEN": {
+   "plan": "ep_v5hsmvp_p2",
+   "source": "v5hsmvp.mp4",
+   "brand": "KT_RELAY",
+   "tries": 1,
+   "why": [
+    "FAIL 02_1-50-A-WEEK-300-BILLION-GIVEN_64s.mp4: not Kevin - his face in only 0 of 8 frames with a face"
+   ],
+   "slug": "1-50-A-WEEK-300-BILLION-GIVEN",
+   "in": 3021.16,
+   "out": 3085.92,
+   "start_words": "J.D. Rockefeller, the richest",
+   "end_words": "is a renewable resource",
+   "hook": [
+    "$1.50 a week.",
+    "Still tithed 10%"
+   ]
+  },
+  "ep_v5hsmvp_p2/WHAT-HE-MANIFESTED-FOUND-HIM-FIRST": {
+   "plan": "ep_v5hsmvp_p2",
+   "source": "v5hsmvp.mp4",
+   "brand": "KT_RELAY",
+   "tries": 1,
+   "why": [
+    "FAIL 01_WHAT-HE-MANIFESTED-FOUND-HIM-FIRST_64s.mp4: not Kevin - his face in only 2 of 8 frames with a face"
+   ],
+   "slug": "WHAT-HE-MANIFESTED-FOUND-HIM-FIRST",
+   "in": 824.44,
+   "out": 889.48,
+   "start_words": "One of the things",
+   "end_words": "can happen to people",
+   "hook": [
+    "What he manifested",
+    "found him first"
+   ]
   }
  },
  "attempts": {
@@ -15038,6 +15092,6 @@
   "ar_v5i1vo4_p4_r2": 2,
   "ar_v68yges_r3": 2,
   "ep_v4tz80x_p6": 1,
-  "ep_v5hsmvp_p2": 1
+  "ep_v5hsmvp_p2": 2
  }
 }
