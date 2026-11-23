@@ -1,0 +1,30 @@
+{
+ "source": "v68yges.mp4",
+ "brand": "AR_DEEPSTATER4",
+ "test": false,
+ "note": "23 Nov 2026 - second chance re-cut (4th try on this episode's retries) of 'Insider Proof The Deep State Controls Everything' (Rumble v68yges), per AR_PLANNING.md 2c. YOU-CAN-DISAPPEAR-IN-MINUTES: the plan's end_words ('not given access to anyone') kept landing on a garbled match at build time. Moved the ending one clause earlier to an unambiguous sentence end, 'Nobody can talk to him', which is the same beat without the fragile phrase. YOU-COMMIT-FELONIES-EVERY-DAY: the flagged UNCAPTIONED SPEECH sat a few seconds into the old cut, right at the tail of 'This is how it works around the world.' Moved the start past that short pause to the next sentence, 'And the reason it works...', same ending as before.",
+ "clips": [
+  {
+   "slug": "YOU-CAN-DISAPPEAR-IN-MINUTES",
+   "retry_of": "ar_v68yges_r3/YOU-CAN-DISAPPEAR-IN-MINUTES",
+   "in": 1083.0,
+   "out": 1140.0,
+   "start_words": "But this is exactly",
+   "end_words": "Nobody can talk to him",
+   "hook": ["You can disappear", "in minutes."],
+   "send": "A friend who thinks diplomatic immunity and visas mean real protection - unease at how fast that status can vanish.",
+   "caption": "A wealthy, legitimate businessman. A golden visa. Full legal protection, on paper.\n\nThen thirty agents ask the authorities where he is, and the answer comes back: he's not in our system. Not the police. Not the Ministry of Justice. Not immigration. Nobody can reach him — not because the paperwork is slow, but because the paperwork was never going to exist in the first place. You can be a person of real means, in a first-world country, and simply stop existing in the system in a matter of minutes.\n\nComment RISE and I'll send you the rest of this story.\n\n#deepstate #disclosure #awakening #consciousness #hiddenagenda #kevintrudeau"
+  },
+  {
+   "slug": "YOU-COMMIT-FELONIES-EVERY-DAY",
+   "retry_of": "ar_v68yges_r3/YOU-COMMIT-FELONIES-EVERY-DAY",
+   "in": 3451.0,
+   "out": 3546.1,
+   "start_words": "And the reason it works",
+   "end_words": "free and fair justice system",
+   "hook": ["You commit felonies", "every single day."],
+   "send": "A friend who thinks 'I haven't done anything wrong' keeps them safe - unease at how thin that protection actually is.",
+   "caption": "A Soviet prosecutor under Stalin had a saying that still runs the world: \"Show me the man, and I'll show you the crime.\" Not evidence first. The target first. The crime gets found after.\n\nHere's why that still works today: the average American commits three felonies a day without knowing it. The legal code is so vast that any person, picked at random, can be charged and convicted if someone decides to look closely enough. You're not safe because you're innocent. You're safe because nobody's looking yet.\n\nComment RISE and I'll send you how to actually understand your risk.\n\n#deepstate #disclosure #awakening #consciousness #hiddensystem #kevintrudeau"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "source": "v4wsipz.mp4",
+ "brand": "AR_LIBERATEDR3",
+ "test": false,
+ "note": "23 Nov 2026 - second chance re-cut (3rd try) of 'Your Breathing Is Making You Sick' (Rumble v4wsipz), per AR_PLANNING.md 2c. HE-LOVED-A-COAT-THEN-LOST-IT: the prior cut (ar_v4wsipz_p3_r2) opened mid-story on 'And I loved this coat' and failed caption coverage (word on screen in only 8 of 12 moments). Moved the start back to the true sentence start, 'I bought this gorgeous leather overcoat' - a different, cleaner boundary with the full setup (handmade in Italy, $25,000) now spoken inside the clip instead of only in the caption. Kept the same payoff ending. Skipped HE-WROTE-THIS-NEXT-TO-A-MURDERER (same failed plan, tries 2/last chance): its flagged UNCAPTIONED SPEECH sits in the ~4s pause between 'This can happen to you' and 'I wrote that when I was in solitary confinement' - cutting before the pause drops the prison/murderer payoff the hook pays on, and starting after it leaves no antecedent for 'that' and too little runway; no edge move fixes it, so per AR_PLANNING.md this one is left unplanned.",
+ "clips": [
+  {
+   "slug": "HE-LOVED-A-COAT-THEN-LOST-IT",
+   "retry_of": "ar_v4wsipz_p3_r2/HE-LOVED-A-COAT-THEN-LOST-IT",
+   "in": 5311.92,
+   "out": 5393.6,
+   "start_words": "I bought this gorgeous leather overcoat",
+   "end_words": "had come upon me",
+   "hook": ["He feared losing", "it. He did."],
+   "send": "Someone sends this to the friend who's terrified of losing the one nice thing they own - unease at hearing the fear itself might be the problem.",
+   "caption": "He bought a leather overcoat, handmade in Italy, for about $25,000 back in the nineties. He loved it so much he was afraid to wear it - worried about a scratch, a stain, a tear every time he put it on.\n\nHe wore it to dinner anyway, hung it on the coat rack by the door, and sat down to eat. When he got up to leave, it was gone. Stolen, right out of the restaurant.\n\nHis own words: what I feared most had come upon me. Not bad luck - the exact thing his attention had been locked onto the whole time.\n\nComment RISE and I'll send you how to stop feeding a fear your full attention.\n\n#subconscious #manifestation #awakening #innerwork #consciousness #kevintrudeau"
+  }
+ ]
+}

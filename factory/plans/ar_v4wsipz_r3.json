@@ -1,0 +1,19 @@
+{
+ "source": "v4wsipz.mp4",
+ "brand": "AR_BREATHCODER3",
+ "test": false,
+ "note": "23 Nov 2026 - second chance re-cut (3rd try) of 'Your Breathing Is Making You Sick' (Rumble v4wsipz), per AR_PLANNING.md 2c. 250000-DOLLAR-ROLEX-HE-LET-GO (tries 2/last chance): the prior cut ran on to 'becomes like an appendage' and still ended mid-thought. Re-found the edges at the word level - same open (the $250,000 detail the hook pays on), but now closes on 'I had to release it', the actual sentence-end payoff a few seconds earlier than the old ending, which avoids both the mid-thought cut and the earlier 'ends mid-thought' failure. Caption's last paragraph rewritten to match (it no longer reaches the 'appendage' simile, which now falls just outside the clip).",
+ "clips": [
+  {
+   "slug": "250000-DOLLAR-ROLEX-HE-LET-GO",
+   "retry_of": "ar_v4wsipz_r2/250000-DOLLAR-ROLEX-HE-LET-GO",
+   "in": 5394.0,
+   "out": 5570.0,
+   "start_words": "I had a gold diamond Rolex watch",
+   "end_words": "I had to release it",
+   "hook": ["$250,000 Rolex.", "He chose losing it."],
+   "send": "A friend who panics every time something expensive gets scratched or lost, because losing a $250,000 watch taught him the one lesson that actually set him free - relief.",
+   "caption": "He bought a watch covered in gold and diamonds for about $250,000. He was so afraid of damaging it that it consumed his attention for months.\n\nOne afternoon at a Chicago pool hall, stressed and trying to clear his head, he took the watch off to wash the chalk from his hands - and walked out without it. No way to get it back. Pool hustlers, no witnesses, gone.\n\nHe asked around. Nobody admitted to finding it. And the only thing left to do, he said, was the hardest one: he was attached to that watch, and he had to release it.\n\nComment RISE and I'll send you how to actually release that kind of attachment.\n\n#manifestation #subconscious #attachment #awakening #consciousness #kevintrudeau"
+  }
+ ]
+}
