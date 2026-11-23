@@ -1,0 +1,33 @@
+{
+ "source": "v5gwj11.mp4",
+ "brand": "KT_SIGNAL",
+ "test": false,
+ "note": "23 Nov 2026 - second pass on 'Tips & Tricks to Improve the Quality of Your Life | The Kevin Trudeau Show | Ep. 52' (Rumble v5gwj11; first pass used 2911-3004s, CREDIT-SCORE-5-DAY-TRICK). Two new arcs from unused minutes, both self-contained money-mechanics lessons that don't touch the credit-score trick already cut: the Mark Cuban charge-card-vs-credit-card story, and the California cash-homes stat right after it. Skipped on purpose: the FTC lawsuit / 'they want to shut the show down' segment (a legal grievance, not a teaching, and it doubles as a donation pitch to the Kevin Trudeau Fan Club), the feng shui/jars/amulets manifesting-book takedown (no result for the viewer, just a rebuttal), and the three-day Global Information Network event pitch that closes the episode. Weekly agent.",
+ "clips": [
+  {"slug": "MARK-CUBANS-140K-CARD-WASNT-DECLINED",
+   "in": 2515.2, "out": 2671.2,
+   "start_words": "It was a big article",
+   "end_words": "a credit card and a charge card",
+   "hook": ["Mark Cuban's $140,000", "bottle. Not declined"],
+   "trial_hooks": [
+     ["$140,000 champagne.", "Not declined. Media lied"],
+     ["The media lied", "about his card"],
+     ["Not declined.", "Just a charge card"],
+     ["Credit card balance?", "That's broke math"],
+     ["Mark Cuban's card", "was never declined"],
+     ["Kevin Trudeau's rule:", "charge cards only"],
+     ["$140,000 of champagne.", "Paid in full"]
+   ],
+   "caption": "Comment \"MONEY\" and I'll send you Kevin Trudeau's Your Wish Is Your Command audios, free.\n\nKevin Trudeau says a news article claimed Mark Cuban's card got declined on a $140,000 bottle of champagne. Mark Cuban doesn't carry a card balance - he used his Amex Centurion, not a credit card at all.\n\nA charge card bills you in full, no option, 30 days later. A credit card lets you pay the minimum and charges interest on the rest. The media mixed them up and called it news.\n\nRich people use charge cards or pay cash. If you're carrying a credit card balance, you bought something you couldn't afford.\n\nDo you know which card is in your wallet?\n\n#kevintrudeau #creditcards #moneymindset #personalfinance #wealthmindset #yourwishisyourcommand",
+   "send": "A friend who just watched a 'billionaire's card declined' headline sends this to the friend who believed it: proof the media didn't know what it was reporting on. Emotion: anger at being misled."
+  },
+  {"slug": "70-PERCENT-OF-10-MILLION-HOMES-ARE-CASH",
+   "in": 2806.2, "out": 2853.2,
+   "start_words": "70% of the $10 million",
+   "end_words": "asset like real estate",
+   "hook": ["70% of $10M homes", "paid cash"],
+   "caption": "Comment \"MONEY\" and I'll send you Kevin Trudeau's Your Wish Is Your Command audios, free.\n\nKevin Trudeau says over 70% of California's $10 million-plus homes are bought in straight cash, no mortgage. The rich who do borrow don't take a loan to buy the house - they buy it outright, then open a line of credit against the equity instead.\n\nCars work the opposite way: pay cash or lease, never finance, because a new car loses 30% of its value in year one. A house can gain value. A car never does.\n\nSame principle twice: don't go into debt for something that's losing value.\n\nWhich one are you getting backwards - the car or the house?\n\n#kevintrudeau #realestate #wealthmindset #milliondollarhouse #personalfinance #yourwishisyourcommand",
+   "send": "A friend about to finance a new car sends this to the friend already underwater on one: proof the rich never borrow against something that loses value the second they buy it. Emotion: anxiety about money quietly leaking away."
+  }
+ ]
+}
