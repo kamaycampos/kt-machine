@@ -7,25 +7,25 @@ Per 1,000 Instagram views. A shape needs 4 clips to be scored. Read this before 
 | shape | clips | median views | comments | shares | saves | all actions |
 |---|---|---|---|---|---|---|
 | plain claim hook | 129 | 225 | 1.2 | 5.7 | 17.0 | **23.9** |
-| number in the hook | 71 | 232 | 1.6 | 4.6 | 12.0 | **18.1** |
+| number in the hook | 71 | 233 | 1.6 | 4.6 | 12.0 | **18.1** |
 
 ## Caption first line
 
 | shape | clips | median views | comments | shares | saves | all actions |
 |---|---|---|---|---|---|---|
-| 'Kevin Trudeau says' first | 54 | 238 | 1.3 | 6.2 | 16.1 | **23.5** |
-| keyword first | 8 | 178 | 9.2 | 3.5 | 10.6 | **23.4** |
+| keyword first | 8 | 183 | 8.7 | 4.0 | 11.4 | **24.0** |
+| 'Kevin Trudeau says' first | 54 | 240 | 1.3 | 6.2 | 16.0 | **23.5** |
 | story first | 135 | 227 | 1.2 | 5.1 | 15.3 | **21.5** |
 
 ## Keyword
 
 | shape | clips | median views | comments | shares | saves | all actions |
 |---|---|---|---|---|---|---|
-| WISH | 19 | 228 | 5.1 | 5.3 | 22.1 | **32.5** |
+| WISH | 19 | 231 | 5.1 | 5.3 | 22.0 | **32.3** |
 | BRAIN | 79 | 230 | 1.4 | 5.6 | 15.7 | **22.7** |
 | MONEY | 93 | 227 | 0.8 | 5.3 | 14.1 | **20.2** |
 | KT | 4 | 277 | 2.1 | 1.0 | 16.2 | **19.4** |
-| - | 5 | 172 | 0.0 | 6.0 | 12.0 | **18.1** |
+| - | 5 | 173 | 0.0 | 6.0 | 12.0 | **18.0** |
 
 ## Length
 
