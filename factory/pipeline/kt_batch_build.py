@@ -455,7 +455,10 @@ def closes_wrong(verify_out, named):
                 and sum(x != y for x, y in zip(a, b)) == 1)
     for i in range(len(got) - len(want) + 1):
         pair = got[i:i + len(want)]
-        if len(pair) == len(want) and pair[0] == want[0] and same(pair[-1], want[-1]):
+        # 23 Nov 2026: ONE-WEEK-LATE-30-MILLION-GONE was refused for ending "you get what you ask for"
+        # against a plan ending "what you asked for". The word before is now matched the same way as the
+        # last (ask = asked), so tense and a clipped ending are the same words.
+        if len(pair) == len(want) and same(pair[0], want[0]) and same(pair[-1], want[-1]):
             return ""
     return f"ends off the planned words: plan ends '{named}', clip ends '{' '.join(got)}'"
 

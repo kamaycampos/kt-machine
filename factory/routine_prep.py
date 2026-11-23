@@ -184,6 +184,15 @@ def _second_pass(_theirs):
         _busy = ({_src.get(c["file"].split("/")[0]) for c in queue} | set(again)
                  | {q["source"][:-4] for k, q in _named.items() if k not in _built})
         _fenced = {q["source"][:-4] for k, q in _named.items() if k.startswith(THEIRS)} | _theirs
+        # NOT KEVIN'S CAMERA (23 Nov 2026). ep_v5hsmvp_p2 lost all 3 clips to "not Kevin - his face in 0 of 8
+        # frames": the show is a split screen, a radio host's face filling two thirds and Kevin small at the
+        # side (frames looked at). The gate is right (Kamay: Kevin must fill the camera); offering that show
+        # again only wastes a run. A source with 2+ such refusals is never handed to a second pass.
+        _notkt = {}
+        for _k, _e in _f.items():
+            if _k.startswith(MINE) and any("not Kevin" in w for w in (_e.get("why") or [])):
+                _notkt[_e["source"][:-4]] = _notkt.get(_e["source"][:-4], 0) + 1
+        _fenced |= {v for v, n in _notkt.items() if n >= 2}
         _used = {}
         for k, q in _named.items():
             if k.startswith(MINE):
