@@ -1,0 +1,33 @@
+{
+ "source": "v6c74p7.mp4",
+ "brand": "KT_FORECAST",
+ "test": false,
+ "note": "23 Nov 2026 - second pass on 'The 3 Secrets Used By Every Billionaire | Ep. 85' (Rumble v6c74p7; first pass used 1497-1589s SAME-START-200-MILLION-APART, 2037-2213s NOBODY-TOLD-HER-TO-FIX-IT, 2821-2945s HE-CELEBRATED-HIS-COMPETITORS and 2997-3061s WHY-WAITING-48-HOURS-COSTS-YOU). Two new arcs from unused minutes between those clips, both ending with a clean buffer before the next used stretch: the initiative/trash-can illustration (ends before 2037s), and the Rodeo Drive / $20 million house story (starts after the Global Information Network plug at 1497s so no sales pitch is in the clip, ends before the Trump real-estate story the first pass already used). Skipped on purpose: the GIN club pitches threaded through this episode, the Trump deal story (already cut), and the Pat Robertson anecdote (a polarizing public figure, not worth the risk for a plain do-it-now lesson already covered). Weekly agent.",
+ "clips": [
+  {"slug": "THE-TRASH-TEST-FOR-YOUR-MINDSET",
+   "in": 1885.0, "out": 1981.0,
+   "start_words": "Most people don't do",
+   "end_words": "have to be told what to do",
+   "hook": ["The trash test", "exposes your mindset"],
+   "caption": "Comment \"BRAIN\" and I'll send you Kevin Trudeau's Your Wish Is Your Command audios, free.\n\nKevin Trudeau says one trait every wealthy person has costs nothing to practice tonight: initiative. Taking action before anyone asks.\n\nHis example is almost insulting because it's so familiar. The trash can is overflowing. You keep shoving it down instead of taking the bag out. Someone finally has to ask, and you get annoyed: 'I hate being told what to do.'\n\nThat reaction is the whole difference. Winners take the bag out before anyone has to ask. Everyone else waits to be told, then resents being told.\n\nAre you the one who notices, or the one who waits?\n\n#kevintrudeau #mindset #successhabits #wealthmindset #selfimprovement #yourwishisyourcommand",
+   "send": "A roommate tired of nagging sends this to the roommate who waits to be told: proof that waiting to be asked is the exact mindset that keeps people broke. Emotion: a little embarrassment, a little recognition."
+  },
+  {"slug": "28-YEARS-OLD-20-MILLION-CASH",
+   "in": 1393.0, "out": 1493.0,
+   "start_words": "You walk down and you see",
+   "end_words": "you got to dream big",
+   "hook": ["28 years old.", "$20 million cash"],
+   "trial_hooks": [
+     ["28 years old.", "$20 million, cash"],
+     ["Paid cash.", "$20 million house"],
+     ["Nebraska to", "a $20 million house"],
+     ["$35,000 purse.", "$20 million house"],
+     ["Why not her?", "Why not you?"],
+     ["Kevin Trudeau asks:", "why not now"],
+     ["$5 million homes.", "Considered cheap there"]
+   ],
+   "caption": "Comment \"MONEY\" and I'll send you Kevin Trudeau's Your Wish Is Your Command audios, free.\n\nKevin Trudeau describes walking down Rodeo Drive: Ferraris, Lamborghinis, a $35,000 purse in a window, people in their twenties driving Rolls Royces paid for in cash.\n\nThen the houses. $15 million, $20 million, $25 million - the kind of neighborhood where a $5 million home is the cheap one. You look at one and wonder who actually lives there.\n\nThe answer, one time: a 28-year-old woman who started her own business, from Nebraska. She paid cash for the $20 million house.\n\nIf she can do it, why can't you? Why not right now?\n\n#kevintrudeau #wealthmindset #milliondollarhouse #successstory #moneymindset #yourwishisyourcommand",
+   "send": "A friend scrolling real-estate listings for fun sends this to the friend who thinks a $20 million house only happens to people born into it: proof it doesn't. Emotion: awe and a jolt of possibility."
+  }
+ ]
+}
