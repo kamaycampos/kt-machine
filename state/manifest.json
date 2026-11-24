@@ -19186,7 +19186,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-25T10:46",
+   "cta_keyword": "MONEY",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_DUPLICATESUCCESS/01_HE-STUDIED-KEVINS-ADS-BECAME-NUMBER-1-COPYWRITER_47s.mp4",
@@ -19197,7 +19201,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-25T08:25",
+   "cta_keyword": "MONEY",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_EARNEDIT/01_HE-MADE-200-MILLION-BEFORE-TEACHING-IT_81s.mp4",
@@ -19208,7 +19216,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-25T12:12",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_FIREFOCUS/01_WET-WOOD-BURST-INTO-FLAMES_73s.mp4",
@@ -19219,7 +19231,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-24T20:18",
+   "cta_keyword": "WISH",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_FIREFOCUS/02_BROKE-PEOPLE-WHO-ONLY-HUNG-AROUND-WINNERS_80s.mp4",
@@ -19230,7 +19246,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-25T08:44",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_UNNAMED/01_THE-FORBES-400-LIST-LIES_66s.mp4",
@@ -19241,7 +19261,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-25T17:32",
+   "cta_keyword": "MONEY",
+   "cta_variant": 5,
+   "cta_kind": "question"
   }
  ]
 }
