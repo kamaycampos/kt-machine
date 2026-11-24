@@ -2,100 +2,100 @@
  "KT (Kamay)": {
   "windows": [
    {
-    "from": "2026-08-24",
-    "to": "2026-09-07",
-    "reach": 5049,
-    "followers": 71,
-    "non_followers": 5026
+    "from": "2026-09-01",
+    "to": "2026-09-15",
+    "reach": 148346,
+    "followers": 2243,
+    "non_followers": 146621
    },
    {
-    "from": "2026-09-07",
-    "to": "2026-09-21",
-    "reach": 165690,
-    "followers": 2772,
-    "non_followers": 163541
+    "from": "2026-09-15",
+    "to": "2026-09-29",
+    "reach": 43049,
+    "followers": 1847,
+    "non_followers": 41746
    },
    {
-    "from": "2026-09-21",
-    "to": "2026-10-05",
-    "reach": 34401,
-    "followers": 1460,
-    "non_followers": 33551
+    "from": "2026-09-29",
+    "to": "2026-10-13",
+    "reach": 19584,
+    "followers": 915,
+    "non_followers": 18772
    },
    {
-    "from": "2026-10-05",
-    "to": "2026-10-19",
-    "reach": 14055,
-    "followers": 783,
-    "non_followers": 13357
+    "from": "2026-10-13",
+    "to": "2026-10-27",
+    "reach": 24154,
+    "followers": 901,
+    "non_followers": 23245
    },
    {
-    "from": "2026-10-19",
-    "to": "2026-11-02",
-    "reach": 20674,
-    "followers": 857,
-    "non_followers": 19847
+    "from": "2026-10-27",
+    "to": "2026-11-10",
+    "reach": 7392,
+    "followers": 709,
+    "non_followers": 6671
    },
    {
-    "from": "2026-11-02",
-    "to": "2026-11-16",
-    "reach": 5014,
-    "followers": 580,
-    "non_followers": 4487
+    "from": "2026-11-10",
+    "to": "2026-11-24",
+    "reach": 7763,
+    "followers": 609,
+    "non_followers": 7279
    }
   ],
   "username": "kevin_trudeau_student",
-  "followers": 4602,
-  "posts": 413
+  "followers": 4608,
+  "posts": 446
  },
  "AR (Yaren)": {
   "windows": [
    {
-    "from": "2026-08-24",
-    "to": "2026-09-07",
-    "reach": 448,
-    "followers": 18,
-    "non_followers": 430
+    "from": "2026-09-01",
+    "to": "2026-09-15",
+    "reach": 2696,
+    "followers": 37,
+    "non_followers": 2663
    },
    {
-    "from": "2026-09-07",
-    "to": "2026-09-21",
-    "reach": 4259,
-    "followers": 42,
-    "non_followers": 4243
+    "from": "2026-09-15",
+    "to": "2026-09-29",
+    "reach": 4655,
+    "followers": 48,
+    "non_followers": 4626
    },
    {
-    "from": "2026-09-21",
-    "to": "2026-10-05",
-    "reach": 4275,
-    "followers": 59,
-    "non_followers": 4235
+    "from": "2026-09-29",
+    "to": "2026-10-13",
+    "reach": 5652,
+    "followers": 79,
+    "non_followers": 5601
    },
    {
-    "from": "2026-10-05",
-    "to": "2026-10-19",
-    "reach": 6755,
-    "followers": 89,
-    "non_followers": 6711
-   },
-   {
-    "from": "2026-10-19",
-    "to": "2026-11-02",
-    "reach": 7648,
+    "from": "2026-10-13",
+    "to": "2026-10-27",
+    "reach": 6805,
     "followers": 105,
-    "non_followers": 7541
+    "non_followers": 6739
    },
    {
-    "from": "2026-11-02",
-    "to": "2026-11-16",
-    "reach": 18885,
-    "followers": 193,
-    "non_followers": 18779
+    "from": "2026-10-27",
+    "to": "2026-11-10",
+    "reach": 10486,
+    "followers": 103,
+    "non_followers": 10420
+   },
+   {
+    "from": "2026-11-10",
+    "to": "2026-11-24",
+    "reach": 19222,
+    "followers": 243,
+    "non_followers": 19075
    }
   ],
   "username": "theawakenedrise",
-  "followers": 383,
-  "posts": 346
+  "followers": 430,
+  "posts": 379
  },
- "measured": "2026-11-16T22:55"
+ "measured": "2026-11-24T00:59"
 }
