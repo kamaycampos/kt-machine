@@ -18866,14 +18866,27 @@
    "hook": "Mark Cuban's $140,000 bottle. Not declined",
    "bytes": 139750930,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-24T09:05",
    "cta_keyword": "BRAIN",
    "cta_variant": 10,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgIIhkOlRpF/",
+    "youtube": "https://youtube.com/shorts/DH3rveI23j0"
+   },
+   "caption_at_post": "Comment \"MONEY\" and I'll send you Kevin Trudeau's Your Wish Is Your Command audios, free.\n\nKevin Trudeau says a news article claimed Mark Cuban's card got declined on a $140,000 bottle of champagne. Mark Cuban doesn't carry a card balance - he used his Amex Centurion, not a credit card at all.\n\nA charge card bills you in full, no option, 30 days later. A credit card lets you pay the minimum and charges interest on the rest. The media mixed them up and called it news.\n\nRich people use charge cards or pay cash. If you're carrying a credit card balance, you bought something you couldn't afford.\n\nDo you know which card is in your wallet?\n\n#kevintrudeau #creditcards #moneymindset #personalfinance #wealthmindset #yourwishisyourcommand",
+   "posted_at": "2026-11-24T09:13"
   },
   {
    "file": "KT_SIGNAL/02_70-PERCENT-OF-10-MILLION-HOMES-ARE-CASH_47s.mp4",
