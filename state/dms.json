@@ -269,6 +269,11 @@
    "at": "2026-11-24T23:13:32.086777+00:00",
    "platform": "instagram",
    "error": "HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v21.0/17841442646984686/media?fields=id%2Ctimestamp%2Ccomments_count%2Cpermalink&limit=100&access_token=EAATjEqrJbqcBSlwtqys13oYEtP9YfyVvm5rRptBQHPww7ZCXdw3J7KbPi7EDbVFFIvpWkIvPNXD5FQ1oZBeim8TOnIiSSG6PTYTZAc1FrHf8esXxdxupz63iBhmaRDQMuexwy8wTSojOTxsJPmBmBG30kOO5vaAdBB3hVUfHDZAkoO8qhufAX3oGZAXvnuKyleOJ31XNqyygITHbAdHdt (Caused by NewConnectionError(\"HTTPSConnection(host='graph.facebook.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+  },
+  {
+   "at": "2026-11-24T23:29:08.887991+00:00",
+   "platform": "instagram",
+   "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
   }
  ],
  "withheld": {
