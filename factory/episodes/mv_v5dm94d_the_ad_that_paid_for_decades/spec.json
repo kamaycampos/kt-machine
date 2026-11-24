@@ -1,0 +1,122 @@
+{
+ "slug": "mv_v5dm94d_the_ad_that_paid_for_decades",
+ "vid": "v5dm94d",
+ "t_in": 1287.5,
+ "t_out": 1546.9,
+ "keeps": [
+  [
+   9,
+   30
+  ],
+  [
+   78,
+   86
+  ],
+  [
+   180,
+   195
+  ],
+  [
+   226,
+   232
+  ],
+  [
+   523,
+   540
+  ],
+  [
+   581,
+   606
+  ],
+  [
+   697,
+   748
+  ],
+  [
+   752,
+   762
+  ]
+ ],
+ "scenes": [
+  {
+   "src": {
+    "gen": "A 1970s kitchen table at night, a single typed one-page report under a lamp beside a stack of blank order-form envelopes and a rotary phone",
+    "move": "a hand slides the one-page report into a plain envelope and seals it"
+   },
+   "from": 9,
+   "to": 20,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A dim 1970s apartment hallway at dusk, a young man in a collared shirt sorting a stack of plain mail at a small table, finding every envelope empty",
+    "move": "he flips through the stack of mail and lets the last empty envelope fall onto the table"
+   },
+   "from": 78,
+   "to": 86,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A young man sits across a wooden desk from an older bearded mentor in a dim candlelit study, a swirling dark grey cloud of smoke hovering just above the young man's shoulder",
+    "move": "the swirling grey cloud slowly thickens above the young man's shoulder as he stares at it"
+   },
+   "from": 180,
+   "to": 190,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "Close view of an older bearded mentor across a candlelit desk, one hand raised toward the young man seated opposite him, a small brass bowl of glowing embers between them",
+    "move": "the mentor slowly raises one open hand toward the swirling grey cloud"
+   },
+   "from": 226,
+   "to": 232,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A cramped 1970s print shop at night, a typeset block of the same newspaper advertisement sitting unchanged under a bright work lamp on a metal table",
+    "move": "a man's hand taps the unchanged typeset block once and pulls back"
+   },
+   "from": 523,
+   "to": 537,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A young man driving a cream colored convertible along a sunny coastal highway at golden hour, relaxed with one hand on the wheel, open ocean on one side",
+    "move": "the convertible cruises steadily along the coastal road as the camera tracks alongside it"
+   },
+   "from": 697,
+   "to": 707,
+   "start": 0.1
+  }
+ ],
+ "voices": {
+  "758": "X",
+  "759": "X",
+  "760": "X",
+  "761": "X",
+  "762": "X",
+  "21": "G",
+  "591": "G"
+ },
+ "join": [],
+ "fix": {},
+ "tighten": 0.85,
+ "cap_y": 800,
+ "end_card": "end_kamay.png",
+ "end_secs": 4.0,
+ "music_db": -27,
+ "fx": false,
+ "fx_db": -31,
+ "post": {
+  "title": "The Ad That Paid For Decades"
+ },
+ "title_top": {
+  "tag": "EPISODE 12",
+  "line": "The Ad That Paid For Decades"
+ },
+ "big_from": 754
+}
