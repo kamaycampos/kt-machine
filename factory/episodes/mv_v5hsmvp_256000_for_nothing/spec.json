@@ -1,0 +1,157 @@
+{
+ "slug": "mv_v5hsmvp_256000_for_nothing",
+ "vid": "v5hsmvp",
+ "t_in": 1722.5,
+ "t_out": 1966.62,
+ "keeps": [
+  [
+   5,
+   49
+  ],
+  [
+   50,
+   60
+  ],
+  [
+   374,
+   501
+  ],
+  [
+   677,
+   739
+  ],
+  [
+   740,
+   754
+  ]
+ ],
+ "scenes": [
+  {
+   "src": {
+    "gen": "Close view of a blank bank check on a wooden desk under warm lamp light, a fountain pen resting beside it, the amount line empty",
+    "move": "a hand picks up the pen and begins to write on the check"
+   },
+   "from": 5,
+   "to": 16,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A man standing alone on a dark balcony at night looking up at a wide, star-filled sky above a city skyline",
+    "move": "he tilts his head back slowly as the stars seem to brighten overhead"
+   },
+   "from": 50,
+   "to": 55,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "Close view of an old answering machine on a hotel nightstand at night, its small red light blinking, a hand pressing one of its buttons",
+    "move": "a finger presses the button and the small red light begins to blink steadily"
+   },
+   "from": 374,
+   "to": 383,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A hotel room desk at night with a notepad and pen beside a telephone, the receiver just set back down",
+    "move": "the pen on the notepad rolls slightly as a hand sets the telephone receiver down"
+   },
+   "from": 494,
+   "to": 500,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "An empty television studio stage at night, one bright spotlight shining down on a plain podium in front of a dark curtain backdrop",
+    "move": "the spotlight slowly brightens over the empty podium"
+   },
+   "from": 677,
+   "to": 680,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "Close view of a stack of mailed envelopes and a single opened check on a kitchen counter in warm morning light",
+    "move": "a hand lifts the opened check from the envelope and turns it face up"
+   },
+   "from": 729,
+   "to": 735,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "Close view of a mailbox at the edge of a quiet driveway in morning light, its small door standing open",
+    "move": "a hand reaches into the mailbox and pulls out an envelope"
+   },
+   "from": 749,
+   "to": 754,
+   "start": 0.1
+  }
+ ],
+ "voices": {
+  "465": "I",
+  "466": "I",
+  "402": "I",
+  "403": "I",
+  "388": "I",
+  "389": "I",
+  "390": "I",
+  "741": "X",
+  "742": "X",
+  "743": "X",
+  "744": "X",
+  "745": "X",
+  "746": "X",
+  "747": "X",
+  "748": "X",
+  "14": "G@T",
+  "728": "G",
+  "679": "G@T",
+  "680": "G@T",
+  "717": "G",
+  "736": "G",
+  "685": "N:gold",
+  "686": "N:gold"
+ },
+ "join": [
+  [
+   465,
+   466
+  ],
+  [
+   402,
+   403
+  ],
+  [
+   388,
+   390
+  ],
+  [
+   679,
+   680
+  ],
+  [
+   685,
+   686
+  ]
+ ],
+ "fix": {},
+ "tighten": 0.85,
+ "cap_y": 800,
+ "end_card": "end_kamay.png",
+ "end_secs": 4.0,
+ "music_db": -27,
+ "fx": true,
+ "fx_db": -31,
+ "post": {
+  "title": "$256,000 For Nothing"
+ },
+ "title_top": {
+  "tag": "EPISODE 11",
+  "line": "$256,000 For Nothing"
+ },
+ "big_from": 740,
+ "music": "movie_ambient_piano_thesilentthunder.mp3"
+}
