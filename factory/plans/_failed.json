@@ -15087,6 +15087,24 @@
     "A pizza cook's",
     "$150 million business"
    ]
+  },
+  "ep_v4xs1cn_p5/RICH-BRAINS-SKIP-THE-BETA-WAVE": {
+   "plan": "ep_v4xs1cn_p5",
+   "source": "v4xs1cn.mp4",
+   "brand": "KT_HELMETLAB",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_RICH-BRAINS-SKIP-THE-BETA-WAVE_174s.mp4` - phrase scrambled around \"waves poverty slave waves\""
+   ],
+   "slug": "RICH-BRAINS-SKIP-THE-BETA-WAVE",
+   "in": 1946.34,
+   "out": 2121.72,
+   "start_words": "Let's take a hundred people",
+   "end_words": "decalcify your pineal gland",
+   "hook": [
+    "The $100 million",
+    "brainwave vs yours"
+   ]
   }
  },
  "attempts": {
