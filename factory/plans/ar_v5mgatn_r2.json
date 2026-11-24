@@ -1,0 +1,50 @@
+{
+ "source": "v5mgatn.mp4",
+ "brand": "AR_TRANCER2",
+ "test": false,
+ "note": "24 Nov 2026 - re-cut of three AR_TRANCE clips that failed the build gate (PLANNING.md step 2c, second chances). TRANCE-HAS-AN-OFF-SWITCH opened mid-sentence ('bit today about how') and drifted past its planned end ('got, we got,'): moved the open back to the sentence start ('And I want to expose...') and the close to the clean '...live happily.' sentence end before the next topic starts. ANCIENT-CHINA-MAPPED-YOUR-POWER's end drifted to 'about it in a few minutes': its start_words 'It really is chi' is spoken twice in the episode (0:04:42 and 0:05:07) and likely matched the wrong one, so the start phrase was made unique ('It really is chi energy') and the end phrase given more context ('creating amazing amounts of power'). ACKNOWLEDGE-DONT-DENY-ACCEPT-DONT-RESIST hit a 'number one number' word-repeat glitch; moved the open back one sentence to the unambiguous 'Number one, in order...' opener, past wherever the glitch was. YOUR-MIND-IS-AN-UNTRAINED-DOG from the first pass is untouched.",
+ "clips": [
+  {
+   "slug": "YOUR-TRANCE-HAS-AN-OFF-SWITCH",
+   "in": 49.0,
+   "out": 103.5,
+   "start_words": "And I want to",
+   "end_words": "want and live happily",
+   "hook": [
+    "Your trance has",
+    "an off switch."
+   ],
+   "send": "a friend doom-scrolling the election news - proof their peace was never on the ballot, relief",
+   "caption": "It doesn't matter who's in office. It never did.\n\nYour trance isn't political. It's personal - the sleep that has you reacting to a headline instead of building the life you actually want. Take away the president, the party, the country, even your own name, and the question underneath never changes: are you awake, or are you being lived by your circumstances?\n\nThe moment you stop asking the world to fix itself first, you get your power back.\n\nComment RISE and I'll send you how to wake up.\n\n#awakening #subconscious #freedom #consciousness #mindset #kevintrudeau",
+   "retry_of": "ar_v5mgatn/YOUR-TRANCE-HAS-AN-OFF-SWITCH"
+  },
+  {
+   "slug": "ANCIENT-CHINA-MAPPED-YOUR-POWER",
+   "in": 307.76,
+   "out": 444.0,
+   "start_words": "It really is chi energy",
+   "end_words": "creating amazing amounts of power",
+   "hook": [
+    "Ancient China mapped",
+    "your invisible power."
+   ],
+   "send": "a friend who mocks 'energy work' - proof science finally caught up to a 5,000-year-old map, awe",
+   "caption": "Western science called it hocus pocus. Then they looked closer.\n\n5,000 years ago, ancient Chinese healers mapped channels of energy running through your body - meridians science said couldn't exist, because you can't dissect one out of a cadaver. Then researchers injected radioactive isotopes and watched them travel exactly along those invisible lines. They still can't explain why it's there. They just know that it is.\n\nThat current is called chi, and when you learn to move it, you're touching something ancient civilizations understood long before modern medicine existed.\n\nComment RISE and I'll send you how this actually works.\n\n#chienergy #ancientwisdom #energy #awakening #consciousness #kevintrudeau",
+   "retry_of": "ar_v5mgatn/ANCIENT-CHINA-MAPPED-YOUR-POWER"
+  },
+  {
+   "slug": "ACKNOWLEDGE-DONT-DENY-ACCEPT-DONT-RESIST",
+   "in": 3740.0,
+   "out": 3872.0,
+   "start_words": "Number one, in order",
+   "end_words": "that's where your focus",
+   "hook": [
+    "Fighting it only",
+    "makes you weaker."
+   ],
+   "send": "a friend stuck arguing with reality instead of moving through it - proof resistance is the thing trapping them, relief",
+   "caption": "The thing you're fighting hardest is the thing keeping you stuck.\n\nThere's a two-step most people never learn. First, acknowledge - not deny. You can't change what you won't admit is real. Second, accept - not resist, because what you resist persists; fighting a fact doesn't remove it, it just drains you. Only after both steps does the real question show up: what can you actually change, starting with yourself?\n\nMost people skip straight to anger and skip the part that actually frees them.\n\nComment RISE and I'll send you the rest of this.\n\n#subconscious #mindset #awakening #consciousness #selfmastery #kevintrudeau",
+   "retry_of": "ar_v5mgatn/ACKNOWLEDGE-DONT-DENY-ACCEPT-DONT-RESIST"
+  }
+ ]
+}
