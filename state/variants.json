@@ -4203,7 +4203,10 @@
      "28 years old.",
      "$20 million, cash"
     ],
-    "media_tag": "media2"
+    "media_tag": "media2",
+    "status": "publish failed 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'code': 2, 'type': 'OAuthException', 'is_transie",
+    "id": null,
+    "waits": 1
    },
    {
     "rel": "_VARIANTS/VAR__KT_FORECAST__28-YEARS-OLD-20-MILLION-CASH__V2.mp4",

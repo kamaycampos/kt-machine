@@ -18964,7 +18964,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-25T12:19",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_TRANCER2/01_YOUR-TRANCE-HAS-AN-OFF-SWITCH_53s.mp4",
@@ -18974,7 +18978,11 @@
    "done": false,
    "status": {},
    "media_tag": "media2",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-25T10:33",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_FIGTREE/01_HE-CURSED-A-TREE-AND-IT-DIED_117s.mp4",
@@ -18985,7 +18993,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-24T11:10",
+   "cta_keyword": "WISH",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_RECALL/01_A-CLASS-8-MONTHS-AHEAD_50s.mp4",
@@ -18996,7 +19008,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-24T16:41",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_YORKSHIRE/01_20-YEAR-OLD-TRAVEL-AGENT-175-MILLION_64s.mp4",
@@ -19007,7 +19023,11 @@
    "status": {},
    "media_tag": "media2",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-24T12:07",
+   "cta_keyword": "MONEY",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   }
  ]
 }
