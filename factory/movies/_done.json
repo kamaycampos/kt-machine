@@ -1,5 +1,5 @@
 {
- "next_episode": 12,
+ "next_episode": 13,
  "built": {
   "mv_v6v9urd_too_good_for_the_casino": {
    "file": "KT_EPISODE/03_TOO-GOOD-FOR-THE-CASINO_94s.mp4",
@@ -65,6 +65,13 @@
    "posts": "2026-11-25T12:30",
    "music": "movie_ambient_piano_thesilentthunder.mp3",
    "scenes": 7
+  },
+  "mv_v5dm94d_the_ad_that_paid_for_decades": {
+   "file": "KT_EPISODE/12_THE-AD-THAT-PAID-FOR-DECADES_54s.mp4",
+   "episode": 12,
+   "posts": "2026-11-26T12:30",
+   "music": null,
+   "scenes": 5
   }
  },
  "tries": {
@@ -88,6 +95,7 @@
   null,
   null,
   null,
-  "movie_ambient_piano_thesilentthunder.mp3"
+  "movie_ambient_piano_thesilentthunder.mp3",
+  null
  ]
 }
