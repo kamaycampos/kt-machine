@@ -1,5 +1,5 @@
 {
- "next_episode": 11,
+ "next_episode": 12,
  "built": {
   "mv_v6v9urd_too_good_for_the_casino": {
    "file": "KT_EPISODE/03_TOO-GOOD-FOR-THE-CASINO_94s.mp4",
@@ -58,6 +58,13 @@
    "posts": "2026-11-24T12:30",
    "music": null,
    "scenes": 4
+  },
+  "mv_v5hsmvp_256000_for_nothing": {
+   "file": "KT_EPISODE/11_256-000-FOR-NOTHING_87s.mp4",
+   "episode": 11,
+   "posts": "2026-11-25T12:30",
+   "music": "movie_ambient_piano_thesilentthunder.mp3",
+   "scenes": 7
   }
  },
  "tries": {
@@ -79,6 +86,7 @@
   "movie_ambient_piano_thesilentthunder.mp3",
   null,
   null,
-  null
+  null,
+  "movie_ambient_piano_thesilentthunder.mp3"
  ]
 }
