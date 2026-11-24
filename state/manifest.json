@@ -19102,14 +19102,27 @@
    "hook": "A 20-year-old's $175 million company",
    "bytes": 56722561,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-24T12:17",
    "cta_keyword": "MONEY",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgIfdNYjZKT/",
+    "youtube": "https://youtube.com/shorts/iygEIf0BSoo"
+   },
+   "caption_at_post": "Kevin Trudeau says this one was barely out of his teens.\n\nTwenty years old, working as a travel agent, married young, living with his new wife in a single room. He wanted to get rich, so Kevin cleared a few of his energetic blocks.\n\nA few years later, that kid was running a company doing $175 million a year in sales, with a mansion in one of the wealthiest neighborhoods in Yorkshire, England.\n\nKevin's point: age, money, and connections were never the real obstacle.\n\nWhat's the one block you'd clear first if you could?\n\n#kevintrudeau #mindset #wealthmindset #manifestation #successstory #moneymindset",
+   "posted_at": "2026-11-24T12:31"
   }
  ]
 }
