@@ -254,6 +254,11 @@
    "at": "2026-11-24T22:51:20.970100+00:00",
    "platform": "facebook",
    "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "at": "2026-11-24T23:11:56.736828+00:00",
+   "platform": "facebook",
+   "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
   }
  ],
  "withheld": {
