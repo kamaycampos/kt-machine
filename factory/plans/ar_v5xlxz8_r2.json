@@ -1,0 +1,66 @@
+{
+ "source": "v5xlxz8.mp4",
+ "brand": "AR_FIELDR2",
+ "test": false,
+ "note": "24 Nov 2026 - re-cut of two AR_FIELD clips that failed the build gate on 'captions vs the sound' / UNCAPTIONED SPEECH (PLANNING.md step 2c, second chances). Both gaps sit inside a stammer/disfluent aside the ASR missed, deep in the middle of a long clip, so there was no edge that excluded the gap without gutting either the setup or the payoff. YOUR-FEAR-ISNT-FROM-THIS-LIFETIME now ends right after the explicit 'it's not in this lifetime' line, before the stammer at 853.8-855.3s; the engram/samskara elaboration that followed is cut, caption trimmed to match. HER-CRAVING-HIT-ZERO-IN-SECONDS now ends right after her 'what did you do to me' reaction, before the stammer at 1761.8-1764.1s; the six-months-later callback that followed is cut, caption trimmed to match - the hook is already paid by the zero-craving test itself. THREE-DAYS-DRIVE-ONE-HIDDEN-FEAR's gap (1377.3-1379.3s) sits right where Archie is paralyzed on the plane, between the fear being named and the eye-movement cure that resolves it; no edge excludes it without either cutting the setup or cutting the demonstrated cure, so it was skipped this run rather than gutted. ONE-EYE-POINT-REACHES-YOUR-STOMACH from the first pass was never flagged and is untouched.",
+ "clips": [
+  {
+   "slug": "YOUR-FEAR-ISNT-FROM-THIS-LIFETIME",
+   "in": 804.32,
+   "out": 853.0,
+   "start_words": "So let's talk about",
+   "end_words": "it's not in this lifetime",
+   "hook": [
+    "Your fear isn't",
+    "from this lifetime."
+   ],
+   "send": "A friend who blames a phobia on one bad childhood memory, because this says it's older than that - awe, and a little unease.",
+   "trial_hooks": [
+    [
+     "This fear is",
+     "older than you."
+    ],
+    [
+     "An engram, not",
+     "trauma, caused this."
+    ],
+    [
+     "Callahan found what",
+     "Hollywood couldn't fix."
+    ],
+    [
+     "Not knowing this keeps",
+     "you stuck."
+    ],
+    [
+     "Stop blaming water",
+     "for this fear."
+    ],
+    [
+     "She swam again",
+     "in minutes, cured."
+    ],
+    [
+     "Your own field",
+     "is holding this."
+    ]
+   ],
+   "caption": "You didn't get this fear from falling in the water as a kid. According to Kevin, it's not even from this lifetime.\n\nPeople assume every phobia traces back to one bad memory - the near-drowning, the dog bite, the fall. Kevin walks through the obvious explanations for a woman afraid of water, one by one, and rules every single one out.\n\nThat's the part nobody tells you: most fears and phobias aren't memories at all. They're something you arrived with.\n\nComment RISE and I'll send you what it actually traces back to.\n\n#subconscious #energy #pastlife #awakening #innerwork #kevintrudeau",
+   "retry_of": "ar_v5xlxz8/YOUR-FEAR-ISNT-FROM-THIS-LIFETIME"
+  },
+  {
+   "slug": "HER-CRAVING-HIT-ZERO-IN-SECONDS",
+   "in": 1700.32,
+   "out": 1758.0,
+   "start_words": "how bad do you",
+   "end_words": "What did you do to me",
+   "hook": [
+    "Her craving hit",
+    "zero in seconds."
+   ],
+   "send": "A friend who's 'tried everything' to quit a food or habit, because this shows the craving itself can be erased, not just resisted - relief bordering on disbelief.",
+   "caption": "She was addicted to one specific pint of ice cream - not any flavor, that exact one, every single day. She called it what it was: an addiction, like a drug.\n\nKevin put the open pint in front of her at a ten-out-of-ten craving and ran one thirty-second sequence. Not willpower. Not a trick to distract her. Just the craving itself, gone.\n\nShe picked the ice cream back up to test it - smelled it, imagined the taste - and felt nothing. Zero. She kept asking him what he'd done to her, because there was no craving left to fight.\n\nComment RISE and I'll send you how a craving actually gets erased.\n\n#subconscious #cravings #mindovermatter #energywork #awakening #kevintrudeau",
+   "retry_of": "ar_v5xlxz8/HER-CRAVING-HIT-ZERO-IN-SECONDS"
+  }
+ ]
+}
