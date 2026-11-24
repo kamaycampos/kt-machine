@@ -1,0 +1,20 @@
+{"source": "v5hsmvp.mp4", "brand": "KT_UNIVERSER2", "test": false,
+ "note": "24 Nov 2026 - second chance re-cut of TWO-STRANGERS-SAME-WEEK (WHY: ended mid-thought on 'this this gig'; phrase scrambled around 'answering machine remember answering' and 'more probably probably more'). Fix: start past the stuttered 'more probably, probably more' line, and extend the end two lines further to a full sentence that closes the loop on his wish. Weekly agent, same-day refill run.",
+ "clips": [
+  {"slug": "TWO-STRANGERS-SAME-WEEK", "in": 1741.24, "out": 1872.12,
+   "retry_of": "ep_v5hsmvp/TWO-STRANGERS-SAME-WEEK",
+   "start_words": "About a month later",
+   "end_words": "out into the universe",
+   "hook": ["Two strangers manifest", "the same offer"],
+   "trial_hooks": [
+    ["2 strangers, 1", "unasked offer"],
+    ["Coincidence doesn't exist,", "he says"],
+    ["One wish, two", "strangers answered"],
+    ["Why you doubt", "the universe delivers"],
+    ["Bobby Singer, Ed", "Beckley, same week"],
+    ["Kevin Trudeau's two", "strangers, one week"],
+    ["It worked twice,", "same week"]
+   ],
+   "caption": "Kevin Trudeau says he put it out to the universe: he wanted $50,000 a week without working for it.\n\nA month later in New York City, at a shared table at the Carnegie Deli, he recognizes the stranger next to him - Bobby Singer, who sold the blackjack method on TV. Bobby offers to fund and produce an infomercial for his memory course.\n\nKevin Trudeau says he went back to his hotel, checked his voicemail, and heard the exact same offer from a totally different friend, Ed Beckley.\n\nTwo strangers, the same week, out of nowhere, with the same idea.\n\nDo you believe in coincidence, or is the universe actually listening?\n\n#kevintrudeau #manifestation #yourwishisyourcommand #lawofattraction #mindset #synchronicity",
+   "send": "Someone mid-manifesting sends it to a doubting friend: awe - two strangers offered him the exact same thing in the same week, unprompted."}
+ ]}
