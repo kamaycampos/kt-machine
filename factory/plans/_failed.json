@@ -15105,6 +15105,42 @@
     "The $100 million",
     "brainwave vs yours"
    ]
+  },
+  "ep_v561cfx_p2/ACCUSED-OF-CHEATING-FOR-ACING-CALCULUS": {
+   "plan": "ep_v561cfx_p2",
+   "source": "v561cfx.mp4",
+   "brand": "KT_DUPLICATESUCCESS",
+   "tries": 1,
+   "why": [
+    "FAIL 02_ACCUSED-OF-CHEATING-FOR-ACING-CALCULUS_53s.mp4: ends off the planned words: plan ends 'even if I tried', clip ends 'part he says kevin i c'"
+   ],
+   "slug": "ACCUSED-OF-CHEATING-FOR-ACING-CALCULUS",
+   "in": 2050.28,
+   "out": 2105.48,
+   "start_words": "A fellow called up",
+   "end_words": "even if I tried",
+   "hook": [
+    "100% means you're",
+    "called a cheater"
+   ]
+  },
+  "ep_v5kg9ip_p5/HE-FISHED-SALMON-TO-FUND-HIS-FIRST-STORE": {
+   "plan": "ep_v5kg9ip_p5",
+   "source": "v5kg9ip.mp4",
+   "brand": "KT_SALMONRUN",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_HE-FISHED-SALMON-TO-FUND-HIS-FIRST-STORE_50s.mp4` - opens mid-sentence on \"to raise enough\""
+   ],
+   "slug": "HE-FISHED-SALMON-TO-FUND-HIS-FIRST-STORE",
+   "in": 2579.52,
+   "out": 2631.52,
+   "start_words": "To raise enough money",
+   "end_words": "it's putting in the time",
+   "hook": [
+    "90-hour weeks built",
+    "his business empire"
+   ]
   }
  },
  "attempts": {
@@ -15200,6 +15236,8 @@
   "ar_v5i1vo4_p4_r2": 2,
   "ar_v68yges_r3": 2,
   "ep_v4tz80x_p6": 1,
-  "ep_v5hsmvp_p2": 2
+  "ep_v5hsmvp_p2": 2,
+  "ep_v59sdnh_p2": 1,
+  "ep_v5hsmvp_r2": 1
  }
 }
