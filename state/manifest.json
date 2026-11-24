@@ -19045,14 +19045,27 @@
    "hook": "How Jesus killed a fig tree",
    "bytes": 108021486,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-24T11:10",
    "cta_keyword": "WISH",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgIYnntEo_b/",
+    "youtube": "https://youtube.com/shorts/Ggikbr6Spoo"
+   },
+   "caption_at_post": "Kevin Trudeau points to a passage in the Book of Mark as a live demonstration of the law of attraction.\n\nJesus and his disciples come across a fig tree with leaves but no fruit. Jesus gets angry, says out loud that no one will ever eat from it again, and walks on.\n\nDays later, on the same road home, the disciples find the tree completely withered from the roots - dead.\n\nKevin's take: the anger wasn't the problem. It was the fuel. He knew exactly what he wanted, and he said it out loud.\n\nWhat have you been quietly hoping for instead of saying it plainly?\n\n#kevintrudeau #manifestation #lawofattraction #yourwishisyourcommand #mindset #faith",
+   "posted_at": "2026-11-24T11:32"
   },
   {
    "file": "KT_RECALL/01_A-CLASS-8-MONTHS-AHEAD_50s.mp4",
