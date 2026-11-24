@@ -1,0 +1,20 @@
+{"source": "v72tj4g.mp4", "brand": "KT_UNNAMED", "test": false,
+ "note": "24 Nov 2026 - second chance re-cut of THE-FORBES-400-LIST-LIES (last tried as ep_v72tj4g_r5, WHY: ends off the planned words - the finder landed on 'it is important isn't it' instead of the planned end). Fix: the clip's last two lines were near-identical ('Nobody knows the guy's name' / 'Nobody knows that person's name'), which likely confused the word-level search. Ending on the first, unique line instead. Weekly agent, same-day refill run.",
+ "clips": [
+  {"slug": "THE-FORBES-400-LIST-LIES", "in": 1106.24, "out": 1171.92,
+   "retry_of": "ep_v72tj4g_r5/THE-FORBES-400-LIST-LIES",
+   "start_words": "Two people were just arrested",
+   "end_words": "Nobody knows the guy's name",
+   "hook": ["The Forbes 400", "is a lie"],
+   "trial_hooks": [
+    ["$50 billion, invisible", "to Forbes"],
+    ["Forbes 400 hides", "the real rich"],
+    ["$50 billion, zero", "fame"],
+    ["Why you've never", "heard these names"],
+    ["Two trillion dollars,", "one unnamed man"],
+    ["Kevin Trudeau names", "the unnamed billionaires"],
+    ["The IMF's boss", "has no name"]
+   ],
+   "caption": "Kevin Trudeau says the Forbes 400 list - the one that claims to rank the richest people on the planet - is not accurate.\n\nTwo people were just arrested in Asia. One had a Bitcoin wallet with over $17 billion in it. Another had over $50 billion in his crypto wallet, in cash. Neither one is on the Forbes 400 list.\n\nKevin Trudeau says real control is not about what you have - it is about what you control. Norway's $2 trillion sovereign wealth fund, Saudi Arabia's $1.7 trillion fund - who actually controls that money? Who runs the IMF? Who runs the World Bank?\n\nNobody knows their names.\n\n#kevintrudeau #money #wealthhabits #finance #globalfinance #manifestation",
+   "send": "A crypto investor sends it to a skeptical friend: anger - the richest people on earth aren't even on the list that claims to rank them."}
+ ]}
