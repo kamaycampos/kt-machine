@@ -18683,14 +18683,28 @@
    "caption": "He bought a leather overcoat, handmade in Italy, for about $25,000 back in the nineties. He loved it so much he was afraid to wear it - worried about a scratch, a stain, a tear every time he put it on.\n\nHe wore it to dinner anyway, hung it on the coat rack by the door, and sat down to eat. When he got up to leave, it was gone. Stolen, right out of the restaurant.\n\nHis own words: what I feared most had come upon me. Not bad luck - the exact thing his attention had been locked onto the whole time.\n\nComment RISE and I'll send you how to stop feeding a fear your full attention.\n\n#subconscious #manifestation #awakening #innerwork #consciousness #kevintrudeau",
    "hook": "He feared losing it. He did.",
    "bytes": 53939284,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611241710107CA4AAA51CD2FC10D1EB'}}"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-24T11:57",
    "cta_keyword": "YES",
    "cta_variant": 5,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2650746405366123/",
+    "instagram": "https://www.instagram.com/reel/DgIdN_8kQnv/",
+    "youtube": "https://youtube.com/shorts/fnFCHPFZx4o"
+   },
+   "caption_at_post": "He bought a leather overcoat, handmade in Italy, for about $25,000 back in the nineties. He loved it so much he was afraid to wear it - worried about a scratch, a stain, a tear every time he put it on.\n\nHe wore it to dinner anyway, hung it on the coat rack by the door, and sat down to eat. When he got up to leave, it was gone. Stolen, right out of the restaurant.\n\nHis own words: what I feared most had come upon me. Not bad luck - the exact thing his attention had been locked onto the whole time.\n\nComment RISE and I'll send you how to stop feeding a fear your full attention.\n\n#subconscious #manifestation #awakening #innerwork #consciousness #kevintrudeau",
+   "posted_at": "2026-11-24T12:10"
   },
   {
    "file": "AR_PURPOSER2/01_SHOW-ME-WHERE-GOD-IS-NOT_48s.mp4",
@@ -19092,7 +19106,7 @@
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-24T12:07",
+   "scheduled_at": "2026-11-24T12:17",
    "cta_keyword": "MONEY",
    "cta_variant": 3,
    "cta_kind": "offer"
