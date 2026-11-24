@@ -18796,14 +18796,27 @@
    "hook": "28 years old. $20 million cash",
    "bytes": 89101256,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-24T07:47",
    "cta_keyword": "MONEY",
    "cta_variant": 9,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgH_fKqHBfx/",
+    "youtube": "https://youtube.com/shorts/unaDmrkTQls"
+   },
+   "caption_at_post": "Comment \"MONEY\" and I'll send you Kevin Trudeau's Your Wish Is Your Command audios, free.\n\nKevin Trudeau describes walking down Rodeo Drive: Ferraris, Lamborghinis, a $35,000 purse in a window, people in their twenties driving Rolls Royces paid for in cash.\n\nThen the houses. $15 million, $20 million, $25 million - the kind of neighborhood where a $5 million home is the cheap one. You look at one and wonder who actually lives there.\n\nThe answer, one time: a 28-year-old woman who started her own business, from Nebraska. She paid cash for the $20 million house.\n\nIf she can do it, why can't you? Why not right now?\n\n#kevintrudeau #wealthmindset #milliondollarhouse #successstory #moneymindset #yourwishisyourcommand",
+   "posted_at": "2026-11-24T07:52"
   },
   {
    "file": "KT_HORIZON/01_50000-A-WEEK-AND-ZERO-WORK_70s.mp4",
