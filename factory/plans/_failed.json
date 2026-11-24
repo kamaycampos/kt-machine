@@ -15015,6 +15015,78 @@
     "You are asleep.",
     "In a trance."
    ]
+  },
+  "ar_v5mgatn_r2/ANCIENT-CHINA-MAPPED-YOUR-POWER": {
+   "plan": "ar_v5mgatn_r2",
+   "source": "v5mgatn.mp4",
+   "brand": "AR_TRANCER2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_ANCIENT-CHINA-MAPPED-YOUR-POWER_134s.mp4: ends off the planned words: plan ends 'creating amazing amounts of power', clip ends 'start creating amazing amounts of money'"
+   ],
+   "slug": "ANCIENT-CHINA-MAPPED-YOUR-POWER",
+   "in": 307.76,
+   "out": 444.0,
+   "start_words": "It really is chi energy",
+   "end_words": "creating amazing amounts of power",
+   "hook": [
+    "Ancient China mapped",
+    "your invisible power."
+   ]
+  },
+  "ar_v5xlxz8_r2/YOUR-FEAR-ISNT-FROM-THIS-LIFETIME": {
+   "plan": "ar_v5xlxz8_r2",
+   "source": "v5xlxz8.mp4",
+   "brand": "AR_FIELDR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_YOUR-FEAR-ISNT-FROM-THIS-LIFETIME_52s.mp4: speaker not in the posted frame (no face in the opening second of the posted frame)"
+   ],
+   "slug": "YOUR-FEAR-ISNT-FROM-THIS-LIFETIME",
+   "in": 804.32,
+   "out": 853.0,
+   "start_words": "So let's talk about",
+   "end_words": "it's not in this lifetime",
+   "hook": [
+    "Your fear isn't",
+    "from this lifetime."
+   ]
+  },
+  "ar_v5xlxz8_r2/HER-CRAVING-HIT-ZERO-IN-SECONDS": {
+   "plan": "ar_v5xlxz8_r2",
+   "source": "v5xlxz8.mp4",
+   "brand": "AR_FIELDR2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `02_HER-CRAVING-HIT-ZERO-IN-SECONDS_59s.mp4` - opens mid-sentence on \"how bad\""
+   ],
+   "slug": "HER-CRAVING-HIT-ZERO-IN-SECONDS",
+   "in": 1700.32,
+   "out": 1758.0,
+   "start_words": "how bad do you",
+   "end_words": "What did you do to me",
+   "hook": [
+    "Her craving hit",
+    "zero in seconds."
+   ]
+  },
+  "ep_v6bge5y_p2/PIZZA-COOK-TO-ROLLS-ROYCE-PHANTOM": {
+   "plan": "ep_v6bge5y_p2",
+   "source": "v6bge5y.mp4",
+   "brand": "KT_PHANTOM",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_PIZZA-COOK-TO-ROLLS-ROYCE-PHANTOM_71s.mp4` - opens mid-sentence on \"showing a few\""
+   ],
+   "slug": "PIZZA-COOK-TO-ROLLS-ROYCE-PHANTOM",
+   "in": 2072.0,
+   "out": 2143.0,
+   "start_words": "There was one guy who",
+   "end_words": "He had over 300 employees",
+   "hook": [
+    "A pizza cook's",
+    "$150 million business"
+   ]
   }
  },
  "attempts": {

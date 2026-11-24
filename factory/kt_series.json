@@ -12583,7 +12583,8 @@
      "28 years old.",
      "$20 million cash"
     ],
-    "caption": "Comment \"MONEY\" and I'll send you Kevin Trudeau's Your Wish Is Your Command audios, free.\n\nKevin Trudeau describes walking down Rodeo Drive: Ferraris, Lamborghinis, a $35,000 purse in a window, people in their twenties driving Rolls Royces paid for in cash.\n\nThen the houses. $15 million, $20 million, $25 million - the kind of neighborhood where a $5 million home is the cheap one. You look at one and wonder who actually lives there.\n\nThe answer, one time: a 28-year-old woman who started her own business, from Nebraska. She paid cash for the $20 million house.\n\nIf she can do it, why can't you? Why not right now?\n\n#kevintrudeau #wealthmindset #milliondollarhouse #successstory #moneymindset #yourwishisyourcommand"
+    "caption": "Comment \"MONEY\" and I'll send you Kevin Trudeau's Your Wish Is Your Command audios, free.\n\nKevin Trudeau describes walking down Rodeo Drive: Ferraris, Lamborghinis, a $35,000 purse in a window, people in their twenties driving Rolls Royces paid for in cash.\n\nThen the houses. $15 million, $20 million, $25 million - the kind of neighborhood where a $5 million home is the cheap one. You look at one and wonder who actually lives there.\n\nThe answer, one time: a 28-year-old woman who started her own business, from Nebraska. She paid cash for the $20 million house.\n\nIf she can do it, why can't you? Why not right now?\n\n#kevintrudeau #wealthmindset #milliondollarhouse #successstory #moneymindset #yourwishisyourcommand",
+    "locked": true
    }
   ]
  },
@@ -12621,6 +12622,96 @@
      "lead to your paradise."
     ],
     "caption": "He pictured a smooth drive to paradise - a cold drink, a few stops, maybe some fresh mango along the way. What he got was three hours on a dirt road in a Jeep with no doors.\n\nThis is the only road to Hana, his friend told him. It's also the only road to paradise. Every mile of it was bumpy, and when he finally arrived, the bumps were the part worth remembering.\n\nStop expecting the road to the thing you want to be smooth. Release the grip, and let the universe choose the route.\n\nComment RISE and I'll send you the rest of the teaching.\n\n#manifestation #universe #awakening #mindset #subconscious #kevintrudeau"
+   }
+  ]
+ },
+ "ar_v5mgatn_r2": {
+  "source": "v5mgatn.mp4",
+  "brand": "AR_TRANCER2",
+  "note": "24 Nov 2026 - re-cut of three AR_TRANCE clips that failed the build gate (PLANNING.md step 2c, second chances). TRANCE-HAS-AN-OFF-SWITCH opened mid-sentence ('bit today about how') and drifted past its planned end ('got, we got,'): moved the open back to the sentence start ('And I want to expose...') and the close to the clean '...live happily.' sentence end before the next topic starts. ANCIENT-CHINA-MAPPED-YOUR-POWER's end drifted to 'about it in a few minutes': its start_words 'It really is chi' is spoken twice in the episode (0:04:42 and 0:05:07) and likely matched the wrong one, so the start phrase was made unique ('It really is chi energy') and the end phrase given more context ('creating amazing amounts of power'). ACKNOWLEDGE-DONT-DENY-ACCEPT-DONT-RESIST hit a 'number one number' word-repeat glitch; moved the open back one sentence to the unambiguous 'Number one, in order...' opener, past wherever the glitch was. YOUR-MIND-IS-AN-UNTRAINED-DOG from the first pass is untouched.",
+  "clips": [
+   {
+    "slug": "YOUR-TRANCE-HAS-AN-OFF-SWITCH",
+    "in": 54.14,
+    "out": 110.11,
+    "hook": [
+     "Your trance has",
+     "an off switch."
+    ],
+    "caption": "It doesn't matter who's in office. It never did.\n\nYour trance isn't political. It's personal - the sleep that has you reacting to a headline instead of building the life you actually want. Take away the president, the party, the country, even your own name, and the question underneath never changes: are you awake, or are you being lived by your circumstances?\n\nThe moment you stop asking the world to fix itself first, you get your power back.\n\nComment RISE and I'll send you how to wake up.\n\n#awakening #subconscious #freedom #consciousness #mindset #kevintrudeau"
+   },
+   {
+    "slug": "ACKNOWLEDGE-DONT-DENY-ACCEPT-DONT-RESIST",
+    "in": 3746.93,
+    "out": 3872.19,
+    "hook": [
+     "Fighting it only",
+     "makes you weaker."
+    ],
+    "caption": "The thing you're fighting hardest is the thing keeping you stuck.\n\nThere's a two-step most people never learn. First, acknowledge - not deny. You can't change what you won't admit is real. Second, accept - not resist, because what you resist persists; fighting a fact doesn't remove it, it just drains you. Only after both steps does the real question show up: what can you actually change, starting with yourself?\n\nMost people skip straight to anger and skip the part that actually frees them.\n\nComment RISE and I'll send you the rest of this.\n\n#subconscious #mindset #awakening #consciousness #selfmastery #kevintrudeau"
+   }
+  ]
+ },
+ "ar_v5xlxz8_r2": {
+  "source": "v5xlxz8.mp4",
+  "brand": "AR_FIELDR2",
+  "note": "24 Nov 2026 - re-cut of two AR_FIELD clips that failed the build gate on 'captions vs the sound' / UNCAPTIONED SPEECH (PLANNING.md step 2c, second chances). Both gaps sit inside a stammer/disfluent aside the ASR missed, deep in the middle of a long clip, so there was no edge that excluded the gap without gutting either the setup or the payoff. YOUR-FEAR-ISNT-FROM-THIS-LIFETIME now ends right after the explicit 'it's not in this lifetime' line, before the stammer at 853.8-855.3s; the engram/samskara elaboration that followed is cut, caption trimmed to match. HER-CRAVING-HIT-ZERO-IN-SECONDS now ends right after her 'what did you do to me' reaction, before the stammer at 1761.8-1764.1s; the six-months-later callback that followed is cut, caption trimmed to match - the hook is already paid by the zero-craving test itself. THREE-DAYS-DRIVE-ONE-HIDDEN-FEAR's gap (1377.3-1379.3s) sits right where Archie is paralyzed on the plane, between the fear being named and the eye-movement cure that resolves it; no edge excludes it without either cutting the setup or cutting the demonstrated cure, so it was skipped this run rather than gutted. ONE-EYE-POINT-REACHES-YOUR-STOMACH from the first pass was never flagged and is untouched.",
+  "clips": []
+ },
+ "ep_v5gavi4_p2": {
+  "source": "v5gavi4.mp4",
+  "brand": "KT_FIGTREE",
+  "note": "24 Nov 2026 - second pass of 'You Hold The Power to This Secret to Success | The Kevin Trudeau Show | Ep. 51' (Rumble v5gavi4). Skipped almost all of it: fundraising pitches for the fan club and the $15,000-seat GIN event, and a long scripture-on-tithing passage that repeats the giving lesson already cut from v4vdcy0 (ROCKEFELLER-GAVE-FIRST, SILENT-BLESSING-PAYS-1000-FOLD, GAVE-AWAY-80-PERCENT-OF-HIS-PAY). This one survives: Kevin's second, tighter retelling of the fig-tree passage (Mark 11, cross-checked against Matthew) as a live example of his own manifesting rule - clear intent plus real emotion, spoken out loud - never argues scripture, just uses the story the way the account already uses Rockefeller's tithe. Weekly agent.",
+  "clips": [
+   {
+    "slug": "HE-CURSED-A-TREE-AND-IT-DIED",
+    "in": 2279.12,
+    "out": 2396.15,
+    "hook": [
+     "How Jesus killed",
+     "a fig tree"
+    ],
+    "caption": "Kevin Trudeau points to a passage in the Book of Mark as a live demonstration of the law of attraction.\n\nJesus and his disciples come across a fig tree with leaves but no fruit. Jesus gets angry, says out loud that no one will ever eat from it again, and walks on.\n\nDays later, on the same road home, the disciples find the tree completely withered from the roots - dead.\n\nKevin's take: the anger wasn't the problem. It was the fuel. He knew exactly what he wanted, and he said it out loud.\n\nWhat have you been quietly hoping for instead of saying it plainly?\n\n#kevintrudeau #manifestation #lawofattraction #yourwishisyourcommand #mindset #faith"
+   }
+  ]
+ },
+ "ep_v5kg9ip_p4": {
+  "source": "v5kg9ip.mp4",
+  "brand": "KT_RECALL",
+  "note": "24 Nov 2026 - replacement for KT_RUNWAY/01_REALTOR-SELLS-IN-ONE-WEEK_140s.mp4, taken down by TikTok (posted 2026-11-20, gone by 2026-11-20). Same episode ('How To Make $25K per Month Online! | The Kevin Trudeau Show | Ep. 60', v5kg9ip), a different moment and a different angle: not the Josh Altman real-estate story, but the teacher's letter about her seventh grade class after two days of the Mega Memory system. Checked against every other brand cut from this episode (ep_v5kg9ip*.json) and against the skip list in the p2 note (politics, health/Matt Lauer, the already-used $450M Mega Memory sales fact) - this moment is none of those. Weekly agent.",
+  "clips": [
+   {
+    "slug": "A-CLASS-8-MONTHS-AHEAD",
+    "in": 2785.17,
+    "out": 2835.15,
+    "hook": [
+     "What 2 days",
+     "gave your kid"
+    ],
+    "caption": "Kevin Trudeau says a teacher once wrote to him after putting her entire seventh grade class through his Mega Memory system - it took only a couple of days.\n\nBy the end of the school year, that class was eight months ahead of the curriculum, with the lowest grade average an A-minus.\n\nTheir vocabulary tested at the level of college sophomores, and they were three years ahead in Spanish, because they could finally remember every word and conjugation.\n\nThe teacher's biggest surprise: absenteeism nearly disappeared. The kids wanted to come to school.\n\nWhat would change in your house if a weekend trained your kid's memory for life?\n\n#kevintrudeau #megamemory #studytips #parentinghacks #memoryhacks #selfimprovement"
+   }
+  ]
+ },
+ "ep_v6bge5y_p2": {
+  "source": "v6bge5y.mp4",
+  "brand": "KT_PHANTOM",
+  "note": "24 Nov 2026 - second pass of 'The Missing Ingredient For Becoming Rich | Ep. 84' (Rumble v6bge5y). Skipped almost the entire episode: it is one continuous sales pitch for Kevin's paid '33 money processes', and the already-cut THE-10000-DOLLAR-SEMINAR-INSULT sits right in the middle of it (2975-3115s). This one stretch survives because, like the already-posted STUDIO-APARTMENT-TO-MILLIONAIRE clip (v4xs1cn), it tells two short, concrete transformation stories (a UPS driver, a pizza-parlor cook) without naming the product or its price - the caption keeps the mindset-block lesson and drops the sales pitch entirely. Weekly agent.",
+  "clips": []
+ },
+ "ep_v6bge5y_p3": {
+  "source": "v6bge5y.mp4",
+  "brand": "KT_YORKSHIRE",
+  "note": "24 Nov 2026 - second pass of 'The Missing Ingredient For Becoming Rich | Ep. 84' (Rumble v6bge5y), second clip from the same stretch as ep_v6bge5y_p2.json (PIZZA-COOK-TO-ROLLS-ROYCE-PHANTOM), a different person and different numbers, never the same cut or hook. Same rule as that plan and the already-posted STUDIO-APARTMENT-TO-MILLIONAIRE (v4xs1cn): tells the concrete transformation, drops the product name and the price entirely. Weekly agent.",
+  "clips": [
+   {
+    "slug": "20-YEAR-OLD-TRAVEL-AGENT-175-MILLION",
+    "in": 2189.5,
+    "out": 2254.43,
+    "hook": [
+     "A 20-year-old's",
+     "$175 million company"
+    ],
+    "caption": "Kevin Trudeau says this one was barely out of his teens.\n\nTwenty years old, working as a travel agent, married young, living with his new wife in a single room. He wanted to get rich, so Kevin cleared a few of his energetic blocks.\n\nA few years later, that kid was running a company doing $175 million a year in sales, with a mansion in one of the wealthiest neighborhoods in Yorkshire, England.\n\nKevin's point: age, money, and connections were never the real obstacle.\n\nWhat's the one block you'd clear first if you could?\n\n#kevintrudeau #mindset #wealthmindset #manifestation #successstory #moneymindset"
    }
   ]
  }
