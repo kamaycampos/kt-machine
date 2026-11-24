@@ -1,0 +1,19 @@
+{"source": "v5kg9ip.mp4", "brand": "KT_RECALL", "test": false,
+ "note": "24 Nov 2026 - replacement for KT_RUNWAY/01_REALTOR-SELLS-IN-ONE-WEEK_140s.mp4, taken down by TikTok (posted 2026-11-20, gone by 2026-11-20). Same episode ('How To Make $25K per Month Online! | The Kevin Trudeau Show | Ep. 60', v5kg9ip), a different moment and a different angle: not the Josh Altman real-estate story, but the teacher's letter about her seventh grade class after two days of the Mega Memory system. Checked against every other brand cut from this episode (ep_v5kg9ip*.json) and against the skip list in the p2 note (politics, health/Matt Lauer, the already-used $450M Mega Memory sales fact) - this moment is none of those. Weekly agent.",
+ "clips": [
+   {"slug": "A-CLASS-8-MONTHS-AHEAD", "in": 2783.0, "out": 2833.0,
+    "start_words": "I just got a letter",
+    "end_words": "for five minutes last night",
+    "hook": ["What 2 days", "gave your kid"],
+    "trial_hooks": [
+      ["8 months ahead", "for your kid"],
+      ["Why schools skip", "your kid's memory"],
+      ["2 days fixed", "your worst reader"],
+      ["Why your kid", "loses, every year"],
+      ["The Mega Memory", "class jumped ahead"],
+      ["What Kevin Trudeau", "taught this class"],
+      ["2 days closed", "your 3-year gap"]
+    ],
+    "send": "A parent whose kid is falling behind sends it to another worried parent: hope - a memory class put an entire seventh grade class eight months ahead of their curriculum, in days.",
+    "caption": "Kevin Trudeau says a teacher once wrote to him after putting her entire seventh grade class through his Mega Memory system - it took only a couple of days.\n\nBy the end of the school year, that class was eight months ahead of the curriculum, with the lowest grade average an A-minus.\n\nTheir vocabulary tested at the level of college sophomores, and they were three years ahead in Spanish, because they could finally remember every word and conjugation.\n\nThe teacher's biggest surprise: absenteeism nearly disappeared. The kids wanted to come to school.\n\nWhat would change in your house if a weekend trained your kid's memory for life?\n\n#kevintrudeau #megamemory #studytips #parentinghacks #memoryhacks #selfimprovement"}
+ ]}
