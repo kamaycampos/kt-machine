@@ -14997,6 +14997,24 @@
     "What he manifested",
     "found him first"
    ]
+  },
+  "ar_v58xdrp_p2/YOU-ARE-ASLEEP-IN-A-TRANCE": {
+   "plan": "ar_v58xdrp_p2",
+   "source": "v58xdrp.mp4",
+   "brand": "AR_HANA",
+   "tries": 1,
+   "why": [
+    "FAIL 02_YOU-ARE-ASLEEP-IN-A-TRANCE_129s.mp4: [FAIL] 02_YOU-ARE-ASLEEP-IN-A-TRANCE_129s.mp4                 26 captions vs the sound  median -0.00s  worst-10% 0.81s  | words captioned 101%"
+   ],
+   "slug": "YOU-ARE-ASLEEP-IN-A-TRANCE",
+   "in": 1494.0,
+   "out": 1624.0,
+   "start_words": "Sometimes you have karma",
+   "end_words": "so take advantage of that",
+   "hook": [
+    "You are asleep.",
+    "In a trance."
+   ]
   }
  },
  "attempts": {

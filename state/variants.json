@@ -4255,5 +4255,67 @@
    }
   ],
   "posted": null
+ },
+ "AR_HANA__HIS-HEART-ATTACK-WAS-THE-ANSWER": {
+  "clip": "AR_HANA/01_HIS-HEART-ATTACK-WAS-THE-ANSWER_164s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__AR_HANA__HIS-HEART-ATTACK-WAS-THE-ANSWER__V1.mp4",
+    "hook": [
+     "Five daughters.",
+     "One heart attack."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_HANA__HIS-HEART-ATTACK-WAS-THE-ANSWER__V2.mp4",
+    "hook": [
+     "The universe planned",
+     "his heart attack."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_HANA__HIS-HEART-ATTACK-WAS-THE-ANSWER__V3.mp4",
+    "hook": [
+     "Bad luck.",
+     "It was the plan."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_HANA__HIS-HEART-ATTACK-WAS-THE-ANSWER__V4.mp4",
+    "hook": [
+     "Miss this,",
+     "you'll keep fighting it."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_HANA__HIS-HEART-ATTACK-WAS-THE-ANSWER__V5.mp4",
+    "hook": [
+     "His friend quit",
+     "inside intensive care."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_HANA__HIS-HEART-ATTACK-WAS-THE-ANSWER__V6.mp4",
+    "hook": [
+     "Stop resisting what",
+     "comes for you."
+    ],
+    "media_tag": "media2"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_HANA__HIS-HEART-ATTACK-WAS-THE-ANSWER__V7.mp4",
+    "hook": [
+     "He was thankful:",
+     "his heart attack."
+    ],
+    "media_tag": "media2"
+   }
+  ],
+  "posted": null
  }
 }
