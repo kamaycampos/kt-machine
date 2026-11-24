@@ -1,16 +1,36 @@
 {
- "at": "2026-11-24T14:48",
+ "at": "2026-11-24T20:28",
  "account": "what_do_you_wan7t",
  "profile": {
-  "follower_count": 428,
-  "following_count": 2,
-  "likes_count": 9380,
-  "video_count": 119
+  "likes_count": 9435,
+  "video_count": 121,
+  "follower_count": 430,
+  "following_count": 2
  },
  "videos": {
+  "KT_SIGNAL/01_MARK-CUBANS-140K-CARD-WASNT-DECLINED_155s.mp4": {
+   "id": "7711801660409957663",
+   "view_count": 95,
+   "like_count": 1,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7711801660409957663?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 155,
+   "posted": "2026-11-24T18:09"
+  },
+  "KT_FORECAST/01_28-YEARS-OLD-20-MILLION-CASH_98s.mp4": {
+   "id": "7711758561411566879",
+   "view_count": 51,
+   "like_count": 2,
+   "comment_count": 0,
+   "share_count": 0,
+   "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7711758561411566879?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
+   "duration": 97,
+   "posted": "2026-11-24T15:22"
+  },
   "KT_SIGNAL/02_70-PERCENT-OF-10-MILLION-HOMES-ARE-CASH_47s.mp4": {
    "id": "7711712574802251039",
-   "view_count": 151,
+   "view_count": 155,
    "like_count": 1,
    "comment_count": 0,
    "share_count": 0,
@@ -20,7 +40,7 @@
   },
   "KT_HORIZON/01_50000-A-WEEK-AND-ZERO-WORK_70s.mp4": {
    "id": "7711590901893647647",
-   "view_count": 73,
+   "view_count": 74,
    "like_count": 4,
    "comment_count": 2,
    "share_count": 0,
@@ -30,8 +50,8 @@
   },
   "KT_APERTURE/01_LISTING-PHOTOS-COST-3X-THE-OFFERS_55s.mp4": {
    "id": "7711477707015539999",
-   "view_count": 261,
-   "like_count": 11,
+   "view_count": 291,
+   "like_count": 15,
    "comment_count": 0,
    "share_count": 2,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7711477707015539999?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -40,7 +60,7 @@
   },
   "KT_UNLOCKED/01_THE-BLOCK-HIS-UNCLE-CLEARED_63s.mp4": {
    "id": "7711159036393180447",
-   "view_count": 123,
+   "view_count": 125,
    "like_count": 8,
    "comment_count": 0,
    "share_count": 0,
@@ -50,7 +70,7 @@
   },
   "KT_THROTTLER2/01_DUPLICATE-THE-GRIND-NOT-THE-CRUISE_124s.mp4": {
    "id": "7711347287837953311",
-   "view_count": 245,
+   "view_count": 246,
    "like_count": 22,
    "comment_count": 0,
    "share_count": 2,
@@ -60,7 +80,7 @@
   },
   "KT_MANTRA/01_GURU-JO-SO-SELLS-HYPNOSIS_90s.mp4": {
    "id": "7711122621420539167",
-   "view_count": 240,
+   "view_count": 243,
    "like_count": 25,
    "comment_count": 2,
    "share_count": 0,
@@ -80,7 +100,7 @@
   },
   "KT_KNIFE/01_ONE-GINSU-AD-PAID-FOR-LIFE_162s.mp4": {
    "id": "7710965856741756191",
-   "view_count": 527,
+   "view_count": 533,
    "like_count": 41,
    "comment_count": 4,
    "share_count": 0,
@@ -90,7 +110,7 @@
   },
   "KT_VAULTR2R2R2/01_THE-FORBES-400-LIST-LIES_62s.mp4": {
    "id": "7710815851414310158",
-   "view_count": 525,
+   "view_count": 526,
    "like_count": 11,
    "comment_count": 0,
    "share_count": 2,
@@ -120,7 +140,7 @@
   },
   "KT_RUNWAYR2/02_AI-REPLACES-100K-COPYWRITER_44s.mp4": {
    "id": "7709900772766534943",
-   "view_count": 328,
+   "view_count": 329,
    "like_count": 15,
    "comment_count": 2,
    "share_count": 0,
@@ -150,7 +170,7 @@
   },
   "KT_RUNWAY/02_2-BILLION-APP-NO-WIFI-OFFICE_110s.mp4": {
    "id": "7709963133414133023",
-   "view_count": 320,
+   "view_count": 321,
    "like_count": 17,
    "comment_count": 2,
    "share_count": 2,
@@ -180,8 +200,8 @@
   },
   "KT_IONSTORMO/01_NEGATIVE-IONS-GROW-YOUR-BRAIN_59s.mp4": {
    "id": "7709620031541316894",
-   "view_count": 2921,
-   "like_count": 231,
+   "view_count": 2952,
+   "like_count": 234,
    "comment_count": 6,
    "share_count": 19,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7709620031541316894?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -230,7 +250,7 @@
   },
   "KT_EPISODE/03_TOO-GOOD-FOR-THE-CASINO_94s.mp4": {
    "id": "7709203717832051982",
-   "view_count": 225,
+   "view_count": 226,
    "like_count": 9,
    "comment_count": 0,
    "share_count": 0,
@@ -270,7 +290,7 @@
   },
   "KT_SENTINEL/02_THE-GENERALS-SPEECH-BEFORE-D-DAY_107s.mp4": {
    "id": "7708747185998859550",
-   "view_count": 325,
+   "view_count": 328,
    "like_count": 12,
    "comment_count": 0,
    "share_count": 0,
@@ -290,7 +310,7 @@
   },
   "KT_DEPOSIT/01_CARE-LESS-GET-MORE_89s.mp4": {
    "id": "7708464790276001037",
-   "view_count": 488,
+   "view_count": 490,
    "like_count": 16,
    "comment_count": 3,
    "share_count": 1,
@@ -310,8 +330,8 @@
   },
   "KT_CENTURY/01_MILLIONAIRE-NEEDS-100-MILLION_122s.mp4": {
    "id": "7708240192460606751",
-   "view_count": 5393,
-   "like_count": 394,
+   "view_count": 5428,
+   "like_count": 396,
    "comment_count": 15,
    "share_count": 71,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708240192460606751?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -320,20 +340,20 @@
   },
   "KT_MIRAGE/01_MANIFEST-A-FERRARI-WITH-A-PHOTO_47s.mp4": {
    "id": "7708198574059736351",
-   "view_count": 12319,
-   "like_count": 1326,
+   "view_count": 12389,
+   "like_count": 1333,
    "comment_count": 19,
-   "share_count": 56,
+   "share_count": 58,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708198574059736351?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 46,
    "posted": "2026-11-15T01:07"
   },
   "KT_VAULTWIDER2/01_FORBES-400-LIST-LIES-WIDE_62s.mp4": {
    "id": "7708152396463082765",
-   "view_count": 59130,
-   "like_count": 2458,
+   "view_count": 59241,
+   "like_count": 2469,
    "comment_count": 88,
-   "share_count": 245,
+   "share_count": 246,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7708152396463082765?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 61,
    "posted": "2026-11-14T22:08"
@@ -350,18 +370,18 @@
   },
   "KT_FORGER2/01_SAME-RECESSION-ONE-BANKRUPT-ONE-RICH_127s.mp4": {
    "id": "7707989412906306846",
-   "view_count": 3494,
-   "like_count": 208,
+   "view_count": 3624,
+   "like_count": 213,
    "comment_count": 6,
-   "share_count": 97,
+   "share_count": 103,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7707989412906306846?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 126,
    "posted": "2026-11-14T11:36"
   },
   "KT_MASONRY/01_RICH-TOWN-ONLY-HAD-BUSINESS-OWNERS_87s.mp4": {
    "id": "7707879220852149535",
-   "view_count": 10008,
-   "like_count": 169,
+   "view_count": 10150,
+   "like_count": 170,
    "comment_count": 1,
    "share_count": 10,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7707879220852149535?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
@@ -390,17 +410,17 @@
   },
   "KT_FORGE/01_THE-RICHEST-MAN-WAS-NEVER-INDECISIVE_98s.mp4": {
    "id": "7707494403056635167",
-   "view_count": 388,
+   "view_count": 389,
    "like_count": 32,
    "comment_count": 0,
-   "share_count": 1,
+   "share_count": 2,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7707494403056635167?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
    "duration": 97,
    "posted": "2026-11-13T03:34"
   },
   "KT_FORGE/02_HENRY-FORD-DIDNT-INVENT-CARS_94s.mp4": {
    "id": "7707298482863770910",
-   "view_count": 2205,
+   "view_count": 2212,
    "like_count": 22,
    "comment_count": 0,
    "share_count": 1,
@@ -450,7 +470,7 @@
   },
   "KT_TIMBER/01_87500-IN-ONE-DAY_52s.mp4": {
    "id": "7707036868591865118",
-   "view_count": 1596,
+   "view_count": 1619,
    "like_count": 60,
    "comment_count": 0,
    "share_count": 2,
@@ -710,8 +730,8 @@
   },
   "KT_ADVERSITYR2R2/01_THE-BOOK-THAT-SOLD-50-MILLION-COPIES_62s.mp4": {
    "id": "7703549510210850079",
-   "view_count": 2514,
-   "like_count": 208,
+   "view_count": 2530,
+   "like_count": 209,
    "comment_count": 4,
    "share_count": 37,
    "share_url": "https://www.tiktok.com/@what_do_you_wan7t/video/7703549510210850079?utm_campaign=tt4d_open_api&utm_source=sbawewz4fdz6a5db76",
