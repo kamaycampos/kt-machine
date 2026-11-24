@@ -438,6 +438,11 @@
    "at": "2026-11-20T11:44:49.160062+00:00",
    "platform": "instagram",
    "error": "Please reduce the amount of data you're asking for, then retry your request"
+  },
+  {
+   "at": "2026-11-24T23:13:25.075948+00:00",
+   "platform": "instagram",
+   "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
   }
  ],
  "tries": {
