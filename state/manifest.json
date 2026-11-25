@@ -16909,8 +16909,7 @@
    },
    "caption_at_post": "Kevin Trudeau filmed his very first infomercial in 1989 in Fairfield, Iowa - home to one of the biggest Transcendental Meditation communities in the country.\n\nHe picked the location on purpose: he believed the energy there, the vibration of the place, mattered more than the script.\n\nHe went up, spoke for about an hour, and that was it. No retakes, no second take, no polish.\n\nThat single, unscripted recording went on to sell $450 million in Mega Memory home-study courses.\n\nWould you trust one take over twenty rehearsed ones?\n\n#kevintrudeau #megamemory #successmindset #wealthmindset #manifestation #lawofattraction",
    "posted_at": "2026-11-18T16:58",
-   "tiktok_retry": true,
-   "tiktok_tries": 0,
+   "tiktok_tries": 1,
    "tiktok_resend": true
   },
   {
@@ -17051,7 +17050,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611251712193F37EBCC74A2C9113D9F'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17066,7 +17065,8 @@
    "posted_at": "2026-11-17T16:56",
    "tiktok_retry": true,
    "tiktok_tries": 0,
-   "tiktok_resend": true
+   "tiktok_resend": true,
+   "tiktok_wait_until": "2026-11-25T19:12"
   },
   {
    "file": "KT_DREAMWORLDO/01_GORDON-RAMSAY-DREAM-WORLD-RULE_46s.mp4",
@@ -19327,7 +19327,7 @@
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-25T12:12",
+   "scheduled_at": "2026-11-25T20:00",
    "cta_keyword": "BRAIN",
    "cta_variant": 4,
    "cta_kind": "offer"

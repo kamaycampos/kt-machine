@@ -3657,7 +3657,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18113557574523572"
+    "id": "18113557574523572",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_RULEBOOK__ONLY-RICH-WHITE-MEN-COULD-VOTE__V2.mp4",
@@ -3667,7 +3671,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18034592018856746"
+    "id": "18034592018856746",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_RULEBOOK__ONLY-RICH-WHITE-MEN-COULD-VOTE__V3.mp4",
@@ -3677,7 +3685,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "17970000324230177"
+    "id": "17970000324230177",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_RULEBOOK__ONLY-RICH-WHITE-MEN-COULD-VOTE__V4.mp4",
@@ -3687,7 +3699,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18114859649413538"
+    "id": "18114859649413538",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_RULEBOOK__ONLY-RICH-WHITE-MEN-COULD-VOTE__V5.mp4",
@@ -3697,7 +3713,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18347712961261689"
+    "id": "18347712961261689",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_RULEBOOK__ONLY-RICH-WHITE-MEN-COULD-VOTE__V6.mp4",
@@ -3707,7 +3727,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "17941593393124646"
+    "id": "17941593393124646",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_RULEBOOK__ONLY-RICH-WHITE-MEN-COULD-VOTE__V7.mp4",
@@ -3717,10 +3741,50 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "17920308054259908"
+    "id": "17920308054259908",
+    "views": 2,
+    "reach": 1,
+    "shares": 0,
+    "saved": 0
    }
   ],
-  "posted": "2026-11-23T17:06"
+  "posted": "2026-11-23T17:06",
+  "winner": {
+   "hook": [
+    "Only landlords voted.",
+    "That's real history."
+   ],
+   "views": 2,
+   "shares": 0,
+   "reach": 1,
+   "others": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ]
+  },
+  "scored": "2026-11-25T17:12"
  },
  "AR_CASTE__NINETY-PERCENT-ARE-BUILT-TO-FOLLOW": {
   "clip": "AR_CASTE/01_NINETY-PERCENT-ARE-BUILT-TO-FOLLOW_129s.mp4",
