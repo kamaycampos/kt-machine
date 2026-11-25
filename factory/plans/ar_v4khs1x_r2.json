@@ -1,0 +1,68 @@
+{
+ "source": "v4khs1x.mp4",
+ "brand": "AR_CLUBHOUSER2",
+ "test": false,
+ "note": "25 Nov 2026 - second chances for 'The Globalist Agenda, Immigration, Bitcoin, Donald Trump | The Kevin Trudeau Show - Episode 002' (Rumble v4khs1x). Awakened Rise weekly agent. All three clips came back 'no clip came out of the render' (AR_PLANNING.md: almost always the edge landing on B-roll with no face, or a mid-cue drift that puts the real start somewhere other than where it was aimed). I-TRAINED-POLITICIANS-TO-BE-CONTROLLED: moved the start onto the next full sentence ('I talked about this as the image makers...'), past the book-cover name-drop ('Natural Cures... More Natural Cures Revealed') that likely cut to a graphic right at the old start. I-KNOCKED-ON-THE-ROTHSCHILDS-DOOR: the old start (2117.5s) landed mid-cue, inside a 17-second caption block that actually begins two sentences earlier - moved onto the next clean cue boundary ('And I was at the Four Seasons Hotel...'), which still reaches the Rothschild-mansion reveal a few seconds later in the same clip. YOUR-ENERGY-MOVES-THE-FIELD: moved the start past the Gandhi name-drop/quote, which almost certainly triggers a Gandhi photo graphic, onto the next sentence where Kevin is talking directly to camera. All three keep their original captions - checked against the trimmed transcript, nothing in them depends on the dropped opening lines.",
+ "clips": [
+  {
+   "slug": "I-TRAINED-POLITICIANS-TO-BE-CONTROLLED",
+   "retry_of": "ar_v4khs1x/I-TRAINED-POLITICIANS-TO-BE-CONTROLLED",
+   "in": 487.5,
+   "out": 532.5,
+   "start_words": "I talked about this",
+   "end_words": "You're being controlled",
+   "hook": ["I trained politicians", "to be controlled."],
+   "trial_hooks": [
+    ["Decades ago.", "Still running today."],
+    ["The Brotherhood trained this.", "On politicians."],
+    ["Suggestible means controllable.", "He proved it."],
+    ["You're suggestible right now.", "Probably."],
+    ["Kevin trained this.", "On real politicians."],
+    ["Watch your suggestibility.", "It's being used."],
+    ["He controlled politicians.", "On purpose."]
+   ],
+   "send": "A friend who thinks they're too smart to be manipulated by the news, because this is literally the job description of who used to do it to politicians - unease.",
+   "caption": "Before Kevin Trudeau was writing books about what they don't want you to know, he was one of the people doing the programming - inside an organization called the Brotherhood, using what he calls the image makers, the secret science of images.\n\nThe method isn't complicated. Make someone suggestible first - tired, distracted, a little afraid - and suggestions slide right in without resistance. That's how an entire group of politicians got made controllable, long before most of them ever took office. The same mechanism runs through the media, the music, and the shows you watch every single day.\n\nComment RISE and I'll send you how to spot it.\n\n#programming #subconscious #brotherhood #awakening #consciousness #kevintrudeau"
+  },
+  {
+   "slug": "I-KNOCKED-ON-THE-ROTHSCHILDS-DOOR",
+   "retry_of": "ar_v4khs1x/I-KNOCKED-ON-THE-ROTHSCHILDS-DOOR",
+   "in": 2146.5,
+   "out": 2241.5,
+   "start_words": "And I was at",
+   "end_words": "where this is going",
+   "hook": ["I knocked", "on the Rothschilds' door."],
+   "trial_hooks": [
+    ["One door.", "Eight world leaders."],
+    ["The Rothschilds owned this.", "Kissinger too."],
+    ["No sign.", "Real power inside."],
+    ["You'd walk past it.", "He didn't."],
+    ["Kissinger was there.", "So was he."],
+    ["Find that door.", "Good luck."],
+    ["The Panama Canal Treaty.", "Signed there."]
+   ],
+   "send": "A friend obsessed with the Rothschilds and secret societies online, because this isn't a theory - he's describing the actual door he walked through - awe, unease.",
+   "caption": "Across the street from the Four Seasons in London sits a building with no sign, no logo, not even a buzzer. It used to belong to the Rothschilds. Now it's a private club nobody talks about by name.\n\nKevin says he was told exactly where to knock. The door opened before his hand came down, a man in a tuxedo already expecting him. Inside: the room where the Panama Canal Treaty was signed, and a small meeting with Henry Kissinger about where the next fifty years were headed.\n\nComment RISE and I'll send you what was actually said in that room.\n\n#brotherhood #secretsocieties #disclosure #bilderberg #awakening #kevintrudeau"
+  },
+  {
+   "slug": "YOUR-ENERGY-MOVES-THE-FIELD",
+   "retry_of": "ar_v4khs1x/YOUR-ENERGY-MOVES-THE-FIELD",
+   "in": 4292.5,
+   "out": 4427.5,
+   "start_words": "What most people want",
+   "end_words": "everything else around you",
+   "hook": ["Your energy", "moves the universal field."],
+   "trial_hooks": [
+    ["Fifty years.", "Already decided."],
+    ["The universal field responds.", "To you."],
+    ["You can't fix them.", "Fix you."],
+    ["Change yourself first.", "Everything else follows."],
+    ["Gandhi said this.", "It still works."],
+    ["Stop changing them.", "Change you instead."],
+    ["One person.", "A universal field."]
+   ],
+   "send": "A friend obsessed with fixing everyone else's problems and burning out over it, because this says the only lever that ever actually worked was never them - relief, permission.",
+   "caption": "World War Two started. Once that door opened, nobody could close it again - the only thing left to do was let it play out. Some things really are bigger than any one person pushing against them.\n\nThat's exactly why the Serenity Prayer works: the courage to change what you can, the patience to accept what you can't, the wisdom to know the difference. And the one thing you can always change is yourself. The moment you do, your energy ripples out into what Kevin calls the universal field - and the people and situations around you start to shift, without you lifting a finger to control them directly.\n\nComment RISE and I'll send you how the ripple actually works.\n\n#manifestation #karma #universe #awakening #consciousness #kevintrudeau"
+  }
+ ]
+}
