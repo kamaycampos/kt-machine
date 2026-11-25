@@ -17129,7 +17129,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611251730107EC1EE10981D851206B7'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17144,7 +17144,8 @@
    "posted_at": "2026-11-18T08:37",
    "tiktok_retry": true,
    "tiktok_tries": 0,
-   "tiktok_resend": true
+   "tiktok_resend": true,
+   "tiktok_wait_until": "2026-11-25T19:30"
   },
   {
    "file": "KT_VORTEXO/01_WHY-YOUR-SUCCESS-COACH-IS-BROKE_34s.mp4",
@@ -19118,14 +19119,28 @@
    "caption": "The thing you're fighting hardest is the thing keeping you stuck.\n\nThere's a two-step most people never learn. First, acknowledge - not deny. You can't change what you won't admit is real. Second, accept - not resist, because what you resist persists; fighting a fact doesn't remove it, it just drains you. Only after both steps does the real question show up: what can you actually change, starting with yourself?\n\nMost people skip straight to anger and skip the part that actually frees them.\n\nComment RISE and I'll send you the rest of this.\n\n#subconscious #mindset #awakening #consciousness #selfmastery #kevintrudeau",
    "hook": "Fighting it only makes you weaker.",
    "bytes": 101341254,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-25T12:19",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1408411784701494/",
+    "instagram": "https://www.instagram.com/reel/DgLEkjyTdyl/",
+    "youtube": "https://youtube.com/shorts/YJtkm7Z79lY"
+   },
+   "caption_at_post": "The thing you're fighting hardest is the thing keeping you stuck.\n\nThere's a two-step most people never learn. First, acknowledge - not deny. You can't change what you won't admit is real. Second, accept - not resist, because what you resist persists; fighting a fact doesn't remove it, it just drains you. Only after both steps does the real question show up: what can you actually change, starting with yourself?\n\nMost people skip straight to anger and skip the part that actually frees them.\n\nComment RISE and I'll send you the rest of this.\n\n#subconscious #mindset #awakening #consciousness #selfmastery #kevintrudeau",
+   "posted_at": "2026-11-25T12:37"
   },
   {
    "file": "AR_TRANCER2/01_YOUR-TRANCE-HAS-AN-OFF-SWITCH_53s.mp4",
