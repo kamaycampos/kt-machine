@@ -163,6 +163,16 @@ def check(path):
     if not (p.get("money") or p.get("names")):
         say("an Episode is a RESULT story: 'money' (a sum he says) or 'names' (the thing he got) must not be empty "
             "- a story whose turn is a feeling (happy, amazed, calm) is an ordinary clip, not an Episode")
+    # NOT KEVIN'S CAMERA (25 Nov 2026): Episode 11 was built from v5hsmvp, a split screen with a radio host's face
+    # filling two thirds and Kevin small at the side - the factory had already refused 3 clips of it as "not Kevin".
+    try:
+        _fl = json.load(open(os.path.join(HERE, "plans", "_failed.json")))["clips"]
+        _nk = sum(1 for _e in _fl.values() if str(_e.get("source", ""))[:-4] == vid
+                  and any("not Kevin" in w for w in (_e.get("why") or [])))
+    except (OSError, ValueError, KeyError):
+        _nk = 0
+    if _nk >= 2:
+        say(f"{vid} is not Kevin's camera ({_nk} clips of it refused 'not Kevin' - a split screen or a guest): pick another episode")
     _why = str(p.get("why_movie", ""))
     for _q in ("RESULT:", "METHOD:", "WISH:"):
         if _q not in _why:
