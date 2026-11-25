@@ -179,6 +179,11 @@ def main():
             # retried is a clip that was retired before it ever published.
             if not c.get("tiktok_retry") or not c.get("posted_at"):
                 continue
+            # A FULL INBOX IS A WAIT, NOT A FAILURE (24 Nov 2026). Re-sending the drafts TikTok broke, TikTok
+            # may answer "too many pending" while he has many drafts waiting. That clip waits 2 hours and
+            # tries again; it never loses its turn and never counts as a try.
+            if c.get("tiktok_wait_until") and time.strftime("%Y-%m-%dT%H:%M", time.gmtime()) < c["tiktok_wait_until"]:
+                continue
             if c.get("tiktok_tries", 0) >= 3:
                 c.pop("tiktok_retry", None)
                 log(f"tiktok gave up after 3 tries: {c['file']}")
@@ -197,6 +202,12 @@ def main():
             tt = (res or {}).get("tiktok", "")
             log(f"tiktok retry {c['file']}: {tt}")
             st = dict(c.get("status") or {}); st["tiktok"] = tt; c["status"] = st
+            if "spam_risk" in str(tt) and c.get("tiktok_resend"):
+                c["tiktok_wait_until"] = time.strftime("%Y-%m-%dT%H:%M", time.gmtime(time.time() + 7200))
+                log(f"  tiktok inbox full - {c['file']} waits until {c['tiktok_wait_until']} UTC")
+                engine.save(man)
+                break
+            c.pop("tiktok_wait_until", None)
             c["tiktok_tries"] = c.get("tiktok_tries", 0) + 1
             c["tiktok_retry"] = tiktok_failed(tt)
             if not c["tiktok_retry"]:
