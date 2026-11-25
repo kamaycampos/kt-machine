@@ -15195,6 +15195,60 @@
     "Two strangers manifest",
     "the same offer"
    ]
+  },
+  "ar_v5ejap5_p2/HIS-HORSE-RAN-HE-GOT-RICH": {
+   "plan": "ar_v5ejap5_p2",
+   "source": "v5ejap5.mp4",
+   "brand": "AR_WILDHORSES",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `01_HIS-HORSE-RAN-HE-GOT-RICH_64s.mp4` - phrase scrambled around \"son because the son\""
+   ],
+   "slug": "HIS-HORSE-RAN-HE-GOT-RICH",
+   "in": 3392.7,
+   "out": 3457.38,
+   "start_words": "you heard me tell",
+   "end_words": "it just means it's not the end",
+   "hook": [
+    "His horse ran.",
+    "He got rich."
+   ]
+  },
+  "ep_v57b3cd_p3/PAPER-MONEY-VS-REAL-MONEY-FEAR": {
+   "plan": "ep_v57b3cd_p3",
+   "source": "v57b3cd.mp4",
+   "brand": "KT_PAPERTRADE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_PAPER-MONEY-VS-REAL-MONEY-FEAR_118s.mp4` - picture is 0x0, not 1080x1920; no audio stream; 0s is outside 8-185s"
+   ],
+   "slug": "PAPER-MONEY-VS-REAL-MONEY-FEAR",
+   "in": 3535.14,
+   "out": 3652.7,
+   "start_words": "I'm a day trader",
+   "end_words": "you'll get what you don't want",
+   "hook": [
+    "Why real money",
+    "feels like fear"
+   ]
+  },
+  "ep_v6c74p7_r2/HE-CELEBRATED-HIS-COMPETITORS": {
+   "plan": "ep_v6c74p7_r2",
+   "source": "v6c74p7.mp4",
+   "brand": "KT_BIGDREAMR2",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_HE-CELEBRATED-HIS-COMPETITORS_143s.mp4` - opens mid-sentence on \"going on,\""
+   ],
+   "slug": "HE-CELEBRATED-HIS-COMPETITORS",
+   "in": 2805.0,
+   "out": 2949.0,
+   "start_words": "Winners confront. They assess",
+   "end_words": "that's confront energy",
+   "hook": [
+    "Why winners celebrate",
+    "their competitors"
+   ]
   }
  },
  "attempts": {
@@ -15292,6 +15346,9 @@
   "ep_v4tz80x_p6": 1,
   "ep_v5hsmvp_p2": 2,
   "ep_v59sdnh_p2": 2,
-  "ep_v5hsmvp_r2": 2
+  "ep_v5hsmvp_r2": 2,
+  "ar_v4khs1x_r2": 1,
+  "ep_v5dm94d_p2": 1,
+  "ep_v6c74p7_p3": 1
  }
 }
