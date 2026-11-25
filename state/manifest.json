@@ -17199,8 +17199,7 @@
    },
    "caption_at_post": "Kevin Trudeau says the voice that told you \"you can't\" probably wasn't yours - a parent or teacher said it once when you were a kid, and you never questioned it again.\n\nHenry Ford, one of the richest men who ever lived, put the fix in six words: if you believe you can, or you believe you can't, either way, you're right.\n\nIt isn't motivation. It's a program running in the background, deciding outcomes before you even try - and nobody hands you a new one until you notice the old one running.\n\nWhat did you decide about yourself before you were old enough to question it?\n\n#kevintrudeau #henryford #mindsetmatters #selfbelief #successmindset #lawofattraction",
    "posted_at": "2026-11-19T16:00",
-   "tiktok_retry": true,
-   "tiktok_tries": 0,
+   "tiktok_tries": 1,
    "tiktok_resend": true
   },
   {
@@ -17686,7 +17685,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026112517542034CE82D000265212A851'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17704,7 +17703,8 @@
    "posted_at": "2026-11-20T08:43",
    "tiktok_retry": true,
    "tiktok_tries": 0,
-   "tiktok_resend": true
+   "tiktok_resend": true,
+   "tiktok_wait_until": "2026-11-25T19:54"
   },
   {
    "file": "AR_BILDERBERGR4/01_WORK-DEBT-KIDS-THEN-YOU-DIE_103s.mp4",
