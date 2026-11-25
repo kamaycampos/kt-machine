@@ -17683,7 +17683,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261125201116DF337873E2730A1CA1E4'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611252231146C54F4D7A4CA27269329'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17702,7 +17702,7 @@
    "tiktok_retry": true,
    "tiktok_tries": 0,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-25T22:11"
+   "tiktok_wait_until": "2026-11-26T00:31"
   },
   {
    "file": "AR_BILDERBERGR4/01_WORK-DEBT-KIDS-THEN-YOU-DIE_103s.mp4",
@@ -19441,14 +19441,28 @@
    "caption": "There's no rulebook for what's illegal in this country. Nobody handed you one, and nobody can show you where it's written down.\n\nA man bought a can of marine paint, legal the day he bought it. By the time he used it on his own boat, it had quietly been outlawed. He didn't know. He served a year.\n\nThis isn't really about paint. It's about how easily a system that claims to protect you can turn into a trap - and how safe you probably feel right now.\n\nComment RISE and I'll send you what to actually watch for.\n\n#disclosure #hiddentruth #government #wakeup #awakening #kevintrudeau",
    "hook": "They jail you. For almost anything.",
    "bytes": 115586867,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media3",
    "look": "classic",
    "scheduled_at": "2026-11-25T17:27",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1141184441985731/",
+    "instagram": "https://www.instagram.com/reel/DgLnAbvhkeU/",
+    "youtube": "https://youtube.com/shorts/DUVQsCFzEXg"
+   },
+   "caption_at_post": "There's no rulebook for what's illegal in this country. Nobody handed you one, and nobody can show you where it's written down.\n\nA man bought a can of marine paint, legal the day he bought it. By the time he used it on his own boat, it had quietly been outlawed. He didn't know. He served a year.\n\nThis isn't really about paint. It's about how easily a system that claims to protect you can turn into a trap - and how safe you probably feel right now.\n\nComment RISE and I'll send you what to actually watch for.\n\n#disclosure #hiddentruth #government #wakeup #awakening #kevintrudeau",
+   "posted_at": "2026-11-25T17:38"
   },
   {
    "file": "AR_FIELDR3/01_HER-CRAVING-HIT-ZERO-IN-SECONDS_64s.mp4",
