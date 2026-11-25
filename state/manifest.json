@@ -19370,7 +19370,11 @@
    "done": false,
    "status": {},
    "media_tag": "media3",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-26T08:18",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "AR_UNFIREABLER2/01_BRAND-NEW-TVS-PAID-BY-YOU_58s.mp4",
@@ -19380,7 +19384,11 @@
    "done": false,
    "status": {},
    "media_tag": "media3",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-25T20:16",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_UNFIREABLER2/01_CANT-BE-FIRED-EVEN-DRUNK_58s.mp4",
@@ -19390,7 +19398,11 @@
    "done": false,
    "status": {},
    "media_tag": "media3",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-26T08:43",
+   "cta_keyword": "YES",
+   "cta_variant": 2,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_UNFIREABLER2/02_SEARS-CEO-NEVER-VISITED-A-STORE_173s.mp4",
@@ -19400,7 +19412,11 @@
    "done": false,
    "status": {},
    "media_tag": "media3",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-26T10:05",
+   "cta_keyword": "RISE",
+   "cta_variant": 3,
+   "cta_kind": "question"
   },
   {
    "file": "KT_ANCHORR2/01_WHY-YOUR-FAMILY-FEELS-YOUR-STRESS_121s.mp4",
@@ -19411,7 +19427,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-26T10:49",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 6,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_ANCHORR2/02_THE-OCEAN-TRICK-FOR-A-STUCK-MIND_117s.mp4",
@@ -19422,7 +19442,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-26T08:37",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 4,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_PAPERTRADE/01_WHY-ROCKEFELLERS-DRIVE-PAST-MANSIONS_112s.mp4",
@@ -19433,7 +19457,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-26T09:24",
+   "cta_keyword": "MONEY",
+   "cta_variant": 5,
+   "cta_kind": "question"
   }
  ]
 }
