@@ -1,0 +1,21 @@
+{"source": "v6c74p7.mp4", "brand": "KT_BIGDREAMR2", "test": false,
+ "note": "25 Nov 2026 - second chance on 'The 3 Secrets Used By Every Billionaire | Ep. 85' (Rumble v6c74p7). HE-CELEBRATED-HIS-COMPETITORS failed on caption-vs-sound drift (median +0.36s, worst-10% 0.97s), a timing issue, not the content - moved both edges to new sentence boundaries: starts earlier on 'Winners confront' (a clean standalone claim) and ends on Kevin's own label line 'that's confront energy' instead of the softer 'we remain good friends'. Skipped SAME-START-200-MILLION-APART (tries 2; the story names a sitting president by name - political, not re-cut) and THE-TRASH-TEST-FOR-YOUR-MINDSET (the damaged 'trash overflowing the trash' phrase sits inside the core illustration, not at an edge - per PLANNING.md, skip rather than cut around it). Weekly agent.",
+ "clips": [
+  {"slug": "HE-CELEBRATED-HIS-COMPETITORS", "in": 2805.0, "out": 2949.0,
+   "retry_of": "ep_v6c74p7/HE-CELEBRATED-HIS-COMPETITORS",
+   "start_words": "Winners confront. They assess",
+   "end_words": "that's confront energy",
+   "hook": ["Why winners celebrate", "their competitors"],
+   "trial_hooks": [
+     ["Two quit.", "He partied anyway"],
+     ["Fear of confronting", "is costing you"],
+     ["Rivals quit.", "Business kept growing"],
+     ["Why you avoid", "your biggest problems"],
+     ["His rivals left.", "He celebrated instead"],
+     ["Kevin Trudeau celebrates", "his own competitors"],
+     ["Winners throw parties", "for their rivals"]
+   ],
+   "send": "A manager who hides bad news from their own boss sends this to them as proof it's safer to just say what's wrong.",
+   "caption": "Kevin Trudeau says winners share one trait losers don't: they can actually confront a problem instead of avoiding it.\n\nHis own staff would get nervous and avoid his eyes before telling him bad news. He'd just ask: what's the actual situation? Usually it's nowhere near as bad as the silence made it feel.\n\nOnce, the answer was two salesmen quit to start a competing company. His response: let's celebrate, let's throw them a party.\n\nComment BRAIN and I'll send you the training on how winners think, straight to your messages.\n\nWhat's a 'disaster' in your life that's smaller than it feels?\n\n#kevintrudeau #businessmindset #entrepreneurship #successmindset #mindsetmatters #leadership",
+   "opener": "champagne toast office party"}
+ ]}
