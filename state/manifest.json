@@ -18004,7 +18004,7 @@
     "facebook": "off for this account",
     "instagram": "posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026112518502197C1E8A5FAB936177B8C'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261125211033664163346A828E214904'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -18037,7 +18037,7 @@
    "tiktok_retry": true,
    "tiktok_tries": 0,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-25T20:50"
+   "tiktok_wait_until": "2026-11-25T23:10"
   },
   {
    "file": "AR_BREATHCODER2/01_HIS-PUNCH-NEVER-TOUCHED-THE-FLAME_120s.mp4",
