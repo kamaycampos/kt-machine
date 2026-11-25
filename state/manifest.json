@@ -17829,7 +17829,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611251811041C49B010C5B33C14A653'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026112520311799DE6AA38704391EE38E'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17848,7 +17848,7 @@
    "tiktok_retry": true,
    "tiktok_tries": 0,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-25T20:11"
+   "tiktok_wait_until": "2026-11-25T22:31"
   },
   {
    "file": "KT_KNIFE/01_ONE-GINSU-AD-PAID-FOR-LIFE_162s.mp4",
@@ -19298,14 +19298,27 @@
    "hook": "How books build a money magnet",
    "bytes": 69977538,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261125203502CC18906A1B07991E8853'}}"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-25T15:30",
    "cta_keyword": "MONEY",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgLZPGzgRLA/",
+    "youtube": "https://youtube.com/shorts/cNTQjEAGJHQ"
+   },
+   "caption_at_post": "Kevin Trudeau says for decades there were no seminars, no YouTube, no workshops, no audio courses - just two ways to learn success.\n\nOne: find a rich person and become their apprentice. Work for them, study them, mimic their thinking, their words, their actions.\n\nTwo: read books. Kevin Trudeau says books actually change the size of the hippocampus in the brain, more than audio ever does - and that is what lets you broadcast the frequency that attracts money into your life.\n\nWhich path have you actually been taking - studying success up close, or just scrolling past it?\n\n#kevintrudeau #successmindset #wealthhabits #readingbooks #mindset #manifestation",
+   "posted_at": "2026-11-25T15:35"
   },
   {
    "file": "KT_DUPLICATESUCCESS/01_HE-STUDIED-KEVINS-ADS-BECAME-NUMBER-1-COPYWRITER_47s.mp4",
