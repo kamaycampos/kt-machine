@@ -18986,7 +18986,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611251913435A5DC25C913D1919AAAC'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261125213054D501EE9B28328C22237A'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -19005,7 +19005,7 @@
    "tiktok_retry": true,
    "tiktok_tries": 0,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-25T21:13"
+   "tiktok_wait_until": "2026-11-25T23:30"
   },
   {
    "file": "KT_EPISODE/11_256-000-FOR-NOTHING_87s.mp4",
@@ -19561,7 +19561,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-26T12:36",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_ALTITUDE/01_WORK-FOR-MONEY-OR-MONEY-WORKS_73s.mp4",
@@ -19572,7 +19576,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-25T20:27",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
