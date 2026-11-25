@@ -12748,7 +12748,8 @@
      "How books build",
      "a money magnet"
     ],
-    "caption": "Kevin Trudeau says for decades there were no seminars, no YouTube, no workshops, no audio courses - just two ways to learn success.\n\nOne: find a rich person and become their apprentice. Work for them, study them, mimic their thinking, their words, their actions.\n\nTwo: read books. Kevin Trudeau says books actually change the size of the hippocampus in the brain, more than audio ever does - and that is what lets you broadcast the frequency that attracts money into your life.\n\nWhich path have you actually been taking - studying success up close, or just scrolling past it?\n\n#kevintrudeau #successmindset #wealthhabits #readingbooks #mindset #manifestation"
+    "caption": "Kevin Trudeau says for decades there were no seminars, no YouTube, no workshops, no audio courses - just two ways to learn success.\n\nOne: find a rich person and become their apprentice. Work for them, study them, mimic their thinking, their words, their actions.\n\nTwo: read books. Kevin Trudeau says books actually change the size of the hippocampus in the brain, more than audio ever does - and that is what lets you broadcast the frequency that attracts money into your life.\n\nWhich path have you actually been taking - studying success up close, or just scrolling past it?\n\n#kevintrudeau #successmindset #wealthhabits #readingbooks #mindset #manifestation",
+    "locked": true
    }
   ]
  },
@@ -12965,5 +12966,32 @@
   "brand": "KT_BIGDREAMR2",
   "note": "25 Nov 2026 - second chance on 'The 3 Secrets Used By Every Billionaire | Ep. 85' (Rumble v6c74p7). HE-CELEBRATED-HIS-COMPETITORS failed on caption-vs-sound drift (median +0.36s, worst-10% 0.97s), a timing issue, not the content - moved both edges to new sentence boundaries: starts earlier on 'Winners confront' (a clean standalone claim) and ends on Kevin's own label line 'that's confront energy' instead of the softer 'we remain good friends'. Skipped SAME-START-200-MILLION-APART (tries 2; the story names a sitting president by name - political, not re-cut) and THE-TRASH-TEST-FOR-YOUR-MINDSET (the damaged 'trash overflowing the trash' phrase sits inside the core illustration, not at an edge - per PLANNING.md, skip rather than cut around it). Weekly agent.",
   "clips": []
+ },
+ "ep_v7iwclg": {
+  "source": "v7iwclg.mp4",
+  "brand": "KT_ALTITUDE",
+  "note": "25 Nov 2026 - 'What One Private Jet Ride Revealed About Getting Rich' (Rumble v7iwclg). Same-day run, newest upload.",
+  "clips": [
+   {
+    "slug": "WORK-FOR-MONEY-OR-MONEY-WORKS",
+    "in": 228.34,
+    "out": 302.01,
+    "hook": [
+     "Why $300,000",
+     "beats your $1M job"
+    ],
+    "caption": "Kevin Trudeau says most people spend their life trying to earn more - work harder, work longer, get smarter at the job. That is not freedom, just a bigger paycheck on the same cage.\n\nReal freedom looks different: you do nothing, and $300,000 a year still shows up. His point: stop asking how to earn more, start asking how to get your money working for you.\n\nA million dollars you grind for is not independence. $300,000 you never lift a finger for is.\n\nComment MONEY and I'll send you the next step.\n\n#kevintrudeau #financialfreedom #wealthmindset #moneymindset #passiveincome #richmindset"
+   },
+   {
+    "slug": "THE-35-MILLION-JET",
+    "in": 1718.82,
+    "out": 1804.75,
+    "hook": [
+     "Why a $35M jet",
+     "came anyway"
+    ],
+    "caption": "Kevin Trudeau says he was on a friend's $65 million private jet, paid for in cash, when the guys on board complained about commercial flight delays. Someone said, \"let's talk about a private plane when we have the money.\" He said that line would keep him broke forever.\n\nHis rule: talk about it now, before you can afford it. Wait for the money first, and it never comes at all.\n\nNot long ago, a jet like that was a joke to him. Now he flies on a $35 million one, because he dreamed it before the income caught up.\n\nComment MONEY and I'll send you more on how this works.\n\n#kevintrudeau #wealthmindset #manifestation #milliondollarmindset #abundance #richmindset"
+   }
+  ]
  }
 }

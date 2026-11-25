@@ -15339,6 +15339,96 @@
     "Why Bill Gates",
     "stayed impatient"
    ]
+  },
+  "ep_v7iwclg/DONT-TELL-THE-UNIVERSE-HOW": {
+   "plan": "ep_v7iwclg",
+   "source": "v7iwclg.mp4",
+   "brand": "KT_ALTITUDE",
+   "tries": 1,
+   "why": [
+    "NOT QUEUED** `02_DONT-TELL-THE-UNIVERSE-HOW_60s.mp4` - opens mid-sentence on \"you're shooting for\"; word repeated after one: \"when you when\""
+   ],
+   "slug": "DONT-TELL-THE-UNIVERSE-HOW",
+   "in": 305.0,
+   "out": 364.0,
+   "start_words": "They're shooting for the wrong goal",
+   "end_words": "figure it out on its own",
+   "hook": [
+    "Why knowing how",
+    "keeps you broke"
+   ]
+  },
+  "ep_v7iwclg/THE-10-MILLION-DEBT-FREE-GOAL": {
+   "plan": "ep_v7iwclg",
+   "source": "v7iwclg.mp4",
+   "brand": "KT_ALTITUDE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "THE-10-MILLION-DEBT-FREE-GOAL",
+   "in": 442.0,
+   "out": 553.0,
+   "start_words": "There was a movie",
+   "end_words": "how that's going to happen",
+   "hook": [
+    "The $10 million",
+    "debt-free goal"
+   ]
+  },
+  "ep_v7iwclg/CREATING-IS-NOT-WORK": {
+   "plan": "ep_v7iwclg",
+   "source": "v7iwclg.mp4",
+   "brand": "KT_ALTITUDE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "CREATING-IS-NOT-WORK",
+   "in": 1300.0,
+   "out": 1392.0,
+   "start_words": "The one thing that",
+   "end_words": "office and create something",
+   "hook": [
+    "Why the rich never",
+    "stop creating"
+   ]
+  },
+  "ep_v7iwclg/THREE-PILLARS-OF-WEALTHY-THINKING": {
+   "plan": "ep_v7iwclg",
+   "source": "v7iwclg.mp4",
+   "brand": "KT_ALTITUDE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "THREE-PILLARS-OF-WEALTHY-THINKING",
+   "in": 1138.0,
+   "out": 1265.0,
+   "start_words": "There are three pillars",
+   "end_words": "having these things",
+   "hook": [
+    "Three beliefs",
+    "every rich person has"
+   ]
+  },
+  "ep_v7iwclg/THE-MONEY-BLOCK-RELEASE": {
+   "plan": "ep_v7iwclg",
+   "source": "v7iwclg.mp4",
+   "brand": "KT_ALTITUDE",
+   "tries": 1,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "THE-MONEY-BLOCK-RELEASE",
+   "in": 1560.0,
+   "out": 1705.0,
+   "start_words": "People feel free for",
+   "end_words": "go bigger than before Whoa",
+   "hook": [
+    "How to double",
+    "your dream number"
+   ]
   }
  },
  "attempts": {

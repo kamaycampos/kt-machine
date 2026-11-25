@@ -5373,5 +5373,67 @@
    }
   ],
   "posted": null
+ },
+ "KT_ALTITUDE__THE-35-MILLION-JET": {
+  "clip": "KT_ALTITUDE/01_THE-35-MILLION-JET_86s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_ALTITUDE__THE-35-MILLION-JET__V1.mp4",
+    "hook": [
+     "$65 million",
+     "then this happened"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_ALTITUDE__THE-35-MILLION-JET__V2.mp4",
+    "hook": [
+     "Playing it safe",
+     "keeps you poor"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_ALTITUDE__THE-35-MILLION-JET__V3.mp4",
+    "hook": [
+     "No money",
+     "a $35M jet anyway"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_ALTITUDE__THE-35-MILLION-JET__V4.mp4",
+    "hook": [
+     "Small dreams",
+     "keep your income small"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_ALTITUDE__THE-35-MILLION-JET__V5.mp4",
+    "hook": [
+     "A friend's jet",
+     "Kevin dreamed bigger"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_ALTITUDE__THE-35-MILLION-JET__V6.mp4",
+    "hook": [
+     "Kevin Trudeau dreamed",
+     "then cash came"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_ALTITUDE__THE-35-MILLION-JET__V7.mp4",
+    "hook": [
+     "Manifested: a $35M jet",
+     "with nothing"
+    ],
+    "media_tag": "media3"
+   }
+  ],
+  "posted": null
  }
 }
