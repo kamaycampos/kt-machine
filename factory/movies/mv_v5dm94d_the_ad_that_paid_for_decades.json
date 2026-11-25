@@ -47,51 +47,43 @@
  "scenes": [
   {
    "on": "I have a report. If you'd like to buy the report, it's $35.",
-   "gen": "A single typed one-page report on a dark wooden desk at night under a brass lamp, a stack of plain envelopes and a rotary phone beside it, blue moonlight from a window",
-   "move": "a hand slides the one-page report into a plain envelope and seals it",
-   "film_gen": "A 1970s kitchen table at night, a single typed one-page report under a lamp beside a stack of blank order-form envelopes and a rotary phone"
+   "gen": "A 1970s kitchen table at night, a single typed one-page report under a lamp beside a stack of blank order-form envelopes and a rotary phone",
+   "move": "a hand slides the one-page report into a plain envelope and seals it"
   },
   {
    "on": "No orders and I was out several thousand dollars.",
    "gen": "A young man in a 1970s collared shirt at a small table in a dim apartment at dusk, sorting a stack of opened envelopes that are all empty, cold blue light from the window",
-   "move": "he flips through the mail and lets the last empty envelope fall onto the table",
-   "film_gen": "A dim 1970s apartment hallway at dusk, a young man in a collared shirt sorting a stack of plain mail at a small table, finding every envelope empty"
+   "move": "he flips through the mail and lets the last empty envelope fall onto the table"
   },
   {
    "on": "I have a block. It's like there's like a black cloud. It's an energetic block.",
    "gen": "A young man in a 1970s collared shirt sits across a wooden desk from an older bearded mentor in a dark study at night, thick candle smoke curling in a shaft of moonlight above the young man's shoulder",
-   "move": "the smoke slowly curls and thickens in the moonlight above the young man's shoulder",
-   "film_gen": "A young man sits across a wooden desk from an older bearded mentor in a dim candlelit study, a swirling dark grey cloud of smoke hovering just above the young man's shoulder"
+   "move": "the smoke slowly curls and thickens in the moonlight above the young man's shoulder"
   },
   {
    "on": "Would you like to have it released?",
    "gen": "Close view of an older bearded mentor in a dark candlelit study raising one open hand, a brass bowl of glowing embers on the desk, haze drifting in a beam of blue moonlight",
-   "move": "the mentor slowly raises his open hand as the haze drifts through the moonlight",
-   "film_gen": "Close view of an older bearded mentor across a candlelit desk, one hand raised toward the young man seated opposite him, a small brass bowl of glowing embers between them"
+   "move": "the mentor slowly raises his open hand as the haze drifts through the moonlight"
   },
   {
    "on": "Good. You have to pay me. And back then, one money process that he offered me was like $5,000 back in 1979.",
    "gen": "A young man's hands counting worn hundred dollar bills into a stack on a dark wooden desk under a warm brass lamp, an older man's open hand waiting on the table",
-   "move": "the hand places the last bill on the stack and slides it across the desk",
-   "film_gen": "A young man in 1970s clothing counting worn hundred dollar bills into a stack on a wooden desk under lamp light, an older man's open hand waiting on the table"
+   "move": "the hand places the last bill on the stack and slides it across the desk"
   },
   {
    "on": "I'm going to go back and try this direct mail piece again.",
-   "gen": "A cramped print shop at night, a typeset newspaper advertisement block sitting under a single bright work lamp on a metal table, dust floating in the lamp light",
-   "move": "a man's hand taps the typeset block once and pulls back",
-   "film_gen": "A cramped 1970s print shop at night, a typeset block of the same newspaper advertisement sitting unchanged under a bright work lamp on a metal table"
+   "gen": "A cramped 1970s print shop at night, a typeset block of the same newspaper advertisement sitting unchanged under a bright work lamp on a metal table",
+   "move": "a man's hand taps the unchanged typeset block once and pulls back"
   },
   {
    "on": "Every day, I would get cash and money orders for $35. One, two, three, four, five, ten, $350. $1,000 a day was pouring in.",
-   "gen": "A cluttered home office desk at night completely buried under opened envelopes and loose cash spilling onto the floor, moonlight and a starry sky through the window, dust glowing in the light",
-   "move": "more envelopes slide off the overflowing pile and scatter across the floor",
-   "film_gen": "A cramped 1970s home office at night, a desk completely buried under a growing pile of opened envelopes with loose cash and money orders spilling onto the floor"
+   "gen": "A cramped 1970s home office at night, a desk completely buried under a growing pile of opened envelopes with loose cash and money orders spilling onto the floor",
+   "move": "more envelopes slide off the overflowing desk pile and scatter across the floor"
   },
   {
    "on": "They would pay me royalties and I would get residual income, royalty income for decades later, which allowed me the freedom to travel the world, do what I wanted, it was almost like I had a trust fund with a million dollars a year coming in.",
-   "gen": "A young man driving a cream convertible along a coastal highway at twilight, the Milky Way rising over the ocean, real night sky photography",
-   "move": "the convertible cruises steadily along the coast as the camera tracks alongside it",
-   "film_gen": "A young man driving a cream colored convertible along a sunny coastal highway at golden hour, relaxed with one hand on the wheel, open ocean on one side"
+   "gen": "A young man driving a cream colored convertible along a sunny coastal highway at golden hour, relaxed with one hand on the wheel, open ocean on one side",
+   "move": "the convertible cruises steadily along the coastal road as the camera tracks alongside it"
   }
  ],
  "money": [
