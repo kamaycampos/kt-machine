@@ -1208,6 +1208,11 @@ def tiktok_cover_first(path, public_url, clip):
     High 4.1, constant 30 fps, a keyframe every second, no open GOP, video capped at 8 Mb/s,
     AAC-LC 44.1 kHz stereo, moov at the front. A smaller, regular file also downloads to his
     phone faster when he opens the draft. TIKTOK_COVER_FIRST=off sends the clip untouched.
+
+    25 Nov, Kamay: "my internet is slow ... the ones coming in are stuck". The 24 Nov copy was
+    CRF 18 / 8 Mb/s - 40 MB for 47 s, 80 MB for 90 s - and the phone must pull the whole draft to
+    open it and push it back to post it. TikTok itself keeps 1-3 MB per clip. Now CRF 23, capped
+    at 3 Mb/s, AAC 128k: a 47 s clip is ~10 MB, same picture to the eye (compared frame by frame).
     Anything going wrong returns the clip untouched: a draft is better than no draft."""
     if os.environ.get("TIKTOK_COVER_FIRST", "on") == "off":
         return path
@@ -1250,11 +1255,11 @@ def tiktok_cover_first(path, public_url, clip):
         r = subprocess.run([ff, "-y", "-loglevel", "error", *ins,
                             "-filter_complex", graph, "-map", "[v]", "-map", "[a]", "-r", "30", "-fps_mode", "cfr",
                             "-c:v", "libx264", "-profile:v", "high", "-level:v", "4.1", "-preset", "medium",
-                            "-crf", "18", "-maxrate", "8M", "-bufsize", "16M",
+                            "-crf", "23", "-maxrate", "3M", "-bufsize", "6M",
                             "-g", "30", "-keyint_min", "30", "-sc_threshold", "0", "-flags", "+cgop",
                             "-pix_fmt", "yuv420p",
                             "-color_range", "tv", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709",
-                            "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-ac", "2",
+                            "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
                             "-movflags", "+faststart", "-shortest", out],
                            capture_output=True, text=True, timeout=1500)
         if r.returncode or not os.path.exists(out) or os.path.getsize(out) < 0.15 * os.path.getsize(path):
