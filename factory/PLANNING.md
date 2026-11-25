@@ -23,6 +23,16 @@ Kevin's own selling rules from his public shows (believe it, don't sell, facts t
 ask don't tell, make yes easy). Every hook, caption and closing question follows them.
 
 ## WHAT WINS ON TIKTOK - PLAN THESE FIRST (18 Nov 2026, Kamay: "make our tiktok explode")
+**25 NOV 2026 - NOW A QUOTA, NOT A PREFERENCE.** Our own TikTok, last 120 posts: median ~300 views, and the
+only breakouts are this exact kind - "A charge card and a credit card sound like the same plastic" **187,300 views /
+199 comments**, "the Forbes 400 list is not what it claims to be" **59,900 / 88**, "the word millionaire does not
+mean what you think" 5,502. Every story / motivation / manifesting clip sat at 50-400. Kamay, 25 Nov: "we are
+posting soooo much ... and still not viral ... take drastic decisions". So: **at least 2 of every 3 KT clips
+planned are kind 1 or 2 below** (money the system hides / a money word that means something else / what the rich
+do that you were never told / one habit + why), 45-70 s, the claim in the hook in plain words. Stories and
+motivation only fill the rest; Episodes stay as they are. If the run cannot find enough kind-1/2 moments in the
+uncut sources, plan fewer clips rather than fill with stories.
+
 Read on TikTok 18 Nov from the biggest Kevin accounts (kevintrudeau_student 449K followers, trudeaumanifesting
 344K, both free-course affiliates). Their 1M-5M clips are almost all ONE kind: **money the system hides, made
 practical** - "Mortgage is a scam" 5.1M (5,309 comments), "How to increase your credit score" 2.9M, "The thing
