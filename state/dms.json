@@ -322,7 +322,7 @@
    "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
   },
   {
-   "at": "2026-11-25T09:28:50.512465+00:00",
+   "at": "2026-11-25T09:32:01.382933+00:00",
    "platform": "instagram",
    "comment": "18363785929247473",
    "error": "Invalid message id"
@@ -373,6 +373,6 @@
   }
  },
  "tries": {
-  "18363785929247473": 1
+  "18363785929247473": 2
  }
 }
