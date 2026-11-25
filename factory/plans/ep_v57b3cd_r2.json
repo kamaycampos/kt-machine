@@ -1,0 +1,19 @@
+{"source": "v57b3cd.mp4", "brand": "KT_ANCHORR2", "test": false,
+ "note": "25 Nov 2026 - second chance on 'The Secrets to Mindfulness and Making Money | The Kevin Trudeau Show | Ep. 31' (Rumble v57b3cd). Both clips failed on captions-vs-sound drift only (a timing issue, not content) - moved both edges to new sentence boundaries per PLANNING.md step 2c. Weekly agent.",
+ "clips": [
+  {"slug": "THE-OCEAN-TRICK-FOR-A-STUCK-MIND", "in": 1022.72, "out": 1145.2,
+   "retry_of": "ep_v57b3cd/THE-OCEAN-TRICK-FOR-A-STUCK-MIND",
+   "start_words": "Here's how you meditate",
+   "end_words": "by focusing on a point in space",
+   "hook": ["How trapped energy", "controls your emotions"],
+   "send": "Someone who can't stop replaying an argument in their head sends this to a friend who says they 'can't meditate', proof it isn't about silence.",
+   "caption": "Your brain hides unprocessed emotion the way the ocean hides trapped air at the bottom.\n\nKevin Trudeau says every stray thought you can't shake - the anger, the anxiety, the argument you keep replaying - is energy that got stuck instead of released.\n\nMeditation doesn't empty your mind. It lets those trapped thoughts finally rise, pop and dissolve, the same way a bubble breaks the surface - just by holding your eyes on one point, like a candle flame.\n\nThe goal was never silence. It's letting the stuck stuff go so it stops running your mood for you.\n\nWhat's the thought you can't seem to shake?\n\n#kevintrudeau #meditation #mindset #selfimage #mentalhealth #mindfulness",
+   "opener": "bubbles rising ocean surface"},
+  {"slug": "WHY-YOUR-FAMILY-FEELS-YOUR-STRESS", "in": 292.12, "out": 417.68,
+   "retry_of": "ep_v57b3cd/WHY-YOUR-FAMILY-FEELS-YOUR-STRESS",
+   "start_words": "Would you like to have",
+   "end_words": "your energy was all cleaned up",
+   "hook": ["How to stop", "family stress tonight"],
+   "send": "Someone who comes home short-tempered after work sends this to their partner as a half-apology and a plan to actually fix it.",
+   "caption": "Would you like to have a winning day every day?\n\nKevin Trudeau used to get flown into Vegas and put up free in mansions with pools built into the living room, where staff were trained to say one thing on the way out: have a winning day.\n\nHe started saying it back first - every day a winning day, decided before it starts.\n\nMeditate in the morning and the day runs smoother. Meditate before dinner and the office never makes it through your front door, so your family - even the dog - feels the difference before you say a word.\n\nDo you bring the office home with you, or leave it at the door?\n\n#kevintrudeau #meditation #mindset #family #stressrelief #mentalhealth"}
+ ]}
