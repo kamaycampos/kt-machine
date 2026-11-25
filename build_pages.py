@@ -220,18 +220,27 @@ def board(cs):
                  if not k.startswith("unmatched")}
     except Exception:
         _live = set()
-    _cut = (_dt.datetime.utcnow() - _dt.timedelta(days=7, hours=4)).strftime("%Y-%m-%dT%H:%M")
+    # 25 Nov 2026: the list said 54 READY while his KT and WB drafts were EMPTY - he deletes every
+    # draft he posts, and stuck ones he deletes too. A draft older than 2 days is not on his phone;
+    # and the day he empties an inbox, everything that arrived before it is gone (times UTC).
+    _cut = (_dt.datetime.utcnow() - _dt.timedelta(days=2)).strftime("%Y-%m-%dT%H:%M")
+    _EMPTIED = {"KAMAY": "2026-11-25T22:30", "WB": "2026-11-25T22:30"}
 
     def ready(c):
         s = str((c.get("status") or {}).get("tiktok", "")).lower()
         return bool(c.get("posted_at")) and any(k in s for k in OK) \
             and not c.get("tiktok_done") \
             and c["file"] not in _live \
-            and (c.get("posted_at") or "") > _cut
+            and (c.get("tiktok_at") or c.get("posted_at") or "") > _cut \
+            and (c.get("tiktok_at") or c.get("posted_at") or "") > _EMPTIED.get(owner(c), "")
 
     todo = [c for c in cs if ready(c)]
     rest = [c for c in cs if not ready(c) and (c.get("posted_at") or c.get("scheduled_at"))]
-    todo.sort(key=lambda c: c.get("posted_at") or "", reverse=True)
+    # NEWEST DRAFT FIRST (25 Nov 2026, Kamay: "I never find the description at first when posting a
+    # clip, it's 2 3 4 5 down or I have to search it"). TikTok's inbox shows the draft that arrived
+    # last on top; this list was sorted by the day the clip first went out, so every re-sent draft
+    # sat days down. Sorted now by `tiktok_at`, the minute the draft reached him.
+    todo.sort(key=lambda c: c.get("tiktok_at") or c.get("posted_at") or "", reverse=True)
     rest.sort(key=lambda c: (c.get("posted_at") or c.get("scheduled_at") or ""),
               reverse=True)
 
@@ -264,23 +273,36 @@ def board(cs):
     # the cards he acts on, plus the newest handful for orientation.
     recent = {c["file"] for c in rest[:24]}
 
+    def _et(t):
+        # the runner's clock is UTC; Kamay reads Washington time (25 Nov 2026)
+        try:
+            from zoneinfo import ZoneInfo
+            d = datetime.strptime(str(t)[:16], "%Y-%m-%dT%H:%M").replace(tzinfo=ZoneInfo("UTC"))
+            return d.astimezone(ZoneInfo(TZ)).strftime("%a %d %b, %I:%M %p").replace(" 0", " ")
+        except Exception:
+            return t or ""
+
     def card(c, is_ready):
         f = c["file"]
         key = owner(c)
         who = NAMES[key]
         when = c.get("posted_at") or c.get("scheduled_at")
+        if is_ready and c.get("tiktok_at"):
+            when = c["tiktok_at"]
         tag = "READY TO POST" if is_ready else (
             "posted" if c.get("posted_at") else "scheduled")
         # STABLE across rebuilds (19 Oct 2026): hash() changes every run, so a card
         # ticked off with Copy came back 20 minutes later under a new id.
-        cid = "t" + hashlib.sha1(f.encode()).hexdigest()[:16]
+        # ...and a RE-SENT draft is a new to-do: the id carries its arrival, or a card he copied once
+        # stays hidden on his phone (localStorage) for every later copy of the same clip.
+        cid = "t" + hashlib.sha1((f + (c.get("tiktok_at") or "")).encode()).hexdigest()[:16]
         # The picture is the point: he is holding a phone with a clip in the
         # TikTok inbox and needs to know THIS caption belongs to THAT video.
         img = tb.get(f) if is_ready or f in recent else None
         pic = f"<img class=th src='{img}' alt=''>" if img else "<div class=th></div>"
         return (f"<div class='c{' ready' if is_ready else ''}' data-who='{key}'>"
                 f"<div class=hd>{pic}<div class=meta>"
-                f"<div class=w>{who} &middot; {tag} {when}</div>"
+                f"<div class=w>{who} &middot; {tag} {_et(when)}</div>"
                 # The hook is what the clip SAYS on screen; the caption is what
                 # sits beside it. He posts TikTok by hand from this page and had
                 # no way to see the two lines the viewer actually reads first.
@@ -349,12 +371,15 @@ def board(cs):
                              "being made by the machine - it gets its day when it is finished", "#9aa0a6"))
     except (OSError, ValueError, KeyError):
         pass
+    _tt_from = len(p)  # the movie timetable is moved below the TikTok list (25 Nov 2026)
     if rows:
         p += ["<div class='c' data-who='KAMAY' style='border:1px solid #f5c542'>"
               "<div class=w style='color:#f5c542;font-weight:700'>MOVIE CLIPS &middot; WHEN, WHAT, WHERE (one a day, 12:30 pm Washington time)</div>"
               + "".join(f"<div class=fn style='margin-top:8px'><b style='color:{col}'>{html.escape(d)}</b> &middot; "
                         f"<b>{html.escape(n)}</b><br>{html.escape(w)}</div>" for d, n, w, col in rows)
               + "</div>"]
+    _tt = p[_tt_from:]
+    del p[_tt_from:]
     hand = [c for c in cs if c.get("ig_hand") and not c.get("ig_hand_done") and not c.get("_who")
             and not c.get("done")]
     hand.sort(key=lambda c: c.get("posted_at") or c.get("scheduled_at") or "")
@@ -393,6 +418,7 @@ def board(cs):
                               ("WB", "WB ORGANICS", wb)):
         if group:
             p += [f"<h2 class=g data-who='{key}'>{title} &middot; {len(group)}</h2>"] + [card(c, True) for c in group]
+    p += _tt
     p += [f"<button class='pick' onclick=\"document.getElementById('more')"
           f".style.display='block';this.remove()\">See all {len(rest)}</button>",
           "<div id=more>"]

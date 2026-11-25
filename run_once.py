@@ -202,6 +202,8 @@ def main():
             tt = (res or {}).get("tiktok", "")
             log(f"tiktok retry {c['file']}: {tt}")
             st = dict(c.get("status") or {}); st["tiktok"] = tt; c["status"] = st
+            if "inbox" in str(tt) or "processing" in str(tt):
+                c["tiktok_at"] = time.strftime("%Y-%m-%dT%H:%M")  # when the draft reached him: the board sorts by it
             if "spam_risk" in str(tt):
                 c["tiktok_wait_until"] = time.strftime("%Y-%m-%dT%H:%M", time.gmtime(time.time() + 7200))
                 log(f"  tiktok inbox full - {c['file']} waits until {c['tiktok_wait_until']} UTC")
@@ -340,6 +342,8 @@ def main():
             posted_log_add(clip["file"], time.strftime("%Y-%m-%dT%H:%M"))
         m2 = engine.load()
         engine.record(m2, i, result, links)
+        if any(k in str((result or {}).get("tiktok", "")) for k in ("inbox", "processing")):
+            m2["clips"][i]["tiktok_at"] = time.strftime("%Y-%m-%dT%H:%M")
         if tiktok_failed((result or {}).get("tiktok", "")):
             m2["clips"][i]["tiktok_retry"] = True
             log(f"  tiktok will be retried next run: {(result or {}).get('tiktok')}")
