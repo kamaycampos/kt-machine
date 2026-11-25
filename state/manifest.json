@@ -19311,14 +19311,27 @@
    "hook": "Why winners never hang around losers",
    "bytes": 72758217,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-25T09:17",
    "cta_keyword": "BRAIN",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgKv0y_OYd-/",
+    "youtube": "https://youtube.com/shorts/Uhul-IO39tE"
+   },
+   "caption_at_post": "Kevin Trudeau says 99% of us were not born into rich families with a rich person's brain - but the brain can be upgraded, and one of the fastest ways is who you stand next to.\n\nMost successful people did not start out around billionaires. They started out broke, surrounded by other driven, motivated, determined people. They hung around winners, never losers.\n\nKevin Trudeau says being near that kind of drive actually changes your brainwaves - less of the poverty wave, more of the wave already in motion toward something.\n\nWho are the five people you spend the most time with - pulling you up, or down?\n\n#kevintrudeau #successmindset #mindset #wealthhabits #manifestation #lawofattraction",
+   "posted_at": "2026-11-25T09:33"
   },
   {
    "file": "KT_UNNAMED/01_THE-FORBES-400-LIST-LIES_66s.mp4",
