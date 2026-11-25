@@ -40,7 +40,7 @@
  "scenes": [
   {
    "src": {
-    "gen": "A 1970s kitchen table at night, a single typed one-page report under a lamp beside a stack of blank order-form envelopes and a rotary phone",
+    "gen": "A single typed one-page report on a dark wooden desk at night under a brass lamp, a stack of plain envelopes and a rotary phone beside it, blue moonlight from a window",
     "move": "a hand slides the one-page report into a plain envelope and seals it"
    },
    "from": 9,
@@ -49,8 +49,8 @@
   },
   {
    "src": {
-    "gen": "A dim 1970s apartment hallway at dusk, a young man in a collared shirt sorting a stack of plain mail at a small table, finding every envelope empty",
-    "move": "he flips through the stack of mail and lets the last empty envelope fall onto the table"
+    "gen": "A young man in a 1970s collared shirt at a small table in a dim apartment at dusk, sorting a stack of opened envelopes that are all empty, cold blue light from the window",
+    "move": "he flips through the mail and lets the last empty envelope fall onto the table"
    },
    "from": 78,
    "to": 86,
@@ -58,8 +58,8 @@
   },
   {
    "src": {
-    "gen": "A young man sits across a wooden desk from an older bearded mentor in a dim candlelit study, a swirling dark grey cloud of smoke hovering just above the young man's shoulder",
-    "move": "the swirling grey cloud slowly thickens above the young man's shoulder as he stares at it"
+    "gen": "A young man in a 1970s collared shirt sits across a wooden desk from an older bearded mentor in a dark study at night, thick candle smoke curling in a shaft of moonlight above the young man's shoulder",
+    "move": "the smoke slowly curls and thickens in the moonlight above the young man's shoulder"
    },
    "from": 180,
    "to": 190,
@@ -67,8 +67,8 @@
   },
   {
    "src": {
-    "gen": "Close view of an older bearded mentor across a candlelit desk, one hand raised toward the young man seated opposite him, a small brass bowl of glowing embers between them",
-    "move": "the mentor slowly raises one open hand toward the swirling grey cloud"
+    "gen": "Close view of an older bearded mentor in a dark candlelit study raising one open hand, a brass bowl of glowing embers on the desk, haze drifting in a beam of blue moonlight",
+    "move": "the mentor slowly raises his open hand as the haze drifts through the moonlight"
    },
    "from": 226,
    "to": 232,
@@ -76,8 +76,8 @@
   },
   {
    "src": {
-    "gen": "A cramped 1970s print shop at night, a typeset block of the same newspaper advertisement sitting unchanged under a bright work lamp on a metal table",
-    "move": "a man's hand taps the unchanged typeset block once and pulls back"
+    "gen": "A cramped print shop at night, a typeset newspaper advertisement block sitting under a single bright work lamp on a metal table, dust floating in the lamp light",
+    "move": "a man's hand taps the typeset block once and pulls back"
    },
    "from": 523,
    "to": 537,
@@ -85,8 +85,8 @@
   },
   {
    "src": {
-    "gen": "A young man driving a cream colored convertible along a sunny coastal highway at golden hour, relaxed with one hand on the wheel, open ocean on one side",
-    "move": "the convertible cruises steadily along the coastal road as the camera tracks alongside it"
+    "gen": "A young man driving a cream convertible along a coastal highway at twilight, the Milky Way rising over the ocean, real night sky photography",
+    "move": "the convertible cruises steadily along the coast as the camera tracks alongside it"
    },
    "from": 697,
    "to": 707,
