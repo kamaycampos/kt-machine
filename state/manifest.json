@@ -19302,7 +19302,11 @@
    "done": false,
    "status": {},
    "media_tag": "media3",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-25T17:27",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
