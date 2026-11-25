@@ -19226,14 +19226,27 @@
    "hook": "The #1 copywriter just copied success",
    "bytes": 48927447,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-25T08:25",
    "cta_keyword": "MONEY",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgKo-0mP7AC/",
+    "youtube": "https://youtube.com/shorts/4HC6bYzwlsE"
+   },
+   "caption_at_post": "Kevin Trudeau says a young copywriter texted him out of nowhere: 'I watched every one of your infomercials. I transcribed them word for word. I learned how to sell by copying exactly what you did.'\n\nThat copywriter is now regarded as one of the best in the world - and Kevin Trudeau says his own success is now beyond his wildest dreams.\n\nKevin Trudeau's point: most people try to reinvent the wheel. Duplicate success. Follow the patterns that already work. Success can be copied.\n\nWhat is one proven pattern you have been avoiding because you wanted to do it your own way?\n\n#kevintrudeau #marketing #successmindset #copywriting #entrepreneur #businesslessons",
+   "posted_at": "2026-11-25T08:32"
   },
   {
    "file": "KT_EARNEDIT/01_HE-MADE-200-MILLION-BEFORE-TEACHING-IT_81s.mp4",
