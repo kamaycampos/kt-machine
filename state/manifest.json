@@ -17829,7 +17829,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611251811041C49B010C5B33C14A653'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17847,7 +17847,8 @@
    "posted_at": "2026-11-20T22:44",
    "tiktok_retry": true,
    "tiktok_tries": 0,
-   "tiktok_resend": true
+   "tiktok_resend": true,
+   "tiktok_wait_until": "2026-11-25T20:11"
   },
   {
    "file": "KT_KNIFE/01_ONE-GINSU-AD-PAID-FOR-LIFE_162s.mp4",
