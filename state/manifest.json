@@ -19182,7 +19182,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026112522123716386CC130294B253211'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -19200,7 +19200,8 @@
    "posted_at": "2026-11-24T11:32",
    "tiktok_retry": true,
    "tiktok_tries": 0,
-   "tiktok_resend": true
+   "tiktok_resend": true,
+   "tiktok_wait_until": "2026-11-26T00:12"
   },
   {
    "file": "KT_RECALL/01_A-CLASS-8-MONTHS-AHEAD_50s.mp4",
