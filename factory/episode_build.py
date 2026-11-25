@@ -603,6 +603,27 @@ FILL = ("[0:v]split=2[bg0][fg0];[bg0]scale=-2:1920:flags=bicubic,crop=1080:1920,
 if os.environ.get("EP_FILL") == "black":
     FILL = "[0:v]scale=1080:608:flags=lanczos,setsar=1,pad=1080:1920:0:(oh-ih)/2:black,setsar=1"
 _tt = SP.get("title_top")
+# THE COSMOS LOOK (25 Nov 2026, factory/cosmos.py). Kamay: "more futuristic, modern, esoteric, universe
+# energy, spiritual, full professional max edition ... make it REAL". Behind the film a real deep-space
+# sky drifting with rising motes of light; the film cooled to violet/cyan with a soft glow, cropped (never
+# stretched); the title in lit engraved capitals over a thin sacred-geometry ring. EP_LOOK=film = the old.
+_cosmos_done = False
+if os.environ.get("EP_LOOK", "cosmos") != "film":
+    try:
+        import cosmos
+        _cb = cosmos.band((_tt or {}).get("tag", ""), (_tt or {}).get("line", SP.get("title", "")),
+                          os.path.join(OUT, f"{slug}_band.png"))
+        _pt = cosmos.particles(os.path.join(TMP, "particles.mp4"), ff=FF)
+        _gp = os.path.join(TMP, "cosmos.txt")
+        open(_gp, "w").write(cosmos.graph(DUR))
+        _r = sh(FF, "-y", "-loglevel", "error", "-i", dst, "-loop", "1", "-i", cosmos.BG, "-stream_loop", "-1", "-i", _pt,
+                "-loop", "1", "-i", _cb, "-filter_complex_script", _gp, "-map", "[v]", "-map", "0:a",
+                "-c:v", "libx264", "-preset", "slow", "-crf", "15", "-pix_fmt", "yuv420p",
+                "-c:a", "copy", "-movflags", "+faststart", "-shortest", os.path.join(OUT, f"{slug}_9x16.mp4"))
+        _cosmos_done = _r.returncode == 0
+        print("look: cosmos" if _cosmos_done else "look: cosmos FAILED - the film look is used")
+    except Exception as _e:
+        print("cosmos look skipped:", type(_e).__name__, _e)
 _band = None
 if _tt:
     try:
@@ -610,7 +631,9 @@ if _tt:
         _band = poster.band(_tt.get("tag", ""), _tt["line"], os.path.join(OUT, f"{slug}_band.png"))
     except Exception as _e:
         print("title band skipped:", type(_e).__name__, _e)
-if _band:
+if _cosmos_done:
+    pass
+elif _band:
     sh(FF, "-y", "-loglevel", "error", "-i", dst, "-loop", "1", "-i", _band, "-filter_complex",
        f"{FILL}[f];"
        f"[1:v]format=rgba,fade=t=in:st=0:d=0.4:alpha=1[t];[f][t]overlay=0:0:shortest=1:enable='lt(t,{DUR:.2f})'[v]",

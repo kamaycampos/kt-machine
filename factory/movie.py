@@ -530,7 +530,11 @@ def queue(path):
             still = stem + "_frame.jpg"
             subprocess.run([FF, "-y", "-loglevel", "error", "-ss", "1.0", "-i", os.path.join(OUT, f"{slug}.mp4"),
                             "-frames:v", "1", still])
-        c, t = poster.make(still, f"EPISODE {n}", p["title"], stem)
+        if os.environ.get("EP_LOOK", "cosmos") == "film":
+            c, t = poster.make(still, f"EPISODE {n}", p["title"], stem)
+        else:                                   # the cosmos look (25 Nov 2026, factory/cosmos.py)
+            import cosmos
+            c, t = cosmos.cover(still, f"EPISODE {n}", p["title"], stem)
         covers = [f for f in (c, t) if f and os.path.exists(f)]
     except Exception as e:
         print("cover failed:", type(e).__name__, e)

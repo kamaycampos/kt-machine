@@ -101,7 +101,7 @@ jobs:
           cp factory/assets/cinema_*.ttf /tmp/fonts/ 2>/dev/null || true
           curl -sfL -o /tmp/fonts/greatvibes400.ttf $B/great-vibes@latest/latin-400-normal.ttf
           curl -sfL -o /tmp/fonts/yellowtail400.ttf $B/yellowtail@latest/latin-400-normal.ttf
-          for w in jost:900-normal:jost900 jost:900-italic:jost900i jost:800-italic:jost800i jost:300-normal:jost300 poppins:700-normal:poppins700 poppins:800-italic:poppins800i poppins:900-normal:poppins900 titan-one:400-normal:titanone400; do
+          for w in jost:900-normal:jost900 jost:900-italic:jost900i jost:800-italic:jost800i jost:300-normal:jost300 poppins:700-normal:poppins700 poppins:800-italic:poppins800i poppins:900-normal:poppins900 titan-one:400-normal:titanone400 cinzel:600-normal:cinzel600 michroma:400-normal:michroma400; do
             IFS=: read fam wt name <<< "$w"
             curl -sfL -o /tmp/fonts/$name.ttf $B/$fam@latest/latin-$wt.ttf
           done

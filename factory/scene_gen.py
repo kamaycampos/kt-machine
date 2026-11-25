@@ -29,8 +29,19 @@ import time
 import urllib.request
 import uuid
 
-STYLE = ("Cinematic 35mm film still, low-key warm lighting, shallow depth of field, moody, "
-         "photorealistic, no text, no watermark: ")
+# THE COSMOS LOOK, AND REAL (25 Nov 2026). Kamay: "I want it more futuristic, modern, esoteric,
+# universe energy, spiritual, full professional max edition" - and minutes later: "make it realistic,
+# not comic, make it REAL". So the scenes are real photographs from a feature film - real people, real
+# skin, real rooms - and the energy is the light itself: deep blue/violet night, warm gold lamps, dust
+# and haze in shafts of light, real stars. No drawn symbols in a scene (the sacred geometry lives in the
+# title only, factory/cosmos.py). EP_LOOK=film = the old warm 1970s look.
+STYLE = ("Real photograph, a frame from a high-end feature film shot on ARRI Alexa with a 35mm anamorphic lens, real "
+         "people with natural skin texture, true-to-life detail, deep blue and violet ambient night light mixed with "
+         "warm gold practical lamplight, real dust and haze glowing in shafts of light, subtle and natural, not "
+         "illustration, not painting, not cartoon, not CGI, no text, no watermark: ")
+if os.environ.get("EP_LOOK") == "film":
+    STYLE = ("Cinematic 35mm film still, low-key warm lighting, shallow depth of field, moody, "
+             "photorealistic, no text, no watermark: ")
 NEG = "blurry, low quality, chaotic, deformed, watermark, text, bad anatomy, shaky camera view point"
 IMAGE_SPACES = ["https://black-forest-labs-flux-1-schnell.hf.space"]
 I2V_SPACES = ["https://saravutw-wan2-2-i2v-lightning-4-8step-custom.hf.space"]
