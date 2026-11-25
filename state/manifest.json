@@ -17685,7 +17685,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026112517542034CE82D000265212A851'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261125201116DF337873E2730A1CA1E4'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17704,7 +17704,7 @@
    "tiktok_retry": true,
    "tiktok_tries": 0,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-25T19:54"
+   "tiktok_wait_until": "2026-11-25T22:11"
   },
   {
    "file": "AR_BILDERBERGR4/01_WORK-DEBT-KIDS-THEN-YOU-DIE_103s.mp4",
