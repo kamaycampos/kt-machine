@@ -213,7 +213,11 @@ def main():
             if not c["tiktok_retry"]:
                 c.pop("tiktok_retry", None)
             engine.save(man)
-            break                      # one retry per run; never a burst
+            # one retry per run, never a burst - except the re-sends of drafts TikTok broke (25 Nov 2026):
+            # up to 3 a run, so the fixed copies reach his inbox within the day he needs them
+            _sent = locals().get("_sent", 0) + 1
+            if not c.get("tiktok_resend") or _sent >= 3:
+                break
 
     # RELEASE A LOCK NOBODY IS HOLDING.
     #
