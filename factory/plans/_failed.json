@@ -15249,6 +15249,96 @@
     "Why winners celebrate",
     "their competitors"
    ]
+  },
+  "ar_v4khs1x_r2/I-TRAINED-POLITICIANS-TO-BE-CONTROLLED": {
+   "plan": "ar_v4khs1x_r2",
+   "source": "v4khs1x.mp4",
+   "brand": "AR_CLUBHOUSER2",
+   "tries": 2,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "I-TRAINED-POLITICIANS-TO-BE-CONTROLLED",
+   "in": 487.5,
+   "out": 532.5,
+   "start_words": "I talked about this",
+   "end_words": "You're being controlled",
+   "hook": [
+    "I trained politicians",
+    "to be controlled."
+   ]
+  },
+  "ar_v4khs1x_r2/I-KNOCKED-ON-THE-ROTHSCHILDS-DOOR": {
+   "plan": "ar_v4khs1x_r2",
+   "source": "v4khs1x.mp4",
+   "brand": "AR_CLUBHOUSER2",
+   "tries": 2,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "I-KNOCKED-ON-THE-ROTHSCHILDS-DOOR",
+   "in": 2146.5,
+   "out": 2241.5,
+   "start_words": "And I was at",
+   "end_words": "where this is going",
+   "hook": [
+    "I knocked",
+    "on the Rothschilds' door."
+   ]
+  },
+  "ar_v4khs1x_r2/YOUR-ENERGY-MOVES-THE-FIELD": {
+   "plan": "ar_v4khs1x_r2",
+   "source": "v4khs1x.mp4",
+   "brand": "AR_CLUBHOUSER2",
+   "tries": 2,
+   "why": [
+    "no clip came out of the render"
+   ],
+   "slug": "YOUR-ENERGY-MOVES-THE-FIELD",
+   "in": 4292.5,
+   "out": 4427.5,
+   "start_words": "What most people want",
+   "end_words": "everything else around you",
+   "hook": [
+    "Your energy",
+    "moves the universal field."
+   ]
+  },
+  "ep_v5dm94d_p2/THE-5000-COURSE-YOU-NEVER-FINISHED": {
+   "plan": "ep_v5dm94d_p2",
+   "source": "v5dm94d.mp4",
+   "brand": "KT_UNFINISHED",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THE-5000-COURSE-YOU-NEVER-FINISHED_147s.mp4: [FAIL] 01_THE-5000-COURSE-YOU-NEVER-FINISHED_147s.mp4         46 captions vs the sound  median -0.00s  worst-10% 0.72s  | words captioned 100%"
+   ],
+   "slug": "THE-5000-COURSE-YOU-NEVER-FINISHED",
+   "in": 647.0,
+   "out": 794.96,
+   "start_words": "You get the course",
+   "end_words": "but you quit",
+   "hook": [
+    "That $5,000 course",
+    "you never finished"
+   ]
+  },
+  "ep_v6c74p7_p3/WHAT-BILL-GATES-TOLD-LARRY-KING": {
+   "plan": "ep_v6c74p7_p3",
+   "source": "v6c74p7.mp4",
+   "brand": "KT_YESTERDAY",
+   "tries": 1,
+   "why": [
+    "FAIL 01_WHAT-BILL-GATES-TOLD-LARRY-KING_70s.mp4: [FAIL] 01_WHAT-BILL-GATES-TOLD-LARRY-KING_70s.mp4             21 captions vs the sound  median +0.04s  worst-10% 0.85s  | words captioned 96%  UNCAPTIONED SPEECH [(29.8, 32.3)]"
+   ],
+   "slug": "WHAT-BILL-GATES-TOLD-LARRY-KING",
+   "in": 2713.0,
+   "out": 2781.0,
+   "start_words": "Bill Gates said this",
+   "end_words": "having a do it now attitude",
+   "hook": [
+    "Why Bill Gates",
+    "stayed impatient"
+   ]
   }
  },
  "attempts": {
@@ -15347,8 +15437,8 @@
   "ep_v5hsmvp_p2": 2,
   "ep_v59sdnh_p2": 2,
   "ep_v5hsmvp_r2": 2,
-  "ar_v4khs1x_r2": 1,
-  "ep_v5dm94d_p2": 1,
-  "ep_v6c74p7_p3": 1
+  "ar_v4khs1x_r2": 2,
+  "ep_v5dm94d_p2": 2,
+  "ep_v6c74p7_p3": 2
  }
 }
