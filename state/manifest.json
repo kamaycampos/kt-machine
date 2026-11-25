@@ -17050,7 +17050,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611251712193F37EBCC74A2C9113D9F'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611251931226019ABDC7198F51ADD61'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17066,7 +17066,7 @@
    "tiktok_retry": true,
    "tiktok_tries": 0,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-25T19:12"
+   "tiktok_wait_until": "2026-11-25T21:31"
   },
   {
    "file": "KT_DREAMWORLDO/01_GORDON-RAMSAY-DREAM-WORLD-RULE_46s.mp4",
