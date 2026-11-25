@@ -202,7 +202,7 @@ def main():
             tt = (res or {}).get("tiktok", "")
             log(f"tiktok retry {c['file']}: {tt}")
             st = dict(c.get("status") or {}); st["tiktok"] = tt; c["status"] = st
-            if "spam_risk" in str(tt) and c.get("tiktok_resend"):
+            if "spam_risk" in str(tt):
                 c["tiktok_wait_until"] = time.strftime("%Y-%m-%dT%H:%M", time.gmtime(time.time() + 7200))
                 log(f"  tiktok inbox full - {c['file']} waits until {c['tiktok_wait_until']} UTC")
                 engine.save(man)
@@ -343,6 +343,14 @@ def main():
         if tiktok_failed((result or {}).get("tiktok", "")):
             m2["clips"][i]["tiktok_retry"] = True
             log(f"  tiktok will be retried next run: {(result or {}).get('tiktok')}")
+        elif "spam_risk" in str((result or {}).get("tiktok", "")):
+            # A FULL INBOX USED TO DROP THE CLIP FOR GOOD (25 Nov 2026). KT_BOOKMAGNET reached IG, FB and
+            # YouTube, TikTok said "too many pending", and nothing ever sent it again - Kamay's drafts
+            # simply had one clip fewer. Now it waits 2 hours and is re-sent like any broken draft.
+            m2["clips"][i]["tiktok_retry"] = True
+            m2["clips"][i]["tiktok_resend"] = True
+            m2["clips"][i]["tiktok_wait_until"] = time.strftime("%Y-%m-%dT%H:%M", time.gmtime(time.time() + 7200))
+            log("  tiktok inbox full - re-sent in 2 hours")
         engine.save(m2)
         log(f"{clip['file']}: {result}")
     return 0
