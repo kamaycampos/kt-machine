@@ -19002,14 +19002,28 @@
    "caption": "A friend wanted to quit smoking. Kevin worked with him on it - the visualization, the attractor field - and nothing happened. He kept smoking exactly like before.\n\nThen came the heart attack. Days in intensive care where lighting a cigarette wasn't even possible, and a doctor's question about his five daughters did what willpower never could.\n\nThe universe doesn't always deliver what you pictured. Sometimes it delivers the result, by a route you would never have chosen and could never have planned yourself.\n\nComment RISE and I'll send you how to tell a block from a gift.\n\n#manifestation #lawofattraction #universe #awakening #subconscious #kevintrudeau",
    "hook": "A heart attack he secretly wanted.",
    "bytes": 155767169,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media2",
    "look": "classic",
    "scheduled_at": "2026-11-25T08:38",
    "cta_keyword": "YES",
    "cta_variant": 2,
-   "cta_kind": "offer"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1735295278394369/",
+    "instagram": "https://www.instagram.com/reel/DgKrTMsBWmx/",
+    "youtube": "https://youtube.com/shorts/CyU7Vx11jkw"
+   },
+   "caption_at_post": "A friend wanted to quit smoking. Kevin worked with him on it - the visualization, the attractor field - and nothing happened. He kept smoking exactly like before.\n\nThen came the heart attack. Days in intensive care where lighting a cigarette wasn't even possible, and a doctor's question about his five daughters did what willpower never could.\n\nThe universe doesn't always deliver what you pictured. Sometimes it delivers the result, by a route you would never have chosen and could never have planned yourself.\n\nComment RISE and I'll send you how to tell a block from a gift.\n\n#manifestation #lawofattraction #universe #awakening #subconscious #kevintrudeau",
+   "posted_at": "2026-11-25T08:54"
   },
   {
    "file": "AR_HANA/01_PARADISES-ONLY-ROAD-IS-BUMPY_77s.mp4",
@@ -19301,7 +19315,7 @@
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-25T08:44",
+   "scheduled_at": "2026-11-25T09:17",
    "cta_keyword": "BRAIN",
    "cta_variant": 2,
    "cta_kind": "question"
