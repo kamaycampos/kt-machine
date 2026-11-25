@@ -1,0 +1,28 @@
+{
+ "source": "v5xlxz8.mp4",
+ "brand": "AR_FIELDR3",
+ "test": false,
+ "note": "25 Nov 2026 - second chances (round 3) for 'The Five Minute Phobia Cure | The Kevin Trudeau Show Limitless | Ep. 72' (Rumble v5xlxz8). Awakened Rise weekly agent. HER-CRAVING-HIT-ZERO-IN-SECONDS: r2's fix for the captions-vs-sound gap held, but the WHY this run flagged a new problem - the start (1700.32s) landed mid-sentence on 'how bad', inside 'And I said, on a scale of one to 10, how bad do you want this ice cream?'. Moved the start back onto the clean sentence boundary at 'And I said, on' (1691.28s); the end is untouched since nothing flagged it this time. Two clips are being left alone rather than guessed at on their last chance: YOUR-FEAR-ISNT-FROM-THIS-LIFETIME (tries 2) now fails on 'no face in the opening second' at its start (804.32s, 'So let's talk about why you have a fear or phobia') - the next several sentences list spiders, heights, snakes, public speaking, which is exactly the kind of run this show tends to illustrate with cutaway graphics, so there is no sentence boundary in reach I can point to with real confidence as clean. THREE-DAYS-DRIVE-ONE-HIDDEN-FEAR (tries 1) failed again on the same captions-vs-sound gap (62.3s in) that r2 already traced to the stammer right where Archie is paralyzed on the plane, between the fear being named and the cure that resolves it - still no edge excludes it without cutting either the setup or the demonstrated cure. ONE-EYE-POINT-REACHES-YOUR-STOMACH was never flagged and is untouched.",
+ "clips": [
+  {
+   "slug": "HER-CRAVING-HIT-ZERO-IN-SECONDS",
+   "retry_of": "ar_v5xlxz8_r2/HER-CRAVING-HIT-ZERO-IN-SECONDS",
+   "in": 1691.28,
+   "out": 1758.0,
+   "start_words": "And I said, on",
+   "end_words": "What did you do to me",
+   "hook": ["Her craving hit", "zero in seconds."],
+   "trial_hooks": [
+    ["Ten out of ten.", "Then zero."],
+    ["Callahan's method did this.", "Thirty seconds."],
+    ["She craved it.", "Then she didn't."],
+    ["You fight cravings wrong.", "Stop."],
+    ["Callahan knew this.", "She proved it."],
+    ["Test your own craving.", "Right now."],
+    ["Zero craving.", "In thirty seconds."]
+   ],
+   "send": "A friend who's 'tried everything' to quit a food or habit, because this shows the craving itself can be erased, not just resisted - relief bordering on disbelief.",
+   "caption": "She was addicted to one specific pint of ice cream - not any flavor, that exact one, every single day. She called it what it was: an addiction, like a drug.\n\nKevin put the open pint in front of her at a ten-out-of-ten craving and ran one thirty-second sequence. Not willpower. Not a trick to distract her. Just the craving itself, gone.\n\nShe picked the ice cream back up to test it - smelled it, imagined the taste - and felt nothing. Zero. She kept asking him what he'd done to her, because there was no craving left to fight.\n\nComment RISE and I'll send you how a craving actually gets erased.\n\n#subconscious #cravings #mindovermatter #energywork #awakening #kevintrudeau"
+  }
+ ]
+}
