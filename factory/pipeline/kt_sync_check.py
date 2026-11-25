@@ -37,7 +37,10 @@ FF = f"{HOME}/bin/ffmpeg"
 W = f"{HOME}/whisper.cpp/build/bin/whisper-cli"
 M = f"{HOME}/whisper.cpp/models/ggml-small.en.bin"
 MEDIAN_MAX = 0.30      # a caption's typical lead, including the deliberate 0.1s lead-in
-P90_MAX = 0.70         # and the worst tenth - one long burst may start a word early
+P90_MAX = 0.50         # and the worst tenth - one long burst may start a word early
+                       # 24 Nov 2026: was 0.70. Kamay saw captions late on 70-PERCENT-OF-10-MILLION (passed at
+                       # 0.93 before the per-caption re-time); frames read off the posted file showed words on
+                       # screen up to ~0.4 s after he said them. A clip past 0.50 is re-timed once, then refused.
 LEAD_IN = 0.10
 
 
