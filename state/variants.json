@@ -4928,5 +4928,67 @@
    }
   ],
   "posted": null
+ },
+ "AR_NORULEBOOK__A-YEAR-FOR-A-CAN-OF-PAINT": {
+  "clip": "AR_NORULEBOOK/01_A-YEAR-FOR-A-CAN-OF-PAINT_137s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__AR_NORULEBOOK__A-YEAR-FOR-A-CAN-OF-PAINT__V1.mp4",
+    "hook": [
+     "One year.",
+     "One can."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_NORULEBOOK__A-YEAR-FOR-A-CAN-OF-PAINT__V2.mp4",
+    "hook": [
+     "Stalin's rule.",
+     "Applied right here."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_NORULEBOOK__A-YEAR-FOR-A-CAN-OF-PAINT__V3.mp4",
+    "hook": [
+     "Innocent means nothing now.",
+     "Not anymore."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_NORULEBOOK__A-YEAR-FOR-A-CAN-OF-PAINT__V4.mp4",
+    "hook": [
+     "Not knowing costs you years.",
+     "Literally."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_NORULEBOOK__A-YEAR-FOR-A-CAN-OF-PAINT__V5.mp4",
+    "hook": [
+     "Stalin knew this.",
+     "So does Washington."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_NORULEBOOK__A-YEAR-FOR-A-CAN-OF-PAINT__V6.mp4",
+    "hook": [
+     "Find the rulebook first.",
+     "Good luck."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_NORULEBOOK__A-YEAR-FOR-A-CAN-OF-PAINT__V7.mp4",
+    "hook": [
+     "Prison.",
+     "For boat paint."
+    ],
+    "media_tag": "media3"
+   }
+  ],
+  "posted": null
  }
 }

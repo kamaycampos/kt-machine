@@ -15141,6 +15141,60 @@
     "90-hour weeks built",
     "his business empire"
    ]
+  },
+  "ar_v5owvgw_p2/ONE-WOMAN-TOOK-PHONICS-AWAY": {
+   "plan": "ar_v5owvgw_p2",
+   "source": "v5owvgw.mp4",
+   "brand": "AR_NORULEBOOK",
+   "tries": 1,
+   "why": [
+    "FAIL 02_ONE-WOMAN-TOOK-PHONICS-AWAY_95s.mp4: ends off the planned words: plan ends 'kids can't read anymore', clip ends 'school so the kids ca read'"
+   ],
+   "slug": "ONE-WOMAN-TOOK-PHONICS-AWAY",
+   "in": 385.3,
+   "out": 482.2,
+   "start_words": "The Department of Education",
+   "end_words": "kids can't read anymore",
+   "hook": [
+    "Your school did this.",
+    "On purpose."
+   ]
+  },
+  "ep_v59sdnh_p2/3-SIGNS-YOURE-SECRETLY-BRILLIANT": {
+   "plan": "ep_v59sdnh_p2",
+   "source": "v59sdnh.mp4",
+   "brand": "KT_BRILLIANTTEST",
+   "tries": 1,
+   "why": [
+    "FAIL 01_3-SIGNS-YOURE-SECRETLY-BRILLIANT_153s.mp4: [FAIL] 01_3-SIGNS-YOURE-SECRETLY-BRILLIANT_153s.mp4           47 captions vs the sound  median +0.05s  worst-10% 1.11s  | words captioned 98%  UNCAPTIONED SPEECH [(137.3, 138.8)]"
+   ],
+   "slug": "3-SIGNS-YOURE-SECRETLY-BRILLIANT",
+   "in": 1560.0,
+   "out": 1719.0,
+   "start_words": "I want you to ask",
+   "end_words": "more money in your pocket",
+   "hook": [
+    "3 signs you're",
+    "secretly brilliant"
+   ]
+  },
+  "ep_v5hsmvp_r2/TWO-STRANGERS-SAME-WEEK": {
+   "plan": "ep_v5hsmvp_r2",
+   "source": "v5hsmvp.mp4",
+   "brand": "KT_UNIVERSER2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_TWO-STRANGERS-SAME-WEEK_131s.mp4: not Kevin - his face in only 0 of 8 frames with a face"
+   ],
+   "slug": "TWO-STRANGERS-SAME-WEEK",
+   "in": 1741.24,
+   "out": 1872.12,
+   "start_words": "About a month later",
+   "end_words": "out into the universe",
+   "hook": [
+    "Two strangers manifest",
+    "the same offer"
+   ]
   }
  },
  "attempts": {
@@ -15237,7 +15291,7 @@
   "ar_v68yges_r3": 2,
   "ep_v4tz80x_p6": 1,
   "ep_v5hsmvp_p2": 2,
-  "ep_v59sdnh_p2": 1,
-  "ep_v5hsmvp_r2": 1
+  "ep_v59sdnh_p2": 2,
+  "ep_v5hsmvp_r2": 2
  }
 }
