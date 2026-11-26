@@ -16266,7 +16266,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126075152482A866BF4D5E30A8BC9'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611261011581317178B61B1250E18C2'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -16285,7 +16285,7 @@
    "tiktok_tries": 0,
    "tiktok_resend": true,
    "tiktok_retry": true,
-   "tiktok_wait_until": "2026-11-26T09:51"
+   "tiktok_wait_until": "2026-11-26T12:11"
   },
   {
    "file": "KT_PLAYBACKR2/01_A-BREAKUP-HURTS-WORSE-THAN-BROKE_39s.mp4",
