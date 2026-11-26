@@ -39,7 +39,7 @@ STYLE = ("Real photograph, a frame from a high-end feature film shot on ARRI Ale
          "people with natural skin texture, true-to-life detail, deep blue and violet ambient night light mixed with "
          "warm gold practical lamplight, real dust and haze glowing in shafts of light, subtle and natural, not "
          "illustration, not painting, not cartoon, not CGI, no text, no watermark: ")
-if os.environ.get("EP_LOOK") == "film":
+if os.environ.get("EP_LOOK", "film") == "film":   # 25 Nov late: back to the proven look until Kamay picks (he: "dont make stuff up")
     STYLE = ("Cinematic 35mm film still, low-key warm lighting, shallow depth of field, moody, "
              "photorealistic, no text, no watermark: ")
 NEG = "blurry, low quality, chaotic, deformed, watermark, text, bad anatomy, shaky camera view point"

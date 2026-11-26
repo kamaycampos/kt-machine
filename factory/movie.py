@@ -530,7 +530,7 @@ def queue(path):
             still = stem + "_frame.jpg"
             subprocess.run([FF, "-y", "-loglevel", "error", "-ss", "1.0", "-i", os.path.join(OUT, f"{slug}.mp4"),
                             "-frames:v", "1", still])
-        if os.environ.get("EP_LOOK", "cosmos") == "film":
+        if os.environ.get("EP_LOOK", "film") != "cosmos":
             c, t = poster.make(still, f"EPISODE {n}", p["title"], stem)
         else:                                   # the cosmos look (25 Nov 2026, factory/cosmos.py)
             import cosmos

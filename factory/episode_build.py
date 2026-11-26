@@ -608,7 +608,7 @@ _tt = SP.get("title_top")
 # sky drifting with rising motes of light; the film cooled to violet/cyan with a soft glow, cropped (never
 # stretched); the title in lit engraved capitals over a thin sacred-geometry ring. EP_LOOK=film = the old.
 _cosmos_done = False
-if os.environ.get("EP_LOOK", "cosmos") != "film":
+if os.environ.get("EP_LOOK", "film") == "cosmos":
     try:
         import cosmos
         _cb = cosmos.band((_tt or {}).get("tag", ""), (_tt or {}).get("line", SP.get("title", "")),
