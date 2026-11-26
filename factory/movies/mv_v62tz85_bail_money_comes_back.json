@@ -1,0 +1,69 @@
+{
+  "source": "v62tz85.mp4",
+  "in": 493.0,
+  "out": 750.0,
+  "title": "The $1 Million Phone Call",
+  "why_movie": "RESULT: He gave $250,000 cash to post a friend's bail, never asked for it back, and 20 years later the friend called out of nowhere and paid him a check for $1 million - plus Kevin says his own businesses exploded in profitability right after the day he gave the money. METHOD: he says he was 'planting a seed into the universe' by giving without expecting anything back, not a sales pitch, just the law of giving. WISH: a stranger who hears an unprompted $1 million payback 20 years later would want the 14 audios that teach how giving plants a seed the universe returns.",
+  "keep": [
+    ["I gave the cash", "that's over a million dollars"],
+    ["I knew that I was planting a seed into the universe", "work out some way somehow"],
+    ["But I can tell you my businesses exploded", "They went spectacular"],
+    ["What action took place right here", "I gave away money and that's how it works"],
+    ["Fast forward about 20 years", "nor have you ever brought it up"],
+    ["He made a couple of good real estate deals", "I always remember my friends too"]
+  ],
+  "payoff": "I always remember my friends too",
+  "scenes": [
+    {
+      "on": "I gave the cash. I posted the bail.",
+      "gen": "A man in a dark suit hands a thick bundle of cash across a jail bail counter at night.",
+      "move": "his hand sets the bundle of cash down on the counter"
+    },
+    {
+      "on": "I had my private jet all teed up",
+      "gen": "A private jet sits ready on a runway at night, its stairs down, engines idling under floodlights.",
+      "move": "the jet's stairs lower as its engines spin up"
+    },
+    {
+      "on": "that's over a million dollars",
+      "gen": "Stacks of hundred dollar bills rise on a table in a dim room, catching a single lamp's light.",
+      "move": "the stack of bills grows taller, one bundle at a time"
+    },
+    {
+      "on": "I knew that I was planting a seed into the universe",
+      "gen": "A man's hand drops a single glowing seed into dark soil under a wide night sky full of stars.",
+      "move": "the seed sinks into the soil and a faint light spreads outward"
+    },
+    {
+      "on": "my businesses exploded. They went spectacular",
+      "gen": "A line on a glowing graph chart shoots sharply upward across a dark office wall at night.",
+      "move": "the line on the graph climbs rapidly upward"
+    },
+    {
+      "on": "I gave away money and that's how it works",
+      "gen": "A man in a suit stands at a tall window, calm, as city lights glow below him at dusk.",
+      "move": "he turns slowly from the window, a faint smile crossing his face"
+    },
+    {
+      "on": "He made a couple of good real estate deals",
+      "gen": "A pair of hands review blueprints and keys on a table beside a model house at sunset.",
+      "move": "a hand slides the house key across the table"
+    },
+    {
+      "on": "he gave me a check for $1 million",
+      "gen": "A hand holds out a bank check toward the camera, lit by warm golden light in a quiet room.",
+      "move": "the check tilts slightly as it's handed over"
+    }
+  ],
+  "poster": 8,
+  "names": [
+    {"say": "my private jet", "color": "teal"},
+    {"say": "a check for $1 million", "color": "gold"}
+  ],
+  "money": ["$250,000", "over a million dollars", "$1 million"],
+  "big": ["a check for $1 million"],
+  "mood": ["warm", "nostalgic", "inspiring"],
+  "hook": ["$250,000 in bail money.", "20 years later, $1 million."],
+  "send": "A friend who once helped someone without expecting payback sends this in awe that it came back ten times over",
+  "caption": "Comment \"WISH\" and I'll send you Kevin's 14 free audios on how giving works, the moment you comment.\n\nKevin Trudeau says a friend's wife once called him frantic - her husband needed $250,000 in cash to post bail on a legal case. Kevin flew down on his own plane that night and paid it himself, never expecting to see a dollar of it again.\n\nYears went by. He never once asked for the money back, and never brought it up again.\n\n{episode}\n\nThe 14 audios walk through the exact principle behind what happened next - planting without expecting a harvest.\n\nComment \"WISH\" now and Kevin's audios are in your messages in seconds.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #yourwishisyourcommand #lawofattraction #manifestation #giving #mindset"
+}
