@@ -17835,7 +17835,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611261431595C4BA3FD2AEF710448F9'}}"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17851,10 +17851,9 @@
    },
    "caption_at_post": "Kevin Trudeau says he once filmed a show with a well-known spiritual guru who spent the whole segment teaching love, compassion, and understanding.\n\nThe moment the cameras stopped, that same man started screaming at his assistant because his car wasn't ready. At dinner afterward, he complained about everything on the table.\n\nTrudeau's point: a lot of people teaching peace and love on camera are not peaceful or loving in real life. You can only give what you actually have inside you.\n\nDoes the person giving you advice actually live it, or just talk about it?\n\n#kevintrudeau #authenticity #mindset #selfhelp #personaldevelopment #wisdom",
    "posted_at": "2026-11-20T22:44",
-   "tiktok_retry": true,
-   "tiktok_tries": 0,
+   "tiktok_tries": 1,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-26T16:31"
+   "tiktok_at": "2026-11-26T16:52"
   },
   {
    "file": "KT_KNIFE/01_ONE-GINSU-AD-PAID-FOR-LIFE_162s.mp4",
@@ -18010,7 +18009,7 @@
     "facebook": "off for this account",
     "instagram": "posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261125211033664163346A828E214904'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611261653377AEF02CB3935DD0C7283'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -18042,7 +18041,8 @@
    "ig_hand_done": true,
    "tiktok_retry": true,
    "tiktok_tries": 0,
-   "tiktok_resend": true
+   "tiktok_resend": true,
+   "tiktok_wait_until": "2026-11-26T18:53"
   },
   {
    "file": "AR_BREATHCODER2/01_HIS-PUNCH-NEVER-TOUCHED-THE-FLAME_120s.mp4",
@@ -19740,14 +19740,29 @@
    "caption": "Count the verses. The ones about going to heaven are a fraction of the ones about becoming wealthy, healthy, and respected while you are still here.\n\nDeuteronomy 28 reads less like a sermon and more like a contract: listen to the voice inside you, do what's right, and the blessings don't wait for the next life. Money, named directly. Food, named directly. Health, named directly.\n\nSomewhere along the way, wanting more got rebranded as unspiritual. The book itself disagrees with the guilt you were handed.\n\nComment RISE and I'll send you the verses they skip in church.\n\n#manifesting #ancientwisdom #subconscious #prosperity #awakening #kevintrudeau",
    "hook": "More about money than about heaven.",
    "bytes": 32469794,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media3",
    "look": "classic",
    "scheduled_at": "2026-11-26T11:50",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/29841485708871197/",
+    "instagram": "https://www.instagram.com/reel/DgNlJgxxU8s/",
+    "youtube": "https://youtube.com/shorts/FRT0ohcOYsc"
+   },
+   "caption_at_post": "Count the verses. The ones about going to heaven are a fraction of the ones about becoming wealthy, healthy, and respected while you are still here.\n\nDeuteronomy 28 reads less like a sermon and more like a contract: listen to the voice inside you, do what's right, and the blessings don't wait for the next life. Money, named directly. Food, named directly. Health, named directly.\n\nSomewhere along the way, wanting more got rebranded as unspiritual. The book itself disagrees with the guilt you were handed.\n\nComment RISE and I'll send you the verses they skip in church.\n\n#manifesting #ancientwisdom #subconscious #prosperity #awakening #kevintrudeau",
+   "posted_at": "2026-11-26T11:57",
+   "tiktok_at": "2026-11-26T16:57"
   }
  ]
 }
