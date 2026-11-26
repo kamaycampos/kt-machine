@@ -331,6 +331,11 @@
    "platform": "instagram",
    "comment": "18363785929247473",
    "error": "Invalid message id"
+  },
+  {
+   "at": "2026-11-26T05:29:51.656522+00:00",
+   "platform": "facebook",
+   "error": "Please reduce the amount of data you're asking for, then retry your request"
   }
  ],
  "withheld": {
