@@ -17835,7 +17835,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126121148655BA75ADB46A200A4FF'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611261431595C4BA3FD2AEF710448F9'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17854,7 +17854,7 @@
    "tiktok_retry": true,
    "tiktok_tries": 0,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-26T14:11"
+   "tiktok_wait_until": "2026-11-26T16:31"
   },
   {
    "file": "KT_KNIFE/01_ONE-GINSU-AD-PAID-FOR-LIFE_162s.mp4",
@@ -19573,14 +19573,29 @@
    "caption": "Come to work drunk. Don't show up for three days. Refuse the assignment outright. In most of the world, any one of those ends the job the same day.\n\nNot here. A federal employee can do all three and keep collecting a paycheck - then retire on ninety percent of that pay for the rest of their life, with full medical covered. No performance review stops it. No manager's word is final. The job was never designed to be lost.\n\nComment RISE and I'll send you how this system was built to work this way.\n\n#disclosure #subconscious #awakening #consciousness #secretsocieties #kevintrudeau",
    "hook": "You pay him drunk or not.",
    "bytes": 47666871,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media3",
    "look": "classic",
    "scheduled_at": "2026-11-26T09:19",
    "cta_keyword": "YES",
    "cta_variant": 2,
-   "cta_kind": "offer"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1810265030187928/",
+    "instagram": "https://www.instagram.com/reel/DgNU7XzBktK/",
+    "youtube": "https://youtube.com/shorts/JjRqNbgIBE0"
+   },
+   "caption_at_post": "Come to work drunk. Don't show up for three days. Refuse the assignment outright. In most of the world, any one of those ends the job the same day.\n\nNot here. A federal employee can do all three and keep collecting a paycheck - then retire on ninety percent of that pay for the rest of their life, with full medical covered. No performance review stops it. No manager's word is final. The job was never designed to be lost.\n\nComment RISE and I'll send you how this system was built to work this way.\n\n#disclosure #subconscious #awakening #consciousness #secretsocieties #kevintrudeau",
+   "posted_at": "2026-11-26T09:35",
+   "tiktok_at": "2026-11-26T14:35"
   },
   {
    "file": "AR_UNFIREABLER2/02_SEARS-CEO-NEVER-VISITED-A-STORE_173s.mp4",
@@ -19652,7 +19667,7 @@
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-26T09:24",
+   "scheduled_at": "2026-11-26T15:30",
    "cta_keyword": "MONEY",
    "cta_variant": 5,
    "cta_kind": "question"
