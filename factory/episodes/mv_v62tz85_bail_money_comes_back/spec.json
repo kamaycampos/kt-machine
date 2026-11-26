@@ -1,0 +1,137 @@
+{
+ "slug": "mv_v62tz85_bail_money_comes_back",
+ "vid": "v62tz85",
+ "t_in": 491.5,
+ "t_out": 752.5,
+ "keeps": [
+  [
+   18,
+   89
+  ],
+  [
+   231,
+   250
+  ],
+  [
+   496,
+   506
+  ],
+  [
+   568,
+   603
+  ],
+  [
+   658,
+   691
+  ],
+  [
+   722,
+   798
+  ]
+ ],
+ "scenes": [
+  {
+   "src": {
+    "gen": "A man in a dark suit hands a thick bundle of cash across a jail bail counter at night.",
+    "move": "his hand sets the bundle of cash down on the counter"
+   },
+   "from": 18,
+   "to": 23,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "Stacks of hundred dollar bills rise on a table in a dim room, catching a single lamp's light.",
+    "move": "the stack of bills grows taller, one bundle at a time"
+   },
+   "from": 82,
+   "to": 89,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A man's hand drops a single glowing seed into dark soil under a wide night sky full of stars.",
+    "move": "the seed sinks into the soil and a faint light spreads outward"
+   },
+   "from": 231,
+   "to": 241,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A line on a glowing graph chart shoots sharply upward across a dark office wall at night.",
+    "move": "the line on the graph climbs rapidly upward"
+   },
+   "from": 501,
+   "to": 505,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A man in a suit stands at a tall window, calm, as city lights glow below him at dusk.",
+    "move": "he turns slowly from the window, a faint smile crossing his face"
+   },
+   "from": 595,
+   "to": 602,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A pair of hands review blueprints and keys on a table beside a model house at sunset.",
+    "move": "a hand slides the house key across the table"
+   },
+   "from": 722,
+   "to": 732,
+   "start": 0.1
+  },
+  {
+   "src": {
+    "gen": "A hand holds out a bank check toward the camera, lit by warm golden light in a quiet room.",
+    "move": "the check tilts slightly as it's handed over"
+   },
+   "from": 764,
+   "to": 772,
+   "start": 0.1
+  }
+ ],
+ "voices": {
+  "767": "N:gold",
+  "768": "N:gold",
+  "769": "N:gold",
+  "770": "N:gold",
+  "771": "N:gold",
+  "683": "G",
+  "763": "G",
+  "86": "G@T",
+  "87": "G@T",
+  "88": "G@T",
+  "89": "G@T"
+ },
+ "join": [
+  [
+   86,
+   89
+  ],
+  [
+   770,
+   771
+  ]
+ ],
+ "fix": {},
+ "tighten": 0.85,
+ "cap_y": 800,
+ "end_card": "end_kamay.png",
+ "end_secs": 4.0,
+ "music_db": -27,
+ "fx": true,
+ "fx_db": -31,
+ "post": {
+  "title": "The $1 Million Phone Call"
+ },
+ "title_top": {
+  "tag": "EPISODE 13",
+  "line": "The $1 Million Phone Call"
+ },
+ "big_from": 793,
+ "music": "movie_ambient_piano_thesilentthunder.mp3"
+}
