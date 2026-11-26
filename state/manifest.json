@@ -17835,7 +17835,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126095122105E6F23555D5E0DEEC7'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126121148655BA75ADB46A200A4FF'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17854,7 +17854,7 @@
    "tiktok_retry": true,
    "tiktok_tries": 0,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-26T11:51"
+   "tiktok_wait_until": "2026-11-26T14:11"
   },
   {
    "file": "KT_KNIFE/01_ONE-GINSU-AD-PAID-FOR-LIFE_162s.mp4",
@@ -19678,7 +19678,11 @@
    "done": false,
    "status": {},
    "media_tag": "media3",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-26T11:50",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   }
  ]
 }
