@@ -4181,7 +4181,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18119085755031812"
+    "id": "18119085755031812",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_UNSHAKENR2__HE-TAUGHT-MANIFESTING-THEN-CANCER__V2.mp4",
@@ -4191,7 +4195,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18143580667615707"
+    "id": "18143580667615707",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_UNSHAKENR2__HE-TAUGHT-MANIFESTING-THEN-CANCER__V3.mp4",
@@ -4201,7 +4209,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18105511832359697"
+    "id": "18105511832359697",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_UNSHAKENR2__HE-TAUGHT-MANIFESTING-THEN-CANCER__V4.mp4",
@@ -4211,7 +4223,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "17909915838600095"
+    "id": "17909915838600095",
+    "views": 30,
+    "reach": 17,
+    "shares": 0,
+    "saved": 1
    },
    {
     "rel": "_VARIANTS/VAR__AR_UNSHAKENR2__HE-TAUGHT-MANIFESTING-THEN-CANCER__V5.mp4",
@@ -4221,7 +4237,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "17971650117206502"
+    "id": "17971650117206502",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_UNSHAKENR2__HE-TAUGHT-MANIFESTING-THEN-CANCER__V6.mp4",
@@ -4231,7 +4251,11 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "17992012383071409"
+    "id": "17992012383071409",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    },
    {
     "rel": "_VARIANTS/VAR__AR_UNSHAKENR2__HE-TAUGHT-MANIFESTING-THEN-CANCER__V7.mp4",
@@ -4241,10 +4265,50 @@
     ],
     "media_tag": "media2",
     "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
-    "id": "18224171623358324"
+    "id": "18224171623358324",
+    "views": 0,
+    "reach": 0,
+    "shares": 0,
+    "saved": 0
    }
   ],
-  "posted": "2026-11-24T15:28"
+  "posted": "2026-11-24T15:28",
+  "winner": {
+   "hook": [
+    "Miss this,",
+    "and fear runs you."
+   ],
+   "views": 30,
+   "shares": 0,
+   "reach": 17,
+   "others": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ]
+  },
+  "scored": "2026-11-26T15:38"
  },
  "KT_SIGNAL__MARK-CUBANS-140K-CARD-WASNT-DECLINED": {
   "clip": "KT_SIGNAL/01_MARK-CUBANS-140K-CARD-WASNT-DECLINED_155s.mp4",
@@ -5263,7 +5327,9 @@
      "Three years.",
      "Zero visits."
     ],
-    "media_tag": "media3"
+    "media_tag": "media3",
+    "status": "posted (trial NOT verifiable - Instagram did not return is_trial; open the app and confirm before posting the rest)",
+    "id": "18116939513132528"
    },
    {
     "rel": "_VARIANTS/VAR__AR_UNFIREABLER2__SEARS-CEO-NEVER-VISITED-A-STORE__V2.mp4",

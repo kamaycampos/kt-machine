@@ -17054,7 +17054,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126131248746F311A252915013E6C'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026112615315726461444D6238B074CF2'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17070,7 +17070,7 @@
    "tiktok_tries": 0,
    "tiktok_resend": true,
    "tiktok_retry": true,
-   "tiktok_wait_until": "2026-11-26T15:12"
+   "tiktok_wait_until": "2026-11-26T17:31"
   },
   {
    "file": "KT_DREAMWORLDO/01_GORDON-RAMSAY-DREAM-WORLD-RULE_46s.mp4",
@@ -19602,14 +19602,31 @@
    "caption": "The CEO of one of America's biggest retailers ran the company for three years without once walking into one of his own stores - or a competitor's. He said so himself, on CNBC.\n\nSam Walton ran Walmart the opposite way: half of his working life, on foot, inside his own stores and his rivals'. One company is a case study now. The other doesn't exist. Being in charge and knowing what's happening on the ground are not the same skill.\n\nComment RISE and I'll send you the rest of this comparison.\n\n#disclosure #awakening #consciousness #mindset #subconscious #kevintrudeau",
    "hook": "He never visited. Then Sears vanished.",
    "bytes": 154894700,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126153805BDA3D35D2DA3D3087B1F'}}"
+   },
    "media_tag": "media3",
    "look": "classic",
    "scheduled_at": "2026-11-26T10:20",
    "cta_keyword": "RISE",
    "cta_variant": 3,
-   "cta_kind": "question"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1815598382994592/",
+    "instagram": "https://www.instagram.com/reel/DgNb1JYI2Fg/",
+    "youtube": "https://youtube.com/shorts/2N3QoxjI8bA"
+   },
+   "caption_at_post": "The CEO of one of America's biggest retailers ran the company for three years without once walking into one of his own stores - or a competitor's. He said so himself, on CNBC.\n\nSam Walton ran Walmart the opposite way: half of his working life, on foot, inside his own stores and his rivals'. One company is a case study now. The other doesn't exist. Being in charge and knowing what's happening on the ground are not the same skill.\n\nComment RISE and I'll send you the rest of this comparison.\n\n#disclosure #awakening #consciousness #mindset #subconscious #kevintrudeau",
+   "posted_at": "2026-11-26T10:38",
+   "tiktok_retry": true,
+   "tiktok_resend": true,
+   "tiktok_wait_until": "2026-11-26T17:38"
   },
   {
    "file": "KT_ANCHORR2/01_WHY-YOUR-FAMILY-FEELS-YOUR-STRESS_121s.mp4",
