@@ -8,50 +8,52 @@ The strategist rewrites this file daily from `state/metrics.json`, `state/tiktok
 
 **Score: $11.70 earned of $1,777,000** (portfolio as of 30 Sept; nobody has read it since).
 
-## 25 Nov 2026 (strategist; KT only, AR_ ignored; 7d = posted 17-24 Nov, 24h+ scored, n=36 vs the 7 before n=32; splits use 14 days, n=68)
+## 26 Nov 2026 (strategist; KT only, AR_ ignored; 7d = posted 19-25 Nov, 24h+ scored, n=29 vs the 7 before n=35; splits use 14 days, n=63)
 
-### BUSINESS MOVE OF THE DAY: turn the best Instagram clip of the month into a DM test (pin the keyword on it)
-**Do:** Kamay opens Instagram on "Mark Cuban's $140,000 card wasn't declined" (posted 24 Nov, **1,630 views, skip 22.3%**: the best skip we have ever measured) and (1) pins a comment with the clip's own keyword ask, BRAIN, in the machine's usual words, (2) replies to the 2 people who already commented. Then he tells Claude whether a DM arrived. 3 minutes, by hand. No amount or offer beyond what the caption already carries.
-**Why:** that clip holds people (skip 22 vs 53 median) and 1,630 people saw it, yet it has 2 comments and 5 shares+saves. DMs: 19 ever, **0 since 22 Nov**, so views are not turning into leads. A pinned keyword on the one clip that holds attention is the cheapest lead we can get today, and it also proves the comment-to-DM path. **Expected:** 3-10 BRAIN comments in 24h; read 26 Nov. **Who:** Kamay by hand; the machine keeps the keyword first in every caption.
-**Still open for Kamay:** say `plan` (queue ends tomorrow, see Watch). Black Friday 27 Nov: does the portal show a deal? I will not invent one. Score $11.70, portal unread since 30 Sept.
+### BUSINESS MOVE OF THE DAY: give the TikTok profile a reason to follow (bio promise + 3 pinned clips) - the path to 1,000 for TikTok Shop
+**Do:** Kamay opens TikTok on @what_do_you_wan7t (by hand, 5 minutes): (1) bio, no link: "Student of Kevin Trudeau. One money rule the rich never teach, every day. Follow for the next one." (2) pins the 3 biggest clips: the Forbes 400 list (59,594), the Ferrari with a photo (12,763), the rich town of business owners (10,336). Then he tells Claude "done" so the follower count of 447 can be read against it tomorrow.
+**Why:** 447 followers, +12 a day lately, **553 to go**: at that pace TikTok Shop opens in about 46 days. Three clips with 10-60K views sit buried among 124 videos, so a visitor lands on a profile with no promise and no proof (OPPORTUNITIES: 107K views gave 76 followers = nobody was given a reason). **Expected:** +20 followers a day instead of +12 for the next 7 days (LOW, a guess to be read on 3 Dec); a clear yes/no on whether the profile is the leak. **Who:** Kamay by hand; the machine keeps "Follow for part N+1" on every TikTok draft. No bio link until 1,000.
+**Still open for Kamay:** say `plan` TODAY (queue = 5 clips today, 0 from tomorrow). Black Friday 27 Nov: the portal shows no deal I can read, so I order none. GIN "dues go up in January" stays on YouTube and Facebook to 31 Dec.
 
 ### What the numbers say
-- **Pace (posted per day):** 18-20 Nov 6, **21 Nov 4, 22 Nov 4, 23 Nov 3**, 24 Nov 6; 7-day average 5.0. **Queue: 4 clips today (25 Nov), 1 on 26 Nov, 0 after.** KT posted 6 yesterday.
-- **Instagram 7d vs prior (n=35 vs 32):** median views **197 vs 214** (-8%); skip **52.9% vs 50.9%** (target 40; over 50, a little worse); avg watch 14.5s vs 17.0s; shares+saves per 1k reach 18.0 vs 20.2; comments median 0.
-- **YouTube 7d vs prior (n=36 vs 32):** median **162.5 vs 295.5** (-45%). Best 14d: "A trillion dollars one friend controls" 2,124; "Why rich towns have zero workers" 1,455; "A real millionaire needs $100 million" 921. Worst: "$450 million sold from one take" 38, "A stranger approached him at six years old" 38, "The warden had seen thousands. Never one happy." 32.
-- **TikTok @what_do_you_wan7t (API 25 Nov 09:06; hand-posted):** followers **435** (424 yesterday, +11), 121 videos. Median **295 (n=23, posted 18-25 Nov) vs 406 (n=27, 11-17 Nov)**. TikTok is still our best reach (Instagram 197). Biggest since 11 Nov: Forbes 400 list 59,594 (14 Nov), Ferrari-with-a-photo 12,552 (15 Nov), rich town of business owners 10,336 (14 Nov): all 14-15 Nov, nothing since. Latest: Mark Cuban card 210, "28 years old, 20 million cash" 59; lowest 40-56. TikTok Shop needs **565 more** followers. @kt_student not used.
-- **DMs (sent):** 19 ever; 2 on 22 Nov, **0 since**. n tiny. 
-- **Top 3 (14d, Instagram):** "Mark Cuban's $140,000 card wasn't declined" 1,630, skip 22.3 (BRAIN); "The one phrase rich people avoid" 1,417, skip 40.7 (BRAIN); "A general's real speech before death" 730, skip 42.8. **Bottom 3:** "$50,000 a week. Two strangers appeared" 41, "What happens when you bless strangers" 50, "The richest man was never indecisive" 58. Top: a named rich person plus a thing the viewer owns (a card) plus a reversal; a stakes phrase; last words. Bottom: "Two strangers", a vague stranger, a bare claim.
-- **Splits (14d, Instagram, n):** BRAIN (20) 211 views, skip **44.1** vs MONEY (30) 201, 51.2 vs WISH (12) 202, 54.4. Offer CTA (53) 206, skip 52.8 vs question (9, LOW) 187, 49: no real difference. **Owned money object in the hook: the 1,630 card clip is the first strong case (n=1-2, LOW)**. Openers: Why (12) 224.5, skip 48.8; The (15) 232, skip 55.3; What (5, LOW) 177, 57.9. Source KT_SIGNAL (2, LOW) median 946, skip 32.8; KT_EPISODE (7) skip 58.7, KT_FORGE (4, LOW) 108 views, skip 65.5. Hour of day: the stored clock is not reliable for a split; no order on hours today.
+- **Pace (posted per day):** 19-20 Nov 6, 21 Nov 4, 22 Nov 4, 23 Nov 3, 24 Nov 6, **25 Nov 6**; 7-day average 5.0. **Queue: 5 clips today (26 Nov), 0 after.** Posting falls to 0 from 27 Nov (settled floor 4).
+- **Instagram 7d vs prior (n=28 vs 35):** median views **200 vs 205** (flat); skip **53.4% vs 53.2%** (target 40; over 50 two weeks running); avg watch 13.8s vs 15.4s; shares+saves per 1k reach 24.3 vs 30.7; comments median 0.
+- **YouTube 7d vs prior (n=29 vs 35):** median **107 vs 212** (-50%). Best 14d: "A trillion dollars one friend controls" 2,152; "Why rich towns have zero workers" 1,455; "A real millionaire needs $100 million" 921. Worst: "A stranger approached him at six years old" 40, "What 2 days gave your kid" 34, "The warden had seen thousands. Never one happy." 32.
+- **TikTok @what_do_you_wan7t (API 26 Nov 08:52; hand-posted, no per-clip API for the new account, history file used):** followers **447** (435 yesterday, +12), 124 videos. Median **288 (n=28, posted 19-25 Nov) vs 396 (n=30, 12-18 Nov)**. Still our best reach (Instagram 200). Best of the week: 557, 530, 529 (a Ginsu-ad clip, the 1948 book gurus copy, Forbes-list rerun); nothing near the 10K+ of 14-15 Nov. Lowest 33-40. TikTok Shop needs **553 more**. @kt_student is not used.
+- **DMs (sent):** 19 ever; **0 since 22 Nov**. n tiny.
+- **Top 3 (14d, Instagram):** "Mark Cuban's $140,000 bottle. Not declined" 1,666, skip 22.5 (BRAIN, KT_SIGNAL); "The one phrase rich people avoid" 1,420, skip 40.7 (BRAIN, KT_MODELER); "How Jesus killed a fig tree" 1,381, skip 31.5 (WISH, KT_FIGTREE). **Bottom 3:** "What happens when you bless strangers" 50, "The richest man was never indecisive" 58, "Why he was rich at fifteen" 61 (skip 69). Top: a named rich person with a sum and a reversal; a stakes phrase; a vivid story object. Bottom: a vague stranger, a bare trait, "Why he ..." about an unnamed man.
+- **Splits (14d, Instagram, n):** BRAIN (17) 203 views, skip **45.4** vs MONEY (27) 202, 51.2 vs WISH (14) 203, 53.8. Offer CTA (49) 203, skip 53.4 vs question (9, LOW) 202, 49.0: no real difference. Owned money object in the hook (n=3, LOW): 274 views, skip 42.9 vs 202 / 53.5 for the rest (60). Openers: Why (11) 227, skip 51.2; The (16) 209, 55.0; What (6, LOW) 179, 57.5. Sources: KT_SIGNAL (2, LOW) 970, skip 32.5; KT_EPISODE (7) 198, skip 58.6, YouTube 68; KT_FORGE (3, LOW) 64. Hours (stored clock, not trusted, LOW): 12:00 slot (8) skip 59.2; 09:00 (4) 277, skip 37.7; 18:00 (5) skip 40.6.
 
 ### LOOK TEST (posted 24h+ ago, latest sample per clip)
 | look | n | IG median views | IG median skip | avg watch | shares+saves /1k reach | YT median views |
 |---|---|---|---|---|---|---|
-| classic | 5 | 211 | 40.8% | 19.2s | 6.2 | 417 |
-| cinema | 6 | 171 | 63.7% | 14.0s | 16.3 | 203 |
-| archive | 47 | 205 | 51.4% | 14.7s | 23.4 | 214 |
-- **No clear winner yet:** classic (5) and cinema (6) are under 10 posts. Classic leads on skip, watch time and YouTube (LOW, n=5); archive leads on shares+saves; cinema is last on skip (LOW). The best clip of the month (1,630) is archive, so the look is not what drove it. 'movie' (7) and 'episode' (1) are outside the test. Nothing for Kamay to decide.
+| classic | 5 | 211 | 40.8% | 19.2s | 8.4 | 417 |
+| cinema | 6 | 171 | 64.1% | 14.0s | 18.2 | 203 |
+| archive | 52 | 202.5 | 51.3% | 14.9s | 28.6 | 203.5 |
+| movie | 6 | 195 | 56.4% | 14.7s | 14.4 | 74 |
+| episode | 1 | 233 | 65.9% | 10.4s | 35.3 | 68 |
+- **No clear winner yet:** classic (5) and cinema (6) are under 10 posts, and no classic/cinema clip was added this week because the queue is thin. Classic leads on skip, watch time and YouTube (LOW, n=5); archive leads on shares+saves; cinema is last on skip (LOW). The three best clips of the fortnight are archive, so the look is not what drove them. Nothing for Kamay to decide.
 
 ### HOOKS THE TRIALS PROVED
-- **No KT experiment has a winner and none can learn.** 0 KT arms ever posted; 51 refused (Instagram "too many actions"), the rest waiting; the last run (24 Nov 13:27) failed again (KT fails 4). More than a third refused: all of them. The 8 "scored" entries are either AR_ (other account, ignored) or have no posted KT arm.
-- **Shape from the live clips (LOW, n=1-3):** `<Named rich person> + <something you own> + a reversal`: "Mark Cuban's $140,000 card wasn't declined" (1,630, skip 22.3). Also: a stakes phrase (1,417), a dying man's last words (730). YouTube: "<Big sum> one friend controls", "Why rich towns ...".
+- **No KT experiment has a winner and none can learn.** 0 KT arms ever posted; 52 refused (Instagram "too many actions" / server 500), 375 waiting; the last run (25 Nov 13:32) failed again (KT fails 5). More than a third refused: all of them. The "scored" KT entries have no posted arm (expired or held).
+- **Shape from the live clips (LOW, n=3):** `<Named rich person> + <a thing with a sum> + the reversal`: "Mark Cuban's $140,000 bottle. Not declined" (1,666, skip 22.5). Also a stakes phrase "The one phrase rich people avoid" (1,420) and a vivid object story "How Jesus killed a fig tree" (1,381). YouTube: "<Big sum> one friend controls", "Why rich towns ...".
 - **Examples for tomorrow, only where the moment says it:** `The card the bank would not decline` / `His house was worth nothing on paper` / `Why rich towns have no workers`.
 
 ### Orders for the planner
-1. **PLAN NOW and fill 6 slots a day, 7 days a week** (Instagram + YouTube), best clip first; stock 20+ scheduled KT clips (4 today, 1 tomorrow, 0 after). Never the same clip twice in 14 days.
-2. **Keyword FIRST** in every caption (order kept): BRAIN on mind, self-image and "person who beat the odds" stories (skip 44.1), MONEY on money-habit moments, WISH only on moments that already hold (skip 54.4). Offers only from OPPORTUNITIES.md.
-3. **Instagram topics:** a named rich person plus something the viewer owns (card, bank, house, mortgage, paycheck), then the reversal, when the episode has it; take 2 a day of these. More from KT_SIGNAL, KT_MODELER, KT_SENTINEL, KT_MASONRY, KT_UNDERTOWR2R2R2. Skip "Two ..." lines, vague strangers, guru lines, bare-age lines. Kevin only, no guest stories.
-4. **TikTok drafts (hand-posted):** 3-4 a day, series "Rules the rich never teach, part N", caption ends "Follow for part N+1". Kevin's own words only; Forbes-list, rich-town and Ferrari-photo shapes did 10-60K, so more clips that open with a list or a place the viewer knows. No health-claim lines. No bio link until 1,000.
-5. **YouTube:** "<Big sum> one friend controls", "Why rich towns ...", "A real millionaire needs ..." (0.9-2.1K); skip sum-only, stranger and "warden/inmate" lines. GIN "initiation dues go up in January" on YouTube/Facebook to 31 Dec, no amount, no date.
+1. **PLAN NOW and fill 6 slots a day, 7 days a week** (Instagram + YouTube), best clip first; stock 20+ scheduled KT clips (5 today, 0 after). Never the same clip twice in 14 days.
+2. **Keyword FIRST** in every caption (order kept): BRAIN on mind, self-image and "person who beat the odds" stories (skip 45.4), MONEY on money-habit moments, WISH only on moments that already hold (skip 53.8). Offers only from OPPORTUNITIES.md.
+3. **Instagram topics:** a named rich person plus something with a sum or something the viewer owns (card, bank, house, mortgage, paycheck), then the reversal, when the episode has it; 2 a day. More from KT_SIGNAL, KT_MODELER, KT_FIGTREE-type vivid-object stories, KT_SENTINEL, KT_MASONRY. Skip "Two ..." lines, vague strangers, bare-trait lines ("was never ...", "Why he was ..."). Kevin only, no guest stories.
+4. **TikTok drafts (hand-posted):** 3-4 a day, series "Rules the rich never teach, part N", caption ends "Follow for part N+1". Kevin's own words only; list-of-the-rich and place-the-viewer-knows shapes did 10-60K on 14-15 Nov. No health-claim lines. No bio link until 1,000.
+5. **YouTube:** "<Big sum> one friend controls", "Why rich towns ...", "A real millionaire needs ..." (0.9-2.2K); skip sum-only, stranger and "warden/inmate" lines. GIN "initiation dues go up in January" on YouTube/Facebook to 31 Dec, no amount, no date.
 6. **Look test:** put 'classic' and 'cinema' on 2 of the 6 slots each day until each has 10 posts (5 and 6 now). The planner never changes the look default.
-7. **Hours:** keep 09:00 and 17:00 and put the best clip at 18:00 or 20:00 (a test, LOW); no new hour orders until the clock in metrics is fixed.
-8. **Sources:** max 2 a day per episode. Hold KT_EPISODE, KT_FORGE, KT_DELI, KT_UNLOCKED.
+7. **Hours:** keep 09:00 and 17:00; move the 12:00 slot to 18:00 (12:00 skip 59.2 vs 18:00 40.6; LOW, stored clock). A test, not a rule.
+8. **Sources:** max 2 a day per episode. Hold KT_EPISODE (skip 58.6, YouTube 68), KT_FORGE, KT_DELI, KT_UNLOCKED.
 
 ### Watch list
-- **QUEUE ENDS TOMORROW** (4 today, 1 on 26 Nov): Kamay, say `plan`. Posting drops under 4 from 27 Nov.
-- **Instagram skip 52.9%** (target 40); **YouTube median down 45%**; avg watch 14.5s vs 17.0s.
-- **0 DMs since 22 Nov** while one clip got 1,630 views: see the Business Move.
-- **Trial Reels:** all KT arms refused; nothing learns.
-- **TikTok:** median down (295 vs 406); nothing near 10K since 15 Nov.
+- **QUEUE ENDS TODAY** (5 on 26 Nov, 0 after): Kamay, say `plan`. KT posts 0 from 27 Nov.
+- **Instagram skip 53.4%** (target 40, no change in 2 weeks); **YouTube median down 50%** (107); avg watch 13.8s vs 15.4s.
+- **0 DMs since 22 Nov** while the best clip got 1,666 views.
+- **Trial Reels:** all KT arms refused or waiting; nothing learns.
+- **TikTok:** median down (288 vs 396); the 25 Nov TikTok draft for "Work for money or money works" failed ("spam_risk_too_many_pending_share": too many unposted drafts in the inbox: Kamay, clear the old drafts).
 - **Free call page unreadable** (freecallwithkevin.com: blocked by this routine's network): Kamay, tell me the date. state/extra_links.json left unchanged.
 - Score $11.70 (portal unread since 30 Sept). No IG/YouTube takedown in state. Facebook is hand-posted, not scored here.
