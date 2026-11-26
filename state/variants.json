@@ -5590,5 +5590,67 @@
    }
   ],
   "posted": null
+ },
+ "KT_JETSTREAM__BROKE-ROOM-RESETS-YOUR-BRAIN": {
+  "clip": "KT_JETSTREAM/02_BROKE-ROOM-RESETS-YOUR-BRAIN_66s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_JETSTREAM__BROKE-ROOM-RESETS-YOUR-BRAIN__V1.mp4",
+    "hook": [
+     "Ten broke people in a room",
+     "resets your brain"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_JETSTREAM__BROKE-ROOM-RESETS-YOUR-BRAIN__V2.mp4",
+    "hook": [
+     "Broke people are quietly",
+     "rewriting your brain"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_JETSTREAM__BROKE-ROOM-RESETS-YOUR-BRAIN__V3.mp4",
+    "hook": [
+     "One room of broke friends",
+     "can outvote your dreams"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_JETSTREAM__BROKE-ROOM-RESETS-YOUR-BRAIN__V4.mp4",
+    "hook": [
+     "Why your friends keep you",
+     "stuck at their level"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_JETSTREAM__BROKE-ROOM-RESETS-YOUR-BRAIN__V5.mp4",
+    "hook": [
+     "Why Kevin Trudeau calls",
+     "your brain a tuning fork"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_JETSTREAM__BROKE-ROOM-RESETS-YOUR-BRAIN__V6.mp4",
+    "hook": [
+     "Kevin Trudeau says your brain",
+     "is a tuning fork"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_JETSTREAM__BROKE-ROOM-RESETS-YOUR-BRAIN__V7.mp4",
+    "hook": [
+     "This is why broke rooms",
+     "are the real ceiling"
+    ],
+    "media_tag": "media3"
+   }
+  ],
+  "posted": null
  }
 }
