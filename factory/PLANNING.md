@@ -297,6 +297,16 @@ NOT enforced by code yet (no check counts who is on screen). The planner holds t
 - Double-check the ending by reading the next two lines of the transcript: if the next line is the payoff ("They gave me a gift."), your clip isn't finished yet.
 
 ## Hooks (two short lines)
+- **THE PROVEN STANDARD FIRST (25 Nov 2026, measured - Kamay: "find a way that is already working ... make it
+  better than them without changing what's working. Don't make stuff up").** The two Kevin accounts that win on
+  TikTok - kevintrudeau_student (median 36,500 views a clip, best 1.6M) and trudeaumanifesting (median 25,250, best
+  626K); ours: median ~300 - use ONE plain sentence on top of Kevin's wide picture, the whole clip: a command or a
+  call-out to the viewer that says what the clip gives. Their biggest: `This is why you should / write in cursive`
+  1.6M, `Be careful with who / you associate with` 772K, `Do these things if you / want to be wealthy` 588K, `How to
+  manifest / $50k/week`, `Smart people never / do THIS` 112K, `4 Words Keeping / You Broke!` 138K. So every KT hook
+  is that shape: the viewer's benefit or warning in plain words, 5-9 words, said the way a person says it. Never a
+  poetic line or a scene (`The wet wood / he manifested fire`, `Half the prison / stopped breaking the rules`) - those
+  are titles, not hooks. Better than them = the same shape with OUR clip's strongest number or result in it.
 - **THE HOOK TEST (3 Nov 2026, Kamay: "the hooks should be perfect and so shocking and emotional
   impacting and also truth and call for attention and curiosity").** Write 5 hooks for every clip, score
   each on 4 tests, keep the best - never the first draft. **STOP:** line 1 alone stops a thumb (a

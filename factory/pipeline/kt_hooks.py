@@ -58,8 +58,16 @@ SERIES = os.path.join(os.path.expanduser("~/Kamay"), "kt_series.json")
 # part of your brain" tells a stranger exactly what they get. The first version
 # of this lint only looked for DIGITS and failed that hook, which was correct
 # English and correct strategy. Lint the rule, not the wording.
+# THE PROVEN SHAPES (25 Nov 2026, measured on TikTok): the two Kevin accounts that win - kevintrudeau_student
+# (median 36,500 views a clip) and trudeaumanifesting (median 25,250) - top out on a plain COMMAND or CALL-OUT
+# to the viewer: "This is why you should write in cursive" 1.6M, "Be careful with who you associate with" 772K,
+# "Do these things if you want to be wealthy" 588K, "Smart people never do THIS" 112K. This lint refused all
+# three of the biggest; they open on these words now.
 DIRECT = re.compile(r"^(how|why|what|when|where|which|the|a |an |"
-                    r"one|two|three|four|five|six|seven|eight|nine|ten)\b", re.I)
+                    r"one|two|three|four|five|six|seven|eight|nine|ten|"
+                    r"this is why|be careful|do these|do this|do not|don't|never|stop|"
+                    r"smart people|rich people|successful people|broke people|"
+                    r"if you|you |your |write|read|say|tell)\b", re.I)
 NUMBER = re.compile(r"[\d$%]")
 RIDDLE = re.compile(r"^(some|there('s| is| are)|nobody|everyone|no one|"
                     r"this is what|it (is|was)|he |she |they |i )", re.I)
@@ -162,7 +170,9 @@ def main():
 
 
 
-MAX_WORDS = 6
+# 9, not 6 (25 Nov 2026): the KT headline stays on screen for the whole clip (archive look), and the
+# proven winners above run 7-9 words. A plain sentence of 9 reads at a glance; a riddle of 4 does not.
+MAX_WORDS = 9
 _problems_base = problems
 
 
