@@ -17056,7 +17056,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126201209884FBEF4823D0C1A0043'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126203149132E8F2D25DCE21B2BC4'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17070,9 +17070,9 @@
    "caption_at_post": "Kevin Trudeau teaches a technique so simple most people dismiss it: silently say \"I love you\" to every person you pass, without ever saying it out loud.\n\nHe calls it making a deposit. Send the feeling out first, before anyone gives you a reason to, and the universe sends it back multiplied - a hundred times, even a thousand times over, he says.\n\nIt costs nothing and takes no time. You can do it waiting in line, driving to work, walking down the street.\n\nCompassion, Kevin says, is simply believing the person in front of you deserves to be happy too.\n\nWhat would change if you quietly blessed the next ten strangers you passed?\n\n#kevintrudeau #lawofattraction #manifestation #gratitude #yourwishisyourcommand #mindsetshift",
    "posted_at": "2026-11-17T16:56",
    "tiktok_tries": 0,
-   "tiktok_resend": false,
-   "tiktok_retry": false,
-   "tt_copy": "2026-11-26T20:31"
+   "tiktok_resend": true,
+   "tiktok_retry": true,
+   "tiktok_wait_until": "2026-11-26T22:31"
   },
   {
    "file": "KT_DREAMWORLDO/01_GORDON-RAMSAY-DREAM-WORLD-RULE_46s.mp4",
@@ -19699,7 +19699,7 @@
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-26T15:30",
+   "scheduled_at": "2026-11-26T21:33",
    "cta_keyword": "MONEY",
    "cta_variant": 5,
    "cta_kind": "question"
