@@ -17867,7 +17867,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611260652278CC9EA95142CCD07D4A1'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126161311B16C20CCD6A6920A134E'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17886,7 +17886,7 @@
    "tiktok_retry": true,
    "tiktok_tries": 0,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-26T08:52"
+   "tiktok_wait_until": "2026-11-26T18:13"
   },
   {
    "file": "KT_MIDAS/01_STUDIO-APARTMENT-TO-MILLIONAIRE_40s.mp4",
