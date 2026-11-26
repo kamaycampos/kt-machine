@@ -17133,7 +17133,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611261111077D7854364A79390F4FD0'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126133131ED34322EBA183401C52A'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17149,7 +17149,7 @@
    "tiktok_retry": true,
    "tiktok_tries": 0,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-26T13:11"
+   "tiktok_wait_until": "2026-11-26T15:31"
   },
   {
    "file": "KT_VORTEXO/01_WHY-YOUR-SUCCESS-COACH-IS-BROKE_34s.mp4",
@@ -19513,14 +19513,31 @@
    "caption": "She was addicted to one specific pint of ice cream - not any flavor, that exact one, every single day. She called it what it was: an addiction, like a drug.\n\nKevin put the open pint in front of her at a ten-out-of-ten craving and ran one thirty-second sequence. Not willpower. Not a trick to distract her. Just the craving itself, gone.\n\nShe picked the ice cream back up to test it - smelled it, imagined the taste - and felt nothing. Zero. She kept asking him what he'd done to her, because there was no craving left to fight.\n\nComment RISE and I'll send you how a craving actually gets erased.\n\n#subconscious #cravings #mindovermatter #energywork #awakening #kevintrudeau",
    "hook": "Her craving hit zero in seconds.",
    "bytes": 51155652,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126133451D9055385D371240252C3'}}"
+   },
    "media_tag": "media3",
    "look": "classic",
    "scheduled_at": "2026-11-26T08:18",
    "cta_keyword": "LUCKY",
    "cta_variant": 1,
-   "cta_kind": "question"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1861694718154918/",
+    "instagram": "https://www.instagram.com/reel/DgNOBIUOU-Q/",
+    "youtube": "https://youtube.com/shorts/FOVHV_mEYI0"
+   },
+   "caption_at_post": "She was addicted to one specific pint of ice cream - not any flavor, that exact one, every single day. She called it what it was: an addiction, like a drug.\n\nKevin put the open pint in front of her at a ten-out-of-ten craving and ran one thirty-second sequence. Not willpower. Not a trick to distract her. Just the craving itself, gone.\n\nShe picked the ice cream back up to test it - smelled it, imagined the taste - and felt nothing. Zero. She kept asking him what he'd done to her, because there was no craving left to fight.\n\nComment RISE and I'll send you how a craving actually gets erased.\n\n#subconscious #cravings #mindovermatter #energywork #awakening #kevintrudeau",
+   "posted_at": "2026-11-26T08:34",
+   "tiktok_retry": true,
+   "tiktok_resend": true,
+   "tiktok_wait_until": "2026-11-26T15:34"
   },
   {
    "file": "AR_UNFIREABLER2/01_BRAND-NEW-TVS-PAID-BY-YOU_58s.mp4",
