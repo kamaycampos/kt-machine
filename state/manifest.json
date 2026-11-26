@@ -17054,7 +17054,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261125231045AFB734644EA66D289C64'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126013107401D94B883AB8F33399D'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17070,7 +17070,7 @@
    "tiktok_tries": 0,
    "tiktok_resend": true,
    "tiktok_retry": true,
-   "tiktok_wait_until": "2026-11-26T01:10"
+   "tiktok_wait_until": "2026-11-26T03:31"
   },
   {
    "file": "KT_DREAMWORLDO/01_GORDON-RAMSAY-DREAM-WORLD-RULE_46s.mp4",
@@ -19527,14 +19527,29 @@
    "caption": "They took the brand new TVs the government had just bought and loaded them into their own cars. Same with the chairs. He watched it happen, in person, more than once.\n\nCall it what it is: theft, funded by the money you send in every year. And it isn't rare. There are people inside the federal government now whose whole job is chasing this exact kind of fraud, and he says he'll be the first to testify to what he's seen. He says thousands of others could too.\n\nComment RISE and I'll send you the rest of what he's seen.\n\n#disclosure #awakening #consciousness #subconscious #secretsocieties #kevintrudeau",
    "hook": "Brand new TVs. Paid by you.",
    "bytes": 51685562,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media3",
    "look": "classic",
    "scheduled_at": "2026-11-25T20:16",
    "cta_keyword": "RISE",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1858088418656101/",
+    "instagram": "https://www.instagram.com/reel/DgL7peGujVz/",
+    "youtube": "https://youtube.com/shorts/WkveBObPbrI"
+   },
+   "caption_at_post": "They took the brand new TVs the government had just bought and loaded them into their own cars. Same with the chairs. He watched it happen, in person, more than once.\n\nCall it what it is: theft, funded by the money you send in every year. And it isn't rare. There are people inside the federal government now whose whole job is chasing this exact kind of fraud, and he says he'll be the first to testify to what he's seen. He says thousands of others could too.\n\nComment RISE and I'll send you the rest of what he's seen.\n\n#disclosure #awakening #consciousness #subconscious #secretsocieties #kevintrudeau",
+   "posted_at": "2026-11-25T20:35",
+   "tiktok_at": "2026-11-26T01:35"
   },
   {
    "file": "AR_UNFIREABLER2/01_CANT-BE-FIRED-EVEN-DRUNK_58s.mp4",
@@ -19634,7 +19649,7 @@
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-25T20:27",
+   "scheduled_at": "2026-11-25T20:58",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
    "cta_kind": "offer"
