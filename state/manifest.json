@@ -19829,7 +19829,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-27T10:36",
+   "cta_keyword": "WISH",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_JETSTREAM/01_WHY-YOUR-DREAMS-FELT-IMPOSSIBLE-AS-A-KID_52s.mp4",
@@ -19840,7 +19844,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-26T17:10",
+   "cta_keyword": "WISH",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_JETSTREAM/02_BROKE-PEOPLE-CALLED-HIM-A-DREAMER_68s.mp4",
@@ -19851,7 +19859,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-27T08:24",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_JETSTREAM/02_BROKE-ROOM-RESETS-YOUR-BRAIN_66s.mp4",
@@ -19862,7 +19874,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-27T08:13",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
