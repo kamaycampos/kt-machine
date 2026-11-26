@@ -1,5 +1,5 @@
 {
- "next_episode": 13,
+ "next_episode": 14,
  "built": {
   "mv_v6v9urd_too_good_for_the_casino": {
    "file": "KT_EPISODE/03_TOO-GOOD-FOR-THE-CASINO_94s.mp4",
@@ -72,6 +72,13 @@
    "posts": "2026-11-26T12:30",
    "music": null,
    "scenes": 5
+  },
+  "mv_v62tz85_bail_money_comes_back": {
+   "file": "KT_EPISODE/13_THE-1-MILLION-PHONE-CALL_80s.mp4",
+   "episode": 13,
+   "posts": "2026-11-27T12:30",
+   "music": "movie_ambient_piano_thesilentthunder.mp3",
+   "scenes": 5
   }
  },
  "tries": {
@@ -97,6 +104,7 @@
   null,
   null,
   "movie_ambient_piano_thesilentthunder.mp3",
-  null
+  null,
+  "movie_ambient_piano_thesilentthunder.mp3"
  ]
 }
