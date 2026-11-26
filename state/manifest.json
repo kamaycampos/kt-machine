@@ -17133,7 +17133,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126133131ED34322EBA183401C52A'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126155136C4687F48ABC4A8088640'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17149,7 +17149,7 @@
    "tiktok_retry": true,
    "tiktok_tries": 0,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-26T15:31"
+   "tiktok_wait_until": "2026-11-26T17:51"
   },
   {
    "file": "KT_VORTEXO/01_WHY-YOUR-SUCCESS-COACH-IS-BROKE_34s.mp4",
@@ -19638,7 +19638,7 @@
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-26T10:49",
+   "scheduled_at": "2026-11-26T17:30",
    "cta_keyword": "BRAIN",
    "cta_variant": 6,
    "cta_kind": "offer"
