@@ -17132,7 +17132,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126155136C4687F48ABC4A8088640'}}"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17145,10 +17145,9 @@
    },
    "caption_at_post": "J.D. Rockefeller died the richest man in modern history - in today's money, over $650 billion, most of it in cash.\n\nKevin Trudeau points out what people skip: Rockefeller gave away 10% of his income before he kept a cent, starting back when he was earning almost nothing.\n\nHe didn't wait until he was rich to start giving. He gave first, every single paycheck, long before there was any fortune to speak of.\n\nMost people plan to give once they've \"made it.\" Rockefeller made it giving first.\n\nWhere does giving fit in your plan: first, or \"once I can afford it\"?\n\n#kevintrudeau #rockefeller #wealthmindset #richhabits #moneymindset #financialfreedom",
    "posted_at": "2026-11-18T08:37",
-   "tiktok_retry": true,
-   "tiktok_tries": 0,
+   "tiktok_tries": 1,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-26T17:51"
+   "tiktok_at": "2026-11-26T18:12"
   },
   {
    "file": "KT_VORTEXO/01_WHY-YOUR-SUCCESS-COACH-IS-BROKE_34s.mp4",
@@ -17186,7 +17185,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126155943857C0FF2099EF308F680'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026112618124994BC4374F48F7011F252'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17205,7 +17204,7 @@
    "tiktok_tries": 0,
    "tiktok_resend": true,
    "tiktok_retry": true,
-   "tiktok_wait_until": "2026-11-26T17:59"
+   "tiktok_wait_until": "2026-11-26T20:12"
   },
   {
    "file": "AR_HIERARCHY/01_THEIR-OUTRAGE-IS-SOMEONE-ELSES-SCRIPT_147s.mp4",
