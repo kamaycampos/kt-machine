@@ -16895,7 +16895,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261125225014C59DF08592205526DCEA'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126011053CCB2B78817DDF63185A6'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -16914,7 +16914,7 @@
    "tiktok_tries": 0,
    "tiktok_resend": true,
    "tiktok_retry": true,
-   "tiktok_wait_until": "2026-11-26T00:50"
+   "tiktok_wait_until": "2026-11-26T03:10"
   },
   {
    "file": "KT_RUNWAY/01_REALTOR-SELLS-IN-ONE-WEEK_140s.mp4",
@@ -19362,14 +19362,30 @@
    "hook": "$200 million, then he started teaching",
    "bytes": 77409626,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126011349C9DB3B52B6C0BF31BD00'}}"
+   },
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-25T20:00",
    "cta_keyword": "BRAIN",
    "cta_variant": 4,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgL5PXFB-z5/",
+    "youtube": "https://youtube.com/shorts/IK5PlHrmb3k"
+   },
+   "caption_at_post": "Kevin Trudeau says his friend Ed Forman built a company called Executive Development Systems of Dallas - but he didn't start teaching success principles until after he had made a couple hundred million dollars in construction and oil and gas in West Texas.\n\nHe learned by doing: applying a principle one way, then finding the one small distinction that actually created the result.\n\nThat is why Kevin Trudeau says his own Success Mastery Course comes from decades of applying it himself, not from repeating a book.\n\nWould you trust advice more from someone who did it, or someone who just read about it?\n\n#kevintrudeau #successmindset #entrepreneur #wealthhabits #businesslessons #manifestation",
+   "posted_at": "2026-11-25T20:13",
+   "tiktok_retry": true,
+   "tiktok_resend": true,
+   "tiktok_wait_until": "2026-11-26T03:13"
   },
   {
    "file": "KT_FIREFOCUS/01_WET-WOOD-BURST-INTO-FLAMES_73s.mp4",
