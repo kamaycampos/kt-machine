@@ -19841,14 +19841,28 @@
    "hook": "Why your dreams felt impossible as a kid",
    "bytes": 65536042,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-26T17:10",
    "cta_keyword": "WISH",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgOJeOnxfkU/",
+    "youtube": "https://youtube.com/shorts/_1EZw9E0hn4"
+   },
+   "caption_at_post": "Kevin Trudeau says every kid dreams impossible things without a second thought. You wanted to be Wonder Woman, or Spider-Man climbing a wall - and some part of you could see it.\n\nThat is proof your mind can hold a dream your logic calls impossible. The ability never left. Somewhere along the way, you decided dreaming that big was only for kids.\n\nGive yourself permission to dream that size again, on purpose, about something real.\n\nComment WISH and I'll send you the 14 audios that help you dream big again.\n\n#kevintrudeau #yourwishisyourcommand #manifestation #lawofattraction #mindset #dreambig",
+   "posted_at": "2026-11-26T17:14",
+   "tiktok_at": "2026-11-26T22:14"
   },
   {
    "file": "KT_JETSTREAM/02_BROKE-PEOPLE-CALLED-HIM-A-DREAMER_68s.mp4",
