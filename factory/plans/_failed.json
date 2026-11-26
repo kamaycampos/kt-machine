@@ -15429,6 +15429,24 @@
     "How to double",
     "your dream number"
    ]
+  },
+  "ar_v5cpz6r_p2/THEY-STAGED-HIS-OWN-RAID": {
+   "plan": "ar_v5cpz6r_p2",
+   "source": "v5cpz6r.mp4",
+   "brand": "AR_OPTICS",
+   "tries": 1,
+   "why": [
+    "FAIL 01_THEY-STAGED-HIS-OWN-RAID_166s.mp4: [FAIL] 01_THEY-STAGED-HIS-OWN-RAID_166s.mp4                   44 captions vs the sound  median -0.00s  worst-10% 0.68s  | words captioned 101%"
+   ],
+   "slug": "THEY-STAGED-HIS-OWN-RAID",
+   "in": 1128.4,
+   "out": 1296.0,
+   "start_words": "This is the image makers",
+   "end_words": "this is creating an image isn't it",
+   "hook": [
+    "They can raid you",
+    "over one word."
+   ]
   }
  },
  "attempts": {
