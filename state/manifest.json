@@ -19639,7 +19639,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126205524196C7760DEA88D1CB02F'}}"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "media_tag": "media3",
    "look": "classic",
@@ -19655,9 +19655,9 @@
    },
    "caption_at_post": "The CEO of one of America's biggest retailers ran the company for three years without once walking into one of his own stores - or a competitor's. He said so himself, on CNBC.\n\nSam Walton ran Walmart the opposite way: half of his working life, on foot, inside his own stores and his rivals'. One company is a case study now. The other doesn't exist. Being in charge and knowing what's happening on the ground are not the same skill.\n\nComment RISE and I'll send you the rest of this comparison.\n\n#disclosure #awakening #consciousness #mindset #subconscious #kevintrudeau",
    "posted_at": "2026-11-26T10:38",
-   "tiktok_retry": true,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-26T22:55"
+   "tiktok_at": "2026-11-26T23:15",
+   "tiktok_tries": 1
   },
   {
    "file": "KT_ANCHORR2/01_WHY-YOUR-FAMILY-FEELS-YOUR-STRESS_121s.mp4",
@@ -19665,14 +19665,28 @@
    "hook": "How to stop family stress tonight",
    "bytes": 108879883,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-26T17:59",
    "cta_keyword": "BRAIN",
    "cta_variant": 6,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgOQ7RqTUAC/",
+    "youtube": "https://youtube.com/shorts/Bxs96WE1FB4"
+   },
+   "caption_at_post": "Would you like to have a winning day every day?\n\nKevin Trudeau used to get flown into Vegas and put up free in mansions with pools built into the living room, where staff were trained to say one thing on the way out: have a winning day.\n\nHe started saying it back first - every day a winning day, decided before it starts.\n\nMeditate in the morning and the day runs smoother. Meditate before dinner and the office never makes it through your front door, so your family - even the dog - feels the difference before you say a word.\n\nDo you bring the office home with you, or leave it at the door?\n\n#kevintrudeau #meditation #mindset #family #stressrelief #mentalhealth",
+   "posted_at": "2026-11-26T18:20",
+   "tiktok_at": "2026-11-26T23:20"
   },
   {
    "file": "KT_ANCHORR2/02_THE-OCEAN-TRICK-FOR-A-STUCK-MIND_117s.mp4",
