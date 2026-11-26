@@ -17133,7 +17133,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126041053ABC7CBFB6AF9483D2413'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611260610518BBC548BA6950005EA88'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17149,7 +17149,7 @@
    "tiktok_retry": true,
    "tiktok_tries": 0,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-26T06:10"
+   "tiktok_wait_until": "2026-11-26T08:10"
   },
   {
    "file": "KT_VORTEXO/01_WHY-YOUR-SUCCESS-COACH-IS-BROKE_34s.mp4",
