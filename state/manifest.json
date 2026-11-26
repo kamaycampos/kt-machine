@@ -16895,7 +16895,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126081107E725C258FDCEA80B49AB'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026112610310741D714D28B6E0F0EBDA6'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -16914,7 +16914,7 @@
    "tiktok_tries": 0,
    "tiktok_resend": true,
    "tiktok_retry": true,
-   "tiktok_wait_until": "2026-11-26T10:11"
+   "tiktok_wait_until": "2026-11-26T12:31"
   },
   {
    "file": "KT_RUNWAY/01_REALTOR-SELLS-IN-ONE-WEEK_140s.mp4",
