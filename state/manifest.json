@@ -17187,7 +17187,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261125234700E58120BD2936A72B5DA8'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126021049479AAA9221D93735AD02'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17206,7 +17206,7 @@
    "tiktok_tries": 0,
    "tiktok_resend": true,
    "tiktok_retry": true,
-   "tiktok_wait_until": "2026-11-26T01:47"
+   "tiktok_wait_until": "2026-11-26T04:10"
   },
   {
    "file": "AR_HIERARCHY/01_THEIR-OUTRAGE-IS-SOMEONE-ELSES-SCRIPT_147s.mp4",
@@ -19645,14 +19645,30 @@
    "hook": "Why $300,000 beats your $1M job",
    "bytes": 92537439,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126021334C8006298038F5435B02F'}}"
+   },
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-25T20:58",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgMAGJCv5Am/",
+    "youtube": "https://youtube.com/shorts/_oRNvH7J6sM"
+   },
+   "caption_at_post": "Kevin Trudeau says most people spend their life trying to earn more - work harder, work longer, get smarter at the job. That is not freedom, just a bigger paycheck on the same cage.\n\nReal freedom looks different: you do nothing, and $300,000 a year still shows up. His point: stop asking how to earn more, start asking how to get your money working for you.\n\nA million dollars you grind for is not independence. $300,000 you never lift a finger for is.\n\nComment MONEY and I'll send you the next step.\n\n#kevintrudeau #financialfreedom #wealthmindset #moneymindset #passiveincome #richmindset",
+   "posted_at": "2026-11-25T21:13",
+   "tiktok_retry": true,
+   "tiktok_resend": true,
+   "tiktok_wait_until": "2026-11-26T04:13"
   }
  ]
 }
