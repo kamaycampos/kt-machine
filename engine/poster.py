@@ -1237,18 +1237,18 @@ def tiktok_cover_first(path, public_url, clip):
                  "setsar=1,fps=30,format=yuv420p,setpts=PTS-STARTPTS")
         abase = "aresample=44100,aformat=sample_fmts=fltp:channel_layouts=stereo,asetpts=PTS-STARTPTS"
         if cover:
-            n = 2 / 30.0
-            # the cover is a JPEG (full-range colour); the clip is video-range. Converted here, or the
-            # whole file gets flagged full-range and the clip's colours shift on the phone.
+            # 26 Nov 2026, Kamay, 4th time: "KT drafts all stuck, WB ok". The ONE thing KT's TikTok copy
+            # did that WB's never does: it SPLICED a separate 2-frame cover piece (with its own silent
+            # audio) onto the clip - a concat, and the file came out with half its colour tags missing.
+            # Now the cover is painted over the clip's own first 2 frames: one continuous video and one
+            # continuous audio track, built exactly like WB's copies that open fine on his phone.
             graph = (f"[1:v]scale=1080:1920:force_original_aspect_ratio=decrease:in_range=pc:out_range=tv,"
-                     f"pad=1080:1920:(ow-iw)/2:(oh-ih)/2:black,"
-                     f"setsar=1,fps=30,format=yuv420p,trim=duration={n:.4f},setpts=PTS-STARTPTS[c];"
+                     f"pad=1080:1920:(ow-iw)/2:(oh-ih)/2:black,setsar=1,fps=30,format=yuv420p[c];"
                      f"[0:v]{vbase}[v0];"
-                     f"[2:a]atrim=duration={n:.4f},{abase}[s];"
-                     f"[0:a]{abase}[a0];"
-                     f"[c][s][v0][a0]concat=n=2:v=1:a=1[v][a]")
-            ins = ["-i", path, "-loop", "1", "-framerate", "30", "-t", "0.2", "-i", cover,
-                   "-f", "lavfi", "-t", "0.2", "-i", "anullsrc=r=44100:cl=stereo"]
+                     f"[v0][c]overlay=0:0:enable='lt(n,2)':eof_action=pass:format=yuv420,"
+                     f"setparams=range=tv:color_primaries=bt709:color_trc=bt709:colorspace=bt709[v];"
+                     f"[0:a]{abase}[a]")
+            ins = ["-i", path, "-loop", "1", "-framerate", "30", "-t", "0.2", "-i", cover]
         else:
             graph = f"[0:v]{vbase}[v];[0:a]{abase}[a]"
             ins = ["-i", path]
