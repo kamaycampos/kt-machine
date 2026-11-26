@@ -17053,7 +17053,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026112615315726461444D6238B074CF2'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126175211F36BA29791FCFB10A7BF'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17069,7 +17069,7 @@
    "tiktok_tries": 0,
    "tiktok_resend": true,
    "tiktok_retry": true,
-   "tiktok_wait_until": "2026-11-26T17:31"
+   "tiktok_wait_until": "2026-11-26T19:52"
   },
   {
    "file": "KT_DREAMWORLDO/01_GORDON-RAMSAY-DREAM-WORLD-RULE_46s.mp4",
@@ -19715,7 +19715,7 @@
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-26T12:36",
+   "scheduled_at": "2026-11-26T19:33",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
    "cta_kind": "offer"
