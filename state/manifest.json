@@ -16895,7 +16895,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126125126DA60A84C64A61900ADD1'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026112615113127F9FECC5963A40618A4'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -16914,7 +16914,7 @@
    "tiktok_tries": 0,
    "tiktok_resend": true,
    "tiktok_retry": true,
-   "tiktok_wait_until": "2026-11-26T14:51"
+   "tiktok_wait_until": "2026-11-26T17:11"
   },
   {
    "file": "KT_RUNWAY/01_REALTOR-SELLS-IN-ONE-WEEK_140s.mp4",
@@ -19606,7 +19606,7 @@
    "status": {},
    "media_tag": "media3",
    "look": "classic",
-   "scheduled_at": "2026-11-26T10:05",
+   "scheduled_at": "2026-11-26T10:20",
    "cta_keyword": "RISE",
    "cta_variant": 3,
    "cta_kind": "question"
