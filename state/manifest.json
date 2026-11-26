@@ -18680,7 +18680,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126173235653DC1AC7434170F053E'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -18698,7 +18698,8 @@
    "posted_at": "2026-11-23T07:49",
    "tiktok_tries": 0,
    "tiktok_resend": true,
-   "tiktok_retry": true
+   "tiktok_retry": true,
+   "tiktok_wait_until": "2026-11-26T19:32"
   },
   {
    "file": "AR_ENERGETICCORD/01_A-CONTRACT-KEEPS-YOU-TIED_47s.mp4",
@@ -19276,7 +19277,12 @@
    "hook": "One failed ad paid him for decades",
    "bytes": 30070749,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611261733300BCA644A0319CD0EFA40'}}",
+    "instagram": "yours to post with Instagram music until 21:00 - after that it posts by itself, voice only"
+   },
    "media_tag": "media2",
    "cover": true,
    "look": "movie",
@@ -19294,7 +19300,18 @@
    "movie": "mv_v5dm94d_the_ad_that_paid_for_decades",
    "music": null,
    "ig_hand": true,
-   "scheduled_at": "2026-11-26T12:30"
+   "scheduled_at": "2026-11-26T12:30",
+   "posting": false,
+   "links": {
+    "youtube": "https://youtube.com/shorts/Qk3g-Z6eHQs"
+   },
+   "ig_hand_from": "2026-11-26T17:33:34",
+   "ig_hand_due": "2026-11-26T21:00",
+   "caption_at_post": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says he once ran a mail-order ad for a $35 report. He spent money on the ad and the printing, and for a month nothing came back. He was out several thousand dollars.\n\nHe told his mentor what happened. His mentor looked and said there was a block in his field, and asked if he wanted it released - but it would cost him.\n\nHe paid it. Then he ran the exact same ad, word for word, no changes. What came back this time, and for how many years, is the part you have to hear from him.\n\nEpisode 12: The Ad That Paid For Decades.\n\nThe 14 audios are Kevin teaching how to use your mind to get what you want in life. They were recorded live at a private event in the Alps.\n\nMost people will watch this and scroll on. A few will comment \"WISH\" and start listening tonight.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #yourwishisyourcommand #manifestation #moneymindset #directmail #lawofattraction",
+   "posted_at": "2026-11-26T12:33",
+   "tiktok_retry": true,
+   "tiktok_resend": true,
+   "tiktok_wait_until": "2026-11-26T19:33"
   },
   {
    "file": "KT_BOOKMAGNET/01_READING-MAKES-YOUR-BRAIN-A-MONEY-MAGNET_79s.mp4",
