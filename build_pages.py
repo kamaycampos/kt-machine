@@ -227,6 +227,10 @@ def board(cs):
     _EMPTIED = {"KAMAY": "2026-11-25T22:30", "WB": "2026-11-25T22:30"}
 
     def ready(c):
+        # 26 Nov 2026: TikTok refused every KT draft (spam_risk_too_many_pending_share), so the clean
+        # TikTok copy sits in the `tiktok` release (tt_copy = when) and he posts it by hand from here.
+        if c.get("tt_copy") and not c.get("tiktok_done") and c["file"] not in _live:
+            return True
         s = str((c.get("status") or {}).get("tiktok", "")).lower()
         return bool(c.get("posted_at")) and any(k in s for k in OK) \
             and not c.get("tiktok_done") \
@@ -240,7 +244,7 @@ def board(cs):
     # clip, it's 2 3 4 5 down or I have to search it"). TikTok's inbox shows the draft that arrived
     # last on top; this list was sorted by the day the clip first went out, so every re-sent draft
     # sat days down. Sorted now by `tiktok_at`, the minute the draft reached him.
-    todo.sort(key=lambda c: c.get("tiktok_at") or c.get("posted_at") or "", reverse=True)
+    todo.sort(key=lambda c: c.get("tt_copy") or c.get("tiktok_at") or c.get("posted_at") or "", reverse=True)
     rest.sort(key=lambda c: (c.get("posted_at") or c.get("scheduled_at") or ""),
               reverse=True)
 
@@ -295,7 +299,7 @@ def board(cs):
         # ticked off with Copy came back 20 minutes later under a new id.
         # ...and a RE-SENT draft is a new to-do: the id carries its arrival, or a card he copied once
         # stays hidden on his phone (localStorage) for every later copy of the same clip.
-        cid = "t" + hashlib.sha1((f + (c.get("tiktok_at") or "")).encode()).hexdigest()[:16]
+        cid = "t" + hashlib.sha1((f + (c.get("tt_copy") or c.get("tiktok_at") or "")).encode()).hexdigest()[:16]
         # The picture is the point: he is holding a phone with a clip in the
         # TikTok inbox and needs to know THIS caption belongs to THAT video.
         img = tb.get(f) if is_ready or f in recent else None
@@ -315,7 +319,9 @@ def board(cs):
                 # empty paste. Never hide what a copy button copies.
                 + f"<pre id='{cid}'>{html.escape(c.get('caption') or '')}</pre>"
                 + f"<button onclick=\"cp('{cid}',this)\">Copy</button>"
-                + f" <a class=dl href='{video_url(c)}' download>&#11015; Video</a></div>")
+                + (f" <a class=dl href='https://github.com/kamaycampos/kt-machine/releases/download/tiktok/TT--{f.replace('/', '--')}' download>&#11015; TikTok video</a></div>"
+                   if c.get("tt_copy") and is_ready else
+                   f" <a class=dl href='{video_url(c)}' download>&#11015; Video</a></div>"))
 
     p = ["<meta charset=utf-8><meta name=viewport "
          "content='width=device-width,initial-scale=1'><title>Captions</title>",
