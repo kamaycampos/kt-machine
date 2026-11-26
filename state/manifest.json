@@ -18678,7 +18678,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126173235653DC1AC7434170F053E'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126195227B76A53BF7CC7DC18BA89'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -18697,7 +18697,7 @@
    "tiktok_tries": 0,
    "tiktok_resend": true,
    "tiktok_retry": true,
-   "tiktok_wait_until": "2026-11-26T19:32"
+   "tiktok_wait_until": "2026-11-26T21:52"
   },
   {
    "file": "AR_ENERGETICCORD/01_A-CONTRACT-KEEPS-YOU-TIED_47s.mp4",
