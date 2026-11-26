@@ -19549,7 +19549,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126133451D9055385D371240252C3'}}"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "media_tag": "media3",
    "look": "classic",
@@ -19565,9 +19565,9 @@
    },
    "caption_at_post": "She was addicted to one specific pint of ice cream - not any flavor, that exact one, every single day. She called it what it was: an addiction, like a drug.\n\nKevin put the open pint in front of her at a ten-out-of-ten craving and ran one thirty-second sequence. Not willpower. Not a trick to distract her. Just the craving itself, gone.\n\nShe picked the ice cream back up to test it - smelled it, imagined the taste - and felt nothing. Zero. She kept asking him what he'd done to her, because there was no craving left to fight.\n\nComment RISE and I'll send you how a craving actually gets erased.\n\n#subconscious #cravings #mindovermatter #energywork #awakening #kevintrudeau",
    "posted_at": "2026-11-26T08:34",
-   "tiktok_retry": true,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-26T15:34"
+   "tiktok_at": "2026-11-26T20:52",
+   "tiktok_tries": 1
   },
   {
    "file": "AR_UNFIREABLER2/01_BRAND-NEW-TVS-PAID-BY-YOU_58s.mp4",
@@ -19638,7 +19638,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126153805BDA3D35D2DA3D3087B1F'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126205524196C7760DEA88D1CB02F'}}"
    },
    "media_tag": "media3",
    "look": "classic",
@@ -19656,7 +19656,7 @@
    "posted_at": "2026-11-26T10:38",
    "tiktok_retry": true,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-26T17:38"
+   "tiktok_wait_until": "2026-11-26T22:55"
   },
   {
    "file": "KT_ANCHORR2/01_WHY-YOUR-FAMILY-FEELS-YOUR-STRESS_121s.mp4",
