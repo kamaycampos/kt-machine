@@ -17187,7 +17187,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611260430516730E5C220F16F000E1C'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261126063105A41E82C48B697306F708'}}"
    },
    "media_tag": "media2",
    "cover": true,
@@ -17206,7 +17206,7 @@
    "tiktok_tries": 0,
    "tiktok_resend": true,
    "tiktok_retry": true,
-   "tiktok_wait_until": "2026-11-26T06:30"
+   "tiktok_wait_until": "2026-11-26T08:31"
   },
   {
    "file": "AR_HIERARCHY/01_THEIR-OUTRAGE-IS-SOMEONE-ELSES-SCRIPT_147s.mp4",
