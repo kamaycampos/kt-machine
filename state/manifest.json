@@ -19765,7 +19765,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261127163441505B7176B2566B06EE5F'}}"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "media_tag": "media3",
    "cover": true,
@@ -19781,9 +19781,9 @@
    },
    "caption_at_post": "Kevin Trudeau says he was on a friend's $65 million private jet, paid for in cash, when the guys on board complained about commercial flight delays. Someone said, \"let's talk about a private plane when we have the money.\" He said that line would keep him broke forever.\n\nHis rule: talk about it now, before you can afford it. Wait for the money first, and it never comes at all.\n\nNot long ago, a jet like that was a joke to him. Now he flies on a $35 million one, because he dreamed it before the income caught up.\n\nComment MONEY and I'll send you more on how this works.\n\n#kevintrudeau #wealthmindset #manifestation #milliondollarmindset #abundance #richmindset",
    "posted_at": "2026-11-26T19:55",
-   "tiktok_retry": true,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-27T18:34"
+   "tiktok_at": "2026-11-27T18:55",
+   "tiktok_tries": 1
   },
   {
    "file": "KT_ALTITUDE/01_WORK-FOR-MONEY-OR-MONEY-WORKS_73s.mp4",
