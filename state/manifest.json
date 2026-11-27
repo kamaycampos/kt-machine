@@ -19293,7 +19293,8 @@
     "facebook": "off for this account",
     "youtube": "posted",
     "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611261733300BCA644A0319CD0EFA40'}}",
-    "instagram": "yours to post with Instagram music until 21:00 - after that it posts by itself, voice only"
+    "instagram": "posted",
+    "instagram_story": "posted by hand - no story"
    },
    "media_tag": "media2",
    "cover": true,
@@ -19315,7 +19316,8 @@
    "scheduled_at": "2026-11-26T12:30",
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/Qk3g-Z6eHQs"
+    "youtube": "https://youtube.com/shorts/Qk3g-Z6eHQs",
+    "instagram": "https://www.instagram.com/reel/DgODUZ1APsb/"
    },
    "ig_hand_from": "2026-11-26T17:33:34",
    "ig_hand_due": "2026-11-26T21:00",
@@ -19323,7 +19325,9 @@
    "posted_at": "2026-11-26T12:33",
    "tiktok_retry": false,
    "tiktok_resend": false,
-   "tt_copy": "2026-11-26T20:43"
+   "tt_copy": "2026-11-26T20:43",
+   "ig_hand_done": true,
+   "ig_by_hand": true
   },
   {
    "file": "KT_BOOKMAGNET/01_READING-MAKES-YOUR-BRAIN-A-MONEY-MAGNET_79s.mp4",
