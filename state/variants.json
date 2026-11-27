@@ -5669,5 +5669,67 @@
    }
   ],
   "posted": null
+ },
+ "AR_OPTICSR2__THEY-STAGED-HIS-OWN-RAID": {
+  "clip": "AR_OPTICSR2/01_THEY-STAGED-HIS-OWN-RAID_184s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__AR_OPTICSR2__THEY-STAGED-HIS-OWN-RAID__V1.mp4",
+    "hook": [
+     "One word.",
+     "Then machine guns came."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_OPTICSR2__THEY-STAGED-HIS-OWN-RAID__V2.mp4",
+    "hook": [
+     "The image makers",
+     "staged his raid."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_OPTICSR2__THEY-STAGED-HIS-OWN-RAID__V3.mp4",
+    "hook": [
+     "Not a crime.",
+     "Just a photo op."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_OPTICSR2__THEY-STAGED-HIS-OWN-RAID__V4.mp4",
+    "hook": [
+     "Miss this,",
+     "and the image owns you."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_OPTICSR2__THEY-STAGED-HIS-OWN-RAID__V5.mp4",
+    "hook": [
+     "CNN knew",
+     "before the raid did."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_OPTICSR2__THEY-STAGED-HIS-OWN-RAID__V6.mp4",
+    "hook": [
+     "Stop trusting",
+     "the picture they show."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_OPTICSR2__THEY-STAGED-HIS-OWN-RAID__V7.mp4",
+    "hook": [
+     "They raided calcium",
+     "with machine guns."
+    ],
+    "media_tag": "media3"
+   }
+  ],
+  "posted": null
  }
 }
