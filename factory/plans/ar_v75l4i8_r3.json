@@ -1,0 +1,36 @@
+{
+    "source": "v75l4i8.mp4",
+    "brand": "AR_DISCLOSURER3",
+    "test": false,
+    "note": "27 Nov 2026 - second chances for 'Kevin Trudeau: Aliens Are Here - The “Drip” Disclosure Plan Revealed' (Rumble v75l4i8). Awakened Rise weekly agent. SENATORS-AND-GENERALS-ALL-SAID-THIS failed captions-vs-sound with two uncaptioned-speech gaps; moved the start past the 'and as I mentioned' wind-up onto the clean 'We're talking top government officials' sentence, which also skips the first gap, and extended the close past the second gap onto 'all kinds of things going on'. BAD-NEWS-TRAVELS-FASTER-ON-PURPOSE is on its third and last try - both earlier cuts (ending at :1299.7 and :1313.58) left an uncaptioned-speech span at 1298.96-1301.26s sitting across the 'that doesn't sell/that doesn't get embraced' line itself, so no edge trim inside that sentence can dodge it. Restructured instead: opens on the self-contained 'isn't it interesting that positivity doesn't rub off' question (no antecedent needed) and closes on the complete sentence just before the gap, 'instead of accurately reporting facts', which still pays 'on purpose'.",
+    "clips": [
+        {
+            "slug": "SENATORS-AND-GENERALS-ALL-SAID-THIS",
+            "retry_of": "ar_v75l4i8/SENATORS-AND-GENERALS-ALL-SAID-THIS",
+            "in": 1698.04,
+            "out": 1799.26,
+            "start_words": "We're talking top",
+            "end_words": "kinds of things going on",
+            "hook": [
+                "Senators and generals",
+                "all said this"
+            ],
+            "send": "Send this to someone who dismisses UFO talk as one guy's theory - this is the actual witness list, awe at the scale of it.",
+            "caption": "This isn't one guy's theory. It's thousands of credentialed people, under oath, saying the same thing.\n\nSenators. Congressmen. Former U.S. presidents and prime ministers. Admirals, fighter pilots, NORAD officers who monitored the sky for a living. People who worked at Area 51 on the actual spacecraft. Not one whistleblower - a pattern, across governments, including Russia's.\n\nWhen that many people with that much to lose independently confirm the same account, and millions of pieces of footage sit on top of it, \"coincidence\" stops being a reasonable explanation.\n\nComment RISE and I'll send you the sourcing.\n\n#disclosure #ufo #truth #whistleblower #awakening #kevintrudeau"
+        },
+        {
+            "slug": "BAD-NEWS-TRAVELS-FASTER-ON-PURPOSE",
+            "retry_of": "ar_v75l4i8_r2/BAD-NEWS-TRAVELS-FASTER-ON-PURPOSE",
+            "in": 1244.98,
+            "out": 1295.5,
+            "start_words": "Isn't it interesting",
+            "end_words": "accurately reporting facts",
+            "hook": [
+                "Bad news travels",
+                "faster on purpose"
+            ],
+            "send": "Send this to someone who doom-scrolls and calls it staying informed - names exactly why the feed feels that way, a little anger at being managed.",
+            "caption": "Tell someone about a great movie you saw and they might mention it once. Tell them it was terrible and they'll bring it up for a week.\n\nThat's not an accident of taste. Negativity spreads faster than positivity, every single time, and the news figured that out before you did. Almost any story could be reported neutrally, sometimes even positively.\n\nIt doesn't get reported that way, because negative sells and positive doesn't. The slant isn't a bug in the system. It is the system.\n\nComment RISE and I'll send you how to spot it happening in real time.\n\n#mindset #awakening #media #consciousness #truth #kevintrudeau"
+        }
+    ]
+}
