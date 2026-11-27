@@ -15501,6 +15501,24 @@
     "How the rich turn",
     "20% into 500X"
    ]
+  },
+  "ep_v7iwclg_r2/DONT-TELL-THE-UNIVERSE-HOW": {
+   "plan": "ep_v7iwclg_r2",
+   "source": "v7iwclg.mp4",
+   "brand": "KT_ALTITUDER2",
+   "tries": 2,
+   "why": [
+    "NOT QUEUED** `01_DONT-TELL-THE-UNIVERSE-HOW_45s.mp4` - opens mid-sentence on \"focus on the\""
+   ],
+   "slug": "DONT-TELL-THE-UNIVERSE-HOW",
+   "in": 329.0,
+   "out": 375.0,
+   "start_words": "You don't have to focus on the how",
+   "end_words": "top of your list that you want",
+   "hook": [
+    "Why the how",
+    "isn't your job"
+   ]
   }
  },
  "attempts": {
