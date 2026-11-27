@@ -20126,7 +20126,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-28T07:28",
+   "cta_keyword": "MONEY",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "KT_OPULENCE/02_THE-2000-SEMINAR-THAT-MADE-MILLIONS_132s.mp4",
@@ -20137,7 +20141,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-28T10:11",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_SIDEDOOR/02_NOT-ON-THE-FORBES-LIST_48s.mp4",
@@ -20148,7 +20156,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-28T08:31",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 1,
+   "cta_kind": "offer"
   }
  ]
 }
