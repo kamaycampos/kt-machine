@@ -19880,7 +19880,7 @@
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
-   "scheduled_at": "2026-11-27T10:36",
+   "scheduled_at": "2026-11-27T20:30",
    "cta_keyword": "WISH",
    "cta_variant": 3,
    "cta_kind": "offer"
@@ -19940,7 +19940,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261127133616E02A1870D9C7B0083C9B'}}"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "media_tag": "media3",
    "cover": true,
@@ -19956,9 +19956,9 @@
    },
    "caption_at_post": "Kevin Trudeau says your brain works like a tuning fork. Put it in a room with ten broke, negative people on the poverty wave, and resistance is futile - your brain starts matching their frequency whether you want it to or not.\n\nThat is why the people you stand next to decide more than you think. Growing up blue collar surrounds you with a ceiling on what you believe is possible.\n\nChange the room, and you change the frequency.\n\nComment BRAIN and I'll send you the 14 audios that help you protect yours.\n\n#kevintrudeau #mindset #successmindset #wealthmindset #lawofattraction #selfimprovement",
    "posted_at": "2026-11-27T08:36",
-   "tiktok_retry": true,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-27T15:36"
+   "tiktok_at": "2026-11-27T15:53",
+   "tiktok_tries": 1
   },
   {
    "file": "AR_OPTICSR2/01_THEY-STAGED-HIS-OWN-RAID_184s.mp4",
