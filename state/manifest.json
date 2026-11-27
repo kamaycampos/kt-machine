@@ -19997,7 +19997,11 @@
    "done": false,
    "status": {},
    "media_tag": "media3",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-27T10:27",
+   "cta_keyword": "RISE",
+   "cta_variant": 0,
+   "cta_kind": "offer"
   },
   {
    "file": "AR_DISCLOSURER3/02_SENATORS-AND-GENERALS-ALL-SAID-THIS_104s.mp4",
@@ -20007,7 +20011,11 @@
    "done": false,
    "status": {},
    "media_tag": "media3",
-   "look": "classic"
+   "look": "classic",
+   "scheduled_at": "2026-11-27T11:53",
+   "cta_keyword": "LUCKY",
+   "cta_variant": 1,
+   "cta_kind": "question"
   },
   {
    "file": "KT_DREAMSUITE/01_DREAM-BUILDING-10K-A-NIGHT_53s.mp4",
@@ -20018,7 +20026,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-27T12:03",
+   "cta_keyword": "MONEY",
+   "cta_variant": 2,
+   "cta_kind": "question"
   },
   {
    "file": "KT_EARDRUM/01_TWO-EARS-ONE-MOUTH_53s.mp4",
@@ -20029,7 +20041,11 @@
    "status": {},
    "media_tag": "media3",
    "cover": true,
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-27T16:28",
+   "cta_keyword": "BRAIN",
+   "cta_variant": 3,
+   "cta_kind": "offer"
   }
  ]
 }
