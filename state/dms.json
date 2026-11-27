@@ -336,6 +336,11 @@
    "at": "2026-11-26T05:29:51.656522+00:00",
    "platform": "facebook",
    "error": "Please reduce the amount of data you're asking for, then retry your request"
+  },
+  {
+   "at": "2026-11-27T03:36:10.796684+00:00",
+   "platform": "instagram",
+   "error": "Please reduce the amount of data you're asking for, then retry your request"
   }
  ],
  "withheld": {
