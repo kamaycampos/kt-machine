@@ -20082,14 +20082,28 @@
    "hook": "Why he stopped talking: two ears, one mouth",
    "bytes": 52265666,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-27T16:28",
    "cta_keyword": "BRAIN",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgQp5llBnc8/",
+    "youtube": "https://youtube.com/shorts/0uSy8ZwOY2o"
+   },
+   "caption_at_post": "Kevin Trudeau says almost every sales professional he's ever met gets sales 101 wrong - and it has nothing to do with closing.\n\nHe asked a room full of career salespeople what the number one rule of selling is. Not one of them knew it. The answer, straight from Dale Carnegie: sell yourself first. Get someone to like you before you ever try to sell them anything.\n\nHow do you do that? Not by talking. By listening. You have two ears and one mouth, Kevin says - use them in that proportion.\n\nComment BRAIN and I'll send you Kevin's free audios on how he reads people in seconds.\n\nWho in your life talks more than they listen?\n\n#kevintrudeau #sales #communication #dalecarnegie #businesstips #mindset",
+   "posted_at": "2026-11-27T16:36",
+   "tiktok_at": "2026-11-27T21:36"
   },
   {
    "file": "KT_EPISODE/14_THE-1-3-BILLION-PIZZA_67s.mp4",
