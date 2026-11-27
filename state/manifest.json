@@ -19934,14 +19934,28 @@
    "hook": "Broke people called him just a dreamer",
    "bytes": 83653699,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-27T18:30",
    "cta_keyword": "MONEY",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgQ3qxju_rh/",
+    "youtube": "https://youtube.com/shorts/DEqh6AGLTvg"
+   },
+   "caption_at_post": "Kevin Trudeau says when he was growing up, dreaming big got him laughed at. Friends told him who does he think he is, you're just like us, you're never going to be a millionaire.\n\nHere is why that happens: people who are broke do not want you to succeed, because if you go above them, they feel left behind. Consciously or not, misery loves company.\n\nThe friends who laugh the loudest are usually the ones most afraid to try.\n\nComment BRAIN and I'll send you the 14 audios that help you dream past the room you grew up in.\n\n#kevintrudeau #mindset #richmindset #success #lawofattraction #selfimprovement",
+   "posted_at": "2026-11-27T18:36",
+   "tiktok_at": "2026-11-27T23:36"
   },
   {
    "file": "KT_JETSTREAM/02_BROKE-ROOM-RESETS-YOUR-BRAIN_66s.mp4",
