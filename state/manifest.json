@@ -19765,7 +19765,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611271433208033184049AA0B008842'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261127163441505B7176B2566B06EE5F'}}"
    },
    "media_tag": "media3",
    "cover": true,
@@ -19783,7 +19783,7 @@
    "posted_at": "2026-11-26T19:55",
    "tiktok_retry": true,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-27T16:33"
+   "tiktok_wait_until": "2026-11-27T18:34"
   },
   {
    "file": "KT_ALTITUDE/01_WORK-FOR-MONEY-OR-MONEY-WORKS_73s.mp4",
