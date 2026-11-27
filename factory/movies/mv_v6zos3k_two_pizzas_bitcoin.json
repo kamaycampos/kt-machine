@@ -1,0 +1,69 @@
+{
+  "movie": true,
+  "source": "v6zos3k",
+  "title": "The $1.3 Billion Pizza",
+  "why_movie": "RESULT: a stated sum - the 10,000 Bitcoin he took for two pizzas in 2010 is worth $1.3 billion today, his own words. METHOD: he chose to take the coin instead of the $41 cash, betting on something nobody else believed in yet, before there was any proof. WISH: a stranger wants the 14 audios to learn how to make that same kind of decision - acting on conviction before the world agrees - in their own life.",
+  "in": 269.84,
+  "out": 352.0,
+  "start_words": "In 2010, the first purchase using Bitcoin happened",
+  "end_words": "it's who you know",
+  "scenes": [
+    {
+      "on": "In 2010, the first purchase using Bitcoin happened",
+      "gen": "A dim 2010-era apartment kitchen at night, an old laptop glowing on a cluttered table showing a plain cryptocurrency wallet screen with a number on it, a flip phone beside it",
+      "move": "the laptop screen glows and flickers, a hand reaches toward the keyboard"
+    },
+    {
+      "on": "two pizzas from a Papa John's restaurant",
+      "gen": "A plain cardboard pizza box sitting on a kitchen counter at night, steam still rising from under the lid, a crumpled receipt beside it, warm takeout lighting",
+      "move": "a hand lifts the pizza box lid, steam rises into the light"
+    },
+    {
+      "on": "I'll give you 10,000 Bitcoin for two pizzas",
+      "gen": "Close view of an old laptop screen on a kitchen table at night, a simple wallet balance number glowing in green pixel font, a pizza box slightly out of focus behind it",
+      "move": "the green number on the screen pulses once, steady and glowing"
+    },
+    {
+      "on": "that 10,000 Bitcoin was worth $10,000 in six months",
+      "gen": "A close view of a laptop screen at night showing a plain rising green line chart climbing across the screen, reflected light on a dark kitchen table",
+      "move": "the green line on the chart climbs steadily up and to the right"
+    },
+    {
+      "on": "guess what that 10,000 Bitcoin is worth today? 1.3 billion",
+      "gen": "A plain bank statement page lying under a desk lamp on dark wood, a single large printed number on the page, a pen resting beside it, nobody's face visible",
+      "move": "a hand slides the paper further into the lamp's light"
+    },
+    {
+      "on": "There are people like myself who knew right at the beginning",
+      "gen": "A dim room at night with a single leather armchair facing a wide window, city lights far below, a man in a dark suit seen only from behind standing at the glass",
+      "move": "the man at the window slowly turns his head toward the light"
+    }
+  ],
+  "big": [
+    "it's who you know"
+  ],
+  "payoff": "It's not what you know, it's who you know",
+  "money": [
+    "$41",
+    "$10,000",
+    "1.3 billion"
+  ],
+  "names": [
+    {
+      "say": "10,000 Bitcoin",
+      "color": "gold"
+    }
+  ],
+  "poster": 2,
+  "mood": [
+    "suspense",
+    "wonder"
+  ],
+  "hook": [
+    "TWO PIZZAS",
+    "became $1.3 billion"
+  ],
+  "cta_keyword": "WISH",
+  "caption": "Comment \"WISH\" and I'll send you Kevin Trudeau's 14 Your Wish Is Your Command audios. Free.\n\nKevin Trudeau says back in 2010 he offered a Papa John's owner 10,000 Bitcoin for two pizzas. The owner wanted the $41 in cash instead - Bitcoin was brand new, and nobody trusted it yet.\n\nKevin talked him into taking the coins. Six months later, they were worth $10,000.\n\nWhat they're worth today is the part nobody believes.\n\n{episode}\n\nThe 14 audios teach how to use your mind to decide before the proof ever shows up - the same decision that turned two pizzas into a fortune.\n\nMost people will scroll past this. A few will comment \"WISH\" and start tonight.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #bitcoin #cryptocurrency #wealthmindset #yourwishisyourcommand #manifestation",
+  "send": "A friend who laughed off crypto early sends this in awe - two pizzas turned into $1.3 billion."
+}
