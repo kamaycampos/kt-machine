@@ -19734,7 +19734,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026112705134563724520FDC3A0402B96'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611270733355AEF948C983FCD4645A2'}}"
    },
    "media_tag": "media3",
    "cover": true,
@@ -19752,7 +19752,7 @@
    "posted_at": "2026-11-26T21:55",
    "tiktok_retry": true,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-27T07:13"
+   "tiktok_wait_until": "2026-11-27T09:33"
   },
   {
    "file": "KT_ALTITUDE/01_THE-35-MILLION-JET_86s.mp4",
