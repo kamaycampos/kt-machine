@@ -19734,7 +19734,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611270953496A471C557E3D8402CB56'}}"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "media_tag": "media3",
    "cover": true,
@@ -19750,9 +19750,9 @@
    },
    "caption_at_post": "Kevin Trudeau says a Royal family in the Middle East once showed him they already knew, without ever being taught, the exact system wealthy families use to stay motivated.\n\nOne piece of it is almost embarrassingly simple: dream building. Drive by the big houses. Look at the cars. Price out the suite that costs $10,000 a night, just to feel what it's like to say yes to it.\n\nIt's not materialism. It's training your mind to believe it's possible, on purpose, on a schedule.\n\nComment MONEY and I'll send you the training on how wealthy families actually think, straight to your messages.\n\nWhat's the house you drive by and dream about?\n\n#kevintrudeau #dreambig #moneymindset #wealthhabits #success #rockefeller",
    "posted_at": "2026-11-26T21:55",
-   "tiktok_retry": true,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-27T11:53"
+   "tiktok_at": "2026-11-27T12:14",
+   "tiktok_tries": 1
   },
   {
    "file": "KT_ALTITUDE/01_THE-35-MILLION-JET_86s.mp4",
@@ -19765,7 +19765,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '2026112710125258C81E200E5E3C034138'}}"
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611271216198750614A4A15AF05A9CC'}}"
    },
    "media_tag": "media3",
    "cover": true,
@@ -19783,7 +19783,7 @@
    "posted_at": "2026-11-26T19:55",
    "tiktok_retry": true,
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-27T12:12"
+   "tiktok_wait_until": "2026-11-27T14:16"
   },
   {
    "file": "KT_ALTITUDE/01_WORK-FOR-MONEY-OR-MONEY-WORKS_73s.mp4",
