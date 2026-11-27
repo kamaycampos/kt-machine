@@ -19851,7 +19851,13 @@
    "hook": "$250,000 in bail money. 20 years later, $1 million.",
    "bytes": 46033380,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "media_tag": "media3",
    "cover": true,
    "look": "movie",
@@ -19868,7 +19874,15 @@
    "caption_link": "Or get them here now, free: https://freeyourwish.kevintrudeau.com/?ref=a43c8j",
    "movie": "mv_v62tz85_bail_money_comes_back",
    "music": "movie_ambient_piano_thesilentthunder.mp3",
-   "scheduled_at": "2026-11-27T12:30"
+   "scheduled_at": "2026-11-27T12:30",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgQObDThvUP/",
+    "youtube": "https://youtube.com/shorts/9Idjjytxd6k"
+   },
+   "caption_at_post": "Comment \"WISH\" and I'll send you Kevin's 14 free audios on how giving works, the moment you comment.\n\nKevin Trudeau says a friend's wife once called him frantic - her husband needed $250,000 in cash to post bail on a legal case. Kevin flew down on his own plane that night and paid it himself, never expecting to see a dollar of it again.\n\nYears went by. He never once asked for the money back, and never brought it up again.\n\nEpisode 13: The $1 Million Phone Call.\n\nThe 14 audios walk through the exact principle behind what happened next - planting without expecting a harvest.\n\nComment \"WISH\" now and Kevin's audios are in your messages in seconds.\n\nNo message within a minute? Look in your message requests, or use the link in my bio.\n\n#kevintrudeau #yourwishisyourcommand #lawofattraction #manifestation #giving #mindset",
+   "posted_at": "2026-11-27T12:36",
+   "tiktok_at": "2026-11-27T17:36"
   },
   {
    "file": "KT_JETSTREAM/01_NOT-QUITTING-NEW-INFORMATION_83s.mp4",
