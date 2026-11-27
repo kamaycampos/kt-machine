@@ -19740,14 +19740,30 @@
    "hook": "Why a $35M jet came anyway",
    "bytes": 108489697,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261127005537B8C826B9EA45522E00C3'}}"
+   },
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-26T19:33",
    "cta_keyword": "BRAIN",
    "cta_variant": 1,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgOb07OC3vd/",
+    "youtube": "https://youtube.com/shorts/n9_YsfmPo-Q"
+   },
+   "caption_at_post": "Kevin Trudeau says he was on a friend's $65 million private jet, paid for in cash, when the guys on board complained about commercial flight delays. Someone said, \"let's talk about a private plane when we have the money.\" He said that line would keep him broke forever.\n\nHis rule: talk about it now, before you can afford it. Wait for the money first, and it never comes at all.\n\nNot long ago, a jet like that was a joke to him. Now he flies on a $35 million one, because he dreamed it before the income caught up.\n\nComment MONEY and I'll send you more on how this works.\n\n#kevintrudeau #wealthmindset #manifestation #milliondollarmindset #abundance #richmindset",
+   "posted_at": "2026-11-26T19:55",
+   "tiktok_retry": true,
+   "tiktok_resend": true,
+   "tiktok_wait_until": "2026-11-27T02:55"
   },
   {
    "file": "KT_ALTITUDE/01_WORK-FOR-MONEY-OR-MONEY-WORKS_73s.mp4",
