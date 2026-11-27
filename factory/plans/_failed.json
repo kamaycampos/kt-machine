@@ -15447,6 +15447,42 @@
     "They can raid you",
     "over one word."
    ]
+  },
+  "ar_v5cpz6r_r2/EVERY-COURTROOM-HAS-STAIRS": {
+   "plan": "ar_v5cpz6r_r2",
+   "source": "v5cpz6r.mp4",
+   "brand": "AR_IMAGEMAKERSR2",
+   "tries": 2,
+   "why": [
+    "FAIL 01_EVERY-COURTROOM-HAS-STAIRS_181s.mp4: [FAIL] 01_EVERY-COURTROOM-HAS-STAIRS_181s.mp4                 34 captions vs the sound  median -0.01s  worst-10% 0.72s  | words captioned 100%"
+   ],
+   "slug": "EVERY-COURTROOM-HAS-STAIRS",
+   "in": 344.31,
+   "out": 529.3,
+   "start_words": "The CIA knows it",
+   "end_words": "to the government officials",
+   "hook": [
+    "Every courtroom has",
+    "stairs. On purpose."
+   ]
+  },
+  "ar_v5cpz6r_r2/A-BANNED-BOOK-DESCRIBES-A-UFO": {
+   "plan": "ar_v5cpz6r_r2",
+   "source": "v5cpz6r.mp4",
+   "brand": "AR_IMAGEMAKERSR2",
+   "tries": 2,
+   "why": [
+    "FAIL 02_A-BANNED-BOOK-DESCRIBES-A-UFO_174s.mp4: [FAIL] 02_A-BANNED-BOOK-DESCRIBES-A-UFO_174s.mp4              51 captions vs the sound  median -0.00s  worst-10% 0.59s  | words captioned 101%"
+   ],
+   "slug": "A-BANNED-BOOK-DESCRIBES-A-UFO",
+   "in": 3613.9,
+   "out": 3786.96,
+   "start_words": "The book of Enoch",
+   "end_words": "Sounds like an alien abduction to me",
+   "hook": [
+    "A banned book",
+    "describes a UFO."
+   ]
   }
  },
  "attempts": {
@@ -15548,6 +15584,6 @@
   "ar_v4khs1x_r2": 2,
   "ep_v5dm94d_p2": 2,
   "ep_v6c74p7_p3": 2,
-  "ar_v5cpz6r_r2": 1
+  "ar_v5cpz6r_r2": 2
  }
 }

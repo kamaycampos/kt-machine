@@ -1,23 +1,7 @@
-## ar_v5cpz6r_p2_r2: 1 of 1 clip(s) passed every gate
-
-
-## 2026-11-27 11:51
-  note AR_OPTICSR2/THEY-STAGED-HIS-OWN-RAID: end snapped 1316.03 -> 1316.10s (after 'raided for calcium')
-  note AR_OPTICSR2/THEY-STAGED-HIS-OWN-RAID: ending kept on the planner's words 'raided for calcium' (ends inside a quote)
-ar_v5cpz6r_p2_r2__s0 (AR_OPTICSR2): 1 of 1 passed pre-render gates
-
-RENDER ar_v5cpz6r_p2_r2__s0
-  WARP 01_THEY-STAGED-HIS-OWN-RAID_184s.mp4: HIS-OWN-RAID_184s.mp4                   44 captions vs the sound  median +0.02s  worst-10% 0.54s  | words captioned 101% - re-timing each caption once
-  PASS 01_THEY-STAGED-HIS-OWN-RAID_184s.mp4  01_THEY-STAGED-HIS-OWN-RAID_184s.mp4                   44 captions vs the sound  median +0
-       FIRST 5s : They get you to believe something, and it's all staged. They came into my office, broke | LAST  8s : I saw you in the news. You got rated for drugs. No, no, no, no. Our office was rated for calcium.
-TEST MODE - passing clips NOT uploaded or queued: AR_OPTICSR2
-  test clip kept in previews: TEST_AR_OPTICSR2--01_THEY-STAGED-HIS-OWN-RAID_184s.mp4
-
-
 ## ar_v5cpz6r_r2: 0 of 2 clip(s) passed every gate
 
 
-## 2026-11-27 12:21
+## 2026-11-27 13:40
   note AR_IMAGEMAKERSR2/EVERY-COURTROOM-HAS-STAIRS: end snapped 527.25 -> 527.16s (after 'to the government officials')
   note AR_IMAGEMAKERSR2/A-BANNED-BOOK-DESCRIBES-A-UFO: end snapped 3789.89 -> 3788.39s (after 'Sounds like an alien abduction to me')
 ar_v5cpz6r_r2__s0 (AR_IMAGEMAKERSR2): 2 of 2 passed pre-render gates
@@ -29,21 +13,94 @@ RENDER ar_v5cpz6r_r2__s0
   FAIL 02_A-BANNED-BOOK-DESCRIBES-A-UFO_174s.mp4: [FAIL] 02_A-BANNED-BOOK-DESCRIBES-A-UFO_174s.mp4              51 captions vs the sound  median -0.00s  worst-10% 0.59s  | words captioned 101%
 
 
-## UPLOAD
-1 clip(s) to add:
-   AR_OPTICSR2/01_THEY-STAGED-HIS-OWN-RAID_184s.mp4  (153 MB)
-      + 01_THEY-STAGED-HIS-OWN-RAID_184s__story.mp4
-      + 01_THEY-STAGED-HIS-OWN-RAID_184s__yt59.mp4
-   added AR_OPTICSR2/01_THEY-STAGED-HIS-OWN-RAID_184s.mp4  (release media3)
+- **RETIRED** after 2 runs with nothing passing; its clips go back to the planner (factory/plans/_failed.json)
 
-manifest now holds 775 clips
+## ar_v75l4i8_r3: 2 of 2 clip(s) passed every gate
+
+
+## 2026-11-27 13:10
+  note AR_DISCLOSURER3/SENATORS-AND-GENERALS-ALL-SAID-THIS: end snapped 1802.03 -> 1802.24s (after 'kinds of things going on')
+  note AR_DISCLOSURER3/SENATORS-AND-GENERALS-ALL-SAID-THIS: ending kept on the planner's words 'kinds of things going on' (cuts mid-sentence)
+  note AR_DISCLOSURER3/BAD-NEWS-TRAVELS-FASTER-ON-PURPOSE: end snapped 1290.00 -> 1290.45s (after 'accurately reporting facts')
+  note AR_DISCLOSURER3/BAD-NEWS-TRAVELS-FASTER-ON-PURPOSE: ending kept on the planner's words 'accurately reporting facts' (cuts mid-sentence)
+ar_v75l4i8_r3__s0 (AR_DISCLOSURER3): 2 of 2 passed pre-render gates
+
+RENDER ar_v75l4i8_r3__s0
+  PASS 01_BAD-NEWS-TRAVELS-FASTER-ON-PURPOSE_44s.mp4  01_BAD-NEWS-TRAVELS-FASTER-ON-PURPOSE_44s.mp4          12 captions vs the sound  median +0
+       FIRST 5s : Isn't it interesting that positivity doesn't rub off as much as negativity? | LAST  8s : Always positioned from a negative sense instead of accurately reporting facts.
+  WARP 02_SENATORS-AND-GENERALS-ALL-SAID-THIS_104s.mp4: -GENERALS-ALL-SAID-THIS_104s.mp4        35 captions vs the sound  median +0.03s  worst-10% 0.99s  | words captioned 101% - re-timing each caption once
+  PASS 02_SENATORS-AND-GENERALS-ALL-SAID-THIS_104s.mp4  02_SENATORS-AND-GENERALS-ALL-SAID-THIS_104s.mp4        33 captions vs the sound  median +0
+       FIRST 5s : We're talking top government officials in the highest levels of government. | LAST  8s : On the other side, the millions of credible footage that people have got of crafts and all kinds of things going on.
+TEST MODE - passing clips NOT uploaded or queued: AR_DISCLOSURER3
+  test clip kept in previews: TEST_AR_DISCLOSURER3--01_BAD-NEWS-TRAVELS-FASTER-ON-PURPOSE_44s.mp4
+  test clip kept in previews: TEST_AR_DISCLOSURER3--02_SENATORS-AND-GENERALS-ALL-SAID-THIS_104s.mp4
+
+
+## ep_v53gz1i_p3: 1 of 1 clip(s) passed every gate
+
+
+## 2026-11-27 12:42
+  note KT_DREAMSUITE/DREAM-BUILDING-10K-A-NIGHT: end snapped 1920.92 -> 1921.22s (after 'do on a regular basis')
+  note KT_DREAMSUITE/DREAM-BUILDING-10K-A-NIGHT: ending kept on the planner's words 'do on a regular basis' (next line completes it)
+ep_v53gz1i_p3__s0 (KT_DREAMSUITE): 1 of 1 passed pre-render gates
+
+RENDER ep_v53gz1i_p3__s0
+  PASS 01_DREAM-BUILDING-10K-A-NIGHT_53s.mp4  01_DREAM-BUILDING-10K-A-NIGHT_53s.mp4                  21 captions vs the sound  median +0
+       FIRST 5s : One of the simplest ones is dream building, going out and | LAST  8s : Why not right now? These are the things that inspire and motivate. These are the things that wealthy people do on a regular basis.
+TEST MODE - passing clips NOT uploaded or queued: KT_DREAMSUITE
+  test clip kept in previews: TEST_KT_DREAMSUITE--01_DREAM-BUILDING-10K-A-NIGHT_53s.mp4
+
+
+## ep_v62tz85_p2: 1 of 1 clip(s) passed every gate
+
+
+## 2026-11-27 12:44
+  note KT_EARDRUM/TWO-EARS-ONE-MOUTH: end snapped 2544.31 -> 2543.85s (after 'Learn more than you talk')
+ep_v62tz85_p2__s0 (KT_EARDRUM): 1 of 1 passed pre-render gates
+
+RENDER ep_v62tz85_p2__s0
+  WARP 01_TWO-EARS-ONE-MOUTH_53s.mp4: -MOUTH_53s.mp4                          19 captions vs the sound  median +0.01s  worst-10% 0.82s  | words captioned 101% - re-timing each caption once
+  PASS 01_TWO-EARS-ONE-MOUTH_53s.mp4  01_TWO-EARS-ONE-MOUTH_53s.mp4                          19 captions vs the sound  median +0
+       FIRST 5s : It isn't by talking. | LAST  8s : Techniques. Number one, remember you have two ears and one mouth. Use them proportionately. Listen more than you talk.
+TEST MODE - passing clips NOT uploaded or queued: KT_EARDRUM
+  test clip kept in previews: TEST_KT_EARDRUM--01_TWO-EARS-ONE-MOUTH_53s.mp4
+
+
+## UPLOAD
+4 clip(s) to add:
+   AR_DISCLOSURER3/01_BAD-NEWS-TRAVELS-FASTER-ON-PURPOSE_44s.mp4  (34 MB)
+   AR_DISCLOSURER3/02_SENATORS-AND-GENERALS-ALL-SAID-THIS_104s.mp4  (85 MB)
+   KT_DREAMSUITE/01_DREAM-BUILDING-10K-A-NIGHT_53s.mp4  (52 MB)
+   KT_EARDRUM/01_TWO-EARS-ONE-MOUTH_53s.mp4  (52 MB)
+   added AR_DISCLOSURER3/01_BAD-NEWS-TRAVELS-FASTER-ON-PURPOSE_44s.mp4  (release media3)
+      + 02_SENATORS-AND-GENERALS-ALL-SAID-THIS_104s__story.mp4
+      + 02_SENATORS-AND-GENERALS-ALL-SAID-THIS_104s__yt59.mp4
+   added AR_DISCLOSURER3/02_SENATORS-AND-GENERALS-ALL-SAID-THIS_104s.mp4  (release media3)
+      + 01_DREAM-BUILDING-10K-A-NIGHT_53s__ytfull.mp4
+      + 01_DREAM-BUILDING-10K-A-NIGHT_53s__cover.jpg
+      + 01_DREAM-BUILDING-10K-A-NIGHT_53s__thumb.jpg
+   added KT_DREAMSUITE/01_DREAM-BUILDING-10K-A-NIGHT_53s.mp4  (release media3)
+      + 01_TWO-EARS-ONE-MOUTH_53s__ytfull.mp4
+      + 01_TWO-EARS-ONE-MOUTH_53s__cover.jpg
+      + 01_TWO-EARS-ONE-MOUTH_53s__thumb.jpg
+   added KT_EARDRUM/01_TWO-EARS-ONE-MOUTH_53s.mp4  (release media3)
+
+manifest now holds 779 clips
 commit and push state/manifest.json to let the machine see them
 
 
-## TRIAL: 2 hook variant(s) of AR_OPTICSR2/01_THEY-STAGED-HIS-OWN-RAID_184s.mp4 ready for Instagram Trial Reels
+## TRIAL: 2 hook variant(s) of KT_DREAMSUITE/01_DREAM-BUILDING-10K-A-NIGHT_53s.mp4 ready for Instagram Trial Reels
 
-## TRIAL: 4 hook variant(s) of AR_OPTICSR2/01_THEY-STAGED-HIS-OWN-RAID_184s.mp4 ready for Instagram Trial Reels
+## TRIAL: 2 hook variant(s) of KT_EARDRUM/01_TWO-EARS-ONE-MOUTH_53s.mp4 ready for Instagram Trial Reels
 
-## TRIAL: 6 hook variant(s) of AR_OPTICSR2/01_THEY-STAGED-HIS-OWN-RAID_184s.mp4 ready for Instagram Trial Reels
+## TRIAL: 4 hook variant(s) of KT_DREAMSUITE/01_DREAM-BUILDING-10K-A-NIGHT_53s.mp4 ready for Instagram Trial Reels
 
-## TRIAL: 7 hook variant(s) of AR_OPTICSR2/01_THEY-STAGED-HIS-OWN-RAID_184s.mp4 ready for Instagram Trial Reels
+## TRIAL: 4 hook variant(s) of KT_EARDRUM/01_TWO-EARS-ONE-MOUTH_53s.mp4 ready for Instagram Trial Reels
+
+## TRIAL: 6 hook variant(s) of KT_EARDRUM/01_TWO-EARS-ONE-MOUTH_53s.mp4 ready for Instagram Trial Reels
+
+## TRIAL: 6 hook variant(s) of KT_DREAMSUITE/01_DREAM-BUILDING-10K-A-NIGHT_53s.mp4 ready for Instagram Trial Reels
+
+## TRIAL: 7 hook variant(s) of KT_DREAMSUITE/01_DREAM-BUILDING-10K-A-NIGHT_53s.mp4 ready for Instagram Trial Reels
+
+## TRIAL: 7 hook variant(s) of KT_EARDRUM/01_TWO-EARS-ONE-MOUTH_53s.mp4 ready for Instagram Trial Reels
