@@ -5863,5 +5863,67 @@
    }
   ],
   "posted": null
+ },
+ "KT_SIDEDOOR__NOT-ON-THE-FORBES-LIST": {
+  "clip": "KT_SIDEDOOR/02_NOT-ON-THE-FORBES-LIST_48s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__KT_SIDEDOOR__NOT-ON-THE-FORBES-LIST__V1.mp4",
+    "hook": [
+     "$100,000 became",
+     "billions, hidden"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SIDEDOOR__NOT-ON-THE-FORBES-LIST__V2.mp4",
+    "hook": [
+     "The Forbes list",
+     "hides real fortunes"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SIDEDOOR__NOT-ON-THE-FORBES-LIST__V3.mp4",
+    "hook": [
+     "$100,000 turned",
+     "into untraceable billions"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SIDEDOOR__NOT-ON-THE-FORBES-LIST__V4.mp4",
+    "hook": [
+     "Why you'll never",
+     "crack the Forbes list"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SIDEDOOR__NOT-ON-THE-FORBES-LIST__V5.mp4",
+    "hook": [
+     "Kevin's friend's $100K",
+     "turned to billions"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SIDEDOOR__NOT-ON-THE-FORBES-LIST__V6.mp4",
+    "hook": [
+     "Kevin Trudeau watched",
+     "$100K become billions"
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__KT_SIDEDOOR__NOT-ON-THE-FORBES-LIST__V7.mp4",
+    "hook": [
+     "The richest man",
+     "Forbes will never rank"
+    ],
+    "media_tag": "media3"
+   }
+  ],
+  "posted": null
  }
 }
