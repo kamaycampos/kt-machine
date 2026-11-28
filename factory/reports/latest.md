@@ -1,19 +1,16 @@
-## ep_v7iwclg_r2: 1 of 1 clip(s) passed every gate
+## ep_v6zos3k_t9: 1 of 1 clip(s) passed every gate (TEST - not queued)
 
 
-## 2026-11-27 20:51
-  note KT_ALTITUDER2/DONT-TELL-THE-UNIVERSE-HOW: end snapped 375.83 -> 374.88s (after 'top of your list that you want')
-  note KT_ALTITUDER2/DONT-TELL-THE-UNIVERSE-HOW: ending kept on the planner's words 'top of your list that you want' (cuts mid-sentence)
-ep_v7iwclg_r2__s0 (KT_ALTITUDER2): 1 of 1 passed pre-render gates
+## 2026-11-28 02:36
+  note KT_PROVENTEST/PROVEN-LOOK-TEST: end snapped 113.95 -> 114.86s (after 'how you get rich')
+  note KT_PROVENTEST/PROVEN-LOOK-TEST: ending kept on the planner's words 'how you get rich' (cuts mid-sentence)
+ep_v6zos3k_t9__s0 (KT_PROVENTEST): 1 of 1 passed pre-render gates
 
-RENDER ep_v7iwclg_r2__s0
-  PASS 01_DONT-TELL-THE-UNIVERSE-HOW_45s.mp4  01_DONT-TELL-THE-UNIVERSE-HOW_45s.mp4                  54 captions vs the sound (word-refe
-       FIRST 5s : Focus on the health. But I want, somehow, money coming into my account. | LAST  8s : What does that even mean? So if I were to ask you specifically, what is it at the top of your list that you want?
-TEST MODE - passing clips NOT uploaded or queued: KT_ALTITUDER2
-  test clip kept in previews: TEST_KT_ALTITUDER2--01_DONT-TELL-THE-UNIVERSE-HOW_45s.mp4
+RENDER ep_v6zos3k_t9__s0
+  PASS 01_PROVEN-LOOK-TEST_64s.mp4  01_PROVEN-LOOK-TEST_64s.mp4                            20 captions vs the sound  median +0
+       FIRST 5s : It's who you know. And when you've done billions and billions in international sales and you're part | LAST  8s : You make 100, 500 times your investment. That's how you get rich. It's getting in.
+TEST MODE - passing clips NOT uploaded or queued: KT_PROVENTEST
+  test clip kept in previews: TEST_KT_PROVENTEST--01_PROVEN-LOOK-TEST_64s.mp4
 
 
-- **NOT QUEUED** `01_DONT-TELL-THE-UNIVERSE-HOW_45s.mp4` - opens mid-sentence on "focus on the"
-
-## UPLOAD
-nothing new to add
+- TEST last gate (kt_qc) FAIL 01_PROVEN-LOOK-TEST_64s.mp4: opens mid-sentence on "it's who you"; the spoken word was on screen in only 5 of 7 moments
