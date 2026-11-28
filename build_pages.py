@@ -229,7 +229,8 @@ def board(cs):
     def ready(c):
         # 26 Nov 2026: TikTok refused every KT draft (spam_risk_too_many_pending_share), so the clean
         # TikTok copy sits in the `tiktok` release (tt_copy = when) and he posts it by hand from here.
-        if c.get("tt_copy") and not c.get("tiktok_done") and c["file"] not in _live:
+        if c.get("tt_copy") and not c.get("tiktok_done") and c["file"] not in _live \
+                and c["tt_copy"] > (_dt.datetime.utcnow() - _dt.timedelta(days=3)).strftime("%Y-%m-%dT%H:%M"):
             return True
         s = str((c.get("status") or {}).get("tiktok", "")).lower()
         return bool(c.get("posted_at")) and any(k in s for k in OK) \
@@ -244,7 +245,7 @@ def board(cs):
     # clip, it's 2 3 4 5 down or I have to search it"). TikTok's inbox shows the draft that arrived
     # last on top; this list was sorted by the day the clip first went out, so every re-sent draft
     # sat days down. Sorted now by `tiktok_at`, the minute the draft reached him.
-    todo.sort(key=lambda c: c.get("tt_copy") or c.get("tiktok_at") or c.get("posted_at") or "", reverse=True)
+    todo.sort(key=lambda c: max(c.get("tt_copy") or "", c.get("tiktok_at") or "") or c.get("posted_at") or "", reverse=True)
     rest.sort(key=lambda c: (c.get("posted_at") or c.get("scheduled_at") or ""),
               reverse=True)
 
@@ -291,8 +292,8 @@ def board(cs):
         key = owner(c)
         who = NAMES[key]
         when = c.get("posted_at") or c.get("scheduled_at")
-        if is_ready and c.get("tiktok_at"):
-            when = c["tiktok_at"]
+        if is_ready and (c.get("tiktok_at") or c.get("tt_copy")):
+            when = max(c.get("tiktok_at") or "", c.get("tt_copy") or "")
         tag = "READY TO POST" if is_ready else (
             "posted" if c.get("posted_at") else "scheduled")
         # STABLE across rebuilds (19 Oct 2026): hash() changes every run, so a card
@@ -320,7 +321,7 @@ def board(cs):
                 + f"<pre id='{cid}'>{html.escape(c.get('caption') or '')}</pre>"
                 + f"<button onclick=\"cp('{cid}',this)\">Copy</button>"
                 + (f" <a class=dl href='https://github.com/kamaycampos/kt-machine/releases/download/tiktok/TT--{f.replace('/', '--')}' download>&#11015; TikTok video</a></div>"
-                   if c.get("tt_copy") and is_ready else
+                   if c.get("tt_copy") else
                    f" <a class=dl href='{video_url(c)}' download>&#11015; Video</a></div>"))
 
     p = ["<meta charset=utf-8><meta name=viewport "

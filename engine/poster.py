@@ -1194,6 +1194,9 @@ def _ffmpeg():
         return None
 
 
+TT_COPIES = set()   # clip files whose TikTok copy went into the `tiktok` release this run
+
+
 def tiktok_cover_first(path, public_url, clip):
     """THE TIKTOK COPY: COVER FIRST, AND BUILT TO SURVIVE TIKTOK (15 Nov / 24 Nov 2026).
 
@@ -1267,6 +1270,25 @@ def tiktok_cover_first(path, public_url, clip):
             return path
         sys.stderr.write(f"tiktok: safe copy made for {os.path.basename(path)}"
                          f"{' (cover first)' if cover else ''}\n")
+        # 27 Nov 2026, Kamay: "some of them are coming without the thumbnail at the very beginning".
+        # He had saved the plain file from the board - the only copy with the cover on frame 1 lived
+        # on the runner and died with it. Every TikTok copy is now kept in the `tiktok` release, and
+        # the board's download button always gives THAT file (run_once marks the clip `tt_copy`).
+        try:
+            if cover and (clip or {}).get("file") and os.environ.get("GH_TOKEN"):
+                keep = os.path.join("/tmp", "TT--" + clip["file"].replace("/", "--"))
+                import shutil
+                shutil.copy(out, keep)
+                up = subprocess.run(["gh", "release", "upload", "tiktok", keep, "--clobber", "-R",
+                                     os.environ.get("GITHUB_REPOSITORY", "kamaycampos/kt-machine")],
+                                    capture_output=True, text=True, timeout=600)
+                os.remove(keep)
+                if up.returncode == 0:
+                    TT_COPIES.add(clip["file"])
+                else:
+                    sys.stderr.write(f"tiktok: copy not kept for the board ({(up.stderr or '')[-120:]})\n")
+        except Exception as x:
+            sys.stderr.write(f"tiktok: copy not kept for the board ({type(x).__name__}: {x})\n")
         return out
     except Exception as x:
         sys.stderr.write(f"tiktok: safe copy skipped ({type(x).__name__}: {x})\n")

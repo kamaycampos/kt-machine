@@ -202,6 +202,8 @@ def main():
             tt = (res or {}).get("tiktok", "")
             log(f"tiktok retry {c['file']}: {tt}")
             st = dict(c.get("status") or {}); st["tiktok"] = tt; c["status"] = st
+            if c["file"] in getattr(poster, "TT_COPIES", ()):
+                c["tt_copy"] = time.strftime("%Y-%m-%dT%H:%M", time.gmtime())   # the board links this file
             if "inbox" in str(tt) or "processing" in str(tt):
                 c["tiktok_at"] = time.strftime("%Y-%m-%dT%H:%M")  # when the draft reached him: the board sorts by it
             if "spam_risk" in str(tt):
@@ -342,6 +344,8 @@ def main():
             posted_log_add(clip["file"], time.strftime("%Y-%m-%dT%H:%M"))
         m2 = engine.load()
         engine.record(m2, i, result, links)
+        if clip["file"] in getattr(poster, "TT_COPIES", ()):
+            m2["clips"][i]["tt_copy"] = time.strftime("%Y-%m-%dT%H:%M", time.gmtime())   # the board links this file
         if any(k in str((result or {}).get("tiktok", "")) for k in ("inbox", "processing")):
             m2["clips"][i]["tiktok_at"] = time.strftime("%Y-%m-%dT%H:%M")
         if tiktok_failed((result or {}).get("tiktok", "")):
