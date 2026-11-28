@@ -20195,14 +20195,31 @@
    "hook": "$100 bills lit just for a cigar",
    "bytes": 89499909,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611281237376EBC60DD7673D9422DF1'}}"
+   },
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-28T07:28",
    "cta_keyword": "MONEY",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgSRCgnKOFr/",
+    "youtube": "https://youtube.com/shorts/9Nr7R-hqPRE"
+   },
+   "caption_at_post": "Kevin Trudeau says he was in Beverly Hills watching Rolls-Royce after Rolls-Royce, Ferraris, Lamborghinis and Bentleys pull up - people in Rolex watches ordering $500 bottles of champagne like it was water.\n\nAt the bar, a guy ordered a double of $750-an-ounce scotch without blinking. Kevin asked him straight: is it even worth it? The guy's answer: no, but I've got money to burn.\n\nKevin says that's where the old phrase comes from - in the cigar lounges, some rich guys would actually light their cigar with a burning $100 bill, just because they could.\n\nComment MONEY and I'll send you more on how this works.\n\n#kevintrudeau #richmindset #wealthmindset #luxurylifestyle #moneymindset #millionairemindset",
+   "posted_at": "2026-11-28T07:37",
+   "tt_copy": "2026-11-28T12:37",
+   "tiktok_retry": true,
+   "tiktok_resend": true,
+   "tiktok_wait_until": "2026-11-28T14:37"
   },
   {
    "file": "KT_OPULENCE/02_THE-2000-SEMINAR-THAT-MADE-MILLIONS_132s.mp4",
