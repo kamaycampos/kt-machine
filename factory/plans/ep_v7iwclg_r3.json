@@ -1,0 +1,22 @@
+{"source": "v7iwclg.mp4", "brand": "KT_ALTITUDER3", "test": false,
+ "note": "28 Nov 2026 - 'What One Private Jet Ride Revealed About Getting Rich' (Rumble v7iwclg). Second chance re-cut: ep_v7iwclg_r2/DONT-TELL-THE-UNIVERSE-HOW still opened mid-sentence on 'focus on the' (the r2 fix kept the same start words that had already failed once). New edges open on 'Don't tell the universe how it's going to happen' - a clean standalone sentence, and the clip's own title in Kevin's words - and run through the live goal-definition exercise to its payoff, 'this works for everybody', for a full 114s teaching instead of the old 46s fragment. Weekly agent.",
+ "clips": [
+   {"slug": "DONT-TELL-THE-UNIVERSE-HOW",
+    "retry_of": "ep_v7iwclg_r2/DONT-TELL-THE-UNIVERSE-HOW",
+    "in": 360.0, "out": 438.0,
+    "start_words": "Don't tell the universe how",
+    "end_words": "to clearly define it",
+    "hook": ["The universe doesn't need", "your plan"],
+    "trial_hooks": [
+      ["$10 million a year", "without the how"],
+      ["Your plan is the", "one thing stopping you"],
+      ["Stuck broke became $10M", "the day she stopped planning"],
+      ["Why overplanning keeps", "you exactly where you are"],
+      ["Rebecca wanted $1M.", "Kevin changed one question"],
+      ["Kevin Trudeau's rule:", "never plan the how"],
+      ["The $10 million question", "nobody answers honestly"]
+    ],
+    "send": "A friend who overplans every goal sends this to another who's stuck doing the same - relief that the 'how' was never their job to solve.",
+    "caption": "Kevin Trudeau says most people never reach a goal because they ask the wrong question first.\n\nThey ask 'how is this going to happen?' before they've even defined what they actually want. Kevin Trudeau says that's backwards.\n\nCoaching a guest live on his private jet, he gives his rule: write down exactly what you want, in specific terms - a real number, a real result - then stop. The how isn't your job.\n\nWhat's the one goal you've never let yourself define specifically, because you didn't know how you'd get there?\n\n#kevintrudeau #yourwishisyourcommand #manifestation #lawofattraction #mindset #goalsetting",
+    "cta_kind": "offer"}
+ ]}
