@@ -20275,7 +20275,10 @@
    "media_tag": "media3",
    "cover": true,
    "cta_kind": "offer",
-   "look": "archive"
+   "look": "archive",
+   "scheduled_at": "2026-11-28T12:31",
+   "cta_keyword": "WISH",
+   "cta_variant": 0
   }
  ]
 }
