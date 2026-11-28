@@ -15555,6 +15555,42 @@
     "The universe doesn't need",
     "your plan"
    ]
+  },
+  "ep_v6w8h8e_p2/HOW-ARNOLD-MEASURED-WHO-TO-COPY": {
+   "plan": "ep_v6w8h8e_p2",
+   "source": "v6w8h8e.mp4",
+   "brand": "KT_MEASURE",
+   "tries": 1,
+   "why": [
+    "FAIL 01_HOW-ARNOLD-MEASURED-WHO-TO-COPY_155s.mp4: not Kevin - his face in only 0 of 8 frames with a face"
+   ],
+   "slug": "HOW-ARNOLD-MEASURED-WHO-TO-COPY",
+   "in": 708.24,
+   "out": 869.6,
+   "start_words": "What can you measure",
+   "end_words": "success rubs off",
+   "hook": [
+    "How to measure",
+    "who you copy"
+   ]
+  },
+  "ep_v6w8h8e_p2/SAME-AGE-JUST-BROKER": {
+   "plan": "ep_v6w8h8e_p2",
+   "source": "v6w8h8e.mp4",
+   "brand": "KT_MEASURE",
+   "tries": 1,
+   "why": [
+    "FAIL 02_SAME-AGE-JUST-BROKER_157s.mp4: not Kevin - his face in only 1 of 8 frames with a face"
+   ],
+   "slug": "SAME-AGE-JUST-BROKER",
+   "in": 2596.56,
+   "out": 2757.28,
+   "start_words": "i grew up i worked",
+   "end_words": "except just broker",
+   "hook": [
+    "Why you're the same age,",
+    "just broker"
+   ]
   }
  },
  "attempts": {
@@ -15657,6 +15693,6 @@
   "ep_v5dm94d_p2": 2,
   "ep_v6c74p7_p3": 2,
   "ar_v5cpz6r_r2": 2,
-  "ep_v6w8h8e_p2": 1
+  "ep_v6w8h8e_p2": 2
  }
 }
