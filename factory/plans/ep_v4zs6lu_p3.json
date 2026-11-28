@@ -1,0 +1,30 @@
+{"source": "v4zs6lu.mp4", "brand": "KT_COCKPIT", "test": false,
+ "note": "28 Nov 2026 - third pass of 'Success Is In The Genes' (Ep. 19, Rumble v4zs6lu). Both clips double as TikTok-takedown replacements: KT_FIREFOCUS/01_WET-WOOD-BURST-INTO-FLAMES and KT_FIREFOCUS/02_BROKE-PEOPLE-WHO-ONLY-HUNG-AROUND-WINNERS (this episode's two second-pass clips) were both posted 25 Nov and taken down by TikTok within hours. New arcs, neither touching the used minutes of WET-WOOD (2413-2492s), BROKE-PEOPLE (2663-2744s) or THE-ROCKY-GAMBLE (3486-3668s): the pilot/runway daily-routine lesson, and the closing 'dream vs wish' challenge. Weekly agent.",
+ "clips": [
+   {"slug": "COPY-THE-RUNWAY-NOT-THE-CRUISE",
+    "retry_of": "KT_FIREFOCUS/01_WET-WOOD-BURST-INTO-FLAMES (taken down by TikTok)",
+    "in": 2951.5, "out": 3049.46,
+    "start_words": "Who do you listen to",
+    "end_words": "already cruising in business",
+    "hook": ["Never copy what they", "do today"],
+    "trial_hooks": [
+      ["Rich people's routine today", "means nothing to you"],
+      ["Why your mentor's daily", "routine is a lie"],
+      ["Broke at 20. Copy", "that version, not now"],
+      ["Copying success wrong keeps", "you exactly where you are"],
+      ["Kevin Trudeau's rule: copy", "the start, not the cruise"],
+      ["A pilot never flies", "takeoff like he flies cruise"],
+      ["What they do now", "won't make you rich"]
+    ],
+    "send": "Someone chasing a mentor's current routine sends this to a friend making the same mistake - relief at finally knowing what's actually worth copying.",
+    "caption": "Kevin Trudeau says people ask him the wrong question constantly.\n\nThey want his daily routine today - what he eats, when he wakes up, how he spends his hours now. Kevin Trudeau says that's useless information.\n\nHis rule: don't study someone at cruising altitude. Study them on the runway. A pilot doesn't fly at takeoff the way he flies at 35,000 feet - full throttle, flaps down, brakes held until the exact RPM. Business works the same way. What you do in year one has nothing to do with what you do once you're already flying.\n\nIf you want to copy someone successful, stop asking what they do now. Ask what they did when they were exactly where you are.\n\n#kevintrudeau #entrepreneurmindset #successmindset #businesslessons #wealthmindset #mindset"},
+   {"slug": "WISHFUL-THINKER-OR-A-REAL-DREAM",
+    "retry_of": "KT_FIREFOCUS/02_BROKE-PEOPLE-WHO-ONLY-HUNG-AROUND-WINNERS (taken down by TikTok)",
+    "in": 3766.46, "out": 3841.5,
+    "start_words": "I just want you to know",
+    "end_words": "steal your dream",
+    "hook": ["Your dream needs", "a number, not a feeling"],
+    "send": "Someone who's been 'wanting' the same thing for years without ever writing it down sends this to themselves, really - the jolt of being called a wishful thinker, not a dreamer.",
+    "caption": "Kevin Trudeau says most people aren't dreamers. They're wishful thinkers, and there's a real difference.\n\nA dream that only exists as a feeling in your head isn't a dream yet, he says. It becomes real the moment it's specific: a number, a date, a result you could write down and hand to someone else.\n\nKevin Trudeau's test: can you quantify it? Can you measure it? Have you actually written it down? If not, you don't have a goal. You have a wish floating in the air, and wishes alone don't build anything.\n\nHave you ever actually written your biggest goal down, in specific numbers?\n\n#kevintrudeau #yourwishisyourcommand #manifestation #goalsetting #mindset #successmindset",
+    "cta_kind": "offer"}
+ ]}
