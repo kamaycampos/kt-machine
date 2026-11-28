@@ -708,6 +708,7 @@ def title_for(path, caption):
             return l
     name = os.path.basename(path).rsplit(".", 1)[0]
     name = re.sub(r"^\d+_", "", name)
+    name = re.sub(r"__(ytfull|yt59|wide)$", "", name)
     name = re.sub(r"_\d+s$", "", name)
     return name.replace("-", " ").replace("_", " ").title()[:90]
 
@@ -783,7 +784,16 @@ def youtube(path, caption, public_url, clip=None):
     # #Shorts in the title is how a vertical clip is filed as a Short. YouTube
     # also infers it from the aspect ratio and length, but the tag removes the
     # doubt and costs nothing.
-    title = (title_for(path, caption) + " #Shorts")[:95]
+    # THE TITLE IS THE CLIP'S OWN HOOK (27 Nov 2026). Read on YouTube itself: KT Shorts were titled
+    # "The 35 Million Jet 86S  Ytfull" (the file name of the full-screen copy) and WB Shorts carried
+    # whichever caption line happened to fit - "Follow for the health truths nobody tells you about
+    # your food" on four in a row. The hook is the one line written to stop a viewer; it goes first.
+    _hk = (clip or {}).get("hook")
+    if isinstance(_hk, list):
+        _hk = " ".join(str(x) for x in _hk)
+    _hk = re.sub(r"\s+", " ", str(_hk or "")).strip()
+    _main = locals().get("_main_path", path)
+    title = ((_hk if 8 <= len(_hk) <= 88 else title_for(_main, caption)) + " #Shorts")[:95]
     body = {"snippet": {"title": title, "description": caption[:4900],
                         "categoryId": "22"},
             "status": {"privacyStatus": "public", "madeForKids": False,
