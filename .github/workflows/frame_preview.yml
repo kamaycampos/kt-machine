@@ -38,6 +38,7 @@ jobs:
           curl -sfL -o /tmp/fonts/cormorant600.ttf  $B/cormorant-garamond@latest/latin-600-normal.ttf
           curl -sfL -o /tmp/fonts/cormorant600i.ttf $B/cormorant-garamond@latest/latin-600-italic.ttf
           curl -sfL -o /tmp/fonts/montserrat600.ttf $B/montserrat@latest/latin-600-normal.ttf
+          curl -sfL -o /tmp/fonts/sourceserif700.ttf $B/source-serif-4@latest/latin-700-normal.ttf || true
           ls -la /tmp/fonts
       - uses: actions/cache@v4
         with: { path: "~/.cache/torch\n~/.cache/pip", key: align-torch-2.8.0-w2v2-base-960h }

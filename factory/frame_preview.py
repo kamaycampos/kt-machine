@@ -289,6 +289,99 @@ looks = {
         "caps": caps(phrases(words), F_MONT, 50, CAP_TIE, "0xF3ECDD", "t", shadow="black@0.85", border=3),
     },
 }
+# --- F5_PROVEN, 27 Nov 2026: THE STANDARD THAT IS WINNING, COPIED --------------------------
+# Measured 25 Nov on TikTok: kevintrudeau_student (median 36,500 a clip, best 1.6M) and
+# trudeaumanifesting (25,250) all use ONE frame: Kevin's whole wide picture on pure black, one
+# plain sentence above it in white boxes with bold black serif letters for the whole clip, and
+# small capital captions on his chest, three words at a time, the word he is saying in yellow.
+# No grain, no gold, no second line under the picture. Nothing here is invented.
+def overlay_proven(path, lines, pic_y):
+    from PIL import Image, ImageDraw, ImageFont
+    fpath = os.path.join(FONTS, "sourceserif700.ttf")
+    if not os.path.exists(fpath):
+        fpath = F_SERIF
+    text = [l for l in lines if l][:3]
+    if len(text) == 1 and len(text[0]) > 24:            # one long sentence: two balanced lines
+        ws_ = text[0].split()
+        k = min(range(1, len(ws_)), key=lambda i: abs(len(" ".join(ws_[:i])) - len(" ".join(ws_[i:]))))
+        text = [" ".join(ws_[:k]), " ".join(ws_[k:])]
+    size = 62
+    f = ImageFont.truetype(fpath, size)
+    while size > 40 and max(f.getlength(t) for t in text) > 860:
+        size -= 2
+        f = ImageFont.truetype(fpath, size)
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    padx, pady = 24, 12
+    asc, desc = f.getmetrics()
+    box_h = asc + desc + 2 * pady
+    step = box_h - 8                                     # the boxes touch, as TikTok's do
+    y = pic_y - 34 - (step * (len(text) - 1) + box_h)
+    for t in text:
+        wt = f.getlength(t)
+        x = (W - wt) / 2
+        d.rounded_rectangle((x - padx, y, x + wt + padx, y + box_h), radius=18, fill=(255, 255, 255, 255))
+        y += step
+    y = pic_y - 34 - (step * (len(text) - 1) + box_h)
+    for t in text:
+        d.text(((W - f.getlength(t)) / 2, y + pady), t, font=f, fill=(12, 12, 12, 255))
+        y += step
+    img.save(path)
+    return path
+
+
+def proven_caps(ws, path, y):
+    """Three words at a time, capitals, the word being spoken in yellow (their captions exactly)."""
+    groups, cur = [], []
+    for w in ws:
+        if cur and (len(cur) >= 3 or w[0] - cur[-1][1] > 0.35
+                    or len(" ".join(x[2] for x in cur) + " " + w[2]) > 18 or cur[-1][2][-1:] in ".!?"):
+            groups.append(cur)
+            cur = []
+        cur.append(w)
+    if cur:
+        groups.append(cur)
+
+    def ts(t):
+        t = max(0.0, t)
+        return f"{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}"
+    ev = []
+    for gi, g in enumerate(groups):
+        g_end = g[-1][1]
+        if gi + 1 < len(groups):
+            g_end = min(max(g_end, g[0][0] + 0.2), groups[gi + 1][0][0])
+        for i, w in enumerate(g):
+            st = w[0]
+            en = g[i + 1][0] if i + 1 < len(g) else g_end
+            if en - st < 0.04:
+                continue
+            txt = " ".join(("{\\c&H00E6FF&}" + x[2].upper() + "{\\c&HFFFFFF&}") if j == i else x[2].upper()
+                           for j, x in enumerate(g))
+            ev.append(f"Dialogue: 0,{ts(st)},{ts(en)},P,,0,0,0,,{{\\an5\\pos(540,{y})}}{txt}")
+    head = ("[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nWrapStyle: 2\n\n"
+            "[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, "
+            "BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, "
+            "Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\n"
+            "Style: P,Montserrat Black,38,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,"
+            "1,3,1,5,40,40,40,1\n\n"
+            "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n")
+    open(path, "w").write(head + "\n".join(ev) + "\n")
+    return [f"subtitles=filename={path}:fontsdir={os.path.join(HERE, 'assets')}"]
+
+
+if "F5_PROVEN" in os.environ.get("PREVIEW_LOOKS", ""):
+    P5_H = 608
+    P5_Y = (H - P5_H) // 2
+    chin5 = P5_Y + (fy + fh * 0.5) * P5_H
+    cap5 = int(max(P5_Y + P5_H * 0.5, min(chin5 + 52, P5_Y + P5_H - 56)))
+    print(f"F5_PROVEN: picture {W}x{P5_H} at y={P5_Y}, captions at y={cap5}")
+    looks["F5_PROVEN"] = {
+        "pic": f"scale={W}:{P5_H}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{P5_H}",
+        "canvas": "black", "post": [], "y": P5_Y,
+        "overlay": overlay_proven(os.path.join(TMP, "ov_proven.png"), hook, P5_Y),
+        "caps": proven_caps(words, os.path.join(TMP, "proven.ass"), cap5),
+    }
+
 only = [x.strip() for x in os.environ.get("PREVIEW_LOOKS", "").split(",") if x.strip()]
 if only:
     looks = {k_: v_ for k_, v_ in looks.items() if k_ in only}

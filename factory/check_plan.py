@@ -81,6 +81,13 @@ STAKES = re.compile(
     r"\bmanifest)", re.I)
 
 
+PROVEN = re.compile(
+    r"(\byou\b|\byour\b|\byou'?re\b|\byourself\b|"
+    r"^(how to|this is (why|how)|do |don'?t|do not|never|stop|be careful|avoid|watch|learn|write|read|"
+    r"say|tell|ask|check|eat|drink|buy|use|try|quit|start)\b|"
+    r"^((how|why|what) )?(the )?(rich|wealthy|smart|successful|broke|poor|healthy|most)( people)?\b)", re.I)
+
+
 def no_stakes(h, b):
     t = " ".join(h)
     named = any(re.search(r"(?<!^)\b[A-Z][a-z]{2,}", l.strip()) for l in h)
@@ -215,6 +222,21 @@ for path in sys.argv[1:]:
                 if sum(1 for q in p.get("clips", []) if q.get("trial_hooks")) > 1 and not trials_proven():
                     errs.append("trial_hooks on more than one clip: until one experiment has posted "
                                 "all its arms as Trial Reels (state/variants.json), one clip a plan")
+        # THE PROVEN SHAPE (27 Nov 2026). PLANNING.md has said it since 25 Nov and the planner still wrote
+        # headlines ("A $2 billion fortune / Forbes never lists", "$100 bills lit / just for a cigar"). The
+        # accounts that win (median 36,500 a clip against our ~300) say ONE plain sentence TO the viewer:
+        # "This is why you should write in cursive", "Be careful with who you associate with", "Do these
+        # things if you want to be wealthy", "How to manifest $50k/week". A written rule did not hold, so
+        # this one is code: the hook speaks to YOU, or is a command, or a how-to. The planner gets an
+        # error and rewrites; the merge job only warns (it deletes what fails).
+        if fam != "AR":
+            _ht = " ".join(str(x) for x in (c.get("hook") or [])).strip()
+            if not PROVEN.search(_ht):
+                _pm = ("not said to the viewer. Write one plain sentence a person would say to a friend: "
+                       "\"This is why you should ...\", \"How to ...\", \"Never ... if you ...\", "
+                       "\"Do this before you ...\", \"Why you ...\". Not a headline about someone else")
+                if STAKES_WARN: print(f"   ~ {s}: hook - {_pm}")
+                else: errs.append(f"{s}: hook - {_pm}")
         ns = no_stakes(c.get("hook") or [], b)
         if ns and (STAKES_WARN or fam == "AR"): print(f"   ~ {s}: hook - {ns}")
         elif ns: errs.append(f"{s}: hook - {ns}")
