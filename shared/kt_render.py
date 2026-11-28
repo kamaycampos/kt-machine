@@ -260,10 +260,20 @@ ARCH_SANS = os.path.join(_ASSETS, "cinema_archive_sans.ttf")             # Monts
 # under it - one compact block in the middle of the phone, like kevintrudeau_insights in the feed.
 ARCH_PIC_H = 608
 ARCH_PIC_Y = (1920 - ARCH_PIC_H) // 2
-ARCH_CANVAS = "0x0D0D0F"
+# THE PROVEN STANDARD (27 Nov 2026, KT_HEAD=box). Measured 25 Nov on TikTok: the two Kevin accounts
+# that win (kevintrudeau_student median 36,500 a clip, best 1.6M; trudeaumanifesting 25,250; ours
+# ~300) all use one frame: his whole wide picture on PURE black, one plain sentence above it in
+# white boxes with bold black serif letters, small capital captions on his chest three words at a
+# time with the word he is saying in yellow. No grain, no grade, no gold. Kamay, 25 Nov: "find a
+# way that is already working ... without changing what's working"; 27 Nov: "you decide". Our
+# picture, window, cover and sound stay exactly as they were; only the dress changes.
+PROVEN = ARCHIVE and os.environ.get("KT_HEAD", "") == "box"
+ARCH_BOX_FONT = os.path.join(_ASSETS, "proven_serif_bold.ttf")           # Source Serif 4 Bold (OFL)
+ARCH_CANVAS = "black" if PROVEN else "0x0D0D0F"
 ARCH_IVORY, ARCH_GOLD = (243, 236, 221), (185, 151, 91)
-ARCH_GRADE = "eq=contrast=1.06:saturation=0.9:brightness=-0.01,colorbalance=rs=0.025:bs=-0.035"
-ARCH_TAIL = f"pad={W}:{H}:0:(oh-ih)/2:color={ARCH_CANVAS},noise=alls=5:allf=t,setsar=1,fps=30"
+ARCH_GRADE = "null" if PROVEN else "eq=contrast=1.06:saturation=0.9:brightness=-0.01,colorbalance=rs=0.025:bs=-0.035"
+ARCH_NOISE = "null" if PROVEN else "noise=alls=5:allf=t"
+ARCH_TAIL = f"pad={W}:{H}:0:(oh-ih)/2:color={ARCH_CANVAS},{ARCH_NOISE},setsar=1,fps=30"
 ARCH_SAFE_W = 850             # a tall phone crops ~10% off each side of a Short
 ARCH_CAP_SIZE = 50
 # NOTHING UNDER THE PICTURE (13 Nov 2026, Kamay on the standard clip: "delete the bottom words,
@@ -356,6 +366,32 @@ def archive_overlay(lines, path, cap_y, line=None):
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     top_, bot_ = ARCH_PIC_Y, ARCH_PIC_Y + ARCH_PIC_H
+    if PROVEN and text:                       # the winners' headline: white boxes, bold black serif
+        fpath = ARCH_BOX_FONT if os.path.exists(ARCH_BOX_FONT) else ARCH_SERIF
+        if len(text) == 1 and len(text[0]) > 24:
+            ws_ = text[0].split()
+            k_ = min(range(1, len(ws_)), key=lambda i: abs(len(" ".join(ws_[:i])) - len(" ".join(ws_[i:]))))
+            text = [" ".join(ws_[:k_]), " ".join(ws_[k_:])]
+        size = 62
+        f = ImageFont.truetype(fpath, size)
+        while size > 40 and max(f.getlength(t) for t in text) > ARCH_SAFE_W:
+            size -= 2
+            f = ImageFont.truetype(fpath, size)
+        padx, pady = 24, 12
+        asc, desc = f.getmetrics()
+        box_h = asc + desc + 2 * pady
+        step = box_h - 8                        # the boxes touch, as TikTok's own text boxes do
+        y0 = top_ - 34 - (step * (len(text) - 1) + box_h)
+        for i, t in enumerate(text):
+            wt = f.getlength(t)
+            x = (W - wt) / 2
+            d.rounded_rectangle((x - padx, y0 + i * step, x + wt + padx, y0 + i * step + box_h),
+                                radius=18, fill=(255, 255, 255, 255))
+        for i, t in enumerate(text):
+            d.text(((W - f.getlength(t)) / 2, y0 + i * step + pady), t, font=f, fill=(12, 12, 12, 255))
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        img.save(path)
+        return path, W, H
     for yy in range(max(top_, cap_y - 90), min(bot_, cap_y + 90)):
         k = 1 - abs(yy - cap_y) / 90
         d.line((0, yy, W, yy), fill=(8, 8, 10, int(118 * k * k * (3 - 2 * k))))
@@ -400,6 +436,43 @@ _PLAY_BIG = re.compile(r"[$%]|\d|^(million|billion|trillion|thousand|hundred|mon
                        r"millionaire|billionaire|debt|cash|gold|bank|banks|no|yes|stop)s?$", re.I)
 
 
+def proven_ass(words, path, arch, dur=None):
+    """The winners' captions (27 Nov 2026): small capitals on his chest, two or three words at a
+    time, the word he is saying in yellow. Returns (subtitles filter, [(a, b, text)] shown)."""
+    groups = word_groups(words)
+    end_all = dur if dur is not None else (words[-1][1] + 0.6 if words else 0.0)
+    cap_y = int(arch["cap_y"])
+    clean = lambda w_: re.sub(r"[{}\\]", "", w_)
+    ev, shown = [], []
+    for gi, g in enumerate(groups):
+        a = max(0.0, words[g[0]][0] - 0.06)
+        nxt = max(0.0, words[groups[gi + 1][0]][0] - 0.06) if gi + 1 < len(groups) else end_all
+        g_end = min(max(words[g[-1]][1] + 0.25, a + 0.3), nxt)
+        if g_end - a < 0.05:
+            continue
+        text = [clean(words[i][2]) for i in g]
+        shown.append((a, g_end, " ".join(text)))
+        for k in range(len(g)):
+            st = a if k == 0 else min(g_end, max(a, words[g[k]][0] - 0.04))
+            en = min(g_end, max(a, words[g[k + 1]][0] - 0.04)) if k + 1 < len(g) else g_end
+            if en - st < 0.03:
+                continue
+            line = " ".join(("{\\c&H00E6FF&}" + t.upper() + "{\\c&HFFFFFF&}") if j == k else t.upper()
+                            for j, t in enumerate(text))
+            ev.append(f"Dialogue: 0,{_ts(st)},{_ts(en)},Pv,,0,0,0,,{{\\an5\\pos({W // 2},{cap_y})}}{line}")
+    head = ("[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nWrapStyle: 2\n\n"
+            "[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, "
+            "BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, "
+            "Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\n"
+            "Style: Pv,Montserrat Black,40,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,"
+            "1,3,1,5,40,40,0,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, "
+            "Effect, Text\n")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    open(path, "w").write(head + "\n".join(ev) + "\n")
+    print(f"      proven captions: {len(shown)} captions, the spoken word in yellow")
+    return f"subtitles=filename={path}:fontsdir={_ASSETS}", shown
+
+
 def play_ass(words, path, arch, src=None, t_in=0.0, t_out=None, dur=None):
     """The standard clip's captions, written the way the Episode clips are (13 Nov 2026).
 
@@ -416,6 +489,8 @@ def play_ass(words, path, arch, src=None, t_in=0.0, t_out=None, dur=None):
       PLAIN  everything else: small, as spoken, under his chin.
     One typeface (Montserrat Black, the only one libass is proven to find here), so the play is
     in size, place, case and colour. Returns (subtitles filter, [(a, b, text)] shown)."""
+    if PROVEN:
+        return proven_ass(words, path, arch, dur)
     groups = word_groups(words)
     emph = word_emphasis(words, groups, src, t_in, t_out) if src else set()
     end_all = dur if dur is not None else (words[-1][1] + 0.6 if words else 0.0)
@@ -2076,7 +2151,7 @@ def render(src, dest, t_in, t_out, hook, cues, cx, apply, zoom=1.0,
             geo = f"{geo},{ARCH_GRADE},{ARCH_TAIL}"
         elif ext_geo:              # a hand-made 9:16 layout: the whole of it, upright, in the window
             geo = (f"{geo},scale=-2:{ARCH_PIC_H}:flags=lanczos,{ARCH_GRADE},"
-                   f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:color={ARCH_CANVAS},noise=alls=5:allf=t,setsar=1,fps=30")
+                   f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:color={ARCH_CANVAS},{ARCH_NOISE},setsar=1,fps=30")
         else:
             geo = arch["geo"]
             print(f"      archive window {arch['window'][0]}x{arch['window'][1]} of the source "

@@ -23,8 +23,11 @@ p = json.load(open(os.path.join(R.PLANS, f"{plan}.json")))
 # A TEST PLAN MAY PREVIEW A LOOK before the repo switches to it ("look": "word", 3 Nov 2026).
 if p.get("look") and p.get("test"):
     os.environ["KT_LOOK"] = p["look"]
+if p.get("head") and p.get("test"):                # the same for the headline dress (KT_HEAD=box, 27 Nov 2026)
+    os.environ["KT_HEAD"] = p["head"]
 if p["brand"].startswith("AR_"):
     os.environ["KT_LOOK"] = "classic"
+    os.environ.pop("KT_HEAD", None)                # Yaren's brand keeps her look; nobody chose this for her
 # THE LOOK TEST (10 Nov 2026, Kamay: "test both first"). KT Instagram views fell from ~1 Nov
 # (median 207-979 -> 67-189, skip 45-52% -> 53-61%), the week the cinema look went live. Repo
 # variable LOOK_TEST="classic,cinema" splits new plans between the looks by a stable hash of
