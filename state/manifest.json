@@ -20113,7 +20113,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261128033552D846E05759C16B32ECCA'}}"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "media_tag": "media3",
    "cover": true,
@@ -20129,10 +20129,10 @@
    },
    "caption_at_post": "Kevin Trudeau says the wealthy don't just dream about money - they go look at it.\n\nWalk through the open house you can't afford yet. Sit in the car. Read the menu at the restaurant you're saving for. Look up the suite that costs $10,000 a night and let yourself want it.\n\nIt isn't torture, Kevin says - it's training. Every time you put yourself near what you want, you're telling your own mind it's possible, not just a fantasy.\n\nComment WISH and I'll send you Kevin's free audios on training your mind to expect more.\n\nWhat's the one thing you're going to go look at this week?\n\n#kevintrudeau #manifestation #wealthmindset #dreambig #lawofattraction #mindset",
    "posted_at": "2026-11-27T22:35",
-   "tt_copy": "2026-11-28T03:35",
-   "tiktok_retry": true,
+   "tt_copy": "2026-11-28T05:55",
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-28T05:35"
+   "tiktok_at": "2026-11-28T05:55",
+   "tiktok_tries": 1
   },
   {
    "file": "KT_EARDRUM/01_TWO-EARS-ONE-MOUTH_53s.mp4",
