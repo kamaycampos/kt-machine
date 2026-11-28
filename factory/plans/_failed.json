@@ -15519,6 +15519,42 @@
     "Why the how",
     "isn't your job"
    ]
+  },
+  "ep_v4zs6lu_p3/COPY-THE-RUNWAY-NOT-THE-CRUISE": {
+   "plan": "ep_v4zs6lu_p3",
+   "source": "v4zs6lu.mp4",
+   "brand": "KT_COCKPIT",
+   "tries": 1,
+   "why": [
+    "FAIL 01_COPY-THE-RUNWAY-NOT-THE-CRUISE_95s.mp4: [FAIL] 01_COPY-THE-RUNWAY-NOT-THE-CRUISE_95s.mp4              35 captions vs the sound  median -0.00s  worst-10% 0.56s  | words captioned 100%"
+   ],
+   "slug": "COPY-THE-RUNWAY-NOT-THE-CRUISE",
+   "in": 2951.5,
+   "out": 3049.46,
+   "start_words": "Who do you listen to",
+   "end_words": "already cruising in business",
+   "hook": [
+    "Never copy what they",
+    "do today"
+   ]
+  },
+  "ep_v7iwclg_r3/DONT-TELL-THE-UNIVERSE-HOW": {
+   "plan": "ep_v7iwclg_r3",
+   "source": "v7iwclg.mp4",
+   "brand": "KT_ALTITUDER3",
+   "tries": 3,
+   "why": [
+    "NOT QUEUED** `01_DONT-TELL-THE-UNIVERSE-HOW_77s.mp4` - phrase scrambled around \"this day to this\""
+   ],
+   "slug": "DONT-TELL-THE-UNIVERSE-HOW",
+   "in": 360.0,
+   "out": 438.0,
+   "start_words": "Don't tell the universe how",
+   "end_words": "to clearly define it",
+   "hook": [
+    "The universe doesn't need",
+    "your plan"
+   ]
   }
  },
  "attempts": {
@@ -15620,6 +15656,7 @@
   "ar_v4khs1x_r2": 2,
   "ep_v5dm94d_p2": 2,
   "ep_v6c74p7_p3": 2,
-  "ar_v5cpz6r_r2": 2
+  "ar_v5cpz6r_r2": 2,
+  "ep_v6w8h8e_p2": 1
  }
 }
