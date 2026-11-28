@@ -19890,14 +19890,30 @@
    "hook": "Why changing your mind is not quitting",
    "bytes": 101371323,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "off for this account",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611280136317D9997711C994C299642'}}"
+   },
    "media_tag": "media3",
    "cover": true,
    "look": "archive",
    "scheduled_at": "2026-11-27T20:30",
    "cta_keyword": "WISH",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgRFZllBfer/",
+    "youtube": "https://youtube.com/shorts/yER-kpkBm9g"
+   },
+   "caption_at_post": "Kevin Trudeau says most people quit a path and call it failure, when really they just learned something new. You got excited about a job or a business, went for it, then it stopped feeling right.\n\nThat is not a mistake. You went as far as you could see, and now you can see further. With new information, you get to make a new decision - that is not quitting, that is growing.\n\nStop punishing yourself for outgrowing a goal you already outgrew.\n\nComment WISH and I'll send you the 14 audios that help you aim at what you want.\n\n#kevintrudeau #yourwishisyourcommand #mindsetshift #lawofattraction #success #manifestation",
+   "posted_at": "2026-11-27T20:36",
+   "tiktok_retry": true,
+   "tiktok_resend": true,
+   "tiktok_wait_until": "2026-11-28T03:36"
   },
   {
    "file": "KT_JETSTREAM/01_WHY-YOUR-DREAMS-FELT-IMPOSSIBLE-AS-A-KID_52s.mp4",
