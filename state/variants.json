@@ -5942,5 +5942,67 @@
    }
   ],
   "posted": null
+ },
+ "AR_PRAYERR3__GOD-ALREADY-PICKED-SOMEONE-BETTER": {
+  "clip": "AR_PRAYERR3/01_GOD-ALREADY-PICKED-SOMEONE-BETTER_93s.mp4",
+  "arms": [
+   {
+    "rel": "_VARIANTS/VAR__AR_PRAYERR3__GOD-ALREADY-PICKED-SOMEONE-BETTER__V1.mp4",
+    "hook": [
+     "Two months away:",
+     "someone way better."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_PRAYERR3__GOD-ALREADY-PICKED-SOMEONE-BETTER__V2.mp4",
+    "hook": [
+     "The market was",
+     "about to crash."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_PRAYERR3__GOD-ALREADY-PICKED-SOMEONE-BETTER__V3.mp4",
+    "hook": [
+     "Your prayer wasn't",
+     "rejected, just redirected."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_PRAYERR3__GOD-ALREADY-PICKED-SOMEONE-BETTER__V4.mp4",
+    "hook": [
+     "Deadlines block your",
+     "biggest blessing yet."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_PRAYERR3__GOD-ALREADY-PICKED-SOMEONE-BETTER__V5.mp4",
+    "hook": [
+     "Susie wasn't the",
+     "plan. Mary was."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_PRAYERR3__GOD-ALREADY-PICKED-SOMEONE-BETTER__V6.mp4",
+    "hook": [
+     "Stop timing, start",
+     "trusting the universe."
+    ],
+    "media_tag": "media3"
+   },
+   {
+    "rel": "_VARIANTS/VAR__AR_PRAYERR3__GOD-ALREADY-PICKED-SOMEONE-BETTER__V7.mp4",
+    "hook": [
+     "The crash saved",
+     "him from debt."
+    ],
+    "media_tag": "media3"
+   }
+  ],
+  "posted": null
  }
 }
