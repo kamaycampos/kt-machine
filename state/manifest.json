@@ -20247,7 +20247,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261128133701EB36FF88B2055F4B9BE3'}}"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "media_tag": "media3",
    "cover": true,
@@ -20263,10 +20263,10 @@
    },
    "caption_at_post": "Kevin Trudeau says cryptocurrency has already created trillions in wealth nobody can see - not in a bank, not on paper, just sitting quietly in a digital wallet.\n\nHe describes a guy who put $100,000 into Bitcoin back in 2011. That guy never shows up on the Forbes 400 list. Nobody ranks him, nobody profiles him. He just buys the Rolls-Royce, the mansion, the plane - and when people ask how, the answer is always the same word.\n\nThe Forbes list only counts the fortunes people can see.\n\nComment MONEY and I'll send you more on how this works.\n\n#kevintrudeau #forbes400 #bitcoin #wealthmindset #richmindset #hiddenwealth",
    "posted_at": "2026-11-28T08:37",
-   "tt_copy": "2026-11-28T13:37",
-   "tiktok_retry": true,
+   "tt_copy": "2026-11-28T15:55",
    "tiktok_resend": true,
-   "tiktok_wait_until": "2026-11-28T15:37"
+   "tiktok_at": "2026-11-28T15:55",
+   "tiktok_tries": 1
   },
   {
    "file": "AR_PRAYERR3/01_GOD-ALREADY-PICKED-SOMEONE-BETTER_93s.mp4",
