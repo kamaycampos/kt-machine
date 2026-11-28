@@ -30,6 +30,7 @@ cp factory/assets/mont_black.ttf factory/assets/yunet.onnx factory/assets/voice_
 # WHO is on screen (10 Nov 2026): OpenCV SFace + Kevin's face references - KT clips must be Kevin.
 cp factory/assets/sface.onnx factory/assets/kevin_face_refs.npy "$K/bin/" 2>/dev/null || true
 cp factory/assets/cinema_*.ttf "$K/bin/" 2>/dev/null || true   # the cinema look (kt_render, 1 Nov 2026)
+cp factory/assets/proven_*.ttf "$K/bin/"                      # the proven look's bold headline (KT_HEAD=box, 27 Nov 2026) - no fallback: a missing font must fail here
 # Liberation Sans is metrically identical to Arial and free to ship; Apple's
 # Arial file is not ours to publish in a public repository.
 ln -sf /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf "$K/bin/arial_bold.ttf"

@@ -368,6 +368,8 @@ def archive_overlay(lines, path, cap_y, line=None):
     top_, bot_ = ARCH_PIC_Y, ARCH_PIC_Y + ARCH_PIC_H
     if PROVEN and text:                       # the winners' headline: white boxes, bold black serif
         fpath = ARCH_BOX_FONT if os.path.exists(ARCH_BOX_FONT) else ARCH_SERIF
+        if fpath != ARCH_BOX_FONT:              # 27 Nov: the first cloud test drew the thin serif and said nothing
+            print(f"      WARNING: {ARCH_BOX_FONT} is missing - the headline is NOT in the bold font")
         if len(text) == 1 and len(text[0]) > 24:
             ws_ = text[0].split()
             k_ = min(range(1, len(ws_)), key=lambda i: abs(len(" ".join(ws_[:i])) - len(" ".join(ws_[i:]))))
